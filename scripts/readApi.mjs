@@ -26,12 +26,17 @@ function capitalizeFirstLetter(str) {
  * @param {string} directory - 需要读取的目录路径
  * @returns {Array} - 返回一个包含所有 Markdown 文件完整路径的数组
  */
-function readMarkdownFiles(directory) {
+export function readMarkdownFiles(directory) {
   const files = glob.sync('**/**/*.md', {
     cwd: directory,
     ignore: [
       '**/node_modules/**',
       '**/CHANGELOG.md',
+      '**/demo/**',
+      '**/examples/**',
+      '**/tests/**',
+      '**/CONTRIBUTING.md',
+      '**/*$**/**',
       '**/README.md',
       '**/*.en-US.md',
     ],

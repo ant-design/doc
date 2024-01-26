@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "glob": "^10.3.10",
+    "openai": "^4.26.0",
     "remark": "^15.0.1",
     "remark-gfm": "^4.0.0",
     "remark-parse": "^11.0.0",
