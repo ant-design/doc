@@ -1,0 +1,37 @@
+### 如何在普通的 Umi 应用中使用插件呢？
+
+在普通的 Umi 应用中，默认是不附带任何插件的。如果你需要使用 Max 的功能，比如数据流、antd 等，你需要手动安装插件并将它们打开。
+
+首先，安装 @umijs/plugins 插件：
+
+```bash
+pnpm add -D @umijs/plugins
+```
+
+然后，在配置文件 .umirc.ts 中开启 antd 插件：
+
+```ts
+export default {
+  plugins: ['@umijs/plugins/dist/antd'],
+  antd: {}
+}
+```
+
+Umi 和 Max 的区别在于，Max 已经内置了很多常用插件，比如数据流（initial-state、model）、antd 等。这些插件都可以在 @umijs/plugins/dist/ 中找到并开启。
+
+如果你想进一步了解 Max 具备的功能和配置说明，请参考 Umi Max 章节。
+
+:::info{title=💡}
+我是否应该选择 Max？
+使用 Max 并不代表你需要使用全部 Max 的功能。你可以根据自己的需求选择关闭一些插件。因此，当你需要使用 Max 的功能时，你可以选择创建一个 Max 项目。
+:::
+
+## 如何在项目中使用插件功能？
+
+要在项目中快速使用插件的功能，可以按照以下步骤进行操作：
+
+1. 在项目的根目录创建一个名为 `plugin.ts` 的文件。
+2. 在 `plugin.ts` 文件中编写你的项目级插件代码。
+3. 保存并关闭 `plugin.ts` 文件，该文件将被自动作为插件加载。
+
+请注意，在使用插件功能之前，请确保你已经熟悉了相关的目录结构，可以参考章节 [目录结构](./directory-structure) 进行更详细的了解。

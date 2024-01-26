@@ -30,6 +30,7 @@ export function readMarkdownFiles(directory) {
   const files = glob.sync('**/**/*.md', {
     cwd: directory,
     ignore: [
+      '**/fixtures/**',
       '**/node_modules/**',
       '**/CHANGELOG.md',
       '**/demo/**',
