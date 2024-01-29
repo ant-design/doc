@@ -12,11 +12,11 @@ fs.readdirSync(path.join(__dirname, '..', 'api')).forEach((jsonName) => {
   const packageName = path.basename(jsonName).split('.').at(0);
   const mdFile = json.map((item) => {
     const questionMd = `### ${packageName} 的 ${item.title} 有哪些参数？`;
-    const mdList = item.pri?.map((row) => {
+    const mdList = item.properties?.map((row) => {
       const mdTitle = `### ${packageName} 的 ${row.title} 有哪些参数？`;
-      const mdRow = `| ${Object.keys(row.table.at(0)).join(' | ')} |
-| --- | --- | --- | --- | --- |
-${row.table
+      const mdRow = `| ${Object.keys(row.property.at(0)).join(' | ')} |
+| ${Object.keys(row.property.at(0)).map(() => '---').join(' | ')} |
+${row.property
   .map((item) => {
     return `| ${Object.values(item)
       .map((apiItem) => apiItem?.toString().replaceAll('|', '\\|'))
@@ -34,7 +34,7 @@ ${row.table
 
     const answerMd = mdList
       ?.map((item) => {
-        return `#### ${item.title} \n\n ${item.tableMd}`;
+        return `#### ${item.title} \n\n${item.tableMd}`;
       })
       .join('\n\n');
 
