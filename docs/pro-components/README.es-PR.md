@@ -1,40 +1,40 @@
-#### 问题1：什么是 ProComponents？
+#### 什么是 ProComponents？
 
 ProComponents 是一个为企业级应用设计的组件库，它以 Ant Design 作为基础，让您能够像专业人士一样使用它。
 
-#### 问题2：ProComponents 提供了哪些功能？
+#### 问题 2：ProComponents 提供了哪些功能？
 
 ProComponents 提供了丰富的功能和组件，能够帮助您快速构建企业级应用。它包含了诸如表单、表格、图表、弹窗等常用组件，同时还提供了许多高级功能，如国际化支持、主题切换、权限管理等。
 
-#### 问题3：如何使用 ProComponents？
+####如何使用 ProComponents？
 
 您可以通过 npm 来安装 ProComponents：[npm-release-link](https://www.npmjs.com/package/pro-components)。安装完成后，您可以在项目中引入 ProComponents 的组件，并按照文档中的说明来使用。
 
-#### 问题4：ProComponents 的文档在哪里？
+#### 问题 4：ProComponents 的文档在哪里？
 
 ProComponents 的文档包含了详细的组件介绍、示例代码和使用方法，您可以在 [GitHub](https://github.com/ant-design/pro-components) 上找到它。
 
-#### 问题5：如何报告问题或请求新功能？
+#### 问题 5：如何报告问题或请求新功能？
 
 如果您在使用 ProComponents 过程中遇到了问题，您可以在 [GitHub Issues](https://github.com/ant-design/pro-components/issues) 上报告问题。如果您有新的功能需求，也可以在那里提出。
 
-#### 问题6：ProComponents 的开源协议是什么？
+#### 问题 6：ProComponents 的开源协议是什么？
 
 ProComponents 的开源协议是 MIT 许可证，您可以在 [GitHub](https://github.com/ant-design/pro-components/blob/master/LICENSE) 上查看详细信息。
 
-#### 问题7：ProComponents 的贡献者有哪些？
+#### 问题 7：ProComponents 的贡献者有哪些？
 
 ProComponents 的开发和维护离不开社区的贡献者，您可以在 [GitHub Contributors](https://github.com/ant-design/pro-components/graphs/contributors) 上查看他们的名单。
 
-#### 问题8：ProComponents 的主题切换功能如何实现？
+#### 问题 8：ProComponents 的主题切换功能如何实现？
 
 ProComponents 支持主题切换功能，您可以根据自己的需求来定制主题。具体实现方式可以参考文档中关于主题切换的章节。
 
-#### 问题9：ProComponents 是否支持国际化？
+#### 问题 9：ProComponents 是否支持国际化？
 
 是的，ProComponents 支持国际化功能，您可以根据需要将组件的文字内容进行本地化翻译。具体实现方式可以参考文档中关于国际化的章节。
 
-#### 问题10：ProComponents 是否支持权限管理？
+#### 问题 10：ProComponents 是否支持权限管理？
 
 是的，ProComponents 提供了权限管理的功能，您可以根据不同的用户角色来控制组件的显示和操作权限。具体实现方式可以参考文档中关于权限管理的章节。
 
@@ -86,25 +86,25 @@ $ pnpm install @ant-design/pro-components
 
 使用 `@ant-design/pro-components` 可以帮助开发者更快速地构建具有一致风格和丰富功能的页面。它提供了各种常用组件，如表格、表单、卡片等，并且支持自定义主题样式。
 
-## QA 1:
+### 1:
 
 ### ¿Cuáles son las características de los componentes de la Serie Pro?
 
 Los componentes de la Serie Pro están meticulosamente diseñados para reforzar la sólida arquitectura de aplicaciones de grado empresarial.
 
-## QA 2:
+### 2:
 
 ### ¿Qué se puede destacar sobre la arquitectura de las aplicaciones de grado empresarial en la Serie Pro?
 
 La Serie Pro se destaca por su sólida arquitectura de aplicaciones de grado empresarial.
 
-## QA 3:
+##
 
 ### ¿Qué información se puede encontrar en la imagen proporcionada?
 
 En la imagen proporcionada se muestra una vista previa de la tendencia de actividad de composición para la Serie Pro.
 
-## ¿Cuáles son las principales características de ProComponents?
+### ¿Cuáles son las principales características de ProComponents?
 
 ProComponents ofrece las siguientes características destacadas:
 
@@ -120,11 +120,11 @@ ProComponents ofrece las siguientes características destacadas:
 
 En resumen, ProComponents es una biblioteca de componentes de interfaz de usuario versátil y fácil de usar, diseñada para potenciar aplicaciones empresariales en diferentes escalas y dominios.
 
-## ¿Cuál es el objetivo principal de ProComponents?
+### ¿Cuál es el objetivo principal de ProComponents?
 
 El objetivo principal de ProComponents es proporcionar a los desarrolladores una biblioteca de componentes de interfaz de usuario sólida y versátil para el desarrollo de aplicaciones empresariales basadas en React. Esta biblioteca se destaca por ofrecer una suite extensiva de componentes, funcionalidad avanzada, uso intuitivo, herramientas de configuración visual y opciones de personalización incomparables. Con ProComponents, los desarrolladores pueden construir rápidamente soluciones empresariales potentes y adaptar la biblioteca a las necesidades únicas de sus proyectos.
 
-## ¿Qué beneficios ofrece ProComponents a los desarrolladores?
+### ¿Qué beneficios ofrece ProComponents a los desarrolladores?
 
 ProComponents ofrece varios beneficios a los desarrolladores:
 
@@ -140,31 +140,32 @@ En resumen, ProComponents simplifica el desarrollo de aplicaciones empresariales
 
 ### Personalización de ProComponents
 
-Pregunta: ¿Cuáles son las limitaciones de personalización en ProComponents?
+Pregunt¿Cuáles son las limitaciones de personalización en ProComponents?
 
-Respuesta: A pesar de su amplio repositorio de componentes, ProComponents puede presentar desafíos cuando se trata de personalizaciones altamente personalizadas. Esto puede dificultar la realización de ciertas visiones de proyectos.
+RespuestA pesar de su amplio repositorio de componentes, ProComponents puede presentar desafíos cuando se trata de personalizaciones altamente personalizadas. Esto puede dificultar la realización de ciertas visiones de proyectos.
 
 ### Curva de aprendizaje de ProComponents
 
-Pregunta: ¿La API y documentación de ProComponents son fáciles de dominar?
+Pregunt¿La API y documentación de ProComponents son fáciles de dominar?
 
-Respuesta: La API integral y la extensa documentación de ProComponents pueden resultar abrumadoras al principio, lo que puede requerir una inversión significativa de tiempo para dominar la biblioteca.
+RespuestLa API integral y la extensa documentación de ProComponents pueden resultar abrumadoras al principio, lo que puede requerir una inversión significativa de tiempo para dominar la biblioteca.
 
 ### Compatibilidad con navegadores en ProComponents
 
-Pregunta: ¿ProComponents es compatible con todos los navegadores?
+Pregunt¿ProComponents es compatible con todos los navegadores?
 
-Respuesta: ProComponents utiliza tecnologías de navegadores modernas, lo que puede crear limitaciones de compatibilidad con navegadores más antiguos. Esto puede restringir la accesibilidad de la aplicación y requerir esfuerzos adicionales de desarrollo para lograr una compatibilidad más amplia.
+RespuestProComponents utiliza tecnologías de navegadores modernas, lo que puede crear limitaciones de compatibilidad con navegadores más antiguos. Esto puede restringir la accesibilidad de la aplicación y requerir esfuerzos adicionales de desarrollo para lograr una compatibilidad más amplia.
 
 ### Tamaño del código base de ProComponents
 
-Pregunta: ¿El tamaño del código base de ProComponents puede afectar el desarrollo y mantenimiento?
+Pregunt¿El tamaño del código base de ProComponents puede afectar el desarrollo y mantenimiento?
 
-Respuesta: El tamaño sustancial del código base de ProComponents puede impactar la agilidad del proceso de desarrollo y complicar el mantenimiento a largo plazo de la aplicación. Es importante considerar este aspecto antes de integrar ProComponents en el flujo de trabajo de un proyecto.
+RespuestEl tamaño sustancial del código base de ProComponents puede impactar la agilidad del proceso de desarrollo y complicar el mantenimiento a largo plazo de la aplicación. Es importante considerar este aspecto antes de integrar ProComponents en el flujo de trabajo de un proyecto.
 
 ### 兼容性
 
 #### 1. 前端兼容性有哪些要求？
+
 根据给出的表格，可以得知以下前端兼容性要求：
 
 - Navegadores modernos：要求支持最新的浏览器版本。
@@ -172,23 +173,33 @@ Respuesta: El tamaño sustancial del código base de ProComponents puede impacta
 - Electron：支持最新的 Electron 版本。
 
 #### 2. 如何兼容 Edge 浏览器？
+
 根据给出的表格，Ant Design 对 Edge 浏览器的兼容性如下：
+
 - Edge 浏览器需要保持在最新的 2 个版本才能得到兼容支持。
 
 #### 3. 如何兼容 Firefox 浏览器？
+
 根据给出的表格，Ant Design 对 Firefox 浏览器的兼容性如下：
+
 - Firefox 浏览器需要保持在最新的 2 个版本才能得到兼容支持。
 
 #### 4. 如何兼容 Chrome 浏览器？
+
 根据给出的表格，Ant Design 对 Chrome 浏览器的兼容性如下：
+
 - Chrome 浏览器需要保持在最新的 2 个版本才能得到兼容支持。
 
 #### 5. 如何兼容 Safari 浏览器？
+
 根据给出的表格，Ant Design 对 Safari 浏览器的兼容性如下：
+
 - Safari 浏览器需要保持在最新的 2 个版本才能得到兼容支持。
 
 #### 6. 如何兼容 Electron 桌面应用？
+
 根据给出的表格，Ant Design 对 Electron 桌面应用的兼容性如下：
+
 - Electron 桌面应用需要保持在最新的 2 个版本才能得到兼容支持。
 
 希望以上信息对你有所帮助！如果还有其他问题，请随时提问。
@@ -199,21 +210,28 @@ Respuesta: El tamaño sustancial del código base de ProComponents puede impacta
 
 1. 点击链接 [Github Codespaces][github-codespace-link] 进入 Github Codespaces 页面。
 2. 克隆 `pro-components` 仓库到你的 Codespace 中，命令如下：
-   ```
+
+```tsx
    $ git clone https://github.com/ant-design/pro-components.git
-   ```
+```
+
 3. 进入 `pro-components` 文件夹，命令如下：
-   ```
+
+```tsx
    $ cd pro-components
-   ```
+```
+
 4. 安装依赖，命令如下：
-   ```
+
+```tsx
    $ pnpm install
-   ```
+```
+
 5. 开始进行开发，命令如下：
-   ```
+
+```tsx
    $ pnpm dev
-   ```
+```
 
 通过以上步骤，你就可以在 Codespace 中进行在线开发了。
 
@@ -222,21 +240,28 @@ Respuesta: El tamaño sustancial del código base de ProComponents puede impacta
 如果你想进行本地开发，可以按照以下步骤进行操作：
 
 1. 克隆 `pro-components` 仓库到本地，命令如下：
-   ```
+
+```tsx
    $ git clone https://github.com/ant-design/pro-components.git
-   ```
+```
+
 2. 进入 `pro-components` 文件夹，命令如下：
-   ```
+
+```tsx
    $ cd pro-components
-   ```
+```
+
 3. 安装依赖，命令如下：
-   ```
+
+```tsx
    $ pnpm install
-   ```
+```
+
 4. 启动开发服务器，命令如下：
-   ```
+
+```tsx
    $ pnpm dev
-   ```
+```
 
 通过以上步骤，你就可以在本地进行开发了。
 
@@ -255,14 +280,11 @@ Respuesta: El tamaño sustancial del código base de ProComponents puede impacta
 如果你希望成为 Ant Design Pro 的贡献者，可以参考下面的信息：
 
 - **活跃贡献者**：
-  - 过去 28 天的活跃贡献者：<br>
-    ![活跃贡献者](https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=active&period=past_28_days&owner_id=12101536&repo_ids=183895098&image_size=2x3&color_scheme=dark)
+  - 过去 28 天的活跃贡献者：<br> ![活跃贡献者](https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=active&period=past_28_days&owner_id=12101536&repo_ids=183895098&image_size=2x3&color_scheme=dark)
 - **新增贡献者**：
-  - 过去 28 天的新增贡献者：<br>
-    ![新增贡献者](https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=new&period=past_28_days&owner_id=12101536&repo_ids=183895098&image_size=2x3&color_scheme=dark)
+  - 过去 28 天的新增贡献者：<br> ![新增贡献者](https://next.ossinsight.io/widgets/official/compose-org-active-contributors/thumbnail.png?activity=new&period=past_28_days&owner_id=12101536&repo_ids=183895098&image_size=2x3&color_scheme=dark)
 - **参与者增长**：
-  - 过去 28 天的参与者增长情况：<br>
-    ![参与者增长](https://next.ossinsight.io/widgets/official/compose-org-participants-growth/thumbnail.png?activity=active&period=past_28_days&owner_id=12101536&repo_ids=183895098&image_size=4x7&color_scheme=dark)
+  - 过去 28 天的参与者增长情况：<br> ![参与者增长](https://next.ossinsight.io/widgets/official/compose-org-participants-growth/thumbnail.png?activity=active&period=past_28_days&owner_id=12101536&repo_ids=183895098&image_size=4x7&color_scheme=dark)
 
 以上是一些参与 Ant Design Pro 贡献过程中的相关信息，希望能对你有所帮助。
 
@@ -283,15 +305,11 @@ ProComponents es una biblioteca diseñada especialmente para aplicaciones empres
 
 Puedes obtener más información sobre ProComponents en su [repositorio de GitHub](https://github.com/ant-design/pro-components).
 
----
-
 ### ¿Qué es ProEditor?
 
 ProEditor es un marco y conjunto de componentes de interfaz de usuario especialmente diseñado para editores. Proporciona herramientas y funcionalidades específicas para la edición de contenido, como resaltado de sintaxis, auto-completado y mucho más.
 
 Para obtener más detalles sobre ProEditor, puedes visitar su [repositorio de GitHub](https://github.com/ant-design/pro-editor).
-
----
 
 ### ¿Qué ofrece ProFlow?
 
@@ -299,27 +317,24 @@ ProFlow es un marco de editor de flujo basado en React-Flow. Proporciona una int
 
 Si deseas obtener más información sobre ProFlow, puedes consultar su [repositorio de GitHub](https://github.com/ant-design/pro-flow).
 
----
-
 ### ¿Qué es ProChat?
 
 ProChat es una biblioteca de componentes diseñada específicamente para la construcción rápida de interfaces de chat en tiempo real. Proporciona una amplia gama de componentes listos para usar y personalizables para ayudarte a crear experiencias de chat inmersivas.
 
 Puedes encontrar más información sobre ProChat en su [repositorio de GitHub](https://github.com/ant-design/pro-chat).
 
----
+### ### 项目使用的是哪种开源许可证？
 
-### Q: 项目使用的是哪种开源许可证？
+本项目使用 MIT 许可证进行开源。
 
-A: 本项目使用 MIT 许可证进行开源。
+### ### 项目的开发团队有哪些？
 
-### Q: 项目的开发团队有哪些？
+本项目的开发团队包括 AFX、Ant Digital。
 
-A: 本项目的开发团队包括AFX、Ant Digital。
+### ### 项目使用了哪些开源工具和框架？
 
-### Q: 项目使用了哪些开源工具和框架？
+本项目使用了以下开源工具和框架：
 
-A: 本项目使用了以下开源工具和框架：
 - [Ant Design](https://ant.design)
 - [dumi](https://d.umijs.org/)
 - [umi/father](https://github.com/umijs/father)
@@ -328,9 +343,10 @@ A: 本项目使用了以下开源工具和框架：
 - [Codespaces](https://github.com/features/codespaces)
 - [npm](https://www.npmjs.com/package/@ant-design/pro-components)
 
-### Q: 项目的相关链接有哪些？
+### ### 项目的相关链接有哪些？
 
-A: 以下是本项目的相关链接：
+以下是本项目的相关链接：
+
 - GitHub 仓库：[点击这里](https://github.com/ant-design/pro-components)
 - 项目文档：[点击这里](https://d.umijs.org/)
 - 发布日期：[点击这里](https://github.com/ant-design/pro-components/releases)

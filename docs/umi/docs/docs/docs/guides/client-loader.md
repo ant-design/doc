@@ -6,7 +6,7 @@
 2. 在 `clientLoader` 函数内部，完成路由数据加载的逻辑，可以通过 `fetch` 或其他方式获取数据。
 3. 在页面组件中，通过调用 `useClientLoaderData` 钩子函数，获取 `clientLoader` 函数返回的数据。
 
-## 如何使用 `useClientLoaderData` 钩子函数获取 `clientLoader` 函数返回的数据？
+### 如何使用 `useClientLoaderData` 钩子函数获取 `clientLoader` 函数返回的数据？
 
 要使用 `useClientLoaderData` 钩子函数获取 `clientLoader` 函数返回的数据，可以按照以下步骤进行操作：
 
@@ -16,7 +16,7 @@
 
 注意，`useClientLoaderData` 钩子函数是通过 umi 提供的自定义 hooks `useClientLoaderData` 来实现的。
 
-## 如何在页面组件中显示 `clientLoader` 函数返回的数据？
+### 如何在页面组件中显示 `clientLoader` 函数返回的数据？
 
 要在页面组件中显示 `clientLoader` 函数返回的数据，可以按照以下步骤进行操作：
 
@@ -27,7 +27,7 @@
 例如，在一个 `SomePage` 组件中，可以使用以下代码来显示 `clientLoader` 函数返回的数据：
 
 ```tsx
-import { useClientLoaderData } from 'umi';
+import { useClientLoaderData } from "umi";
 
 export default function SomePage() {
   const { data } = useClientLoaderData();

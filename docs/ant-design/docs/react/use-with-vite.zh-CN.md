@@ -4,37 +4,37 @@
 
 1. 在你的 Vite 工程目录中，打开终端并执行以下命令安装 antd：
 
-   ```shell
+```shell
    npm install antd
-   ```
+```
 
-   或者，你也可以使用 yarn：
+或者，你也可以使用 yarn：
 
-   ```shell
+```shell
    yarn add antd
-   ```
+```
 
 2. 在你的入口文件（一般是 `main.js` 或 `main.tsx`）中导入 antd 组件样式：
 
-   ```javascript
-   import 'antd/dist/antd.css';
-   ```
+```javascript
+import "antd/dist/antd.css";
+```
 
-   这将会全局引入 antd 组件的样式。
+这将会全局引入 antd 组件的样式。
 
 3. 现在，你可以在你的 Vite 工程中使用 antd 组件了。只需按照官方文档的示例代码，在你的组件中导入需要的组件并使用即可。
 
-   ```jsx
-   import { Button } from 'antd';
-   
-   function App() {
-     return (
-       <div>
-         <Button type="primary">Click me</Button>
-       </div>
-     );
-   }
-   ```
+```jsx
+import { Button } from "antd";
+
+function App() {
+  return (
+    <div>
+      <Button type="primary">Click me</Button>
+    </div>
+  );
+}
+```
 
 以上就是在 Vite 中使用 antd 组件的基本步骤。如果你想要进一步自定义 Vite 的配置以满足特定需求，可以参考下面的内容。
 
@@ -50,14 +50,14 @@ Vite 提供了很多配置选项，可以帮助你满足各类工程化需求。
     server: {
       port: 3000, // 自定义端口号
       proxy: {
-        '/api': {
-          target: 'http://localhost:8080', // 自定义代理目标
+        "/api": {
+          target: "http://localhost:8080", // 自定义代理目标
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, '')
-        }
-      }
-    }
-  }
+          rewrite: (path) => path.replace(/^\/api/, ""),
+        },
+      },
+    },
+  };
   ```
 
 - **自定义构建配置**：你可以在 `vite.config.js` 文件中使用 `define` 和 `resolve` 配置项来定义全局变量和自定义模块解析规则。
@@ -71,26 +71,26 @@ Vite 提供了很多配置选项，可以帮助你满足各类工程化需求。
       },
       resolve: {
         alias: {
-          'components': '/src/components', // 自定义模块解析别名
-        }
-      }
-    }
-  }
+          components: "/src/components", // 自定义模块解析别名
+        },
+      },
+    },
+  };
   ```
 
 - **添加额外的插件和工具**：你可以在 `vite.config.js` 文件中使用 `plugins` 配置项来添加额外的插件和工具。
 
   ```javascript
   // vite.config.js
-  import vue from '@vitejs/plugin-vue';
-  import myPlugin from './plugins/myPlugin';
+  import vue from "@vitejs/plugin-vue";
+  import myPlugin from "./plugins/myPlugin";
 
   export default {
     plugins: [
       vue(), // 添加 vue 插件
       myPlugin(), // 添加自定义插件
-    ]
-  }
+    ],
+  };
   ```
 
 通过自定义 Vite 的配置，你可以满足各类工程化需求，更好地开发 React 应用。
@@ -148,7 +148,7 @@ $ npm install
 1. 在 `src/App.js` 中导入 antd 组件库：
 
 ```jsx
-import { Button } from 'antd';
+import { Button } from "antd";
 ```
 
 2. 在组件中使用 antd 的按钮组件：

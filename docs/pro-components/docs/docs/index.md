@@ -5,6 +5,7 @@ ProComponents 是基于 Ant Design 而开发的模板组件。
 ### ProComponents 提供了哪些组件？
 
 ProComponents 提供以下组件：
+
 - ProLayout 解决布局的问题，提供开箱即用的菜单和面包屑功能
 - ProTable 表格模板组件，抽象网络请求和表格格式化
 - ProForm 表单模板组件，预设常见布局和行为
@@ -16,20 +17,20 @@ ProComponents 提供以下组件：
 
 ProComponents 适用于中后台的 CRUD，预设了丰富的样式和行为。如果你的业务需要丰富的自定义，建议直接使用 Ant Design。在使用 ProComponents 之前，可以查看典型的 Demo 来判断组件是否适合你们的业务。
 
-## 如何安装 ProComponents？
+### 如何安装 ProComponents？
 
 你可以通过以下步骤来安装 ProComponents：
 
 1. 打开命令行工具，进入你的项目目录。
 2. 运行以下命令来安装 ProComponents 的 npm 包：
 
-   ```shell
-   npm i @ant-design/pro-components --save
-   ```
+```shell
+npm i @ant-design/pro-components --save
+```
 
 这样就成功安装了 ProComponents。
 
-## ProComponents 提供了哪些组件？
+### ProComponents 提供了哪些组件？
 
 ProComponents 提供了多个可直接使用的组件。你可以通过运行以下命令来安装这些组件：
 
@@ -46,8 +47,8 @@ npm i @ant-design/pro-components --save
 在项目中使用 ProForm 组件时，首先需要将该组件引入到项目中，示例如下：
 
 ```jsx
-import React from 'react';
-import { ProForm } from '@ant-design/pro-components';
+import React from "react";
+import { ProForm } from "@ant-design/pro-components";
 
 export default () => {
   return (
@@ -71,8 +72,8 @@ export default () => {
 ProFormText 是 ProForm 组件的子组件，用于创建文本输入框表单项。要使用 ProFormText 组件，需要先将其引入到项目中，示例如下：
 
 ```jsx
-import React from 'react';
-import { ProForm, ProFormText } from '@ant-design/pro-components';
+import React from "react";
+import { ProForm, ProFormText } from "@ant-design/pro-components";
 
 export default () => {
   return (
@@ -95,8 +96,8 @@ export default () => {
 在使用 ProForm 组件时，我们可以通过 onFinish 函数来处理表单的提交事件。示例代码如下：
 
 ```jsx
-import React from 'react';
-import { ProForm, ProFormText } from '@ant-design/pro-components';
+import React from "react";
+import { ProForm, ProFormText } from "@ant-design/pro-components";
 
 export default () => {
   return (

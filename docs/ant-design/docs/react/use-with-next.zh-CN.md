@@ -4,48 +4,48 @@
 
 1. 首先，确保你已经安装了 `antd` 组件库，你可以通过运行以下命令来安装：
 
-   ```
+```tsx
    npm install antd
-   ```
+```
 
 2. 在你的 Next.js 项目中，可以在需要的地方引入 `antd` 组件。你可以选择按需引入所需的组件，或者直接引入整个 `antd` 组件库。
 
-   ```jsx
-   // 按需引入
-   import { Button } from 'antd';
+```jsx
+// 按需引入
+import { Button } from "antd";
 
-   // 引入整个组件库
-   import 'antd/dist/antd.css';
-   ```
+// 引入整个组件库
+import "antd/dist/antd.css";
+```
 
 3. 在代码中使用 `antd` 组件，例如：
 
-   ```jsx
-   import { Button } from 'antd';
+```jsx
+import { Button } from "antd";
 
-   const MyButton = () => {
-     return <Button type="primary">Click me!</Button>;
-   };
+const MyButton = () => {
+  return <Button type="primary">Click me!</Button>;
+};
 
-   export default MyButton;
-   ```
+export default MyButton;
+```
 
 4. 现在你就可以在你的 Next.js 应用程序中使用 `antd` 组件了。记得在页面中正确使用组件并按照官方文档进行配置和样式的定制。
 
-   ```jsx
-   import MyButton from '../components/MyButton';
+```jsx
+import MyButton from "../components/MyButton";
 
-   const HomePage = () => {
-     return (
-       <div>
-         <h1>欢迎使用 Next.js</h1>
-         <MyButton />
-       </div>
-     );
-   };
+const HomePage = () => {
+  return (
+    <div>
+      <h1>欢迎使用 Next.js</h1>
+      <MyButton />
+    </div>
+  );
+};
 
-   export default HomePage;
-   ```
+export default HomePage;
+```
 
 通过以上步骤，你就可以在 Next.js 创建的工程中成功使用 `antd` 组件了。请确保你已经按照官方文档配置好了 Next.js，并正确引入和使用 `antd` 组件。
 
@@ -102,8 +102,8 @@ $ npm run dev
 2. 在文件中引入需要使用的 antd 组件。例如，你可以引入按钮组件：
 
 ```tsx
-import React from 'react';
-import { Button } from 'antd';
+import React from "react";
+import { Button } from "antd";
 
 const Home = () => (
   <div className="App">
@@ -120,7 +120,7 @@ export default Home;
 
 你可以参考 Next.js 的[官方文档](https://nextjs.org/)获取更多关于使用 antd 开发 Next.js 应用的信息。
 
-## 问题 1：如何在 Next.js 中使用 App Router？
+### 如何在 Next.js 中使用 App Router？
 
 如果你在 Next.js 当中使用了 App Router，并且使用 antd 作为页面组件库，你可以按照以下方式来优化 antd 组件库在你的应用中的使用体验：
 
@@ -133,8 +133,8 @@ $ npm install @ant-design/nextjs-registry --save
 2. 在 `app/layout.tsx` 文件中，使用 `AntdRegistry` 组件将 antd 首屏样式按需抽离并植入到 HTML 中，以避免页面闪动的情况。代码示例如下：
 
 ```tsx
-import React from 'react';
-import { AntdRegistry } from '@ant-design/nextjs-registry';
+import React from "react";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 const RootLayout = ({ children }: React.PropsWithChildren) => (
   <html lang="en">
@@ -151,7 +151,7 @@ export default RootLayout;
 
 如果你需要更详细的信息，可以参考 [with-nextjs-app-router-inline-style](https://github.com/ant-design/ant-design-examples/tree/main/examples/with-nextjs-app-router-inline-style)。
 
-## 问题 2：如何安装 `@ant-design/nextjs-registry`？
+### 问题 2：如何安装 `@ant-design/nextjs-registry`？
 
 要在 Next.js 应用中使用 App Router，并优化 antd 组件库的用户体验，需要安装 `@ant-design/nextjs-registry`。
 
@@ -165,7 +165,7 @@ $ npm install @ant-design/nextjs-registry --save
 
 安装完成后，你可以按照前面提到的方式在你的 Next.js 应用中使用 App Router。
 
-## 问题 3：如何在 Next.js 中使用 antd 的子组件？
+###如何在 Next.js 中使用 antd 的子组件？
 
 在 Next.js 中使用 antd 的子组件需要注意一些问题。
 
@@ -174,7 +174,7 @@ $ npm install @ant-design/nextjs-registry --save
 具体操作如下：
 
 ```tsx
-import { Select } from 'antd';
+import { Select } from "antd";
 
 const MyComponent = () => {
   return (
@@ -207,10 +207,10 @@ $ npm install @ant-design/cssinjs --save
 2. 修改 `pages/_document.tsx` 文件。在该文件中，引入所需的模块并改写 `getInitialProps` 方法。具体代码如下：
 
 ```tsx
-import React from 'react';
-import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
-import Document, { Head, Html, Main, NextScript } from 'next/document';
-import type { DocumentContext } from 'next/document';
+import React from "react";
+import { createCache, extractStyle, StyleProvider } from "@ant-design/cssinjs";
+import Document, { Head, Html, Main, NextScript } from "next/document";
+import type { DocumentContext } from "next/document";
 
 const MyDocument = () => (
   <Html lang="en">
@@ -254,12 +254,12 @@ export default MyDocument;
 
 ```ts
 // theme/themeConfig.ts
-import type { ThemeConfig } from 'antd';
+import type { ThemeConfig } from "antd";
 
 const theme: ThemeConfig = {
   token: {
     fontSize: 16,
-    colorPrimary: '#52c41a',
+    colorPrimary: "#52c41a",
   },
 };
 
@@ -269,11 +269,11 @@ export default theme;
 4. 修改 `pages/_app.tsx` 文件。在该文件中，引入 `ConfigProvider` 组件，并将自定义主题配置传递给该组件。具体代码如下：
 
 ```tsx
-import React from 'react';
-import { ConfigProvider } from 'antd';
-import type { AppProps } from 'next/app';
+import React from "react";
+import { ConfigProvider } from "antd";
+import type { AppProps } from "next/app";
 
-import theme from './theme/themeConfig';
+import theme from "./theme/themeConfig";
 
 const App = ({ Component, pageProps }: AppProps) => (
   <ConfigProvider theme={theme}>
@@ -287,8 +287,8 @@ export default App;
 5. 在页面中使用 antd。你可以在页面组件中引入需要使用的 antd 组件，并按需使用它们。以下是示例代码：
 
 ```tsx
-import React from 'react';
-import { Button } from 'antd';
+import React from "react";
+import { Button } from "antd";
 
 const Home = () => (
   <div className="App">

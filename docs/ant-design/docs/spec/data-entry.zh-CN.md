@@ -29,14 +29,17 @@
 Ant Design 的文本框（Input）组件用于输入较少的字符总数时，采用单行的输入形式。你可以通过以下步骤来使用它：
 
 1. 导入 Ant Design 的文本框组件：
-   ```javascript
-   import { Input } from 'antd';
-   ```
+
+```javascript
+import { Input } from "antd";
+```
+
 2. 在需要使用文本框的地方，添加 `<Input />` 标签：
-   ```jsx
-   <Input />
-   ```
-   
+
+```jsx
+<Input />
+```
+
 > 注意：对于一些特殊的文本（如数字和网址），你可以应用特别的样式。更多信息请参考 Ant Design 的[输入框（Input）文档](/components/input-cn)。
 
 ### 如何设置文本框（Input）的样式？
@@ -44,22 +47,32 @@ Ant Design 的文本框（Input）组件用于输入较少的字符总数时，�
 对于文本框（Input）组件的样式，你可以通过类名或者内联样式来设置。以下是两种常见的设置样式的方式：
 
 1. 通过类名设置样式：
-   ```jsx
-   <Input className="my-input" />
-   ```
-   ```css
-   .my-input {
-     width: 200px;
-     height: 30px;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-   }
-   ```
+
+```jsx
+<Input className="my-input" />
+```
+
+```css
+.my-input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+```
 
 2. 通过内联样式设置样式：
-   ```jsx
-   <Input style={{ width: '200px', height: '30px', border: '1px solid #ccc', borderRadius: '4px' }} />
-   ```
+
+```jsx
+<Input
+  style={{
+    width: "200px",
+    height: "30px",
+    border: "1px solid #ccc",
+    borderRadius: "4px",
+  }}
+/>
+```
 
 通过设置类名或内联样式，你可以自定义文本框的样式以适应你的需求。
 
@@ -68,19 +81,22 @@ Ant Design 的文本框（Input）组件用于输入较少的字符总数时，�
 Ant Design 的文本框（Input）组件提供了多种事件来处理输入框中的文本。以下是一些常用的事件和处理方式示例：
 
 1. 使用 `onChange` 事件，实时获取输入框中的文本：
-   ```jsx
-   <Input onChange={(e) => console.log(e.target.value)} />
-   ```
+
+```jsx
+<Input onChange={(e) => console.log(e.target.value)} />
+```
 
 2. 使用 `onPressEnter` 事件，监听用户按下 Enter 键的动作：
-   ```jsx
-   <Input onPressEnter={(e) => console.log(e.target.value)} />
-   ```
+
+```jsx
+<Input onPressEnter={(e) => console.log(e.target.value)} />
+```
 
 3. 使用 `value` 属性，控制输入框中的默认值：
-   ```jsx
-   <Input value="默认文本" />
-   ```
+
+```jsx
+<Input value="默认文本" />
+```
 
 通过这些事件和属性的运用，你可以处理输入框中的文本并作出相应的操作。
 
@@ -102,7 +118,7 @@ Ant Design 的文本框（Input）组件提供了多种事件来处理输入框�
 </textarea>
 ```
 
-在这个示例中，文本域的行数设置为4，列数设置为50。用户可以在文本域中输入评论内容。
+在这个示例中，文本域的行数设置为 4，列数设置为 50。用户可以在文本域中输入评论内容。
 
 希望以上信息能够帮助到你，如果还有其他问题，请随时提问。
 
@@ -148,24 +164,24 @@ Ant Design 的文本框（Input）组件提供了多种事件来处理输入框�
 
 在使用单选框时，有以下几点需要注意：
 
-1. 单选框一般多于2个，但一般少于5个，过多的选项会增加用户的选择困难和认知负担。
+1. 单选框一般多于 2 个，但一般少于 5 个，过多的选项会增加用户的选择困难和认知负担。
 2. 单选框应该明确显示所有选项，不应该使用下拉菜单等方式隐藏选项，方便用户做出选择。
 3. 单选框的选项应该简洁明了，避免使用过长的文本或复杂的描述。
 4. 单选框应该与相关内容进行适当的分组，以便用户在比较中做出选择。
 
-如果需要在网页中使用单选框，可以使用HTML的`input`标签，并将其`type`属性设置为"radio"，然后使用`label`标签来关联选项和文本。
+如果需要在网页中使用单选框，可以使用 HTML 的`input`标签，并将其`type`属性设置为"radio"，然后使用`label`标签来关联选项和文本。
 
-以下是一个使用HTML和CSS创建单选框的示例：
+以下是一个使用 HTML 和 CSS 创建单选框的示例：
 
 ```html
 <!-- HTML -->
-<input type="radio" name="option" id="option1">
+<input type="radio" name="option" id="option1" />
 <label for="option1">选项1</label>
 
-<input type="radio" name="option" id="option2">
+<input type="radio" name="option" id="option2" />
 <label for="option2">选项2</label>
 
-<input type="radio" name="option" id="option3">
+<input type="radio" name="option" id="option3" />
 <label for="option3">选项3</label>
 
 <!-- CSS -->
@@ -213,13 +229,9 @@ Ant Design 的文本框（Input）组件提供了多种事件来处理输入框�
 1. 切换单个选项的状态。
 2. 点击开关按钮会直接触发状态改变。
 
-正确示范：
-![正确示范](https://gw.alipayobjects.com/zos/rmsportal/GJNIykRlFgmVRSKNGOCg.png)
+正确示范： ![正确示范](https://gw.alipayobjects.com/zos/rmsportal/GJNIykRlFgmVRSKNGOCg.png)
 
-错误示范：
-![错误示范](https://gw.alipayobjects.com/zos/rmsportal/gLJCJDtOquBTRdBSoGYe.png)
-错误示范描述：切换「开关」结果会立即生效，无需与操作按钮搭配使用。
-
+错误示范： ![错误示范](https://gw.alipayobjects.com/zos/rmsportal/gLJCJDtOquBTRdBSoGYe.png) 错误示范描述：切换「开关」结果会立即生效，无需与操作按钮搭配使用。
 
 ### 选择列表（Dropdown）
 
@@ -318,13 +330,13 @@ Ant Design 的文本框（Input）组件提供了多种事件来处理输入框�
 以下是一个示例代码，演示了如何实现简单点击上传：
 
 ```jsx
-import React from 'react';
+import React from "react";
 
 class SimpleUpload extends React.Component {
   handleUploadClick = () => {
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.jpg, .png, .gif'; // 可以限制文件类型
+    const input = document.createElement("input");
+    input.type = "file";
+    input.accept = ".jpg, .png, .gif"; // 可以限制文件类型
     input.onchange = this.handleFileUpload;
     input.click();
   };
@@ -332,7 +344,7 @@ class SimpleUpload extends React.Component {
   handleFileUpload = (event) => {
     const file = event.target.files[0];
     // 在这里执行上传操作
-    console.log('上传文件:', file);
+    console.log("上传文件:", file);
   };
 
   render() {
@@ -361,12 +373,12 @@ export default SimpleUpload;
 以下是一个示例代码，演示了如何处理点击上传后的文件：
 
 ```jsx
-import React from 'react';
+import React from "react";
 
 class SimpleUpload extends React.Component {
   handleUploadClick = () => {
-    const input = document.createElement('input');
-    input.type = 'file';
+    const input = document.createElement("input");
+    input.type = "file";
     input.onchange = this.handleFileUpload;
     input.click();
   };
@@ -374,13 +386,13 @@ class SimpleUpload extends React.Component {
   handleFileUpload = (event) => {
     const file = event.target.files[0];
     // 在这里执行一些文件处理操作
-    console.log('文件名称:', file.name);
-    console.log('文件类型:', file.type);
-    console.log('文件大小:', file.size, 'bytes');
-    console.log('文件最后修改时间:', file.lastModifiedDate);
+    console.log("文件名称:", file.name);
+    console.log("文件类型:", file.type);
+    console.log("文件大小:", file.size, "bytes");
+    console.log("文件最后修改时间:", file.lastModifiedDate);
 
     // 在这里执行上传操作
-    console.log('上传文件:', file);
+    console.log("上传文件:", file);
   };
 
   render() {
@@ -403,7 +415,7 @@ export default SimpleUpload;
 
 ```jsx
 // 示例代码
-import React from 'react';
+import React from "react";
 
 const ImagePreview = ({ children }) => {
   return (
@@ -421,13 +433,16 @@ export default ImagePreview;
 
 ```jsx
 // 示例代码
-import React from 'react';
-import ImagePreview from './ImagePreview';
+import React from "react";
+import ImagePreview from "./ImagePreview";
 
 const MyComponent = () => {
   return (
     <ImagePreview>
-      <img className="preview-img no-padding" src="https://gw.alipayobjects.com/zos/rmsportal/HQvQFtYdIQKoUOjgSFQP.png" />
+      <img
+        className="preview-img no-padding"
+        src="https://gw.alipayobjects.com/zos/rmsportal/HQvQFtYdIQKoUOjgSFQP.png"
+      />
     </ImagePreview>
   );
 };
@@ -443,7 +458,7 @@ export default MyComponent;
 
 ```jsx
 // 示例代码
-import React from 'react';
+import React from "react";
 
 const ImagePreview = ({ children, photoLimit }) => {
   const photoCount = children.length;
@@ -466,7 +481,7 @@ export default ImagePreview;
 
 在使用显示缩略图上传功能时，可以注意以下几个问题：
 
-1. 图片格式支持：要确保上传的图片格式是支持的常见格式，如JPEG、PNG等。
+1. 图片格式支持：要确保上传的图片格式是支持的常见格式，如 JPEG、PNG 等。
 2. 图片大小限制：要设置图片的大小限制，避免上传过大的图片导致页面加载缓慢或崩溃。
 3. 图片预览样式：可以根据需求自定义缩略图的大小、边框样式等。
 4. 错误处理：要处理上传过程中可能出现的错误，如上传失败、网络错误等。
@@ -475,9 +490,11 @@ export default ImagePreview;
 通过注意以上问题，可以更好地使用显示缩略图上传功能。
 
 ### 如何实现拖拽上传功能？
+
 你可以通过在指定区域绑定拖拽事件，监听文件的拖入。当文件被拖入时，可以调用上传的逻辑进行文件上传。
 
 具体实现步骤如下：
+
 1. 在指定区域添加一个拖拽区域，可以是一个 `<div>` 元素。
 2. 给拖拽区域绑定 `dragover` 事件，阻止默认行为，和 `dragenter`、`dragleave` 等事件的监听器。
 3. 在 `dragover` 事件中，阻止事件的默认行为，显示用户可进行拖拽的提示，比如改变拖拽区域的边框颜色等。
@@ -489,9 +506,11 @@ export default ImagePreview;
 通过以上步骤，你可以实现拖拽上传的功能。
 
 ### 文件上传需要注意哪些细节？
+
 文件上传是一个常见的功能，但是在实现时需要注意一些细节，以提供更好的用户体验。
 
 下面是一些文件上传的注意事项：
+
 1. 提供用户明确的文件大小和文件格式要求，以便用户选择符合要求的文件。
 2. 在文件上传过程中，应该给用户提供明确的进度提示，比如上传进度条或百分比进度。
 3. 如果上传的文件比较大，可以考虑使用分片上传，以提高上传的速度和稳定性。

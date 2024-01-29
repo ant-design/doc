@@ -15,10 +15,10 @@
 在 React 中使用内联样式，你可以使用 `@ant-design/cssinjs` 包提供的功能。首先，需要引入所需的模块：
 
 ```tsx
-import React from 'react';
-import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
-import type Entity from '@ant-design/cssinjs/es/Cache';
-import { renderToString } from 'react-dom/server';
+import React from "react";
+import { createCache, extractStyle, StyleProvider } from "@ant-design/cssinjs";
+import type Entity from "@ant-design/cssinjs/es/Cache";
+import { renderToString } from "react-dom/server";
 ```
 
 然后，创建一个组件，使用 `StyleProvider` 包裹该组件，并传入一个 `cache` 对象作为参数：
@@ -43,7 +43,7 @@ const App = () => {
 const html = renderToString(
   <StyleProvider cache={cache}>
     <MyApp />
-  </StyleProvider>
+  </StyleProvider>,
 );
 ```
 
@@ -71,60 +71,60 @@ return `
 
 这样，在使用 `@ant-design/cssinjs` 的过程中，你可以在 React 组件中使用内联样式，并通过服务器端渲染将样式转换为 HTML 字符串。
 
-## 如何将样式文件抽离到 css 文件中？
+### 如何将样式文件抽离到 css 文件中？
 
 如果你想要将样式文件抽离到 css 文件中，可以尝试以下方案：
 
-1. 安装依赖
-   执行以下命令安装所需的依赖包：
-   ```
+1. 安装依赖执行以下命令安装所需的依赖包：
+
+```tsx
    npm install ts-node tslib cross-env --save-dev
-   ```
+```
 
-2. 新增 tsconfig.node.json 文件
-   在项目根目录下创建一个名为 `tsconfig.node.json` 的文件，并将以下内容添加到文件中：
-   ```json
-   {
-     "compilerOptions": {
-       "strictNullChecks": true,
-       "module": "NodeNext",
-       "jsx": "react",
-       "esModuleInterop": true
-     },
-     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
-   }
-   ```
+2. 新增 tsconfig.node.json 文件在项目根目录下创建一个名为 `tsconfig.node.json` 的文件，并将以下内容添加到文件中：
 
-3. 新增 scripts/genAntdCss.tsx 文件
-   在项目根目录下创建一个名为 `scripts/genAntdCss.tsx` 的文件，并将以下内容添加到文件中：
-   ```tsx
-   // scripts/genAntdCss.tsx
-   import fs from 'fs';
-   import { extractStyle } from '@ant-design/static-style-extract';
-   
-   const outputPath = './public/antd.min.css';
-   
-   const css = extractStyle();
-   
-   fs.writeFileSync(outputPath, css);
-   ```
+```json
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "module": "NodeNext",
+    "jsx": "react",
+    "esModuleInterop": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}
+```
+
+3. 新增 scripts/genAntdCss.tsx 文件在项目根目录下创建一个名为 `scripts/genAntdCss.tsx` 的文件，并将以下内容添加到文件中：
+
+```tsx
+// scripts/genAntdCss.tsx
+import fs from "fs";
+import { extractStyle } from "@ant-design/static-style-extract";
+
+const outputPath = "./public/antd.min.css";
+
+const css = extractStyle();
+
+fs.writeFileSync(outputPath, css);
+```
 
 以上步骤完成后，运行 `scripts/genAntdCss.tsx` 脚本将会在当前项目的 `public` 目录下直接生成一个全量的 `antd.min.css` 文件，该文件即为抽离样式后的 CSS 文件。
 
-## 如何使用混合主题或自定义主题？
+### 如何使用混合主题或自定义主题？
 
 若你想使用混合主题或自定义主题，可采用以下脚本：
 
 ```tsx
-import fs from 'fs';
-import React from 'react';
-import { extractStyle } from '@ant-design/static-style-extract';
-import { ConfigProvider } from 'antd';
+import fs from "fs";
+import React from "react";
+import { extractStyle } from "@ant-design/static-style-extract";
+import { ConfigProvider } from "antd";
 
-const outputPath = './public/antd.min.css';
+const outputPath = "./public/antd.min.css";
 
-const testGreenColor = '#008000';
-const testRedColor = '#ff0000';
+const testGreenColor = "#008000";
+const testRedColor = "#ff0000";
 
 const css = extractStyle((node) => (
   <>
@@ -162,22 +162,22 @@ fs.writeFileSync(outputPath, css);
 
 以上脚本将在运行时生成一个包含混合主题或自定义主题的 CSS 文件，并将其写入到 `public/antd.min.css` 文件中。
 
-## 如何在 Next.js 中引入抽离后的样式文件？
+### 如何在 Next.js 中引入抽离后的样式文件？
 
 以 Next.js 为例，可以按照以下步骤引入抽离后的样式文件：
 
-1. 在 package.json 中添加脚本依赖
-   打开 `package.json` 文件，找到 `"scripts"` 字段，添加以下两行脚本：
-   ```json
+1. 在 package.json 中添加脚本依赖打开 `package.json` 文件，找到 `"scripts"` 字段，添加以下两行脚本：
+
+```json
    "predev": "ts-node --project ./tsconfig.node.json ./scripts/genAntdCss.tsx",
    "prebuild": "cross-env NODE_ENV=production ts-node --project ./tsconfig.node.json ./scripts/genAntdCss.tsx"
-   ```
+```
 
-2. 在 pages/_app.tsx 中引入样式文件
-   打开 `pages/_app.tsx` 文件，在文件开头添加以下行代码：
-   ```tsx
-   import '../public/antd.min.css';
-   ```
+2. 在 pages/\_app.tsx 中引入样式文件打开 `pages/_app.tsx` 文件，在文件开头添加以下行代码：
+
+```tsx
+import "../public/antd.min.css";
+```
 
 以上步骤完成后，运行开发命令或编译命令时，会在项目的 `public` 目录下生成一个全量的 `antd.min.css` 文件。然后，在 `_app.tsx` 文件中引入该文件即可实现样式文件的抽离和使用。
 
@@ -188,7 +188,7 @@ fs.writeFileSync(outputPath, css);
 首先，你需要引入 `@ant-design/static-style-extract` 模块，并使用其中的 `extractStyle` 方法对样式进行提取。代码示例如下：
 
 ```tsx
-import { extractStyle } from '@ant-design/static-style-extract';
+import { extractStyle } from "@ant-design/static-style-extract";
 
 const cssText = extractStyle((node) => {
   // 在这里你可以使用任何你想要自定义的样式
@@ -199,19 +199,19 @@ const cssText = extractStyle((node) => {
 然后，在你的项目中，你可以使用 `ConfigProvider` 组件来设置自定义主题。在 `theme` 属性中，你可以指定各种样式的主题配置。以下是一个示例代码：
 
 ```tsx
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from "antd";
 
 // 在这里使用 ConfigProvider 组件，并在 theme 属性中设置自定义主题
 <ConfigProvider
   theme={{
     // 在这里设置你的自定义主题样式
     token: {
-      colorPrimary: 'red',
+      colorPrimary: "red",
     },
   }}
 >
   // 在这里放置你的组件和内容
-</ConfigProvider>
+</ConfigProvider>;
 ```
 
 这样就可以在项目中使用自定义主题了。
@@ -223,8 +223,8 @@ import { ConfigProvider } from 'antd';
 可以通过以下方式将样式应用到页面中：
 
 ```tsx
-import React from 'react';
-import { renderToString } from 'react-dom/server';
+import React from "react";
+import { renderToString } from "react-dom/server";
 
 // 将提取到的样式添加到页面中
 const html = `
@@ -248,14 +248,14 @@ const renderedHTML = renderToString(<App />);
 以下是一个示例代码：
 
 ```tsx
-import React, { useState } from 'react';
-import { ConfigProvider, Button } from 'antd';
+import React, { useState } from "react";
+import { ConfigProvider, Button } from "antd";
 
 const App = () => {
   const [theme, setTheme] = useState({
     // 初始主题配置
     token: {
-      colorPrimary: 'red',
+      colorPrimary: "red",
     },
   });
 
@@ -263,10 +263,10 @@ const App = () => {
     // 在这里根据用户的选择更新主题配置
     const newTheme = {
       token: {
-        colorPrimary: 'blue',
+        colorPrimary: "blue",
       },
     };
-  
+
     setTheme(newTheme);
   };
 
@@ -285,19 +285,20 @@ const App = () => {
 
 希望以上内容对你有所帮助！如果有任何问题，请随时向我提问。
 
-## 如何在项目中使用混合主题？
+### 如何在项目中使用混合主题？
+
 如果你的项目中使用了混合主题，你可以尝试使用 `static-style-extract` 来进行烘焙。具体的实现方法如下：
 
 ```tsx
-import { extractStyle } from '@ant-design/static-style-extract';
-import { ConfigProvider } from 'antd';
+import { extractStyle } from "@ant-design/static-style-extract";
+import { ConfigProvider } from "antd";
 
 const cssText = extractStyle((node) => (
   <>
     <ConfigProvider
       theme={{
         token: {
-          colorBgBase: 'green ',
+          colorBgBase: "green ",
         },
       }}
     >
@@ -306,14 +307,14 @@ const cssText = extractStyle((node) => (
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: 'blue',
+          colorPrimary: "blue",
         },
       }}
     >
       <ConfigProvider
         theme={{
           token: {
-            colorBgBase: 'red ',
+            colorBgBase: "red ",
           },
         }}
       >
@@ -326,27 +327,34 @@ const cssText = extractStyle((node) => (
 
 你可以在项目中按照上述代码编写，然后通过 `static-style-extract` 来提取出生成的样式。更多关于 `static-style-extract` 的细节，你可以参考 [static-style-extract](https://github.com/ant-design/static-style-extract)。
 
-## `static-style-extract` 是什么？
+### `static-style-extract` 是什么？
+
 `static-style-extract` 是一个用于提取静态样式的工具，它可以帮助你将设计规范中的样式提取出来，然后在项目中使用。在使用 `static-style-extract` 的过程中，你需要按照其提供的 API 将你的组件包裹起来，然后 `static-style-extract` 会扫描你的组件并提取出其中的样式，并将其生成为可以在你的项目中使用的 CSS 文本。这样，你就可以在项目中使用这些设计规范中的样式了。
 
-## `ConfigProvider` 是什么？
-`ConfigProvider` 是 Ant Design 提供的一个组件，它可以用来设置整个应用的主题配置。通过在 `ConfigProvider` 中配置不同的主题，你可以实现在项目中使用不同的主题。
-在上面的代码中，我们通过多次嵌套使用 `ConfigProvider` 组件来实现混合主题的效果。每个 `ConfigProvider` 组件都可以单独设置不同的主题配置，从而实现了混合主题的效果。
+### `ConfigProvider` 是什么？
+
+`ConfigProvider` 是 Ant Design 提供的一个组件，它可以用来设置整个应用的主题配置。通过在 `ConfigProvider` 中配置不同的主题，你可以实现在项目中使用不同的主题。在上面的代码中，我们通过多次嵌套使用 `ConfigProvider` 组件来实现混合主题的效果。每个 `ConfigProvider` 组件都可以单独设置不同的主题配置，从而实现了混合主题的效果。
 
 ### 如何使用 `genAntdCss.tsx` 文件中的 `doExtraStyle` 函数？
 
 要使用 `genAntdCss.tsx` 文件中的 `doExtraStyle` 函数，首先需要安装依赖。然后，在需要使用的文件中导入 `doExtraStyle` 函数，并调用它。
 
 具体的步骤如下：
+
 1. 在项目根目录下执行以下命令安装所需依赖：
+
 ```bash
 npm install crypto fs path @ant-design/cssinjs
 ```
+
 2. 在需要使用 `doExtraStyle` 函数的文件中，导入 `doExtraStyle` 函数：
+
 ```typescript
-import { doExtraStyle } from '路径/to/genAntdCss';
+import { doExtraStyle } from "路径/to/genAntdCss";
 ```
+
 3. 调用 `doExtraStyle` 函数，并传入相应的参数：
+
 ```typescript
 const fileName = doExtraStyle({ cache });
 ```
@@ -358,17 +366,25 @@ const fileName = doExtraStyle({ cache });
 在 `_document.tsx` 文件中使用 `doExtraStyle` 函数导出样式，可以按需导出已使用的样式，并在页面中加载该样式。
 
 具体的步骤如下：
+
 1. 在 `_document.tsx` 文件中导入 `doExtraStyle` 函数：
+
 ```typescript
-import { doExtraStyle } from '路径/to/genAntdCss';
+import { doExtraStyle } from "路径/to/genAntdCss";
 ```
+
 2. 在 `getInitialProps` 方法中调用 `doExtraStyle` 函数，并获取返回的文件名：
+
 ```typescript
 const fileName = doExtraStyle({ cache });
 ```
+
 3. 将获取到的文件名添加到页面的 `<Head>` 部分中：
+
 ```tsx
-{fileName && <link rel="stylesheet" href={`/${fileName}`} />}
+{
+  fileName && <link rel="stylesheet" href={`/${fileName}`} />;
+}
 ```
 
 这样就可以按需导出已使用的样式，并在页面加载该样式了。通过这种方式，可以减少页面加载所需的样式文件大小，并提升性能。
@@ -378,12 +394,16 @@ const fileName = doExtraStyle({ cache });
 要在 Next.js 项目中使用 `genAntdCss.tsx` 文件，需要将 `genAntdCss.tsx` 文件复制到项目中的相应位置，并进行相应的导入和调用。
 
 具体的步骤如下：
+
 1. 将 `genAntdCss.tsx` 文件复制到项目中的一个合适的位置，例如 `scripts` 目录。
 2. 在需要使用 `doExtraStyle` 函数的文件中，导入 `doExtraStyle` 函数：
+
 ```typescript
-import { doExtraStyle } from '路径/to/genAntdCss';
+import { doExtraStyle } from "路径/to/genAntdCss";
 ```
+
 3. 调用 `doExtraStyle` 函数，并传入相应的参数：
+
 ```typescript
 const fileName = doExtraStyle({ cache });
 ```

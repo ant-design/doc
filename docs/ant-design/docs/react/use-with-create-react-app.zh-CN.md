@@ -1,16 +1,16 @@
-### Q1: create-react-app 是什么？
+### Qcreate-react-app 是什么？
 
-A1: `create-react-app` 是业界最优秀的 React 应用开发工具之一。
+A`create-react-app` 是业界最优秀的 React 应用开发工具之一。
 
-### Q2: 如何在 create-react-app 中使用 antd？
+### Q 如何在 create-react-app 中使用 antd？
 
-A2: 在 create-react-app 中使用 antd，需要先创建一个 TypeScript 项目，并引入 antd。确保项目中使用匹配的 antd 版本。
+A 在 create-react-app 中使用 antd，需要先创建一个 TypeScript 项目，并引入 antd。确保项目中使用匹配的 antd 版本。
 
-### Q3: antd 基于什么版本的 TypeScript？
+### Q antd 基于什么版本的 TypeScript？
 
-A3: antd 基于最新稳定版本的 TypeScript（>=5.0.0）。
+A antd 基于最新稳定版本的 TypeScript（>=5.0.0）。
 
-## 如何安装和初始化项目？
+### 如何安装和初始化项目？
 
 在开始之前，你需要安装 `yarn` 或者 `pnpm`，你可以使用以下命令来进行安装：
 
@@ -39,7 +39,7 @@ $ npm run start
 
 此时，你的浏览器将自动打开一个页面，访问 http://localhost:3000/，并显示 `Welcome to React` 的界面。这意味着安装和初始化项目成功了。
 
-## 如何启动项目？
+### 如何启动项目？
 
 在项目初始化完成后，你可以使用以下命令来启动项目：
 
@@ -50,7 +50,7 @@ $ npm run start
 
 执行以上命令后，你的浏览器会自动打开一个页面，并访问 http://localhost:3000/。在页面上你将看到 `Welcome to React` 的界面，这意味着项目启动成功。
 
-## 如果遇到网络问题怎么办？
+### 如果遇到网络问题怎么办？
 
 如果在安装或初始化项目的过程中遇到网络问题，你可以尝试以下解决方案：
 
@@ -83,8 +83,8 @@ $ pnpm install antd --save
 安装完成后，你可以在项目中引入 antd 组件。例如，在 `src/App.js` 文件中，你可以按如下方式引入 antd 的按钮组件：
 
 ```tsx
-import React from 'react';
-import { Button } from 'antd';
+import React from "react";
+import { Button } from "antd";
 
 const App: React.FC = () => (
   <div className="App">
@@ -103,35 +103,35 @@ export default App;
 
 1. 在项目根目录下，使用命令安装 antd：
 
-   ```
+```tsx
    $ npm install antd --save
-   ```
+```
 
-   或者
+或者
 
-   ```
+```tsx
    $ yarn add antd
-   ```
+```
 
-   或者
+或者
 
-   ```
+```tsx
    $ pnpm install antd --save
-   ```
+```
 
 2. 在你想要使用 antd 组件的文件中，使用 `import` 语句来引入需要的组件，例如：
 
-   ```tsx
-   import { Button } from 'antd';
-   ```
+```tsx
+import { Button } from "antd";
+```
 
 3. 在需要使用 antd 组件的地方直接使用它们，例如：
 
-   ```tsx
-   <Button type="primary">Button</Button>
-   ```
+```tsx
+<Button type="primary">Button</Button>
+```
 
-   这样，在应用中就可以使用 antd 的组件了。
+这样，在应用中就可以使用 antd 的组件了。
 
 4. 如果你还需要其他的 antd 组件，可以在相应的文件中引入并使用它们。
 
@@ -142,11 +142,11 @@ export default App;
 要配置自定义主题，可以参考 Ant Design 的 [配置主题](/docs/react/customize-theme) 文档。在你的应用中，可以通过`ConfigProvider`组件进行主题配置。下面是一个示例：
 
 ```tsx
-import React from 'react';
-import { ConfigProvider } from 'antd';
+import React from "react";
+import { ConfigProvider } from "antd";
 
 const App: React.FC = () => (
-  <ConfigProvider theme={{ token: { colorPrimary: '#00b96b' } }}>
+  <ConfigProvider theme={{ token: { colorPrimary: "#00b96b" } }}>
     <MyApp />
   </ConfigProvider>
 );

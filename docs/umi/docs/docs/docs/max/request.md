@@ -7,11 +7,11 @@
 `request` 方法是 `@umijs/max` 提供的网络请求方法，可以用于发送请求。使用方法如下：
 
 ```ts
-import { request } from 'umi';
+import { request } from "umi";
 
 request({
-  url: 'https://example.com/api',
-  method: 'GET',
+  url: "https://example.com/api",
+  method: "GET",
   // 其他配置项
 })
   .then((response) => {
@@ -27,11 +27,11 @@ request({
 `useRequest` 是 `@umijs/max` 提供的用于进行网络请求和错误处理的 hooks 函数。使用方法如下：
 
 ```ts
-import { useRequest } from 'umi';
+import { useRequest } from "umi";
 
 const { data, error, loading } = useRequest({
-  url: 'https://example.com/api',
-  method: 'GET',
+  url: "https://example.com/api",
+  method: "GET",
   // 其他配置项
 });
 
@@ -84,7 +84,7 @@ if (loading) {
 ### 完整的运行时配置示例
 
 ```ts
-import type { RequestConfig } from 'umi';
+import type { RequestConfig } from "umi";
 
 export const request: RequestConfig = {
   timeout: 1000,
@@ -122,17 +122,17 @@ export const request: RequestConfig = {
 ```javascript
 const errorThrower = (responseData) => {
   if (responseData.code === 500) {
-    throw new Error('服务器错误');
+    throw new Error("服务器错误");
   } else if (responseData.code === 404) {
-    throw new Error('请求地址不存在');
+    throw new Error("请求地址不存在");
   } else {
-    throw new Error('请求失败');
+    throw new Error("请求失败");
   }
 };
 
 const errorHandler = (error, opts) => {
-  console.error('请求出错：', error);
-  console.log('请求配置：', opts);
+  console.error("请求出错：", error);
+  console.log("请求配置：", opts);
 };
 
 const request = extend({
@@ -142,8 +142,8 @@ const request = extend({
   },
 });
 
-request('/api/data').catch((error) => {
-  console.error('请求失败：', error);
+request("/api/data").catch((error) => {
+  console.error("请求失败：", error);
 });
 ```
 
@@ -225,7 +225,7 @@ useRequest 是一个插件内置的 React Hook，用于在组件内部简化数�
 
 ```typescript
 const { data, error, loading } = useRequest(() => {
-  return services.getUserList('/api/test');
+  return services.getUserList("/api/test");
 });
 ```
 
@@ -268,7 +268,7 @@ RequestConfig 接口是一个用于配置运行时配置的接口。通过该接
 在使用 RequestConfig 接口之前，需要先导入该接口。可以通过以下代码进行导入：
 
 ```typescript
-import type { RequestConfig } from 'umi';
+import type { RequestConfig } from "umi";
 ```
 
 注意，在导入时要加上 `type` 关键字。
@@ -390,9 +390,9 @@ export const request: RequestConfig = {
 
 ### Umi@3 和 Umi@4 在序列化 GET 请求参数时有什么不同？
 
-在 Umi@3 中，会使用相同的 Key 来序列化数组。例如，对于参数 `{ a: [1,2,3] }`，序列化后的形式是 `a=1&a=2&a=3`。
+在 Umi@3 中，会使用相同的 Key 来序列化数组。例如，对于参数 `{ [1,2,3] }`，序列化后的形式是 `a=1&a=2&a=3`。
 
-而在 Umi@4 中，默认会使用 `[]` 的形式序列化数组。例如，对于参数 `{ a: [1,2,3] }`，序列化后的形式是 `a[]=1&a[]=2&a[]=3`。
+而在 Umi@4 中，默认会使用 `[]` 的形式序列化数组。例如，对于参数 `{ [1,2,3] }`，序列化后的形式是 `a[]=1&a[]=2&a[]=3`。
 
 这是因为 Umi@4 中的请求库 @umijs/max 默认采用了这种较新的形式。如果希望保持 Umi@3 的序列化形式，可以按照上述方法进行修改。
 

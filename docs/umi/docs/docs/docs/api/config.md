@@ -18,10 +18,10 @@
 以下是一个最简单的 umi 配置文件的范例：
 
 ```ts
-import { defineConfig } from 'umi';
+import { defineConfig } from "umi";
 
 export default defineConfig({
-  outputPath: 'dist',
+  outputPath: "dist",
 });
 ```
 
@@ -35,12 +35,12 @@ export default defineConfig({
 
 请注意，你无需了解每个配置的作用，只需要在需要时查看如何启用和修改所需的配置即可。
 
-## alias配置项是什么作用？
+### alias 配置项是什么作用？
 
 - 类型：`Record<string, string>`
 - 默认值：`{}`
 
-alias配置项用来配置别名，将import语句中的源路径映射成目标路径。
+alias 配置项用来配置别名，将 import 语句中的源路径映射成目标路径。
 
 例如，我们可以这样配置：
 
@@ -54,9 +54,9 @@ alias配置项用来配置别名，将import语句中的源路径映射成目标
 
 这样，在代码中使用`import 'foo'`时，实际上会加载`/tmp/to/foo`。
 
-## 如何正确配置alias？
+### 如何正确配置 alias？
 
-有几个配置alias的小贴士：
+有几个配置 alias 的小贴士：
 
 1. 最好使用绝对路径作为别名的值，特别是当别名指向依赖时，记得使用`require.resolve`来获取绝对路径，例如：
 
@@ -94,9 +94,9 @@ alias配置项用来配置别名，将import语句中的源路径映射成目标
 }
 ```
 
-通过以上配置的小贴士，可以更灵活地配置alias，实现路径映射的需求。
+通过以上配置的小贴士，可以更灵活地配置 alias，实现路径映射的需求。
 
-## autoprefixer
+### autoprefixer
 
 **类型**：object
 
@@ -106,19 +106,13 @@ autoprefixer 是一个用于解析 CSS 并自动添加供应商前缀的工具�
 
 你可以在 [autoprefixer 的配置项](https://github.com/postcss/autoprefixer#options) 查看更多配置信息。
 
----
-
 **问：autoprefixer 的作用是什么？**
 
 答：autoprefixer 用于解析 CSS 并根据 Can I Use 的数据为 CSS 规则自动添加供应商前缀。
 
----
-
 **问：autoprefixer 的默认配置是什么？**
 
 答：autoprefixer 的默认配置是 `{ flexbox: 'no-2009' }`。
-
----
 
 **问：我可以如何配置 autoprefixer？**
 
@@ -147,7 +141,6 @@ autoprefixer 是一个用于解析 CSS 并自动添加供应商前缀的工具�
 
 如果你使用的是 Vite 模式，可以使用自定义的 [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer) 配置，并且相关的选项会自动转换适配。
 
-
 ### base 配置是什么？
 
 - 类型：`string`
@@ -175,44 +168,44 @@ autoprefixer 是一个用于解析 CSS 并自动添加供应商前缀的工具�
 cacheDirectoryPath: 'node_modules/.cache1',
 ```
 
-## chainWebpack 的作用是什么？
+### chainWebpack 的作用是什么？
 
 chainWebpack 是一个函数，用于扩展 Umi 内置的 webpack 配置。通过链式编程的方式修改 webpack 配置，可以对现有的 webpack 配置进行定制化的修改。
 
-## chainWebpack 函数的参数有哪些？
+### chainWebpack 函数的参数有哪些？
 
 chainWebpack 函数接受两个参数：
 
 1. `memo`：现有的 webpack 配置。可以通过修改 `memo` 来对 webpack 配置进行修改。
 2. `args`：包含一些额外信息和辅助对象的参数。目前有两个属性：
-    - `env`：表示当前环境，值为 "development" 或 "production"。
-    - `webpack`：Webpack 对象，可以从中获取 webpack 内置插件等。
+   - `env`：表示当前环境，值为 "development" 或 "production"。
+   - `webpack`：Webpack 对象，可以从中获取 webpack 内置插件等。
 
-## 如何在 chainWebpack 中修改 webpack 配置？
+### 如何在 chainWebpack 中修改 webpack 配置？
 
 可以通过修改 `memo` 对象来对 webpack 配置进行定制化的修改。以下是一些使用示例：
 
 - 设置 alias：
 
   ```js
-  memo.resolve.alias.set('foo', '/tmp/to/foo');
+  memo.resolve.alias.set("foo", "/tmp/to/foo");
   ```
 
 - 添加额外插件：
 
   ```js
-  memo.plugin('hello').use(Plugin, [...args]);
+  memo.plugin("hello").use(Plugin, [...args]);
   ```
 
 - 删除 Umi 内置插件：
 
   ```js
-  memo.plugins.delete('hmr');
+  memo.plugins.delete("hmr");
   ```
 
 可以根据具体需求使用不同的链式编程 API 来对 webpack 配置进行修改。
 
-## 如何使用 chainWebpack 函数？
+### 如何使用 chainWebpack 函数？
 
 在 Umi 的配置文件中，通过导出一个对象的方式来定义配置项，其中包含了一个名为 `chainWebpack` 的函数。将需要的修改逻辑写在 `chainWebpack` 函数中即可。
 
@@ -248,7 +241,7 @@ clickToComponent 的默认值是 `false`。
 
 clickToComponent 的 `editor` 参数代表编辑器名称，默认为 'vscode'，也支持 `vscode` 和 `vscode-insiders`。
 
-更多关于 clickToComponent 的配置信息，请参考 [click-to-component](https://github.com/ericclemmons/click-to-component)。 
+更多关于 clickToComponent 的配置信息，请参考 [click-to-component](https://github.com/ericclemmons/click-to-component)。
 
 ### 如何配置 clickToComponent？
 
@@ -261,15 +254,15 @@ export default {
 };
 ```
 
-## clientLoader 是什么类型的数据？
+### clientLoader 是什么类型的数据？
 
 clientLoader 是一个对象类型的数据。
 
-## clientLoader 的默认值是什么？
+### clientLoader 的默认值是什么？
 
 clientLoader 的默认值是 `false`。
 
-## 如何开启 clientLoader？
+### 如何开启 clientLoader？
 
 要开启 clientLoader，需要在 `.umirc.ts` 配置文件中设置 `clientLoader` 属性为一个空对象 `{}`。具体配置方式如下：
 
@@ -298,7 +291,7 @@ codeSplitting 的默认值为 `null`。
 
 一般情况下，建议使用 granularChunks 策略作为 codeSplitting 的方案。这个方案在尺寸和缓存效率上都能有更好的平衡。当然，具体的选择还要根据项目的规模和特殊需求来进行评估和决策。
 
-## conventionRoutes
+### conventionRoutes
 
 ### 类型
 
@@ -316,7 +309,7 @@ codeSplitting 的默认值为 `null`。
 
 > 你可以参考[约定式路由](../guides/routes#约定式路由)了解更多详细说明。
 
-## 修改约定式路由规则
+### 修改约定式路由规则
 
 ### 类型
 
@@ -334,7 +327,7 @@ codeSplitting 的默认值为 `null`。
 
 > 如需详细了解约定式路由，请参考[约定式路由](../guides/routes#约定式路由)。
 
-## 约定式路由配置说明
+### 约定式路由配置说明
 
 ### 类型
 
@@ -366,15 +359,15 @@ conventionRoutes: {
 
 以上的配置会将 `components` 和 `models` 目录下的文件排除在路由识别之外。
 
-## copy 类型是什么？
+### copy 类型是什么？
 
 copy 是一个数组类型，可以包含字符串或对象类型。字符串表示要复制到输出目录的文件或文件夹。对象类型可以配置具体的拷贝位置，包括 from（源文件或文件夹路径）和 to（目标文件夹路径）属性。
 
-## copy 的默认值是什么？
+### copy 的默认值是什么？
 
 copy 的默认值是一个空数组，即 `[]`。
 
-## 如何配置 copy？
+### 如何配置 copy？
 
 可以通过数组方式配置要复制到输出目录的文件或文件夹。数组中的每个元素可以是字符串或对象。
 
@@ -384,7 +377,7 @@ copy 的默认值是一个空数组，即 `[]`。
 例如：
 
 ```ts
-copy: ['foo.json', 'src/bar.json']
+copy: ["foo.json", "src/bar.json"];
 ```
 
 上述配置将会把 foo.json 和 src/bar.json 文件拷贝到产物目录，并生成相应的目录结构：
@@ -402,9 +395,9 @@ copy: ['foo.json', 'src/bar.json']
 
 ```ts
 copy: [
-  { from: 'from', to: 'dist/output' },
-  { from: 'file.json', to: 'dist' }
-]
+  { from: "from", to: "dist/output" },
+  { from: "file.json", to: "dist" },
+];
 ```
 
 上述配置将会把 from 文件夹下的内容拷贝到 dist/output 文件夹中，并将 file.json 文件拷贝到 dist 文件夹中，并生成相应的目录结构：
@@ -436,7 +429,8 @@ crossorigin 的默认值是 `false`。
 例如：
 
 ```javascript
-crossorigin: {}
+crossorigin: {
+}
 ```
 
 在输出的 HTML 中会有以下变化：
@@ -467,7 +461,7 @@ cssMinifier 是一个配置项，用于指定构建过程中使用的 CSS 压缩
 
 ```js
 {
-  cssMinifier: 'esbuild'
+  cssMinifier: "esbuild";
 }
 ```
 
@@ -483,13 +477,14 @@ cssMinifier 是一个配置项，用于指定构建过程中使用的 CSS 压缩
 
 以上就是关于 cssMinifier 的介绍，希望对你有所帮助！
 
-## cssMinifierOptions
+### cssMinifierOptions
 
 ### 类型：`object`
 
 ### 默认值：`{}`
 
 ### 说明：
+
 `cssMinifier` 是一个用于压缩 CSS 的工具，而 `cssMinifierOptions` 则是它的配置选项。
 
 ### 示例：
@@ -505,18 +500,19 @@ cssMinifier 是一个配置项，用于指定构建过程中使用的 CSS 压缩
 ```
 
 ### 相关文档链接：
+
 - [esbuild 参考](https://esbuild.github.io/api/#minify)
 - [cssnano 参考](https://cssnano.co/docs/config-file/)
 - [parcelCSS 参考](https://github.com/parcel-bundler/parcel-css/blob/master/node/index.d.ts)
 
-
-## CSS 压缩工具配置选项
+### CSS 压缩工具配置选项
 
 ### 类型：`object`
 
 ### 默认值：`{}`
 
 ### 说明：
+
 `cssMinifierOptions` 是 CSS 压缩工具的配置选项之一。
 
 ### 示例：
@@ -531,18 +527,19 @@ cssMinifier 是一个配置项，用于指定构建过程中使用的 CSS 压缩
 ```
 
 ### 相关文档链接：
+
 - [esbuild 参考](https://esbuild.github.io/api/#minify)
 - [cssnano 参考](https://cssnano.co/docs/config-file/)
 - [parcelCSS 参考](https://github.com/parcel-bundler/parcel-css/blob/master/node/index.d.ts)
 
-
-## CSS 压缩工具的配置选项
+### CSS 压缩工具的配置选项
 
 ### 类型：`object`
 
 ### 默认值：`{}`
 
 ### 说明：
+
 `cssMinifierOptions` 是 CSS 压缩工具的配置选项。
 
 ### 示例：
@@ -557,6 +554,7 @@ cssMinifier 是一个配置项，用于指定构建过程中使用的 CSS 压缩
 ```
 
 ### 相关文档链接：
+
 - [esbuild 参考](https://esbuild.github.io/api/#minify)
 - [cssnano 参考](https://cssnano.co/docs/config-file/)
 - [parcelCSS 参考](https://github.com/parcel-bundler/parcel-css/blob/master/node/index.d.ts)
@@ -576,7 +574,7 @@ cssLoaderModules 的默认值是一个空对象 `{}`。
 ```ts
 cssLoaderModules: {
   // 配置驼峰式使用
-  exportLocalsConvention: 'camelCase'
+  exportLocalsConvention: "camelCase";
 }
 ```
 
@@ -589,7 +587,8 @@ cssLoaderModules: {
 具体配置如下：
 
 ```javascript
-deadCode: {}
+deadCode: {
+}
 ```
 
 ### 如何自定义 `deadCode` 检测的范围和排除范围？
@@ -600,7 +599,7 @@ deadCode: {}
 
 ```javascript
 deadCode: {
-  patterns: ['src/pages/**']
+  patterns: ["src/pages/**"];
 }
 ```
 
@@ -608,7 +607,7 @@ deadCode: {
 
 ```javascript
 deadCode: {
-  exclude: ['src/pages/utils/**']
+  exclude: ["src/pages/utils/**"];
 }
 ```
 
@@ -620,7 +619,7 @@ deadCode: {
 
 ```javascript
 deadCode: {
-  failOnHint: true
+  failOnHint: true;
 }
 ```
 
@@ -645,7 +644,7 @@ deadCode: {
 
 ```javascript
 deadCode: {
-  context: 'src'
+  context: "src";
 }
 ```
 
@@ -683,7 +682,7 @@ declare const FOO: string;
 
 ```typescript
 // typings.d.ts
-import './other.d.ts';
+import "./other.d.ts";
 
 declare global {
   const FOO: string;
@@ -714,7 +713,7 @@ devtool 默认值取决于配置的环境。在开发环境下，默认值为 `c
 devtool: false;
 
 // 只在开发环境下设置 sourcemap
-devtool: process.env.NODE_ENV === 'development' ? 'eval' : false;
+devtool: process.env.NODE_ENV === "development" ? "eval" : false;
 ```
 
 ### esbuildMinifyIIFE 是什么类型的变量？默认值是多少？
@@ -728,6 +727,7 @@ esbuildMinifyIIFE 修复了使用 esbuild 压缩器时，自动注入的全局�
 ### 如何使用 esbuildMinifyIIFE 来解决命名冲突问题？
 
 为了解决 esbuild 压缩器自动引入的全局变量导致的命名冲突问题，可以通过以下两种解决方案之一：
+
 1. 将 esbuildMinifyIIFE 设置为 true。
 2. 切换使用其他压缩器，比如可以使用 `jsMinifier` 来替代 esbuild。
 
@@ -771,27 +771,27 @@ headScripts: ['https://unpkg.com/react@17.0.1/umd/react.production.min.js'],
 export default {
   extraBabelIncludes: [
     // 支持绝对路径
-    join(__dirname, '../../common'),
+    join(__dirname, "../../common"),
     // 支持 npm 包
-    'react-monaco-editor',
+    "react-monaco-editor",
     // 转译全部路径含有 @scope 的包
-    /@scope/
+    /@scope/,
   ],
 };
 ```
 
 在以上示例中，我们可以看到在 `extraBabelIncludes` 中可以使用绝对路径、npm 包名称和正则表达式来配置需要进行 Babel 编译的包或目录。这些配置可以帮助我们将特定的包或目录包含在 Babel 的编译范围内。
 
-## 问题 1：什么是 `exportStatic`？
+### 什么是 `exportStatic`？
 
 - 类型：`{ extraRoutePaths: IUserExtraRoute[] | (() => IUserExtraRoute[] | Promise<IUserExtraRoute[]>), ignorePreRenderError: boolean }`
 - 默认值：`undefined`
 
-## 回答 1：
+###
 
 `exportStatic` 是一个配置项，用于在构建静态站点时针对每个路由单独输出 HTML 文件。通过开启 `exportStatic`，可以将路由页面静态化，适用于静态站点托管的场景。
 
-## 问题 2：如何使用 `exportStatic`？
+### 问题 2：如何使用 `exportStatic`？
 
 开启 `exportStatic` 后，在默认情况下，会根据路由配置输出相应的 HTML 文件。例如，有以下路由：
 
@@ -817,20 +817,20 @@ dist/docs/a/index.html
 export default {
   exportStatic: {
     // 配置固定值
-    extraRoutePaths: ['/news/1', '/news/2'],
+    extraRoutePaths: ["/news/1", "/news/2"],
     // 也可以配置函数动态获取
     extraRoutePaths: async () => {
-      const res = await fetch('https://api.example.com/news');
+      const res = await fetch("https://api.example.com/news");
       const data = await res.json();
       return data.map((item) => `/news/${item.id}`);
     },
   },
-}
+};
 ```
 
 上述配置的作用是，除了默认的路由静态化外，还会将额外的 `/news/1` 和 `/news/2` 路由静态化输出。如果是通过异步函数获取额外的路由，需要返回一个数组。
 
-## 问题 3：如何禁用预渲染？
+###如何禁用预渲染？
 
 `extraRoutePaths` 不仅支持配置字符串数据，还可以配置成对象数组，用于启用 SSR 时对部分路由禁用预渲染的场景。例如：
 
@@ -838,14 +838,14 @@ export default {
 export default {
   exportStatic: {
     // 输出额外页面文件但跳过预渲染
-    extraRoutePaths: [{ path: '/news/1', prerender: false }],
+    extraRoutePaths: [{ path: "/news/1", prerender: false }],
   },
-}
+};
 ```
 
 在上述配置中，`extraRoutePaths` 的类型是一个对象数组，每个对象包含 `path` 和 `prerender` 两个属性。设置 `prerender` 的值为 `false` 表示对 `/news/1` 路由禁用预渲染。
 
-## 问题 4：如何处理预渲染失败的错误？
+### 问题 4：如何处理预渲染失败的错误？
 
 当 `exportStatic` 与 `ssr` 结合使用时，会进行预渲染。如果预渲染失败，构建过程会抛出异常并终止构建。可以通过配置 `ignorePreRenderError` 来忽略预渲染失败的错误。例如：
 
@@ -855,7 +855,7 @@ export default {
     // 忽略预渲染失败的错误
     ignorePreRenderError: true,
   },
-}
+};
 ```
 
 在上述配置中，设置 `ignorePreRenderError` 的值为 `true`，表示忽略预渲染失败的错误，继续执行构建过程。
@@ -877,10 +877,10 @@ favicons 的默认值是 `null`。
 ```js
 favicons: [
   // 完整地址
-  'https://domain.com/favicon.ico',
+  "https://domain.com/favicon.ico",
   // 相对路径，将指向 /favicon.png ，确保项目中有 public/favicon.png 文件
-  '/favicon.png'
-]
+  "/favicon.png",
+];
 ```
 
 请注意，favicons 的自定义是用于替换默认的站点图标。
@@ -897,9 +897,10 @@ favicons: [
 
 forkTSChecker 是一种用于开启 TypeScript 的类型检查的配置项。它基于 fork-ts-checker-webpack-plugin，并可以参考该插件的选项进行配置。你可以在 [fork-ts-checker-webpack-plugin 的 Options](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin#options) 上找到更多相关的信息。
 
-## hash
+### hash
 
 ### 类型：boolean
+
 ### 默认值：false
 
 开启 hash 模式，让 build 之后的产物包含 hash 后缀。通常用于增量发布和避免浏览器加载缓存。
@@ -957,10 +958,13 @@ headScripts 用来配置 `<head>` 标签中的额外 script。可以通过配置
 1. 如果配置为字符串，则该字符串会被直接插入到 `<script>` 标签中。
 
 例如：
+
 ```
 headScripts: [`alert(1);`, `https://a.com/b.js`]
 ```
+
 会生成如下的 HTML：
+
 ```html
 <script>
   alert(1);
@@ -971,13 +975,16 @@ headScripts: [`alert(1);`, `https://a.com/b.js`]
 2. 如果配置为对象，则可以添加额外的属性，比如 `src`、`defer`、`content`、`charset` 等。
 
 例如：
+
 ```
 headScripts: [
   { src: '/foo.js', defer: true },
   { content: `alert('你好');`, charset: 'utf-8' },
 ]
 ```
+
 会生成如下的 HTML：
+
 ```html
 <script src="/foo.js" defer></script>
 <script content="alert('你好');" charset="utf-8"></script>
@@ -990,36 +997,38 @@ headScripts: [
 - 类型：boolean
 - 默认值：true
 
-#### 问题：
+#
+
 什么是 `helmet`？
 
-#### 回答：
+####
+
 `helmet` 是一个配置 `react-helmet-async` 的集成项。它负责集成 `react-helmet-async` 到项目中。当该配置项为 `false` 时，`react-helmet-async` 不会被集成，因此无法从框架中使用 `import { Helmet }`，同时构建产物的尺寸也会减少。了解更多关于 [react-helmet-async](https://bundlephobia.com/package/react-helmet-async) 的信息。
 
----
-
 ### helmet
 
 - 类型：boolean
 - 默认值：true
 
-#### 问题：
+#
+
 `helmet` 的默认值是什么？
 
-#### 回答：
-`helmet` 的默认值是 `true`，即为开启状态。默认情况下，`react-helmet-async` 会被集成到项目中，`import { Helmet }` 可以在项目中被使用。
+####
 
----
+`helmet` 的默认值是 `true`，即为开启状态。默认情况下，`react-helmet-async` 会被集成到项目中，`import { Helmet }` 可以在项目中被使用。
 
 ### helmet
 
 - 类型：boolean
 - 默认值：true
 
-#### 问题：
+#
+
 如何关闭 `helmet` 的集成？
 
-#### 回答：
+####
+
 要关闭 `helmet` 的集成，可以将配置项设置为 `false`。这样会导致 `react-helmet-async` 不会被集成到项目中，因此无法从框架中使用 `import { Helmet }`。此外，构建产物的尺寸也会减少。
 
 ### 关于开启 dev 的 https 模式
@@ -1040,7 +1049,7 @@ https: {
   cert: '/path/to/cert/file',
   key: '/path/to/key/file',
   hosts: ['example.com', 'localhost'],
-  http2: false,
+  httpfalse,
 }
 ```
 
@@ -1048,7 +1057,7 @@ https: {
 
 ### icons
 
-- 类型：`{ autoInstall: {}; alias: Record<string,string>; include: Array<string>;  }`
+- 类型：`{ autoInstall: {}; alias: Record<string,string>; include: Array<string>; }`
 - 默认值：`false`
 
 如何使用 umi 导出的 Icon 组件引用 icon 集或本地的图标？
@@ -1082,14 +1091,16 @@ icons: { autoInstall: {} },
 在页面中使用 Icon 组件可以通过以下步骤进行：
 
 1. 导入 `Icon` 组件：
-   ```ts
-   import { Icon } from 'umi';
-   ```
+
+```ts
+import { Icon } from "umi";
+```
 
 2. 在代码中使用 `<Icon>` 标签，并设置 `icon` 属性：
-   ```ts
-   <Icon icon="fa:home" />
-   ```
+
+```ts
+<Icon icon="fa:home" />
+```
 
 在上述代码中，`icon` 属性的值是一个字符串，它由 `collect:icon` 组成，通过 `:` 进行分割。
 
@@ -1112,8 +1123,8 @@ Icon 集是一种图标库的集合，通过特定的命名方式进行标识。
 要使用本地 svg icon，首先需要将对应的 svg 文件保存在 `src/icons` 目录下。然后，可以通过 `local` 这个前缀来引用该 svg 图标。例如，如果在 `src/icons` 目录下保存了一个名为 `umi.svg` 的 svg 文件，可以使用以下方式进行引用：
 
 ```tsx
-import { Icon } from 'umi';
-<Icon icon="local:umi" />
+import { Icon } from "umi";
+<Icon icon="local:umi" />;
 ```
 
 以上代码会将 `umi.svg` 组件作为一个 icon 渲染出来。
@@ -1125,7 +1136,7 @@ import { Icon } from 'umi';
 - `true`：表示自动安装 icon 集。
 - `false`：表示不自动安装 icon 集。
 
-需要注意的是，`tnpm` 和 `cnpm` 客户端暂不支持自动安装 icon 集，但你可以通过手动按需安装对应的 icon 集合包 `@iconify-json/collection-name`。其中，`collection-name` 是指[Icon 集合列表](https://github.com/iconify/icon-sets/blob/master/collections.md)中的 ***Icon set prefix*** 项。
+需要注意的是，`tnpm` 和 `cnpm` 客户端暂不支持自动安装 icon 集，但你可以通过手动按需安装对应的 icon 集合包 `@iconify-json/collection-name`。其中，`collection-name` 是指[Icon 集合列表](https://github.com/iconify/icon-sets/blob/master/collections.md)中的 **_Icon set prefix_** 项。
 
 ### 配置项介绍 - alias
 
@@ -1171,29 +1182,29 @@ Icon 组件的 rotate 属性支持多种格式来配置旋转角度。以下是�
 
 希望以上回答能够解决你的疑惑。如有任何其他问题，请随时告诉我。
 
-## jsMinifier (webpack) 是什么？
+### jsMinifier (webpack) 是什么？
 
 jsMinifier (webpack) 是用于配置构建时压缩 JavaScript 的工具。它接受一个字符串类型的值，可选值为 `esbuild`, `terser`, `swc`, `uglifyJs` 和 `none`。默认值为 `esbuild`，表示使用 esbuild 进行压缩。
 
-## 如何配置 jsMinifier (webpack)？
+### 如何配置 jsMinifier (webpack)？
 
 你可以在 webpack 配置文件中使用以下示例进行配置：
 
 ```ts
 {
-  jsMinifier: 'esbuild'
+  jsMinifier: "esbuild";
 }
 ```
 
 这个示例将会启用 esbuild 压缩 JavaScript。
 
-## 如何禁用压缩功能？
+### 如何禁用压缩功能？
 
 如果你想禁用 JavaScript 压缩功能，可以将 `jsMinifier` 的值设置为 `none`。这样 webpack 在构建过程中将不会使用任何压缩工具。
 
 ```ts
 {
-  jsMinifier: 'none'
+  jsMinifier: "none";
 }
 ```
 
@@ -1201,15 +1212,15 @@ jsMinifier (webpack) 是用于配置构建时压缩 JavaScript 的工具。它�
 
 请注意，以上提供的示例仅供参考，你可以根据自己的需求进行配置。
 
-## 问题一：`jsMinifierOptions` 是什么？
+### 问题一：`jsMinifierOptions` 是什么？
 
 答案：`jsMinifierOptions` 是一个类型为对象的配置项，用于配置 `jsMinifier` 这个选项。默认情况下，使用 `jsMinifier` 压缩代码会移除代码中的注释，但可以通过设置 `jsMinifierOptions` 来保留注释。
 
-## 问题二：`jsMinifierOptions` 的默认值是什么？
+### 问题二：`jsMinifierOptions` 的默认值是什么？
 
 答案：`jsMinifierOptions` 的默认值是一个空对象 `{}`。
 
-## 问题三：如何使用 `jsMinifierOptions` 进行配置？
+### 问题三：如何使用 `jsMinifierOptions` 进行配置？
 
 答案：可以通过以下示例代码来配置 `jsMinifierOptions`：
 
@@ -1227,17 +1238,20 @@ jsMinifier (webpack) 是用于配置构建时压缩 JavaScript 的工具。它�
 在上述示例中，`jsMinifier` 设置为 `'esbuild'`，而 `jsMinifierOptions` 配置了三个属性：`minifyWhitespace`、`minifyIdentifiers` 和 `minifySyntax`，并分别设置为 `true`。这些具体的配置项和对应的工具有关，可以参考对应的文档。
 
 具体的参考文档如下：
+
 - [esbuild 参考](https://esbuild.github.io/api/#minify)
 - [terser 参考](https://terser.org/docs/api-reference#minify-options)
 - [swc 参考](https://swc.rs/docs/configuration/minification#configuration)
 - [uglifyJs 参考](https://lisperator.net/uglifyjs/compress)
 
 1. 什么是 lessLoader？
+
    - 类型：object
    - 默认值：{ modifyVars: userConfig.theme, javascriptEnabled: true }
    - lessLoader 是用于配置 less-loader 的选项。它允许你使用 less@4 版本，默认情况下启用了 javascriptEnabled，同时也可以根据需要使用 [less-options-math](https://lesscss.org/usage/#less-options-math) 来兼容 less@3。
 
 2. lessLoader 的默认值是什么？
+
    - 默认值：{ modifyVars: userConfig.theme, javascriptEnabled: true }
    - lessLoader 的默认值是一个对象，其中包含两个属性：modifyVars 和 javascriptEnabled。modifyVars 使用了 userConfig.theme，并且 javascriptEnabled 被设置为 true。
 
@@ -1247,25 +1261,25 @@ jsMinifier (webpack) 是用于配置构建时压缩 JavaScript 的工具。它�
 
 希望以上信息能对你有所帮助。如果有其他问题，请随时提出。
 
-### legacy选项的作用是什么？
+### legacy 选项的作用是什么？
 
-legacy选项的作用是兼容低版本浏览器。当开启legacy选项时，打包工具将使用非现代的方式进行构建，这可能会显著增加构建时间。
+legacy 选项的作用是兼容低版本浏览器。当开启 legacy 选项时，打包工具将使用非现代的方式进行构建，这可能会显著增加构建时间。
 
-### 如何开启legacy选项？
+### 如何开启 legacy 选项？
 
-legacy选项默认在构建时生效。如果要关闭该限制，可以将buildOnly选项设为false。
+legacy 选项默认在构建时生效。如果要关闭该限制，可以将 buildOnly 选项设为 false。
 
-### 如何检查产物的语法是否为es5格式？
+### 如何检查产物的语法是否为 es5 格式？
 
-可以通过打开checkOutput选项来自动运行es-check检查产物的语法。es-check是一个插件，用于检查.js文件的语法是否为es5格式。
+可以通过打开 checkOutput 选项来自动运行 es-check 检查产物的语法。es-check 是一个插件，用于检查.js 文件的语法是否为 es5 格式。
 
-### 开启legacy选项后会有哪些影响？
+### 开启 legacy 选项后会有哪些影响？
 
-开启legacy选项后会有以下影响：
+开启 legacy 选项后会有以下影响：
 
-- 不支持自定义srcTranspiler、jsMinifier、cssMinifier选项。
-- 将转译全部node_modules内的源码，将兼容性设为ie11，可以通过设置nodeModulesTransform选项为false来取消对node_modules的转换，然后通过配置extraBabelIncludes来更精准地转换有兼容性问题的包。
-- 因低版本浏览器不支持Top level await，在使用externals时，如果同时使用了同步导入依赖的externalsType，请确保不在使用异步性质的externalsType。
+- 不支持自定义 srcTranspiler、jsMinifier、cssMinifier 选项。
+- 将转译全部 node_modules 内的源码，将兼容性设为 ie11，可以通过设置 nodeModulesTransform 选项为 false 来取消对 node_modules 的转换，然后通过配置 extraBabelIncludes 来更精准地转换有兼容性问题的包。
+- 因低版本浏览器不支持 Top level await，在使用 externals 时，如果同时使用了同步导入依赖的 externalsType，请确保不在使用异步性质的 externalsType。
 
 ### manifest 参数的类型是什么？
 
@@ -1286,6 +1300,7 @@ mdx loaderOptions 的配置参数可以在 [这个链接](https://github.com/mdx
 ### metas 有哪些字段？
 
 metas 是一个数组，每一个元素都是一个对象，对象包含以下字段：
+
 - name：表示 meta 标签的名称
 - content：表示 meta 标签的内容
 
@@ -1346,10 +1361,12 @@ metas: [
 `exclude` 是 `mfsu` 的配置参数之一，用于手动排除某些不需要被 MFSU 处理的依赖。可以通过字符串或正则的形式配置。例如，如果不希望 `vant` 走 MFSU 处理，可以配置 `{ exclude: [ 'vant' ] }`。匹配逻辑为全词匹配，也可以配置 `{ exclude: [ /vant/ ] }`，只要 `import` 路径中匹配该正则的依赖都不会走 MFSU 处理。通过设置 `exclude`，可以排除不需要处理的依赖。
 
 1. 什么是 mock 功能？
+
    - `mock` 是一种前端开发工具，用于模拟接口返回数据，以便在前端开发过程中进行接口调试和功能开发。
    - 它可以通过配置文件指定需要模拟的接口数据，并在开发过程中使用模拟数据来替代实际的后端接口返回数据。
 
 2. mock 功能的配置参数有哪些？
+
    - `exclude`：用于排除不需要的 mock 文件。
    - `include`：用于额外添加 mock 目录之外的 mock 文件。
 
@@ -1371,17 +1388,17 @@ monorepoRedirect 的类型是一个对象，可以包含以下属性：
 
 默认情况下，monorepoRedirect 的值为一个空对象 `{}`。
 
-### 问题1：什么是phantomDependency？
+### 什么是 phantomDependency？
 
-回答：phantomDependency是一个配置项，用于执行幽灵依赖检测。当使用未在package.json中声明的依赖，以及没有通过alias或externals进行配置时，会抛错并提醒。
+phantomDependency 是一个配置项，用于执行幽灵依赖检测。当使用未在 package.json 中声明的依赖，以及没有通过 alias 或 externals 进行配置时，会抛错并提醒。
 
-### 问题2：如何配置phantomDependency的exclude项？
+### 问题 2：如何配置 phantomDependency 的 exclude 项？
 
-回答：可以通过exclude项实现白名单处理，将需要排除的npm依赖的包名添加到exclude数组中。
+可以通过 exclude 项实现白名单处理，将需要排除的 npm 依赖的包名添加到 exclude 数组中。
 
-### 问题3：可以举个例子说明如何配置phantomDependency的exclude项吗？
+###可以举个例子说明如何配置 phantomDependency 的 exclude 项吗？
 
-回答：可以参考以下示例代码：
+可以参考以下示例代码：
 
 ```
 export default {
@@ -1391,44 +1408,49 @@ export default {
 }
 ```
 
-以上配置将排除lodash这个npm依赖的检测。
+以上配置将排除 lodash 这个 npm 依赖的检测。
 
 ### plugins
 
 配置额外的 Umi 插件。可以通过数组项来指定插件的路径，路径可以是 npm 依赖、相对路径或绝对路径。当路径为相对路径时，会从项目根目录开始查找。
 
 1. 什么是 Umi 插件？
+
    - Umi 插件是一种扩展机制，可以通过自定义插件来增强 Umi 的功能和特性。
    - 插件可以是 npm 依赖、相对路径或绝对路径，并且可以根据需要进行配置。
 
 2. 插件的优先级如何确定？
+
    - 插件在数组中的位置决定了它们的优先级，越靠前的插件优先级越高。
 
 3. 如何配置插件？
+
    - 在 `plugins` 配置项中，使用数组指定插件的路径。
    - 路径可以是 npm 依赖、相对路径或绝对路径。
    - 如果是相对路径，则会从项目根目录开始查找。
 
 4. 举个例子说明如何配置插件。
-   ```js
-   plugins: [
-     // npm 依赖
-     'umi-plugin-hello',
-     // 相对路径
-     './plugin',
-     // 绝对路径
-     `${__dirname}/plugin.js`,
-   ]
-   ```
-   - 上面的例子中，配置了三个插件，分别是 `umi-plugin-hello`（npm 依赖）、`./plugin`（相对路径）和 `${__dirname}/plugin.js`（绝对路径）。
+
+```js
+plugins: [
+  // npm 依赖
+  "umi-plugin-hello",
+  // 相对路径
+  "./plugin",
+  // 绝对路径
+  `${__dirname}/plugin.js`,
+];
+```
+
+- 上面的例子中，配置了三个插件，分别是 `umi-plugin-hello`（npm 依赖）、`./plugin`（相对路径）和 `${__dirname}/plugin.js`（绝对路径）。
 
 希望以上回答能对你有所帮助，如有其他问题，请继续提问。
 
-## polyfill
+### polyfill
 
 ### 是什么？
 
-polyfill 是一种按需引入的功能，用于填充浏览器不支持的特定功能或API。它可以根据需求选择性地引入所需的 polyfill，以提高性能和减少代码体积。
+polyfill 是一种按需引入的功能，用于填充浏览器不支持的特定功能或 API。它可以根据需求选择性地引入所需的 polyfill，以提高性能和减少代码体积。
 
 ### 如何配置 polyfill？
 
@@ -1537,18 +1559,20 @@ moduleType 可以配置成 `'esm'` 或者 `'cjs'`。
 
 为了省略每个脚本都要写 `import 'zx/globals';` 的步骤，可以将 `['zx/globals']` 添加到 `globals` 配置中。这样，在使用 `umi run ./script.ts` 命令时，umi 将自动注入 `import 'zx/globals';`。这种全局注入配置的设置方式能够提高开发效率。
 
-## scripts
+### scripts
+
 - 类型: `string[] | Script[]`
 - 默认值: `[]`
- 
+
 配置 `<body>` 中额外的 script 标签。
 
 ### 字符串数组模式
+
 - 描述: 使用字符串数组模式可以插入多个 script 标签到页面中。
 - 示例:
 
 ```js
-scripts: [`alert(1);`, `https://a.com/b.js`]
+scripts: [`alert(1);`, `https://a.com/b.js`];
 ```
 
 以上配置会生成以下 HTML：
@@ -1561,14 +1585,15 @@ scripts: [`alert(1);`, `https://a.com/b.js`]
 ```
 
 ### 对象数组模式
+
 - 描述: 使用对象数组模式可以插入带有额外属性的 script 标签到页面中。
 - 示例:
 
 ```js
 scripts: [
-  { src: '/foo.js', defer: true },
-  { content: `alert('你好');`, charset: 'utf-8' },
-]
+  { src: "/foo.js", defer: true },
+  { content: `alert('你好');`, charset: "utf-8" },
+];
 ```
 
 以上配置会生成以下 HTML：
@@ -1576,7 +1601,7 @@ scripts: [
 ```html
 <script src="/foo.js" defer></script>
 <script charset="utf-8">
-  alert('你好');
+  alert("你好");
 </script>
 ```
 
@@ -1630,15 +1655,15 @@ styles: [`body { color: red; }`, `https://a.com/b.css`],
 <link rel="stylesheet" href="https://a.com/b.css" />
 ```
 
-## srcTranspilerOptions 的类型是什么？
+### srcTranspilerOptions 的类型是什么？
 
 srcTranspilerOptions 的类型是一个对象，包含两个可选的属性 swc 和 esbuild，分别对应 SwcConfig 和 EsbuildConfig 类型。
 
-## srcTranspilerOptions 的默认值是什么？
+### srcTranspilerOptions 的默认值是什么？
 
 srcTranspilerOptions 的默认值是 undefined。
 
-## 如果我使用 swc 或 esbuild 作为 srcTranspiler 转译器，我如何配置转译器？
+### 如果我使用 swc 或 esbuild 作为 srcTranspiler 转译器，我如何配置转译器？
 
 如果你使用 swc 或 esbuild 作为 srcTranspiler 转译器，你可以通过 srcTranspilerOptions 选项进一步配置转译器。
 
@@ -1681,7 +1706,7 @@ svgr 默认开启，并且它的默认配置项参见 [@svgr/core > Config](http
 要使用 svgr，首先需要引入相应的 SVG 图标文件。例如，使用 `import` 语句引入名为 `smile.svg` 的 SVG 文件，可以这样写：
 
 ```ts
-import SmileUrl, { ReactComponent as SvgSmile } from './smile.svg';
+import SmileUrl, { ReactComponent as SvgSmile } from "./smile.svg";
 ```
 
 这样就可以在项目中使用 `SvgSmile` 组件来展示 SVG 图标。
@@ -1730,14 +1755,14 @@ verifyCommit 的作用是为了校验提交的消息格式，确保提交信息�
 
 这样可以确保无论是撤销提交，还是合并分支，或者是进行版本发布，生成的 commit message 都符合一致的规范，方便团队进行版本管理和代码追溯。
 
-## 1. vite 的配置类型是什么？
+### 1. vite 的配置类型是什么？
 
 - 类型：`object`
 
-## 2. vite 默认的配置是什么？
+### 2. vite 默认的配置是什么？
 
 - 默认值：`{}`
 
-## 3. 开发者的配置会 merge 到 vite 的哪个配置？
+### 3. 开发者的配置会 merge 到 vite 的哪个配置？
 
 开发者的配置会 merge 到 vite 的 [默认配置](https://vitejs.dev/config/)。

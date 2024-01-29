@@ -2,7 +2,7 @@
 
 答：ProList 与 antd 的 List 相比，API 设计上更像 Table，使得可以通过配置化的方式快速定义数据项的展现形式。另外，ProList 基于 ProTable 实现，除了 Table 相关的 API 以外， ProList 还支持大部分 ProTable 的 API。
 
-## 问：ProList 的常用参数有哪些？
+### 问：ProList 的常用参数有哪些？
 
 答：ProList 的常用参数如下：
 
@@ -16,14 +16,14 @@
 - rowSelection: 与 antd 相同的配置，表示行选择，类型为对象或者布尔值，默认值为 false。
 - expandable: 与 antd 相同的配置，表示可展开行的配置，类型为对象或者 `false`。
 - showActions: 何时展示 actions，CardList 模式下不生效，类型为 `'hover'` 或者 `'always'`，默认值为 `'always'`。
-- showExtra: 何时展示 extra，类型为 `'hover'` 或者 `'always'`，默认值为 `'always'`。
+- showExtr 何时展示 extra，类型为 `'hover'` 或者 `'always'`，默认值为 `'always'`。
 - onRow: 与 antd 相同的配置，当用户传入 `grid` 属性时，列表将会以卡片模式进行渲染，此事件将不会触发，请使用 `onItem`，类型为 `function(record, index)`。
 - onItem: 与 antd 相同的配置，表示在所有类型点击某个项目都会触发该事件，类型为 `function(record, index)`。
 - rowClassName: 自定义列表行的类名，类型为字符串或者 `(row, index) => string`。
 - itemHeaderRender: 自定义每一列的 header，不同于 itemRender 的是它会保留多选和展开收起。
 - itemCardProps: 自定义卡片列表的 proCard props，只在卡片列表下生效。
 
-## 问：如何使用 itemHeaderRender 和 itemCardProps？
+### 问：如何使用 itemHeaderRender 和 itemCardProps？
 
 答：itemHeaderRender 和 itemCardProps 是 ProList 的两个参数。
 
@@ -36,10 +36,12 @@
 #### 参数
 
 - **dataIndex**: 数据在数据项中对应的路径，支持通过数组查询嵌套路径
+
   - 类型: `string` | `string[]`
   - 默认值: `-`
 
 - **valueType**: 值的类型，和 ProTable 一致
+
   - 类型: `'text'` | `'date'` ...
   - 默认值: `'text'`
 
@@ -54,20 +56,20 @@ Metas.[Meta] 是一个通用 API，用于配置 ProTable 的元数据项。
 #### 示例
 
 ```jsx
-import { ProTable } from 'antd';
+import { ProTable } from "antd";
 
 const columns = [
   {
-    title: '姓名',
-    dataIndex: 'name',
+    title: "姓名",
+    dataIndex: "name",
   },
   {
-    title: '年龄',
-    dataIndex: 'age',
-    valueType: 'number',
+    title: "年龄",
+    dataIndex: "age",
+    valueType: "number",
   },
   {
-    title: '操作',
+    title: "操作",
     render: (text, record, index) => (
       <a onClick={() => handleEdit(record)}>编辑</a>
     ),
@@ -76,22 +78,17 @@ const columns = [
 
 const dataSource = [
   {
-    name: '张三',
+    name: "张三",
     age: 18,
   },
   {
-    name: '李四',
+    name: "李四",
     age: 20,
   },
 ];
 
 const MyTable = () => {
-  return (
-    <ProTable
-      columns={columns}
-      dataSource={dataSource}
-    />
-  );
+  return <ProTable columns={columns} dataSource={dataSource} />;
 };
 ```
 

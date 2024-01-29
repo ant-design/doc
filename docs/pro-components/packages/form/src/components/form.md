@@ -69,6 +69,7 @@ ProForm 是基于 antd Form 的可降级封装，与 antd 功能完全对齐，�
 #### ProForm 的使用场景是什么？
 
 ProForm 适用于以下场景：
+
 - 标准 Form，增加了 `onFinish` 中自动 `loading` 和根据 `request` 自动获取默认值的功能的情况下，可以使用 ProForm。
 - 如果希望在 ProForm 的基础上增加 `trigger` 而无需维护 `visible` 状态，可以使用 ModalForm 或 DrawerForm。
 - 如果需要作为筛选表单，并需要配合其他数据展示组件使用，可以使用 QueryFilter。
@@ -80,21 +81,25 @@ ProForm 适用于以下场景：
 可以根据需要切换 ProForm 的布局。以下是一个示例用于切换 Form 的 layout 的代码：
 
 ```tsx
-import { ProForm, Radio } from 'antd';
+import { ProForm, Radio } from "antd";
 
 const Demo = () => {
   return (
     <ProForm layout="horizontal">
-      <Radio.Group defaultValue="vertical" buttonStyle="solid" onChange={(e) => {
-        console.log('value:', e.target.value);
-      }}>
+      <Radio.Group
+        defaultValue="vertical"
+        buttonStyle="solid"
+        onChange={(e) => {
+          console.log("value:", e.target.value);
+        }}
+      >
         <Radio.Button value="vertical">Vertical</Radio.Button>
         <Radio.Button value="horizontal">Horizontal</Radio.Button>
         <Radio.Button value="inline">Inline</Radio.Button>
       </Radio.Group>
     </ProForm>
-  )
-}
+  );
+};
 ```
 
 以上是关于 ProForm 的布局切换的示例代码，通过选择不同的选项可以切换表单的布局。
@@ -174,7 +179,6 @@ transform 用于在提交时转化字段的值，常用于将值转化为提交�
 - 从对象中提取特定属性的值：`value.value`
 - 将对象转化为多个属性的值：`{ valueName: value.value, labelName: value.name }`
 
-
 ### 栅格化布局
 
 栅格化布局是一种常用的网页布局方式，可以将页面划分为等宽的列，通过不同的列数和偏移量来实现灵活的页面布局。
@@ -186,7 +190,7 @@ Ant Design 提供了栅格化布局的支持，在 `ProForm`, `SchemaForm`, `Mod
 你可以查看以下示例代码和效果：
 
 ```tsx
-import { ProForm, ProFormText } from 'antd';
+import { ProForm, ProFormText } from "antd";
 
 const Demo = () => {
   return (
@@ -213,8 +217,8 @@ export default Demo;
 在 Ant Design 中，你可以通过简单的配置和代码来实现表单联动的效果。以下是一个示例代码和效果：
 
 ```tsx
-import { Form, Input } from 'antd';
-import React from 'react';
+import { Form, Input } from "antd";
+import React from "react";
 
 const Demo = () => {
   const [form] = Form.useForm();
@@ -253,8 +257,8 @@ export default Demo;
 在 Ant Design 中，你可以通过获取表单的引用，并使用引用调用相应的方法，来实现对表单的操作。以下是一个示例代码和介绍：
 
 ```tsx
-import { Form, Input, Button } from 'antd';
-import React from 'react';
+import { Form, Input, Button } from "antd";
+import React from "react";
 
 const Demo = () => {
   const formRef = React.useRef<FormInstance>();
@@ -265,9 +269,9 @@ const Demo = () => {
 
   const handleSetForm = () => {
     formRef.current?.setFieldsValue({
-      name: '张三',
+      name: "张三",
       age: 18,
-      email: 'zhangsan@example.com',
+      email: "zhangsan@example.com",
     });
   };
 
@@ -310,7 +314,7 @@ export default Demo;
 下面是一个示例代码，展示了如何实现将结果同步到 URL 的功能：
 
 ```tsx
-<code src="../demos/sync-to-url.tsx" ></code>
+<code src="../demos/sync-to-url.tsx"></code>
 ```
 
 通过以上代码示例，我们可以学习到如何在前端中实现将结果同步到 URL 的功能。通过将用户输入的数据同步到 URL 中，我们可以方便地分享或保存当前状态，提升用户体验。
@@ -340,7 +344,10 @@ export default Demo;
 在某些场景下，我们可能需要使用 ProForm 和 EditableTable 两个库来实现表单和可编辑表格的功能。下面是一个示例代码，展示了如何同时使用 ProForm 和 EditableTable：
 
 ```tsx
-<code src="../demos/pro-form-editableTable.tsx" title="ProForm 和 EditableTable 同时使用"></code>
+<code
+  src="../demos/pro-form-editableTable.tsx"
+  title="ProForm 和 EditableTable 同时使用"
+></code>
 ```
 
 通过以上代码示例，我们可以学习到如何在前端中同时使用 ProForm 和 EditableTable 来实现复杂的表单和表格功能。
@@ -368,15 +375,20 @@ FormControlRender 的作用是将一个 form 组件转换成 render props 的形
 你可以使用 `useControlModel` 钩子函数来创建自定义表单项。下面是一个例子，演示了如何使用 `useControlModel` 来自定义一个带有按钮的表单项：
 
 ```jsx
-import { useControlModel } from 'rc-field-form';
+import { useControlModel } from "rc-field-form";
 
 const CustomControl = () => {
   const control = useControlModel();
 
   return (
     <>
-      <Button onClick={() => control.setValue('custom value')}>设置自定义值</Button>
-      <input value={control.value} onChange={(e) => control.onChange(e.target.value)} />
+      <Button onClick={() => control.setValue("custom value")}>
+        设置自定义值
+      </Button>
+      <input
+        value={control.value}
+        onChange={(e) => control.onChange(e.target.value)}
+      />
     </>
   );
 };
@@ -384,7 +396,7 @@ const CustomControl = () => {
 const CustomForm = () => {
   const [form] = useForm();
   const onSubmit = (values) => {
-    console.log('表单提交的值:', values);
+    console.log("表单提交的值:", values);
   };
 
   return (
@@ -393,7 +405,9 @@ const CustomForm = () => {
         <CustomControl />
       </Form.Item>
       <Form.Item>
-        <Button type="primary" htmlType="submit">提交</Button>
+        <Button type="primary" htmlType="submit">
+          提交
+        </Button>
       </Form.Item>
     </Form>
   );
@@ -407,24 +421,29 @@ const CustomForm = () => {
 要将自定义表单项与 hooks 结合使用，可以使用 `useForm` 和 `useFieldArray` 方法。下面是一个示例，展示了如何使用 hooks 改造自定义表单项：
 
 ```jsx
-import { useForm, useFieldArray } from 'react-hook-form';
+import { useForm, useFieldArray } from "react-hook-form";
 
 const CustomForm = () => {
   const { control, handleSubmit } = useForm();
-  const { fields, append } = useFieldArray({ control, name: 'custom' });
+  const { fields, append } = useFieldArray({ control, name: "custom" });
 
   const onFormSubmit = (data) => {
-    console.log('表单提交的值:', data);
+    console.log("表单提交的值:", data);
   };
 
   return (
     <form onSubmit={handleSubmit(onFormSubmit)}>
       {fields.map((item, index) => (
         <div key={item.id}>
-          <input defaultValue={item.value} {...useControlModel({ name: `custom[${index}].value` })} />
+          <input
+            defaultValue={item.value}
+            {...useControlModel({ name: `custom[${index}].value` })}
+          />
         </div>
       ))}
-      <button type="button" onClick={() => append()}>添加</button>
+      <button type="button" onClick={() => append()}>
+        添加
+      </button>
       <button type="submit">提交</button>
     </form>
   );
@@ -449,7 +468,9 @@ const NestedForm = () => {
         </Form>
       </Form.Item>
       <Form.Item>
-        <Button type="primary" htmlType="submit">提交</Button>
+        <Button type="primary" htmlType="submit">
+          提交
+        </Button>
       </Form.Item>
     </Form>
   );
@@ -469,7 +490,7 @@ FormControlRender 是一个用于内联书写代码和编写逻辑的工具，�
 可以使用下面的代码作为参考：
 
 ```tsx
-import { FormControlRender } from 'antd';
+import { FormControlRender } from "antd";
 
 <FormControlRender>
   {(context) => (
@@ -477,7 +498,7 @@ import { FormControlRender } from 'antd';
       <ProForm.Item name="name" label="Name">
         <Input />
       </ProForm.Item>
-      {context.form.getFieldValue('name') === 'foo' && (
+      {context.form.getFieldValue("name") === "foo" && (
         <ProForm.Item name="bar" label="Bar">
           <Input />
         </ProForm.Item>
@@ -590,6 +611,7 @@ submitter 是 ProForm 组件中的一个配置项，用于配置提交按钮和�
 #### submitter 的参数有哪些以及其作用是什么？
 
 submitter 的参数包括：
+
 - onSubmit: 提交方法，当提交按钮被点击时触发的回调函数。
 - onReset: 重置方法，当重置按钮被点击时触发的回调函数。
 - searchConfig: 搜索的配置，用于配置提交按钮和重置按钮的文本。
@@ -614,16 +636,16 @@ submitter 的参数包括：
 以下是一个使用 `formRef` 的示例代码：
 
 ```tsx
-import { ProForm, ProFormText } from '@ant-design/pro-components';
-import { useRef } from 'react';
+import { ProForm, ProFormText } from "@ant-design/pro-components";
+import { useRef } from "react";
 
 export default () => {
   const formRef = useRef<ProFormInstance>();
 
   const onFill = () => {
     formRef?.current?.setFieldsValue({
-      name: '张三',
-      company: '蚂蚁金服',
+      name: "张三",
+      company: "蚂蚁金服",
     });
   };
 

@@ -23,7 +23,7 @@
 方法一：
 
 ```ts
-import { proxy } from 'umi';
+import { proxy } from "umi";
 
 const state = proxy({
   count: 0,
@@ -38,7 +38,7 @@ const state = proxy({
 方法二：
 
 ```ts
-import { proxy } from 'umi';
+import { proxy } from "umi";
 
 const state = proxy({ count: 0 });
 const actions = {
@@ -47,7 +47,7 @@ const actions = {
   },
   // 异步 action
   async addAsync() {
-    state.count += await fetch('/api/add');
+    state.count += await fetch("/api/add");
   },
 };
 ```
@@ -57,7 +57,7 @@ const actions = {
 可以使用 proxy 函数将 state 和 actions 分开放的方式如下：
 
 ```ts
-import { proxy } from 'umi';
+import { proxy } from "umi";
 
 const state = proxy({ count: 0 });
 
@@ -67,7 +67,7 @@ const actions = {
   },
   // 异步 action
   async addAsync() {
-    state.count += await fetch('/api/add');
+    state.count += await fetch("/api/add");
   },
 };
 ```
@@ -190,7 +190,7 @@ export function proxyWithPersist<V>(
   val: V,
   opts: {
     key: string;
-  }
+  },
 ) {
   const local = localStorage.getItem(opts.key);
   const state = proxy(local ? JSON.parse(local) : val);

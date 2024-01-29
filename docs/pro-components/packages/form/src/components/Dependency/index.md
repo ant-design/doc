@@ -5,23 +5,26 @@ ProFormDependency 是一个简化版本的 Form.Item，它内置了 noStyle 与 
 ### 如何配置 ProFormDependency 的 name 参数？
 
 name 参数必须是一个数组。如果涉及到嵌套的结构，可以通过以下方式进行配置：
+
 ```tsx | pure
-<ProFormDependency name={['name', ['name2', 'text']]}></ProFormDependency>
+<ProFormDependency name={["name", ["name2", "text"]]}></ProFormDependency>
 ```
+
 配置的 name 值将在 renderProps 中传入。
 
 ### 如何使用 ProFormDependency？
 
 可以在 ProFormDependency 的子组件中，通过 renderProps 的方式来使用 ProFormDependency，例如：
+
 ```tsx | pure
-<ProFormDependency name={['name']}>
+<ProFormDependency name={["name"]}>
   {({ name }) => {
     return (
       <ProFormSelect
         options={[
           {
-            value: 'chapter',
-            label: '盖章后生效',
+            value: "chapter",
+            label: "盖章后生效",
           },
         ]}
         width="md"
@@ -32,9 +35,10 @@ name 参数必须是一个数组。如果涉及到嵌套的结构，可以通过
   }}
 </ProFormDependency>
 ```
+
 通过 renderProps 中传入的 name 值，可以在子组件中动态使用该值。
 
-## ProFormDependency不在ProFormList中
+### ProFormDependency 不在 ProFormList 中
 
 当`<ProFormDependency>`不在`<ProFormList>`中时，依赖的取值顺序如下：
 
@@ -42,7 +46,7 @@ name 参数必须是一个数组。如果涉及到嵌套的结构，可以通过
 
 这意味着无论组件是否嵌套在`<ProFormList>`中，都会从全局取值。
 
-## ProFormDependency在ProFormList中，ignoreFormListField为true
+### ProFormDependency 在 ProFormList 中，ignoreFormListField 为 true
 
 当`<ProFormDependency>`在`<ProFormList>`中，并且设置`ignoreFormListField`为`true`时，依赖的取值顺序如下：
 
@@ -50,7 +54,7 @@ name 参数必须是一个数组。如果涉及到嵌套的结构，可以通过
 
 即使组件嵌套在`<ProFormList>`中，也会从全局取值。
 
-## ProFormDependency在ProFormList中，ignoreFormListField为false
+### ProFormDependency 在 ProFormList 中，ignoreFormListField 为 false
 
 当`<ProFormDependency>`在`<ProFormList>`中，并且设置`ignoreFormListField`为`false`时，依赖的取值顺序如下：
 

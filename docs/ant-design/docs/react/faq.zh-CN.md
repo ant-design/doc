@@ -1,21 +1,17 @@
----
-group:
-  title: 其他
-order: 2
-title: FAQ
----
+group: title: 其他 order: 2 title: FAQ
 
 以下整理了一些 Ant Design 社区常见的问题和官方答复，在提问之前建议找找有没有类似的问题。此外我们也维护了一个反馈较多 [FAQ issues 标签](http://u.ant.design/faq) 亦可参考。
 
----
+Ant Design 5.x 如何使用 CSS 变量模式？
 
-### 问题：Ant Design 5.x 如何使用 CSS 变量模式？
 答：Ant Design 5.x 的 CSS 变量模式是从版本 5.12.0 开始重新支持的功能。与 4.x 版本不同的是，这次 Ant Design 融合了 CSS-in-JS 的能力，并将所有 Design Token 纳入了 CSS 变量的管理范畴。这意味着在同一组件中，不同主题下的样式可以共享，从而减少样式体积。此外，切换主题时不再需要重新序列化样式，提升了主题切换的性能。如果你的应用依赖 Ant Design 的主题能力，强烈建议开启 CSS 变量模式。
 
-### 问题：如何开启 Ant Design 的 CSS 变量模式？
+如何开启 Ant Design 的 CSS 变量模式？
+
 答：要开启 Ant Design 的 CSS 变量模式，你需要在项目中使用 Ant Design 5.x 的版本，并在主题文件中设置 `@useCssVars: true`。这样，Ant Design 将会自动将 Design Token 转化为 CSS 变量，并应用到组件的样式中。具体的使用方法可以参考 Ant Design 官方文档中关于主题的章节。
 
-### 问题：CSS 变量模式能在已经使用了 Ant Design 4.x 的项目中引入吗？
+CSS 变量模式能在已经使用了 Ant Design 4.x 的项目中引入吗？
+
 答：CSS 变量模式是 Ant Design 从 5.12.0 版本开始支持的功能，与之前的 4.x 版本不兼容。如果你想在已经使用了 Ant Design 4.x 的项目中使用 CSS 变量模式，你需要进行较大的代码和样式改动。建议在新项目中尝试使用 CSS 变量模式，或者等待后续版本中更加完善的兼容性。
 
 以上是关于 Ant Design 的 CSS 变量模式的常见问题和解答。如果你还有其他疑问，可以参考 [Ant Design FAQ issues](http://u.ant.design/faq) 中的问题，或者在社区中提问寻求帮助。
@@ -34,29 +30,27 @@ title: FAQ
 
 请注意，在类 `Select` 组件的 `options` 中，强烈建议不要使用 `undefined` 和 `null` 作为 `option` 的 `value`，而应该使用字符串或数字作为 `value` 的类型。
 
-## 问题：点击 `Select Dropdown DatePicker TimePicker Popover Popconfirm` 内的另一个 popup 组件时它会消失，如何解决？
+### 点击 `Select Dropdown DatePicker TimePicker Popover Popconfirm` 内的另一个 popup 组件时它会消失，如何解决？
 
-回答：该问题在 `3.11.0` 后已经解决。如果你仍在使用旧版本，你可以通过 `<Select getPopupContainer={trigger => trigger.parentElement}>` 来在 Popover 中渲染组件，或者使用其他的 `getXxxxContainer` 参数。
+该问题在 `3.11.0` 后已经解决。如果你仍在使用旧版本，你可以通过 `<Select getPopupContainer={trigger => trigger.parentElement}>` 来在 Popover 中渲染组件，或者使用其他的 `getXxxxContainer` 参数。
 
 参考链接：[Select 属性](/components/select-cn#select-props)
 
 相关 issue：[#3487](https://github.com/ant-design/ant-design/issues/3487) [#3438](https://github.com/ant-design/ant-design/issues/3438)
 
+### 在哪个版本中解决了点击 `Select Dropdown DatePicker TimePicker Popover Popconfirm` 内的另一个 popup 组件消失的问题？
 
-## 问题：在哪个版本中解决了点击 `Select Dropdown DatePicker TimePicker Popover Popconfirm` 内的另一个 popup 组件消失的问题？
-
-回答：该问题在 `3.11.0` 后的版本中进行了解决。
-
-相关 issue：[#3487](https://github.com/ant-design/ant-design/issues/3487) [#3438](https://github.com/ant-design/ant-design/issues/3438)
-
-
-## 问题：如何解决点击 `Select Dropdown DatePicker TimePicker Popover Popconfirm` 内的另一个 popup 组件消失的问题？
-
-回答：如果你使用的是旧版本的 Ant Design，你可以通过在 Popover 中渲染组件来解决该问题，具体方法是在 `<Select getPopupContainer={trigger => trigger.parentElement}>` 中设置参数。另外，你也可以尝试使用其他的 `getXxxxContainer` 参数来解决该问题。
+该问题在 `3.11.0` 后的版本中进行了解决。
 
 相关 issue：[#3487](https://github.com/ant-design/ant-design/issues/3487) [#3438](https://github.com/ant-design/ant-design/issues/3438)
 
-## `<Select>` 组件在滚动条中上下移动的问题如何解决？
+### 如何解决点击 `Select Dropdown DatePicker TimePicker Popover Popconfirm` 内的另一个 popup 组件消失的问题？
+
+如果你使用的是旧版本的 Ant Design，你可以通过在 Popover 中渲染组件来解决该问题，具体方法是在 `<Select getPopupContainer={trigger => trigger.parentElement}>` 中设置参数。另外，你也可以尝试使用其他的 `getXxxxContainer` 参数来解决该问题。
+
+相关 issue：[#3487](https://github.com/ant-design/ant-design/issues/3487) [#3438](https://github.com/ant-design/ant-design/issues/3438)
+
+### `<Select>` 组件在滚动条中上下移动的问题如何解决？
 
 答：要解决 `<Select>` 组件在滚动条中上下移动的问题，可以通过设置 `getPopupContainer` 属性来将组件渲染到滚动区域内。具体可以使用 `<Select getPopupContainer={trigger => trigger.parentElement}>` 这个 API 来实现。另外，也可以使用其他的 `getXxxxContainer` 参数来解决这个问题。如果需要全局解决这个问题，可以使用 `<ConfigProvider getPopupContainer={trigger => trigger.parentElement}>` 这个 API。
 
@@ -64,7 +58,7 @@ title: FAQ
 
 相关 issue：[#3487](https://github.com/ant-design/ant-design/issues/3487) [#3438](https://github.com/ant-design/ant-design/issues/3438)
 
-## 如何解决 `<Select>`、`<Dropdown>`、`<DatePicker>`、`<TimePicker>` 和 `<Popover>` 组件在滚动条中上下移动的问题？
+### 如何解决 `<Select>`、`<Dropdown>`、`<DatePicker>`、`<TimePicker>` 和 `<Popover>` 组件在滚动条中上下移动的问题？
 
 答：要解决 `<Select>`、`<Dropdown>`、`<DatePicker>`、`<TimePicker>` 和 `<Popover>` 组件在滚动条中上下移动的问题，可以使用类似的方法。可以设置这些组件的 `getPopupContainer` 属性，将它们渲染到滚动区域内。具体可以使用 `<Select getPopupContainer={trigger => trigger.parentElement}>`、`<Dropdown getPopupContainer={trigger => trigger.parentElement}>`、`<DatePicker getPopupContainer={trigger => trigger.parentElement}>`、`<TimePicker getPopupContainer={trigger => trigger.parentElement}>` 和 `<Popover getPopupContainer={trigger => trigger.parentElement}>` 这些 API 来实现。
 
@@ -74,7 +68,7 @@ title: FAQ
 
 相关 issue：[#3487](https://github.com/ant-design/ant-design/issues/3487) [#3438](https://github.com/ant-design/ant-design/issues/3438)
 
-## 如何解决滚动条上下移动问题以及全局解决办法？
+### 如何解决滚动条上下移动问题以及全局解决办法？
 
 答：要解决组件在滚动条中上下移动的问题，可以通过设置 `getPopupContainer` 属性来将这些组件渲染到滚动区域内。具体可以使用 `<Select getPopupContainer={trigger => trigger.parentElement}>`、`<Dropdown getPopupContainer={trigger => trigger.parentElement}>`、`<DatePicker getPopupContainer={trigger => trigger.parentElement}>`、`<TimePicker getPopupContainer={trigger => trigger.parentElement}>` 和 `<Popover getPopupContainer={trigger => trigger.parentElement}>` 这些 API 来实现。
 
@@ -102,23 +96,17 @@ title: FAQ
 
 总之，跟随官方的示例和解决方案，并避免特定错误用法和不必要的魔改，可以帮助你避免升级导致的破坏性变更。
 
-## QA 1:
+### 为什么当我动态改变 `defaultValue` 的时候它并没有生效？
 
-问题：为什么当我动态改变 `defaultValue` 的时候它并没有生效？
+`Input`/`Select` 等的 `defaultXxxx`（例如 `defaultValue`）只有在第一次渲染的时候有效。这是因为这些属性是用于设置初始值的，并不会随着用户输入或其他操作而更新。如果你想要动态改变输入框的值，可以使用受控组件和 `value` 属性来实现。受控组件是由 React 来控制其值的组件，你需要手动更新 `value` 属性的值来反映用户输入的变化。你可以阅读 React 的文档了解更多关于受控组件的信息。
 
-回答：`Input`/`Select` 等的 `defaultXxxx`（例如 `defaultValue`）只有在第一次渲染的时候有效。这是因为这些属性是用于设置初始值的，并不会随着用户输入或其他操作而更新。如果你想要动态改变输入框的值，可以使用受控组件和 `value` 属性来实现。受控组件是由 React 来控制其值的组件，你需要手动更新 `value` 属性的值来反映用户输入的变化。你可以阅读 React 的文档了解更多关于受控组件的信息。
+### 什么是受控组件？
 
-## QA 2:
+受控组件是由 React 来控制其值的组件。它的值是通过 `props` 或 `state` 来定义和更新的。与受控组件相对的是非受控组件，非受控组件的值是由 DOM 元素自身来管理的。受控组件可以通过设置 `value` 属性来显示初始值，并且可以通过 `onChange` 事件来处理用户输入的变化。使用受控组件可以更好地控制表单的状态，并且可以方便地进行表单验证和处理。
 
-问题：什么是受控组件？
+### 在 React 中如何动态改变输入框的值？
 
-回答：受控组件是由 React 来控制其值的组件。它的值是通过 `props` 或 `state` 来定义和更新的。与受控组件相对的是非受控组件，非受控组件的值是由 DOM 元素自身来管理的。受控组件可以通过设置 `value` 属性来显示初始值，并且可以通过 `onChange` 事件来处理用户输入的变化。使用受控组件可以更好地控制表单的状态，并且可以方便地进行表单验证和处理。
-
-## QA 3:
-
-问题：在 React 中如何动态改变输入框的值？
-
-回答：要在 React 中动态改变输入框的值，可以使用受控组件和 `value` 属性。首先，定义一个状态来存储输入框的值，例如 `const [inputValue, setInputValue] = useState('')`。然后，将 `value` 属性设置为状态值，并通过 `onChange` 事件来更新状态值，例如 `<input value={inputValue} onChange={e => setInputValue(e.target.value)} />`。这样，当用户输入时，状态值会自动更新，并且输入框的值也会相应地改变。通过使用受控组件，你可以在 React 中方便地管理输入框的值和状态。
+要在 React 中动态改变输入框的值，可以使用受控组件和 `value` 属性。首先，定义一个状态来存储输入框的值，例如 `const [inputValue, setInputValue] = useState('')`。然后，将 `value` 属性设置为状态值，并通过 `onChange` 事件来更新状态值，例如 `<input value={inputValue} onChange={e => setInputValue(e.target.value)} />`。这样，当用户输入时，状态值会自动更新，并且输入框的值也会相应地改变。通过使用受控组件，你可以在 React 中方便地管理输入框的值和状态。
 
 ### 为什么修改组件传入的对象或数组属性组件不会更新？
 
@@ -132,9 +120,7 @@ antd 内部通过对 props 进行浅比较来实现性能优化。这意味着�
 
 在 React 中，当传入组件的对象或数组属性发生变化时，应该传递一个新的对象或数组。这样做可以避免遇到由于浅比较导致的组件不更新的问题。具体的处理方式可以参考 [React 的文档](https://zh-hans.reactjs.org/docs/thinking-in-react.html)。
 
----
-
-## QA1: 为什么设置了 Input/Select 的 value 后无法修改？
+### QA 为什么设置了 Input/Select 的 value 后无法修改？
 
 当设置了 `Input`、`Select` 等表单组件的 `value` 属性后，它们的值将变为只读，无法通过用户输入进行修改。这是因为这些表单组件被称为受控组件（Controlled Components），其值受到 React 组件状态的控制，需要使用 `onChange` 来改变 `value`。
 
@@ -142,37 +128,33 @@ antd 内部通过对 props 进行浅比较来实现性能优化。这意味着�
 
 参考文档：[React 文档中关于受控组件的介绍](https://zh-hans.reactjs.org/docs/forms.html#controlled-components)
 
----
-
-## QA2: 如何在 React 中使用 onChange 来改变 Input/Select 的 value？
+### QA 如何在 React 中使用 onChange 来改变 Input/Select 的 value？
 
 在 React 中，你可以通过绑定 `onChange` 事件来实现 Input/Select 组件值的动态更新。
 
 例如，对于一个 Input 组件，你可以这样编写代码：
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function MyComponent() {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
 
   const handleChange = (event) => {
     setValue(event.target.value);
   };
 
-  return (
-    <input type="text" value={value} onChange={handleChange} />
-  );
+  return <input type="text" value={value} onChange={handleChange} />;
 }
 ```
 
 对于 Select 组件，使用方式也类似：
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function MyComponent() {
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState("");
 
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
@@ -190,35 +172,29 @@ function MyComponent() {
 
 在上述代码中，我们使用了 `useState` 钩子来定义值的状态，并通过 `onChange` 事件绑定了相应的事件处理函数来更新状态。
 
----
-
-## QA3: 在 React 中如何使用受控组件解决无法修改 Input/Select 的 value 的问题？
+### QA 在 React 中如何使用受控组件解决无法修改 Input/Select 的 value 的问题？
 
 要解决设置了 `Input`、`Select` 等表单组件的 `value` 后无法修改的问题，可以使用 React 中的受控组件（Controlled Components）来管理输入值。
 
 例如，你可以在组件中定义状态，并通过 `onChange` 事件处理函数来更新状态：
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function MyComponent() {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
 
   const handleChange = (event) => {
     setValue(event.target.value);
   };
 
-  return (
-    <input type="text" value={value} onChange={handleChange} />
-  );
+  return <input type="text" value={value} onChange={handleChange} />;
 }
 ```
 
 上述代码中，我们通过使用 `useState` 钩子来定义 `value` 状态，并将其绑定到 `input` 组件的 value 属性上。当用户输入文本时，`onChange` 事件会被触发，调用 `handleChange` 函数来更新 `value` 状态，实现了输入值的控制和反映。
 
 对于 Select 组件，可以采用类似的方式进行处理。
-
----
 
 希望以上解答能够帮到你，如果你还有其他问题，请随时提问！
 
@@ -235,12 +211,15 @@ antd 在设计的时候就是用来开发一个完整的应用的，为了方便
 antd 在设计的时候就是为了开发完整的应用，所以会覆盖一些全局样式。这样做的目的是为了统一应用的样式，确保整个应用有一个一致的外观和用户体验。不过，这也可能会导致一些问题，比如可能会与你之前的全局样式冲突。如果你想要了解更多关于这个问题的信息，可以追踪这个[issue](https://github.com/ant-design/ant-design/issues/4331)，或者参考[这个教程](/docs/react/customize-theme-cn#how-to-avoid-modifying-global-styles)，了解如何避免修改全局样式。
 
 ### `antd` 在移动端体验不佳的原因是什么？
+
 `antd` 是一个前端 UI 组件库，它并非专门为移动端设计。因此，在移动端使用 `antd` 可能会导致体验不佳。要了解更多详情，你可以访问 [Ant Design Mobile](http://mobile.ant.design) 网站。
 
 ### 我在移动端该使用哪个前端组件库？
+
 如果你在移动端开发中需要一个适用于移动端的前端组件库，你可以尝试使用 [react-component](https://github.com/react-component/)。在该仓库中，你可以找到一些带有 'm-' 或 'rn-' 前缀的库，它们是专为移动端设计的。
 
 ### `antd` 是否有适用于移动端的版本？
+
 `antd` 目前没有专门为移动端设计的版本。如果你需要在移动端使用 `antd`，可能会导致体验不佳。为了获得更好的移动端体验，建议你使用 [Ant Design Mobile](http://mobile.ant.design) 或其他适用于移动端的前端组件库。
 
 ### `antd` 是否有国内镜像？
@@ -252,12 +231,12 @@ antd 在设计的时候就是为了开发完整的应用，所以会覆盖一些
 
 在这些镜像网站上，你可以找到不同版本的 `antd` 文档和相关资源。
 
-
 ### `antd` 各个版本的镜像地址是什么？
 
 以下是 `antd` 及其各个版本的镜像地址：
 
-- Ant Design 5.x: 
+- Ant Design 5.x:
+
   - [https://ant-design.antgroup.com](https://ant-design.antgroup.com)
   - [https://ant-design.gitee.io](https://ant-design.gitee.io)
 
@@ -271,22 +250,24 @@ antd 在设计的时候就是为了开发完整的应用，所以会覆盖一些
 
 以上是关于 `antd` 不同版本的镜像地址，你可以根据自己的需求访问对应版本的文档和资源。
 
-
 ### `antd` 是否有其他相关产品的镜像？
 
 是的，`antd` 除了提供前端组件库之外，还涵盖了一些相关产品。以下是它们的镜像地址：
 
 - Ant Design Pro: [https://ant-design-pro.gitee.io/](https://ant-design-pro.gitee.io/)
 
-- Ant Design Mobile: 
+- Ant Design Mobile:
+
   - [https://ant-design-mobile.antgroup.com/zh](https://ant-design-mobile.antgroup.com/zh)
   - [https://antd-mobile.gitee.io/](https://antd-mobile.gitee.io/)
 
-- Ant Design Mini: 
+- Ant Design Mini:
+
   - [https://ant-design-mini.antgroup.com](https://ant-design-mini.antgroup.com)
   - [https://antd-mobile.gitee.io/](https://antd-mobile.gitee.io/)
 
-- Ant Design Charts: 
+- Ant Design Charts:
+
   - [https://ant-design-charts.antgroup.com](https://ant-design-charts.antgroup.com)
   - [https://antd-mobile.gitee.io/](https://antd-mobile.gitee.io/)
 
@@ -312,11 +293,11 @@ antd 在设计的时候就是为了开发完整的应用，所以会覆盖一些
 
 在你的网络环境下无法获取到`icon`文件的问题可以通过自行部署`iconfont`文件到你的网络上来解决。你可以参考这个[例子](https://github.com/ant-design/antd-init/tree/7c1a33cadb98f2fd8688fe527dd7f98215b9bced/examples/local-iconfont)上的步骤来进行操作。详细的介绍可以在[#1070](https://github.com/ant-design/ant-design/issues/1070)中找到。
 
-### 从3.9.x版本开始，Ant Design使用了什么类型的图标？
+### 从 3.9.x 版本开始，Ant Design 使用了什么类型的图标？
 
-从Ant Design的3.9.x版本开始，我们开始使用SVG图标作为默认图标类型。这意味着你不再需要担心本地部署`iconfont`的问题，可以直接使用Ant Design提供的SVG图标。关于SVG图标的更多信息，可以参考[这里](/components/icon-cn#svg-icons)。
+从 Ant Design 的 3.9.x 版本开始，我们开始使用 SVG 图标作为默认图标类型。这意味着你不再需要担心本地部署`iconfont`的问题，可以直接使用 Ant Design 提供的 SVG 图标。关于 SVG 图标的更多信息，可以参考[这里](/components/icon-cn#svg-icons)。
 
-### 如何自行部署iconfont文件到网络上？
+### 如何自行部署 iconfont 文件到网络上？
 
 如果你想在网络上自行部署`iconfont`文件，可以参考以下步骤：
 
@@ -324,7 +305,7 @@ antd 在设计的时候就是为了开发完整的应用，所以会覆盖一些
 2. 下载图标集的文件，得到一个压缩包。
 3. 解压缩文件，并找到其中的`iconfont.ttf`文件或者其他相关字体文件。
 4. 将该字体文件放置在你的网络服务器上的合适位置。注意确保该位置可以被你的前端应用访问到。
-5. 在你的前端应用中引入字体文件，并设置对应的CSS样式，使得图标能够正确显示。
+5. 在你的前端应用中引入字体文件，并设置对应的 CSS 样式，使得图标能够正确显示。
 
 通过以上步骤，你就可以成功地将`iconfont`文件部署到网络上，并在你的前端应用中使用了。
 
@@ -349,7 +330,7 @@ antd 提供了一些工具类型，可以帮助我们获取未导出的属性定
 通过 `GetProps` 工具类型，我们可以获取基本组件定义的属性。比如，我们可以获取 `Checkbox.Group` 组件的属性定义：
 
 ```tsx
-import type { Checkbox, CheckboxProps, GetProps } from 'antd';
+import type { Checkbox, CheckboxProps, GetProps } from "antd";
 
 type CheckboxGroupProps = GetProps<typeof Checkbox.Group>;
 ```
@@ -359,9 +340,9 @@ type CheckboxGroupProps = GetProps<typeof Checkbox.Group>;
 使用 `GetProp` 工具类型，我们可以获取特定属性的定义。例如，我们可以获取 `Checkbox` 组件的 `value` 属性的定义：
 
 ```tsx
-import type { Checkbox, CheckboxProps, GetProp } from 'antd';
+import type { Checkbox, CheckboxProps, GetProp } from "antd";
 
-type CheckboxValue = GetProp<CheckboxProps, 'value'>;
+type CheckboxValue = GetProp<CheckboxProps, "value">;
 ```
 
 #### Get Ref
@@ -369,12 +350,12 @@ type CheckboxValue = GetProp<CheckboxProps, 'value'>;
 如果需要获取组件的引用类型定义，可以使用 `GetRef` 工具类型。例如，我们可以获取 `Input` 组件的引用类型定义：
 
 ```tsx
-import type { Input, GetRef } from 'antd';
+import type { Input, GetRef } from "antd";
 
 type InputRef = GetRef<typeof Input>;
 ```
 
-使用这些工具类型，我们可以更方便地获取antd未导出属性的定义。
+使用这些工具类型，我们可以更方便地获取 antd 未导出属性的定义。
 
 ### 我的组件默认语言是英文的？如何切回中文的。
 
@@ -397,9 +378,9 @@ type InputRef = GetRef<typeof Input>;
 1. 检查 dayjs 语言包的设置是否正确。为了确保时间类组件的国际化 locale 生效，我们需要正确引入 dayjs 的语言包，并设置 locale。
 
 ```js
-import 'dayjs/locale/zh-cn';
+import "dayjs/locale/zh-cn";
 
-dayjs.locale('zh-cn');
+dayjs.locale("zh-cn");
 ```
 
 2. 检查是否同时存在两个版本的 dayjs。可以使用以下命令来检查项目中 dayjs 的版本情况。
@@ -412,7 +393,7 @@ npm ls dayjs
 
 以上是针对时间类组件的国际化 locale 设置不生效的常见解决方法。希望能对解决您的问题有所帮助。如果还有其他疑问，请随时提问。
 
-## 为什么指定了 DatePicker/RangePicker 的 `mode` 属性后，无法选择年份/月份？
+### 为什么指定了 DatePicker/RangePicker 的 `mode` 属性后，无法选择年份/月份？
 
 在业务开发中，当我们需要实现年份选择、月份范围选择或者周范围选择等需求时，我们会向现有的 DatePicker 或 RangePicker 组件添加 `mode` 属性。然而，你可能会发现在面板上点击后无法选择年份或月份，并且面板也不会关闭。即使添加了 `disabledDate` 属性也无法禁用对应的年/月/周。
 
@@ -420,7 +401,7 @@ npm ls dayjs
 
 另外，需要注意的是，`disabledDate` 属性只会在**日面板**上生效，对于任何 `<DatePicker mode="year/month" />` 等其他模式的年/月面板并不生效。
 
-## 如何解决当指定了 DatePicker/RangePicker 的 `mode` 属性后，点击后无法选择年份/月份的问题？
+### 如何解决当指定了 DatePicker/RangePicker 的 `mode` 属性后，点击后无法选择年份/月份的问题？
 
 在使用 `DatePicker` 或 `RangePicker` 组件时，当你指定了 `mode` 属性后，无法选择年份/月份的问题可以通过以下方法解决：
 
@@ -430,7 +411,7 @@ npm ls dayjs
 
 请注意，上述解决方法仅适用于 `DatePicker` 和 `RangePicker` 组件，其他 antd 组件的使用可能会有不同的解决方案。
 
-## `disabledDate` 属性在 `<DatePicker mode="year/month" />` 上如何生效？
+### `disabledDate` 属性在 `<DatePicker mode="year/month" />` 上如何生效？
 
 请注意，`disabledDate` 属性仅在**日面板**上生效，并不会对 `<DatePicker mode="year/month" />` 等其他模式的年/月面板生效。
 
@@ -581,7 +562,7 @@ export default App;
 1. 在代码中引入 ConfigProvider 组件：
 
 ```jsx
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from "antd";
 ```
 
 2. 在 ConfigProvider 组件中设置 theme 属性，将 motion 设置为 false：
@@ -589,7 +570,7 @@ import { ConfigProvider } from 'antd';
 ```jsx
 <ConfigProvider theme={{ token: { motion: false } }}>
   {/* 在这里放置你的组件 */}
-</ConfigProvider>;
+</ConfigProvider>
 ```
 
 通过以上步骤，你就可以成功关闭组件动画了。
@@ -601,15 +582,21 @@ SeedToken 是一个用于配置主题的工具。通过配置 SeedToken，你可
 1. 在代码中引入 ConfigProvider 组件：
 
 ```jsx
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from "antd";
 ```
 
 2. 在 ConfigProvider 组件中设置 theme 属性，通过 token 对象来配置 SeedToken：
 
 ```jsx
-<ConfigProvider theme={{ token: { /* 这里放置你的配置项 */ } }}>
+<ConfigProvider
+  theme={{
+    token: {
+      /* 这里放置你的配置项 */
+    },
+  }}
+>
   {/* 在这里放置你的组件 */}
-</ConfigProvider>;
+</ConfigProvider>
 ```
 
 3. 根据你的需求来配置 SeedToken 的属性，比如要关闭组件动画，可以将 motion 属性设置为 false：
@@ -617,7 +604,7 @@ import { ConfigProvider } from 'antd';
 ```jsx
 <ConfigProvider theme={{ token: { motion: false } }}>
   {/* 在这里放置你的组件 */}
-</ConfigProvider>;
+</ConfigProvider>
 ```
 
 通过以上步骤，你就可以成功使用 SeedToken 来配置主题了。
@@ -629,15 +616,21 @@ import { ConfigProvider } from 'antd';
 1. 在代码中引入 ConfigProvider 组件：
 
 ```jsx
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from "antd";
 ```
 
 2. 在 ConfigProvider 组件中设置 theme 属性，通过 token 对象来配置 SeedToken：
 
 ```jsx
-<ConfigProvider theme={{ token: { /* 这里放置你的配置项 */ } }}>
+<ConfigProvider
+  theme={{
+    token: {
+      /* 这里放置你的配置项 */
+    },
+  }}
+>
   {/* 在这里放置你的组件 */}
-</ConfigProvider>;
+</ConfigProvider>
 ```
 
 3. 根据你的需求来配置 SeedToken 的属性，比如要关闭组件动画，可以将 motion 属性设置为 false：
@@ -645,22 +638,22 @@ import { ConfigProvider } from 'antd';
 ```jsx
 <ConfigProvider theme={{ token: { motion: false } }}>
   {/* 在这里放置你的组件 */}
-</ConfigProvider>;
+</ConfigProvider>
 ```
 
 通过以上步骤，你就可以在你的应用中使用 SeedToken 来配置主题了。
 
-## Q1: V5 中的 `colorPrimary` 是属于哪种类型的变量？
+### QV5 中的 `colorPrimary` 是属于哪种类型的变量？
 
-A1: `colorPrimary` 是属于基础变量（Seed Token）类型的变量。
+A`colorPrimary` 是属于基础变量（Seed Token）类型的变量。
 
-## Q2: V5 中的 `colorInfo` 是属于哪种类型的变量？
+### QV5 中的 `colorInfo` 是属于哪种类型的变量？
 
-A2: `colorInfo` 是属于基础变量（Seed Token）类型的变量。
+A`colorInfo` 是属于基础变量（Seed Token）类型的变量。
 
-## Q3: V5 中的 `colorLink` 和 `colorPrimary` 有什么关系？
+### Q V5 中的 `colorLink` 和 `colorPrimary` 有什么关系？
 
-A3: `colorLink` 是别名变量（Alias Token），默认继承 `colorInfo`，与 `colorPrimary` 无关。
+A `colorLink` 是别名变量（Alias Token），默认继承 `colorInfo`，与 `colorPrimary` 无关。
 
 ### 如何正确拼写 Ant Design？
 
@@ -687,32 +680,30 @@ A3: `colorLink` 是别名变量（Alias Token），默认继承 `colorInfo`，�
 
 ### 表单组件的 `setFieldsValue` 方法如何处理含有 `null` 的对象类型？
 
-问题：当使用表单组件的表单实例中的 `setFieldsValue` 方法设置表单值时，如果在传入的对象中包含有 `null` 类型，会出现什么问题？
+当使用表单组件的表单实例中的 `setFieldsValue` 方法设置表单值时，如果在传入的对象中包含有 `null` 类型，会出现什么问题？
 
-回答：如果在传入的对象中包含 `null` 类型，会导致 TypeScript 类型报错。具体错误信息如下：`不能将类型“null”分配给类型“string[] | undefined”。`
+如果在传入的对象中包含 `null` 类型，会导致 TypeScript 类型报错。具体错误信息如下：`不能将类型“null”分配给类型“string[] | undefined”。`
 
 ### 如何解决表单组件的 `setFieldsValue` 方法中对象类型含有 `null` 时的 TS 类型报错？
 
-问题：在使用表单组件的表单实例中的 `setFieldsValue` 方法设置表单值时，如果在传入的对象中包含有 `null` 类型，导致 TypeScript 类型报错。请问如何解决这个问题？
+在使用表单组件的表单实例中的 `setFieldsValue` 方法设置表单值时，如果在传入的对象中包含有 `null` 类型，导致 TypeScript 类型报错。请问如何解决这个问题？
 
-回答：如果遇到 TypeScript 类型报错，可以检查项目的 `tsconfig.json` 中是否包含以下配置项：`"strictNullChecks": true`。如果该配置项的值为 `true`，将会出现上述问题。如果项目中可以不需要严格的空值检查功能，可以将 `strictNullChecks` 的值改为 `false` 关闭该功能。如果确实需要开启这个功能，则需要在设计类型时，使用其他类型替代 `null` 来避免出现这种情况。
+如果遇到 TypeScript 类型报错，可以检查项目的 `tsconfig.json` 中是否包含以下配置项：`"strictNullChecks": true`。如果该配置项的值为 `true`，将会出现上述问题。如果项目中可以不需要严格的空值检查功能，可以将 `strictNullChecks` 的值改为 `false` 关闭该功能。如果确实需要开启这个功能，则需要在设计类型时，使用其他类型替代 `null` 来避免出现这种情况。
 
 ### 如何判断是否需要在 TypeScript 项目中开启 `strictNullChecks` 严格空值检查功能？
 
-问题：在 TypeScript 项目中，如何判断是否需要开启 `strictNullChecks` 严格空值检查功能？
+在 TypeScript 项目中，如何判断是否需要开启 `strictNullChecks` 严格空值检查功能？
 
-回答：在 TypeScript 项目中，可以通过查看项目的 `tsconfig.json` 文件中的 `"strictNullChecks"` 配置项来判断是否开启了严格空值检查功能。当该配置项的值为 `true` 时，表示开启了严格空值检查功能。要判断是否需要开启该功能，可以根据项目的具体需求来决定。要了解有关该配置项的详细信息，可以查阅 TypeScript 官方文档中关于 [strictNullChecks](https://www.typescriptlang.org/zh/tsconfig#strictNullChecks) 的内容。
+在 TypeScript 项目中，可以通过查看项目的 `tsconfig.json` 文件中的 `"strictNullChecks"` 配置项来判断是否开启了严格空值检查功能。当该配置项的值为 `true` 时，表示开启了严格空值检查功能。要判断是否需要开启该功能，可以根据项目的具体需求来决定。要了解有关该配置项的详细信息，可以查阅 TypeScript 官方文档中关于 [strictNullChecks](https://www.typescriptlang.org/zh/tsconfig#strictNullChecks) 的内容。
 
 ### Next.js 的 App Router 使用时 antd 组件报错
 
-#### 问题描述：
 在使用 Next.js 的 App Router 时，如果你在使用 antd 的某些组件的子组件（如：`Select.Option`、`Form.Item`、`Typography.Title` 等），可能会出现以下报错：
 
 ```bash
 Error: Cannot access .Option on the server. You cannot dot into a client module from a server component. You can only pass the imported name through.
 ```
 
-#### 解决方案：
 目前这个问题需要等待 Next.js 官方给出解决方案，你可以关注[这个 GitHub 问题](https://github.com/vercel/next.js/issues/51593)以获取最新进展。
 
 在等待官方解决方案之前，你可以尝试以下两种变通方法来在使用 App Router 的页面中使用子组件：
@@ -722,30 +713,34 @@ Error: Cannot access .Option on the server. You cannot dot into a client module 
 以 `Typography` 组件为例，你可以创建一个包裹组件，并在其中提取所需的子组件并重新导出。代码示例如下：
 
 ```tsx
-'use client';
+"use client";
 
-import React from 'react';
-import { Typography as OriginTypography } from 'antd';
-import type { LinkProps } from 'antd/es/typography/Link';
-import type { ParagraphProps } from 'antd/es/typography/Paragraph';
-import type { TextProps } from 'antd/es/typography/Text';
-import type { TitleProps } from 'antd/es/typography/Title';
+import React from "react";
+import { Typography as OriginTypography } from "antd";
+import type { LinkProps } from "antd/es/typography/Link";
+import type { ParagraphProps } from "antd/es/typography/Paragraph";
+import type { TextProps } from "antd/es/typography/Text";
+import type { TitleProps } from "antd/es/typography/Title";
 
-const Title = React.forwardRef<HTMLElement, TitleProps & React.RefAttributes<HTMLElement>>(
-  (props, ref) => <OriginTypography.Title ref={ref} {...props} />,
-);
+const Title = React.forwardRef<
+  HTMLElement,
+  TitleProps & React.RefAttributes<HTMLElement>
+>((props, ref) => <OriginTypography.Title ref={ref} {...props} />);
 
-const Paragraph = React.forwardRef<HTMLElement, ParagraphProps & React.RefAttributes<HTMLElement>>(
-  (props, ref) => <OriginTypography.Paragraph ref={ref} {...props} />,
-);
+const Paragraph = React.forwardRef<
+  HTMLElement,
+  ParagraphProps & React.RefAttributes<HTMLElement>
+>((props, ref) => <OriginTypography.Paragraph ref={ref} {...props} />);
 
-const Link = React.forwardRef<HTMLElement, LinkProps & React.RefAttributes<HTMLElement>>(
-  (props, ref) => <OriginTypography.Link ref={ref} {...props} />,
-);
+const Link = React.forwardRef<
+  HTMLElement,
+  LinkProps & React.RefAttributes<HTMLElement>
+>((props, ref) => <OriginTypography.Link ref={ref} {...props} />);
 
-const Text = React.forwardRef<HTMLElement, TextProps & React.RefAttributes<HTMLElement>>(
-  (props, ref) => <OriginTypography.Text ref={ref} {...props} />,
-);
+const Text = React.forwardRef<
+  HTMLElement,
+  TextProps & React.RefAttributes<HTMLElement>
+>((props, ref) => <OriginTypography.Text ref={ref} {...props} />);
 
 export { Title, Link, Text, Paragraph };
 ```
@@ -755,7 +750,7 @@ export { Title, Link, Text, Paragraph };
 如果你希望页面完全由客户端渲染，可以在组件的开头添加 "use client" 指令。例如：
 
 ```tsx
-'use client';
+"use client";
 
 // 非真实代码，仅做逻辑说明
 export default () => (

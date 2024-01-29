@@ -28,28 +28,25 @@ Ant Design 5.0 版本支持灵活的样式定制，以满足业务和品牌上�
 
 以上是使用 Ant Design 的定制主题功能的基本步骤，根据实际情况进行相应的配置和定制即可。
 
-## 如何配置主题？
+### 如何配置主题？
 
 在 Ant Design 5.0 版本中，可以通过修改 Design Token 来配置主题。主题的最小元素就是 Design Token。要配置主题，需要在 `ConfigProvider` 组件中传入 `theme` 属性。在升级到 v5 后，默认会使用 v5 的主题。
 
 注意：在静态方法（如 `message.xxx`、`Modal.xxx`、`notification.xxx`）中无法使用 `ConfigProvider` 配置的内容，因为这些方法会通过 `ReactDOM.render` 动态创建新的 React 实体，导致无法获取到当前代码所在的 context 信息。如果需要使用 context 信息，可以通过 `Modal.useModal` 方法返回 modal 实体以及 contextHolder 节点，并将其插入到需要获取 context 信息的位置。另外，还可以通过 [App 包裹组件](/components/app-cn) 简化使用 `useModal` 等方法时手动植入 contextHolder 的步骤。
 
-## 为什么在静态方法中无法使用 `ConfigProvider`？
+### 为什么在静态方法中无法使用 `ConfigProvider`？
 
 在静态方法中无法使用 `ConfigProvider` 是因为这些方法会通过 `ReactDOM.render` 动态创建新的 React 实体，而新的实体的 context 与当前代码所在的 context 并不相同，导致无法获取到正确的 context 信息。这也是为什么需要手动插入 contextHolder 的原因。
 
-## 如何在静态方法中使用 context 信息？
+### 如何在静态方法中使用 context 信息？
 
 在静态方法中需要使用 context 信息时，可以通过 `Modal.useModal` 方法返回 modal 实体以及 contextHolder 节点，并将它们插入到需要获取 context 信息的位置。另外，还可以使用 [App 包裹组件](/components/app-cn) 来简化使用 `useModal` 等方法时手动插入 contextHolder 的操作。
 
-1. 问：如何通过 `theme` 中的 `token` 属性修改主题变量？
-   答：可以通过 `theme` 中的 `token` 属性来修改一些主题变量。在示例代码中的 `ConfigProvider` 组件中，设置 `theme` 属性为一个对象，其中的 `token` 属性用于指定要修改的主题变量。
+1. 问：如何通过 `theme` 中的 `token` 属性修改主题变量？答：可以通过 `theme` 中的 `token` 属性来修改一些主题变量。在示例代码中的 `ConfigProvider` 组件中，设置 `theme` 属性为一个对象，其中的 `token` 属性用于指定要修改的主题变量。
 
-2. 问：什么是 Seed Token？有什么作用？
-   答：Seed Token 是指那些会影响其他主题变量的主题变量。在示例代码中，`colorPrimary` 和 `borderRadius` 就是 Seed Token。通过修改这些 Seed Token 的值，可以同时影响其他相关主题变量的样式。
+2. 问：什么是 Seed Token？有什么作用？答：Seed Token 是指那些会影响其他主题变量的主题变量。在示例代码中，`colorPrimary` 和 `borderRadius` 就是 Seed Token。通过修改这些 Seed Token 的值，可以同时影响其他相关主题变量的样式。
 
-3. 问：什么是派生变量？如何使用派生变量？
-   答：派生变量是指那些受到 Seed Token 影响的其他主题变量。在示例代码中，`colorBgContainer` 就是一个派生变量。它的值受到 `colorPrimary` 的影响。可以通过设置派生变量的值，来改变相关元素的样式。
+3. 问：什么是派生变量？如何使用派生变量？答：派生变量是指那些受到 Seed Token 影响的其他主题变量。在示例代码中，`colorBgContainer` 就是一个派生变量。它的值受到 `colorPrimary` 的影响。可以通过设置派生变量的值，来改变相关元素的样式。
 
 ### Ant Design 5.x 中的主题算法有哪些？
 
@@ -99,7 +96,8 @@ export default App;
 
 在 Ant Design 5.x 中，默认情况下，所有组件变量都只是简单的覆盖，不会基于 Seed Token 进行计算派生变量。但是，如果你想要开启派生计算或者使用其他算法来计算组件变量，可以在组件的 `theme` 属性中设置 `algorithm` 属性为 `true`。
 
-以下是一个示例代码：  
+以下是一个示例代码：
+
 ```jsx
 import React from 'react';
 import { ConfigProvider, Button, Space, Input, Divider } from 'antd';
@@ -116,7 +114,7 @@ const App: React.FC = () => (
           Input: {
             colorPrimary: '#eb2f96',
             algorithm: true, // 启用算法
-          }
+          },
         },
       }}
     >
@@ -135,7 +133,7 @@ const App: React.FC = () => (
           },
           Input: {
             colorPrimary: '#eb2f96',
-          }
+          },
         },
       }}
     >
@@ -168,7 +166,7 @@ import { ConfigProvider } from 'antd';
 
 <ConfigProvider theme={{ token: { motion: false } }}>
   {/* Ant Design 组件代码 */}
-</ConfigProvider>
+</ConfigProvider>;
 ```
 
 通过将 `ConfigProvider` 组件的 `theme` 属性中的 `token.motion` 设置为 `false`，可以禁用相应组件的动画效果。
@@ -182,8 +180,8 @@ import { ConfigProvider } from 'antd';
 首先，导入所需的 React 依赖：
 
 ```ts
-import React, { useState, useEffect } from 'react';
-import { Checkbox, Col, ConfigProvider, Flex, Radio, Row, Switch } from 'antd';
+import React, { useState, useEffect } from "react";
+import { Checkbox, Col, ConfigProvider, Flex, Radio, Row, Switch } from "antd";
 ```
 
 然后，在函数组件中定义状态和副作用：
@@ -196,7 +194,7 @@ useEffect(() => {
   timerRef.current = setInterval(() => {
     setChecked((prev) => !prev);
   }, 500);
-  
+
   return () => {
     if (timerRef.current) {
       clearInterval(timerRef.current);
@@ -229,7 +227,9 @@ const nodes = (
 <Row gutter={[24, 24]}>
   <Col span={24}>{nodes}</Col>
   <Col span={24}>
-    <ConfigProvider theme={{ token: { motion: false } }}>{nodes}</ConfigProvider>
+    <ConfigProvider theme={{ token: { motion: false } }}>
+      {nodes}
+    </ConfigProvider>
   </Col>
 </Row>
 ```
@@ -251,7 +251,7 @@ import { ConfigProvider } from 'antd';
 
 <ConfigProvider theme={{ token: { motion: false } }}>
   {/* Ant Design 组件代码 */}
-</ConfigProvider>
+</ConfigProvider>;
 ```
 
 通过将 `ConfigProvider` 组件的 `theme` 属性中的 `token.motion` 设置为 `false`，可以禁用相应组件的动画效果，并开启 CSS 变量模式。
@@ -271,6 +271,7 @@ import { ConfigProvider } from 'antd';
 在示例代码中，`ColorPicker` 组件用于选择主题颜色。通过设置 `value` 属性来指定当前选中的颜色，通过 `onChangeComplete` 回调函数来获取用户选择的颜色并进行处理。在回调函数中，将选中的颜色转换为十六进制，并将其设置为 `theme.token.colorPrimary` 的值，从而实现动态切换主题颜色的功能。
 
 ### 如何实现局部主题的更换？
+
 可以通过嵌套使用 `ConfigProvider` 来实现局部主题的更换。在子主题中未被改变的 Design Token 将会继承父主题。
 
 具体代码示例如下：
@@ -279,7 +280,7 @@ import { ConfigProvider } from 'antd';
 <ConfigProvider
   theme={{
     token: {
-      colorPrimary: '#1677ff',
+      colorPrimary: "#1677ff",
     },
   }}
 >
@@ -288,7 +289,7 @@ import { ConfigProvider } from 'antd';
   <ConfigProvider
     theme={{
       token: {
-        colorPrimary: '#00b96b',
+        colorPrimary: "#00b96b",
       },
     }}
   >
@@ -301,17 +302,18 @@ import { ConfigProvider } from 'antd';
 在上述例子中，父主题中定义了 `colorPrimary` 的值为 `#1677ff`。子主题中重新定义了 `colorPrimary` 的值为 `#00b96b`。通过这样的嵌套关系，子组件继承了父组件的主题，并自定义了部分主题样式。
 
 ### 嵌套主题的使用示例代码是什么？
+
 可以参考以下代码示例实现嵌套主题：
 
 ```jsx
-import React from 'react';
-import { Button, ConfigProvider, Space } from 'antd';
+import React from "react";
+import { Button, ConfigProvider, Space } from "antd";
 
 const App = () => (
   <ConfigProvider
     theme={{
       token: {
-        colorPrimary: '#1677ff',
+        colorPrimary: "#1677ff",
       },
     }}
   >
@@ -320,7 +322,7 @@ const App = () => (
       <ConfigProvider
         theme={{
           token: {
-            colorPrimary: '#00b96b',
+            colorPrimary: "#00b96b",
           },
         }}
       >
@@ -333,9 +335,10 @@ const App = () => (
 export default App;
 ```
 
-在这个例子中，通过在 `ConfigProvider` 组件中定义不同的 `theme` 属性，可以实现嵌套主题的切换。在这个例子中，主题1和主题2分别使用了不同的颜色作为 `colorPrimary` 的值，通过点击不同的按钮可以看到主题的切换效果。
+在这个例子中，通过在 `ConfigProvider` 组件中定义不同的 `theme` 属性，可以实现嵌套主题的切换。在这个例子中，主题 1 和主题 2 分别使用了不同的颜色作为 `colorPrimary` 的值，通过点击不同的按钮可以看到主题的切换效果。
 
 ### 如何理解 Design Token 的继承关系？
+
 在嵌套主题中，子主题会继承父主题中未被改变的 Design Token。
 
 Design Token 是一种定义主题样式的数据结构。通过定义 Design Token，可以统一管理设计系统中的颜色、间距、字体等样式属性，使得样式的修改更加方便和统一。
@@ -343,6 +346,7 @@ Design Token 是一种定义主题样式的数据结构。通过定义 Design To
 在嵌套主题中，子主题只需定义需要修改的 Design Token，未被定义的 Design Token 将会继承父主题的值。这样做可以减少重复的样式定义，提高开发效率。
 
 ### 嵌套主题会继承哪些样式属性？
+
 在嵌套主题中，子主题会继承父主题中未被改变的 Design Token。
 
 具体来说，如果在父主题中定义了 `token: { colorPrimary: '#1677ff' }`，而在子主题中未重新定义 `colorPrimary`，则子主题会继承父主题中 `colorPrimary` 的值。换句话说，子主题中没有重新定义的 Design Token 属性将会继承父主题的属性值。
@@ -350,6 +354,7 @@ Design Token 是一种定义主题样式的数据结构。通过定义 Design To
 这样的继承关系可以让代码在不同主题下共享样式，减少样式体积，并且切换主题时不需要重新序列化样式，提升性能。
 
 ### 为什么需要局部主题的更换？
+
 局部主题的更换可以在同一组件中实现不同主题样式的切换，便于满足用户不同的主题需求。
 
 通过局部主题的更换，可以为用户提供个性化的界面体验。例如，在一个应用中可以根据用户喜好，提供不同颜色、不同风格的主题，以满足用户对界面样式的个性化需求。
@@ -375,14 +380,14 @@ const App: React.FC = () => {
 
   return (
     <div
-     style={{
+      style={{
         backgroundColor: token.colorPrimaryBg,
         padding: token.padding,
         borderRadius: token.borderRadius,
         color: token.colorPrimaryText,
         fontSize: token.fontSize,
-     }}
-     >
+      }}
+    >
       使用 Design Token
     </div>
   );
@@ -400,7 +405,7 @@ export default App;
 在 Ant Design 5.x 的 CSS 变量模式中，你可以通过静态方法 `getDesignToken` 来进行 Token 变量的静态消费。你可以使用以下代码来实现静态消费：
 
 ```jsx
-import { theme } from 'antd';
+import { theme } from "antd";
 
 const { getDesignToken } = theme;
 
@@ -412,15 +417,15 @@ const globalToken = getDesignToken();
 除了全局的 Design Token，你还可以使用 `getDesignToken` 方法传入 `theme` 属性，来获取指定主题的 Design Token。以下是一个示例代码：
 
 ```tsx
-import type { ThemeConfig } from 'antd';
-import { theme } from 'antd';
-import { createRoot } from 'react-dom/client';
+import type { ThemeConfig } from "antd";
+import { theme } from "antd";
+import { createRoot } from "react-dom/client";
 
 const { getDesignToken, useToken } = theme;
 
 const config: ThemeConfig = {
   token: {
-    colorPrimary: '#1890ff',
+    colorPrimary: "#1890ff",
   },
 };
 
@@ -434,7 +439,7 @@ const App = () => {
 };
 
 // 渲染示意
-createRoot(document.getElementById('#app')).render(
+createRoot(document.getElementById("#app")).render(
   <ConfigProvider theme={config}>
     <App />
   </ConfigProvider>,
@@ -483,7 +488,7 @@ Design Token 是一套设计师友好的样式变量，用于定制主题。在 
 ```tsx
 const theme = {
   token: {
-    colorPrimary: '#1890ff',
+    colorPrimary: "#1890ff",
   },
 };
 ```
@@ -501,14 +506,14 @@ Seed Token 是所有设计意图的起源，它是用来改变主题色的变量
 ```tsx
 const theme = {
   token: {
-    colorPrimary: '#1890ff',
+    colorPrimary: "#1890ff",
   },
 };
 
 // 将主题对象应用到组件中
 <ThemeProvider theme={theme}>
   <App />
-</ThemeProvider>
+</ThemeProvider>;
 ```
 
 通过这种方式，Ant Design 组件将根据主题对象中的颜色值来渲染相应的样式，实现主题定制功能。
@@ -522,7 +527,7 @@ const theme = {
 ```tsx
 const theme = {
   token: {
-    colorPrimaryBg: '#e6f7ff',
+    colorPrimaryBg: "#e6f7ff",
   },
 };
 ```
@@ -538,7 +543,7 @@ const theme = {
 ```tsx
 const theme = {
   token: {
-    colorLink: '#1890ff',
+    colorLink: "#1890ff",
   },
 };
 ```
@@ -558,7 +563,7 @@ Alias Token 适用于需要批量控制某些共性组件样式的场景。通�
 ```tsx
 const theme = {
   token: {
-    colorLink: '#1890ff',
+    colorLink: "#1890ff",
   },
 };
 ```
@@ -576,7 +581,7 @@ const theme = {
 具体的代码如下所示：
 
 ```tsx
-import { theme } from 'antd';
+import { theme } from "antd";
 
 const { darkAlgorithm, compactAlgorithm } = theme;
 
@@ -599,18 +604,16 @@ const theme = {
 
 属性列表：
 
-| 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| token | 用于修改 Design Token | `AliasToken` | - |
-| inherit | 继承上层 ConfigProvider 中配置的主题。 | boolean | true |
-| algorithm | 用于修改 Seed Token 到 Map Token 的算法 | `(token: SeedToken) => MapToken` \| `((token: SeedToken) => MapToken)[]` | `defaultAlgorithm` |
-| components | 用于修改各个组件的 Component Token 以及覆盖该组件消费的 Alias Token | `ComponentsConfig` | - |
-
+| 属性       | 说明                                                                | 类型                                                                     | 默认值             |
+| ---------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------ |
+| token      | 用于修改 Design Token                                               | `AliasToken`                                                             | -                  |
+| inherit    | 继承上层 ConfigProvider 中配置的主题。                              | boolean                                                                  | true               |
+| algorithm  | 用于修改 Seed Token 到 Map Token 的算法                             | `(token: SeedToken) => MapToken` \| `((token: SeedToken) => MapToken)[]` | `defaultAlgorithm` |
+| components | 用于修改各个组件的 Component Token 以及覆盖该组件消费的 Alias Token | `ComponentsConfig`                                                       | -                  |
 
 ### Theme 属性 token 是用来做什么的？
 
 属性 token 是用来修改 Design Token 的。
-
 
 ### Theme 属性 inherit 是用来做什么的？
 
@@ -628,14 +631,14 @@ const theme = {
 
 请注意，以上仅是属性 `Component` 的一种可能的类型，并不是具体的实现方式。具体的实现方式可能与上述类型有所不同。
 
-## 为什么 `theme` 从 `undefined` 变为对象或者变为 `undefined` 时组件重新 mount 了？
+### 为什么 `theme` 从 `undefined` 变为对象或者变为 `undefined` 时组件重新 mount 了？
 
 在 React 的 ConfigProvider 组件中，通过 DesignTokenContext 来传递上下文数据。当 theme 属性值从 undefined 变为一个对象，或者从一个对象变为 undefined 时，会触发组件重新挂载的操作。这是因为 theme 属性的变化导致了 React 的 Virtual DOM 结构的变化，从而触发了组件的重新挂载。
 
-## 在 ConfigProvider 中，为什么 `theme` 为 `undefined` 时不会套一层 Provider？
+### 在 ConfigProvider 中，为什么 `theme` 为 `undefined` 时不会套一层 Provider？
 
 在 ConfigProvider 组件中，通过 DesignTokenContext 传递 context 数据。当 theme 属性的值为 undefined 时，ConfigProvider 不会包裹额外的 Provider 层。这是因为当 theme 为 undefined 时，不需要传递具体的主题数据，而是使用默认的样式。因此，不需要套一层 Provider。
 
-## 如何解决 `theme` 从 `undefined` 变为对象或者变为 `undefined` 时组件重新 mount 的问题？
+### 如何解决 `theme` 从 `undefined` 变为对象或者变为 `undefined` 时组件重新 mount 的问题？
 
 要解决 `theme` 从 `undefined` 变为对象或者变为 `undefined` 时组件重新 mount 的问题，可以将 `undefined` 替换为空对象 `{}`。通过将 `theme` 设置为一个空对象，可以避免组件重新挂载。这是由于当 `theme` 为一个空对象时，React 的 Virtual DOM 结构不会发生变化，因此不会触发组件的重新挂载。

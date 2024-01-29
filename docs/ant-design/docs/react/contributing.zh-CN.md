@@ -149,7 +149,6 @@ Ant Design 团队会关注所有的 Pull Request，并进行代码审查和合�
 - 如果你使用 yarn，运行 `yarn start` 来启动开发服务器。
 - 你还可以运行 `npm run build` 或 `yarn build` 来构建生产版本的代码。
 
-
 ### CSS-in-JS 样式提示插件是什么？
 
 CSS-in-JS 样式提示插件是一个用于 Visual Studio Code 的插件，它提供了 Ant Design 的样式提示功能。该插件可以帮助开发者在编写 CSS-in-JS 样式时，提供相关的代码补全和代码提示，从而提高开发效率。

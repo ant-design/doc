@@ -2,7 +2,7 @@
 
 一个表单除了 Form 之外还是需要一系列的表单项。ProFormFields 是一套表单项组件，它是由 Form.Item 和 组件结合而成，可以将其当成一个 FormItem 来使用。每个表单项都支持各种 props，并且支持通过 fieldProps 设置输入组件的 props。同时，它们也支持透传 placeholder 属性，可以直接在组件上设置 placeholder。
 
-## ProFormText 和 Input 有什么关系？
+### ProFormText 和 Input 有什么关系？
 
 ProFormText 是一个 ProFormFields 的表单项组件，它由 Form.Item 和 Input 组件结合而成。你可以将其理解为以下代码的产物：
 
@@ -18,7 +18,7 @@ const ProFormText = (props) => {
 
 因此，我们给 ProFormText 设置的 props 实际上是 Form.Item 的 props，而包含的组件的 props 则是 fieldProps。请注意区分它们的作用。
 
-## ProFormFields 表单项是否支持只读模式？
+### ProFormFields 表单项是否支持只读模式？
 
 是的，每个表单项都支持 readonly 属性。不同的组件会有不同的只读样式，与 disable 相比，readonly 属性展示更加友好。此外，使用 readonly 生成的 DOM 也更小，例如 ProFormDigit 会自动格式化小数位数。因此，在需要只读模式的情况下，可以设置 readonly 属性来实现。
 
@@ -39,8 +39,8 @@ ProFormRadio.Group 是单选按钮组件，支持在 Radio 基础上设置 layou
 ### 表单项
 
 ```tsx
-import React from 'react';
-import { Input } from 'antd';
+import React from "react";
+import { Input } from "antd";
 
 const FormItem = () => {
   return (
@@ -59,8 +59,8 @@ export default FormItem;
 ### 查询表单
 
 ```tsx
-import React from 'react';
-import { Input, Button, Select } from 'antd';
+import React from "react";
+import { Input, Button, Select } from "antd";
 
 const SearchForm = () => {
   return (
@@ -86,8 +86,8 @@ export default SearchForm;
 ### 结构化数据
 
 ```tsx
-import React from 'react';
-import { Checkbox, Form } from 'antd';
+import React from "react";
+import { Checkbox, Form } from "antd";
 
 const FormData = () => {
   return (
@@ -110,8 +110,8 @@ export default FormData;
 ### 日期表单
 
 ```tsx
-import React from 'react';
-import { DatePicker } from 'antd';
+import React from "react";
+import { DatePicker } from "antd";
 
 const DateTimeForm = () => {
   return (
@@ -130,9 +130,9 @@ export default DateTimeForm;
 ### 上传表单
 
 ```tsx
-import React from 'react';
-import { Upload, Button } from 'antd';
-import { UploadOutlined } from '@ant-design/icons';
+import React from "react";
+import { Upload, Button } from "antd";
+import { UploadOutlined } from "@ant-design/icons";
 
 const UploadForm = () => {
   return (
@@ -152,8 +152,8 @@ export default UploadForm;
 ### 只读表单
 
 ```tsx
-import React from 'react';
-import { Input } from 'antd';
+import React from "react";
+import { Input } from "antd";
 
 const ReadonlyForm = () => {
   return (
@@ -172,8 +172,8 @@ export default ReadonlyForm;
 ### 轻量筛选中使用 light
 
 ```tsx
-import React from 'react';
-import { Checkbox, Form } from 'antd';
+import React from "react";
+import { Checkbox, Form } from "antd";
 
 const FieldSetLight = () => {
   return (
@@ -200,29 +200,35 @@ export default FieldSetLight;
 ### 通用的属性
 
 #### 参数：width
+
 - 说明：Field 的长度，我们归纳了常用的 Field 长度以及适合的场景，支持了一些枚举 "xs" , "sm" , "md" ,"lg" , "xl"
 - 类型：`number | "xs" | "sm" | "md" | "lg" | "xl"`
 - 默认值：-
 
 #### 参数：rowProps
+
 - 说明：[RowProps](https://ant.design/components/grid/#Row)，开启 `grid` 模式时传递给 Row, 仅在`ProFormGroup`, `ProFormList`, `ProFormFieldSet` 中有效
 - 默认值：{ gutter: 8 }
 
 #### 参数：colProps
+
 - 说明：[ColProps](https://ant.design/components/grid/#Col)，开启 `grid` 模式时传递给 Col
 - 默认值：{ xs: 24 }
 
 #### 参数：tooltip
+
 - 说明：会在 label 旁增加一个 icon，悬浮后展示配置的信息
 - 类型：`string | tooltipProps`
 - 默认值：-
 
 #### 参数：secondary
+
 - 说明：是否是次要控件，只针对 LightFilter 下有效
 - 类型：`boolean`
 - 默认值：`false`
 
 #### 参数：allowClear
+
 - 说明：支持清除，针对 LightFilter 下有效，主动设置情况下同时也会透传给 `fieldProps`
 - 类型：`boolean`
 - 默认值：`true`
@@ -232,7 +238,7 @@ export default FieldSetLight;
 在不同的场景下，输入框的宽度会根据内容的长度来进行适配，同时也有一些默认的宽度规则。
 
 - `XS=104px` 这个宽度适用于短数字、短文本或选项的输入框。
-- `SM=216px` 如果需要输入较短的字段，比如姓名、电话、ID等，可以使用这个宽度。
+- `SM=216px` 如果需要输入较短的字段，比如姓名、电话、ID 等，可以使用这个宽度。
 - `MD=328px` 这个宽度是用于大部分字段长度的标准宽度。
 - `LG=440px` 如果需要输入较长的字段，比如长网址、标签组、文件路径等，可以选择这个宽度。
 - `XL=552px` 如果需要输入较长的文本，比如长链接、描述、备注等，通常会结合自适应多行输入框或定高文本域来使用。
@@ -244,7 +250,7 @@ export default FieldSetLight;
 如果你需要设置输入框的宽度，可以根据上述的宽度规则进行选择。在 Ant Design 中，可以使用相应的尺寸值来设置输入框的宽度。例如，要设置一个宽度为 `SM=216px` 的输入框，可以使用以下代码：
 
 ```jsx
-<Input style={{ width: '216px' }} />
+<Input style={{ width: "216px" }} />
 ```
 
 通过设置 `style` 属性中的 `width` 属性来指定输入框的宽度。
@@ -254,7 +260,7 @@ export default FieldSetLight;
 为了更好地理解输入框宽度的规则，下面举几个例子：
 
 - 如果要创建一个用于输入短文本的输入框，可以使用 `XS=104px` 的宽度。
-- 如果要创建一个用于输入较短字段的输入框，如姓名、电话、ID等，可以使用 `SM=216px` 的宽度。
+- 如果要创建一个用于输入较短字段的输入框，如姓名、电话、ID 等，可以使用 `SM=216px` 的宽度。
 - 对于大部分字段长度，可以使用 `MD=328px` 的标准宽度。
 - 如果需要输入较长的字段，比如长网址、标签组、文件路径等，可以使用 `LG=440px` 的宽度。
 - 如果需要输入较长的文本，比如长链接、描述、备注等，可以使用 `XL=552px` 的宽度。
@@ -300,18 +306,18 @@ ProFormText 是一个表单组件，它与 Ant Design 的 [Input](https://ant.de
 ```tsx | pure
 <ProFormCaptcha
   fieldProps={{
-    size: 'large',
+    size: "large",
     prefix: <MailTwoTone />,
   }}
   captchaProps={{
-    size: 'large',
+    size: "large",
   }}
   phoneName="phone"
   name="captcha"
   rules={[
     {
       required: true,
-      message: '请输入验证码',
+      message: "请输入验证码",
     },
   ]}
   placeholder="请输入验证码"
@@ -326,7 +332,7 @@ ProFormText 是一个表单组件，它与 Ant Design 的 [Input](https://ant.de
 
 ProFormCaptcha 组件支持以下参数配置：
 
-- onGetCaptcha: 点击获取验证码的事件，当配置了 phoneName 时会自动注入。
+- onGetCaptch 点击获取验证码的事件，当配置了 phoneName 时会自动注入。
 - onTiming: 计时数字监听。
 - captchaProps: 获取验证码按钮的属性，与 antd 的属性相同。
 - countDown: 倒计时的秒数，默认为 60。
@@ -343,8 +349,8 @@ ProFormText.Password 和 Input.Password 在功能上是相同的。它们都用�
 首先，确保你已经安装了相关依赖，并导入所需的组件。
 
 ```tsx
-import ProFormText from '@ant-design/pro-form';
-import { Password } from 'antd';
+import ProFormText from "@ant-design/pro-form";
+import { Password } from "antd";
 ```
 
 然后，在你的表单中使用 ProFormText.Password 组件。
@@ -358,7 +364,7 @@ import { Password } from 'antd';
 首先，确保你已经安装了相关依赖，并导入所需的组件。
 
 ```tsx
-import { Input } from 'antd';
+import { Input } from "antd";
 ```
 
 然后，在你的表单中使用 Input.Password 组件。
@@ -376,6 +382,7 @@ ProFormTextArea 是一个与 [Input.TextArea](https://ant.design/components/inpu
 ### ProFormTextArea 的属性有哪些？
 
 ProFormTextArea 的属性如下：
+
 - `name`：用于设置输入框字段的名称。
 - `label`：用于设置输入框的标签。
 - `placeholder`：设置输入框的占位文本。
@@ -384,6 +391,7 @@ ProFormTextArea 的属性如下：
 ### 如何使用 ProFormTextArea 组件？
 
 你可以使用以下代码示例来使用 ProFormTextArea 组件：
+
 ```tsx | pure
 <ProFormTextArea
   name="text"
@@ -463,21 +471,22 @@ ProFormDatePicker 组件继承了 DatePicker 组件的所有属性和配置，�
 
 除了继承的属性和配置外，ProFormDatePicker 还可以接受一些额外的属性和配置，用于表单的验证和提交操作。你可以参考 ProFormDatePicker 的文档或源代码来获取更详细的信息。
 
-### 问题：ProFormDateTimePicker 是什么？
+ProFormDateTimePicker 是什么？
 
-回答：ProFormDateTimePicker 是一个组件，它与 Ant Design 的 DatePicker 相同。
+ProFormDateTimePicker 是一个组件，它与 Ant Design 的 DatePicker 相同。
 
-### 问题：ProFormDateTimePicker 如何使用？
+ProFormDateTimePicker 如何使用？
 
-回答：可以通过以下方式使用 ProFormDateTimePicker 组件：
+可以通过以下方式使用 ProFormDateTimePicker 组件：
 
 ```tsx | pure
 <ProFormDateTimePicker name="datetime" label="日期时间" />
 ```
 
-### 问题：ProFormDateTimePicker 有哪些属性？
+ProFormDateTimePicker 有哪些属性？
 
-回答：ProFormDateTimePicker 组件有以下属性：
+ProFormDateTimePicker 组件有以下属性：
+
 - name: 指定组件的名称
 - label: 指定组件的标签
 
@@ -572,21 +581,21 @@ ProFormSelect 组件是在 Ant Design 的 select 组件的基础上进行了扩�
 
 希望以上对 ProFormSelect 组件的说明能帮助到你！如果有任何疑问，请随时提问。
 
-## 问题1：ProFormTreeSelect 支持哪些参数？
+### ProFormTreeSelect 支持哪些参数？
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| valueEnum | 当前列值的枚举 [valueEnum](/components/table#valueenum) | `Record` | - |
-| request | 从网络请求枚举数据 | `()=>Promise<{label,value}>` | - |
-| debounceTime | 防抖动时间，与 request 配合使用 | `number` | - |
-| params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
-| fieldProps | antd 组件的 props | `TreeSelectProps` | - |
+| 参数         | 说明                                                    | 类型                         | 默认值 |
+| ------------ | ------------------------------------------------------- | ---------------------------- | ------ |
+| valueEnum    | 当前列值的枚举 [valueEnum](/components/table#valueenum) | `Record`                     | -      |
+| request      | 从网络请求枚举数据                                      | `()=>Promise<{label,value}>` | -      |
+| debounceTime | 防抖动时间，与 request 配合使用                         | `number`                     | -      |
+| params       | 发起网络请求的参数，与 request 配合使用                 | `Record`                     | -      |
+| fieldProps   | antd 组件的 props                                       | `TreeSelectProps`            | -      |
 
-## 问题2：ProFormTreeSelect 的 request 参数是用来做什么的？
+### 问题 2：ProFormTreeSelect 的 request 参数是用来做什么的？
 
 ProFormTreeSelect 的 request 参数是用来从网络请求枚举数据的。通过提供一个返回 Promise 的函数，可以实现异步获取数据的功能。
 
-## 问题3：ProFormTreeSelect 的 valueEnum 参数有什么作用？
+###ProFormTreeSelect 的 valueEnum 参数有什么作用？
 
 ProFormTreeSelect 的 valueEnum 参数用于指定当前列值的枚举类型，可以与 table、descriptions 等组件共用，在工程化上具有优势。它是一个 Record 类型的参数。
 
@@ -610,7 +619,7 @@ ProFormCheckbox 是一个可以生成 checkbox 组件的 ProForm 组件。它类
   name="checkbox"
   layout="vertical"
   label="行业分布"
-  options={['农业', '制造业', '互联网']}
+  options={["农业", "制造业", "互联网"]}
 />
 ```
 
@@ -652,16 +661,16 @@ ProFormRadio.Group 的常用参数如下：
   label="Radio.Group"
   options={[
     {
-      label: 'item 1',
-      value: 'a',
+      label: "item 1",
+      value: "a",
     },
     {
-      label: 'item 2',
-      value: 'b',
+      label: "item 2",
+      value: "b",
     },
     {
-      label: 'item 3',
-      value: 'c',
+      label: "item 3",
+      value: "c",
     },
   ]}
 />
@@ -692,9 +701,11 @@ ProFormRadio.Group 的常用参数如下：
 ProFormSwitch 是一个与 Ant Design 的 [switch](https://ant.design/components/switch-cn/) 组件相似的组件，你可以通过 fieldProps 属性来配置 switch 的数据。
 
 参数列表如下：
+
 - `fieldProps`：antd 组件的 props，类型为 `SwitchProps`，默认值为 `-`。
 
 以下是一个示例，展示了如何使用 ProFormSwitch 组件：
+
 ```tsx | pure
 <ProFormSwitch name="switch" label="Switch" />
 ```
@@ -719,9 +730,9 @@ ProFormSwitch 组件的属性列表如下：
 
 ### ProFormRate 组件的参数有哪些？
 
-参数       | 说明              | 类型        | 默认值 
----------- | ----------------- | ----------- | ------
-fieldProps | antd 组件的 props | RateProps | -      
+| 参数       | 说明              | 类型      | 默认值 |
+| ---------- | ----------------- | --------- | ------ |
+| fieldProps | antd 组件的 props | RateProps | -      |
 
 ### ProFormRate 组件是如何配置 rate 的数据的？
 
@@ -758,12 +769,12 @@ ProFormSlider 组件的默认值为 `-`。
   name="slider"
   label="Slider"
   marks={{
-    0: 'A',
-    20: 'B',
-    40: 'C',
-    60: 'D',
-    80: 'E',
-    100: 'F',
+    0: "A",
+    20: "B",
+    40: "C",
+    60: "D",
+    80: "E",
+    100: "F",
   }}
 />
 ```
@@ -787,16 +798,16 @@ ProFormUploadDragger 组件支持以下参数：
 可以在代码中使用 ProFormUploadDragger 组件，并设置相关参数。以下是一个示例：
 
 ```tsx
-import { ProFormUploadDragger } from 'antd';
+import { ProFormUploadDragger } from "antd";
 
 // ...
 
-<ProFormUploadDragger label="Dragger" name="dragger" action="upload.do" />
+<ProFormUploadDragger label="Dragger" name="dragger" action="upload.do" />;
 ```
 
 在以上示例中，我们使用了 ProFormUploadDragger 组件，并通过 label 属性设置了标签显示的文本，通过 name 属性设置了表单字段的名称，action 属性设置了上传文件的后端接口。你可以根据自己的需求进行自定义配置。
 
-#### 问题1：ProFormUploadButton 组件有哪些参数？
+#### ProFormUploadButton 组件有哪些参数？
 
 答：ProFormUploadButton 组件有以下参数：
 
@@ -804,11 +815,11 @@ import { ProFormUploadDragger } from 'antd';
 - title：Button 的标题，类型为 `ReactNode`，默认值为 单击上传。
 - max：最大上传数量，超过最大数量就会隐藏上传按钮，类型为 `number`，无默认值。
 
-#### 问题2：ProFormUploadButton 组件是什么？
+#### 问题 2：ProFormUploadButton 组件是什么？
 
 答：ProFormUploadButton 组件是一个预设了 Button 样式的组件，与 [upload](https://ant.design/components/upload-cn/) 组件相同，其他属性与 Upload 组件相同。
 
-#### 问题3：如何使用 ProFormUploadButton 组件？
+####如何使用 ProFormUploadButton 组件？
 
 答：可以使用以下方式来使用 ProFormUploadButton 组件：
 
@@ -869,30 +880,30 @@ import ProFormMoney from 'xxx';
 
 ### ProFormMoney 的参数说明
 
-| 参数               | 说明                                              | 类型                                                                              | 默认值         |
-| -------------------|-------------------------------------------------| --------------------------------------------------------------------------------- | -------------- |
-| locale             | 单独设置的国际化地区值，根据不同的地区显示不同的货币符号，支持地区详见下面的地区目录   | string                                                                            | `zh-Hans-CN`   |
-| customSymbol       | 自定义金额符号                                   | string                                                                            | -              |
-| numberPopoverRender| 自定义 Popover 的值，false 可以关闭它               | ((props: InputNumberProps, defaultText: string) => React.ReactNode) \| boolean    | false          |
-| numberFormatOptions| NumberFormat 的配置，文档可以查看 [mdn](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)  | NumberFormatOptions                                                              | -              |
-| min                | 最小值                                           | number                                                                            | -              |
-| max                | 最大值                                           | number                                                                            | -              |
+| 参数                | 说明                                                                                                                                        | 类型                                                                           | 默认值       |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------ |
+| locale              | 单独设置的国际化地区值，根据不同的地区显示不同的货币符号，支持地区详见下面的地区目录                                                        | string                                                                         | `zh-Hans-CN` |
+| customSymbol        | 自定义金额符号                                                                                                                              | string                                                                         | -            |
+| numberPopoverRender | 自定义 Popover 的值，false 可以关闭它                                                                                                       | ((props: InputNumberProps, defaultText: string) => React.ReactNode) \| boolean | false        |
+| numberFormatOptions | NumberFormat 的配置，文档可以查看 [mdn](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) | NumberFormatOptions                                                            | -            |
+| min                 | 最小值                                                                                                                                      | number                                                                         | -            |
+| max                 | 最大值                                                                                                                                      | number                                                                         | -            |
 
 以上是 ProFormMoney 组件的使用示例和参数说明，根据需要选择和配置相应的参数来实现所需的功能。如果您有任何疑问，请参考示例代码和参数说明，或者查阅相关文档获取更多信息。
 
-## QA 1
+### 1
 
 ### 地区编码 "zh-CN" 对应的货币符号是什么？
 
 地区编码 "zh-CN" 对应的货币符号是 "¥"。
 
-## QA 2
+### 2
 
 ### 地区编码 "es-ES" 对应的货币符号是什么？
 
 地区编码 "es-ES" 对应的货币符号是 "€"。
 
-## QA 3
+### 3
 
 ### 地区编码 "ko-KR" 对应的货币符号是什么？
 
@@ -922,22 +933,22 @@ ProFormSegmented 组件支持以下参数：
     name="segmented"
     label="segmented"
     valueEnum={{
-      open: '未解决',
-      closed: '已解决',
+      open: "未解决",
+      closed: "已解决",
     }}
-    rules={[{ required: true, message: 'Please select your country!' }]}
+    rules={[{ required: true, message: "Please select your country!" }]}
   />
 
   <ProFormSegmented
     name="segmented"
     label="segmented"
     request={async () => [
-      { label: '全部', value: 'all' },
-      { label: '未解决', value: 'open' },
-      { label: '已解决', value: 'closed' },
-      { label: '解决中', value: 'processing' },
+      { label: "全部", value: "all" },
+      { label: "未解决", value: "open" },
+      { label: "已解决", value: "closed" },
+      { label: "解决中", value: "processing" },
     ]}
-    rules={[{ required: true, message: 'Please select your country!' }]}
+    rules={[{ required: true, message: "Please select your country!" }]}
   />
 </>
 ```

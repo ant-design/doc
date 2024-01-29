@@ -1,11 +1,13 @@
 ### 什么是 `:where` 选择器？
+
 Ant Design 的 CSS-in-JS 默认通过 `:where` 选择器降低 CSS Selector 的优先级，以减少用户升级时额外调整自定义样式的成本。但是需要注意的是，`:where` 选择器的兼容性在低版本浏览器中相对较差。如果你需要支持旧版浏览器或与 TailwindCSS 的优先级冲突，可以使用 `@ant-design/cssinjs` 来取消默认的降权操作。通过配置 `hashPriority` 为 `"high"`，即可将样式从 `:where` 切换为类选择器。
 
 ### 如何使用 `@ant-design/cssinjs` 取消 `:where` 选择器的默认降权操作？
+
 使用 `@ant-design/cssinjs` 取消 `:where` 选择器的默认降权操作需要引入 `StyleProvider` 组件。在 `StyleProvider` 组件内部，将 `hashPriority` 设置为 `"high"`，即可移除 `:where` 选择器的封装效果。
 
 ```tsx
-import { StyleProvider } from '@ant-design/cssinjs';
+import { StyleProvider } from "@ant-design/cssinjs";
 
 export default () => (
   <StyleProvider hashPriority="high">
@@ -15,6 +17,7 @@ export default () => (
 ```
 
 ### 如何处理关闭 `:where` 降权后的样式的优先级调整？
+
 关闭 `:where` 降权后，你可能需要手动调整一些样式的优先级。可以使用 PostCSS 插件来提升应用样式的优先级。PostCSS 提供了多种插件供选择，例如 `postcss-scopify`、`postcss-increase-specificity` 和 `postcss-add-root-selector`。
 
 通过适当配置插件，在样式中添加根选择器 `#root` 可以提升样式的优先级，例如：
@@ -39,7 +42,10 @@ CSS 逻辑属性是为了统一 LTR（从左到右的文本方向）和 RTL（�
 具体的配置代码示例如下：
 
 ```tsx
-import { legacyLogicalPropertiesTransformer, StyleProvider } from '@ant-design/cssinjs';
+import {
+  legacyLogicalPropertiesTransformer,
+  StyleProvider,
+} from "@ant-design/cssinjs";
 
 // 使用 `transformers` 属性进行样式转换配置
 export default () => (
@@ -76,7 +82,7 @@ CSS 逻辑属性的引入是为了解决不同文本方向下样式的一致性�
 使用 `px2remTransformer` 转换器可以快速而准确地将样式表中的像素单位转换为 rem 单位。首先，我们需要导入 `px2remTransformer` 和 `StyleProvider`，然后创建一个 `px2rem` 实例，指定 `rootValue`，即 32px = 1rem（默认为 16）。最后，在样式提供器 `<StyleProvider>` 的 `transformers` 属性中传入 `px2rem` 实例，将转换器应用到样式中。
 
 ```tsx
-import { px2remTransformer, StyleProvider } from '@ant-design/cssinjs';
+import { px2remTransformer, StyleProvider } from "@ant-design/cssinjs";
 
 const px2rem = px2remTransformer({
   rootValue: 32, // 32px = 1rem; @default 16
@@ -114,23 +120,23 @@ export default () => (
 
 可以看到，宽度和字体大小的像素单位被转换为相应的 rem 单位，并且在响应式媒体查询中，边距也被正确地转换为 rem 单位。通过这种方式，我们可以在各种屏幕尺寸下实现自适应和响应式的页面布局。
 
-### 问题1: Ant Design 5.x 中的 CSS 变量模式需要配置哪些参数？
+### 问题 Ant Design 5.x 中的 CSS 变量模式需要配置哪些参数？
 
 答：Ant Design 5.x 的 CSS 变量模式需要配置以下参数：
 
-- `rootValue`：根元素字体大小，默认值为16
-- `precision`：转换后的小数点位数，默认值为5
-- `mediaQuery`：是否转换媒体查询中的px，默认值为false
+- `rootValue`：根元素字体大小，默认值为 16
+- `precision`：转换后的小数点位数，默认值为 5
+- `mediaQuery`：是否转换媒体查询中的 px，默认值为 false
 
 你可以参考 [px2rem.ts#Options](https://github.com/ant-design/cssinjs/blob/master/src/transformers/px2rem.ts) 获取更详细的配置信息。
 
-### 问题2: 在 Ant Design 5.x 中，如何设置根元素的字体大小？
+### 问题 在 Ant Design 5.x 中，如何设置根元素的字体大小？
 
-答：在 Ant Design 5.x 中，可以通过配置 `rootValue` 参数来设置根元素的字体大小。默认值为16，可以根据具体需求进行调整。
+答：在 Ant Design 5.x 中，可以通过配置 `rootValue` 参数来设置根元素的字体大小。默认值为 16，可以根据具体需求进行调整。
 
-### 问题3: 在 Ant Design 5.x 中，是否可以转换媒体查询中的px？
+### 问题 在 Ant Design 5.x 中，是否可以转换媒体查询中的 px？
 
-答：是的，在 Ant Design 5.x 中，可以通过配置 `mediaQuery` 参数来决定是否转换媒体查询中的px。默认值为false，如果需要转换，请将该参数设置为true。
+答：是的，在 Ant Design 5.x 中，可以通过配置 `mediaQuery` 参数来决定是否转换媒体查询中的 px。默认值为 false，如果需要转换，请将该参数设置为 true。
 
 ### 在 Shadow DOM 场景中，为什么需要使用 `StyleProvider` 组件？
 
@@ -143,11 +149,11 @@ export default () => (
 具体代码如下：
 
 ```tsx
-import { StyleProvider } from '@ant-design/cssinjs';
-import { createRoot } from 'react-dom/client';
+import { StyleProvider } from "@ant-design/cssinjs";
+import { createRoot } from "react-dom/client";
 
-const shadowRoot = someEle.attachShadow({ mode: 'open' });
-const container = document.createElement('div');
+const shadowRoot = someEle.attachShadow({ mode: "open" });
+const container = document.createElement("div");
 shadowRoot.appendChild(container);
 const root = createRoot(container);
 

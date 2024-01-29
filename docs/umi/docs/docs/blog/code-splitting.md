@@ -18,8 +18,8 @@ Umi 4 内置了以下代码分包策略：
 ```ts
 export default [
   {
-    path: '/user',
-    component: dynamic(() => import('./user')),
+    path: "/user",
+    component: dynamic(() => import("./user")),
   },
 ];
 ```
@@ -35,13 +35,13 @@ export default [
 在 React 应用中，我们可以使用 `lazy` 和 `Suspense` 实现手动拆分。首先，我们需要引入 `lazy` 和 `Suspense`：
 
 ```ts
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense } from "react";
 ```
 
 接下来，我们可以使用 `lazy` 方法来异步加载我们要拆分的组件。这样，只有当组件被需要时才会被加载。例如，下面的代码将会把 `./Page` 组件拆分出去：
 
 ```ts
-const Page = lazy(() => import('./Page'))
+const Page = lazy(() => import("./Page"));
 ```
 
 最后，我们需要在组件中使用 `Suspense` 组件来包裹我们需要异步加载的组件，并提供一个 loading 的回退组件：
@@ -75,13 +75,13 @@ export default function MyComponent() {
 1. 首先，引入 `lazy` 和 `Suspense`：
 
 ```ts
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense } from "react";
 ```
 
 2. 接下来，使用 `lazy` 方法来异步加载我们要拆分的组件。例如，下面的代码将会拆分出一个组件 `MyComponent`：
 
 ```ts
-const MyComponent = lazy(() => import('./MyComponent'))
+const MyComponent = lazy(() => import("./MyComponent"));
 ```
 
 3. 最后，在使用该组件的地方，使用 `Suspense` 组件来包裹我们需要异步加载的组件，并提供一个 loading 的回退组件：

@@ -86,26 +86,24 @@ $ umi dev
 
 你可以在浏览器中打开以上地址查看你的应用。
 
-1. 什么是 umi generate？
-根据前面的文本信息，umi generate 是一个用于生成 umi 页面的命令。可以通过选择生成器类型或指定参数来使用。
+1. 什么是 umi generate？根据前面的文本信息，umi generate 是一个用于生成 umi 页面的命令。可以通过选择生成器类型或指定参数来使用。
 
-2. umi generate 支持哪些生成器类型？
-根据前面的文本信息，umi generate 支持以下生成器类型：
+2. umi generate 支持哪些生成器类型？根据前面的文本信息，umi generate 支持以下生成器类型：
+
 - Create Pages：根据页面名称创建一个 umi 页面
 - Enable Prettier：启用 Prettier
 
-3. 如何使用 umi generate 命令？
-根据前面的文本信息，可以通过以下命令来使用 umi generate：
+3. 如何使用 umi generate 命令？根据前面的文本信息，可以通过以下命令来使用 umi generate：
+
 - 不指定参数时，会显示生成器类型供选择。
 - 指定参数时，可以直接使用指定的生成器类型。
 
-4. 能否详细说明 umi generate 的使用方法？
-根据前面的文本信息，umi generate 的使用方法如下：
+4. 能否详细说明 umi generate 的使用方法？根据前面的文本信息，umi generate 的使用方法如下：
+
 - 如果不指定参数，可以使用箭头键选择生成器类型，回车键提交选择。
 - 如果指定参数，可以直接使用指定的生成器类型。
 
-5. 基于以上信息，可以生成多少个 QA 文档？
-根据前面的文本信息，可以生成3个 QA 文档。
+5. 基于以上信息，可以生成多少个 文档？根据前面的文本信息，可以生成 3 个 文档。
 
 ### umi 的帮助命令有哪些？
 
@@ -189,9 +187,9 @@ $ umi lint --fix
 
 希望以上信息能够对你有所帮助！如果你有其他问题，请随时提问。
 
-### umi插件有哪些功能？
+### umi 插件有哪些功能？
 
-目前，umi插件支持以下功能：
+目前，umi 插件支持以下功能：
 
 - @umijs/core/dist/service/servicePlugin
 - @umijs/preset-umi (来自预设)
@@ -206,25 +204,25 @@ $ umi lint --fix
 
 你可以使用 `umi plugin list` 命令查看所有的插件。
 
-### umi插件如何列出？
+### umi 插件如何列出？
 
-要列出所有的umi插件，可以使用以下命令：
-
-```bash
-$ umi plugin list
-```
-
-这将输出一个插件列表，包含了所有已安装的umi插件。
-
-### 如何使用umi插件的"list"子命令？
-
-要列出umi插件，可以使用以下命令：
+要列出所有的 umi 插件，可以使用以下命令：
 
 ```bash
 $ umi plugin list
 ```
 
-这将显示一个含有所有已安装的umi插件的列表。你可以通过这个列表来查看当前项目中使用的umi插件。
+这将输出一个插件列表，包含了所有已安装的 umi 插件。
+
+### 如何使用 umi 插件的"list"子命令？
+
+要列出 umi 插件，可以使用以下命令：
+
+```bash
+$ umi plugin list
+```
+
+这将显示一个含有所有已安装的 umi 插件的列表。你可以通过这个列表来查看当前项目中使用的 umi 插件。
 
 ### umi preview 命令是用来做什么的？
 
@@ -250,9 +248,9 @@ $ umi preview --host example.com
 
 在运行 `umi preview` 命令时，以下用户配置也将会生效：
 
-* [https 配置](./config#https)
-* [代理配置](../guides/proxy)
-* [模拟数据配置](../guides/mock)
+- [https 配置](./config#https)
+- [代理配置](../guides/proxy)
+- [模拟数据配置](../guides/mock)
 
 这意味着，你可以通过相关的配置文件或文档来进行 HTTPS 配置、代理配置以及模拟数据配置，这些配置将会在使用 `umi preview` 命令时生效。
 
@@ -260,7 +258,7 @@ $ umi preview --host example.com
 
 在预览模式下，`dist` 目录的变更会随着配置文件中的 `outputPath` 的变更而变更。这意味着，如果你修改了 `outputPath` 的配置，`dist` 目录中的内容也会相应发生变化。因此，在使用 `umi preview` 命令时，需要特别注意 `outputPath` 的配置和变更。
 
-## 如何使用 `umi run` 命令运行 TypeScript 文件？
+### 如何使用 `umi run` 命令运行 TypeScript 文件？
 
 你可以使用 `umi run` 命令来像运行普通的 JavaScript 文件一样运行 TypeScript 和 ESM（ECMAScript）文件。这个命令非常方便，你可以搭配 [zx](https://github.com/google/zx) 工具一起使用来优化脚本运行。
 

@@ -22,81 +22,43 @@
 
 ### 字段说明
 
-字段名称：`key`
-类型：`React.key`
-说明：用于确定这个列的唯一值，一般用于 dataIndex 重复的情况。
+字段名称：`key` 类型：`React.key` 说明：用于确定这个列的唯一值，一般用于 dataIndex 重复的情况。
 
-字段名称：`dataIndex`
-类型：`React.key` \| `React.key[]`
-说明：与实体映射的 key，如果是数组形式，会转化为 `[a,b] => Entity.a.b`。
+字段名称：`dataIndex` 类型：`React.key` \| `React.key[]` 说明：与实体映射的 key，如果是数组形式，会转化为 `[a,b] => Entity.a.b`。
 
-字段名称：`valueType`
-类型：`ProFieldValueType`
-说明：数据的渲染方式，ProComponents 项目内部提供了一部分预定义的 valueType，也可以自定义。
+字段名称：`valueType` 类型：`ProFieldValueType` 说明：数据的渲染方式，ProComponents 项目内部提供了一部分预定义的 valueType，也可以自定义。
 
-字段名称：`title`
-类型：`ReactNode` \| `(props,type,dom)=> ReactNode`
-说明：标题的内容，在 form 中相当于 label。
+字段名称：`title` 类型：`ReactNode` \| `(props,type,dom)=> ReactNode` 说明：标题的内容，在 form 中相当于 label。
 
-字段名称：`tooltip`
-类型：`string`
-说明：会在标题旁边展示一个图标，鼠标浮动后显示相关信息。
+字段名称：`tooltip` 类型：`string` 说明：会在标题旁边展示一个图标，鼠标浮动后显示相关信息。
 
-字段名称：`valueEnum`
-类型：`(Entity)=> ValueEnum` \| `ValueEnum`
-说明：支持 object 和 Map，Map 支持其他基础类型作为 key。
+字段名称：`valueEnum` 类型：`(Entity)=> ValueEnum` \| `ValueEnum` 说明：支持 object 和 Map，Map 支持其他基础类型作为 key。
 
-字段名称：`fieldProps`
-类型：`(form,config)=>fieldProps`\| `fieldProps`
-说明：传递给渲染组件的 props，自定义时也会传递该字段。
+字段名称：`fieldProps` 类型：`(form,config)=>fieldProps`\| `fieldProps` 说明：传递给渲染组件的 props，自定义时也会传递该字段。
 
-字段名称：`formItemProps`
-类型：`(form,config)=>formItemProps` \| `formItemProps`
-说明：传递给 Form.Item 的配置。
+字段名称：`formItemProps` 类型：`(form,config)=>formItemProps` \| `formItemProps` 说明：传递给 Form.Item 的配置。
 
-字段名称：`renderText`
-类型：`(text: any, record: Entity, index: number, action: ProCoreActionType) => any`
-说明：修改的数据会根据 valueType 定义的渲染组件消费。
+字段名称：`renderText` 类型：`(text: any, record: Entity, index: number, action: ProCoreActionType) => any` 说明：修改的数据会根据 valueType 定义的渲染组件消费。
 
-字段名称：`render`
-类型：`(dom,entity,index, action, schema) => React.ReactNode`
-说明：自定义只读模式下的内容，`render` 方法只控制只读模式，编辑模式需要使用 `renderFormItem`。
+字段名称：`render` 类型：`(dom,entity,index, action, schema) => React.ReactNode` 说明：自定义只读模式下的内容，`render` 方法只控制只读模式，编辑模式需要使用 `renderFormItem`。
 
-字段名称：`renderFormItem`
-类型：`(schema,config,form) => React.ReactNode`
-说明：自定义编辑模式下的内容，返回一个 ReactNode，在显示 value 和处理 onChange 时会自动包裹。
+字段名称：`renderFormItem` 类型：`(schema,config,form) => React.ReactNode` 说明：自定义编辑模式下的内容，返回一个 ReactNode，在显示 value 和处理 onChange 时会自动包裹。
 
-字段名称：`request`
-类型：`(params,props) => Promise<{label,value}[]>`
-说明：从远程请求网络数据，主要应用于选择类组件。
+字段名称：`request` 类型：`(params,props) => Promise<{label,value}[]>` 说明：从远程请求网络数据，主要应用于选择类组件。
 
-字段名称：`params`
-类型：`Record<string, any>`
-说明：额外传递给 `request` 的参数，组件内部不进行处理，但是参数变化会导致 `request` 再次请求数据。
+字段名称：`params` 类型：`Record<string, any>` 说明：额外传递给 `request` 的参数，组件内部不进行处理，但是参数变化会导致 `request` 再次请求数据。
 
-字段名称：`hideInForm`
-类型：`boolean`
-说明：在 Form 中隐藏该字段。
+字段名称：`hideInForm` 类型：`boolean` 说明：在 Form 中隐藏该字段。
 
-字段名称：`hideInTable`
-类型：`boolean`
-说明：在 Table 中隐藏该字段。
+字段名称：`hideInTable` 类型：`boolean` 说明：在 Table 中隐藏该字段。
 
-字段名称：`hideInSearch`
-类型：`boolean`
-说明：在 Table 的查询表单中隐藏该字段。
+字段名称：`hideInSearch` 类型：`boolean` 说明：在 Table 的查询表单中隐藏该字段。
 
-字段名称：`hideInDescriptions`
-类型：`boolean`
-说明：在 descriptions 中隐藏该字段。
+字段名称：`hideInDescriptions` 类型：`boolean` 说明：在 descriptions 中隐藏该字段。
 
-字段名称：`rowProps`
-类型：[RowProps](https://ant.design/components/grid/#Row)
-说明：在开启 `grid` 模式时传递给 Row，仅在 `ProFormGroup`、`ProFormList`、`ProFormFieldSet` 中有效。
+字段名称：`rowProps` 类型：[RowProps](https://ant.design/components/grid/#Row) 说明：在开启 `grid` 模式时传递给 Row，仅在 `ProFormGroup`、`ProFormList`、`ProFormFieldSet` 中有效。
 
-字段名称：`colProps`
-类型：[ColProps](https://ant.design/components/grid/#Col)
-说明：在开启 `grid` 模式时传递给 Col。
+字段名称：`colProps` 类型：[ColProps](https://ant.design/components/grid/#Col) 说明：在开启 `grid` 模式时传递给 Col。
 
 ### 示例
 
@@ -104,7 +66,7 @@
 
 示例 1：
 
-```jsx
+````jsx
 {
   key: 'age',
   dataIndex: 'age',
@@ -136,7 +98,7 @@
   title: '性别',
   hideInSearch: true,
 }
-```
+````
 
 以上是关于通用配置的说明和示例。
 
@@ -223,12 +185,12 @@ valueEnum 是一个用于定义列值的枚举对象，可以在 ProTable 组件
 ```ts
 const valueEnum = {
   open: {
-    text: '未解决',
-    status: 'Error',
+    text: "未解决",
+    status: "Error",
   },
   closed: {
-    text: '已解决',
-    status: 'Success',
+    text: "已解决",
+    status: "Success",
   },
 };
 ```
@@ -240,22 +202,22 @@ const valueEnum = (row) =>
   row.isMe
     ? {
         open: {
-          text: '未解决',
-          status: 'Error',
+          text: "未解决",
+          status: "Error",
         },
         closed: {
-          text: '已解决',
-          status: 'Success',
+          text: "已解决",
+          status: "Success",
         },
       }
     : {
         open: {
-          text: '等待解决',
-          status: 'Error',
+          text: "等待解决",
+          status: "Error",
         },
         closed: {
-          text: '已回应',
-          status: 'Success',
+          text: "已回应",
+          status: "Success",
         },
       };
 ```
@@ -272,7 +234,7 @@ interface IValueEnum {
     | ReactNode
     | {
         text: ReactNode;
-        status: 'Success' | 'Error' | 'Processing' | 'Warning' | 'Default';
+        status: "Success" | "Error" | "Processing" | "Warning" | "Default";
       };
 }
 ```
@@ -283,10 +245,10 @@ interface IValueEnum {
 
 ```ts
 const valueEnum = new Map([
-  [0, { text: '未解决', status: 'Error' }],
-  [1, { text: '已解决', status: 'Success' }],
-  [true, { text: '是', status: 'Success' }],
-  [false, { text: '否', status: 'Error' }],
+  [0, { text: "未解决", status: "Error" }],
+  [1, { text: "已解决", status: "Success" }],
+  [true, { text: "是", status: "Success" }],
+  [false, { text: "否", status: "Error" }],
 ]);
 ```
 
@@ -351,21 +313,23 @@ RadioButton 组件是 Radio 组件的一个变体，同样可以通过以上属�
 使用上述属性来配置 RadioButton 组件，可以实现从远程接口获取数据并显示在组件的单选按钮中。
 
 ### `valueEnum` 是什么？
+
 `valueEnum` 是一个用于定义选项值的对象或映射。它可以用于在表格等组件中展示不同的选项状态，比如常见的 [badge](https://ant.design/components/badge-cn/#Badge)。
 
 ### 如何使用 `valueEnum`？
+
 可以通过传入一个 `Object` 或者 `Map` 来定义 `valueEnum`。下面是一个示例：
 
 ```tsx | pure
 const valueEnum = {
-  all: { text: '全部', status: 'Default' },
+  all: { text: "全部", status: "Default" },
   open: {
-    text: '未解决',
-    status: 'Error',
+    text: "未解决",
+    status: "Error",
   },
   closed: {
-    text: '已解决',
-    status: 'Success',
+    text: "已解决",
+    status: "Success",
   },
 };
 ```
@@ -373,20 +337,21 @@ const valueEnum = {
 这个示例中，`valueEnum` 定义了三个选项值，每个选项值都包含 `text` 和 `status` 属性。在使用 `ProFormSelect` 组件时，可以将 `valueEnum` 作为 `valueEnum` 属性传入，从而展示对应的选项。
 
 ### 如何在组件中使用 `valueEnum`？
+
 可以通过引入 `ProFormSelect` 组件，并在组件中使用 `valueEnum`。下面是一个示例：
 
 ```tsx | pure
-import { ProFormSelect } from '@ant-design/pro-components';
+import { ProFormSelect } from "@ant-design/pro-components";
 
 const valueEnum = {
-  all: { text: '全部', status: 'Default' },
+  all: { text: "全部", status: "Default" },
   open: {
-    text: '未解决',
-    status: 'Error',
+    text: "未解决",
+    status: "Error",
   },
   closed: {
-    text: '已解决',
-    status: 'Success',
+    text: "已解决",
+    status: "Success",
   },
 };
 
@@ -413,49 +378,53 @@ export default () => (
 ### `fieldProps.options` 的用法有哪些示例？
 
 1. 在代码中定义 `options` 数组：
-   ```tsx
-   const options = [
-     { label: '全部', value: 'all' },
-     { label: '未解决', value: 'open' },
-     { label: '已解决', value: 'closed' },
-     { label: '解决中', value: 'processing' },
-     {
-       label: '特殊选项',
-       value: 'optGroup',
-       optionType: 'optGroup',
-       options: [
-         { label: '不解决', value: 'no' },
-         { label: '已废弃', value: 'clear' },
-       ],
-     },
-   ];
 
-   // 或者不需要 label
-   const options = ['chapter', 'chapter2'];
-   ```
-   上述示例中定义了一个 `options` 数组，包含了不同的选项，可以使用这个数组作为 `fieldProps.options` 的值。
+```tsx
+const options = [
+  { label: "全部", value: "all" },
+  { label: "未解决", value: "open" },
+  { label: "已解决", value: "closed" },
+  { label: "解决中", value: "processing" },
+  {
+    label: "特殊选项",
+    value: "optGroup",
+    optionType: "optGroup",
+    options: [
+      { label: "不解决", value: "no" },
+      { label: "已废弃", value: "clear" },
+    ],
+  },
+];
+
+// 或者不需要 label
+const options = ["chapter", "chapter2"];
+```
+
+上述示例中定义了一个 `options` 数组，包含了不同的选项，可以使用这个数组作为 `fieldProps.options` 的值。
 
 2. 在组件中直接定义 `options`：
-   ```tsx
-   import { ProFormSelect } from '@ant-design/pro-components';
 
-   const options = [
-     { label: 'item 1', value: 'a' },
-     { label: 'item 2', value: 'b' },
-     { label: 'item 3', value: 'c' },
-   ];
+```tsx
+import { ProFormSelect } from "@ant-design/pro-components";
 
-   export default () => (
-     <ProFormSelect
-       name="select2"
-       label="Select"
-       valueType="select"
-       fieldProps={{ options }}
-       placeholder="Please select a country"
-     />
-   );
-   ```
-   在上述示例中，通过 `ProFormSelect` 组件的 `fieldProps.options` 属性直接定义了选项数组。
+const options = [
+  { label: "item 1", value: "a" },
+  { label: "item 2", value: "b" },
+  { label: "item 3", value: "c" },
+];
+
+export default () => (
+  <ProFormSelect
+    name="select2"
+    label="Select"
+    valueType="select"
+    fieldProps={{ options }}
+    placeholder="Please select a country"
+  />
+);
+```
+
+在上述示例中，通过 `ProFormSelect` 组件的 `fieldProps.options` 属性直接定义了选项数组。
 
 ### `fieldProps.options` 支持哪些组件？
 
@@ -474,10 +443,10 @@ export default () => (
 
 ```tsx
 const request = async () => [
-  { label: '全部', value: 'all' },
-  { label: '未解决', value: 'open' },
-  { label: '已解决', value: 'closed' },
-  { label: '解决中', value: 'processing' },
+  { label: "全部", value: "all" },
+  { label: "未解决", value: "open" },
+  { label: "已解决", value: "closed" },
+  { label: "解决中", value: "processing" },
 ];
 
 <ProFormSelect
@@ -493,10 +462,10 @@ const request = async () => [
 // 列中定义
 const columns = [
   {
-    title: '创建者',
+    title: "创建者",
     width: 120,
-    dataIndex: 'creator',
-    valueType: 'select',
+    dataIndex: "creator",
+    valueType: "select",
     request,
     params: {},
   },
@@ -507,8 +476,8 @@ const columns = [
 
 ### 如何解决 `request` 缓存导致的数据更新不及时问题？
 
-在实际使用中，`request`函数增加了一个5秒的缓存，可能会导致数据更新不及时。如果需要频繁更新数据，建议使用`state`+`fieldProps.options`来手动更新数据。
+在实际使用中，`request`函数增加了一个 5 秒的缓存，可能会导致数据更新不及时。如果需要频繁更新数据，建议使用`state`+`fieldProps.options`来手动更新数据。
 
-另外，建议使用`debounceTime`参数来调整请求的防抖时间，以减少不必要的请求。默认的防抖时间为10毫秒。
+另外，建议使用`debounceTime`参数来调整请求的防抖时间，以减少不必要的请求。默认的防抖时间为 10 毫秒。
 
 注意：以上内容基于 Ant Design 组件库的使用情景，其他组件库可能具有不同的实现方式。

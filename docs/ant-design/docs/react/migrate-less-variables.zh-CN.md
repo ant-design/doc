@@ -1,30 +1,34 @@
-### Q1: 4.x 版本中的 less 变量与 5.x 版本的 Component Token 有什么对照关系吗？
-A1: 是的，本文档包含了所有 4.x 版本中组件相关的 less 变量与 5.x 版本的 Component Token 的对照关系。如果你是从 4.x 版本升级到 5.x 版本，可以通过这份对照表快速找到对应的 Component Token。
+### Q4.x 版本中的 less 变量与 5.x 版本的 Component Token 有什么对照关系吗？
 
-### Q2: 5.x 版本中有哪些变量没有对应的 Component Token？
-A2: 在 5.x 版本中，仍有部分变量没有对应的 Component Token，这些变量在 5.x 版本中已被废弃。
+A 是的，本文档包含了所有 4.x 版本中组件相关的 less 变量与 5.x 版本的 Component Token 的对照关系。如果你是从 4.x 版本升级到 5.x 版本，可以通过这份对照表快速找到对应的 Component Token。
 
-### Q3: 使用 5.x 版本的 Component Token 可以实现什么功能？
-A3: 使用 5.x 版本的 Component Token，你可以更方便地迁移你的应用程序。它提供了与 4.x 版本 less 变量的对照关系，使你可以快速找到对应的 Token。这样，你可以更快地适应新的版本，同时在新版本中使用这些 Token 可以带来更好的性能和效果。
+### Q5.x 版本中有哪些变量没有对应的 Component Token？
 
-## 如何配置全局的 Component Token？
+A 在 5.x 版本中，仍有部分变量没有对应的 Component Token，这些变量在 5.x 版本中已被废弃。
+
+### Q 使用 5.x 版本的 Component Token 可以实现什么功能？
+
+A 使用 5.x 版本的 Component Token，你可以更方便地迁移你的应用程序。它提供了与 4.x 版本 less 变量的对照关系，使你可以快速找到对应的 Token。这样，你可以更快地适应新的版本，同时在新版本中使用这些 Token 可以带来更好的性能和效果。
+
+### 如何配置全局的 Component Token？
 
 你可以通过使用 `ConfigProvider` 组件的 `theme` 属性来配置全局的 Component Token。在 `theme` 属性中，你可以为每个组件单独设置相应的 Token。
 
 以下是一个示例代码：
+
 ```tsx
-import React from 'react';
-import { Checkbox, ConfigProvider, Radio } from 'antd';
+import React from "react";
+import { Checkbox, ConfigProvider, Radio } from "antd";
 
 const App: React.FC = () => (
   <ConfigProvider
     theme={{
       components: {
         Radio: {
-          colorPrimary: '#00b96b',
+          colorPrimary: "#00b96b",
         },
         Checkbox: {
-          colorPrimary: '#ff4d4f',
+          colorPrimary: "#ff4d4f",
         },
       },
     }}
@@ -45,32 +49,32 @@ export default App;
 
 Alert 组件使用了一些 Less 变量和 Component Token 来定义样式。这些变量和 Token 用于控制警告提示的颜色、背景色、图标颜色等。下表列出了这些变量和 Token 的对应关系：
 
-| Less 变量 | Component Token | 备注 |
-| --- | --- | --- |
-| `@alert-success-border-color` | `colorSuccessBorder` | 全局 token |
-| `@alert-success-bg-color` | `colorSuccessBg` | 全局 token |
-| `@alert-success-icon-color` | `colorSuccess` | 全局 token |
-| `@alert-info-border-color` | `colorInfoBorder` | 全局 token |
-| `@alert-info-bg-color` | `colorInfoBg` | 全局 token |
-| `@alert-info-icon-color` | `colorInfo` | 全局 token |
-| `@alert-warning-border-color` | `colorWarningBorder` | 全局 token |
-| `@alert-warning-bg-color` | `colorWarningBg` | 全局 token |
-| `@alert-warning-icon-color` | `colorWarning` | 全局 token |
-| `@alert-error-border-color` | `colorErrorBorder` | 全局 token |
-| `@alert-error-bg-color` | `colorErrorBg` | 全局 token |
-| `@alert-error-icon-color` | `colorError` | 全局 token |
-| `@alert-message-color` | `colorTextHeading` | 全局 token |
-| `@alert-text-color` | `colorText` | 全局 Token |
-| `@alert-close-color` | `colorIcon` | 全局 token |
-| `@alert-close-hover-color` | `colorIconHover` | 全局 token |
-| `@alert-padding-vertical` | `defaultPadding` | 统一控制 |
-| `@alert-padding-horizontal` | `defaultPadding` | 统一控制 |
-| `@alert-no-icon-padding-vertical` | - | 已废弃 |
-| `@alert-with-description-no-icon-padding-vertical` | `withDescriptionPadding` | 统一控制 |
-| `@alert-with-description-padding-vertical` | `withDescriptionPadding` | 统一控制 |
-| `@alert-with-description-padding` | `withDescriptionPadding` | 统一控制 |
-| `@alert-icon-top` | - | 已废弃 |
-| `@alert-with-description-icon-size` | `withDescriptionIconSize` | - |
+| Less 变量                                          | Component Token           | 备注       |
+| -------------------------------------------------- | ------------------------- | ---------- |
+| `@alert-success-border-color`                      | `colorSuccessBorder`      | 全局 token |
+| `@alert-success-bg-color`                          | `colorSuccessBg`          | 全局 token |
+| `@alert-success-icon-color`                        | `colorSuccess`            | 全局 token |
+| `@alert-info-border-color`                         | `colorInfoBorder`         | 全局 token |
+| `@alert-info-bg-color`                             | `colorInfoBg`             | 全局 token |
+| `@alert-info-icon-color`                           | `colorInfo`               | 全局 token |
+| `@alert-warning-border-color`                      | `colorWarningBorder`      | 全局 token |
+| `@alert-warning-bg-color`                          | `colorWarningBg`          | 全局 token |
+| `@alert-warning-icon-color`                        | `colorWarning`            | 全局 token |
+| `@alert-error-border-color`                        | `colorErrorBorder`        | 全局 token |
+| `@alert-error-bg-color`                            | `colorErrorBg`            | 全局 token |
+| `@alert-error-icon-color`                          | `colorError`              | 全局 token |
+| `@alert-message-color`                             | `colorTextHeading`        | 全局 token |
+| `@alert-text-color`                                | `colorText`               | 全局 Token |
+| `@alert-close-color`                               | `colorIcon`               | 全局 token |
+| `@alert-close-hover-color`                         | `colorIconHover`          | 全局 token |
+| `@alert-padding-vertical`                          | `defaultPadding`          | 统一控制   |
+| `@alert-padding-horizontal`                        | `defaultPadding`          | 统一控制   |
+| `@alert-no-icon-padding-vertical`                  | -                         | 已废弃     |
+| `@alert-with-description-no-icon-padding-vertical` | `withDescriptionPadding`  | 统一控制   |
+| `@alert-with-description-padding-vertical`         | `withDescriptionPadding`  | 统一控制   |
+| `@alert-with-description-padding`                  | `withDescriptionPadding`  | 统一控制   |
+| `@alert-icon-top`                                  | -                         | 已废弃     |
+| `@alert-with-description-icon-size`                | `withDescriptionIconSize` | -          |
 
 通过使用这些变量和 Token，我们可以自定义 Alert 组件的样式，其中全局 token 适用于整个应用，而统一控制的变量则适用于特定的样式。
 
@@ -121,20 +125,20 @@ Alert 组件的警告提示样式由多个变量和 Token 控制。以下是对�
 
 ### Avatar 头像
 
-Q: 如何设置 Avatar 的尺寸？
-A: Avatar 的尺寸可以通过以下 less 变量进行设置：
+### 如何设置 Avatar 的尺寸？ Avatar 的尺寸可以通过以下 less 变量进行设置：
+
 - `@avatar-size-base`：控制整体尺寸
 - `@avatar-size-lg`：控制大尺寸
 - `@avatar-size-sm`：控制小尺寸
 
-Q: 如何设置 Avatar 文本的字体大小？
-A: Avatar 文本的字体大小可以通过以下 less 变量进行设置：
+### 如何设置 Avatar 文本的字体大小？ Avatar 文本的字体大小可以通过以下 less 变量进行设置：
+
 - `@avatar-font-size-base`：控制整体字体大小
 - `@avatar-font-size-lg`：控制大尺寸的字体大小
 - `@avatar-font-size-sm`：控制小尺寸的字体大小
 
-Q: 如何自定义 Avatar 的背景色、边框半径和组合样式？
-A: Avatar 的背景色可以由 `@avatar-bg` 变量覆盖。边框半径可以通过全局 Token `@avatar-border-radius` 进行设置。而 Avatar 的组合样式可以通过以下 less 变量进行设置：
+### 如何自定义 Avatar 的背景色、边框半径和组合样式？ Avatar 的背景色可以由 `@avatar-bg` 变量覆盖。边框半径可以通过全局 Token `@avatar-border-radius` 进行设置。而 Avatar 的组合样式可以通过以下 less 变量进行设置：
+
 - `@avatar-group-overlapping`：控制组合头像的重叠程度
 - `@avatar-group-space`：控制组合头像之间的间隔
 - `@avatar-group-border-color`：控制组合头像的边框颜色
@@ -143,37 +147,32 @@ A: Avatar 的背景色可以由 `@avatar-bg` 变量覆盖。边框半径可以�
 
 这些变量可以帮助您自定义 Avatar 的外观和样式。
 
-## Badge 徽标数
+### Badge 徽标数
 
-Q: 想要修改 Badge 徽标数的样式，可以使用哪些 less 变量？
-A: 可以使用以下 less 变量进行修改：`@zindex-badge`、`@badge-height`、`@badge-height-sm`、`@badge-dot-size`、`@badge-font-size`、`@badge-font-size-sm`、`@badge-font-weight`、`@badge-status-size`、`@badge-text-color`、`@badge-color`。
+### 想要修改 Badge 徽标数的样式，可以使用哪些 less 变量？ 可以使用以下 less 变量进行修改：`@zindex-badge`、`@badge-height`、`@badge-height-sm`、`@badge-dot-size`、`@badge-font-size`、`@badge-font-size-sm`、`@badge-font-weight`、`@badge-status-size`、`@badge-text-color`、`@badge-color`。
 
-Q: Badge 徽标数的高度是由哪个 less 变量控制的？
-A: Badge 徽标数的高度由 `@badge-height` less 变量控制。
+### Badge 徽标数的高度是由哪个 less 变量控制的？ Badge 徽标数的高度由 `@badge-height` less 变量控制。
 
-Q: 如何修改小号 Badge 徽标数的字体大小？
-A: 可以使用 `@badge-font-size-sm` less 变量来修改小号 Badge 徽标数的字体大小。
+### 如何修改小号 Badge 徽标数的字体大小？ 可以使用 `@badge-font-size-sm` less 变量来修改小号 Badge 徽标数的字体大小。
 
-Q: Badge 徽标数的颜色可以通过哪个 less 变量来修改？
-A: Badge 徽标数的颜色可以通过 `@badge-text-color` less 变量来修改。
+### Badge 徽标数的颜色可以通过哪个 less 变量来修改？ Badge 徽标数的颜色可以通过 `@badge-text-color` less 变量来修改。
 
-Q: 如果想要修改 Badge 徽标数的样式，应该参考哪个组件 Token 对应的 less 变量？
-A: 需要参考 `indicatorZIndex`、`indicatorHeight`、`indicatorHeightSM`、`dotSize`、`textFontSize`、`textFontSizeSM`、`textFontWeight`、`statusSize` 这几个组件 Token 对应的 less 变量来修改 Badge 徽标数的样式。
+### 如果想要修改 Badge 徽标数的样式，应该参考哪个组件 Token 对应的 less 变量？ 需要参考 `indicatorZIndex`、`indicatorHeight`、`indicatorHeightSM`、`dotSize`、`textFontSize`、`textFontSizeSM`、`textFontWeight`、`statusSize` 这几个组件 Token 对应的 less 变量来修改 Badge 徽标数的样式。
 
-Q: Badge 徽标数的背景色可以通过哪个全局 Token 来修改？
-A: Badge 徽标数的背景色可以通过 `colorBgContainer` 全局 Token 来修改。
+### Badge 徽标数的背景色可以通过哪个全局 Token 来修改？ Badge 徽标数的背景色可以通过 `colorBgContainer` 全局 Token 来修改。
 
-Q: 如何修改 Badge 徽标数的错误状态的颜色？
-A: 可以使用 `colorError` 全局 Token 来修改 Badge 徽标数的错误状态的颜色。
+### 如何修改 Badge 徽标数的错误状态的颜色？ 可以使用 `colorError` 全局 Token 来修改 Badge 徽标数的错误状态的颜色。
 
 ### BreadCrumb 面包屑的 Less 变量是什么？
 
 BreadCrumb 面包屑的 Less 变量包括以下内容：
+
 - `@breadcrumb-base-color`：对应的 Component Token 是 `itemColor`。
 
 ### BreadCrumb 面包屑有哪些 Component Token？
 
 BreadCrumb 面包屑的 Component Token 包括以下内容：
+
 - `itemColor`：对应的 Less 变量是 `@breadcrumb-base-color`。
 - `lastItemColor`：对应的 Less 变量是 `@breadcrumb-last-item-color`。
 - `fontSize`：全局 Token，对应的 Less 变量是 `@breadcrumb-font-size`。
@@ -189,62 +188,43 @@ BreadCrumb 面包屑的 Component Token 包括以下内容：
 
 ### Button 按钮
 
-Q: 如何设置按钮的字体粗细？
-A: 可以使用 Less 变量 `@btn-font-weight` 或者 Component Token `fontWeight`。
+### 如何设置按钮的字体粗细？ 可以使用 Less 变量 `@btn-font-weight` 或者 Component Token `fontWeight`。
 
-Q: 如何设置按钮的圆角？
-A: 可以使用 Less 变量 `@btn-border-radius-base` 或者 Component Token `borderRadius`。其中，`@btn-border-radius-sm` 是一个全局 Token。
+### 如何设置按钮的圆角？ 可以使用 Less 变量 `@btn-border-radius-base` 或者 Component Token `borderRadius`。其中，`@btn-border-radius-sm` 是一个全局 Token。
 
-Q: 如何设置按钮的边框宽度和样式？
-A: 可以使用 Less 变量 `@btn-border-width` 和 `@btn-border-style`，对应的 Component Token 分别是 `lineWidth` 和 `lineStyle`。
+### 如何设置按钮的边框宽度和样式？ 可以使用 Less 变量 `@btn-border-width` 和 `@btn-border-style`，对应的 Component Token 分别是 `lineWidth` 和 `lineStyle`。
 
-Q: 如何设置按钮的阴影？
-A: 可以使用 Less 变量 `@btn-shadow` 或者 `@btn-primary-shadow` 来设置按钮的阴影样式。
+### 如何设置按钮的阴影？ 可以使用 Less 变量 `@btn-shadow` 或者 `@btn-primary-shadow` 来设置按钮的阴影样式。
 
-Q: 如何设置按钮的主题色？
-A: 按钮的主题色可以使用 Less 变量 `@btn-primary-color` 或者 Component Token `primaryColor`，其中 `@btn-primary-bg` 是指按钮的背景色，对应的 Component Token 是 `colorPrimary`。
+### 如何设置按钮的主题色？ 按钮的主题色可以使用 Less 变量 `@btn-primary-color` 或者 Component Token `primaryColor`，其中 `@btn-primary-bg` 是指按钮的背景色，对应的 Component Token 是 `colorPrimary`。
 
-Q: 如何设置按钮的默认颜色、背景和边框颜色？
-A: 可以使用 Less 变量 `@btn-default-color`、`@btn-default-bg` 和 `@btn-default-border`，对应的 Component Token 分别是 `defaultColor`、`defaultBg` 和 `defaultBorderColor`。
+### 如何设置按钮的默认颜色、背景和边框颜色？ 可以使用 Less 变量 `@btn-default-color`、`@btn-default-bg` 和 `@btn-default-border`，对应的 Component Token 分别是 `defaultColor`、`defaultBg` 和 `defaultBorderColor`。
 
-Q: 如何设置按钮的危险颜色、背景和边框颜色？
-A: 可以使用 Less 变量 `@btn-danger-color`、`@btn-danger-bg` 和 `@btn-danger-border`，对应的 Component Token 分别是 `dangerColor` 和 `colorError`。
+### 如何设置按钮的危险颜色、背景和边框颜色？ 可以使用 Less 变量 `@btn-danger-color`、`@btn-danger-bg` 和 `@btn-danger-border`，对应的 Component Token 分别是 `dangerColor` 和 `colorError`。
 
-Q: 如何设置按钮的禁用状态颜色、背景和边框颜色？
-A: 可以使用 Less 变量 `@btn-disable-color`、`@btn-disable-bg` 和 `@btn-disable-border`，分别对应的 Component Token 是 `colorTextDisabled`、`colorBgContainerDisabled` 和 `borderColorDisabled`。
+### 如何设置按钮的禁用状态颜色、背景和边框颜色？ 可以使用 Less 变量 `@btn-disable-color`、`@btn-disable-bg` 和 `@btn-disable-border`，分别对应的 Component Token 是 `colorTextDisabled`、`colorBgContainerDisabled` 和 `borderColorDisabled`。
 
-Q: 如何设置按钮的幽灵颜色、背景和边框颜色？
-A: 可以使用 Less 变量 `@btn-default-ghost-color`、`@btn-default-ghost-bg` 和 `@btn-default-ghost-border`，对应的 Component Token 分别是 `defaultGhostColor`、`ghostBg` 和 `defaultGhostBorderColor`。
+### 如何设置按钮的幽灵颜色、背景和边框颜色？ 可以使用 Less 变量 `@btn-default-ghost-color`、`@btn-default-ghost-bg` 和 `@btn-default-ghost-border`，对应的 Component Token 分别是 `defaultGhostColor`、`ghostBg` 和 `defaultGhostBorderColor`。
 
-Q: 如何设置按钮的字体大小？
-A: 可以使用 Less 变量 `@btn-font-size-lg` 和 `@btn-font-size-sm`，对应的 Component Token 分别是 `fontSizeLG` 和 `fontSizeSM`。
+### 如何设置按钮的字体大小？ 可以使用 Less 变量 `@btn-font-size-lg` 和 `@btn-font-size-sm`，对应的 Component Token 分别是 `fontSizeLG` 和 `fontSizeSM`。
 
-Q: 如何设置按钮的水平内边距？
-A: 可以使用 Less 变量 `@btn-padding-horizontal-base`、`@btn-padding-horizontal-lg` 和 `@btn-padding-horizontal-sm`，对应的 Component Token 分别是 `paddingInline`、`paddingInlineLG` 和 `paddingInlineSM`。
+### 如何设置按钮的水平内边距？ 可以使用 Less 变量 `@btn-padding-horizontal-base`、`@btn-padding-horizontal-lg` 和 `@btn-padding-horizontal-sm`，对应的 Component Token 分别是 `paddingInline`、`paddingInlineLG` 和 `paddingInlineSM`。
 
-Q: 如何设置按钮的高度？
-A: 可以使用 Less 变量 `@btn-height-base`、`@btn-height-lg` 和 `@btn-height-sm`，对应的 Component Token 分别是 `controlHeight`、`controlHeightLG` 和 `controlHeightSM`。
+### 如何设置按钮的高度？ 可以使用 Less 变量 `@btn-height-base`、`@btn-height-lg` 和 `@btn-height-sm`，对应的 Component Token 分别是 `controlHeight`、`controlHeightLG` 和 `controlHeightSM`。
 
-Q: 如何设置按钮的行高？
-A: 可以使用 Less 变量 `@btn-line-height`，对应的 Component Token 是 `lineHeight`。
+### 如何设置按钮的行高？ 可以使用 Less 变量 `@btn-line-height`，对应的 Component Token 是 `lineHeight`。
 
-Q: 如何设置按钮的圆形大小？
-A: 可以使用 Less 变量 `@btn-circle-size`、`@btn-circle-size-lg` 和 `@btn-circle-size-sm`，对应的 Component Token 分别是 `controlHeight`、`controlHeightLG` 和 `controlHeightSM`。
+### 如何设置按钮的圆形大小？ 可以使用 Less 变量 `@btn-circle-size`、`@btn-circle-size-lg` 和 `@btn-circle-size-sm`，对应的 Component Token 分别是 `controlHeight`、`controlHeightLG` 和 `controlHeightSM`。
 
-Q: 如何设置按钮的方形大小？
-A: 可以使用 Less 变量 `@btn-square-size`、`@btn-square-size-lg` 和 `@btn-square-size-sm`，对应的 Component Token 分别是 `controlHeight`、`controlHeightLG` 和 `controlHeightSM`。
+### 如何设置按钮的方形大小？ 可以使用 Less 变量 `@btn-square-size`、`@btn-square-size-lg` 和 `@btn-square-size-sm`，对应的 Component Token 分别是 `controlHeight`、`controlHeightLG` 和 `controlHeightSM`。
 
-Q: 如何设置按钮只有图标时的大小？
-A: 可以使用 Less 变量 `@btn-square-only-icon-size`、`@btn-square-only-icon-size-lg` 和 `@btn-square-only-icon-size-sm`，分别对应的 Component Token 是 `onlyIconSize`、`onlyIconSizeLG` 和 `onlyIconSizeSM`。
+### 如何设置按钮只有图标时的大小？ 可以使用 Less 变量 `@btn-square-only-icon-size`、`@btn-square-only-icon-size-lg` 和 `@btn-square-only-icon-size-sm`，分别对应的 Component Token 是 `onlyIconSize`、`onlyIconSizeLG` 和 `onlyIconSizeSM`。
 
-Q: 如何设置按钮组的边框颜色？
-A: 可以使用 Less 变量 `@btn-group-border`，对应的 Component Token 是 `groupBorderColor`。
+### 如何设置按钮组的边框颜色？ 可以使用 Less 变量 `@btn-group-border`，对应的 Component Token 是 `groupBorderColor`。
 
-Q: 如何设置按钮链接在悬停时的背景色？
-A: 可以使用 Less 变量 `@btn-link-hover-bg`，对应的 Component Token 是 `linkHoverBg`。
+### 如何设置按钮链接在悬停时的背景色？ 可以使用 Less 变量 `@btn-link-hover-bg`，对应的 Component Token 是 `linkHoverBg`。
 
-Q: 如何设置按钮文本在悬停时的背景色？
-A: 可以使用 Less 变量 `@btn-text-hover-bg`，对应的 Component Token 是 `textHoverBg`。
+### 如何设置按钮文本在悬停时的背景色？ 可以使用 Less 变量 `@btn-text-hover-bg`，对应的 Component Token 是 `textHoverBg`。
 
 以上是关于 Ant Design Button 按钮的样式设置的一些常用变量和 Token 信息，可根据需求进行使用和调整。
 
@@ -278,48 +258,48 @@ A: 可以使用 Less 变量 `@btn-text-hover-bg`，对应的 Component Token 是
 
 ### Card 卡片的 Less 变量
 
-| Less 变量 | Component Token | 备注 |
-| --- | --- | --- |
-| `@card-head-color` | `colorTextHeading` | 全局 Token |
-| `@card-head-background` | `headerBg` | - |
-| `@card-head-font-size` | `headerFontSize` | - |
-| `@card-head-font-size-sm` | `headerFontSizeSM` | - |
-| `@card-head-padding` | - | 已废弃 |
-| `@card-head-padding-sm` | - | 已废弃 |
-| `@card-head-height` | `headerHeight` | - |
-| `@card-head-height-sm` | `headerHeightSM` | - |
-| `@card-inner-head-padding` | - | 已废弃 |
-| `@card-padding-base` | `cardPaddingBase` | - |
-| `@card-padding-base-sm` | `cardPaddingBaseSm` | - |
-| `@card-actions-background` | `actionsBackground` | - |
-| `@card-actions-li-margin` | `actionsLiMargin` | - |
-| `@card-skeleton-bg` | - | 已废弃，已改为内置 Skeleton 组件 |
-| `@card-background` | `colorBgContainer` | 全局 Token |
-| `@card-shadow` | - | 可由 `className` 或者 `style` 直接修改 |
-| `@card-radius` | `borderRadiusLG` | 全局 Token |
-| `@card-head-tabs-margin-bottom` | `tabsMarginBottom` | - |
-| `@card-head-extra-color` | `extraColor` | - |
+| Less 变量                       | Component Token     | 备注                                   |
+| ------------------------------- | ------------------- | -------------------------------------- |
+| `@card-head-color`              | `colorTextHeading`  | 全局 Token                             |
+| `@card-head-background`         | `headerBg`          | -                                      |
+| `@card-head-font-size`          | `headerFontSize`    | -                                      |
+| `@card-head-font-size-sm`       | `headerFontSizeSM`  | -                                      |
+| `@card-head-padding`            | -                   | 已废弃                                 |
+| `@card-head-padding-sm`         | -                   | 已废弃                                 |
+| `@card-head-height`             | `headerHeight`      | -                                      |
+| `@card-head-height-sm`          | `headerHeightSM`    | -                                      |
+| `@card-inner-head-padding`      | -                   | 已废弃                                 |
+| `@card-padding-base`            | `cardPaddingBase`   | -                                      |
+| `@card-padding-base-sm`         | `cardPaddingBaseSm` | -                                      |
+| `@card-actions-background`      | `actionsBackground` | -                                      |
+| `@card-actions-li-margin`       | `actionsLiMargin`   | -                                      |
+| `@card-skeleton-bg`             | -                   | 已废弃，已改为内置 Skeleton 组件       |
+| `@card-background`              | `colorBgContainer`  | 全局 Token                             |
+| `@card-shadow`                  | -                   | 可由 `className` 或者 `style` 直接修改 |
+| `@card-radius`                  | `borderRadiusLG`    | 全局 Token                             |
+| `@card-head-tabs-margin-bottom` | `tabsMarginBottom`  | -                                      |
+| `@card-head-extra-color`        | `extraColor`        | -                                      |
 
 这是 Card 卡片组件的 Less 变量列表。你可以使用这些变量来定制化 Card 卡片的样式。其中部分变量已废弃，建议使用替代变量或其他方式来实现相同的效果。
 
 ### Card 卡片的组件 Token
 
-| Component Token | 备注 |
-| --- | --- |
-| `colorTextHeading` | Card 卡片标题的文字颜色，全局 Token |
-| `headerBg` | Card 卡片标题的背景颜色 |
-| `headerFontSize` | Card 卡片标题的字体大小 |
-| `headerFontSizeSM` | Card 卡片标题在小屏幕下的字体大小 |
-| `headerHeight` | Card 卡片标题的高度 |
-| `headerHeightSM` | Card 卡片标题在小屏幕下的高度 |
-| `cardPaddingBase` | Card 卡片内容的内边距 |
-| `cardPaddingBaseSm` | Card 卡片内容在小屏幕下的内边距 |
-| `actionsBackground` | Card 卡片操作区域的背景颜色 |
-| `actionsLiMargin` | Card 卡片操作区域内每个选项之间的外边距 |
-| `colorBgContainer` | Card 卡片的背景颜色，全局 Token |
-| `borderRadiusLG` | Card 卡片的圆角大小，全局 Token |
-| `tabsMarginBottom` | Card 卡片标题的标签页底部外边距 |
-| `extraColor` | Card 卡片额外内容的颜色 |
+| Component Token     | 备注                                    |
+| ------------------- | --------------------------------------- |
+| `colorTextHeading`  | Card 卡片标题的文字颜色，全局 Token     |
+| `headerBg`          | Card 卡片标题的背景颜色                 |
+| `headerFontSize`    | Card 卡片标题的字体大小                 |
+| `headerFontSizeSM`  | Card 卡片标题在小屏幕下的字体大小       |
+| `headerHeight`      | Card 卡片标题的高度                     |
+| `headerHeightSM`    | Card 卡片标题在小屏幕下的高度           |
+| `cardPaddingBase`   | Card 卡片内容的内边距                   |
+| `cardPaddingBaseSm` | Card 卡片内容在小屏幕下的内边距         |
+| `actionsBackground` | Card 卡片操作区域的背景颜色             |
+| `actionsLiMargin`   | Card 卡片操作区域内每个选项之间的外边距 |
+| `colorBgContainer`  | Card 卡片的背景颜色，全局 Token         |
+| `borderRadiusLG`    | Card 卡片的圆角大小，全局 Token         |
+| `tabsMarginBottom`  | Card 卡片标题的标签页底部外边距         |
+| `extraColor`        | Card 卡片额外内容的颜色                 |
 
 这是 Card 卡片组件的组件 Token 列表。你可以使用这些组件 Token 来快速定制化 Card 卡片的样式。
 
@@ -334,33 +314,25 @@ A: 可以使用 Less 变量 `@btn-text-hover-bg`，对应的 Component Token 是
 
 ### Carousel 走马灯
 
-Q: 如何设置 Carousel 走马灯的圆点宽度？
-A: 可以使用 `@carousel-dot-width` 这个 Less 变量来设置。
+### 如何设置 Carousel 走马灯的圆点宽度？ 可以使用 `@carousel-dot-width` 这个 Less 变量来设置。
 
-Q: 如何获取 Carousel 走马灯的圆点高度？
-A: 可以使用 `dotHeight` 这个 Component Token 来获取。
+### 如何获取 Carousel 走马灯的圆点高度？ 可以使用 `dotHeight` 这个 Component Token 来获取。
 
-Q: 如何修改 Carousel 走马灯的激活状态圆点宽度？
-A: 可以使用 `@carousel-dot-active-width` 这个 Less 变量来修改。
+### 如何修改 Carousel 走马灯的激活状态圆点宽度？ 可以使用 `@carousel-dot-active-width` 这个 Less 变量来修改。
 
 ### Carousel 走马灯
 
-Q: 如何设置 Carousel 走马灯的圆点宽度？
-A: 可以通过调整 `@carousel-dot-width` 这个 Less 变量的值来设置。
+### 如何设置 Carousel 走马灯的圆点宽度？ 可以通过调整 `@carousel-dot-width` 这个 Less 变量的值来设置。
 
-Q: 如何获取 Carousel 走马灯的圆点高度？
-A: 可以使用 `dotHeight` 这个 Component Token 来获取。
+### 如何获取 Carousel 走马灯的圆点高度？ 可以使用 `dotHeight` 这个 Component Token 来获取。
 
-Q: 如何修改 Carousel 走马灯的激活状态圆点宽度？
-A: 可以通过修改 `@carousel-dot-active-width` 这个 Less 变量的值来实现。
+### 如何修改 Carousel 走马灯的激活状态圆点宽度？ 可以通过修改 `@carousel-dot-active-width` 这个 Less 变量的值来实现。
 
 ### Carousel 走马灯
 
-Q: 在 Carousel 走马灯中，如何调整圆点的宽度？
-A: 可以使用 Less 变量 `@carousel-dot-width` 来调整圆点的宽度。
+### 在 Carousel 走马灯中，如何调整圆点的宽度？ 可以使用 Less 变量 `@carousel-dot-width` 来调整圆点的宽度。
 
-Q: 如何获取 Carousel 走马灯的圆点高度？
-A: 可
+### 如何获取 Carousel 走马灯的圆点高度？ 可
 
 ### `@cascader-bg` 的作用和使用方式是什么？
 
@@ -397,6 +369,7 @@ A: 可
 ### Checkbox 多选框的 Less 变量是什么？
 
 Checkbox 多选框的 Less 变量是以下几种：
+
 1. `@checkbox-size`
 2. `@checkbox-color`
 3. `@checkbox-check-color`
@@ -407,6 +380,7 @@ Checkbox 多选框的 Less 变量是以下几种：
 ### Checkbox 多选框的 Component Token 是什么？
 
 Checkbox 多选框的 Component Token 是以下几种：
+
 1. `controlInteractiveSize`
 2. `colorPrimary`
 3. `colorWhite`
@@ -416,14 +390,14 @@ Checkbox 多选框的 Component Token 是以下几种：
 ### Checkbox 多选框的样式变化和废弃信息是什么？
 
 Checkbox 多选框的样式变化信息有：
+
 1. `@checkbox-group-item-margin-right` 已废弃
 
 以上就是 Checkbox 多选框的 Less 变量、Component Token 和样式变化信息。
 
-### Q1: Collapse 折叠面板的 Less 变量 `@collapse-header-padding` 与 Component Token `headerPadding` 有什么区别?
+### QCollapse 折叠面板的 Less 变量 `@collapse-header-padding` 与 Component Token `headerPadding` 有什么区别?
 
-**Answer:**
-`@collapse-header-padding` 是 Less 变量，而 `headerPadding` 是 Component Token。Less 变量是用于定义样式的变量，而 Component Token 是用于在组件中访问样式属性的标识符。区别在于 `@collapse-header-padding` 是在编译阶段处理的，而 `headerPadding` 是在组件运行时根据主题样式解析的。因此，Less 变量在编译时就会确定，而 Component Token 的值会根据运行时的主题动态变化。
+**Answer:** `@collapse-header-padding` 是 Less 变量，而 `headerPadding` 是 Component Token。Less 变量是用于定义样式的变量，而 Component Token 是用于在组件中访问样式属性的标识符。区别在于 `@collapse-header-padding` 是在编译阶段处理的，而 `headerPadding` 是在组件运行时根据主题样式解析的。因此，Less 变量在编译时就会确定，而 Component Token 的值会根据运行时的主题动态变化。
 
 ### DatePicker 日期选择框
 
@@ -541,7 +515,7 @@ Checkbox 多选框的样式变化信息有：
 
 根据描述列表信息，`@descriptions-small-padding` 是一个全局 Token，对应的值为 `${token.paddingXS}px ${token.padding}px`。这意味着该变量定义了小尺寸情况下的 padding 值，其中 `token.paddingXS` 和 `token.padding` 分别代表具体的数值。在使用这个变量时，会将这两个值组合起来作为 padding 的设置。
 
-以上是基于描述列表中的信息生成的 QA 文档，希望对你有帮助！如有其他问题，请继续提问。
+以上是基于描述列表中的信息生成的 文档，希望对你有帮助！如有其他问题，请继续提问。
 
 ### Divider 分割线的 less 变量是什么？
 
@@ -633,52 +607,52 @@ Ant Design Dropdown 下拉菜单组件选中项的背景色通过 CSS 变量 `@d
 
 ### Input 输入框的 CSS 变量
 
-| less 变量 | Component Token | 备注 |
-| --- | --- | --- |
-| `@input-height-base` | `controlHeight` | 全局 Token |
-| `@input-height-lg` | `controlHeightLG` | 全局 Token |
-| `@input-height-sm` | `controlHeightSM` | 全局 Token |
-| `@input-padding-horizontal` | `paddingInline` | - |
-| `@input-padding-horizontal-base` | `paddingInline` | - |
-| `@input-padding-horizontal-sm` | `paddingInlineSM` | - |
-| `@input-padding-horizontal-lg` | `paddingInlineLG` | - |
-| `@input-padding-vertical-base` | `paddinBlock` | - |
-| `@input-padding-vertical-sm` | `paddingBlockSM` | - |
-| `@input-padding-vertical-lg` | `paddingBlockLG` | - |
-| `@input-placeholder-color` | `colorTextPlaceholder` | 全局 Token |
-| `@input-color` | `colorText` | 全局 Token |
-| `@input-border-color` | `colorBorder` | 全局 Token |
-| `@input-bg` | `colorBgContainer` | 全局 Token |
-| `@input-addon-bg` | `addonBg` | - |
-| `@input-hover-border-color` | `hoverBorderColor` | - |
-| `@input-disabled-bg` | `colorBgContainerDisabled` | 全局 Token |
-| `@input-outline-offset` | `activeShadow` | 控制激活态阴影 |
-| `@input-icon-hover-color` | `colorIconHover` | 全局 Token |
-| `@input-disabled-color` | `colorTextDisabled` | 全局 Token |
+| less 变量                        | Component Token            | 备注           |
+| -------------------------------- | -------------------------- | -------------- |
+| `@input-height-base`             | `controlHeight`            | 全局 Token     |
+| `@input-height-lg`               | `controlHeightLG`          | 全局 Token     |
+| `@input-height-sm`               | `controlHeightSM`          | 全局 Token     |
+| `@input-padding-horizontal`      | `paddingInline`            | -              |
+| `@input-padding-horizontal-base` | `paddingInline`            | -              |
+| `@input-padding-horizontal-sm`   | `paddingInlineSM`          | -              |
+| `@input-padding-horizontal-lg`   | `paddingInlineLG`          | -              |
+| `@input-padding-vertical-base`   | `paddinBlock`              | -              |
+| `@input-padding-vertical-sm`     | `paddingBlockSM`           | -              |
+| `@input-padding-vertical-lg`     | `paddingBlockLG`           | -              |
+| `@input-placeholder-color`       | `colorTextPlaceholder`     | 全局 Token     |
+| `@input-color`                   | `colorText`                | 全局 Token     |
+| `@input-border-color`            | `colorBorder`              | 全局 Token     |
+| `@input-bg`                      | `colorBgContainer`         | 全局 Token     |
+| `@input-addon-bg`                | `addonBg`                  | -              |
+| `@input-hover-border-color`      | `hoverBorderColor`         | -              |
+| `@input-disabled-bg`             | `colorBgContainerDisabled` | 全局 Token     |
+| `@input-outline-offset`          | `activeShadow`             | 控制激活态阴影 |
+| `@input-icon-hover-color`        | `colorIconHover`           | 全局 Token     |
+| `@input-disabled-color`          | `colorTextDisabled`        | 全局 Token     |
 
 ### Input 输入框的组件 Token
 
-| Component Token | 备注 |
-| --- | --- |
-| `controlHeight` | 全局 Token |
-| `controlHeightLG` | 全局 Token |
-| `controlHeightSM` | 全局 Token |
-| `paddingInline` | - |
-| `paddingInlineSM` | - |
-| `paddingInlineLG` | - |
-| `paddinBlock` | - |
-| `paddingBlockSM` | - |
-| `paddingBlockLG` | - |
-| `colorTextPlaceholder` | 全局 Token |
-| `colorText` | 全局 Token |
-| `colorBorder` | 全局 Token |
-| `colorBgContainer` | 全局 Token |
-| `addonBg` | - |
-| `hoverBorderColor` | - |
-| `colorBgContainerDisabled` | 全局 Token |
-| `activeShadow` | 控制激活态阴影 |
-| `colorIconHover` | 全局 Token |
-| `colorTextDisabled` | 全局 Token |
+| Component Token            | 备注           |
+| -------------------------- | -------------- |
+| `controlHeight`            | 全局 Token     |
+| `controlHeightLG`          | 全局 Token     |
+| `controlHeightSM`          | 全局 Token     |
+| `paddingInline`            | -              |
+| `paddingInlineSM`          | -              |
+| `paddingInlineLG`          | -              |
+| `paddinBlock`              | -              |
+| `paddingBlockSM`           | -              |
+| `paddingBlockLG`           | -              |
+| `colorTextPlaceholder`     | 全局 Token     |
+| `colorText`                | 全局 Token     |
+| `colorBorder`              | 全局 Token     |
+| `colorBgContainer`         | 全局 Token     |
+| `addonBg`                  | -              |
+| `hoverBorderColor`         | -              |
+| `colorBgContainerDisabled` | 全局 Token     |
+| `activeShadow`             | 控制激活态阴影 |
+| `colorIconHover`           | 全局 Token     |
+| `colorTextDisabled`        | 全局 Token     |
 
 ### Input 输入框的备注
 
@@ -705,13 +679,13 @@ Ant Design Dropdown 下拉菜单组件选中项的背景色通过 CSS 变量 `@d
 
 ### InputNumber 数字输入框 less 变量说明
 
-| less 变量 | Component Token | 备注 |
-| --- | --- | --- |
-| `@input-number-hover-border-color` | `hoverBorderColor` | - |
-| `@input-number-handler-active-bg` | `handleActiveBg` | - |
-| `@input-number-handler-hover-bg` | `handleHoverColor` | 4.x 中命名有误，实际上是 color |
-| `@input-number-handler-bg` | `handleBg` | - |
-| `@input-number-handler-border-color` | `handleBorderColor` | - |
+| less 变量                            | Component Token     | 备注                           |
+| ------------------------------------ | ------------------- | ------------------------------ |
+| `@input-number-hover-border-color`   | `hoverBorderColor`  | -                              |
+| `@input-number-handler-active-bg`    | `handleActiveBg`    | -                              |
+| `@input-number-handler-hover-bg`     | `handleHoverColor`  | 4.x 中命名有误，实际上是 color |
+| `@input-number-handler-bg`           | `handleBg`          | -                              |
+| `@input-number-handler-border-color` | `handleBorderColor` | -                              |
 
 #### 1. `@input-number-hover-border-color`
 
@@ -750,13 +724,13 @@ Ant Design Dropdown 下拉菜单组件选中项的背景色通过 CSS 变量 `@d
 
 ### InputNumber 数字输入框 Component Token 说明
 
-| Component Token | 说明 |
-| --- | --- |
-| `hoverBorderColor` | 鼠标悬停时的边框颜色 |
-| `handleActiveBg` | 加减按钮在按下时的背景颜色 |
-| `handleHoverColor` | 加减按钮在鼠标悬停时的背景颜色 |
-| `handleBg` | 加减按钮的背景颜色 |
-| `handleBorderColor` | 加减按钮的边框颜色 |
+| Component Token     | 说明                           |
+| ------------------- | ------------------------------ |
+| `hoverBorderColor`  | 鼠标悬停时的边框颜色           |
+| `handleActiveBg`    | 加减按钮在按下时的背景颜色     |
+| `handleHoverColor`  | 加减按钮在鼠标悬停时的背景颜色 |
+| `handleBg`          | 加减按钮的背景颜色             |
+| `handleBorderColor` | 加减按钮的边框颜色             |
 
 InputNumber 数字输入框的 Component Token 主要用于定义其样式中的颜色属性。
 
@@ -770,14 +744,11 @@ InputNumber 数字输入框的 Component Token 主要用于定义其样式中的
 
 这些备注主要用于提供更多关于 less 变量的相关信息或说明。
 
-问题一：Layout 布局中的 `@layout-header-height` 是什么意思？
-回答：`@layout-header-height` 是指 Layout 布局中头部（Header）的高度。
+问题一：Layout 布局中的 `@layout-header-height` 是什么意思？`@layout-header-height` 是指 Layout 布局中头部（Header）的高度。
 
-问题二：Layout 布局中的 `@layout-footer-padding` 是什么含义？
-回答：`@layout-footer-padding` 是指 Layout 布局中底部（Footer）的内边距。
+问题二：Layout 布局中的 `@layout-footer-padding` 是什么含义？`@layout-footer-padding` 是指 Layout 布局中底部（Footer）的内边距。
 
-问题三：Layout 布局中的 `@layout-zero-trigger-height` 有何作用？
-回答：`@layout-zero-trigger-height` 是指 Layout 布局中零宽触发器的高度。零宽触发器用于切换收缩和展开状态的侧边栏（Sider）。
+问题三：Layout 布局中的 `@layout-zero-trigger-height` 有何作用？`@layout-zero-trigger-height` 是指 Layout 布局中零宽触发器的高度。零宽触发器用于切换收缩和展开状态的侧边栏（Sider）。
 
 ### List 列表
 
@@ -979,11 +950,11 @@ Message 组件的全局提示可以通过设置 Less 变量 `@zindex-message` �
 你可以通过在代码中引入对应的 Component Token，并将其传递给 Message 组件来调整全局提示的样式。例如：
 
 ```jsx
-import { message } from 'antd';
-import { zIndexPopup, contentPadding, contentBg } from '@ant-design/compatible';
+import { message } from "antd";
+import { zIndexPopup, contentPadding, contentBg } from "@ant-design/compatible";
 
 message.config({
-  getContainer: () => document.getElementById('root'),
+  getContainer: () => document.getElementById("root"),
   zIndex: zIndexPopup,
 });
 
@@ -997,85 +968,107 @@ message.config({
 
 ### Modal 对话框
 
-Q: `@modal-header-padding-vertical` 这个变量的作用是什么？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+### `@modal-header-padding-vertical` 这个变量的作用是什么？
 
-Q: `@modal-header-padding-horizontal` 变量有什么作用？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+这个变量由于样式的变化而被废弃了，不再使用。
 
-Q: `@modal-body-padding` 变量有什么作用？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+### `@modal-header-padding-horizontal` 变量有什么作用？
 
-Q: `@modal-header-bg` 和 `headerBg` 有什么关联关系？  
-A: `@modal-header-bg` 是 Modal 对话框头部的背景色的 Less 变量，而 `headerBg` 是对应的组件 Token。
+这个变量由于样式的变化而被废弃了，不再使用。
 
-Q: `@modal-header-padding` 这个变量有什么作用？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+### `@modal-body-padding` 变量有什么作用？
 
-Q: `@modal-header-border-width` 变量的作用是什么？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+这个变量由于样式的变化而被废弃了，不再使用。
 
-Q: `@modal-header-border-style` 这个变量有什么作用？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+### `@modal-header-bg` 和 `headerBg` 有什么关联关系？
 
-Q: `@modal-header-title-line-height` 和 `titleLineHeight` 有什么关系？  
-A: `@modal-header-title-line-height` 是 Modal 的标题行高的 Less 变量，而 `titleLineHeight` 是对应的组件 Token。
+`@modal-header-bg` 是 Modal 对话框头部的背景色的 Less 变量，而 `headerBg` 是对应的组件 Token。
 
-Q: `@modal-header-title-font-size` 和 `titleFontSize` 有何联系？  
-A: `@modal-header-title-font-size` 是 Modal 的标题字体大小的 Less 变量，而 `titleFontSize` 是对应的组件 Token。
+### `@modal-header-padding` 这个变量有什么作用？
 
-Q: `@modal-header-border-color-split` 这个变量的作用是什么？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+这个变量由于样式的变化而被废弃了，不再使用。
 
-Q: `@modal-header-close-size` 有何作用？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+### `@modal-header-border-width` 变量的作用是什么？
 
-Q: `@modal-content-bg` 和 `contentBg` 之间有何联系？  
-A: `@modal-content-bg` 是 Modal 内容区域的背景色的 Less 变量，而 `contentBg` 是对应的组件 Token。
+这个变量由于样式的变化而被废弃了，不再使用。
 
-Q: `@modal-heading-color` 和 `titleColor` 有何关联？  
-A: `@modal-heading-color` 是 Modal 的标题文字颜色的 Less 变量，而 `titleColor` 是对应的组件 Token。
+### `@modal-header-border-style` 这个变量有什么作用？
 
-Q: `@modal-close-color` 是全局 Token 吗？  
-A: 是的，`@modal-close-color` 是 Modal 关闭按钮的颜色的 Less 变量，并且是全局 Token。
+这个变量由于样式的变化而被废弃了，不再使用。
 
-Q: `@modal-footer-bg` 和 `footerBg` 之间有什么联系？  
-A: `@modal-footer-bg` 是 Modal 底部的背景色的 Less 变量，而 `footerBg` 是对应的组件 Token。
+### `@modal-header-title-line-height` 和 `titleLineHeight` 有什么关系？
 
-Q: `@modal-footer-border-color-split` 这个变量有何作用？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+`@modal-header-title-line-height` 是 Modal 的标题行高的 Less 变量，而 `titleLineHeight` 是对应的组件 Token。
 
-Q: `@modal-footer-border-style` 这个变量有何作用？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+### `@modal-header-title-font-size` 和 `titleFontSize` 有何联系？
 
-Q: `@modal-footer-padding-vertical` 这个变量的作用是什么？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+`@modal-header-title-font-size` 是 Modal 的标题字体大小的 Less 变量，而 `titleFontSize` 是对应的组件 Token。
 
-Q: `@modal-footer-padding-horizontal` 这个变量有何作用？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+### `@modal-header-border-color-split` 这个变量的作用是什么？
 
-Q: `@modal-footer-border-width` 这个变量有何作用？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+这个变量由于样式的变化而被废弃了，不再使用。
 
-Q: `@modal-mask-bg` 是全局 Token 吗？  
-A: 是的，`@modal-mask-bg` 是 Modal 的遮罩背景色的 Less 变量，并且是全局 Token。
+### `@modal-header-close-size` 有何作用？
 
-Q: `@modal-confirm-body-padding` 这个变量有什么作用？  
-A: 这个变量由于样式的变化而被废弃了，不再使用。
+这个变量由于样式的变化而被废弃了，不再使用。
 
-Q: `@modal-confirm-title-font-size` 和 `titleFontSize` 有何联系？  
-A: `@modal-confirm-title-font-size` 是 Modal 的确认框标题字体大小的 Less 变量，而 `titleFontSize` 是对应的组件 Token。
+### `@modal-content-bg` 和 `contentBg` 之间有何联系？
 
-Q: `@modal-border-radius` 和 `borderRadiusLG` 之间有什么关系？  
-A: `@modal-border-radius` 是 Modal 的圆角半径的 Less 变量，而 `borderRadiusLG` 是对应的全局 Token。
+`@modal-content-bg` 是 Modal 内容区域的背景色的 Less 变量，而 `contentBg` 是对应的组件 Token。
+
+### `@modal-heading-color` 和 `titleColor` 有何关联？
+
+`@modal-heading-color` 是 Modal 的标题文字颜色的 Less 变量，而 `titleColor` 是对应的组件 Token。
+
+### `@modal-close-color` 是全局 Token 吗？
+
+是的，`@modal-close-color` 是 Modal 关闭按钮的颜色的 Less 变量，并且是全局 Token。
+
+### `@modal-footer-bg` 和 `footerBg` 之间有什么联系？
+
+`@modal-footer-bg` 是 Modal 底部的背景色的 Less 变量，而 `footerBg` 是对应的组件 Token。
+
+### `@modal-footer-border-color-split` 这个变量有何作用？
+
+这个变量由于样式的变化而被废弃了，不再使用。
+
+### `@modal-footer-border-style` 这个变量有何作用？
+
+这个变量由于样式的变化而被废弃了，不再使用。
+
+### `@modal-footer-padding-vertical` 这个变量的作用是什么？
+
+这个变量由于样式的变化而被废弃了，不再使用。
+
+### `@modal-footer-padding-horizontal` 这个变量有何作用？
+
+这个变量由于样式的变化而被废弃了，不再使用。
+
+### `@modal-footer-border-width` 这个变量有何作用？
+
+这个变量由于样式的变化而被废弃了，不再使用。
+
+### `@modal-mask-bg` 是全局 Token 吗？
+
+是的，`@modal-mask-bg` 是 Modal 的遮罩背景色的 Less 变量，并且是全局 Token。
+
+### `@modal-confirm-body-padding` 这个变量有什么作用？
+
+这个变量由于样式的变化而被废弃了，不再使用。
+
+### `@modal-confirm-title-font-size` 和 `titleFontSize` 有何联系？
+
+`@modal-confirm-title-font-size` 是 Modal 的确认框标题字体大小的 Less 变量，而 `titleFontSize` 是对应的组件 Token。
+
+### `@modal-border-radius` 和 `borderRadiusLG` 之间有什么关系？
+
+`@modal-border-radius` 是 Modal 的圆角半径的 Less 变量，而 `borderRadiusLG` 是对应的全局 Token。
 
 ### Pagination 分页
 
-1. 什么是 Pagination 分页？
-Pagination 分页是一种在网页或应用程序中展示大量数据时，将数据划分为多个页面的方式。通过使用 Pagination 分页，可以方便地浏览和导航数据。
+1. 什么是 Pagination 分页？ Pagination 分页是一种在网页或应用程序中展示大量数据时，将数据划分为多个页面的方式。通过使用 Pagination 分页，可以方便地浏览和导航数据。
 
-2. Pagination 分页包含哪些 Less 变量和 Component Token？
-以下是 Pagination 分页中使用的 Less 变量和对应的 Component Token：
+2. Pagination 分页包含哪些 Less 变量和 Component Token？以下是 Pagination 分页中使用的 Less 变量和对应的 Component Token：
 
 - `@pagination-item-bg` => `itemBg`
 - `@pagination-item-size` => `itemSize`
@@ -1089,8 +1082,7 @@ Pagination 分页是一种在网页或应用程序中展示大量数据时，将
 - `@pagination-item-input-bg` => `itemInputBg`
 - `@pagination-mini-options-size-changer-top` => `miniOptionsSizeChangerTop`
 
-3. Pagination 分页的主要功能是什么？
-Pagination 分页的主要功能是将大量数据划分为多个页面，让用户可以方便地浏览和导航数据。它提供了一系列的页面切换和导航按钮，以及显示当前页面的信息。
+3. Pagination 分页的主要功能是什么？ Pagination 分页的主要功能是将大量数据划分为多个页面，让用户可以方便地浏览和导航数据。它提供了一系列的页面切换和导航按钮，以及显示当前页面的信息。
 
 希望以上信息对你有帮助！如果还有其他问题，请随时提问。
 
@@ -1134,7 +1126,6 @@ Less variables 是用来定义样式中的变量，可以方便地在样式文�
 
 -
 
-
 ### Radio 单选框 - `lineWidth`
 
 #### less 变量
@@ -1148,7 +1139,6 @@ Less variables 是用来定义样式中的变量，可以方便地在样式文�
 #### 备注
 
 全局 Token
-
 
 ### Radio 单选框 - `dotColorDisabled`
 
@@ -1196,17 +1186,17 @@ Less variables 是用来定义样式中的变量，可以方便地在样式文�
 
 这些变量和 Token 提供了灵活的定制能力，使评分组件适应不同的设计和使用场景。
 
-### 问题 1：Ant Design 5.x 中的 `result` 组件有哪些 Less 变量和对应的 Component Token？
+### Ant Design 5.x 中的 `result` 组件有哪些 Less 变量和对应的 Component Token？
 
 答案：
+
 - `@result-title-font-size` 对应 `titleFontSize`
 - `@result-subtitle-font-size` 对应 `subtitleFontSize`
 - `@result-extra-margin` 对应 `extraMargin`
 
 ### 问题 2：如何在 Ant Design 5.x 中使用 CSS 变量模式来自定义 `result` 组件的样式？
 
-答案：
-在 Ant Design 5.x 中，可以使用 CSS 变量模式来自定义 `result` 组件的样式。通过定义对应的 Less 变量，可以控制组件的样式属性。以下是一个示例：
+答案：在 Ant Design 5.x 中，可以使用 CSS 变量模式来自定义 `result` 组件的样式。通过定义对应的 Less 变量，可以控制组件的样式属性。以下是一个示例：
 
 ```less
 @result-title-font-size: 18px; // 自定义标题字体大小
@@ -1230,10 +1220,10 @@ Less variables 是用来定义样式中的变量，可以方便地在样式文�
 
 上述示例中，通过设置对应的 Less 变量，可以自定义 `result` 组件中标题、副标题和额外样式的字体大小和外边距。
 
-### 问题 3：为什么在 Ant Design 5.x 中推荐开启 CSS 变量模式？
+###为什么在 Ant Design 5.x 中推荐开启 CSS 变量模式？
 
-答案：
-在 Ant Design 5.x 中推荐开启 CSS 变量模式的原因有以下几点：
+答案：在 Ant Design 5.x 中推荐开启 CSS 变量模式的原因有以下几点：
+
 1. 减少样式体积：CSS 变量模式可以使得不同主题下的样式可以共享，从而减少样式体积。这对于项目的整体性能和加载速度是有益的。
 2. 提升主题切换性能：使用 CSS 变量模式时，切换主题时不再需要重新序列化样式，这大大提升了主题切换的性能，并且能够更快速地响应用户的操作。
 3. 更灵活的样式定制：通过自定义 Less 变量，可以实现对组件样式的细粒度控制，提供了更灵活、定制化的样式定制方式。
@@ -1244,14 +1234,14 @@ Less variables 是用来定义样式中的变量，可以方便地在样式文�
 
 Segment 组件的 Less 变量和 Component Token 如下：
 
-| Less 变量 | Component Token | 备注 |
-| --- | --- | --- |
-| `@segmented-container-padding` | `padding` | - |
-| `@segmented-label-color` | `itemColor` | - |
-| `@segmented-bg` | - | 可以用 `className` 或 `style` 自定义 |
-| `@segmented-hover-bg` | `itemHoverBg` | - |
-| `@segmented-label-hover-color` | `itemHoverColor` | - |
-| `@segmented-selected-bg` | `itemSelectedBg` | - |
+| Less 变量                      | Component Token  | 备注                                 |
+| ------------------------------ | ---------------- | ------------------------------------ |
+| `@segmented-container-padding` | `padding`        | -                                    |
+| `@segmented-label-color`       | `itemColor`      | -                                    |
+| `@segmented-bg`                | -                | 可以用 `className` 或 `style` 自定义 |
+| `@segmented-hover-bg`          | `itemHoverBg`    | -                                    |
+| `@segmented-label-hover-color` | `itemHoverColor` | -                                    |
+| `@segmented-selected-bg`       | `itemSelectedBg` | -                                    |
 
 ### Segment 组件的 `@segmented-container-padding` 变量是什么作用？
 
@@ -1267,148 +1257,115 @@ Segment 组件的 Less 变量和 Component Token 如下：
 
 ### Select 选择器的 Less 变量与 Component Token 的对应关系是什么？
 
-| Less 变量 | Component Token |
-| --- | --- |
-| `@select-border-color` | `colorBorder` |
-| `@select-item-selected-color` | `optionSelectedColor` |
-| `@select-item-selected-font-weight` | `optionSelectedFontWeight` |
-| `@select-dropdown-bg` | `colorBgElevated` |
-| `@select-item-selected-bg` | `optionSelectedBg` |
-| `@select-item-active-bg` | `optionActiveBg` |
-| `@select-dropdown-vertical-padding` | `optionPadding` |
-| `@select-dropdown-font-size` | `optionFontSize` |
-| `@select-dropdown-line-height` | `optionLineHeight` |
-| `@select-dropdown-height` | `optionHeight` |
-| `@select-background` | `selectorBg` |
-| `@select-clear-background` | `clearBg` |
-| `@select-selection-item-bg` | `multipleItemBg` |
-| `@select-selection-item-border-color` | `multipleItemBorderColor` |
-| `@select-single-item-height-lg` | `singleItemHeightLG` |
-| `@select-multiple-item-height` | `multipleItemHeight` |
-| `@select-multiple-item-height-lg` | `multipleItemHeightLG` |
-| `@select-multiple-disabled-background` | `multipleSelectorBgDisabled` |
-| `@select-multiple-item-disabled-color` | `multipleItemColorDisabled` |
+| Less 变量                                     | Component Token                   |
+| --------------------------------------------- | --------------------------------- |
+| `@select-border-color`                        | `colorBorder`                     |
+| `@select-item-selected-color`                 | `optionSelectedColor`             |
+| `@select-item-selected-font-weight`           | `optionSelectedFontWeight`        |
+| `@select-dropdown-bg`                         | `colorBgElevated`                 |
+| `@select-item-selected-bg`                    | `optionSelectedBg`                |
+| `@select-item-active-bg`                      | `optionActiveBg`                  |
+| `@select-dropdown-vertical-padding`           | `optionPadding`                   |
+| `@select-dropdown-font-size`                  | `optionFontSize`                  |
+| `@select-dropdown-line-height`                | `optionLineHeight`                |
+| `@select-dropdown-height`                     | `optionHeight`                    |
+| `@select-background`                          | `selectorBg`                      |
+| `@select-clear-background`                    | `clearBg`                         |
+| `@select-selection-item-bg`                   | `multipleItemBg`                  |
+| `@select-selection-item-border-color`         | `multipleItemBorderColor`         |
+| `@select-single-item-height-lg`               | `singleItemHeightLG`              |
+| `@select-multiple-item-height`                | `multipleItemHeight`              |
+| `@select-multiple-item-height-lg`             | `multipleItemHeightLG`            |
+| `@select-multiple-disabled-background`        | `multipleSelectorBgDisabled`      |
+| `@select-multiple-item-disabled-color`        | `multipleItemColorDisabled`       |
 | `@select-multiple-item-disabled-border-color` | `multipleItemBorderColorDisabled` |
 
 ### Select 选择器的 Less 变量中有哪些全局 Token？
 
-- `@select-border-color`对应`colorBorder`是全局Token。
-- `@select-dropdown-bg`对应`colorBgElevated`是全局Token。
+- `@select-border-color`对应`colorBorder`是全局 Token。
+- `@select-dropdown-bg`对应`colorBgElevated`是全局 Token。
 
 ### Select 选择器的 Less 变量中有哪些已废弃的 Token？
 
 - `@select-multiple-item-spacing-half`已被废弃。
 
-注意：这些 QA 文档是根据原始内容生成的，可能需要根据实际情况进行微调和改进。
+注意：这些 文档是根据原始内容生成的，可能需要根据实际情况进行微调和改进。
 
 ### Skeleton 骨架屏
 
-问：骨架屏的 Less 变量有哪些？
-答：骨架屏的 Less 变量包括 `@skeleton-block-radius`、`@skeleton-title-height`、`@skeleton-color`、`@skeleton-to-color`、`@skeleton-paragraph-margin-top`和`@skeleton-paragraph-li-height`。
+问：骨架屏的 Less 变量有哪些？答：骨架屏的 Less 变量包括 `@skeleton-block-radius`、`@skeleton-title-height`、`@skeleton-color`、`@skeleton-to-color`、`@skeleton-paragraph-margin-top`和`@skeleton-paragraph-li-height`。
 
-问：骨架屏的 Component Token 有哪些？
-答：骨架屏的 Component Token 包括 `blockRadius`、`titleHeight`、`gradientFromColor`、`gradientToColor`、`paragraphMarginTop`和`paragraphLiHeight`。
+问：骨架屏的 Component Token 有哪些？答：骨架屏的 Component Token 包括 `blockRadius`、`titleHeight`、`gradientFromColor`、`gradientToColor`、`paragraphMarginTop`和`paragraphLiHeight`。
 
-问：有哪个样式变量已废弃？
-答：`@skeleton-paragraph-li-margin-top`是因为样式变化而已废弃的。
+问：有哪个样式变量已废弃？答：`@skeleton-paragraph-li-margin-top`是因为样式变化而已废弃的。
 
 ### Skeleton 骨架屏的变量说明
 
-问：骨架屏的 `@skeleton-block-radius` 变量是什么含义？
-答：`@skeleton-block-radius` 是用于设置骨架屏块的圆角半径的变量。
+问：骨架屏的 `@skeleton-block-radius` 变量是什么含义？答：`@skeleton-block-radius` 是用于设置骨架屏块的圆角半径的变量。
 
-问：骨架屏的 `@skeleton-title-height` 变量是什么含义？
-答：`@skeleton-title-height` 是用于设置骨架屏标题的高度的变量。
+问：骨架屏的 `@skeleton-title-height` 变量是什么含义？答：`@skeleton-title-height` 是用于设置骨架屏标题的高度的变量。
 
-问：骨架屏的 `@skeleton-color` 变量是什么含义？
-答：`@skeleton-color` 是用于设置骨架屏渐变颜色的起始颜色的变量。
+问：骨架屏的 `@skeleton-color` 变量是什么含义？答：`@skeleton-color` 是用于设置骨架屏渐变颜色的起始颜色的变量。
 
-问：骨架屏的 `@skeleton-to-color` 变量是什么含义？
-答：`@skeleton-to-color` 是用于设置骨架屏渐变颜色的结束颜色的变量。
+问：骨架屏的 `@skeleton-to-color` 变量是什么含义？答：`@skeleton-to-color` 是用于设置骨架屏渐变颜色的结束颜色的变量。
 
-问：骨架屏的 `@skeleton-paragraph-margin-top` 变量是什么含义？
-答：`@skeleton-paragraph-margin-top` 是用于设置骨架屏段落的上边距的变量。
+问：骨架屏的 `@skeleton-paragraph-margin-top` 变量是什么含义？答：`@skeleton-paragraph-margin-top` 是用于设置骨架屏段落的上边距的变量。
 
-问：骨架屏的 `@skeleton-paragraph-li-height` 变量是什么含义？
-答：`@skeleton-paragraph-li-height` 是用于设置骨架屏段落列表项的高度的变量。
+问：骨架屏的 `@skeleton-paragraph-li-height` 变量是什么含义？答：`@skeleton-paragraph-li-height` 是用于设置骨架屏段落列表项的高度的变量。
 
 ### Skeleton 骨架屏的变量对应关系
 
-问：骨架屏的 `blockRadius` 对应哪个 Less 变量？
-答：`blockRadius` 对应 `@skeleton-block-radius` 这个 Less 变量。
+问：骨架屏的 `blockRadius` 对应哪个 Less 变量？答：`blockRadius` 对应 `@skeleton-block-radius` 这个 Less 变量。
 
-问：骨架屏的 `titleHeight` 对应哪个 Less 变量？
-答：`titleHeight` 对应 `@skeleton-title-height` 这个 Less 变量。
+问：骨架屏的 `titleHeight` 对应哪个 Less 变量？答：`titleHeight` 对应 `@skeleton-title-height` 这个 Less 变量。
 
-问：骨架屏的 `gradientFromColor` 对应哪个 Less 变量？
-答：`gradientFromColor` 对应 `@skeleton-color` 这个 Less 变量。
+问：骨架屏的 `gradientFromColor` 对应哪个 Less 变量？答：`gradientFromColor` 对应 `@skeleton-color` 这个 Less 变量。
 
-问：骨架屏的 `gradientToColor` 对应哪个 Less 变量？
-答：`gradientToColor` 对应 `@skeleton-to-color` 这个 Less 变量。
+问：骨架屏的 `gradientToColor` 对应哪个 Less 变量？答：`gradientToColor` 对应 `@skeleton-to-color` 这个 Less 变量。
 
-问：骨架屏的 `paragraphMarginTop` 对应哪个 Less 变量？
-答：`paragraphMarginTop` 对应 `@skeleton-paragraph-margin-top` 这个 Less 变量。
+问：骨架屏的 `paragraphMarginTop` 对应哪个 Less 变量？答：`paragraphMarginTop` 对应 `@skeleton-paragraph-margin-top` 这个 Less 变量。
 
-问：骨架屏的 `paragraphLiHeight` 对应哪个 Less 变量？
-答：`paragraphLiHeight` 对应 `@skeleton-paragraph-li-height` 这个 Less 变量。
+问：骨架屏的 `paragraphLiHeight` 对应哪个 Less 变量？答：`paragraphLiHeight` 对应 `@skeleton-paragraph-li-height` 这个 Less 变量。
 
 ### 骨架屏变量废弃说明
 
-问：为什么 `@skeleton-paragraph-li-margin-top` 变量已废弃？
-答：`@skeleton-paragraph-li-margin-top` 变量已废弃是因为样式变化导致不再需要使用该变量。
+问：为什么 `@skeleton-paragraph-li-margin-top` 变量已废弃？答：`@skeleton-paragraph-li-margin-top` 变量已废弃是因为样式变化导致不再需要使用该变量。
 
-## Slider 滑动输入条
+### Slider 滑动输入条
 
-Q: 如何修改 Slider 的外边距？
-A: Slider 的外边距可以直接通过 `className` 或 `style` 进行修改。
+### 如何修改 Slider 的外边距？ Slider 的外边距可以直接通过 `className` 或 `style` 进行修改。
 
-Q: 如何修改 Slider 轨道的背景颜色？
-A: Slider 轨道的背景颜色可以通过设置 `railBg` 属性来修改。
+### 如何修改 Slider 轨道的背景颜色？ Slider 轨道的背景颜色可以通过设置 `railBg` 属性来修改。
 
-Q: 如何修改 Slider 轨道在悬停状态下的背景颜色？
-A: Slider 轨道在悬停状态下的背景颜色可以通过设置 `railHoverBg` 属性来修改。
+### 如何修改 Slider 轨道在悬停状态下的背景颜色？ Slider 轨道在悬停状态下的背景颜色可以通过设置 `railHoverBg` 属性来修改。
 
-Q: 如何修改 Slider 轨道滑块的背景颜色？
-A: Slider 轨道滑块的背景颜色可以通过设置 `trackBg` 属性来修改。
+### 如何修改 Slider 轨道滑块的背景颜色？ Slider 轨道滑块的背景颜色可以通过设置 `trackBg` 属性来修改。
 
-Q: 如何修改 Slider 轨道滑块在悬停状态下的背景颜色？
-A: Slider 轨道滑块在悬停状态下的背景颜色可以通过设置 `trackHoverBg` 属性来修改。
+### 如何修改 Slider 轨道滑块在悬停状态下的背景颜色？ Slider 轨道滑块在悬停状态下的背景颜色可以通过设置 `trackHoverBg` 属性来修改。
 
-Q: 如何修改 Slider 滑块的边框宽度？
-A: Slider 滑块的边框宽度可以通过设置 `handleLineWidth` 属性来修改。
+### 如何修改 Slider 滑块的边框宽度？ Slider 滑块的边框宽度可以通过设置 `handleLineWidth` 属性来修改。
 
-Q: 如何修改 Slider 滑块的颜色？
-A: Slider 滑块的颜色可以通过设置 `handleColor` 属性来修改。
+### 如何修改 Slider 滑块的颜色？ Slider 滑块的颜色可以通过设置 `handleColor` 属性来修改。
 
-Q: 如何修改 Slider 滑块在悬停状态下的颜色？
-A: Slider 滑块在悬停状态下的颜色可以通过设置 `handleActiveColor` 属性来修改。
+### 如何修改 Slider 滑块在悬停状态下的颜色？ Slider 滑块在悬停状态下的颜色可以通过设置 `handleActiveColor` 属性来修改。
 
-Q: 如何修改 Slider 滑块在焦点状态下的颜色？
-A: Slider 滑块在焦点状态下的颜色可以通过设置 `handleActiveColor` 属性来修改。
+### 如何修改 Slider 滑块在焦点状态下的颜色？ Slider 滑块在焦点状态下的颜色可以通过设置 `handleActiveColor` 属性来修改。
 
-Q: 如何修改 Slider 滑块打开提示时的颜色？
-A: Slider 滑块打开提示时的颜色可以通过设置 `handleActiveColor` 属性来修改。
+### 如何修改 Slider 滑块打开提示时的颜色？ Slider 滑块打开提示时的颜色可以通过设置 `handleActiveColor` 属性来修改。
 
-Q: 如何修改 Slider 滑块的大小？
-A: Slider 滑块的大小可以通过设置 `handleSize` 属性来修改。
+### 如何修改 Slider 滑块的大小？ Slider 滑块的大小可以通过设置 `handleSize` 属性来修改。
 
-Q: 如何修改 Slider 滑块的边距？
-A: Slider 滑块的边距已废弃，不能进行修改。
+### 如何修改 Slider 滑块的边距？ Slider 滑块的边距已废弃，不能进行修改。
 
-Q: 如何修改 Slider 滑块的阴影？
-A: Slider 滑块的阴影已废弃，不能进行修改。
+### 如何修改 Slider 滑块的阴影？ Slider 滑块的阴影已废弃，不能进行修改。
 
-Q: 如何修改 Slider 刻度的边框颜色？
-A: Slider 刻度的边框颜色可以通过设置 `dotBorderColor` 属性来修改。
+### 如何修改 Slider 刻度的边框颜色？ Slider 刻度的边框颜色可以通过设置 `dotBorderColor` 属性来修改。
 
-Q: 如何修改 Slider 刻度在激活状态下的边框颜色？
-A: Slider 刻度在激活状态下的边框颜色可以通过设置 `dotActiveBorderColor` 属性来修改。
+### 如何修改 Slider 刻度在激活状态下的边框颜色？ Slider 刻度在激活状态下的边框颜色可以通过设置 `dotActiveBorderColor` 属性来修改。
 
-Q: 如何修改禁用状态下 Slider 的颜色？
-A: 禁用状态下 Slider 的颜色可以通过设置 `trackBgDisabled` 属性来修改。
+### 如何修改禁用状态下 Slider 的颜色？ 禁用状态下 Slider 的颜色可以通过设置 `trackBgDisabled` 属性来修改。
 
-Q: 如何修改禁用状态下 Slider 的背景颜色？
-A: 禁用状态下 Slider 的背景颜色已废弃，不能进行修改。
+### 如何修改禁用状态下 Slider 的背景颜色？ 禁用状态下 Slider 的背景颜色已废弃，不能进行修改。
 
 ### Spin 加载中
 
@@ -1441,6 +1398,7 @@ A: 禁用状态下 Slider 的背景颜色已废弃，不能进行修改。
 问：在 Ant Design 的步骤条组件中，如何控制步骤条图标的大小和位置？
 
 答：可以使用以下 Less 变量和 Component Token 来控制步骤条图标的大小和位置：
+
 - `@steps-icon-size` 或者 `iconSize`：设置步骤条图标的大小
 - `@steps-icon-custom-size` 或者 `customIconSize`：设置自定义图标的大小
 - `@steps-icon-custom-top` 或者 `customIconTop`：设置自定义图标的垂直位置
@@ -1454,44 +1412,45 @@ A: 禁用状态下 Slider 的背景颜色已废弃，不能进行修改。
 问：在 Ant Design 的步骤条组件中，如何设置步骤条描述文本的样式？
 
 答：可以使用以下 Less 变量和 Component Token 来控制步骤条描述文本的样式：
+
 - `@steps-title-line-height` 或者 `titleLineHeight`：设置描述文本的行高
 - `@steps-description-max-width` 或者 `descriptionMaxWidth`：设置描述文本的最大宽度
 
 ### Switch 开关的 Less 变量
 
-| Less 变量 | Component Token | 备注 |
-| --- | --- | --- |
-| `@switch-height` | `trackHeight` | - |
-| `@switch-sm-height` | `trackHeightSM` | - |
-| `@switch-min-width` | `trackMinWidth` | - |
-| `@switch-sm-min-width` | `trackMinWidthSM` | - |
-| `@switch-disabled-opacity` | `opacityLoading` | 全局 Token |
-| `@switch-color` | `colorPrimary` | 全局 Token |
-| `@switch-bg` | `handleBg` | - |
-| `@switch-shadow-color` | `handleShadow` | 控制把手阴影，不仅是颜色 |
-| `@switch-padding` | `trackPadding` | - |
-| `@switch-inner-margin-min` | `innerMinMargin` | - |
-| `@switch-inner-margin-max` | `innerMaxMargin` | - |
-| `@switch-sm-inner-margin-min` | `innerMinMarginSM` | - |
-| `@switch-sm-inner-margin-max` | `innerMaxMarginSM` | - |
+| Less 变量                     | Component Token    | 备注                     |
+| ----------------------------- | ------------------ | ------------------------ |
+| `@switch-height`              | `trackHeight`      | -                        |
+| `@switch-sm-height`           | `trackHeightSM`    | -                        |
+| `@switch-min-width`           | `trackMinWidth`    | -                        |
+| `@switch-sm-min-width`        | `trackMinWidthSM`  | -                        |
+| `@switch-disabled-opacity`    | `opacityLoading`   | 全局 Token               |
+| `@switch-color`               | `colorPrimary`     | 全局 Token               |
+| `@switch-bg`                  | `handleBg`         | -                        |
+| `@switch-shadow-color`        | `handleShadow`     | 控制把手阴影，不仅是颜色 |
+| `@switch-padding`             | `trackPadding`     | -                        |
+| `@switch-inner-margin-min`    | `innerMinMargin`   | -                        |
+| `@switch-inner-margin-max`    | `innerMaxMargin`   | -                        |
+| `@switch-sm-inner-margin-min` | `innerMinMarginSM` | -                        |
+| `@switch-sm-inner-margin-max` | `innerMaxMarginSM` | -                        |
 
 这是 Switch 开关组件中使用的 Less 变量，用于控制组件的样式。其中 `@switch-height` 变量对应的 Component Token 是 `trackHeight`，`@switch-color` 变量对应的 Component Token 是 `colorPrimary`。一些变量有特定的用途，比如 `@switch-disabled-opacity` 是一个全局 Token，用于控制禁用状态下开关的透明度。而 `@switch-shadow-color` 控制把手的阴影，不仅限于颜色。请根据需要使用这些变量来定制 Switch 开关组件的样式。
 
 ### Switch 开关的 Component Token
 
-| Component Token | 含义 |
-| --- | --- |
-| `trackHeight` | 开关的高度 |
-| `trackHeightSM` | 小尺寸开关的高度 |
-| `trackMinWidth` | 开关的最小宽度 |
-| `trackMinWidthSM` | 小尺寸开关的最小宽度 |
-| `opacityLoading` | 禁用状态下开关的透明度 |
-| `colorPrimary` | 开关的颜色 |
-| `handleBg` | 把手的背景色 |
-| `handleShadow` | 把手的阴影 |
-| `trackPadding` | 开关的内边距 |
-| `innerMinMargin` | 内部元素的最小外边距 |
-| `innerMaxMargin` | 内部元素的最大外边距 |
+| Component Token    | 含义                       |
+| ------------------ | -------------------------- |
+| `trackHeight`      | 开关的高度                 |
+| `trackHeightSM`    | 小尺寸开关的高度           |
+| `trackMinWidth`    | 开关的最小宽度             |
+| `trackMinWidthSM`  | 小尺寸开关的最小宽度       |
+| `opacityLoading`   | 禁用状态下开关的透明度     |
+| `colorPrimary`     | 开关的颜色                 |
+| `handleBg`         | 把手的背景色               |
+| `handleShadow`     | 把手的阴影                 |
+| `trackPadding`     | 开关的内边距               |
+| `innerMinMargin`   | 内部元素的最小外边距       |
+| `innerMaxMargin`   | 内部元素的最大外边距       |
 | `innerMinMarginSM` | 小尺寸内部元素的最小外边距 |
 | `innerMaxMarginSM` | 小尺寸内部元素的最大外边距 |
 
@@ -1599,27 +1558,25 @@ Tag 标签的文字颜色使用了 `@tag-default-color` 这个 less 变量，对
 
 ### Timeline 时间轴
 
-#### Q: Timeline 时间轴的宽度由哪个 Less 变量控制？对应的 Component Token 是什么？
+### Timeline 时间轴的宽度由哪个 Less 变量控制？对应的 Component Token 是什么？
 
-A: Timeline 时间轴的宽度由 `@timeline-width` 这个 Less 变量控制。对应的 Component Token 是 `tailWidth`。
+Timeline 时间轴的宽度由 `@timeline-width` 这个 Less 变量控制。对应的 Component Token 是 `tailWidth`。
 
-#### Q: Timeline 时间轴的颜色由哪个 Less 变量控制？对应的 Component Token 是什么？
+### Timeline 时间轴的颜色由哪个 Less 变量控制？对应的 Component Token 是什么？
 
-A: Timeline 时间轴的颜色由 `@timeline-color` 这个 Less 变量控制。对应的 Component Token 是 `tailColor`。
+Timeline 时间轴的颜色由 `@timeline-color` 这个 Less 变量控制。对应的 Component Token 是 `tailColor`。
 
-#### Q: Timeline 时间轴的圆点边框宽度由哪个 Less 变量控制？对应的 Component Token 是什么？
+### Timeline 时间轴的圆点边框宽度由哪个 Less 变量控制？对应的 Component Token 是什么？
 
-A: Timeline 时间轴的圆点边框宽度由 `@timeline-dot-border-width` 这个 Less 变量控制。对应的 Component Token 是 `dotBorderWidth`。
+Timeline 时间轴的圆点边框宽度由 `@timeline-dot-border-width` 这个 Less 变量控制。对应的 Component Token 是 `dotBorderWidth`。
 
-#### Q: Timeline 时间轴的圆点背景颜色由哪个 Less 变量控制？对应的 Component Token 是什么？
+### Timeline 时间轴的圆点背景颜色由哪个 Less 变量控制？对应的 Component Token 是什么？
 
-A: Timeline 时间轴的圆点背景颜色由 `@timeline-dot-bg` 这个 Less 变量控制。对应的 Component Token 是 `dotBg`。
+Timeline 时间轴的圆点背景颜色由 `@timeline-dot-bg` 这个 Less 变量控制。对应的 Component Token 是 `dotBg`。
 
-#### Q: Timeline 时间轴的项底部间距由哪个 Less 变量控制？对应的 Component Token 是什么？
+### Timeline 时间轴的项底部间距由哪个 Less 变量控制？对应的 Component Token 是什么？
 
-A: Timeline 时间轴的项底部间距由 `@timeline-item-padding-bottom` 这个 Less 变量控制。对应的 Component Token 是 `itemPaddingBottom`。
-
----
+Timeline 时间轴的项底部间距由 `@timeline-item-padding-bottom` 这个 Less 变量控制。对应的 Component Token 是 `itemPaddingBottom`。
 
 以上是 Timeline 时间轴的相关变量和对应的组件令牌。如果你需要调整 Timeline 时间轴的样式，可以修改对应的 Less 变量或者使用对应的组件令牌。
 
@@ -1669,37 +1626,33 @@ A: Timeline 时间轴的项底部间距由 `@timeline-item-padding-bottom` 这�
 
 ### Transfer 穿梭框 Less 变量
 
-| Less 变量        | 组件 Token           | 备注  |
-| ------------- |:-------------:| -----:|
-| `@transfer-header-height`      | `headerHeight` | - |
-| `@transfer-item-height`      | `itemHeight` | - |
-| `@transfer-disabled-bg`      | `colorBgContainerDisabled` | 全局 Token |
-| `@transfer-list-height`      | `listHeight` | - |
-| `@transfer-item-hover-bg`      | `controlItemBgHover` | 全局 Token |
-| `@transfer-item-selected-hover-bg`      | `controlItemBgActiveHover` | 全局 Token |
-| `@transfer-item-padding-vertical`      | `itemPaddingBlock` | - |
-| `@transfer-list-search-icon-top`      | - | 已废弃 |
+| Less 变量                          |         组件 Token         |       备注 |
+| ---------------------------------- | :------------------------: | ---------: |
+| `@transfer-header-height`          |       `headerHeight`       |          - |
+| `@transfer-item-height`            |        `itemHeight`        |          - |
+| `@transfer-disabled-bg`            | `colorBgContainerDisabled` | 全局 Token |
+| `@transfer-list-height`            |        `listHeight`        |          - |
+| `@transfer-item-hover-bg`          |    `controlItemBgHover`    | 全局 Token |
+| `@transfer-item-selected-hover-bg` | `controlItemBgActiveHover` | 全局 Token |
+| `@transfer-item-padding-vertical`  |     `itemPaddingBlock`     |          - |
+| `@transfer-list-search-icon-top`   |             -              |     已废弃 |
 
 这些是 Transfer 穿梭框组件中定义的样式 Less 变量。你可以根据不同的需求来调整这些变量，来自定义 Transfer 穿梭框的样式。
 
----
-
 ### Transfer 穿梭框组件 Token
 
-| 组件 Token        | 含义           |
-| ------------- |:-------------:|
-| `headerHeight`      | 表示 Transfer 穿梭框的头部高度 |
-| `itemHeight`      | 表示 Transfer 穿梭框中每个项的高度 |
-| `colorBgContainerDisabled`      | 表示 Transfer 穿梭框禁用状态下的背景颜色 |
-| `listHeight`      | 表示 Transfer 穿梭框列表的高度 |
-| `controlItemBgHover`      | 表示 Transfer 穿梭框中项的鼠标悬停背景颜色 |
-| `controlItemBgActiveHover`      | 表示 Transfer 穿梭框中项在选中且鼠标悬停状态下的背景颜色 |
-| `itemPaddingBlock`      | 表示 Transfer 穿梭框中每个项的垂直内边距 |
-| -      | `@transfer-list-search-icon-top`      | 表示 Transfer 穿梭框中废弃的搜索图标的顶部距离 |
+| 组件 Token                 |                           含义                           |
+| -------------------------- | :------------------------------------------------------: | ---------------------------------------------- |
+| `headerHeight`             |              表示 Transfer 穿梭框的头部高度              |
+| `itemHeight`               |            表示 Transfer 穿梭框中每个项的高度            |
+| `colorBgContainerDisabled` |         表示 Transfer 穿梭框禁用状态下的背景颜色         |
+| `listHeight`               |              表示 Transfer 穿梭框列表的高度              |
+| `controlItemBgHover`       |        表示 Transfer 穿梭框中项的鼠标悬停背景颜色        |
+| `controlItemBgActiveHover` | 表示 Transfer 穿梭框中项在选中且鼠标悬停状态下的背景颜色 |
+| `itemPaddingBlock`         |         表示 Transfer 穿梭框中每个项的垂直内边距         |
+| -                          |             `@transfer-list-search-icon-top`             | 表示 Transfer 穿梭框中废弃的搜索图标的顶部距离 |
 
 这些是 Transfer 穿梭框组件中定义的组件 Token。组件 Token 可以用来在应用中统一管理样式属性，方便样式的重用和管理。
-
----
 
 ### Transfer 穿梭框 Less 变量说明
 
@@ -1719,25 +1672,31 @@ A: Timeline 时间轴的项底部间距由 `@timeline-item-padding-bottom` 这�
 #### Less 变量
 
 - `@tree-bg`
+
   - Component Token: `colorBgContainer`
   - 备注: 全局 Token
 
 - `@tree-title-height`
+
   - Component Token: `titleHeight`
   - 备注: -
 
 - `@tree-child-padding`
+
   - 备注: 已废弃
 
 - `@tree-directory-selected-color`
+
   - Component Token: `directoryNodeSelectedColor`
   - 备注: -
 
 - `@tree-directory-selected-bg`
+
   - Component Token: `directoryNodeSelectedBg`
   - 备注: -
 
 - `@tree-node-hover-bg`
+
   - Component Token: `nodeHoverBg`
   - 备注: -
 

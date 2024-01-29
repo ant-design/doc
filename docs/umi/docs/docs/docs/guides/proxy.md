@@ -11,13 +11,13 @@
 ```ts
 export default {
   proxy: {
-    '/api': {
-      'target': 'http://jsonplaceholder.typicode.com/',
-      'changeOrigin': true,
-      'pathRewrite': { '^/api' : '' },
+    "/api": {
+      target: "http://jsonplaceholder.typicode.com/",
+      changeOrigin: true,
+      pathRewrite: { "^/api": "" },
     },
   },
-}
+};
 ```
 
 上述配置表示，将以 `/api` 开头的请求代理到目标服务器 `http://jsonplaceholder.typicode.com/` 上。同时，将请求地址中的 `/api` 替换为空字符串，修改请求来源为目标url。例如，请求 `/api/a` 实际上是请求 `http://jsonplaceholder.typicode.com/a`。

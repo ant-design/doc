@@ -12,7 +12,7 @@ Ant Design 默认使用 [Day.js](https://day.js.org) 来处理时间日期问题
 
 以上两种方式都可以达到替换 Ant Design 默认的时间日期处理库的目的。选择其中一种方式，并按照相关文档进行操作即可。
 
-## 如何通过 `generatePicker` 或 `generateCalendar` 辅助创建 Picker 组件？
+### 如何通过 `generatePicker` 或 `generateCalendar` 辅助创建 Picker 组件？
 
 要通过 `generatePicker` 或 `generateCalendar` 辅助创建 Picker 组件，可以按照以下步骤进行操作：
 
@@ -27,30 +27,38 @@ Ant Design 默认使用 [Day.js](https://day.js.org) 来处理时间日期问题
 通过以上步骤，你可以使用 `generatePicker` 或 `generateCalendar` 辅助创建 Picker 组件。这样，你可以更方便地创建日期选择器或时间选择器，并根据你的需求进行定制。
 
 ### 问题 1:
+
 DatePicker.tsx 文件的路径是什么？
 
 ### 回答 1:
+
 DatePicker.tsx 文件的路径是 `src/components/DatePicker.tsx`。
 
 ### 问题 2:
+
 DatePicker.tsx 文件中引入了哪些库？
 
 ### 回答 2:
+
 DatePicker.tsx 文件中引入了 'antd'、'moment'、'rc-picker/lib/generate/moment' 这三个库。
 
-### 问题 3:
+### 问题
+
 DatePicker.tsx 文件中定义了一个什么组件？
 
-### 回答 3:
+### 回答
+
 DatePicker.tsx 文件中定义了一个名为 MyDatePicker 的组件。
 
 ### TimePicker.tsx 的作用是什么？
+
 TimePicker.tsx 是一个自定义组件，用于选择时间的输入框。它基于 Ant Design 的 DatePicker 组件进行了封装，并通过设置 picker 属性为 "time" 来指定日期选择器的模式为时间选择器。该组件的作用是简化时间选择操作，并提供更好的交互体验。
 
 ### TimePicker.tsx 的代码有哪些关键部分？
+
 TimePicker.tsx 的关键部分代码包括：
 
-1. 导入了 React 与相关类型的模块，以及antd/es/date-picker/generatePicker 模块和 moment 模块。
+1. 导入了 React 与相关类型的模块，以及 antd/es/date-picker/generatePicker 模块和 moment 模块。
 2. 导入了自定义的 DatePicker 组件。
 3. 定义了 TimePickerProps 接口，继承了 PickerTimeProps<Moment> 接口的所有属性，但不包括 picker 属性。
 4. 使用 React.forwardRef 方法创建了 TimePicker 组件，将 DatePicker 组件作为子组件，并设置了 picker 属性为 "time"，mode 属性为 undefined。
@@ -58,11 +66,12 @@ TimePicker.tsx 的关键部分代码包括：
 6. 导出了 TimePicker 组件。
 
 ### TimePicker.tsx 可以在哪些地方使用？
+
 TimePicker.tsx 可以在 React 项目中的任何需要选择时间的地方使用。它可以作为一个独立的时间选择器组件，也可以与其他组件一起使用，如表单输入、日期范围选择等。由于它基于 Ant Design 的 DatePicker 组件进行了封装，因此也可以享受到 Ant Design 组件库的其他特性和样式。
 
 以上是对 TimePicker.tsx 的作用、关键代码部分以及适用场景的解析。如果你有任何其他关于该组件的疑问，请随时提问。
 
-### 问题1：如何新建 `src/components/Calendar.tsx` 文件？
+### 如何新建 `src/components/Calendar.tsx` 文件？
 
 你可以使用以下步骤来新建 `src/components/Calendar.tsx` 文件：
 
@@ -72,17 +81,17 @@ TimePicker.tsx 可以在 React 项目中的任何需要选择时间的地方使�
 4. 在 `components` 文件夹中创建一个新文件，并将其命名为 `Calendar.tsx`。
 5. 在 `Calendar.tsx` 文件中编写你的代码。
 
-### 问题2：如何导入所需的模块和类型？
+### 问题 2：如何导入所需的模块和类型？
 
 你可以使用以下代码来导入 `Calendar` 组件和相关的类型：
 
 ```tsx
-import { Calendar } from 'antd';
-import type { Moment } from 'moment';
-import momentGenerateConfig from 'rc-picker/es/generate/moment';
+import { Calendar } from "antd";
+import type { Moment } from "moment";
+import momentGenerateConfig from "rc-picker/es/generate/moment";
 ```
 
-### 问题3：如何使用 `Calendar.generateCalendar` 方法生成自定义的 `MyCalendar` 组件？
+###如何使用 `Calendar.generateCalendar` 方法生成自定义的 `MyCalendar` 组件？
 
 你可以使用以下代码将 `Calendar.generateCalendar` 方法生成的组件赋值给 `MyCalendar` 变量：
 
@@ -92,7 +101,7 @@ const MyCalendar = Calendar.generateCalendar<Moment>(momentGenerateConfig);
 
 现在，你可以在项目中使用 `MyCalendar` 组件了。
 
-## 如何导出自定义组件？
+### 如何导出自定义组件？
 
 要导出自定义组件，可以按照以下步骤进行操作：
 
@@ -103,9 +112,9 @@ const MyCalendar = Calendar.generateCalendar<Moment>(momentGenerateConfig);
 3. 在 `index.tsx` 文件中编写如下代码：
 
 ```tsx
-export { default as Calendar } from './Calendar';
-export { default as DatePicker } from './DatePicker';
-export { default as TimePicker } from './TimePicker';
+export { default as Calendar } from "./Calendar";
+export { default as DatePicker } from "./DatePicker";
+export { default as TimePicker } from "./TimePicker";
 ```
 
 4. 保存并导出这些组件。
@@ -155,15 +164,15 @@ export { default as TimePicker } from './TimePicker';
 
 1. 在你的 `webpack` 配置文件中引入 `AntdMomentWebpackPlugin`：
 
-   ```js
-   const AntdMomentWebpackPlugin = require('@ant-design/moment-webpack-plugin');
-   ```
+```js
+const AntdMomentWebpackPlugin = require("@ant-design/moment-webpack-plugin");
+```
 
 2. 在 `plugins` 配置项中实例化 `AntdMomentWebpackPlugin`：
 
-   ```js
+```js
    plugins: [new AntdMomentWebpackPlugin()],
-   ```
+```
 
 ### 为什么要使用 antd-moment-webpack-plugin？
 
@@ -172,23 +181,29 @@ export { default as TimePicker } from './TimePicker';
 希望以上信息能够帮助到你！如果还有其他问题，请随时提问。
 
 ### DatePicker.tsx 是什么文件？
+
 DatePicker.tsx 是一个 TypeScript 文件，位于项目的 `src/components` 目录下。它用于实现一个自定义的日期选择器组件。
 
 ### DatePicker.tsx 中引入了哪些模块？
+
 DatePicker.tsx 引入了两个模块：
+
 - `antd`：用于引入 Ant Design 组件库。
 - `rc-picker/es/generate/dateFns`：用于生成和日期相关的配置。
 
 ### DatePicker.tsx 中定义了什么组件？
+
 DatePicker.tsx 定义了一个名为 `MyDatePicker` 的日期选择器组件。这个组件基于 Ant Design 的 `DatePicker` 组件，并使用 `rc-picker` 库提供的 `dateFnsGenerateConfig` 生成日期相关的配置。
 
 ### MyDatePicker 组件如何使用？
+
 可以在其他组件中引入 `MyDatePicker` 组件，并按照需要进行使用。例如：
+
 ```tsx
-import MyDatePicker from 'src/components/DatePicker';
+import MyDatePicker from "src/components/DatePicker";
 
 // 在组件中使用 MyDatePicker
-<MyDatePicker />
+<MyDatePicker />;
 ```
 
 ### 如何创建一个 `DatePicker.tsx` 文件？
@@ -200,9 +215,9 @@ import MyDatePicker from 'src/components/DatePicker';
 3. 打开这个文件，并在文件开头添加以下代码：
 
 ```tsx
-import { DatePicker } from 'antd';
-import type { DateTime } from 'luxon';
-import luxonGenerateConfig from 'rc-picker/lib/generate/luxon';
+import { DatePicker } from "antd";
+import type { DateTime } from "luxon";
+import luxonGenerateConfig from "rc-picker/lib/generate/luxon";
 
 const MyDatePicker = DatePicker.generatePicker<DateTime>(luxonGenerateConfig);
 
@@ -218,14 +233,14 @@ export default MyDatePicker;
 1. 在你的 `DatePicker.tsx` 文件中，导入 `DatePicker` 组件和 `DateTime` 类型：
 
 ```tsx
-import { DatePicker } from 'antd';
-import type { DateTime } from 'luxon';
+import { DatePicker } from "antd";
+import type { DateTime } from "luxon";
 ```
 
 2. 继续导入来自 `rc-picker` 的 `luxonGenerateConfig` 对象：
 
 ```tsx
-import luxonGenerateConfig from 'rc-picker/lib/generate/luxon';
+import luxonGenerateConfig from "rc-picker/lib/generate/luxon";
 ```
 
 3. 使用 `DatePicker.generatePicker` 方法来创建基于 luxon 的 DatePicker 组件，并将 `DateTime` 类型作为泛型参数传递给它：
@@ -249,7 +264,7 @@ export default MyDatePicker;
 1. 导入刚才定义的 `DatePicker` 组件：
 
 ```tsx
-import DatePicker from './DatePicker';
+import DatePicker from "./DatePicker";
 ```
 
 2. 在需要使用 DatePicker 的地方，直接使用导入的组件即可：
@@ -287,6 +302,7 @@ luxon 与其他日期库的主要差异如下：
 2. 创建一个 customLuxonConfig 对象，将其设置为将 luxonGenerateConfig 的内容作为初始值。
 
 3. 在 customLuxonConfig 对象中可以进行以下自定义配置：
+
    - getWeekFirstDay: 自定义一周的第一天的实现。可以在该函数中编写你的自定义代码。
    - 其他可用的自定义配置，具体可以参考 luxon 文档。
 

@@ -63,25 +63,24 @@
 在按钮中放置图标时，需要遵循主次展示的原则。主要操作的图标应当放置在显眼的位置，而次要操作的图标可以放置在右侧下拉按钮中。这样可以使操作更加清晰，避免混淆和用户困惑。
 
 ### 虚线按钮是用来做什么的？
+
 虚线按钮是用于引导用户在一个区域中添加内容的。它通过使用虚线边框的样式，给用户一个提示，让他们知道这个按钮可以点击，并且可以在这个区域中进行特定的操作。
 
 ### 虚线按钮的样式是怎样的？
+
 虚线按钮的样式是边框为虚线的按钮。一般来说，它的边框会使用灰色的虚线，以便于与普通按钮做区分。
 
 ### 如何使用虚线按钮？
+
 使用虚线按钮非常简单，只需要在相应的区域中添加一个虚线按钮的元素即可。可以通过在 HTML 中添加特定的 class 或者使用 CSS 来定义按钮的样式。一般来说，虚线按钮的点击事件会与相关的功能或操作绑定在一起，用户点击虚线按钮后，会触发相应的操作或者进入相应的编辑模式。
 
 例如，在 React 中，我们可以使用类似如下的代码来创建一个虚线按钮：
 
 ```jsx
-import React from 'react';
+import React from "react";
 
 function DashedButton() {
-  return (
-    <button className="dashed-button">
-      添加内容
-    </button>
-  );
+  return <button className="dashed-button">添加内容</button>;
 }
 
 export default DashedButton;
@@ -91,11 +90,9 @@ export default DashedButton;
 
 希望以上信息能够对你有所帮助！
 
-### 危险按钮 Danger button
+### 如何使用危险按钮？
 
-**问题：** 如何使用危险按钮？
-
-**答案：** 危险按钮用于警示用户该操作存在风险。可以通过给按钮添加红色样式来突出显示风险操作。
+危险按钮用于警示用户该操作存在风险。可以通过给按钮添加红色样式来突出显示风险操作。
 
 示例代码和效果如下：
 
@@ -103,66 +100,78 @@ export default DashedButton;
 <button class="danger-button">删除</button>
 
 <style>
-.danger-button {
-  color: white;
-  background-color: #ff4d4f;
-  border-color: #ff4d4f;
-}
+  .danger-button {
+    color: white;
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+  }
 
-.danger-button:hover {
-  background-color: #ff7875;
-  border-color: #ff7875;
-}
+  .danger-button:hover {
+    background-color: #ff7875;
+    border-color: #ff7875;
+  }
 </style>
 ```
 
-**问题：** 如何正确示范危险按钮的使用？
+### 如何正确示范危险按钮的使用？
 
-**答案：** 可以通过给危险按钮添加额外的描述来正确示范危险按钮的使用。描述可以提示用户该操作存在风险。
+可以通过给危险按钮添加额外的描述来正确示范危险按钮的使用。描述可以提示用户该操作存在风险。
 
 示例代码和效果如下：
 
 ```html
-<button class="danger-button" alt="正确示范" description="用户的主要意图是删除，通过红色警示该操作存在风险。">删除</button>
+<button
+  class="danger-button"
+  alt="正确示范"
+  description="用户的主要意图是删除，通过红色警示该操作存在风险。"
+>
+  删除
+</button>
 
 <style>
-.danger-button {
-  color: white;
-  background-color: #ff4d4f;
-  border-color: #ff4d4f;
-}
+  .danger-button {
+    color: white;
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+  }
 
-.danger-button:hover {
-  background-color: #ff7875;
-  border-color: #ff7875;
-}
+  .danger-button:hover {
+    background-color: #ff7875;
+    border-color: #ff7875;
+  }
 </style>
 ```
 
-**问题：** 当系统不推荐用户执行删除操作时，如何将取消按钮设置为危险按钮？
+### 当系统不推荐用户执行删除操作时，如何将取消按钮设置为危险按钮？
 
-**答案：** 当系统不推荐用户执行删除操作时，可以将取消按钮设置为危险按钮，以提醒用户该操作存在风险。
+当系统不推荐用户执行删除操作时，可以将取消按钮设置为危险按钮，以提醒用户该操作存在风险。
 
 示例代码和效果如下：
 
 ```html
-<button class="danger-button" alt="正确示范" description="当系统不推荐用户执行删除操作时，可将取消按钮设置为主按钮。">取消</button>
+<button
+  class="danger-button"
+  alt="正确示范"
+  description="当系统不推荐用户执行删除操作时，可将取消按钮设置为主按钮。"
+>
+  取消
+</button>
 
 <style>
-.danger-button {
-  color: white;
-  background-color: #ff4d4f;
-  border-color: #ff4d4f;
-}
+  .danger-button {
+    color: white;
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+  }
 
-.danger-button:hover {
-  background-color: #ff7875;
-  border-color: #ff7875;
-}
+  .danger-button:hover {
+    background-color: #ff7875;
+    border-color: #ff7875;
+  }
 </style>
 ```
 
-### 幽灵按钮 Ghost button是什么？
+### 幽灵按钮 Ghost button 是什么？
 
 幽灵按钮是一种按钮样式，通常用于放置在复杂或深色背景中，避免按钮在背景中显得突兀，破坏整体性。幽灵按钮样式可以根据需求进行灵活的定制。
 
@@ -185,6 +194,7 @@ export default DashedButton;
 ### 行动号召按钮的最佳实践是什么？
 
 以下是一些行动号召按钮的最佳实践：
+
 1. 使用有吸引力的文案，比如“立即开始”、“下载免费试用版”等，让用户明确知道点击按钮会发生什么。
 2. 使用醒目的颜色和适当的大小，以便按钮能够在页面上出现并且吸引用户的注意。
 3. 将按钮放置在可见的位置，并避免与其他元素混淆或被覆盖。
@@ -209,7 +219,10 @@ export default DashedButton;
 
 ```html
 <ImagePreview>
-    <img class="preview-img no-padding" src="https://img.alicdn.com/imgextra/i1/O1CN01Wd9Dbh1z6A5MQwEnh_!!6000000006664-2-tps-930-290.png">
+  <img
+    class="preview-img no-padding"
+    src="https://img.alicdn.com/imgextra/i1/O1CN01Wd9Dbh1z6A5MQwEnh_!!6000000006664-2-tps-930-290.png"
+  />
 </ImagePreview>
 ```
 
@@ -227,7 +240,6 @@ export default DashedButton;
 
 通过以上步骤，可以实现按钮区跟随受控内容，提升用户体验。
 
-
 ### 如何将按钮区放置于用户浏览路径中？
 
 要将按钮区放置于用户浏览路径中，可以采取以下方法：
@@ -237,7 +249,6 @@ export default DashedButton;
 3. 考虑用户的浏览习惯和页面内容的重要性，合理确定按钮区的位置。可以进行用户研究和测试，以了解用户习惯和反馈，进而做出更好的决策。
 
 通过以上方法，可以将按钮区放置于用户浏览路径中，提高按钮的可发现性。
-
 
 ### 如何实现按钮区的位置跟随？
 
@@ -250,12 +261,15 @@ export default DashedButton;
 通过以上方式，可以实现按钮区的位置跟随受控内容的效果。
 
 ### 工具栏中的按钮区是如何放置的？
+
 工具栏中的按钮区是靠右放置的，用来控制工具栏控制的内容范围。
 
 ### 工具栏中的按钮区有什么作用？
+
 工具栏中的按钮区可以通过点击不同的按钮来控制工具栏控制的内容范围。它提供了更加便捷的操作方式，使用户能够快速地切换和控制不同的内容。
 
 ### 如何调整工具栏中的按钮区的位置？
+
 工具栏中的按钮区是靠右放置的，这是默认的布局方式。如果需要调整按钮区的位置，可以通过修改样式来实现。可以使用 CSS 来设置按钮区的位置，比如使用 `float: right;` 或者使用 Flex 布局的 `justify-content: flex-end;` 属性来将按钮区靠右放置。
 
 ### 页面主题如何描述？
@@ -338,7 +352,7 @@ export default DashedButton;
 
 通过理解用户的行为模式和交互习惯，我们可以更好地设计按钮的顺序，提供更好的用户体验。
 
-## 按钮组
+### 按钮组
 
 按钮组是将多个按钮排列在一起形成一个组合的界面元素。按钮组通常用于表示一组相关的操作或选项。在按钮组中，每个按钮具有相同的外观样式，并且只有一个按钮可以处于选中状态。
 
@@ -353,6 +367,7 @@ export default DashedButton;
 描述：连在一起的按钮组在外观上易与 Toggle Button 切换按钮混淆。
 
 按钮组的使用应注意以下几点：
+
 - 按钮组中的按钮应该具有一致的样式，以便用户识别它们属于同一组。
 - 按钮组中的按钮应该根据实际需求进行合理的布局，以保证用户操作的便捷性。
 - 如果需要标识当前选中的按钮，可以使用不同的样式或图标来与其他按钮进行区分。
@@ -405,23 +420,25 @@ export default DashedButton;
 当按钮数量过多时，可以考虑将相关的动作分组，并采用相似的视觉设计。主要动作仍可以使用主按钮来强调。
 
 在折叠部分按钮时：
-- 正确示范是使用主次按钮折叠，如下图所示：
-  ![正确示范](https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*Qn-mQKxaQ5kAAAAAAAAAAABkARQnAQ)
-- 错误示范是在无需分组时使用短竖线分割按钮，如下图所示：
-  ![错误示范](https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*3bUZRbPiVBEAAAAAAAAAAABkARQnAQ)
+
+- 正确示范是使用主次按钮折叠，如下图所示： ![正确示范](https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*Qn-mQKxaQ5kAAAAAAAAAAABkARQnAQ)
+- 错误示范是在无需分组时使用短竖线分割按钮，如下图所示： ![错误示范](https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*3bUZRbPiVBEAAAAAAAAAAABkARQnAQ)
 
 另外，也可以平铺每个按钮，并推荐通过间距来区隔分组，或者使用分割线来区隔视觉相似的按钮组。
 
 希望以上信息对您有帮助。如有其他问题，请随时提出。
 
 ### 如何优化按钮文案？
+
 在 Ant Design 组件中，默认使用“确定/取消”文案作为按钮文案。但可以通过以下方式进行优化：
+
 1. 描述任务结果：根据任务的目标，使用描述任务结果的动词作为按钮文案，例如“发布”、“登录”、“注册”。
-2. 强调后果：当主要操作具有否定含义时，可以强调操作的后果。例如，对于一个删除操作，可以使用“删除”作为按钮文案，同时在按钮提示中强调“你确定要删除它吗？”。
-请根据具体的语境和任务要求来选择合适的按钮文案。
+2. 强调后果：当主要操作具有否定含义时，可以强调操作的后果。例如，对于一个删除操作，可以使用“删除”作为按钮文案，同时在按钮提示中强调“你确定要删除它吗？”。请根据具体的语境和任务要求来选择合适的按钮文案。
 
 ### 按钮文案要满足哪些要求？
+
 按钮文案在传达用户按下按钮时系统将执行的操作时，需要满足以下要求：
+
 1. 使用动词：按钮文案必须使用动词，除了下拉按钮。
 2. 与语境紧密关联：按钮文案应该与所在的语境紧密关联，避免歧义和误导。
 3. 用语简练：按钮文案应该简洁明了，能够清晰传达操作的含义和目的。

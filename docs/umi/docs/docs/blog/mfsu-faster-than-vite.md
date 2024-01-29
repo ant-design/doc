@@ -9,4 +9,3 @@ Umi 4 同时支持 webpack 和 vite 两种构建方式。这样可以让开发�
 ### MFSU with esbuild 模式与其他模式相比有什么优势？
 
 根据测试结果，在多个场景下，MFSU with esbuild 模式在速度方面表现较优。它利用了 MFSU（Module Federation Server-Usage），对模块进行按需编译和缓存。结合 esbuild，可以进一步提高构建速度。根据测试数据，这种模式在无缓存的冷启动、有缓存的热启动、修改代码后的热更新等方面都表现出优秀的性能。
-

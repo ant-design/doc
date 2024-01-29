@@ -10,15 +10,15 @@ pnpm i babel-plugin-dynamic-import-node -D
 
 2. 然后，在你的配置文件中添加 `extraBabelPlugins` 配置项，但只在生产环境中启用该插件：
 
-   ```ts
-   // .umirc.ts
-   export default {
-     extraBabelPlugins:
-       process.env.NODE_ENV === 'production'
-         ? ['babel-plugin-dynamic-import-node']
-         : [],
-   };
-   ```
+```ts
+// .umirc.ts
+export default {
+  extraBabelPlugins:
+    process.env.NODE_ENV === "production"
+      ? ["babel-plugin-dynamic-import-node"]
+      : [],
+};
+```
 
 请注意，关闭 dynamicImport 不是一个推荐的做法，因为它可以帮助你实现按需加载，提升应用性能。因此，你应该在确保不会对应用性能产生负面影响的情况下使用它。
 

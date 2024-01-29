@@ -25,8 +25,9 @@
 ### 如何避免错误的图片展示？
 
 为了避免错误的图片展示，要注意以下几点：
+
 - 确保`<ImagePreview>`组件中的<img>标签的`src`属性指向正确的图片地址。
-- 避免在<img>标签上设置无效的CSS类名，以免影响图片的展示效果。
+- 避免在<img>标签上设置无效的 CSS 类名，以免影响图片的展示效果。
 
 ### 如何写出用户中心的文案？
 
@@ -37,6 +38,7 @@
 ### 如何使用`<ImagePreview>`组件？
 
 `<ImagePreview>`组件用于展示图片预览，可以通过以下步骤来使用：
+
 1. 在需要展示图片预览的地方引入`<ImagePreview>`组件。
 2. 在`<ImagePreview>`标签内部添加需要预览的图片标签，通过`src`属性指定图片的路径，通过`alt`属性指定图片的描述。
 3. 可以为预览的图片添加自定义的类名，以实现不同的样式效果。
@@ -45,6 +47,7 @@
 ### `<ImagePreview>`组件中的类名有何作用？
 
 `<ImagePreview>`组件中提供了两个类名：`preview-img`和`no-padding`。它们的作用分别是：
+
 - `preview-img`：为预览图片添加自定义样式。
 - `no-padding`：去除预览图片的内边距。
 
@@ -53,6 +56,7 @@
 ### 如何正确展示图片预览？
 
 正确展示图片预览需要注意以下事项：
+
 1. 确保引入了正确的`<ImagePreview>`组件。
 2. 提供正确的图片路径，并确保图片能够正常加载。
 3. 使用合适的类名来实现预览图片的样式效果。
@@ -66,8 +70,17 @@
 
 ```html
 <ImagePreview>
-  <img class="preview-img no-padding good" src="https://gw.alipayobjects.com/zos/rmsportal/FOcLNnbiaZOTMRHAyeVZ.png" alt="正确示范">
-  <img class="preview-img no-padding bad" src="https://gw.alipayobjects.com/zos/rmsportal/tUmMsssHDlGqlKbRwYlH.png" alt="错误示范" description="站在用户的角度，说用户熟悉的话。">
+  <img
+    class="preview-img no-padding good"
+    src="https://gw.alipayobjects.com/zos/rmsportal/FOcLNnbiaZOTMRHAyeVZ.png"
+    alt="正确示范"
+  />
+  <img
+    class="preview-img no-padding bad"
+    src="https://gw.alipayobjects.com/zos/rmsportal/tUmMsssHDlGqlKbRwYlH.png"
+    alt="错误示范"
+    description="站在用户的角度，说用户熟悉的话。"
+  />
 </ImagePreview>
 ```
 
@@ -78,7 +91,11 @@
 要在<ImagePreview>组件中展示正确示范的图片，您可以使用<img>元素，并为该元素添加正确的类名和属性。例如：
 
 ```html
-<img class="preview-img no-padding good" src="https://gw.alipayobjects.com/zos/rmsportal/FOcLNnbiaZOTMRHAyeVZ.png" alt="正确示范">
+<img
+  class="preview-img no-padding good"
+  src="https://gw.alipayobjects.com/zos/rmsportal/FOcLNnbiaZOTMRHAyeVZ.png"
+  alt="正确示范"
+/>
 ```
 
 在上述示例中，我们为<img>元素添加了类名`preview-img`、`no-padding`和`good`，分别表示预览图片的样式、边距和展示效果。通过设置合适的类名和属性，您可以使正确示范的图片在<ImagePreview>组件中得到正确地展示。
@@ -88,42 +105,48 @@
 如果您需要在<ImagePreview>组件中展示错误示范的图片，并提供额外的描述信息，您可以在<img>元素上添加`description`属性。例如：
 
 ```html
-<img class="preview-img no-padding bad" src="https://gw.alipayobjects.com/zos/rmsportal/tUmMsssHDlGqlKbRwYlH.png" alt="错误示范" description="站在用户的角度，说用户熟悉的话。">
+<img
+  class="preview-img no-padding bad"
+  src="https://gw.alipayobjects.com/zos/rmsportal/tUmMsssHDlGqlKbRwYlH.png"
+  alt="错误示范"
+  description="站在用户的角度，说用户熟悉的话。"
+/>
 ```
 
 在上述示例中，我们为<img>元素添加了类名`preview-img`、`no-padding`和`bad`，并设置了`description`属性值为"站在用户的角度，说用户熟悉的话。"，用于描述错误示范的图片。通过这种方式，您可以在<ImagePreview>组件中展示错误示范的图片，并向用户提供相应的描述信息，以帮助用户理解和识别错误的展示效果。
 
 ### 图片描述的一致性问题如何解决？
 
-问题描述：
-在一个图片预览组件中，存在图片描述的一致性问题，请问如何解决？
+问题描述：在一个图片预览组件中，存在图片描述的一致性问题，请问如何解决？
 
 解决方案：
+
 - 图片描述要使用相同的介词；
 - 在同一页面、同一区域的语序要保持一致；
 - 确保操作名称和目标页面标题一致。
 
 ### 如何解决图片描述的一致性问题？
 
-问题描述：
-在图片预览组件中，出现了图片描述的一致性问题，请问如何解决？
+问题描述：在图片预览组件中，出现了图片描述的一致性问题，请问如何解决？
 
 解决方案：
+
 - 图片描述要使用相同的介词；
 - 在同一页面、同一区域的语序要保持一致；
 - 确保操作名称和目标页面标题一致。
 
 ### 如何确保图片描述的一致性？
 
-问题描述：
-如何确保图片预览组件中的图片描述保持一致？
+问题描述：如何确保图片预览组件中的图片描述保持一致？
 
 解决方案：
+
 - 图片描述要使用相同的介词；
 - 在同一页面、同一区域的语序要保持一致；
 - 确保操作名称和目标页面标题一致。
 
 ### 在设计中如何突出重要的信息？
+
 在设计中，我们应该将重要的信息放在显著的位置，这样用户一眼就能看到。通过使用高亮、留白等方式，我们可以突出重要信息，并避免将重要内容隐藏在段落中，不易搜寻。如果考虑安全性问题，我们也可以使用「点击后可见」的方式来展示隐私信息。
 
 一个正确的示范是将重要的信息放在最前面，或者通过高亮、留白等方式突出重要信息。这样用户一进入页面就能立刻看到重要的内容。
@@ -131,11 +154,13 @@
 而一个错误的示范是将用户最关心的信息藏在段落中，用户需要费力去寻找重要信息，增加了用户的操作复杂性。
 
 ### 为什么需要在设计中突出重要的信息？
+
 在设计中突出重要的信息是为了增强用户体验。因为用户在浏览网页的过程中，通常只会浏览页面的顶部部分，或者只会快速扫视整个页面。如果重要的信息被放在页面的不显眼位置，用户可能会错过这些信息，导致用户无法准确地获取所需的信息，甚至错过一些重要的功能或者操作。
 
 通过将重要的信息放在显著的位置，用户可以更快速地找到所需的内容，提高了用户的效率，并且减少了用户的困扰和焦虑情绪。
 
 ### 怎样在设计中突出重要的信息？
+
 在设计中，我们可以通过多种方式来突出重要的信息，一些常用的方式包括：
 
 1. **排版和布局：** 在页面布局中将重要的内容放在显眼的位置，比如将重要的功能按钮放在页面的顶部或者侧边栏中，让用户一进入页面就能立刻看到。
@@ -153,12 +178,12 @@
 
 #### 示例：
 
-正确示范：
-![正确示范](https://gw.alipayobjects.com/zos/rmsportal/ioBKvBqCNzUwQDyjMiIa.png)
+正确示范： ![正确示范](https://gw.alipayobjects.com/zos/rmsportal/ioBKvBqCNzUwQDyjMiIa.png)
+
 > 用户可以从中了解了设置后会有什么好处。
 
-错误示范：
-![错误示范](https://gw.alipayobjects.com/zos/rmsportal/EiwnPMETQAmWlHSGAWEX.png)
+错误示范： ![错误示范](https://gw.alipayobjects.com/zos/rmsportal/EiwnPMETQAmWlHSGAWEX.png)
+
 > 用户感受不到设置的意义，不会去设置。
 
 ### 如何正确处理报错信息？
@@ -167,37 +192,37 @@
 
 #### 示例：
 
-正确示范：
-![正确示范](https://gw.alipayobjects.com/zos/rmsportal/dlAkFzezQEwtNnZDWpQh.png)
+正确示范： ![正确示范](https://gw.alipayobjects.com/zos/rmsportal/dlAkFzezQEwtNnZDWpQh.png)
+
 > 相对于「失败」，「无法完成」是更加客观的结果，更容易让用户在心理上接受。用户需要知道在出现问题的情况下如何进行下一步操作。
 
-错误示范：
-![错误示范](https://gw.alipayobjects.com/zos/rmsportal/qqrgyclPnhBFgPEYsBXd.png)
+错误示范： ![错误示范](https://gw.alipayobjects.com/zos/rmsportal/qqrgyclPnhBFgPEYsBXd.png)
+
 > 对于异常情况不是冷冰冰告诉你「失败」。
 
-### 其他 QA 类型文档的生成记录：
+### 其他 类型文档的生成记录：
 
-- QA 类型：Ant Design 5.x 是否支持 CSS 变量模式？
-- QA 类型：Ant Design 5.x 的 CSS 变量模式在哪个版本开始支持？
-- QA 类型：Ant Design 5.x 的 CSS 变量模式相较于 4.x 有何不同之处？
+- 类型：Ant Design 5.x 是否支持 CSS 变量模式？
+- 类型：Ant Design 5.x 的 CSS 变量模式在哪个版本开始支持？
+- 类型：Ant Design 5.x 的 CSS 变量模式相较于 4.x 有何不同之处？
 
-### 使用CSS变量模式的好处有哪些？
+### 使用 CSS 变量模式的好处有哪些？
 
-使用CSS变量模式可以带来以下好处：
+使用 CSS 变量模式可以带来以下好处：
 
 1. 降低样式体积：通过将不同主题下的样式共享，可以减少样式的体积。
 2. 提升主题切换性能：切换主题时不需要重新序列化样式，从而提升了主题切换的性能。
-3. 兼容Ant Design主题能力：如果你的应用依赖Ant Design的主题能力，强烈建议开启CSS变量模式。
+3. 兼容 Ant Design 主题能力：如果你的应用依赖 Ant Design 的主题能力，强烈建议开启 CSS 变量模式。
 
-### 如何在Ant Design 5.x中使用CSS变量模式？
+### 如何在 Ant Design 5.x 中使用 CSS 变量模式？
 
-在Ant Design 5.x中，从版本5.12.0开始重新支持CSS变量模式。与4.x版本不同的是，这次Ant Design融合了CSS-in-JS的能力，并将所有Design Token纳入了CSS变量的管理范畴。以下是使用CSS变量模式的步骤：
+在 Ant Design 5.x 中，从版本 5.12.0 开始重新支持 CSS 变量模式。与 4.x 版本不同的是，这次 Ant Design 融合了 CSS-in-JS 的能力，并将所有 Design Token 纳入了 CSS 变量的管理范畴。以下是使用 CSS 变量模式的步骤：
 
-1. 升级至Ant Design 5.x版本。
-2. 确保你的应用依赖Ant Design的主题能力。
-3. 开启CSS变量模式。
+1. 升级至 Ant Design 5.x 版本。
+2. 确保你的应用依赖 Ant Design 的主题能力。
+3. 开启 CSS 变量模式。
 
-通过遵循上述步骤，你可以在Ant Design 5.x中成功使用CSS变量模式。
+通过遵循上述步骤，你可以在 Ant Design 5.x 中成功使用 CSS 变量模式。
 
 ### 如何确保基本用词规范且没有错字？
 
@@ -270,12 +295,15 @@
 通过以上方式，可以在设计和开发中避免指责和命令用户，提供友好、尊重的用户体验，增加用户对产品的认可和留存。
 
 ### 如何避免使用过于绝对的表述？
+
 在设计界面或编写文案时，我们应该避免使用过于极端的表述。过于绝对的表述容易给用户带来不适感，因此我们应该采用更温和和中立的语言，以更好地与用户进行沟通和交流。
 
 ### 为什么要避免使用过于绝对的表述？
+
 过于绝对的表述容易给用户带来不适感。当我们使用绝对的形容词或陈述时，用户可能会感到压力和紧张。相反，使用更温和和中庸的语言会使用户更加舒适、自信，并增强与用户的互动和沟通。
 
 ### 如何在设计和文案中避免使用过于绝对的表述？
+
 - 使用相对性词语：使用相对性词语，如“通常”、“可能”、“大部分情况下”等，可以缓和绝对性陈述的语气，减轻用户的压力感。
 - 引入灵活性：在对某件事情或功能进行描述时，引入一些灵活性的措辞，如“有时”、“或许”、“可以自己决定”等，让用户感到有更多的选择和自主性。
 - 反问式陈述：使用反问式陈述可以帮助用户更好地思考和决策。通过让用户自己去触发问题，可以减轻强制性表述带来的负面情绪。
@@ -284,21 +312,17 @@
 
 ### 英文名词大小写规范
 
-问：如何规范产品名称的大小写？
-答：产品名称全称需要首字母大写，而产品名称缩写则需要全部大写。
+问：如何规范产品名称的大小写？答：产品名称全称需要首字母大写，而产品名称缩写则需要全部大写。
 
-问：为什么应该避免整个单词都大写？
-答：整个单词都大写不利于阅读和识别，应尽量避免这种用法。
+问：为什么应该避免整个单词都大写？答：整个单词都大写不利于阅读和识别，应尽量避免这种用法。
 
 ### 正确使用专有名词的大小写规范
 
-问：如何正确使用专有名词的大小写？
-答：专有名词的大小写应该遵循标准的规范。
+问：如何正确使用专有名词的大小写？答：专有名词的大小写应该遵循标准的规范。
 
 ### 全英文的标题、标签、菜单项等遵循英文句式中首字母大写的规范
 
-问：在什么情况下应该遵循英文句式中首字母大写的规范？
-答：全英文的标题、标签、菜单项等都应该遵循英文句式中首字母大写的规范。
+问：在什么情况下应该遵循英文句式中首字母大写的规范？答：全英文的标题、标签、菜单项等都应该遵循英文句式中首字母大写的规范。
 
 ### 统计数据为什么要使用阿拉伯数字？
 
@@ -335,6 +359,7 @@
 - 表格中的句子
 
 例子：
+
 ```
 <ImagePreview>
   <img class="preview-img no-padding good" src="https://gw.alipayobjects.com/zos/rmsportal/QGpLpUFgZnTDzYJCeuun.png" alt="正确示范">
@@ -348,6 +373,7 @@
 - 任何文字链前的句子。
 
 例子：
+
 ```
 <ImagePreview>
   <img class="preview-img no-padding good" src="https://gw.alipayobjects.com/zos/rmsportal/UMLpWSOrmsYFlozQFGXu.png" alt="正确示范">
@@ -365,32 +391,36 @@
 
 典型的例子可以看下面的图片示例：
 
-正确示范：
-![正确示范](https://gw.alipayobjects.com/zos/rmsportal/CJAEXjDelaghIOHZAxgh.png)
+正确示范： ![正确示范](https://gw.alipayobjects.com/zos/rmsportal/CJAEXjDelaghIOHZAxgh.png)
 
-错误示范：
-![错误示范](https://gw.alipayobjects.com/zos/rmsportal/SgcrhDeaVpNmeFWRiJnc.png)
+错误示范： ![错误示范](https://gw.alipayobjects.com/zos/rmsportal/SgcrhDeaVpNmeFWRiJnc.png)
 
 正确示范中没有使用感叹号，给用户一种放松的感觉。而错误示范中使用了感叹号，使得气氛变得过于紧张。
 
 因此，在前端开发中，我们应该谨慎使用感叹号，避免给用户带来负面的体验。
 
 ### 空格的使用规范
+
 在段落和句子中，链接和文字之间需要增加空格。当全角字符和半角字符搭配时，同样需要添加空格，例如：两个、2 个、50%。
 
 ### 句号的使用规范
+
 通常情况下，句子末尾使用句号来标示结束。然而，在输入框下的提示、表格中的句子、句末为文字链（链接前使用句号）、按钮和标题等情况下，不使用句号。
 
 ### 感叹号的使用规范
+
 感叹号只在需要表达强烈情感的情况下使用。
 
 ### 连接号的使用规范
+
 连接号使用半角的“-”，不使用中文全角的连接号。例如：2012-11-12。
 
 ### 省略号的使用规范
+
 省略号使用半角的“…”作为省略号的表示方式。
 
 ### 隐藏符号的使用规范
-隐藏符号“*”通常用于替换显示隐私信息。
+
+隐藏符号“\*”通常用于替换显示隐私信息。
 
 请参考 1995 年中国标准出版社出版的《标点符号用法》了解更多详细信息。

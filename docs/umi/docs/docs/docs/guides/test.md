@@ -23,14 +23,14 @@ Umi 4 提供了单元测试的脚手架，帮助开发者实现自动化测试�
 3. 对于 umi 项目，可以按照以下代码进行配置：
 
 ```ts
-import { Config, configUmiAlias, createConfig } from 'umi/test';
+import { Config, configUmiAlias, createConfig } from "umi/test";
 
 export default async () => {
   return (await configUmiAlias({
     ...createConfig({
-      target: 'browser',
-      jsTransformer: 'esbuild',
-      jsTransformerOpts: { jsx: 'automatic' },
+      target: "browser",
+      jsTransformer: "esbuild",
+      jsTransformerOpts: { jsx: "automatic" },
     }),
     // 可以覆盖 umi 的默认 jest 配置，例如:
     // displayName: "Umi jest",
@@ -41,14 +41,14 @@ export default async () => {
 4. 对于 @umijs/max 项目，可以按照以下代码进行配置：
 
 ```ts
-import { Config, configUmiAlias, createConfig } from '@umijs/max/test';
+import { Config, configUmiAlias, createConfig } from "@umijs/max/test";
 
 export default async () => {
   return (await configUmiAlias({
     ...createConfig({
-      target: 'browser',
-      jsTransformer: 'esbuild',
-      jsTransformerOpts: { jsx: 'automatic' },
+      target: "browser",
+      jsTransformer: "esbuild",
+      jsTransformerOpts: { jsx: "automatic" },
     }),
     // 可以覆盖 umi 的默认 jest 配置，例如:
     // displayName: "Umi jest",
@@ -72,7 +72,7 @@ export default async () => {
 
 准备好配置后，你就可以开始编写单元测试了。
 
-## 如何测试 `reverseApiData` 函数？
+### 如何测试 `reverseApiData` 函数？
 
 当测试 `reverseApiData` 函数时，我们可以按照以下步骤进行：
 
@@ -83,17 +83,17 @@ export default async () => {
 例如，我们可以编写一个测试用例来确保 `fetcher` 函数使用传入的 `url` 请求 API 的数据：
 
 ```ts
-test('reverseApiData use fetcher to request url', async () => {
+test("reverseApiData use fetcher to request url", async () => {
   // 准备 mock 函数或数据
   const fetcher = jest.fn().mockResolvedValue({
     json: () => Promise.resolve(),
   });
 
   // 执行被测试的函数
-  await reverseApiData('https://api.end/point', fetcher);
+  await reverseApiData("https://api.end/point", fetcher);
 
   // 断言测试结果
-  expect(fetcher).toBeCalledWith('https://api.end/point');
+  expect(fetcher).toBeCalledWith("https://api.end/point");
 });
 ```
 
@@ -104,7 +104,7 @@ test('reverseApiData use fetcher to request url', async () => {
 ```ts
 test('reverseApiData reverse simple object', async () => {
   const fetcher = jest.fn().mockResolvedValue({
-    json: () => Promise.resolve({ data: { a: 'b' } }),
+    json: () => Promise.resolve({ dat{ 'b' } }),
   });
 
   const reversed = await reverseApiData('url', fetcher);
@@ -122,15 +122,15 @@ test('reverseApiData reverse simple object', async () => {
 1. 首先在测试文件中导入 `render` 方法和需要测试的组件：
 
 ```tsx
-import { render } from '@testing-library/react';
-import React from 'react';
-import Greet from './Greet';
+import { render } from "@testing-library/react";
+import React from "react";
+import Greet from "./Greet";
 ```
 
 2. 然后编写测试用例并调用 `render` 方法渲染组件，获取渲染结果的容器 element：
 
 ```tsx
-test('renders Greet without name by snapshot', () => {
+test("renders Greet without name by snapshot", () => {
   const { container } = render(<Greet />);
   // ...
 });
@@ -139,9 +139,9 @@ test('renders Greet without name by snapshot', () => {
 3. 最后使用 `expect` 函数对容器的快照进行断言，并调用 `toMatchSnapshot` 方法生成快照：
 
 ```tsx
-test('renders Greet without name by snapshot', () => {
+test("renders Greet without name by snapshot", () => {
   const { container } = render(<Greet />);
-  
+
   expect(container).toMatchSnapshot();
 });
 ```
@@ -155,7 +155,7 @@ test('renders Greet without name by snapshot', () => {
 1. 首先编写测试用例，并渲染需要测试的组件，获取渲染结果的容器 element：
 
 ```tsx
-test('renders Greet without name by inline snapshot', () => {
+test("renders Greet without name by inline snapshot", () => {
   const { container } = render(<Greet />);
   // ...
 });
@@ -164,9 +164,9 @@ test('renders Greet without name by inline snapshot', () => {
 2. 然后使用 `expect` 函数对容器的快照进行断言，并调用 `toMatchInlineSnapshot` 方法：
 
 ```tsx
-test('renders Greet without name by inline snapshot', () => {
+test("renders Greet without name by inline snapshot", () => {
   const { container } = render(<Greet />);
-  
+
   expect(container).toMatchInlineSnapshot();
 });
 ```
@@ -180,13 +180,13 @@ test('renders Greet without name by inline snapshot', () => {
 1. 首先在测试文件中导入 `@testing-library/jest-dom`：
 
 ```tsx
-import '@testing-library/jest-dom';
+import "@testing-library/jest-dom";
 ```
 
 2. 然后编写测试用例并调用 `render` 方法渲染组件，获取渲染结果的 element：
 
 ```tsx
-test('renders Greet without name assert by testing-library', () => {
+test("renders Greet without name assert by testing-library", () => {
   const { container } = render(<Greet />);
   // ...
 });
@@ -195,24 +195,20 @@ test('renders Greet without name assert by testing-library', () => {
 3. 最后使用 `screen.getByText` 方法获取渲染结果中的特定元素，并使用 `expect` 函数对获取到的元素进行断言，比如使用 `toBeInTheDocument` 断言该元素是否在文档中：
 
 ```tsx
-test('renders Greet without name assert by testing-library', () => {
+test("renders Greet without name assert by testing-library", () => {
   const { container } = render(<Greet />);
-  
-  const greetDom = screen.getByText('Anonymous');
+
+  const greetDom = screen.getByText("Anonymous");
   expect(greetDom).toBeInTheDocument();
 });
 ```
 
 以上就是使用 @testing-library/jest-dom 进行渲染结果判断的步骤。可通过该库提供的断言 API 对渲染结果进行更丰富的断言，详细的断言 API 可以参考[官方文档](https://github.com/testing-library/jest-dom)。
 
-问：`Greet` 组件的测试中，为什么要使用 `await` 关键字？
-答：`await` 关键字用于等待异步操作完成，这里的异步操作是指在点击事件触发后，执行 `onClick` 函数的过程。使用 `await` 关键字可以保证在异步操作完成之后再继续执行后续的断言和判断。
+问：`Greet` 组件的测试中，为什么要使用 `await` 关键字？答：`await` 关键字用于等待异步操作完成，这里的异步操作是指在点击事件触发后，执行 `onClick` 函数的过程。使用 `await` 关键字可以保证在异步操作完成之后再继续执行后续的断言和判断。
 
-问：`Greet` 组件的测试中，`fireEvent.click` 函数的参数是什么？
-答：`fireEvent.click` 函数的参数是一个 DOM 元素或包含该元素的组件，在测试中我们通常使用 `screen.getByText` 函数来获取需要点击的元素。参数中的正则表达式 `/hello/i` 是用来匹配文本内容为 "hello" 的元素。
+问：`Greet` 组件的测试中，`fireEvent.click` 函数的参数是什么？答：`fireEvent.click` 函数的参数是一个 DOM 元素或包含该元素的组件，在测试中我们通常使用 `screen.getByText` 函数来获取需要点击的元素。参数中的正则表达式 `/hello/i` 是用来匹配文本内容为 "hello" 的元素。
 
-问：`Greet` 组件的测试中，`expect(onClick).toBeCalledTimes(1)` 是什么意思？
-答：`expect(onClick).toBeCalledTimes(1)` 是一个断言语句，用于判断 `onClick` 函数被调用的次数是否为 1。在这个测试中，我们期望点击事件触发后，`onClick` 函数只被调用一次。
+问：`Greet` 组件的测试中，`expect(onClick).toBeCalledTimes(1)` 是什么意思？答：`expect(onClick).toBeCalledTimes(1)` 是一个断言语句，用于判断 `onClick` 函数被调用的次数是否为 1。在这个测试中，我们期望点击事件触发后，`onClick` 函数只被调用一次。
 
-问：`Greet` 组件的测试中，`container` 是什么？
-答：`container` 是一个容器变量，可以用来获取测试组件渲染后的 DOM 元素。在这个测试中，我们没有使用 `container` 变量，但它在其他测试中可能会用到。
+问：`Greet` 组件的测试中，`container` 是什么？答：`container` 是一个容器变量，可以用来获取测试组件渲染后的 DOM 元素。在这个测试中，我们没有使用 `container` 变量，但它在其他测试中可能会用到。

@@ -1,10 +1,13 @@
 ### 1. 如何从 antd 4.x 版本升级到 5.x 版本？
+
 本文档将帮助你从 antd 4.x 版本升级到 antd 5.x 版本。如果你是 3.x 或者更老的版本，请先参考之前的[升级文档](https://4x.ant.design/docs/react/migration-v4-cn)升级到 4.x。
 
 ### 2. antd 5.x 版本的升级有什么要注意的事项？
+
 在将 antd 4.x 版本升级到 antd 5.x 版本时，有一些要注意的事项。请参考本文档获取详细的升级指南。
 
 ### 3. 升级到 antd 5.x 版本后有哪些更新和改进？
+
 升级到 antd 5.x 版本后，有一些更新和改进。请阅读本文档了解这些更新和改进的详细信息。
 
 ### 设计规范调整 - 基础圆角
@@ -52,18 +55,19 @@ Ant Design 5.x 在内置的时间库中使用了 Dayjs 替代 Moment.js。如果
      - DatePicker 组件
      - Mentions 组件
    - 示例代码：
-     ```diff
-        import { Select } from 'antd';
 
-        const App: React.FC = () => (
-          <Select
-    -       dropdownClassName="my-select-popup"
-    +       popupClassName="my-select-popup"
-          />
-        );
+```diff
+      import { Select } from 'antd';
 
-        export default App;
-     ```
+      const App: React.FC = () => (
+        <Select
+  -       dropdownClassName="my-select-popup"
+  +       popupClassName="my-select-popup"
+        />
+      );
+
+      export default App;
+```
 
 2. 为什么组件弹框的受控可见 API 统一为 `open`？
    - 在 Ant Design 5.x 中，为了统一 API，将组件弹框的受控可见 API 统一改为 `open`。以前类似的 API，如 `visible`，也会被替换为 `open`。
@@ -76,40 +80,41 @@ Ant Design 5.x 在内置的时间库中使用了 Dayjs 替代 Moment.js。如果
      - Slider 组件：`tooltip` 相关 API 收敛到 `tooltip` 属性中
      - Table 组件：`filterDropdownVisible` 变为 `filterDropdownOpen`
    - 示例代码：
-     ```diff
-        import { Modal, Tag, Table, Slider } from 'antd';
 
-        const App: React.FC = () => {
-          const [visible, setVisible] = useState(true);
+```diff
+      import { Modal, Tag, Table, Slider } from 'antd';
 
-          return (
-            <>
-      -       <Modal visible={visible}>content</Modal>
-      +       <Modal open={visible}>content</Modal>
+      const App: React.FC = () => {
+        const [visible, setVisible] = useState(true);
 
-      -       <Tag visible={visible}>tag</Tag>
-      +       {visible && <Tag>tag</Tag>}
+        return (
+          <>
+    -       <Modal visible={visible}>content</Modal>
+    +       <Modal open={visible}>content</Modal>
 
-              <Table
-                data={[]}
-                columns={[
-                  {
-                    title: 'Name',
-                    dataIndex: 'name',
-      -             filterDropdownVisible: visible,
-      +             filterDropdownOpen: visible,
-                  }
-                ]}
-              />
+    -       <Tag visible={visible}>tag</Tag>
+    +       {visible && <Tag>tag</Tag>}
 
-      -       <Slider tooltipVisible={visible} />
-      +       <Slider tooltip={{ open: visible }} />
-            </>
-          );
-        }
+            <Table
+              data={[]}
+              columns={[
+                {
+                  title: 'Name',
+                  dataIndex: 'name',
+    -             filterDropdownVisible: visible,
+    +             filterDropdownOpen: visible,
+                }
+              ]}
+            />
 
-        export default App;
-     ```
+    -       <Slider tooltipVisible={visible} />
+    +       <Slider tooltip={{ open: visible }} />
+          </>
+        );
+      }
+
+      export default App;
+```
 
 ### `getPopupContainer` API 调整
 
@@ -137,7 +142,7 @@ Ant Design 5.x 在内置的时间库中使用了 Dayjs 替代 Moment.js。如果
 1. Ant Design 4.x 中的 `message.warn` 方法是怎样变化和移除的？
    - 在 Ant Design 5.x 中，`message.warn` 方法已经被彻底移除，不再可用。如果需要显示警告消息，请使用 `message.warning` 方法来代替。
 
-### 问题1：如何替换 `Comment` 组件？
+### 问题 1：如何替换 `Comment` 组件？
 
 在 Ant Design 5.x 版本中，`Comment` 组件已经被移除，并且由 `@ant-design/compatible` 包中的组件进行维护。因此，如果你想要在项目中继续使用 `Comment` 组件，需要做以下替换：
 
@@ -148,7 +153,7 @@ Ant Design 5.x 在内置的时间库中使用了 Dayjs 替代 Moment.js。如果
 
 请注意更新导入路径，将原先的 `antd` 修改为 `@ant-design/compatible`。
 
-### 问题2：如何替换 `PageHeader` 组件？
+### 问题 2：如何替换 `PageHeader` 组件？
 
 在 Ant Design 5.x 版本中，`PageHeader` 组件已经被移除，并且由 `@ant-design/pro-layout` 包中的组件进行维护。因此，如果你想要在项目中继续使用 `PageHeader` 组件，需要做以下替换：
 
@@ -159,7 +164,7 @@ Ant Design 5.x 在内置的时间库中使用了 Dayjs 替代 Moment.js。如果
 
 请注意更新导入路径，将原先的 `antd` 修改为 `@ant-design/pro-layout`。
 
-### 问题3：如何替换 `BackTop` 组件？
+### 问题 3：如何替换 `BackTop` 组件？
 
 在 Ant Design 5.x 版本中，`BackTop` 组件已经被废弃，并且建议从 `FloatButton` 悬浮按钮中引入。如果你想要继续使用 `BackTop` 组件，请进行以下替换：
 
@@ -189,16 +194,16 @@ Ant Design 5.x 在内置的时间库中使用了 Dayjs 替代 Moment.js。如果
 
 2. 执行以下命令来安装 Ant Design 5.x 的依赖：
 
-   ```bash
+```bash
    npm install --save antd@5.x
-   ```
+```
 
 3. 如果你需要使用被 v4 废弃的组件（如 `Comment`、`PageHeader`），还需要安装 `@ant-design/compatible` 和 `@ant-design/pro-layout` 来实现兼容性：
 
-   ```bash
+```bash
    npm install --save @ant-design/compatible@v5-compatible-v4
    npm install --save @ant-design/pro-layout
-   ```
+```
 
 4. 针对以上提到的 APIs 和组件，你需要根据文档中的列表手动检查和修改你的代码。
 
@@ -216,18 +221,17 @@ Ant Design 5.x 的 CSS 变量模式是从版本 5.12.0 开始重新支持的功�
 
 如果你的应用程序依赖于 Ant Design 的主题能力，我们强烈建议你启用 CSS 变量模式。详细的使用方法可参考上述提供的文档。
 
-1. 如何使用 pnpm 运行 Ant Design 5.x 的 codemod 工具？
-可以使用以下命令来直接运行 pnpm，并执行 Ant Design 5.x 的 codemod 工具：
+1. 如何使用 pnpm 运行 Ant Design 5.x 的 codemod 工具？可以使用以下命令来直接运行 pnpm，并执行 Ant Design 5.x 的 codemod 工具：
+
 ```
 pnpm --package=@ant-design/codemod-v5 dlx antd5-codemod src
 ```
+
 这将会运行 codemod 工具，对 src 目录中的代码进行转换。
 
-2. 如何在 Ant Design 5.x 中使用 CSS 变量模式？
-从 Ant Design 5.12.0 版本开始，CSS 变量模式重新被支持。与 4.x 版本不同的是，这次 Ant Design 将 CSS-in-JS 的能力与 CSS 变量的管理结合了起来，包含了所有的 Design Token。这意味着在同一个组件中，不同主题下的样式可以共享，从而减少样式的体积。此外，切换主题时不再需要重新序列化样式，提升了主题切换的性能。如果你的应用依赖 Ant Design 的主题能力，强烈建议开启 CSS 变量模式。
+2. 如何在 Ant Design 5.x 中使用 CSS 变量模式？从 Ant Design 5.12.0 版本开始，CSS 变量模式重新被支持。与 4.x 版本不同的是，这次 Ant Design 将 CSS-in-JS 的能力与 CSS 变量的管理结合了起来，包含了所有的 Design Token。这意味着在同一个组件中，不同主题下的样式可以共享，从而减少样式的体积。此外，切换主题时不再需要重新序列化样式，提升了主题切换的性能。如果你的应用依赖 Ant Design 的主题能力，强烈建议开启 CSS 变量模式。
 
-3. 在使用 codemod 工具时需要注意哪些问题？
-请注意，codemod 工具无法覆盖所有场景，因此建议对不兼容的变化逐条进行排查。codemod 工具可以帮助你做一些自动化的转换工作，但不能保证完全准确，可能还需要手动调整一些代码。因此，建议在使用 codemod 工具时仔细阅读相关文档，对转换结果进行验证和修改。
+3. 在使用 codemod 工具时需要注意哪些问题？请注意，codemod 工具无法覆盖所有场景，因此建议对不兼容的变化逐条进行排查。codemod 工具可以帮助你做一些自动化的转换工作，但不能保证完全准确，可能还需要手动调整一些代码。因此，建议在使用 codemod 工具时仔细阅读相关文档，对转换结果进行验证和修改。
 
 ### 如何将 Ant Design 5.x 的 less 变量迁移到 v4 版本？
 
@@ -238,8 +242,8 @@ pnpm --package=@ant-design/codemod-v5 dlx antd5-codemod src
 2. 在你的代码文件中，引入 `@ant-design/compatible/lib` 模块，并使用 `convertLegacyToken` 方法将 v5 版本的变量转译成 v4 版本。
 
 ```js
-const { theme } = require('antd/lib');
-const { convertLegacyToken } = require('@ant-design/compatible/lib');
+const { theme } = require("antd/lib");
+const { convertLegacyToken } = require("@ant-design/compatible/lib");
 
 // 获取默认的主题算法和种子
 const { defaultAlgorithm, defaultSeed } = theme;
@@ -261,7 +265,7 @@ const v4Vars = convertLegacyToken(mapV4Token);
 ```js
 module.exports = {
   // ... 其他配置
-  loader: 'less-loader',
+  loader: "less-loader",
   options: {
     lessOptions: {
       modifyVars: v4Vars,
@@ -286,8 +290,8 @@ module.exports = {
 1. 在你的代码文件中，引入 `@ant-design/compatible/lib` 模块，并使用 `convertLegacyToken` 方法将 v5 版本的变量转译成 v5 版本（相当于无需转译）。
 
 ```js
-const { theme } = require('antd/lib');
-const { convertLegacyToken } = require('@ant-design/compatible/lib');
+const { theme } = require("antd/lib");
+const { convertLegacyToken } = require("@ant-design/compatible/lib");
 
 // 获取默认的主题算法和种子
 const { defaultAlgorithm, defaultSeed } = theme;
@@ -302,7 +306,7 @@ const v5Vars = convertLegacyToken(mapV5Token);
 ```js
 module.exports = {
   // ... 其他配置
-  loader: 'less-loader',
+  loader: "less-loader",
   options: {
     lessOptions: {
       modifyVars: v5Vars,
@@ -327,8 +331,8 @@ module.exports = {
 1. 在你的代码文件中，引入 `@ant-design/compatible/lib` 模块，并使用 `convertLegacyToken` 方法将 v5 版本的变量转译成 v5 版本（相当于无需转译）。
 
 ```js
-const { theme } = require('antd/lib');
-const { convertLegacyToken } = require('@ant-design/compatible/lib');
+const { theme } = require("antd/lib");
+const { convertLegacyToken } = require("@ant-design/compatible/lib");
 
 // 获取默认的主题算法和种子
 const { defaultAlgorithm, defaultSeed } = theme;
@@ -341,7 +345,7 @@ const v5Vars = convertLegacyToken(mapV5Token);
 2. 在你的 less 文件中，可以直接使用转译后的 v5 变量。
 
 ```less
-@import (reference) '~antd/es/style/themes/index';
+@import (reference) "~antd/es/style/themes/index";
 
 // 使用 v5 变量进行样式定义
 .my-class {
@@ -403,24 +407,24 @@ export default {
 
 1. 将 moment.js 的引入语句替换为 day.js 的引入语句：
 
-   ```diff
+```diff
    - import moment from 'moment';
    + import dayjs from 'dayjs';
-   ```
+```
 
 2. 将 moment.js 的 locale 引入语句替换为 day.js 的 locale 引入语句：
 
-   ```diff
+```diff
    - import 'moment/locale/zh-cn';
    + import 'dayjs/locale/zh-cn';
-   ```
+```
 
 3. 将 moment.js 的语言设置代码替换为 day.js 的语言设置代码：
 
-   ```diff
+```diff
    - moment.locale('zh-cn');
    + dayjs.locale('zh-cn');
-   ```
+```
 
 这样就成功替换了 Day.js 的语言包。
 
@@ -430,20 +434,20 @@ export default {
 
 1. 使用以下命令安装 `@ant-design/moment-webpack-plugin` 插件：
 
-   ```bash
+```bash
    npm install --save-dev @ant-design/moment-webpack-plugin
-   ```
+```
 
 2. 在 webpack 配置文件（webpack-config.js）中导入 `@ant-design/moment-webpack-plugin` 插件：
 
-   ```javascript
-   import AntdMomentWebpackPlugin from '@ant-design/moment-webpack-plugin';
+```javascript
+import AntdMomentWebpackPlugin from "@ant-design/moment-webpack-plugin";
 
-   module.exports = {
-     // ...
-     plugins: [new AntdMomentWebpackPlugin()],
-   };
-   ```
+module.exports = {
+  // ...
+  plugins: [new AntdMomentWebpackPlugin()],
+};
+```
 
 通过以上步骤，你可以使用 `@ant-design/moment-webpack-plugin` 插件将 Day.js 替换回 moment.js。
 
@@ -453,24 +457,24 @@ export default {
 
 1. 将 `moment` 的引入语句替换为 `dayjs` 的引入语句：
 
-   ```diff
+```diff
    - import moment from 'moment';
    + import dayjs from 'dayjs';
-   ```
+```
 
 2. 将 moment.js 的 locale 引入语句替换为 day.js 的 locale 引入语句：
 
-   ```diff
+```diff
    - import 'moment/locale/zh-cn';
    + import 'dayjs/locale/zh-cn';
-   ```
+```
 
 3. 将 `moment.locale('zh-cn')` 代码替换为 `dayjs.locale('zh-cn')` 代码：
 
-   ```diff
+```diff
    - moment.locale('zh-cn');
    + dayjs.locale('zh-cn');
-   ```
+```
 
 这样就成功将 moment.js 的语言包替换为 day.js 的语言包。
 
@@ -554,9 +558,9 @@ pnpm add antd-v5@npm:antd@5
 如果你想在同一个项目中同时使用 Ant Design 4.x 和 5.x，你可以通过在引入组件时使用不同的 import 来实现。例如，假设你想在项目中使用 Ant Design 4.x 的 `Button` 组件和 Ant Design 5.x 的 `Button` 组件，你可以这样做：
 
 ```tsx
-import React from 'react';
-import { Button as Button4 } from 'antd'; // 使用 Ant Design 4.x 版本的 Button 组件
-import { Button as Button5 } from 'antd-v5'; // 使用 Ant Design 5.x 版本的 Button 组件
+import React from "react";
+import { Button as Button4 } from "antd"; // 使用 Ant Design 4.x 版本的 Button 组件
+import { Button as Button5 } from "antd-v5"; // 使用 Ant Design 5.x 版本的 Button 组件
 
 export default () => (
   <>
@@ -571,8 +575,8 @@ export default () => (
 另外，在使用 Ant Design 5.x 版本的组件时，你可能需要配置 `ConfigProvider` 来避免样式冲突。你可以将 `ConfigProvider` 包裹在你的应用顶层组件中，并设置 `prefixCls` 为一个特定的值，例如 `"ant5"`：
 
 ```tsx
-import React from 'react';
-import { ConfigProvider as ConfigProvider5 } from 'antd-v5';
+import React from "react";
+import { ConfigProvider as ConfigProvider5 } from "antd-v5";
 
 export default () => (
   <ConfigProvider5 prefixCls="ant5">

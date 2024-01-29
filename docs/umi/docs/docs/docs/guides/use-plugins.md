@@ -12,21 +12,18 @@ pnpm add -D @umijs/plugins
 
 ```ts
 export default {
-  plugins: ['@umijs/plugins/dist/antd'],
-  antd: {}
-}
+  plugins: ["@umijs/plugins/dist/antd"],
+  antd: {},
+};
 ```
 
 Umi 和 Max 的区别在于，Max 已经内置了很多常用插件，比如数据流（initial-state、model）、antd 等。这些插件都可以在 @umijs/plugins/dist/ 中找到并开启。
 
 如果你想进一步了解 Max 具备的功能和配置说明，请参考 Umi Max 章节。
 
-:::info{title=💡}
-我是否应该选择 Max？
-使用 Max 并不代表你需要使用全部 Max 的功能。你可以根据自己的需求选择关闭一些插件。因此，当你需要使用 Max 的功能时，你可以选择创建一个 Max 项目。
-:::
+:::info{title=💡} 我是否应该选择 Max？使用 Max 并不代表你需要使用全部 Max 的功能。你可以根据自己的需求选择关闭一些插件。因此，当你需要使用 Max 的功能时，你可以选择创建一个 Max 项目。 :::
 
-## 如何在项目中使用插件功能？
+### 如何在项目中使用插件功能？
 
 要在项目中快速使用插件的功能，可以按照以下步骤进行操作：
 

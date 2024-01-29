@@ -1,128 +1,128 @@
-## QA1: 如何在 ProComponents 中使用表格组件？
- 
+## QA 如何在 ProComponents 中使用表格组件？
+
 在 ProComponents 中使用表格组件非常简单。你可以按照以下步骤来进行操作：
 
 1. 首先，确保你已经安装了 ProComponents 包。你可以使用 npm 或者 yarn 进行安装：
-   
-   ```
+
+```bash
    npm install @ant-design/pro-table
-   
+
    // 或者
-   
+
    yarn add @ant-design/pro-table
-   ```
+```
 
 2. 在你的代码中引入表格组件：
 
-   ```
+```bash
    import ProTable from '@ant-design/pro-table';
-   ```
+```
 
 3. 在你的代码中定义一个表格数据源：
 
-   ```
-   const dataSource = [
-     {
-       id: 1,
-       name: 'John Smith',
-       age: 32,
-     },
-     {
-       id: 2,
-       name: 'Jane Doe',
-       age: 28,
-     },
-   ];
-   ```
+```js
+const dataSource = [
+  {
+    id: 1,
+    name: "John Smith",
+    age: 32,
+  },
+  {
+    id: 2,
+    name: "Jane Doe",
+    age: 28,
+  },
+];
+```
 
 4. 在你的代码中使用表格组件，并将数据源传递给它：
 
-   ```
-   <ProTable dataSource={dataSource} columns={columns} />
-   ```
+```js
+<ProTable dataSource={dataSource} columns={columns} />
+```
 
-   注意，这里的 `columns` 是一个表示表格列的配置对象。
+注意，这里的 `columns` 是一个表示表格列的配置对象。
 
 这样，你就可以在 ProComponents 中使用表格组件了。你可以根据自己的需求进行配置，例如设置表格列、排序、筛选等功能。
 
-## QA2: 如何在 ProComponents 中使用表单组件？
+### QA 如何在 ProComponents 中使用表单组件？
 
 在 ProComponents 中使用表单组件非常简单。你可以按照以下步骤来进行操作：
 
 1. 首先，确保你已经安装了 ProComponents 包。你可以使用 npm 或者 yarn 进行安装：
-   
-   ```
+
+```js
    npm install @ant-design/pro-form
-   
+
    // 或者
-   
+
    yarn add @ant-design/pro-form
-   ```
+```
 
 2. 在你的代码中引入表单组件：
 
-   ```
-   import ProForm from '@ant-design/pro-form';
-   ```
+```tsx
+import ProForm from "@ant-design/pro-form";
+```
 
 3. 在你的代码中定义一个表单数据模型：
 
-   ```
-   const initialValues = {
-     name: '',
-     age: 0,
-   };
-   ```
+```tsx
+const initialValues = {
+  name: "",
+  age: 0,
+};
+```
 
 4. 在你的代码中使用表单组件，并将数据模型传递给它：
 
-   ```
-   <ProForm initialValues={initialValues} onFinish={onFinish}>
-     <ProFormText name="name" label="姓名" />
-     <ProFormNumber name="age" label="年龄" />
-     <ProFormSubmitButton>提交</ProFormSubmitButton>
-   </ProForm>
-   ```
+```tsx
+<ProForm initialValues={initialValues} onFinish={onFinish}>
+  <ProFormText name="name" label="姓名" />
+  <ProFormNumber name="age" label="年龄" />
+  <ProFormSubmitButton>提交</ProFormSubmitButton>
+</ProForm>
+```
 
-   注意，这里的 `ProFormText` 和 `ProFormNumber` 是表单相关的组件，你可以根据需要选择使用。
+注意，这里的 `ProFormText` 和 `ProFormNumber` 是表单相关的组件，你可以根据需要选择使用。
 
 这样，你就可以在 ProComponents 中使用表单组件了。你可以根据自己的需求进行配置，例如设置表单字段、表单校验、提交等功能。
 
-## QA3: 如何在 ProComponents 中使用模态框组件？
+### QA 如何在 ProComponents 中使用模态框组件？
 
 在 ProComponents 中使用模态框组件非常简单。你可以按照以下步骤来进行操作：
 
 1. 首先，确保你已经安装了 ProComponents 包。你可以使用 npm 或者 yarn 进行安装：
-   
-   ```
+
+```tsx
    npm install @ant-design/pro-modal
-   
+
    // 或者
-   
+
    yarn add @ant-design/pro-modal
-   ```
+```
 
 2. 在你的代码中引入模态框组件：
 
-   ```
-   import ProModal from '@ant-design/pro-modal';
-   ```
+```tsx
+import ProModal from "@ant-design/pro-modal";
+```
 
 3. 在你的代码中定义一个状态管理模型：
 
-   ```
-   const [visible, setVisible] = useState(false);
-   ```
+```tsx
+const [visible, setVisible] = useState(false);
+```
 
 4. 在你的代码中使用模态框组件，并将状态管理模型传递给它：
 
-   ```
-   <ProModal visible={visible} onOk={handleOk} onCancel={handleCancel}>
-     这是一个模态框
-   </ProModal>
-   ```
+```tsx
+<ProModal visible={visible} onOk={handleOk} onCancel={handleCancel}>
+  这是一个模态框
+</ProModal>
+```
 
-   注意，这里的 `handleOk` 和 `handleCancel` 是处理确定和取消事件的函数。
+注意，这里的 `handleOk` 和 `handleCancel` 是处理确定和取消事件的函数。
 
 这样，你就可以在 ProComponents 中使用模态框组件了。你可以根据自己的需求进行配置，例如设置模态框标题、内容、确定和取消按钮等功能。
 
@@ -132,8 +132,8 @@
 
 ```typescript
 title: (_, type) => {
-  if (type === 'table') {
-    return '标题';
+  if (type === "table") {
+    return "标题";
   }
   return null;
 };
@@ -148,7 +148,7 @@ title: (_, type) => {
 - 字符串方式：
 
 ```typescript
-title: '自定义标签';
+title: "自定义标签";
 ```
 
 这样设置后，会在 ProTable 的搜索框中显示指定的 label，例如 `'自定义标签'`。
@@ -157,7 +157,7 @@ title: '自定义标签';
 
 ```typescript
 title: () => {
-  return '自定义标签';
+  return "自定义标签";
 };
 ```
 
@@ -169,10 +169,10 @@ title: () => {
 
 ```typescript
 title: (_, type) => {
-  if (type === 'table') {
-    return '动态标签A';
-  } else if (type === 'form') {
-    return '动态标签B';
+  if (type === "table") {
+    return "动态标签A";
+  } else if (type === "form") {
+    return "动态标签B";
   }
   return null;
 };
@@ -189,7 +189,7 @@ title: (_, type) => {
 要在 `Form` 中使用 `initialValues`，只需要将其作为 `Form` 组件的属性进行设置即可。例如：
 
 ```jsx
-<Form initialValues={{ name: 'John', age: 25 }}></Form>
+<Form initialValues={{ name: "John", age: 25 }}></Form>
 ```
 
 在上述代码中，`initialValues` 属性设置了一个对象，该对象包含了表单的初始值。可以根据需求设置不同的初始值。
@@ -202,8 +202,8 @@ title: (_, type) => {
 const [form] = Form.useForm();
 
 const handleUpdateValues = () => {
-  form.setFieldsValue({ name: 'Jane', age: 30 });
-}
+  form.setFieldsValue({ name: "Jane", age: 30 });
+};
 ```
 
 在上述代码中，先通过 `Form.useForm` 方法创建了一个表单实例 `form`，然后在需要更新表单值的地方调用 `setFieldsValue` 方法，并传入包含要更新字段及其对应值的对象。
@@ -227,13 +227,13 @@ const handleUpdateValues = () => {
 import {
   StyleProvider,
   legacyLogicalPropertiesTransformer,
-} from '@ant-design/cssinjs';
+} from "@ant-design/cssinjs";
 
 export function rootContainer(container: React.ReactElement) {
   return React.createElement(
     StyleProvider,
     {
-      hashPriority: 'high',
+      hashPriority: "high",
       transformers: [legacyLogicalPropertiesTransformer],
     },
     container,
@@ -255,13 +255,13 @@ export function rootContainer(container: React.ReactElement) {
 import {
   StyleProvider,
   legacyLogicalPropertiesTransformer,
-} from '@ant-design/cssinjs';
+} from "@ant-design/cssinjs";
 
 export function rootContainer(container: React.ReactElement) {
   return React.createElement(
     StyleProvider,
     {
-      hashPriority: 'high',
+      hashPriority: "high",
       transformers: [legacyLogicalPropertiesTransformer],
     },
     container,
@@ -285,13 +285,13 @@ export function rootContainer(container: React.ReactElement) {
 import {
   StyleProvider,
   legacyLogicalPropertiesTransformer,
-} from '@ant-design/cssinjs';
+} from "@ant-design/cssinjs";
 
 export function rootContainer(container: React.ReactElement) {
   return React.createElement(
     StyleProvider,
     {
-      hashPriority: 'high',
+      hashPriority: "high",
       transformers: [legacyLogicalPropertiesTransformer],
     },
     container,

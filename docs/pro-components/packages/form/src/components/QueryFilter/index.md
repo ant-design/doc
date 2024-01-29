@@ -2,29 +2,32 @@
 
 QueryFilter 和 LightFilter 是用于配合其他组件使用的特殊形态的表单。它们解决了在与表格、列表等组件组合使用时的样式设置问题。在 ProTable 中，默认支持使用 QueryFilter 和 LightFilter 作为筛选表单。
 
-## 2. 在 ProTable 中，如何使用 QueryFilter 和 LightFilter？
+### 2. 在 ProTable 中，如何使用 QueryFilter 和 LightFilter？
 
 在 ProTable 中使用 QueryFilter 和 LightFilter 筛选表单是默认支持的。通过使用相应的组件，可以实现与表格或列表等组件的配合使用。这样可以方便地进行数据筛选和过滤操作。
 
-## 3. 在前端开发中，为什么要使用 QueryFilter 和 LightFilter？
+### 3. 在前端开发中，为什么要使用 QueryFilter 和 LightFilter？
 
 使用 QueryFilter 和 LightFilter 可以简化在前端开发中与其他组件进行配合使用时的样式设置。通过使用这些特殊形态的表单，可以避免复杂的样式设置，提高开发效率。尤其是在使用 ProTable 这样的组件时，QueryFilter 和 LightFilter 提供了方便的筛选表单功能，使数据的筛选和过滤更加便捷。
 
-## 如何使用查询筛选组件？
+### 如何使用查询筛选组件？
 
 查询筛选组件可以用于在页面中创建一个具有筛选条件的查询功能。要使用查询筛选组件，请按照以下步骤进行操作：
 
 1. 导入查询筛选组件：
+
 ```javascript
-import QueryFilter from './path/to/query-filter';
+import QueryFilter from "./path/to/query-filter";
 ```
 
 2. 在需要使用的地方放置查询筛选组件：
+
 ```javascript
 <QueryFilter {...props} />
 ```
 
 3. 可选步骤：根据需要配置组件的属性，例如指定筛选条件、设置布局等：
+
 ```javascript
 <QueryFilter
   filters={filters}
@@ -34,6 +37,7 @@ import QueryFilter from './path/to/query-filter';
 ```
 
 4. 可选步骤：根据需要处理查询筛选组件的事件，例如提交查询、重置查询等：
+
 ```javascript
 const handleSubmit = (values) => {
   // 处理查询操作
@@ -47,37 +51,41 @@ const handleReset = () => {
   onSubmit={handleSubmit}
   onReset={handleReset}
   // 其他属性
-/>
+/>;
 ```
 
 通过以上步骤，你就可以在页面中使用查询筛选组件实现查询功能了。
 
-## 如何使用查询筛选组件进行测试？
+### 如何使用查询筛选组件进行测试？
 
 如果你想测试查询筛选组件的功能，可以按照以下步骤进行操作：
 
 1. 导入查询筛选组件和相关的测试工具：
+
 ```javascript
-import QueryFilter from './path/to/query-filter';
-import { render, fireEvent, waitFor } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import QueryFilter from "./path/to/query-filter";
+import { render, fireEvent, waitFor } from "@testing-library/react";
+import "@testing-library/jest-dom/extend-expect";
 ```
 
 2. 使用 `render` 方法渲染查询筛选组件：
+
 ```javascript
 const { getByLabelText, getByText } = render(<QueryFilter {...props} />);
 ```
 
 3. 使用 `fireEvent` 方法触发组件的事件，例如输入搜索条件、点击查询按钮等：
-```javascript
-const input = getByLabelText('搜索条件');
-fireEvent.change(input, { target: { value: 'example' } });
 
-const button = getByText('查询');
+```javascript
+const input = getByLabelText("搜索条件");
+fireEvent.change(input, { target: { value: "example" } });
+
+const button = getByText("查询");
 fireEvent.click(button);
 ```
 
 4. 使用 `waitFor` 方法等待异步操作完成后断言结果：
+
 ```javascript
 await waitFor(() => {
   expect(/* 断言结果 */).toBe(/* 期望的结果 */);
@@ -86,33 +94,36 @@ await waitFor(() => {
 
 通过以上步骤，你就可以对查询筛选组件进行测试了。
 
-## 如何使用默认收起的查询筛选组件？
+### 如何使用默认收起的查询筛选组件？
 
 如果你想使用默认收起的查询筛选组件，在使用组件时，可以配置 `collapsed` 属性为 `true`。具体的使用步骤如下：
 
 1. 在需要使用的地方放置查询筛选组件，并设置 `collapsed` 属性为 `true`：
+
 ```javascript
 <QueryFilter collapsed={true} {...props} />
 ```
 
 通过以上步骤，你就可以使用默认收起的查询筛选组件了。
 
-## 如何使用垂直布局的查询筛选组件？
+### 如何使用垂直布局的查询筛选组件？
 
 如果你想使用垂直布局的查询筛选组件，在使用组件时，可以配置 `layout` 属性为 `"vertical"`。具体的使用步骤如下：
 
 1. 在需要使用的地方放置查询筛选组件，并设置 `layout` 属性为 `"vertical"`：
+
 ```javascript
 <QueryFilter layout="vertical" {...props} />
 ```
 
 通过以上步骤，你就可以使用垂直布局的查询筛选组件了。
 
-## 如何创建一个具有搜索功能的查询筛选组件？
+### 如何创建一个具有搜索功能的查询筛选组件？
 
 如果你想创建一个具有搜索功能的查询筛选组件，在使用组件时，可以配置 `searchable` 属性为 `true`。具体的使用步骤如下：
 
 1. 在需要使用的地方放置查询筛选组件，并设置 `searchable` 属性为 `true`：
+
 ```javascript
 <QueryFilter searchable={true} {...props} />
 ```
@@ -124,35 +135,33 @@ await waitFor(() => {
 轻量筛选是一种简单易用的筛选组件。以下是轻量筛选的基本使用示例：
 
 ```tsx
-import React from 'react';
-import { LightFilter } from 'antd';
+import React from "react";
+import { LightFilter } from "antd";
 
 const LightFilterExample = () => {
   const filterConfig = [
     {
-      key: 'name',
-      label: '姓名',
-      placeholder: '请输入姓名',
+      key: "name",
+      label: "姓名",
+      placeholder: "请输入姓名",
     },
     {
-      key: 'age',
-      label: '年龄',
-      placeholder: '请输入年龄',
+      key: "age",
+      label: "年龄",
+      placeholder: "请输入年龄",
     },
     {
-      key: 'address',
-      label: '地址',
-      placeholder: '请输入地址',
+      key: "address",
+      label: "地址",
+      placeholder: "请输入地址",
     },
   ];
 
   const onSearch = (filterValues) => {
-    console.log('Filter Values:', filterValues);
+    console.log("Filter Values:", filterValues);
   };
 
-  return (
-    <LightFilter filterConfig={filterConfig} onSearch={onSearch} />
-  );
+  return <LightFilter filterConfig={filterConfig} onSearch={onSearch} />;
 };
 
 export default LightFilterExample;
@@ -160,52 +169,54 @@ export default LightFilterExample;
 
 上述示例代码创建了一个简单的轻量筛选组件。传入的 `filterConfig` 数组定义了筛选的选项，每个选项包含一个 `key` 表示字段名，`label` 表示显示的标签，`placeholder` 表示输入框的提示文字。而 `onSearch` 函数则是当点击筛选时触发的回调函数，它接收筛选条件的值作为参数。
 
-### 轻量筛选的自定义footer
+### 轻量筛选的自定义 footer
 
 轻量筛选还支持自定义底部部分。以下是一个示例代码：
 
 ```tsx
-import React from 'react';
-import { LightFilter } from 'antd';
+import React from "react";
+import { LightFilter } from "antd";
 
 const LightFilterFooterExample = () => {
   const filterConfig = [
     {
-      key: 'name',
-      label: '姓名',
-      placeholder: '请输入姓名',
+      key: "name",
+      label: "姓名",
+      placeholder: "请输入姓名",
     },
     {
-      key: 'age',
-      label: '年龄',
-      placeholder: '请输入年龄',
+      key: "age",
+      label: "年龄",
+      placeholder: "请输入年龄",
     },
     {
-      key: 'address',
-      label: '地址',
-      placeholder: '请输入地址',
+      key: "address",
+      label: "地址",
+      placeholder: "请输入地址",
     },
   ];
 
   const onSearch = (filterValues) => {
-    console.log('Filter Values:', filterValues);
+    console.log("Filter Values:", filterValues);
   };
 
   const renderFooter = () => {
     return (
-      <div style={{ textAlign: 'center' }}>
+      <div style={{ textAlign: "center" }}>
         <button type="primary" onClick={onSearch}>
           筛选
         </button>
-        <button onClick={() => console.log('重置')}>
-          重置
-        </button>
+        <button onClick={() => console.log("重置")}>重置</button>
       </div>
     );
   };
 
   return (
-    <LightFilter filterConfig={filterConfig} onSearch={onSearch} renderFooter={renderFooter} />
+    <LightFilter
+      filterConfig={filterConfig}
+      onSearch={onSearch}
+      renderFooter={renderFooter}
+    />
   );
 };
 
@@ -219,30 +230,30 @@ export default LightFilterFooterExample;
 轻量筛选还提供了边框模式，以下是边框模式的示例代码：
 
 ```tsx
-import React from 'react';
-import { LightFilter } from 'antd';
+import React from "react";
+import { LightFilter } from "antd";
 
 const LightFilterBorderedExample = () => {
   const filterConfig = [
     {
-      key: 'name',
-      label: '姓名',
-      placeholder: '请输入姓名',
+      key: "name",
+      label: "姓名",
+      placeholder: "请输入姓名",
     },
     {
-      key: 'age',
-      label: '年龄',
-      placeholder: '请输入年龄',
+      key: "age",
+      label: "年龄",
+      placeholder: "请输入年龄",
     },
     {
-      key: 'address',
-      label: '地址',
-      placeholder: '请输入地址',
+      key: "address",
+      label: "地址",
+      placeholder: "请输入地址",
     },
   ];
 
   const onSearch = (filterValues) => {
-    console.log('Filter Values:', filterValues);
+    console.log("Filter Values:", filterValues);
   };
 
   return (

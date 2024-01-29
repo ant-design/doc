@@ -11,12 +11,12 @@ PageContainer 组件是为了简化页面面包屑和标题的配置。它封装
   content="欢迎使用 ProLayout 组件"
   tabList={[
     {
-      tab: '基本信息',
-      key: 'base',
+      tab: "基本信息",
+      key: "base",
     },
     {
-      tab: '详细信息',
-      key: 'info',
+      tab: "详细信息",
+      key: "info",
     },
   ]}
   extra={[
@@ -82,10 +82,10 @@ PageContainer 支持以下参数：
 
 ### FooterToolbar 组件的参数说明
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| extra | 额外内容区，位于 content 的右侧 | `ReactNode` | - |
-| children | 内容区域 | `ReactNode`\|`ReactNode[]` | - |
+| 参数     | 说明                            | 类型                       | 默认值 |
+| -------- | ------------------------------- | -------------------------- | ------ |
+| extra    | 额外内容区，位于 content 的右侧 | `ReactNode`                | -      |
+| children | 内容区域                        | `ReactNode`\|`ReactNode[]` | -      |
 
 **extra 参数说明：**
 额外内容区，位于 content 的右侧。类型为 `ReactNode`。
@@ -115,7 +115,7 @@ PageContainer 支持以下参数：
 ProBreadcrumb 是一个面包屑组件，它可以通过配置自动根据路由来计算面包屑。在使用 ProBreadcrumb 之前，必须在 ProLayout 组件中启用该功能。下面是一个配置示例：
 
 ```tsx | pure
-import { ProBreadcrumb, ProLayout } from '@ant-design/pro-components';
+import { ProBreadcrumb, ProLayout } from "@ant-design/pro-components";
 
 return (props) => (
   <ProLayout
@@ -135,7 +135,7 @@ return (props) => (
 ProBreadcrumb 组件可以根据路由自动计算面包屑导航。通过配置 ProLayout 组件的 `headerContentRender` 属性，可以将面包屑组件显示在顶部。在 ProLayout 组件中使用 ProBreadcrumb 组件示例：
 
 ```tsx | pure
-import { ProBreadcrumb, ProLayout } from '@ant-design/pro-components';
+import { ProBreadcrumb, ProLayout } from "@ant-design/pro-components";
 
 return (props) => (
   <ProLayout
@@ -155,7 +155,7 @@ return (props) => (
 ProBreadcrumb 组件必须在 ProLayout 组件中使用。要在 ProLayout 组件中使用 ProBreadcrumb 组件，需要配置 ProLayout 组件的 `headerContentRender` 属性。示例如下：
 
 ```tsx | pure
-import { ProBreadcrumb, ProLayout } from '@ant-design/pro-components';
+import { ProBreadcrumb, ProLayout } from "@ant-design/pro-components";
 
 return (props) => (
   <ProLayout

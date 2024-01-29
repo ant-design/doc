@@ -1,6 +1,6 @@
 ### `createBrowserHistory` 是用来做什么的？
 
-`createBrowserHistory` 是一个函数，用于创建一个 `BrowserHistory` 对象，该对象可以用来跟踪应用的历史记录。它基于浏览器内置的 `history` 接口，并推荐在现代 Web 浏览器中使用。 
+`createBrowserHistory` 是一个函数，用于创建一个 `BrowserHistory` 对象，该对象可以用来跟踪应用的历史记录。它基于浏览器内置的 `history` 接口，并推荐在现代 Web 浏览器中使用。
 
 ### `createBrowserHistory` 的输入参数是什么？
 
@@ -23,13 +23,13 @@ type BrowserHistory = {
 以下是一个使用示例：
 
 ```ts
-import { createBrowserHistory } from 'umi';
+import { createBrowserHistory } from "umi";
 
 // 创建一个 BrowserHistory 对象
 const history = createBrowserHistory();
 
 // 在 iframe 环境下创建一个 iframe BrowserHistory 对象
-import { createBrowserHistory } from 'umi';
+import { createBrowserHistory } from "umi";
 const history = createBrowserHistory({
   window: iframe.contentWindow,
 });
@@ -66,16 +66,19 @@ createSearchParams 支持以下几种参数形式：
 以下是 createSearchParams 的使用示例：
 
 ```ts
-import { createSearchParams } from 'umi';
+import { createSearchParams } from "umi";
 
 createSearchParams(location.search);
 createSearchParams("foo=1&bar=2");
 createSearchParams("?foo=1&bar=2");
 
-createSearchParams({ foo: 'bar', qux: 'qoo'}).toString();
+createSearchParams({ foo: "bar", qux: "qoo" }).toString();
 // 输出结果：foo=bar&qux=qoo
 
-createSearchParams([["foo", "1"], ["bar", "2"]]).toString();
+createSearchParams([
+  ["foo", "1"],
+  ["bar", "2"],
+]).toString();
 // 输出结果：foo=1&bar=2
 ```
 
@@ -92,7 +95,7 @@ generatePath 是 umi 库中的一个函数，用于生成实际要访问的路�
 使用 generatePath 需要先导入函数：
 
 ```ts
-import { generatePath } from 'umi';
+import { generatePath } from "umi";
 ```
 
 然后可以通过调用 generatePath 函数来生成实际要访问的路由。它接受两个参数：带有参数的路径（path）和对应的参数（params）。
@@ -118,13 +121,12 @@ generatePath 函数的作用是根据给定的带参数的路径和对应的参�
 
 通过使用 generatePath 函数，我们可以简化路由的生成过程，避免手动拼接路径和参数。这样可以提高开发效率，并减少错误发生的可能性。
 
-问题 1：
 ### Helmet 是什么？如何使用？
 
 Helmet 是一个用于在页面中动态配置 `head` 标签的 React 组件。通过使用 Helmet，可以在页面中设置 `title`、`meta`、`link` 等标签的内容。在 Umi 中，建议使用 `umi` 包提供的 Helmet 组件，以确保在服务端渲染时 Helmet 能正常工作。以下是一个使用 Helmet 的示例代码：
 
 ```tsx
-import { Helmet } from 'umi';
+import { Helmet } from "umi";
 
 export default function Page() {
   return (
@@ -138,12 +140,13 @@ export default function Page() {
 在上述示例中，我们通过 `<Helmet>` 组件将页面的 `title` 设置为 "Hello World"。在实际项目中，还可以使用 `<Helmet>` 组件来设置其他标签，例如 `<meta>`、`<link>` 等。
 
 问题 2：
+
 ### 在 Umi 中如何使用 Helmet 组件？
 
 在 Umi 中使用 Helmet 组件需要先安装 `umi` 包，并引入 `umi` 包中提供的 Helmet 组件。以下是一个使用 Helmet 的示例代码：
 
 ```tsx
-import { Helmet } from 'umi';
+import { Helmet } from "umi";
 
 export default function Page() {
   return (
@@ -157,6 +160,7 @@ export default function Page() {
 在上述示例中，我们通过 `<Helmet>` 组件将页面的 `title` 设置为 "Hello World"。根据实际需求，还可以在 `<Helmet>` 组件中设置其他标签，例如 `<meta>`、`<link>` 等。
 
 问题 3：
+
 ### React Helmet 与 Umi Helmet 有什么区别？
 
 React Helmet 是一个 React 组件库，用于在页面中动态设置 `head` 标签的内容。而 Umi Helmet 则是 Umi 框架为了确保服务端渲染（SSR）的正常工作，对 React Helmet 进行了封装和增强。
@@ -166,6 +170,7 @@ React Helmet 是一个 React 组件库，用于在页面中动态设置 `head` �
 以上是 React Helmet 和 Umi Helmet 的区别，希望能够帮助你更好地理解它们之间的关系。
 
 #### 如何获取当前路由信息？
+
 你可以在 React 组件或 Hooks 中使用 `useLocation` 从 `umi` 包中导入，通过调用该函数来获取当前路由信息。例如：
 
 ```ts
@@ -192,27 +197,30 @@ window.location.hash;
 ```
 
 #### 如何进行命令式的路由跳转？
+
 对于 Umi.js，你可以通过导入 `history` 对象来进行命令式的路由跳转。例如：
 
 ```ts
-import { history } from 'umi';
+import { history } from "umi";
 
 // 跳转到指定路由
-history.push('/list');
+history.push("/list");
 
 // 带参数跳转到指定路由
-history.push('/list?a=b&c=d#anchor', state);
-history.push({
-  pathname: '/list',
-  search: '?a=b&c=d',
-  hash: 'anchor',
-},
-{
-  some: 'state-data',
-});
+history.push("/list?a=b&c=d#anchor", state);
+history.push(
+  {
+    pathname: "/list",
+    search: "?a=b&c=d",
+    hash: "anchor",
+  },
+  {
+    some: "state-data",
+  },
+);
 
 // 跳转当前路径，并刷新 state
-history.push({}, state)
+history.push({}, state);
 
 // 跳转到上一个路由
 history.back();
@@ -222,10 +230,11 @@ history.go(-1);
 需要注意的是，`history.push` 和 `history.replace` 需要传递 `state` 作为第二个参数。
 
 #### 如何监听路由变更？
+
 你可以使用 `history.listen` 来监听路由变更。例如：
 
 ```ts
-import { history } from 'umi';
+import { history } from "umi";
 
 const unlisten = history.listen(({ location, action }) => {
   console.log(location.pathname);
@@ -260,7 +269,7 @@ declare function Link(props: {
 下面是一个使用 Link 组件的示例：
 
 ```tsx
-import { Link } from 'umi';
+import { Link } from "umi";
 
 function IndexPage({ user }) {
   return <Link to={user.id}>{user.name}</Link>;
@@ -269,72 +278,81 @@ function IndexPage({ user }) {
 
 在示例中，Link 组件的 to 属性接受一个路径，用于进行路由跳转。
 
-### 问题1：什么是 `matchPath` 函数？
+### 什么是 `matchPath` 函数？
 
-回答：`matchPath` 是一个函数，用于将给定的路径与一个已知的路由格式进行匹配，并返回匹配结果。
+`matchPath` 是一个函数，用于将给定的路径与一个已知的路由格式进行匹配，并返回匹配结果。
 
-### 问题2： `matchPath` 函数的参数有哪些？
+### 问题 2： `matchPath` 函数的参数有哪些？
 
-回答：`matchPath` 函数有两个参数，分别是 `pattern` 和 `pathname`。其中，`pattern` 可以是一个路由格式对象或字符串，`pathname` 是待匹配的路径字符串。
+`matchPath` 函数有两个参数，分别是 `pattern` 和 `pathname`。其中，`pattern` 可以是一个路由格式对象或字符串，`pathname` 是待匹配的路径字符串。
 
-### 问题3：`matchPath` 函数的返回值是什么？
+###`matchPath` 函数的返回值是什么？
 
-回答：`matchPath` 函数的返回值是一个匹配结果对象，包含以下属性：
+`matchPath` 函数的返回值是一个匹配结果对象，包含以下属性：
+
 - `params`: 对应路由格式中的参数，是一个键值对对象
 - `pathname`: 匹配成功的路径字符串
 - `pattern`: 匹配成功的路由格式对象
 
-### 问题4：`PathPattern` 接口的属性有哪些？
+### 问题 4：`PathPattern` 接口的属性有哪些？
 
-回答：`PathPattern` 接口定义了以下属性：
+`PathPattern` 接口定义了以下属性：
+
 - `path`: 路由格式字符串
 - `caseSensitive`: 是否大小写敏感，默认为 `false`
 - `end`: 是否要求路径完全匹配，默认为 `false`
 
-### 问题5：示例中的 `match` 对象有哪些属性？
+### 问题 5：示例中的 `match` 对象有哪些属性？
 
-回答：示例中的 `match` 对象具有以下属性：
+示例中的 `match` 对象具有以下属性：
+
 - `params`: 对应路由格式中的参数，是一个键值对对象
 - `pathname`: 匹配成功的路径字符串
 - `pathnameBase`: 包含基础路径的路径字符串
 - `pattern`: 匹配成功的路由格式对象
 
-### 问题1：matchRoutes 是用来做什么的？
+### matchRoutes 是用来做什么的？
 
-回答：`matchRoutes` 是一个函数，它用来将给定的路径以及多个可能的路由选择进行匹配，并返回匹配结果。
+`matchRoutes` 是一个函数，它用来将给定的路径以及多个可能的路由选择进行匹配，并返回匹配结果。
 
-### 问题2：`matchRoutes` 函数的参数有哪些？
+### 问题 2：`matchRoutes` 函数的参数有哪些？
 
-回答：`matchRoutes` 函数接受三个参数，分别是 `routes`、`location` 和 `basename`。其中，`routes` 是一个包含多个路由对象的数组，`location` 是一个部分的 `Location` 对象或者字符串，`basename` 是一个可选的字符串。
+`matchRoutes` 函数接受三个参数，分别是 `routes`、`location` 和 `basename`。其中，`routes` 是一个包含多个路由对象的数组，`location` 是一个部分的 `Location` 对象或者字符串，`basename` 是一个可选的字符串。
 
-### 问题3：`matchRoutes` 函数的返回值是什么？
+###`matchRoutes` 函数的返回值是什么？
 
-回答：`matchRoutes` 函数的返回值是一个 `RouteMatch` 对象组成的数组，或者是 `null`。`RouteMatch` 对象包含了匹配到的路由参数、路径名和路由对象的信息。
+`matchRoutes` 函数的返回值是一个 `RouteMatch` 对象组成的数组，或者是 `null`。`RouteMatch` 对象包含了匹配到的路由参数、路径名和路由对象的信息。
 
-### 问题4：`RouteMatch` 对象有哪些属性？
+### 问题 4：`RouteMatch` 对象有哪些属性？
 
-回答：`RouteMatch` 对象有三个属性，分别是 `params`、`pathname` 和 `route`。`params` 是一个参数对象，包含了匹配到的路由参数键值对，`pathname` 是匹配到的路径名，`route` 是匹配到的路由对象。
+`RouteMatch` 对象有三个属性，分别是 `params`、`pathname` 和 `route`。`params` 是一个参数对象，包含了匹配到的路由参数键值对，`pathname` 是匹配到的路径名，`route` 是匹配到的路由对象。
 
-### 问题5：可以给出一个关于 `matchRoutes` 的示例代码并解释结果吗？
+### 问题 5：可以给出一个关于 `matchRoutes` 的示例代码并解释结果吗？
 
-回答：可以。上面的示例代码中，通过调用 `matchRoutes` 函数将给定的路径 "/users/123/posts/456" 和两个可能的路由选择进行匹配。匹配结果是一个数组，包含了一个 `RouteMatch` 对象。该 `RouteMatch` 对象的 `params` 属性是一个包含了 "id" 和 "postId" 两个参数的对象，`pathname` 是匹配到的路径名 "/users/123/posts/456"，`route` 是匹配到的路由对象。
+可以。上面的示例代码中，通过调用 `matchRoutes` 函数将给定的路径 "/users/123/posts/456" 和两个可能的路由选择进行匹配。匹配结果是一个数组，包含了一个 `RouteMatch` 对象。该 `RouteMatch` 对象的 `params` 属性是一个包含了 "id" 和 "postId" 两个参数的对象，`pathname` 是匹配到的路径名 "/users/123/posts/456"，`route` 是匹配到的路由对象。
 
 ### 什么是 `<NavLink>` 组件？
 
-`<NavLink>` 是 `<Link>` 的一种特殊形态，它被用于在导航菜单、面包屑、Tabs等组件中显示当前的选中状态。它能够知道当前是否为路由激活状态。
+`<NavLink>` 是 `<Link>` 的一种特殊形态，它被用于在导航菜单、面包屑、Tabs 等组件中显示当前的选中状态。它能够知道当前是否为路由激活状态。
 
 ### `<NavLink>` 的类型定义是怎样的？
 
 `<NavLink>` 的类型定义如下：
 
 ```ts
-declare function NavLink(props: LinkProps & {
-  caseSensitive?: boolean;
-  children?: React.ReactNode | ((props: { isActive: boolean }) => React.ReactNode);
-  className?: string | ((props: { isActive: boolean }) => string | undefined);
-  end?: boolean;
-  style?: React.CSSProperties | ((props: { isActive: boolean }) => string | React.CSSProperties);
-}): React.ReactElement;
+declare function NavLink(
+  props: LinkProps & {
+    caseSensitive?: boolean;
+    children?:
+      | React.ReactNode
+      | ((props: { isActive: boolean }) => React.ReactNode);
+    className?: string | ((props: { isActive: boolean }) => string | undefined);
+    end?: boolean;
+    style?:
+      | React.CSSProperties
+      | ((props: { isActive: boolean }) => string | React.CSSProperties);
+  },
+): React.ReactElement;
 ```
 
 该类型定义包含了以下属性：
@@ -353,11 +371,33 @@ declare function NavLink(props: LinkProps & {
 import { NavLink } from 'umi';
 
 function Navs() {
-  return <ul>
-    <li><NavLink to="message" style={({ isActive }) => isActive ? { color: 'red' } : undefined}>Messages</NavLink></li>
-    <li><NavLink to="tasks" className={({ isActive }) => isActive ? 'active' : undefined}>Tasks</NavLink></li>
-    <li><NavLink to="blog">{({ isActive }) => <span className={isActive ? 'active' : undefined}>Blog</span>}</NavLink></li>
-  </ul>;
+  return (
+    <ul>
+      <li>
+        <NavLink
+          to="message"
+          style={({ isActive }) => (isActive ? { color: 'red' } : undefined)}
+        >
+          Messages
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="tasks"
+          className={({ isActive }) => (isActive ? 'active' : undefined)}
+        >
+          Tasks
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="blog">
+          {({ isActive }) => (
+            <span className={isActive ? 'active' : undefined}>Blog</span>
+          )}
+        </NavLink>
+      </li>
+    </ul>
+  );
 }
 ```
 
@@ -393,6 +433,7 @@ function Dashboard() {
 以下是两个使用 `<Outlet>` 组件的示例：
 
 1. 在父组件中使用：
+
 ```ts
 function Dashboard() {
   return (
@@ -405,12 +446,13 @@ function Dashboard() {
 ```
 
 2. 在父组件中使用并传递 `context` 属性：
+
 ```ts
 function DashboardWithContext() {
   return (
     <div>
       <h1>Dashboard</h1>
-      <Outlet context={{ prop: 'a' }}/>
+      <Outlet context={{ prop: 'a' }} />
     </div>
   );
 }
@@ -427,12 +469,14 @@ function DashboardWithContext() {
 ### `resolvePath` 函数的参数是什么？
 
 `resolvePath` 函数接受两个参数：
+
 - `to: Partial<Location> | string`：要解析的目标路径，可以是一个部分 Location 对象或一个字符串。
 - `fromPathname?: string`：可选参数，表示当前路径的 pathname。
 
 ### `resolvePath` 函数的返回值是什么？
 
 `resolvePath` 函数的返回值是一个包含解析后的路径信息的对象，其中包括：
+
 - `pathname: string`：解析后的路径的 pathname。
 - `search: string`：解析后的路径的 search。
 - `hash: string`：解析后的路径的 hash。
@@ -440,6 +484,7 @@ function DashboardWithContext() {
 ### `resolvePath` 函数的示例中有哪些用法？
 
 示例中展示了 `resolvePath` 函数的多种用法：
+
 - 同级相对跳转：使用 `child`、`./child`、`''`、`.` 作为 `to`，返回路径为 `'/parent/child'`。
 - 祖先层级相对跳转：使用 `../sibling`、`../../parent/sibling` 作为 `to`，返回路径为 `'/parent/sibling'`。
 - 绝对跳转：使用 `/target` 作为 `to`，返回路径为 `'/target'`。
@@ -456,32 +501,39 @@ function DashboardWithContext() {
 我们可以通过以下步骤来使用 `terminal`：
 
 1. 首先，导入 `terminal` 模块：
+
 ```ts
-import {terminal} from 'umi';
+import { terminal } from "umi";
 ```
 
 2. 然后，我们可以使用 `terminal.log()` 打印普通的日志信息：
+
 ```ts
-terminal.log('i am log level');
+terminal.log("i am log level");
 ```
 
 3. 同样地，我们可以使用 `terminal.warn()` 打印警告级别的日志：
+
 ```ts
-terminal.warn('i am warn level');
+terminal.warn("i am warn level");
 ```
 
 4. 最后，使用 `terminal.error()` 打印错误级别的日志：
+
 ```ts
-terminal.error('i am error level');
+terminal.error("i am error level");
 ```
 
 需要注意的是，`terminal` 只在环境变量 `NODE_ENV` 非 `production` 时生效。在 Umi 的构建产物中，对应的日志调用函数不会有任何作用，所以在生产环境中可以不必删除调用 `terminal` 的代码。
 
 ### 什么是 useAppData？
+
 `useAppData` 是一个函数，用于获取全局的应用数据。
 
 ### `useAppData` 返回了哪些数据？
+
 `useAppData` 返回一个对象，包含以下属性：
+
 - `routes`: 一个记录类型的对象，用于存储路由信息
 - `routeComponents`: 一个记录类型的对象，存储路由组件的 Promise
 - `clientRoutes`: 一个数组，存储客户端路由信息
@@ -492,7 +544,9 @@ terminal.error('i am error level');
 - `preloadRoute`: 一个函数，用于预加载路由
 
 ### `useAppData` 的类型定义是什么？
+
 `useAppData` 的类型定义如下：
+
 ```ts
 declare function useAppData(): {
   routes: Record<id, Route>;
@@ -501,10 +555,11 @@ declare function useAppData(): {
   pluginManager: any;
   rootElement: string;
   basename: string;
-  clientLoaderData: { [routeKey: string]: any };
+  clientLoaderDat{ [routeKey: string]: any };
   preloadRoute: (to: string) => void;
 };
 ```
+
 请注意，该 API 的定义可能会发生变化。
 
 ### `useLocation` 是什么？
@@ -521,7 +576,7 @@ declare function useAppData(): {
 要使用 `useLocation`，首先需要导入它：
 
 ```ts
-import { useLocation } from 'umi';
+import { useLocation } from "umi";
 ```
 
 然后在函数组件中调用该 Hook，将返回的 `location` 对象赋值给一个变量：
@@ -537,24 +592,23 @@ const location = useLocation();
 一个常见的场景是在 `location` 发生变化时执行一些副作用操作，比如页面访问统计。你可以使用 `useEffect` 钩子来实现这一点。首先，确保你已经导入了 `React` 和 `useEffect`：
 
 ```ts
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 ```
 
 然后，在函数组件中使用 `useEffect` 钩子来监听 `location` 的变化，并执行相应的副作用代码：
 
 ```ts
-import { useLocation } from 'umi';
+import { useLocation } from "umi";
 
 function App() {
   const location = useLocation();
 
   useEffect(() => {
     // 在这里执行你的副作用操作，比如发送页面访问统计
-    ga('send', 'pageview');
+    ga("send", "pageview");
   }, [location]);
 
   // 组件的其他代码...
-
 }
 ```
 
@@ -570,23 +624,22 @@ function App() {
 
 ### 如何使用`useMatch`函数？
 
-首先，需要从`umi`库中导入`useMatch`函数。
-然后，在需要匹配的地方调用`useMatch`函数，并传入要匹配的路径作为参数。
-最后，可以使用返回的匹配结果对象，访问`pathname`属性获取匹配到的路径，访问`params`属性获取匹配到的参数。
+首先，需要从`umi`库中导入`useMatch`函数。然后，在需要匹配的地方调用`useMatch`函数，并传入要匹配的路径作为参数。最后，可以使用返回的匹配结果对象，访问`pathname`属性获取匹配到的路径，访问`params`属性获取匹配到的参数。
 
 以下是一个使用示例：
+
 ```tsx
-import { useMatch } from 'umi';
+import { useMatch } from "umi";
 
 // 当 url = '/events/12' 时
-const match = useMatch('/events/:eventId');
+const match = useMatch("/events/:eventId");
 console.log(match?.pathname, match?.params.eventId);
 // 输出 '/events/12 12'
 ```
 
 通过上述示例可以看出，使用`useMatch`函数可以方便地获取匹配到的路径和参数信息。
 
-问题 1：什么是 `useNavigate` 钩子函数？
+什么是 `useNavigate` 钩子函数？
 
 答案：`useNavigate` 钩子函数是一个返回可以控制跳转的函数的函数。它通常用于在页面中需要进行页面跳转的场景，比如在提交表单后跳转到其他页面。
 
@@ -603,16 +656,18 @@ console.log(match?.pathname, match?.params.eventId);
 答案：可以通过以下两种方式使用 `useNavigate` 进行路由跳转：
 
 1. 指定跳转路径和选项
+
 ```ts
-import { useNavigate } from 'umi';
+import { useNavigate } from "umi";
 
 let navigate = useNavigate();
 navigate("../success", { replace: true });
 ```
 
 2. 返回上一页
+
 ```ts
-import { useNavigate } from 'umi';
+import { useNavigate } from "umi";
 
 let navigate = useNavigate();
 navigate(-1);
@@ -621,33 +676,40 @@ navigate(-1);
 以上是关于 `useNavigate` 钩子函数的简单介绍和使用示例。通过调用 `navigate` 函数，可以实现页面的跳转操作。
 
 1. 什么是 `useOutlet`？
+
    - `useOutlet` 是一个 React 自定义 hook，用于返回当前匹配的子路由元素。
    - 在 `<Outlet>` 内部，也是通过使用此 hook 来实现的。
 
 2. `useOutlet` 的类型定义是什么？
+
    - `useOutlet` 的类型定义如下：
-   ```ts
-   declare function useOutlet(): React.ReactElement | null;
-   ```
-   - 返回值的类型可以是 `React.ReactElement` 或 `null`。
+
+```ts
+declare function useOutlet(): React.ReactElement | null;
+```
+
+- 返回值的类型可以是 `React.ReactElement` 或 `null`。
 
 3. 如何在项目中使用 `useOutlet`？
-   - 首先，导入 `useOutlet` hook：
-   ```ts
-   import { useOutlet } from 'umi';
-   ```
-   - 然后，在组件中使用 `useOutlet`：
-   ```ts
-   const Layout = () => {
-     const outlet = useOutlet();
 
-     return <div className="fancyLayout">
-       {outlet}
-     </div>
-   }
-   ```
-   - 在 `return` 语句中，将 `outlet` 渲染到页面上，这样就能够显示当前匹配的子路由元素。
-   - 可以根据需要对 `outlet` 添加样式或其他逻辑，实现自定义的布局效果。
+   - 首先，导入 `useOutlet` hook：
+
+```ts
+import { useOutlet } from "umi";
+```
+
+- 然后，在组件中使用 `useOutlet`：
+
+```ts
+const Layout = () => {
+  const outlet = useOutlet();
+
+  return <div className="fancyLayout">{outlet}</div>;
+};
+```
+
+- 在 `return` 语句中，将 `outlet` 渲染到页面上，这样就能够显示当前匹配的子路由元素。
+- 可以根据需要对 `outlet` 添加样式或其他逻辑，实现自定义的布局效果。
 
 ### `useOutletContext` 是用来做什么的？
 
@@ -666,20 +728,23 @@ declare function useOutletContext<Context = unknown>(): Context;
 ### 如何在使用 `useOutletContext`？
 
 以下是一个示例：
+
 ```ts
 import { useOutletContext, Outlet } from 'umi';
 
 const Layout = () => {
-  return <div className="fancyLayout">
-    <Outlet context={{ prop: 'from Layout'}} />
-  </div>
-}
+  return (
+    <div className="fancyLayout">
+      <Outlet context={{ prop: 'from Layout' }} />
+    </div>
+  );
+};
 
 const SomeRouteComponentUnderLayout = () => {
   const layoutContext = useOutletContext();
 
-  return JSON.stringify(layoutContext);   // {"prop":"from Layout"}
-}
+  return JSON.stringify(layoutContext); // {"prop":"from Layout"}
+};
 ```
 
 在这个示例中，首先我们定义了一个名为 `Layout` 的组件，它包含了一个使用了 `Outlet` 组件并传入 `context` 的 `<div>` 元素。
@@ -688,32 +753,30 @@ const SomeRouteComponentUnderLayout = () => {
 
 通过这种方式，我们可以在组件间共享数据和状态，从而实现更灵活和组织良好的代码结构。
 
-## `useParams` 是什么？
+### `useParams` 是什么？
 
 `useParams` 是一个钩子函数，用于从动态路由中获取匹配参数的键值对对象。它可以在 React 组件中使用。
 
-## `useParams` 的类型定义是什么？
+### `useParams` 的类型定义是什么？
 
 `useParams` 的类型定义如下：
 
 ```ts
-declare function useParams<
-  K extends string = string
->(): Readonly<Params<K>>;
+declare function useParams<K extends string = string>(): Readonly<Params<K>>;
 ```
 
 `useParams` 的参数 `K` 是一个泛型参数，默认为 `string` 类型。
 
-## 如何使用 `useParams`？
+### 如何使用 `useParams`？
 
 例子：
 
 ```ts
-import { useParams } from 'umi';
+import { useParams } from "umi";
 
 // 假设有路由配置  user/:uId/repo/:rId
 // 当前路径       user/abc/repo/def
-const params = useParams()
+const params = useParams();
 /* params
 { uId: 'abc', rId: 'def'}
 */
@@ -728,17 +791,19 @@ const params = useParams()
 ### `useResolvedPath` 函数的类型定义是什么？
 
 `useResolvedPath` 函数的类型定义如下：
+
 ```ts
 declare function useResolvedPath(to: To): Path;
 ```
+
 其中 `To` 是一个参数，表示目标地址；`Path` 是一个对象，包含解析后的完整路由信息。
 
 ### 请给出一个使用 `useResolvedPath` 函数的示例？
 
 ```ts
-import { useResolvedPath } from 'umi';
+import { useResolvedPath } from "umi";
 
-const path = useResolvedPath('docs');
+const path = useResolvedPath("docs");
 /* path
 { pathname: '/a/new/page/docs', search: '', hash: '' }
 */
@@ -759,7 +824,7 @@ const path = useResolvedPath('docs');
 以下是一个使用 `useRouteData` 的示例：
 
 ```ts
-import { useRouteData } from 'umi';
+import { useRouteData } from "umi";
 
 const route = useRouteData();
 /* route
@@ -796,23 +861,23 @@ declare function useRoutes(
 以下是一个使用 `useRoutes` 的示例：
 
 ```ts
-import * as React from "react";
-import { useRoutes } from "umi";
+import * as React from 'react';
+import { useRoutes } from 'umi';
 
 function App() {
   let element = useRoutes([
     {
-      path: "/",
+      path: '/',
       element: <Dashboard />,
       children: [
         {
-          path: "messages",
+          path: 'messages',
           element: <DashboardMessages />,
         },
-        { path: "tasks", element: <DashboardTasks /> },
+        { path: 'tasks', element: <DashboardTasks /> },
       ],
     },
-    { path: "team", element: <AboutPage /> },
+    { path: 'team', element: <AboutPage /> },
   ]);
 
   return element;
@@ -832,10 +897,10 @@ useRouteProps 是一个用于读取当前路由在路由配置里的 props 属�
 以下是一个示例：
 
 ```ts
-import { useRouteProps } from 'umi'
+import { useRouteProps } from "umi";
 
 export default function Page() {
-  const routeProps = useRouteProps()
+  const routeProps = useRouteProps();
 
   // 使用 routeProps.custom_key
 }
@@ -852,10 +917,10 @@ useRouteProps 不仅适用于约定式路由，也适用于其他类型的路由
 ```ts
 routes: [
   {
-    path: '/',
-    custom_key: '1',
-  }
-]
+    path: "/",
+    custom_key: "1",
+  },
+];
 ```
 
 然后，在一个函数组件中使用 useRouteProps 从当前路由中获取 `custom_key` 属性的值。
@@ -869,29 +934,37 @@ useSelectedRoutes 是一个用于读取当前路径命中的所有路由信息�
 在布局组件中使用 useSelectedRoutes 非常简单。首先，需要在布局组件的文件中导入 useSelectedRoutes：
 
 ```tsx
-import { useSelectedRoutes } from 'umi'
+import { useSelectedRoutes } from "umi";
 ```
 
 然后，在布局组件的函数体中调用 useSelectedRoutes 函数，将返回值赋值给一个变量，如 routes：
 
 ```tsx
-const routes = useSelectedRoutes()
+const routes = useSelectedRoutes();
 ```
 
 接下来，可以根据需要使用 routes 变量进行逻辑判断。比如，可以通过 routes 的最后一个元素，即 `routes.at(-1)` 来判断当前命中的路由信息。根据不同的路由信息，可以实现不同的布局效果。
 
 ```tsx
-const lastRoute = routes.at(-1)
+const lastRoute = routes.at(-1);
 
-if (lastRoute?.pathname === '/some/path') {
-  return <div>1 : <Outlet /></div>
+if (lastRoute?.pathname === "/some/path") {
+  return (
+    <div>
+      1 : <Outlet />
+    </div>
+  );
 }
 
 if (lastRoute?.extraProp) {
-  return <div>2 : <Outlet /></div>
+  return (
+    <div>
+      2 : <Outlet />
+    </div>
+  );
 }
 
-return <Outlet />
+return <Outlet />;
 ```
 
 通过以上方式，就可以在布局组件中灵活地运用 useSelectedRoutes 钩子函数，根据当前命中的路由信息来实现不同的布局效果。
@@ -908,13 +981,13 @@ useSelectedRoutes 这个钩子函数有很多应用场景。主要包括以下�
 
 总结来说，useSelectedRoutes 的应用场景非常广泛，可以帮助开发者更加灵活地处理和管理路由信息，提升应用的可扩展性和可维护性。
 
-### 问题：什么是`useSearchParams`？
+什么是`useSearchParams`？
 
-回答：`useSearchParams`是一个用于读取和修改当前 URL 的 query string 的钩子函数。它返回一个包含两个值的数组，第一个值是当前 URL 的 search 参数，第二个值是用于更新 search 参数的函数。
+`useSearchParams`是一个用于读取和修改当前 URL 的 query string 的钩子函数。它返回一个包含两个值的数组，第一个值是当前 URL 的 search 参数，第二个值是用于更新 search 参数的函数。
 
-### 问题：`useSearchParams`的类型定义是什么样的？
+`useSearchParams`的类型定义是什么样的？
 
-回答：`useSearchParams`的类型定义如下：
+`useSearchParams`的类型定义如下：
 
 ```ts
 declare function useSearchParams(defaultInit?: URLSearchParamsInit): [
@@ -932,9 +1005,9 @@ type URLSearchParamsInit =
   | URLSearchParams;
 ```
 
-### 问题：能否给出一个使用`useSearchParams`的示例代码？
+能否给出一个使用`useSearchParams`的示例代码？
 
-回答：以下是一个使用`useSearchParams`的示例代码：
+以下是一个使用`useSearchParams`的示例代码：
 
 ```ts
 import React from 'react';
@@ -984,8 +1057,8 @@ export interface RouteComponentProps<T = ReturnType<typeof useParams>> {
 以下是一个使用 `withRouter` 的示例：
 
 ```tsx
-import React from 'react';
-import { withRouter } from 'umi';
+import React from "react";
+import { withRouter } from "umi";
 
 class HelloWorld extends React.Component<any> {
   render() {
@@ -995,7 +1068,7 @@ class HelloWorld extends React.Component<any> {
         <h2>params: {JSON.stringify(this.props.match.params)}</h2>
         <button
           onClick={() => {
-            this.props.history.push('/users');
+            this.props.history.push("/users");
           }}
         >
           To Users

@@ -10,8 +10,6 @@
 
 在设计中，可以使用多种反馈方式，如弹出通知、文本提示、图标变化等。具体的反馈方式取决于设计师的创意和用户需求。
 
-
-
 ### 如何在页面中显示带有预览效果的图片？
 
 要在页面中显示带有预览效果的图片，可以使用`ImagePreview`组件，并将`<img>`元素包裹在其中。例如：
@@ -40,7 +38,6 @@
 
 请注意，其中的 `src` 属性需要被替换为你自己的图片路径。
 
-
 #### 如何使用全局提示 Message？
 
 Message 是一个用于在不打断用户操作的情况下显示简短成功消息的全局提示。你可以按照以下步骤来使用它：
@@ -48,13 +45,13 @@ Message 是一个用于在不打断用户操作的情况下显示简短成功消
 1. 在你的代码中导入 Message 组件：
 
 ```jsx
-import { message } from 'antd';
+import { message } from "antd";
 ```
 
 2. 调用 `message.success` 方法来显示成功消息：
 
 ```jsx
-message.success('操作成功');
+message.success("操作成功");
 ```
 
 你可以替换 `'操作成功'` 为你自己的提示消息。此外，`message` 对象还提供其他方法（如 `message.error`, `message.warning`），你可以根据需要选择相应的方法来显示不同类型的提示消息。
@@ -67,7 +64,10 @@ message.success('操作成功');
 
 ```html
 <ImagePreview>
-  <img class="preview-img no-padding" src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*0EdyRa7WeUAAAAAAAAAAAABkARQnAQ">
+  <img
+    class="preview-img no-padding"
+    src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*0EdyRa7WeUAAAAAAAAAAAABkARQnAQ"
+  />
 </ImagePreview>
 ```
 
@@ -102,10 +102,10 @@ message.success('操作成功');
 以下是使用 `Message` 组件显示全局提示消息的代码示例：
 
 ```jsx
-import { message } from 'antd';
+import { message } from "antd";
 
 // 在需要显示提示消息的地方调用
-message.success('这是一条成功消息');
+message.success("这是一条成功消息");
 ```
 
 在上述代码中，我们首先通过`import`语句引入了`message`对象。然后，通过调用`message.success`方法，并传入消息内容作为参数，即可显示一条带有成功样式的全局提示消息。
@@ -123,7 +123,7 @@ message.success('这是一条成功消息');
 下面是一个示例代码：
 
 ```jsx
-import ImagePreview from 'path/to/ImagePreview';
+import ImagePreview from "path/to/ImagePreview";
 
 // ...
 
@@ -133,7 +133,7 @@ const imageUrl = "https://example.com/path/to/image.jpg"; // 图片的 URL
 
 <ImagePreview>
   <img className="preview-img no-padding" src={imageUrl} />
-</ImagePreview>
+</ImagePreview>;
 ```
 
 在上述示例中，我们通过直接在 `<img>` 元素的 `src` 属性中指定了图片的 URL，并将该 `<img>` 元素作为子节点插入了 `<ImagePreview>` 组件中，以实现图片的预览功能。
@@ -150,7 +150,7 @@ const imageUrl = "https://example.com/path/to/image.jpg"; // 图片的 URL
 下面是一个示例代码：
 
 ```jsx
-import { Modal } from 'antd';
+import { Modal } from "antd";
 
 // ...
 
@@ -160,15 +160,15 @@ const importantMessage = "这是一个重要的操作提示！请谨慎操作！
 
 const handleOpenModal = () => {
   Modal.info({
-    title: '重要操作提示',
+    title: "重要操作提示",
     content: importantMessage,
-    okText: '知道了',
+    okText: "知道了",
   });
 };
 
 // ...
 
-<button onClick={handleOpenModal}>进行重要操作</button>
+<button onClick={handleOpenModal}>进行重要操作</button>;
 ```
 
 在上述示例中，我们使用了 Ant Design 的 `Modal.info()` 方法来创建一个信息对话框，并传入了相应的参数。其中，`title` 参数用于设置对话框的标题，`content` 参数用于设置对话框的内容（即重要操作的提示文本），`okText` 参数用于设置对话框的确定按钮文本。在点击按钮后，调用 `handleOpenModal` 函数即可展示出对话框，用户可以通过点击对话框上的确定按钮来关闭对话框。
@@ -180,11 +180,11 @@ ImagePreview 组件用于显示一张图片的预览图。使用该组件时，�
 示例代码如下：
 
 ```jsx
-import { ImagePreview } from 'your-ui-library';
+import { ImagePreview } from "your-ui-library";
 
 // ...
 
-<ImagePreview src="https://example.com/image.jpg" />
+<ImagePreview src="https://example.com/image.jpg" />;
 ```
 
 请注意，`src` 属性必须为图片的 URL，以确保能够正常加载和显示图片。
@@ -196,11 +196,11 @@ import { ImagePreview } from 'your-ui-library';
 示例代码如下：
 
 ```jsx
-import { Alert } from 'your-ui-library';
+import { Alert } from "your-ui-library";
 
 // ...
 
-<Alert type="error" message="发生错误，请立即处理！" />
+<Alert type="error" message="发生错误，请立即处理！" />;
 ```
 
 可以通过设置 `type` 属性为 "error"、"warning" 或 "info" 来改变提示框的类型。另外，`message` 属性用于设置提示框的具体提示内容。
@@ -239,19 +239,19 @@ ImagePreview 组件可以用于展示图片。使用该组件，需要按照以�
 
 1. 引入 ImagePreview 组件。
 
-   ```javascript
-   import { ImagePreview } from 'your-component-library';
-   ```
+```javascript
+import { ImagePreview } from "your-component-library";
+```
 
 2. 在需要展示图片的位置添加 ImagePreview 组件。
 
-   ```jsx
-   <ImagePreview>
-     <img class="preview-img no-padding" src="your-image-src" />
-   </ImagePreview>
-   ```
+```jsx
+<ImagePreview>
+  <img class="preview-img no-padding" src="your-image-src" />
+</ImagePreview>
+```
 
-   请将 `your-image-src` 替换为你要展示的图片路径。
+请将 `your-image-src` 替换为你要展示的图片路径。
 
 以上是使用 ImagePreview 组件的基本步骤，通过这个组件，你可以方便地展示图片。
 
@@ -270,20 +270,20 @@ Notification 组件主要用于向用户传达重要的问题或失败状态，�
 
 1. 引入 Notification 组件。
 
-   ```javascript
-   import { Notification } from 'your-component-library';
-   ```
+```javascript
+import { Notification } from "your-component-library";
+```
 
 2. 在需要使用通知提醒框的地方调用 Notification 组件。
 
-   ```javascript
-   Notification.open({
-     title: 'Notification Title',
-     message: 'Notification Message',
-   });
-   ```
+```javascript
+Notification.open({
+  title: "Notification Title",
+  message: "Notification Message",
+});
+```
 
-   请将 `Notification Title` 和 `Notification Message` 替换为你要显示的通知标题和内容。
+请将 `Notification Title` 和 `Notification Message` 替换为你要显示的通知标题和内容。
 
 通过以上步骤，你可以成功使用 Notification 组件向用户发送通知提醒框。这样，用户就能够及时获取到重要的信息，并做出相应的决策。
 
@@ -319,25 +319,25 @@ Notification 组件主要用于向用户传达重要的问题或失败状态，�
 
 通过以上展示方法，可以帮助用户更全面地了解第三方原因造成的失败情况，并提供相应的解决方案，以便用户更好地处理失败情况。
 
-### 后台操作中的ImagePreview组件是用来做什么的？
+### 后台操作中的 ImagePreview 组件是用来做什么的？
 
-后台操作中，ImagePreview组件通常用于显示图片预览。在给定的示例中，通过包裹一个`<img>`标签，可以预览指定的图片。该组件可以在UI界面上展示图片的缩略图，并提供相应的交互功能。
+后台操作中，ImagePreview 组件通常用于显示图片预览。在给定的示例中，通过包裹一个`<img>`标签，可以预览指定的图片。该组件可以在 UI 界面上展示图片的缩略图，并提供相应的交互功能。
 
-### Notification组件在后台操作中的作用是什么？
+### Notification 组件在后台操作中的作用是什么？
 
-Notification组件在后台操作中用来向用户发送通知提醒框。这些通知通常用于告知用户重要的问题或失败状态，并希望用户立即做出决策。同时，Notification组件还可以用来反馈后台进程的结果，让用户了解操作的状态或结果。
+Notification 组件在后台操作中用来向用户发送通知提醒框。这些通知通常用于告知用户重要的问题或失败状态，并希望用户立即做出决策。同时，Notification 组件还可以用来反馈后台进程的结果，让用户了解操作的状态或结果。
 
-### 如何使用后台操作中的Notification组件？
+### 如何使用后台操作中的 Notification 组件？
 
-在后台操作中使用Notification组件可分为以下步骤：
+在后台操作中使用 Notification 组件可分为以下步骤：
 
-1. 导入Notification组件：首先，需要在代码中导入Notification组件，以便后续使用。(具体的导入方式可能因项目所用的开发框架或工具而有所不同)
+1. 导入 Notification 组件：首先，需要在代码中导入 Notification 组件，以便后续使用。(具体的导入方式可能因项目所用的开发框架或工具而有所不同)
 
-2. 显示通知：使用Notification组件的函数或方法，可以将需要显示的通知内容作为参数传递给它，以触发通知的显示。可以设置通知的类型、内容、持续时间等。
+2. 显示通知：使用 Notification 组件的函数或方法，可以将需要显示的通知内容作为参数传递给它，以触发通知的显示。可以设置通知的类型、内容、持续时间等。
 
 3. 用户响应：当通知显示给用户后，用户可以根据通知的内容做出相应的决策或操作。通知组件通常提供了交互功能，例如点击通知、关闭通知等。
 
-总之，通过以上步骤可以在后台操作中使用Notification组件，向用户发送通知提醒框，以便告知重要问题、反馈状态或结果，并与用户进行交互。
+总之，通过以上步骤可以在后台操作中使用 Notification 组件，向用户发送通知提醒框，以便告知重要问题、反馈状态或结果，并与用户进行交互。
 
 ### 如何在前端项目中实现图片预览？
 

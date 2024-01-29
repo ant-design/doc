@@ -1,11 +1,11 @@
 1. EditableProTable 与 ProTable 有何区别？
-可编辑表格 EditableProTable 和 ProTable 的功能基本相同，但 EditableProTable 为了方便使用做了一些改进。它关闭了查询表单和操作栏，并修改了 value 和 onChange 属性，使其可以方便地继承到 antd 的 Form 中。
+   可编辑表格 EditableProTable 和 ProTable 的功能基本相同，但 EditableProTable 为了方便使用做了一些改进。它关闭了查询表单和操作栏，并修改了 value 和 onChange 属性，使其可以方便地继承到 antd 的 Form 中。
 
 2. EditableProTable 有哪些预设？
-EditableProTable 增加了一些预设，使其更易于使用。具体的预设内容可以参考官方文档进行了解。
+   EditableProTable 增加了一些预设，使其更易于使用。具体的预设内容可以参考官方文档进行了解。
 
 3. EditableProTable 如何继承到 antd 的 Form 中？
-为了使 EditableProTable 可以方便地继承到 antd 的 Form 中，修改了 value 和 onChange 属性。具体的使用方法可以参考官方文档，其中会详细说明如何使用 value 和 onChange 属性来实现表格与 Form 的数据联动。
+   为了使 EditableProTable 可以方便地继承到 antd 的 Form 中，修改了 value 和 onChange 属性。具体的使用方法可以参考官方文档，其中会详细说明如何使用 value 和 onChange 属性来实现表格与 Form 的数据联动。
 
 ### value 属性是用来传入 table 渲染的元数据的吗？
 
@@ -47,7 +47,7 @@ EditableProTable 增加了一些预设，使其更易于使用。具体的预设
 <EditableTable
   rowKey="id"
   recordCreatorProps={{
-    position: position as 'top',
+    position: position as "top",
     // 每次新增的时候需要Key
     record: () => ({ id: getNewId() }),
   }}

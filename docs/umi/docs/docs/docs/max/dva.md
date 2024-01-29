@@ -11,7 +11,7 @@ Ant Design 4.x 的 Form 组件可以用于快速构建表单，提供了各种�
 1. 引入 Form 组件：
 
 ```javascript
-import { Form } from 'antd';
+import { Form } from "antd";
 ```
 
 2. 创建表单组件：
@@ -53,7 +53,7 @@ Umi 中的状态管理思想最初来源于 Facebook 的 Flux。Flux 是一种�
 下面是一个 model 的示例：
 
 ```js
-import { queryUsers, queryUser } from '../../services/user';
+import { queryUsers, queryUser } from "../../services/user";
 
 export default {
   state: {
@@ -63,7 +63,7 @@ export default {
   effects: {
     *queryUser({ payload }, { call, put }) {
       const { data } = yield call(queryUser, payload);
-      yield put({ type: 'queryUserSuccess', payload: data });
+      yield put({ type: "queryUserSuccess", payload: data });
     },
   },
 
@@ -77,13 +77,13 @@ export default {
   },
 
   test(state) {
-    console.log('test');
+    console.log("test");
     return state;
   },
 };
 ```
 
-根据以上信息，可以生成以下 QA 文档：
+根据以上信息，可以生成以下 文档：
 
 ### Umi 中如何添加 model？
 
@@ -107,15 +107,15 @@ export default {
 
 请注意，上述文档均为原始文本信息，没有包含任何例子或示例。文档简洁明了，语义通顺，符合前端开发的基本要求。
 
-## 将组件和 model 连接起来的方式
+### 将组件和 model 连接起来的方式
 
 使用 `connect` 方法可以将组件与 model 连接起来，以便在组件中访问 model 中的数据。在组件中使用 ES6 的 Decorator 语法可以更方便地连接 model 和组件。
 
 下面是一个示例：
 
 ```javascript
-import React, { Component } from 'react';
-import { connect } from 'umi';
+import React, { Component } from "react";
+import { connect } from "umi";
 
 @connect(({ user }) => ({
   user,
@@ -143,8 +143,8 @@ export default UserInfo;
 在组件中使用 `connect` 方法将 `dispatch` 添加到 `this.props` 上，可以在用户触发某个事件时调用它来触发 model 中的 effects 或 reducer 来修改 model 中的数据。具体示例如下：
 
 ```javascript
-import React, { Component } from 'react';
-import { connect } from 'umi';
+import React, { Component } from "react";
+import { connect } from "umi";
 
 @connect(({ user }) => ({
   user,
@@ -159,7 +159,7 @@ class UserInfo extends Component {
       <div
         onClick={() => {
           this.props.dispatch({
-            type: 'user/test',
+            type: "user/test",
           });
         }}
       >
@@ -233,12 +233,12 @@ model 中的 reducers 是用来修改 state 的，它可以是一个纯函数，
 推荐使用注解的方式来调用 connect 方法，例如：
 
 ```jsx
-import React, { Component } from 'react';
-import { connect } from 'umi';
+import React, { Component } from "react";
+import { connect } from "umi";
 
 const mapModelToProps = (allModels) => {
   return {
-    test: 'hello world',
+    test: "hello world",
     // props you want to connect to Component
   };
 };
@@ -266,8 +266,8 @@ render () {
   return <div onClick={() => {
    this.props.dispatch({
     type: 'modelnamespace/actionname',
-    sometestdata: 'xxx',
-    othertestata: {},
+    sometestdat'xxx',
+    othertestat{},
   }).then(() => {
     // it will return a promise
     // action success
@@ -288,17 +288,17 @@ render () {
 
 通过触发不同类型的 action，可以在 model 中进行不同的处理逻辑。
 
-### Q1: 如何通过 reducers 添加一个 todo？
+### Q 如何通过 reducers 添加一个 todo？
 
-A1: 通过 `add` reducers 可以添加一个 todo。reducers 的 `add` 方法会接收一个 `state` 和一个 `payload` 参数，`state` 是当前的 todos 状态数组，`payload` 是要添加的 todo。在 `add` 方法内部，通过 `concat` 方法将 `payload` 添加到 `state` 中。
+A 通过 `add` reducers 可以添加一个 todo。reducers 的 `add` 方法会接收一个 `state` 和一个 `payload` 参数，`state` 是当前的 todos 状态数组，`payload` 是要添加的 todo。在 `add` 方法内部，通过 `concat` 方法将 `payload` 添加到 `state` 中。
 
-### Q2: 如何通过 reducers 删除一个 todo？
+### Q 如何通过 reducers 删除一个 todo？
 
-A2: 通过 `remove` reducers 可以删除一个 todo。reducers 的 `remove` 方法会接收一个 `state` 和一个 `payload` 参数，`state` 是当前的 todos 状态数组，`payload` 是要删除的 todo 的 id。在 `remove` 方法内部，通过 `filter` 方法过滤掉 id 不等于 `payload` 的 todo，返回过滤后的新数组。
+A 通过 `remove` reducers 可以删除一个 todo。reducers 的 `remove` 方法会接收一个 `state` 和一个 `payload` 参数，`state` 是当前的 todos 状态数组，`payload` 是要删除的 todo 的 id。在 `remove` 方法内部，通过 `filter` 方法过滤掉 id 不等于 `payload` 的 todo，返回过滤后的新数组。
 
-### Q3: 如何通过 reducers 更新一个 todo？
+### Q 如何通过 reducers 更新一个 todo？
 
-A3: 通过 `update` reducers 可以更新一个 todo。reducers 的 `update` 方法会接收一个 `state` 和一个 `payload` 参数，`state` 是当前的 todos 状态数组，`payload` 是要更新的 todo。在 `update` 方法内部，通过 `map` 方法遍历 todos 数组，如果找到与 `payload` 的 id 相同的 todo，则使用扩展运算符 `{...todo, ...updatedTodo}` 将原来的属性与 `updatedTodo` 的属性合并，返回更新后的 todo。如果找不到相同 id 的 todo，则直接返回原始的 todo。返回更新后的 todos 数组。
+A 通过 `update` reducers 可以更新一个 todo。reducers 的 `update` 方法会接收一个 `state` 和一个 `payload` 参数，`state` 是当前的 todos 状态数组，`payload` 是要更新的 todo。在 `update` 方法内部，通过 `map` 方法遍历 todos 数组，如果找到与 `payload` 的 id 相同的 todo，则使用扩展运算符 `{...todo, ...updatedTodo}` 将原来的属性与 `updatedTodo` 的属性合并，返回更新后的 todo。如果找不到相同 id 的 todo，则直接返回原始的 todo。返回更新后的 todos 数组。
 
 ### 嵌套数据的增删改
 
@@ -308,7 +308,7 @@ A3: 通过 `update` reducers 可以更新一个 todo。reducers 的 `update` 方
 
 ```javascript
 app.model({
-  namespace: 'app',
+  namespace: "app",
   state: {
     todos: [],
     loading: false,
@@ -330,7 +330,7 @@ app.model({
 app.model({
   namespace: 'app',
   state: {
-    a: {
+    {
       b: {
         todos: [],
         loading: false,
@@ -360,11 +360,11 @@ Effects are implemented using Generator functions, which are part of ES6. Here i
 
 ```javascript
 export default {
-  namespace: 'todos',
+  namespace: "todos",
   effects: {
     *addRemote({ payload: todo }, { put, call }) {
       yield call(addTodo, todo);
-      yield put({ type: 'add', payload: todo });
+      yield put({ type: "add", payload: todo });
     },
   },
 };

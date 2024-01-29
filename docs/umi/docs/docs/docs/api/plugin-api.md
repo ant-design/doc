@@ -21,31 +21,29 @@ Umi 提供了一系列的插件 API，以帮助开发者自由编写插件。这
 
 ### applyPlugins
 
-#### 问题：applyPlugins 方法是用来做什么的？
+#applyPlugins 方法是用来做什么的？
 
-#### 回答：applyPlugins 方法用于获取 `register()` 注册的 hooks 执行后的数据。
+#### applyPlugins 方法用于获取 `register()` 注册的 hooks 执行后的数据。
 
----
+#applyPlugins 方法有哪些参数？
 
-#### 问题：applyPlugins 方法有哪些参数？
+#### applyPlugins 方法有以下参数：
 
-#### 回答：applyPlugins 方法有以下参数：
 - key: string - hooks 的名称
 - type?: ApplyPluginsType - hooks 的类型
 - initialValue?: any - 初始值
 - args?: any - 其他参数
 
----
+#applyPlugins 方法返回的是什么类型的数据？
 
-#### 问题：applyPlugins 方法返回的是什么类型的数据？
-
-#### 回答：applyPlugins 方法返回的是一个 Promise 对象，因为该方法是异步函数。
+#### applyPlugins 方法返回的是一个 Promise 对象，因为该方法是异步函数。
 
 ### 描述插件配置的函数是什么？描述其参数和返回值。
 
-描述插件配置的函数是`api.describe`，它接受一个参数，参数是一个对象，用于描述插件或插件集的key、配置信息和启用方式等。
+描述插件配置的函数是`api.describe`，它接受一个参数，参数是一个对象，用于描述插件或插件集的 key、配置信息和启用方式等。
 
 参数对象的属性包括：
+
 - `key`：配置中该插件配置的键名，可选。
 - `config`：插件配置的默认值、类型声明和变更处理逻辑，可选。
 - `enableBy`：插件的启用方式，默认是`api.EnableBy.register`，可选。
@@ -63,6 +61,7 @@ Umi 提供了一系列的插件 API，以帮助开发者自由编写插件。这
 ### 如何处理 dev 模式下插件配置的变更？
 
 在 dev 模式下，可以通过配置`config.onChange`属性来处理插件配置的变更。`config.onChange`可以设置为以下三种方式之一：
+
 - `api.ConfigChangeType.reload`：表示在 dev 模式下，配置项被修改时会重启 dev 进程。
 - `api.ConfigChangeType.regenerateTmpFiles`：表示在 dev 模式下，配置项被修改时只重新生成临时文件。
 - 也可以传入一个自定义的函数来处理机制，进行特定的处理逻辑。
@@ -70,6 +69,7 @@ Umi 提供了一系列的插件 API，以帮助开发者自由编写插件。这
 ### 如何设定插件的启用方式？
 
 插件的启用方式可以通过`enableBy`属性进行设定。`enableBy`可以设置以下几种方式之一：
+
 - `api.EnableBy.register`：表示注册启用，即插件只要被注册就会被启用。
 - `api.EnableBy.config`：表示配置启用，只有配置插件的配置项才启用插件。
 - 也可以自定义一个返回布尔值的方法来决定插件的启用时机，返回`true`表示启用。
@@ -94,75 +94,82 @@ Umi 提供了一系列的插件 API，以帮助开发者自由编写插件。这
 根据 `applyPlugins` 的 `type` 参数的不同，`fn` 的写法也有所差异。以下是几种常见的类型及对应的 `fn` 写法：
 
 - `api.ApplyPluginsType.add`：`fn` 需要有返回值，并且接收 `applyPlugins` 的参数 `args` 来作为自己的参数。`initialValue` 必须是一个数组，用来初始化结果数组。`applyPlugins` 会按照注册顺序将 hook 的返回值拼接成一个数组。
-  
+
   例如：
+
   ```ts
   api.register({
-    key: 'addFoo',
-    fn: (args) => args
+    key: "addFoo",
+    fn: (args) => args,
   });
-  
+
   api.register({
-    key: 'addFoo',
-    fn: async (args) => args * 2
-  })
-  
-  api.applyPlugins({
-    key: 'addFoo',
-    args: 1
-  }).then((data)=>{
-    console.log(data); // [1,2]
-  })
+    key: "addFoo",
+    fn: async (args) => args * 2,
+  });
+
+  api
+    .applyPlugins({
+      key: "addFoo",
+      args: 1,
+    })
+    .then((data) => {
+      console.log(data); // [1,2]
+    });
   ```
 
 - `api.ApplyPluginsType.modify`：`fn` 需要接收一个 `memo` 参数作为自己的第一个参数，该参数是前面一系列 hook 修改结果的累积值。`fn` 还会接收 `applyPlugins` 的参数 `args` 作为自己的第二个参数。`fn` 需要返回修改后的 `memo` 值。`initialValue` 是必须的，用来初始化 `memo`。
-  
+
   例如：
+
   ```ts
   api.register({
     key: 'foo',
-    fn: (memo, args) => ({ ...memo, a: args})
-  })
-  
+    fn: (memo, args) => ({ ...memo, args }),
+  });
+
   api.register({
     key: 'foo',
-    fn: (memo) => ({...memo, b: 2})
-  })
-  
-  api.applyPlugins({ 
-    key: 'foo', 
-    type: api.ApplyPluginsType.modify,
-    initialValue: { 
-      a: 0,
-      b: 0
-    },
-    args: 1
-  }).then((data) => {
-      console.log(data); // { a: 1, b: 2 }
+    fn: (memo) => ({ ...memo, b: 2 }),
   });
+
+  api
+    .applyPlugins({
+      key: 'foo',
+      type: api.ApplyPluginsType.modify,
+      initialValue: {
+        0,
+        b: 0,
+      },
+      args: 1,
+    })
+    .then((data) => {
+      console.log(data); // { 1, b: 2 }
+    });
   ```
 
 - `api.ApplyPluginsType.event`：`fn` 不需要有返回值，并且接收 `applyPlugins` 的参数 `args` 来作为自己的参数。`applyPlugins` 会按照注册顺序依次执行这些 hook。
-  
+
   例如：
+
   ```ts
   api.register({
-    key: 'onFoo',
+    key: "onFoo",
     fn: (args) => {
       console.log(args);
-    }
+    },
   });
-  
+
   api.register({
-    key: 'onFoo',
+    key: "onFoo",
     fn: (args) => {
       console.log(args);
-    }
+    },
   });
-  
+
   api.applyPlugins({
-    key: 'onFoo',
-    args: 'Hello World'
+    key: "onFoo",
+    args: "Hello World",
   });
   ```
 
@@ -188,12 +195,10 @@ registerCommand 方法接收一个参数对象，该对象包含以下属性：
 
 registerCommand 方法允许为注册的命令指定一个或多个别名。别名可以是对命令名称的缩写或简化，方便用户使用命令时的输入。通过指定别名，用户可以更方便地调用命令，提高使用的便捷性。
 
-
-
 ### registerMethod
 
 ```ts
-api.registerMethod({ name: string, fn? })
+api.registerMethod({ name: string, fn });
 ```
 
 `registerMethod` 函数用于向 `api` 对象上注册一个名为 `'name'` 的方法。
@@ -201,7 +206,8 @@ api.registerMethod({ name: string, fn? })
 - 当传入了 `fn` 时，会执行 `fn`。
 - 当没有传入 `fn` 时，`registerMethod` 会将 `name` 作为 `api.register` 的 `key` ，并将其柯里化后作为 `fn`。这种情况下相当于注册了一个 `register` 的快捷调用方式，方便注册 hook。
 
-注意： 
+注意：
+
 - 相对于 `umi@3`，在 `umi@4` 中去除了 `exitsError` 参数。
 - 通常不建议注册额外的方法，因为它们不会有 TypeScript 提示，直接使用 `api.register()` 是一个更安全的做法。
 
@@ -209,13 +215,13 @@ api.registerMethod({ name: string, fn? })
 
 ```ts
 api.registerMethod({
-  name: 'foo',
+  name: "foo",
   // 有 fn
   fn: (args) => {
     console.log(args);
-  }
+  },
 });
-api.foo('hello, umi!'); // hello, umi!
+api.foo("hello, umi!"); // hello, umi!
 ```
 
 在示例 1 中，我们向 `api` 上注册了一个名为 `foo` 的方法，该方法会将参数打印到控制台。
@@ -223,22 +229,24 @@ api.foo('hello, umi!'); // hello, umi!
 #### 示例 2
 
 ```ts
-import api from './api';
+import api from "./api";
 
 api.registerMethod({
-  name: 'addFoo'
+  name: "addFoo",
   // 没有 fn
 });
 
-api.addFoo( args => args );
-api.addFoo( args => args * 2 );
+api.addFoo((args) => args);
+api.addFoo((args) => args * 2);
 
-api.applyPlugins({
-  key: 'addFoo',
-  args: 1
-}).then((data)=>{
-  console.log(data); // [ 1, 2 ]
-});
+api
+  .applyPlugins({
+    key: "addFoo",
+    args: 1,
+  })
+  .then((data) => {
+    console.log(data); // [ 1, 2 ]
+  });
 ```
 
 在示例 2 中，我们没有向 `api.registerMethod` 中传入 `fn`。此时，我们相当于向 `api` 上注册了一个"注册器"：`addFoo`。每次调用该方法都相当于调用了 `register({ key: 'addFoo', fn })`。因此，当我们使用 `api.applyPlugins` 时，可以获取刚刚注册的 hook 的值。
@@ -250,11 +258,9 @@ api.applyPlugins({
 registerPresets 方法用于注册插件集，参数为路径数组。这个方法必须在 initPresets 阶段执行，也就是只能在 preset 中注册其他的 presets。
 
 示例用法：
+
 ```ts
-api.registerPresets([
-  './preset',
-  require.resolve('./preset_foo')
-])
+api.registerPresets(["./preset", require.resolve("./preset_foo")]);
 ```
 
 ### registerPresets 方法的参数是什么？
@@ -264,11 +270,9 @@ registerPresets 方法的参数是一个路径数组，用于指定要注册的�
 ### registerPresets 方法的示例用法是什么？
 
 示例用法如下：
+
 ```ts
-api.registerPresets([
-  './preset',
-  require.resolve('./preset_foo')
-])
+api.registerPresets(["./preset", require.resolve("./preset_foo")]);
 ```
 
 在这个示例中，使用 registerPresets 方法注册了两个插件集，分别是 './preset' 和 require.resolve('./preset_foo')。
@@ -278,11 +282,9 @@ api.registerPresets([
 是的，registerPlugins 方法是用来注册插件的。它接受一个路径数组作为参数。需要在 initPresets 和 initPlugins 阶段执行。
 
 例如：
+
 ```ts
-api.registerPlugins([
-  './plugin',
-  require.resolve('./plugin_foo')
-])
+api.registerPlugins(["./plugin", require.resolve("./plugin_foo")]);
 ```
 
 需要注意的是，与 umi@3 不同的是，umi@4 不再支持直接传入插件对象，现在只允许传入插件的路径。
@@ -298,11 +300,9 @@ api.registerPlugins([
 要在 umi@4 中使用 registerPlugins 方法，首先需要调用 api.registerPlugins()，并将需要引入的插件路径以数组的形式作为参数传递进去。
 
 例如：
+
 ```ts
-api.registerPlugins([
-  './plugin',
-  require.resolve('./plugin_foo')
-])
+api.registerPlugins(["./plugin", require.resolve("./plugin_foo")]);
 ```
 
 其中，'./plugin' 和 require.resolve('./plugin_foo') 是具体插件的路径。通过这种方式引入插件，可以扩展 umi 的功能和特性。
@@ -348,9 +348,11 @@ trim_trailing_whitespace = false
 你可以使用以下代码片段生成 `.editorconfig` 文件：
 
 ```javascript
-const fs = require('fs')
+const fs = require("fs");
 
-fs.writeFile('.editorconfig', `
+fs.writeFile(
+  ".editorconfig",
+  `
 root = true
 
 [*]
@@ -363,13 +365,16 @@ insert_final_newline = true
 
 [*.md]
 trim_trailing_whitespace = false
-`.trimStart(), 'utf-8', (err) => {
-  if (err) {
-    console.error(err)
-  } else {
-    console.log('Generate .editorconfig file successful.')
-  }
-})
+`.trimStart(),
+  "utf-8",
+  (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log("Generate .editorconfig file successful.");
+    }
+  },
+);
 ```
 
 运行以上代码，会在当前目录生成一个名为 `.editorconfig` 的文件，并包含上述示例内容。
@@ -448,10 +453,10 @@ api.addBeforeBabelPresets(() => {
   // 返回一个 Babel 插件集
   return () => {
     return {
-      plugins: ["Babel_Plugin_A","Babel_Plugin_B"]
-    }
-  }
-})
+      plugins: ["Babel_Plugin_A", "Babel_Plugin_B"],
+    };
+  };
+});
 ```
 
 在示例代码中，我们通过传入一个返回 Babel 插件集的函数给 addBeforeBabelPresets 方法。在这个示例中，返回的插件集包含了两个插件，分别是 "Babel_Plugin_A" 和 "Babel_Plugin_B"。
@@ -471,12 +476,12 @@ api.addBeforeBabelPresets(() => {
 ```ts
 api.addBeforeMiddlewares(() => {
   return (req, res, next) => {
-    if(false) {
-      res.end('end');
+    if (false) {
+      res.end("end");
     }
     next();
-  }
-})
+  };
+});
 ```
 
 #### 解释
@@ -510,48 +515,46 @@ api.addEntryCode(() => `console.log('I am after render!')`);
 在这个示例中，我们将打印一条消息 "I am after render!"，并将其添加到入口文件的最后。
 
 ### addEntryCodeAhead 是什么？
+
 addEntryCodeAhead 是一个 API 方法，用于在入口文件中的指定位置添加代码。该方法接受一个函数作为参数，该函数不需要传入任何参数，并且需要返回一个字符串或字符串数组。
 
 ### 如何使用 addEntryCodeAhead 方法？
+
 要使用 addEntryCodeAhead 方法，在入口文件的最前面（render 方法之前、import 语句之后）添加代码。以下是一个示例：
+
 ```ts
-api.addEntryCodeAhead(() => `console.log('I am before render!')`)
+api.addEntryCodeAhead(() => `console.log('I am before render!')`);
 ```
+
 在上述示例中，`console.log('I am before render!')` 将会在入口文件中的指定位置添加。
 
 ### addEntryCodeAhead 方法的作用是什么？
+
 addEntryCodeAhead 方法的作用是在入口文件中的指定位置添加代码。可以使用该方法在 render 方法之前执行一些操作。
 
 请注意，传入的函数需要返回一个字符串或字符串数组，表示要添加的代码。代码将按照函数的返回顺序添加到入口文件中。
 
 ### addEntryImports
 
-Q: `addEntryImports` 函数有哪些参数？
-A: `addEntryImports` 函数接受一个参数 `fn`，它是一个函数类型。
+### `addEntryImports` 函数有哪些参数？ `addEntryImports` 函数接受一个参数 `fn`，它是一个函数类型。
 
-Q: `fn` 参数是什么类型的？
-A: `fn` 参数是一个函数，不需要任何参数。
+### `fn` 参数是什么类型的？ `fn` 参数是一个函数，不需要任何参数。
 
-Q: `fn` 函数需要返回什么类型的值？
-A: `fn` 函数应该返回一个对象，对象包含两个属性 `source` 和 `specifier`，也可以返回一个包含多个这样的对象的数组。
+### `fn` 函数需要返回什么类型的值？ `fn` 函数应该返回一个对象，对象包含两个属性 `source` 和 `specifier`，也可以返回一个包含多个这样的对象的数组。
 
-Q: `source` 是什么意思？
-A: `source` 表示要导入的模块或文件的路径。
+### `source` 是什么意思？ `source` 表示要导入的模块或文件的路径。
 
-Q: `specifier` 是什么意思？
-A: `specifier` 表示要给导入的模块或文件指定的别名。
+### `specifier` 是什么意思？ `specifier` 表示要给导入的模块或文件指定的别名。
 
-Q: 如何使用 `addEntryImports` 函数？
-A: 调用 `addEntryImports` 函数并传入一个函数作为参数，该函数需要返回一个对象或对象数组，对象中包含 `source` 和可选的 `specifier` 属性。
+### 如何使用 `addEntryImports` 函数？ 调用 `addEntryImports` 函数并传入一个函数作为参数，该函数需要返回一个对象或对象数组，对象中包含 `source` 和可选的 `specifier` 属性。
 
-Q: 有没有示例代码可以参考？
-A: 是的，你可以参考以下示例代码：
+### 有没有示例代码可以参考？ 是的，你可以参考以下示例代码：
 
 ```ts
 api.addEntryImports(() => ({
-  source: '/modulePath/xxx.js',
-  specifier: 'moduleName'
-}))
+  source: "/modulePath/xxx.js",
+  specifier: "moduleName",
+}));
 ```
 
 希望以上信息能够帮到你！如果还有其他问题，请随时提问。
@@ -559,60 +562,59 @@ api.addEntryImports(() => ({
 ### addEntryImportsAhead
 
 #### 描述
+
 `addEntryImportsAhead` 是一个 API 方法，用于在入口文件中最前面添加 import 语句。你需要传入一个函数 `fn` 作为参数，该函数不需要任何参数，并且需要返回一个对象或对象数组。
 
 #### 参数
 
-| 参数名 | 类型 | 描述 |
-| --- | --- | --- |
-| fn | () => {source: string, specifier?: string} 或 ({source: string, specifier?: string})[] | 一个函数，它返回一个对象或对象数组，用于指定要添加的 import 语句的信息。|
+| 参数名 | 类型                                                                                   | 描述                                                                     |
+| ------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| fn     | () => {source: string, specifier?: string} 或 ({source: string, specifier?: string})[] | 一个函数，它返回一个对象或对象数组，用于指定要添加的 import 语句的信息。 |
 
 #### 示例
 
 ```ts
 api.addEntryImportsAhead(() => ({
-  source: 'anyPackage'
-}))
+  source: "anyPackage",
+}));
 ```
 
 上述示例中，`addEntryImportsAhead` 方法被调用并传入一个函数作为参数。该函数返回一个包含 `source` 字段的对象，用于指定要引入的包名。
 
 注意：`specifier` 字段是可选的，如果不提供，则默认为引入整个包。
 
-
----
-
-
 ### source
 
 #### 类型
+
 string
 
 #### 描述
+
 `source` 是一个字符串，用于指定要引入的包名。
 
 #### 示例
+
 ```ts
-source: 'anyPackage'
+source: "anyPackage";
 ```
 
 上述示例中，`anyPackage` 是要引入的包名。
 
-
----
-
-
 ### specifier
 
 #### 类型
+
 string | undefined
 
 #### 描述
+
 `specifier` 是一个可选的字符串，用于指定包名的具体引入位置。
 
 #### 示例
+
 ```ts
-specifier: 'anySpecifier'
+specifier: "anySpecifier";
 ```
 
 上述示例中，`anySpecifier` 是要引入的包名的具体引入位置。如果不提供该字段，则默认为引入整个包。
@@ -626,8 +628,9 @@ specifier: 'anySpecifier'
 ### `addHTMLHeadScripts` 的使用示例
 
 以下是一个示例，演示了如何使用 `addHTMLHeadScripts` 方法：
+
 ```ts
-api.addHTMLHeadScripts(() => `console.log('I am in HTML-head')`)
+api.addHTMLHeadScripts(() => `console.log('I am in HTML-head')`);
 ```
 
 在上述示例中，传入的函数返回了一个字符串，该字符串包含要添加到 HTML `<head>` 元素中的脚本代码。在这个例子中，添加的脚本代码会输出一条日志信息 "I am in HTML-head"。
@@ -697,12 +700,12 @@ function fn() {
   return [
     {
       name: "description",
-      content: "This is a sample description"
+      content: "This is a sample description",
     },
     {
       name: "keywords",
-      content: "sample, meta, tags"
-    }
+      content: "sample, meta, tags",
+    },
   ];
 }
 
@@ -714,7 +717,8 @@ addHTMLMetas(fn);
 请注意，具体要添加的 Meta 标签属性和内容都可以根据需要进行自定义。只需编写相应的`fn`函数，返回适当的对象或对象数组即可。
 
 ### 如何使用 chainWebpack 修改 webpack 配置？
-你可以使用`chainWebpack`方法来修改webpack配置。该方法使用了[webpack-chain](https://github.com/neutrinojs/webpack-chain)库。你需要传入一个函数作为参数，函数不需要返回值。该函数将接收两个参数：`memo`代表webpack-chain的config对象，`args`包含`webpack`和`env`两个属性，`webpack`表示webpack实例，`env`表示当前的运行环境。
+
+你可以使用`chainWebpack`方法来修改 webpack 配置。该方法使用了[webpack-chain](https://github.com/neutrinojs/webpack-chain)库。你需要传入一个函数作为参数，函数不需要返回值。该函数将接收两个参数：`memo`代表 webpack-chain 的 config 对象，`args`包含`webpack`和`env`两个属性，`webpack`表示 webpack 实例，`env`表示当前的运行环境。
 
 例如，在函数中你可以通过`memo.resolve.alias.set('a','path/to/a')`来添加一个别名，或者通过`memo.plugins.delete('progress')`来删除一个插件。
 
@@ -722,73 +726,85 @@ addHTMLMetas(fn);
 
 ```ts
 api.chainWebpack((memo, { webpack, env }) => {
-  memo.resolve.alias.set('a', 'path/to/a');
-  memo.plugins.delete('progress');
+  memo.resolve.alias.set("a", "path/to/a");
+  memo.plugins.delete("progress");
 });
 ```
 
 ### 如何使用 chainWebpack 设置别名？
+
 要设置别名可以使用`chainWebpack`方法，并在函数中使用`memo.resolve.alias.set`方法来设置别名。该方法接受两个参数：别名名称和别名对应的路径。
 
 例如，要将`a`设置为`path/to/a`的别名，可以使用以下代码：
 
 ```ts
-memo.resolve.alias.set('a', 'path/to/a');
+memo.resolve.alias.set("a", "path/to/a");
 ```
 
 ### 如何使用 chainWebpack 删除插件？
+
 要删除插件可以使用`chainWebpack`方法，并在函数中使用`memo.plugins.delete`方法来删除插件。该方法接受一个参数：需要删除的插件名称。
 
 例如，要删除名为`progress`的插件，可以使用以下代码：
 
 ```ts
-memo.plugins.delete('progress');
+memo.plugins.delete("progress");
 ```
 
 注意，这里的`progress`是示例插件名称，你需要根据实际情况替换为你想要删除的插件名称。
 
 ### 如何修改 Umi 的配置？
+
 要修改 Umi 的配置，可以使用 `api.modifyConfig` 方法。该方法接收一个函数作为参数，函数的第一个参数是当前的配置对象 `config`，第二个参数是一个对象 `{ paths }`，其中 `paths` 包含了 Umi 的各个路径。在函数体内，可以对配置对象进行修改，最后将修改后的配置对象返回即可。
 
 例如，要修改配置中的 `alias`，可以像下面这样：
+
 ```ts
 api.modifyConfig((memo, { paths }) => {
   memo.alias = {
     ...memo.alias,
-    '@': paths.absSrcPath
-  }
+    "@": paths.absSrcPath,
+  };
   return memo;
-})
+});
 ```
+
 上述代码中，`memo.alias` 即为配置中的 `alias` 对象，我们在原有的 `alias` 对象基础上添加了一个键值对 `@: paths.absSrcPath`。
 
 ### 什么是 Umi 的路径对象 `paths`？
+
 `paths` 是 Umi 的路径对象，它包含了 Umi 的各个路径信息。在使用 `api.modifyConfig` 方法时，可以将 `paths` 对象作为第二个参数传入函数中，以便在配置修改过程中使用其中的路径信息。
 
 例如，在上述示例代码中，我们使用了 `paths.absSrcPath`，表示项目的源码绝对路径。
 
 ### 如何添加别名 alias 到 Umi 的配置中？
+
 要添加别名 alias 到 Umi 的配置中，可以通过 `api.modifyConfig` 方法来实现。在传入的函数中，修改配置对象的 `alias` 属性，并添加相应的别名键值对。
 
 例如，要将别名 `'@'` 添加为项目的源码路径，可以像下面这样：
+
 ```ts
 api.modifyConfig((memo, { paths }) => {
   memo.alias = {
     ...memo.alias,
-    '@': paths.absSrcPath
-  }
+    "@": paths.absSrcPath,
+  };
   return memo;
-})
+});
 ```
+
 上述代码中，`memo.alias` 即为配置中的 `alias` 对象，我们将 `'@'` 添加为键，对应的值为 `paths.absSrcPath`，即项目的源码路径。这样，就可以在代码中使用 `'@'` 来代表项目的源码路径了。
 
 ### modifyHTML 是什么功能？
+
 `modifyHTML` 是一个可以修改 HTML 的函数，它基于 cheerio 的 AST。接收一个函数 `fn` 作为参数，`fn` 可以操作 cheerioAPI，并且返回 cheerioAPI。`fn` 还可以接收一个 `path` 参数，表示路由的路径。这个函数可以用于对 HTML 进行修改操作。
 
 ### modifyHTML 的使用方法是什么？
+
 使用 `api.modifyHTML` 方法来调用 `modifyHTML` 函数。`api.modifyHTML` 接收两个参数，第一个参数是一个函数 `fn`，第二个参数是一个包含 `path` 属性的对象。`fn` 可以操作 cheerioAPI，并且返回 cheerioAPI，`path` 表示路由的路径。在 `fn` 中，你可以使用 cheerioAPI 对 HTML 进行修改操作。
 
 ### modifyHTML 的返回值是什么？
+
 `modifyHTML` 函数返回一个结果，结果是经过修改后的 HTML。你可以使用这个结果来进一步处理或展示修改后的 HTML。
 
 请注意，以上信息基于给定的代码片段进行解读和推测，可能不完全准确。
@@ -895,8 +911,8 @@ interface IRoute {
 api.modifyRoutes((memo) => {
   Object.keys(memo).forEach((id) => {
     const route = memo[id];
-    if(route.path === '/'){
-      route.path = '/redirect'
+    if (route.path === "/") {
+      route.path = "/redirect";
     }
   });
   return memo;
@@ -916,10 +932,10 @@ api.modifyRoutes((memo) => {
 示例代码如下：
 
 ```ts
-import api from 'umi';
+import api from "umi";
 
 api.modifyTSConfig((memo) => {
-  memo.compilerOptions.paths['foo'] = ['bar'];
+  memo.compilerOptions.paths["foo"] = ["bar"];
   return memo;
 });
 ```
@@ -983,9 +999,9 @@ modifyWebpackConfig 方法接收一个回调函数作为参数。该回调函数
 ```ts
 api.modifyWebpackConfig((memo, { webpack, env }) => {
   // do something
-  
+
   return memo;
-})
+});
 ```
 
 在“do something”处，可以添加需要的代码来修改 webpack 配置。修改完成后，将修改后的配置对象返回，即可实现对 webpack 配置的修改。
@@ -1007,8 +1023,8 @@ api.modifyWebpackConfig((memo, { webpack, env }) => {
 
 ```typescript
 api.onBeforeMiddleware(({ app }) => {
-  app.get('/some/path', function (req, res) {
-    res.json({ custom: 'response' });
+  app.get("/some/path", function (req, res) {
+    res.json({ custom: "response" });
   });
 });
 ```
@@ -1029,6 +1045,7 @@ api.onBeforeMiddleware(({ app }) => {
 - `code`：要检测的代码内容，类型为字符串。
 - `isFromTmp`：是否从临时文件中检测代码，类型为布尔值。
 - `imports`：导入模块的相关信息数组，每个元素包含以下属性：
+
   - `source`：模块的来源，类型为字符串。
   - `loc`：模块的位置信息，类型为任意。
   - `default`：默认导出的名称，类型为字符串。
@@ -1160,10 +1177,10 @@ logger 的作用是用于记录插件的日志信息，可以帮助开发者在�
 在 logger 对象中，有一个 `profile` 方法，可以用于记录性能耗时。可以使用以下代码来演示 profile 方法的使用：
 
 ```ts
-api.logger.profile('barId');
+api.logger.profile("barId");
 setTimeout(() => {
-  api.logger.profile('barId');
-})
+  api.logger.profile("barId");
+});
 // 输出结果为：profile - barId Completed in 6254ms
 ```
 
@@ -1218,4 +1235,4 @@ uninitialized 阶段是 ServiceStage 的第一个阶段，表示 Umi service 还
 
 ServiceStage 的最后一个阶段是 runCommand，表示 Umi service 正在运行命令。在这个阶段，服务已经完成了全部的初始化和启动，开始执行特定的命令。
 
-以上就是基于提供的信息生成的 QA 文档，包括了 ServiceStage 的运行阶段及其功能。
+以上就是基于提供的信息生成的 文档，包括了 ServiceStage 的运行阶段及其功能。

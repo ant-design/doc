@@ -1,14 +1,14 @@
 1. 如何在写配置时获得 TypeScript 提示？
-   
+
 可以通过 umi 的 defineApp 方法来定义配置，从而在写配置时获得 TypeScript 提示。以下是一个示例代码：
 
 ```js
-import { defineApp } from 'umi';
+import { defineApp } from "umi";
 
 export default defineApp({
   layout: () => {
     return {
-      title: 'umi',
+      title: "umi",
     };
   },
 });
@@ -31,7 +31,7 @@ export const layout: RuntimeConfig['layout'] = () => {
 umi 的 defineApp 方法用于定义配置。你可以通过该方法来指定一些配置项，并在写配置时获得 TypeScript 提示。以下是一个示例代码：
 
 ```js
-import { defineApp } from 'umi';
+import { defineApp } from "umi";
 
 export default defineApp({
   // 配置项
@@ -43,7 +43,7 @@ export default defineApp({
 在 umi 中，可以使用 defineApp 方法或者 RuntimeConfig 类型来定义 layout 配置。以下是一个示例代码：
 
 ```js
-import { defineApp } from 'umi';
+import { defineApp } from "umi";
 
 export default defineApp({
   layout: () => {
@@ -76,7 +76,7 @@ export const layout: RuntimeConfig['layout'] = () => {
 
 ```ts
 export default {
-  dva: {
+  dv{
     immer: true,
     extraModels: [],
   },
@@ -92,14 +92,14 @@ export default {
 1. 在你的 dva model 中引入 `immer` 模块。
 
 ```js
-import { produce } from 'immer';
+import { produce } from "immer";
 ```
 
 2. 在你的 model 中使用 `immer` 提供的 `produce` 方法来修改状态。
 
 ```js
 const Model = {
-  namespace: 'example',
+  namespace: "example",
   state: {
     count: 0,
   },
@@ -124,9 +124,9 @@ const Model = {
 
 ```js
 const myModel = {
-  namespace: 'myModel',
+  namespace: "myModel",
   state: {
-    name: 'Tom',
+    name: "Tom",
   },
   reducers: {
     updateName(state, { payload }) {
@@ -145,7 +145,7 @@ export default myModel;
 
 ```ts
 export default {
-  dva: {
+  dv{
     immer: true,
     extraModels: [require('./myModel').default],
   },
@@ -155,15 +155,15 @@ export default {
 4. 在需要使用这个额外的 model 的地方引入它并使用。
 
 ```js
-import { connect } from 'umi';
+import { connect } from "umi";
 
 const MyComponent = (props) => {
   const { name, dispatch } = props;
 
   const handleClick = () => {
     dispatch({
-      type: 'myModel/updateName',
-      payload: 'Jerry',
+      type: "myModel/updateName",
+      payload: "Jerry",
     });
   };
 
@@ -192,23 +192,20 @@ export default connect(({ myModel }) => ({
 
 1. 在你的项目中安装 `@umijs/plugins` 插件：
 
-   ```bash
+```bash
    pnpm add -D @umijs/plugins
-   ```
+```
 
 2. 修改 `.umirc.ts` 文件，添加以下配置：
 
-   ```ts
-   // .umirc.ts
-   export default {
-     plugins: [
-       '@umijs/plugins/dist/initial-state',
-       '@umijs/plugins/dist/model',
-     ],
-     initialState: {},
-     model: {},
-   };
-   ```
+```ts
+// .umirc.ts
+export default {
+  plugins: ["@umijs/plugins/dist/initial-state", "@umijs/plugins/dist/model"],
+  initialState: {},
+  model: {},
+};
+```
 
 以上就是定义初始化数据的方法，你可以根据需求选择适合你的方式。
 
@@ -220,15 +217,15 @@ export default connect(({ myModel }) => ({
 
 2. 在代码中，将配置项传递给 `layout` 对象。例如，可以使用如下代码配置退出登录功能：
 
-   ```js
-   export const layout = {
-     logout: () => {
-       // 在这里编写退出登录功能的代码
-     },
-   };
-   ```
+```js
+export const layout = {
+  logout: () => {
+    // 在这里编写退出登录功能的代码
+  },
+};
+```
 
-   在 `logout` 方法中，可以自定义退出登录的逻辑。
+在 `logout` 方法中，可以自定义退出登录的逻辑。
 
 3. 如果需要进行更多具体配置，可以参考 [插件文档](../max/layout-menu#运行时配置) 查看更多配置选项。
 
@@ -263,12 +260,12 @@ export function onRouteChange({
 下面是一个示例代码：
 
 ```ts
-import { matchRoutes } from 'umi';
+import { matchRoutes } from "umi";
 
 export function onRouteChange({ clientRoutes, location }) {
   const route = matchRoutes(clientRoutes, location.pathname)?.pop()?.route;
   if (route) {
-    document.title = route.title || '';
+    document.title = route.title || "";
   }
 }
 ```
@@ -279,18 +276,18 @@ export function onRouteChange({ clientRoutes, location }) {
 
 ### `patchRoutes({ routes, routeComponents })` 是什么作用？
 
-`patchRoutes({ routes, routeComponents })` 是一个函数，用于在前端路由中对路由进行补丁操作。它接收一个参数，该参数是一个对象，包含两个属性：`routes` 和 `routeComponents`。
-`routes` 是一个打平的路由列表，存储了所有需要注册的路由信息。
-`routeComponents` 是一个路由对应的组件映射，它将每个路由与对应的组件关联起来。
+`patchRoutes({ routes, routeComponents })` 是一个函数，用于在前端路由中对路由进行补丁操作。它接收一个参数，该参数是一个对象，包含两个属性：`routes` 和 `routeComponents`。 `routes` 是一个打平的路由列表，存储了所有需要注册的路由信息。 `routeComponents` 是一个路由对应的组件映射，它将每个路由与对应的组件关联起来。
 
 ### 如何使用 `patchRoutes({ routes, routeComponents })` 函数？
 
 你可以按照以下示例使用 `patchRoutes` 函数：
+
 ```ts
 export function patchRoutes({ routes, routeComponents }) {
-  console.log('patchRoutes', routes, routeComponents);
+  console.log("patchRoutes", routes, routeComponents);
 }
 ```
+
 在函数中，你可以根据自己的需求对 `routes` 和 `routeComponents` 进行处理，例如进行路由权限控制、动态路由生成等。
 
 ### 如何动态更新路由？
@@ -310,11 +307,11 @@ export function patchRoutes({ routes, routeComponents }) {
 你可以通过以下方式在路由表的最前面添加一个路由：
 
 ```tsx
-import Page from '@/extraRoutes/foo';
+import Page from "@/extraRoutes/foo";
 
 export function patchClientRoutes({ routes }) {
   routes.unshift({
-    path: '/foo',
+    path: "/foo",
     element: <Page />,
   });
 }
@@ -327,11 +324,11 @@ export function patchClientRoutes({ routes }) {
 你可以使用 `Navigate` 组件在路由表的最前面添加一个重定向路由，示例如下：
 
 ```tsx
-import { Navigate } from 'umi';
+import { Navigate } from "umi";
 
 export const patchClientRoutes = ({ routes }) => {
   routes.unshift({
-    path: '/',
+    path: "/",
     element: <Navigate to="/home" replace />,
   });
 };
@@ -344,15 +341,17 @@ export const patchClientRoutes = ({ routes }) => {
 你可以通过以下方式在路由表中添加一个嵌套路由：
 
 ```tsx
-import Page from '@/extraRoutes/foo';
+import Page from "@/extraRoutes/foo";
 
 export const patchClientRoutes = ({ routes }) => {
   routes.push({
-    path: '/group',
-    children: [{
-      path: '/group/page',
-      element: <Page />,
-    }],
+    path: "/group",
+    children: [
+      {
+        path: "/group/page",
+        element: <Page />,
+      },
+    ],
   });
 };
 ```
@@ -372,7 +371,7 @@ export function patchClientRoutes({ routes }) {
 }
 
 export function render(oldRender) {
-  fetch('/api/routes')
+  fetch("/api/routes")
     .then((res) => res.json())
     .then((res) => {
       extraRoutes = res.routes;
@@ -398,7 +397,7 @@ Sure! Here's an example:
 ```bash
 export function render(oldRender) {
   fetch('/api/auth').then(auth => {
-    if (auth.isLogin) { 
+    if (auth.isLogin) {
       oldRender();
     } else {
       location.href = '/login';

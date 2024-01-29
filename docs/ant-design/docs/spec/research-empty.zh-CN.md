@@ -1,20 +1,18 @@
-## 问题 1: 设计原则中的明确原则是什么？
+## 问题 设计原则中的明确原则是什么？
 
 答案：明确原则是通过使用清晰明了的语言、插画等形式告知用户空状态的具体原因。
 
-## 问题 2: 设计原则中的提供邀请原则是什么？
+### 问题 设计原则中的提供邀请原则是什么？
 
 答案：提供邀请原则是提供帮助文案、建议操作等解决方案，表明在下一个界面可以做什么，引导用户进行操作。
 
 ### 如何展示明确空状态提示？
 
-正确示范如下：<br>
-<img class="preview-img no-padding good" src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*Bh_yRKPOByUAAAAAAAAAAABkARQnAQ" alt="正确示范" description="展示明确空状态提示。">
+正确示范如下：<br> <img class="preview-img no-padding good" src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*Bh_yRKPOByUAAAAAAAAAAABkARQnAQ" alt="正确示范" description="展示明确空状态提示。">
 
 ### 如何避免空状态没有任何提示？
-  
-错误示范如下：<br>
-<img class="preview-img no-padding bad" src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*yiIXR4u8s2wAAAAAAAAAAABkARQnAQ" alt="错误示范" description="空状态没有任何提示。">
+
+错误示范如下：<br> <img class="preview-img no-padding bad" src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*yiIXR4u8s2wAAAAAAAAAAABkARQnAQ" alt="错误示范" description="空状态没有任何提示。">
 
 ### 新手引导中的空状态如何帮助用户？
 
@@ -47,12 +45,14 @@
 ### 如何在前端开发中实现空状态的显示？
 
 在前端开发中，可以通过以下方式实现空状态的显示：
+
 - 使用图形元素：通过在页面中插入相应的图标或图片，来展示空状态，以帮助用户理解当前场景。
 - 提示信息：可以通过文字提示或标语，向用户传达当前页面或应用程序的空状态信息，以便用户理解和作出相应操作。
 
 ### 如何处理空状态下的用户操作？
 
 在处理空状态下的用户操作时，可以考虑以下几点：
+
 - 保持简洁：避免在空状态下进行过多的用户操作引导，以免给用户带来困扰或混淆。
 - 提供反馈：在用户执行操作后，及时给予反馈，以便用户得知他们的操作已经成功执行。
 - 直观明了：设计操作引导时，要保持操作的直观性和明了性，以便用户能够迅速理解并顺利执行。

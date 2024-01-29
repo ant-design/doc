@@ -14,9 +14,7 @@ Umi，中文发音为「乌米」，是可扩展的企业级前端应用框架�
 
 你可以使用 Umi、Ant Design 和 Ant Design Pro 来创建一个简单应用。本文将引导你从 0 开始创建这个应用。
 
-
-
-### 如何使用pnpm创建Umi脚手架？
+### 如何使用 pnpm 创建 Umi 脚手架？
 
 推荐使用 [pnpm](https://pnpm.io/zh/) 创建 Umi 脚手架，执行以下命令。
 
@@ -90,35 +88,47 @@ ready - ║  > Network: http://*********:8000                  ║
 跟着提示点击命令行里的 URL，即可自动打开浏览器，如果成功，将看到项目的初始界面。
 
 ### Umi 路由是如何实现的？
+
 Umi 路由是基于 react-router@6.3 实现的。不过需要注意的是，Umi 并不使用最新的 6.4 版本，因为其中的 loader 和 action 功能对于 Umi 并非必要。
 
 ### 如何创建新的路由？
+
 要创建新的路由，可以通过以下命令进行操作：
+
 ```bash
 $ npx umi g page <routeName>
 ```
+
 这会在 `src/pages` 目录下生成对应的路由文件 `<routeName>.tsx` 和 `<routeName>.less`。
 
 ### 如何配置新建的路由？
+
 在配置文件 `.umirc.ts` 中，需要添加新增的路由声明。在 `routes` 字段中添加对应的路径和组件，如：
+
 ```javascript
 { path: "/products", component: "products" }
 ```
+
 这样就配置了一个路由，路径为 `/products`，使用了 `products` 组件。
 
 ### Umi 支持哪种类型的路由？
+
 Umi 默认使用的是配置式路由，即需要在配置文件中一行行配置路由。可以在 `.umirc.ts` 的 `routes` 字段中添加路由配置。此外，Umi 还支持约定式路由，即文件系统即路由，无需额外配置路由即可生效。
 
 ### 如何在全局布局中添加导航链接到新建的路由？
+
 在 `src/layouts/index.tsx` 文件的全局布局路由中，可以通过添加 `<Link>` 组件来创建导航链接。例如，要添加到 `/products` 路径的导航，可以加入以下代码：
+
 ```jsx
 <li>
   <Link to="/products">Products</Link>
 </li>
 ```
+
 这样在应用中就会显示一个指向 `/products` 路径的导航链接。
 
 ### 如何访问新建的路由？
+
 通过浏览器访问对应的路由路径，例如 `http://localhost:8000/products` 即可访问新建的 `/products` 路由。
 
 以上是关于新建路由的相关信息。
@@ -132,17 +142,17 @@ Umi 默认使用的是配置式路由，即需要在配置文件中一行行配�
 2. 在 `ProductList.tsx` 文件中，导入 React、Button、Popconfirm 和 Table 组件。
 
 ```tsx
-import React from 'react';
-import { Button, Popconfirm, Table } from 'antd';
+import React from "react";
+import { Button, Popconfirm, Table } from "antd";
 ```
 
 3. 定义 `ProductList` 组件，并添加其类型注解。该组件接受一个 `products` 属性和一个 `onDelete` 方法作为参数。
 
 ```tsx
-const ProductList: React.FC<{ products: { name: string }[]; onDelete: (id: string) => void }> = ({
-  onDelete,
-  products,
-}) => {
+const ProductList: React.FC<{
+  products: { name: string }[];
+  onDelete: (id: string) => void;
+}> = ({ onDelete, products }) => {
   // ...
 };
 ```
@@ -152,11 +162,11 @@ const ProductList: React.FC<{ products: { name: string }[]; onDelete: (id: strin
 ```tsx
 const columns = [
   {
-    title: 'Name',
-    dataIndex: 'name',
+    title: "Name",
+    dataIndex: "name",
   },
   {
-    title: 'Actions',
+    title: "Actions",
     render(text, record) {
       return (
         <Popconfirm title="Delete?" onConfirm={() => onDelete(record.id)}>
@@ -198,7 +208,6 @@ export default ProductList;
 
 使用 Mock 数据来模拟 API 接口，让前后端开发能够同时进行，避免前端因为后端 API 还在开发而被阻塞。同时，这也为前端开发提供了更加灵活的调试、测试和开发环境。
 
-
 ### 如何在 Umi 中启用 react-query 插件？
 
 要在 Umi 中启用 react-query 插件，需要进行以下配置：
@@ -232,18 +241,18 @@ export default defineConfig({
 在 Umi 中使用 react-query 拉取数据和进行删除操作的示例代码如下：
 
 ```tsx
-import React from 'react';
-import axios from 'axios';
-import { useMutation, useQuery, useQueryClient } from 'umi';
+import React from "react";
+import axios from "axios";
+import { useMutation, useQuery, useQueryClient } from "umi";
 
-import styles from './products.less';
-import ProductList from '@/components/ProductList';
+import styles from "./products.less";
+import ProductList from "@/components/ProductList";
 
 export default function Page() {
   const queryClient = useQueryClient();
-  const productsQuery = useQuery(['products'], {
+  const productsQuery = useQuery(["products"], {
     queryFn() {
-      return axios.get('/api/products').then((res) => res.data);
+      return axios.get("/api/products").then((res) => res.data);
     },
   });
   const productsDeleteMutation = useMutation({
@@ -251,7 +260,7 @@ export default function Page() {
       return axios.delete(`/api/products/${id}`);
     },
     onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: ['products'] });
+      queryClient.invalidateQueries({ queryKey: ["products"] });
     },
   });
   if (productsQuery.isLoading) return null;
@@ -298,23 +307,23 @@ ProLayout 支持 side、mix、top 三种布局模式，内置了菜单选中、�
 
 以上是关于 ProLayout 的基本介绍，你可以根据这些信息来使用和配置 ProLayout。
 
-## 构建应用的命令是什么?
+### 构建应用的命令是什么?
 
 构建应用的命令是 `npm run build`。
 
-## 构建应用时用到了哪些工具和技术?
+### 构建应用时用到了哪些工具和技术?
 
 构建应用时使用了 Umi 和 Webpack 这两个工具。Umi 是一个可插拔的企业级 react 应用框架，而 Webpack 是一个静态模块打包工具。
 
-## 构建过程中的耗时是多少?
+### 构建过程中的耗时是多少?
 
 构建过程耗时为 5.31 秒。
 
-## 构建后的文件都包含哪些类型?
+### 构建后的文件都包含哪些类型?
 
 构建后的文件包含了 JavaScript, CSS, Web Fonts, 图片和 HTML 文件。
 
-## 构建后的文件存放在哪个目录?
+### 构建后的文件存放在哪个目录?
 
 构建后的文件存放在 `dist/` 目录下。
 
@@ -347,7 +356,7 @@ ProLayout 支持 side、mix、top 三种布局模式，内置了菜单选中、�
 在前端开发中，数据流方案是一种用于管理应用中数据状态的方法。常见的数据流方案有 Redux、Mobx 和 Dva 等。下面简单介绍一下如何使用 Dva 作为数据流方案：
 
 1. 安装 dva：在命令行中执行 npm install dva 或者 yarn add dva，来安装 dva。
- 
+
 2. 创建 model：在 src/models 文件夹中创建一个以 .js 结尾的文件，用于定义应用的数据模型和状态处理逻辑。
 
 3. 修改入口文件：在 src 目录下的 app.js 或者 index.js 文件中，导入并使用 dva 方法来创建应用的实例，并在 dva 方法的参数中配置上一步创建好的 model。

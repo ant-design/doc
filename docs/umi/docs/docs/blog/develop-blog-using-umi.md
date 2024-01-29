@@ -60,7 +60,7 @@ Umi.js 可以与 PlanetScale、Prisma 和 Tailwindcss 等服务和技术进行�
 
 [https://umi-blog-example.vercel.app/login](https://umi-blog-example.vercel.app/login)
 
-## 如何准备 Umi.js 项目的开发环境？
+### 如何准备 Umi.js 项目的开发环境？
 
 要准备 Umi.js 项目的开发环境，你需要执行以下步骤：
 
@@ -70,16 +70,16 @@ Umi.js 可以与 PlanetScale、Prisma 和 Tailwindcss 等服务和技术进行�
 
 准备好开发环境后，你就可以开始开发 Umi.js 项目了！
 
-## 如何快速初始化一个 Umi.js 项目？
+### 如何快速初始化一个 Umi.js 项目？
 
 要快速初始化一个 Umi.js 项目，你可以按照下面的步骤执行：
 
 1. 打开终端或命令行工具，进入到你希望创建项目的目录中。
 2. 使用 Umi.js 脚手架命令创建一个新的项目，命令如下：
 
-   ```
+```tsx
    npx create-umi@2
-   ```
+```
 
 3. 运行上述命令后，会出现一个交互式的命令行界面，根据提示进行选择和输入。你可以选择使用已有的模板或者创建一个新的模板，然后输入项目名称和选择使用的插件等。
 4. 选择完成后，脚手架会自动创建一个新的 Umi.js 项目，并安装相关依赖。
@@ -168,6 +168,7 @@ Umi.js 可以与 PlanetScale、Prisma 和 Tailwindcss 等服务和技术进行�
 2. 在数据库页面上，点击右上角的 "Connect" 按钮。
 3. 在弹出窗口中，选择 "Prisma" 作为连接方式。
 4. 您将获得一个类似下面格式的字符串：
+
 ```dotenv
 DATABASE_URL='mysql://************:************@************.ap-southeast-2.psdb.cloud/umi-blog-example?sslaccept=strict'
 ```
@@ -236,15 +237,15 @@ pnpm i @prisma/client bcryptjs jsonwebtoken
 
 1. 打开终端，并执行以下命令：
 
-   ```shell
+```shell
    npx umi g page login posts/post posts/create
-   ```
+```
 
-   这条命令会根据配置生成 `login.tsx`, `posts/post.tsx`, `posts/create.tsx` 三个页面组件。
+这条命令会根据配置生成 `login.tsx`, `posts/post.tsx`, `posts/create.tsx` 三个页面组件。
 
 2. 生成后的目录结构如下所示：
 
-   ```text
+```text
    src
    ├── assets
    │     └── yay.jpg
@@ -261,7 +262,7 @@ pnpm i @prisma/client bcryptjs jsonwebtoken
            ├── create.tsx
            ├── post.less
            └── post.tsx
-   ```
+```
 
 3. 再次执行 `pnpm dev` 命令，此时项目应该能正常启动。
 
@@ -277,44 +278,45 @@ Umi 项目的路由配置使用`routes`属性，其中每个路由都由`path`�
 
 ### Umi 项目中如何启用插件？
 
-在Umi项目中，可以使用`plugins`配置项来启用插件。
+在 Umi 项目中，可以使用`plugins`配置项来启用插件。
 
 ### 以上配置中的`apiRoute`是用来做什么的？
 
-`apiRoute`配置项用于告诉Umi项目启用API路由功能，并指定API路由的平台。
+`apiRoute`配置项用于告诉 Umi 项目启用 API 路由功能，并指定 API 路由的平台。
 
-### 在部署Umi项目到Vercel时，需要添加哪个配置文件？
+### 在部署 Umi 项目到 Vercel 时，需要添加哪个配置文件？
 
-在部署Umi项目到Vercel时，需要在项目根目录下添加一个`vercel.json`配置文件。
+在部署 Umi 项目到 Vercel 时，需要在项目根目录下添加一个`vercel.json`配置文件。
 
-### 在Umi项目中使用Tailwindcss插件需要进行怎样的配置？
+### 在 Umi 项目中使用 Tailwindcss 插件需要进行怎样的配置？
 
-在Umi项目中使用Tailwindcss插件，需要在`plugins`配置项中添加`@umijs/plugins/dist/tailwindcss`，并在`tailwindcss`配置项中启用该插件。
+在 Umi 项目中使用 Tailwindcss 插件，需要在`plugins`配置项中添加`@umijs/plugins/dist/tailwindcss`，并在`tailwindcss`配置项中启用该插件。
 
-### Umi项目的API路由是如何打包的？
+### Umi 项目的 API 路由是如何打包的？
 
-在使用`umi build`命令进行打包时，Umi项目会根据`apiRoute`配置的平台（例如Vercel）将API路由进行打包。
+在使用`umi build`命令进行打包时，Umi 项目会根据`apiRoute`配置的平台（例如 Vercel）将 API 路由进行打包。
 
-### Umi项目的首页路由是什么？
+### Umi 项目的首页路由是什么？
 
-Umi项目的首页路由是`/`。
+Umi 项目的首页路由是`/`。
 
-### Umi项目中还有哪些页面路由？
+### Umi 项目中还有哪些页面路由？
 
-除了首页路由外，Umi项目中还有以下页面路由：
+除了首页路由外，Umi 项目中还有以下页面路由：
+
 - `/posts/create`: 建立文章
 - `/login`: 登入
 - `/posts/:postId`: 某篇文章
 
-## API 路由的目的是什么？
+### API 路由的目的是什么？
 
 API 路由的目的是将服务端代码以 API 的形式暴露给前端页面调用。这样做的好处是可以将一些无法在浏览器内运行的功能，如用户鉴权、数据库操作等，作为一个服务提供给前端调用。
 
-## 如何在 Umi 4 中启用 API 路由功能？
+### 如何在 Umi 4 中启用 API 路由功能？
 
 要启用 API 路由功能，需要在 `.umirc.ts` 配置文件中进行相应的配置。一旦配置完成，可以在 `src` 目录下创建一个 `api` 目录来进行 API 路由的开发。
 
-## 基于约定式路由的设计，如何为博客的 API 服务提供接口？
+### 基于约定式路由的设计，如何为博客的 API 服务提供接口？
 
 博客的 API 服务可以提供以下接口供用户调用：
 
@@ -326,18 +328,18 @@ API 路由的目的是将服务端代码以 API 的形式暴露给前端页面�
 
 这些接口可以通过在 `src/api` 目录下创建对应的文件来实现，每个文件对应一个 API Handler，用于处理发送到该路径的请求。
 
-## `[postId].ts` 是什么意思？
+### `[postId].ts` 是什么意思？
 
 `[postId].ts` 是一个动态路由的写法，代表该路由可以匹配不同的值。例如，对于 `/api/posts/1` 和 `/api/posts/2` 这两个请求，都会交给 `src/api/posts/[postId].ts` 来处理，但它们的 `req.params` 分别为 `{ postId: 1 }` 和 `{ postId: 2 }`。
 
-## 如何暂时处理尚未实现的 API 路由？
+### 如何暂时处理尚未实现的 API 路由？
 
 暂时处理尚未实现的 API 路由可以在每个 API Handler 文件中导出一个函数，并在函数中返回一个未实现的提示信息。例如，在 API Handler 文件中可以这样写：
 
 ```ts
 import type { UmiApiRequest, UmiApiResponse } from 'umi';
 
-export default async function (req: UmiApiRequest, res: UmiApiResponse) {
+export default async function (re###  UmiApiRequest, res: UmiApiResponse) {
   res.status(400).json({ error: 'This API is not implemented yet.' });
 }
 ```
@@ -347,39 +349,42 @@ export default async function (req: UmiApiRequest, res: UmiApiResponse) {
 ### 文章数据中的什么信息被保存了？
 
 文章数据中保存了以下信息：
-- 文章的ID
+
+- 文章的 ID
 - 文章的标题
-- 作者的ID
+- 作者的 ID
 - 文章的标签
 - 文章封面图片的链接
-- 文章的内容（以markdown格式保存）
+- 文章的内容（以 markdown 格式保存）
 
 ### 文章数据可以用来做什么？
 
 文章数据可以用来完成以下任务：
+
 - 显示文章列表：可以利用文章的标题和封面图片链接来展示文章列表，并提供文章的链接供用户点击查看详细内容。
 - 搜索和过滤文章：可以利用文章的标题和标签信息，对文章进行搜索和过滤，以便用户可以快速找到相关的文章。
 - 查看详细内容：可以点击文章链接，查看文章的详细内容，包括文章的标题、作者、标签和内容等信息。
 
 ### 如何利用文章数据生成文章列表？
 
-可以通过遍历文章数据列表，使用文章的标题和封面图片链接来构建文章列表的每一项。可以使用HTML和CSS来创建文章列表的样式，并且为每个文章项添加链接到文章详情页面。通过动态加载文章数据，可以实现响应式的文章列表，并且可以根据系统需求进行分页和排序等操作。
+可以通过遍历文章数据列表，使用文章的标题和封面图片链接来构建文章列表的每一项。可以使用 HTML 和 CSS 来创建文章列表的样式，并且为每个文章项添加链接到文章详情页面。通过动态加载文章数据，可以实现响应式的文章列表，并且可以根据系统需求进行分页和排序等操作。
 
 ### 如何通过文章数据搜索和过滤文章？
 
-可以通过用户输入的关键字，对文章标题和标签进行搜索和过滤。可以使用JavaScript来实现搜索和过滤的逻辑，并根据搜索结果来动态更新文章列表。可以提供一个搜索框和过滤选项供用户输入和选择，并实时显示符合条件的文章。
+可以通过用户输入的关键字，对文章标题和标签进行搜索和过滤。可以使用 JavaScript 来实现搜索和过滤的逻辑，并根据搜索结果来动态更新文章列表。可以提供一个搜索框和过滤选项供用户输入和选择，并实时显示符合条件的文章。
 
 ### 如何实现文章的详细内容页面？
 
-可以创建一个单独的页面用于显示文章的详细内容。可以利用文章数据中的标题、作者、标签和内容等信息，构建页面的布局和样式。可以使用HTML和CSS来创建文章详情页面，并根据用户选择的文章显示相应的内容。可以通过文章数据的ID来唯一标识每个文章，以便在列表页面点击文章链接时可以跳转到相应的文章详情页面。
+可以创建一个单独的页面用于显示文章的详细内容。可以利用文章数据中的标题、作者、标签和内容等信息，构建页面的布局和样式。可以使用 HTML 和 CSS 来创建文章详情页面，并根据用户选择的文章显示相应的内容。可以通过文章数据的 ID 来唯一标识每个文章，以便在列表页面点击文章链接时可以跳转到相应的文章详情页面。
 
-### 如何处理文章内容的markdown格式？
+### 如何处理文章内容的 markdown 格式？
 
-可以使用第三方的Markdown解析库，将文章内容从markdown格式转换为HTML格式。可以使用JavaScript来调用解析库的API，并将解析后的HTML内容插入到文章详情页面中。通过将markdown格式的文章内容转换为HTML格式，可以保留原始格式的排版和样式，并让文章内容更易读和美观。
+可以使用第三方的 Markdown 解析库，将文章内容从 markdown 格式转换为 HTML 格式。可以使用 JavaScript 来调用解析库的 API，并将解析后的 HTML 内容插入到文章详情页面中。通过将 markdown 格式的文章内容转换为 HTML 格式，可以保留原始格式的排版和样式，并让文章内容更易读和美观。
 
 ### 用户数据的结构是如何设计的？
 
 用户数据的结构由以下字段组成：
+
 - `id`：用户的唯一标识符，用于区分不同的用户。
 - `name`：用户的名称，用于显示用户的真实姓名或昵称。
 - `email`：用户的电子邮箱，用于登录和接收系统通知。
@@ -479,7 +484,7 @@ npx prisma generate
 请参考下面的示例代码：
 
 ```javascript
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
@@ -505,11 +510,11 @@ const updatedPost = await updatePost(id, newData);
 
 通过以上方式，我们可以在 API 路由中使用 Prisma 客户端包来方便地进行数据获取和更新操作。
 
-## API 路由的调用方式是怎样的？
+### API 路由的调用方式是怎样的？
 
 API 路由的调用方式取决于请求的信息，包括请求的路径、请求头和请求体。通过向服务器发送 HTTP 请求，可以调用 API 路由并获取相应的结果。
 
-## 在 API 路由中应该做些什么事情？
+### 在 API 路由中应该做些什么事情？
 
 在 API 路由中，我们可以执行一系列操作，包括但不限于：
 
@@ -521,7 +526,7 @@ API 路由的调用方式取决于请求的信息，包括请求的路径、请�
 
 API 路由的具体实现取决于业务需求，可以根据需要进行适当的扩展和修改。
 
-## API 路由应该返回什么内容？
+### API 路由应该返回什么内容？
 
 API 路由的返回内容由响应的状态码、响应头和响应体组成。通常情况下，API 路由会返回以下信息：
 
@@ -579,9 +584,11 @@ API 路由的返回内容由响应的状态码、响应头和响应体组成。�
 答案：是的，在 [https://github.com/umijs/umi-blog-example/blob/main/src/api/login.ts](https://github.com/umijs/umi-blog-example/blob/main/src/api/login.ts) 可以找到用户登入接口的源代码。
 
 1. 什么时候会发起 `/api/posts` 的 `POST` 请求？
+
    - 当用户想要在我们的博客网站发表一篇文章时。
 
 2. 在哪里可以找到关于 `/api/posts` 的 `POST` 请求的源代码示例？
+
    - 可以在 [https://github.com/umijs/umi-blog-example/blob/main/src/api/posts/index.ts](https://github.com/umijs/umi-blog-example/blob/main/src/api/posts/index.ts) 找到这个示范的源代码。
 
 3. `/api/posts` 的 `POST` 请求有什么作用？
@@ -617,59 +624,59 @@ API 路由的返回内容由响应的状态码、响应头和响应体组成。�
 
 1. 首先，在组件的顶部导入需要的模块和依赖项，并在组件函数内部声明一个状态变量 `posts` 来保存文章列表数据。
 
-   ```jsx
+```jsx
    import React, { useEffect, useState } from 'react';
    import { history } from "umi";
-   
+
    export default function HomePage() {
      const [posts, setPosts] = useState<any[]>();
-     
+
      // ...
    }
-   ```
+```
 
 2. 然后，添加一个 `useEffect` 钩子函数，在组件加载后触发该函数。在该函数内部调用 API 路由来获取文章列表数据。
 
-   ```jsx
-   useEffect(() => {
-     async function fetchPosts() {
-       try {
-         const res = await fetch('/api/posts');
-         if (res.status !== 200) {
-           console.error(await res.text());
-         }
-         setPosts(await res.json());
-       } catch (err) {
-         console.error(err);
-       }
-     }
-     
-     fetchPosts();
-   }, []);
-   ```
+```jsx
+useEffect(() => {
+  async function fetchPosts() {
+    try {
+      const res = await fetch("/api/posts");
+      if (res.status !== 200) {
+        console.error(await res.text());
+      }
+      setPosts(await res.json());
+    } catch (err) {
+      console.error(err);
+    }
+  }
 
-   这里使用了 `fetch` 函数来发送异步请求，并根据返回的状态码判断是否请求成功。如果请求成功，将返回的 JSON 数据赋值给 `posts` 变量。
+  fetchPosts();
+}, []);
+```
+
+这里使用了 `fetch` 函数来发送异步请求，并根据返回的状态码判断是否请求成功。如果请求成功，将返回的 JSON 数据赋值给 `posts` 变量。
 
 3. 最后，在组件的返回部分渲染文章列表数据。通过条件渲染，当 `posts` 变量有值时，渲染文章列表；当 `posts` 变量为空时，显示 "Loading..."。
 
-   ```jsx
-   return (
-     <div>
-       {!posts && <p>Loading...</p>}
-       {posts && (
-         <div>
-           {posts.map((post) => (
-             <div key={post.id}>
-               <div onClick={() => history.push(`/posts/${post.id}`)}>
-                 <p>{post.title}</p>
-               </div>
-             </div>
-           ))}
-         </div>
-       )}
-     </div>
-   );
-   ```
+```jsx
+return (
+  <div>
+    {!posts && <p>Loading...</p>}
+    {posts && (
+      <div>
+        {posts.map((post) => (
+          <div key={post.id}>
+            <div onClick={() => history.push(`/posts/${post.id}`)}>
+              <p>{post.title}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+);
+```
 
 通过以上步骤，你就可以在页面组件中调用 API 来获取文章列表并进行渲染了。
 
@@ -679,31 +686,27 @@ API 路由的返回内容由响应的状态码、响应头和响应体组成。�
 
 1. 首先，可以在组件函数的顶部导入所需的样式文件或模块。
 
-   ```jsx
-   import styles from './HomePage.module.css';
-   ```
+```jsx
+import styles from "./HomePage.module.css";
+```
 
 2. 然后，可以在组件的返回部分的 JSX 标签上添加样式类名。
 
-   ```jsx
-   return (
-     <div className={styles.container}>
-       {/* 组件内容 */}
-     </div>
-   );
-   ```
+```jsx
+return <div className={styles.container}>{/* 组件内容 */}</div>;
+```
 
-   这里使用了 `className` 属性来指定要应用的样式类名，`styles.container` 表示从导入的样式文件或模块中获取名为 `container` 的样式类。
+这里使用了 `className` 属性来指定要应用的样式类名，`styles.container` 表示从导入的样式文件或模块中获取名为 `container` 的样式类。
 
 3. 最后，可以在样式文件或模块中定义相应的样式规则。
 
-   ```css
-   .container {
-     /* 样式规则 */
-   }
-   ```
+```css
+.container {
+  /* 样式规则 */
+}
+```
 
-   在样式规则中，可以应用各种样式属性和值来实现所需的设计效果。
+在样式规则中，可以应用各种样式属性和值来实现所需的设计效果。
 
 通过以上步骤，你可以为页面组件添加样式，并实现自己的设计效果。
 
@@ -713,21 +716,21 @@ API 路由的返回内容由响应的状态码、响应头和响应体组成。�
 
 1. 首先，在组件的顶部导入 `history` 模块或依赖项。
 
-   ```jsx
-   import { history } from 'umi';
-   ```
+```jsx
+import { history } from "umi";
+```
 
 2. 然后，在渲染文章标题的部分添加一个点击事件处理函数，该函数使用 `history.push()` 方法来实现页面跳转。
 
-   ```jsx
-   <div onClick={() => history.push(`/posts/${post.id}`)}>
-     <p>{post.title}</p>
-   </div>
-   ```
+```jsx
+<div onClick={() => history.push(`/posts/${post.id}`)}>
+  <p>{post.title}</p>
+</div>
+```
 
-   这里使用了 `onClick` 属性，将一个匿名箭头函数赋值给它，函数内部调用 `history.push()` 方法来跳转到指定的路径。
+这里使用了 `onClick` 属性，将一个匿名箭头函数赋值给它，函数内部调用 `history.push()` 方法来跳转到指定的路径。
 
-   注意，在 `history.push()` 方法中使用了模板字符串和文章的 `id` 来构建目标路径。
+注意，在 `history.push()` 方法中使用了模板字符串和文章的 `id` 来构建目标路径。
 
 通过以上步骤，你可以通过点击文章标题来实现页面跳转到对应文章的详情页。
 

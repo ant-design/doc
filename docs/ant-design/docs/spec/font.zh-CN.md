@@ -1,34 +1,22 @@
 ### 字体家族
 
-Q: 字体家族在界面设计中的作用是什么？
-A: 字体家族在界面设计中起到定义字体风格和特征的作用。不同的字体家族具有不同的视觉效果和情感传递，能够影响用户对界面的感受和理解。
+### 字体家族在界面设计中的作用是什么？ 字体家族在界面设计中起到定义字体风格和特征的作用。不同的字体家族具有不同的视觉效果和情感传递，能够影响用户对界面的感受和理解。
 
-Q: Ant Design 字体方案是如何选择字体家族的？
-A: Ant Design 字体方案是基于「动态秩序」的设计原则，结合了自然对数以及音律的规则来选择字体家族。经过大量的蚂蚁中后台产品验证后，推荐给大家使用。
-
----
+### Ant Design 字体方案是如何选择字体家族的？ Ant Design 字体方案是基于「动态秩序」的设计原则，结合了自然对数以及音律的规则来选择字体家族。经过大量的蚂蚁中后台产品验证后，推荐给大家使用。
 
 ### 主字体
 
-Q: 主字体在界面设计中的作用是什么？
-A: 主字体是在界面中用于展示核心内容的字体，起到突出和引导用户注意力的作用。通过统一的主字体风格，可以提升用户的阅读体验和界面的整体协调性。
+### 主字体在界面设计中的作用是什么？ 主字体是在界面中用于展示核心内容的字体，起到突出和引导用户注意力的作用。通过统一的主字体风格，可以提升用户的阅读体验和界面的整体协调性。
 
-Q: Ant Design 的主字体是什么？
-A: Ant Design 在中后台视觉体系中定义的主字体是基于动态秩序的设计原则，并经过大量验证的字体方案。
-
----
+### Ant Design 的主字体是什么？ Ant Design 在中后台视觉体系中定义的主字体是基于动态秩序的设计原则，并经过大量验证的字体方案。
 
 ### 字阶与行高
 
-Q: 字阶和行高在界面设计中的作用是什么？
-A: 字阶和行高是为了调整界面文字的大小和行间距，以提升用户的阅读体验和可读性。通过合理的字阶和行高设置，可以使文字更易于辨认和理解。
+### 字阶和行高在界面设计中的作用是什么？ 字阶和行高是为了调整界面文字的大小和行间距，以提升用户的阅读体验和可读性。通过合理的字阶和行高设置，可以使文字更易于辨认和理解。
 
-Q: Ant Design 的字阶与行高如何定义和选择？
-A: Ant Design 根据自然对数的规律和音律的规则来定义字阶和行高，经过大量的验证和调整，以保证整体的视觉效果和用户的阅读舒适度。
+### Ant Design 的字阶与行高如何定义和选择？ Ant Design 根据自然对数的规律和音律的规则来定义字阶和行高，经过大量的验证和调整，以保证整体的视觉效果和用户的阅读舒适度。
 
----
-
-这些 QA 文档基于原始文本信息生成，简洁精确地回答了与字体相关的问题，包括字体家族、主字体以及字阶与行高的作用和选择。
+这些 文档基于原始文本信息生成，简洁精确地回答了与字体相关的问题，包括字体家族、主字体以及字阶与行高的作用和选择。
 
 ### Ant Design 的字体家族选择原则是什么？
 
@@ -39,7 +27,9 @@ Ant Design 的字体家族选择原则是优先使用系统默认的界面字体
 Ant Design 中提供的字体家族如下：
 
 ```css
-@font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 ```
 
 这个字体家族的选择参考了《Using System UI Fonts In Web Design: A Practical Guide》和《How GitHub uses font-family》两篇文章。
@@ -77,16 +67,21 @@ Ant Design 受到 5 音阶以及自然律的启发，定义了 10 个不同尺�
 在 Ant Design 的视觉体系中，我们建议的主要字体为 14，与之对应的行高为 22。其余的字阶的选择可根据具体情况进行自由的定义。根据我们的经验，建议在一个系统设计中（展示型页面除外），字阶的选择尽量控制在 3-5 种之间，保持克制的原则。这样可以确保界面的一致性和美观性。
 
 ### 字重的选择基于哪些原则？
+
 字重的选择基于秩序、稳定和克制的原则。在大多数情况下，只会使用 regular 和 medium 两种字体重量，分别对应代码中的 400 和 500。只有在英文字体需要加粗的情况下，才会采用 semibold 的字体重量，对应代码中的 600。
 
 ### 字重的类名和对应的代码值是什么？
+
 在代码中，字重的类名和相应的代码值对应如下：
+
 - regular：400
 - medium：500
 - semibold：600
 
 ### 字重样式示例
+
 下面是字重样式的示例图：
+
 - Regular 字重样式：<img src="https://gw.alipayobjects.com/zos/rmsportal/orIVrEOZIpjMbqZGiXEi.png" />
 - Medium 字重样式：<img src="https://gw.alipayobjects.com/zos/rmsportal/sasWhUzTGjlZKftukraH.png" />
 - Semibold 字重样式：<img src="https://gw.alipayobjects.com/zos/rmsportal/QqxifAZlISrSUwnlonyx.png" />

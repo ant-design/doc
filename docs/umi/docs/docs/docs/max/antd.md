@@ -18,7 +18,7 @@ Ant Design 5.x 的主题定制可以通过 `configProvider.theme` 配置项来�
 2. 通过使用 babel-plugin-import 插件，能够对 Ant Design 进行按需编译，以减少打包体积。
 3. 在使用 antd@4 时，可以通过一键切换为暗色主题。
 
-此外，根据上述信息，可以生成以下 3 个 QA 文档的例子：
+此外，根据上述信息，可以生成以下 3 个 文档的例子：
 
 ### Ant Design 5.x 的 CSS 变量模式如何使用
 
@@ -105,8 +105,8 @@ Ant Design 的 styleProvider 配置项是用于配置 StyleProvider 组件的对
 下面是一个示例代码：
 
 ```tsx
-import { Layout, Space, Button, version, theme, MappingAlgorithm } from 'antd';
-import { useAntdConfig, useAntdConfigSetter } from 'umi';
+import { Layout, Space, Button, version, theme, MappingAlgorithm } from "antd";
+import { useAntdConfig, useAntdConfigSetter } from "umi";
 const { darkAlgorithm, defaultAlgorithm } = theme;
 
 export default function Page() {

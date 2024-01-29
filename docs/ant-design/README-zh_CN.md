@@ -37,22 +37,18 @@ Ant Design 提供了基于 CSS-in-JS 的主题定制能力。开发者可以通�
 
 ### 🖥 兼容环境
 
-- 什么是兼容环境？
-兼容环境指的是能够正确显示和运行网页或应用程序的设备和浏览器。
+- 什么是兼容环境？兼容环境指的是能够正确显示和运行网页或应用程序的设备和浏览器。
 
-- 哪些浏览器兼容 Ant Design 5.x 的 CSS 变量模式？
-Ant Design 5.x 的 CSS 变量模式兼容以下浏览器：
+- 哪些浏览器兼容 Ant Design 5.x 的 CSS 变量模式？ Ant Design 5.x 的 CSS 变量模式兼容以下浏览器：
 - Edge (最新的两个版本)
 - Firefox (最新的两个版本)
 - Chrome (最新的两个版本)
 - Safari (最新的两个版本)
 - Electron (最新的两个版本)
 
-- 是否支持服务端渲染？
-是的，Ant Design 5.x 的 CSS 变量模式支持服务端渲染。
+- 是否支持服务端渲染？是的，Ant Design 5.x 的 CSS 变量模式支持服务端渲染。
 
-- 是否支持 Electron？
-是的，Ant Design 5.x 的 CSS 变量模式支持 Electron 环境。
+- 是否支持 Electron？是的，Ant Design 5.x 的 CSS 变量模式支持 Electron 环境。
 
 以上就是 Ant Design 5.x 的 CSS 变量模式的兼容环境信息。
 
@@ -111,8 +107,8 @@ export default App;
 要在 React 中使用 Ant Design 的按钮组件和日期选择器组件，你可以参考以下示例代码：
 
 ```tsx
-import React from 'react';
-import { Button, DatePicker } from 'antd';
+import React from "react";
+import { Button, DatePicker } from "antd";
 
 const App = () => (
   <>
@@ -230,7 +226,7 @@ $ npm start
 
 请尽可能在问题描述中提供清晰的细节和相关的代码，这将有助于其他开发者更好地理解和回答您的问题。
 
-## Ant Design 赞助者
+### Ant Design 赞助者
 
 Ant Design 是一个受欢迎的前端 UI 组件库，得到了许多热心用户和赞助者的支持。以下是 Ant Design 的赞助者信息：
 
@@ -240,7 +236,7 @@ Ant Design 是一个受欢迎的前端 UI 组件库，得到了许多热心用�
 
 感谢所有赞助者对 Ant Design 的支持！
 
-## Ant Design 赞助者信息
+### Ant Design 赞助者信息
 
 Ant Design 是一个受欢迎的前端 UI 组件库，得到了许多热心用户和赞助者的支持。以下是 Ant Design 的赞助者信息：
 
@@ -250,7 +246,7 @@ Ant Design 是一个受欢迎的前端 UI 组件库，得到了许多热心用�
 
 如果您对 Ant Design 感兴趣，欢迎成为我们的赞助者！
 
-## Ant Design 赞助者支持
+### Ant Design 赞助者支持
 
 Ant Design 是一个受欢迎的前端 UI 组件库，得到了许多热心用户和赞助者的支持。以下是 Ant Design 的赞助者信息：
 

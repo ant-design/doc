@@ -17,7 +17,7 @@
 2. 在 umi 配置文件中（通常是.umirc.ts 或者 config/config.ts），配置 Module Federation 插件：
 
 ```typescript
-import { defineConfig } from 'umi';
+import { defineConfig } from "umi";
 
 export default defineConfig({
   // ...其他配置
@@ -35,8 +35,8 @@ $ yarn add @umijs/plugin-mf
 
 ```typescript
 // 子应用的 umi 配置文件中
-import { defineConfig } from 'umi';
-import { mfPlugin } from '@umijs/plugin-mf';
+import { defineConfig } from "umi";
+import { mfPlugin } from "@umijs/plugin-mf";
 
 export default defineConfig({
   // ...其他配置
@@ -45,7 +45,7 @@ export default defineConfig({
   runtimePublicPath: true,
   // 子应用的入口文件
   targets: {
-    child: { entry: 'http://localhost:8001' },
+    child: { entry: "http://localhost:8001" },
   },
   // 暴露子应用的模块
   exportStatic: {
@@ -64,14 +64,14 @@ export default defineConfig({
 
 ```ts
 // .umirc.ts
-import { defineConfig } from '@umijs/max';
+import { defineConfig } from "@umijs/max";
 
 const shared = {
   react: {
     singleton: true,
     eager: true,
   },
-  'react-dom': {
+  "react-dom": {
     singleton: true,
     eager: true,
   },
@@ -81,9 +81,9 @@ export default defineConfig({
   mf: {
     remotes: [
       {
-        aliasName: 'mfNameAlias',
-        name: 'theMfName',
-        entry: 'https://to.the.remote.com/remote.js',
+        aliasName: "mfNameAlias",
+        name: "theMfName",
+        entry: "https://to.the.remote.com/remote.js",
       },
     ],
 
@@ -98,27 +98,27 @@ export default defineConfig({
 
 ```ts
 // .umirc.ts
-import { defineConfig } from 'umi';
+import { defineConfig } from "umi";
 
 const shared = {
   react: {
     singleton: true,
     eager: true,
   },
-  'react-dom': {
+  "react-dom": {
     singleton: true,
     eager: true,
   },
 };
 
 export default defineConfig({
-  plugins: ['@umijs/plugins/dist/mf'],
+  plugins: ["@umijs/plugins/dist/mf"],
   mf: {
     remotes: [
       {
-        aliasName: 'mfNameAlias',
-        name: 'theMfName',
-        entry: 'https://to.the.remote.com/remote.js',
+        aliasName: "mfNameAlias",
+        name: "theMfName",
+        entry: "https://to.the.remote.com/remote.js",
       },
     ],
 
@@ -138,7 +138,7 @@ export default defineConfig({
 ```ts
 // .umirc.ts
 // 提取变量是为了和 MFSU 配合使用保持配置一致
-const remoteMFName = 'remoteMFName';
+const remoteMFName = "remoteMFName";
 
 defineConfig({
   mf: {
@@ -218,13 +218,13 @@ safeMfImport(moduleSpecifier: string, fallback: any): Promise<any>
 首先，我们需要从 `@umijs/max` 模块中导入 `safeMfImport` 函数：
 
 ```ts
-import { safeMfImport } from '@umijs/max';
+import { safeMfImport } from "@umijs/max";
 ```
 
 然后，我们还需要导入 `React` 的相关模块：
 
 ```ts
-import React, { Suspense } from 'react';
+import React, { Suspense } from "react";
 ```
 
 #### 使用`safeMfImport`进行懒加载
@@ -233,7 +233,7 @@ import React, { Suspense } from 'react';
 
 ```ts
 const RemoteCounter = React.lazy(() => {
-  return safeMfImport('remoteCounter/Counter', { default: () => 'Fallback' });
+  return safeMfImport("remoteCounter/Counter", { default: () => "Fallback" });
 });
 ```
 
@@ -311,9 +311,9 @@ export default function Page() {
 ```ts
 const RemoteCounter = React.lazy(() => {
   return rawMfImport({
-    entry: 'http://localhost:8001/remote.js',
-    moduleName: 'Counter',
-    remoteName: 'remoteCounter',
+    entry: "http://localhost:8001/remote.js",
+    moduleName: "Counter",
+    remoteName: "remoteCounter",
   });
 });
 ```
@@ -382,13 +382,13 @@ registerMfRemote (opts: MFModuleRegisterRequest): void
 
 ```ts
 registerMfRemote({
-  aliasName: 'registered',
-  remoteName: 'remoteCounter',
-  entry: 'http://127.0.0.1:8001/remote.js',
+  aliasName: "registered",
+  remoteName: "remoteCounter",
+  entry: "http://127.0.0.1:8001/remote.js",
 });
 
 const RemoteCounter = React.lazy(() => {
-  return safeMfImport('registered/Counter', { default: null });
+  return safeMfImport("registered/Counter", { default: null });
 });
 ```
 
@@ -410,16 +410,16 @@ Module Federation 插件和 MFSU 可以一起使用，下面是它们的原理�
 // .umirc.ts
 export default defineConfig({
   mf: {
-    name: 'remoteMFName',
+    name: "remoteMFName",
     remotes: [
       {
-        name: 'remote1',
-        entry: 'https://to.the.remote.com/remote.js',
+        name: "remote1",
+        entry: "https://to.the.remote.com/remote.js",
       },
       {
-        aliasName: 'aliasRemote',
-        name: 'remote2',
-        entry: 'https://to.the.remote.com/remote2.js',
+        aliasName: "aliasRemote",
+        name: "remote2",
+        entry: "https://to.the.remote.com/remote2.js",
       },
     ],
     shared: {
@@ -427,7 +427,7 @@ export default defineConfig({
         singleton: true,
         eager: true,
       },
-      'react-dom': {
+      "react-dom": {
         singleton: true,
         eager: true,
       },

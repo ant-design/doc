@@ -2,13 +2,13 @@
 
 StepsForm 是一个分步表单组件，通过使用 Provider 来管理子表单的数据。每个子表单都是完整的数据，在 StepsForm 组合成最后的数据。该组件还自带一个进度条和一些管理进度条的相关 API。
 
-## StepsForm 继承自哪个组件？它有什么功能？
+### StepsForm 继承自哪个组件？它有什么功能？
 
 StepsForm 继承自 Form.Provider 组件。可以查看[这里](https://ant.design/components/form-cn/#Form.Provider)了解更多关于 Form.Provider 组件的信息。
 
 StepsForm 还提供了转化 moment 值的功能，这是由 ProForm 提供的功能。因此，在 `onFormFinish` 和 `onFormChange` 事件中，所传递的值都是未经转化的值。你可以使用这些值进行进一步处理或操作。
 
-## StepsForm 如何管理进度条？
+### StepsForm 如何管理进度条？
 
 StepsForm 自带了一个进度条，以帮助用户了解当前分步表单的进度。此外，StepsForm 还提供了一些管理进度条的相关 API，你可以使用这些 API 来控制进度条的显示和行为。具体的管理进度条的相关 API 可以在官方文档中找到。
 

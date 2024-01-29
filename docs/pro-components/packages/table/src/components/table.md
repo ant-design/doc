@@ -23,14 +23,14 @@ TechUI Studio 是一个可视化配置生成初始代码的工具。如果您是
       current: number;
     },
     sort,
-    filter,
+    filter
   ) => {
     const msg = await myQuery({
       page: params.current,
       pageSize: params.pageSize,
     });
     return {
-      data: msg.result,
+      datmsg.result,
       success: true,
       total: 100,
     };
@@ -56,7 +56,7 @@ async (
     pageSize: params.pageSize,
   });
   return {
-    data: msg.result,
+    datmsg.result,
     success: true,
     total: 100,
 };
@@ -90,7 +90,7 @@ async (
 
 描述：对通过 `request` 获取的数据进行处理
 
-类型：`(data: T[]) => T[]`
+类型：`(datT[]) => T[]`
 
 默认值：-
 
@@ -376,35 +376,33 @@ A2：position 属性可以取值为 "top" 或者 "bottom"，用于指定新增�
 
 A3：是的，除了 record 和 position 属性之外，RecordCreator 组件还可以传递 antd 的 ButtonProps 属性，具体可以参考 [ButtonProps](https://ant.design/components/button-cn/#API) 的文档。
 
-问题1：
 #### ColumnStateType 的 defaultValue 属性是什么类型的?
 
-答案1：
-defaultValue 属性的类型是 `Record<string, ColumnsState>`。
+答案 1： defaultValue 属性的类型是 `Record<string, ColumnsState>`。
 
-问题2：
+问题 2：
+
 #### ColumnStateType 的 value 属性是什么类型的?
 
-答案2：
-value 属性的类型是 `Record<string, ColumnsState>`。
+答案 2： value 属性的类型是 `Record<string, ColumnsState>`。
 
-问题3：
+问题 3：
+
 #### ColumnStateType 的 onChange 属性是什么类型的?
 
-答案3：
-onChange 属性的类型是 `(value:Record<string, ColumnsState>)=>void`。
+答案 3： onChange 属性的类型是 `(value:Record<string, ColumnsState>)=>void`。
 
-问题4：
+问题 4：
+
 #### ColumnStateType 的 persistenceKey 属性是什么类型的?
 
-答案4：
-persistenceKey 属性的类型是 `string | number`。
+答案 4： persistenceKey 属性的类型是 `string | number`。
 
-问题5：
+问题 5：
+
 #### ColumnStateType 的 persistenceType 属性是什么类型的?
 
-答案5：
-persistenceType 属性的类型是 `localStorage | sessionStorage`。
+答案 5： persistenceType 属性的类型是 `localStorage | sessionStorage`。
 
 1. 什么是 Search 搜索表单？
 
@@ -441,13 +439,14 @@ Search 搜索表单的默认配置为：
 - defaultCollapsed: `true`
 - showHiddenNum: `false`
 
-#### 问题 1: 菜单栏 options 配置中的 OptionsType 是什么类型？
+#### 问题 菜单栏 options 配置中的 OptionsType 是什么类型？
 
-答案 1: OptionsType 是一个联合类型，可以是一个回调函数、一个布尔值或者是两者的组合。
+答案 OptionsType 是一个联合类型，可以是一个回调函数、一个布尔值或者是两者的组合。
 
-#### 问题 2: 菜单栏 options 配置中的 OptionConfig 的属性有哪些？
+#### 问题 菜单栏 options 配置中的 OptionConfig 的属性有哪些？
 
-答案 2: OptionConfig 中有以下属性：
+答案 OptionConfig 中有以下属性：
+
 - density: 一个布尔值，用于配置密度选项。
 - fullScreen: 一个 OptionsType 类型，用于配置全屏选项。
 - reload: 一个 OptionsType 类型，用于配置刷新选项。
@@ -456,15 +455,16 @@ Search 搜索表单的默认配置为：
 - reloadIcon: 一个 React 组件，用于自定义刷新图标。
 - densityIcon: 一个 React 组件，用于自定义密度图标。
 
-#### 问题 3: 菜单栏 options 配置中的 SettingOptionType 的属性有哪些？
+#### 问题 菜单栏 options 配置中的 SettingOptionType 的属性有哪些？
 
-答案 3: SettingOptionType 中有以下属性：
+答案 SettingOptionType 中有以下属性：
+
 - draggable: 一个布尔值，用于配置设置面板是否可拖拽。
 - checkable: 一个布尔值，用于配置列表项是否可勾选。
 - showListItemOption: 一个布尔值，用于配置是否显示列表项的选项。
 - checkedReset: 一个布尔值，用于配置是否在重置时取消勾选。
 - listsHeight: 一个数字，用于配置列表的高度。
-- extra: 一个 React 组件，用于自定义额外的内容。
+- extr 一个 React 组件，用于自定义额外的内容。
 - children: 一个 React 组件，用于自定义子元素。
 - settingIcon: 一个 React 组件，用于自定义设置图标。
 
@@ -495,8 +495,8 @@ ActionRef 提供了以下操作方法：
 要使用 ActionRef，首先需要创建一个 ref 对象，然后将其传递给 ProTable 组件的 actionRef 属性，示例代码如下：
 
 ```tsx | pure
-import React, { useRef } from 'react';
-import { ProTable } from 'antd';
+import React, { useRef } from "react";
+import { ProTable } from "antd";
 
 interface ActionType {
   reload: (resetPageIndex?: boolean) => void;
@@ -510,9 +510,7 @@ interface ActionType {
 const MyComponent: React.FC = () => {
   const ref = useRef<ActionType>();
 
-  return (
-    <ProTable actionRef={ref} />
-  );
+  return <ProTable actionRef={ref} />;
 };
 ```
 
@@ -610,7 +608,7 @@ const MyComponent: React.FC = () => {
 
 ### Columns 列定义 - colSize 属性
 
-- 描述：一个表单项占用的格子数量，占比= colSize * span，colSize 默认为 1，span 为 8，span 是 form={{span:8}} 全局设置的。
+- 描述：一个表单项占用的格子数量，占比= colSize \* span，colSize 默认为 1，span 为 8，span 是 form={{span:8}} 全局设置的。
 - 类型：`number`。
 - 默认值：无。
 
@@ -697,9 +695,11 @@ ProTable 根据列的配置自动生成一个表单，用于筛选列表数据�
 下面是一个示例：
 
 ```jsx
-<ProTable request={(params, sort, filter) => {
-  // 在这里使用参数来发起查询请求
-}} />
+<ProTable
+  request={(params, sort, filter) => {
+    // 在这里使用参数来发起查询请求
+  }}
+/>
 ```
 
 按照规范，表单不需要任何必选参数，当用户点击搜索或重置时，会自动触发 `request` 来发起查询。
@@ -731,50 +731,54 @@ ProTable 根据列的配置自动生成搜索表单，具体实现如下：
 
 通过以上配置，你可以灵活地定制 ProTable 的搜索表单项，满足不同查询需求。
 
-## QA 1
+### 1
 
-**问题：** 什么是 ListToolBarProps？
+### 什么是 ListToolBarProps？
 
-**回答：** ListToolBarProps 是用于列表和表格的工具栏配置属性。它包含了一系列参数，用于设置工具栏的标题、子标题、tooltip 描述、查询区、操作区、设置区、过滤区等。其中一些参数还可以以 ReactNode 或特定类型作为值。比如，search 参数可以是 ReactNode 类型或 SearchProps 类型。而 tabs 参数仅在 multipleLine 参数为 true 时有效，并配置标签页的相关信息。
+ListToolBarProps 是用于列表和表格的工具栏配置属性。它包含了一系列参数，用于设置工具栏的标题、子标题、tooltip 描述、查询区、操作区、设置区、过滤区等。其中一些参数还可以以 ReactNode 或特定类型作为值。比如，search 参数可以是 ReactNode 类型或 SearchProps 类型。而 tabs 参数仅在 multipleLine 参数为 true 时有效，并配置标签页的相关信息。
 
-## QA 2
+### 2
 
-**问题：** ListToolBarProps 中的参数 title 是什么意思？
+### ListToolBarProps 中的参数 title 是什么意思？
 
-**回答：** ListToolBarProps 中的参数 title 是用于设置工具栏的标题。它的类型为 ReactNode，可以是一个 React 组件、字符串或其他可以渲染为 React 组件的类型。默认值为 `-`。
+ListToolBarProps 中的参数 title 是用于设置工具栏的标题。它的类型为 ReactNode，可以是一个 React 组件、字符串或其他可以渲染为 React 组件的类型。默认值为 `-`。
 
-## QA 3
+### 3
 
-**问题：** ListToolBarProps 中的参数 filter 通常用于什么？需要和哪个组件配合使用？
+### ListToolBarProps 中的参数 filter 通常用于什么？需要和哪个组件配合使用？
 
-**回答：** ListToolBarProps 中的参数 filter 用于设置工具栏的过滤区，通常配合 `LightFilter` 组件一起使用。它的类型为 ReactNode，可以是一个 React 组件、字符串或其他可以渲染为 React 组件的类型。
+ListToolBarProps 中的参数 filter 用于设置工具栏的过滤区，通常配合 `LightFilter` 组件一起使用。它的类型为 ReactNode，可以是一个 React 组件、字符串或其他可以渲染为 React 组件的类型。
 
 ### Setting 参数中的 icon 是什么类型的值？
 
 icon 参数是一个 ReactNode 类型的值。
 
-#### Q: ListToolBarMenu 支持哪些类型的菜单展示方式？
+### ListToolBarMenu 支持哪些类型的菜单展示方式？
 
-A: ListToolBarMenu 支持以下类型的菜单展示方式：
+ListToolBarMenu 支持以下类型的菜单展示方式：
+
 - `inline`：内联展示
 - `dropdown`：下拉展示
 - `tab`：标签页展示
 
-#### Q: ListToolBarMenu 的默认展示方式是什么？
+### ListToolBarMenu 的默认展示方式是什么？
 
-A: ListToolBarMenu 的默认展示方式是 `inline`。
+ListToolBarMenu 的默认展示方式是 `inline`。
 
-#### Q: 如何切换 ListToolBarMenu 的菜单？
+### 如何切换 ListToolBarMenu 的菜单？
 
-A: 可以通过调用 `onChange` 方法来切换 ListToolBarMenu 的菜单，`onChange` 方法接收一个参数 `activeKey`，表示当前选中的菜单项的值。
+可以通过调用 `onChange` 方法来切换 ListToolBarMenu 的菜单，`onChange` 方法接收一个参数 `activeKey`，表示当前选中的菜单项的值。
 
-#### 问题：ListToolBarTabs 组件的参数 activeKey 有什么作用？
+#ListToolBarTabs 组件的参数 activeKey 有什么作用？
+
 答案：activeKey 是 ListToolBarTabs 组件的当前选中项，可以通过设置 activeKey 的值来默认选中对应的菜单项。
 
-#### 问题：ListToolBarTabs 组件的参数 items 是什么类型？
+#ListToolBarTabs 组件的参数 items 是什么类型？
+
 答案：items 是 ListToolBarTabs 组件的菜单项，类型为一个数组，数组的每个元素是一个对象，包含 key 和 tab 两个属性，key 为字符串类型，tab 为 ReactNode 类型。
 
-#### 问题：ListToolBarTabs 组件的参数 onChange 是用来做什么的？
+#ListToolBarTabs 组件的参数 onChange 是用来做什么的？
+
 答案：onChange 是 ListToolBarTabs 组件的切换菜单的回调函数，当菜单项被切换时，会触发 onChange 函数，可以在 onChange 函数中执行一些操作或者更新状态。onChange 函数的参数是 activeKey，表示切换后的菜单项的 key 值。
 
 #### TableDropdown 组件的参数 key 是什么类型的？

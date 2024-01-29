@@ -1,16 +1,22 @@
 ### 如何下载 Ant Design 的 Sketch 组件包？
+
 Ant Design 的 Sketch 组件包可以通过以下链接进行下载：
+
 - [https://github.com/ant-design/ant-design/releases/download/resource/Ant.Design.Components.5.0.Beta.sketch](https://github.com/ant-design/ant-design/releases/download/resource/Ant.Design.Components.5.0.Beta.sketch)
 
 ### 如何下载 Ant Design Mobile 组件的 Sketch 模板？
+
 Ant Design Mobile 组件的 Sketch 模板可以通过以下链接进行下载：
+
 - [https://gw.alipayobjects.com/os/bmw-prod/d6266aef-25b7-4892-b275-ce214121831c.sketch](https://gw.alipayobjects.com/os/bmw-prod/d6266aef-25b7-4892-b275-ce214121831c.sketch)
 
 ### 如何下载 Ant Design Pro 的典型页面和通用业务模板？
+
 Ant Design Pro 的典型页面和通用业务模板可以通过以下链接进行下载：
+
 - [https://gw.alipayobjects.com/os/bmw-prod/22208f9d-f8c5-4d7c-b87a-fec290e96527.sketch](https://gw.alipayobjects.com/os/bmw-prod/22208f9d-f8c5-4d7c-b87a-fec290e96527.sketch)
 
-## QA 1: 了解 Ant Design 设计体系背后的故事
+### 了解 Ant Design 设计体系背后的故事
 
 Ant Design 是一套优秀的设计体系，你想要了解它背后的故事吗？我为你找到了一篇文章，希望对你有所帮助：
 
@@ -18,7 +24,7 @@ Ant Design 是一套优秀的设计体系，你想要了解它背后的故事吗
 
 这篇文章会让你更好地理解 Ant Design 设计体系的起源和发展，以及它在前端开发中的应用和意义。希望你会喜欢！
 
-## QA 2: 如何更好地应用 Ant Design？
+### 如何更好地应用 Ant Design？
 
 你想要知道如何更好地应用 Ant Design 吗？下面是一篇文章，可以帮助你进行学习和实践：
 
@@ -26,7 +32,7 @@ Ant Design 是一套优秀的设计体系，你想要了解它背后的故事吗
 
 这篇文章介绍了 Ant Design 的基本使用方法，包括组件的引入和配置，以及常用的设计模式和技巧。通过阅读这篇文章，你将能够更好地应用 Ant Design 来构建优秀的前端界面。
 
-## QA 3: Ant Design 官方专栏
+### Ant Design 官方专栏
 
 如果你对 Ant Design 感兴趣，我还推荐你关注 Ant Design 官方专栏，这里有很多关于 Ant Design 设计体系的最新分享和讨论。你可以在 [Ant Design 官方专栏](https://www.zhihu.com/column/c_1310524851418480640) 上了解更多关于 Ant Design、AntV 可视化、Kitchen 设计插件、B 端产品设计等话题的内容。
 
@@ -37,6 +43,7 @@ Ant Design 是一套优秀的设计体系，你想要了解它背后的故事吗
 在 Ant Design 4.0 的改版中，我们汲取了顶级设计体系的精华，并结合自身业务特性做了大量优化。我们的目标是成为世界级设计体系的一部分，为用户和设计师带来极致体验。为了追求卓越，我们建议研究以下设计体系：Fiori Design、Human Interface Guidelines、Lightning Design System、Material Design。
 
 **相关资源：**
+
 - [Fiori Design](https://experience.sap.com/fiori-design-web/)：一本数字产品和系统的交互设计指南。
 - [Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/themes/)：关于 iOS 设计的官方指南。
 - [Lightning Design System](https://lightningdesignsystem.com/getting-started/)：Salesforce 的设计系统。
@@ -88,7 +95,7 @@ Kitchen 是一款为设计师提效的 Sketch 工具集。它是专为设计师�
 
 ### 前端工程师岗位级别是什么？
 
-前端工程师岗位有多个级别：P5、P6、P7和P8。
+前端工程师岗位有多个级别：P5、P6、P7 和 P8。
 
 ### 前端工程师岗位的地点有哪些选择？
 
@@ -97,15 +104,17 @@ Kitchen 是一款为设计师提效的 Sketch 工具集。它是专为设计师�
 ### 对前端工程师的要求是什么？
 
 前端工程师需要具备以下能力和要求：
-- 持续耕耘React技术栈，熟练掌握React相关技术
+
+- 持续耕耘 React 技术栈，熟练掌握 React 相关技术
 - 热爱开源，对开源技术有独特的兴趣和贡献
 - 善于用技术和工具解决问题，具备解决问题的能力和思维
 - 具备丰富的中后台前端研发经验
 
 ### 前端工程师岗位的职责是什么？
 
-前端工程师在Ant Design团队的岗位职责包括：
-- 负责Ant Design前端基础设施的研发，包括前端技术的框架、组件等
+前端工程师在 Ant Design 团队的岗位职责包括：
+
+- 负责 Ant Design 前端基础设施的研发，包括前端技术的框架、组件等
 - 负责中后台设计和前端工具体系的建设，包括设计规范、开发工具等
 
 ### Node.js 工程师职位要求
@@ -114,17 +123,16 @@ Kitchen 是一款为设计师提效的 Sketch 工具集。它是专为设计师�
 - 岗位地点：杭州/上海
 
 岗位要求：
+
 - 在 Node.js 技术栈持续耕耘，情有独钟。
 - 热爱开源。
 - 坚持和善于用技术和工具解决其他问题。
 - 丰富的 Node.js 研发经验。
 
-
 ### Node.js 工程师职位职责
 
 - 负责 Node.js 前端基础设施研发。
 - 负责大前端工具体系建设。
-
 
 ### 如何应聘 Node.js 工程师职位
 

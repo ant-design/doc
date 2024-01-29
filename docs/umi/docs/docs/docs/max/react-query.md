@@ -18,7 +18,7 @@ $ pnpm i @umijs/plugins -D
 
 ```ts
 export default {
-  plugins: ['@umijs/plugins/dist/react-query'],
+  plugins: ["@umijs/plugins/dist/react-query"],
   reactQuery: {},
 };
 ```
@@ -52,7 +52,7 @@ react query 的 devtool 工具是 react query 官方提供的一个开发工具�
 要配置开发工具(devtool)和查询客户端(queryClient)，需要提供相应的配置对象，并将其赋值给相应的变量。在配置对象中，可以设置开发工具的属性和查询客户端的属性，以满足具体的需求。配置对象示例：
 
 ```ts
-const API_SERVER = '/path/to/api/server';
+const API_SERVER = "/path/to/api/server";
 export const reactQuery = {
   devtool: {
     initialIsOpen: true,
@@ -61,7 +61,7 @@ export const reactQuery = {
     defaultOptions: {
       queries: {
         queryFn: async ({ queryKey }) => {
-          const res = await fetch(`${API_SERVER}/${queryKey.join('/')}`);
+          const res = await fetch(`${API_SERVER}/${queryKey.join("/")}`);
           if (res.status !== 200) {
             throw new Error(res.statusText);
           }

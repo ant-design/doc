@@ -1,26 +1,31 @@
-## QA1: 什么是ProLayout？
-ProLayout是Ant Design提供的一个布局组件，用于构建页面布局。它提供了一些配置选项，用于自定义布局的样式和行为。
+## QA 什么是 ProLayout？
 
-## QA2: ProLayout有哪些常用的配置项？
-ProLayout有以下一些常用的配置选项：
+ProLayout 是 Ant Design 提供的一个布局组件，用于构建页面布局。它提供了一些配置选项，用于自定义布局的样式和行为。
+
+### QAProLayout 有哪些常用的配置项？
+
+ProLayout 有以下一些常用的配置选项：
+
 - title：设置布局左上角的标题。
-- logo：设置布局左上角的logo。
-- layout：设置布局的菜单模式，可以是side、top或mix。
-- contentWidth：设置布局的内容模式，可以是Fluid或Fixed。
+- logo：设置布局左上角的 logo。
+- layout：设置布局的菜单模式，可以是 side、top 或 mix。
+- contentWidth：设置布局的内容模式，可以是 Fluid 或 Fixed。
 - fixedHeader：是否固定头部在页面顶部。
 - fixSiderbar：是否固定导航菜单。
 - breakpoint：触发响应式布局的断点。
 - collapsed：控制菜单的收起和展开。
 - onPageChange：页面切换时的回调函数。
 
-## QA3: ProLayout的使用示例？
-以下是一个使用ProLayout的示例：
+### QA ProLayout 的使用示例？
+
+以下是一个使用 ProLayout 的示例：
+
 ```jsx
-import { ProLayout } from 'ant-design-pro-layout';
+import { ProLayout } from "ant-design-pro-layout";
 
 const MyLayout = () => {
   const handlePageChange = (location) => {
-    console.log('页面切换至', location.pathname);
+    console.log("页面切换至", location.pathname);
   };
 
   return (
@@ -38,9 +43,9 @@ const MyLayout = () => {
 };
 ```
 
-以上示例创建了一个名为"My Layout"的ProLayout组件，并设置了一些配置选项。在页面切换时，会触发handlePageChange回调函数打印出当前页面的路径名。
+以上示例创建了一个名为"My Layout"的 ProLayout 组件，并设置了一些配置选项。在页面切换时，会触发 handlePageChange 回调函数打印出当前页面的路径名。
 
-## menu.locale 参数的说明
+### menu.locale 参数的说明
 
 参数 `locale` 是用来指定 menu 是否使用国际化的配置。当 `locale` 的值为 `true` 时，表示启用国际化，同时需要配合 `formatMessage` 方法来进行国际化的处理。
 
@@ -53,7 +58,7 @@ const MyLayout = () => {
 <Menu locale={true} />
 ```
 
-## menu.defaultOpenAll 参数的说明
+### menu.defaultOpenAll 参数的说明
 
 参数 `defaultOpenAll` 用于控制是否默认打开所有菜单项。需要注意的是，该配置只在 layout 挂载之前生效，异步加载菜单是不支持的。
 
@@ -66,7 +71,7 @@ const MyLayout = () => {
 <Menu defaultOpenAll={true} />
 ```
 
-## menu.ignoreFlatMenu 参数的说明
+### menu.ignoreFlatMenu 参数的说明
 
 参数 `ignoreFlatMenu` 用于控制是否忽略手动折叠过的菜单状态。配合 `defaultOpenAll` 配置，可以实现折叠按钮切换后，同样可以展开所有子菜单。
 
@@ -79,7 +84,7 @@ const MyLayout = () => {
 <Menu ignoreFlatMenu={true} />
 ```
 
-## menu.type 参数的说明
+### menu.type 参数的说明
 
 参数 `type` 用于指定菜单的类型。可选值有 `sub` 和 `group`，分别表示子菜单和分组菜单。
 
@@ -92,7 +97,7 @@ const MyLayout = () => {
 <Menu type="sub" />
 ```
 
-## menu.autoClose 参数的说明
+### menu.autoClose 参数的说明
 
 参数 `autoClose` 用于控制选中菜单是否自动关闭菜单。
 
@@ -105,7 +110,7 @@ const MyLayout = () => {
 <Menu autoClose={true} />
 ```
 
-## menu.loading 参数的说明
+### menu.loading 参数的说明
 
 参数 `loading` 用于控制菜单是否处于加载中的状态。
 
@@ -118,7 +123,7 @@ const MyLayout = () => {
 <Menu loading={true} />
 ```
 
-## menu.onLoadingChange 参数的说明
+### menu.onLoadingChange 参数的说明
 
 参数 `onLoadingChange` 是一个回调函数，用于监听菜单的加载状态变更。
 
@@ -129,13 +134,13 @@ const MyLayout = () => {
 
 ```jsx
 const handleLoadingChange = (loading) => {
-  console.log('菜单加载状态变更：', loading);
-}
+  console.log("菜单加载状态变更：", loading);
+};
 
-<Menu onLoadingChange={handleLoadingChange} />
+<Menu onLoadingChange={handleLoadingChange} />;
 ```
 
-## menu.request 参数的说明
+### menu.request 参数的说明
 
 参数 `request` 是一个远程加载菜单的方法，会自动修改菜单的加载状态。
 
@@ -151,37 +156,37 @@ const loadMenuData = async (params, defaultMenuData) => {
   const menuData = await res.json();
 
   return menuData;
-}
+};
 
-<Menu request={loadMenuData} />
+<Menu request={loadMenuData} />;
 ```
 
 ### SettingDrawer 的参数说明
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| collapse | 控制 SettingDrawer 的收起和展开 | `boolean` | - |
-| onCollapseChange | SettingDrawer 的折叠收起事件 | `(collapsed: boolean) => void` | - |
-| settings | layout 的设置 | [`Settings`](#Settings) \| [`Settings`](#Settings) | - |
-| onSettingChange | [`Settings`](#Settings) 发生更改事件 | `(settings: [`Settings`](#Settings) ) => void` | - |
-| hideHintAlert | 删除下方的提示信息 | `boolean` | - |
-| hideCopyButton | 不展示 copy 功能 | `boolean` | - |
-| disableUrlParams | 禁止同步设置到查询参数 | `boolean` | `false` |
-| enableDarkTheme | 打开黑色主题切换功能 | `boolean` | `false` |
-| colorList | 自带的颜色切换系统 (ColorList 的 title 会作为 Tooltip 显示) | `ColorList[]` | - |
+| 参数             | 说明                                                        | 类型                                               | 默认值  |
+| ---------------- | ----------------------------------------------------------- | -------------------------------------------------- | ------- |
+| collapse         | 控制 SettingDrawer 的收起和展开                             | `boolean`                                          | -       |
+| onCollapseChange | SettingDrawer 的折叠收起事件                                | `(collapsed: boolean) => void`                     | -       |
+| settings         | layout 的设置                                               | [`Settings`](#Settings) \| [`Settings`](#Settings) | -       |
+| onSettingChange  | [`Settings`](#Settings) 发生更改事件                        | `(settings: [`Settings`](#Settings) ) => void`     | -       |
+| hideHintAlert    | 删除下方的提示信息                                          | `boolean`                                          | -       |
+| hideCopyButton   | 不展示 copy 功能                                            | `boolean`                                          | -       |
+| disableUrlParams | 禁止同步设置到查询参数                                      | `boolean`                                          | `false` |
+| enableDarkTheme  | 打开黑色主题切换功能                                        | `boolean`                                          | `false` |
+| colorList        | 自带的颜色切换系统 (ColorList 的 title 会作为 Tooltip 显示) | `ColorList[]`                                      | -       |
 
 ### 自带的颜色列表
 
 ```tsx | pure
 const colorList = [
-  { key: 'daybreak', color: '#1890ff' },
-  { key: 'dust', color: '#F5222D' },
-  { key: 'volcano', color: '#FA541C' },
-  { key: 'sunset', color: '#FAAD14' },
-  { key: 'cyan', color: '#13C2C2' },
-  { key: 'green', color: '#52C41A' },
-  { key: 'geekblue', color: '#2F54EB' },
-  { key: 'purple', color: '#722ED1' },
+  { key: "daybreak", color: "#1890ff" },
+  { key: "dust", color: "#F5222D" },
+  { key: "volcano", color: "#FA541C" },
+  { key: "sunset", color: "#FAAD14" },
+  { key: "cyan", color: "#13C2C2" },
+  { key: "green", color: "#52C41A" },
+  { key: "geekblue", color: "#2F54EB" },
+  { key: "purple", color: "#722ED1" },
 ];
 ```
 
@@ -197,9 +202,9 @@ PageLoading 是一个简单的加载页面，用于在网页加载数据或执�
 
 PageLoading 组件支持以下参数：
 
-参数名 | 说明 | 类型 | 默认值
---- | --- | --- | ---
-[(...)](https://ant.design/components/spin-cn/#API) | 支持所有的 antd `Spin` 组件参数 | - | -
+| 参数名                                              | 说明                            | 类型 | 默认值 |
+| --------------------------------------------------- | ------------------------------- | ---- | ------ |
+| [(...)](https://ant.design/components/spin-cn/#API) | 支持所有的 antd `Spin` 组件参数 | -    | -      |
 
 ### 如何使用 PageLoading 组件？
 
@@ -208,16 +213,14 @@ PageLoading 组件支持以下参数：
 示例：
 
 ```jsx
-import { PageLoading } from 'your-component-library';
+import { PageLoading } from "your-component-library";
 
 //...
 
 return (
   <div>
     <h1>My Page</h1>
-    <PageLoading>
-      {/* Your content that needs loading */}
-    </PageLoading>
+    <PageLoading>{/* Your content that needs loading */}</PageLoading>
   </div>
 );
 ```
@@ -238,15 +241,15 @@ return (
 
 - `routes`：路由的配置信息，类型为 `route[]`。
 - `menu`：menu 的配置项，默认为 `{locale: true}`，类型为 `{ locale: boolean }`。
-- `menuDataRender`：自定义 `menuData` 的 render 方法，类型为 `(menuData: MenuDataItem[]) => MenuDataItem[]`。
-- `formatMessage`：`react-intl` 的 `formatMessage` 方法，类型为 `(data: { id: any; defaultMessage?: string }) => string;`。
+- `menuDataRender`：自定义 `menuData` 的 render 方法，类型为 `(menuDatMenuDataItem[]) => MenuDataItem[]`。
+- `formatMessage`：`react-intl` 的 `formatMessage` 方法，类型为 `(dat{ id: any; defaultMessage?: string }) => string;`。
 
 ### getMenuData 函数的使用示例是什么？
 
 以下是一个使用 `getMenuData` 的示例：
 
 ```js | pure
-import { getMenuData } from '@ant-design/pro-components';
+import { getMenuData } from "@ant-design/pro-components";
 
 const { breadcrumb, menuData } = getMenuData(
   routes,
@@ -264,8 +267,8 @@ const { breadcrumb, menuData } = getMenuData(
 
 - `routes`：路由的配置信息，类型为 `route[]`。这个参数用来指定路由的信息，根据这些信息生成 `menuData` 和 `breadcrumb`。
 - `menu`：menu 的配置项，默认为 `{locale: true}`，类型为 `{ locale: boolean }`。用来配置 menu 的相关选项，例如是否启用国际化。
-- `menuDataRender`：自定义 `menuData` 的 render 方法，类型为 `(menuData: MenuDataItem[]) => MenuDataItem[]`。可以通过这个方法自定义生成的 `menuData`，例如过滤某些菜单项。
-- `formatMessage`：`react-intl` 的 `formatMessage` 方法，类型为 `(data: { id: any; defaultMessage?: string }) => string;`。用来进行国际化翻译，将国际化的消息格式化为字符串。
+- `menuDataRender`：自定义 `menuData` 的 render 方法，类型为 `(menuDatMenuDataItem[]) => MenuDataItem[]`。可以通过这个方法自定义生成的 `menuData`，例如过滤某些菜单项。
+- `formatMessage`：`react-intl` 的 `formatMessage` 方法，类型为 `(dat{ id: any; defaultMessage?: string }) => string;`。用来进行国际化翻译，将国际化的消息格式化为字符串。
 
 ### getMenuData 函数返回的结果是什么？
 
@@ -304,7 +307,7 @@ getPageTitle 函数的返回值是一个字符串，表示当前页面的标题�
 首先需要在文件的顶部引入 getPageTitle 函数，然后根据需要调用该函数，并传入相应的参数。例如：
 
 ```js | pure
-import { getPageTitle } from '@ant-design/pro-components';
+import { getPageTitle } from "@ant-design/pro-components";
 
 const title = getPageTitle({
   pathname,
@@ -314,25 +317,26 @@ const title = getPageTitle({
   formatMessage,
 });
 ```
+
 在调用函数时，需要提供 `pathname`、`breadcrumb`、`menu`、`title`、`formatMessage` 这五个参数。
 
 ### 注意事项
 
 调用 getPageTitle 函数时要确保传入正确的参数，以确保获取到正确的标题信息。另外，如果需要自定义标题，可以将 `title` 参数设置为自定义的值。
 
-### 问题一：如何获取Ant Design的默认设置信息？
+### 问题一：如何获取 Ant Design 的默认设置信息？
 
-你可以通过导入 `import { Settings } from '@ant-design/pro-layout/defaultSettings'` 来获取Ant Design的默认设置信息。这个设置类型包含了一些常见的配置项，例如主题颜色、导航菜单位置、内容布局、固定头部和侧边栏等。你可以根据需要使用这些设置来自定义你的应用。
+你可以通过导入 `import { Settings } from '@ant-design/pro-layout/defaultSettings'` 来获取 Ant Design 的默认设置信息。这个设置类型包含了一些常见的配置项，例如主题颜色、导航菜单位置、内容布局、固定头部和侧边栏等。你可以根据需要使用这些设置来自定义你的应用。
 
-### 问题二：如何设置Ant Design的主题颜色？
+### 问题二：如何设置 Ant Design 的主题颜色？
 
-在Ant Design中，你可以通过设置 `colorPrimary` 属性来指定主题颜色。这个属性接受一个字符串类型的值，表示主题颜色的值。你可以根据自己的需求选择合适的颜色值，从而改变应用的主题颜色。
+在 Ant Design 中，你可以通过设置 `colorPrimary` 属性来指定主题颜色。这个属性接受一个字符串类型的值，表示主题颜色的值。你可以根据自己的需求选择合适的颜色值，从而改变应用的主题颜色。
 
-### 问题三：如何将Ant Design的侧边栏固定？
+### 问题三：如何将 Ant Design 的侧边栏固定？
 
-如果你想要将Ant Design的侧边栏固定在界面上，你可以通过设置 `fixSiderbar` 属性为 `true` 来实现。这个属性接受一个布尔类型的值，当设置为 `true` 时，侧边栏将会被固定在界面上。这样，无论用户如何滚动页面，侧边栏都会保持可见。
+如果你想要将 Ant Design 的侧边栏固定在界面上，你可以通过设置 `fixSiderbar` 属性为 `true` 来实现。这个属性接受一个布尔类型的值，当设置为 `true` 时，侧边栏将会被固定在界面上。这样，无论用户如何滚动页面，侧边栏都会保持可见。
 
-以上是关于Ant Design的一些常见设置的解释和使用方式。希望对你有帮助！如果还有其他问题，请随时提问。
+以上是关于 Ant Design 的一些常见设置的解释和使用方式。希望对你有帮助！如果还有其他问题，请随时提问。
 
 ### MenuDataItem 是什么类型的？
 
@@ -341,6 +345,7 @@ MenuDataItem 是一个 TypeScript 接口类型，可以通过 import { MenuDataI
 ### MenuDataItem 的属性有哪些？
 
 MenuDataItem 接口包含以下属性：
+
 - authority: string[] | string：表示菜单项的权限，可以是一个字符串数组或一个字符串。
 - children: MenuDataItem[]：表示子菜单项的数组。
 - hideChildrenInMenu: boolean：表示是否在菜单中隐藏子菜单。
@@ -361,7 +366,7 @@ MenuDataItem 接口包含以下属性：
 ```typescript
 import { MenuDataItem } from '@ant-design/pro-components';
 
-const menuData: MenuDataItem[] = [
+const menuDatMenuDataItem[] = [
   {
     name: '首页',
     path: '/home',
@@ -391,6 +396,7 @@ const menuData: MenuDataItem[] = [
 ### Route 的数据结构是什么样的？
 
 Route 是一个接口(interface)类型，包含以下属性：
+
 - `path`：表示路由的路径，是一个字符串类型。
 - `children`：表示路由的子节点，是一个数组类型，数组中的每一个元素都包含以下属性：
   - `exact`：表示是否为精确匹配，是一个布尔类型。
@@ -423,28 +429,28 @@ Route 是一个接口(interface)类型，包含以下属性：
 在使用 Ant Design ProLayout 组件时，可以引入 DefaultFooter 组件来创建自定义的页脚。以下是一个使用 DefaultFooter 组件的示例代码：
 
 ```tsx | pure
-import { GithubOutlined } from '@ant-design/icons';
-import { DefaultFooter } from '@ant-design/pro-components';
+import { GithubOutlined } from "@ant-design/icons";
+import { DefaultFooter } from "@ant-design/pro-components";
 
 <DefaultFooter
   copyright="@2019 蚂蚁金服体验技术部出品"
   links={[
     {
-      key: 'Ant Design Pro',
-      title: 'Ant Design Pro',
-      href: 'https://pro.ant.design',
+      key: "Ant Design Pro",
+      title: "Ant Design Pro",
+      href: "https://pro.ant.design",
       blankTarget: true,
     },
     {
-      key: 'github',
+      key: "github",
       title: <GithubOutlined />,
-      href: 'https://github.com/ant-design/ant-design-pro',
+      href: "https://github.com/ant-design/ant-design-pro",
       blankTarget: true,
     },
     {
-      key: 'Ant Design',
-      title: 'Ant Design',
-      href: 'https://ant.design',
+      key: "Ant Design",
+      title: "Ant Design",
+      href: "https://ant.design",
       blankTarget: true,
     },
   ]}
@@ -510,41 +516,29 @@ RouteContext 的作用是根据 Layout 的数据来执行一些操作。例如�
 
 你可以使用 RouteContext 来消费 Layout 的内置数据。通过引入 `RouteContext` 和 `RouteContextType`，然后在 `RouteContext.Consumer` 中使用它们，你可以访问到 `isMobile`、`hasHeader`、`hasSiderMenu` 和 `collapsed` 这些数据。你还可以根据需求进行其他操作或自定义行为。
 
-## Layout 的 token
+### Layout 的 token
 
-Q: Layout 的背景颜色是什么？
-A: Layout 的背景颜色默认为 `linear-gradient(${antdToken.colorBgContainer}, ${antdToken.colorBgLayout} 28%)`。
+### Layout 的背景颜色是什么？ Layout 的背景颜色默认为 `linear-gradient(${antdToken.colorBgContainer}, ${antdToken.colorBgLayout} 28%)`。
 
-Q: 跨站点应用的图标颜色是什么？
-A: 跨站点应用的图标颜色默认为 `#666`。
+### 跨站点应用的图标颜色是什么？ 跨站点应用的图标颜色默认为 `#666`。
 
-Q: 跨站点应用的图标 hover 颜色是什么？
-A: 跨站点应用的图标 hover 颜色默认为 `rgba(0,0,0,0.65)`。
+### 跨站点应用的图标 hover 颜色是什么？ 跨站点应用的图标 hover 颜色默认为 `rgba(0,0,0,0.65)`。
 
-Q: 跨站点应用的图标 hover 背景颜色是什么？
-A: 跨站点应用的图标 hover 背景颜色默认为 `rgba(0,0,0,0.04)`。
+### 跨站点应用的图标 hover 背景颜色是什么？ 跨站点应用的图标 hover 背景颜色默认为 `rgba(0,0,0,0.04)`。
 
-## 问题回答完毕
+### 问题回答完毕
 
+### Layout 的 token
 
-## Layout 的 token
+Layout 的背景颜色默认为 `linear-gradient(${antdToken.colorBgContainer}, ${antdToken.colorBgLayout} 28%)`。跨站点应用的图标颜色默认为 `#666`。跨站点应用的图标 hover 颜色默认为 `rgba(0,0,0,0.65)`。跨站点应用的图标 hover 背景颜色默认为 `rgba(0,0,0,0.04)`。
 
-Layout 的背景颜色默认为 `linear-gradient(${antdToken.colorBgContainer}, ${antdToken.colorBgLayout} 28%)`。
-跨站点应用的图标颜色默认为 `#666`。
-跨站点应用的图标 hover 颜色默认为 `rgba(0,0,0,0.65)`。
-跨站点应用的图标 hover 背景颜色默认为 `rgba(0,0,0,0.04)`。
+### 问题回答完毕
 
-## 问题回答完毕
+### Layout 的 token
 
+Layout 的背景颜色的默认值是 `linear-gradient(${antdToken.colorBgContainer}, ${antdToken.colorBgLayout} 28%)`。跨站点应用的图标颜色的默认值是 `#666`。跨站点应用的图标 hover 颜色的默认值是 `rgba(0,0,0,0.65)`。跨站点应用的图标 hover 背景颜色的默认值是 `rgba(0,0,0,0.04)`。
 
-## Layout 的 token
-
-Layout 的背景颜色的默认值是 `linear-gradient(${antdToken.colorBgContainer}, ${antdToken.colorBgLayout} 28%)`。
-跨站点应用的图标颜色的默认值是 `#666`。
-跨站点应用的图标 hover 颜色的默认值是 `rgba(0,0,0,0.65)`。
-跨站点应用的图标 hover 背景颜色的默认值是 `rgba(0,0,0,0.04)`。
-
-## 问题回答完毕
+### 问题回答完毕
 
 #### Sider Token 是什么？
 
@@ -577,31 +571,27 @@ Sider Token 包含以下 CSS 变量：
 
 ### Header Token
 
-| token | 说明 | 默认值 |
-| --- | --- | --- |
-| colorBgHeader | header 的背景颜色 | `rgba(240, 242, 245, 0.4)` |
-| colorHeaderTitle | sider 的标题字体颜色 | `colorTextHeading` |
-| colorTextMenu | menuItem 的字体颜色 | `colorText` |
-| colorTextMenuSecondary | menu 的二级字体颜色，比如 footer 和 action 的 icon | `colorText` |
-| colorTextMenuSelected | menuItem 的选中字体颜色 | `rgb(0,0,0)` |
-| colorTextMenuActive | menuItem hover 的选中字体颜色 | `rgba(0, 0, 0, 0.85)` |
-| colorBgMenuItemHover | menuItem 的 hover 背景颜色 | `rgba(90, 75, 75, 0.03)` |
-| colorBgMenuItemSelected | menuItem 的选中背景颜色 | `rgba(0, 0, 0, 0.04)` |
-| colorTextRightActionsItem | 右上角字体颜色 | `colorTextSecondary` |
-| colorBgRightActionsItemHover | 右上角选中的 hover 颜色 | `rgba(0, 0, 0, 0.03)` |
-| heightLayoutHeader | header 高度 | 56 |
+| token                        | 说明                                               | 默认值                     |
+| ---------------------------- | -------------------------------------------------- | -------------------------- |
+| colorBgHeader                | header 的背景颜色                                  | `rgba(240, 242, 245, 0.4)` |
+| colorHeaderTitle             | sider 的标题字体颜色                               | `colorTextHeading`         |
+| colorTextMenu                | menuItem 的字体颜色                                | `colorText`                |
+| colorTextMenuSecondary       | menu 的二级字体颜色，比如 footer 和 action 的 icon | `colorText`                |
+| colorTextMenuSelected        | menuItem 的选中字体颜色                            | `rgb(0,0,0)`               |
+| colorTextMenuActive          | menuItem hover 的选中字体颜色                      | `rgba(0, 0, 0, 0.85)`      |
+| colorBgMenuItemHover         | menuItem 的 hover 背景颜色                         | `rgba(90, 75, 75, 0.03)`   |
+| colorBgMenuItemSelected      | menuItem 的选中背景颜色                            | `rgba(0, 0, 0, 0.04)`      |
+| colorTextRightActionsItem    | 右上角字体颜色                                     | `colorTextSecondary`       |
+| colorBgRightActionsItemHover | 右上角选中的 hover 颜色                            | `rgba(0, 0, 0, 0.03)`      |
+| heightLayoutHeader           | header 高度                                        | 56                         |
 
-问题1：Header 的背景颜色默认是什么？
-回答1：Header 的背景颜色的默认值是 `rgba(240, 242, 245, 0.4)`。
+Header 的背景颜色默认是什么？Header 的背景颜色的默认值是 `rgba(240, 242, 245, 0.4)`。
 
-问题2：menuItem 的字体颜色是什么？
-回答2：menuItem 的字体颜色是 `colorText`。
+问题 2：menuItem 的字体颜色是什么？menuItem 的字体颜色是 `colorText`。
 
-问题3：右上角字体颜色是什么？
-回答3：右上角字体颜色的默认值是 `colorTextSecondary`。
+问题 3：右上角字体颜色是什么？右上角字体颜色的默认值是 `colorTextSecondary`。
 
-问题4：Header 的高度是多少？
-回答4：Header 的高度是 56。
+问题 4：Header 的高度是多少？回答 4：Header 的高度是 56。
 
 ### Token 说明
 

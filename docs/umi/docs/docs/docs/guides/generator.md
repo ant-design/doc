@@ -71,11 +71,13 @@ Write: src/pages/a/nested/page3.less
 如果页面生成器使用的默认模板不符合您的需求，您可以对模板内容进行自定义设置。
 
 1. 执行 `--eject` 命令:
+
 ```bash
 $ umi g page --eject
 ```
 
 2. 执行命令后，页面生成器会将其原始模板写入项目的 `/templates/page` 目录。你可以在该目录下找到以下文件:
+
 ```
 .
 ├── package.json
@@ -116,11 +118,11 @@ $umi g page foo --msg "Hello World" --count 10
 运行命令后，生成的页面内容如下：
 
 ```tsx
-import React from 'react';
-import './foo.less'
+import React from "react";
+import "./foo.less";
 
-const message = 'Hello World'
-const count = 10
+const message = "Hello World";
+const count = 10;
 ```
 
 在以上代码中，模板文件中的变量`{{{name}}}`被替换为`foo`，生成相应的文件。同时，变量`{{{msg}}}`被替换为`Hello World`，变量`{{{count}}}`被替换为`10`。
@@ -132,12 +134,15 @@ const count = 10
 通过省略后缀名，可以直接使用带有自定义参数值的模板文件生成页面内容。
 
 ### 预设变量中的 name 参数有什么作用？
+
 预设变量中的 name 参数用于指定当前文件的名称。当使用 `pnpm umi g page foo` 命令生成页面时，会生成 `pages/foo.tsx` 和 `pages/foo.less` 两个文件，并且其中的 name 参数的值为 "foo"。这个参数可以帮助我们在生成文件时指定文件名，使文件的命名更加方便和准确。
 
 ### 预设变量中的 color 参数是什么意思？
+
 预设变量中的 color 参数用于生成一个随机的 RGB 颜色。在模板中，我们可以通过引用 color 参数来设置页面的颜色样式，使页面具有不同的视觉效果。每次生成页面时，color 参数的值都会随机生成，这样可以使生成的页面颜色更加多样化。
 
 ### 预设变量中的 cssExt 参数的默认值是什么？
+
 预设变量中的 cssExt 参数的默认值是 `less`。这个参数用于指定样式文件的后缀名。在生成页面时，如果没有显式地指定 cssExt 参数的值，那么就会默认使用 `less` 作为样式文件的后缀名。当然，如果需要的话，我们也可以在生成页面时自定义 cssExt 参数的值，从而指定其它的样式文件后缀名，以满足项目的需求。
 
 ### 什么是 `dir` 模式？
@@ -168,9 +173,10 @@ const count = 10
 
 以上是关于 `dir` 模式的一些说明和用法。希望这些信息对你有所帮助！
 
-## 问题一：交互式生成组件的基本使用方法是什么？
+### 问题一：交互式生成组件的基本使用方法是什么？
 
-回答：交互式生成组件的基本使用方法如下：
+交互式生成组件的基本使用方法如下：
+
 ```bash
 $umi g component
 ✔ Please input you component Name … foo
@@ -178,33 +184,36 @@ Write: src/components/Foo/index.ts
 Write: src/components/Foo/component.tsx
 ```
 
-用户需要在命令行中执行`umi g component`命令，然后输入组件的名称。在以上示例中，用户输入了`foo`作为组件的名称。执行命令后，umi会自动生成组件代码文件`src/components/Foo/index.ts`和`src/components/Foo/component.tsx`。
+用户需要在命令行中执行`umi g component`命令，然后输入组件的名称。在以上示例中，用户输入了`foo`作为组件的名称。执行命令后，umi 会自动生成组件代码文件`src/components/Foo/index.ts`和`src/components/Foo/component.tsx`。
 
-## 问题二：直接生成组件的基本使用方法是什么？
+### 问题二：直接生成组件的基本使用方法是什么？
 
-回答：直接生成组件的基本使用方法如下：
+直接生成组件的基本使用方法如下：
+
 ```bash
 $umi g component bar
 Write: src/components/Bar/index.ts
 Write: src/components/Bar/component.tsx
 ```
 
-用户需要在命令行中执行`umi g component`命令，并直接在命令行中指定组件的名称。在以上示例中，用户输入了`bar`作为组件的名称。执行命令后，umi会自动生成组件代码文件`src/components/Bar/index.ts`和`src/components/Bar/component.tsx`。
+用户需要在命令行中执行`umi g component`命令，并直接在命令行中指定组件的名称。在以上示例中，用户输入了`bar`作为组件的名称。执行命令后，umi 会自动生成组件代码文件`src/components/Bar/index.ts`和`src/components/Bar/component.tsx`。
 
-## 问题三：嵌套生成组件的基本使用方法是什么？
+### 问题三：嵌套生成组件的基本使用方法是什么？
 
-回答：嵌套生成组件的基本使用方法如下：
+嵌套生成组件的基本使用方法如下：
+
 ```bash
 $umi g component group/subgroup/baz
 Write: src/components/group/subgroup/Baz/index.ts
 Write: src/components/group/subgroup/Baz/component.tsx
 ```
 
-用户需要在命令行中执行`umi g component`命令，并在命令行中指定嵌套的组件路径。在以上示例中，用户输入了`group/subgroup/baz`作为组件的路径，`baz`作为组件的名称。执行命令后，umi会自动生成组件代码文件`src/components/group/subgroup/Baz/index.ts`和`src/components/group/subgroup/Baz/component.tsx`。
+用户需要在命令行中执行`umi g component`命令，并在命令行中指定嵌套的组件路径。在以上示例中，用户输入了`group/subgroup/baz`作为组件的路径，`baz`作为组件的名称。执行命令后，umi 会自动生成组件代码文件`src/components/group/subgroup/Baz/index.ts`和`src/components/group/subgroup/Baz/component.tsx`。
 
-## 问题四：批量生成组件的基本使用方法是什么？
+### 问题四：批量生成组件的基本使用方法是什么？
 
-回答：批量生成组件的基本使用方法如下：
+批量生成组件的基本使用方法如下：
+
 ```bash
 $umi g component apple banana orange
 Write: src/components/Apple/index.ts
@@ -215,24 +224,24 @@ Write: src/components/Orange/index.ts
 Write: src/components/Orange/component.tsx
 ```
 
-用户需要在命令行中执行`umi g component`命令，并在命令行中指定多个组件名称，各个组件名称之间用空格分隔。在以上示例中，用户输入了`apple banana orange`作为组件的名称。执行命令后，umi会根据每个组件名称分别生成对应的组件代码文件。
+用户需要在命令行中执行`umi g component`命令，并在命令行中指定多个组件名称，各个组件名称之间用空格分隔。在以上示例中，用户输入了`apple banana orange`作为组件的名称。执行命令后，umi 会根据每个组件名称分别生成对应的组件代码文件。
 
-1. 如何使用模板变量生成自定义组件？
-根据提供的信息，可以在命令行中运行以下命令生成自定义组件：
+1. 如何使用模板变量生成自定义组件？根据提供的信息，可以在命令行中运行以下命令生成自定义组件：
+
 ```bash
 $umi g component foo --msg "Hello World"
 ```
-在自定义模板文件夹中，可以将`index.ts.tpl`简写为`index.ts`，将`component.tsx.tpl`简写为`component.tsx`。
-组件生成器会根据你的自定义模板文件夹生成相应的内容，你也可以根据需要添加更多的自定义模板文件。
 
-2. 如何简化自定义组件模板文件的后缀名？
-根据提供的信息，你可以将自定义组件模板的文件名后缀`.tpl`省略，例如将`index.ts.tpl`简写为`index.ts`，将`component.tsx.tpl`简写为`component.tsx`。
+在自定义模板文件夹中，可以将`index.ts.tpl`简写为`index.ts`，将`component.tsx.tpl`简写为`component.tsx`。组件生成器会根据你的自定义模板文件夹生成相应的内容，你也可以根据需要添加更多的自定义模板文件。
 
-3. 如何根据自定义模板文件生成组件？
-根据提供的信息，在命令行中运行`umi g component`命令，并指定自定义组件模板和相应的参数，例如：
+2. 如何简化自定义组件模板文件的后缀名？根据提供的信息，你可以将自定义组件模板的文件名后缀`.tpl`省略，例如将`index.ts.tpl`简写为`index.ts`，将`component.tsx.tpl`简写为`component.tsx`。
+
+3. 如何根据自定义模板文件生成组件？根据提供的信息，在命令行中运行`umi g component`命令，并指定自定义组件模板和相应的参数，例如：
+
 ```bash
 $umi g component foo --msg "Hello World"
 ```
+
 组件生成器会根据你的自定义模板文件夹中的内容生成组件，同时也可以根据需要添加更多的自定义模板文件。
 
 ### 生成 routeAPI 功能的模板文件
@@ -240,7 +249,9 @@ $umi g component foo --msg "Hello World"
 您可以使用 `umi g api` 命令来生成 routeAPI 功能的模板文件，具体操作如下：
 
 #### 交互式生成
+
 在命令行中执行以下命令：
+
 ```bash
 $umi g api
 ✔ please input your api name: … starwar/people
@@ -250,7 +261,9 @@ Write: api/starwar/people.ts
 通过执行以上命令，您可以在 `api` 目录下生成一个名为 `starwar/people.ts` 的模板文件。
 
 #### 直接生成
+
 在命令行中执行以下命令：
+
 ```bash
 $umi g api films
 Write: api/films.ts
@@ -259,7 +272,9 @@ Write: api/films.ts
 通过执行以上命令，您可以在 `api` 目录下生成一个名为 `films.ts` 的模板文件。
 
 #### 嵌套生成器
+
 在命令行中执行以下命令：
+
 ```bash
 $umi g api planets/[id]
 Write: api/planets/[id].ts
@@ -268,7 +283,9 @@ Write: api/planets/[id].ts
 通过执行以上命令，您可以在 `api` 目录下生成一个名为 `planets/[id].ts` 的模板文件。
 
 #### 批量生成
+
 在命令行中执行以下命令：
+
 ```bash
 $umi g api spaceships vehicles species
 Write: api/spaceships.ts
@@ -293,6 +310,7 @@ Mock 生成器是一个用于生成模板文件的功能，它可以帮助我们
 3. 文件生成成功，路径为 `mock/auth.ts`
 
 示例：
+
 ```bash
 $umi g mock
 ✔ please input your mock file name … auth
@@ -307,6 +325,7 @@ Write: mock/auth.ts
 2. 文件生成成功，路径为 `mock/acl.ts`
 
 示例：
+
 ```bash
 $umi g mock acl
 Write: mock/acl.ts
@@ -320,6 +339,7 @@ Write: mock/acl.ts
 2. 文件生成成功，路径为 `mock/users/profile.ts`
 
 示例：
+
 ```bash
 $umi g mock users/profile
 Write: mock/users/profile.ts
@@ -421,21 +441,23 @@ $ umi g tailwindcss
 要为项目开启 Dva 配置，可以通过以下步骤进行操作：
 
 1. 打开终端或命令行工具，在项目根目录下执行以下命令：
-   ```bash
+
+```bash
    $ umi g dva
-   ```
-   
-   这个命令会自动为项目生成 Dva 配置。
-   
+```
+
+这个命令会自动为项目生成 Dva 配置。
+
 2. 执行命令后，终端会显示一些相关信息，例如：
-   ```bash
+
+```bash
    set config:dva on /Users/umi/umi-playground/.umirc.ts
    set config:plugins on /Users/umi/umi-playground/.umirc.ts
    info  - Update config file
    info  - Write example model
-   ```
-   
-   这些信息表示 Dva 配置已成功设置，并且配置文件已更新和模型例子已生成。
+```
+
+这些信息表示 Dva 配置已成功设置，并且配置文件已更新和模型例子已生成。
 
 以上就是开启 Dva 配置的步骤和相关信息。执行以上操作后，你的项目就可以使用 Dva 进行状态管理了。
 

@@ -64,53 +64,53 @@
 
 请将上述示例中的 `YourComponent` 替换为你实际使用的组件。
 
-### 如何使用Ant Design的Statistic组件展示环比趋势？
+### 如何使用 Ant Design 的 Statistic 组件展示环比趋势？
 
-你可以使用Ant Design的Statistic组件来展示环比趋势。具体步骤如下：
+你可以使用 Ant Design 的 Statistic 组件来展示环比趋势。具体步骤如下：
 
-1. 在组件中引入Statistic组件：`import { Statistic } from 'antd';`
+1. 在组件中引入 Statistic 组件：`import { Statistic } from 'antd';`
 
-2. 在布局中将layout设置为`inline`，将trend设置为展示环比趋势：`<Statistic layout="inline" trend value="xxx" />`
+2. 在布局中将 layout 设置为`inline`，将 trend 设置为展示环比趋势：`<Statistic layout="inline" trend value="xxx" />`
 
 其中，`value`属性可以传入具体的数值，代表环比的百分比。
 
-### 如何在Ant Design中配置Statistic组件的布局和样式？
+### 如何在 Ant Design 中配置 Statistic 组件的布局和样式？
 
-你可以使用Ant Design的Statistic组件来配置布局和样式。具体步骤如下：
+你可以使用 Ant Design 的 Statistic 组件来配置布局和样式。具体步骤如下：
 
-1. 在组件中引入Statistic组件：`import { Statistic } from 'antd';`
+1. 在组件中引入 Statistic 组件：`import { Statistic } from 'antd';`
 
-2. 在布局中通过设置`layout`属性来配置Statistic组件的布局方式。例如，将layout设置为`inline`可以使组件以行内形式展示。
+2. 在布局中通过设置`layout`属性来配置 Statistic 组件的布局方式。例如，将 layout 设置为`inline`可以使组件以行内形式展示。
 
-3. 通过设置其他相关属性来自定义Statistc组件的样式，例如，设置`prefix`和`suffix`属性可以在数值前后添加前缀和后缀。
+3. 通过设置其他相关属性来自定义 Statistc 组件的样式，例如，设置`prefix`和`suffix`属性可以在数值前后添加前缀和后缀。
 
-### Ant Design的Statistic组件如何展示旧值与新值的环比趋势？
+### Ant Design 的 Statistic 组件如何展示旧值与新值的环比趋势？
 
-Ant Design的Statistic组件可以通过配置`trend`属性来展示旧值与新值的环比趋势。具体步骤如下：
+Ant Design 的 Statistic 组件可以通过配置`trend`属性来展示旧值与新值的环比趋势。具体步骤如下：
 
-1. 在布局中，将`trend`属性设置为需要展示的环比趋势的数值。例如，将`trend`属性设置为`-5%`表示环比下降了5%。
+1. 在布局中，将`trend`属性设置为需要展示的环比趋势的数值。例如，将`trend`属性设置为`-5%`表示环比下降了 5%。
 
-通过这样的配置，可以使Statistic组件在展示数值的同时展示旧值与新值的环比趋势。
+通过这样的配置，可以使 Statistic 组件在展示数值的同时展示旧值与新值的环比趋势。
 
 ### StatisticCard 组件参数说明
 
-| 参数        | 说明                             | 类型                  | 默认值 |
-| ----------- | -------------------------------- | --------------------- | ------ |
-| title       | 卡片标题                         | `string\|ReactNode`   | -      |
-| extra       | 卡片右上角的操作区域             | `string\|ReactNode`   | -      |
-| loading     | 当卡片内容还在加载中时，可以用 loading 展示一个占位 | boolean               | false  |
-| bordered    | 是否有边框                       | boolean               | true   |
-| chart       | 图表卡片                         | ReactNode             | -       |
-| statistic   | 数值统计配置，布局默认为 `vertical` | 参数见下 Statistic   | -      |
-| chartPlacement | 图表位置，相对于 statistic 的位置 | `left \| right \| bottom` | -      |
-| footer      | 额外指标展示                     | `ReactNode`            | -      |
+| 参数           | 说明                                                | 类型                      | 默认值 |
+| -------------- | --------------------------------------------------- | ------------------------- | ------ |
+| title          | 卡片标题                                            | `string\|ReactNode`       | -      |
+| extra          | 卡片右上角的操作区域                                | `string\|ReactNode`       | -      |
+| loading        | 当卡片内容还在加载中时，可以用 loading 展示一个占位 | boolean                   | false  |
+| bordered       | 是否有边框                                          | boolean                   | true   |
+| chart          | 图表卡片                                            | ReactNode                 | -      |
+| statistic      | 数值统计配置，布局默认为 `vertical`                 | 参数见下 Statistic        | -      |
+| chartPlacement | 图表位置，相对于 statistic 的位置                   | `left \| right \| bottom` | -      |
+| footer         | 额外指标展示                                        | `ReactNode`               | -      |
 
 更多参考 `ProCard`，支持 `ProCard` 的所有 API。
 
 ### StatisticCard 组件使用示例
 
 ```jsx
-import { StatisticCard } from 'antd';
+import { StatisticCard } from "antd";
 
 const App = () => {
   return (
@@ -122,14 +122,14 @@ const App = () => {
       chart={<BarChart data={data} />}
       statistic={{
         value: 12345,
-        suffix: '次',
+        suffix: "次",
         precision: 2,
       }}
       chartPlacement="right"
       footer={<div>额外指标</div>}
     />
   );
-}
+};
 ```
 
 ### StatisticCard 组件详细说明
@@ -161,7 +161,7 @@ const App = () => {
   chart={<BarChart data={data} />}
   statistic={{
     value: 12345,
-    suffix: '次',
+    suffix: "次",
     precision: 2,
   }}
   chartPlacement="right"
@@ -193,14 +193,14 @@ const App = () => {
 
 ### Statistic 组件的参数 `trend` 是趋势，可以接受以下值：'up'、'down'。默认值是无。你可以使用这个参数来表示数值的趋势，比如增长或者下降的方向。
 
-Q: Divider 组件有哪些参数和说明？ 
+### Divider 组件有哪些参数和说明？
 
-A: Divider 组件有一个参数和说明：type 用于指定分隔类型，可以是水平分隔线（horizontal）或垂直分隔线（vertical）。默认值为无。
+Divider 组件有一个参数和说明：type 用于指定分隔类型，可以是水平分隔线（horizontal）或垂直分隔线（vertical）。默认值为无。
 
-Q: Divider 组件的类型有哪些？ 
+### Divider 组件的类型有哪些？
 
-A: Divider 组件的类型有两种：水平分隔线（horizontal）和垂直分隔线（vertical）。
+Divider 组件的类型有两种：水平分隔线（horizontal）和垂直分隔线（vertical）。
 
-Q: Divider 组件的默认值是什么？ 
+### Divider 组件的默认值是什么？
 
-A: Divider 组件的默认值是无。
+Divider 组件的默认值是无。

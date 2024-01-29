@@ -10,7 +10,7 @@
 
 注意：如果之前使用的是 `umi` + `@umijs/preset-react` 的组合进行开发，那么可以直接将 Umi 的版本号改为新版的 `max`，然后执行步骤 4 和 5。
 
-## 如何使用 `@umijs/max` 替换 `umi` 命令
+### 如何使用 `@umijs/max` 替换 `umi` 命令
 
 如果你已经安装并使用了 `@umijs/max`，可以使用 `max` 命令来替换 `umi` 命令。例如，使用 `max dev` 替换 `umi dev` 来启动开发服务器，使用 `max build` 替换 `umi build` 来构建项目。
 
@@ -42,7 +42,7 @@
 在 `umi@3` 中的配置示例：
 
 ```typescript
-import { defineConfig } from 'umi';
+import { defineConfig } from "umi";
 
 export default defineConfig({
   fastRefresh: {},
@@ -52,7 +52,7 @@ export default defineConfig({
 在 `umi@4` 中的配置示例：
 
 ```typescript
-import { defineConfig } from 'umi';
+import { defineConfig } from "umi";
 
 export default defineConfig({
   fastRefresh: true,
@@ -71,7 +71,7 @@ export default defineConfig({
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  dva: {
+  dv{
     hmr: true,
   },
 });
@@ -83,7 +83,7 @@ export default defineConfig({
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  dva: {},
+  dv{},
 });
 ```
 
@@ -96,7 +96,7 @@ export default defineConfig({
 在 `umi@4` 中的配置示例：
 
 ```typescript
-import { defineConfig } from 'umi';
+import { defineConfig } from "umi";
 
 export default defineConfig({
   webpack5: {},

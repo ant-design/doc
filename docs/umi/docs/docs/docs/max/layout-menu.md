@@ -29,16 +29,16 @@ Layout 插件会基于 Umi 的路由，封装了更多的配置项，支持更�
 // config/route.ts
 export const routes: IBestAFSRoute[] = [
   {
-    path: '/welcome',
-    component: 'IndexPage',
-    name: '欢迎',
-    icon: 'testicon',
-    target: '_blank',
+    path: "/welcome",
+    component: "IndexPage",
+    name: "欢迎",
+    icon: "testicon",
+    target: "_blank",
     headerRender: false,
     footerRender: false,
     menuRender: false,
     menuHeaderRender: false,
-    access: 'canRead',
+    access: "canRead",
     hideChildrenInMenu: true,
     hideInMenu: true,
     hideInBreadcrumb: true,
@@ -78,9 +78,9 @@ export const routes: IBestAFSRoute[] = [
 示例：
 
 ```tsx
-const before = [{ name: '111' }, { name: '222', children: [{ name: '333' }] }];
+const before = [{ name: "111" }, { name: "222", children: [{ name: "333" }] }];
 // flatMenu = true
-const after = [{ name: '111' }, { name: '222' }, { name: '333' }];
+const after = [{ name: "111" }, { name: "222" }, { name: "333" }];
 ```
 
 提供了 xxxRender 参数用于在布局中显示或隐藏特定的模块。根据不同的需求，可以设置以下参数：

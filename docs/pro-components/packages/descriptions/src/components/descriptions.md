@@ -11,7 +11,7 @@ import request from 'umi-request';
 
 const fetchData = (params) =>
   request<{
-    data: T{};
+    datT{};
   }>('https://proapi.azurewebsites.net/github/issues', {
     params,
   });
@@ -29,14 +29,14 @@ ProDescriptions 组件约定了请求结果的类型。请求结果的类型需�
 
 ```tsx | pure
 interface RequestData {
-  data: Datum{};
+  datDatum{};
   success: boolean;
 }
 ```
 
 其中，data 属性表示请求返回的数据，success 属性表示请求是否成功。在使用 ProDescriptions 组件时，可以根据请求结果的类型定义进行处理和展示。
 
-### 问题1：ProDescriptions 的参数有哪些？
+### 问题 1：ProDescriptions 的参数有哪些？
 
 答：ProDescriptions 的参数如下：
 
@@ -54,19 +54,19 @@ interface RequestData {
 - columns：列定义，与 request 配合使用 [columns](/components/table#columns)，类型为 "-"，默认值为 "-"
 - editable：编辑的相关配置，类型为 EditableConfig，默认值为 "-"
 
-### 问题2：ProDescriptions 中的 title 参数的类型是什么？
+### 问题 2：ProDescriptions 中的 title 参数的类型是什么？
 
 答：ProDescriptions 中的 title 参数的类型是 ReactNode。
 
-### 问题3：ProDescriptions 中的 bordered 参数的默认值是什么？
+### 问题 3：ProDescriptions 中的 bordered 参数的默认值是什么？
 
 答：ProDescriptions 中的 bordered 参数的默认值是 false。
 
-### 问题4：ProDescriptions 中的 layout 参数有哪些可选值？
+### 问题 4：ProDescriptions 中的 layout 参数有哪些可选值？
 
 答：ProDescriptions 中的 layout 参数有两个可选值：horizontal 和 vertical。
 
-### 问题5：ProDescriptions 中的 request 参数有什么作用？
+### 问题 5：ProDescriptions 中的 request 参数有什么作用？
 
 答：ProDescriptions 中的 request 参数用于请求数据，当不设置 columns 时，ProDescriptions.Item 需设置对应的 dataIndex。
 
@@ -80,8 +80,6 @@ interface RequestData {
 
 **默认值**：-
 
----
-
 **属性**：formProps
 
 **描述**：可以配置 form 的属性，但是不支持 onFinish
@@ -89,8 +87,6 @@ interface RequestData {
 **类型**：[`FormProps`](https://procomponents.ant.design/components/form#proform)
 
 **默认值**：-
-
----
 
 **属性**：editableKeys
 
@@ -100,8 +96,6 @@ interface RequestData {
 
 **默认值**：-
 
----
-
 **属性**：onChange
 
 **描述**：行数据被修改的时候触发
@@ -109,8 +103,6 @@ interface RequestData {
 **类型**：`(editableKeys: Key[], editableRows: T[]) => void`
 
 **默认值**：-
-
----
 
 **属性**：onSave
 
@@ -120,8 +112,6 @@ interface RequestData {
 
 **默认值**：-
 
----
-
 **属性**：saveText
 
 **描述**：保存一行的文字
@@ -129,8 +119,6 @@ interface RequestData {
 **类型**：`React.ReactNode`
 
 **默认值**：`保存`
-
----
 
 **属性**：onDelete
 
@@ -140,8 +128,6 @@ interface RequestData {
 
 **默认值**：-
 
----
-
 **属性**：deleteText
 
 **描述**：删除一行的文字
@@ -149,8 +135,6 @@ interface RequestData {
 **类型**：`React.ReactNode`
 
 **默认值**：`删除`
-
----
 
 **属性**：onCancel
 
@@ -160,8 +144,6 @@ interface RequestData {
 
 **默认值**：-
 
----
-
 **属性**：cancelText
 
 **描述**：取消编辑一行的文字
@@ -169,8 +151,6 @@ interface RequestData {
 **类型**：`React.ReactNode`
 
 **默认值**：`取消`
-
----
 
 **属性**：actionRender
 
@@ -180,8 +160,6 @@ interface RequestData {
 
 **默认值**：-
 
----
-
 **属性**：deletePopconfirmMessage
 
 **描述**：删除时弹出的确认框提示消息
@@ -189,8 +167,6 @@ interface RequestData {
 **类型**：`ReactNode`
 
 **默认值**：`删除此项？`
-
----
 
 **属性**：onlyOneLineEditorAlertMessage
 
@@ -200,8 +176,6 @@ interface RequestData {
 
 **默认值**：`只能同时编辑一行`
 
----
-
 **属性**：onlyAddOneLineAlertMessage
 
 **描述**：只能同时新增一行的提示
@@ -209,8 +183,6 @@ interface RequestData {
 **类型**：`ReactNode`
 
 **默认值**：`只能新增一行`
-
----
 
 ### ProDescriptions.Item
 
@@ -275,8 +247,6 @@ interface RequestData {
 - 类型：false \| (text: any, record: T,index: number) => boolean
 - 默认值：true
 
----
-
 ### ProDescriptions.Item - span
 
 #### 描述
@@ -294,8 +264,6 @@ number
 #### 范围
 
 整数
-
----
 
 ### ProDescriptions.Item - editable
 
@@ -318,11 +286,13 @@ true
 ### `ActionRef` 是如何使用的？
 
 在使用 `ActionRef` 之前，你需要先创建一个 ref：
+
 ```tsx | pure
 const ref = useRef<ActionType>();
 ```
 
 然后，你可以在需要刷新或触发操作的地方使用 `ref.current` 来调用相关的方法。例如，下面的代码将每隔两秒重新加载数据：
+
 ```tsx | pure
 useEffect(() => {
   setInterval(() => {
@@ -332,6 +302,7 @@ useEffect(() => {
 ```
 
 接着，你可以将 `ActionRef` 绑定到组件上，可以通过 hooks 的方式或者 class 的方式进行操作：
+
 ```tsx
 // hooks 绑定
 <ProDescriptions actionRef={ref} />;
@@ -343,6 +314,7 @@ useEffect(() => {
 ### `ActionRef` 支持哪些行为？
 
 `ActionRef` 支持一些别的行为，这些行为可以减少你的编码成本。然而需要注意的是，`ref` 会脱离 React 的生命周期，并且这些 action 都是不受控的。以下是一个使用 `ActionRef` 进行刷新的示例：
+
 ```tsx | pure
 // 刷新
 ref.current.reload();

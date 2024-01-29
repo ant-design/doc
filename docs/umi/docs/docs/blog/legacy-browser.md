@@ -19,20 +19,23 @@ Umi 4 默认的编译兼容目标是`chrome: 80`版本。
 如果你想反馈关于 Umi 4 兼容性的问题或参与讨论，可以访问[issue / 8656](https://github.com/umijs/umi/issues/8658)。
 
 ### 如何调整 Umi 的兼容目标？
+
 如果你只需要兼容非现代浏览器，并且不需要兼容到 IE，你可以调整 Umi 的兼容目标 [targets](../docs/api/config#targets)。
 
 ### Umi 默认使用哪种构建工具？
+
 Umi 4 默认使用现代构建工具，将产物生成至 `es6`。如果你需要将产物打包为 `es5`，可以调整配置。
 
 ### 如何调整 Umi 的构建工具配置？
+
 如果你想将 Umi 的产物打包为 `es5`，你可以在 `.umirc.ts` 文件中添加如下配置：
 
 ```ts
 // .umirc.ts
 
 export default {
-  jsMinifier: 'terser',
-  cssMinifier: 'cssnano',
+  jsMinifier: "terser",
+  cssMinifier: "cssnano",
 };
 ```
 
@@ -77,7 +80,7 @@ export default {
   legacy: {
     nodeModulesTransform: false,
   },
-  extraBabelIncludes: ['some-es6-pkg', /@scope\//],
+  extraBabelIncludes: ["some-es6-pkg", /@scope\//],
 };
 ```
 

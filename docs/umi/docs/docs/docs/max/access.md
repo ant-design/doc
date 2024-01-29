@@ -19,9 +19,9 @@
 ```ts
 export const routes = [
   {
-    path: '/pageA',
-    component: 'PageA',
-    access: 'canReadPageA',
+    path: "/pageA",
+    component: "PageA",
+    access: "canReadPageA",
   },
 ];
 ```
@@ -61,12 +61,11 @@ export const layout: RunTimeLayoutConfig = () => {
 
 该配置将覆盖默认的权限页面，使得渲染时会使用自定义的页面内容。
 
-通过以上信息生成的 QA 文档如下：
+通过以上信息生成的 文档如下：
 
 ### 如何自定义权限页面配置？
 
-要自定义权限页面配置，你需要在 `src/app.tsx` 文件中定义一个名为 `layout` 的函数，并返回一个对象。
-在该对象中，你可以设置自定义的权限页面。具体的配置如下：
+要自定义权限页面配置，你需要在 `src/app.tsx` 文件中定义一个名为 `layout` 的函数，并返回一个对象。在该对象中，你可以设置自定义的权限页面。具体的配置如下：
 
 ```tsx
 export const layout: RunTimeLayoutConfig = () => {
@@ -92,7 +91,7 @@ export const layout: RunTimeLayoutConfig = () => {
 1. 首先，在你的组件中导入 `useAccess` 方法。可以使用以下代码将其导入到你的组件中：
 
 ```js
-import { useAccess } from 'umi';
+import { useAccess } from "umi";
 ```
 
 2. 定义你的组件，并在组件函数中调用 `useAccess` 方法，将其赋值给一个变量，例如 `access`。你可以使用以下代码在组件函数中获取权限相关信息：

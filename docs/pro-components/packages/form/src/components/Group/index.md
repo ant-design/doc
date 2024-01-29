@@ -11,27 +11,27 @@ ProFormList 与 [Form.List](https://ant.design/components/form-cn/#Form.List) AP
   name="users"
   initialValue={[
     {
-      useMode: 'chapter',
+      useMode: "chapter",
     },
   ]}
   creatorButtonProps={{
-    position: 'top',
-    creatorButtonText: '再建一行',
+    position: "top",
+    creatorButtonText: "再建一行",
   }}
   creatorRecord={{
-    useMode: 'none',
+    useMode: "none",
   }}
 >
   <ProFormSelect
     key="useMode"
     options={[
       {
-        value: 'chapter',
-        label: '盖章后生效',
+        value: "chapter",
+        label: "盖章后生效",
       },
       {
-        value: 'none',
-        label: '不生效',
+        value: "none",
+        label: "不生效",
       },
     ]}
     width="md"
@@ -167,10 +167,9 @@ ProFormList 自带了两个操作按钮：删除按钮和复制按钮。用户�
 
 **默认值：** -
 
-### 问题1：如何使用 actionRef 操作项目实例？
+### 如何使用 actionRef 操作项目实例？
 
-答案1：
-你可以使用 `actionRef` 来操作项目实例。在给表单列表组件（`<ProFormList>`）传递 `actionRef` 属性后，你可以通过访问 `actionRef.current` 来获取操作实例。下面是几个常用的操作示例：
+答案 1：你可以使用 `actionRef` 来操作项目实例。在给表单列表组件（`<ProFormList>`）传递 `actionRef` 属性后，你可以通过访问 `actionRef.current` 来获取操作实例。下面是几个常用的操作示例：
 
 - 增加一行：使用 `actionRef.current.add` 方法，传递一个对象和索引值作为参数，例如 `actionRef?.current.add?.({}, 1)`。
 
@@ -182,10 +181,9 @@ ProFormList 自带了两个操作按钮：删除按钮和复制按钮。用户�
 
 - 获取所有数据：使用 `actionRef.current.getList` 方法，例如 `actionRef?.current.getList?.()`。
 
-### 问题2：如何在表单列表中使用 actionRef 进行操作？
+### 问题 2：如何在表单列表中使用 actionRef 进行操作？
 
-答案2：
-要在表单列表组件中使用 `actionRef` 进行操作，你需要将 `actionRef` 属性传递给 `<ProFormList>` 组件。下面是一个示例：
+答案 2：要在表单列表组件中使用 `actionRef` 进行操作，你需要将 `actionRef` 属性传递给 `<ProFormList>` 组件。下面是一个示例：
 
 ```tsx | pure
 <ProFormList actionRef={actionRef}>
@@ -195,15 +193,14 @@ ProFormList 自带了两个操作按钮：删除按钮和复制按钮。用户�
 
 请确保在 `<ProFormList>` 组件外部创建和定义 `actionRef`。然后，你可以在相关按钮的 `onClick` 事件中调用 `actionRef.current` 来执行具体的操作。
 
-### 问题3：如何使用 actionRef 进行操作的权限控制？
+###如何使用 actionRef 进行操作的权限控制？
 
-答案3：
-如果你想要在使用 `actionRef` 进行具体操作之前进行权限控制，你可以使用 `actionGuard` 属性来指定权限控制的函数。该函数会在每次操作前被调用，并接收操作名称和相关参数作为参数。你可以在函数内部进行权限判断和限制。例如：
+答案 3：如果你想要在使用 `actionRef` 进行具体操作之前进行权限控制，你可以使用 `actionGuard` 属性来指定权限控制的函数。该函数会在每次操作前被调用，并接收操作名称和相关参数作为参数。你可以在函数内部进行权限判断和限制。例如：
 
 ```tsx | pure
 const actionGuard = (action: string, params: any) => {
   // 在这里根据具体的权限逻辑来控制操作的可执行性
-  if (action === 'add' && params.name === 'admin') {
+  if (action === "add" && params.name === "admin") {
     return false; // 不能进行添加名为 "admin" 的行操作
   }
   return true; // 默认返回可执行
@@ -211,12 +208,12 @@ const actionGuard = (action: string, params: any) => {
 
 <ProFormList actionRef={actionRef} actionGuard={actionGuard}>
   {/* 表单字段等 */}
-</ProFormList>
+</ProFormList>;
 ```
 
 通过指定 `actionGuard` 属性并传递权限控制函数，你可以在每次操作之前进行权限判断，从而控制操作的可执行性。
 
-## actionGuard 拦截器
+### actionGuard 拦截器
 
 ### 1. 什么是 actionGuard 拦截器？
 
@@ -249,27 +246,21 @@ actionGuard 拦截器是用于拦截 list 操作的机制。它包含两个事�
 ```tsx | pure
 actionRender: (field, action, defaultActionDom, count) => {
   const customActionDom = [];
-  
+
   // 添加自定义按钮
-  customActionDom.push(
-    <a onClick={() => action.add({ id: "xx" })}>新增</a>
-  );
-  
+  customActionDom.push(<a onClick={() => action.add({ id: "xx" })}>新增</a>);
+
   // 如果超过三行，则禁用删除按钮
   if (count > 3) {
-    customActionDom.push(
-      <a disabled>删除</a>
-    );
+    customActionDom.push(<a disabled>删除</a>);
   } else {
     // 否则添加删除按钮
-    customActionDom.push(
-      <a onClick={() => action.remove(field.name)}>删除</a>
-    );
+    customActionDom.push(<a onClick={() => action.remove(field.name)}>删除</a>);
   }
-  
+
   // 返回自定义操作按钮列表
   return [...defaultActionDom, ...customActionDom];
-}
+};
 ```
 
 在上面的例子中，我们首先定义了一个空数组 `customActionDom`，用于存放自定义的操作按钮。
@@ -305,7 +296,7 @@ type RenderActionParams = {
    * @name 当前行的meta信息
    * @example {name: number; key: number}
    */
-  meta: FormListFieldData;
+  metFormListFieldData;
   /**
    * @name 当前行的行号
    */
@@ -314,7 +305,7 @@ type RenderActionParams = {
    * @name 用于操作行的一些快捷方法
    * @example 给第二行增加数据 action.add?.({},1);
    * @example 删除第二行 action.remove?.(1);
-   * @example 从 1 移到 2: action.move?.(2,1);
+   * @example 从 1 移到 action.move?.(2,1);
    * @example 获取当前行的数据: action.getCurrentRowData() -> {id:"xxx",name:'123',age:18}
    * @example 设置当前行的数据: {id:"123",name:'123'} -> action.setCurrentRowData({name:'xxx'}) -> {id:"123",name:'xxx'}
    * @example 清空当前行的数据：{id:"123",name:'123'} -> action.setCurrentRowData({name:undefined}) -> {id:"123"}
@@ -324,13 +315,13 @@ type RenderActionParams = {
      * @name 获取当前行的数据
      * @example getCurrentRowData -> {id:"xxx",name:'123',age:18}
      */
-    getCurrentRowData: () => any;
+    getCurrentRowDat() => any;
     /**
      * @name 设置当前行的数据
      * @example {id:"123",name:'123'} -> setCurrentRowData({name:'xxx'}) -> {id:"123",name:'123'}
      * @example {id:"123",name:'123'} -> setCurrentRowData({name:undefined}) -> {id:"123"}
      */
-    setCurrentRowData: (data: any) => void;
+    setCurrentRowDat(datany) => void;
   };
   /**
    * @name 总行数
@@ -341,7 +332,7 @@ type RenderActionParams = {
 
 以上是对 ProFormList 的 RenderProps 模式参数的详细说明。通过了解这些参数，可以更好地理解和使用 ProFormList 的 RenderProps 模式。
 
-#### 问题 1：`ProFormFieldSet` 是用来做什么的？
+#### `ProFormFieldSet` 是用来做什么的？
 
 答：`ProFormFieldSet` 可以将内部的多个 children 的值组合并且存储在 `ProForm` 中。
 
@@ -349,7 +340,7 @@ type RenderActionParams = {
 
 答：在提交时，可以通过 `transform` 属性对值进行转化。
 
-#### 问题 3：`ProFormFieldSet` 可以用来组合哪些输入框？
+####`ProFormFieldSet` 可以用来组合哪些输入框？
 
 答：`ProFormFieldSet` 可以方便地组合多个输入框，例如 `ProFormText`。
 

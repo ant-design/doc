@@ -8,8 +8,11 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   baseURL: 'https://api.openai-proxy.com/v1',
 });
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const mdFileList = readMarkdownFiles('.');
+const mdFileList = readMarkdownFiles('.').filter(
+  (file) => !file.startsWith('docs/')
+);
 
 for await (const file of mdFileList) {
   const mdContent = fs.readFileSync(file, 'utf-8');
