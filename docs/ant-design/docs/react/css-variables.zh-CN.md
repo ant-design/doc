@@ -1,0 +1,97 @@
+### 问题一：Ant Design 5.x 从哪个版本开始重新支持了 CSS 变量？
+
+答案：Ant Design 5.x 从版本 5.12.0 开始重新支持了 CSS 变量。
+
+### 问题二：Ant Design 5.x 在 CSS 变量模式中融合了什么能力？
+
+答案：Ant Design 5.x 在 CSS 变量模式中融合了 CSS-in-JS 的能力。
+
+### 问题三：在 Ant Design 5.x 的 CSS 变量模式下，哪些样式可以共享？
+
+答案：在 Ant Design 5.x 的 CSS 变量模式下，不同主题下的样式可以共享，从而减少样式体积。
+
+### 什么是 Ant Design 的 CSS 变量模式？
+
+Ant Design 的 CSS 变量模式是一种样式能力，通过使用 CSS 变量，可以实现在同一组件中，不同主题下的样式共享的目的。这样可以减少样式体积，并提高主题切换的性能。
+
+### CSS 变量模式有什么优势？
+
+CSS 变量模式带来了两个重要的优势。首先，它可以让同一组件在不同主题下的样式共享，从而减少了样式体积。其次，切换主题时不再需要重新序列化样式，提升了主题切换的性能。
+
+### 应该在什么情况下开启 Ant Design 的 CSS 变量模式？
+
+如果你的应用依赖 Ant Design 的主题能力，即需要在不同主题下展示不同的样式，那么我们强烈建议你开启 Ant Design 的 CSS 变量模式。这样可以享受到样式共享和主题切换性能的提升。
+
+#### 问题 1：如何快速上手 Ant Design 的 CSS 变量模式？
+
+答：在 `ConfigProvider` 的 `theme` 属性中，通过 `cssVar` 配置来开启 CSS 变量模式。这个配置会被继承，所以只需要在根节点的 `ConfigProvider` 中配置即可。示例代码如下：
+
+```tsx
+<ConfigProvider theme={{ cssVar: true }}>
+  <App />
+</ConfigProvider>
+```
+
+#### 问题 2：CSS 变量模式需要注意哪些问题？
+
+答：在 React 18 中，使用了 `useId` 来生成唯一的 key，所以不需要关心为每一个主题设置唯一的 key。但是在 React 17 或者 16 中，需要手动为每一个主题设置一个唯一的 key，否则会导致主题混乱。
+
+#### 问题 3：如何确认 CSS 变量模式已经生效？
+
+答：开启 CSS 变量模式后，可以审查元素，可以看到 antd 组件样式中一些原本具体的数值被替换为了 CSS 变量。示例图片如下：
+
+![image](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*p5NrRJmUNHgAAAAAAAAAAAAADrJ8AQ/original)
+
+希望以上信息能帮到您。如果还有其他问题，请随时提问。
+
+### CSS 变量模式下，为什么可以关闭 hash？
+
+在 Ant Design 5.x 及以上的版本中，hash 是用于隔离主题样式的一个特性。然而，在启用了 CSS 变量之后，相同版本的 Ant Design 下的组件样式不会随着 token 的变化而改变，因为动态部分的样式已经用 CSS 变量填充了。因此，如果你的应用中只使用了一个版本的 Ant Design，你可以考虑关闭 hash 来进一步减小样式体积。
+
+### 如何关闭 hash？
+
+你可以通过以下方式关闭 hash：
+
+```tsx
+<ConfigProvider theme={{ cssVar: true, hashed: false }}>
+  <App />
+</ConfigProvider>
+```
+
+这样，你就可以在 `ConfigProvider` 中将 `theme` 的 `hashed` 属性设置为 `false`，来关闭 hash。
+
+同时，我们还强烈推荐你使用 `extractStyle` 来抽取静态样式。这样做可以提升应用的性能。
+
+### 使用 CSS 变量模式后，关闭 hash 有什么好处？
+
+通过关闭 hash，可以进一步减小样式的体积。同时，使用 CSS 变量模式后，即使样式中的 token 发生变化，组件样式也不会改变。这是因为 CSS 变量已经填充了样式中的动态部分。因此，如果应用中只使用了一个版本的 Ant Design，并且启用了 CSS 变量模式，关闭 hash 可以提供更好的性能和更小的样式体积。
+
+## 1. CSS 变量的前缀是什么？
+
+- 属性：prefix
+- 说明：CSS 变量的前缀
+- 类型：string
+- 默认值：`ant`
+- 版本：5.12.0
+
+## 2. 如何填充当前主题的唯一识别 key？
+
+- 属性：key
+- 说明：当前主题的唯一识别 key. 在 React 18 中会默认用 `useId` 填充，小于 React 18 的版本需要手动填充。
+- 类型：string
+- 默认值：`useId` in React 18
+- 版本：5.12.0
+
+## 3. 有哪些参数支持在 `cssVar` 中使用？
+
+- 属性：prefix
+- 说明：CSS 变量的前缀
+- 类型：string
+- 默认值：`ant`
+- 版本：5.12.0
+
+- 属性：key
+- 说明：当前主题的唯一识别 key. 在 React 18 中会默认用 `useId` 填充，小于 React 18 的版本需要手动填充。
+- 类型：string
+- 默认值：`useId` in React 18
+- 版本：5.12.0

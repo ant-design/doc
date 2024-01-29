@@ -17,9 +17,9 @@ export default (api: IApi) => {
         return joi.string();
       },
     },
-    enableBy: api.EnableBy.config,
+    enableBy: api.EnableBy.config
   });
-  api.modifyConfig((memo) => {
+  api.modifyConfig((memo)=>{
     memo.favicons = api.userConfig.changeFavicon;
     return memo;
   });
@@ -36,17 +36,23 @@ export default (api: IApi) => {
 
 以上是关于插件的一些基本信息，希望能对你有所帮助。如果你还有其他问题，请随时提问。
 
-Question 1: 什么是 preset 和 plugin？
+Question 1:
+什么是preset和plugin？
 
-Answer 1: preset 是预设一些插件的功能，在注册 presets 和 plugins 时使用。它可以返回一个包含 plugins 和 presets 属性的对象，用于注册相应的插件或插件集。在 Umi 中，presets 注册在 plugins 之前。
+Answer 1:
+preset是预设一些插件的功能，在注册 presets 和 plugins 时使用。它可以返回一个包含 plugins 和 presets 属性的对象，用于注册相应的插件或插件集。在 Umi 中，presets 注册在 plugins 之前。
 
-Question 2: presets 和 plugins 的注册顺序有何影响？
+Question 2:
+presets 和 plugins 的注册顺序有何影响？
 
-Answer 2: 在 Umi 中，presets 的注册顺序优先于 plugins。Umi 维护了两个队列分别用于按顺序注册 presets 和 plugins。通过定义 presets 和 plugins 的注册顺序，可以确保 presets 之间的顺序和关系是可控的。
+Answer 2:
+在 Umi 中，presets 的注册顺序优先于 plugins。Umi 维护了两个队列分别用于按顺序注册 presets 和 plugins。通过定义 presets 和 plugins 的注册顺序，可以确保 presets 之间的顺序和关系是可控的。
 
-Question 3: 在 plugin 中可以返回 plugins 或 presets 吗？
+Question 3:
+在 plugin 中可以返回 plugins 或 presets 吗？
 
-Answer 3: 是的，在 plugin 中可以返回 plugins 或 presets。但是，Umi 不会对返回的 plugins 或 presets 做任何处理。返回的 plugins 或 presets 只是为了提供给其他插件或 preset 使用。
+Answer 3:
+是的，在 plugin 中可以返回 plugins 或 presets。但是，Umi 不会对返回的 plugins 或 presets 做任何处理。返回的 plugins 或 presets 只是为了提供给其他插件或 preset 使用。
 
 ### 插件的 id 是什么？它是如何确定的？
 
@@ -65,9 +71,8 @@ Answer 3: 是的，在 plugin 中可以返回 plugins 或 presets。但是，Umi
 在配置中，可以通过 `presets` 字段来配置使用的插件。具体的使用方式是在 `presets` 字段中提供插件的路径。
 
 例如，在示例中的配置文件中，通过以下代码配置了 `presets` 字段:
-
 ```js
-presets: ['./preset/foo', 'bar/presets'];
+presets: ['./preset/foo','bar/presets']
 ```
 
 这里的 `./preset/foo` 和 `bar/presets` 分别表示了插件的路径。通过配置 `presets` 字段，我们可以指定使用的插件。
@@ -77,9 +82,8 @@ presets: ['./preset/foo', 'bar/presets'];
 除了 `presets` 字段外，还可以在配置中使用 `plugins` 字段来配置使用的插件。使用方式与 `presets` 类似，将插件的路径放在 `plugins` 字段中即可。
 
 例如，在示例中的配置文件中，通过以下代码配置了 `plugins` 字段:
-
 ```js
-plugins: ['./plugin', require.resolve('plugin_foo')];
+plugins: ['./plugin', require.resolve('plugin_foo')]
 ```
 
 这里的 `./plugin` 和 `require.resolve('plugin_foo')` 分别表示了插件的路径。通过配置 `plugins` 字段，我们可以指定使用的插件。
@@ -97,7 +101,6 @@ plugins: ['./plugin', require.resolve('plugin_foo')];
 ### Umi 插件的注册顺序有什么规则吗？
 
 Umi 插件的注册遵循以下规则：
-
 - 所有的 presets （预设）会先于 plugins （插件）被注册。
 - 内置插件会先于环境变量中的插件和用户配置中的插件被注册。
 - 同一个数组中的插件会按顺序依次被注册。
@@ -106,7 +109,6 @@ Umi 插件的注册遵循以下规则：
 ### Umi 插件的注册顺序的具体过程是怎样的？
 
 Umi 插件的注册顺序具体过程如下：
-
 1. 先注册所有的 presets，按照顺序依次执行其中的 preset。
 2. 接下来注册内置插件。
 3. 然后注册环境变量中的插件。
@@ -123,8 +125,8 @@ Umi 插件的注册顺序对开发会有一定的影响。通过了解插件的�
 
 ```js
 export default {
-  mock: { exclude: ['./foo'] },
-};
+  mock: { exclude: ['./foo'] }
+}
 ```
 
 这样就可以排除 `./foo` 文件。
@@ -139,7 +141,7 @@ export default {
 }
 ```
 
-在这里，我们可以根据插件的 key 进行配置。
+在这里，我们可以根据插件的 key 进行配置。 
 
 希望以上信息对你有帮助。如果还有任何疑问，请随时提问。
 
@@ -192,18 +194,16 @@ export default {
 ### Umi 中的 PluginAPI 是如何工作的？
 
 Umi 为每个插件分配了一个 PluginAPI 对象，它引用了插件本身和 Umi 的 service。PluginAPI 对象具有一个 `get()` 方法，根据不同的规则返回不同的属性或方法。具体规则如下：
-
 - pluginMethod：如果属性是 Umi 所维护的 `pluginMethods[]` 中的方法（使用 `registerMethod()` 注册的方法），则返回该方法。
 - service props：如果属性是 serviceProps 数组中的属性（这些属性是 Umi 允许插件直接访问的属性），则返回 service 对应的属性。
-- static props：如果属性是静态变量 staticProps 数组中的属性（如类型定义和常量），则返回该属性。
+- static props：如果属性是静态变量staticProps 数组中的属性（如类型定义和常量），则返回该属性。
 - 否则返回 api 的属性。
 
-通过 `registerMethod()` 方法，Umi 提供了大多数插件 api 的实现方式。这使得你可以在插件中快速注册钩子。这也体现了 Umi 将框架和功能解耦的设计理念：Umi 的 service 只提供插件管理功能，而插件提供 api 接口。
+通过 `registerMethod()` 方法，Umi 提供了大多数插件 api 的实现方式。这使得你可以在插件中快速注册钩子。这也体现了 Umi 将框架和功能解耦的设计理念：Umi 的 service 只提供插件管理功能，而插件提供api接口。
 
 ### Umi 插件的 PluginAPI 对象有什么作用？
 
 Umi 为每个插件提供了一个 PluginAPI 对象，它允许插件访问插件本身和 Umi 的 service。通过 PluginAPI 对象，插件可以使用以下功能：
-
 - 注册钩子方法，通过 `registerMethod()` 在插件中快速注册 hook。
 - 访问 Umi 提供的 service 属性，如路由配置、webpack 配置等。
 - 访问静态变量，如类型定义和常量。
@@ -213,10 +213,21 @@ Umi 为每个插件提供了一个 PluginAPI 对象，它允许插件访问插�
 ### 如何在 Umi 插件中使用 PluginAPI？
 
 在 Umi 插件开发中，可以通过 PluginAPI 对象来操作和扩展 Umi 的功能。使用 PluginAPI 的步骤如下：
-
 1. 在插件中引入 PluginAPI：`import { PluginAPI } from 'umi'`。
 2. 定义插件函数，其中第一个参数即为 PluginAPI 对象：`export default function myPlugin(api: PluginAPI) {...}`。
 3. 在插件函数中，通过 PluginAPI 对象的 `registerMethod()` 方法来注册所需的钩子方法。
 4. 在需要的地方使用注册的钩子方法来扩展 Umi 的功能。
 
 通过使用 PluginAPI，插件可以轻松地在 Umi 中实现定制化的功能和扩展。
+
+### `registerMethods` 插件是什么？
+
+`registerMethods` 插件是 `preset-umi` 内置的一个插件，它用于注册一些特定的 hook 方法，以供开发者快速地注册自定义的功能。在 `PluginAPI` 中，大部分方法都是由 `registerMethods` 插件提供的。
+
+### `features` 插件有什么作用？
+
+`features` 插件是 `preset-umi` 内置的一类插件，它为 Umi 提供了一些特殊功能和能力。这些功能包括 `appData`、`lowImport`、`mock` 等。通过使用 `features` 插件，开发者可以更方便地实现这些特性，提高开发效率。
+
+### `commands` 插件的作用是什么？
+
+`commands` 插件是 `preset-umi` 内置的一类插件，它用于注册各种命令，为 Umi CLI 提供各种功能和命令行选项。通过 `commands` 插件，Umi CLI 可以在终端中正常运行，并提供丰富的功能和命令，让开发者更方便地使用 Umi 进行项目开发和管理。
