@@ -495,8 +495,8 @@ ActionRef 提供了以下操作方法：
 要使用 ActionRef，首先需要创建一个 ref 对象，然后将其传递给 ProTable 组件的 actionRef 属性，示例代码如下：
 
 ```tsx | pure
-import React, { useRef } from "react";
-import { ProTable } from "antd";
+import React, { useRef } from 'react';
+import { ProTable } from 'antd';
 
 interface ActionType {
   reload: (resetPageIndex?: boolean) => void;

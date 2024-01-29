@@ -3,12 +3,12 @@
 可以通过 umi 的 defineApp 方法来定义配置，从而在写配置时获得 TypeScript 提示。以下是一个示例代码：
 
 ```js
-import { defineApp } from "umi";
+import { defineApp } from 'umi';
 
 export default defineApp({
   layout: () => {
     return {
-      title: "umi",
+      title: 'umi',
     };
   },
 });
@@ -31,7 +31,7 @@ export const layout: RuntimeConfig['layout'] = () => {
 umi 的 defineApp 方法用于定义配置。你可以通过该方法来指定一些配置项，并在写配置时获得 TypeScript 提示。以下是一个示例代码：
 
 ```js
-import { defineApp } from "umi";
+import { defineApp } from 'umi';
 
 export default defineApp({
   // 配置项
@@ -43,7 +43,7 @@ export default defineApp({
 在 umi 中，可以使用 defineApp 方法或者 RuntimeConfig 类型来定义 layout 配置。以下是一个示例代码：
 
 ```js
-import { defineApp } from "umi";
+import { defineApp } from 'umi';
 
 export default defineApp({
   layout: () => {
@@ -92,14 +92,14 @@ export default {
 1. 在你的 dva model 中引入 `immer` 模块。
 
 ```js
-import { produce } from "immer";
+import { produce } from 'immer';
 ```
 
 2. 在你的 model 中使用 `immer` 提供的 `produce` 方法来修改状态。
 
 ```js
 const Model = {
-  namespace: "example",
+  namespace: 'example',
   state: {
     count: 0,
   },
@@ -124,9 +124,9 @@ const Model = {
 
 ```js
 const myModel = {
-  namespace: "myModel",
+  namespace: 'myModel',
   state: {
-    name: "Tom",
+    name: 'Tom',
   },
   reducers: {
     updateName(state, { payload }) {
@@ -155,15 +155,15 @@ export default {
 4. 在需要使用这个额外的 model 的地方引入它并使用。
 
 ```js
-import { connect } from "umi";
+import { connect } from 'umi';
 
 const MyComponent = (props) => {
   const { name, dispatch } = props;
 
   const handleClick = () => {
     dispatch({
-      type: "myModel/updateName",
-      payload: "Jerry",
+      type: 'myModel/updateName',
+      payload: 'Jerry',
     });
   };
 
@@ -201,7 +201,7 @@ export default connect(({ myModel }) => ({
 ```ts
 // .umirc.ts
 export default {
-  plugins: ["@umijs/plugins/dist/initial-state", "@umijs/plugins/dist/model"],
+  plugins: ['@umijs/plugins/dist/initial-state', '@umijs/plugins/dist/model'],
   initialState: {},
   model: {},
 };
@@ -260,12 +260,12 @@ export function onRouteChange({
 下面是一个示例代码：
 
 ```ts
-import { matchRoutes } from "umi";
+import { matchRoutes } from 'umi';
 
 export function onRouteChange({ clientRoutes, location }) {
   const route = matchRoutes(clientRoutes, location.pathname)?.pop()?.route;
   if (route) {
-    document.title = route.title || "";
+    document.title = route.title || '';
   }
 }
 ```
@@ -284,7 +284,7 @@ export function onRouteChange({ clientRoutes, location }) {
 
 ```ts
 export function patchRoutes({ routes, routeComponents }) {
-  console.log("patchRoutes", routes, routeComponents);
+  console.log('patchRoutes', routes, routeComponents);
 }
 ```
 
@@ -307,11 +307,11 @@ export function patchRoutes({ routes, routeComponents }) {
 你可以通过以下方式在路由表的最前面添加一个路由：
 
 ```tsx
-import Page from "@/extraRoutes/foo";
+import Page from '@/extraRoutes/foo';
 
 export function patchClientRoutes({ routes }) {
   routes.unshift({
-    path: "/foo",
+    path: '/foo',
     element: <Page />,
   });
 }
@@ -324,11 +324,11 @@ export function patchClientRoutes({ routes }) {
 你可以使用 `Navigate` 组件在路由表的最前面添加一个重定向路由，示例如下：
 
 ```tsx
-import { Navigate } from "umi";
+import { Navigate } from 'umi';
 
 export const patchClientRoutes = ({ routes }) => {
   routes.unshift({
-    path: "/",
+    path: '/',
     element: <Navigate to="/home" replace />,
   });
 };
@@ -341,14 +341,14 @@ export const patchClientRoutes = ({ routes }) => {
 你可以通过以下方式在路由表中添加一个嵌套路由：
 
 ```tsx
-import Page from "@/extraRoutes/foo";
+import Page from '@/extraRoutes/foo';
 
 export const patchClientRoutes = ({ routes }) => {
   routes.push({
-    path: "/group",
+    path: '/group',
     children: [
       {
-        path: "/group/page",
+        path: '/group/page',
         element: <Page />,
       },
     ],
@@ -371,7 +371,7 @@ export function patchClientRoutes({ routes }) {
 }
 
 export function render(oldRender) {
-  fetch("/api/routes")
+  fetch('/api/routes')
     .then((res) => res.json())
     .then((res) => {
       extraRoutes = res.routes;

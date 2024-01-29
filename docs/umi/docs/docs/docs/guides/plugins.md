@@ -67,7 +67,7 @@ Answer 是的，在 plugin 中可以返回 plugins 或 presets。但是，Umi �
 例如，在示例中的配置文件中，通过以下代码配置了 `presets` 字段:
 
 ```js
-presets: ["./preset/foo", "bar/presets"];
+presets: ['./preset/foo', 'bar/presets'];
 ```
 
 这里的 `./preset/foo` 和 `bar/presets` 分别表示了插件的路径。通过配置 `presets` 字段，我们可以指定使用的插件。
@@ -79,7 +79,7 @@ presets: ["./preset/foo", "bar/presets"];
 例如，在示例中的配置文件中，通过以下代码配置了 `plugins` 字段:
 
 ```js
-plugins: ["./plugin", require.resolve("plugin_foo")];
+plugins: ['./plugin', require.resolve('plugin_foo')];
 ```
 
 这里的 `./plugin` 和 `require.resolve('plugin_foo')` 分别表示了插件的路径。通过配置 `plugins` 字段，我们可以指定使用的插件。
@@ -123,7 +123,7 @@ Umi 插件的注册顺序对开发会有一定的影响。通过了解插件的�
 
 ```js
 export default {
-  mock: { exclude: ["./foo"] },
+  mock: { exclude: ['./foo'] },
 };
 ```
 

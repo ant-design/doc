@@ -86,9 +86,9 @@ TimePicker.tsx 可以在 React 项目中的任何需要选择时间的地方使�
 你可以使用以下代码来导入 `Calendar` 组件和相关的类型：
 
 ```tsx
-import { Calendar } from "antd";
-import type { Moment } from "moment";
-import momentGenerateConfig from "rc-picker/es/generate/moment";
+import { Calendar } from 'antd';
+import type { Moment } from 'moment';
+import momentGenerateConfig from 'rc-picker/es/generate/moment';
 ```
 
 ###如何使用 `Calendar.generateCalendar` 方法生成自定义的 `MyCalendar` 组件？
@@ -112,9 +112,9 @@ const MyCalendar = Calendar.generateCalendar<Moment>(momentGenerateConfig);
 3. 在 `index.tsx` 文件中编写如下代码：
 
 ```tsx
-export { default as Calendar } from "./Calendar";
-export { default as DatePicker } from "./DatePicker";
-export { default as TimePicker } from "./TimePicker";
+export { default as Calendar } from './Calendar';
+export { default as DatePicker } from './DatePicker';
+export { default as TimePicker } from './TimePicker';
 ```
 
 4. 保存并导出这些组件。
@@ -165,7 +165,7 @@ export { default as TimePicker } from "./TimePicker";
 1. 在你的 `webpack` 配置文件中引入 `AntdMomentWebpackPlugin`：
 
 ```js
-const AntdMomentWebpackPlugin = require("@ant-design/moment-webpack-plugin");
+const AntdMomentWebpackPlugin = require('@ant-design/moment-webpack-plugin');
 ```
 
 2. 在 `plugins` 配置项中实例化 `AntdMomentWebpackPlugin`：
@@ -200,7 +200,7 @@ DatePicker.tsx 定义了一个名为 `MyDatePicker` 的日期选择器组件。�
 可以在其他组件中引入 `MyDatePicker` 组件，并按照需要进行使用。例如：
 
 ```tsx
-import MyDatePicker from "src/components/DatePicker";
+import MyDatePicker from 'src/components/DatePicker';
 
 // 在组件中使用 MyDatePicker
 <MyDatePicker />;
@@ -215,9 +215,9 @@ import MyDatePicker from "src/components/DatePicker";
 3. 打开这个文件，并在文件开头添加以下代码：
 
 ```tsx
-import { DatePicker } from "antd";
-import type { DateTime } from "luxon";
-import luxonGenerateConfig from "rc-picker/lib/generate/luxon";
+import { DatePicker } from 'antd';
+import type { DateTime } from 'luxon';
+import luxonGenerateConfig from 'rc-picker/lib/generate/luxon';
 
 const MyDatePicker = DatePicker.generatePicker<DateTime>(luxonGenerateConfig);
 
@@ -233,14 +233,14 @@ export default MyDatePicker;
 1. 在你的 `DatePicker.tsx` 文件中，导入 `DatePicker` 组件和 `DateTime` 类型：
 
 ```tsx
-import { DatePicker } from "antd";
-import type { DateTime } from "luxon";
+import { DatePicker } from 'antd';
+import type { DateTime } from 'luxon';
 ```
 
 2. 继续导入来自 `rc-picker` 的 `luxonGenerateConfig` 对象：
 
 ```tsx
-import luxonGenerateConfig from "rc-picker/lib/generate/luxon";
+import luxonGenerateConfig from 'rc-picker/lib/generate/luxon';
 ```
 
 3. 使用 `DatePicker.generatePicker` 方法来创建基于 luxon 的 DatePicker 组件，并将 `DateTime` 类型作为泛型参数传递给它：
@@ -264,7 +264,7 @@ export default MyDatePicker;
 1. 导入刚才定义的 `DatePicker` 组件：
 
 ```tsx
-import DatePicker from "./DatePicker";
+import DatePicker from './DatePicker';
 ```
 
 2. 在需要使用 DatePicker 的地方，直接使用导入的组件即可：

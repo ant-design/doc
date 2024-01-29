@@ -160,7 +160,7 @@ const root = createRoot(container);
 root.render(
   <StyleProvider container={shadowRoot}>
     <MyApp />
-  </StyleProvider>
+  </StyleProvider>,
 );
 ```
 

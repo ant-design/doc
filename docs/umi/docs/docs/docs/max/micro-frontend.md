@@ -35,12 +35,12 @@ export default {
     master: {
       apps: [
         {
-          name: "app1",
-          entry: "//localhost:7001",
+          name: 'app1',
+          entry: '//localhost:7001',
         },
         {
-          name: "app2",
-          entry: "//localhost:7002",
+          name: 'app2',
+          entry: '//localhost:7002',
         },
       ],
     },
@@ -72,12 +72,12 @@ export default {
 export const qiankun = {
   apps: [
     {
-      name: "app1",
-      entry: "//localhost:7001",
+      name: 'app1',
+      entry: '//localhost:7001',
     },
     {
-      name: "app2",
-      entry: "//localhost:7002",
+      name: 'app2',
+      entry: '//localhost:7002',
     },
   ],
 };
@@ -121,25 +121,25 @@ export default {
 export default {
   routes: [
     {
-      path: "/",
-      component: "@/layouts/index.tsx",
+      path: '/',
+      component: '@/layouts/index.tsx',
       routes: [
         {
-          path: "/app1",
-          component: "@/layouts/app-layout.tsx",
+          path: '/app1',
+          component: '@/layouts/app-layout.tsx',
           routes: [
             // 配置微应用 app1 关联的路由
             {
               // 带上 * 通配符意味着将 /app1/project 下所有子路由都关联给微应用 app1
-              path: "/project/*",
-              microApp: "app1",
+              path: '/project/*',
+              microApp: 'app1',
             },
           ],
         },
         // 配置 app2 关联的路由
         {
-          path: "/app2/*",
-          microApp: "app2",
+          path: '/app2/*',
+          microApp: 'app2',
         },
       ],
     },
@@ -165,7 +165,7 @@ export default {
 现在，我们想在父应用的某个页面中引入子应用 `app1`，可以编写代码如下：
 
 ```tsx
-import { MicroApp } from "umi";
+import { MicroApp } from 'umi';
 
 export default function Page() {
   return <MicroApp name="app1" />;
@@ -177,7 +177,7 @@ export default function Page() {
 如果父应用的路由包含前缀，可以通过配置 `base` 属性保证父子应用的路由正确对应。例如，父应用路由为 `/prefix/router-path/some/page` 时，我们希望子应用的路由为 `/some/page`，可以修改代码如下：
 
 ```tsx
-import { MicroApp } from "umi";
+import { MicroApp } from 'umi';
 
 export default function Page() {
   return <MicroApp name="app1" base="/prefix/router-path" />;
@@ -194,7 +194,7 @@ export default function Page() {
 使用&lt;MicroAppWithMemoHistory /&gt;组件引入子应用时，需要提供子应用的路由 url 属性。例如，如果我们想在父应用的某个组件内部引入名为 app2 的子应用，子应用的路由为/some/page，可以使用以下代码：
 
 ```tsx
-import { MicroAppWithMemoHistory } from "umi";
+import { MicroAppWithMemoHistory } from 'umi';
 
 export default function Page() {
   return <MicroAppWithMemoHistory name="app2" url="/some/page" />;
@@ -212,7 +212,7 @@ export default function Page() {
 以子应用 `app1` 和 `app2` 为例，我们可以在 `app1` 中的页面中使用 `<MicroAppLink />` 组件来实现跳转到 `app2` 的内部页面。例如：
 
 ```tsx
-import { MicroAppLink } from "umi";
+import { MicroAppLink } from 'umi';
 
 export default function Page() {
   return (
@@ -230,7 +230,7 @@ export default function Page() {
 同样的，如果需要从 `app2` 跳转回 `app1`，可以在 `app2` 中的页面中使用 `<MicroAppLink />` 组件实现。例如：
 
 ```tsx
-import { MicroAppLink } from "umi";
+import { MicroAppLink } from 'umi';
 
 export default function Page() {
   return (
@@ -250,7 +250,7 @@ export default function Page() {
 如果需要从子应用直接跳转到父应用的指定路由，可以在子应用中使用 `<MicroAppLink />` 组件，并设置 `isMaster` 属性为 `true`。例如：
 
 ```tsx
-import { MicroAppLink } from "umi";
+import { MicroAppLink } from 'umi';
 
 export default function Page() {
   return (
@@ -287,8 +287,8 @@ Qiankun 在 single-spa 的基础上提供了额外的生命周期钩子，用于
 可以通过手动刷新子应用来触发 `update` 钩子，例如：
 
 ```tsx
-import { useRef } from "react";
-import { MicroApp } from "umi";
+import { useRef } from 'react';
+import { MicroApp } from 'umi';
 
 export default function Page() {
   const microAppRef = useRef();
@@ -340,7 +340,7 @@ export const qiankun = {
 // src/app.ts
 export const qiankun = {
   async bootstrap(props) {
-    console.log("app1 bootstrap", props);
+    console.log('app1 bootstrap', props);
   },
 };
 ```
@@ -355,7 +355,7 @@ export const qiankun = {
 // src/app.ts
 export const qiankun = {
   async mount(props) {
-    console.log("app1 mount", props);
+    console.log('app1 mount', props);
   },
 };
 ```
@@ -370,7 +370,7 @@ export const qiankun = {
 // src/app.ts
 export const qiankun = {
   async unmount(props) {
-    console.log("app1 unmount", props);
+    console.log('app1 unmount', props);
   },
 };
 ```
@@ -420,11 +420,11 @@ export const qiankun = {
 
 ```typescript
 // src/app.ts
-import { useState } from "react";
+import { useState } from 'react';
 
 export function useQiankunStateForSlave() {
   const [globalState, setGlobalState] = useState<any>({
-    slogan: "Hello MicroFrontend",
+    slogan: 'Hello MicroFrontend',
   });
 
   return {
@@ -441,12 +441,12 @@ export function useQiankunStateForSlave() {
 在父应用的组件中，可以使用 `useState` 方法来初始化全局状态，并将全局状态以参数的形式传递给子应用。
 
 ```tsx
-import { useState } from "react";
-import { MicroApp } from "umi";
+import { useState } from 'react';
+import { MicroApp } from 'umi';
 
 export default function Page() {
   const [globalState, setGlobalState] = useState<any>({
-    slogan: "Hello MicroFrontend",
+    slogan: 'Hello MicroFrontend',
   });
 
   return (
@@ -468,10 +468,10 @@ export default function Page() {
 `useModel()` is a hook provided by the `umi` library that allows a sub-application to retrieve and consume data passed from the parent application. The sub-application can use this hook in any component to access the global model generated by the sub-application with the namespace `@@qiankunStateFromMaster`. Here is an example of how to use the `useModel()` hook:
 
 ```tsx
-import { useModel } from "umi";
+import { useModel } from 'umi';
 
 export default function Page() {
-  const masterProps = useModel("@@qiankunStateFromMaster");
+  const masterProps = useModel('@@qiankunStateFromMaster');
   return <div>{JSON.stringify(masterProps)}</div>;
 }
 ```
@@ -481,7 +481,7 @@ export default function Page() {
 `connectMaster()` is a higher-order method provided by the `umi` library that allows a sub-application to retrieve and consume data passed from the parent application. The sub-application can use this method to wrap a component and access the props passed from the parent application. Here is an example of how to use the `connectMaster()` method:
 
 ```tsx
-import { connectMaster } from "umi";
+import { connectMaster } from 'umi';
 
 function MyPage(props) {
   return <div>{JSON.stringify(props)}</div>;
@@ -495,7 +495,7 @@ export default connectMaster(MyPage);
 When the parent application imports a sub-application using the `<MicroApp />` or `<MicroAppWithMemoHistory />` component, it passes a `setLoading()` method to the sub-application. This method allows the sub-application to mark its loading status as complete at an appropriate time. Here is an example of how to use the `setLoading()` method:
 
 ```tsx
-const masterProps = useModel("@@qiankunStateFromMaster");
+const masterProps = useModel('@@qiankunStateFromMaster');
 masterProps.setLoading(false);
 
 // Or
@@ -518,11 +518,11 @@ When the sub-application is mounted and reaches the `MOUNTED` state, it is autom
 export const qiankun = {
   apps: [
     {
-      name: "app1",
-      entry: "//localhost:7001",
+      name: 'app1',
+      entry: '//localhost:7001',
       props: {
         accountOnClick: (event) => console.log(event),
-        accountName: "Alex",
+        accountName: 'Alex',
         accountAge: 21,
       },
     },
@@ -539,7 +539,7 @@ export const qiankun = {
 使用以下代码片段将加载动画应用到子应用中：
 
 ```tsx
-<div style={{ position: "relative" }} className={wrapperClassName}>
+<div style={{ position: 'relative' }} className={wrapperClassName}>
   <MicroAppLoader loading={loading} />
   <MicroApp className={className} />
 </div>
@@ -556,7 +556,7 @@ export const qiankun = {
 使用以下代码片段将错误捕获能力应用到子应用中：
 
 ```tsx
-<div style={{ position: "relative" }} className={wrapperClassName}>
+<div style={{ position: 'relative' }} className={wrapperClassName}>
   <ErrorBoundary error={e} />
   <MicroApp className={className} />
 </div>
@@ -573,7 +573,7 @@ export const qiankun = {
 使用以下代码片段将自定义样式应用到子应用中：
 
 ```tsx
-<div style={{ position: "relative" }} className={wrapperClassName}>
+<div style={{ position: 'relative' }} className={wrapperClassName}>
   <MicroApp className={className} />
 </div>
 ```
@@ -593,8 +593,8 @@ export const qiankun = {
 export default {
   routes: [
     {
-      path: "/app1",
-      microApp: "app1",
+      path: '/app1',
+      microApp: 'app1',
       microAppProps: {
         autoSetLoading: true,
       },
@@ -606,7 +606,7 @@ export default {
 如果是通过组件的方式引入子应用，直接将 `autoSetLoading` 作为参数传入即可：
 
 ```tsx
-import { MicroApp } from "umi";
+import { MicroApp } from 'umi';
 
 export default function Page() {
   return <MicroApp name="app1" autoSetLoading />;
@@ -628,8 +628,8 @@ export default function Page() {
 export default {
   routes: [
     {
-      path: "/app1",
-      microApp: "app1",
+      path: '/app1',
+      microApp: 'app1',
       microAppProps: {
         autoSetLoading: true,
       },
@@ -641,7 +641,7 @@ export default {
 如果是通过组件的方式引入子应用，直接将 `autoSetLoading` 作为参数传入即可：
 
 ```tsx
-import { MicroApp } from "umi";
+import { MicroApp } from 'umi';
 
 export default function Page() {
   return <MicroApp name="app1" autoSetLoading />;
@@ -658,13 +658,13 @@ export default function Page() {
 
 ```tsx
 // .app.tsx
-import CustomLoader from "src/components/CustomLoader";
+import CustomLoader from 'src/components/CustomLoader';
 
 export const qiankun = () => ({
   routes: [
     {
-      path: "/app1",
-      microApp: "app1",
+      path: '/app1',
+      microApp: 'app1',
       microAppProps: {
         loader: (loading) => <CustomLoader loading={loading} />,
       },
@@ -676,8 +676,8 @@ export const qiankun = () => ({
 通过组件的模式引入子应用，直接将 `loader` 作为参数传入即可：
 
 ```tsx
-import CustomLoader from "@/components/CustomLoader";
-import { MicroApp } from "umi";
+import CustomLoader from '@/components/CustomLoader';
+import { MicroApp } from 'umi';
 
 export default function Page() {
   return (
@@ -708,7 +708,7 @@ defaultLoader 跟上述 loader 的实现一致，接收一个 `loading` 为 `boo
 
 ```tsx
 // defaultLoader.tsx
-import { Spin } from "antd";
+import { Spin } from 'antd';
 
 export default function (loading: boolean) {
   return <Spin spinning={loading} />;
@@ -728,8 +728,8 @@ export default function (loading: boolean) {
 export default {
   routes: [
     {
-      path: "/app1",
-      microApp: "app1",
+      path: '/app1',
+      microApp: 'app1',
       microAppProps: {
         autoCaptureError: true,
       },
@@ -741,7 +741,7 @@ export default {
 如果通过组件的模式引入子应用，直接将 `autoCaptureError` 作为参数传入即可，示例代码如下：
 
 ```tsx
-import { MicroApp } from "umi";
+import { MicroApp } from 'umi';
 
 export default function Page() {
   return <MicroApp name="app1" autoCaptureError />;
@@ -757,13 +757,13 @@ export default function Page() {
 对于通过路由模式引入的子应用，只支持在运行时配置，示例代码如下：
 
 ```tsx
-import CustomErrorBoundary from "@/components/CustomErrorBoundary";
+import CustomErrorBoundary from '@/components/CustomErrorBoundary';
 
 export const qiankun = () => ({
   routes: [
     {
-      path: "/app1",
-      microApp: "app1",
+      path: '/app1',
+      microApp: 'app1',
       microAppProps: {
         errorBoundary: (error) => <CustomErrorBoundary error={error} />,
       },
@@ -775,8 +775,8 @@ export const qiankun = () => ({
 对于通过组件模式引入子应用，可以将 `errorBoundary` 作为参数传递，示例代码如下：
 
 ```tsx
-import CustomErrorBoundary from "@/components/CustomErrorBoundary";
-import { MicroApp } from "umi";
+import CustomErrorBoundary from '@/components/CustomErrorBoundary';
+import { MicroApp } from 'umi';
 
 export default function Page() {
   return (
@@ -819,15 +819,15 @@ export default function (error: Error) {
 
 #### 属性
 
-| 属性                 | 必填 | 说明                                             | 类型                                                                                                                    | 默认值    |
-| -------------------- | ---- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | --------- |
-| enable               | 否   | 启用 Qiankun 微应用插件，设置为 false 时为不启用 | boolean                                                                                                                 | undefined |
-| apps                 | 是   | 微应用配置                                       | `App[]`                                                                                                                 | undefined |
-| routes               | 否   | 微应用运行时的路由                               | `Route[]`                                                                                                               | undefined |
-| defaultErrorBoundary | 否   | 子应用默认的错误捕获组件，值为文件路径           | string                                                                                                                  | -         |
-| defaultLoader        | 否   | 子应用默认的加载动画，值为文件路径               | string                                                                                                                  | -         |
-| sandbox              | 否   | 是否开启沙箱模式                                 | boolean \| { strictStyleIsolation: boolean, experimentalStyleIsolation: boolean }                                       | true      |
-| prefetch             | 否   | 是否启用微应用预加载                             | boolean \| 'all' \| string[] \| (( apps: RegistrableApp[] ) => { criticalAppNames: string[]; minorAppsName: string[] }) | true      |
+| 属性 | 必填 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- | --- |
+| enable | 否 | 启用 Qiankun 微应用插件，设置为 false 时为不启用 | boolean | undefined |
+| apps | 是 | 微应用配置 | `App[]` | undefined |
+| routes | 否 | 微应用运行时的路由 | `Route[]` | undefined |
+| defaultErrorBoundary | 否 | 子应用默认的错误捕获组件，值为文件路径 | string | - |
+| defaultLoader | 否 | 子应用默认的加载动画，值为文件路径 | string | - |
+| sandbox | 否 | 是否开启沙箱模式 | boolean \| { strictStyleIsolation: boolean, experimentalStyleIsolation: boolean } | true |
+| prefetch | 否 | 是否启用微应用预加载 | boolean \| 'all' \| string[] \| (( apps: RegistrableApp[] ) => { criticalAppNames: string[]; minorAppsName: string[] }) | true |
 
 属性说明：
 
@@ -871,11 +871,11 @@ export default function (error: Error) {
 
 ### Route
 
-| 属性            | 必填 | 说明             | 类型                              | 默认值 |
-| --------------- | ---- | ---------------- | --------------------------------- | ------ |
-| `path`          | 是   | 路由的路径       | `string`                          |        |
-| `microApp`      | 是   | 关联的微应用名称 | `string`                          |        |
-| `microAppProps` | 否   | 微应用的配置     | [`MicroAppProps`](#microappprops) | `{}`   |
+| 属性 | 必填 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- | --- |
+| `path` | 是 | 路由的路径 | `string` |  |
+| `microApp` | 是 | 关联的微应用名称 | `string` |  |
+| `microAppProps` | 否 | 微应用的配置 | [`MicroAppProps`](#microappprops) | `{}` |
 
 路由是用于定义前端应用程序中不同页面之间的导航和跳转功能的配置。每个路由都由一个唯一的路径（path）和一个关联的微应用名称（microApp）组成。路径用于匹配用户在浏览器地址栏中输入的路径，当路径匹配成功时，系统会自动加载对应的微应用。微应用是一个独立的功能模块，可以包含自己的视图、逻辑和数据。微应用名称用于标识需要加载的微应用。此外，还可以通过微应用配置（microAppProps）来传递额外的配置信息给微应用，这样微应用可以根据配置信息进行个性化的渲染和处理。如果未提供微应用配置，默认使用空对象。
 

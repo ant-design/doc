@@ -34,8 +34,8 @@ Umi 4 默认使用现代构建工具，将产物生成至 `es6`。如果你需�
 // .umirc.ts
 
 export default {
-  jsMinifier: "terser",
-  cssMinifier: "cssnano",
+  jsMinifier: 'terser',
+  cssMinifier: 'cssnano',
 };
 ```
 
@@ -80,7 +80,7 @@ export default {
   legacy: {
     nodeModulesTransform: false,
   },
-  extraBabelIncludes: ["some-es6-pkg", /@scope\//],
+  extraBabelIncludes: ['some-es6-pkg', /@scope\//],
 };
 ```
 

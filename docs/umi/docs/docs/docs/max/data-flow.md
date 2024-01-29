@@ -26,11 +26,11 @@
 
 Model 文件的命名空间（namespace）生成规则如下：
 
-| 路径                                    | 命名空间            | 说明                                         |
-| --------------------------------------- | ------------------- | -------------------------------------------- |
-| `src/models/count.ts`                   | `count`             | `src/models` 目录下不支持目录嵌套            |
-| `src/pages/pageA/model.ts`              | `pageA.model`       |                                              |
-| `src/pages/pageB/models/product.ts`     | `pageB.product`     |                                              |
+| 路径 | 命名空间 | 说明 |
+| --- | --- | --- |
+| `src/models/count.ts` | `count` | `src/models` 目录下不支持目录嵌套 |
+| `src/pages/pageA/model.ts` | `pageA.model` |  |
+| `src/pages/pageB/models/product.ts` | `pageB.product` |  |
 | `src/pages/pageB/models/fruit/apple.ts` | `pageB.fruit.apple` | `pages/xxx/models` 下 model 定义支持嵌套定义 |
 
 这里的 Model 是指一个自定义的钩子函数（hooks），没有任何使用者需要关注的实现细节。
@@ -43,7 +43,7 @@ Model 文件的命名空间（namespace）生成规则如下：
 // src/models/userModel.ts
 export default function userModel() {
   const user = {
-    username: "umi",
+    username: 'umi',
   };
 
   return { user };
@@ -58,7 +58,7 @@ Model 中可以使用其他的钩子函数，以计数器为例：
 
 ```ts
 // src/models/counterModel.ts
-import { useState, useCallback } from "react";
+import { useState, useCallback } from 'react';
 
 export default function counterModel() {
   const [counter, setCounter] = useState(0);
@@ -74,8 +74,8 @@ export default function counterModel() {
 
 ```ts
 // src/models/userModel.ts
-import { useState, useEffect } from "react";
-import { getUser } from "@/services/user";
+import { useState, useEffect } from 'react';
+import { getUser } from '@/services/user';
 
 export default function userModel() {
   const [user, setUser] = useState({});
@@ -99,8 +99,8 @@ export default function userModel() {
 
 ```ts
 // src/models/userModel.ts
-import { useRequest } from "ahooks";
-import { getUser } from "@/services/user";
+import { useRequest } from 'ahooks';
+import { getUser } from '@/services/user';
 
 export default function userModel() {
   const { datuser, loading: loading } = useRequest(async () => {
@@ -170,7 +170,7 @@ export default function Page() {
 
 ```ts
 // src/app.ts
-import { fetchInitialData } from "@/services/initial";
+import { fetchInitialData } from '@/services/initial';
 
 export async function getInitialState() {
   const initialData = await fetchInitialData();
@@ -185,11 +185,11 @@ export async function getInitialState() {
 在插件或其他自定义组件中，您可以通过 `useModel('@@initialState')` 来获取全局初始状态。例如：
 
 ```tsx
-import { useModel } from "umi";
+import { useModel } from 'umi';
 
 export default function Page() {
   const { initialState, loading, error, refresh, setInitialState } =
-    useModel("@@initialState");
+    useModel('@@initialState');
   return <>{initialState}</>;
 }
 ```
@@ -222,10 +222,10 @@ export default function Page() {
 在示例代码中，`useModel()`函数被用于获取`adminModel`模型中的`user`和`fetchUser`，并且使用了一个`updater`函数来选择需要使用的状态或数据。
 
 ```tsx
-import { useModel } from "umi";
+import { useModel } from 'umi';
 
 export default function Page() {
-  const { user, fetchUser } = useModel("adminModel", (model) => ({
+  const { user, fetchUser } = useModel('adminModel', (model) => ({
     user: model.admin,
     fetchUser: model.fetchAdmin,
   }));

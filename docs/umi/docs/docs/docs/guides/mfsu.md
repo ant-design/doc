@@ -199,7 +199,7 @@ externals script 是 webpack 中的一个功能，用于将外部库作为脚本
 
 ```ts
 mfsu: {
-  exclude: ["B"];
+  exclude: ['B'];
 }
 ```
 

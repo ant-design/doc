@@ -373,7 +373,7 @@ trim_trailing_whitespace = false
     } else {
       console.log('Generate .editorconfig file successful.');
     }
-  }
+  },
 );
 ```
 

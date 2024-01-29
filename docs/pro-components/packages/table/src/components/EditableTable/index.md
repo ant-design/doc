@@ -421,7 +421,7 @@ const TagList: React.FC<{
     value: {
       key: string;
       label: string;
-    }[]
+    }[],
   ) => void;
 }> = ({ value, onChange }) => {
   // 组件内部实现代码

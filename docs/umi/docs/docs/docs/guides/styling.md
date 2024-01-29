@@ -11,7 +11,7 @@
 接下来，在你的页面或组件文件中引入该样式文件，即可使样式生效。例如，在 `src/pages/index.tsx` 文件中，你可以通过以下方式引入样式文件：
 
 ```jsx
-import "./index.css";
+import './index.css';
 ```
 
 此时，你可以使用样式类名 `.title` 来给任何元素应用该样式。
@@ -29,7 +29,7 @@ import "./index.css";
 然后，在你的页面或组件文件中引入样式文件，并使用引入的样式类来应用样式。例如，在 `src/pages/index.tsx` 文件中：
 
 ```jsx
-import styles from "./index.module.css";
+import styles from './index.module.css';
 
 export default function () {
   return <div className={styles.title}>Hello World</div>;
@@ -51,7 +51,7 @@ export default function () {
 例如，在一个名为 `index.css` 的样式文件中声明了一个名为 `title` 的样式，我们可以在 `index.tsx` 文件中这样使用：
 
 ```jsx
-import styles from "./index.css";
+import styles from './index.css';
 
 export default function () {
   return <div className={styles.title}>Hello World</div>;
@@ -99,9 +99,9 @@ UnoCSS 是一个用于快速构建样式的工具。它可以与 Umi 和 Tailwin
 // .umirc.ts
 
 export default {
-  plugins: [require.resolve("@umijs/plugins/dist/unocss")],
+  plugins: [require.resolve('@umijs/plugins/dist/unocss')],
   unocss: {
-    watch: ["src/**/*.tsx"],
+    watch: ['src/**/*.tsx'],
   },
 };
 ```
@@ -117,11 +117,11 @@ export default {
 ```js
 // unocss.config.ts
 
-import { defineConfig, presetAttributify, presetUno } from "unocss";
+import { defineConfig, presetAttributify, presetUno } from 'unocss';
 
 export function createConfig({ strict = true, dev = true } = {}) {
   return defineConfig({
-    envMode: dev ? "dev" : "build",
+    envMode: dev ? 'dev' : 'build',
     presets: [presetAttributify({ strict }), presetUno()],
   });
 }

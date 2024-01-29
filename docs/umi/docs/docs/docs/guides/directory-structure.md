@@ -161,14 +161,14 @@ public 目录是用于存放固定的静态资源的文件夹。在前端开发�
 对于公共的 svg 资源，我们可以通过使用 [svgr](../api/config#svgr) 来直接导入并使用。可以将 svg 资源作为组件进行引用，从而实现在页面中展示 svg 图标的功能。例如，可以通过以下方式导入并使用 `smile.svg`：
 
 ```ts
-import SmileUrl, { ReactComponent as SvgSmile } from "./smile.svg";
+import SmileUrl, { ReactComponent as SvgSmile } from './smile.svg';
 // <SvgSmile />
 ```
 
 而对于其他类型的静态资源，比如图片等，我们可以直接使用资源的导入路径来引用。可以通过以下方式导入并使用 `image.png`：
 
 ```tsx
-import imgUrl from "./image.png";
+import imgUrl from './image.png';
 // <img src={imgUrl} />
 ```
 
@@ -212,8 +212,8 @@ import imgUrl from "./image.png";
 
 ```javascript
 [
-  { path: "/", component: "@/pages/index" },
-  { path: "/users", component: "@/pages/users" },
+  { path: '/', component: '@/pages/index' },
+  { path: '/users', component: '@/pages/users' },
 ];
 ```
 
@@ -230,11 +230,11 @@ import imgUrl from "./image.png";
 
 ```javascript
 routes: [
-  { path: "/", component: "./index", layout: false },
+  { path: '/', component: './index', layout: false },
   {
-    path: "/users",
-    component: "./users",
-    wrappers: ["@/wrappers/auth"],
+    path: '/users',
+    component: './users',
+    wrappers: ['@/wrappers/auth'],
   },
 ];
 ```
@@ -274,8 +274,8 @@ routes: [
 
 ```ts
 [
-  { path: "/", component: "@/pages/index.tsx" },
-  { path: "/users/", component: "@/pages/users/index.tsx" },
+  { path: '/', component: '@/pages/index.tsx' },
+  { path: '/users/', component: '@/pages/users/index.tsx' },
 ];
 ```
 
@@ -312,9 +312,9 @@ routes: [
 
 ```ts
 [
-  { path: "/", component: "@/pages/index.tsx" },
-  { path: "/foo/:slug", component: "@/pages/foo/$slug.tsx" },
-  { path: "/:bar/*", component: "@/pages/$bar/$.tsx" },
+  { path: '/', component: '@/pages/index.tsx' },
+  { path: '/foo/:slug', component: '@/pages/foo/$slug.tsx' },
+  { path: '/:bar/*', component: '@/pages/$bar/$.tsx' },
 ];
 ```
 
@@ -390,7 +390,7 @@ global.css 文件的优先级位于第三方组件库的样式之后。这意味
 下面是一个`plugin.ts`文件的示例代码：
 
 ```ts
-import type { IApi } from "umi";
+import type { IApi } from 'umi';
 
 export default (api: IApi) => {
   api.onDevCompileDone((opts) => {

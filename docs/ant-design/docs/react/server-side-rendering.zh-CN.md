@@ -15,10 +15,10 @@
 在 React 中使用内联样式，你可以使用 `@ant-design/cssinjs` 包提供的功能。首先，需要引入所需的模块：
 
 ```tsx
-import React from "react";
-import { createCache, extractStyle, StyleProvider } from "@ant-design/cssinjs";
-import type Entity from "@ant-design/cssinjs/es/Cache";
-import { renderToString } from "react-dom/server";
+import React from 'react';
+import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
+import type Entity from '@ant-design/cssinjs/es/Cache';
+import { renderToString } from 'react-dom/server';
 ```
 
 然后，创建一个组件，使用 `StyleProvider` 包裹该组件，并传入一个 `cache` 对象作为参数：
@@ -99,10 +99,10 @@ return `
 
 ```tsx
 // scripts/genAntdCss.tsx
-import fs from "fs";
-import { extractStyle } from "@ant-design/static-style-extract";
+import fs from 'fs';
+import { extractStyle } from '@ant-design/static-style-extract';
 
-const outputPath = "./public/antd.min.css";
+const outputPath = './public/antd.min.css';
 
 const css = extractStyle();
 
@@ -116,15 +116,15 @@ fs.writeFileSync(outputPath, css);
 若你想使用混合主题或自定义主题，可采用以下脚本：
 
 ```tsx
-import fs from "fs";
-import React from "react";
-import { extractStyle } from "@ant-design/static-style-extract";
-import { ConfigProvider } from "antd";
+import fs from 'fs';
+import React from 'react';
+import { extractStyle } from '@ant-design/static-style-extract';
+import { ConfigProvider } from 'antd';
 
-const outputPath = "./public/antd.min.css";
+const outputPath = './public/antd.min.css';
 
-const testGreenColor = "#008000";
-const testRedColor = "#ff0000";
+const testGreenColor = '#008000';
+const testRedColor = '#ff0000';
 
 const css = extractStyle((node) => (
   <>
@@ -176,7 +176,7 @@ fs.writeFileSync(outputPath, css);
 2. 在 pages/\_app.tsx 中引入样式文件打开 `pages/_app.tsx` 文件，在文件开头添加以下行代码：
 
 ```tsx
-import "../public/antd.min.css";
+import '../public/antd.min.css';
 ```
 
 以上步骤完成后，运行开发命令或编译命令时，会在项目的 `public` 目录下生成一个全量的 `antd.min.css` 文件。然后，在 `_app.tsx` 文件中引入该文件即可实现样式文件的抽离和使用。
@@ -188,7 +188,7 @@ import "../public/antd.min.css";
 首先，你需要引入 `@ant-design/static-style-extract` 模块，并使用其中的 `extractStyle` 方法对样式进行提取。代码示例如下：
 
 ```tsx
-import { extractStyle } from "@ant-design/static-style-extract";
+import { extractStyle } from '@ant-design/static-style-extract';
 
 const cssText = extractStyle((node) => {
   // 在这里你可以使用任何你想要自定义的样式
@@ -199,14 +199,14 @@ const cssText = extractStyle((node) => {
 然后，在你的项目中，你可以使用 `ConfigProvider` 组件来设置自定义主题。在 `theme` 属性中，你可以指定各种样式的主题配置。以下是一个示例代码：
 
 ```tsx
-import { ConfigProvider } from "antd";
+import { ConfigProvider } from 'antd';
 
 // 在这里使用 ConfigProvider 组件，并在 theme 属性中设置自定义主题
 <ConfigProvider
   theme={{
     // 在这里设置你的自定义主题样式
     token: {
-      colorPrimary: "red",
+      colorPrimary: 'red',
     },
   }}
 >
@@ -223,8 +223,8 @@ import { ConfigProvider } from "antd";
 可以通过以下方式将样式应用到页面中：
 
 ```tsx
-import React from "react";
-import { renderToString } from "react-dom/server";
+import React from 'react';
+import { renderToString } from 'react-dom/server';
 
 // 将提取到的样式添加到页面中
 const html = `
@@ -248,14 +248,14 @@ const renderedHTML = renderToString(<App />);
 以下是一个示例代码：
 
 ```tsx
-import React, { useState } from "react";
-import { ConfigProvider, Button } from "antd";
+import React, { useState } from 'react';
+import { ConfigProvider, Button } from 'antd';
 
 const App = () => {
   const [theme, setTheme] = useState({
     // 初始主题配置
     token: {
-      colorPrimary: "red",
+      colorPrimary: 'red',
     },
   });
 
@@ -263,7 +263,7 @@ const App = () => {
     // 在这里根据用户的选择更新主题配置
     const newTheme = {
       token: {
-        colorPrimary: "blue",
+        colorPrimary: 'blue',
       },
     };
 
@@ -290,15 +290,15 @@ const App = () => {
 如果你的项目中使用了混合主题，你可以尝试使用 `static-style-extract` 来进行烘焙。具体的实现方法如下：
 
 ```tsx
-import { extractStyle } from "@ant-design/static-style-extract";
-import { ConfigProvider } from "antd";
+import { extractStyle } from '@ant-design/static-style-extract';
+import { ConfigProvider } from 'antd';
 
 const cssText = extractStyle((node) => (
   <>
     <ConfigProvider
       theme={{
         token: {
-          colorBgBase: "green ",
+          colorBgBase: 'green ',
         },
       }}
     >
@@ -307,14 +307,14 @@ const cssText = extractStyle((node) => (
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: "blue",
+          colorPrimary: 'blue',
         },
       }}
     >
       <ConfigProvider
         theme={{
           token: {
-            colorBgBase: "red ",
+            colorBgBase: 'red ',
           },
         }}
       >
@@ -350,7 +350,7 @@ npm install crypto fs path @ant-design/cssinjs
 2. 在需要使用 `doExtraStyle` 函数的文件中，导入 `doExtraStyle` 函数：
 
 ```typescript
-import { doExtraStyle } from "路径/to/genAntdCss";
+import { doExtraStyle } from '路径/to/genAntdCss';
 ```
 
 3. 调用 `doExtraStyle` 函数，并传入相应的参数：
@@ -370,7 +370,7 @@ const fileName = doExtraStyle({ cache });
 1. 在 `_document.tsx` 文件中导入 `doExtraStyle` 函数：
 
 ```typescript
-import { doExtraStyle } from "路径/to/genAntdCss";
+import { doExtraStyle } from '路径/to/genAntdCss';
 ```
 
 2. 在 `getInitialProps` 方法中调用 `doExtraStyle` 函数，并获取返回的文件名：
@@ -399,7 +399,7 @@ const fileName = doExtraStyle({ cache });
 2. 在需要使用 `doExtraStyle` 函数的文件中，导入 `doExtraStyle` 函数：
 
 ```typescript
-import { doExtraStyle } from "路径/to/genAntdCss";
+import { doExtraStyle } from '路径/to/genAntdCss';
 ```
 
 3. 调用 `doExtraStyle` 函数，并传入相应的参数：

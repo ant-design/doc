@@ -34,7 +34,7 @@ pnpm install @ant-design/plots
 2. 编写获取数据的代码，并保存在 `data` 变量中。
 
 ```tsx
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const DemoLine = () => {
   const [data, setData] = useState([]);
@@ -45,12 +45,12 @@ const DemoLine = () => {
 
   const asyncFetch = () => {
     fetch(
-      "https://gw.alipayobjects.com/os/bmw-prod/1d565782-dde4-4bb6-8946-ea6a38ccf184.json",
+      'https://gw.alipayobjects.com/os/bmw-prod/1d565782-dde4-4bb6-8946-ea6a38ccf184.json',
     )
       .then((response) => response.json())
       .then((json) => setData(json))
       .catch((error) => {
-        console.log("fetch data failed", error);
+        console.log('fetch data failed', error);
       });
   };
 };
@@ -61,17 +61,17 @@ const DemoLine = () => {
 3. 将数据展示在曲线图上。
 
 ```tsx
-import React from "react";
-import { Line } from "@ant-design/plots";
+import React from 'react';
+import { Line } from '@ant-design/plots';
 
 const DemoLine: React.FC = () => {
   // 获取数据的代码
 
   const config = {
     data,
-    padding: "auto",
-    xField: "Date",
-    yField: "scales",
+    padding: 'auto',
+    xField: 'Date',
+    yField: 'scales',
     xAxis: {
       tickCount: 5,
     },
@@ -140,16 +140,16 @@ pnpm install @ant-design/maps
 然后，可以使用以下代码来渲染数据，创建散点地图：
 
 ```tsx
-import React from "react";
-import { DotMap } from "@ant-design/maps";
+import React from 'react';
+import { DotMap } from '@ant-design/maps';
 
 const DemoDotMap: React.FC = () => {
   // fetch data
 
   const config = {
     map: {
-      type: "mapbox",
-      style: "dark",
+      type: 'mapbox',
+      style: 'dark',
       zoom: 3,
       center: [107.4976, 32.1697],
       pitch: 0,
@@ -157,38 +157,38 @@ const DemoDotMap: React.FC = () => {
     source: {
       data,
       parser: {
-        type: "json",
-        coordinates: "lnglat",
+        type: 'json',
+        coordinates: 'lnglat',
       },
     },
     size: 4,
     color: {
-      field: "style",
+      field: 'style',
       value: ({ style }) => {
         if (style == 0) {
-          return "#14B4C9";
+          return '#14B4C9';
         } else if (style == 1) {
-          return "#3771D9";
+          return '#3771D9';
         } else {
-          return "#B8EFE2";
+          return '#B8EFE2';
         }
       },
     },
     legend: {
-      type: "category",
-      position: "bottomleft",
+      type: 'category',
+      position: 'bottomleft',
       items: [
         {
-          color: "#14B4C9",
-          value: "地级市",
+          color: '#14B4C9',
+          value: '地级市',
         },
         {
-          color: "#3771D9",
-          value: "县城市",
+          color: '#3771D9',
+          value: '县城市',
         },
         {
-          color: "#B8EFE2",
-          value: "区县",
+          color: '#B8EFE2',
+          value: '区县',
         },
       ],
     },
@@ -257,32 +257,32 @@ for (let i = 0; i < realNames.length; i++) {
 使用 Pro Table 组件来快速构建表格。先定义表格的列信息，包括姓名、昵称、账号、手机号和操作。
 
 ```tsx
-import React from "react";
-import type { ProColumns } from "@ant-design/pro-table";
-import ProTable from "@ant-design/pro-table";
+import React from 'react';
+import type { ProColumns } from '@ant-design/pro-table';
+import ProTable from '@ant-design/pro-table';
 
 const MemberList: React.FC = () => {
   const columns: ProColumns<Member>[] = [
     {
-      dataIndex: "realName",
-      title: "姓名",
+      dataIndex: 'realName',
+      title: '姓名',
     },
     {
-      dataIndex: "nickName",
-      title: "昵称",
+      dataIndex: 'nickName',
+      title: '昵称',
     },
     {
-      dataIndex: "email",
-      title: "账号",
+      dataIndex: 'email',
+      title: '账号',
     },
     {
-      dataIndex: "phone",
-      title: "手机号",
+      dataIndex: 'phone',
+      title: '手机号',
     },
     {
-      title: "操作",
-      dataIndex: "x",
-      valueType: "option",
+      title: '操作',
+      dataIndex: 'x',
+      valueType: 'option',
       render: (_, record) => {
         return [<a key="edit">编辑</a>, <a key="remove">移除</a>];
       },

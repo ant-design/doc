@@ -42,7 +42,7 @@
 在 `umi@3` 中的配置示例：
 
 ```typescript
-import { defineConfig } from "umi";
+import { defineConfig } from 'umi';
 
 export default defineConfig({
   fastRefresh: {},
@@ -52,7 +52,7 @@ export default defineConfig({
 在 `umi@4` 中的配置示例：
 
 ```typescript
-import { defineConfig } from "umi";
+import { defineConfig } from 'umi';
 
 export default defineConfig({
   fastRefresh: true,
@@ -96,7 +96,7 @@ export default defineConfig({
 在 `umi@4` 中的配置示例：
 
 ```typescript
-import { defineConfig } from "umi";
+import { defineConfig } from 'umi';
 
 export default defineConfig({
   webpack5: {},

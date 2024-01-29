@@ -23,7 +23,7 @@ const msg: {
 如果你的后端数据使用了自己熟悉的 URL，虽然我们可以用 Umi 的 request 来转化，但是每个 table 都需要单独配置就比较麻烦。不过，如果你使用 Umi 的 request，我们可以定义一个全局的转化器。在 app.tsx 文件中进行如下配置：
 
 ```tsx
-import { request, RequestConfig } from "umi";
+import { request, RequestConfig } from 'umi';
 
 export const request: RequestConfig = {
   errorConfig: {
@@ -43,7 +43,7 @@ export const request: RequestConfig = {
 配置完成后，你可以在任何地方使用像这样的代码：
 
 ```tsx
-<ProTable request={request("/list")} />
+<ProTable request={request('/list')} />
 ```
 
 ### 如何自定义 fetch 请求？
@@ -65,7 +65,7 @@ const request = (url, options) => {
 };
 
 // 使用时
-<ProTable request={request("/list")} />;
+<ProTable request={request('/list')} />;
 ```
 
 你可以根据自己的需求对 fetch 进行适配，并将返回的数据转化为 ProTable 或 ProList 需要的结构。

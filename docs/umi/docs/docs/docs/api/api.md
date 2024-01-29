@@ -23,13 +23,13 @@ type BrowserHistory = {
 以下是一个使用示例：
 
 ```ts
-import { createBrowserHistory } from "umi";
+import { createBrowserHistory } from 'umi';
 
 // 创建一个 BrowserHistory 对象
 const history = createBrowserHistory();
 
 // 在 iframe 环境下创建一个 iframe BrowserHistory 对象
-import { createBrowserHistory } from "umi";
+import { createBrowserHistory } from 'umi';
 const history = createBrowserHistory({
   window: iframe.contentWindow,
 });
@@ -66,18 +66,18 @@ createSearchParams 支持以下几种参数形式：
 以下是 createSearchParams 的使用示例：
 
 ```ts
-import { createSearchParams } from "umi";
+import { createSearchParams } from 'umi';
 
 createSearchParams(location.search);
-createSearchParams("foo=1&bar=2");
-createSearchParams("?foo=1&bar=2");
+createSearchParams('foo=1&bar=2');
+createSearchParams('?foo=1&bar=2');
 
-createSearchParams({ foo: "bar", qux: "qoo" }).toString();
+createSearchParams({ foo: 'bar', qux: 'qoo' }).toString();
 // 输出结果：foo=bar&qux=qoo
 
 createSearchParams([
-  ["foo", "1"],
-  ["bar", "2"],
+  ['foo', '1'],
+  ['bar', '2'],
 ]).toString();
 // 输出结果：foo=1&bar=2
 ```
@@ -95,7 +95,7 @@ generatePath 是 umi 库中的一个函数，用于生成实际要访问的路�
 使用 generatePath 需要先导入函数：
 
 ```ts
-import { generatePath } from "umi";
+import { generatePath } from 'umi';
 ```
 
 然后可以通过调用 generatePath 函数来生成实际要访问的路由。它接受两个参数：带有参数的路径（path）和对应的参数（params）。
@@ -103,15 +103,15 @@ import { generatePath } from "umi";
 例如，以下代码将生成一个路径字符串 "/users/42"：
 
 ```ts
-generatePath("/users/:id", { id: "42" });
+generatePath('/users/:id', { id: '42' });
 ```
 
 又例如，以下代码将生成一个路径字符串 "/files/img/cat.jpg"：
 
 ```ts
-generatePath("/files/:type/*", {
-  type: "img",
-  "*": "cat.jpg",
+generatePath('/files/:type/*', {
+  type: 'img',
+  '*': 'cat.jpg',
 });
 ```
 
@@ -126,7 +126,7 @@ generatePath 函数的作用是根据给定的带参数的路径和对应的参�
 Helmet 是一个用于在页面中动态配置 `head` 标签的 React 组件。通过使用 Helmet，可以在页面中设置 `title`、`meta`、`link` 等标签的内容。在 Umi 中，建议使用 `umi` 包提供的 Helmet 组件，以确保在服务端渲染时 Helmet 能正常工作。以下是一个使用 Helmet 的示例代码：
 
 ```tsx
-import { Helmet } from "umi";
+import { Helmet } from 'umi';
 
 export default function Page() {
   return (
@@ -146,7 +146,7 @@ export default function Page() {
 在 Umi 中使用 Helmet 组件需要先安装 `umi` 包，并引入 `umi` 包中提供的 Helmet 组件。以下是一个使用 Helmet 的示例代码：
 
 ```tsx
-import { Helmet } from "umi";
+import { Helmet } from 'umi';
 
 export default function Page() {
   return (
@@ -201,21 +201,21 @@ window.location.hash;
 对于 Umi.js，你可以通过导入 `history` 对象来进行命令式的路由跳转。例如：
 
 ```ts
-import { history } from "umi";
+import { history } from 'umi';
 
 // 跳转到指定路由
-history.push("/list");
+history.push('/list');
 
 // 带参数跳转到指定路由
-history.push("/list?a=b&c=d#anchor", state);
+history.push('/list?a=b&c=d#anchor', state);
 history.push(
   {
-    pathname: "/list",
-    search: "?a=b&c=d",
-    hash: "anchor",
+    pathname: '/list',
+    search: '?a=b&c=d',
+    hash: 'anchor',
   },
   {
-    some: "state-data",
+    some: 'state-data',
   },
 );
 
@@ -234,7 +234,7 @@ history.go(-1);
 你可以使用 `history.listen` 来监听路由变更。例如：
 
 ```ts
-import { history } from "umi";
+import { history } from 'umi';
 
 const unlisten = history.listen(({ location, action }) => {
   console.log(location.pathname);
@@ -269,7 +269,7 @@ declare function Link(props: {
 下面是一个使用 Link 组件的示例：
 
 ```tsx
-import { Link } from "umi";
+import { Link } from 'umi';
 
 function IndexPage({ user }) {
   return <Link to={user.id}>{user.name}</Link>;
@@ -503,25 +503,25 @@ function DashboardWithContext() {
 1. 首先，导入 `terminal` 模块：
 
 ```ts
-import { terminal } from "umi";
+import { terminal } from 'umi';
 ```
 
 2. 然后，我们可以使用 `terminal.log()` 打印普通的日志信息：
 
 ```ts
-terminal.log("i am log level");
+terminal.log('i am log level');
 ```
 
 3. 同样地，我们可以使用 `terminal.warn()` 打印警告级别的日志：
 
 ```ts
-terminal.warn("i am warn level");
+terminal.warn('i am warn level');
 ```
 
 4. 最后，使用 `terminal.error()` 打印错误级别的日志：
 
 ```ts
-terminal.error("i am error level");
+terminal.error('i am error level');
 ```
 
 需要注意的是，`terminal` 只在环境变量 `NODE_ENV` 非 `production` 时生效。在 Umi 的构建产物中，对应的日志调用函数不会有任何作用，所以在生产环境中可以不必删除调用 `terminal` 的代码。
@@ -576,7 +576,7 @@ declare function useAppData(): {
 要使用 `useLocation`，首先需要导入它：
 
 ```ts
-import { useLocation } from "umi";
+import { useLocation } from 'umi';
 ```
 
 然后在函数组件中调用该 Hook，将返回的 `location` 对象赋值给一个变量：
@@ -592,20 +592,20 @@ const location = useLocation();
 一个常见的场景是在 `location` 发生变化时执行一些副作用操作，比如页面访问统计。你可以使用 `useEffect` 钩子来实现这一点。首先，确保你已经导入了 `React` 和 `useEffect`：
 
 ```ts
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 ```
 
 然后，在函数组件中使用 `useEffect` 钩子来监听 `location` 的变化，并执行相应的副作用代码：
 
 ```ts
-import { useLocation } from "umi";
+import { useLocation } from 'umi';
 
 function App() {
   const location = useLocation();
 
   useEffect(() => {
     // 在这里执行你的副作用操作，比如发送页面访问统计
-    ga("send", "pageview");
+    ga('send', 'pageview');
   }, [location]);
 
   // 组件的其他代码...
@@ -629,10 +629,10 @@ function App() {
 以下是一个使用示例：
 
 ```tsx
-import { useMatch } from "umi";
+import { useMatch } from 'umi';
 
 // 当 url = '/events/12' 时
-const match = useMatch("/events/:eventId");
+const match = useMatch('/events/:eventId');
 console.log(match?.pathname, match?.params.eventId);
 // 输出 '/events/12 12'
 ```
@@ -658,16 +658,16 @@ console.log(match?.pathname, match?.params.eventId);
 1. 指定跳转路径和选项
 
 ```ts
-import { useNavigate } from "umi";
+import { useNavigate } from 'umi';
 
 let navigate = useNavigate();
-navigate("../success", { replace: true });
+navigate('../success', { replace: true });
 ```
 
 2. 返回上一页
 
 ```ts
-import { useNavigate } from "umi";
+import { useNavigate } from 'umi';
 
 let navigate = useNavigate();
 navigate(-1);
@@ -695,7 +695,7 @@ declare function useOutlet(): React.ReactElement | null;
    - 首先，导入 `useOutlet` hook：
 
 ```ts
-import { useOutlet } from "umi";
+import { useOutlet } from 'umi';
 ```
 
 - 然后，在组件中使用 `useOutlet`：
@@ -772,7 +772,7 @@ declare function useParams<K extends string = string>(): Readonly<Params<K>>;
 例子：
 
 ```ts
-import { useParams } from "umi";
+import { useParams } from 'umi';
 
 // 假设有路由配置  user/:uId/repo/:rId
 // 当前路径       user/abc/repo/def
@@ -801,9 +801,9 @@ declare function useResolvedPath(to: To): Path;
 ### 请给出一个使用 `useResolvedPath` 函数的示例？
 
 ```ts
-import { useResolvedPath } from "umi";
+import { useResolvedPath } from 'umi';
 
-const path = useResolvedPath("docs");
+const path = useResolvedPath('docs');
 /* path
 { pathname: '/a/new/page/docs', search: '', hash: '' }
 */
@@ -824,7 +824,7 @@ const path = useResolvedPath("docs");
 以下是一个使用 `useRouteData` 的示例：
 
 ```ts
-import { useRouteData } from "umi";
+import { useRouteData } from 'umi';
 
 const route = useRouteData();
 /* route
@@ -897,7 +897,7 @@ useRouteProps 是一个用于读取当前路由在路由配置里的 props 属�
 以下是一个示例：
 
 ```ts
-import { useRouteProps } from "umi";
+import { useRouteProps } from 'umi';
 
 export default function Page() {
   const routeProps = useRouteProps();
@@ -917,8 +917,8 @@ useRouteProps 不仅适用于约定式路由，也适用于其他类型的路由
 ```ts
 routes: [
   {
-    path: "/",
-    custom_key: "1",
+    path: '/',
+    custom_key: '1',
   },
 ];
 ```
@@ -934,7 +934,7 @@ useSelectedRoutes 是一个用于读取当前路径命中的所有路由信息�
 在布局组件中使用 useSelectedRoutes 非常简单。首先，需要在布局组件的文件中导入 useSelectedRoutes：
 
 ```tsx
-import { useSelectedRoutes } from "umi";
+import { useSelectedRoutes } from 'umi';
 ```
 
 然后，在布局组件的函数体中调用 useSelectedRoutes 函数，将返回值赋值给一个变量，如 routes：
@@ -948,7 +948,7 @@ const routes = useSelectedRoutes();
 ```tsx
 const lastRoute = routes.at(-1);
 
-if (lastRoute?.pathname === "/some/path") {
+if (lastRoute?.pathname === '/some/path') {
   return (
     <div>
       1 : <Outlet />
@@ -1057,8 +1057,8 @@ export interface RouteComponentProps<T = ReturnType<typeof useParams>> {
 以下是一个使用 `withRouter` 的示例：
 
 ```tsx
-import React from "react";
-import { withRouter } from "umi";
+import React from 'react';
+import { withRouter } from 'umi';
 
 class HelloWorld extends React.Component<any> {
   render() {
@@ -1068,7 +1068,7 @@ class HelloWorld extends React.Component<any> {
         <h2>params: {JSON.stringify(this.props.match.params)}</h2>
         <button
           onClick={() => {
-            this.props.history.push("/users");
+            this.props.history.push('/users');
           }}
         >
           To Users

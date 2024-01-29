@@ -255,7 +255,7 @@ const { breadcrumb, menuData } = getMenuData(
   routes,
   menu,
   formatMessage,
-  menuDataRender
+  menuDataRender,
 );
 ```
 

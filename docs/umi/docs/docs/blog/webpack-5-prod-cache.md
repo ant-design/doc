@@ -49,22 +49,22 @@ Umi 4默认没有配置webpack 5的物理缓存，这是因为webpack的物理�
 要在 UmiJS 中使用 CSS 变量模式，你需要进行一些配置。以下是一个示例的配置文件 `.umirc.ts`：
 
 ```ts
-import { join } from "path";
-import { defineConfig } from "umi";
-import { createHash } from "crypto";
+import { join } from 'path';
+import { defineConfig } from 'umi';
+import { createHash } from 'crypto';
 
 export default defineConfig({
   chainWebpack(config, { env }) {
-    if (env === "production") {
+    if (env === 'production') {
       config.cache({
-        type: "filesystem",
-        store: "pack",
+        type: 'filesystem',
+        store: 'pack',
         version: createEnvironmentHash(process.env),
         buildDependencies: {
           config: [__filename],
-          tsconfig: [join(__dirname, "tsconfig.json")],
-          packagejson: [join(__dirname, "package.json")],
-          umirc: [join(__dirname, ".umirc.ts")],
+          tsconfig: [join(__dirname, 'tsconfig.json')],
+          packagejson: [join(__dirname, 'package.json')],
+          umirc: [join(__dirname, '.umirc.ts')],
         },
       });
     }
@@ -72,9 +72,9 @@ export default defineConfig({
 });
 
 function createEnvironmentHash(env: Record<string, any>) {
-  const hash = createHash("md5");
+  const hash = createHash('md5');
   hash.update(JSON.stringify(env));
-  const result = hash.digest("hex");
+  const result = hash.digest('hex');
   return result;
 }
 ```

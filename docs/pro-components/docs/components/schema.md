@@ -185,12 +185,12 @@ valueEnum 是一个用于定义列值的枚举对象，可以在 ProTable 组件
 ```ts
 const valueEnum = {
   open: {
-    text: "未解决",
-    status: "Error",
+    text: '未解决',
+    status: 'Error',
   },
   closed: {
-    text: "已解决",
-    status: "Success",
+    text: '已解决',
+    status: 'Success',
   },
 };
 ```
@@ -202,22 +202,22 @@ const valueEnum = (row) =>
   row.isMe
     ? {
         open: {
-          text: "未解决",
-          status: "Error",
+          text: '未解决',
+          status: 'Error',
         },
         closed: {
-          text: "已解决",
-          status: "Success",
+          text: '已解决',
+          status: 'Success',
         },
       }
     : {
         open: {
-          text: "等待解决",
-          status: "Error",
+          text: '等待解决',
+          status: 'Error',
         },
         closed: {
-          text: "已回应",
-          status: "Success",
+          text: '已回应',
+          status: 'Success',
         },
       };
 ```
@@ -234,7 +234,7 @@ interface IValueEnum {
     | ReactNode
     | {
         text: ReactNode;
-        status: "Success" | "Error" | "Processing" | "Warning" | "Default";
+        status: 'Success' | 'Error' | 'Processing' | 'Warning' | 'Default';
       };
 }
 ```
@@ -245,10 +245,10 @@ interface IValueEnum {
 
 ```ts
 const valueEnum = new Map([
-  [0, { text: "未解决", status: "Error" }],
-  [1, { text: "已解决", status: "Success" }],
-  [true, { text: "是", status: "Success" }],
-  [false, { text: "否", status: "Error" }],
+  [0, { text: '未解决', status: 'Error' }],
+  [1, { text: '已解决', status: 'Success' }],
+  [true, { text: '是', status: 'Success' }],
+  [false, { text: '否', status: 'Error' }],
 ]);
 ```
 
@@ -322,14 +322,14 @@ RadioButton 组件是 Radio 组件的一个变体，同样可以通过以上属�
 
 ```tsx | pure
 const valueEnum = {
-  all: { text: "全部", status: "Default" },
+  all: { text: '全部', status: 'Default' },
   open: {
-    text: "未解决",
-    status: "Error",
+    text: '未解决',
+    status: 'Error',
   },
   closed: {
-    text: "已解决",
-    status: "Success",
+    text: '已解决',
+    status: 'Success',
   },
 };
 ```
@@ -341,17 +341,17 @@ const valueEnum = {
 可以通过引入 `ProFormSelect` 组件，并在组件中使用 `valueEnum`。下面是一个示例：
 
 ```tsx | pure
-import { ProFormSelect } from "@ant-design/pro-components";
+import { ProFormSelect } from '@ant-design/pro-components';
 
 const valueEnum = {
-  all: { text: "全部", status: "Default" },
+  all: { text: '全部', status: 'Default' },
   open: {
-    text: "未解决",
-    status: "Error",
+    text: '未解决',
+    status: 'Error',
   },
   closed: {
-    text: "已解决",
-    status: "Success",
+    text: '已解决',
+    status: 'Success',
   },
 };
 
@@ -381,23 +381,23 @@ export default () => (
 
 ```tsx
 const options = [
-  { label: "全部", value: "all" },
-  { label: "未解决", value: "open" },
-  { label: "已解决", value: "closed" },
-  { label: "解决中", value: "processing" },
+  { label: '全部', value: 'all' },
+  { label: '未解决', value: 'open' },
+  { label: '已解决', value: 'closed' },
+  { label: '解决中', value: 'processing' },
   {
-    label: "特殊选项",
-    value: "optGroup",
-    optionType: "optGroup",
+    label: '特殊选项',
+    value: 'optGroup',
+    optionType: 'optGroup',
     options: [
-      { label: "不解决", value: "no" },
-      { label: "已废弃", value: "clear" },
+      { label: '不解决', value: 'no' },
+      { label: '已废弃', value: 'clear' },
     ],
   },
 ];
 
 // 或者不需要 label
-const options = ["chapter", "chapter2"];
+const options = ['chapter', 'chapter2'];
 ```
 
 上述示例中定义了一个 `options` 数组，包含了不同的选项，可以使用这个数组作为 `fieldProps.options` 的值。
@@ -405,12 +405,12 @@ const options = ["chapter", "chapter2"];
 2. 在组件中直接定义 `options`：
 
 ```tsx
-import { ProFormSelect } from "@ant-design/pro-components";
+import { ProFormSelect } from '@ant-design/pro-components';
 
 const options = [
-  { label: "item 1", value: "a" },
-  { label: "item 2", value: "b" },
-  { label: "item 3", value: "c" },
+  { label: 'item 1', value: 'a' },
+  { label: 'item 2', value: 'b' },
+  { label: 'item 3', value: 'c' },
 ];
 
 export default () => (
@@ -443,10 +443,10 @@ export default () => (
 
 ```tsx
 const request = async () => [
-  { label: "全部", value: "all" },
-  { label: "未解决", value: "open" },
-  { label: "已解决", value: "closed" },
-  { label: "解决中", value: "processing" },
+  { label: '全部', value: 'all' },
+  { label: '未解决', value: 'open' },
+  { label: '已解决', value: 'closed' },
+  { label: '解决中', value: 'processing' },
 ];
 
 <ProFormSelect
@@ -462,10 +462,10 @@ const request = async () => [
 // 列中定义
 const columns = [
   {
-    title: "创建者",
+    title: '创建者',
     width: 120,
-    dataIndex: "creator",
-    valueType: "select",
+    dataIndex: 'creator',
+    valueType: 'select',
     request,
     params: {},
   },

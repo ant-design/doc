@@ -41,44 +41,37 @@
 
 ### LoginFormPage 参数说明
 
-**logo**
-logo 的配置，支持 ReactNode 和 string
+**logo** logo 的配置，支持 ReactNode 和 string
 
 - 类型：`ReactNode \| url`
 - 默认值：-
 
-**title**
-标题，可以配置为空
+**title** 标题，可以配置为空
 
 - 类型：`ReactNode`
 - 默认值：-
 
-**subTitle**
-二级标题，可以配置为空
+**subTitle** 二级标题，可以配置为空
 
 - 类型：`ReactNode`
 - 默认值：-
 
-**actions**
-自定义额外的登录功能
+**actions** 自定义额外的登录功能
 
 - 类型：`ReactNode`
 - 默认值：空
 
-**message**
-form 顶部的一个提示配置，可以配置一些错误的提示信息
+**message** form 顶部的一个提示配置，可以配置一些错误的提示信息
 
 - 类型：`ReactNode`
 - 默认值：-
 
-**backgroundImageUrl**
-整个区域的背景图片配置，手机端不会展示
+**backgroundImageUrl** 整个区域的背景图片配置，手机端不会展示
 
 - 类型：`url`
 - 默认值：-
 
-**activityConfig**
-活动的配置，包含 title，subTitle，action，分别代表标题，次标题和行动按钮，也可配置 style 来控制区域的样式
+**activityConfig** 活动的配置，包含 title，subTitle，action，分别代表标题，次标题和行动按钮，也可配置 style 来控制区域的样式
 
 - 类型：`{title,subTitle,action,style}`
 - 默认值：-

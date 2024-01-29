@@ -11,7 +11,7 @@ Ant Design 4.x 的 Form 组件可以用于快速构建表单，提供了各种�
 1. 引入 Form 组件：
 
 ```javascript
-import { Form } from "antd";
+import { Form } from 'antd';
 ```
 
 2. 创建表单组件：
@@ -53,7 +53,7 @@ Umi 中的状态管理思想最初来源于 Facebook 的 Flux。Flux 是一种�
 下面是一个 model 的示例：
 
 ```js
-import { queryUsers, queryUser } from "../../services/user";
+import { queryUsers, queryUser } from '../../services/user';
 
 export default {
   state: {
@@ -63,7 +63,7 @@ export default {
   effects: {
     *queryUser({ payload }, { call, put }) {
       const { data } = yield call(queryUser, payload);
-      yield put({ type: "queryUserSuccess", payload: data });
+      yield put({ type: 'queryUserSuccess', payload: data });
     },
   },
 
@@ -77,7 +77,7 @@ export default {
   },
 
   test(state) {
-    console.log("test");
+    console.log('test');
     return state;
   },
 };
@@ -114,8 +114,8 @@ export default {
 下面是一个示例：
 
 ```javascript
-import React, { Component } from "react";
-import { connect } from "umi";
+import React, { Component } from 'react';
+import { connect } from 'umi';
 
 @connect(({ user }) => ({
   user,
@@ -143,8 +143,8 @@ export default UserInfo;
 在组件中使用 `connect` 方法将 `dispatch` 添加到 `this.props` 上，可以在用户触发某个事件时调用它来触发 model 中的 effects 或 reducer 来修改 model 中的数据。具体示例如下：
 
 ```javascript
-import React, { Component } from "react";
-import { connect } from "umi";
+import React, { Component } from 'react';
+import { connect } from 'umi';
 
 @connect(({ user }) => ({
   user,
@@ -159,7 +159,7 @@ class UserInfo extends Component {
       <div
         onClick={() => {
           this.props.dispatch({
-            type: "user/test",
+            type: 'user/test',
           });
         }}
       >
@@ -233,12 +233,12 @@ model 中的 reducers 是用来修改 state 的，它可以是一个纯函数，
 推荐使用注解的方式来调用 connect 方法，例如：
 
 ```jsx
-import React, { Component } from "react";
-import { connect } from "umi";
+import React, { Component } from 'react';
+import { connect } from 'umi';
 
 const mapModelToProps = (allModels) => {
   return {
-    test: "hello world",
+    test: 'hello world',
     // props you want to connect to Component
   };
 };
@@ -308,7 +308,7 @@ A 通过 `update` reducers 可以更新一个 todo。reducers 的 `update` 方�
 
 ```javascript
 app.model({
-  namespace: "app",
+  namespace: 'app',
   state: {
     todos: [],
     loading: false,
@@ -360,11 +360,11 @@ Effects are implemented using Generator functions, which are part of ES6. Here i
 
 ```javascript
 export default {
-  namespace: "todos",
+  namespace: 'todos',
   effects: {
     *addRemote({ payload: todo }, { put, call }) {
       yield call(addTodo, todo);
-      yield put({ type: "add", payload: todo });
+      yield put({ type: 'add', payload: todo });
     },
   },
 };

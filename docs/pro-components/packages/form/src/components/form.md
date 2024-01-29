@@ -164,7 +164,7 @@ transform 的类型为 `SearchTransformKeyFn`，具体定义如下：
 export type SearchTransformKeyFn = (
   value: any,
   namePath: string,
-  allValues: any
+  allValues: any,
 ) => string | Record<string, any>;
 ```
 

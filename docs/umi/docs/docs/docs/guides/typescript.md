@@ -5,10 +5,10 @@
 ```ts
 // .umirc.ts
 
-import { defineConfig } from "umi";
+import { defineConfig } from 'umi';
 
 export default defineConfig({
-  routes: [{ path: "/", component: "@/pages/index" }],
+  routes: [{ path: '/', component: '@/pages/index' }],
 });
 ```
 
@@ -21,14 +21,14 @@ export default defineConfig({
 使用 `defineConfig()` 需要先导入它：
 
 ```ts
-import { defineConfig } from "umi";
+import { defineConfig } from 'umi';
 ```
 
 然后，在配置对象外部使用 `defineConfig()` 包装配置对象：
 
 ```ts
 export default defineConfig({
-  routes: [{ path: "/", component: "@/pages/index" }],
+  routes: [{ path: '/', component: '@/pages/index' }],
 });
 ```
 

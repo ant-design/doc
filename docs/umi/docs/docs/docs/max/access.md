@@ -19,9 +19,9 @@
 ```ts
 export const routes = [
   {
-    path: "/pageA",
-    component: "PageA",
-    access: "canReadPageA",
+    path: '/pageA',
+    component: 'PageA',
+    access: 'canReadPageA',
   },
 ];
 ```
@@ -91,7 +91,7 @@ export const layout: RunTimeLayoutConfig = () => {
 1. 首先，在你的组件中导入 `useAccess` 方法。可以使用以下代码将其导入到你的组件中：
 
 ```js
-import { useAccess } from "umi";
+import { useAccess } from 'umi';
 ```
 
 2. 定义你的组件，并在组件函数中调用 `useAccess` 方法，将其赋值给一个变量，例如 `access`。你可以使用以下代码在组件函数中获取权限相关信息：

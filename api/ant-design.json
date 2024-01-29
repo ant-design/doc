@@ -1,10 +1,10 @@
 [
   {
-    "packageName": "Watermark",
-    "tableData": [
+    "title": "Watermark",
+    "properties": [
       {
         "title": "Watermark - Watermark",
-        "table": [
+        "property": [
           {
             "参数": "width",
             "说明": "水印的宽度，`content` 的默认值为自身的宽度",
@@ -68,7 +68,7 @@
       },
       {
         "title": "Watermark - Font",
-        "table": [
+        "property": [
           {
             "参数": "color",
             "说明": "字体颜色",
@@ -108,11 +108,11 @@
     ]
   },
   {
-    "packageName": "Upload",
-    "tableData": [
+    "title": "Upload",
+    "properties": [
       {
         "title": "Upload - API",
-        "table": [
+        "property": [
           {
             "参数": "accept",
             "说明": "接受上传的文件类型，详见 [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept)",
@@ -289,7 +289,7 @@
       },
       {
         "title": "Upload - UploadFile",
-        "table": [
+        "property": [
           {
             "参数": "crossOrigin",
             "说明": "CORS 属性设置",
@@ -344,11 +344,11 @@
     ]
   },
   {
-    "packageName": "Typography",
-    "tableData": [
+    "title": "Typography",
+    "properties": [
       {
         "title": "Typography - Typography.Text",
-        "table": [
+        "property": [
           {
             "参数": "code",
             "说明": "添加代码样式",
@@ -434,7 +434,7 @@
       },
       {
         "title": "Typography - Typography.Title",
-        "table": [
+        "property": [
           {
             "参数": "code",
             "说明": "添加代码样式",
@@ -514,7 +514,7 @@
       },
       {
         "title": "Typography - Typography.Paragraph",
-        "table": [
+        "property": [
           {
             "参数": "code",
             "说明": "添加代码样式",
@@ -593,7 +593,7 @@
       },
       {
         "title": "Typography - copyable",
-        "table": [
+        "property": [
           {
             "参数": "format",
             "说明": "剪切板数据的 Mime Type",
@@ -631,7 +631,7 @@
       },
       {
         "title": "Typography - editable",
-        "table": [
+        "property": [
           {
             "参数": "autoSize",
             "说明": "自动 resize 文本域",
@@ -715,7 +715,7 @@
       },
       {
         "title": "Typography - ellipsis",
-        "table": [
+        "property": [
           {
             "参数": "expandable",
             "说明": "是否可展开",
@@ -765,11 +765,11 @@
     ]
   },
   {
-    "packageName": "Tree-select",
-    "tableData": [
+    "title": "Tree-select",
+    "properties": [
       {
         "title": "Tree-select - Tree props",
-        "table": [
+        "property": [
           {
             "参数": "allowClear",
             "说明": "自定义清除按钮",
@@ -1085,7 +1085,7 @@
       },
       {
         "title": "Tree-select - Tree 方法",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -1098,7 +1098,7 @@
       },
       {
         "title": "Tree-select - TreeNode props",
-        "table": [
+        "property": [
           {
             "参数": "checkable",
             "说明": "当树为 Checkbox 时，设置独立节点是否展示 Checkbox",
@@ -1152,11 +1152,11 @@
     ]
   },
   {
-    "packageName": "Tree",
-    "tableData": [
+    "title": "Tree",
+    "properties": [
       {
         "title": "Tree - Tree props",
-        "table": [
+        "property": [
           {
             "参数": "allowDrop",
             "说明": "是否允许拖拽时放置在该节点",
@@ -1413,7 +1413,7 @@
       },
       {
         "title": "Tree - TreeNode props",
-        "table": [
+        "property": [
           {
             "参数": "checkable",
             "说明": "当树为 checkable 时，设置独立节点是否展示 Checkbox",
@@ -1466,7 +1466,7 @@
       },
       {
         "title": "Tree - DirectoryTree props",
-        "table": [
+        "property": [
           {
             "参数": "expandAction",
             "说明": "目录展开逻辑，可选：false | `click` | `doubleClick`",
@@ -1477,7 +1477,7 @@
       },
       {
         "title": "Tree - Tree 方法",
-        "table": [
+        "property": [
           {
             "名称": "scrollTo({ key: string | number; align?: 'top' | 'bottom' | 'auto'; offset?: number })",
             "说明": "虚拟滚动下，滚动到指定 key 条目"
@@ -1487,11 +1487,11 @@
     ]
   },
   {
-    "packageName": "Transfer",
-    "tableData": [
+    "title": "Transfer",
+    "properties": [
       {
         "title": "Transfer - Transfer",
-        "table": [
+        "property": [
           {
             "参数": "dataSource",
             "说明": "数据源，其中的数据将会被渲染到左边一栏中，`targetKeys` 中指定的除外",
@@ -1637,7 +1637,7 @@
       },
       {
         "title": "Transfer - Render Props",
-        "table": [
+        "property": [
           {
             "参数": "direction",
             "说明": "渲染列表的方向",
@@ -1673,11 +1673,11 @@
     ]
   },
   {
-    "packageName": "Tour",
-    "tableData": [
+    "title": "Tour",
+    "properties": [
       {
         "title": "Tour - Tour",
-        "table": [
+        "property": [
           {
             "属性": "arrow",
             "说明": "是否显示箭头，包含是否指向元素中心的配置",
@@ -1778,7 +1778,7 @@
       },
       {
         "title": "Tour - TourStep 引导步骤卡片",
-        "table": [
+        "property": [
           {
             "属性": "target",
             "说明": "获取引导卡片指向的元素，为空时居中于屏幕",
@@ -1863,11 +1863,11 @@
     ]
   },
   {
-    "packageName": "Tooltip",
-    "tableData": [
+    "title": "Tooltip",
+    "properties": [
       {
         "title": "Tooltip - API",
-        "table": [
+        "property": [
           {
             "参数": "title",
             "说明": "提示文字",
@@ -1878,7 +1878,7 @@
       },
       {
         "title": "Tooltip - 共同的 API",
-        "table": [
+        "property": [
           {
             "参数": "align",
             "说明": "该值将合并到 placement 的配置中，设置参考 [rc-tooltip](https://github.com/react-component/tooltip)",
@@ -1998,11 +1998,11 @@
     ]
   },
   {
-    "packageName": "Timeline",
-    "tableData": [
+    "title": "Timeline",
+    "properties": [
       {
         "title": "Timeline - Timeline",
-        "table": [
+        "property": [
           {
             "参数": "mode",
             "说明": "通过设置 `mode` 可以改变时间轴和内容的相对位置",
@@ -2036,7 +2036,7 @@
       },
       {
         "title": "Timeline - Items",
-        "table": [
+        "property": [
           {
             "参数": "color",
             "说明": "指定圆圈颜色 `blue`、`red`、`green`、`gray`，或自定义的色值",
@@ -2072,11 +2072,11 @@
     ]
   },
   {
-    "packageName": "Time-picker",
-    "tableData": [
+    "title": "Time-picker",
+    "properties": [
       {
         "title": "Time-picker - API",
-        "table": [
+        "property": [
           {
             "参数": "allowClear",
             "说明": "自定义清除按钮",
@@ -2265,7 +2265,7 @@
       },
       {
         "title": "Time-picker - 方法",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -2278,7 +2278,7 @@
       },
       {
         "title": "Time-picker - RangePicker",
-        "table": [
+        "property": [
           {
             "参数": "disabledTime",
             "说明": "不可选择的时间",
@@ -2297,11 +2297,11 @@
     ]
   },
   {
-    "packageName": "Tag",
-    "tableData": [
+    "title": "Tag",
+    "properties": [
       {
         "title": "Tag - Tag",
-        "table": [
+        "property": [
           {
             "参数": "closeIcon",
             "说明": "自定义关闭按钮。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮",
@@ -2338,7 +2338,7 @@
       },
       {
         "title": "Tag - Tag.CheckableTag",
-        "table": [
+        "property": [
           {
             "参数": "checked",
             "说明": "设置标签的选中状态",
@@ -2356,11 +2356,11 @@
     ]
   },
   {
-    "packageName": "Tabs",
-    "tableData": [
+    "title": "Tabs",
+    "properties": [
       {
         "title": "Tabs - Tabs",
-        "table": [
+        "property": [
           {
             "参数": "activeKey",
             "说明": "当前激活 tab 面板的 key",
@@ -2504,7 +2504,7 @@
       },
       {
         "title": "Tabs - TabItemType",
-        "table": [
+        "property": [
           {
             "参数": "closeIcon",
             "说明": "自定义关闭图标，在 `type=\"editable-card\"` 时有效。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮",
@@ -2566,11 +2566,11 @@
     ]
   },
   {
-    "packageName": "Table",
-    "tableData": [
+    "title": "Table",
+    "properties": [
       {
         "title": "Table - Table",
-        "table": [
+        "property": [
           {
             "参数": "bordered",
             "说明": "是否展示外边框和列边框",
@@ -2729,7 +2729,7 @@
       },
       {
         "title": "Table - Table ref",
-        "table": [
+        "property": [
           {
             "参数": "nativeElement",
             "说明": "最外层 div 元素",
@@ -2746,7 +2746,7 @@
       },
       {
         "title": "Table - Column",
-        "table": [
+        "property": [
           {
             "参数": "align",
             "说明": "设置列的对齐方式",
@@ -2968,7 +2968,7 @@
       },
       {
         "title": "Table - ColumnGroup",
-        "table": [
+        "property": [
           {
             "参数": "title",
             "说明": "列头显示文字",
@@ -2979,7 +2979,7 @@
       },
       {
         "title": "Table - pagination",
-        "table": [
+        "property": [
           {
             "参数": "position",
             "说明": "指定分页显示的位置， 取值为`topLeft` | `topCenter` | `topRight` |`bottomLeft` | `bottomCenter` | `bottomRight`",
@@ -2990,7 +2990,7 @@
       },
       {
         "title": "Table - expandable",
-        "table": [
+        "property": [
           {
             "参数": "childrenColumnName",
             "说明": "指定树形结构的列名",
@@ -3094,7 +3094,7 @@
       },
       {
         "title": "Table - rowSelection",
-        "table": [
+        "property": [
           {
             "参数": "checkStrictly",
             "说明": "checkable 状态下节点选择完全受控（父子数据选中状态不再关联）",
@@ -3219,7 +3219,7 @@
       },
       {
         "title": "Table - scroll",
-        "table": [
+        "property": [
           {
             "参数": "scrollToFirstRowOnChange",
             "说明": "当分页、排序、筛选变化后是否滚动到表格顶部",
@@ -3242,7 +3242,7 @@
       },
       {
         "title": "Table - selection",
-        "table": [
+        "property": [
           {
             "参数": "key",
             "说明": "React 需要的 key，建议设置",
@@ -3266,11 +3266,11 @@
     ]
   },
   {
-    "packageName": "Switch",
-    "tableData": [
+    "title": "Switch",
+    "properties": [
       {
         "title": "Switch - API",
-        "table": [
+        "property": [
           {
             "参数": "autoFocus",
             "说明": "组件自动获取焦点",
@@ -3355,7 +3355,7 @@
       },
       {
         "title": "Switch - 方法",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -3369,11 +3369,11 @@
     ]
   },
   {
-    "packageName": "Steps",
-    "tableData": [
+    "title": "Steps",
+    "properties": [
       {
         "title": "Steps - Steps",
-        "table": [
+        "property": [
           {
             "参数": "className",
             "说明": "步骤条类名",
@@ -3458,7 +3458,7 @@
       },
       {
         "title": "Steps - `type=\"inline\"`",
-        "table": [
+        "property": [
           {
             "参数": "className",
             "说明": "步骤条类名",
@@ -3499,7 +3499,7 @@
       },
       {
         "title": "Steps - StepItem",
-        "table": [
+        "property": [
           {
             "参数": "description",
             "说明": "步骤的详情描述，可选",
@@ -3541,11 +3541,11 @@
     ]
   },
   {
-    "packageName": "Statistic",
-    "tableData": [
+    "title": "Statistic",
+    "properties": [
       {
         "title": "Statistic - Statistic",
-        "table": [
+        "property": [
           {
             "参数": "decimalSeparator",
             "说明": "设置小数点",
@@ -3611,7 +3611,7 @@
       },
       {
         "title": "Statistic - Statistic.Countdown",
-        "table": [
+        "property": [
           {
             "参数": "format",
             "说明": "格式化倒计时展示，参考 [dayjs](https://day.js.org/)",
@@ -3666,11 +3666,11 @@
     ]
   },
   {
-    "packageName": "Spin",
-    "tableData": [
+    "title": "Spin",
+    "properties": [
       {
         "title": "Spin - API",
-        "table": [
+        "property": [
           {
             "参数": "delay",
             "说明": "延迟显示加载效果的时间（防止闪烁）",
@@ -3719,11 +3719,11 @@
     ]
   },
   {
-    "packageName": "Space",
-    "tableData": [
+    "title": "Space",
+    "properties": [
       {
         "title": "Space - Space",
-        "table": [
+        "property": [
           {
             "参数": "align",
             "说明": "对齐方式",
@@ -3762,7 +3762,7 @@
       },
       {
         "title": "Space - Space.Compact",
-        "table": [
+        "property": [
           {
             "参数": "block",
             "说明": "将宽度调整为父元素宽度的选项",
@@ -3788,7 +3788,7 @@
       },
       {
         "title": "Space - `styles`",
-        "table": [
+        "property": [
           {
             "名称": "item",
             "说明": "设置 `Space` 包裹的子组件",
@@ -3799,11 +3799,11 @@
     ]
   },
   {
-    "packageName": "Slider",
-    "tableData": [
+    "title": "Slider",
+    "properties": [
       {
         "title": "Slider - API",
-        "table": [
+        "property": [
           {
             "参数": "autoFocus",
             "说明": "自动获取焦点",
@@ -3925,7 +3925,7 @@
       },
       {
         "title": "Slider - `styles`",
-        "table": [
+        "property": [
           {
             "名称": "track",
             "说明": "范围选择下，点和点之间单个选取条",
@@ -3950,7 +3950,7 @@
       },
       {
         "title": "Slider - range",
-        "table": [
+        "property": [
           {
             "参数": "draggableTrack",
             "说明": "范围刻度是否可被拖拽",
@@ -3962,7 +3962,7 @@
       },
       {
         "title": "Slider - tooltip",
-        "table": [
+        "property": [
           {
             "参数": "autoAdjustOverflow",
             "说明": "是否自动调整弹出位置",
@@ -4002,7 +4002,7 @@
       },
       {
         "title": "Slider - 方法",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -4016,11 +4016,11 @@
     ]
   },
   {
-    "packageName": "Skeleton",
-    "tableData": [
+    "title": "Skeleton",
+    "properties": [
       {
         "title": "Skeleton - Skeleton",
-        "table": [
+        "property": [
           {
             "属性": "active",
             "说明": "是否展示动画效果",
@@ -4061,7 +4061,7 @@
       },
       {
         "title": "Skeleton - SkeletonAvatarProps",
-        "table": [
+        "property": [
           {
             "属性": "active",
             "说明": "是否展示动画效果，仅在单独使用头像骨架时生效",
@@ -4084,7 +4084,7 @@
       },
       {
         "title": "Skeleton - SkeletonTitleProps",
-        "table": [
+        "property": [
           {
             "属性": "width",
             "说明": "设置标题占位图的宽度",
@@ -4095,7 +4095,7 @@
       },
       {
         "title": "Skeleton - SkeletonParagraphProps",
-        "table": [
+        "property": [
           {
             "属性": "rows",
             "说明": "设置段落占位图的行数",
@@ -4112,7 +4112,7 @@
       },
       {
         "title": "Skeleton - SkeletonButtonProps",
-        "table": [
+        "property": [
           {
             "属性": "active",
             "说明": "是否展示动画效果",
@@ -4142,7 +4142,7 @@
       },
       {
         "title": "Skeleton - SkeletonInputProps",
-        "table": [
+        "property": [
           {
             "属性": "active",
             "说明": "是否展示动画效果",
@@ -4160,11 +4160,11 @@
     ]
   },
   {
-    "packageName": "Select",
-    "tableData": [
+    "title": "Select",
+    "properties": [
       {
         "title": "Select - Select props",
-        "table": [
+        "property": [
           {
             "参数": "allowClear",
             "说明": "自定义清除按钮",
@@ -4511,7 +4511,7 @@
       },
       {
         "title": "Select - Select Methods",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "说明": "取消焦点"
@@ -4524,7 +4524,7 @@
       },
       {
         "title": "Select - Option props",
-        "table": [
+        "property": [
           {
             "参数": "className",
             "说明": "Option 器类名",
@@ -4553,7 +4553,7 @@
       },
       {
         "title": "Select - OptGroup props",
-        "table": [
+        "property": [
           {
             "参数": "key",
             "说明": "Key",
@@ -4571,11 +4571,11 @@
     ]
   },
   {
-    "packageName": "Segmented",
-    "tableData": [
+    "title": "Segmented",
+    "properties": [
       {
         "title": "Segmented - Segmented",
-        "table": [
+        "property": [
           {
             "参数": "block",
             "说明": "将宽度调整为父元素宽度的选项",
@@ -4620,11 +4620,11 @@
     ]
   },
   {
-    "packageName": "Result",
-    "tableData": [
+    "title": "Result",
+    "properties": [
       {
         "title": "Result - API",
-        "table": [
+        "property": [
           {
             "参数": "extra",
             "说明": "操作区",
@@ -4660,11 +4660,11 @@
     ]
   },
   {
-    "packageName": "Rate",
-    "tableData": [
+    "title": "Rate",
+    "properties": [
       {
         "title": "Rate - API",
-        "table": [
+        "property": [
           {
             "属性": "allowClear",
             "说明": "是否允许再次点击后清除",
@@ -4766,7 +4766,7 @@
       },
       {
         "title": "Rate - 方法",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -4780,11 +4780,11 @@
     ]
   },
   {
-    "packageName": "Radio",
-    "tableData": [
+    "title": "Radio",
+    "properties": [
       {
         "title": "Radio - Radio/Radio.Button",
-        "table": [
+        "property": [
           {
             "参数": "autoFocus",
             "说明": "自动获取焦点",
@@ -4819,7 +4819,7 @@
       },
       {
         "title": "Radio - Radio.Group",
-        "table": [
+        "property": [
           {
             "参数": "buttonStyle",
             "说明": "RadioButton 的风格样式，目前有描边和填色两种风格",
@@ -4879,7 +4879,7 @@
       },
       {
         "title": "Radio - Radio",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -4893,11 +4893,11 @@
     ]
   },
   {
-    "packageName": "Qr-code",
-    "tableData": [
+    "title": "Qr-code",
+    "properties": [
       {
         "title": "Qr-code - API",
-        "table": [
+        "property": [
           {
             "参数": "value",
             "说明": "扫描后的文本",
@@ -4972,11 +4972,11 @@
     ]
   },
   {
-    "packageName": "Progress",
-    "tableData": [
+    "title": "Progress",
+    "properties": [
       {
         "title": "Progress - API",
-        "table": [
+        "property": [
           {
             "属性": "format",
             "说明": "内容的模板函数",
@@ -5051,7 +5051,7 @@
       },
       {
         "title": "Progress - `type=\"line\"`",
-        "table": [
+        "property": [
           {
             "属性": "steps",
             "说明": "进度条总共步数",
@@ -5070,7 +5070,7 @@
       },
       {
         "title": "Progress - `type=\"circle\"`",
-        "table": [
+        "property": [
           {
             "属性": "strokeColor",
             "说明": "圆形进度条线的色彩，传入 object 时为渐变",
@@ -5089,7 +5089,7 @@
       },
       {
         "title": "Progress - `type=\"dashboard\"`",
-        "table": [
+        "property": [
           {
             "属性": "gapDegree",
             "说明": "仪表盘进度条缺口角度，可取值 0 ~ 295",
@@ -5116,11 +5116,11 @@
     ]
   },
   {
-    "packageName": "Popover",
-    "tableData": [
+    "title": "Popover",
+    "properties": [
       {
         "title": "Popover - API",
-        "table": [
+        "property": [
           {
             "参数": "content",
             "说明": "卡片内容",
@@ -5138,11 +5138,11 @@
     ]
   },
   {
-    "packageName": "Popconfirm",
-    "tableData": [
+    "title": "Popconfirm",
+    "properties": [
       {
         "title": "Popconfirm - API",
-        "table": [
+        "property": [
           {
             "参数": "cancelButtonProps",
             "说明": "cancel 按钮 props",
@@ -5227,11 +5227,11 @@
     ]
   },
   {
-    "packageName": "Pagination",
-    "tableData": [
+    "title": "Pagination",
+    "properties": [
       {
         "title": "Pagination - API",
-        "table": [
+        "property": [
           {
             "参数": "current",
             "说明": "当前页数",
@@ -5351,11 +5351,11 @@
     ]
   },
   {
-    "packageName": "Notification",
-    "tableData": [
+    "title": "Notification",
+    "properties": [
       {
         "title": "Notification - API",
-        "table": [
+        "property": [
           {
             "参数": "btn",
             "说明": "自定义关闭按钮",
@@ -5457,7 +5457,7 @@
       },
       {
         "title": "Notification - API",
-        "table": [
+        "property": [
           {
             "参数": "bottom",
             "说明": "消息从底部弹出时，距离底部的位置，单位像素",
@@ -5513,7 +5513,7 @@
       },
       {
         "title": "Notification - notification.config",
-        "table": [
+        "property": [
           {
             "参数": "bottom",
             "说明": "消息从底部弹出时，距离底部的位置，单位像素",
@@ -5569,11 +5569,11 @@
     ]
   },
   {
-    "packageName": "Modal",
-    "tableData": [
+    "title": "Modal",
+    "properties": [
       {
         "title": "Modal - API",
-        "table": [
+        "property": [
           {
             "参数": "afterClose",
             "说明": "Modal 完全关闭后的回调",
@@ -5755,7 +5755,7 @@
       },
       {
         "title": "Modal - Modal.method()",
-        "table": [
+        "property": [
           {
             "参数": "afterClose",
             "说明": "Modal 完全关闭后的回调",
@@ -5913,7 +5913,7 @@
       },
       {
         "title": "Modal - footerRenderParams",
-        "table": [
+        "property": [
           {
             "参数": "originNode",
             "说明": "默认节点",
@@ -5931,11 +5931,11 @@
     ]
   },
   {
-    "packageName": "Message",
-    "tableData": [
+    "title": "Message",
+    "properties": [
       {
         "title": "Message - API",
-        "table": [
+        "property": [
           {
             "参数": "content",
             "说明": "提示内容",
@@ -5958,7 +5958,7 @@
       },
       {
         "title": "Message - API",
-        "table": [
+        "property": [
           {
             "参数": "className",
             "说明": "自定义 CSS class",
@@ -6010,7 +6010,7 @@
       },
       {
         "title": "Message - message.config",
-        "table": [
+        "property": [
           {
             "参数": "duration",
             "说明": "默认自动关闭延时，单位秒",
@@ -6053,11 +6053,11 @@
     ]
   },
   {
-    "packageName": "Menu",
-    "tableData": [
+    "title": "Menu",
+    "properties": [
       {
         "title": "Menu - Menu",
-        "table": [
+        "property": [
           {
             "参数": "defaultOpenKeys",
             "说明": "初始展开的 SubMenu 菜单项 key 数组",
@@ -6195,7 +6195,7 @@
       },
       {
         "title": "Menu - MenuItemType",
-        "table": [
+        "property": [
           {
             "参数": "danger",
             "说明": "展示错误状态样式",
@@ -6236,7 +6236,7 @@
       },
       {
         "title": "Menu - SubMenuType",
-        "table": [
+        "property": [
           {
             "参数": "children",
             "说明": "子菜单的菜单项",
@@ -6294,7 +6294,7 @@
       },
       {
         "title": "Menu - MenuItemGroupType",
-        "table": [
+        "property": [
           {
             "参数": "children",
             "说明": "分组的菜单项",
@@ -6310,7 +6310,7 @@
       },
       {
         "title": "Menu - MenuDividerType",
-        "table": [
+        "property": [
           {
             "参数": "dashed",
             "说明": "是否虚线",
@@ -6322,11 +6322,11 @@
     ]
   },
   {
-    "packageName": "Mentions",
-    "tableData": [
+    "title": "Mentions",
+    "properties": [
       {
         "title": "Mentions - Mentions",
-        "table": [
+        "property": [
           {
             "参数": "allowClear",
             "说明": "支持清除",
@@ -6460,7 +6460,7 @@
       },
       {
         "title": "Mentions - Mentions 方法",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -6473,7 +6473,7 @@
       },
       {
         "title": "Mentions - Option",
-        "table": [
+        "property": [
           {
             "参数": "value",
             "说明": "选择时填充的值",
@@ -6515,11 +6515,11 @@
     ]
   },
   {
-    "packageName": "List",
-    "tableData": [
+    "title": "List",
+    "properties": [
       {
         "title": "List - List",
-        "table": [
+        "property": [
           {
             "参数": "bordered",
             "说明": "是否展示边框",
@@ -6607,7 +6607,7 @@
       },
       {
         "title": "List - pagination",
-        "table": [
+        "property": [
           {
             "参数": "position",
             "说明": "指定分页显示的位置",
@@ -6624,7 +6624,7 @@
       },
       {
         "title": "List - List grid props",
-        "table": [
+        "property": [
           {
             "参数": "column",
             "说明": "列数",
@@ -6677,7 +6677,7 @@
       },
       {
         "title": "List - List.Item",
-        "table": [
+        "property": [
           {
             "参数": "actions",
             "说明": "列表操作组，根据 `itemLayout` 的不同，位置在卡片底部或者最右侧",
@@ -6694,7 +6694,7 @@
       },
       {
         "title": "List - List.Item.Meta",
-        "table": [
+        "property": [
           {
             "参数": "avatar",
             "说明": "列表元素的图标",
@@ -6718,11 +6718,11 @@
     ]
   },
   {
-    "packageName": "Layout",
-    "tableData": [
+    "title": "Layout",
+    "properties": [
       {
         "title": "Layout - Layout",
-        "table": [
+        "property": [
           {
             "参数": "className",
             "说明": "容器 className",
@@ -6745,7 +6745,7 @@
       },
       {
         "title": "Layout - Layout.Sider",
-        "table": [
+        "property": [
           {
             "参数": "breakpoint",
             "说明": "触发响应式布局的[断点](/components/grid-cn#col)",
@@ -6835,11 +6835,11 @@
     ]
   },
   {
-    "packageName": "Input-number",
-    "tableData": [
+    "title": "Input-number",
+    "properties": [
       {
         "title": "Input-number - API",
-        "table": [
+        "property": [
           {
             "参数": "addonAfter",
             "说明": "带标签的 input，设置后置标签",
@@ -7023,7 +7023,7 @@
       },
       {
         "title": "Input-number - 方法",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -7037,11 +7037,11 @@
     ]
   },
   {
-    "packageName": "Input",
-    "tableData": [
+    "title": "Input",
+    "properties": [
       {
         "title": "Input - Input",
-        "table": [
+        "property": [
           {
             "参数": "addonAfter",
             "说明": "带标签的 input，设置后置标签",
@@ -7171,7 +7171,7 @@
       },
       {
         "title": "Input - Input.TextArea",
-        "table": [
+        "property": [
           {
             "参数": "autoSize",
             "说明": "自适应内容高度，可设置为 true | false 或对象：{ minRows: 2, maxRows: 6 }",
@@ -7196,7 +7196,7 @@
       },
       {
         "title": "Input - Input.Search",
-        "table": [
+        "property": [
           {
             "参数": "enterButton",
             "说明": "是否有确认按钮，可设为按钮文字。该属性会与 `addonAfter` 冲突。",
@@ -7219,7 +7219,7 @@
       },
       {
         "title": "Input - Input.Password",
-        "table": [
+        "property": [
           {
             "参数": "iconRender",
             "说明": "自定义切换按钮",
@@ -7237,7 +7237,7 @@
       },
       {
         "title": "Input - VisibilityToggle",
-        "table": [
+        "property": [
           {
             "Property": "visible",
             "Description": "用于手动控制密码显隐",
@@ -7256,7 +7256,7 @@
       },
       {
         "title": "Input - Input Methods",
-        "table": [
+        "property": [
           {
             "名称": "blur",
             "说明": "取消焦点",
@@ -7272,7 +7272,7 @@
       },
       {
         "title": "Input - Input",
-        "table": [
+        "property": [
           {
             "名称": "input",
             "说明": "`input` 元素",
@@ -7297,7 +7297,7 @@
       },
       {
         "title": "Input - Input.TextArea",
-        "table": [
+        "property": [
           {
             "名称": "textarea",
             "说明": "`textarea` 元素",
@@ -7313,11 +7313,11 @@
     ]
   },
   {
-    "packageName": "Image",
-    "tableData": [
+    "title": "Image",
+    "properties": [
       {
         "title": "Image - Image",
-        "table": [
+        "property": [
           {
             "参数": "alt",
             "说明": "图像描述",
@@ -7378,7 +7378,7 @@
       },
       {
         "title": "Image - PreviewType",
-        "table": [
+        "property": [
           {
             "参数": "visible",
             "说明": "是否显示",
@@ -7495,7 +7495,7 @@
       },
       {
         "title": "Image - PreviewGroup",
-        "table": [
+        "property": [
           {
             "参数": "preview",
             "说明": "预览参数，为 `false` 时禁用",
@@ -7521,7 +7521,7 @@
       },
       {
         "title": "Image - PreviewGroupType",
-        "table": [
+        "property": [
           {
             "参数": "visible",
             "说明": "是否显示",
@@ -7653,11 +7653,11 @@
     ]
   },
   {
-    "packageName": "Icon",
-    "tableData": [
+    "title": "Icon",
+    "properties": [
       {
         "title": "Icon - 通用图标",
-        "table": [
+        "property": [
           {
             "参数": "className",
             "说明": "设置图标的样式名",
@@ -7692,7 +7692,7 @@
       },
       {
         "title": "Icon - 自定义 Icon",
-        "table": [
+        "property": [
           {
             "参数": "component",
             "说明": "控制如何渲染图标，通常是一个渲染根标签为 `<svg>` 的 React 组件",
@@ -7721,7 +7721,7 @@
       },
       {
         "title": "Icon - 自定义 font 图标",
-        "table": [
+        "property": [
           {
             "参数": "extraCommonProps",
             "说明": "给所有的 `svg` 图标 `<Icon />` 组件设置额外的属性",
@@ -7737,7 +7737,7 @@
       },
       {
         "title": "Icon - 自定义 SVG 图标",
-        "table": [
+        "property": [
           {
             "字段": "className",
             "说明": "计算后的 `svg` 类名",
@@ -7773,11 +7773,11 @@
     ]
   },
   {
-    "packageName": "Grid",
-    "tableData": [
+    "title": "Grid",
+    "properties": [
       {
         "title": "Grid - Row",
-        "table": [
+        "property": [
           {
             "参数": "align",
             "说明": "垂直对齐方式",
@@ -7809,7 +7809,7 @@
       },
       {
         "title": "Grid - Col",
-        "table": [
+        "property": [
           {
             "参数": "flex",
             "说明": "flex 布局属性",
@@ -7887,11 +7887,11 @@
     ]
   },
   {
-    "packageName": "Form",
-    "tableData": [
+    "title": "Form",
+    "properties": [
       {
         "title": "Form - Form",
-        "table": [
+        "property": [
           {
             "参数": "colon",
             "说明": "配置 Form.Item 的 `colon` 的默认值。表示是否显示 label 后面的冒号 (只有在属性 layout 为 horizontal 时有效)",
@@ -8041,7 +8041,7 @@
       },
       {
         "title": "Form - Form.Item",
-        "table": [
+        "property": [
           {
             "参数": "colon",
             "说明": "配合 `label` 属性使用，表示是否显示 `label` 后面的冒号",
@@ -8224,7 +8224,7 @@
       },
       {
         "title": "Form - Form.List",
-        "table": [
+        "property": [
           {
             "参数": "children",
             "说明": "渲染函数",
@@ -8254,7 +8254,7 @@
       },
       {
         "title": "Form - operation",
-        "table": [
+        "property": [
           {
             "参数": "add",
             "说明": "新增表单项",
@@ -8279,7 +8279,7 @@
       },
       {
         "title": "Form - Form.ErrorList",
-        "table": [
+        "property": [
           {
             "参数": "errors",
             "说明": "错误列表",
@@ -8290,7 +8290,7 @@
       },
       {
         "title": "Form - Form.Provider",
-        "table": [
+        "property": [
           {
             "参数": "onFormChange",
             "说明": "子表单字段更新时触发",
@@ -8307,7 +8307,7 @@
       },
       {
         "title": "Form - FormInstance",
-        "table": [
+        "property": [
           {
             "名称": "getFieldError",
             "说明": "获取对应字段名的错误信息",
@@ -8388,7 +8388,7 @@
       },
       {
         "title": "Form - FieldData",
-        "table": [
+        "property": [
           {
             "名称": "errors",
             "说明": "错误信息",
@@ -8422,7 +8422,7 @@
       },
       {
         "title": "Form - Rule",
-        "table": [
+        "property": [
           {
             "名称": "defaultField",
             "说明": "仅在 `type` 为 `array` 类型时有效，用于指定数组元素的校验规则"
@@ -8502,7 +8502,7 @@
       },
       {
         "title": "Form - WatchOptions",
-        "table": [
+        "property": [
           {
             "名称": "form",
             "说明": "指定 Form 实例",
@@ -8522,11 +8522,11 @@
     ]
   },
   {
-    "packageName": "Float-button",
-    "tableData": [
+    "title": "Float-button",
+    "properties": [
       {
         "title": "Float-button - 共同的 API",
-        "table": [
+        "property": [
           {
             "参数": "icon",
             "说明": "自定义图标",
@@ -8585,7 +8585,7 @@
       },
       {
         "title": "Float-button - FloatButton.Group",
-        "table": [
+        "property": [
           {
             "参数": "shape",
             "说明": "设置包含的 FloatButton 按钮形状",
@@ -8614,7 +8614,7 @@
       },
       {
         "title": "Float-button - FloatButton.BackTop",
-        "table": [
+        "property": [
           {
             "参数": "duration",
             "说明": "回到顶部所需时间（ms）",
@@ -8644,11 +8644,11 @@
     ]
   },
   {
-    "packageName": "Flex",
-    "tableData": [
+    "title": "Flex",
+    "properties": [
       {
         "title": "Flex - API",
-        "table": [
+        "property": [
           {
             "属性": "vertical",
             "说明": "flex 主轴的方向是否垂直，使用 `flex-direction: column`",
@@ -8696,11 +8696,11 @@
     ]
   },
   {
-    "packageName": "Empty",
-    "tableData": [
+    "title": "Empty",
+    "properties": [
       {
         "title": "Empty - API",
-        "table": [
+        "property": [
           {
             "参数": "description",
             "说明": "自定义描述内容",
@@ -8724,11 +8724,11 @@
     ]
   },
   {
-    "packageName": "Dropdown",
-    "tableData": [
+    "title": "Dropdown",
+    "properties": [
       {
         "title": "Dropdown - Dropdown",
-        "table": [
+        "property": [
           {
             "参数": "arrow",
             "说明": "下拉框箭头是否显示",
@@ -8822,7 +8822,7 @@
       },
       {
         "title": "Dropdown - Dropdown.Button",
-        "table": [
+        "property": [
           {
             "参数": "buttonsRender",
             "说明": "自定义左右两个按钮",
@@ -8871,11 +8871,11 @@
     ]
   },
   {
-    "packageName": "Drawer",
-    "tableData": [
+    "title": "Drawer",
+    "properties": [
       {
         "title": "Drawer - API",
-        "table": [
+        "property": [
           {
             "参数": "autoFocus",
             "说明": "抽屉展开后是否将焦点切换至其 Dom 节点",
@@ -9036,11 +9036,11 @@
     ]
   },
   {
-    "packageName": "Divider",
-    "tableData": [
+    "title": "Divider",
+    "properties": [
       {
         "title": "Divider - API",
-        "table": [
+        "property": [
           {
             "参数": "children",
             "说明": "嵌套的标题",
@@ -9095,11 +9095,11 @@
     ]
   },
   {
-    "packageName": "Descriptions",
-    "tableData": [
+    "title": "Descriptions",
+    "properties": [
       {
         "title": "Descriptions - Descriptions",
-        "table": [
+        "property": [
           {
             "参数": "bordered",
             "说明": "是否展示边框",
@@ -9167,7 +9167,7 @@
       },
       {
         "title": "Descriptions - DescriptionItem",
-        "table": [
+        "property": [
           {
             "参数": "contentStyle",
             "说明": "自定义内容样式",
@@ -9200,11 +9200,11 @@
     ]
   },
   {
-    "packageName": "Date-picker",
-    "tableData": [
+    "title": "Date-picker",
+    "properties": [
       {
         "title": "Date-picker - 共同的 API",
-        "table": [
+        "property": [
           {
             "参数": "allowClear",
             "说明": "自定义清除按钮",
@@ -9411,7 +9411,7 @@
       },
       {
         "title": "Date-picker - 共同的方法",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -9424,7 +9424,7 @@
       },
       {
         "title": "Date-picker - DatePicker",
-        "table": [
+        "property": [
           {
             "参数": "defaultValue",
             "说明": "默认日期，如果开始时间或结束时间为 `null` 或者 `undefined`，日期范围将是一个开区间",
@@ -9497,7 +9497,7 @@
       },
       {
         "title": "Date-picker - DatePicker[picker=year]",
-        "table": [
+        "property": [
           {
             "参数": "defaultValue",
             "说明": "默认日期",
@@ -9529,7 +9529,7 @@
       },
       {
         "title": "Date-picker - DatePicker[picker=quarter]",
-        "table": [
+        "property": [
           {
             "参数": "defaultValue",
             "说明": "默认日期",
@@ -9561,7 +9561,7 @@
       },
       {
         "title": "Date-picker - DatePicker[picker=month]",
-        "table": [
+        "property": [
           {
             "参数": "defaultValue",
             "说明": "默认日期",
@@ -9593,7 +9593,7 @@
       },
       {
         "title": "Date-picker - DatePicker[picker=week]",
-        "table": [
+        "property": [
           {
             "参数": "defaultValue",
             "说明": "默认日期",
@@ -9625,7 +9625,7 @@
       },
       {
         "title": "Date-picker - RangePicker",
-        "table": [
+        "property": [
           {
             "参数": "allowEmpty",
             "说明": "允许起始项部分为空",
@@ -9718,11 +9718,11 @@
     ]
   },
   {
-    "packageName": "Config-provider",
-    "tableData": [
+    "title": "Config-provider",
+    "properties": [
       {
         "title": "Config-provider - API",
-        "table": [
+        "property": [
           {
             "参数": "autoInsertSpaceInButton",
             "说明": "设置为 `false` 时，移除按钮中 2 个汉字之间的空格",
@@ -9830,7 +9830,7 @@
       },
       {
         "title": "Config-provider - ConfigProvider.useConfig()",
-        "table": [
+        "property": [
           {
             "返回值": "componentDisabled",
             "说明": "antd 组件禁用状态",
@@ -9849,7 +9849,7 @@
       },
       {
         "title": "Config-provider - 组件配置",
-        "table": [
+        "property": [
           {
             "参数": "alert",
             "说明": "设置 Alert 组件的通用属性",
@@ -10240,11 +10240,11 @@
     ]
   },
   {
-    "packageName": "Color-picker",
-    "tableData": [
+    "title": "Color-picker",
+    "properties": [
       {
         "title": "Color-picker - API",
-        "table": [
+        "property": [
           {
             "参数": "allowClear",
             "说明": "允许清除选择的颜色",
@@ -10390,7 +10390,7 @@
       },
       {
         "title": "Color-picker - Color",
-        "table": [
+        "property": [
           {
             "参数": "toHex",
             "说明": "转换成 `hex` 格式字符，返回格式如：`1677ff`",
@@ -10432,11 +10432,11 @@
     ]
   },
   {
-    "packageName": "Collapse",
-    "tableData": [
+    "title": "Collapse",
+    "properties": [
       {
         "title": "Collapse - Collapse",
-        "table": [
+        "property": [
           {
             "参数": "accordion",
             "说明": "手风琴模式",
@@ -10517,7 +10517,7 @@
       },
       {
         "title": "Collapse - Collapse.Panel",
-        "table": [
+        "property": [
           {
             "参数": "collapsible",
             "说明": "是否可折叠或指定可折叠触发区域",
@@ -10560,11 +10560,11 @@
     ]
   },
   {
-    "packageName": "Checkbox",
-    "tableData": [
+    "title": "Checkbox",
+    "properties": [
       {
         "title": "Checkbox - Checkbox",
-        "table": [
+        "property": [
           {
             "参数": "autoFocus",
             "说明": "自动获取焦点",
@@ -10605,7 +10605,7 @@
       },
       {
         "title": "Checkbox - Checkbox Group",
-        "table": [
+        "property": [
           {
             "参数": "defaultValue",
             "说明": "默认选中的选项",
@@ -10646,7 +10646,7 @@
       },
       {
         "title": "Checkbox - Checkbox",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -10660,11 +10660,11 @@
     ]
   },
   {
-    "packageName": "Cascader",
-    "tableData": [
+    "title": "Cascader",
+    "properties": [
       {
         "title": "Cascader - API",
-        "table": [
+        "property": [
           {
             "参数": "allowClear",
             "说明": "支持清除",
@@ -10920,7 +10920,7 @@
       },
       {
         "title": "Cascader - showSearch",
-        "table": [
+        "property": [
           {
             "参数": "filter",
             "说明": "接收 `inputValue` `path` 两个参数，当 `path` 符合筛选条件时，应返回 true，反之则返回 false",
@@ -10955,7 +10955,7 @@
       },
       {
         "title": "Cascader - 方法",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -10969,11 +10969,11 @@
     ]
   },
   {
-    "packageName": "Carousel",
-    "tableData": [
+    "title": "Carousel",
+    "properties": [
       {
         "title": "Carousel - API",
-        "table": [
+        "property": [
           {
             "参数": "autoplay",
             "说明": "是否自动切换",
@@ -11050,7 +11050,7 @@
       },
       {
         "title": "Carousel - 方法",
-        "table": [
+        "property": [
           {
             "名称": "goTo(slideNumber, dontAnimate)",
             "描述": "切换到指定面板, dontAnimate = true 时，不使用动画"
@@ -11068,11 +11068,11 @@
     ]
   },
   {
-    "packageName": "Card",
-    "tableData": [
+    "title": "Card",
+    "properties": [
       {
         "title": "Card - Card",
-        "table": [
+        "property": [
           {
             "参数": "actions",
             "说明": "卡片操作组，位置在卡片底部",
@@ -11177,7 +11177,7 @@
       },
       {
         "title": "Card - Card.Grid",
-        "table": [
+        "property": [
           {
             "参数": "className",
             "说明": "网格容器类名",
@@ -11200,7 +11200,7 @@
       },
       {
         "title": "Card - Card.Meta",
-        "table": [
+        "property": [
           {
             "参数": "avatar",
             "说明": "头像/图标",
@@ -11236,11 +11236,11 @@
     ]
   },
   {
-    "packageName": "Calendar",
-    "tableData": [
+    "title": "Calendar",
+    "properties": [
       {
         "title": "Calendar - API",
-        "table": [
+        "property": [
           {
             "参数": "dateCellRender",
             "说明": "自定义渲染日期单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender`",
@@ -11366,11 +11366,11 @@
     ]
   },
   {
-    "packageName": "Button",
-    "tableData": [
+    "title": "Button",
+    "properties": [
       {
         "title": "Button - API",
-        "table": [
+        "property": [
           {
             "属性": "block",
             "说明": "将按钮宽度调整为其父宽度的选项",
@@ -11467,7 +11467,7 @@
       },
       {
         "title": "Button - `styles`",
-        "table": [
+        "property": [
           {
             "名称": "icon",
             "说明": "设置图标元素",
@@ -11478,11 +11478,11 @@
     ]
   },
   {
-    "packageName": "Breadcrumb",
-    "tableData": [
+    "title": "Breadcrumb",
+    "properties": [
       {
         "title": "Breadcrumb - Breadcrumb",
-        "table": [
+        "property": [
           {
             "参数": "itemRender",
             "说明": "自定义链接函数，和 react-router 配置使用",
@@ -11511,7 +11511,7 @@
       },
       {
         "title": "Breadcrumb - RouteItemType",
-        "table": [
+        "property": [
           {
             "参数": "className",
             "说明": "自定义类名",
@@ -11558,7 +11558,7 @@
       },
       {
         "title": "Breadcrumb - SeparatorType",
-        "table": [
+        "property": [
           {
             "参数": "type",
             "说明": "标记为分隔符",
@@ -11577,11 +11577,11 @@
     ]
   },
   {
-    "packageName": "Badge",
-    "tableData": [
+    "title": "Badge",
+    "properties": [
       {
         "title": "Badge - Badge",
-        "table": [
+        "property": [
           {
             "参数": "color",
             "说明": "自定义小圆点的颜色",
@@ -11661,7 +11661,7 @@
       },
       {
         "title": "Badge - Badge.Ribbon",
-        "table": [
+        "property": [
           {
             "参数": "color",
             "说明": "自定义缎带的颜色",
@@ -11684,7 +11684,7 @@
       },
       {
         "title": "Badge - `styles`",
-        "table": [
+        "property": [
           {
             "名称": "root",
             "说明": "设置根元素",
@@ -11700,11 +11700,11 @@
     ]
   },
   {
-    "packageName": "Avatar",
-    "tableData": [
+    "title": "Avatar",
+    "properties": [
       {
         "title": "Avatar - Avatar",
-        "table": [
+        "property": [
           {
             "参数": "alt",
             "说明": "图像无法显示时的替代文本",
@@ -11773,7 +11773,7 @@
       },
       {
         "title": "Avatar - Avatar.Group (4.5.0+)",
-        "table": [
+        "property": [
           {
             "参数": "maxCount",
             "说明": "显示的最大头像个数",
@@ -11818,11 +11818,11 @@
     ]
   },
   {
-    "packageName": "Auto-complete",
-    "tableData": [
+    "title": "Auto-complete",
+    "properties": [
       {
         "title": "Auto-complete - API",
-        "table": [
+        "property": [
           {
             "参数": "allowClear",
             "说明": "支持清除",
@@ -12001,7 +12001,7 @@
       },
       {
         "title": "Auto-complete - 方法",
-        "table": [
+        "property": [
           {
             "名称": "blur()",
             "描述": "移除焦点"
@@ -12015,11 +12015,11 @@
     ]
   },
   {
-    "packageName": "App",
-    "tableData": [
+    "title": "App",
+    "properties": [
       {
         "title": "App - App",
-        "table": [
+        "property": [
           {
             "参数": "component",
             "说明": "设置渲染元素，为 `false` 则不创建 DOM 节点",
@@ -12044,11 +12044,11 @@
     ]
   },
   {
-    "packageName": "Anchor",
-    "tableData": [
+    "title": "Anchor",
+    "properties": [
       {
         "title": "Anchor - Anchor Props",
-        "table": [
+        "property": [
           {
             "参数": "affix",
             "说明": "固定模式",
@@ -12127,7 +12127,7 @@
       },
       {
         "title": "Anchor - AnchorItem",
-        "table": [
+        "property": [
           {
             "参数": "key",
             "说明": "唯一标志",
@@ -12168,7 +12168,7 @@
       },
       {
         "title": "Anchor - Link Props",
-        "table": [
+        "property": [
           {
             "参数": "href",
             "说明": "锚点链接",
@@ -12192,11 +12192,11 @@
     ]
   },
   {
-    "packageName": "Alert",
-    "tableData": [
+    "title": "Alert",
+    "properties": [
       {
         "title": "Alert - API",
-        "table": [
+        "property": [
           {
             "参数": "action",
             "说明": "自定义操作项",
@@ -12262,7 +12262,7 @@
       },
       {
         "title": "Alert - Alert.ErrorBoundary",
-        "table": [
+        "property": [
           {
             "参数": "description",
             "说明": "自定义错误内容，如果未指定会展示报错堆栈",
@@ -12280,11 +12280,11 @@
     ]
   },
   {
-    "packageName": "Affix",
-    "tableData": [
+    "title": "Affix",
+    "properties": [
       {
         "title": "Affix - API",
-        "table": [
+        "property": [
           {
             "参数": "offsetBottom",
             "说明": "距离窗口底部达到指定偏移量后触发",

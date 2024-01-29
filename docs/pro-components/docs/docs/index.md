@@ -47,8 +47,8 @@ npm i @ant-design/pro-components --save
 在项目中使用 ProForm 组件时，首先需要将该组件引入到项目中，示例如下：
 
 ```jsx
-import React from "react";
-import { ProForm } from "@ant-design/pro-components";
+import React from 'react';
+import { ProForm } from '@ant-design/pro-components';
 
 export default () => {
   return (
@@ -72,8 +72,8 @@ export default () => {
 ProFormText 是 ProForm 组件的子组件，用于创建文本输入框表单项。要使用 ProFormText 组件，需要先将其引入到项目中，示例如下：
 
 ```jsx
-import React from "react";
-import { ProForm, ProFormText } from "@ant-design/pro-components";
+import React from 'react';
+import { ProForm, ProFormText } from '@ant-design/pro-components';
 
 export default () => {
   return (
@@ -96,8 +96,8 @@ export default () => {
 在使用 ProForm 组件时，我们可以通过 onFinish 函数来处理表单的提交事件。示例代码如下：
 
 ```jsx
-import React from "react";
-import { ProForm, ProFormText } from "@ant-design/pro-components";
+import React from 'react';
+import { ProForm, ProFormText } from '@ant-design/pro-components';
 
 export default () => {
   return (

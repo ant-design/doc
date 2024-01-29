@@ -24,7 +24,7 @@ Stylelint 配置支持 CSS-in-JS，可以检测出 JavaScript 文件中的样式
 
 ```js
 module.exports = {
-  extends: require.resolve("umi/eslint"),
+  extends: require.resolve('umi/eslint'),
 };
 ```
 
@@ -34,7 +34,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: require.resolve("@umijs/max/eslint"),
+  extends: require.resolve('@umijs/max/eslint'),
 };
 ```
 
@@ -44,7 +44,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: require.resolve("umi/stylelint"),
+  extends: require.resolve('umi/stylelint'),
 };
 ```
 
@@ -54,7 +54,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: require.resolve("@umijs/max/stylelint"),
+  extends: require.resolve('@umijs/max/stylelint'),
 };
 ```
 

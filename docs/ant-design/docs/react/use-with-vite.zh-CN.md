@@ -17,7 +17,7 @@
 2. 在你的入口文件（一般是 `main.js` 或 `main.tsx`）中导入 antd 组件样式：
 
 ```javascript
-import "antd/dist/antd.css";
+import 'antd/dist/antd.css';
 ```
 
 这将会全局引入 antd 组件的样式。
@@ -25,7 +25,7 @@ import "antd/dist/antd.css";
 3. 现在，你可以在你的 Vite 工程中使用 antd 组件了。只需按照官方文档的示例代码，在你的组件中导入需要的组件并使用即可。
 
 ```jsx
-import { Button } from "antd";
+import { Button } from 'antd';
 
 function App() {
   return (
@@ -50,10 +50,10 @@ Vite 提供了很多配置选项，可以帮助你满足各类工程化需求。
     server: {
       port: 3000, // 自定义端口号
       proxy: {
-        "/api": {
-          target: "http://localhost:8080", // 自定义代理目标
+        '/api': {
+          target: 'http://localhost:8080', // 自定义代理目标
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, ""),
+          rewrite: (path) => path.replace(/^\/api/, ''),
         },
       },
     },
@@ -71,7 +71,7 @@ Vite 提供了很多配置选项，可以帮助你满足各类工程化需求。
       },
       resolve: {
         alias: {
-          components: "/src/components", // 自定义模块解析别名
+          components: '/src/components', // 自定义模块解析别名
         },
       },
     },
@@ -82,8 +82,8 @@ Vite 提供了很多配置选项，可以帮助你满足各类工程化需求。
 
   ```javascript
   // vite.config.js
-  import vue from "@vitejs/plugin-vue";
-  import myPlugin from "./plugins/myPlugin";
+  import vue from '@vitejs/plugin-vue';
+  import myPlugin from './plugins/myPlugin';
 
   export default {
     plugins: [
@@ -148,7 +148,7 @@ $ npm install
 1. 在 `src/App.js` 中导入 antd 组件库：
 
 ```jsx
-import { Button } from "antd";
+import { Button } from 'antd';
 ```
 
 2. 在组件中使用 antd 的按钮组件：

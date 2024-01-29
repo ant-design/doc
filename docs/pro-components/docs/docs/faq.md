@@ -24,12 +24,12 @@
 const dataSource = [
   {
     id: 1,
-    name: "John Smith",
+    name: 'John Smith',
     age: 32,
   },
   {
     id: 2,
-    name: "Jane Doe",
+    name: 'Jane Doe',
     age: 28,
   },
 ];
@@ -62,14 +62,14 @@ const dataSource = [
 2. 在你的代码中引入表单组件：
 
 ```tsx
-import ProForm from "@ant-design/pro-form";
+import ProForm from '@ant-design/pro-form';
 ```
 
 3. 在你的代码中定义一个表单数据模型：
 
 ```tsx
 const initialValues = {
-  name: "",
+  name: '',
   age: 0,
 };
 ```
@@ -105,7 +105,7 @@ const initialValues = {
 2. 在你的代码中引入模态框组件：
 
 ```tsx
-import ProModal from "@ant-design/pro-modal";
+import ProModal from '@ant-design/pro-modal';
 ```
 
 3. 在你的代码中定义一个状态管理模型：
@@ -132,8 +132,8 @@ const [visible, setVisible] = useState(false);
 
 ```typescript
 title: (_, type) => {
-  if (type === "table") {
-    return "标题";
+  if (type === 'table') {
+    return '标题';
   }
   return null;
 };
@@ -148,7 +148,7 @@ title: (_, type) => {
 - 字符串方式：
 
 ```typescript
-title: "自定义标签";
+title: '自定义标签';
 ```
 
 这样设置后，会在 ProTable 的搜索框中显示指定的 label，例如 `'自定义标签'`。
@@ -157,7 +157,7 @@ title: "自定义标签";
 
 ```typescript
 title: () => {
-  return "自定义标签";
+  return '自定义标签';
 };
 ```
 
@@ -169,10 +169,10 @@ title: () => {
 
 ```typescript
 title: (_, type) => {
-  if (type === "table") {
-    return "动态标签A";
-  } else if (type === "form") {
-    return "动态标签B";
+  if (type === 'table') {
+    return '动态标签A';
+  } else if (type === 'form') {
+    return '动态标签B';
   }
   return null;
 };
@@ -189,7 +189,7 @@ title: (_, type) => {
 要在 `Form` 中使用 `initialValues`，只需要将其作为 `Form` 组件的属性进行设置即可。例如：
 
 ```jsx
-<Form initialValues={{ name: "John", age: 25 }}></Form>
+<Form initialValues={{ name: 'John', age: 25 }}></Form>
 ```
 
 在上述代码中，`initialValues` 属性设置了一个对象，该对象包含了表单的初始值。可以根据需求设置不同的初始值。
@@ -202,7 +202,7 @@ title: (_, type) => {
 const [form] = Form.useForm();
 
 const handleUpdateValues = () => {
-  form.setFieldsValue({ name: "Jane", age: 30 });
+  form.setFieldsValue({ name: 'Jane', age: 30 });
 };
 ```
 
@@ -227,13 +227,13 @@ const handleUpdateValues = () => {
 import {
   StyleProvider,
   legacyLogicalPropertiesTransformer,
-} from "@ant-design/cssinjs";
+} from '@ant-design/cssinjs';
 
 export function rootContainer(container: React.ReactElement) {
   return React.createElement(
     StyleProvider,
     {
-      hashPriority: "high",
+      hashPriority: 'high',
       transformers: [legacyLogicalPropertiesTransformer],
     },
     container,
@@ -255,13 +255,13 @@ export function rootContainer(container: React.ReactElement) {
 import {
   StyleProvider,
   legacyLogicalPropertiesTransformer,
-} from "@ant-design/cssinjs";
+} from '@ant-design/cssinjs';
 
 export function rootContainer(container: React.ReactElement) {
   return React.createElement(
     StyleProvider,
     {
-      hashPriority: "high",
+      hashPriority: 'high',
       transformers: [legacyLogicalPropertiesTransformer],
     },
     container,
@@ -285,13 +285,13 @@ export function rootContainer(container: React.ReactElement) {
 import {
   StyleProvider,
   legacyLogicalPropertiesTransformer,
-} from "@ant-design/cssinjs";
+} from '@ant-design/cssinjs';
 
 export function rootContainer(container: React.ReactElement) {
   return React.createElement(
     StyleProvider,
     {
-      hashPriority: "high",
+      hashPriority: 'high',
       transformers: [legacyLogicalPropertiesTransformer],
     },
     container,

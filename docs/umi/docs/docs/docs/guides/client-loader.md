@@ -27,7 +27,7 @@
 例如，在一个 `SomePage` 组件中，可以使用以下代码来显示 `clientLoader` 函数返回的数据：
 
 ```tsx
-import { useClientLoaderData } from "umi";
+import { useClientLoaderData } from 'umi';
 
 export default function SomePage() {
   const { data } = useClientLoaderData();

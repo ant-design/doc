@@ -41,7 +41,7 @@ import { DatePicker, message } from 'antd';
 const App = () => {
   const handleChange = (value) => {
     message.info(
-      `您选择的日期是: ${value ? value.format('YYYY年MM月DD日') : '未选择'}`
+      `您选择的日期是: ${value ? value.format('YYYY年MM月DD日') : '未选择'}`,
     );
   };
 

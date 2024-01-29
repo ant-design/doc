@@ -11,10 +11,10 @@
 ```ts
 export default {
   proxy: {
-    "/api": {
-      target: "http://jsonplaceholder.typicode.com/",
+    '/api': {
+      target: 'http://jsonplaceholder.typicode.com/',
       changeOrigin: true,
-      pathRewrite: { "^/api": "" },
+      pathRewrite: { '^/api': '' },
     },
   },
 };

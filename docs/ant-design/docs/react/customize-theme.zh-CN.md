@@ -180,8 +180,8 @@ import { ConfigProvider } from 'antd';
 首先，导入所需的 React 依赖：
 
 ```ts
-import React, { useState, useEffect } from "react";
-import { Checkbox, Col, ConfigProvider, Flex, Radio, Row, Switch } from "antd";
+import React, { useState, useEffect } from 'react';
+import { Checkbox, Col, ConfigProvider, Flex, Radio, Row, Switch } from 'antd';
 ```
 
 然后，在函数组件中定义状态和副作用：
@@ -280,7 +280,7 @@ import { ConfigProvider } from 'antd';
 <ConfigProvider
   theme={{
     token: {
-      colorPrimary: "#1677ff",
+      colorPrimary: '#1677ff',
     },
   }}
 >
@@ -289,7 +289,7 @@ import { ConfigProvider } from 'antd';
   <ConfigProvider
     theme={{
       token: {
-        colorPrimary: "#00b96b",
+        colorPrimary: '#00b96b',
       },
     }}
   >
@@ -306,14 +306,14 @@ import { ConfigProvider } from 'antd';
 可以参考以下代码示例实现嵌套主题：
 
 ```jsx
-import React from "react";
-import { Button, ConfigProvider, Space } from "antd";
+import React from 'react';
+import { Button, ConfigProvider, Space } from 'antd';
 
 const App = () => (
   <ConfigProvider
     theme={{
       token: {
-        colorPrimary: "#1677ff",
+        colorPrimary: '#1677ff',
       },
     }}
   >
@@ -322,7 +322,7 @@ const App = () => (
       <ConfigProvider
         theme={{
           token: {
-            colorPrimary: "#00b96b",
+            colorPrimary: '#00b96b',
           },
         }}
       >
@@ -405,7 +405,7 @@ export default App;
 在 Ant Design 5.x 的 CSS 变量模式中，你可以通过静态方法 `getDesignToken` 来进行 Token 变量的静态消费。你可以使用以下代码来实现静态消费：
 
 ```jsx
-import { theme } from "antd";
+import { theme } from 'antd';
 
 const { getDesignToken } = theme;
 
@@ -417,15 +417,15 @@ const globalToken = getDesignToken();
 除了全局的 Design Token，你还可以使用 `getDesignToken` 方法传入 `theme` 属性，来获取指定主题的 Design Token。以下是一个示例代码：
 
 ```tsx
-import type { ThemeConfig } from "antd";
-import { theme } from "antd";
-import { createRoot } from "react-dom/client";
+import type { ThemeConfig } from 'antd';
+import { theme } from 'antd';
+import { createRoot } from 'react-dom/client';
 
 const { getDesignToken, useToken } = theme;
 
 const config: ThemeConfig = {
   token: {
-    colorPrimary: "#1890ff",
+    colorPrimary: '#1890ff',
   },
 };
 
@@ -439,7 +439,7 @@ const App = () => {
 };
 
 // 渲染示意
-createRoot(document.getElementById("#app")).render(
+createRoot(document.getElementById('#app')).render(
   <ConfigProvider theme={config}>
     <App />
   </ConfigProvider>,
@@ -488,7 +488,7 @@ Design Token 是一套设计师友好的样式变量，用于定制主题。在 
 ```tsx
 const theme = {
   token: {
-    colorPrimary: "#1890ff",
+    colorPrimary: '#1890ff',
   },
 };
 ```
@@ -506,7 +506,7 @@ Seed Token 是所有设计意图的起源，它是用来改变主题色的变量
 ```tsx
 const theme = {
   token: {
-    colorPrimary: "#1890ff",
+    colorPrimary: '#1890ff',
   },
 };
 
@@ -527,7 +527,7 @@ const theme = {
 ```tsx
 const theme = {
   token: {
-    colorPrimaryBg: "#e6f7ff",
+    colorPrimaryBg: '#e6f7ff',
   },
 };
 ```
@@ -543,7 +543,7 @@ const theme = {
 ```tsx
 const theme = {
   token: {
-    colorLink: "#1890ff",
+    colorLink: '#1890ff',
   },
 };
 ```
@@ -563,7 +563,7 @@ Alias Token 适用于需要批量控制某些共性组件样式的场景。通�
 ```tsx
 const theme = {
   token: {
-    colorLink: "#1890ff",
+    colorLink: '#1890ff',
   },
 };
 ```
@@ -581,7 +581,7 @@ const theme = {
 具体的代码如下所示：
 
 ```tsx
-import { theme } from "antd";
+import { theme } from 'antd';
 
 const { darkAlgorithm, compactAlgorithm } = theme;
 
@@ -604,12 +604,12 @@ const theme = {
 
 属性列表：
 
-| 属性       | 说明                                                                | 类型                                                                     | 默认值             |
-| ---------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------ |
-| token      | 用于修改 Design Token                                               | `AliasToken`                                                             | -                  |
-| inherit    | 继承上层 ConfigProvider 中配置的主题。                              | boolean                                                                  | true               |
-| algorithm  | 用于修改 Seed Token 到 Map Token 的算法                             | `(token: SeedToken) => MapToken` \| `((token: SeedToken) => MapToken)[]` | `defaultAlgorithm` |
-| components | 用于修改各个组件的 Component Token 以及覆盖该组件消费的 Alias Token | `ComponentsConfig`                                                       | -                  |
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| token | 用于修改 Design Token | `AliasToken` | - |
+| inherit | 继承上层 ConfigProvider 中配置的主题。 | boolean | true |
+| algorithm | 用于修改 Seed Token 到 Map Token 的算法 | `(token: SeedToken) => MapToken` \| `((token: SeedToken) => MapToken)[]` | `defaultAlgorithm` |
+| components | 用于修改各个组件的 Component Token 以及覆盖该组件消费的 Alias Token | `ComponentsConfig` | - |
 
 ### Theme 属性 token 是用来做什么的？
 

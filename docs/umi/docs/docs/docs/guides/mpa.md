@@ -91,8 +91,8 @@ Umi 通过配置 `mp{ getConfigFromEntryFile: true }` 来开启试验性配置�
 
 ```ts
 export const config = {
-  layout: "@/layouts/bar.ts",
-  title: "foooooo",
+  layout: '@/layouts/bar.ts',
+  title: 'foooooo',
 };
 ```
 

@@ -7,7 +7,7 @@ ProFormDependency 是一个简化版本的 Form.Item，它内置了 noStyle 与 
 name 参数必须是一个数组。如果涉及到嵌套的结构，可以通过以下方式进行配置：
 
 ```tsx | pure
-<ProFormDependency name={["name", ["name2", "text"]]}></ProFormDependency>
+<ProFormDependency name={['name', ['name2', 'text']]}></ProFormDependency>
 ```
 
 配置的 name 值将在 renderProps 中传入。
@@ -17,14 +17,14 @@ name 参数必须是一个数组。如果涉及到嵌套的结构，可以通过
 可以在 ProFormDependency 的子组件中，通过 renderProps 的方式来使用 ProFormDependency，例如：
 
 ```tsx | pure
-<ProFormDependency name={["name"]}>
+<ProFormDependency name={['name']}>
   {({ name }) => {
     return (
       <ProFormSelect
         options={[
           {
-            value: "chapter",
-            label: "盖章后生效",
+            value: 'chapter',
+            label: '盖章后生效',
           },
         ]}
         width="md"

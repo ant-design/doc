@@ -51,7 +51,7 @@ npm install @ant-design/colors
 然后，在你的代码中按如下方式引入色板颜色：
 
 ```js
-import { blue } from "@ant-design/colors";
+import { blue } from '@ant-design/colors';
 
 console.log(blue); // ['#E6F4FF', '#BAE0FF', '#91CAFF', '#69B1FF', '#4096FF', '#1677FF', '#0958D9', '#003EB3', '#002C8C', '#001D66']
 console.log(blue.primary); // '#1677FF'
@@ -66,7 +66,7 @@ console.log(blue.primary); // '#1677FF'
 如果你想在代码中使用其它色板，只需要按照相同的方式引入对应的色板即可。比如，如果你想使用绿色色板，则可以这样引入：
 
 ```js
-import { green } from "@ant-design/colors";
+import { green } from '@ant-design/colors';
 
 console.log(green); // ['#F6FFED', '#D9F7BE', '#B7EB8F', '#95DE64', '#73D13D', '#52C41A', '#389E0D', '#237804', '#135200', '#092B00']
 console.log(green.primary); // '#52C41A'

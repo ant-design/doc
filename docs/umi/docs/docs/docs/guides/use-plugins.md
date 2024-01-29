@@ -12,7 +12,7 @@ pnpm add -D @umijs/plugins
 
 ```ts
 export default {
-  plugins: ["@umijs/plugins/dist/antd"],
+  plugins: ['@umijs/plugins/dist/antd'],
   antd: {},
 };
 ```

@@ -142,8 +142,8 @@ Umi 默认使用的是配置式路由，即需要在配置文件中一行行配�
 2. 在 `ProductList.tsx` 文件中，导入 React、Button、Popconfirm 和 Table 组件。
 
 ```tsx
-import React from "react";
-import { Button, Popconfirm, Table } from "antd";
+import React from 'react';
+import { Button, Popconfirm, Table } from 'antd';
 ```
 
 3. 定义 `ProductList` 组件，并添加其类型注解。该组件接受一个 `products` 属性和一个 `onDelete` 方法作为参数。
@@ -162,11 +162,11 @@ const ProductList: React.FC<{
 ```tsx
 const columns = [
   {
-    title: "Name",
-    dataIndex: "name",
+    title: 'Name',
+    dataIndex: 'name',
   },
   {
-    title: "Actions",
+    title: 'Actions',
     render(text, record) {
       return (
         <Popconfirm title="Delete?" onConfirm={() => onDelete(record.id)}>
@@ -241,18 +241,18 @@ export default defineConfig({
 在 Umi 中使用 react-query 拉取数据和进行删除操作的示例代码如下：
 
 ```tsx
-import React from "react";
-import axios from "axios";
-import { useMutation, useQuery, useQueryClient } from "umi";
+import React from 'react';
+import axios from 'axios';
+import { useMutation, useQuery, useQueryClient } from 'umi';
 
-import styles from "./products.less";
-import ProductList from "@/components/ProductList";
+import styles from './products.less';
+import ProductList from '@/components/ProductList';
 
 export default function Page() {
   const queryClient = useQueryClient();
-  const productsQuery = useQuery(["products"], {
+  const productsQuery = useQuery(['products'], {
     queryFn() {
-      return axios.get("/api/products").then((res) => res.data);
+      return axios.get('/api/products').then((res) => res.data);
     },
   });
   const productsDeleteMutation = useMutation({
@@ -260,7 +260,7 @@ export default function Page() {
       return axios.delete(`/api/products/${id}`);
     },
     onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: ["products"] });
+      queryClient.invalidateQueries({ queryKey: ['products'] });
     },
   });
   if (productsQuery.isLoading) return null;

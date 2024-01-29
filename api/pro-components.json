@@ -1,10 +1,10 @@
 [
   {
-    "packageName": "Table",
-    "tableData": [
+    "title": "Table",
+    "properties": [
       {
         "title": "ProTable - ProTable",
-        "table": [
+        "property": [
           {
             "属性": "request",
             "描述": "获取 `dataSource` 的方法",
@@ -221,7 +221,7 @@
       },
       {
         "title": "ProTable - RecordCreator",
-        "table": [
+        "property": [
           {
             "属性": "record",
             "描述": "需要新增的行数据，一般来说包含唯一 key",
@@ -244,7 +244,7 @@
       },
       {
         "title": "ProTable - ColumnStateType",
-        "table": [
+        "property": [
           {
             "属性": "defaultValue",
             "描述": "列状态的默认值，只有初次生效，并用于重置使用",
@@ -279,7 +279,7 @@
       },
       {
         "title": "ProTable - Search 搜索表单",
-        "table": [
+        "property": [
           {
             "属性": "filterType",
             "描述": "过滤表单类型",
@@ -362,7 +362,7 @@
       },
       {
         "title": "ProTable - Columns 列定义",
-        "table": [
+        "property": [
           {
             "属性": "title",
             "描述": "与 antd 中基本相同，但是支持通过传入一个方法",
@@ -513,7 +513,7 @@
       },
       {
         "title": "ProTable - 批量操作",
-        "table": [
+        "property": [
           {
             "属性": "alwaysShowAlert",
             "描述": "总是展示 alert，默认无选择不展示（`rowSelection`内置属性）",
@@ -536,7 +536,7 @@
       },
       {
         "title": "ProTable - ListToolBarProps",
-        "table": [
+        "property": [
           {
             "参数": "title",
             "说明": "标题",
@@ -601,7 +601,7 @@
       },
       {
         "title": "ProTable - Setting",
-        "table": [
+        "property": [
           {
             "参数": "icon",
             "说明": "图标",
@@ -630,7 +630,7 @@
       },
       {
         "title": "ProTable - ListToolBarMenu",
-        "table": [
+        "property": [
           {
             "参数": "type",
             "说明": "类型",
@@ -659,7 +659,7 @@
       },
       {
         "title": "ProTable - ListToolBarTabs",
-        "table": [
+        "property": [
           {
             "参数": "activeKey",
             "说明": "当前选中项",
@@ -682,7 +682,7 @@
       },
       {
         "title": "ProTable - TableDropdown",
-        "table": [
+        "property": [
           {
             "参数": "key",
             "说明": "唯一标志",
@@ -706,11 +706,11 @@
     ]
   },
   {
-    "packageName": "Table",
-    "tableData": [
+    "title": "Table",
+    "properties": [
       {
         "title": "ProTable - API",
-        "table": [
+        "property": [
           {
             "属性": "`value`",
             "描述": "同 dataSource，传入一个数组，是 table 渲染的元数据",
@@ -755,7 +755,7 @@
       },
       {
         "title": "ProTable - editable 编辑行配置",
-        "table": [
+        "property": [
           {
             "属性": "type",
             "描述": "可编辑表格的类型，单行编辑或者多行编辑",
@@ -850,11 +850,11 @@
     ]
   },
   {
-    "packageName": "Table",
-    "tableData": [
+    "title": "Table",
+    "properties": [
       {
         "title": "ProTable - API",
-        "table": [
+        "property": [
           {
             "属性": "dragSortKey",
             "描述": "如配置此参数，则会在该 key 对应的行显示拖拽排序把手，允许拖拽排序",
@@ -878,11 +878,11 @@
     ]
   },
   {
-    "packageName": "Skeleton",
-    "tableData": [
+    "title": "Skeleton",
+    "properties": [
       {
         "title": "ProSkeleton - API",
-        "table": [
+        "property": [
           {
             "参数": "type",
             "说明": "不同类型的骨架屏",
@@ -936,11 +936,11 @@
     ]
   },
   {
-    "packageName": "List",
-    "tableData": [
+    "title": "List",
+    "properties": [
       {
         "title": "ProList - ProList API",
-        "table": [
+        "property": [
           {
             "参数": "dataSource",
             "说明": "与 antd 相同的[配置](https://ant.design/components/list-cn/#API)",
@@ -1041,7 +1041,7 @@
       },
       {
         "title": "ProList - Metas.[Meta] 通用 API",
-        "table": [
+        "property": [
           {
             "参数": "dataIndex",
             "说明": "数据在数据项中对应的路径，支持通过数组查询嵌套路径",
@@ -1064,7 +1064,7 @@
       },
       {
         "title": "ProList - Metas.type",
-        "table": [
+        "property": [
           {
             "参数": "dataIndex",
             "说明": "-",
@@ -1075,7 +1075,7 @@
       },
       {
         "title": "ProList - Metas.title",
-        "table": [
+        "property": [
           {
             "参数": "dataIndex",
             "说明": "-",
@@ -1086,7 +1086,7 @@
       },
       {
         "title": "ProList - Metas.subTitle",
-        "table": [
+        "property": [
           {
             "参数": "dataIndex",
             "说明": "-",
@@ -1097,7 +1097,7 @@
       },
       {
         "title": "ProList - Metas.description",
-        "table": [
+        "property": [
           {
             "参数": "dataIndex",
             "说明": "-",
@@ -1108,7 +1108,7 @@
       },
       {
         "title": "ProList - Metas.avatar",
-        "table": [
+        "property": [
           {
             "参数": "dataIndex",
             "说明": "-",
@@ -1119,7 +1119,7 @@
       },
       {
         "title": "ProList - Metas.actions",
-        "table": [
+        "property": [
           {
             "参数": "dataIndex",
             "说明": "-",
@@ -1134,7 +1134,7 @@
       },
       {
         "title": "ProList - Metas.content",
-        "table": [
+        "property": [
           {
             "参数": "dataIndex",
             "说明": "-",
@@ -1145,7 +1145,7 @@
       },
       {
         "title": "ProList - Metas.extra",
-        "table": [
+        "property": [
           {
             "参数": "dataIndex",
             "说明": "-",
@@ -1157,11 +1157,11 @@
     ]
   },
   {
-    "packageName": "Layout",
-    "tableData": [
+    "title": "Layout",
+    "properties": [
       {
         "title": "ProLayout - ProLayout",
-        "table": [
+        "property": [
           {
             "参数": "title",
             "说明": "layout 的左上角的 title",
@@ -1458,7 +1458,7 @@
       },
       {
         "title": "ProLayout - menu",
-        "table": [
+        "property": [
           {
             "参数": "locale",
             "说明": "menu 是否使用国际化，还需要 formatMessage 的配合。",
@@ -1511,7 +1511,7 @@
       },
       {
         "title": "ProLayout - SettingDrawer",
-        "table": [
+        "property": [
           {
             "参数": "collapse",
             "说明": "控制 SettingDrawer 的收起和展开",
@@ -1566,7 +1566,7 @@
       },
       {
         "title": "ProLayout - PageLoading",
-        "table": [
+        "property": [
           {
             "参数": "支持所有的 antd `Spin` 组件参数",
             "说明": "-",
@@ -1576,7 +1576,7 @@
       },
       {
         "title": "ProLayout - getMenuData",
-        "table": [
+        "property": [
           {
             "参数": "routes",
             "说明": "路由的配置信息",
@@ -1604,7 +1604,7 @@
       },
       {
         "title": "ProLayout - getPageTitle",
-        "table": [
+        "property": [
           {
             "参数": "pathname",
             "说明": "当前的 pathname",
@@ -1639,7 +1639,7 @@
       },
       {
         "title": "ProLayout - GridContent",
-        "table": [
+        "property": [
           {
             "参数": "contentWidth",
             "说明": "内容模式",
@@ -1650,7 +1650,7 @@
       },
       {
         "title": "ProLayout - Layout 的 token",
-        "table": [
+        "property": [
           {
             "token": "bgLayout",
             "说明": "layout 的背景颜色",
@@ -1675,7 +1675,7 @@
       },
       {
         "title": "ProLayout - Sider Token",
-        "table": [
+        "property": [
           {
             "token": "colorMenuBackground",
             "说明": "menu 的背景颜色",
@@ -1750,7 +1750,7 @@
       },
       {
         "title": "ProLayout - Header Token",
-        "table": [
+        "property": [
           {
             "token": "colorBgHeader",
             "说明": "header 的背景颜色",
@@ -1810,7 +1810,7 @@
       },
       {
         "title": "ProLayout - pageContainer Token",
-        "table": [
+        "property": [
           {
             "token": "paddingBlockPageContainerContent",
             "说明": "pageContainer 自带的 padding block",
@@ -1836,11 +1836,11 @@
     ]
   },
   {
-    "packageName": "Layout",
-    "tableData": [
+    "title": "Layout",
+    "properties": [
       {
         "title": "ProLayout - 基础参数",
-        "table": [
+        "property": [
           {
             "参数": "width",
             "说明": "水印的宽度",
@@ -1901,7 +1901,7 @@
       },
       {
         "title": "ProLayout - 高级参数",
-        "table": [
+        "property": [
           {
             "参数": "markStyle",
             "说明": "水印层的样式",
@@ -1949,11 +1949,11 @@
     ]
   },
   {
-    "packageName": "Layout",
-    "tableData": [
+    "title": "Layout",
+    "properties": [
       {
         "title": "ProLayout - API",
-        "table": [
+        "property": [
           {
             "参数": "avatar",
             "说明": "标题栏旁的头像",
@@ -2023,11 +2023,11 @@
     ]
   },
   {
-    "packageName": "Layout",
-    "tableData": [
+    "title": "Layout",
+    "properties": [
       {
         "title": "ProLayout - API",
-        "table": [
+        "property": [
           {
             "参数": "content",
             "说明": "内容区",
@@ -2107,7 +2107,7 @@
       },
       {
         "title": "ProLayout - FooterToolbar",
-        "table": [
+        "property": [
           {
             "参数": "extra",
             "说明": "额外内容区，位于 content 的右侧",
@@ -2125,11 +2125,11 @@
     ]
   },
   {
-    "packageName": "Form",
-    "tableData": [
+    "title": "Form",
+    "properties": [
       {
         "title": "ProForm - 何时使用 ProForm？",
-        "table": [
+        "property": [
           {
             "布局": "标准 Form，增加了 `onFinish` 中自动 `loading` 和根据 `request` 自动获取默认值的功能。"
           },
@@ -2149,7 +2149,7 @@
       },
       {
         "title": "ProForm - ProForm",
-        "table": [
+        "property": [
           {
             "参数": "onFinish",
             "说明": "提交表单且数据验证成功后回调事件，同 antd 4 `Form` 组件 API",
@@ -2242,7 +2242,7 @@
       },
       {
         "title": "ProForm - ProForm.Group",
-        "table": [
+        "property": [
           {
             "参数": "title",
             "说明": "标题",
@@ -2259,7 +2259,7 @@
       },
       {
         "title": "ProForm - submitter",
-        "table": [
+        "property": [
           {
             "参数": "onSubmit",
             "说明": "提交方法",
@@ -2298,7 +2298,7 @@
       },
       {
         "title": "ProForm - formRef",
-        "table": [
+        "property": [
           {
             "方法名": "`getFieldsFormatValue`",
             "使用描述": "使用方法与 `FormInstance` 的 `getFieldsValue` 方法相同，将返回格式化后的所有数据"
@@ -2316,11 +2316,11 @@
     ]
   },
   {
-    "packageName": "Form",
-    "tableData": [
+    "title": "Form",
+    "properties": [
       {
         "title": "ProForm - API",
-        "table": [
+        "property": [
           {
             "参数": "current",
             "说明": "当前表单的步骤数，从 `0` 开始",
@@ -2372,7 +2372,7 @@
       },
       {
         "title": "ProForm - StepForm",
-        "table": [
+        "property": [
           {
             "参数": "onFinish",
             "说明": "表单提交成功触发",
@@ -2384,11 +2384,11 @@
     ]
   },
   {
-    "packageName": "Form",
-    "tableData": [
+    "title": "Form",
+    "properties": [
       {
         "title": "ProForm - API",
-        "table": [
+        "property": [
           {
             "字段名称": "`layoutType`",
             "类型": "使用的表单布局模式"
@@ -2411,7 +2411,7 @@
       },
       {
         "title": "ProForm - ProFormLayoutType",
-        "table": [
+        "property": [
           {
             "字段名称": "`Form`"
           },
@@ -2443,7 +2443,7 @@
       },
       {
         "title": "ProForm - Schema 定义",
-        "table": [
+        "property": [
           {
             "字段名称": "`key`",
             "类型": "`React.key`",
@@ -2562,11 +2562,11 @@
     ]
   },
   {
-    "packageName": "Form",
-    "tableData": [
+    "title": "Form",
+    "properties": [
       {
         "title": "ProForm - QueryFilter",
-        "table": [
+        "property": [
           {
             "参数": "collapsed",
             "说明": "是否折叠超出的表单项，用于受控模式",
@@ -2631,7 +2631,7 @@
       },
       {
         "title": "ProForm - 默认布局时的规则",
-        "table": [
+        "property": [
           {
             "容器宽度断点": "`≧ 1352px`",
             "单行展示表单列数（包含操作区域）": "4 列",
@@ -2661,7 +2661,7 @@
       },
       {
         "title": "ProForm - 强制上下布局时的规则",
-        "table": [
+        "property": [
           {
             "容器宽度断点": "`≧ 1057px`",
             "单行展示表单列数（包含操作区域）": "4 列"
@@ -2682,7 +2682,7 @@
       },
       {
         "title": "ProForm - LightFilter",
-        "table": [
+        "property": [
           {
             "参数": "collapse",
             "说明": "是否默认折叠全部字段",
@@ -2712,11 +2712,11 @@
     ]
   },
   {
-    "packageName": "Form",
-    "tableData": [
+    "title": "Form",
+    "properties": [
       {
         "title": "ProForm - ModalForm",
-        "table": [
+        "property": [
           {
             "参数": "trigger",
             "说明": "用于触发 Modal 打开的 dom，一般是 button",
@@ -2773,7 +2773,7 @@
       },
       {
         "title": "ProForm - DrawerForm",
-        "table": [
+        "property": [
           {
             "参数": "trigger",
             "说明": "用于触发 Modal 打开的 dom，一般是 button",
@@ -2826,11 +2826,11 @@
     ]
   },
   {
-    "packageName": "Form",
-    "tableData": [
+    "title": "Form",
+    "properties": [
       {
         "title": "ProForm - LoginForm",
-        "table": [
+        "property": [
           {
             "参数": "logo",
             "说明": "logo 的配置，支持 ReactNode 和 string",
@@ -2864,7 +2864,7 @@
       },
       {
         "title": "ProForm - LoginFormPage",
-        "table": [
+        "property": [
           {
             "参数": "logo",
             "说明": "logo 的配置，支持 ReactNode 和 string",
@@ -2911,11 +2911,11 @@
     ]
   },
   {
-    "packageName": "Form",
-    "tableData": [
+    "title": "Form",
+    "properties": [
       {
         "title": "ProForm - ProFormList API",
-        "table": [
+        "property": [
           {
             "参数": "itemRender",
             "说明": "自定义 Item，可以用来将 action 放到别的地方",
@@ -3011,11 +3011,11 @@
     ]
   },
   {
-    "packageName": "Form",
-    "tableData": [
+    "title": "Form",
+    "properties": [
       {
         "title": "ProForm - 组件列表",
-        "table": [
+        "property": [
           {
             "组件": "用于输入各类文本"
           },
@@ -3079,7 +3079,7 @@
       },
       {
         "title": "ProForm - 通用的属性",
-        "table": [
+        "property": [
           {
             "参数": "width",
             "说明": "Field 的长度，我们归纳了常用的 Field 长度以及适合的场景，支持了一些枚举 \"xs\" , \"sm\" , \"md\" ,\"lg\" , \"xl\"",
@@ -3118,7 +3118,7 @@
       },
       {
         "title": "ProForm - ProFormCaptcha",
-        "table": [
+        "property": [
           {
             "参数": "onGetCaptcha",
             "说明": "点击获取验证码的事件，如果配置了 phoneName 会自动注入",
@@ -3153,7 +3153,7 @@
       },
       {
         "title": "ProForm - ProFormSelect",
-        "table": [
+        "property": [
           {
             "参数": "valueEnum",
             "说明": "当前列值的枚举 [valueEnum](/components/table#valueenum)",
@@ -3188,7 +3188,7 @@
       },
       {
         "title": "ProForm - ProFormTreeSelect",
-        "table": [
+        "property": [
           {
             "参数": "valueEnum",
             "说明": "当前列值的枚举 [valueEnum](/components/table#valueenum)",
@@ -3223,7 +3223,7 @@
       },
       {
         "title": "ProForm - ProFormCheckbox",
-        "table": [
+        "property": [
           {
             "参数": "options",
             "说明": "与 select 相同，根据 options 生成子节点，推荐使用。",
@@ -3258,7 +3258,7 @@
       },
       {
         "title": "ProForm - ProFormRadio.Group",
-        "table": [
+        "property": [
           {
             "参数": "options",
             "说明": "与 select 相同，根据 options 生成子节点，推荐使用。",
@@ -3293,7 +3293,7 @@
       },
       {
         "title": "ProForm - ProFormCascader",
-        "table": [
+        "property": [
           {
             "参数": "options",
             "说明": "与 cascader 相同，根据 options 生成子节点，推荐使用。",
@@ -3322,7 +3322,7 @@
       },
       {
         "title": "ProForm - ProFormSwitch",
-        "table": [
+        "property": [
           {
             "参数": "fieldProps",
             "说明": "antd 组件的 props",
@@ -3333,7 +3333,7 @@
       },
       {
         "title": "ProForm - ProFormRate",
-        "table": [
+        "property": [
           {
             "参数": "fieldProps",
             "说明": "antd 组件的 props",
@@ -3344,7 +3344,7 @@
       },
       {
         "title": "ProForm - ProFormSlider",
-        "table": [
+        "property": [
           {
             "参数": "fieldProps",
             "说明": "antd 组件的 props",
@@ -3355,7 +3355,7 @@
       },
       {
         "title": "ProForm - ProFormUploadDragger",
-        "table": [
+        "property": [
           {
             "参数": "icon",
             "说明": "Dragger 的图标",
@@ -3378,7 +3378,7 @@
       },
       {
         "title": "ProForm - ProFormUploadButton",
-        "table": [
+        "property": [
           {
             "参数": "icon",
             "说明": "Button 的图标",
@@ -3401,7 +3401,7 @@
       },
       {
         "title": "ProForm - ProFormMoney",
-        "table": [
+        "property": [
           {
             "参数": "locale",
             "说明": "单独设置的国际化地区值，根据不同的地区显示不同的货币符号，支持地区详见下面的地区目录",
@@ -3442,7 +3442,7 @@
       },
       {
         "title": "ProForm - ProFormSegmented",
-        "table": [
+        "property": [
           {
             "参数": "valueEnum",
             "说明": "当前列值的枚举 [valueEnum](/components/table#valueenum)",
@@ -3478,11 +3478,11 @@
     ]
   },
   {
-    "packageName": "Field",
-    "tableData": [
+    "title": "Field",
+    "properties": [
       {
         "title": "ProField - 参数",
-        "table": [
+        "property": [
           {
             "参数": "text",
             "说明": "需要格式化的值",
@@ -3524,11 +3524,11 @@
     ]
   },
   {
-    "packageName": "Descriptions",
-    "tableData": [
+    "title": "Descriptions",
+    "properties": [
       {
         "title": "ProDescriptions - ProDescriptions",
-        "table": [
+        "property": [
           {
             "参数": "title",
             "说明": "描述列表的标题，显示在最顶部",
@@ -3610,7 +3610,7 @@
       },
       {
         "title": "ProDescriptions - editable 编辑配置",
-        "table": [
+        "property": [
           {
             "属性": "form",
             "描述": "可编辑表格的 form 实例，使用 `Form.useForm` 生成后使用",
@@ -3698,7 +3698,7 @@
       },
       {
         "title": "ProDescriptions - ProDescriptions.Item",
-        "table": [
+        "property": [
           {
             "参数": "label",
             "说明": "内容的描述",
@@ -3764,11 +3764,11 @@
     ]
   },
   {
-    "packageName": "Card",
-    "tableData": [
+    "title": "Card",
+    "properties": [
       {
         "title": "ProCard - API",
-        "table": [
+        "property": [
           {
             "参数": "title",
             "说明": "标题",
@@ -3924,7 +3924,7 @@
       },
       {
         "title": "ProCard - ProCardTabs",
-        "table": [
+        "property": [
           {
             "参数": "activeKey",
             "说明": "当前选中项",
@@ -3953,7 +3953,7 @@
       },
       {
         "title": "ProCard - ItemsProps",
-        "table": [
+        "property": [
           {
             "参数": "cardProps",
             "说明": "ProCard 卡片属性透传",
@@ -3964,7 +3964,7 @@
       },
       {
         "title": "ProCard - ProCard.TabPane",
-        "table": [
+        "property": [
           {
             "参数": "key",
             "说明": "对应 activeKey，用于标定是否选中和 dom 更新，一定不要重复，不然会造成表现异常",
@@ -3993,7 +3993,7 @@
       },
       {
         "title": "ProCard - ProCard.Divider",
-        "table": [
+        "property": [
           {
             "参数": "type",
             "说明": "分隔类型",
@@ -4005,11 +4005,11 @@
     ]
   },
   {
-    "packageName": "Card",
-    "tableData": [
+    "title": "Card",
+    "properties": [
       {
         "title": "ProCard - StatisticCard",
-        "table": [
+        "property": [
           {
             "参数": "title",
             "说明": "卡片标题",
@@ -4062,7 +4062,7 @@
       },
       {
         "title": "ProCard - Statistic",
-        "table": [
+        "property": [
           {
             "参数": "prefix",
             "说明": "设置数值的前缀",
@@ -4133,7 +4133,7 @@
       },
       {
         "title": "ProCard - Divider",
-        "table": [
+        "property": [
           {
             "参数": "type",
             "说明": "分隔类型",
@@ -4145,11 +4145,11 @@
     ]
   },
   {
-    "packageName": "Card",
-    "tableData": [
+    "title": "Card",
+    "properties": [
       {
         "title": "ProCard - CheckCard",
-        "table": [
+        "property": [
           {
             "参数": "checked",
             "说明": "指定当前是否选中",
@@ -4233,7 +4233,7 @@
       },
       {
         "title": "ProCard - CheckCard.Group",
-        "table": [
+        "property": [
           {
             "参数": "multiple",
             "说明": "多选",

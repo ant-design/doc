@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@umijs/fabric": "^4.0.1",
     "glob": "^10.3.10",
     "openai": "^4.26.0",
     "prettier": "^3.2.4",

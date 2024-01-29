@@ -46,51 +46,51 @@
 
 ### 第一层阴影设计表
 
-| 阴影类型        | 阴影颜色（rgba）    | 方向（X, Y） | 模糊度（Blur） | 扩展值（Spread） |
-| --------------- | ------------------- | ------------ | -------------- | ---------------- |
-| @shadow-1-up    | rgba(0, 0, 0, 0.16) | 0px, -1px    | 2px            | -2px             |
-| @shadow-1-up    | rgba(0, 0, 0, 0.12) | 0px, -3px    | 6px            | 0px              |
-| @shadow-1-up    | rgba(0, 0, 0, 0.09) | 0px, -5px    | 12px           | 4px              |
-| @shadow-1-down  | rgba(0, 0, 0, 0.16) | 0px, 1px     | 2px            | -2px             |
-| @shadow-1-down  | rgba(0, 0, 0, 0.12) | 0px, 3px     | 6px            | 0px              |
-| @shadow-1-down  | rgba(0, 0, 0, 0.09) | 0px, 5px     | 12px           | 4px              |
-| @shadow-1-left  | rgba(0, 0, 0, 0.16) | -1px, 0px    | 2px            | -2px             |
-| @shadow-1-left  | rgba(0, 0, 0, 0.12) | -3px, 0px    | 6px            | 0px              |
-| @shadow-1-left  | rgba(0, 0, 0, 0.09) | -5px, 0px    | 12px           | 4px              |
-| @shadow-1-right | rgba(0, 0, 0, 0.16) | 1px, 0px     | 2px            | -2px             |
-| @shadow-1-right | rgba(0, 0, 0, 0.12) | 3px, 0px     | 6px            | 0px              |
-| @shadow-1-right | rgba(0, 0, 0, 0.09) | 5px, 0px     | 12px           | 4px              |
+| 阴影类型 | 阴影颜色（rgba） | 方向（X, Y） | 模糊度（Blur） | 扩展值（Spread） |
+| --- | --- | --- | --- | --- |
+| @shadow-1-up | rgba(0, 0, 0, 0.16) | 0px, -1px | 2px | -2px |
+| @shadow-1-up | rgba(0, 0, 0, 0.12) | 0px, -3px | 6px | 0px |
+| @shadow-1-up | rgba(0, 0, 0, 0.09) | 0px, -5px | 12px | 4px |
+| @shadow-1-down | rgba(0, 0, 0, 0.16) | 0px, 1px | 2px | -2px |
+| @shadow-1-down | rgba(0, 0, 0, 0.12) | 0px, 3px | 6px | 0px |
+| @shadow-1-down | rgba(0, 0, 0, 0.09) | 0px, 5px | 12px | 4px |
+| @shadow-1-left | rgba(0, 0, 0, 0.16) | -1px, 0px | 2px | -2px |
+| @shadow-1-left | rgba(0, 0, 0, 0.12) | -3px, 0px | 6px | 0px |
+| @shadow-1-left | rgba(0, 0, 0, 0.09) | -5px, 0px | 12px | 4px |
+| @shadow-1-right | rgba(0, 0, 0, 0.16) | 1px, 0px | 2px | -2px |
+| @shadow-1-right | rgba(0, 0, 0, 0.12) | 3px, 0px | 6px | 0px |
+| @shadow-1-right | rgba(0, 0, 0, 0.09) | 5px, 0px | 12px | 4px |
 
 ### 第二层阴影设计表
 
-| 阴影类型        | 阴影颜色（rgba）    | 方向（X, Y） | 模糊度（Blur） | 扩展值（Spread） |
-| --------------- | ------------------- | ------------ | -------------- | ---------------- |
-| @shadow-2-up    | rgba(0, 0, 0, 0.12) | 0px, -3px    | 6px            | -4px             |
-| @shadow-2-up    | rgba(0, 0, 0, 0.08) | 0px, -6px    | 16px           | 0px              |
-| @shadow-2-up    | rgba(0, 0, 0, 0.05) | 0px, -9px    | 28px           | 8px              |
-| @shadow-2-down  | rgba(0, 0, 0, 0.12) | 0px, 3px     | 6px            | -4px             |
-| @shadow-2-down  | rgba(0, 0, 0, 0.08) | 0px, 6px     | 16px           | 0px              |
-| @shadow-2-down  | rgba(0, 0, 0, 0.05) | 0px, 9px     | 28px           | 8px              |
-| @shadow-2-left  | rgba(0, 0, 0, 0.12) | -3px, 0px    | 6px            | -4px             |
-| @shadow-2-left  | rgba(0, 0, 0, 0.08) | -6px, 0px    | 16px           | 0px              |
-| @shadow-2-left  | rgba(0, 0, 0, 0.05) | -9px, 0px    | 28px           | 8px              |
-| @shadow-2-right | rgba(0, 0, 0, 0.12) | 3px, 0px     | 6px            | -4px             |
-| @shadow-2-right | rgba(0, 0, 0, 0.08) | 6px, 0px     | 16px           | 0px              |
-| @shadow-2-right | rgba(0, 0, 0, 0.05) | 9px, 0px     | 28px           | 8px              |
+| 阴影类型 | 阴影颜色（rgba） | 方向（X, Y） | 模糊度（Blur） | 扩展值（Spread） |
+| --- | --- | --- | --- | --- |
+| @shadow-2-up | rgba(0, 0, 0, 0.12) | 0px, -3px | 6px | -4px |
+| @shadow-2-up | rgba(0, 0, 0, 0.08) | 0px, -6px | 16px | 0px |
+| @shadow-2-up | rgba(0, 0, 0, 0.05) | 0px, -9px | 28px | 8px |
+| @shadow-2-down | rgba(0, 0, 0, 0.12) | 0px, 3px | 6px | -4px |
+| @shadow-2-down | rgba(0, 0, 0, 0.08) | 0px, 6px | 16px | 0px |
+| @shadow-2-down | rgba(0, 0, 0, 0.05) | 0px, 9px | 28px | 8px |
+| @shadow-2-left | rgba(0, 0, 0, 0.12) | -3px, 0px | 6px | -4px |
+| @shadow-2-left | rgba(0, 0, 0, 0.08) | -6px, 0px | 16px | 0px |
+| @shadow-2-left | rgba(0, 0, 0, 0.05) | -9px, 0px | 28px | 8px |
+| @shadow-2-right | rgba(0, 0, 0, 0.12) | 3px, 0px | 6px | -4px |
+| @shadow-2-right | rgba(0, 0, 0, 0.08) | 6px, 0px | 16px | 0px |
+| @shadow-2-right | rgba(0, 0, 0, 0.05) | 9px, 0px | 28px | 8px |
 
 ### 第三层阴影设计表
 
-| 阴影类型        | 阴影颜色（rgba）    | 方向（X, Y） | 模糊度（Blur） | 扩展值（Spread） |
-| --------------- | ------------------- | ------------ | -------------- | ---------------- |
-| @shadow-3-up    | rgba(0, 0, 0, 0.08) | 0px, -6px    | 16px           | -8px             |
-| @shadow-3-up    | rgba(0, 0, 0, 0.05) | 0px, -9px    | 28px           | 0px              |
-| @shadow-3-up    | rgba(0, 0, 0, 0.03) | 0px, -12px   | 48px           | 16px             |
-| @shadow-3-down  | rgba(0, 0, 0, 0.08) | 0px, 6px     | 16px           | -8px             |
-| @shadow-3-down  | rgba(0, 0, 0, 0.05) | 0px, 9px     | 28px           | 0px              |
-| @shadow-3-down  | rgba(0, 0, 0, 0.03) | 0px, 12px    | 48px           | 16px             |
-| @shadow-3-left  | rgba(0, 0, 0, 0.08) | -6px, 0px    | 16px           | -8px             |
-| @shadow-3-left  | rgba(0, 0, 0, 0.05) | -9px, 0px    | 28px           | 0px              |
-| @shadow-3-left  | rgba(0, 0, 0, 0.03) | -12px, 0px   | 48px           | 16px             |
-| @shadow-3-right | rgba(0, 0, 0, 0.08) | 6px, 0px     | 16px           | -8px             |
-| @shadow-3-right | rgba(0, 0, 0, 0.05) | 9px, 0px     | 28px           | 0px              |
-| @shadow-3-right | rgba(0, 0, 0, 0.03) | 12px, 0px    | 48px           | 16px             |
+| 阴影类型 | 阴影颜色（rgba） | 方向（X, Y） | 模糊度（Blur） | 扩展值（Spread） |
+| --- | --- | --- | --- | --- |
+| @shadow-3-up | rgba(0, 0, 0, 0.08) | 0px, -6px | 16px | -8px |
+| @shadow-3-up | rgba(0, 0, 0, 0.05) | 0px, -9px | 28px | 0px |
+| @shadow-3-up | rgba(0, 0, 0, 0.03) | 0px, -12px | 48px | 16px |
+| @shadow-3-down | rgba(0, 0, 0, 0.08) | 0px, 6px | 16px | -8px |
+| @shadow-3-down | rgba(0, 0, 0, 0.05) | 0px, 9px | 28px | 0px |
+| @shadow-3-down | rgba(0, 0, 0, 0.03) | 0px, 12px | 48px | 16px |
+| @shadow-3-left | rgba(0, 0, 0, 0.08) | -6px, 0px | 16px | -8px |
+| @shadow-3-left | rgba(0, 0, 0, 0.05) | -9px, 0px | 28px | 0px |
+| @shadow-3-left | rgba(0, 0, 0, 0.03) | -12px, 0px | 48px | 16px |
+| @shadow-3-right | rgba(0, 0, 0, 0.08) | 6px, 0px | 16px | -8px |
+| @shadow-3-right | rgba(0, 0, 0, 0.05) | 9px, 0px | 28px | 0px |
+| @shadow-3-right | rgba(0, 0, 0, 0.03) | 12px, 0px | 48px | 16px |

@@ -291,11 +291,11 @@ Airbnb's Style Guide 是一个被广泛应用和接受的 JavaScript 代码风�
 为了与 antd 的生态保持兼容性，在 ProComponents 中覆盖 antd 的样式时，我们需要使用 `${token.antCls}` 变量来生成类名。具体配置如下：
 
 ```tsx | pure
-import { useContext } from "react";
-import { ConfigProvider } from "antd";
+import { useContext } from 'react';
+import { ConfigProvider } from 'antd';
 
 const { getPrefixCls } = useContext(ConfigProvider.ConfigContext);
-const prefixCls = getPrefixCls("pro-${package}");
+const prefixCls = getPrefixCls('pro-${package}');
 ```
 
 其中，`${package}` 是指 ProComponents 中的包名，根据不同的组件包名进行替换即可。这样可以确保覆盖 antd 样式时的兼容性问题。

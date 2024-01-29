@@ -12,7 +12,7 @@ $ pnpm i @umijs/plugins -D
 
 ```ts
 export default {
-  plugins: ["@umijs/plugins/dist/styled-components"],
+  plugins: ['@umijs/plugins/dist/styled-components'],
   styledComponents: {},
 };
 ```
@@ -71,7 +71,7 @@ export default {
 export default {
   styledComponents: {
     babelPlugin: {
-      topLevelImportPaths: ["alita"],
+      topLevelImportPaths: ['alita'],
     },
   },
 };
@@ -85,7 +85,7 @@ export default {
 export default {
   styledComponents: {
     babelPlugin: {
-      topLevelImportPaths: ["alita"],
+      topLevelImportPaths: ['alita'],
     },
   },
 };
@@ -112,7 +112,7 @@ export default {
 例如，当一个应用程序需要使用全局样式时，可以直接引入运行时配置项中定义的`GlobalStyle`组件，并将其渲染到应用程序的根节点中，从而应用全局样式。
 
 ```tsx
-import { styledComponents } from "umi";
+import { styledComponents } from 'umi';
 
 const { GlobalStyle } = styledComponents;
 

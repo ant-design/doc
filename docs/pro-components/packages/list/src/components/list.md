@@ -56,20 +56,20 @@ Metas.[Meta] 是一个通用 API，用于配置 ProTable 的元数据项。
 #### 示例
 
 ```jsx
-import { ProTable } from "antd";
+import { ProTable } from 'antd';
 
 const columns = [
   {
-    title: "姓名",
-    dataIndex: "name",
+    title: '姓名',
+    dataIndex: 'name',
   },
   {
-    title: "年龄",
-    dataIndex: "age",
-    valueType: "number",
+    title: '年龄',
+    dataIndex: 'age',
+    valueType: 'number',
   },
   {
-    title: "操作",
+    title: '操作',
     render: (text, record, index) => (
       <a onClick={() => handleEdit(record)}>编辑</a>
     ),
@@ -78,11 +78,11 @@ const columns = [
 
 const dataSource = [
   {
-    name: "张三",
+    name: '张三',
     age: 18,
   },
   {
-    name: "李四",
+    name: '李四',
     age: 20,
   },
 ];

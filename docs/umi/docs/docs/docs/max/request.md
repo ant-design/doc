@@ -7,11 +7,11 @@
 `request` 方法是 `@umijs/max` 提供的网络请求方法，可以用于发送请求。使用方法如下：
 
 ```ts
-import { request } from "umi";
+import { request } from 'umi';
 
 request({
-  url: "https://example.com/api",
-  method: "GET",
+  url: 'https://example.com/api',
+  method: 'GET',
   // 其他配置项
 })
   .then((response) => {
@@ -27,11 +27,11 @@ request({
 `useRequest` 是 `@umijs/max` 提供的用于进行网络请求和错误处理的 hooks 函数。使用方法如下：
 
 ```ts
-import { useRequest } from "umi";
+import { useRequest } from 'umi';
 
 const { data, error, loading } = useRequest({
-  url: "https://example.com/api",
-  method: "GET",
+  url: 'https://example.com/api',
+  method: 'GET',
   // 其他配置项
 });
 
@@ -84,7 +84,7 @@ if (loading) {
 ### 完整的运行时配置示例
 
 ```ts
-import type { RequestConfig } from "umi";
+import type { RequestConfig } from 'umi';
 
 export const request: RequestConfig = {
   timeout: 1000,
@@ -122,17 +122,17 @@ export const request: RequestConfig = {
 ```javascript
 const errorThrower = (responseData) => {
   if (responseData.code === 500) {
-    throw new Error("服务器错误");
+    throw new Error('服务器错误');
   } else if (responseData.code === 404) {
-    throw new Error("请求地址不存在");
+    throw new Error('请求地址不存在');
   } else {
-    throw new Error("请求失败");
+    throw new Error('请求失败');
   }
 };
 
 const errorHandler = (error, opts) => {
-  console.error("请求出错：", error);
-  console.log("请求配置：", opts);
+  console.error('请求出错：', error);
+  console.log('请求配置：', opts);
 };
 
 const request = extend({
@@ -142,8 +142,8 @@ const request = extend({
   },
 });
 
-request("/api/data").catch((error) => {
-  console.error("请求失败：", error);
+request('/api/data').catch((error) => {
+  console.error('请求失败：', error);
 });
 ```
 
@@ -225,7 +225,7 @@ useRequest 是一个插件内置的 React Hook，用于在组件内部简化数�
 
 ```typescript
 const { data, error, loading } = useRequest(() => {
-  return services.getUserList("/api/test");
+  return services.getUserList('/api/test');
 });
 ```
 
@@ -268,7 +268,7 @@ RequestConfig 接口是一个用于配置运行时配置的接口。通过该接
 在使用 RequestConfig 接口之前，需要先导入该接口。可以通过以下代码进行导入：
 
 ```typescript
-import type { RequestConfig } from "umi";
+import type { RequestConfig } from 'umi';
 ```
 
 注意，在导入时要加上 `type` 关键字。

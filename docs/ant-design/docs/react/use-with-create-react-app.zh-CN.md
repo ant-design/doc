@@ -83,8 +83,8 @@ $ pnpm install antd --save
 安装完成后，你可以在项目中引入 antd 组件。例如，在 `src/App.js` 文件中，你可以按如下方式引入 antd 的按钮组件：
 
 ```tsx
-import React from "react";
-import { Button } from "antd";
+import React from 'react';
+import { Button } from 'antd';
 
 const App: React.FC = () => (
   <div className="App">
@@ -122,7 +122,7 @@ export default App;
 2. 在你想要使用 antd 组件的文件中，使用 `import` 语句来引入需要的组件，例如：
 
 ```tsx
-import { Button } from "antd";
+import { Button } from 'antd';
 ```
 
 3. 在需要使用 antd 组件的地方直接使用它们，例如：
@@ -142,11 +142,11 @@ import { Button } from "antd";
 要配置自定义主题，可以参考 Ant Design 的 [配置主题](/docs/react/customize-theme) 文档。在你的应用中，可以通过`ConfigProvider`组件进行主题配置。下面是一个示例：
 
 ```tsx
-import React from "react";
-import { ConfigProvider } from "antd";
+import React from 'react';
+import { ConfigProvider } from 'antd';
 
 const App: React.FC = () => (
-  <ConfigProvider theme={{ token: { colorPrimary: "#00b96b" } }}>
+  <ConfigProvider theme={{ token: { colorPrimary: '#00b96b' } }}>
     <MyApp />
   </ConfigProvider>
 );

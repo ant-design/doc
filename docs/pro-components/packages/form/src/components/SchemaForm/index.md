@@ -16,23 +16,19 @@ SchemaForm 提供了与 ProForm 相同的 API，并且增加了部分 API。以�
 
 #### 字段名称：layoutType
 
-类型：ProFormLayoutType
-说明：使用的表单布局模式
+类型：ProFormLayoutType说明：使用的表单布局模式
 
 #### 字段名称：steps
 
-类型：StepFormProps[]
-说明：layoutType=steps 中的分步表单配置，需要配置 columns 为数组使用
+类型：StepFormProps[] 说明：layoutType=steps 中的分步表单配置，需要配置 columns 为数组使用
 
 #### 字段名称：columns
 
-类型：ProFormColumnsType | ProFormColumnsType[]
-说明：表单的定义，一般是 JSON 对象，如果是分步表单，需要使用 JSON 数组来生成多个表单
+类型：ProFormColumnsType | ProFormColumnsType[] 说明：表单的定义，一般是 JSON 对象，如果是分步表单，需要使用 JSON 数组来生成多个表单
 
 #### 字段名称：shouldUpdate
 
-类型：(newValues: Record<string, any>, oldValues: Record<string, any>) => boolean | boolean
-说明：细粒化控制是否渲染。当值为 true 时，会自动重新渲染表单项。当值为 false 时，不会更新表单项但可以使用 dependencies 触发更新。当值为一个函数时，根据返回值判断是否重新渲染表单项，等同于直接赋值 true 或 false
+类型：(newValues: Record<string, any>, oldValues: Record<string, any>) => boolean | boolean 说明：细粒化控制是否渲染。当值为 true 时，会自动重新渲染表单项。当值为 false 时，不会更新表单项但可以使用 dependencies 触发更新。当值为一个函数时，根据返回值判断是否重新渲染表单项，等同于直接赋值 true 或 false
 
 ### SchemaForm 的 API 示例
 

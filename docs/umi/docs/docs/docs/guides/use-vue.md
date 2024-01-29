@@ -10,9 +10,9 @@
 export default {
   routes: [
     {
-      path: "/user/:username",
-      name: "user",
-      component: "index",
+      path: '/user/:username',
+      name: 'user',
+      component: 'index',
     },
   ],
 };
@@ -37,7 +37,7 @@ export default {
 使用命名路由进行编程式导航与使用命令式调用`router.push`方法一致。例如：
 
 ```ts
-router.push({ name: "user", params: { username: "erina" } });
+router.push({ name: 'user', params: { username: 'erina' } });
 ```
 
 在上述例子中，通过调用`router.push`方法，传递一个包含`name`属性为`user`的路由和`params`参数`{ username: 'erina' }`，实现了导航到路径`/user/erina`的效果。

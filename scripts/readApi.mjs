@@ -64,13 +64,13 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
   const ast = processor.parse(mdContent);
 
   // 提取表格数据
-  const tableData = [];
+  const properties = [];
 
   let tableTitle = '';
   const packageName = capitalizeFirstLetter(filePath.split(path.sep).at(1));
 
   visit(ast, (node) => {
-    let tableRows = [];
+    let property = [];
 
     if (node.type === 'heading') {
       tableTitle = remark.stringify(node.children[0]);
@@ -96,10 +96,10 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
         }
       });
 
-      tableRows.push(rowData);
+      property.push(rowData);
     });
-    const [props, ...rest] = tableRows;
-    tableRows = rest.map((row) => {
+    const [props, ...rest] = property;
+    property = rest.map((row) => {
       const obj = {};
       row.forEach((cell, index) => {
         obj[props[index]?.replace(/\n/g, '').trim()] = cell
@@ -110,21 +110,21 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
       return obj;
     });
 
-    if (tableRows.length) {
-      tableData.push({
+    if (property.length) {
+      properties.push({
         title:
           prefixName +
           packageName +
           ' - ' +
           tableTitle?.replace(/\n/g, '').trim(),
-        table: tableRows,
+        property,
       });
     }
   });
-  if (tableData.length) {
+  if (properties.length) {
     return {
-      packageName: packageName,
-      tableData,
+      title: packageName,
+      properties,
     };
   }
   return null;
@@ -189,6 +189,7 @@ async function readAntDesign() {
 }
 
 async function readUmi() {
+  const processor = unified().use(parse).use(remarkGfm, { singleTilde: false });
   const directoryPath = path.join(
     __dirname,
     '..',
@@ -202,9 +203,6 @@ async function readUmi() {
   const apiConfigs = [];
   for (const file of markdownFiles) {
     const markdownContent = fs.readFileSync(file, 'utf-8');
-    const processor = unified()
-      .use(parse)
-      .use(remarkGfm, { singleTilde: false });
 
     // 解析Markdown为抽象语法树（AST）
     const ast = processor.parse(markdownContent);
@@ -218,23 +216,23 @@ async function readUmi() {
               .stringify(node.children[0])
               ?.replace(/\n/g, '')
               .trim(),
-            table: [],
+            properties: [],
           });
         }
         if (node.depth === 2 && apiJSON.at(-1)) {
-          apiJSON.at(-1).table.push({
+          apiJSON.at(-1).properties.push({
             title: remark
               .stringify(node.children[0])
               ?.replace(/\n/g, '')
               .trim(),
-            table: [],
+            property: [],
           });
         }
-        if (node.depth === 3 && apiJSON.at(-1)?.table.at(-1)) {
+        if (node.depth === 3 && apiJSON.at(-1)?.properties.at(-1)) {
           apiJSON
             .at(-1)
-            .table.at(-1)
-            .table.push({
+            .properties.at(-1)
+            ?.property?.push({
               title: remark
                 .stringify(node.children[0])
                 ?.replace(/\n/g, '')
@@ -243,21 +241,21 @@ async function readUmi() {
             });
         }
       } else {
-        if (apiJSON.at(-1)?.table?.at(-1)?.table?.at(-1)) {
-          let md = apiJSON.at(-1).table.at(-1).table.at(-1).md;
+        if (apiJSON.at(-1)?.properties?.at(-1)?.property?.at(-1)) {
+          let md = apiJSON.at(-1).properties.at(-1).property.at(-1).md;
 
           md =
             md + (Array.isArray(node.children) ? '' : remark.stringify(node));
 
-          apiJSON.at(-1).table.at(-1).table.at(-1).md = md
+          apiJSON.at(-1).properties.at(-1).property.at(-1).md = md
             .trim()
             .replace(/\n/g, '');
-        } else if (apiJSON.at(-1)?.table?.at(-1)) {
-          let md = apiJSON.at(-1).table.at(-1).md || '';
+        } else if (apiJSON.at(-1)?.properties?.at(-1)) {
+          let md = apiJSON.at(-1).properties.at(-1).md || '';
           md =
             md + (Array.isArray(node.children) ? '' : remark.stringify(node));
 
-          apiJSON.at(-1).table.at(-1).md = md;
+          apiJSON.at(-1).properties.at(-1).md = md;
         }
       }
     });
@@ -271,6 +269,6 @@ async function readUmi() {
   );
 }
 
-// readProComponents();
-// readAntDesign();
+readProComponents();
+readAntDesign();
 readUmi();

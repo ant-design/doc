@@ -23,14 +23,14 @@ Umi 4 提供了单元测试的脚手架，帮助开发者实现自动化测试�
 3. 对于 umi 项目，可以按照以下代码进行配置：
 
 ```ts
-import { Config, configUmiAlias, createConfig } from "umi/test";
+import { Config, configUmiAlias, createConfig } from 'umi/test';
 
 export default async () => {
   return (await configUmiAlias({
     ...createConfig({
-      target: "browser",
-      jsTransformer: "esbuild",
-      jsTransformerOpts: { jsx: "automatic" },
+      target: 'browser',
+      jsTransformer: 'esbuild',
+      jsTransformerOpts: { jsx: 'automatic' },
     }),
     // 可以覆盖 umi 的默认 jest 配置，例如:
     // displayName: "Umi jest",
@@ -41,14 +41,14 @@ export default async () => {
 4. 对于 @umijs/max 项目，可以按照以下代码进行配置：
 
 ```ts
-import { Config, configUmiAlias, createConfig } from "@umijs/max/test";
+import { Config, configUmiAlias, createConfig } from '@umijs/max/test';
 
 export default async () => {
   return (await configUmiAlias({
     ...createConfig({
-      target: "browser",
-      jsTransformer: "esbuild",
-      jsTransformerOpts: { jsx: "automatic" },
+      target: 'browser',
+      jsTransformer: 'esbuild',
+      jsTransformerOpts: { jsx: 'automatic' },
     }),
     // 可以覆盖 umi 的默认 jest 配置，例如:
     // displayName: "Umi jest",
@@ -83,17 +83,17 @@ export default async () => {
 例如，我们可以编写一个测试用例来确保 `fetcher` 函数使用传入的 `url` 请求 API 的数据：
 
 ```ts
-test("reverseApiData use fetcher to request url", async () => {
+test('reverseApiData use fetcher to request url', async () => {
   // 准备 mock 函数或数据
   const fetcher = jest.fn().mockResolvedValue({
     json: () => Promise.resolve(),
   });
 
   // 执行被测试的函数
-  await reverseApiData("https://api.end/point", fetcher);
+  await reverseApiData('https://api.end/point', fetcher);
 
   // 断言测试结果
-  expect(fetcher).toBeCalledWith("https://api.end/point");
+  expect(fetcher).toBeCalledWith('https://api.end/point');
 });
 ```
 
@@ -122,15 +122,15 @@ test('reverseApiData reverse simple object', async () => {
 1. 首先在测试文件中导入 `render` 方法和需要测试的组件：
 
 ```tsx
-import { render } from "@testing-library/react";
-import React from "react";
-import Greet from "./Greet";
+import { render } from '@testing-library/react';
+import React from 'react';
+import Greet from './Greet';
 ```
 
 2. 然后编写测试用例并调用 `render` 方法渲染组件，获取渲染结果的容器 element：
 
 ```tsx
-test("renders Greet without name by snapshot", () => {
+test('renders Greet without name by snapshot', () => {
   const { container } = render(<Greet />);
   // ...
 });
@@ -139,7 +139,7 @@ test("renders Greet without name by snapshot", () => {
 3. 最后使用 `expect` 函数对容器的快照进行断言，并调用 `toMatchSnapshot` 方法生成快照：
 
 ```tsx
-test("renders Greet without name by snapshot", () => {
+test('renders Greet without name by snapshot', () => {
   const { container } = render(<Greet />);
 
   expect(container).toMatchSnapshot();
@@ -155,7 +155,7 @@ test("renders Greet without name by snapshot", () => {
 1. 首先编写测试用例，并渲染需要测试的组件，获取渲染结果的容器 element：
 
 ```tsx
-test("renders Greet without name by inline snapshot", () => {
+test('renders Greet without name by inline snapshot', () => {
   const { container } = render(<Greet />);
   // ...
 });
@@ -164,7 +164,7 @@ test("renders Greet without name by inline snapshot", () => {
 2. 然后使用 `expect` 函数对容器的快照进行断言，并调用 `toMatchInlineSnapshot` 方法：
 
 ```tsx
-test("renders Greet without name by inline snapshot", () => {
+test('renders Greet without name by inline snapshot', () => {
   const { container } = render(<Greet />);
 
   expect(container).toMatchInlineSnapshot();
@@ -180,13 +180,13 @@ test("renders Greet without name by inline snapshot", () => {
 1. 首先在测试文件中导入 `@testing-library/jest-dom`：
 
 ```tsx
-import "@testing-library/jest-dom";
+import '@testing-library/jest-dom';
 ```
 
 2. 然后编写测试用例并调用 `render` 方法渲染组件，获取渲染结果的 element：
 
 ```tsx
-test("renders Greet without name assert by testing-library", () => {
+test('renders Greet without name assert by testing-library', () => {
   const { container } = render(<Greet />);
   // ...
 });
@@ -195,10 +195,10 @@ test("renders Greet without name assert by testing-library", () => {
 3. 最后使用 `screen.getByText` 方法获取渲染结果中的特定元素，并使用 `expect` 函数对获取到的元素进行断言，比如使用 `toBeInTheDocument` 断言该元素是否在文档中：
 
 ```tsx
-test("renders Greet without name assert by testing-library", () => {
+test('renders Greet without name assert by testing-library', () => {
   const { container } = render(<Greet />);
 
-  const greetDom = screen.getByText("Anonymous");
+  const greetDom = screen.getByText('Anonymous');
   expect(greetDom).toBeInTheDocument();
 });
 ```

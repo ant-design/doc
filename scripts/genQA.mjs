@@ -4,30 +4,43 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// 创建 OpenAI 实例
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   baseURL: 'https://api.openai-proxy.com/v1',
 });
 
+// 获取当前脚本所在目录路径
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// 读取当前目录下的 Markdown 文件，并过滤掉以 'docs/' 开头的文件
 const mdFileList = readMarkdownFiles('.').filter(
   (file) => !file.startsWith('docs/')
 );
 
+// 遍历 Markdown 文件列表
 for await (const file of mdFileList) {
+  // 读取 Markdown 文件内容
   const mdContent = fs.readFileSync(file, 'utf-8');
+  // 将 Markdown 内容按照 '# ' 进行分割
   const mdContentArray = mdContent.split('\n#');
   const mdFile = [];
+  // 构建新文件路径
   const newFileName = path.join(__dirname, '..', 'docs', file);
+  // 如果新文件已存在，则跳过当前文件的处理
   if (fs.existsSync(newFileName)) continue;
 
   let i = 0;
+  // 遍历 Markdown 内容数组
   for await (const section of mdContentArray) {
+    // 如果段落长度小于 150，则跳过当前段落的处理
     if (section.length < 150) continue;
     i++;
     console.log(
       '正在处理' + file + ' (' + i + '/' + mdContentArray.length + ')'
     );
+
+    // 使用 OpenAI 的 chat completions API 生成 QA 文档
     const jsonContent = await openai.chat.completions
       .create({
         model: 'gpt-3.5-turbo-16k',
@@ -66,10 +79,13 @@ Ant Design 5.x 的 CSS 变量模式是从版本 5.12.0 开始重新支持的功�
 
     console.log('生成成功');
 
+    // 将生成的 QA 文档内容添加到数组中
     mdFile.push(jsonContent);
+    // 创建新文件所在的目录（如果不存在）
     fs.mkdirSync(path.dirname(newFileName), {
       recursive: true,
     });
+    // 将生成的 QA 文档内容写入新文件
     fs.writeFileSync(newFileName, mdFile.join('\n\n'));
   }
 }
