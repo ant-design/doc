@@ -1,11 +1,8 @@
-1. EditableProTable 与 ProTable 有何区别？
-   可编辑表格 EditableProTable 和 ProTable 的功能基本相同，但 EditableProTable 为了方便使用做了一些改进。它关闭了查询表单和操作栏，并修改了 value 和 onChange 属性，使其可以方便地继承到 antd 的 Form 中。
+1. EditableProTable 与 ProTable 有何区别？可编辑表格 EditableProTable 和 ProTable 的功能基本相同，但 EditableProTable 为了方便使用做了一些改进。它关闭了查询表单和操作栏，并修改了 value 和 onChange 属性，使其可以方便地继承到 antd 的 Form 中。
 
-2. EditableProTable 有哪些预设？
-   EditableProTable 增加了一些预设，使其更易于使用。具体的预设内容可以参考官方文档进行了解。
+2. EditableProTable 有哪些预设？EditableProTable 增加了一些预设，使其更易于使用。具体的预设内容可以参考官方文档进行了解。
 
-3. EditableProTable 如何继承到 antd 的 Form 中？
-   为了使 EditableProTable 可以方便地继承到 antd 的 Form 中，修改了 value 和 onChange 属性。具体的使用方法可以参考官方文档，其中会详细说明如何使用 value 和 onChange 属性来实现表格与 Form 的数据联动。
+3. EditableProTable 如何继承到 antd 的 Form 中？为了使 EditableProTable 可以方便地继承到 antd 的 Form 中，修改了 value 和 onChange 属性。具体的使用方法可以参考官方文档，其中会详细说明如何使用 value 和 onChange 属性来实现表格与 Form 的数据联动。
 
 ### value 属性是用来传入 table 渲染的元数据的吗？
 
@@ -47,7 +44,7 @@
 <EditableTable
   rowKey="id"
   recordCreatorProps={{
-    position: position as "top",
+    position: position as 'top',
     // 每次新增的时候需要Key
     record: () => ({ id: getNewId() }),
   }}
@@ -71,7 +68,7 @@ const rowData = getRowData(1);
 另外，你也可以根据行的唯一标识获取数据，例如：
 
 ```typescript
-const rowData = getRowData("id");
+const rowData = getRowData('id');
 ```
 
 ### 如何获取可编辑表格的所有数据？
@@ -89,13 +86,13 @@ const rowsData = getRowsData();
 例如，要修改第一行的数据，你可以使用以下代码：
 
 ```typescript
-setRowData(1, { title: "new" });
+setRowData(1, { title: 'new' });
 ```
 
 如果你的表格行有唯一标识，你也可以使用该标识来设置数据。例如：
 
 ```typescript
-setRowData("id", { title: "new" });
+setRowData('id', { title: 'new' });
 ```
 
 如果你想清空一行的数据，你可以将要设置的字段的值设为 `undefined`。例如：
@@ -424,7 +421,7 @@ const TagList: React.FC<{
     value: {
       key: string;
       label: string;
-    }[],
+    }[]
   ) => void;
 }> = ({ value, onChange }) => {
   // 组件内部实现代码
@@ -469,7 +466,7 @@ renderFormItem: (_, { isEditable }) => (isEditable ? <TagList /> : <Input /> )
 
 在给定的代码中，可以看到`<a>`标签中定义了点击事件处理函数。该函数中使用`EditableProTable.RecordCreator`组件，通过传入一个新的记录对象来实现复制操作。具体地，在点击链接时，会将当前行的记录复制一份，生成一个新的记录对象，并将其添加到列表的末尾。用户可以通过触发该链接来复制相应的记录。
 
-#### 1. 如何自定义操作栏？
+#### 如何自定义操作栏？
 
 你可以通过以下方式自定义操作栏：
 
@@ -484,7 +481,7 @@ const editable = {
 
 在 `actionRender` 函数中，你可以根据需要添加或使用 `defaultDom` 中的默认操作按钮，例如 `save`、`cancel`、`delete`。通过修改 `actionRender` 函数的返回值，你可以自定义操作栏的内容。
 
-#### 2. `actionRender` 函数的参数是什么？
+#### `actionRender` 函数的参数是什么？
 
 `actionRender` 函数接受三个参数：
 
@@ -492,7 +489,7 @@ const editable = {
 - `config`：操作栏的配置对象。
 - `defaultDom`：包含默认操作按钮的对象，可以在自定义操作栏时使用。
 
-#### 3. 如何使用默认操作按钮？
+#### 如何使用默认操作按钮？
 
 在自定义操作栏时，你可以使用 `defaultDom` 对象中的默认操作按钮。例如，可以使用 `defaultDom.save` 来添加保存按钮，使用 `defaultDom.cancel` 来添加取消按钮。
 

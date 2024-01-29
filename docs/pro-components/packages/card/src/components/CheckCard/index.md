@@ -1,10 +1,10 @@
-### 基本使用
+### CheckCard 基本使用
 
 最常用的选项卡示例，包括头像，标题，描述等部分，可被选择。
 
 [代码示例](./demos/basic.tsx)
 
-### 多选选项卡
+### CheckCard 多选选项卡
 
 在多个选项存在的情况下可通过 `CheckCard.Group` 分组，默认选项卡组件为单选模式。
 
@@ -12,7 +12,7 @@
 
 [代码示例](./demos/single.tsx)
 
-### 多选模式
+### CheckCard 多选模式
 
 通过设置 `CheckCard.Group` 的 `multiple` 属性配置多选，注意多选模式下表单项返回值为数组。
 
@@ -27,14 +27,14 @@ CheckCard 可以和表单组件一起使用，以下是一个演示示例。
 示例代码如下：
 
 ```tsx
-import React from "react";
-import { Form, Checkbox } from "antd";
+import React from 'react';
+import { Form, Checkbox } from 'antd';
 
 const Demo = () => {
   const [form] = Form.useForm();
 
   const onFinish = (values) => {
-    console.log("Received values of form:", values);
+    console.log('Received values of form:', values);
   };
 
   return (
@@ -46,7 +46,7 @@ const Demo = () => {
               <Form.Item
                 {...field}
                 key={field.key}
-                style={{ marginBottom: "8px" }}
+                style={{ marginBottom: '8px' }}
               >
                 <Checkbox.Group>
                   <Checkbox value="check">Check</Checkbox>
@@ -97,21 +97,21 @@ export default Demo;
 
 CheckCard 组件的参数说明如下：
 
-| 参数           | 说明                                                               | 类型                | 默认值    | 版本   |
-| -------------- | ------------------------------------------------------------------ | ------------------- | --------- | ------ |
-| checked        | 指定当前是否选中                                                   | boolean             | false     |        |
-| bordered       | 是否显示边框                                                       | boolean             | true      | 1.20.0 |
-| value          | 选项值                                                             | string              | -         |        |
-| defaultChecked | 初始是否选中                                                       | boolean             | false     |        |
-| disabled       | 失效状态                                                           | boolean             | false     |        |
-| size           | 选择框大小，可选 `large` `small`                                   | string              | `default` |        |
-| onChange       | 变化时回调函数                                                     | Function(checked)   | -         |        |
-| loading        | 当卡片内容还在加载中时，可以用 loading 展示一个占位                | boolean             | false     |        |
-| title          | 标题                                                               | string \| ReactNode | -         |        |
-| description    | 描述                                                               | ReactNode           | -         |        |
-| avatar         | 选项元素的图片地址                                                 | link \| ReactNode   | -         |        |
-| extra          | 动作区域，即卡片右上角的操作区域                                   | ReactNode           | -         |        |
-| cover          | 卡片背景图片，注意使用该选项后`title`，`description`和`avatar`失效 | ReactNode           | -         |        |
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| checked | 指定当前是否选中 | boolean | false |  |
+| bordered | 是否显示边框 | boolean | true | 1.20.0 |
+| value | 选项值 | string | - |  |
+| defaultChecked | 初始是否选中 | boolean | false |  |
+| disabled | 失效状态 | boolean | false |  |
+| size | 选择框大小，可选 `large` `small` | string | `default` |  |
+| onChange | 变化时回调函数 | Function(checked) | - |  |
+| loading | 当卡片内容还在加载中时，可以用 loading 展示一个占位 | boolean | false |  |
+| title | 标题 | string \| ReactNode | - |  |
+| description | 描述 | ReactNode | - |  |
+| avatar | 选项元素的图片地址 | link \| ReactNode | - |  |
+| extra | 动作区域，即卡片右上角的操作区域 | ReactNode | - |  |
+| cover | 卡片背景图片，注意使用该选项后`title`，`description`和`avatar`失效 | ReactNode | - |  |
 
 ### CheckCard 组件的默认值是什么？
 

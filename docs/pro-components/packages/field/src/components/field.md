@@ -5,15 +5,17 @@ Ant Design 提供了很多基础组件，你可以通过以下步骤来使用它
 1. 首先，在你的代码中导入需要的基础组件的模块。
 
 ```tsx
-import { Button, Input, Checkbox } from "antd";
+import { Button, Input, Checkbox } from 'antd';
 ```
 
 2. 在页面中使用这些组件，例如：
 
 ```tsx
-   <Button type="primary">Primary Button</Button>
-   <Input placeholder="Please input" />
-   <Checkbox>Checkbox</Checkbox>
+<>
+  <Button type="primary">Primary Button</Button>
+  <Input placeholder="Please input" />
+  <Checkbox>Checkbox</Checkbox>
+</>
 ```
 
 这样就可以在页面中展示 Ant Design 提供的基础组件了。
@@ -29,7 +31,7 @@ import { Button, Input, Checkbox } from "antd";
 1. 导入相应的组件：
 
 ```tsx
-import { Input, Button, Table } from "antd";
+import { Input, Button, Table } from 'antd';
 ```
 
 2. 在页面上创建一个搜索框组件：
@@ -72,7 +74,7 @@ Ant Design 提供了下拉选择框组件，你可以按照以下步骤来使用
 1. 首先，在你的代码中导入下拉选择框组件的模块：
 
 ```tsx
-import { Select } from "antd";
+import { Select } from 'antd';
 ```
 
 2. 创建一个 Select 组件，并配置选项：

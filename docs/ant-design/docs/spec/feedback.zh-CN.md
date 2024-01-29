@@ -121,13 +121,13 @@ ReactDOM.render(
 
 以上是关于气泡卡片（Popover）的简要介绍和使用方式。如果你需要在目标元素上展示更多的描述和相关操作内容，可以考虑使用气泡卡片（Popover）。
 
-### 1. Tooltip 是用来做什么的？能否举个例子说明一下？
+### Tooltip 是用来做什么的？能否举个例子说明一下？
 
 Tooltip 是一种用来精确地描述被指向的对象的组件。它常被用于图标、图形、链接等元素上，鼠标移入时会显示相应的提示内容，移出时则会消失。Tooltip 不适用于包含复杂文本和操作的情况。
 
 举个例子，当用户在一个界面上看到一个图标，但并不清楚这个图标代表什么意思时，可以将鼠标悬停在图标上。如果该图标与一个 Tooltip 相关联，那么在鼠标移入图标时，会以 Tooltip 的形式显示出对该图标的详细描述或解释。这样用户就可以通过 Tooltip 获得更多关于图标的信息，提高了界面的交互性和可用性。
 
-### 2. Tooltip 适用于哪些情况？有哪些注意事项？
+### Tooltip 适用于哪些情况？有哪些注意事项？
 
 Tooltip 适用于需要简洁描述被指向对象的场景，如图标、图形、链接等。它的使用方式简单直观，可以提供更多的信息和交互。然而，也需要注意以下事项：
 
@@ -135,7 +135,7 @@ Tooltip 适用于需要简洁描述被指向对象的场景，如图标、图形
 - 当使用 Tooltip 时，要确保被指向对象与 Tooltip 之间有明显的关联，避免用户混淆或感到困惑。
 - Tooltip 的内容应该简明扼要，并且具有清晰的表达，以便用户能够快速理解其中的信息。
 
-### 3. 在使用 Tooltip 时有什么效果和性能上的考虑？
+### 在使用 Tooltip 时有什么效果和性能上的考虑？
 
 使用 Tooltip 可以提供更好的用户体验和交互性。当用户将鼠标移入被指向对象时，Tooltip 的出现可以给予用户更多关于对象的信息，提高用户的使用便利性。
 
@@ -186,13 +186,13 @@ Tooltip 适用于需要简洁描述被指向对象的场景，如图标、图形
 使用气泡确认框（Popconfirm）组件非常简单。只需要在需要进行确认的目标元素上添加 `Popconfirm` 组件，并设置相应的属性即可。
 
 ```jsx
-import { Popconfirm, Button } from "antd";
+import { Popconfirm, Button } from 'antd';
 
 const Demo = () => (
   <Popconfirm
     title="你确定要删除这个文件吗？"
-    onConfirm={() => console.log("确认删除")}
-    onCancel={() => console.log("取消删除")}
+    onConfirm={() => console.log('确认删除')}
+    onCancel={() => console.log('取消删除')}
     okText="确认"
     cancelText="取消"
   >
@@ -208,15 +208,15 @@ const Demo = () => (
 我们可以通过修改默认的样式类来自定义气泡确认框（Popconfirm）的样式。通过 antd 提供的 `getPopupContainer` 属性，可以指定浮层渲染的父元素。
 
 ```jsx
-import { Popconfirm, Button } from "antd";
-import "./styles.css";
+import { Popconfirm, Button } from 'antd';
+import './styles.css';
 
 const Demo = () => (
   <div className="container">
     <Popconfirm
       title="你确定要删除这个文件吗？"
-      onConfirm={() => console.log("确认删除")}
-      onCancel={() => console.log("取消删除")}
+      onConfirm={() => console.log('确认删除')}
+      onCancel={() => console.log('取消删除')}
       okText="确认"
       cancelText="取消"
       getPopupContainer={(triggerNode) => triggerNode.parentNode}
@@ -234,15 +234,15 @@ const Demo = () => (
 当用户点击确认或取消按钮时，我们可以通过设置回调函数来处理相应的逻辑。在 `Popconfirm` 组件中，通过设置 `onConfirm` 属性来定义用户点击确认时的回调函数，通过设置 `onCancel` 属性来定义用户点击取消时的回调函数。
 
 ```jsx
-import { Popconfirm, Button, message } from "antd";
+import { Popconfirm, Button, message } from 'antd';
 
 const Demo = () => {
   const handleConfirm = () => {
-    message.success("文件删除成功");
+    message.success('文件删除成功');
   };
 
   const handleCancel = () => {
-    message.info("取消删除文件");
+    message.info('取消删除文件');
   };
 
   return (

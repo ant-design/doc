@@ -11,27 +11,27 @@ ProFormList 与 [Form.List](https://ant.design/components/form-cn/#Form.List) AP
   name="users"
   initialValue={[
     {
-      useMode: "chapter",
+      useMode: 'chapter',
     },
   ]}
   creatorButtonProps={{
-    position: "top",
-    creatorButtonText: "再建一行",
+    position: 'top',
+    creatorButtonText: '再建一行',
   }}
   creatorRecord={{
-    useMode: "none",
+    useMode: 'none',
   }}
 >
   <ProFormSelect
     key="useMode"
     options={[
       {
-        value: "chapter",
-        label: "盖章后生效",
+        value: 'chapter',
+        label: '盖章后生效',
       },
       {
-        value: "none",
-        label: "不生效",
+        value: 'none',
+        label: '不生效',
       },
     ]}
     width="md"
@@ -200,7 +200,7 @@ ProFormList 自带了两个操作按钮：删除按钮和复制按钮。用户�
 ```tsx | pure
 const actionGuard = (action: string, params: any) => {
   // 在这里根据具体的权限逻辑来控制操作的可执行性
-  if (action === "add" && params.name === "admin") {
+  if (action === 'add' && params.name === 'admin') {
     return false; // 不能进行添加名为 "admin" 的行操作
   }
   return true; // 默认返回可执行
@@ -215,15 +215,15 @@ const actionGuard = (action: string, params: any) => {
 
 ### actionGuard 拦截器
 
-### 1. 什么是 actionGuard 拦截器？
+### 什么是 actionGuard 拦截器？
 
 actionGuard 拦截器是用于拦截 list 操作的机制。它包含两个事件：`beforeAddRow` 和 `beforeRemoveRow`。通过使用这些拦截器，我们可以在执行添加或删除行的操作之前进行一些自定义逻辑处理。
 
-### 2. 如何使用 actionGuard 拦截器？
+### 如何使用 actionGuard 拦截器？
 
 在上述代码中，我们可以看到如何使用 actionGuard 拦截器。首先，我们需要通过 `useRef` 创建一个 `actionRef` 引用对象，它用于操作 ProFormList 的方法。然后，我们定义了一个名为 `actionGuard` 的对象，其中包含了两个拦截器事件的处理逻辑。在 `beforeAddRow` 事件中，我们使用了异步的方式来处理逻辑，并最终返回一个 Promise 对象。在 `beforeRemoveRow` 事件中，我们同样需要使用异步的方式，并根据具体的条件来确定是否执行删除操作。最后，我们将 `actionGuard` 对象和 `actionRef` 引用对象传递给 ProFormList 组件，以实现拦截器的功能。
 
-### 3. 为什么要使用 actionGuard 拦截器？
+### 为什么要使用 actionGuard 拦截器？
 
 使用 actionGuard 拦截器可以让我们在执行 list 操作之前进行一些自定义逻辑处理。例如，在添加行之前，我们可以验证表单数据的合法性或执行其他业务逻辑。在删除行之前，我们可以根据特定的条件确定是否允许删除行。通过使用拦截器，我们可以更加灵活地控制表单列表的操作，并提供更好的用户体验。
 
@@ -248,7 +248,7 @@ actionRender: (field, action, defaultActionDom, count) => {
   const customActionDom = [];
 
   // 添加自定义按钮
-  customActionDom.push(<a onClick={() => action.add({ id: "xx" })}>新增</a>);
+  customActionDom.push(<a onClick={() => action.add({ id: 'xx' })}>新增</a>);
 
   // 如果超过三行，则禁用删除按钮
   if (count > 3) {

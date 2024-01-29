@@ -10,15 +10,15 @@ ProCard 是一个高级卡片组件，用于提供标准卡片样式以及卡片
 
 如果你想要封装一个自定义的 ProCard 组件，请确保在组件中透出 `isProCard=true` 的静态属性，以便让 ProCard 识别为同一种元素。这样可以保证你的组件与 ProCard 一致，在使用时能够达到一致的样式和布局效果。
 
-### 问题一：基础卡片的使用方法是什么？
+### 基础卡片的使用方法是什么？
 
 当单独使用时，`ProCard` 是一个普通的卡片组件。
 
-### 问题二：栅格布局的配置属性有哪些？
+### 栅格布局的配置属性有哪些？
 
 嵌套子卡片时，组件会自动切换为 `flex` 弹性盒布局。可以通过设置 `direction` 属性为 `column` 来指定 Flex 方向。还可以通过配置 `ghost` 属性为 `true` 来去除背景色和 padding 实现页内布局。
 
-### 问题三：响应式布局需要如何配置？
+### 响应式布局需要如何配置？
 
 `colSpan` 属性支持 Ant Design 定义的栅格式响应布局。预设了六个响应尺寸：`xs`、`sm`、`md`、`lg`、`xl`、`xxl`。如果要支持响应式布局，可以写成 `{ xs: 4, sm: 8, md: 10, lg: 12 }` 的形式。
 
@@ -88,7 +88,7 @@ ProCard 是一个高级卡片组件，用于提供标准卡片样式以及卡片
 以下是一个示例代码，展示了如何实现多行卡片布局：
 
 ```tsx
-import { Card } from "antd";
+import { Card } from 'antd';
 
 <Card wrap={true}>
   <Card>{/* 卡片内容 */}</Card>
@@ -154,8 +154,8 @@ const [collapsed, setCollapsed] = useState(false);
 加载中的卡片可以通过配置`loading`属性为`true`来实现。此外，还可以通过传入自定义的 DOM 给`loading`来展示不同的加载中状态。
 
 ```jsx
-import React from "react";
-import { Card } from "antd";
+import React from 'react';
+import { Card } from 'antd';
 
 const Demo = () => {
   return <Card loading={true}>{/* 卡片内容 */}</Card>;
@@ -169,8 +169,8 @@ export default Demo;
 要自定义加载中状态的展示，可以传入一个 DOM 元素给`loading`属性。在该 DOM 元素中，可以自定义加载中时的展示样式和内容。
 
 ```jsx
-import React from "react";
-import { Card, Spin } from "antd";
+import React from 'react';
+import { Card, Spin } from 'antd';
 
 const Demo = () => {
   return <Card loading={<Spin />}>{/* 卡片内容 */}</Card>;
@@ -205,7 +205,7 @@ export default Demo;
 要在卡片的背景中使用自定义颜色，可以通过在代码中设置 `background` 属性来实现：
 
 ```jsx
-<Card style={{ background: "var(--main-bg-color)" }}>自定义背景颜色的卡片</Card>
+<Card style={{ background: 'var(--main-bg-color)' }}>自定义背景颜色的卡片</Card>
 ```
 
 以上是关于在 Ant Design 中使用卡片组件的边框、浮出效果以及自定义背景颜色的一些常见问题的解答。
@@ -221,17 +221,17 @@ export default Demo;
 
 ### 问题 2：ProCard 的内容区有哪些参数？
 
-| 参数      | 说明                                                                                                                           | 类型                       | 默认值  | 版本 |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | ------- | ---- |
-| bodyStyle | 内容区的 style 样式                                                                                                            | `CSSProperties`            | -       |      |
-| extra     | 右上角自定义区域                                                                                                               | `React.ReactNode`          | -       |      |
-| layout    | 内容布局，支持垂直居中                                                                                                         | `default` \| `center`      | default |      |
-| loading   | 加载中，支持自定义 loading 样式                                                                                                | `boolean` \| `ReactNode`   | false   |      |
-| colSpan   | 栅格布局宽度，24 栅格，支持指定宽度 px 或百分比，支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`, 仅在嵌套的子卡片上设置有效。 | `number` \| `string`       | 24      |      |
-| gutter    | 数字或使用数组形式同时设置 [水平间距，垂直间距], 支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`                               | `number` \| `array`        | 0       |      |
-| split     | 拆分卡片的方向                                                                                                                 | `vertical` \| `horizontal` | -       |      |
-| type      | 卡片类型                                                                                                                       | `inner` \| `default`       | -       |      |
-| size      | 卡片尺寸                                                                                                                       | `default` \| `small`       | -       |      |
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| bodyStyle | 内容区的 style 样式 | `CSSProperties` | - |  |
+| extra | 右上角自定义区域 | `React.ReactNode` | - |  |
+| layout | 内容布局，支持垂直居中 | `default` \| `center` | default |  |
+| loading | 加载中，支持自定义 loading 样式 | `boolean` \| `ReactNode` | false |  |
+| colSpan | 栅格布局宽度，24 栅格，支持指定宽度 px 或百分比，支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`, 仅在嵌套的子卡片上设置有效。 | `number` \| `string` | 24 |  |
+| gutter | 数字或使用数组形式同时设置 [水平间距，垂直间距], 支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}` | `number` \| `array` | 0 |  |
+| split | 拆分卡片的方向 | `vertical` \| `horizontal` | - |  |
+| type | 卡片类型 | `inner` \| `default` | - |  |
+| size | 卡片尺寸 | `default` \| `small` | - |  |
 
 ###ProCard 的操作组有哪些参数？
 
@@ -241,26 +241,26 @@ export default Demo;
 
 ### 问题 4：ProCard 的折叠和收起有哪些参数？
 
-| 参数                  | 说明                       | 类型                                                         | 默认值 | 版本 |
-| --------------------- | -------------------------- | ------------------------------------------------------------ | ------ | ---- |
-| collapsed             | 受控属性，是否折叠         | `boolean`                                                    | false  |      |
-| collapsible           | 配置是否可折叠，受控时无效 | `boolean`                                                    | false  |      |
-| collapsibleIconRender | 替换默认折叠图标           | `({ collapsed }: { collapsed: boolean }) => React.ReactNode` | -      |      |
-| defaultCollapsed      | 默认折叠，受控时无效       | `boolean`                                                    | false  |      |
-| onCollapse            | 收起卡片的事件，受控时无效 | `(collapsed: boolean) => void`                               | -      |      |
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| collapsed | 受控属性，是否折叠 | `boolean` | false |  |
+| collapsible | 配置是否可折叠，受控时无效 | `boolean` | false |  |
+| collapsibleIconRender | 替换默认折叠图标 | `({ collapsed }: { collapsed: boolean }) => React.ReactNode` | - |  |
+| defaultCollapsed | 默认折叠，受控时无效 | `boolean` | false |  |
+| onCollapse | 收起卡片的事件，受控时无效 | `(collapsed: boolean) => void` | - |  |
 
 ### 问题 5：ProCard 的其他参数有哪些？
 
-| 参数           | 说明                                                                                                                           | 类型                 | 默认值 | 版本   |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ------ | ------ |
-| colSpan        | 栅格布局宽度，24 栅格，支持指定宽度 px 或百分比，支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`, 仅在嵌套的子卡片上设置有效。 | `number` \| `string` | 24     |        |
-| gutter         | 数字或使用数组形式同时设置 [水平间距，垂直间距], 支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`                               | `number` \| `array`  | 0      |        |
-| wrap           | 是否支持换行，仅在嵌套子卡片时有效                                                                                             | false                | -      | 1.12.0 |
-| bordered       | 是否有边框                                                                                                                     | `boolean`            | false  |        |
-| ghost          | 幽灵模式，即是否取消卡片内容区域的 padding 和 卡片的背景颜色。                                                                 | `boolean`            | false  |        |
-| headerBordered | 页头是否有分割线                                                                                                               | `boolean`            | false  |        |
-| direction      | 指定 Flex 方向，仅在嵌套子卡片时有效，默认方向为 row 横向                                                                      | `column`             | -      |        |
-| tabs           | 标签页配置                                                                                                                     | 见下面 ProCardTabs   | -      |        |
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| colSpan | 栅格布局宽度，24 栅格，支持指定宽度 px 或百分比，支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`, 仅在嵌套的子卡片上设置有效。 | `number` \| `string` | 24 |  |
+| gutter | 数字或使用数组形式同时设置 [水平间距，垂直间距], 支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}` | `number` \| `array` | 0 |  |
+| wrap | 是否支持换行，仅在嵌套子卡片时有效 | false | - | 1.12.0 |
+| bordered | 是否有边框 | `boolean` | false |  |
+| ghost | 幽灵模式，即是否取消卡片内容区域的 padding 和 卡片的背景颜色。 | `boolean` | false |  |
+| headerBordered | 页头是否有分割线 | `boolean` | false |  |
+| direction | 指定 Flex 方向，仅在嵌套子卡片时有效，默认方向为 row 横向 | `column` | - |  |
+| tabs | 标签页配置 | 见下面 ProCardTabs | - |  |
 
 ### 问题 ProCardTabs 的 activeKey 参数是什么作用？
 

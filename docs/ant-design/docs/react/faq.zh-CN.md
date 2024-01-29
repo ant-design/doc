@@ -16,15 +16,15 @@ CSS 变量模式能在已经使用了 Ant Design 4.x 的项目中引入吗？
 
 以上是关于 Ant Design 的 CSS 变量模式的常见问题和解答。如果你还有其他疑问，可以参考 [Ant Design FAQ issues](http://u.ant.design/faq) 中的问题，或者在社区中提问寻求帮助。
 
-### 1. 在 antd 的受控组件中，`undefined` 和 `null` 有区别吗？
+### 在 antd 的受控组件中，`undefined` 和 `null` 有区别吗？
 
 在 antd 中，`undefined` 和 `null` 是有区别的。antd 的约定是：`undefined` 是非受控的标志，而 `null` 则被视为显式的受控空值。这样做的目的是为了处理一些特殊情况下的场景，比如当 `value` 由非空值变为 `undefined` 或 `null` 时，组件会被视为非受控。
 
-### 2. 在 antd 的输入元素中，`undefined` 和 `null` 的作用是什么？
+### 在 antd 的输入元素中，`undefined` 和 `null` 的作用是什么？
 
 在 React 的输入元素中，`undefined` 和 `null` 都被视为非受控的标志。当 `value` 的值从非空值变为 `undefined` 或 `null` 时，组件就会变成非受控状态。这种情况通常会在一些意外情况下发生。
 
-### 3. antd 中，何时应该使用 `undefined`，何时应该使用 `null`？
+### antd 中，何时应该使用 `undefined`，何时应该使用 `null`？
 
 在 antd 中，使用 `undefined` 表示非受控的状态，而使用 `null` 则表示显式的受控空值。这样做的目的是为了处理一些特定的场景，比如当需要清空一个复杂数据类型的值时（例如使用 `allowClear` 清空 `value`），可以将 `value` 设置为 `null` 来达到将其置为空值的效果。
 
@@ -135,10 +135,10 @@ antd 内部通过对 props 进行浅比较来实现性能优化。这意味着�
 例如，对于一个 Input 组件，你可以这样编写代码：
 
 ```jsx
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function MyComponent() {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -151,10 +151,10 @@ function MyComponent() {
 对于 Select 组件，使用方式也类似：
 
 ```jsx
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function MyComponent() {
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOption, setSelectedOption] = useState('');
 
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
@@ -179,10 +179,10 @@ function MyComponent() {
 例如，你可以在组件中定义状态，并通过 `onChange` 事件处理函数来更新状态：
 
 ```jsx
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function MyComponent() {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -330,7 +330,7 @@ antd 提供了一些工具类型，可以帮助我们获取未导出的属性定
 通过 `GetProps` 工具类型，我们可以获取基本组件定义的属性。比如，我们可以获取 `Checkbox.Group` 组件的属性定义：
 
 ```tsx
-import type { Checkbox, CheckboxProps, GetProps } from "antd";
+import type { Checkbox, CheckboxProps, GetProps } from 'antd';
 
 type CheckboxGroupProps = GetProps<typeof Checkbox.Group>;
 ```
@@ -340,9 +340,9 @@ type CheckboxGroupProps = GetProps<typeof Checkbox.Group>;
 使用 `GetProp` 工具类型，我们可以获取特定属性的定义。例如，我们可以获取 `Checkbox` 组件的 `value` 属性的定义：
 
 ```tsx
-import type { Checkbox, CheckboxProps, GetProp } from "antd";
+import type { Checkbox, CheckboxProps, GetProp } from 'antd';
 
-type CheckboxValue = GetProp<CheckboxProps, "value">;
+type CheckboxValue = GetProp<CheckboxProps, 'value'>;
 ```
 
 #### Get Ref
@@ -350,7 +350,7 @@ type CheckboxValue = GetProp<CheckboxProps, "value">;
 如果需要获取组件的引用类型定义，可以使用 `GetRef` 工具类型。例如，我们可以获取 `Input` 组件的引用类型定义：
 
 ```tsx
-import type { Input, GetRef } from "antd";
+import type { Input, GetRef } from 'antd';
 
 type InputRef = GetRef<typeof Input>;
 ```
@@ -378,9 +378,9 @@ type InputRef = GetRef<typeof Input>;
 1. 检查 dayjs 语言包的设置是否正确。为了确保时间类组件的国际化 locale 生效，我们需要正确引入 dayjs 的语言包，并设置 locale。
 
 ```js
-import "dayjs/locale/zh-cn";
+import 'dayjs/locale/zh-cn';
 
-dayjs.locale("zh-cn");
+dayjs.locale('zh-cn');
 ```
 
 2. 检查是否同时存在两个版本的 dayjs。可以使用以下命令来检查项目中 dayjs 的版本情况。
@@ -428,8 +428,8 @@ npm ls dayjs
 5. 在需要使用年份选择器的地方引入 `YearPicker` 组件，并传入相应的 props。
 
 ```jsx
-import React, { useState } from "react";
-import { DatePicker } from "antd";
+import React, { useState } from 'react';
+import { DatePicker } from 'antd';
 
 const YearPicker = () => {
   const [selectedYear, setSelectedYear] = useState(null);
@@ -453,8 +453,8 @@ export default YearPicker;
 使用 Example：
 
 ```jsx
-import React from "react";
-import YearPicker from "./YearPicker";
+import React from 'react';
+import YearPicker from './YearPicker';
 
 const App = () => {
   return (
@@ -493,8 +493,8 @@ export default App;
 以下是一个示例，用于禁用选择器范围在 2022 年之后的日期：
 
 ```jsx
-import React from "react";
-import { DatePicker } from "antd";
+import React from 'react';
+import { DatePicker } from 'antd';
 
 const disabledDate = (current) => {
   return current.year() > 2022;
@@ -562,7 +562,7 @@ export default App;
 1. 在代码中引入 ConfigProvider 组件：
 
 ```jsx
-import { ConfigProvider } from "antd";
+import { ConfigProvider } from 'antd';
 ```
 
 2. 在 ConfigProvider 组件中设置 theme 属性，将 motion 设置为 false：
@@ -582,7 +582,7 @@ SeedToken 是一个用于配置主题的工具。通过配置 SeedToken，你可
 1. 在代码中引入 ConfigProvider 组件：
 
 ```jsx
-import { ConfigProvider } from "antd";
+import { ConfigProvider } from 'antd';
 ```
 
 2. 在 ConfigProvider 组件中设置 theme 属性，通过 token 对象来配置 SeedToken：
@@ -616,7 +616,7 @@ import { ConfigProvider } from "antd";
 1. 在代码中引入 ConfigProvider 组件：
 
 ```jsx
-import { ConfigProvider } from "antd";
+import { ConfigProvider } from 'antd';
 ```
 
 2. 在 ConfigProvider 组件中设置 theme 属性，通过 token 对象来配置 SeedToken：
@@ -713,14 +713,14 @@ Error: Cannot access .Option on the server. You cannot dot into a client module 
 以 `Typography` 组件为例，你可以创建一个包裹组件，并在其中提取所需的子组件并重新导出。代码示例如下：
 
 ```tsx
-"use client";
+'use client';
 
-import React from "react";
-import { Typography as OriginTypography } from "antd";
-import type { LinkProps } from "antd/es/typography/Link";
-import type { ParagraphProps } from "antd/es/typography/Paragraph";
-import type { TextProps } from "antd/es/typography/Text";
-import type { TitleProps } from "antd/es/typography/Title";
+import React from 'react';
+import { Typography as OriginTypography } from 'antd';
+import type { LinkProps } from 'antd/es/typography/Link';
+import type { ParagraphProps } from 'antd/es/typography/Paragraph';
+import type { TextProps } from 'antd/es/typography/Text';
+import type { TitleProps } from 'antd/es/typography/Title';
 
 const Title = React.forwardRef<
   HTMLElement,
@@ -750,7 +750,7 @@ export { Title, Link, Text, Paragraph };
 如果你希望页面完全由客户端渲染，可以在组件的开头添加 "use client" 指令。例如：
 
 ```tsx
-"use client";
+'use client';
 
 // 非真实代码，仅做逻辑说明
 export default () => (

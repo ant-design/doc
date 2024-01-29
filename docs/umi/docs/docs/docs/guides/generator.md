@@ -118,10 +118,10 @@ $umi g page foo --msg "Hello World" --count 10
 运行命令后，生成的页面内容如下：
 
 ```tsx
-import React from "react";
-import "./foo.less";
+import React from 'react';
+import './foo.less';
 
-const message = "Hello World";
+const message = 'Hello World';
 const count = 10;
 ```
 
@@ -173,7 +173,7 @@ const count = 10;
 
 以上是关于 `dir` 模式的一些说明和用法。希望这些信息对你有所帮助！
 
-### 问题一：交互式生成组件的基本使用方法是什么？
+### 交互式生成组件的基本使用方法是什么？
 
 交互式生成组件的基本使用方法如下：
 
@@ -186,7 +186,7 @@ Write: src/components/Foo/component.tsx
 
 用户需要在命令行中执行`umi g component`命令，然后输入组件的名称。在以上示例中，用户输入了`foo`作为组件的名称。执行命令后，umi 会自动生成组件代码文件`src/components/Foo/index.ts`和`src/components/Foo/component.tsx`。
 
-### 问题二：直接生成组件的基本使用方法是什么？
+### 直接生成组件的基本使用方法是什么？
 
 直接生成组件的基本使用方法如下：
 
@@ -198,7 +198,7 @@ Write: src/components/Bar/component.tsx
 
 用户需要在命令行中执行`umi g component`命令，并直接在命令行中指定组件的名称。在以上示例中，用户输入了`bar`作为组件的名称。执行命令后，umi 会自动生成组件代码文件`src/components/Bar/index.ts`和`src/components/Bar/component.tsx`。
 
-### 问题三：嵌套生成组件的基本使用方法是什么？
+### 嵌套生成组件的基本使用方法是什么？
 
 嵌套生成组件的基本使用方法如下：
 

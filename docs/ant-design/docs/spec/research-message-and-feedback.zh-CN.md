@@ -45,13 +45,13 @@ Message 是一个用于在不打断用户操作的情况下显示简短成功消
 1. 在你的代码中导入 Message 组件：
 
 ```jsx
-import { message } from "antd";
+import { message } from 'antd';
 ```
 
 2. 调用 `message.success` 方法来显示成功消息：
 
 ```jsx
-message.success("操作成功");
+message.success('操作成功');
 ```
 
 你可以替换 `'操作成功'` 为你自己的提示消息。此外，`message` 对象还提供其他方法（如 `message.error`, `message.warning`），你可以根据需要选择相应的方法来显示不同类型的提示消息。
@@ -102,10 +102,10 @@ message.success("操作成功");
 以下是使用 `Message` 组件显示全局提示消息的代码示例：
 
 ```jsx
-import { message } from "antd";
+import { message } from 'antd';
 
 // 在需要显示提示消息的地方调用
-message.success("这是一条成功消息");
+message.success('这是一条成功消息');
 ```
 
 在上述代码中，我们首先通过`import`语句引入了`message`对象。然后，通过调用`message.success`方法，并传入消息内容作为参数，即可显示一条带有成功样式的全局提示消息。
@@ -123,11 +123,11 @@ message.success("这是一条成功消息");
 下面是一个示例代码：
 
 ```jsx
-import ImagePreview from "path/to/ImagePreview";
+import ImagePreview from 'path/to/ImagePreview';
 
 // ...
 
-const imageUrl = "https://example.com/path/to/image.jpg"; // 图片的 URL
+const imageUrl = 'https://example.com/path/to/image.jpg'; // 图片的 URL
 
 // ...
 
@@ -150,19 +150,19 @@ const imageUrl = "https://example.com/path/to/image.jpg"; // 图片的 URL
 下面是一个示例代码：
 
 ```jsx
-import { Modal } from "antd";
+import { Modal } from 'antd';
 
 // ...
 
-const importantMessage = "这是一个重要的操作提示！请谨慎操作！"; // 重要操作的提示文本
+const importantMessage = '这是一个重要的操作提示！请谨慎操作！'; // 重要操作的提示文本
 
 // ...
 
 const handleOpenModal = () => {
   Modal.info({
-    title: "重要操作提示",
+    title: '重要操作提示',
     content: importantMessage,
-    okText: "知道了",
+    okText: '知道了',
   });
 };
 
@@ -180,7 +180,7 @@ ImagePreview 组件用于显示一张图片的预览图。使用该组件时，�
 示例代码如下：
 
 ```jsx
-import { ImagePreview } from "your-ui-library";
+import { ImagePreview } from 'your-ui-library';
 
 // ...
 
@@ -196,7 +196,7 @@ import { ImagePreview } from "your-ui-library";
 示例代码如下：
 
 ```jsx
-import { Alert } from "your-ui-library";
+import { Alert } from 'your-ui-library';
 
 // ...
 
@@ -207,7 +207,7 @@ import { Alert } from "your-ui-library";
 
 请根据具体需要选择合适的类型和内容来使用警告提示组件。
 
-#### 1. 如何使用 `<ImagePreview>` 组件显示图片？
+#### 如何使用 `<ImagePreview>` 组件显示图片？
 
 使用 `<ImagePreview>` 组件来显示图片，需要将图片的 URL 作为 `src` 属性传递给 `<img>` 标签。例如：
 
@@ -219,11 +219,11 @@ import { Alert } from "your-ui-library";
 
 请确保将 `"图片的URL"` 替换为实际的图片 URL 地址。
 
-#### 2. 什么是表单校验提示？
+#### 什么是表单校验提示？
 
 表单校验提示是一种用于指示用户输入内容是否符合字段或表单要求的提示信息。当用户输入的内容不符合要求、跳过必填字段或系统检测到表单数据中的错误时，会显示相应的校验提示。
 
-#### 3. 如何处理表单校验提示？
+#### 如何处理表单校验提示？
 
 要处理表单校验提示，可以根据具体的需求和框架或库的支持进行相应的操作。通常，可以通过以下几种方式处理表单校验提示：
 
@@ -240,7 +240,7 @@ ImagePreview 组件可以用于展示图片。使用该组件，需要按照以�
 1. 引入 ImagePreview 组件。
 
 ```javascript
-import { ImagePreview } from "your-component-library";
+import { ImagePreview } from 'your-component-library';
 ```
 
 2. 在需要展示图片的位置添加 ImagePreview 组件。
@@ -271,15 +271,15 @@ Notification 组件主要用于向用户传达重要的问题或失败状态，�
 1. 引入 Notification 组件。
 
 ```javascript
-import { Notification } from "your-component-library";
+import { Notification } from 'your-component-library';
 ```
 
 2. 在需要使用通知提醒框的地方调用 Notification 组件。
 
 ```javascript
 Notification.open({
-  title: "Notification Title",
-  message: "Notification Message",
+  title: 'Notification Title',
+  message: 'Notification Message',
 });
 ```
 

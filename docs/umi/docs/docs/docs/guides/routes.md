@@ -18,8 +18,8 @@
 // .umirc.ts
 export default {
   routes: [
-    { path: "/", component: "index" },
-    { path: "/user", component: "user" },
+    { path: '/', component: 'index' },
+    { path: '/user', component: 'user' },
   ],
 };
 ```
@@ -69,13 +69,13 @@ export default {
 ```js
 export default {
   routes: [
-    { path: "/login", component: "login" },
+    { path: '/login', component: 'login' },
     {
-      path: "/",
-      component: "@/layouts/index",
+      path: '/',
+      component: '@/layouts/index',
       routes: [
-        { path: "/list", component: "list" },
-        { path: "/admin", component: "admin" },
+        { path: '/list', component: 'list' },
+        { path: '/admin', component: 'admin' },
       ],
     },
   ],
@@ -89,7 +89,7 @@ export default {
 在全局布局组件 `src/layouts/index` 中，使用 `<Outlet/>` 组件来渲染子路由。通过在布局组件中的指定位置使用 `<Outlet/>`，可以将子路由的内容渲染到该位置。
 
 ```tsx
-import { Outlet } from "umi";
+import { Outlet } from 'umi';
 
 export default function Page() {
   return (
@@ -102,21 +102,21 @@ export default function Page() {
 
 在以上代码中，`<Outlet/>` 组件将会渲染子路由的内容，从而实现根据子路由的不同动态展示页面内容。
 
-### 1. redirect 是什么类型的配置？
+### redirect 是什么类型的配置？
 
 - Type: `string`
 
-### 2. 如何配置路由跳转？
+### 如何配置路由跳转？
 
 - 需要在路由配置对象中添加 `redirect` 属性，将其值设置为目标路由路径。
 
-### 3. 请提供一个示例来说明如何配置路由跳转。
+### 请提供一个示例来说明如何配置路由跳转。
 
 ```js
 export default {
   routes: [
-    { path: "/", redirect: "/list" },
-    { path: "/list", component: "list" },
+    { path: '/', redirect: '/list' },
+    { path: '/list', component: 'list' },
   ],
 };
 ```
@@ -134,13 +134,13 @@ export default {
 ```js
 routes: [
   {
-    path: "/user",
-    component: "user",
-    wrappers: ["@/wrappers/auth"],
+    path: '/user',
+    component: 'user',
+    wrappers: ['@/wrappers/auth'],
   },
   {
-    path: "/login",
-    component: "login",
+    path: '/login',
+    component: 'login',
   },
 ];
 ```
@@ -155,7 +155,7 @@ routes: [
 
 ```jsx
 // src/hocs/withAuth.tsx
-import { Navigate } from "umi";
+import { Navigate } from 'umi';
 
 const withAuth = (Component) => () => {
   const { isLogin } = useAuth();
@@ -200,8 +200,8 @@ Umi 的约定式路由也被称为文件路由，它不需要手动配置，而�
 
 ```js
 [
-  { path: "/", component: "@/pages/index" },
-  { path: "/users", component: "@/pages/users" },
+  { path: '/', component: '@/pages/index' },
+  { path: '/users', component: '@/pages/users' },
 ];
 ```
 
@@ -240,9 +240,9 @@ Umi 的约定式路由也被称为文件路由，它不需要手动配置，而�
 
 ```javascript
 [
-  { path: "/", component: "@/pages/index.tsx" },
-  { path: "/foo/:slug", component: "@/pages/foo/$slug.tsx" },
-  { path: "/:bar/*", component: "@/pages/$bar/$.tsx" },
+  { path: '/', component: '@/pages/index.tsx' },
+  { path: '/foo/:slug', component: '@/pages/foo/$slug.tsx' },
+  { path: '/:bar/*', component: '@/pages/$bar/$.tsx' },
 ];
 ```
 
@@ -251,12 +251,12 @@ Umi 的约定式路由也被称为文件路由，它不需要手动配置，而�
 在前端应用中，可以使用生成的动态路由配置来指定路由匹配规则和对应的组件路径。比如，使用 React Router 可以这样配置：
 
 ```jsx
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const routes = [
-  { path: "/", component: "@/pages/index.tsx" },
-  { path: "/foo/:slug", component: "@/pages/foo/$slug.tsx" },
-  { path: "/:bar/*", component: "@/pages/$bar/$.tsx" },
+  { path: '/', component: '@/pages/index.tsx' },
+  { path: '/foo/:slug', component: '@/pages/foo/$slug.tsx' },
+  { path: '/:bar/*', component: '@/pages/$bar/$.tsx' },
 ];
 
 function App() {
@@ -301,11 +301,11 @@ export default App;
 ```js
 [
   {
-    path: "/",
-    component: "@/layouts/index",
+    path: '/',
+    component: '@/layouts/index',
     routes: [
-      { path: "", component: "@/pages/index" },
-      { path: "users", component: "@/pages/users" },
+      { path: '', component: '@/pages/index' },
+      { path: 'users', component: '@/pages/users' },
     ],
   },
 ];
@@ -316,12 +316,12 @@ export default App;
 ```ts
 routes: [
   {
-    path: "/",
-    component: "./index",
+    path: '/',
+    component: './index',
     layout: false,
   },
   {
-    path: "/users",
+    path: '/users',
     routes: [
       // 这里的 layout:false 不会生效，因为该路由的 layout 不是全局布局，而是 /users
       { layout: false },
@@ -333,7 +333,7 @@ routes: [
 自定义的全局 `layout` 示例代码如下：
 
 ```tsx
-import { Outlet } from "umi";
+import { Outlet } from 'umi';
 
 export default function Layout() {
   return <Outlet />;
@@ -349,11 +349,11 @@ export default function Layout() {
 举个例子，如果你想要针对 `/login` 路由输出简单布局，你可以按以下方式处理：
 
 ```js
-import { useLocation, Outlet } from "umi";
+import { useLocation, Outlet } from 'umi';
 
 export default function () {
   const location = useLocation();
-  if (location.pathname === "/login") {
+  if (location.pathname === '/login') {
     return (
       <SimpleLayout>
         <Outlet />
@@ -395,9 +395,9 @@ export default function () {
 
 ```js
 [
-  { path: "/", component: "@/pages/index" },
-  { path: "/users", component: "@/pages/users" },
-  { path: "/*", component: "@/pages/404" },
+  { path: '/', component: '@/pages/index' },
+  { path: '/users', component: '@/pages/users' },
+  { path: '/*', component: '@/pages/404' },
 ];
 ```
 
@@ -434,7 +434,7 @@ Link 组件是用于单页应用内部跳转的组件。通过设置 `to` 属性
 在使用 Link 组件之前，需要先导入 `umi` 中的 Link 组件：
 
 ```jsx
-import { Link } from "umi";
+import { Link } from 'umi';
 ```
 
 然后在 JSX 中使用 Link 组件，并设置 `to` 属性为目标路径，例如：
@@ -503,7 +503,7 @@ const MyComponent = () => {
 你可以通过以下方式来使用 `useLocation`：
 
 ```jsx
-import { useLocation } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 function MyComponent() {
   const location = useLocation();

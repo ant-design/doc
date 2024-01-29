@@ -34,7 +34,7 @@
 <YourComponent chartPlacement="right" />
 ```
 
-### 如何将图表放在数值统计的左边？
+### StatisticCard 如何将图表放在数值统计的左边？
 
 你可以通过配置 `chartPlacement`，将图表放在数值统计的左边。具体的代码示例如下：
 
@@ -44,7 +44,7 @@
 
 在上面的代码中，你只需要将 `YourComponent` 替换为你实际使用的组件即可。
 
-### 怎样配置 `chartPlacement` 为 `left`？
+### StatisticCard 怎样配置 `chartPlacement` 为 `left`？
 
 如果你希望将图表放在数值统计的左边，你可以通过设置 `chartPlacement` 的值为 `left` 来实现。下面的示例代码展示了如何进行配置：
 
@@ -64,7 +64,7 @@
 
 请将上述示例中的 `YourComponent` 替换为你实际使用的组件。
 
-### 如何使用 Ant Design 的 Statistic 组件展示环比趋势？
+### StatisticCard 如何使用 Ant Design 的 Statistic 组件展示环比趋势？
 
 你可以使用 Ant Design 的 Statistic 组件来展示环比趋势。具体步骤如下：
 
@@ -74,7 +74,7 @@
 
 其中，`value`属性可以传入具体的数值，代表环比的百分比。
 
-### 如何在 Ant Design 中配置 Statistic 组件的布局和样式？
+### StatisticCard 如何在 Ant Design 中配置 Statistic 组件的布局和样式？
 
 你可以使用 Ant Design 的 Statistic 组件来配置布局和样式。具体步骤如下：
 
@@ -84,7 +84,7 @@
 
 3. 通过设置其他相关属性来自定义 Statistc 组件的样式，例如，设置`prefix`和`suffix`属性可以在数值前后添加前缀和后缀。
 
-### Ant Design 的 Statistic 组件如何展示旧值与新值的环比趋势？
+### StatisticCard Ant Design 的 Statistic 组件如何展示旧值与新值的环比趋势？
 
 Ant Design 的 Statistic 组件可以通过配置`trend`属性来展示旧值与新值的环比趋势。具体步骤如下：
 
@@ -94,23 +94,23 @@ Ant Design 的 Statistic 组件可以通过配置`trend`属性来展示旧值与
 
 ### StatisticCard 组件参数说明
 
-| 参数           | 说明                                                | 类型                      | 默认值 |
-| -------------- | --------------------------------------------------- | ------------------------- | ------ |
-| title          | 卡片标题                                            | `string\|ReactNode`       | -      |
-| extra          | 卡片右上角的操作区域                                | `string\|ReactNode`       | -      |
-| loading        | 当卡片内容还在加载中时，可以用 loading 展示一个占位 | boolean                   | false  |
-| bordered       | 是否有边框                                          | boolean                   | true   |
-| chart          | 图表卡片                                            | ReactNode                 | -      |
-| statistic      | 数值统计配置，布局默认为 `vertical`                 | 参数见下 Statistic        | -      |
-| chartPlacement | 图表位置，相对于 statistic 的位置                   | `left \| right \| bottom` | -      |
-| footer         | 额外指标展示                                        | `ReactNode`               | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| title | 卡片标题 | `string\|ReactNode` | - |
+| extra | 卡片右上角的操作区域 | `string\|ReactNode` | - |
+| loading | 当卡片内容还在加载中时，可以用 loading 展示一个占位 | boolean | false |
+| bordered | 是否有边框 | boolean | true |
+| chart | 图表卡片 | ReactNode | - |
+| statistic | 数值统计配置，布局默认为 `vertical` | 参数见下 Statistic | - |
+| chartPlacement | 图表位置，相对于 statistic 的位置 | `left \| right \| bottom` | - |
+| footer | 额外指标展示 | `ReactNode` | - |
 
 更多参考 `ProCard`，支持 `ProCard` 的所有 API。
 
 ### StatisticCard 组件使用示例
 
 ```jsx
-import { StatisticCard } from "antd";
+import { StatisticCard } from 'antd';
 
 const App = () => {
   return (
@@ -122,7 +122,7 @@ const App = () => {
       chart={<BarChart data={data} />}
       statistic={{
         value: 12345,
-        suffix: "次",
+        suffix: '次',
         precision: 2,
       }}
       chartPlacement="right"
@@ -161,7 +161,7 @@ const App = () => {
   chart={<BarChart data={data} />}
   statistic={{
     value: 12345,
-    suffix: "次",
+    suffix: '次',
     precision: 2,
   }}
   chartPlacement="right"

@@ -14,8 +14,8 @@ pnpm i babel-plugin-dynamic-import-node -D
 // .umirc.ts
 export default {
   extraBabelPlugins:
-    process.env.NODE_ENV === "production"
-      ? ["babel-plugin-dynamic-import-node"]
+    process.env.NODE_ENV === 'production'
+      ? ['babel-plugin-dynamic-import-node']
       : [],
 };
 ```
@@ -48,7 +48,7 @@ pnpm add react@^17 react-dom@^17
 
 请注意，以上的命令是使用 pnpm 包管理器进行安装的，如果你使用的是其他的包管理器，请相应地调整命令。
 
-### 1. 如何解决代理静态资源到本地后一直刷新页面的问题？
+### 如何解决代理静态资源到本地后一直刷新页面的问题？
 
 问题描述：我在代理静态资源到本地后，发现页面一直在刷新。这给我的开发工作带来了一些困扰。
 
@@ -60,7 +60,7 @@ SOCKET_SERVER=http://127.0.0.1:8000 pnpm dev
 
 通过以上配置，你可以解决页面一直刷新的问题。
 
-### 2. 为什么我的页面一直在刷新？
+### 为什么我的页面一直在刷新？
 
 问题描述：最近我将静态资源代理到本地进行开发，但是发现页面一直在刷新，并无法正常加载。
 
@@ -72,7 +72,7 @@ SOCKET_SERVER=http://127.0.0.1:8000 pnpm dev
 
 这样的配置能够解决页面一直刷新的问题，让你的页面能够正常加载。
 
-### 3. 如何停止页面一直刷新的问题？
+### 如何停止页面一直刷新的问题？
 
 问题描述：在我将静态资源代理到本地后，页面一直在刷新，无法停止刷新。
 

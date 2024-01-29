@@ -32,7 +32,7 @@ Ant Design React 是一个强大的 UI 框架，可以满足各种前端开发�
 1. 在代码文件的开头，引入需要使用的组件。例如，可以使用以下代码引入 `DatePicker` 和 `message` 组件：
 
 ```jsx
-import { DatePicker, message } from "antd";
+import { DatePicker, message } from 'antd';
 ```
 
 2. 在组件的渲染函数中使用 Ant Design 组件。例如，可以使用以下代码在组件中渲染一个日期选择器：
@@ -41,7 +41,7 @@ import { DatePicker, message } from "antd";
 const App = () => {
   const handleChange = (value) => {
     message.info(
-      `您选择的日期是: ${value ? value.format("YYYY年MM月DD日") : "未选择"}`,
+      `您选择的日期是: ${value ? value.format('YYYY年MM月DD日') : '未选择'}`
     );
   };
 
@@ -56,8 +56,8 @@ const App = () => {
 3. 为了使组件正常工作，你可能还需要进行其他配置。例如，你可能需要在顶层组件包裹一个 `ConfigProvider` 组件，并设置 `locale` 属性为中文，以便正确显示文本。可以使用以下代码进行配置：
 
 ```jsx
-import { ConfigProvider } from "antd";
-import zhCN from "antd/locale/zh_CN";
+import { ConfigProvider } from 'antd';
+import zhCN from 'antd/locale/zh_CN';
 
 const App = () => {
   return <ConfigProvider locale={zhCN}>{/* 组件代码 */}</ConfigProvider>;
@@ -76,7 +76,7 @@ Q 如何在代码演示部分展开代码并修改示例代码？ A 在代码演
 
 Q 如何添加 Alert 组件并修改相应的 JSX 代码？ A 首先在 import 内引入 Alert 组件，然后在 render 内的 JSX 代码中添加相应的 Alert 组件代码。修改完成后，选择一个日期就可以在右侧预览区看到效果。
 
-### 1. 实际项目开发中常会遇到哪些工程化需求？
+### 实际项目开发中常会遇到哪些工程化需求？
 
 在实际项目开发中，你会遇到以下工程化需求：
 
@@ -85,11 +85,11 @@ Q 如何添加 Alert 组件并修改相应的 JSX 代码？ A 首先在 import �
 - 代理：在开发过程中，通过代理服务器将请求转发到不同的后端服务，以模拟真实的请求和响应。
 - 打包部署：将项目的代码和资源文件打包成可部署的文件，并将其上传到服务器或者云平台上，以便访问和使用。
 
-### 2. 什么是 Ant Design Pro？
+### 什么是 Ant Design Pro？
 
 Ant Design Pro 是一个基于 Ant Design 和 Umi 框架的企业级中后台前端/设计解决方案，用于快速构建统一、美观、高效的企业级应用界面。你可以通过 [Ant Design Pro](https://pro.ant.design/) 官方网站获取更多关于 Ant Design Pro 的详细信息和使用方式。
 
-### 3. 怎么创建一个带有内联样式的 Next.js 应用？
+### 怎么创建一个带有内联样式的 Next.js 应用？
 
 你可以使用 `create-next-app` 脚手架和 Ant Design 提供的范例来创建一个带有内联样式的 Next.js 应用，具体步骤如下：
 
@@ -114,7 +114,7 @@ Ant Design Pro 是一个基于 Ant Design 和 Umi 框架的企业级中后台前
 4. 在 `pages/index.js` 文件中编写你的 Next.js 页面代码，并在需要的地方引入 Ant Design 的组件和样式。
 
 ```jsx
-import { Button } from "antd";
+import { Button } from 'antd';
 
 export default function Home() {
   return (
@@ -135,7 +135,7 @@ module.exports = {
       test: /\.less$/,
       use: [
         {
-          loader: "less-loader",
+          loader: 'less-loader',
           options: {
             lessOptions: {
               javascriptEnabled: true,

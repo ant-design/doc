@@ -30,7 +30,7 @@ ProComponents 提供了丰富的组件和功能，帮助您构建高效、灵活
 2. 导入和使用组件：在您的代码文件中导入所需的 ProComponents 组件，并在需要的地方使用它们。
 
 ```jsx
-import { Table, Form, TreeSelect } from "@ant-design/pro-components";
+import { Table, Form, TreeSelect } from '@ant-design/pro-components';
 
 // 使用Table组件
 function MyTable() {
@@ -60,8 +60,8 @@ function MyTable() {
 
 // 自定义样式
 const customStyles = {
-  width: "100%",
-  border: "1px solid #e8e8e8",
+  width: '100%',
+  border: '1px solid #e8e8e8',
 };
 
 // 使用Form组件
@@ -171,7 +171,7 @@ ProComponents 的代码库非常庞大，这可能会影响开发过程的灵活
 
 以上是针对 ProComponents 考虑因素和限制的基本信息，希望能对您有所帮助。
 
-### 1. 浏览器兼容性如何？
+### 浏览器兼容性如何？
 
 现代浏览器和 Internet Explorer 11 都是支持的。
 
@@ -179,7 +179,7 @@ ProComponents 的代码库非常庞大，这可能会影响开发过程的灵活
 
 另外，如果你的应用是使用 Electron 构建的，那么也是支持的。
 
-### 2. 支持哪些浏览器？
+### 支持哪些浏览器？
 
 Ant Design 5.x 支持以下浏览器：
 
@@ -189,7 +189,7 @@ Ant Design 5.x 支持以下浏览器：
 - Safari（最近 2 个版本）
 - Electron（最近 2 个版本）
 
-### 3. 如何查看浏览器兼容性？
+### 如何查看浏览器兼容性？
 
 你可以点击以下链接查看浏览器兼容性：
 
@@ -287,7 +287,7 @@ pnpm dev
 [pr-welcome-shield]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 [pr-welcome-link]: https://github.com/ant-design/pro-components/pulls
 
-### 1. [ProComponents](https://github.com/ant-design/pro-components)
+### [ProComponents](https://github.com/ant-design/pro-components)
 
 **### ** 什么是 ProComponents？
 
@@ -306,7 +306,7 @@ pnpm dev
 
 **A:** ProComponents 适用于企业级应用的设计和开发，特别是那些需要快速构建高质量界面的项目。
 
-### 2. [ProEditor](https://github.com/ant-design/pro-editor)
+### [ProEditor](https://github.com/ant-design/pro-editor)
 
 **### ** ProEditor 是什么？
 
@@ -330,7 +330,7 @@ pnpm dev
 - 模块化设计：采用模块化设计，可以灵活组合使用各种编辑器组件。
 - 易于集成：与 Ant Design 生态系统无缝集成，可与其他 Ant Design 组件配合使用。
 
-### 3. [ProFlow](https://github.com/ant-design/pro-flow)
+### [ProFlow](https://github.com/ant-design/pro-flow)
 
 **### ** 什么是 ProFlow？
 
@@ -349,15 +349,15 @@ pnpm dev
 
 **A:** ProFlow 适用于需要进行流程编辑和可视化展示的应用场景，例如工作流管理、流程设计等领域。
 
-### 1. 开源协议是什么？这个项目使用哪种协议？
+### 开源协议是什么？这个项目使用哪种协议？
 
 这个项目使用 [MIT](./LICENSE) 开源协议。版权归 [AFX][ant-design-link] 和 [Ant Digital](https://antdigital.com) 所有。
 
-### 2. 这个项目的主要贡献者都有谁？
+### 这个项目的主要贡献者都有谁？
 
 你可以在 [这个链接](https://github.com/ant-design/pro-components/graphs/contributors) 找到这个项目的主要贡献者。
 
-### 3. 我怎样参与这个项目的开发？
+### 我怎样参与这个项目的开发？
 
 如果你有兴趣参与这个项目的开发，你可以通过以下方式：
 

@@ -76,11 +76,11 @@ Umi 提供了一系列的插件 API，以帮助开发者自由编写插件。这
 
 以上是关于插件配置函数`api.describe`的简要描述。
 
-### 1. `api.register` 是用来做什么的？
+### `api.register` 是用来做什么的？
 
 `api.register` 用于向 `api.applyPlugins` 注册可供其使用的 hook。通过 `api.register`，可以注册同一类别名称下的多个 hook，并且它们会按照注册的顺序依次执行。
 
-### 2. `api.register` 的参数有哪些？
+### `api.register` 的参数有哪些？
 
 `api.register` 方法接受以下参数：
 
@@ -89,7 +89,7 @@ Umi 提供了一系列的插件 API，以帮助开发者自由编写插件。这
 - `stage`：用于调整执行顺序，默认为 0。可以将 `stage` 设置为 -1 或更小的值来提前执行，可以将 `stage` 设置为 1 或更大的值来后置执行。
 - `before`：用于调整执行顺序，传入的值为注册的 hook 的名称。注册的 hook 的名称是所在 Umi 插件的 id。
 
-### 3. `fn` 的写法需要根据 `applyPlugins` 的 `type` 参数来确定，有哪些类型？
+### `fn` 的写法需要根据 `applyPlugins` 的 `type` 参数来确定，有哪些类型？
 
 根据 `applyPlugins` 的 `type` 参数的不同，`fn` 的写法也有所差异。以下是几种常见的类型及对应的 `fn` 写法：
 
@@ -99,18 +99,18 @@ Umi 提供了一系列的插件 API，以帮助开发者自由编写插件。这
 
   ```ts
   api.register({
-    key: "addFoo",
+    key: 'addFoo',
     fn: (args) => args,
   });
 
   api.register({
-    key: "addFoo",
+    key: 'addFoo',
     fn: async (args) => args * 2,
   });
 
   api
     .applyPlugins({
-      key: "addFoo",
+      key: 'addFoo',
       args: 1,
     })
     .then((data) => {
@@ -154,22 +154,22 @@ Umi 提供了一系列的插件 API，以帮助开发者自由编写插件。这
 
   ```ts
   api.register({
-    key: "onFoo",
+    key: 'onFoo',
     fn: (args) => {
       console.log(args);
     },
   });
 
   api.register({
-    key: "onFoo",
+    key: 'onFoo',
     fn: (args) => {
       console.log(args);
     },
   });
 
   api.applyPlugins({
-    key: "onFoo",
-    args: "Hello World",
+    key: 'onFoo',
+    args: 'Hello World',
   });
   ```
 
@@ -215,13 +215,13 @@ api.registerMethod({ name: string, fn });
 
 ```ts
 api.registerMethod({
-  name: "foo",
+  name: 'foo',
   // 有 fn
   fn: (args) => {
     console.log(args);
   },
 });
-api.foo("hello, umi!"); // hello, umi!
+api.foo('hello, umi!'); // hello, umi!
 ```
 
 在示例 1 中，我们向 `api` 上注册了一个名为 `foo` 的方法，该方法会将参数打印到控制台。
@@ -229,10 +229,10 @@ api.foo("hello, umi!"); // hello, umi!
 #### 示例 2
 
 ```ts
-import api from "./api";
+import api from './api';
 
 api.registerMethod({
-  name: "addFoo",
+  name: 'addFoo',
   // 没有 fn
 });
 
@@ -241,7 +241,7 @@ api.addFoo((args) => args * 2);
 
 api
   .applyPlugins({
-    key: "addFoo",
+    key: 'addFoo',
     args: 1,
   })
   .then((data) => {
@@ -260,7 +260,7 @@ registerPresets 方法用于注册插件集，参数为路径数组。这个方�
 示例用法：
 
 ```ts
-api.registerPresets(["./preset", require.resolve("./preset_foo")]);
+api.registerPresets(['./preset', require.resolve('./preset_foo')]);
 ```
 
 ### registerPresets 方法的参数是什么？
@@ -272,7 +272,7 @@ registerPresets 方法的参数是一个路径数组，用于指定要注册的�
 示例用法如下：
 
 ```ts
-api.registerPresets(["./preset", require.resolve("./preset_foo")]);
+api.registerPresets(['./preset', require.resolve('./preset_foo')]);
 ```
 
 在这个示例中，使用 registerPresets 方法注册了两个插件集，分别是 './preset' 和 require.resolve('./preset_foo')。
@@ -284,7 +284,7 @@ api.registerPresets(["./preset", require.resolve("./preset_foo")]);
 例如：
 
 ```ts
-api.registerPlugins(["./plugin", require.resolve("./plugin_foo")]);
+api.registerPlugins(['./plugin', require.resolve('./plugin_foo')]);
 ```
 
 需要注意的是，与 umi@3 不同的是，umi@4 不再支持直接传入插件对象，现在只允许传入插件的路径。
@@ -302,7 +302,7 @@ api.registerPlugins(["./plugin", require.resolve("./plugin_foo")]);
 例如：
 
 ```ts
-api.registerPlugins(["./plugin", require.resolve("./plugin_foo")]);
+api.registerPlugins(['./plugin', require.resolve('./plugin_foo')]);
 ```
 
 其中，'./plugin' 和 require.resolve('./plugin_foo') 是具体插件的路径。通过这种方式引入插件，可以扩展 umi 的功能和特性。
@@ -348,10 +348,10 @@ trim_trailing_whitespace = false
 你可以使用以下代码片段生成 `.editorconfig` 文件：
 
 ```javascript
-const fs = require("fs");
+const fs = require('fs');
 
 fs.writeFile(
-  ".editorconfig",
+  '.editorconfig',
   `
 root = true
 
@@ -366,14 +366,14 @@ insert_final_newline = true
 [*.md]
 trim_trailing_whitespace = false
 `.trimStart(),
-  "utf-8",
+  'utf-8',
   (err) => {
     if (err) {
       console.error(err);
     } else {
-      console.log("Generate .editorconfig file successful.");
+      console.log('Generate .editorconfig file successful.');
     }
-  },
+  }
 );
 ```
 
@@ -453,7 +453,7 @@ api.addBeforeBabelPresets(() => {
   // 返回一个 Babel 插件集
   return () => {
     return {
-      plugins: ["Babel_Plugin_A", "Babel_Plugin_B"],
+      plugins: ['Babel_Plugin_A', 'Babel_Plugin_B'],
     };
   };
 });
@@ -477,7 +477,7 @@ api.addBeforeBabelPresets(() => {
 api.addBeforeMiddlewares(() => {
   return (req, res, next) => {
     if (false) {
-      res.end("end");
+      res.end('end');
     }
     next();
   };
@@ -552,8 +552,8 @@ addEntryCodeAhead 方法的作用是在入口文件中的指定位置添加代�
 
 ```ts
 api.addEntryImports(() => ({
-  source: "/modulePath/xxx.js",
-  specifier: "moduleName",
+  source: '/modulePath/xxx.js',
+  specifier: 'moduleName',
 }));
 ```
 
@@ -567,15 +567,15 @@ api.addEntryImports(() => ({
 
 #### 参数
 
-| 参数名 | 类型                                                                                   | 描述                                                                     |
-| ------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| fn     | () => {source: string, specifier?: string} 或 ({source: string, specifier?: string})[] | 一个函数，它返回一个对象或对象数组，用于指定要添加的 import 语句的信息。 |
+| 参数名 | 类型 | 描述 |
+| --- | --- | --- |
+| fn | () => {source: string, specifier?: string} 或 ({source: string, specifier?: string})[] | 一个函数，它返回一个对象或对象数组，用于指定要添加的 import 语句的信息。 |
 
 #### 示例
 
 ```ts
 api.addEntryImportsAhead(() => ({
-  source: "anyPackage",
+  source: 'anyPackage',
 }));
 ```
 
@@ -596,7 +596,7 @@ string
 #### 示例
 
 ```ts
-source: "anyPackage";
+source: 'anyPackage';
 ```
 
 上述示例中，`anyPackage` 是要引入的包名。
@@ -614,7 +614,7 @@ string | undefined
 #### 示例
 
 ```ts
-specifier: "anySpecifier";
+specifier: 'anySpecifier';
 ```
 
 上述示例中，`anySpecifier` 是要引入的包名的具体引入位置。如果不提供该字段，则默认为引入整个包。
@@ -699,12 +699,12 @@ api.addHTMLHeadScripts(() => `console.log('I am in HTML-head')`);
 function fn() {
   return [
     {
-      name: "description",
-      content: "This is a sample description",
+      name: 'description',
+      content: 'This is a sample description',
     },
     {
-      name: "keywords",
-      content: "sample, meta, tags",
+      name: 'keywords',
+      content: 'sample, meta, tags',
     },
   ];
 }
@@ -726,8 +726,8 @@ addHTMLMetas(fn);
 
 ```ts
 api.chainWebpack((memo, { webpack, env }) => {
-  memo.resolve.alias.set("a", "path/to/a");
-  memo.plugins.delete("progress");
+  memo.resolve.alias.set('a', 'path/to/a');
+  memo.plugins.delete('progress');
 });
 ```
 
@@ -738,7 +738,7 @@ api.chainWebpack((memo, { webpack, env }) => {
 例如，要将`a`设置为`path/to/a`的别名，可以使用以下代码：
 
 ```ts
-memo.resolve.alias.set("a", "path/to/a");
+memo.resolve.alias.set('a', 'path/to/a');
 ```
 
 ### 如何使用 chainWebpack 删除插件？
@@ -748,7 +748,7 @@ memo.resolve.alias.set("a", "path/to/a");
 例如，要删除名为`progress`的插件，可以使用以下代码：
 
 ```ts
-memo.plugins.delete("progress");
+memo.plugins.delete('progress');
 ```
 
 注意，这里的`progress`是示例插件名称，你需要根据实际情况替换为你想要删除的插件名称。
@@ -763,7 +763,7 @@ memo.plugins.delete("progress");
 api.modifyConfig((memo, { paths }) => {
   memo.alias = {
     ...memo.alias,
-    "@": paths.absSrcPath,
+    '@': paths.absSrcPath,
   };
   return memo;
 });
@@ -787,7 +787,7 @@ api.modifyConfig((memo, { paths }) => {
 api.modifyConfig((memo, { paths }) => {
   memo.alias = {
     ...memo.alias,
-    "@": paths.absSrcPath,
+    '@': paths.absSrcPath,
   };
   return memo;
 });
@@ -911,8 +911,8 @@ interface IRoute {
 api.modifyRoutes((memo) => {
   Object.keys(memo).forEach((id) => {
     const route = memo[id];
-    if (route.path === "/") {
-      route.path = "/redirect";
+    if (route.path === '/') {
+      route.path = '/redirect';
     }
   });
   return memo;
@@ -932,10 +932,10 @@ api.modifyRoutes((memo) => {
 示例代码如下：
 
 ```ts
-import api from "umi";
+import api from 'umi';
 
 api.modifyTSConfig((memo) => {
-  memo.compilerOptions.paths["foo"] = ["bar"];
+  memo.compilerOptions.paths['foo'] = ['bar'];
   return memo;
 });
 ```
@@ -1023,8 +1023,8 @@ api.modifyWebpackConfig((memo, { webpack, env }) => {
 
 ```typescript
 api.onBeforeMiddleware(({ app }) => {
-  app.get("/some/path", function (req, res) {
-    res.json({ custom: "response" });
+  app.get('/some/path', function (req, res) {
+    res.json({ custom: 'response' });
   });
 });
 ```
@@ -1177,9 +1177,9 @@ logger 的作用是用于记录插件的日志信息，可以帮助开发者在�
 在 logger 对象中，有一个 `profile` 方法，可以用于记录性能耗时。可以使用以下代码来演示 profile 方法的使用：
 
 ```ts
-api.logger.profile("barId");
+api.logger.profile('barId');
 setTimeout(() => {
-  api.logger.profile("barId");
+  api.logger.profile('barId');
 });
 // 输出结果为：profile - barId Completed in 6254ms
 ```

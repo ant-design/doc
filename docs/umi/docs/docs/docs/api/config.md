@@ -18,10 +18,10 @@
 以下是一个最简单的 umi 配置文件的范例：
 
 ```ts
-import { defineConfig } from "umi";
+import { defineConfig } from 'umi';
 
 export default defineConfig({
-  outputPath: "dist",
+  outputPath: 'dist',
 });
 ```
 
@@ -188,19 +188,19 @@ chainWebpack 函数接受两个参数：
 - 设置 alias：
 
   ```js
-  memo.resolve.alias.set("foo", "/tmp/to/foo");
+  memo.resolve.alias.set('foo', '/tmp/to/foo');
   ```
 
 - 添加额外插件：
 
   ```js
-  memo.plugin("hello").use(Plugin, [...args]);
+  memo.plugin('hello').use(Plugin, [...args]);
   ```
 
 - 删除 Umi 内置插件：
 
   ```js
-  memo.plugins.delete("hmr");
+  memo.plugins.delete('hmr');
   ```
 
 可以根据具体需求使用不同的链式编程 API 来对 webpack 配置进行修改。
@@ -377,7 +377,7 @@ copy 的默认值是一个空数组，即 `[]`。
 例如：
 
 ```ts
-copy: ["foo.json", "src/bar.json"];
+copy: ['foo.json', 'src/bar.json'];
 ```
 
 上述配置将会把 foo.json 和 src/bar.json 文件拷贝到产物目录，并生成相应的目录结构：
@@ -395,8 +395,8 @@ copy: ["foo.json", "src/bar.json"];
 
 ```ts
 copy: [
-  { from: "from", to: "dist/output" },
-  { from: "file.json", to: "dist" },
+  { from: 'from', to: 'dist/output' },
+  { from: 'file.json', to: 'dist' },
 ];
 ```
 
@@ -461,7 +461,7 @@ cssMinifier 是一个配置项，用于指定构建过程中使用的 CSS 压缩
 
 ```js
 {
-  cssMinifier: "esbuild";
+  cssMinifier: 'esbuild';
 }
 ```
 
@@ -574,7 +574,7 @@ cssLoaderModules 的默认值是一个空对象 `{}`。
 ```ts
 cssLoaderModules: {
   // 配置驼峰式使用
-  exportLocalsConvention: "camelCase";
+  exportLocalsConvention: 'camelCase';
 }
 ```
 
@@ -599,7 +599,7 @@ deadCode: {
 
 ```javascript
 deadCode: {
-  patterns: ["src/pages/**"];
+  patterns: ['src/pages/**'];
 }
 ```
 
@@ -607,7 +607,7 @@ deadCode: {
 
 ```javascript
 deadCode: {
-  exclude: ["src/pages/utils/**"];
+  exclude: ['src/pages/utils/**'];
 }
 ```
 
@@ -644,7 +644,7 @@ deadCode: {
 
 ```javascript
 deadCode: {
-  context: "src";
+  context: 'src';
 }
 ```
 
@@ -682,7 +682,7 @@ declare const FOO: string;
 
 ```typescript
 // typings.d.ts
-import "./other.d.ts";
+import './other.d.ts';
 
 declare global {
   const FOO: string;
@@ -713,7 +713,7 @@ devtool 默认值取决于配置的环境。在开发环境下，默认值为 `c
 devtool: false;
 
 // 只在开发环境下设置 sourcemap
-devtool: process.env.NODE_ENV === "development" ? "eval" : false;
+devtool: process.env.NODE_ENV === 'development' ? 'eval' : false;
 ```
 
 ### esbuildMinifyIIFE 是什么类型的变量？默认值是多少？
@@ -771,9 +771,9 @@ headScripts: ['https://unpkg.com/react@17.0.1/umd/react.production.min.js'],
 export default {
   extraBabelIncludes: [
     // 支持绝对路径
-    join(__dirname, "../../common"),
+    join(__dirname, '../../common'),
     // 支持 npm 包
-    "react-monaco-editor",
+    'react-monaco-editor',
     // 转译全部路径含有 @scope 的包
     /@scope/,
   ],
@@ -817,10 +817,10 @@ dist/docs/a/index.html
 export default {
   exportStatic: {
     // 配置固定值
-    extraRoutePaths: ["/news/1", "/news/2"],
+    extraRoutePaths: ['/news/1', '/news/2'],
     // 也可以配置函数动态获取
     extraRoutePaths: async () => {
-      const res = await fetch("https://api.example.com/news");
+      const res = await fetch('https://api.example.com/news');
       const data = await res.json();
       return data.map((item) => `/news/${item.id}`);
     },
@@ -838,7 +838,7 @@ export default {
 export default {
   exportStatic: {
     // 输出额外页面文件但跳过预渲染
-    extraRoutePaths: [{ path: "/news/1", prerender: false }],
+    extraRoutePaths: [{ path: '/news/1', prerender: false }],
   },
 };
 ```
@@ -877,9 +877,9 @@ favicons 的默认值是 `null`。
 ```js
 favicons: [
   // 完整地址
-  "https://domain.com/favicon.ico",
+  'https://domain.com/favicon.ico',
   // 相对路径，将指向 /favicon.png ，确保项目中有 public/favicon.png 文件
-  "/favicon.png",
+  '/favicon.png',
 ];
 ```
 
@@ -917,7 +917,7 @@ forkTSChecker 是一种用于开启 TypeScript 的类型检查的配置项。它
 
 注意：HTML 文件始终没有 hash 后缀。
 
-#### 问题一：
+####
 
 hash 模式的作用是什么？
 
@@ -925,7 +925,7 @@ hash 模式的作用是什么？
 
 hash 模式的作用是让 build 之后的产物包含 hash 后缀，用于增量发布和避免浏览器加载缓存。
 
-#### 问题二：
+####
 
 启用 hash 模式后，产物的命名规则是怎样的？
 
@@ -933,7 +933,7 @@ hash 模式的作用是让 build 之后的产物包含 hash 后缀，用于增�
 
 启用 hash 模式后，产物的命名规则通常是以原始文件名加上 hash 后缀，例如 `umi.df723s.js` 和 `umi.8sd8fw.css`。
 
-#### 问题三：
+####
 
 HTML 文件是否也会添加 hash 后缀？
 
@@ -1093,7 +1093,7 @@ icons: { autoInstall: {} },
 1. 导入 `Icon` 组件：
 
 ```ts
-import { Icon } from "umi";
+import { Icon } from 'umi';
 ```
 
 2. 在代码中使用 `<Icon>` 标签，并设置 `icon` 属性：
@@ -1123,7 +1123,7 @@ Icon 集是一种图标库的集合，通过特定的命名方式进行标识。
 要使用本地 svg icon，首先需要将对应的 svg 文件保存在 `src/icons` 目录下。然后，可以通过 `local` 这个前缀来引用该 svg 图标。例如，如果在 `src/icons` 目录下保存了一个名为 `umi.svg` 的 svg 文件，可以使用以下方式进行引用：
 
 ```tsx
-import { Icon } from "umi";
+import { Icon } from 'umi';
 <Icon icon="local:umi" />;
 ```
 
@@ -1192,7 +1192,7 @@ jsMinifier (webpack) 是用于配置构建时压缩 JavaScript 的工具。它�
 
 ```ts
 {
-  jsMinifier: "esbuild";
+  jsMinifier: 'esbuild';
 }
 ```
 
@@ -1204,7 +1204,7 @@ jsMinifier (webpack) 是用于配置构建时压缩 JavaScript 的工具。它�
 
 ```ts
 {
-  jsMinifier: "none";
+  jsMinifier: 'none';
 }
 ```
 
@@ -1212,15 +1212,15 @@ jsMinifier (webpack) 是用于配置构建时压缩 JavaScript 的工具。它�
 
 请注意，以上提供的示例仅供参考，你可以根据自己的需求进行配置。
 
-### 问题一：`jsMinifierOptions` 是什么？
+### `jsMinifierOptions` 是什么？
 
 答案：`jsMinifierOptions` 是一个类型为对象的配置项，用于配置 `jsMinifier` 这个选项。默认情况下，使用 `jsMinifier` 压缩代码会移除代码中的注释，但可以通过设置 `jsMinifierOptions` 来保留注释。
 
-### 问题二：`jsMinifierOptions` 的默认值是什么？
+### `jsMinifierOptions` 的默认值是什么？
 
 答案：`jsMinifierOptions` 的默认值是一个空对象 `{}`。
 
-### 问题三：如何使用 `jsMinifierOptions` 进行配置？
+### 如何使用 `jsMinifierOptions` 进行配置？
 
 答案：可以通过以下示例代码来配置 `jsMinifierOptions`：
 
@@ -1434,9 +1434,9 @@ export default {
 ```js
 plugins: [
   // npm 依赖
-  "umi-plugin-hello",
+  'umi-plugin-hello',
   // 相对路径
-  "./plugin",
+  './plugin',
   // 绝对路径
   `${__dirname}/plugin.js`,
 ];
@@ -1591,8 +1591,8 @@ scripts: [`alert(1);`, `https://a.com/b.js`];
 
 ```js
 scripts: [
-  { src: "/foo.js", defer: true },
-  { content: `alert('你好');`, charset: "utf-8" },
+  { src: '/foo.js', defer: true },
+  { content: `alert('你好');`, charset: 'utf-8' },
 ];
 ```
 
@@ -1601,7 +1601,7 @@ scripts: [
 ```html
 <script src="/foo.js" defer></script>
 <script charset="utf-8">
-  alert("你好");
+  alert('你好');
 </script>
 ```
 
@@ -1706,7 +1706,7 @@ svgr 默认开启，并且它的默认配置项参见 [@svgr/core > Config](http
 要使用 svgr，首先需要引入相应的 SVG 图标文件。例如，使用 `import` 语句引入名为 `smile.svg` 的 SVG 文件，可以这样写：
 
 ```ts
-import SmileUrl, { ReactComponent as SvgSmile } from "./smile.svg";
+import SmileUrl, { ReactComponent as SvgSmile } from './smile.svg';
 ```
 
 这样就可以在项目中使用 `SvgSmile` 组件来展示 SVG 图标。
@@ -1755,14 +1755,14 @@ verifyCommit 的作用是为了校验提交的消息格式，确保提交信息�
 
 这样可以确保无论是撤销提交，还是合并分支，或者是进行版本发布，生成的 commit message 都符合一致的规范，方便团队进行版本管理和代码追溯。
 
-### 1. vite 的配置类型是什么？
+### vite 的配置类型是什么？
 
 - 类型：`object`
 
-### 2. vite 默认的配置是什么？
+### vite 默认的配置是什么？
 
 - 默认值：`{}`
 
-### 3. 开发者的配置会 merge 到 vite 的哪个配置？
+### 开发者的配置会 merge 到 vite 的哪个配置？
 
 开发者的配置会 merge 到 vite 的 [默认配置](https://vitejs.dev/config/)。

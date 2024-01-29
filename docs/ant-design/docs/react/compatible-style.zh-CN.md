@@ -7,7 +7,7 @@ Ant Design 的 CSS-in-JS 默认通过 `:where` 选择器降低 CSS Selector 的�
 使用 `@ant-design/cssinjs` 取消 `:where` 选择器的默认降权操作需要引入 `StyleProvider` 组件。在 `StyleProvider` 组件内部，将 `hashPriority` 设置为 `"high"`，即可移除 `:where` 选择器的封装效果。
 
 ```tsx
-import { StyleProvider } from "@ant-design/cssinjs";
+import { StyleProvider } from '@ant-design/cssinjs';
 
 export default () => (
   <StyleProvider hashPriority="high">
@@ -45,7 +45,7 @@ CSS 逻辑属性是为了统一 LTR（从左到右的文本方向）和 RTL（�
 import {
   legacyLogicalPropertiesTransformer,
   StyleProvider,
-} from "@ant-design/cssinjs";
+} from '@ant-design/cssinjs';
 
 // 使用 `transformers` 属性进行样式转换配置
 export default () => (
@@ -73,16 +73,16 @@ export default () => (
 
 CSS 逻辑属性的引入是为了解决不同文本方向下样式的一致性问题。通过使用 CSS 逻辑属性，我们可以统一 LTR 和 RTL 的样式表达方式，减少代码的重复和维护成本。对于依赖 Ant Design 的主题能力的应用来说，使用 CSS 逻辑属性能够提升主题切换的性能，同时减少样式体积。因此，在开发应用时，强烈建议开启 CSS 逻辑属性模式，以获得更好的开发体验和性能优化。
 
-### 1. 什么是 rem 适配？
+### 什么是 rem 适配？
 
 在响应式网页开发中，为了实现页面的适配和响应式设计，我们需要一种方便且灵活的方式来处理样式中的像素单位。rem（root em）单位是相对于根元素（HTML 标签）的单位，通过将像素单位转换为 rem 单位，可以实现页面的自适应和响应式布局。
 
-### 2. 如何使用 px2remTransformer 实现 px 到 rem 的转换？
+### 如何使用 px2remTransformer 实现 px 到 rem 的转换？
 
 使用 `px2remTransformer` 转换器可以快速而准确地将样式表中的像素单位转换为 rem 单位。首先，我们需要导入 `px2remTransformer` 和 `StyleProvider`，然后创建一个 `px2rem` 实例，指定 `rootValue`，即 32px = 1rem（默认为 16）。最后，在样式提供器 `<StyleProvider>` 的 `transformers` 属性中传入 `px2rem` 实例，将转换器应用到样式中。
 
 ```tsx
-import { px2remTransformer, StyleProvider } from "@ant-design/cssinjs";
+import { px2remTransformer, StyleProvider } from '@ant-design/cssinjs';
 
 const px2rem = px2remTransformer({
   rootValue: 32, // 32px = 1rem; @default 16
@@ -95,7 +95,7 @@ export default () => (
 );
 ```
 
-### 3. 如何查看最终转换后的样式？
+### 如何查看最终转换后的样式？
 
 在使用 `px2remTransformer` 转换器后，样式中的像素单位会被自动转换为相应的 rem 单位。以下是一个示例转换后的样式：
 
@@ -149,18 +149,18 @@ export default () => (
 具体代码如下：
 
 ```tsx
-import { StyleProvider } from "@ant-design/cssinjs";
-import { createRoot } from "react-dom/client";
+import { StyleProvider } from '@ant-design/cssinjs';
+import { createRoot } from 'react-dom/client';
 
-const shadowRoot = someEle.attachShadow({ mode: "open" });
-const container = document.createElement("div");
+const shadowRoot = someEle.attachShadow({ mode: 'open' });
+const container = document.createElement('div');
 shadowRoot.appendChild(container);
 const root = createRoot(container);
 
 root.render(
   <StyleProvider container={shadowRoot}>
     <MyApp />
-  </StyleProvider>,
+  </StyleProvider>
 );
 ```
 

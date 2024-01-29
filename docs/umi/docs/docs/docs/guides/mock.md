@@ -10,15 +10,15 @@ Umi 的 Mock 功能可以用方便简单的方式来设置 Mock 数据。
 
 Mock 数据是在前后端约定好 API 接口以后，前端可以使用 Mock 数据来在本地模拟出 API 应该要返回的数据，以便前后端开发可以同时进行。这样可以避免因为后端 API 还在开发而导致前端工作被阻塞。
 
-### 问题一：Umi 是如何处理 /mock 目录下的文件的？
+### Umi 是如何处理 /mock 目录下的文件的？
 
 Umi 将 /mock 目录下的所有文件视为 Mock 文件进行处理。
 
-### 问题二：Umi 对于 /mock 目录的约定是什么？
+### Umi 对于 /mock 目录的约定是什么？
 
 Umi 约定 /mock 目录下的所有文件都是 Mock 文件的内容。
 
-### 问题三：可以给出一个 /mock 目录的示例目录结构吗？
+### 可以给出一个 /mock 目录的示例目录结构吗？
 
 是的，一个示例的 /mock 目录的目录结构如下所示：
 
@@ -55,12 +55,12 @@ Mock 文件中的每个接口对应的值可以是一个数组或一个对象。
 // ./mock/users.ts
 
 export default {
-  "/api/users": [
-    { id: 1, name: "foo" },
-    { id: 2, name: "bar" },
+  '/api/users': [
+    { id: 1, name: 'foo' },
+    { id: 2, name: 'bar' },
   ],
 
-  "/api/users/1": { id: 1, name: "foo" },
+  '/api/users/1': { id: 1, name: 'foo' },
 };
 ```
 
@@ -76,7 +76,7 @@ export default {
 // ./mock/users.ts
 
 export default {
-  "POST /api/users": { result: "true" },
+  'POST /api/users': { result: 'true' },
 };
 ```
 
@@ -92,7 +92,7 @@ export default {
 // ./mock/users.ts
 
 export default {
-  "PUT /api/users/1": { id: 1, name: "new-foo" },
+  'PUT /api/users/1': { id: 1, name: 'new-foo' },
 };
 ```
 
@@ -123,20 +123,20 @@ export default {
 1. 导入 `defineMock` 函数：
 
 ```ts
-import { defineMock } from "umi";
+import { defineMock } from 'umi';
 ```
 
 2. 调用 `defineMock` 函数并传入一个对象，对象的属性是接口地址，属性的值是对应的模拟数据：
 
 ```ts
 export default defineMock({
-  "/api/users": [
-    { id: 1, name: "foo" },
-    { id: 2, name: "bar" },
+  '/api/users': [
+    { id: 1, name: 'foo' },
+    { id: 2, name: 'bar' },
   ],
-  "/api/users/1": { id: 1, name: "foo" },
-  "GET /api/users/2": (req, res) => {
-    res.status(200).json({ id: 2, name: "bar" });
+  '/api/users/1': { id: 1, name: 'foo' },
+  'GET /api/users/2': (req, res) => {
+    res.status(200).json({ id: 2, name: 'bar' });
   },
 });
 ```
@@ -184,11 +184,11 @@ MOCK=none umi dev
 当使用 Mock.js 时，可以通过以下示例代码生成随机的模拟数据：
 
 ```ts
-import mockjs from "mockjs";
+import mockjs from 'mockjs';
 
 export default {
-  "GET /api/tags": mockjs.mock({
-    "list|100": [{ name: "@city", "value|1-100": 50, "type|0-2": 1 }],
+  'GET /api/tags': mockjs.mock({
+    'list|100': [{ name: '@city', 'value|1-100': 50, 'type|0-2': 1 }],
   }),
 };
 ```

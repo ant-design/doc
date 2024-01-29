@@ -21,11 +21,11 @@ ProLayout 有以下一些常用的配置选项：
 以下是一个使用 ProLayout 的示例：
 
 ```jsx
-import { ProLayout } from "ant-design-pro-layout";
+import { ProLayout } from 'ant-design-pro-layout';
 
 const MyLayout = () => {
   const handlePageChange = (location) => {
-    console.log("页面切换至", location.pathname);
+    console.log('页面切换至', location.pathname);
   };
 
   return (
@@ -134,7 +134,7 @@ const MyLayout = () => {
 
 ```jsx
 const handleLoadingChange = (loading) => {
-  console.log("菜单加载状态变更：", loading);
+  console.log('菜单加载状态变更：', loading);
 };
 
 <Menu onLoadingChange={handleLoadingChange} />;
@@ -163,30 +163,30 @@ const loadMenuData = async (params, defaultMenuData) => {
 
 ### SettingDrawer 的参数说明
 
-| 参数             | 说明                                                        | 类型                                               | 默认值  |
-| ---------------- | ----------------------------------------------------------- | -------------------------------------------------- | ------- |
-| collapse         | 控制 SettingDrawer 的收起和展开                             | `boolean`                                          | -       |
-| onCollapseChange | SettingDrawer 的折叠收起事件                                | `(collapsed: boolean) => void`                     | -       |
-| settings         | layout 的设置                                               | [`Settings`](#Settings) \| [`Settings`](#Settings) | -       |
-| onSettingChange  | [`Settings`](#Settings) 发生更改事件                        | `(settings: [`Settings`](#Settings) ) => void`     | -       |
-| hideHintAlert    | 删除下方的提示信息                                          | `boolean`                                          | -       |
-| hideCopyButton   | 不展示 copy 功能                                            | `boolean`                                          | -       |
-| disableUrlParams | 禁止同步设置到查询参数                                      | `boolean`                                          | `false` |
-| enableDarkTheme  | 打开黑色主题切换功能                                        | `boolean`                                          | `false` |
-| colorList        | 自带的颜色切换系统 (ColorList 的 title 会作为 Tooltip 显示) | `ColorList[]`                                      | -       |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| collapse | 控制 SettingDrawer 的收起和展开 | `boolean` | - |
+| onCollapseChange | SettingDrawer 的折叠收起事件 | `(collapsed: boolean) => void` | - |
+| settings | layout 的设置 | [`Settings`](#Settings) \| [`Settings`](#Settings) | - |
+| onSettingChange | [`Settings`](#Settings) 发生更改事件 | `(settings: [`Settings`](#Settings) ) => void` | - |
+| hideHintAlert | 删除下方的提示信息 | `boolean` | - |
+| hideCopyButton | 不展示 copy 功能 | `boolean` | - |
+| disableUrlParams | 禁止同步设置到查询参数 | `boolean` | `false` |
+| enableDarkTheme | 打开黑色主题切换功能 | `boolean` | `false` |
+| colorList | 自带的颜色切换系统 (ColorList 的 title 会作为 Tooltip 显示) | `ColorList[]` | - |
 
 ### 自带的颜色列表
 
 ```tsx | pure
 const colorList = [
-  { key: "daybreak", color: "#1890ff" },
-  { key: "dust", color: "#F5222D" },
-  { key: "volcano", color: "#FA541C" },
-  { key: "sunset", color: "#FAAD14" },
-  { key: "cyan", color: "#13C2C2" },
-  { key: "green", color: "#52C41A" },
-  { key: "geekblue", color: "#2F54EB" },
-  { key: "purple", color: "#722ED1" },
+  { key: 'daybreak', color: '#1890ff' },
+  { key: 'dust', color: '#F5222D' },
+  { key: 'volcano', color: '#FA541C' },
+  { key: 'sunset', color: '#FAAD14' },
+  { key: 'cyan', color: '#13C2C2' },
+  { key: 'green', color: '#52C41A' },
+  { key: 'geekblue', color: '#2F54EB' },
+  { key: 'purple', color: '#722ED1' },
 ];
 ```
 
@@ -202,9 +202,9 @@ PageLoading 是一个简单的加载页面，用于在网页加载数据或执�
 
 PageLoading 组件支持以下参数：
 
-| 参数名                                              | 说明                            | 类型 | 默认值 |
-| --------------------------------------------------- | ------------------------------- | ---- | ------ |
-| [(...)](https://ant.design/components/spin-cn/#API) | 支持所有的 antd `Spin` 组件参数 | -    | -      |
+| 参数名 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| [(...)](https://ant.design/components/spin-cn/#API) | 支持所有的 antd `Spin` 组件参数 | - | - |
 
 ### 如何使用 PageLoading 组件？
 
@@ -213,7 +213,7 @@ PageLoading 组件支持以下参数：
 示例：
 
 ```jsx
-import { PageLoading } from "your-component-library";
+import { PageLoading } from 'your-component-library';
 
 //...
 
@@ -249,13 +249,13 @@ return (
 以下是一个使用 `getMenuData` 的示例：
 
 ```js | pure
-import { getMenuData } from "@ant-design/pro-components";
+import { getMenuData } from '@ant-design/pro-components';
 
 const { breadcrumb, menuData } = getMenuData(
   routes,
   menu,
   formatMessage,
-  menuDataRender,
+  menuDataRender
 );
 ```
 
@@ -307,7 +307,7 @@ getPageTitle 函数的返回值是一个字符串，表示当前页面的标题�
 首先需要在文件的顶部引入 getPageTitle 函数，然后根据需要调用该函数，并传入相应的参数。例如：
 
 ```js | pure
-import { getPageTitle } from "@ant-design/pro-components";
+import { getPageTitle } from '@ant-design/pro-components';
 
 const title = getPageTitle({
   pathname,
@@ -324,15 +324,15 @@ const title = getPageTitle({
 
 调用 getPageTitle 函数时要确保传入正确的参数，以确保获取到正确的标题信息。另外，如果需要自定义标题，可以将 `title` 参数设置为自定义的值。
 
-### 问题一：如何获取 Ant Design 的默认设置信息？
+### 如何获取 Ant Design 的默认设置信息？
 
 你可以通过导入 `import { Settings } from '@ant-design/pro-layout/defaultSettings'` 来获取 Ant Design 的默认设置信息。这个设置类型包含了一些常见的配置项，例如主题颜色、导航菜单位置、内容布局、固定头部和侧边栏等。你可以根据需要使用这些设置来自定义你的应用。
 
-### 问题二：如何设置 Ant Design 的主题颜色？
+### 如何设置 Ant Design 的主题颜色？
 
 在 Ant Design 中，你可以通过设置 `colorPrimary` 属性来指定主题颜色。这个属性接受一个字符串类型的值，表示主题颜色的值。你可以根据自己的需求选择合适的颜色值，从而改变应用的主题颜色。
 
-### 问题三：如何将 Ant Design 的侧边栏固定？
+### 如何将 Ant Design 的侧边栏固定？
 
 如果你想要将 Ant Design 的侧边栏固定在界面上，你可以通过设置 `fixSiderbar` 属性为 `true` 来实现。这个属性接受一个布尔类型的值，当设置为 `true` 时，侧边栏将会被固定在界面上。这样，无论用户如何滚动页面，侧边栏都会保持可见。
 
@@ -429,28 +429,28 @@ Route 是一个接口(interface)类型，包含以下属性：
 在使用 Ant Design ProLayout 组件时，可以引入 DefaultFooter 组件来创建自定义的页脚。以下是一个使用 DefaultFooter 组件的示例代码：
 
 ```tsx | pure
-import { GithubOutlined } from "@ant-design/icons";
-import { DefaultFooter } from "@ant-design/pro-components";
+import { GithubOutlined } from '@ant-design/icons';
+import { DefaultFooter } from '@ant-design/pro-components';
 
 <DefaultFooter
   copyright="@2019 蚂蚁金服体验技术部出品"
   links={[
     {
-      key: "Ant Design Pro",
-      title: "Ant Design Pro",
-      href: "https://pro.ant.design",
+      key: 'Ant Design Pro',
+      title: 'Ant Design Pro',
+      href: 'https://pro.ant.design',
       blankTarget: true,
     },
     {
-      key: "github",
+      key: 'github',
       title: <GithubOutlined />,
-      href: "https://github.com/ant-design/ant-design-pro",
+      href: 'https://github.com/ant-design/ant-design-pro',
       blankTarget: true,
     },
     {
-      key: "Ant Design",
-      title: "Ant Design",
-      href: "https://ant.design",
+      key: 'Ant Design',
+      title: 'Ant Design',
+      href: 'https://ant.design',
       blankTarget: true,
     },
   ]}
@@ -571,19 +571,19 @@ Sider Token 包含以下 CSS 变量：
 
 ### Header Token
 
-| token                        | 说明                                               | 默认值                     |
-| ---------------------------- | -------------------------------------------------- | -------------------------- |
-| colorBgHeader                | header 的背景颜色                                  | `rgba(240, 242, 245, 0.4)` |
-| colorHeaderTitle             | sider 的标题字体颜色                               | `colorTextHeading`         |
-| colorTextMenu                | menuItem 的字体颜色                                | `colorText`                |
-| colorTextMenuSecondary       | menu 的二级字体颜色，比如 footer 和 action 的 icon | `colorText`                |
-| colorTextMenuSelected        | menuItem 的选中字体颜色                            | `rgb(0,0,0)`               |
-| colorTextMenuActive          | menuItem hover 的选中字体颜色                      | `rgba(0, 0, 0, 0.85)`      |
-| colorBgMenuItemHover         | menuItem 的 hover 背景颜色                         | `rgba(90, 75, 75, 0.03)`   |
-| colorBgMenuItemSelected      | menuItem 的选中背景颜色                            | `rgba(0, 0, 0, 0.04)`      |
-| colorTextRightActionsItem    | 右上角字体颜色                                     | `colorTextSecondary`       |
-| colorBgRightActionsItemHover | 右上角选中的 hover 颜色                            | `rgba(0, 0, 0, 0.03)`      |
-| heightLayoutHeader           | header 高度                                        | 56                         |
+| token | 说明 | 默认值 |
+| --- | --- | --- |
+| colorBgHeader | header 的背景颜色 | `rgba(240, 242, 245, 0.4)` |
+| colorHeaderTitle | sider 的标题字体颜色 | `colorTextHeading` |
+| colorTextMenu | menuItem 的字体颜色 | `colorText` |
+| colorTextMenuSecondary | menu 的二级字体颜色，比如 footer 和 action 的 icon | `colorText` |
+| colorTextMenuSelected | menuItem 的选中字体颜色 | `rgb(0,0,0)` |
+| colorTextMenuActive | menuItem hover 的选中字体颜色 | `rgba(0, 0, 0, 0.85)` |
+| colorBgMenuItemHover | menuItem 的 hover 背景颜色 | `rgba(90, 75, 75, 0.03)` |
+| colorBgMenuItemSelected | menuItem 的选中背景颜色 | `rgba(0, 0, 0, 0.04)` |
+| colorTextRightActionsItem | 右上角字体颜色 | `colorTextSecondary` |
+| colorBgRightActionsItemHover | 右上角选中的 hover 颜色 | `rgba(0, 0, 0, 0.03)` |
+| heightLayoutHeader | header 高度 | 56 |
 
 Header 的背景颜色默认是什么？Header 的背景颜色的默认值是 `rgba(240, 242, 245, 0.4)`。
 

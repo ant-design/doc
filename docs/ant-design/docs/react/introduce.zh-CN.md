@@ -31,7 +31,7 @@ Ant Design 提供了深入每个细节的主题定制能力。你可以根据自
 
 请参考 Ant Design 的官方文档，了解更多关于主题定制的详细信息。
 
-### 1. Ant Design 5.x 的 CSS 变量模式兼容哪些环境？
+### Ant Design 5.x 的 CSS 变量模式兼容哪些环境？
 
 Ant Design 5.x 的 CSS 变量模式兼容以下环境：
 
@@ -52,7 +52,7 @@ Ant Design 5.x 的 CSS 变量模式兼容以下环境：
 
 请注意，从 `antd@2.0` 开始，不再支持 IE8；从 `antd@4.0` 开始，不再支持 React 15 和 IE9/10；从 `antd@5.0` 开始，不再支持 IE。
 
-### 2. 如何在 Ant Design 5.x 中使用 CSS 变量模式？
+### 如何在 Ant Design 5.x 中使用 CSS 变量模式？
 
 Ant Design 5.x 中的 CSS 变量模式是从版本 5.12.0 开始重新支持的功能。这次 Ant Design 融合了 CSS-in-JS 的能力，并将所有 Design Token 纳入了 CSS 变量的管理范畴。
 
@@ -60,7 +60,7 @@ Ant Design 5.x 中的 CSS 变量模式是从版本 5.12.0 开始重新支持的�
 
 如果你的应用依赖 Ant Design 的主题能力，强烈建议开启 CSS 变量模式。
 
-### 3. 如何解决 Ant Design 中的浏览器兼容性问题？
+### 如何解决 Ant Design 中的浏览器兼容性问题？
 
 对于 IE 系列浏览器，建议使用 [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) 来提供相应的 Polyfill 支持。
 

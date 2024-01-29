@@ -6,15 +6,15 @@
 
 2. CRA v5 配置示例：[cra-v5-with-mfsu-example](https://github.com/umijs/cra-v5-with-mfsu-example)
 
-### 1. 如何初始化一个 MFSU 实例？
+### 如何初始化一个 MFSU 实例？
 
 要初始化一个 MFSU 实例，可以按照以下步骤进行操作：
 
 1. 在 webpack 配置文件（一般为 `webpack.config.js`）中引入 `MFSU` 和 `webpack`：
 
 ```js
-const { MFSU } = require("@umijs/mfsu");
-const webpack = require("webpack");
+const { MFSU } = require('@umijs/mfsu');
+const webpack = require('webpack');
 ```
 
 2. 创建一个 MFSU 实例，并传入必要的参数：
@@ -28,26 +28,26 @@ const mfsu = new MFSU({
 
 其中，`implementor` 参数用于指定使用的构建工具（比如 webpack），`buildDepWithESBuild` 参数用于指定是否使用 ESBuild 来构建依赖。
 
-### 2. 如何引入 MFSU 和 webpack？
+### 如何引入 MFSU 和 webpack？
 
 要引入 `MFSU` 和 `webpack`，只需按照以下方式进行操作：
 
 ```js
-const { MFSU } = require("@umijs/mfsu");
-const webpack = require("webpack");
+const { MFSU } = require('@umijs/mfsu');
+const webpack = require('webpack');
 ```
 
 上述代码中，我们使用 `require` 方法将 `MFSU` 和 `webpack` 导入为模块。
 
-### 3. 如何创建一个 MFSU 实例？
+### 如何创建一个 MFSU 实例？
 
 要创建一个 MFSU 实例，可以按照以下步骤进行操作：
 
 1. 首先，确保已经引入了 `MFSU` 和 `webpack`：
 
 ```js
-const { MFSU } = require("@umijs/mfsu");
-const webpack = require("webpack");
+const { MFSU } = require('@umijs/mfsu');
+const webpack = require('webpack');
 ```
 
 2. 然后，使用 `new` 关键字创建一个 MFSU 实例，并传入必要的参数：
@@ -136,7 +136,7 @@ module.exports = {
         test: /\.[jt]sx?$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
             plugins: [
               // 在这里添加 MFSU 的 babel plugins
@@ -233,7 +233,7 @@ MFSU（Module Federation for Server Umbraco）是一个用于模块联邦的工�
 在配置文件中，可以通过以下代码来判断当前环境是否为开发环境：
 
 ```js
-const isDev = process.env.NODE_ENV === "development";
+const isDev = process.env.NODE_ENV === 'development';
 ```
 
 接下来，可以根据 `isDev` 的值来确定是否使用 MFSU。例如，在 Babel 的配置中，可以通过如下方式来使用 MFSU 的 Babel 插件：

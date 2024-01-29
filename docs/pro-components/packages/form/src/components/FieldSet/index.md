@@ -39,8 +39,8 @@ ProFormRadio.Group 是单选按钮组件，支持在 Radio 基础上设置 layou
 ### 表单项
 
 ```tsx
-import React from "react";
-import { Input } from "antd";
+import React from 'react';
+import { Input } from 'antd';
 
 const FormItem = () => {
   return (
@@ -59,8 +59,8 @@ export default FormItem;
 ### 查询表单
 
 ```tsx
-import React from "react";
-import { Input, Button, Select } from "antd";
+import React from 'react';
+import { Input, Button, Select } from 'antd';
 
 const SearchForm = () => {
   return (
@@ -86,8 +86,8 @@ export default SearchForm;
 ### 结构化数据
 
 ```tsx
-import React from "react";
-import { Checkbox, Form } from "antd";
+import React from 'react';
+import { Checkbox, Form } from 'antd';
 
 const FormData = () => {
   return (
@@ -110,8 +110,8 @@ export default FormData;
 ### 日期表单
 
 ```tsx
-import React from "react";
-import { DatePicker } from "antd";
+import React from 'react';
+import { DatePicker } from 'antd';
 
 const DateTimeForm = () => {
   return (
@@ -130,9 +130,9 @@ export default DateTimeForm;
 ### 上传表单
 
 ```tsx
-import React from "react";
-import { Upload, Button } from "antd";
-import { UploadOutlined } from "@ant-design/icons";
+import React from 'react';
+import { Upload, Button } from 'antd';
+import { UploadOutlined } from '@ant-design/icons';
 
 const UploadForm = () => {
   return (
@@ -152,8 +152,8 @@ export default UploadForm;
 ### 只读表单
 
 ```tsx
-import React from "react";
-import { Input } from "antd";
+import React from 'react';
+import { Input } from 'antd';
 
 const ReadonlyForm = () => {
   return (
@@ -172,8 +172,8 @@ export default ReadonlyForm;
 ### 轻量筛选中使用 light
 
 ```tsx
-import React from "react";
-import { Checkbox, Form } from "antd";
+import React from 'react';
+import { Checkbox, Form } from 'antd';
 
 const FieldSetLight = () => {
   return (
@@ -250,7 +250,7 @@ export default FieldSetLight;
 如果你需要设置输入框的宽度，可以根据上述的宽度规则进行选择。在 Ant Design 中，可以使用相应的尺寸值来设置输入框的宽度。例如，要设置一个宽度为 `SM=216px` 的输入框，可以使用以下代码：
 
 ```jsx
-<Input style={{ width: "216px" }} />
+<Input style={{ width: '216px' }} />
 ```
 
 通过设置 `style` 属性中的 `width` 属性来指定输入框的宽度。
@@ -269,11 +269,11 @@ export default FieldSetLight;
 
 ### ProFormText
 
-#### 1. ProFormText 是什么？
+#### ProFormText 是什么？
 
 ProFormText 是一个表单组件，它与 Ant Design 的 [Input](https://ant.design/components/input-cn/) 组件具有相同的功能。
 
-#### 2. 如何使用 ProFormText 组件？
+#### 如何使用 ProFormText 组件？
 
 下面是一个示例的代码片段，演示了如何使用 ProFormText 组件：
 
@@ -286,7 +286,7 @@ ProFormText 是一个表单组件，它与 Ant Design 的 [Input](https://ant.de
 />
 ```
 
-#### 3. ProFormText 的属性说明：
+#### ProFormText 的属性说明：
 
 - `name`：设置组件的名称。
 - `label`：设置组件的标签。
@@ -306,18 +306,18 @@ ProFormText 是一个表单组件，它与 Ant Design 的 [Input](https://ant.de
 ```tsx | pure
 <ProFormCaptcha
   fieldProps={{
-    size: "large",
+    size: 'large',
     prefix: <MailTwoTone />,
   }}
   captchaProps={{
-    size: "large",
+    size: 'large',
   }}
   phoneName="phone"
   name="captcha"
   rules={[
     {
       required: true,
-      message: "请输入验证码",
+      message: '请输入验证码',
     },
   ]}
   placeholder="请输入验证码"
@@ -349,8 +349,8 @@ ProFormText.Password 和 Input.Password 在功能上是相同的。它们都用�
 首先，确保你已经安装了相关依赖，并导入所需的组件。
 
 ```tsx
-import ProFormText from "@ant-design/pro-form";
-import { Password } from "antd";
+import ProFormText from '@ant-design/pro-form';
+import { Password } from 'antd';
 ```
 
 然后，在你的表单中使用 ProFormText.Password 组件。
@@ -364,7 +364,7 @@ import { Password } from "antd";
 首先，确保你已经安装了相关依赖，并导入所需的组件。
 
 ```tsx
-import { Input } from "antd";
+import { Input } from 'antd';
 ```
 
 然后，在你的表单中使用 Input.Password 组件。
@@ -583,13 +583,13 @@ ProFormSelect 组件是在 Ant Design 的 select 组件的基础上进行了扩�
 
 ### ProFormTreeSelect 支持哪些参数？
 
-| 参数         | 说明                                                    | 类型                         | 默认值 |
-| ------------ | ------------------------------------------------------- | ---------------------------- | ------ |
-| valueEnum    | 当前列值的枚举 [valueEnum](/components/table#valueenum) | `Record`                     | -      |
-| request      | 从网络请求枚举数据                                      | `()=>Promise<{label,value}>` | -      |
-| debounceTime | 防抖动时间，与 request 配合使用                         | `number`                     | -      |
-| params       | 发起网络请求的参数，与 request 配合使用                 | `Record`                     | -      |
-| fieldProps   | antd 组件的 props                                       | `TreeSelectProps`            | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| valueEnum | 当前列值的枚举 [valueEnum](/components/table#valueenum) | `Record` | - |
+| request | 从网络请求枚举数据 | `()=>Promise<{label,value}>` | - |
+| debounceTime | 防抖动时间，与 request 配合使用 | `number` | - |
+| params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
+| fieldProps | antd 组件的 props | `TreeSelectProps` | - |
 
 ### 问题 2：ProFormTreeSelect 的 request 参数是用来做什么的？
 
@@ -619,7 +619,7 @@ ProFormCheckbox 是一个可以生成 checkbox 组件的 ProForm 组件。它类
   name="checkbox"
   layout="vertical"
   label="行业分布"
-  options={["农业", "制造业", "互联网"]}
+  options={['农业', '制造业', '互联网']}
 />
 ```
 
@@ -661,16 +661,16 @@ ProFormRadio.Group 的常用参数如下：
   label="Radio.Group"
   options={[
     {
-      label: "item 1",
-      value: "a",
+      label: 'item 1',
+      value: 'a',
     },
     {
-      label: "item 2",
-      value: "b",
+      label: 'item 2',
+      value: 'b',
     },
     {
-      label: "item 3",
-      value: "c",
+      label: 'item 3',
+      value: 'c',
     },
   ]}
 />
@@ -769,12 +769,12 @@ ProFormSlider 组件的默认值为 `-`。
   name="slider"
   label="Slider"
   marks={{
-    0: "A",
-    20: "B",
-    40: "C",
-    60: "D",
-    80: "E",
-    100: "F",
+    0: 'A',
+    20: 'B',
+    40: 'C',
+    60: 'D',
+    80: 'E',
+    100: 'F',
   }}
 />
 ```
@@ -798,7 +798,7 @@ ProFormUploadDragger 组件支持以下参数：
 可以在代码中使用 ProFormUploadDragger 组件，并设置相关参数。以下是一个示例：
 
 ```tsx
-import { ProFormUploadDragger } from "antd";
+import { ProFormUploadDragger } from 'antd';
 
 // ...
 
@@ -880,14 +880,14 @@ import ProFormMoney from 'xxx';
 
 ### ProFormMoney 的参数说明
 
-| 参数                | 说明                                                                                                                                        | 类型                                                                           | 默认值       |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------ |
-| locale              | 单独设置的国际化地区值，根据不同的地区显示不同的货币符号，支持地区详见下面的地区目录                                                        | string                                                                         | `zh-Hans-CN` |
-| customSymbol        | 自定义金额符号                                                                                                                              | string                                                                         | -            |
-| numberPopoverRender | 自定义 Popover 的值，false 可以关闭它                                                                                                       | ((props: InputNumberProps, defaultText: string) => React.ReactNode) \| boolean | false        |
-| numberFormatOptions | NumberFormat 的配置，文档可以查看 [mdn](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) | NumberFormatOptions                                                            | -            |
-| min                 | 最小值                                                                                                                                      | number                                                                         | -            |
-| max                 | 最大值                                                                                                                                      | number                                                                         | -            |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| locale | 单独设置的国际化地区值，根据不同的地区显示不同的货币符号，支持地区详见下面的地区目录 | string | `zh-Hans-CN` |
+| customSymbol | 自定义金额符号 | string | - |
+| numberPopoverRender | 自定义 Popover 的值，false 可以关闭它 | ((props: InputNumberProps, defaultText: string) => React.ReactNode) \| boolean | false |
+| numberFormatOptions | NumberFormat 的配置，文档可以查看 [mdn](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) | NumberFormatOptions | - |
+| min | 最小值 | number | - |
+| max | 最大值 | number | - |
 
 以上是 ProFormMoney 组件的使用示例和参数说明，根据需要选择和配置相应的参数来实现所需的功能。如果您有任何疑问，请参考示例代码和参数说明，或者查阅相关文档获取更多信息。
 
@@ -933,22 +933,22 @@ ProFormSegmented 组件支持以下参数：
     name="segmented"
     label="segmented"
     valueEnum={{
-      open: "未解决",
-      closed: "已解决",
+      open: '未解决',
+      closed: '已解决',
     }}
-    rules={[{ required: true, message: "Please select your country!" }]}
+    rules={[{ required: true, message: 'Please select your country!' }]}
   />
 
   <ProFormSegmented
     name="segmented"
     label="segmented"
     request={async () => [
-      { label: "全部", value: "all" },
-      { label: "未解决", value: "open" },
-      { label: "已解决", value: "closed" },
-      { label: "解决中", value: "processing" },
+      { label: '全部', value: 'all' },
+      { label: '未解决', value: 'open' },
+      { label: '已解决', value: 'closed' },
+      { label: '解决中', value: 'processing' },
     ]}
-    rules={[{ required: true, message: "Please select your country!" }]}
+    rules={[{ required: true, message: 'Please select your country!' }]}
   />
 </>
 ```

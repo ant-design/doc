@@ -164,7 +164,7 @@ RespuestEl tamaño sustancial del código base de ProComponents puede impactar l
 
 ### 兼容性
 
-#### 1. 前端兼容性有哪些要求？
+#### 前端兼容性有哪些要求？
 
 根据给出的表格，可以得知以下前端兼容性要求：
 
@@ -172,13 +172,13 @@ RespuestEl tamaño sustancial del código base de ProComponents puede impactar l
 - Internet Explorer 11：要求兼容 IE11，但需要使用 polyfills 进行支持。
 - Electron：支持最新的 Electron 版本。
 
-#### 2. 如何兼容 Edge 浏览器？
+#### 如何兼容 Edge 浏览器？
 
 根据给出的表格，Ant Design 对 Edge 浏览器的兼容性如下：
 
 - Edge 浏览器需要保持在最新的 2 个版本才能得到兼容支持。
 
-#### 3. 如何兼容 Firefox 浏览器？
+#### 如何兼容 Firefox 浏览器？
 
 根据给出的表格，Ant Design 对 Firefox 浏览器的兼容性如下：
 

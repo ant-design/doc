@@ -1,12 +1,12 @@
-### 1. 如何从 antd 4.x 版本升级到 5.x 版本？
+### 如何从 antd 4.x 版本升级到 5.x 版本？
 
 本文档将帮助你从 antd 4.x 版本升级到 antd 5.x 版本。如果你是 3.x 或者更老的版本，请先参考之前的[升级文档](https://4x.ant.design/docs/react/migration-v4-cn)升级到 4.x。
 
-### 2. antd 5.x 版本的升级有什么要注意的事项？
+### antd 5.x 版本的升级有什么要注意的事项？
 
 在将 antd 4.x 版本升级到 antd 5.x 版本时，有一些要注意的事项。请参考本文档获取详细的升级指南。
 
-### 3. 升级到 antd 5.x 版本后有哪些更新和改进？
+### 升级到 antd 5.x 版本后有哪些更新和改进？
 
 升级到 antd 5.x 版本后，有一些更新和改进。请阅读本文档了解这些更新和改进的详细信息。
 
@@ -242,8 +242,8 @@ pnpm --package=@ant-design/codemod-v5 dlx antd5-codemod src
 2. 在你的代码文件中，引入 `@ant-design/compatible/lib` 模块，并使用 `convertLegacyToken` 方法将 v5 版本的变量转译成 v4 版本。
 
 ```js
-const { theme } = require("antd/lib");
-const { convertLegacyToken } = require("@ant-design/compatible/lib");
+const { theme } = require('antd/lib');
+const { convertLegacyToken } = require('@ant-design/compatible/lib');
 
 // 获取默认的主题算法和种子
 const { defaultAlgorithm, defaultSeed } = theme;
@@ -265,7 +265,7 @@ const v4Vars = convertLegacyToken(mapV4Token);
 ```js
 module.exports = {
   // ... 其他配置
-  loader: "less-loader",
+  loader: 'less-loader',
   options: {
     lessOptions: {
       modifyVars: v4Vars,
@@ -290,8 +290,8 @@ module.exports = {
 1. 在你的代码文件中，引入 `@ant-design/compatible/lib` 模块，并使用 `convertLegacyToken` 方法将 v5 版本的变量转译成 v5 版本（相当于无需转译）。
 
 ```js
-const { theme } = require("antd/lib");
-const { convertLegacyToken } = require("@ant-design/compatible/lib");
+const { theme } = require('antd/lib');
+const { convertLegacyToken } = require('@ant-design/compatible/lib');
 
 // 获取默认的主题算法和种子
 const { defaultAlgorithm, defaultSeed } = theme;
@@ -306,7 +306,7 @@ const v5Vars = convertLegacyToken(mapV5Token);
 ```js
 module.exports = {
   // ... 其他配置
-  loader: "less-loader",
+  loader: 'less-loader',
   options: {
     lessOptions: {
       modifyVars: v5Vars,
@@ -331,8 +331,8 @@ module.exports = {
 1. 在你的代码文件中，引入 `@ant-design/compatible/lib` 模块，并使用 `convertLegacyToken` 方法将 v5 版本的变量转译成 v5 版本（相当于无需转译）。
 
 ```js
-const { theme } = require("antd/lib");
-const { convertLegacyToken } = require("@ant-design/compatible/lib");
+const { theme } = require('antd/lib');
+const { convertLegacyToken } = require('@ant-design/compatible/lib');
 
 // 获取默认的主题算法和种子
 const { defaultAlgorithm, defaultSeed } = theme;
@@ -345,7 +345,7 @@ const v5Vars = convertLegacyToken(mapV5Token);
 2. 在你的 less 文件中，可以直接使用转译后的 v5 变量。
 
 ```less
-@import (reference) "~antd/es/style/themes/index";
+@import (reference) '~antd/es/style/themes/index';
 
 // 使用 v5 变量进行样式定义
 .my-class {
@@ -441,7 +441,7 @@ export default {
 2. 在 webpack 配置文件（webpack-config.js）中导入 `@ant-design/moment-webpack-plugin` 插件：
 
 ```javascript
-import AntdMomentWebpackPlugin from "@ant-design/moment-webpack-plugin";
+import AntdMomentWebpackPlugin from '@ant-design/moment-webpack-plugin';
 
 module.exports = {
   // ...
@@ -558,9 +558,9 @@ pnpm add antd-v5@npm:antd@5
 如果你想在同一个项目中同时使用 Ant Design 4.x 和 5.x，你可以通过在引入组件时使用不同的 import 来实现。例如，假设你想在项目中使用 Ant Design 4.x 的 `Button` 组件和 Ant Design 5.x 的 `Button` 组件，你可以这样做：
 
 ```tsx
-import React from "react";
-import { Button as Button4 } from "antd"; // 使用 Ant Design 4.x 版本的 Button 组件
-import { Button as Button5 } from "antd-v5"; // 使用 Ant Design 5.x 版本的 Button 组件
+import React from 'react';
+import { Button as Button4 } from 'antd'; // 使用 Ant Design 4.x 版本的 Button 组件
+import { Button as Button5 } from 'antd-v5'; // 使用 Ant Design 5.x 版本的 Button 组件
 
 export default () => (
   <>
@@ -575,8 +575,8 @@ export default () => (
 另外，在使用 Ant Design 5.x 版本的组件时，你可能需要配置 `ConfigProvider` 来避免样式冲突。你可以将 `ConfigProvider` 包裹在你的应用顶层组件中，并设置 `prefixCls` 为一个特定的值，例如 `"ant5"`：
 
 ```tsx
-import React from "react";
-import { ConfigProvider as ConfigProvider5 } from "antd-v5";
+import React from 'react';
+import { ConfigProvider as ConfigProvider5 } from 'antd-v5';
 
 export default () => (
   <ConfigProvider5 prefixCls="ant5">

@@ -31,7 +31,7 @@ Ant Design 的文本框（Input）组件用于输入较少的字符总数时，�
 1. 导入 Ant Design 的文本框组件：
 
 ```javascript
-import { Input } from "antd";
+import { Input } from 'antd';
 ```
 
 2. 在需要使用文本框的地方，添加 `<Input />` 标签：
@@ -66,10 +66,10 @@ import { Input } from "antd";
 ```jsx
 <Input
   style={{
-    width: "200px",
-    height: "30px",
-    border: "1px solid #ccc",
-    borderRadius: "4px",
+    width: '200px',
+    height: '30px',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
   }}
 />
 ```
@@ -186,7 +186,7 @@ Ant Design 的文本框（Input）组件提供了多种事件来处理输入框�
 
 <!-- CSS -->
 <style>
-  input[type="radio"] {
+  input[type='radio'] {
     /* 样式设置 */
   }
 
@@ -237,11 +237,11 @@ Ant Design 的文本框（Input）组件提供了多种事件来处理输入框�
 
 选择列表（通常称为下拉菜单）允许用户从列表中选择一个选项或多个选项，为用户在选项的数量上提供了更多的灵活性。当选项多于 5 项时使用。列表选项按照逻辑排序，并尽量让内容显示完整。
 
-#### 1. 选择列表（Dropdown）如何工作？
+#### 选择列表（Dropdown）如何工作？
 
 选择列表（Dropdown）是一种用户界面组件，通常以文本形式显示当前选项。当用户点击或鼠标悬停在选择列表上时，会显示一个下拉菜单，其中包含可供选择的选项。用户可以通过点击特定选项来选择内容，或者使用键盘上的箭头键来浏览和选择选项。
 
-#### 2. 选择列表（Dropdown）适用于哪些场景？
+#### 选择列表（Dropdown）适用于哪些场景？
 
 选择列表适用于以下场景：
 
@@ -250,7 +250,7 @@ Ant Design 的文本框（Input）组件提供了多种事件来处理输入框�
 - 当要求用户从预定义的选项中选择一个或多个选项时；
 - 当需要向用户显示当前选择的内容时，选择列表通常以文本形式展示当前选项。
 
-#### 3. 如何设计一个好的选择列表（Dropdown）？
+#### 如何设计一个好的选择列表（Dropdown）？
 
 设计一个好的选择列表需要注意以下几点：
 
@@ -330,13 +330,13 @@ Ant Design 的文本框（Input）组件提供了多种事件来处理输入框�
 以下是一个示例代码，演示了如何实现简单点击上传：
 
 ```jsx
-import React from "react";
+import React from 'react';
 
 class SimpleUpload extends React.Component {
   handleUploadClick = () => {
-    const input = document.createElement("input");
-    input.type = "file";
-    input.accept = ".jpg, .png, .gif"; // 可以限制文件类型
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.jpg, .png, .gif'; // 可以限制文件类型
     input.onchange = this.handleFileUpload;
     input.click();
   };
@@ -344,7 +344,7 @@ class SimpleUpload extends React.Component {
   handleFileUpload = (event) => {
     const file = event.target.files[0];
     // 在这里执行上传操作
-    console.log("上传文件:", file);
+    console.log('上传文件:', file);
   };
 
   render() {
@@ -373,12 +373,12 @@ export default SimpleUpload;
 以下是一个示例代码，演示了如何处理点击上传后的文件：
 
 ```jsx
-import React from "react";
+import React from 'react';
 
 class SimpleUpload extends React.Component {
   handleUploadClick = () => {
-    const input = document.createElement("input");
-    input.type = "file";
+    const input = document.createElement('input');
+    input.type = 'file';
     input.onchange = this.handleFileUpload;
     input.click();
   };
@@ -386,13 +386,13 @@ class SimpleUpload extends React.Component {
   handleFileUpload = (event) => {
     const file = event.target.files[0];
     // 在这里执行一些文件处理操作
-    console.log("文件名称:", file.name);
-    console.log("文件类型:", file.type);
-    console.log("文件大小:", file.size, "bytes");
-    console.log("文件最后修改时间:", file.lastModifiedDate);
+    console.log('文件名称:', file.name);
+    console.log('文件类型:', file.type);
+    console.log('文件大小:', file.size, 'bytes');
+    console.log('文件最后修改时间:', file.lastModifiedDate);
 
     // 在这里执行上传操作
-    console.log("上传文件:", file);
+    console.log('上传文件:', file);
   };
 
   render() {
@@ -415,7 +415,7 @@ export default SimpleUpload;
 
 ```jsx
 // 示例代码
-import React from "react";
+import React from 'react';
 
 const ImagePreview = ({ children }) => {
   return (
@@ -433,8 +433,8 @@ export default ImagePreview;
 
 ```jsx
 // 示例代码
-import React from "react";
-import ImagePreview from "./ImagePreview";
+import React from 'react';
+import ImagePreview from './ImagePreview';
 
 const MyComponent = () => {
   return (
@@ -458,7 +458,7 @@ export default MyComponent;
 
 ```jsx
 // 示例代码
-import React from "react";
+import React from 'react';
 
 const ImagePreview = ({ children, photoLimit }) => {
   const photoCount = children.length;
