@@ -51,8 +51,22 @@ ${row.property
   })
   .join('\n')}
 `;
+
+        const propertyMd = row.property
+          .map((item) => {
+            const values = Object.values(item);
+            return `### ${packageName} 中 ${row.title}的${values[0]}属性如何使用？ \n\n${Object.keys(
+              item,
+            )
+              .map((key, index) => {
+                return `${key}: ${values[index]}`;
+              })
+              .join(' \n\n')}`;
+          })
+          .join('\n\n');
+
         return {
-          md: [mdTitle, item.md || mdRow].join('\n\n'),
+          md: [mdTitle, mdRow, propertyMd].join('\n\n'),
           tableMd: mdRow,
           title: row.title,
         };
