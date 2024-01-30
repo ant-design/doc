@@ -1,12 +1,11 @@
 ﻿import fs from 'fs';
 import { glob } from 'glob';
-import path from 'path';
+import path, { dirname } from 'path';
 import { remark } from 'remark';
 import remarkGfm from 'remark-gfm';
 import parse from 'remark-parse';
 import { unified } from 'unified';
 import { visit } from 'unist-util-visit';
-import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -91,7 +90,7 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
                 if (child.type === 'delete') return '';
                 return remark.stringify(child);
               })
-              .join('')
+              .join(''),
           );
         }
       });
@@ -140,7 +139,7 @@ function extractApiConfig(filePath, directory, prefixName) {
   return extractTableFromMd(
     markdownContent,
     filePath.replace(directory, ''),
-    prefixName
+    prefixName,
   );
 }
 
@@ -168,13 +167,13 @@ async function readProComponents() {
     __dirname,
     '..',
     'pro-components',
-    'packages'
+    'packages',
   );
   const apiConfigs = readApiConfigs(directoryPath, 'Pro');
 
   fs.writeFileSync(
     path.join(__dirname, '..', 'api', 'pro-components.json'),
-    JSON.stringify(apiConfigs, null, 2)
+    JSON.stringify(apiConfigs, null, 2),
   );
 }
 
@@ -184,7 +183,7 @@ async function readAntDesign() {
 
   fs.writeFileSync(
     path.join(__dirname, '..', 'api', 'ant-design.json'),
-    JSON.stringify(apiConfigs, null, 2)
+    JSON.stringify(apiConfigs, null, 2),
   );
 }
 
@@ -197,7 +196,7 @@ async function readUmi() {
     'docs',
     'docs',
     'docs',
-    'api'
+    'api',
   );
   const markdownFiles = readMarkdownFiles(directoryPath);
   const apiConfigs = [];
@@ -208,7 +207,7 @@ async function readUmi() {
     const ast = processor.parse(markdownContent);
     let apiJSON = [];
 
-    visit(ast, (node) => {
+    ast.children.forEach((node) => {
       if (node.type === 'heading') {
         if (node.depth === 1) {
           apiJSON.push({
@@ -217,6 +216,7 @@ async function readUmi() {
               ?.replace(/\n/g, '')
               .trim(),
             properties: [],
+            md: remark.stringify(node)?.replace(/\n/g, '').trim(),
           });
         }
         if (node.depth === 2 && apiJSON.at(-1)) {
@@ -244,28 +244,22 @@ async function readUmi() {
         if (apiJSON.at(-1)?.properties?.at(-1)?.property?.at(-1)) {
           let md = apiJSON.at(-1).properties.at(-1).property.at(-1).md;
 
-          md =
-            md + (Array.isArray(node.children) ? '' : remark.stringify(node));
+          md = md + remark.stringify(node);
 
-          apiJSON.at(-1).properties.at(-1).property.at(-1).md = md
-            .trim()
-            .replace(/\n/g, '');
+          apiJSON.at(-1).properties.at(-1).property.at(-1).md = md;
         } else if (apiJSON.at(-1)?.properties?.at(-1)) {
           let md = apiJSON.at(-1).properties.at(-1).md || '';
-          md =
-            md + (Array.isArray(node.children) ? '' : remark.stringify(node));
-
+          md = md + remark.stringify(node) + '\n';
           apiJSON.at(-1).properties.at(-1).md = md;
         }
       }
     });
-
     apiConfigs.push(apiJSON);
   }
 
   fs.writeFileSync(
     path.join(__dirname, '..', 'api', 'umi.json'),
-    JSON.stringify(apiConfigs, null, 2)
+    JSON.stringify(apiConfigs.flat(1), null, 2),
   );
 }
 
