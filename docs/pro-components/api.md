@@ -1,6 +1,6 @@
-## pro-components 的 Table 有哪些配置？
+### pro-components 的 Table 有哪些配置？
 
-#### ProTable - ProTable
+#### ProTable - ProTable 
 
 | 属性 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -41,7 +41,8 @@
 | columnsState | 受控的列状态，可以操作显示隐藏 | `ColumnStateType` | - |
 | ErrorBoundary | 自带了错误处理功能，防止白屏，`ErrorBoundary=false` 关闭默认错误边界 | `ReactNode` | 内置 ErrorBoundary |
 
-#### ProTable - RecordCreator
+
+#### ProTable - RecordCreator 
 
 | 属性 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -49,7 +50,8 @@
 | position | 行增加在哪里，开始或者末尾 | `top` \| `bottom` | `bottom` |
 | (...buttonProps) | antd 的 [ButtonProps](https://ant.design/components/button-cn/#API) | ButtonProps | — |
 
-#### ProTable - ColumnStateType
+
+#### ProTable - ColumnStateType 
 
 | 属性 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -59,7 +61,8 @@
 | persistenceKey | 持久化列的 key，用于判断是否是同一个 table | `string \| number` | - |
 | persistenceType | 持久化列的类型，localStorage 设置在关闭浏览器后也是存在的，sessionStorage 关闭浏览器后会丢失 | `localStorage \| sessionStorage` | - |
 
-#### ProTable - Search 搜索表单
+
+#### ProTable - Search 搜索表单 
 
 | 属性 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -77,7 +80,8 @@
 | optionRender | 自定义操作栏 | `((searchConfig,formProps,dom) => ReactNode[])`\|`false` | - |
 | showHiddenNum | 是否显示收起之后显示隐藏个数 | `boolean` | `false` |
 
-#### ProTable - Columns 列定义
+
+#### ProTable - Columns 列定义 
 
 | 属性 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -107,7 +111,8 @@
 | initialValue | 查询表单项初始值 | `any` | - |
 | disable | 列设置中`disabled`的状态 | `boolean` \| `{ checkbox: boolean; }` | - |
 
-#### ProTable - 批量操作
+
+#### ProTable - 批量操作 
 
 | 属性 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -115,7 +120,8 @@
 | tableAlertRender | 自定义批量操作工具栏左侧信息区域，false 时不显示 | `({ selectedRowKeys: Key[], selectedRows: T[], onCleanSelected: ()=>void }) => ReactNode)`\|`false` | - |
 | tableAlertOptionRender | 自定义批量操作工具栏右侧选项区域，false 时不显示 | `({ selectedRowKeys: Key[], selectedRows: T[], onCleanSelected: ()=>void }) => ReactNode)`\|`false` | - |
 
-#### ProTable - ListToolBarProps
+
+#### ProTable - ListToolBarProps 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -130,16 +136,18 @@
 | menu | 菜单配置 | `ListToolBarMenu` | - |
 | tabs | 标签页配置，仅当 `multipleLine` 为 true 时有效 | `ListToolBarTabs` | - |
 
-#### ProTable - Setting
 
-| 参数    | 说明         | 类型                  | 默认值 |
-| ------- | ------------ | --------------------- | ------ |
-| icon    | 图标         | `ReactNode`           | -      |
-| tooltip | tooltip 描述 | `string`              | -      |
-| key     | 操作唯一标识 | `string`              | -      |
-| onClick | 设置被触发   | `(key: string)=>void` | -      |
+#### ProTable - Setting 
 
-#### ProTable - ListToolBarMenu
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| icon | 图标 | `ReactNode` | - |
+| tooltip | tooltip 描述 | `string` | - |
+| key | 操作唯一标识 | `string` | - |
+| onClick | 设置被触发 | `(key: string)=>void` | - |
+
+
+#### ProTable - ListToolBarMenu 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -148,21 +156,24 @@
 | items | 菜单项 | `{ key: string; label: ReactNode }[]` | - |
 | onChange | 切换菜单的回调 | `(activeKey)=>void` | - |
 
-#### ProTable - ListToolBarTabs
 
-| 参数      | 说明           | 类型                                | 默认值 |
-| --------- | -------------- | ----------------------------------- | ------ |
-| activeKey | 当前选中项     | `string`                            | -      |
-| items     | 菜单项         | `{ key: string; tab: ReactNode }[]` | -      |
-| onChange  | 切换菜单的回调 | `(activeKey)=>void`                 | -      |
+#### ProTable - ListToolBarTabs 
 
-#### ProTable - TableDropdown
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| activeKey | 当前选中项 | `string` | - |
+| items | 菜单项 | `{ key: string; tab: ReactNode }[]` | - |
+| onChange | 切换菜单的回调 | `(activeKey)=>void` | - |
+
+
+#### ProTable - TableDropdown 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | key | 唯一标志 | `string` | - |
 | name | 内容 | `ReactNode` | - |
 | (...Menu.Item) | antd 的 [Menu.Item](https://ant.design/components/menu-cn/#Menu.Item) | `Menu.Item` | - |
+
 
 ### pro-components 的 ProTable - ProTable 有哪些配置？
 
@@ -205,6 +216,7 @@
 | columnsState | 受控的列状态，可以操作显示隐藏 | `ColumnStateType` | - |
 | ErrorBoundary | 自带了错误处理功能，防止白屏，`ErrorBoundary=false` 关闭默认错误边界 | `ReactNode` | 内置 ErrorBoundary |
 
+
 ### pro-components 的 ProTable - RecordCreator 有哪些配置？
 
 | 属性 | 描述 | 类型 | 默认值 |
@@ -212,6 +224,7 @@
 | record | 需要新增的行数据，一般来说包含唯一 key | `T` | `{}` |
 | position | 行增加在哪里，开始或者末尾 | `top` \| `bottom` | `bottom` |
 | (...buttonProps) | antd 的 [ButtonProps](https://ant.design/components/button-cn/#API) | ButtonProps | — |
+
 
 ### pro-components 的 ProTable - ColumnStateType 有哪些配置？
 
@@ -222,6 +235,7 @@
 | onChange | 列状态的值发生改变之后触发 | `(value:Record<string, ColumnsState>)=>void` | - |
 | persistenceKey | 持久化列的 key，用于判断是否是同一个 table | `string \| number` | - |
 | persistenceType | 持久化列的类型，localStorage 设置在关闭浏览器后也是存在的，sessionStorage 关闭浏览器后会丢失 | `localStorage \| sessionStorage` | - |
+
 
 ### pro-components 的 ProTable - Search 搜索表单 有哪些配置？
 
@@ -240,6 +254,7 @@
 | onCollapse | 收起按钮的事件 | `(collapsed: boolean) => void;` | - |
 | optionRender | 自定义操作栏 | `((searchConfig,formProps,dom) => ReactNode[])`\|`false` | - |
 | showHiddenNum | 是否显示收起之后显示隐藏个数 | `boolean` | `false` |
+
 
 ### pro-components 的 ProTable - Columns 列定义 有哪些配置？
 
@@ -271,6 +286,7 @@
 | initialValue | 查询表单项初始值 | `any` | - |
 | disable | 列设置中`disabled`的状态 | `boolean` \| `{ checkbox: boolean; }` | - |
 
+
 ### pro-components 的 ProTable - 批量操作 有哪些配置？
 
 | 属性 | 描述 | 类型 | 默认值 |
@@ -278,6 +294,7 @@
 | alwaysShowAlert | 总是展示 alert，默认无选择不展示（`rowSelection`内置属性） | `boolean` | - |
 | tableAlertRender | 自定义批量操作工具栏左侧信息区域，false 时不显示 | `({ selectedRowKeys: Key[], selectedRows: T[], onCleanSelected: ()=>void }) => ReactNode)`\|`false` | - |
 | tableAlertOptionRender | 自定义批量操作工具栏右侧选项区域，false 时不显示 | `({ selectedRowKeys: Key[], selectedRows: T[], onCleanSelected: ()=>void }) => ReactNode)`\|`false` | - |
+
 
 ### pro-components 的 ProTable - ListToolBarProps 有哪些配置？
 
@@ -294,14 +311,16 @@
 | menu | 菜单配置 | `ListToolBarMenu` | - |
 | tabs | 标签页配置，仅当 `multipleLine` 为 true 时有效 | `ListToolBarTabs` | - |
 
+
 ### pro-components 的 ProTable - Setting 有哪些配置？
 
-| 参数    | 说明         | 类型                  | 默认值 |
-| ------- | ------------ | --------------------- | ------ |
-| icon    | 图标         | `ReactNode`           | -      |
-| tooltip | tooltip 描述 | `string`              | -      |
-| key     | 操作唯一标识 | `string`              | -      |
-| onClick | 设置被触发   | `(key: string)=>void` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| icon | 图标 | `ReactNode` | - |
+| tooltip | tooltip 描述 | `string` | - |
+| key | 操作唯一标识 | `string` | - |
+| onClick | 设置被触发 | `(key: string)=>void` | - |
+
 
 ### pro-components 的 ProTable - ListToolBarMenu 有哪些配置？
 
@@ -312,13 +331,15 @@
 | items | 菜单项 | `{ key: string; label: ReactNode }[]` | - |
 | onChange | 切换菜单的回调 | `(activeKey)=>void` | - |
 
+
 ### pro-components 的 ProTable - ListToolBarTabs 有哪些配置？
 
-| 参数      | 说明           | 类型                                | 默认值 |
-| --------- | -------------- | ----------------------------------- | ------ |
-| activeKey | 当前选中项     | `string`                            | -      |
-| items     | 菜单项         | `{ key: string; tab: ReactNode }[]` | -      |
-| onChange  | 切换菜单的回调 | `(activeKey)=>void`                 | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| activeKey | 当前选中项 | `string` | - |
+| items | 菜单项 | `{ key: string; tab: ReactNode }[]` | - |
+| onChange | 切换菜单的回调 | `(activeKey)=>void` | - |
+
 
 ### pro-components 的 ProTable - TableDropdown 有哪些配置？
 
@@ -328,9 +349,10 @@
 | name | 内容 | `ReactNode` | - |
 | (...Menu.Item) | antd 的 [Menu.Item](https://ant.design/components/menu-cn/#Menu.Item) | `Menu.Item` | - |
 
-## pro-components 的 Table 有哪些配置？
 
-#### ProTable - API
+### pro-components 的 Table 有哪些配置？
+
+#### ProTable - API 
 
 | 属性 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -342,7 +364,8 @@
 | `controlled` | 是否受控，如果受控每次编辑都会触发 onChange，并且会修改 dataSource | `boolean` | false |
 | `editableFormRef` | table 所有的 form，带了一些表格特有的操作 | `React.Ref<EditableFormInstance<T>>` | `undefined` |
 
-#### ProTable - editable 编辑行配置
+
+#### ProTable - editable 编辑行配置 
 
 | 属性 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -362,6 +385,7 @@
 | onlyOneLineEditorAlertMessage | 只能编辑一行的的提示 | `ReactNode` | `只能同时编辑一行` |
 | onlyAddOneLineAlertMessage | 只能同时新增一行的提示 | `ReactNode` | `只能新增一行` |
 
+
 ### pro-components 的 ProTable - API 有哪些配置？
 
 | 属性 | 描述 | 类型 | 默认值 |
@@ -373,6 +397,7 @@
 | `editable` | 可编辑表格的相关配置 | - |
 | `controlled` | 是否受控，如果受控每次编辑都会触发 onChange，并且会修改 dataSource | `boolean` | false |
 | `editableFormRef` | table 所有的 form，带了一些表格特有的操作 | `React.Ref<EditableFormInstance<T>>` | `undefined` |
+
 
 ### pro-components 的 ProTable - editable 编辑行配置 有哪些配置？
 
@@ -394,15 +419,17 @@
 | onlyOneLineEditorAlertMessage | 只能编辑一行的的提示 | `ReactNode` | `只能同时编辑一行` |
 | onlyAddOneLineAlertMessage | 只能同时新增一行的提示 | `ReactNode` | `只能新增一行` |
 
-## pro-components 的 Table 有哪些配置？
 
-#### ProTable - API
+### pro-components 的 Table 有哪些配置？
+
+#### ProTable - API 
 
 | 属性 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | dragSortKey | 如配置此参数，则会在该 key 对应的行显示拖拽排序把手，允许拖拽排序 | `string` | - |
 | dragSortHandlerRender | 渲染自定义拖动排序把手的函数 如配置了 dragSortKey 但未配置此参数，则使用默认把手图标 | `(rowData: T, idx: number) => React.ReactNode` | `<MenuOutlined className="dragSortDefaultHandle" style={{ cursor: 'grab', color: '#999' }} />` |
 | onDragSortEnd | 拖动排序完成回调 | `(beforeIndex: number, afterIndex: number, newDataSource: T[]) => Promise<void> \| void` | - |
+
 
 ### pro-components 的 ProTable - API 有哪些配置？
 
@@ -412,9 +439,10 @@
 | dragSortHandlerRender | 渲染自定义拖动排序把手的函数 如配置了 dragSortKey 但未配置此参数，则使用默认把手图标 | `(rowData: T, idx: number) => React.ReactNode` | `<MenuOutlined className="dragSortDefaultHandle" style={{ cursor: 'grab', color: '#999' }} />` |
 | onDragSortEnd | 拖动排序完成回调 | `(beforeIndex: number, afterIndex: number, newDataSource: T[]) => Promise<void> \| void` | - |
 
-## pro-components 的 Skeleton 有哪些配置？
 
-#### ProSkeleton - API
+### pro-components 的 Skeleton 有哪些配置？
+
+#### ProSkeleton - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -426,6 +454,7 @@
 | toolbar | 列表的操作栏骨架屏 | boolean | - |
 | renderFormItem | 自定义 `mode=update 或 edit` 下的 dom 表现，一般用于渲染编辑框 | - | - |
 | render | 自定义 `mode=read` 下的 dom 表现，只是单纯的表现形式 | - | - |
+
 
 ### pro-components 的 ProSkeleton - API 有哪些配置？
 
@@ -440,9 +469,10 @@
 | renderFormItem | 自定义 `mode=update 或 edit` 下的 dom 表现，一般用于渲染编辑框 | - | - |
 | render | 自定义 `mode=read` 下的 dom 表现，只是单纯的表现形式 | - | - |
 
-## pro-components 的 List 有哪些配置？
 
-#### ProList - ProList API
+### pro-components 的 List 有哪些配置？
+
+#### ProList - ProList API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -463,7 +493,8 @@
 | itemHeaderRender | 自定义每一列的 header，与 itemRender 不同的时，它会保留多选和展开收起 | - | - |
 | itemCardProps | 自定义卡片列表的 proCard props，只在卡片列表下生效 | - | - |
 
-#### ProList - Metas.[Meta] 通用 API
+
+#### ProList - Metas.[Meta] 通用 API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -471,54 +502,63 @@
 | valueType | 值的类型，和 ProTable 一致 | `'text'` \| `'date'` ... | `'text'` |
 | render | 自定义渲染函数 | `(text: React.ReactNode,record: T,index: number) => React.ReactNode \| React.ReactNode[]` | - |
 
-#### ProList - Metas.type
 
-| 参数      | 说明 | 类型 | 默认值   |
-| --------- | ---- | ---- | -------- |
-| dataIndex | -    | -    | `'type'` |
+#### ProList - Metas.type 
 
-#### ProList - Metas.title
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'type'` |
 
-| 参数      | 说明 | 类型 | 默认值    |
-| --------- | ---- | ---- | --------- |
-| dataIndex | -    | -    | `'title'` |
 
-#### ProList - Metas.subTitle
+#### ProList - Metas.title 
 
-| 参数      | 说明 | 类型 | 默认值       |
-| --------- | ---- | ---- | ------------ |
-| dataIndex | -    | -    | `'subTitle'` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'title'` |
 
-#### ProList - Metas.description
 
-| 参数      | 说明 | 类型 | 默认值          |
-| --------- | ---- | ---- | --------------- |
-| dataIndex | -    | -    | `'description'` |
+#### ProList - Metas.subTitle 
 
-#### ProList - Metas.avatar
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'subTitle'` |
 
-| 参数      | 说明 | 类型 | 默认值     |
-| --------- | ---- | ---- | ---------- |
-| dataIndex | -    | -    | `'avatar'` |
 
-#### ProList - Metas.actions
+#### ProList - Metas.description 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'description'` |
+
+
+#### ProList - Metas.avatar 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'avatar'` |
+
+
+#### ProList - Metas.actions 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | dataIndex | - | - | `'actions'` |
 | cardActionProps | 设置卡片列表把 action 渲染到哪里｜`extra`｜`'actions' \| 'extra'` |
 
-#### ProList - Metas.content
 
-| 参数      | 说明 | 类型 | 默认值      |
-| --------- | ---- | ---- | ----------- |
-| dataIndex | -    | -    | `'content'` |
+#### ProList - Metas.content 
 
-#### ProList - Metas.extra
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'content'` |
 
-| 参数      | 说明 | 类型 | 默认值    |
-| --------- | ---- | ---- | --------- |
-| dataIndex | -    | -    | `'extra'` |
+
+#### ProList - Metas.extra 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'extra'` |
+
 
 ### pro-components 的 ProList - ProList API 有哪些配置？
 
@@ -541,6 +581,7 @@
 | itemHeaderRender | 自定义每一列的 header，与 itemRender 不同的时，它会保留多选和展开收起 | - | - |
 | itemCardProps | 自定义卡片列表的 proCard props，只在卡片列表下生效 | - | - |
 
+
 ### pro-components 的 ProList - Metas.[Meta] 通用 API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -549,35 +590,41 @@
 | valueType | 值的类型，和 ProTable 一致 | `'text'` \| `'date'` ... | `'text'` |
 | render | 自定义渲染函数 | `(text: React.ReactNode,record: T,index: number) => React.ReactNode \| React.ReactNode[]` | - |
 
+
 ### pro-components 的 ProList - Metas.type 有哪些配置？
 
-| 参数      | 说明 | 类型 | 默认值   |
-| --------- | ---- | ---- | -------- |
-| dataIndex | -    | -    | `'type'` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'type'` |
+
 
 ### pro-components 的 ProList - Metas.title 有哪些配置？
 
-| 参数      | 说明 | 类型 | 默认值    |
-| --------- | ---- | ---- | --------- |
-| dataIndex | -    | -    | `'title'` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'title'` |
+
 
 ### pro-components 的 ProList - Metas.subTitle 有哪些配置？
 
-| 参数      | 说明 | 类型 | 默认值       |
-| --------- | ---- | ---- | ------------ |
-| dataIndex | -    | -    | `'subTitle'` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'subTitle'` |
+
 
 ### pro-components 的 ProList - Metas.description 有哪些配置？
 
-| 参数      | 说明 | 类型 | 默认值          |
-| --------- | ---- | ---- | --------------- |
-| dataIndex | -    | -    | `'description'` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'description'` |
+
 
 ### pro-components 的 ProList - Metas.avatar 有哪些配置？
 
-| 参数      | 说明 | 类型 | 默认值     |
-| --------- | ---- | ---- | ---------- |
-| dataIndex | -    | -    | `'avatar'` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'avatar'` |
+
 
 ### pro-components 的 ProList - Metas.actions 有哪些配置？
 
@@ -586,21 +633,24 @@
 | dataIndex | - | - | `'actions'` |
 | cardActionProps | 设置卡片列表把 action 渲染到哪里｜`extra`｜`'actions' \| 'extra'` |
 
+
 ### pro-components 的 ProList - Metas.content 有哪些配置？
 
-| 参数      | 说明 | 类型 | 默认值      |
-| --------- | ---- | ---- | ----------- |
-| dataIndex | -    | -    | `'content'` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'content'` |
+
 
 ### pro-components 的 ProList - Metas.extra 有哪些配置？
 
-| 参数      | 说明 | 类型 | 默认值    |
-| --------- | ---- | ---- | --------- |
-| dataIndex | -    | -    | `'extra'` |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dataIndex | - | - | `'extra'` |
 
-## pro-components 的 Layout 有哪些配置？
 
-#### ProLayout - ProLayout
+### pro-components 的 Layout 有哪些配置？
+
+#### ProLayout - ProLayout 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -655,7 +705,8 @@
 | menuProps | 传递到 antd menu 组件的 props, 参考 [导航菜单](https://ant.design/components/menu-cn/) | `MenuProps` | undefined |
 | waterMarkProps | 配置水印，水印是 PageContainer 的功能，layout 只是透传给 PageContainer | - |
 
-#### ProLayout - menu
+
+#### ProLayout - menu 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -668,7 +719,8 @@
 | onLoadingChange | 菜单的加载状态变更 | `(loading)=>void` | - |
 | request | 远程加载菜单的方法，会自动修改 loading 状态 | `(params,defaultMenuDat) => Promise<MenuDataItem[]>` | - |
 
-#### ProLayout - SettingDrawer
+
+#### ProLayout - SettingDrawer 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -682,22 +734,25 @@
 | enableDarkTheme | 打开黑色主题切换功能 ｜ `boolean` | `false` |
 | colorList | 自带的颜色切换系统 (ColorList 的 title 会作为 Tooltip 显示) ｜ `{key,color,title?}[]` | `ColorList` |
 
-#### ProLayout - PageLoading
 
-| 参数                            | 说明 | 类型 |
-| ------------------------------- | ---- | ---- |
-| 支持所有的 antd `Spin` 组件参数 | -    | -    |
-
-#### ProLayout - getMenuData
+#### ProLayout - PageLoading 
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
+| 支持所有的 antd `Spin` 组件参数 | - | - |
+
+
+#### ProLayout - getMenuData 
+
+| 参数 | 说明 | 类型 |
+| --- | --- | --- |
 | routes | 路由的配置信息 | - |
 | menu | menu 的配置项，默认 `{locale: true}` | `{ locale: boolean }` | - |
 | menuDataRender | menuData 的 render 方法，用来自定义 menuData | `(menuData: MenuDataItem[]) => MenuDataItem[]` | - |
 | formatMessage | react-intl 的 formatMessage 方法 | `(data: { id: any; defaultMessage?: string }) => string;` | - |
 
-#### ProLayout - getPageTitle
+
+#### ProLayout - getPageTitle 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -707,13 +762,15 @@
 | title | title 的类型 | string | 'Ant Design Pro' |
 | formatMessage | react-intl 的 formatMessage 方法 | `(data: { id: any; defaultMessage?: string }) => string;` | - |
 
-#### ProLayout - GridContent
 
-| 参数         | 说明     | 类型               | 默认值 |
-| ------------ | -------- | ------------------ | ------ |
-| contentWidth | 内容模式 | `Fluid` \| `Fixed` | -      |
+#### ProLayout - GridContent 
 
-#### ProLayout - Layout 的 token
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| contentWidth | 内容模式 | `Fluid` \| `Fixed` | - |
+
+
+#### ProLayout - Layout 的 token 
 
 | token | 说明 | 默认值 |
 | --- | --- | --- |
@@ -722,7 +779,8 @@
 | colorTextAppListIconHover | 跨站点应用的图标 hover 颜色 | `rgba(0, 0, 0, 0.65)` |
 | colorBgAppListIconHover | 跨站点应用的图标 hover 背景颜色 | `rgba(0, 0, 0, 0.04)` |
 
-#### ProLayout - Sider Token
+
+#### ProLayout - Sider Token 
 
 | token | 说明 | 默认值 |
 | --- | --- | --- |
@@ -741,7 +799,8 @@
 | colorTextCollapsedButton | 展开收起按钮字体颜色 | `colorTextMenuSecondary` |
 | colorTextCollapsedButtonHover | 展开收起按钮 hover 时字体颜色 | `colorTextMenu` |
 
-#### ProLayout - Header Token
+
+#### ProLayout - Header Token 
 
 | token | 说明 | 默认值 |
 | --- | --- | --- |
@@ -757,7 +816,8 @@
 | colorBgRightActionsItemHover | 右上角选中的 hover 颜色 | `rgba(0, 0, 0, 0.03)` |
 | heightLayoutHeader | header 高度 | 56 |
 
-#### ProLayout - pageContainer Token
+
+#### ProLayout - pageContainer Token 
 
 | token | 说明 | 默认值 |
 | --- | --- | --- |
@@ -765,6 +825,7 @@
 | paddingInlinePageContainerContent | pageContainer 自带的 padding inline | `40` |
 | colorBgPageContainer | pageContainer 的背景颜色 | `transparent` |
 | colorBgPageContainerFixed | pageContainer 被固定时的背景颜色 | `#FFF` |
+
 
 ### pro-components 的 ProLayout - ProLayout 有哪些配置？
 
@@ -821,6 +882,7 @@
 | menuProps | 传递到 antd menu 组件的 props, 参考 [导航菜单](https://ant.design/components/menu-cn/) | `MenuProps` | undefined |
 | waterMarkProps | 配置水印，水印是 PageContainer 的功能，layout 只是透传给 PageContainer | - |
 
+
 ### pro-components 的 ProLayout - menu 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -833,6 +895,7 @@
 | loading | 菜单是否正在加载中 | `boolean` | `false` |
 | onLoadingChange | 菜单的加载状态变更 | `(loading)=>void` | - |
 | request | 远程加载菜单的方法，会自动修改 loading 状态 | `(params,defaultMenuDat) => Promise<MenuDataItem[]>` | - |
+
 
 ### pro-components 的 ProLayout - SettingDrawer 有哪些配置？
 
@@ -848,20 +911,23 @@
 | enableDarkTheme | 打开黑色主题切换功能 ｜ `boolean` | `false` |
 | colorList | 自带的颜色切换系统 (ColorList 的 title 会作为 Tooltip 显示) ｜ `{key,color,title?}[]` | `ColorList` |
 
+
 ### pro-components 的 ProLayout - PageLoading 有哪些配置？
 
-| 参数                            | 说明 | 类型 |
-| ------------------------------- | ---- | ---- |
-| 支持所有的 antd `Spin` 组件参数 | -    | -    |
+| 参数 | 说明 | 类型 |
+| --- | --- | --- |
+| 支持所有的 antd `Spin` 组件参数 | - | - |
+
 
 ### pro-components 的 ProLayout - getMenuData 有哪些配置？
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | routes | 路由的配置信息 | - |
 | menu | menu 的配置项，默认 `{locale: true}` | `{ locale: boolean }` | - |
 | menuDataRender | menuData 的 render 方法，用来自定义 menuData | `(menuData: MenuDataItem[]) => MenuDataItem[]` | - |
 | formatMessage | react-intl 的 formatMessage 方法 | `(data: { id: any; defaultMessage?: string }) => string;` | - |
+
 
 ### pro-components 的 ProLayout - getPageTitle 有哪些配置？
 
@@ -873,11 +939,13 @@
 | title | title 的类型 | string | 'Ant Design Pro' |
 | formatMessage | react-intl 的 formatMessage 方法 | `(data: { id: any; defaultMessage?: string }) => string;` | - |
 
+
 ### pro-components 的 ProLayout - GridContent 有哪些配置？
 
-| 参数         | 说明     | 类型               | 默认值 |
-| ------------ | -------- | ------------------ | ------ |
-| contentWidth | 内容模式 | `Fluid` \| `Fixed` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| contentWidth | 内容模式 | `Fluid` \| `Fixed` | - |
+
 
 ### pro-components 的 ProLayout - Layout 的 token 有哪些配置？
 
@@ -887,6 +955,7 @@
 | colorTextAppListIcon | 跨站点应用的图标颜色 | `#666` |
 | colorTextAppListIconHover | 跨站点应用的图标 hover 颜色 | `rgba(0, 0, 0, 0.65)` |
 | colorBgAppListIconHover | 跨站点应用的图标 hover 背景颜色 | `rgba(0, 0, 0, 0.04)` |
+
 
 ### pro-components 的 ProLayout - Sider Token 有哪些配置？
 
@@ -907,6 +976,7 @@
 | colorTextCollapsedButton | 展开收起按钮字体颜色 | `colorTextMenuSecondary` |
 | colorTextCollapsedButtonHover | 展开收起按钮 hover 时字体颜色 | `colorTextMenu` |
 
+
 ### pro-components 的 ProLayout - Header Token 有哪些配置？
 
 | token | 说明 | 默认值 |
@@ -923,6 +993,7 @@
 | colorBgRightActionsItemHover | 右上角选中的 hover 颜色 | `rgba(0, 0, 0, 0.03)` |
 | heightLayoutHeader | header 高度 | 56 |
 
+
 ### pro-components 的 ProLayout - pageContainer Token 有哪些配置？
 
 | token | 说明 | 默认值 |
@@ -932,9 +1003,10 @@
 | colorBgPageContainer | pageContainer 的背景颜色 | `transparent` |
 | colorBgPageContainerFixed | pageContainer 被固定时的背景颜色 | `#FFF` |
 
-## pro-components 的 Layout 有哪些配置？
 
-#### ProLayout - 基础参数
+### pro-components 的 Layout 有哪些配置？
+
+#### ProLayout - 基础参数 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -947,7 +1019,8 @@
 | fontColor | 水印文字颜色 | `string` | `rgba(0,0,0,.15)` | 2.2.0 |
 | fontSize | 文字大小 | `string` \| `number` | 16 | 2.2.0 |
 
-#### ProLayout - 高级参数
+
+#### ProLayout - 高级参数 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -957,6 +1030,7 @@
 | gapY | 水印之间的垂直间距 | number | 222 | 2.4.0 |
 | offsetLeft | 水印在 canvas 画布上绘制的水平偏移量，正常情况下，水印绘制在中间位置，即 `offsetLeft = gapX / 2` | number | `offsetLeft = gapX / 2` | 2.4.0 |
 | offsetTop | 水印在 canvas 画布上绘制的垂直偏移量，正常情况下，水印绘制在中间位置，即 `offsetTop = gapY / 2` | number | `offsetTop = gapY / 2` | 2.4.0 |
+
 
 ### pro-components 的 ProLayout - 基础参数 有哪些配置？
 
@@ -971,6 +1045,7 @@
 | fontColor | 水印文字颜色 | `string` | `rgba(0,0,0,.15)` | 2.2.0 |
 | fontSize | 文字大小 | `string` \| `number` | 16 | 2.2.0 |
 
+
 ### pro-components 的 ProLayout - 高级参数 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -982,12 +1057,13 @@
 | offsetLeft | 水印在 canvas 画布上绘制的水平偏移量，正常情况下，水印绘制在中间位置，即 `offsetLeft = gapX / 2` | number | `offsetLeft = gapX / 2` | 2.4.0 |
 | offsetTop | 水印在 canvas 画布上绘制的垂直偏移量，正常情况下，水印绘制在中间位置，即 `offsetTop = gapY / 2` | number | `offsetTop = gapY / 2` | 2.4.0 |
 
-## pro-components 的 Layout 有哪些配置？
 
-#### ProLayout - API
+### pro-components 的 Layout 有哪些配置？
+
+#### ProLayout - API 
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | avatar | 标题栏旁的头像 | - |
 | backIcon | 自定义 back icon ，如果为 false 不渲染 back icon | ReactNode \| boolean | \<ArrowLeft /> |
 | breadcrumb | 面包屑的配置 | - |
@@ -999,11 +1075,12 @@
 | tags | title 旁的 tag 列表 | - |
 | title | 自定义标题文字 | ReactNode | - |
 | onBack | 返回按钮的点击事件 | () => void | - |
+
 
 ### pro-components 的 ProLayout - API 有哪些配置？
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | avatar | 标题栏旁的头像 | - |
 | backIcon | 自定义 back icon ，如果为 false 不渲染 back icon | ReactNode \| boolean | \<ArrowLeft /> |
 | breadcrumb | 面包屑的配置 | - |
@@ -1016,9 +1093,10 @@
 | title | 自定义标题文字 | ReactNode | - |
 | onBack | 返回按钮的点击事件 | () => void | - |
 
-## pro-components 的 Layout 有哪些配置？
 
-#### ProLayout - API
+### pro-components 的 Layout 有哪些配置？
+
+#### ProLayout - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1036,13 +1114,15 @@
 | waterMarkProps | 配置水印，Layout 会透传给 PageContainer，但是以 PageContainer 的配置优先 | - |
 | tabProps | Tabs 的相关属性，只有卡片样式的页签支持新增和关闭选项。使用 `closable={false}` 禁止关闭 | - |
 
-#### ProLayout - FooterToolbar
+
+#### ProLayout - FooterToolbar 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | extra | 额外内容区，位于 content 的右侧 | `ReactNode` | - |
 | children | 内容区域 | `ReactNode`\|`ReactNode[]` | - |
 
+
 ### pro-components 的 ProLayout - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -1060,6 +1140,7 @@
 | footer | 悬浮在底部的操作栏，传入一个数组，会自动加空格 | `ReactNode[]` | - |
 | waterMarkProps | 配置水印，Layout 会透传给 PageContainer，但是以 PageContainer 的配置优先 | - |
 | tabProps | Tabs 的相关属性，只有卡片样式的页签支持新增和关闭选项。使用 `closable={false}` 禁止关闭 | - |
+
 
 ### pro-components 的 ProLayout - FooterToolbar 有哪些配置？
 
@@ -1068,9 +1149,10 @@
 | extra | 额外内容区，位于 content 的右侧 | `ReactNode` | - |
 | children | 内容区域 | `ReactNode`\|`ReactNode[]` | - |
 
-## pro-components 的 Form 有哪些配置？
 
-#### ProForm - 何时使用 ProForm？
+### pro-components 的 Form 有哪些配置？
+
+#### ProForm - 何时使用 ProForm？ 
 
 | 布局 |
 | --- |
@@ -1080,7 +1162,8 @@
 | 一般用于作为行内内置的筛选，比如卡片操作栏和表格操作栏。 |
 | 分步表单，需要配置 StepForm 使用。 |
 
-#### ProForm - ProForm
+
+#### ProForm - ProForm 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1100,14 +1183,16 @@
 | rowProps | 开启 `grid` 模式时传递给 `Row`, 仅在`ProFormGroup`, `ProFormList`, `ProFormFieldSet` 中有效 | { gutter: 8 } |
 | 注意 `LightFilter` 和 `QueryFilter` 仅支持除 `wrapperCol` \| `labelCol` \| `layout` 外的其他 antd `Form` 组件参数 | - | - |
 
-#### ProForm - ProForm.Group
 
-| 参数     | 说明                 | 类型              | 默认值 |
-| -------- | -------------------- | ----------------- | ------ |
-| title    | 标题                 | `string`          | -      |
-| children | 表单控件或者其他元素 | `React.ReactNode` | -      |
+#### ProForm - ProForm.Group 
 
-#### ProForm - submitter
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| title | 标题 | `string` | - |
+| children | 表单控件或者其他元素 | `React.ReactNode` | - |
+
+
+#### ProForm - submitter 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1118,13 +1203,15 @@
 | resetButtonProps | 重置按钮的 props | - |
 | render | 自定义操作的渲染 | `false`\|`(props,dom:JSX[])=>ReactNode[]` | - |
 
-#### ProForm - formRef
+
+#### ProForm - formRef 
 
 | 方法名 | 使用描述 |
 | --- | --- |
 | `getFieldsFormatValue` | 使用方法与 `FormInstance` 的 `getFieldsValue` 方法相同，将返回格式化后的所有数据 |
 | `getFieldFormatValue` | 使用方法与 `FormInstance` 的 `getFieldValue` 方法相同，将返回格式化后的指定数据 |
 | `validateFieldsReturnFormatValue` | 使用方法与 `FormInstance` 的 `validateFields` 方法相同，验证通过后将返回格式化后的所有数据 |
+
 
 ### pro-components 的 ProForm - 何时使用 ProForm？ 有哪些配置？
 
@@ -1135,6 +1222,7 @@
 | 一般用于作为筛选表单，需要配合其他数据展示组件使用。 |
 | 一般用于作为行内内置的筛选，比如卡片操作栏和表格操作栏。 |
 | 分步表单，需要配置 StepForm 使用。 |
+
 
 ### pro-components 的 ProForm - ProForm 有哪些配置？
 
@@ -1156,12 +1244,14 @@
 | rowProps | 开启 `grid` 模式时传递给 `Row`, 仅在`ProFormGroup`, `ProFormList`, `ProFormFieldSet` 中有效 | { gutter: 8 } |
 | 注意 `LightFilter` 和 `QueryFilter` 仅支持除 `wrapperCol` \| `labelCol` \| `layout` 外的其他 antd `Form` 组件参数 | - | - |
 
+
 ### pro-components 的 ProForm - ProForm.Group 有哪些配置？
 
-| 参数     | 说明                 | 类型              | 默认值 |
-| -------- | -------------------- | ----------------- | ------ |
-| title    | 标题                 | `string`          | -      |
-| children | 表单控件或者其他元素 | `React.ReactNode` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| title | 标题 | `string` | - |
+| children | 表单控件或者其他元素 | `React.ReactNode` | - |
+
 
 ### pro-components 的 ProForm - submitter 有哪些配置？
 
@@ -1174,6 +1264,7 @@
 | resetButtonProps | 重置按钮的 props | - |
 | render | 自定义操作的渲染 | `false`\|`(props,dom:JSX[])=>ReactNode[]` | - |
 
+
 ### pro-components 的 ProForm - formRef 有哪些配置？
 
 | 方法名 | 使用描述 |
@@ -1182,9 +1273,10 @@
 | `getFieldFormatValue` | 使用方法与 `FormInstance` 的 `getFieldValue` 方法相同，将返回格式化后的指定数据 |
 | `validateFieldsReturnFormatValue` | 使用方法与 `FormInstance` 的 `validateFields` 方法相同，验证通过后将返回格式化后的所有数据 |
 
-## pro-components 的 Form 有哪些配置？
 
-#### ProForm - API
+### pro-components 的 Form 有哪些配置？
+
+#### ProForm - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1197,11 +1289,13 @@
 | stepsRender | 自定义步骤器 | `(steps,dom)=>ReactNode` | - |
 | formRef | StepForm action 的引用，便于自定义触发 | `MutableRefObject<FormInstance>` | - |
 
-#### ProForm - StepForm
 
-| 参数     | 说明             | 类型                         | 默认值 |
-| -------- | ---------------- | ---------------------------- | ------ |
-| onFinish | 表单提交成功触发 | `(values:T)=>Promise<false>` | -      |
+#### ProForm - StepForm 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| onFinish | 表单提交成功触发 | `(values:T)=>Promise<false>` | - |
+
 
 ### pro-components 的 ProForm - API 有哪些配置？
 
@@ -1216,36 +1310,40 @@
 | stepsRender | 自定义步骤器 | `(steps,dom)=>ReactNode` | - |
 | formRef | StepForm action 的引用，便于自定义触发 | `MutableRefObject<FormInstance>` | - |
 
+
 ### pro-components 的 ProForm - StepForm 有哪些配置？
 
-| 参数     | 说明             | 类型                         | 默认值 |
-| -------- | ---------------- | ---------------------------- | ------ |
-| onFinish | 表单提交成功触发 | `(values:T)=>Promise<false>` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| onFinish | 表单提交成功触发 | `(values:T)=>Promise<false>` | - |
 
-## pro-components 的 Form 有哪些配置？
 
-#### ProForm - API
+### pro-components 的 Form 有哪些配置？
+
+#### ProForm - API 
 
 | 字段名称 | 类型 |
-| --- | --- | --- |
+| --- | --- |
 | `layoutType` | 使用的表单布局模式 |
 | `steps` | `StepFormProps[]` | `layoutType=steps`中的分步表单配置，需要配置 columns 为数组使用 |
 | `columns` | 表单的定义，一般是 json 对象，如果是分步表单，需要使用 json 数组来生成多个表单 |
 | `shouldUpdate` | `(newValues: Record<string, any>, oldValues: Record<string, any>) => boolean \| boolean` | 细粒化控制是否渲染。<br /> 为`true`时会自动重新渲染表单项。<br /> 为`false`时不会更新表单项但可以使用[dependencies 触发更新](#结合-shouldupdatefalse-和-dependencies-触发更新)，<br /> 为`function` 时根据返回值判断是否重新渲染表单项，等同直接赋值 `true` 或 `false` [参考示例](#动态控制是否重渲染) |
 
-#### ProForm - ProFormLayoutType
 
-| 字段名称                |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `Form`                  |
-| `ModalForm`             | 弹框表单，配置之后支持 [ModalForm](/components/modal-form) 的所有配置                                                                   |
-| `DrawerForm`            | 抽屉表单，配置之后支持 [DrawerForm](/components/modal-form) 的所有配置                                                                  |
+#### ProForm - ProFormLayoutType 
+
+| 字段名称 |
+| --- |
+| `Form` |
+| `ModalForm` | 弹框表单，配置之后支持 [ModalForm](/components/modal-form) 的所有配置 |
+| `DrawerForm` | 抽屉表单，配置之后支持 [DrawerForm](/components/modal-form) 的所有配置 |
 | `StepsForm`\|`StepForm` | 配置之后为分步表单，有两种模式一种使用 `steps` 和 `columns` 来生成，一种是通过 `layoutType=StepsForm` 嵌套 `layoutType=StepForm` 来实现 |
-| `LightFilter`           | 轻量筛选，配置之后支持 [`LightFilter`](/components/query-filter) 的所有配置                                                             |
-| `QueryFilter`           | 查询表单，配置之后支持 [`QueryFilter`](/components/query-filter) 的所有配置                                                             |
-| `Embed`                 | 内嵌模式，只生成表单项，不生成 Form 可以混合使用                                                                                        |
+| `LightFilter` | 轻量筛选，配置之后支持 [`LightFilter`](/components/query-filter) 的所有配置 |
+| `QueryFilter` | 查询表单，配置之后支持 [`QueryFilter`](/components/query-filter) 的所有配置 |
+| `Embed` | 内嵌模式，只生成表单项，不生成 Form 可以混合使用 |
 
-#### ProForm - Schema 定义
+
+#### ProForm - Schema 定义 
 
 | 字段名称 | 类型 | 说明 |
 | --- | --- | --- |
@@ -1273,26 +1371,29 @@
 | `colProps` | 在开启 grid 模式时传递给 Col |
 | `rowProps` | 开启栅格化模式时传递给 Row |
 
+
 ### pro-components 的 ProForm - API 有哪些配置？
 
 | 字段名称 | 类型 |
-| --- | --- | --- |
+| --- | --- |
 | `layoutType` | 使用的表单布局模式 |
 | `steps` | `StepFormProps[]` | `layoutType=steps`中的分步表单配置，需要配置 columns 为数组使用 |
 | `columns` | 表单的定义，一般是 json 对象，如果是分步表单，需要使用 json 数组来生成多个表单 |
 | `shouldUpdate` | `(newValues: Record<string, any>, oldValues: Record<string, any>) => boolean \| boolean` | 细粒化控制是否渲染。<br /> 为`true`时会自动重新渲染表单项。<br /> 为`false`时不会更新表单项但可以使用[dependencies 触发更新](#结合-shouldupdatefalse-和-dependencies-触发更新)，<br /> 为`function` 时根据返回值判断是否重新渲染表单项，等同直接赋值 `true` 或 `false` [参考示例](#动态控制是否重渲染) |
 
+
 ### pro-components 的 ProForm - ProFormLayoutType 有哪些配置？
 
-| 字段名称                |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `Form`                  |
-| `ModalForm`             | 弹框表单，配置之后支持 [ModalForm](/components/modal-form) 的所有配置                                                                   |
-| `DrawerForm`            | 抽屉表单，配置之后支持 [DrawerForm](/components/modal-form) 的所有配置                                                                  |
+| 字段名称 |
+| --- |
+| `Form` |
+| `ModalForm` | 弹框表单，配置之后支持 [ModalForm](/components/modal-form) 的所有配置 |
+| `DrawerForm` | 抽屉表单，配置之后支持 [DrawerForm](/components/modal-form) 的所有配置 |
 | `StepsForm`\|`StepForm` | 配置之后为分步表单，有两种模式一种使用 `steps` 和 `columns` 来生成，一种是通过 `layoutType=StepsForm` 嵌套 `layoutType=StepForm` 来实现 |
-| `LightFilter`           | 轻量筛选，配置之后支持 [`LightFilter`](/components/query-filter) 的所有配置                                                             |
-| `QueryFilter`           | 查询表单，配置之后支持 [`QueryFilter`](/components/query-filter) 的所有配置                                                             |
-| `Embed`                 | 内嵌模式，只生成表单项，不生成 Form 可以混合使用                                                                                        |
+| `LightFilter` | 轻量筛选，配置之后支持 [`LightFilter`](/components/query-filter) 的所有配置 |
+| `QueryFilter` | 查询表单，配置之后支持 [`QueryFilter`](/components/query-filter) 的所有配置 |
+| `Embed` | 内嵌模式，只生成表单项，不生成 Form 可以混合使用 |
+
 
 ### pro-components 的 ProForm - Schema 定义 有哪些配置？
 
@@ -1322,9 +1423,10 @@
 | `colProps` | 在开启 grid 模式时传递给 Col |
 | `rowProps` | 开启栅格化模式时传递给 Row |
 
-## pro-components 的 Form 有哪些配置？
 
-#### ProForm - QueryFilter
+### pro-components 的 Form 有哪些配置？
+
+#### ProForm - QueryFilter 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1339,26 +1441,29 @@
 | split | 每一行是否有分割线 | `boolean` | - |
 | preserve | 是否能够查询收起的数据，如果设置为 false，收起后的表单数据将会丢失 | `boolean` | true |
 
-#### ProForm - 默认布局时的规则
 
-| 容器宽度断点          | 单行展示表单列数（包含操作区域） | 默认布局     |
-| --------------------- | -------------------------------- | ------------ |
-| `≧ 1352px`            | 4 列                             | `horizontal` |
-| `≧ 1062px`            | 3 列                             | `horizontal` |
-| `≧ 701px && < 1063px` | 3 列                             | `horizontal` |
-| `≧ 513px && < 701px`  | 2 列                             | `vertical`   |
-| `< 513px`             | 1 列                             | `vertical`   |
+#### ProForm - 默认布局时的规则 
 
-#### ProForm - 强制上下布局时的规则
+| 容器宽度断点 | 单行展示表单列数（包含操作区域） | 默认布局 |
+| --- | --- | --- |
+| `≧ 1352px` | 4 列 | `horizontal` |
+| `≧ 1062px` | 3 列 | `horizontal` |
+| `≧ 701px && < 1063px` | 3 列 | `horizontal` |
+| `≧ 513px && < 701px` | 2 列 | `vertical` |
+| `< 513px` | 1 列 | `vertical` |
 
-| 容器宽度断点          | 单行展示表单列数（包含操作区域） |
-| --------------------- | -------------------------------- |
-| `≧ 1057px`            | 4 列                             |
-| `≧ 785px && < 1057px` | 3 列                             |
-| `≧ 513px && < 785px`  | 2 列                             |
-| `< 513px`             | 1 列                             |
 
-#### ProForm - LightFilter
+#### ProForm - 强制上下布局时的规则 
+
+| 容器宽度断点 | 单行展示表单列数（包含操作区域） |
+| --- | --- |
+| `≧ 1057px` | 4 列 |
+| `≧ 785px && < 1057px` | 3 列 |
+| `≧ 513px && < 785px` | 2 列 |
+| `< 513px` | 1 列 |
+
+
+#### ProForm - LightFilter 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1366,6 +1471,7 @@
 | collapseLabel | 折叠区域的标签 | `ReactNode` | `更多筛选 <DownOutlined/>` |
 | footerRender | 底部内容，当不需要默认底部按钮时，可以设为 footer={false} | `(onClear?: () => void, onConfirm: () => void) => JSX.Element \| false)`\|`false` | - |
 | placement | 选择框弹出的位置 ：`bottomLeft` `bottomRight` `topLeft` `topRight` | string | bottomLeft |
+
 
 ### pro-components 的 ProForm - QueryFilter 有哪些配置？
 
@@ -1382,24 +1488,27 @@
 | split | 每一行是否有分割线 | `boolean` | - |
 | preserve | 是否能够查询收起的数据，如果设置为 false，收起后的表单数据将会丢失 | `boolean` | true |
 
+
 ### pro-components 的 ProForm - 默认布局时的规则 有哪些配置？
 
-| 容器宽度断点          | 单行展示表单列数（包含操作区域） | 默认布局     |
-| --------------------- | -------------------------------- | ------------ |
-| `≧ 1352px`            | 4 列                             | `horizontal` |
-| `≧ 1062px`            | 3 列                             | `horizontal` |
-| `≧ 701px && < 1063px` | 3 列                             | `horizontal` |
-| `≧ 513px && < 701px`  | 2 列                             | `vertical`   |
-| `< 513px`             | 1 列                             | `vertical`   |
+| 容器宽度断点 | 单行展示表单列数（包含操作区域） | 默认布局 |
+| --- | --- | --- |
+| `≧ 1352px` | 4 列 | `horizontal` |
+| `≧ 1062px` | 3 列 | `horizontal` |
+| `≧ 701px && < 1063px` | 3 列 | `horizontal` |
+| `≧ 513px && < 701px` | 2 列 | `vertical` |
+| `< 513px` | 1 列 | `vertical` |
+
 
 ### pro-components 的 ProForm - 强制上下布局时的规则 有哪些配置？
 
-| 容器宽度断点          | 单行展示表单列数（包含操作区域） |
-| --------------------- | -------------------------------- |
-| `≧ 1057px`            | 4 列                             |
-| `≧ 785px && < 1057px` | 3 列                             |
-| `≧ 513px && < 785px`  | 2 列                             |
-| `< 513px`             | 1 列                             |
+| 容器宽度断点 | 单行展示表单列数（包含操作区域） |
+| --- | --- |
+| `≧ 1057px` | 4 列 |
+| `≧ 785px && < 1057px` | 3 列 |
+| `≧ 513px && < 785px` | 2 列 |
+| `< 513px` | 1 列 |
+
 
 ### pro-components 的 ProForm - LightFilter 有哪些配置？
 
@@ -1410,9 +1519,10 @@
 | footerRender | 底部内容，当不需要默认底部按钮时，可以设为 footer={false} | `(onClear?: () => void, onConfirm: () => void) => JSX.Element \| false)`\|`false` | - |
 | placement | 选择框弹出的位置 ：`bottomLeft` `bottomRight` `topLeft` `topRight` | string | bottomLeft |
 
-## pro-components 的 Form 有哪些配置？
 
-#### ProForm - ModalForm
+### pro-components 的 Form 有哪些配置？
+
+#### ProForm - ModalForm 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1426,18 +1536,20 @@
 | submitTimeout | 提交数据时，禁用取消按钮的超时时间（毫秒）。 | `Number` | - |
 | submitter | 提交按钮相关配置，使用方式与 [ProForm](https://procomponents.ant.design/components/form) 相同。 | - |
 
-#### ProForm - DrawerForm
+
+#### ProForm - DrawerForm 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | trigger | 用于触发 Modal 打开的 dom，一般是 button | `ReactNode` | - |
-| resize | 是否调整大小 | `{onResize,maxWidth,minWidth}` \| `Boolean` | { onResize: () => { }, maxWidth: window.innerWidth \* 0.8, minWidth: 300} |
+| resize | 是否调整大小 | `{onResize,maxWidth,minWidth}` \| `Boolean` | { onResize: () => { }, maxWidth: window.innerWidth * 0.8, minWidth: 300} |
 | onOpenChange | open 改变时触发 | `(open:boolean)=>void` | - |
 | drawerProps | Drawer 的 props，使用方式与 [antd](https://ant.design/components/drawer-cn/) 相同。注意：不支持 'visible'，请使用全局的 visible | - |
 | title | 抽屉的标题 | `ReactNode` | - |
 | width | 抽屉的宽度（受控属性，使用时权重高于 resize） | `Number` | - |
 | onFinish | 提交数据时触发，如果返回一个 true。会关掉抽屉，如果配置了 `destroyOnClose` 还会重置表单。 | `async (values)=>boolean` | - |
 | submitTimeout | 提交数据时，禁用取消按钮的超时时间（毫秒）。 | `Number` | - |
+
 
 ### pro-components 的 ProForm - ModalForm 有哪些配置？
 
@@ -1453,12 +1565,13 @@
 | submitTimeout | 提交数据时，禁用取消按钮的超时时间（毫秒）。 | `Number` | - |
 | submitter | 提交按钮相关配置，使用方式与 [ProForm](https://procomponents.ant.design/components/form) 相同。 | - |
 
+
 ### pro-components 的 ProForm - DrawerForm 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | trigger | 用于触发 Modal 打开的 dom，一般是 button | `ReactNode` | - |
-| resize | 是否调整大小 | `{onResize,maxWidth,minWidth}` \| `Boolean` | { onResize: () => { }, maxWidth: window.innerWidth \* 0.8, minWidth: 300} |
+| resize | 是否调整大小 | `{onResize,maxWidth,minWidth}` \| `Boolean` | { onResize: () => { }, maxWidth: window.innerWidth * 0.8, minWidth: 300} |
 | onOpenChange | open 改变时触发 | `(open:boolean)=>void` | - |
 | drawerProps | Drawer 的 props，使用方式与 [antd](https://ant.design/components/drawer-cn/) 相同。注意：不支持 'visible'，请使用全局的 visible | - |
 | title | 抽屉的标题 | `ReactNode` | - |
@@ -1466,9 +1579,10 @@
 | onFinish | 提交数据时触发，如果返回一个 true。会关掉抽屉，如果配置了 `destroyOnClose` 还会重置表单。 | `async (values)=>boolean` | - |
 | submitTimeout | 提交数据时，禁用取消按钮的超时时间（毫秒）。 | `Number` | - |
 
-## pro-components 的 Form 有哪些配置？
 
-#### ProForm - LoginForm
+### pro-components 的 Form 有哪些配置？
+
+#### ProForm - LoginForm 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1478,7 +1592,8 @@
 | actions | 自定义额外的登录功能 | `ReactNode` |
 | message | form 顶部的一个提示配置，可以配置一些错误的提示信息 | `ReactNode` | - |
 
-#### ProForm - LoginFormPage
+
+#### ProForm - LoginFormPage 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1490,6 +1605,7 @@
 | backgroundImageUrl | 整个区域的背景图片配置，手机端不会展示 | `url` | - |
 | activityConfig | 活动的配置，包含 title，subTitle，action，分别代表标题，次标题和行动按钮，也可配置 style 来控制区域的样式 | `{title,subTitle,action,style}` | - |
 
+
 ### pro-components 的 ProForm - LoginForm 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -1499,6 +1615,7 @@
 | subTitle | 二级标题，可以配置为空 | `ReactNode` | - |
 | actions | 自定义额外的登录功能 | `ReactNode` |
 | message | form 顶部的一个提示配置，可以配置一些错误的提示信息 | `ReactNode` | - |
+
 
 ### pro-components 的 ProForm - LoginFormPage 有哪些配置？
 
@@ -1512,9 +1629,10 @@
 | backgroundImageUrl | 整个区域的背景图片配置，手机端不会展示 | `url` | - |
 | activityConfig | 活动的配置，包含 title，subTitle，action，分别代表标题，次标题和行动按钮，也可配置 style 来控制区域的样式 | `{title,subTitle,action,style}` | - |
 
-## pro-components 的 Form 有哪些配置？
 
-#### ProForm - ProFormList API
+### pro-components 的 Form 有哪些配置？
+
+#### ProForm - ProFormList API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1533,6 +1651,7 @@
 | actionRender | 自定义操作按钮 | `(field,action,defaultActionDom,count)=>React.ReactNode[]` | - |
 | onAfterAdd | 新增数据后的钩子 | `(defaultValue: StoreValue, insertIndex: number, count: number) => void` | - |
 | onAfterRemove | 删除数据后的钩子 | `(index: number, count: number) => void` | - |
+
 
 ### pro-components 的 ProForm - ProFormList API 有哪些配置？
 
@@ -1554,12 +1673,13 @@
 | onAfterAdd | 新增数据后的钩子 | `(defaultValue: StoreValue, insertIndex: number, count: number) => void` | - |
 | onAfterRemove | 删除数据后的钩子 | `(index: number, count: number) => void` | - |
 
-## pro-components 的 Form 有哪些配置？
 
-#### ProForm - 组件列表
+### pro-components 的 Form 有哪些配置？
+
+#### ProForm - 组件列表 
 
 | 组件 |
-| --- | --- |
+| --- |
 | 用于输入各类文本 |
 | 用于输入数字，它自带了一个格式化 (保留 2 位小数，最小值为 0)，有需要你可以关掉它。 |
 | 用于输入密码 |
@@ -1580,7 +1700,8 @@
 | ProFormMoney | 通用金额输入组件 |
 | 分段控制器 |
 
-#### ProForm - 通用的属性
+
+#### ProForm - 通用的属性 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1591,7 +1712,8 @@
 | secondary | 是否是次要控件，只针对 LightFilter 下有效 | `boolean` | `false` |
 | allowClear | 支持清除，针对 LightFilter 下有效，主动设置情况下同时也会透传给 `fieldProps` | `boolean` | `true` |
 
-#### ProForm - ProFormCaptcha
+
+#### ProForm - ProFormCaptcha 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1601,7 +1723,8 @@
 | countDown | 倒计时的秒数 | number | 60 |
 | captchaTextRender | 渲染计时的文案 | `(timing: boolean, count: number) => React.ReactNode` | - |
 
-#### ProForm - ProFormSelect
+
+#### ProForm - ProFormSelect 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1611,7 +1734,8 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `SelectProps ` | - |
 
-#### ProForm - ProFormTreeSelect
+
+#### ProForm - ProFormTreeSelect 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1621,7 +1745,8 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `TreeSelectProps` | - |
 
-#### ProForm - ProFormCheckbox
+
+#### ProForm - ProFormCheckbox 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1631,7 +1756,8 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `CheckboxProps` | - |
 
-#### ProForm - ProFormRadio.Group
+
+#### ProForm - ProFormRadio.Group 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1641,7 +1767,8 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `RadioProps` | - |
 
-#### ProForm - ProFormCascader
+
+#### ProForm - ProFormCascader 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1650,25 +1777,29 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `CascaderProps` | - |
 
-#### ProForm - ProFormSwitch
 
-| 参数       | 说明              | 类型          | 默认值 |
-| ---------- | ----------------- | ------------- | ------ |
-| fieldProps | antd 组件的 props | `SwitchProps` | -      |
+#### ProForm - ProFormSwitch 
 
-#### ProForm - ProFormRate
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| fieldProps | antd 组件的 props | `SwitchProps` | - |
 
-| 参数       | 说明              | 类型        | 默认值 |
-| ---------- | ----------------- | ----------- | ------ |
-| fieldProps | antd 组件的 props | `RateProps` | -      |
 
-#### ProForm - ProFormSlider
+#### ProForm - ProFormRate 
 
-| 参数       | 说明              | 类型          | 默认值 |
-| ---------- | ----------------- | ------------- | ------ |
-| fieldProps | antd 组件的 props | `SliderProps` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| fieldProps | antd 组件的 props | `RateProps` | - |
 
-#### ProForm - ProFormUploadDragger
+
+#### ProForm - ProFormSlider 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| fieldProps | antd 组件的 props | `SliderProps` | - |
+
+
+#### ProForm - ProFormUploadDragger 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1676,7 +1807,8 @@
 | title | Dragger 的标题 | `ReactNode` | ' 单击或拖动文件到此区域进行上传' |
 | description | Dragger 的描述 | `ReactNode` | ' 支持单次或批量上传' |
 
-#### ProForm - ProFormUploadButton
+
+#### ProForm - ProFormUploadButton 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1684,7 +1816,8 @@
 | title | Button 的标题 | `ReactNode` | 单击上传 |
 | max | 最大上传数量，超过最大数量就会隐藏上传按钮 | `number` | - |
 
-#### ProForm - ProFormMoney
+
+#### ProForm - ProFormMoney 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1695,7 +1828,8 @@
 | min | 最小值 | `number` | - |
 | max | 最大值 | `number` | - |
 
-#### ProForm - ProFormSegmented
+
+#### ProForm - ProFormSegmented 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1705,10 +1839,11 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `Segmented` | - |
 
+
 ### pro-components 的 ProForm - 组件列表 有哪些配置？
 
 | 组件 |
-| --- | --- |
+| --- |
 | 用于输入各类文本 |
 | 用于输入数字，它自带了一个格式化 (保留 2 位小数，最小值为 0)，有需要你可以关掉它。 |
 | 用于输入密码 |
@@ -1728,6 +1863,7 @@
 | 区域的上传文件，一般用于突出上传文件的表单中 |
 | ProFormMoney | 通用金额输入组件 |
 | 分段控制器 |
+
 
 ### pro-components 的 ProForm - 通用的属性 有哪些配置？
 
@@ -1740,6 +1876,7 @@
 | secondary | 是否是次要控件，只针对 LightFilter 下有效 | `boolean` | `false` |
 | allowClear | 支持清除，针对 LightFilter 下有效，主动设置情况下同时也会透传给 `fieldProps` | `boolean` | `true` |
 
+
 ### pro-components 的 ProForm - ProFormCaptcha 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -1749,6 +1886,7 @@
 | captchaProps | 获取验证码按钮的 props，与 antd 的 props 相同 | `ButtonProps` | - |
 | countDown | 倒计时的秒数 | number | 60 |
 | captchaTextRender | 渲染计时的文案 | `(timing: boolean, count: number) => React.ReactNode` | - |
+
 
 ### pro-components 的 ProForm - ProFormSelect 有哪些配置？
 
@@ -1760,6 +1898,7 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `SelectProps ` | - |
 
+
 ### pro-components 的 ProForm - ProFormTreeSelect 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -1769,6 +1908,7 @@
 | debounceTime | 防抖动时间，与 request 配合使用 | `number` | - |
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `TreeSelectProps` | - |
+
 
 ### pro-components 的 ProForm - ProFormCheckbox 有哪些配置？
 
@@ -1780,6 +1920,7 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `CheckboxProps` | - |
 
+
 ### pro-components 的 ProForm - ProFormRadio.Group 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -1790,6 +1931,7 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `RadioProps` | - |
 
+
 ### pro-components 的 ProForm - ProFormCascader 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -1799,23 +1941,27 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `CascaderProps` | - |
 
+
 ### pro-components 的 ProForm - ProFormSwitch 有哪些配置？
 
-| 参数       | 说明              | 类型          | 默认值 |
-| ---------- | ----------------- | ------------- | ------ |
-| fieldProps | antd 组件的 props | `SwitchProps` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| fieldProps | antd 组件的 props | `SwitchProps` | - |
+
 
 ### pro-components 的 ProForm - ProFormRate 有哪些配置？
 
-| 参数       | 说明              | 类型        | 默认值 |
-| ---------- | ----------------- | ----------- | ------ |
-| fieldProps | antd 组件的 props | `RateProps` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| fieldProps | antd 组件的 props | `RateProps` | - |
+
 
 ### pro-components 的 ProForm - ProFormSlider 有哪些配置？
 
-| 参数       | 说明              | 类型          | 默认值 |
-| ---------- | ----------------- | ------------- | ------ |
-| fieldProps | antd 组件的 props | `SliderProps` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| fieldProps | antd 组件的 props | `SliderProps` | - |
+
 
 ### pro-components 的 ProForm - ProFormUploadDragger 有哪些配置？
 
@@ -1825,6 +1971,7 @@
 | title | Dragger 的标题 | `ReactNode` | ' 单击或拖动文件到此区域进行上传' |
 | description | Dragger 的描述 | `ReactNode` | ' 支持单次或批量上传' |
 
+
 ### pro-components 的 ProForm - ProFormUploadButton 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -1832,6 +1979,7 @@
 | icon | Button 的图标 | `ReactNode` | UploadOutlined |
 | title | Button 的标题 | `ReactNode` | 单击上传 |
 | max | 最大上传数量，超过最大数量就会隐藏上传按钮 | `number` | - |
+
 
 ### pro-components 的 ProForm - ProFormMoney 有哪些配置？
 
@@ -1844,6 +1992,7 @@
 | min | 最小值 | `number` | - |
 | max | 最大值 | `number` | - |
 
+
 ### pro-components 的 ProForm - ProFormSegmented 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -1854,9 +2003,10 @@
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | fieldProps | antd 组件的 props | `Segmented` | - |
 
-## pro-components 的 Field 有哪些配置？
 
-#### ProField - 参数
+### pro-components 的 Field 有哪些配置？
+
+#### ProField - 参数 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1866,6 +2016,7 @@
 | plain | 精简模式 | - | - |
 | renderFormItem | 自定义 `mode=update \| edit` 下的 dom 表现，一般用于渲染编辑框 | - | - |
 | render | 自定义 `mode=read` 下的 dom 表现，只是单纯的表现形式 | - | - |
+
 
 ### pro-components 的 ProField - 参数 有哪些配置？
 
@@ -1878,9 +2029,10 @@
 | renderFormItem | 自定义 `mode=update \| edit` 下的 dom 表现，一般用于渲染编辑框 | - | - |
 | render | 自定义 `mode=read` 下的 dom 表现，只是单纯的表现形式 | - | - |
 
-## pro-components 的 Descriptions 有哪些配置？
 
-#### ProDescriptions - ProDescriptions
+### pro-components 的 Descriptions 有哪些配置？
+
+#### ProDescriptions - ProDescriptions 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1898,7 +2050,8 @@
 | columns | 列定义，与 request 配合使用 [columns](/components/table#columns) | - | - |
 | editable | 编辑的相关配置 | - |
 
-#### ProDescriptions - editable 编辑配置
+
+#### ProDescriptions - editable 编辑配置 
 
 | 属性 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1917,7 +2070,8 @@
 | onlyOneLineEditorAlertMessage | 只能编辑一行的的提示 | `ReactNode` | `只能同时编辑一行` |
 | onlyAddOneLineAlertMessage | 只能同时新增一行的提示 | `ReactNode` | `只能新增一行` |
 
-#### ProDescriptions - ProDescriptions.Item
+
+#### ProDescriptions - ProDescriptions.Item 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1931,6 +2085,7 @@
 | request | 从网络请求枚举数据 | `()=>Promise<{[key:string`\|`number]:any}>` | - |
 | dataIndex | 返回数据的 key 与 ProDescriptions 的 request 配合使用，用于配置式的定义列表 | `React.Text` \| `React.Text[]` | - |
 | editable | 在编辑表格中是否可编辑的，函数的参数和 table 的 render 一样 | `false` \| `(text: any, record: T,index: number) => boolean` | true |
+
 
 ### pro-components 的 ProDescriptions - ProDescriptions 有哪些配置？
 
@@ -1949,6 +2104,7 @@
 | onRequestError | 处理 request 的错误，默认会直接抛出错误 | - | - |
 | columns | 列定义，与 request 配合使用 [columns](/components/table#columns) | - | - |
 | editable | 编辑的相关配置 | - |
+
 
 ### pro-components 的 ProDescriptions - editable 编辑配置 有哪些配置？
 
@@ -1969,6 +2125,7 @@
 | onlyOneLineEditorAlertMessage | 只能编辑一行的的提示 | `ReactNode` | `只能同时编辑一行` |
 | onlyAddOneLineAlertMessage | 只能同时新增一行的提示 | `ReactNode` | `只能新增一行` |
 
+
 ### pro-components 的 ProDescriptions - ProDescriptions.Item 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -1984,12 +2141,13 @@
 | dataIndex | 返回数据的 key 与 ProDescriptions 的 request 配合使用，用于配置式的定义列表 | `React.Text` \| `React.Text[]` | - |
 | editable | 在编辑表格中是否可编辑的，函数的参数和 table 的 render 一样 | `false` \| `(text: any, record: T,index: number) => boolean` | true |
 
-## pro-components 的 Card 有哪些配置？
 
-#### ProCard - API
+### pro-components 的 Card 有哪些配置？
+
+#### ProCard - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | title | 标题 | `React.ReactNode` | - |
 | subTitle | 副标题 | `React.ReactNode` | - |
 | tooltip | 标题右侧图标 hover 提示信息 | `string` | - |
@@ -2016,7 +2174,8 @@
 | onCollapse | 收起卡片的事件，受控时无效 | `(collapsed: boolean) => void` | - |
 | tabs | 标签页配置 | 见下面 ProCardTabs | - |
 
-#### ProCard - ProCardTabs
+
+#### ProCard - ProCardTabs 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -2025,13 +2184,15 @@
 | onChange | 回调 | `(activeKey: string) => void;` | - |
 | items | 基于 antd 拓展的页签的基本配置，必填 | `ItemsProps` | - |
 
-#### ProCard - ItemsProps
 
-| 参数      | 说明                 | 类型      | 默认值 |
-| --------- | -------------------- | --------- | ------ |
-| cardProps | ProCard 卡片属性透传 | `ProCard` | -      |
+#### ProCard - ItemsProps 
 
-#### ProCard - ProCard.TabPane
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| cardProps | ProCard 卡片属性透传 | `ProCard` | - |
+
+
+#### ProCard - ProCard.TabPane 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -2040,16 +2201,18 @@
 | disabled | 不可用 | `boolean` | false |
 | cardProps | ProCard 卡片属性透传 | `ProCard` | - |
 
-#### ProCard - ProCard.Divider
 
-| 参数 | 说明     | 类型                     | 默认值 |
-| ---- | -------- | ------------------------ | ------ |
-| type | 分隔类型 | `horizontal \| vertical` | -      |
+#### ProCard - ProCard.Divider 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| type | 分隔类型 | `horizontal \| vertical` | - |
+
 
 ### pro-components 的 ProCard - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | title | 标题 | `React.ReactNode` | - |
 | subTitle | 副标题 | `React.ReactNode` | - |
 | tooltip | 标题右侧图标 hover 提示信息 | `string` | - |
@@ -2075,6 +2238,7 @@
 | defaultCollapsed | 默认折叠，受控时无效 | `boolean` | false |
 | onCollapse | 收起卡片的事件，受控时无效 | `(collapsed: boolean) => void` | - |
 | tabs | 标签页配置 | 见下面 ProCardTabs | - |
+
 
 ### pro-components 的 ProCard - ProCardTabs 有哪些配置？
 
@@ -2085,11 +2249,13 @@
 | onChange | 回调 | `(activeKey: string) => void;` | - |
 | items | 基于 antd 拓展的页签的基本配置，必填 | `ItemsProps` | - |
 
+
 ### pro-components 的 ProCard - ItemsProps 有哪些配置？
 
-| 参数      | 说明                 | 类型      | 默认值 |
-| --------- | -------------------- | --------- | ------ |
-| cardProps | ProCard 卡片属性透传 | `ProCard` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| cardProps | ProCard 卡片属性透传 | `ProCard` | - |
+
 
 ### pro-components 的 ProCard - ProCard.TabPane 有哪些配置？
 
@@ -2100,15 +2266,17 @@
 | disabled | 不可用 | `boolean` | false |
 | cardProps | ProCard 卡片属性透传 | `ProCard` | - |
 
+
 ### pro-components 的 ProCard - ProCard.Divider 有哪些配置？
 
-| 参数 | 说明     | 类型                     | 默认值 |
-| ---- | -------- | ------------------------ | ------ |
-| type | 分隔类型 | `horizontal \| vertical` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| type | 分隔类型 | `horizontal \| vertical` | - |
 
-## pro-components 的 Card 有哪些配置？
 
-#### ProCard - StatisticCard
+### pro-components 的 Card 有哪些配置？
+
+#### ProCard - StatisticCard 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -2121,7 +2289,8 @@
 | chartPlacement | 图表位置，相对于 statistic 的位置 | `left \| right \| bottom` | - |
 | footer | 额外指标展示 | `ReactNode` | - |
 
-#### ProCard - Statistic
+
+#### ProCard - Statistic 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -2137,11 +2306,13 @@
 | layout | 布局 | `horizontal \| vertical \| inline` | `inline` |
 | trend | 趋势 | `up \| down \|` | - |
 
-#### ProCard - Divider
 
-| 参数 | 说明     | 类型                     | 默认值 |
-| ---- | -------- | ------------------------ | ------ |
-| type | 分隔类型 | `horizontal \| vertical` | -      |
+#### ProCard - Divider 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| type | 分隔类型 | `horizontal \| vertical` | - |
+
 
 ### pro-components 的 ProCard - StatisticCard 有哪些配置？
 
@@ -2155,6 +2326,7 @@
 | statistic | 数值统计配置，布局默认为 `vertical` | 参数见下 Statistic | - |
 | chartPlacement | 图表位置，相对于 statistic 的位置 | `left \| right \| bottom` | - |
 | footer | 额外指标展示 | `ReactNode` | - |
+
 
 ### pro-components 的 ProCard - Statistic 有哪些配置？
 
@@ -2172,18 +2344,20 @@
 | layout | 布局 | `horizontal \| vertical \| inline` | `inline` |
 | trend | 趋势 | `up \| down \|` | - |
 
+
 ### pro-components 的 ProCard - Divider 有哪些配置？
 
-| 参数 | 说明     | 类型                     | 默认值 |
-| ---- | -------- | ------------------------ | ------ |
-| type | 分隔类型 | `horizontal \| vertical` | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| type | 分隔类型 | `horizontal \| vertical` | - |
 
-## pro-components 的 Card 有哪些配置？
 
-#### ProCard - CheckCard
+### pro-components 的 Card 有哪些配置？
+
+#### ProCard - CheckCard 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | checked | 指定当前是否选中 | boolean | false |
 | bordered | 是否显示边框 | boolean | true | 1.20.0 |
 | value | 选项值 | string | - |
@@ -2198,10 +2372,11 @@
 | extra | 动作区域 | 卡片右上角的操作区域 | - |
 | cover | 卡片背景图片，注意使用该选项后`title`，`description`和`avatar`失效 | ReactNode | - |
 
-#### ProCard - CheckCard.Group
+
+#### ProCard - CheckCard.Group 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | multiple | 多选 | boolean | false |
 | bordered | 是否显示边框 | boolean | true | 1.20.0 |
 | defaultValue | 默认选中的选项 | string \| string[] | - |
@@ -2212,10 +2387,11 @@
 | size | 选择框大小，可选 `large` `small` | string | `default` |
 | onChange | 变化时回调函数 | Function(checkedValue) | - |
 
+
 ### pro-components 的 ProCard - CheckCard 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | checked | 指定当前是否选中 | boolean | false |
 | bordered | 是否显示边框 | boolean | true | 1.20.0 |
 | value | 选项值 | string | - |
@@ -2230,10 +2406,11 @@
 | extra | 动作区域 | 卡片右上角的操作区域 | - |
 | cover | 卡片背景图片，注意使用该选项后`title`，`description`和`avatar`失效 | ReactNode | - |
 
+
 ### pro-components 的 ProCard - CheckCard.Group 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | multiple | 多选 | boolean | false |
 | bordered | 是否显示边框 | boolean | true | 1.20.0 |
 | defaultValue | 默认选中的选项 | string \| string[] | - |

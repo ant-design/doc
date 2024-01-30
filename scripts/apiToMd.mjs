@@ -11,22 +11,27 @@ fs.readdirSync(path.join(__dirname, '..', 'api')).forEach((jsonName) => {
   const json = JSON.parse(fs.readFileSync(path.join(apiPath, jsonName)));
   const packageName = path.basename(jsonName).split('.').at(0);
   const mdFile = json.map((item) => {
-    const questionMd = `## ${packageName} 的 ${item.title} 有哪些配置？`;
+    const questionMd = `### ${packageName} 的 ${item.title} 有哪些配置？`;
+    const subItemMd = [];
+
     if (item.md) {
       const childMd = item.properties
         ?.map((property) => {
           if (property.property?.length > 0) {
-            return `### ${item.title} ${property.title}\n${property.md}\n${property.property
+            return `**${item.title} ${property.title}** \n\n${property.md}\n${property.property
               .map((subItem) => {
+                subItemMd.push(
+                  `### umi 如何使用 ${subItem.title}?\n\n${subItem.md}`,
+                );
                 return `#### ${subItem.title}\n${subItem.md}`;
               })
               .join('\n\n')}`;
           }
-          return `### ${item.title} ${property.title}\n${property.md}`;
+          return `**${item.title} ${property.title}** \n\n${property.md}`;
         })
         .join('');
 
-      return [questionMd, childMd].join('\n');
+      return [questionMd, childMd, ...subItemMd].join('\n');
     }
     const mdList = item.properties
       ?.map((row) => {
