@@ -1,5 +1,5 @@
 {
-  "name": "@ant-design/docs",
+  "name": "@ant-design/doc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,10 @@
     "api",
     "docs"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-design/doc"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -26,5 +30,11 @@
     "remark-parse": "^11.0.0",
     "unified": "^11.0.4",
     "unist-util-visit": "^5.0.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "chenshuai2144 <qixian.cs@outlook.com> (https://github.com/chenshuai2144)"
+  ]
 }
