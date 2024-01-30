@@ -1,5 +1,5 @@
 {
-  "name": "@ant-design/doc",
+  "name": "@ant-design/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,14 @@
     "prettier": "prettier --write \"docs/**/**.{js,jsx,tsx,ts,less,md,yaml,json}\" --loglevel warn",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "api",
+    "docs"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@umijs/fabric": "^4.0.1",
     "glob": "^10.3.10",
     "openai": "^4.26.0",
