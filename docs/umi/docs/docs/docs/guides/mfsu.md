@@ -151,8 +151,6 @@ mfsu: {
 
 在项目中，如果依赖库 a 还依赖了库 b，并且在项目的 webpack 配置中使用了 script 类型的 externals 来引入库 b，当开启 MFSU（Module Federation Shared Module）功能时，会出现报错的情况。
 
-###
-
 根据上述代码示例中的描述，当在项目中使用 import \* as b from 'b' 来引入库 b 时，预期会得到一个正常的 Module 信息，但实际上拿到的是一个 Promise\<Module\>。
 
 这个问题可以归因于 webpack 没有很好地处理 script 类型的 externals 和 module federation 之间的兼容性问题。可能是因为很少有人了解和使用 externals script 的功能，所以这个问题变得更加明显。
@@ -173,15 +171,13 @@ externals: {
 
 通过上述配置，在生产环境下会开启 externals script，而在其他环境下（如开发环境）则不使用该功能。
 
-###
-
 为了解决 externals script 和 MFSU 之间的兼容性问题，建议将使用 externals script 的功能限定在生产环境下。
 
 通过在 webpack 配置中进行条件判断 `process.env.NODE_ENV === 'production'`，只有在生产环境下才添加 externals script 的配置，而在其他环境下不使用该配置。
 
 这样可以避免 externals script 和 MFSU 在开发环境下的冲突，确保项目的稳定性和可靠性。
 
-###什么是 externals script？
+### 什么是 externals script？
 
 externals script 是 webpack 中的一个功能，用于将外部库作为脚本引入。
 

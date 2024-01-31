@@ -14,8 +14,8 @@ const processor = unified().use(parse).use(remarkGfm, { singleTilde: false });
 
 /**
  * 解析变更日志并生成CHANGELOG.md文件。
- * @param {string[]} fileList - 文件列表
- * @param {string} packageName - 包名
+ * @param {string[]} fileList - 包含变更日志文件路径的数组。
+ * @param {string} packageName - 包名。
  */
 const parseChangeLog = (fileList, packageName) => {
   fileList.forEach((file) => {
@@ -41,7 +41,11 @@ const parseChangeLog = (fileList, packageName) => {
         return;
       }
       if (node.type === 'inlineCode') {
-        const time = remark.stringify(node).replace(/\n/g, '').trim();
+        const time = remark
+          .stringify(node)
+          .replace(/\n/g, '')
+          .trim()
+          .replace('###', '');
         if (/^\d{4}-\d{2}-\d{2}$/.test(time.replaceAll('`', ''))) {
           changelogData.at(-1).time = time;
         }
@@ -66,7 +70,7 @@ const parseChangeLog = (fileList, packageName) => {
 
     fs.writeFileSync(
       path.join(__dirname, '..', 'docs', packageName, 'CHANGELOG.md'),
-      changeMd
+      changeMd,
     );
   });
 };

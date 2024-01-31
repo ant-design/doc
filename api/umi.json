@@ -439,7 +439,7 @@
       {
         "title": "clientLoader",
         "property": [],
-        "md": "* 类型: `{}`\n* 默认值: `false`\n\n开启后，可以为每个路由声明一个数据加载函数 `clientLoader`，将页面需要的加载数据程序提取到 `clientLoader` 可以让 Umi 提前在页面组件尚未加载好的时候提前进行数据的加载，避免瀑布流请求的问题，详细介绍请看 [路由数据预加载](../guides/client-loader)。\n\n示例：\n\n```ts\n// .umirc.ts\nexport default {\n  clientLoader: {},\n};\n```\n\n配置开启后，在路由组件中使用：\n\n```jsx\n// pages/.../some_page.tsx\n\nimport { useClientLoaderData } from 'umi';\n\nexport default function SomePage() {\n  const { data } = useClientLoaderData();\n  return <div>{data}</div>;\n}\n\nexport async function clientLoader() {\n  const data = await fetch('/api/data');\n  return data;\n}\n```\n\n"
+        "md": "* 类型: `{}`\n* 默认值: `false`\n\n开启后，可以为每个路由声明一个数据加载函数 `clientLoader`，将页面需要的加载数据程序提取到 `clientLoader` 可以让 Umi\n提前在页面组件尚未加载好的时候提前进行数据的加载，避免瀑布流请求的问题，详细介绍请看 [路由数据预加载](../guides/client-loader)。\n\n示例：\n\n```ts\n// .umirc.ts\nexport default {\n  clientLoader: {},\n};\n```\n\n配置开启后，在路由组件中使用：\n\n```jsx\n// pages/.../some_page.tsx\n\nimport { useClientLoaderData } from 'umi';\n\nexport default function SomePage() {\n  const { data } = useClientLoaderData();\n  return <div>{data}</div>;\n}\n\nexport async function clientLoader() {\n  const data = await fetch('/api/data');\n  return data;\n}\n```\n\n"
       },
       {
         "title": "codeSplitting",
@@ -468,7 +468,7 @@
       {
         "title": "copy",
         "property": [],
-        "md": "* 类型：`Array<string | { from: string; to: string; }>`\n* 默认值：`[]`\n\n配置要复制到输出目录的文件或文件夹。\n\n当配置字符串时，默认拷贝到产物目录，如：\n\n```ts\ncopy: ['foo.json', 'src/bar.json'];\n```\n\n会产生如下产物的结构：\n\n```\n+ dist\n  - bar.json\n  - foo.json\n+ src\n  - bar.json\n- foo.json\n```\n\n你也可以通过对象配置具体的拷贝位置，其中相对路径的起点为项目根目录：\n\n```ts\ncopy: [\n  { from: 'from', to: 'dist/output' },\n  { from: 'file.json', to: 'dist' },\n];\n```\n\n此时将产生如下产物结构：\n\n```\n+ dist\n  + output\n    - foo.json\n  - file.json\n+ from\n  - foo.json\n- file.json\n```\n\n"
+        "md": "* 类型：`Array<string | { from: string; to: string; }>`\n* 默认值：`[]`\n\n配置要复制到输出目录的文件或文件夹。\n\n当配置字符串时，默认拷贝到产物目录，如：\n\n```ts\ncopy: ['foo.json', 'src/bar.json']\n```\n\n会产生如下产物的结构：\n\n```\n+ dist\n  - bar.json\n  - foo.json\n+ src\n  - bar.json\n- foo.json\n```\n\n你也可以通过对象配置具体的拷贝位置，其中相对路径的起点为项目根目录：\n\n```ts\ncopy: [\n  { from: 'from', to: 'dist/output' },\n  { from: 'file.json', to: 'dist' }\n]\n```\n\n此时将产生如下产物结构：\n\n```\n+ dist\n  + output\n    - foo.json\n  - file.json\n+ from\n  - foo.json\n- file.json\n```\n\n"
       },
       {
         "title": "crossorigin",
@@ -478,7 +478,7 @@
       {
         "title": "cssMinifier",
         "property": [],
-        "md": "* 类型：`string` 可选的值：`esbuild`, `cssnano`, `parcelCSS`, `none`\n* 默认值：`esbuild`\n\n配置构建时使用的 CSS 压缩工具; `none` 表示不压缩。\n\n示例：\n\n```js\n{\n  cssMinifier: 'esbuild';\n}\n```\n\n"
+        "md": "* 类型：`string` 可选的值：`esbuild`, `cssnano`, `parcelCSS`, `none`\n* 默认值：`esbuild`\n\n配置构建时使用的 CSS 压缩工具; `none` 表示不压缩。\n\n示例：\n\n```js\n{\n  cssMinifier: 'esbuild'\n}\n```\n\n"
       },
       {
         "title": "cssMinifierOptions",
@@ -498,7 +498,7 @@
       {
         "title": "cssLoaderModules",
         "property": [],
-        "md": "* 类型：`object`\n* 默认值：`{}`\n\n配置 css modules 的行为，详见 [css-loader > modules](https://github.com/webpack-contrib/css-loader#modules)。\n\n如：\n\n```ts\ncssLoaderModules: {\n  // 配置驼峰式使用\n  exportLocalsConvention: 'camelCase';\n}\n```\n\n"
+        "md": "* 类型：`object`\n* 默认值：`{}`\n\n配置 css modules 的行为，详见 [css-loader > modules](https://github.com/webpack-contrib/css-loader#modules)。\n\n如：\n\n```ts\ncssLoaderModules: {\n  // 配置驼峰式使用\n  exportLocalsConvention: 'camelCase'\n}\n```\n\n"
       },
       {
         "title": "deadCode",
@@ -508,7 +508,7 @@
       {
         "title": "define",
         "property": [],
-        "md": "* 类型：`Record<string, string>`\n* 默认值： 如下\n\n```\n  {\n    'process.env.NODE_ENV' : process.env.NODE_ENV,\n    'process.env.HMR' : process.env.HMR,\n    'process.env.SOCKET_SERVER': process.env.ERROR_OVERLAY'\n  }\n```\n\n基于[define-plugin 插件](https://webpack.js.org/plugins/define-plugin/)设置代码中的可用变量。\n\n:::warning{title=🚨}\n\n1. 属性值会经过一次 `JSON.stringify` 转换。\n2. key 值的替换是通过语法形式来匹配的，比如配置了 `{'a.b.c': 'abcValue'}` 是无法替换代码中的 `a.b?.c` 的 :::\n\n比如，\n\n```\ndefine: { FOO: 'bar' }\n```\n\n然后代码里的 `console.log(hello, FOO)` 会被编译成 `console.log(hello, 'bar')`。\n\n当你在 ts 的项目中使用这些变量时，你需要在 typings 文件中声明变量类型，以支持 ts 类型提示，比如：\n\n如果你的 typings 文件是全局的：\n\n```ts\n// typings.d.ts\ndeclare const FOO: string;\n```\n\n如果你的 typings 文件是非全局的（包含了 import/export）：\n\n```ts\n// typings.d.ts\nimport './other.d.ts';\n\ndeclare global {\n  const FOO: string;\n}\n```\n\n"
+        "md": "* 类型：`Record<string, string>`\n* 默认值： 如下\n\n```\n  { \n    'process.env.NODE_ENV' : process.env.NODE_ENV,\n    'process.env.HMR' : process.env.HMR, \n    'process.env.SOCKET_SERVER': process.env.ERROR_OVERLAY' \n  }\n```\n\n基于[define-plugin 插件](https://webpack.js.org/plugins/define-plugin/)设置代码中的可用变量。\n\n:::warning{title=🚨}\n\n1. 属性值会经过一次 `JSON.stringify` 转换。\n2. key 值的替换是通过语法形式来匹配的，比如配置了 `{'a.b.c': 'abcValue'}` 是无法替换代码中的  `a.b?.c` 的\n   :::\n\n比如，\n\n```\ndefine: { FOO: 'bar' }\n```\n\n然后代码里的 `console.log(hello, FOO)` 会被编译成 `console.log(hello, 'bar')`。\n\n当你在 ts 的项目中使用这些变量时，你需要在 typings 文件中声明变量类型，以支持 ts 类型提示，比如：\n\n如果你的 typings 文件是全局的：\n\n```ts\n// typings.d.ts\ndeclare const FOO: string;\n```\n\n如果你的 typings 文件是非全局的（包含了 import/export）：\n\n```ts\n// typings.d.ts\nimport './other.d.ts';\n\ndeclare global {\n const FOO: string;\n}\n```\n\n"
       },
       {
         "title": "devtool",
@@ -523,7 +523,7 @@
       {
         "title": "esbuildMinifyIIFE",
         "property": [],
-        "md": "* 类型：`boolean`\n* 默认值：`false`\n\n修复 esbuild 压缩器自动引入的全局变量导致的命名冲突问题。\n\n由于 Umi 4 默认使用 esbuild 作为压缩器，该压缩器会自动注入全局变量作为 polyfill ，这可能会引发 异步块全局变量冲突、 qiankun 子应用和主应用全局变量冲突 等问题，通过打开该选项或切换 [`jsMinifier`](#jsminifier-webpack) 压缩器可解决此问题。\n\n更多信息详见 [vite#7948](https://github.com/vitejs/vite/pull/7948) 。\n\n示例,\n\n```ts\nesbuildMinifyIIFE: true;\n```\n\n"
+        "md": "* 类型：`boolean`\n* 默认值：`false`\n\n修复 esbuild 压缩器自动引入的全局变量导致的命名冲突问题。\n\n由于 Umi 4 默认使用 esbuild 作为压缩器，该压缩器会自动注入全局变量作为 polyfill ，这可能会引发 异步块全局变量冲突、 qiankun 子应用和主应用全局变量冲突 等问题，通过打开该选项或切换 [`jsMinifier`](#jsminifier-webpack) 压缩器可解决此问题。\n\n更多信息详见 [vite#7948](https://github.com/vitejs/vite/pull/7948) 。\n\n示例,\n\n```ts\nesbuildMinifyIIFE: true\n```\n\n"
       },
       {
         "title": "externals",
@@ -533,7 +533,7 @@
       {
         "title": "extraBabelIncludes",
         "property": [],
-        "md": "* 类型：`Array<string | RegExp>`\n* 默认值：`[]`\n\n配置额外需要做 Babel 编译的 NPM 包或目录。比如：\n\n```js\nexport default {\n  extraBabelIncludes: [\n    // 支持绝对路径\n    join(__dirname, '../../common'),\n    // 支持 npm 包\n    'react-monaco-editor',\n    // 转译全部路径含有 @scope 的包\n    /@scope/,\n  ],\n};\n```\n\n"
+        "md": "* 类型：`Array<string | RegExp>`\n* 默认值：`[]`\n\n配置额外需要做 Babel 编译的 NPM 包或目录。比如：\n\n```js\nexport default {\n  extraBabelIncludes: [\n    // 支持绝对路径\n    join(__dirname, '../../common'),\n    // 支持 npm 包\n    'react-monaco-editor',\n    // 转译全部路径含有 @scope 的包\n    /@scope/\n  ],\n};\n```\n\n"
       },
       {
         "title": "extraBabelPlugins",
@@ -553,12 +553,12 @@
       {
         "title": "exportStatic",
         "property": [],
-        "md": "* 类型：`{ extraRoutePaths: IUserExtraRoute[] | (() => IUserExtraRoute[] | Promise<IUserExtraRoute[]>), ignorePreRenderError: boolean }`\n* 默认值：`undefined`\n\n开启该配置后会针对每个路由单独输出 HTML 文件，通常用于静态站点托管。例如项目有如下路由：\n\n```bash\n/\n/docs\n/docs/a\n```\n\n不开启 `exportStatic` 时会输出：\n\n```bash\ndist/index.html\n```\n\n开启 `exportStatic` 时会输出：\n\n```bash\ndist/index.html\ndist/docs/index.html\ndist/docs/a/index.html\n```\n\n通过 `extraRoutePaths` 子配置项可以产出额外的页面，通常用于动态路由静态化。例如有如下路由：\n\n```bash\n/news/:id\n```\n\n默认情况下只会输出 `dist/news/:id/index.html`，但可以通过配置 `extraRoutePaths` 将其静态化：\n\n```ts\n// .umirc.ts\nexport default {\n  exportStatic: {\n    // 配置固定值\n    extraRoutePaths: ['/news/1', '/news/2'],\n    // 也可以配置函数动态获取\n    extraRoutePaths: async () => {\n      const res = await fetch('https://api.example.com/news');\n      const data = await res.json();\n      return data.map((item) => `/news/${item.id}`);\n    },\n  },\n};\n```\n\n此时输出文件会变成：\n\n```bash\ndist/news/:id/index.html\ndist/news/1/index.html\ndist/news/2/index.html\n```\n\n`extraRoutePaths` 除了支持配置字符串数据，还可以配置成对象数组，用于启用 SSR 时又希望对部分路由禁用预渲染的场景，例如：\n\n```ts\n// .umirc.ts\nexport default {\n  exportStatic: {\n    // 输出额外页面文件但跳过预渲染\n    extraRoutePaths: [{ path: '/news/1', prerender: false }],\n  },\n};\n```\n\n`exportStatic` 在搭配 `ssr` 使用时会进行预渲染，在预渲染失败时会抛出异常并终止构建，可以通过配置 `ignorePreRenderError` 来忽略预渲染失败的错误，例如：\n\n```ts\n// .umirc.ts\nexport default {\n  exportStatic: {\n    // 忽略预渲染失败的错误\n    ignorePreRenderError: true,\n  },\n};\n```\n\n"
+        "md": "* 类型：`{ extraRoutePaths: IUserExtraRoute[] | (() => IUserExtraRoute[] | Promise<IUserExtraRoute[]>), ignorePreRenderError: boolean }`\n* 默认值：`undefined`\n\n开启该配置后会针对每个路由单独输出 HTML 文件，通常用于静态站点托管。例如项目有如下路由：\n\n```bash\n/\n/docs\n/docs/a\n```\n\n不开启 `exportStatic` 时会输出：\n\n```bash\ndist/index.html\n```\n\n开启 `exportStatic` 时会输出：\n\n```bash\ndist/index.html\ndist/docs/index.html\ndist/docs/a/index.html\n```\n\n通过 `extraRoutePaths` 子配置项可以产出额外的页面，通常用于动态路由静态化。例如有如下路由：\n\n```bash\n/news/:id\n```\n\n默认情况下只会输出 `dist/news/:id/index.html`，但可以通过配置 `extraRoutePaths` 将其静态化：\n\n```ts\n// .umirc.ts\nexport default {\n  exportStatic: {\n    // 配置固定值\n    extraRoutePaths: ['/news/1', '/news/2'],\n    // 也可以配置函数动态获取\n    extraRoutePaths: async () => {\n      const res = await fetch('https://api.example.com/news');\n      const data = await res.json();\n      return data.map((item) => `/news/${item.id}`);\n    },\n  },\n}\n```\n\n此时输出文件会变成：\n\n```bash\ndist/news/:id/index.html\ndist/news/1/index.html\ndist/news/2/index.html\n```\n\n`extraRoutePaths` 除了支持配置字符串数据，还可以配置成对象数组，用于启用 SSR 时又希望对部分路由禁用预渲染的场景，例如：\n\n```ts\n// .umirc.ts\nexport default {\n  exportStatic: {\n    // 输出额外页面文件但跳过预渲染\n    extraRoutePaths: [{ path: '/news/1', prerender: false }],\n  },\n}\n```\n\n`exportStatic` 在搭配 `ssr` 使用时会进行预渲染，在预渲染失败时会抛出异常并终止构建，可以通过配置 `ignorePreRenderError` 来忽略预渲染失败的错误，例如：\n\n```ts\n// .umirc.ts\nexport default {\n  exportStatic: {\n    // 忽略预渲染失败的错误\n    ignorePreRenderError: true,\n  },\n}\n```\n\n"
       },
       {
         "title": "favicons",
         "property": [],
-        "md": "* 类型：`string[]`\n* 默认值：`null`\n\n默认情况下，站点将使用约定 [`favicon`](../guides/directory-structure#favicon) 来创建图标的 meta 头标签。\n\n通过如下方式自定义：\n\n```js\nfavicons: [\n  // 完整地址\n  'https://domain.com/favicon.ico',\n  // 此时将指向 `/favicon.png` ，确保你的项目含有 `public/favicon.png`\n  '/favicon.png',\n];\n```\n\n"
+        "md": "* 类型：`string[]`\n* 默认值：`null`\n\n默认情况下，站点将使用约定 [`favicon`](../guides/directory-structure#favicon) 来创建图标的 meta 头标签。\n\n通过如下方式自定义：\n\n```js\nfavicons: [\n  // 完整地址\n  'https://domain.com/favicon.ico',\n  // 此时将指向 `/favicon.png` ，确保你的项目含有 `public/favicon.png`\n  '/favicon.png'\n]\n```\n\n"
       },
       {
         "title": "forkTSChecker",
@@ -617,7 +617,7 @@
             "md": "* icon，指定 icon\n* width，svg 宽度\n* height，svg 高度\n* viewBox，svg viewBox\n* style，外部容器样式\n* className，外部容器样式名\n* spin，是否自动旋转\n* rotate，配置旋转角度，支持多种格式，比如 `1`，`\"30deg\"`、`\"25%\"` 都可以\n* flip，支持 `vertical`、`horizontal`，或者他们的组合 `vertical,horizontal`\n"
           }
         ],
-        "md": "在 umi 配置文件设置，开启 icons 功能。\n\n```ts\nicons: {},\n```\n\n本地 svg icon 的使用需要把 svg 保存在 `src/icons` 目录下，然后通过 `local` 这个前缀引用，比如在 `src/icons` 目录下有个 `umi.svg`，然后可以这样引用。\n\n```tsx\nimport { Icon } from 'umi';\n<Icon icon=\"local:umi\" />;\n```\n\n"
+        "md": "在 umi 配置文件设置，开启 icons 功能。\n\n```ts\nicons: {},\n```\n\n本地 svg icon 的使用需要把 svg 保存在 `src/icons` 目录下，然后通过 `local` 这个前缀引用，比如在 `src/icons` 目录下有个 `umi.svg`，然后可以这样引用。\n\n```tsx\nimport { Icon } from 'umi';\n<Icon icon=\"local:umi\" />\n```\n\n"
       },
       {
         "title": "ignoreMomentLocale",
@@ -632,7 +632,7 @@
       {
         "title": "jsMinifier (webpack)",
         "property": [],
-        "md": "* 类型：`string`，可选值 `esbuild`, `terser`, `swc`, `uglifyJs`, `none`\n* 默认值：`esbuild`\n\n配置构建时压缩 JavaScript 的工具；`none`表示不压缩。\n\n示例：\n\n```ts\n{\n  jsMinifier: 'esbuild';\n}\n```\n\n"
+        "md": "* 类型：`string`，可选值 `esbuild`, `terser`, `swc`, `uglifyJs`, `none`\n* 默认值：`esbuild`\n\n配置构建时压缩 JavaScript 的工具；`none`表示不压缩。\n\n示例：\n\n```ts\n{\n  jsMinifier: 'esbuild'\n}\n```\n\n"
       },
       {
         "title": "jsMinifierOptions",
@@ -647,7 +647,7 @@
       {
         "title": "legacy",
         "property": [],
-        "md": "* 类型：`{ buildOnly?: boolean; nodeModulesTransform?: boolean; checkOutput?: boolean; }`\n* 默认值：`false`\n\n当你需要兼容低版本浏览器时，可能需要该选项，开启后将默认使用 **非现代** 的打包工具做构建，这会显著增加你的构建时间。\n\n```ts\nlegacy: {\n}\n```\n\n默认只在构建时生效，通过设定 `buildOnly: false` 关闭该限制。\n\n可通过打开 `checkOutput: true` 选项，每次构建结束后将自动运行 [`es-check`](https://github.com/yowainwright/es-check) 检查产物 `.js` 文件的语法是否为 es5 格式。\n\n开启此选项后：\n\n* 不支持自定义 `srcTranspiler` 、`jsMinifier` 、 `cssMinifier` 选项。\n* 将转译全部 `node_modules` 内的源码，`targets` 兼容至 ie 11 ，通过指定 `nodeModulesTransform: false` 来取消对 `node_modules` 的转换，此时你可以通过配置 `extraBabelIncludes` 更精准的转换那些有兼容性问题的包。\n* 因低版本浏览器不支持 Top level await ，当你在使用 `externals` 时，确保你没有在使用异步性质的 [`externalsType`](https://webpack.js.org/configuration/externals/#externalstype) 时又使用了同步导入依赖。\n\n"
+        "md": "* 类型：`{ buildOnly?: boolean; nodeModulesTransform?: boolean; checkOutput?: boolean; }`\n* 默认值：`false`\n\n当你需要兼容低版本浏览器时，可能需要该选项，开启后将默认使用 **非现代** 的打包工具做构建，这会显著增加你的构建时间。\n\n```ts\nlegacy: {}\n```\n\n默认只在构建时生效，通过设定 `buildOnly: false` 关闭该限制。\n\n可通过打开 `checkOutput: true` 选项，每次构建结束后将自动运行 [`es-check`](https://github.com/yowainwright/es-check) 检查产物 `.js` 文件的语法是否为 es5 格式。\n\n开启此选项后：\n\n* 不支持自定义 `srcTranspiler` 、`jsMinifier` 、 `cssMinifier` 选项。\n* 将转译全部 `node_modules` 内的源码，`targets` 兼容至 ie 11 ，通过指定 `nodeModulesTransform: false` 来取消对 `node_modules` 的转换，此时你可以通过配置 `extraBabelIncludes` 更精准的转换那些有兼容性问题的包。\n* 因低版本浏览器不支持 Top level await ，当你在使用 `externals` 时，确保你没有在使用异步性质的 [`externalsType`](https://webpack.js.org/configuration/externals/#externalstype) 时又使用了同步导入依赖。\n\n"
       },
       {
         "title": "links",
@@ -682,12 +682,12 @@
       {
         "title": "mountElementId",
         "property": [],
-        "md": "* 类型：`string`\n* 默认值：`'root'`\n\n配置 react 组件树渲染到 HTML 中的元素 id。\n\n示例，\n\n```js\nmountElementId: 'container';\n```\n\n"
+        "md": "* 类型：`string`\n* 默认值：`'root'`\n\n配置 react 组件树渲染到 HTML 中的元素 id。\n\n示例，\n\n```js\nmountElementId: 'container'\n```\n\n"
       },
       {
         "title": "monorepoRedirect",
         "property": [],
-        "md": "* 类型：`{ srcDir?: string[], exclude?: RegExp[], peerDeps?: boolean, useRootProject?: boolean }`\n* 默认值：`false`\n\n在 monorepo 中使用 Umi 时，你可能需要引入其他子包的组件、工具方法等，通过开启此选项来重定向这些子包的导入到他们的源码位置（默认为 `src` 文件夹），这也可以解决 `MFSU` 场景改动子包不热更新的问题。\n\n这种重定向的好处是：支持热更新，无需预构建其他子包即可进行开发。\n\n通过配置 `srcDir` 来调整识别源码文件夹的优先位置，通过 `exclude` 来设定不需要重定向的依赖范围。\n\n示例：\n\n```js\n// 默认重定向到子包的 src 文件夹\nmonorepoRedirect: {}\n// 在子包中寻找，优先定向到 libs 文件夹\nmonorepoRedirect: {\n  srcDir: ['libs', 'src'],\n}\n// 不重定向 @scope/* 的子包\nmonorepoRedirect: {\n  exclude: [/^@scope\\/.+/],\n}\n```\n\n在实际的大型业务 monorepo 中，每个子包的依赖都是从他们的目录开始向上寻找 `node_modules` 并加载的，但在本地开发时，依赖都安装在 `devDependencies` ，和从 npm 上安装表现不一致，所以不可避免会遇到多实例问题。\n\n:::info举个例子，每个子包在本地开发时都需要 `antd` ，在 `devDependencies` 中安装了，也在 `peerDependencies` 中指明了 `antd` ，我们预期该包发布到 npm ，被某个项目安装后， `antd` 是使用的项目本身的依赖，全局唯一，但由于在 monorepo 中，指定在 `devDependencies` 中的依赖必定存在，且子包代码寻找依赖时是从该子包进行的，导致了每个子包都用了自己的 `antd` ，出现了产物中有多份 `antd` 、产物体积增大、消息队列被破坏等情况。:::\n\n为了解决这种问题，我们约定：\n\n当打开 `peerDeps` 选项时，所有子包指明的 `peerDependencies` 都会被自动添加 `alias` 重定向唯一化，避免多实例的存在：\n\n```ts\nmonorepoRedirect: {\n  peerDeps: true;\n}\n```\n\n经过重定向，依赖全局唯一，便可以在开发时保持和在 npm 上安装包后的体验一致。\n\nuseRootProject: 当你的项目不在 monorepo 子文件夹里，而在 monorepo 根的话，你可以开启这个选项，以使 monorepoRedirect 生效。\n\n"
+        "md": "* 类型：`{ srcDir?: string[], exclude?: RegExp[], peerDeps?: boolean, useRootProject?: boolean }`\n* 默认值：`false`\n\n在 monorepo 中使用 Umi 时，你可能需要引入其他子包的组件、工具方法等，通过开启此选项来重定向这些子包的导入到他们的源码位置（默认为 `src` 文件夹），这也可以解决 `MFSU` 场景改动子包不热更新的问题。\n\n这种重定向的好处是：支持热更新，无需预构建其他子包即可进行开发。\n\n通过配置 `srcDir` 来调整识别源码文件夹的优先位置，通过 `exclude` 来设定不需要重定向的依赖范围。\n\n示例：\n\n```js\n// 默认重定向到子包的 src 文件夹\nmonorepoRedirect: {}\n// 在子包中寻找，优先定向到 libs 文件夹\nmonorepoRedirect: {\n  srcDir: ['libs', 'src'],\n}\n// 不重定向 @scope/* 的子包\nmonorepoRedirect: {\n  exclude: [/^@scope\\/.+/],\n}\n```\n\n在实际的大型业务 monorepo 中，每个子包的依赖都是从他们的目录开始向上寻找 `node_modules` 并加载的，但在本地开发时，依赖都安装在 `devDependencies` ，和从 npm 上安装表现不一致，所以不可避免会遇到多实例问题。\n\n:::info\n举个例子，每个子包在本地开发时都需要 `antd` ，在 `devDependencies` 中安装了，也在 `peerDependencies` 中指明了 `antd` ，我们预期该包发布到 npm ，被某个项目安装后， `antd` 是使用的项目本身的依赖，全局唯一，但由于在 monorepo 中，指定在 `devDependencies` 中的依赖必定存在，且子包代码寻找依赖时是从该子包进行的，导致了每个子包都用了自己的 `antd` ，出现了产物中有多份 `antd` 、产物体积增大、消息队列被破坏等情况。\n:::\n\n为了解决这种问题，我们约定：\n\n当打开 `peerDeps` 选项时，所有子包指明的 `peerDependencies` 都会被自动添加 `alias` 重定向唯一化，避免多实例的存在：\n\n```ts\nmonorepoRedirect: { peerDeps: true }\n```\n\n经过重定向，依赖全局唯一，便可以在开发时保持和在 npm 上安装包后的体验一致。\n\nuseRootProject: 当你的项目不在 monorepo 子文件夹里，而在 monorepo 根的话，你可以开启这个选项，以使 monorepoRedirect 生效。\n\n"
       },
       {
         "title": "mpa",
@@ -702,7 +702,7 @@
       {
         "title": "phantomDependency",
         "property": [],
-        "md": "* 类型：`{ exclude: string[] }`\n* 默认值：`false`\n\n执行幽灵依赖检测。\n\n当使用未在 package.json 中声明的依赖，以及也没有通过 alias 或 externals 进行配置时，会抛错并提醒。\n\n![](https://mdn.alipayobjects.com/huamei_ddtbzw/afts/img/A*k5uoQ5TOPooAAAAAAAAAAAAADkCKAQ/original)\n\n如遇到有需要需做白名单处理，可通过 exclude 配置项实现，exclude 的项是 npm 依赖的包名。\n\n```ts\nexport default {\n  phantomDependency: {\n    exclude: ['lodash'],\n  },\n};\n```\n\n"
+        "md": "* 类型：`{ exclude: string[] }`\n* 默认值：`false`\n\n执行幽灵依赖检测。\n\n当使用未在 package.json 中声明的依赖，以及也没有通过 alias 或 externals 进行配置时，会抛错并提醒。\n\n![](https://mdn.alipayobjects.com/huamei_ddtbzw/afts/img/A*k5uoQ5TOPooAAAAAAAAAAAAADkCKAQ/original)\n\n如遇到有需要需做白名单处理，可通过 exclude 配置项实现，exclude 的项是 npm 依赖的包名。\n\n```ts\nexport default {\n  phantomDependency: {\n    exclude: ['lodash']\n  }\n}\n```\n\n"
       },
       {
         "title": "plugins",

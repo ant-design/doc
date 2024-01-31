@@ -1,0 +1,102 @@
+[
+  {
+    "title": "### 关于分支管理规则，请问有哪些分支？",
+    "md": "我们项目中有两个主要的分支：`master` 和 `feature`。\n"
+  },
+  {
+    "title": "### 我应该将 bug 修复的 pull request 发送到哪个分支？",
+    "md": "如果你要修复一个 bug，请将 pull request 发送到 `master` 分支。\n"
+  },
+  {
+    "title": "### 如果我要提供一个新增功能的 pull request，我应该基于哪个分支进行开发？",
+    "md": "如果你要提供一个新增功能的 pull request，请基于 `feature` 分支进行开发。每月末，我们会将 `feature` 分支合并到 `master`，并发布一个包含新特性的 minor 版本。\n"
+  },
+  {
+    "title": "### 如何报告 Ant Design 的 bug？",
+    "md": "如果你发现了 Ant Design 的 bug，并希望它能够被快速解决，我们建议你使用 GitHub Issues 来进行 bug 追踪。你可以通过访问 [Ant Design 的 GitHub Issues 页面](https://github.com/ant-design/ant-design/issues) 进行报告。\n另外，我们还提供了一个专用的 [issue 小助手](http://new-issue.ant.design)，让你可以更方便地提交 issue。此外，我们还提供了一个 [模板](https://u.ant.design/codesandbox-repro)，可以帮助你提供一个重现 bug 的代码示例。\n在报告一个 bug 之前，请务必先搜索一下已有的 issue，以及阅读我们的常见问题页面，以避免重复报告已经存在的问题。\n"
+  },
+  {
+    "title": "### 如何使用 [issue 小助手](http://new-issue.ant.design) 提交 Ant Design 的 bug？",
+    "md": "我们为 Ant Design 提供了一个方便快捷的 [issue 小助手](http://new-issue.ant.design)，以帮助你更好地提交 bug。\n使用 issue 小助手的过程如下：\n1. 打开 [issue 小助手](http://new-issue.ant.design)。\n2. 根据你的需求选择「报告 BUG」选项。\n3. 填写相关信息，包括项目名称、操作系统、浏览器版本等。\n4. 在「问题描述」中详细说明你遇到的 bug，包括具体表现、复现步骤等。\n5. 根据需要，你可以上传相关的截图或录屏来帮助我们更好地理解问题。\n6. 点击「提交」按钮，即可将你的 bug 报告发送给我们。\n通过使用 issue 小助手，你可以提供更充分的信息，从而帮助开发者更快地定位和解决 bug。\n"
+  },
+  {
+    "title": "### 如何使用 [模板](https://u.ant.design/codesandbox-repro) 提供重现 Ant Design 的 bug 的代码示例？",
+    "md": "在报告一个 bug 时，提供一个能够重现 bug 的代码示例是非常有帮助的。为了使提交代码示例的过程更加简化，我们提供了一个模板供你使用。\n使用模板的步骤如下：\n1. 打开 [模板链接](https://u.ant.design/codesandbox-repro)。\n2. 通过该链接，在 CodeSandbox 平台上创建一个新的项目。\n3. 在项目中重现你遇到的 bug。你可以使用 Ant Design 的组件来构建示例。\n4. 确保你的代码示例可以准确地重现 bug，并且没有额外的冗余代码。\n5. 在 CodeSandbox 上保存你的项目，并获取分享链接。\n6. 在 Ant Design 的 GitHub Issues 页面上报告 bug 时，将 CodeSandbox 的分享链接附加到你的报告中。\n通过提供一个可以重现 bug 的代码示例，可以帮助我们更好地理解问题，并更快地定位和解决 bug。\n"
+  },
+  {
+    "title": "### 如何提出改进 Ant Design 的 API 或新增功能？",
+    "md": "如果你有改进 Ant Design 的API或者希望新增一些功能的想法，我们强烈推荐你使用我们提供的 [issue 小助手](http://new-issue.ant.design) 来新建一个添加新功能的 issue。\n同时，我们也提供了 [API 规范](https://github.com/ant-design/ant-design/wiki/API-Naming-rules)，你可以参考该规范进行命名，帮助我们协同开发新的 API。\n"
+  },
+  {
+    "title": "### 如何使用 Ant Design 的 issue 小助手？",
+    "md": "如果你有改进我们的 API 或者新增功能的想法，我们推荐你使用我们提供的 [issue 小助手](http://new-issue.ant.design) 来新建一个添加新功能的 issue。通过该小助手，你可以轻松地向我们提交你的建议，并且方便地进行沟通和讨论。\n"
+  },
+  {
+    "title": "### 如何参考 Ant Design 的 API 规范进行命名？",
+    "md": "如果你希望协助开发新的 API，请参考我们提供的 [API 规范](https://github.com/ant-design/ant-design/wiki/API-Naming-rules) 进行命名。该规范详细说明了 API 命名的规则和约定，希望可以帮助到你，同时也方便我们协同开发。\n"
+  },
+  {
+    "title": "### 如何在 GitHub 上提 Pull Request ？",
+    "md": "如果你还不清楚在 GitHub 上如何提 Pull Request，可以参考以下步骤：\n1. 首先，你需要 Fork 项目的代码仓库，即将项目的代码复制到你自己的 GitHub 账号中。\n2. 然后，使用 Git 将代码克隆到本地。\n3. 在本地进行修改和开发。\n4. 提交修改并推送到你的 GitHub 仓库。\n5. 在 GitHub 上打开原始仓库的页面，点击 \"New Pull Request\" 按钮。\n6. 在 Pull Request 页面中，选择你的分支和要对比的原始分支。\n7. 输入 Pull Request 的标题和描述，解释你的修改内容。\n8. 最后，点击 \"Create Pull Request\" 按钮，提交你的 Pull Request。\n通过上述步骤，你可以成功地在 GitHub 上提 Pull Request，贡献你的代码。\n"
+  },
+  {
+    "title": "### 如何优雅地在 GitHub 上贡献代码？",
+    "md": "如果你想要优雅地在 GitHub 上贡献代码，你可以按照以下建议进行操作：\n1. 首先，选择适合你技术水平的项目。对于初学者，可以选择一些标记为 \"good first issues\" 的问题，这些问题通常比较容易修复。\n2. 在开始处理一个问题之前，先检查一下该问题下面的留言，确保没有其他人正在处理该问题。如果没有人处理，你可以留言告知其他人你将会处理该问题，以免重复劳动。\n3. 如果之前有人留言说会处理一个问题，但是一两个星期都没有动静，那么你也可以接手处理该问题，但仍需要留言告知其他人。\n4. 在处理一个问题之前，先仔细研究该问题的描述和要求，确保理解清楚。可以在留言中询问问题的提出者，以获得更多详细信息。\n5. 开始处理问题时，先在本地创建一个分支，在该分支上进行修改和开发，保持原始主分支的干净和稳定。\n6. 在处理问题的过程中，保持与其他贡献者和项目维护者的沟通和合作。如果遇到困难或有任何疑问，不要犹豫向他们寻求帮助。\n7. 在修改代码后，进行适当的测试，并确保没有引入新的问题或 bug。\n8. 当你完成修改并测试通过后，将修改推送到你的 GitHub 仓库，并提交 Pull Request。\n9. 在 Pull Request 中，提供清晰、简洁、详细的描述，解释你的修改内容和原因。\n10. 定期关注你提交的 Pull Request，积极参与和回应相关讨论，提供进一步的修正和改进。\n通过以上方法，你可以在 GitHub 上优雅地贡献你的代码，并与其他贡献者一起推动项目的发展。\n"
+  },
+  {
+    "title": "### 什么是 \"good first issues\" ？",
+    "md": "\"good first issues\" 是 GitHub 上一种标签，用于标记一些比较容易修复的 bug 和小功能的问题。\n当开发者想要贡献代码但不知道从哪里开始时，\"good first issues\" 提供了一个良好的入门选择。这些问题通常有较清晰的描述和明确的要求，适合初学者处理。\n如果你打算开始处理一个 \"good first issues\"，建议先检查一下该问题下面的留言，以确保没有其他人正在处理该问题。如果没有人处理，你可以留言告知其他人你将会处理该问题，以免重复劳动。\n同时，如果你发现之前有人留言说会处理该问题，但是一两个星期都没有动静，那么你也可以接手处理该问题，当然还是需要留言告知其他人。\n通过处理 \"good first issues\"，你可以积累经验，提升技术，并为开源项目贡献你的力量。\n"
+  },
+  {
+    "title": "### 如何给 Ant Design 团队发送 Pull Request？",
+    "md": "1. 按照正确的分支进行修改，确保在项目根目录下运行了 `npm install`。\n2. 在修复 Bug 或者新增功能时，请编写相应的测试，并确保所有测试通过 `npm run test`。\n3. 运行 `npm test -- -u` 来更新 jest snapshot，并提交这些更新。\n4. 确保通过 `npm run test-image` 的 UI 改动，并运行 `npm run test-image -- -u` 来更新 UI 快照，并提交这些更新。请注意，UI 测试基于 Docker，需要根据平台下载相应的安装程序。\n5. 确保代码通过 `npm run lint` 的 lint 检查。在你进行 `git commit` 操作时，Lint 会自动运行。\n6. 最后，请确保所有 GitHub CI 检查通过。如果检查失败，请点击 `detail` 进入详情查看原因。\n"
+  },
+  {
+    "title": "### 如何给 react-component 发送 Pull Request？",
+    "md": "如果你修复了 antd 组件的 Bug，可能需要向 react-component 仓库发送 Pull Request。在合并你的修改并发布了一个补丁版本后，在重新安装依赖后，你可以使用新发布的版本。如果你新增了某个功能，请在修改合并并发布版本后，还需要向 Ant Design 仓库发送一个 Pull Request，以升级相应的依赖、文档和 TypeScript 类型定义。\n"
+  },
+  {
+    "title": "### 如何确认 Pull Request 被 Ant Design 团队接受？",
+    "md": "Ant Design 团队会关注所有的 Pull Request，并进行代码审查和合并。有时候可能需要你做些修改，或者告诉你为什么不能接受你的修改。在发送 Pull Request 之前，请确保你按照指定步骤进行操作，并仔细检查你的修改是否通过了所有的测试、lint 检查和 CI 检查。\n"
+  },
+  {
+    "title": "### 使用 npm 安装依赖的步骤是什么？",
+    "md": "使用 `npm` 安装依赖的步骤如下：\n1. 打开终端或命令行工具。\n2. 切换到你的项目目录。\n3. 运行命令 `npm install`。\n4. 等待依赖安装完成。\n"
+  },
+  {
+    "title": "### 使用 yarn 安装依赖的步骤是什么？",
+    "md": "使用 `yarn` 安装依赖的步骤如下：\n1. 打开终端或命令行工具。\n2. 切换到你的项目目录。\n3. 运行命令 `yarn`。\n4. 等待依赖安装完成。\n"
+  },
+  {
+    "title": "### 安装完依赖后，如何运行常用的命令？",
+    "md": "安装完依赖后，你可以运行以下常用的命令：\n* 如果你使用 npm，运行 `npm start` 来启动开发服务器。\n* 如果你使用 yarn，运行 `yarn start` 来启动开发服务器。\n* 你还可以运行 `npm run build` 或 `yarn build` 来构建生产版本的代码。\n"
+  },
+  {
+    "title": "### CSS-in-JS 样式提示插件是什么？",
+    "md": "CSS-in-JS 样式提示插件是一个用于 Visual Studio Code 的插件，它提供了 Ant Design 的样式提示功能。该插件可以帮助开发者在编写 CSS-in-JS 样式时，提供相关的代码补全和代码提示，从而提高开发效率。\n"
+  },
+  {
+    "title": "### 组件属性提示插件有什么作用？",
+    "md": "组件属性提示插件是一个针对 Ant Design 的插件，它为开发者提供了组件属性的提示功能。使用该插件，开发者可以在编写 Ant Design 组件时，获得相关属性的自动补全和代码提示，从而更快地完成组件的开发。\n"
+  },
+  {
+    "title": "### 如何使用 CSS-in-JS 样式提示插件和组件属性提示插件？",
+    "md": "* 首先，你需要在 Visual Studio Code 中安装对应的插件。你可以通过插件市场搜索插件名称来进行安装。\n* 然后，在开发 Ant Design 的项目中，打开对应的文件。\n* 当你开始编写 CSS-in-JS 样式时，插件会自动给出相关的提示，包括可用的样式属性和值。\n* 当你编写 Ant Design 组件时，插件会自动给出组件属性的提示，帮助你快速完成属性的书写。\n通过使用 CSS-in-JS 样式提示插件和组件属性提示插件，你可以更方便地开发 Ant Design 的项目，减少出错的概率，并提高开发效率。\n"
+  },
+  {
+    "title": "### 如何申请成为 Ant Design 社区协作者？",
+    "md": "如果你的贡献度足够高，并且希望和 Ant Design 团队一起参与维护工作，你可以申请成为社区协作者。具体的申请流程可参考[这个链接](https://github.com/ant-design/ant-design/wiki/Collaborators#how-to-apply-for-being-a-collaborator)。\n"
+  },
+  {
+    "title": "### 如何快速成为 Ant Design 的 contributor？",
+    "md": "如果你想成为 Ant Design 的贡献者，并迅速发展自己的技能，可以参考一篇由社区成员 Rustin-Liu 编写的指南[《记录向：如何快速的成为 Ant Design 的 contributor》](https://zhuanlan.zhihu.com/p/123367842)。这篇指南将帮助你一步一步成为 Ant Design 的贡献者。\n"
+  },
+  {
+    "title": "### 从零开始，如何成为 Ant-Design Contributor？",
+    "md": "如果你是一个从零开始的开发者，并且希望成为 Ant Design 的贡献者，可以阅读社区成员 fireairforce 写的指南[《从 0 开始，成为 Ant-Design Contributor》](https://zhuanlan.zhihu.com/p/143895612)。这篇指南将教会你如何快速成长为 Ant Design 的贡献者。\n"
+  },
+  {
+    "title": "### 如何成长为 Collaborator？",
+    "md": "如果你想成长为 Ant Design 的 Collaborator，可以参考[这篇博客文章](/docs/blog/to-be-collaborator-cn)。这篇文章将为你提供有关成为 Collaborator 的详细指南。\n"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "title": "### 如何在配置时拥有 TypeScript 提示？",
+    "md": "要在配置时拥有 TypeScript 语法提示，可以在配置的地方包一层 `defineConfig()`。下面是一个示例：\n```ts\n// .umirc.ts\n\nimport { defineConfig } from 'umi';\n\nexport default defineConfig({\n  routes: [{ path: '/', component: '@/pages/index' }],\n});\n```\n"
+  },
+  {
+    "title": "### 什么是 defineConfig()？",
+    "md": "`defineConfig()` 是一个函数，用于包装配置对象，以便在配置时拥有 TypeScript 语法提示。\n"
+  },
+  {
+    "title": "### 如何使用 defineConfig()？",
+    "md": "使用 `defineConfig()` 需要先导入它：\n```ts\nimport { defineConfig } from 'umi';\n```\n然后，在配置对象外部使用 `defineConfig()` 包装配置对象：\n```ts\nexport default defineConfig({\n  routes: [{ path: '/', component: '@/pages/index' }],\n});\n```\n这样，在配置时就可以拥有 TypeScript 的语法提示了。\n![defineConfig](https://img.alicdn.com/imgextra/i4/O1CN01WqZ2Ma1ZqiNbTefi6_!!6000000003246-2-tps-1240-1000.png)\n以上是如何在配置中使用 TypeScript 提示的方法，并且使用 `defineConfig()` 函数来实现。\n"
+  }
+]

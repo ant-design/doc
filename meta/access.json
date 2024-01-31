@@ -1,0 +1,34 @@
+[
+  {
+    "title": "### src/access.ts 文件的作用是什么？",
+    "md": "`src/access.ts` 文件是权限定义文件，用于定义项目中的权限。它需要默认导出一个方法，在项目初始化时被执行。该方法需要返回一个对象，对象的每一个值就对应定义了一条权限。\n"
+  },
+  {
+    "title": "### initialState 参数在 src/access.ts 文件中有什么作用？",
+    "md": "`initialState` 是通过初始化状态插件 `initial-state` 提供的数据。它可以用来初始化用户权限。在 `src/access.ts` 文件中，可以使用 `initialState` 来获取用户的 userId 和 role，以确定用户具有哪些权限。\n"
+  },
+  {
+    "title": "### src/access.ts 文件中的权限是如何定义的？",
+    "md": "在 `src/access.ts` 文件中，权限通过返回的对象来进行定义。对象的每一个键值对都对应一条权限。例如，`canReadFoo` 是一个权限，对应值为 `true`，表示用户具有读取 Foo 的权限。`canUpdateFoo` 是另一条权限，对应值为 `role === 'admin'`，表示用户具有更新 Foo 的权限当且仅当用户的角色为 'admin'。`canDeleteFoo` 是一条更为复杂的权限，对应值为一个回调函数。该函数根据传入的 `foo` 对象和用户的 `userId` 来判断用户是否具有删除 Foo 的权限。\n以上就是 `src/access.ts` 文件中权限的定义方式。通过定义权限，可以在项目中根据用户的角色和其他条件来控制用户的访问和操作权限。\n"
+  },
+  {
+    "title": "### 如何在 Ant Design 中配置页面权限控制",
+    "md": "要在 Ant Design 中配置页面权限控制，可以使用配合 `layout` 插件进行扩展的路由配置。以下是一个示例：\n```ts\nexport const routes = [\n  {\n    path: '/pageA',\n    component: 'PageA',\n    access: 'canReadPageA',\n  },\n];\n```\n在上述示例中，`routes` 是一个路由配置数组，其中每个对象代表一个页面。每个页面对象包含 `path`、`component` 和 `access` 属性。`path` 是页面的访问路径，`component` 是页面组件的名称或路径，`access` 是页面需要的权限。\n通过配置 `access` 属性，可以控制只有具备特定权限的用户才能访问该页面。在示例中，用户只有拥有 `canReadPageA` 权限才能访问 `/pageA` 页面。\n如果用户没有权限访问页面，则会默认渲染 Layout 插件内置的权限错误页面。\n请注意，`access` 的值是权限定义返回值的某个键（在 `src/access.ts` 中定义）。\n希望上述信息能够帮助您理解如何在 Ant Design 中配置页面权限控制。\n"
+  },
+  {
+    "title": "### 如何自定义权限页面配置",
+    "md": "默认情况下，Layout 插件会使用内置的权限错误页面进行渲染。如果你想自定义权限页面，可以在 `src/app.tsx` 文件中进行配置。\n首先，你需要在该文件中定义 `layout` 函数，并返回一个对象。在该对象中，你可以设置自定义的权限页面。\n以下是一个示例：\n```tsx\nexport const layout: RunTimeLayoutConfig = () => {\n  return {\n    // 自定义 403 页面\n    unAccessible: <div>'unAccessible'</div>,\n    // 自定义 404 页面\n    noFound: <div>'noFound'</div>,\n  };\n};\n```\n在上述示例中，我们定义了两个自定义权限页面：`unAccessible` 和 `noFound`。你可以根据自己的需求来设置这些页面的内容。\n请注意，以上配置需要在 `src/app.tsx` 文件中进行，并且需要按照以上示例的格式进行编写。\n该配置将覆盖默认的权限页面，使得渲染时会使用自定义的页面内容。\n通过以上信息生成的 文档如下：\n"
+  },
+  {
+    "title": "### 如何自定义权限页面配置？",
+    "md": "要自定义权限页面配置，你需要在 `src/app.tsx` 文件中定义一个名为 `layout` 的函数，并返回一个对象。在该对象中，你可以设置自定义的权限页面。具体的配置如下：\n```tsx\nexport const layout: RunTimeLayoutConfig = () => {\n  return {\n    // 自定义 403 页面\n    unAccessible: <div>'unAccessible'</div>,\n    // 自定义 404 页面\n    noFound: <div>'noFound'</div>,\n  };\n};\n```\n在上述示例中，我们定义了两个自定义权限页面：`unAccessible` 和 `noFound`。你可以根据自己的需求来设置这些页面的内容。\n请注意，以上配置需要在 `src/app.tsx` 文件中进行，并且需要按照以上示例的格式进行编写。\n这样配置之后，默认的渲染 Layout 插件内置的权限错误页面将会被替换为自定义的页面内容。\n"
+  },
+  {
+    "title": "### 如何使用 useAccess Hooks 在组件中获取权限相关信息？",
+    "md": "要使用 `useAccess` Hooks 在组件中获取权限相关信息，请按照以下步骤操作：\n1. 首先，在你的组件中导入 `useAccess` 方法。可以使用以下代码将其导入到你的组件中：\n```js\nimport { useAccess } from 'umi';\n```\n2. 定义你的组件，并在组件函数中调用 `useAccess` 方法，将其赋值给一个变量，例如 `access`。你可以使用以下代码在组件函数中获取权限相关信息：\n```js\nconst access = useAccess();\n```\n3. 现在，你可以在组件中使用 `access` 变量来获取权限相关信息。例如，如果你想检查是否有权限读取 `Foo`，你可以使用以下代码：\n```js\nif (access.canReadFoo) {\n  // 如果可以读取 Foo，则...\n}\n```\n4. 最后，根据你的需求，在组件中编写其他逻辑或返回 JSX 元素。\n注意：`useAccess` Hooks 是基于你在项目中配置的权限规则生成的，并且与 `Access` 组件配合使用可以实现页面内元素的权限控制。\n"
+  },
+  {
+    "title": "### How to use CSS variable mode in Ant Design 5.x?",
+    "md": "Starting from version 5.12.0, Ant Design reintroduced the CSS variable mode, which is a feature that was available in version 4.x. In this version, Ant Design combines the capabilities of CSS-in-JS and manages all design tokens using CSS variables. This means that styles in different themes can be shared within the same component, reducing the overall size of styles. Additionally, switching themes no longer requires re-serializing styles, resulting in improved performance when changing themes. If your application relies on Ant Design's theme capabilities, it is highly recommended to enable the CSS variable mode.\n"
+  }
+]

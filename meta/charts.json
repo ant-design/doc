@@ -1,0 +1,34 @@
+[
+  {
+    "title": "### Ant Design Charts 安装",
+    "md": "您可以使用以下命令安装完整的 Ant Design Charts 包：\n```bash\npnpm install @ant-design/charts\n```\n或者，如果您只需要使用特定的子包，可以只引入该子包，例如：\n```bash\n# 安装柱状图子包\npnpm install @ant-design/charts-bar\n```\n"
+  },
+  {
+    "title": "### 如何安装统计图表包",
+    "md": "1. 使用 pnpm 安装 `@ant-design/plots` 统计图表包：\n```tsx\n   pnpm install @ant-design/plots\n```\n"
+  },
+  {
+    "title": "### 如何制作曲线图",
+    "md": "要制作曲线图，可以按照以下步骤操作：\n1. 引入统计图表包 `@ant-design/plots`。\n```bash\npnpm install @ant-design/plots\n```\n2. 编写获取数据的代码，并保存在 `data` 变量中。\n```tsx\nimport { useState, useEffect } from 'react';\n\nconst DemoLine = () => {\n  const [data, setData] = useState([]);\n\n  useEffect(() => {\n    asyncFetch();\n  }, []);\n\n  const asyncFetch = () => {\n    fetch(\n      'https://gw.alipayobjects.com/os/bmw-prod/1d565782-dde4-4bb6-8946-ea6a38ccf184.json',\n    )\n      .then((response) => response.json())\n      .then((json) => setData(json))\n      .catch((error) => {\n        console.log('fetch data failed', error);\n      });\n  };\n};\n```\n在这个示例中，使用 `fetch` 方法获取数据，并将 JSON 对象保存在 `data` 变量中。\n3. 将数据展示在曲线图上。\n```tsx\nimport React from 'react';\nimport { Line } from '@ant-design/plots';\n\nconst DemoLine: React.FC = () => {\n  // 获取数据的代码\n\n  const config = {\n    data,\n    padding: 'auto',\n    xField: 'Date',\n    yField: 'scales',\n    xAxis: {\n      tickCount: 5,\n    },\n    smooth: true,\n  };\n\n  return <Line {...config} />;\n};\n```\n在这个示例中，创建了一个 `Line` 组件，并传入了配置项，其中 `data` 属性表示数据源，`xField` 表示横坐标字段，`yField` 表示纵坐标字段，`xAxis` 表示横坐标配置，`smooth` 表示是否使用平滑曲线。\n通过以上步骤，就可以获取数据并将其展示在曲线图上了。完整的示例代码和效果可参考[此页面](https://charts.ant.design/zh/examples/line/basic#spline)。\n请注意，上述代码中的 `fetch` 方法用于获取数据，你可以根据实际情况使用适合的方式获取数据。另外，曲线图的配置项还可以根据需要进行调整。\n"
+  },
+  {
+    "title": "### Ant Design Chart 的柱状图配置详解",
+    "md": "柱状图是一种常用的数据可视化图表类型。Ant Design 提供了几种配置项来定制柱状图的样式和行为。\n以下是柱状图的常用配置项：\n* `data`：柱状图的数据源，包含每个柱子的类型和值。\n* `xField`：柱子的类型字段。\n* `yField`：柱子的值字段。\n* `seriesField`：柱子的系列字段，用于区分不同系列的柱子。\n* `color`：自定义柱子的颜色，可以根据类型字段的值来决定颜色。\n* `legend`：是否显示图例。\n* `xAxis`：x 轴的配置项，可以设置标签的显示方式。\n在柱状图的配置中，可以通过返回不同类型字段的颜色来实现对某一类型的柱子进行标注。例如，可以使用鲜明的颜色来标注值为“5+ 秒”的柱子。\n"
+  },
+  {
+    "title": "### Ant Design Chart 的柱状图使用示例",
+    "md": "可以参考[此页面](https://charts.ant.design/zh/examples/column/basic#color)了解更多详细的柱状图使用示例。\n以上是关于 Ant Design Chart 柱状图的配置和使用方法的介绍。\n"
+  },
+  {
+    "title": "### 散点地图示例",
+    "md": "以下为一个示例，展示了如何使用 Ant Design Maps 来创建散点地图。\n首先，需要引入地图包：\n```bash\npnpm install @ant-design/maps\n```\n然后，获取包含所有区县数据的 [data](https://gw.alipayobjects.com/os/antfincdn/g5hIthhKlr/quanguoshixianweizhi.json)。数据格式如下：\n```json\n{\n  \"list\": [\n    {\n      \"lnglat\": [116.258446, 37.686622],\n      \"name\": \"景县\",\n      \"style\": 2\n    }\n    // ...\n  ]\n}\n```\n其中，`style` 为 `0` 表示地级市，`1` 表示县城，`2` 表示区县。\n然后，可以使用以下代码来渲染数据，创建散点地图：\n```tsx\nimport React from 'react';\nimport { DotMap } from '@ant-design/maps';\n\nconst DemoDotMap: React.FC = () => {\n  // fetch data\n\n  const config = {\n    map: {\n      type: 'mapbox',\n      style: 'dark',\n      zoom: 3,\n      center: [107.4976, 32.1697],\n      pitch: 0,\n    },\n    source: {\n      data,\n      parser: {\n        type: 'json',\n        coordinates: 'lnglat',\n      },\n    },\n    size: 4,\n    color: {\n      field: 'style',\n      value: ({ style }) => {\n        if (style == 0) {\n          return '#14B4C9';\n        } else if (style == 1) {\n          return '#3771D9';\n        } else {\n          return '#B8EFE2';\n        }\n      },\n    },\n    legend: {\n      type: 'category',\n      position: 'bottomleft',\n      items: [\n        {\n          color: '#14B4C9',\n          value: '地级市',\n        },\n        {\n          color: '#3771D9',\n          value: '县城市',\n        },\n        {\n          color: '#B8EFE2',\n          value: '区县',\n        },\n      ],\n    },\n  };\n\n  return <DotMap {...config} />;\n};\n```\n以上代码创建了一个散点地图，并设置了地图的类型、样式、缩放级别、中心点等信息。同时，还设置了数据源和解析规则，并定义了散点的大小和颜色，以及图例的位置和内容。\n你可以在[此页面](https://charts.ant.design/zh/examples/map-dot/map-scatter#distribution-cities)查看完整的散点地图代码和效果。\n"
+  },
+  {
+    "title": "### 如何获取包含所有区县数据的 JSON 文件",
+    "md": "要获取包含所有区县数据的 JSON 文件，你可以使用以下步骤：\n1. 打开 [data](https://gw.alipayobjects.com/os/antfincdn/g5hIthhKlr/quanguoshixianweizhi.json) 这个链接。\n2. 在打开的页面中，你会看到一个包含所有区县数据的 JSON 文件的内容。\n3. 可以将页面中的 JSON 内容复制下来，然后将其保存到你的项目中的一个 JSON 文件中，或者直接在代码中使用该 JSON 内容。\n通过以上步骤，你就可以获取到包含所有区县数据的 JSON 文件，并在你的项目中使用该文件中的数据了。\n"
+  },
+  {
+    "title": "### Pro Table 高级表格",
+    "md": "#### 类型定义\n定义了一个 `Member` 类型，包含以下字段：\n* `id`：成员的唯一标识，使用数字类型\n* `realName`：成员的真实姓名，使用字符串类型\n* `nickName`：成员的昵称，使用字符串类型\n* `email`：成员的账号，使用字符串类型\n* `phone`：成员的手机号，使用字符串类型\n```ts\nexport type Member = {\n  id: number;\n  realName: string;\n  nickName: string;\n  email: string;\n  phone: string;\n};\n```\n#### 处理成员信息\n将成员信息存储在一个 `Member` 数组中，遍历各个数组，将对应的信息存储到 `memberList` 数组中。\n```ts\nconst memberList: Member[] = [];\n\nfor (let i = 0; i < realNames.length; i++) {\n  memberList.push({\n    id: `${102047 + i}`,\n    realName: realNames[i],\n    nickName: nickNames[i],\n    email: emails[i],\n    phone: phones[i],\n  });\n}\n```\n#### 构建表格\n使用 Pro Table 组件来快速构建表格。先定义表格的列信息，包括姓名、昵称、账号、手机号和操作。\n```tsx\nimport React from 'react';\nimport type { ProColumns } from '@ant-design/pro-table';\nimport ProTable from '@ant-design/pro-table';\n\nconst MemberList: React.FC = () => {\n  const columns: ProColumns<Member>[] = [\n    {\n      dataIndex: 'realName',\n      title: '姓名',\n    },\n    {\n      dataIndex: 'nickName',\n      title: '昵称',\n    },\n    {\n      dataIndex: 'email',\n      title: '账号',\n    },\n    {\n      dataIndex: 'phone',\n      title: '手机号',\n    },\n    {\n      title: '操作',\n      dataIndex: 'x',\n      valueType: 'option',\n      render: (_, record) => {\n        return [<a key=\"edit\">编辑</a>, <a key=\"remove\">移除</a>];\n      },\n    },\n  ];\n\n  return (\n    <ProTable<Member>\n      columns={columns}\n      request={(params, sorter, filter) => {\n        console.log(params, sorter, filter);\n        return Promise.resolve({\n          datmemberList,\n          success: true,\n        });\n      }}\n      rowKey=\"id\"\n      pagination={{\n        showQuickJumper: true,\n      }}\n      toolBarRender={false}\n      search={false}\n    />\n  );\n};\n```\n以上就是构建 Pro Table 高级表格的流程和代码示例。可以通过 ProTable 组件的 props 来定制表格的功能和外观，例如设置列信息、请求数据、设置行键、分页等。详细的 API 可以参考[官方文档](https://procomponents.ant.design/components/table)。\n"
+  }
+]

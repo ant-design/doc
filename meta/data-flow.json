@@ -1,0 +1,46 @@
+[
+  {
+    "title": "### 什么是 @umi/max 数据流插件？",
+    "md": "@umi/max model 是 Umi.js 框架内置的一个插件，用于管理数据流。它是基于 hooks 范式的轻量级数据管理方案，可以在 Umi 项目中管理全局的共享数据。\n"
+  },
+  {
+    "title": "### @umi/max model 的作用是什么？",
+    "md": "@umi/max 的作用是帮助开发者在 Umi 项目中进行全局状态的管理，实现组件间的数据共享和通信。通过 @umi/max，开发者可以定义和操作全局数据，并在需要的地方订阅和更新这些数据。\n"
+  },
+  {
+    "title": "### @umi/max model 的特点有哪些？",
+    "md": "* 基于 hooks 范式：@umi/max 使用了 React 的 hooks 特性，使得数据的订阅和更新更加简洁和灵活。\n\n* 轻量级：@umi/max 是一个轻量级的数据管理方案，不需要引入额外的第三方库或依赖。\n\n* 全局共享数据：@umi/max 可以在整个项目中共享数据，避免了 props 传递和组件层层嵌套的问题。\n\n* 组件生命周期无关：@umi/max 的数据流是独立于组件生命周期的，可以在任何时候进行数据订阅和更新。\n\n* 高性能：@umi/max 使用了优化的订阅机制，可以避免不必要的数据更新和渲染，提升性能。\n\n* 插件化：@umi/max 是 Umi.js 的一个插件，可以与 Umi 的其他插件和功能无缝集成，提供更多的扩展能力。\n"
+  },
+  {
+    "title": "### 创建 Model",
+    "md": "数据流管理插件使用约定的目录结构来管理 Model 文件。根据约定，可以将 Model 文件放置在以下目录中：`src/models`、`src/pages/xxxx/models/`，并且可以在 `src/pages/xxxx/model.{js,jsx,ts,tsx}` 文件中引入 Model 文件。\nModel 文件的命名空间（namespace）生成规则如下：\n| 路径 | 命名空间 | 说明 |\n| --- | --- | --- |\n| `src/models/count.ts` | `count` | `src/models` 目录下不支持目录嵌套 |\n| `src/pages/pageA/model.ts` | `pageA.model` |  |\n| `src/pages/pageB/models/product.ts` | `pageB.product` |  |\n| `src/pages/pageB/models/fruit/apple.ts` | `pageB.fruit.apple` | `pages/xxx/models` 下 model 定义支持嵌套定义 |\n这里的 Model 是指一个自定义的钩子函数（hooks），没有任何使用者需要关注的实现细节。\n当我们需要获取 Model 中的全局数据时，只需要调用该命名空间即可。例如，对于 Model 文件 `userModel.ts`，它的命名空间为 `userModel`。\n我们可以编写以下默认导出的函数：\n```ts\n// src/models/userModel.ts\nexport default function userModel() {\n  const user = {\n    username: 'umi',\n  };\n\n  return { user };\n}\n```\n这就是一个 Model。插件的作用就是将 Model 中的状态或数据转化为全局可用的数据，不同的组件在使用该 Model 时，可以获取到相同的状态或数据。\n:::info{title=💡} Model 文件需要默认导出一个函数，并且该函数定义了一个钩子（hook）。不符合此规范的文件将被过滤掉，无法通过命名空间进行调用。 :::\nModel 中可以使用其他的钩子函数，以计数器为例：\n```ts\n// src/models/counterModel.ts\nimport { useState, useCallback } from 'react';\n\nexport default function counterModel() {\n  const [counter, setCounter] = useState(0);\n\n  const increment = useCallback(() => setCounter((c) => c + 1), []);\n  const decrement = useCallback(() => setCounter((c) => c - 1), []);\n\n  return { counter, increment, decrement };\n}\n```\n在实际项目中，通常需要调用后端接口来获取所需的数据。下面我们来扩展之前获取用户信息的例子：\n```ts\n// src/models/userModel.ts\nimport { useState, useEffect } from 'react';\nimport { getUser } from '@/services/user';\n\nexport default function userModel() {\n  const [user, setUser] = useState({});\n  const [loading, setLoading] = useState(true);\n\n  useEffect(() => {\n    getUser().then((res) => {\n      setUser(res);\n      setLoading(false);\n    });\n  }, []);\n\n  return {\n    user,\n    loading,\n  };\n}\n```\n如果项目中使用了 [ahooks](https://ahooks.js.org)，可以按下面的方式组织代码：\n```ts\n// src/models/userModel.ts\nimport { useRequest } from 'ahooks';\nimport { getUser } from '@/services/user';\n\nexport default function userModel() {\n  const { datuser, loading: loading } = useRequest(async () => {\n    const res = await getUser();\n    if (res) {\n      return res;\n    }\n    return {};\n  });\n\n  return {\n    user,\n    loading,\n  };\n}\n```\n以上是关于创建 Model 的信息。Model 通过将状态或数据转化为全局数据，提供了在不同组件中共享数据的功能。\n"
+  },
+  {
+    "title": "### 如何在组件中使用全局的 Model？",
+    "md": "要在组件中使用全局的 Model，可以使用 `useModel` 钩子函数。在组件中调用 `useModel` 并传入 Model 的命名空间即可。\n以下是使用 `useModel` 钩子函数的示例代码：\n```tsx\nimport { useModel } from 'umi';\n\nexport default function Page() {\n  const { user, loading } = useModel('userModel');\n\n  return (\n    {loading ? <></> : <div>{user.username}</div>}\n  );\n}\n```\n在上述示例中，我们调用了 `useModel` 钩子函数，并传入了 `'userModel'` 作为参数，表示要使用名为 `\"userModel\"` 的全局 Model。然后，我们通过解构赋值的方式获得了 `user` 和 `loading` 这两个来自全局 Model 的属性。\n在组件的返回值中，我们使用了条件渲染，根据 `loading` 的值来显示不同的内容。当 `loading` 为 `true` 时，渲染一个空的 `fragment`；当 `loading` 为 `false` 时，渲染一个 `div` 元素，并显示 `user` 的 `username` 属性值。\n这样，我们就在组件中成功使用了全局的 Model。\n"
+  },
+  {
+    "title": "### 什么是`useModel()`方法的第二个参数？",
+    "md": "`useModel()`方法的第二个参数是一个可选的过滤函数，用于过滤出组件所需要的 Model 中的部分参数。\n"
+  },
+  {
+    "title": "### 为什么要使用`useModel()`方法的第二个参数进行过滤？",
+    "md": "使用`useModel()`方法的第二个参数进行过滤可以避免组件重复渲染带来的性能损失。当组件只需要使用 Model 中的部分参数，而对其它参数的变化不感兴趣时，可以传入一个过滤函数，仅返回需要的参数。\n"
+  },
+  {
+    "title": "### 如何使用`useModel()`方法的第二个参数进行过滤？",
+    "md": "在使用`useModel()`方法时，将过滤函数作为第二个参数传入。过滤函数需要接受一个参数，代表整个 Model 对象，然后根据需求从 Model 中选择需要的参数，并以对象的形式返回。返回的对象中的属性将作为`useModel()`方法的返回值，可以在组件中直接使用。\n需要注意的是，在过滤函数中只返回需要的参数，避免让组件关注不需要的参数，从而提升性能。\n"
+  },
+  {
+    "title": "### 全局初始状态管理插件",
+    "md": "`@umi/max` 内置了全局初始状态管理插件，允许您快速构建并在组件内获取 Umi 项目全局的初始状态。\n全局初始状态是一种特殊的 Model，并在整个 Umi 项目的最开始创建。\n#### 创建全局初始状态\n要创建全局初始状态，您需要编辑 `src/app.ts` 文件，并导出一个方法 `getInitialState()`，该方法会返回全局初始状态的值。例如：\n```ts\n// src/app.ts\nimport { fetchInitialData } from '@/services/initial';\n\nexport async function getInitialState() {\n  const initialData = await fetchInitialData();\n  return initialData;\n}\n```\n在上述例子中，`getInitialState()` 方法调用了 `fetchInitialData()` 方法来获取初始数据，并返回该数据作为全局初始状态的值。\n#### 获取全局初始状态\n在插件或其他自定义组件中，您可以通过 `useModel('@@initialState')` 来获取全局初始状态。例如：\n```tsx\nimport { useModel } from 'umi';\n\nexport default function Page() {\n  const { initialState, loading, error, refresh, setInitialState } =\n    useModel('@@initialState');\n  return <>{initialState}</>;\n}\n```\n在上述例子中，通过调用 `useModel('@@initialState')`，我们获取到了全局初始状态管理模块的属性和方法。\n以下是 `@@initialState` 对象的属性和方法的说明：\n* `initialState`：全局初始状态的值，即 `getInitialState()` 方法的返回值。\n* `loading`：表示当前是否正在获取初始状态。当首次获取初始状态之前，页面的其他部分渲染将被阻止。\n* `error`：如果 `getInitialState()` 方法运行时报错，此属性将包含错误信息。\n* `refresh`：重新执行 `getInitialState` 方法，并获取新的全局初始状态。\n* `setInitialState`：手动设置全局初始状态的值。设置完毕后，将会将 `loading` 置为 `false`。\n通过以上信息，您可以在组件中使用全局初始状态，并根据需要刷新或修改初始状态。\n"
+  },
+  {
+    "title": "### Qiankun 微前端插件如何实现父子应用间的通信？",
+    "md": "`@umi/max` 内置了 **Qiankun 微前端**[插件](https://github.com/umijs/umi/blob/master/packages/plugins/src/qiankun.ts)，该插件可以用于实现父子应用间的通信。通信的方式是通过使用数据流插件，并通过 `useModel('@@qiankunStateFromMaster')` 方法获取父应用传递给子应用的数据 Model。\n详细的使用方法请参考[微前端的父子应用通信章节](./micro-frontend#父子应用通信)。\n"
+  },
+  {
+    "title": "### `useModel`函数的介绍",
+    "md": "`useModel()`是一个钩子函数，用于在组件中使用 Model。它接受两个参数，`namespace`和`updater`。\n* `namespace`是一个字符串值，指定了 Model 文件的命名空间。\n* `updater`是一个可选参数，是一个函数，用于返回当前组件中需要使用的 Model 状态或数据。这个函数可以对数据进行处理和筛选，以优化组件性能。\n在示例代码中，`useModel()`函数被用于获取`adminModel`模型中的`user`和`fetchUser`，并且使用了一个`updater`函数来选择需要使用的状态或数据。\n```tsx\nimport { useModel } from 'umi';\n\nexport default function Page() {\n  const { user, fetchUser } = useModel('adminModel', (model) => ({\n    user: model.admin,\n    fetchUser: model.fetchAdmin,\n  }));\n\n  return <>hello</>;\n}\n```\n以上是`useModel()`函数的基本用法和参数介绍。\n"
+  }
+]

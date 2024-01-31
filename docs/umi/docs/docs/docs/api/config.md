@@ -787,8 +787,6 @@ export default {
 - 类型：`{ extraRoutePaths: IUserExtraRoute[] | (() => IUserExtraRoute[] | Promise<IUserExtraRoute[]>), ignorePreRenderError: boolean }`
 - 默认值：`undefined`
 
-###
-
 `exportStatic` 是一个配置项，用于在构建静态站点时针对每个路由单独输出 HTML 文件。通过开启 `exportStatic`，可以将路由页面静态化，适用于静态站点托管的场景。
 
 ### 问题 2：如何使用 `exportStatic`？
