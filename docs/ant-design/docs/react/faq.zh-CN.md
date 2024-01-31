@@ -4,15 +4,15 @@ group: title: 其他 order: 2 title: FAQ
 
 Ant Design 5.x 如何使用 CSS 变量模式？
 
-答：Ant Design 5.x 的 CSS 变量模式是从版本 5.12.0 开始重新支持的功能。与 4.x 版本不同的是，这次 Ant Design 融合了 CSS-in-JS 的能力，并将所有 Design Token 纳入了 CSS 变量的管理范畴。这意味着在同一组件中，不同主题下的样式可以共享，从而减少样式体积。此外，切换主题时不再需要重新序列化样式，提升了主题切换的性能。如果你的应用依赖 Ant Design 的主题能力，强烈建议开启 CSS 变量模式。
+Ant Design 5.x 的 CSS 变量模式是从版本 5.12.0 开始重新支持的功能。与 4.x 版本不同的是，这次 Ant Design 融合了 CSS-in-JS 的能力，并将所有 Design Token 纳入了 CSS 变量的管理范畴。这意味着在同一组件中，不同主题下的样式可以共享，从而减少样式体积。此外，切换主题时不再需要重新序列化样式，提升了主题切换的性能。如果你的应用依赖 Ant Design 的主题能力，强烈建议开启 CSS 变量模式。
 
 如何开启 Ant Design 的 CSS 变量模式？
 
-答：要开启 Ant Design 的 CSS 变量模式，你需要在项目中使用 Ant Design 5.x 的版本，并在主题文件中设置 `@useCssVars: true`。这样，Ant Design 将会自动将 Design Token 转化为 CSS 变量，并应用到组件的样式中。具体的使用方法可以参考 Ant Design 官方文档中关于主题的章节。
+要开启 Ant Design 的 CSS 变量模式，你需要在项目中使用 Ant Design 5.x 的版本，并在主题文件中设置 `@useCssVars: true`。这样，Ant Design 将会自动将 Design Token 转化为 CSS 变量，并应用到组件的样式中。具体的使用方法可以参考 Ant Design 官方文档中关于主题的章节。
 
 CSS 变量模式能在已经使用了 Ant Design 4.x 的项目中引入吗？
 
-答：CSS 变量模式是 Ant Design 从 5.12.0 版本开始支持的功能，与之前的 4.x 版本不兼容。如果你想在已经使用了 Ant Design 4.x 的项目中使用 CSS 变量模式，你需要进行较大的代码和样式改动。建议在新项目中尝试使用 CSS 变量模式，或者等待后续版本中更加完善的兼容性。
+CSS 变量模式是 Ant Design 从 5.12.0 版本开始支持的功能，与之前的 4.x 版本不兼容。如果你想在已经使用了 Ant Design 4.x 的项目中使用 CSS 变量模式，你需要进行较大的代码和样式改动。建议在新项目中尝试使用 CSS 变量模式，或者等待后续版本中更加完善的兼容性。
 
 以上是关于 Ant Design 的 CSS 变量模式的常见问题和解答。如果你还有其他疑问，可以参考 [Ant Design FAQ issues](http://u.ant.design/faq) 中的问题，或者在社区中提问寻求帮助。
 
@@ -52,7 +52,7 @@ CSS 变量模式能在已经使用了 Ant Design 4.x 的项目中引入吗？
 
 ### `<Select>` 组件在滚动条中上下移动的问题如何解决？
 
-答：要解决 `<Select>` 组件在滚动条中上下移动的问题，可以通过设置 `getPopupContainer` 属性来将组件渲染到滚动区域内。具体可以使用 `<Select getPopupContainer={trigger => trigger.parentElement}>` 这个 API 来实现。另外，也可以使用其他的 `getXxxxContainer` 参数来解决这个问题。如果需要全局解决这个问题，可以使用 `<ConfigProvider getPopupContainer={trigger => trigger.parentElement}>` 这个 API。
+要解决 `<Select>` 组件在滚动条中上下移动的问题，可以通过设置 `getPopupContainer` 属性来将组件渲染到滚动区域内。具体可以使用 `<Select getPopupContainer={trigger => trigger.parentElement}>` 这个 API 来实现。另外，也可以使用其他的 `getXxxxContainer` 参数来解决这个问题。如果需要全局解决这个问题，可以使用 `<ConfigProvider getPopupContainer={trigger => trigger.parentElement}>` 这个 API。
 
 需要注意的是，要确保父元素（`parentElement`）的 `position` 属性为 `relative` 或 `absolute`。
 
@@ -60,7 +60,7 @@ CSS 变量模式能在已经使用了 Ant Design 4.x 的项目中引入吗？
 
 ### 如何解决 `<Select>`、`<Dropdown>`、`<DatePicker>`、`<TimePicker>` 和 `<Popover>` 组件在滚动条中上下移动的问题？
 
-答：要解决 `<Select>`、`<Dropdown>`、`<DatePicker>`、`<TimePicker>` 和 `<Popover>` 组件在滚动条中上下移动的问题，可以使用类似的方法。可以设置这些组件的 `getPopupContainer` 属性，将它们渲染到滚动区域内。具体可以使用 `<Select getPopupContainer={trigger => trigger.parentElement}>`、`<Dropdown getPopupContainer={trigger => trigger.parentElement}>`、`<DatePicker getPopupContainer={trigger => trigger.parentElement}>`、`<TimePicker getPopupContainer={trigger => trigger.parentElement}>` 和 `<Popover getPopupContainer={trigger => trigger.parentElement}>` 这些 API 来实现。
+要解决 `<Select>`、`<Dropdown>`、`<DatePicker>`、`<TimePicker>` 和 `<Popover>` 组件在滚动条中上下移动的问题，可以使用类似的方法。可以设置这些组件的 `getPopupContainer` 属性，将它们渲染到滚动区域内。具体可以使用 `<Select getPopupContainer={trigger => trigger.parentElement}>`、`<Dropdown getPopupContainer={trigger => trigger.parentElement}>`、`<DatePicker getPopupContainer={trigger => trigger.parentElement}>`、`<TimePicker getPopupContainer={trigger => trigger.parentElement}>` 和 `<Popover getPopupContainer={trigger => trigger.parentElement}>` 这些 API 来实现。
 
 另外，也可以使用其他的 `getXxxxContainer` 参数来解决这个问题。如果需要全局解决这个问题，可以使用 `<ConfigProvider getPopupContainer={trigger => trigger.parentElement}>` 这个 API。
 
@@ -70,7 +70,7 @@ CSS 变量模式能在已经使用了 Ant Design 4.x 的项目中引入吗？
 
 ### 如何解决滚动条上下移动问题以及全局解决办法？
 
-答：要解决组件在滚动条中上下移动的问题，可以通过设置 `getPopupContainer` 属性来将这些组件渲染到滚动区域内。具体可以使用 `<Select getPopupContainer={trigger => trigger.parentElement}>`、`<Dropdown getPopupContainer={trigger => trigger.parentElement}>`、`<DatePicker getPopupContainer={trigger => trigger.parentElement}>`、`<TimePicker getPopupContainer={trigger => trigger.parentElement}>` 和 `<Popover getPopupContainer={trigger => trigger.parentElement}>` 这些 API 来实现。
+要解决组件在滚动条中上下移动的问题，可以通过设置 `getPopupContainer` 属性来将这些组件渲染到滚动区域内。具体可以使用 `<Select getPopupContainer={trigger => trigger.parentElement}>`、`<Dropdown getPopupContainer={trigger => trigger.parentElement}>`、`<DatePicker getPopupContainer={trigger => trigger.parentElement}>`、`<TimePicker getPopupContainer={trigger => trigger.parentElement}>` 和 `<Popover getPopupContainer={trigger => trigger.parentElement}>` 这些 API 来实现。
 
 另外，也可以使用其他的 `getXxxxContainer` 参数来解决这个问题。如果需要全局解决这个问题，可以使用 `<ConfigProvider getPopupContainer={trigger => trigger.parentElement}>` 这个 API。
 
@@ -224,7 +224,7 @@ antd 在设计的时候就是为了开发完整的应用，所以会覆盖一些
 
 ### `antd` 是否有国内镜像？
 
-是的，`antd` 有国内镜像。你可以通过以下地址访问：
+是的，`antd` 有国内镜像。你可以通过以下地址访
 
 - 官方镜像：[https://ant-design.antgroup.com](https://ant-design.antgroup.com)
 - Gitee 镜像：[https://ant-design.gitee.io](https://ant-design.gitee.io)
@@ -325,7 +325,7 @@ antd 在设计的时候就是为了开发完整的应用，所以会覆盖一些
 
 antd 提供了一些工具类型，可以帮助我们获取未导出的属性定义。以下是一些示例：
 
-#### Get Props
+### Get Props
 
 通过 `GetProps` 工具类型，我们可以获取基本组件定义的属性。比如，我们可以获取 `Checkbox.Group` 组件的属性定义：
 
@@ -335,7 +335,7 @@ import type { Checkbox, CheckboxProps, GetProps } from 'antd';
 type CheckboxGroupProps = GetProps<typeof Checkbox.Group>;
 ```
 
-#### Get Prop
+### Get Prop
 
 使用 `GetProp` 工具类型，我们可以获取特定属性的定义。例如，我们可以获取 `Checkbox` 组件的 `value` 属性的定义：
 
@@ -345,7 +345,7 @@ import type { Checkbox, CheckboxProps, GetProp } from 'antd';
 type CheckboxValue = GetProp<CheckboxProps, 'value'>;
 ```
 
-#### Get Ref
+### Get Ref
 
 如果需要获取组件的引用类型定义，可以使用 `GetRef` 工具类型。例如，我们可以获取 `Input` 组件的引用类型定义：
 
@@ -539,21 +539,21 @@ export default App;
 
 ### 弹层类组件为什么要统一至 `open` 属性？
 
-问：为什么弹层类组件要统一使用 `open` 属性？
+为什么弹层类组件要统一使用 `open` 属性？
 
-答：因为在过去的开发中，弹层类组件的展示命名并不统一，同时存在 `open` 和 `visible` 两种属性的使用。这导致非 tsx 用户在开发过程中面临记忆成本的问题。同时，在新增功能时，选择使用哪种属性命名也变得模棱两可。为了解决这个问题，我们希望统一使用 `open` 属性命名。当然，您仍然可以继续使用原来的 `visible` 属性，因为它仍然向下兼容。但是从 Ant Design 的版本 5 开始，我们将从文档中移除 `visible` 属性。
+因为在过去的开发中，弹层类组件的展示命名并不统一，同时存在 `open` 和 `visible` 两种属性的使用。这导致非 tsx 用户在开发过程中面临记忆成本的问题。同时，在新增功能时，选择使用哪种属性命名也变得模棱两可。为了解决这个问题，我们希望统一使用 `open` 属性命名。当然，您仍然可以继续使用原来的 `visible` 属性，因为它仍然向下兼容。但是从 Ant Design 的版本 5 开始，我们将从文档中移除 `visible` 属性。
 
 ### 弹层类组件露出的命名有哪些不同？
 
-问：弹层类组件的展示命名有什么不同之处？
+弹层类组件的展示命名有什么不同之处？
 
-答：弹层类组件的展示命名在过去并不统一，出现了两种常用的命名方式，即 `open` 和 `visible`。这种不一致导致非 tsx 用户在开发过程中遇到记忆成本较高的问题。另外，这也给新增功能时的命名选择带来了困惑。为了解决这个问题，我们决定统一弹层类组件的展示命名，推荐使用 `open` 属性。同时，从 Ant Design 的版本 5 开始，我们将从文档中移除 `visible` 属性，但仍然保持该属性的向下兼容性。
+弹层类组件的展示命名在过去并不统一，出现了两种常用的命名方式，即 `open` 和 `visible`。这种不一致导致非 tsx 用户在开发过程中遇到记忆成本较高的问题。另外，这也给新增功能时的命名选择带来了困惑。为了解决这个问题，我们决定统一弹层类组件的展示命名，推荐使用 `open` 属性。同时，从 Ant Design 的版本 5 开始，我们将从文档中移除 `visible` 属性，但仍然保持该属性的向下兼容性。
 
 ### 弹层类组件的属性命名为什么要统一？
 
-问：为什么弹层类组件的属性命名需要统一？
+为什么弹层类组件的属性命名需要统一？
 
-答：过去，弹层类组件的属性命名存在不一致性，常用的命名方式包括 `open` 和 `visible`。这种不统一性导致非 tsx 用户在开发过程中需要记住不同的命名，增加了开发的复杂性。同时，在新增功能时，选择合适的命名方式也变得困难。为了解决这个问题，我们决定统一弹层类组件的属性命名，推荐使用 `open` 属性。考虑到兼容性，我们并未完全移除 `visible` 属性，但是从 Ant Design 的版本 5 开始，我们将从文档中移除对该属性的介绍。
+过去，弹层类组件的属性命名存在不一致性，常用的命名方式包括 `open` 和 `visible`。这种不统一性导致非 tsx 用户在开发过程中需要记住不同的命名，增加了开发的复杂性。同时，在新增功能时，选择合适的命名方式也变得困难。为了解决这个问题，我们决定统一弹层类组件的属性命名，推荐使用 `open` 属性。考虑到兼容性，我们并未完全移除 `visible` 属性，但是从 Ant Design 的版本 5 开始，我们将从文档中移除对该属性的介绍。
 
 ### 如何关闭组件动画？
 

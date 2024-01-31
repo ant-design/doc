@@ -151,7 +151,7 @@ export default RootLayout;
 
 如果你需要更详细的信息，可以参考 [with-nextjs-app-router-inline-style](https://github.com/ant-design/ant-design-examples/tree/main/examples/with-nextjs-app-router-inline-style)。
 
-### 问题 2：如何安装 `@ant-design/nextjs-registry`？
+### 如何安装 `@ant-design/nextjs-registry`？
 
 要在 Next.js 应用中使用 App Router，并优化 antd 组件库的用户体验，需要安装 `@ant-design/nextjs-registry`。
 
@@ -165,7 +165,7 @@ $ npm install @ant-design/nextjs-registry --save
 
 安装完成后，你可以按照前面提到的方式在你的 Next.js 应用中使用 App Router。
 
-###如何在 Next.js 中使用 antd 的子组件？
+### 如何在 Next.js 中使用 antd 的子组件？
 
 在 Next.js 中使用 antd 的子组件需要注意一些问题。
 

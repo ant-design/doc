@@ -153,7 +153,7 @@ Ant Design 5.x 在内置的时间库中使用了 Dayjs 替代 Moment.js。如果
 
 请注意更新导入路径，将原先的 `antd` 修改为 `@ant-design/compatible`。
 
-### 问题 2：如何替换 `PageHeader` 组件？
+### 如何替换 `PageHeader` 组件？
 
 在 Ant Design 5.x 版本中，`PageHeader` 组件已经被移除，并且由 `@ant-design/pro-layout` 包中的组件进行维护。因此，如果你想要在项目中继续使用 `PageHeader` 组件，需要做以下替换：
 
@@ -164,7 +164,7 @@ Ant Design 5.x 在内置的时间库中使用了 Dayjs 替代 Moment.js。如果
 
 请注意更新导入路径，将原先的 `antd` 修改为 `@ant-design/pro-layout`。
 
-### 问题 3：如何替换 `BackTop` 组件？
+### 如何替换 `BackTop` 组件？
 
 在 Ant Design 5.x 版本中，`BackTop` 组件已经被废弃，并且建议从 `FloatButton` 悬浮按钮中引入。如果你想要继续使用 `BackTop` 组件，请进行以下替换：
 

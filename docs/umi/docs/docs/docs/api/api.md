@@ -139,8 +139,6 @@ export default function Page() {
 
 在上述示例中，我们通过 `<Helmet>` 组件将页面的 `title` 设置为 "Hello World"。在实际项目中，还可以使用 `<Helmet>` 组件来设置其他标签，例如 `<meta>`、`<link>` 等。
 
-问题 2：
-
 ### 在 Umi 中如何使用 Helmet 组件？
 
 在 Umi 中使用 Helmet 组件需要先安装 `umi` 包，并引入 `umi` 包中提供的 Helmet 组件。以下是一个使用 Helmet 的示例代码：
@@ -159,8 +157,6 @@ export default function Page() {
 
 在上述示例中，我们通过 `<Helmet>` 组件将页面的 `title` 设置为 "Hello World"。根据实际需求，还可以在 `<Helmet>` 组件中设置其他标签，例如 `<meta>`、`<link>` 等。
 
-问题 3：
-
 ### React Helmet 与 Umi Helmet 有什么区别？
 
 React Helmet 是一个 React 组件库，用于在页面中动态设置 `head` 标签的内容。而 Umi Helmet 则是 Umi 框架为了确保服务端渲染（SSR）的正常工作，对 React Helmet 进行了封装和增强。
@@ -169,7 +165,7 @@ React Helmet 是一个 React 组件库，用于在页面中动态设置 `head` �
 
 以上是 React Helmet 和 Umi Helmet 的区别，希望能够帮助你更好地理解它们之间的关系。
 
-#### 如何获取当前路由信息？
+### 如何获取当前路由信息？
 
 你可以在 React 组件或 Hooks 中使用 `useLocation` 从 `umi` 包中导入，通过调用该函数来获取当前路由信息。例如：
 
@@ -196,7 +192,7 @@ window.location.search;
 window.location.hash;
 ```
 
-#### 如何进行命令式的路由跳转？
+### 如何进行命令式的路由跳转？
 
 对于 Umi.js，你可以通过导入 `history` 对象来进行命令式的路由跳转。例如：
 
@@ -229,7 +225,7 @@ history.go(-1);
 
 需要注意的是，`history.push` 和 `history.replace` 需要传递 `state` 作为第二个参数。
 
-#### 如何监听路由变更？
+### 如何监听路由变更？
 
 你可以使用 `history.listen` 来监听路由变更。例如：
 
@@ -282,11 +278,11 @@ function IndexPage({ user }) {
 
 `matchPath` 是一个函数，用于将给定的路径与一个已知的路由格式进行匹配，并返回匹配结果。
 
-### 问题 2： `matchPath` 函数的参数有哪些？
+### `matchPath` 函数的参数有哪些？
 
 `matchPath` 函数有两个参数，分别是 `pattern` 和 `pathname`。其中，`pattern` 可以是一个路由格式对象或字符串，`pathname` 是待匹配的路径字符串。
 
-###`matchPath` 函数的返回值是什么？
+### `matchPath` 函数的返回值是什么？
 
 `matchPath` 函数的返回值是一个匹配结果对象，包含以下属性：
 
@@ -315,11 +311,11 @@ function IndexPage({ user }) {
 
 `matchRoutes` 是一个函数，它用来将给定的路径以及多个可能的路由选择进行匹配，并返回匹配结果。
 
-### 问题 2：`matchRoutes` 函数的参数有哪些？
+### `matchRoutes` 函数的参数有哪些？
 
 `matchRoutes` 函数接受三个参数，分别是 `routes`、`location` 和 `basename`。其中，`routes` 是一个包含多个路由对象的数组，`location` 是一个部分的 `Location` 对象或者字符串，`basename` 是一个可选的字符串。
 
-###`matchRoutes` 函数的返回值是什么？
+### `matchRoutes` 函数的返回值是什么？
 
 `matchRoutes` 函数的返回值是一个 `RouteMatch` 对象组成的数组，或者是 `null`。`RouteMatch` 对象包含了匹配到的路由参数、路径名和路由对象的信息。
 
@@ -643,11 +639,11 @@ console.log(match?.pathname, match?.params.eventId);
 
 答案：`useNavigate` 钩子函数是一个返回可以控制跳转的函数的函数。它通常用于在页面中需要进行页面跳转的场景，比如在提交表单后跳转到其他页面。
 
-问题 2：`useNavigate` 钩子函数的返回值是什么类型？
+### `useNavigate` 钩子函数的返回值是什么类型？
 
 答案：`useNavigate` 钩子函数的返回值是一个 `NavigateFunction` 类型的函数。
 
-问题 3：`NavigateFunction` 函数有哪些参数和重载形式？
+### `NavigateFunction` 函数有哪些参数和重载形式？
 
 答案：`NavigateFunction` 函数有两种重载形式。第一种形式接受两个参数：`to` 和 `options`。其中 `to` 参数表示要跳转的路径，`options` 参数是一个可选参数对象，用于指定一些额外的选项，比如是否替换当前页面，传递一些状态等。第二种形式接受一个 `delta` 参数，表示要跳转的页面数量。
 

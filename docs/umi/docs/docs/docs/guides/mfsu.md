@@ -155,7 +155,7 @@ mfsu: {
 
 这个问题可以归因于 webpack 没有很好地处理 script 类型的 externals 和 module federation 之间的兼容性问题。可能是因为很少有人了解和使用 externals script 的功能，所以这个问题变得更加明显。
 
-### 问题 2：如何解决 externals script 和 MFSU 之间的兼容性问题？
+### 如何解决 externals script 和 MFSU 之间的兼容性问题？
 
 为了解决 externals script 和 MFSU 之间的兼容性问题，可以采取如下的解决方案：
 
@@ -189,9 +189,9 @@ externals script 是 webpack 中的一个功能，用于将外部库作为脚本
 
 因此，externals script 功能在使用时需要注意和其他功能的兼容性，特别是在开启了 MFSU 的情况下。
 
-问：在使用 monorepo 时，如果项目依赖了 A 包，而 A 包又依赖了项目 monorepo 中的子包 B，这种情况下应该如何配置 MFSU 的 exclude ？
+在使用 monorepo 时，如果项目依赖了 A 包，而 A 包又依赖了项目 monorepo 中的子包 B，这种情况下应该如何配置 MFSU 的 exclude ？
 
-答：在这种情况下，建议使用 MFSU 的 exclude 配置来解决。具体配置如下：
+在这种情况下，建议使用 MFSU 的 exclude 配置来解决。具体配置如下：
 
 ```ts
 mfsu: {

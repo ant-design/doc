@@ -92,15 +92,15 @@ export default {
 
 在开发项目过程中，为了确保项目能够在被淘汰的浏览器中运行，并且处理一些边界情况，我们可以采取以下措施来提高项目的兼容性和鲁棒性。
 
-#### 使用全量的 polyfill
+### 使用全量的 polyfill
 
 通过在项目中添加全量的 polyfill，我们可以增强项目的鲁棒性。这些 polyfill 可以填补目标浏览器环境缺少的功能。可以选择通过 CDN 引入 polyfill.js 文件，也可以使用工具如 [core-js-builder](https://github.com/zloirock/core-js/tree/master/packages/core-js-builder) 构建自己需要的 polyfill 产物。在配置文件中，可以将 polyfill.js 以前置脚本的形式引入项目。
 
-#### 使用动态 polyfill 服务
+### 使用动态 polyfill 服务
 
 另一种方式是使用动态 polyfill 服务。这种服务根据当前浏览器的请求 User-Agent (UA) 动态下发所需的 polyfill。一个常用的动态 polyfill 服务是 [polyfill.io](https://polyfill.io/v3/polyfill.min.js)。如果速度是一个考虑因素，可以使用国内的 [alicdn polyfill.io](http://polyfill.alicdn.com/v3/polyfill.min.js) 服务。另外，你还可以使用 [polyfill-service](https://github.com/Financial-Times/polyfill-service) 自建一个类似的动态 polyfill 服务。
 
-#### 其他注意事项
+### 其他注意事项
 
 当你处于内外网隔离的开发环境时，可以考虑将所有 polyfill 的 JavaScript 内容传入内网，在内网的 CDN 使用，或者将其放入 public 目录等方式使用。使用前置引入脚本的意义在于，在项目的 JavaScript 资源运行之前就准备好一个完整的、被 polyfill 过的 API 环境。
 

@@ -213,7 +213,7 @@ safeMfImport(moduleSpecifier: string, fallback: any): Promise<any>
 
 通过结合`React.lazy`函数，可以实现对远端模块的懒加载操作。
 
-#### 导入`safeMfImport`函数
+### 导入`safeMfImport`函数
 
 首先，我们需要从 `@umijs/max` 模块中导入 `safeMfImport` 函数：
 
@@ -227,7 +227,7 @@ import { safeMfImport } from '@umijs/max';
 import React, { Suspense } from 'react';
 ```
 
-#### 使用`safeMfImport`进行懒加载
+### 使用`safeMfImport`进行懒加载
 
 我们可以使用`React.lazy`函数来实现对远端模块的懒加载，具体代码如下：
 
@@ -239,7 +239,7 @@ const RemoteCounter = React.lazy(() => {
 
 这里的 `remoteCounter/Counter` 需要与你的配置相对应。
 
-#### 包裹懒加载组件
+### 包裹懒加载组件
 
 最后，我们需要在使用懒加载组件时进行包裹，以提供加载过程中的占位符。具体代码如下：
 

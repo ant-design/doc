@@ -203,9 +203,7 @@ export default function Page() {
 
 这样就可以在父应用的页面中引入名为 app2 的子应用，并指定子应用的路由为/some/page。
 
-### 子应用之间跳转
-
-#### 如何在子应用中跳转到另一个子应用的页面？
+### 如何在子应用中跳转到另一个子应用的页面？
 
 如果子应用通过**路由绑定的方式**引入，在其它子应用的内部，可以使用 `<MicroAppLink />` 组件来跳转到对应的路由。
 
@@ -245,7 +243,7 @@ export default function Page() {
 
 在上述代码中，当点击按钮后，父应用的路由会变为 `/app1/home`，并渲染子应用 `app1` 中内部路由为 `/home` 的页面。
 
-#### 如何从子应用跳转到父应用的指定路由？
+### 如何从子应用跳转到父应用的指定路由？
 
 如果需要从子应用直接跳转到父应用的指定路由，可以在子应用中使用 `<MicroAppLink />` 组件，并设置 `isMaster` 属性为 `true`。例如：
 
@@ -330,8 +328,6 @@ export const qiankun = {
 
 在子应用的 `src/app.ts` 中导出 `qiankun` 对象，实现生命周期钩子。子应用运行时仅支持配置 `bootstrap`、`mount` 和 `unmount` 钩子。
 
-#### bootstrap 钩子
-
 `bootstrap` 钩子在子应用加载之前触发，用于做一些初始化操作。在该钩子中，可以接收到一个 `props` 参数，用于接收主应用传递过来的数据。
 
 示例代码：
@@ -345,8 +341,6 @@ export const qiankun = {
 };
 ```
 
-#### mount 钩子
-
 `mount` 钩子在子应用渲染之前触发，常用于子应用的启动。在该钩子中，可以接收到一个 `props` 参数，用于接收主应用传递过来的数据。
 
 示例代码：
@@ -359,8 +353,6 @@ export const qiankun = {
   },
 };
 ```
-
-#### unmount 钩子
 
 `unmount` 钩子在子应用卸载之后触发，用于销毁子应用的资源。在该钩子中，可以接收到一个 `props` 参数，用于接收主应用传递过来的数据。
 
@@ -816,8 +808,6 @@ export default function (error: Error) {
 需要注意的是，`errorBoundary` 的优先级高于 `defaultErrorBoundary`。
 
 ### MasterOptions
-
-#### 属性
 
 | 属性 | 必填 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |

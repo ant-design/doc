@@ -302,7 +302,7 @@ export function patchRoutes({ routes, routeComponents }) {
 
 在前端开发中，`patchClientRoutes` 函数用于修改被 react-router 渲染前的树状路由表。它接收一个包含路由信息的对象作为参数。你可以使用它来在路由表的最前面添加新的路由、添加重定向路由、添加嵌套路由，或者根据服务端的响应动态更新路由。以下是一些示例用法：
 
-#### 在最前面添加一个路由
+### 在最前面添加一个路由
 
 你可以通过以下方式在路由表的最前面添加一个路由：
 
@@ -319,7 +319,7 @@ export function patchClientRoutes({ routes }) {
 
 这将在路由表的最前面添加一个路径为 `/foo` 的路由，并将其关联到名为 `Page` 的组件上。
 
-#### 在最前面添加一个重定向路由
+### 在最前面添加一个重定向路由
 
 你可以使用 `Navigate` 组件在路由表的最前面添加一个重定向路由，示例如下：
 
@@ -336,7 +336,7 @@ export const patchClientRoutes = ({ routes }) => {
 
 这将在路由表的最前面添加一个重定向路由，将用户重定向到 `/home` 路径。
 
-#### 添加一个嵌套路由
+### 添加一个嵌套路由
 
 你可以通过以下方式在路由表中添加一个嵌套路由：
 
@@ -358,7 +358,7 @@ export const patchClientRoutes = ({ routes }) => {
 
 这将在路由表中添加一个嵌套路由，包含一个路径为 `/group/page` 的子路由，将其关联到名为 `Page` 的组件上。
 
-#### 与 `render` 配置配合使用，动态更新路由
+### 与 `render` 配置配合使用，动态更新路由
 
 你还可以将 `patchClientRoutes` 与 `render` 配置一起使用，以便在服务端响应后动态更新路由。示例如下：
 

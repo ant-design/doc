@@ -1,0 +1,62 @@
+[
+  {
+    "title": "如何安装和配置 nvm？",
+    "md": "要安装和配置 nvm，需要按照以下步骤进行操作：\n1. 首先，在终端中运行以下命令以安装 nvm：\n```bash\n   $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash\n```\n2. 安装完成后，运行以下命令检查 nvm 版本：\n```bash\n   $ nvm -v\n   0.39.1\n```\n3. 然后，使用以下命令安装指定版本的 Node.js（此处以安装 Node.js 16 为例）：\n```bash\n   $ nvm install 16\n```\n4. 安装完成后，使用以下命令切换到已安装的 Node.js 版本：\n```bash\n   $ nvm use 16\n```\n5. 最后，可以使用以下命令验证 Node.js 安装是否成功：\n```bash\n   $ node -v\n   v16.10.0\n```\n通过按照上述步骤操作，即可成功安装和配置 nvm。\n"
+  },
+  {
+    "title": "如何安装和配置 pnpm？",
+    "md": "要安装和配置 pnpm，可以按照以下步骤进行操作：\n1. 首先，使用以下命令安装 pnpm：\n```bash\n   $ curl -fsSL https://get.pnpm.io/install.sh | sh -\n```\n2. 安装完成后，可以运行以下命令检查 pnpm 版本：\n```bash\n   $ pnpm -v\n   7.3.0\n```\n3. 通过以上步骤，即可成功安装和配置 pnpm。\n"
+  },
+  {
+    "title": "如何安装和配置 Yarn？",
+    "md": "要安装和配置 Yarn，可以按照以下步骤进行操作：\n1. 首先，访问 [Yarn 官方网站](https://yarnpkg.com/getting-started/install) 按照官方指引下载适用于您的操作系统的 Yarn 安装程序。\n\n2. 下载完成后，运行安装程序并按照提示完成安装。\n\n3. 安装完成后，在终端中运行以下命令检查 Yarn 版本：\n```bash\n   $ yarn -v\n```\n通过按照上述步骤操作，即可成功安装和配置 Yarn。\n"
+  },
+  {
+    "title": "使用 PNPM 创建 Umi 项目",
+    "md": "1. 打开命令行，进入你要创建项目的目录：\n```bash\n$ mkdir myapp && cd myapp\n```\n2. 执行以下命令使用 PNPM 创建项目：\n```bash\n$ pnpm dlx create-umi@latest\n✔ Install the following package: create-umi? (Y/n) · true\n✔ Pick Npm Client › pnpm\n✔ Pick Npm Registry › taobao\nWrite: .gitignore\nWrite: .npmrc\nWrite: .umirc.ts\nCopy:  layouts/index.tsx\nWrite: package.json\nCopy:  pages/index.tsx\nCopy:  pages/users.tsx\nCopy:  pages/users/foo.tsx\n> @ postinstall /private/tmp/sorrycc-vylwuW\n> umi setup\ninfo  - generate files\n```\n"
+  },
+  {
+    "title": "使用 BUN 创建 Umi 项目",
+    "md": "1. 打开命令行，进入你要创建项目的目录：\n```bash\n$ mkdir myapp && cd myapp\n```\n2. 执行以下命令使用 BUN 创建项目：\n```bash\n$ bunx create-umi\n✔ Pick Umi App Template › Simple App\n✔ Pick Npm Client › pnpm\n✔ Pick Npm Registry › npm\nWrite: .gitignore\nWrite: .npmrc\nWrite: .umirc.ts\nWrite: package.json\nCopy:  src/assets/yay.jpg\nCopy:  src/layouts/index.less\nWrite: src/layouts/index.tsx\nCopy:  src/pages/docs.tsx\nCopy:  src/pages/index.tsx\nWrite: tsconfig.json\nCopy:  typings.d.ts\nready - Git initialized successfully\n```\n"
+  },
+  {
+    "title": "使用 NPM 创建 Umi 项目",
+    "md": "1. 打开命令行，进入你要创建项目的目录：\n```bash\n$ mkdir myapp && cd myapp\n```\n2. 执行以下命令使用 NPM 创建项目：\n```bash\n$ npx create-umi@latest\nNeed to install the following packages:\n  create-umi@latest\nOk to proceed? (y) y\n✔ Pick Umi App Template › Simple App\n✔ Pick Npm Client › npm\n✔ Pick Npm Registry › taobao\nWrite: .gitignore\nWrite: .npmrc\nWrite: .umirc.ts\nWrite: package.json\nCopy:  src/assets/yay.jpg\nCopy:  src/layouts/index.less\nWrite: src/layouts/index.tsx\nCopy:  src/pages/docs.tsx\nCopy:  src/pages/index.tsx\nWrite: tsconfig.json\nCopy:  typings.d.ts\n\n> postinstall\n> umi setup\n```\n"
+  },
+  {
+    "title": "使用 YARN 创建 Umi 项目",
+    "md": "1. 打开命令行，进入你要创建项目的目录：\n```bash\n$ mkdir myapp && cd myapp\n```\n2. 执行以下命令使用 YARN 创建项目：\n```bash\n$ yarn create umi\nsuccess Installed \"create-umi@4.0.6\" with binaries:\n      - create-umi\n✔ Pick Umi App Template › Simple App\n✔ Pick Npm Client › yarn\n✔ Pick Npm Registry › taobao\nWrite: .gitignore\nWrite: .npmrc\nWrite: .umirc.ts\nWrite: package.json\nCopy:  src/assets/yay.jpg\nCopy:  src/layouts/index.less\nWrite: src/layouts/index.tsx\nCopy:  src/pages/docs.tsx\nCopy:  src/pages/index.tsx\nWrite: tsconfig.json\nCopy:  typings.d.ts\nyarn install v1.22.18\nsuccess Saved lockfile.\n$ umi setup\ninfo  - generate files\n```\n请根据你的情况选择使用 PNPM、BUN、NPM 或 YARN 来创建项目，注意根据国内网络环境选择合适的 NPM Registry。在创建项目后，会自动安装依赖并执行一些文件预处理工作。\n"
+  },
+  {
+    "title": "如何使用 `create-umi` 创建项目但不初始化 Git？",
+    "md": "使用 `create-umi` 创建项目时，可以通过添加 `--no-git` 参数来实现不初始化 Git 的功能。\n"
+  },
+  {
+    "title": "如何使用 `create-umi` 创建项目但不自动安装依赖？",
+    "md": "使用 `create-umi` 创建项目时，可以通过添加 `--no-install` 参数来实现不自动安装依赖的功能。\n"
+  },
+  {
+    "title": "如何使用 `create-umi` 创建项目并初始化 Git、自动安装依赖？",
+    "md": "使用 `create-umi` 创建项目时，无需添加任何参数，默认会初始化 Git 并自动安装依赖。\n"
+  },
+  {
+    "title": "如何启动项目？",
+    "md": "要启动项目，你需要执行 `pnpm dev` 命令。在终端中输入以下命令：\n```bash\n$ pnpm dev\n```\n启动项目后，你将在终端中看到一些输出信息，其中包括以下内容：\n```\nApp listening at:\n  > Local: https://127.0.0.1:8000\n  > Network: https://192.168.1.1:8000\n\nNow you can open browser with the above addresses👆\n```\n这些信息表示你的项目已经成功启动，并提供了两个网址来访问你的应用。其中，`Local` 表示本地地址，`Network` 表示网络地址。\n"
+  },
+  {
+    "title": "如何在浏览器中打开项目界面？",
+    "md": "要在浏览器中打开项目界面，你需要复制其中一个地址并在浏览器中打开。假设你选择使用 `http://localhost:8000/`，在浏览器的地址栏中输入该地址并访问即可。\n在打开项目界面后，你将会看到一个展示界面，类似于下图：\n![](https://img.alicdn.com/imgextra/i2/O1CN01ufcj8M1Lpt1yXd8sy_!!6000000001349-2-tps-1372-1298.png)\n通过这个界面，你可以进一步操作你的项目。\n"
+  },
+  {
+    "title": "如何启用 Prettier 的自动格式化功能？",
+    "md": "要启用项目代码的自动格式化功能，可以按照以下步骤进行操作：\n1. 执行命令 `pnpm umi g`，以生成器类型为 \"Enable Prettier -- Enable Prettier\"。\n\n2. 在执行命令后，会生成一些文件，包括 `package.json`、`.prettierrc` 和 `.prettierignore`。\n\n3. 在生成的 `package.json` 文件中，会包含有关 Prettier 的配置信息。\n\n4. 在生成的 `.prettierrc` 文件中，会包含有关 Prettier 格式化规则的配置。\n\n5. 在生成的 `.prettierignore` 文件中，可以配置需要忽略的文件或目录。\n\n6. 在执行命令后，还会使用 pnpm 安装必要的依赖。\n通过以上步骤，你就成功启用了 Prettier 的自动格式化功能，可以使项目代码保持统一的格式风格。\n"
+  },
+  {
+    "title": "如何执行 `pnpm build` 命令进行项目构建？",
+    "md": "执行 `pnpm build` 命令来进行项目构建的步骤如下：\n1. 打开终端或命令提示符。\n2. 导航到项目的根目录。\n3. 运行 `pnpm build` 命令。\n构建过程中，会显示以下信息：\n```bash\n> umi build\nevent - compiled successfully in 1179 ms (567 modules)\nevent - build index.html\n```\n"
+  },
+  {
+    "title": "构建完成后，生成的产物存放在哪个目录下？",
+    "md": "构建完成后，生成的产物默认存放在 `./dist` 目录下。在 `./dist` 目录中，你会找到以下文件：\n```\n./dist\n├── index.html\n├── umi.css\n└── umi.js\n```\n可以根据需要将 `./dist` 目录下的文件部署到服务器上。\n"
+  }
+]

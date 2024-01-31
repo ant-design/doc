@@ -22,9 +22,9 @@ CSS 变量模式带来了两个重要的优势。首先，它可以让同一组�
 
 如果你的应用依赖 Ant Design 的主题能力，即需要在不同主题下展示不同的样式，那么我们强烈建议你开启 Ant Design 的 CSS 变量模式。这样可以享受到样式共享和主题切换性能的提升。
 
-#### 如何快速上手 Ant Design 的 CSS 变量模式？
+### 如何快速上手 Ant Design 的 CSS 变量模式？
 
-答：在 `ConfigProvider` 的 `theme` 属性中，通过 `cssVar` 配置来开启 CSS 变量模式。这个配置会被继承，所以只需要在根节点的 `ConfigProvider` 中配置即可。示例代码如下：
+在 `ConfigProvider` 的 `theme` 属性中，通过 `cssVar` 配置来开启 CSS 变量模式。这个配置会被继承，所以只需要在根节点的 `ConfigProvider` 中配置即可。示例代码如下：
 
 ```tsx
 <ConfigProvider theme={{ cssVar: true }}>
@@ -32,13 +32,13 @@ CSS 变量模式带来了两个重要的优势。首先，它可以让同一组�
 </ConfigProvider>
 ```
 
-#### 问题 2：CSS 变量模式需要注意哪些问题？
+### CSS 变量模式需要注意哪些问题？
 
-答：在 React 18 中，使用了 `useId` 来生成唯一的 key，所以不需要关心为每一个主题设置唯一的 key。但是在 React 17 或者 16 中，需要手动为每一个主题设置一个唯一的 key，否则会导致主题混乱。
+在 React 18 中，使用了 `useId` 来生成唯一的 key，所以不需要关心为每一个主题设置唯一的 key。但是在 React 17 或者 16 中，需要手动为每一个主题设置一个唯一的 key，否则会导致主题混乱。
 
-####如何确认 CSS 变量模式已经生效？
+### 如何确认 CSS 变量模式已经生效？
 
-答：开启 CSS 变量模式后，可以审查元素，可以看到 antd 组件样式中一些原本具体的数值被替换为了 CSS 变量。示例图片如下：
+开启 CSS 变量模式后，可以审查元素，可以看到 antd 组件样式中一些原本具体的数值被替换为了 CSS 变量。示例图片如下：
 
 ![image](https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*p5NrRJmUNHgAAAAAAAAAAAAADrJ8AQ/original)
 

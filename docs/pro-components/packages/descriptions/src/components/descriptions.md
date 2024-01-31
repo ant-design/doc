@@ -38,7 +38,7 @@ interface RequestData {
 
 ### 问题 1：ProDescriptions 的参数有哪些？
 
-答：ProDescriptions 的参数如下：
+ProDescriptions 的参数如下：
 
 - title：描述列表的标题，显示在最顶部，类型为 ReactNode，默认值为 "-"
 - tooltip：内容的补充描述，hover 后显示，类型为 string，默认值为 "-"
@@ -54,21 +54,21 @@ interface RequestData {
 - columns：列定义，与 request 配合使用 [columns](/components/table#columns)，类型为 "-"，默认值为 "-"
 - editable：编辑的相关配置，类型为 EditableConfig，默认值为 "-"
 
-### 问题 2：ProDescriptions 中的 title 参数的类型是什么？
+### ProDescriptions 中的 title 参数的类型是什么？
 
-答：ProDescriptions 中的 title 参数的类型是 ReactNode。
+ProDescriptions 中的 title 参数的类型是 ReactNode。
 
-### 问题 3：ProDescriptions 中的 bordered 参数的默认值是什么？
+### ProDescriptions 中的 bordered 参数的默认值是什么？
 
-答：ProDescriptions 中的 bordered 参数的默认值是 false。
+ProDescriptions 中的 bordered 参数的默认值是 false。
 
 ### 问题 4：ProDescriptions 中的 layout 参数有哪些可选值？
 
-答：ProDescriptions 中的 layout 参数有两个可选值：horizontal 和 vertical。
+ProDescriptions 中的 layout 参数有两个可选值：horizontal 和 vertical。
 
 ### 问题 5：ProDescriptions 中的 request 参数有什么作用？
 
-答：ProDescriptions 中的 request 参数用于请求数据，当不设置 columns 时，ProDescriptions.Item 需设置对应的 dataIndex。
+ProDescriptions 中的 request 参数用于请求数据，当不设置 columns 时，ProDescriptions.Item 需设置对应的 dataIndex。
 
 ### editable 编辑配置
 
@@ -186,62 +186,62 @@ interface RequestData {
 
 ### ProDescriptions.Item
 
-#### label
+### label
 
 - 描述：内容的描述
 - 类型：ReactNode
 - 默认值：-
 
-#### tooltip
+### tooltip
 
 - 描述：内容的补充描述，hover 后显示
 - 类型：string
 - 默认值：-
 
-#### ellipsis
+### ellipsis
 
 - 描述：是否自动缩略
 - 类型：boolean
 - 默认值：-
 
-#### copyable
+### copyable
 
 - 描述：是否支持复制
 - 类型：boolean
 - 默认值：-
 
-#### span
+### span
 
 - 描述：包含列的数量
 - 类型：number
 - 默认值：1
 - 范围：整数
 
-#### valueType
+### valueType
 
 - 描述：格式化的类型
 - 类型：ValueType
 - 默认值：-
 
-#### valueEnum
+### valueEnum
 
 - 描述：当前列值的枚举
 - 类型：Record
 - 默认值：-
 
-#### request
+### request
 
 - 描述：从网络请求枚举数据
 - 类型：()=>Promise<{[key:string|number]:any}>
 - 默认值：-
 
-#### dataIndex
+### dataIndex
 
 - 描述：返回数据的 key 与 ProDescriptions 的 request 配合使用，用于配置式的定义列表
 - 类型：React.Text \| React.Text[]
 - 默认值：-
 
-#### editable
+### editable
 
 - 描述：在编辑表格中是否可编辑的，函数的参数和 table 的 render 一样
 - 类型：false \| (text: any, record: T,index: number) => boolean
@@ -249,33 +249,33 @@ interface RequestData {
 
 ### ProDescriptions.Item - span
 
-#### 描述
+### 描述
 
 包含列的数量
 
-#### 类型
+### 类型
 
 number
 
-#### 默认值
+### 默认值
 
 1
 
-#### 范围
+### 范围
 
 整数
 
 ### ProDescriptions.Item - editable
 
-#### 描述
+### 描述
 
 在编辑表格中是否可编辑的，函数的参数和 table 的 render 一样
 
-#### 类型
+### 类型
 
 false \| (text: any, record: T,index: number) => boolean
 
-#### 默认值
+### 默认值
 
 true
 

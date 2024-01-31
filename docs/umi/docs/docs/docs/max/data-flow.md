@@ -164,7 +164,7 @@ export default function Page() {
 
 全局初始状态是一种特殊的 Model，并在整个 Umi 项目的最开始创建。
 
-#### 创建全局初始状态
+### 创建全局初始状态
 
 要创建全局初始状态，您需要编辑 `src/app.ts` 文件，并导出一个方法 `getInitialState()`，该方法会返回全局初始状态的值。例如：
 
@@ -180,7 +180,7 @@ export async function getInitialState() {
 
 在上述例子中，`getInitialState()` 方法调用了 `fetchInitialData()` 方法来获取初始数据，并返回该数据作为全局初始状态的值。
 
-#### 获取全局初始状态
+### 获取全局初始状态
 
 在插件或其他自定义组件中，您可以通过 `useModel('@@initialState')` 来获取全局初始状态。例如：
 

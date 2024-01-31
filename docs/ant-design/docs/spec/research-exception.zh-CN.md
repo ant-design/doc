@@ -129,7 +129,7 @@
 
 模板 - 500 的作用是向用户展示一个错误页面，以通知用户当前的服务器错误情况。该页面可以包含一些说明信息，比如提示用户稍后再次尝试访问。这样可以提高用户体验，并帮助用户理解当前的错误状况。
 
-#### 模板 - 浏览器不兼容
+### 模板 - 浏览器不兼容
 
 什么情况下需要使用浏览器不兼容的模板？
 
@@ -137,7 +137,7 @@
 
 **建议：** 当浏览器不兼容，并且对用户的操作影响并不严重时，可以使用全局提示来提醒用户，并且允许用户继续使用网页。
 
-#### 什么情况下需要特别注意浏览器不兼容的问题？
+### 什么情况下需要特别注意浏览器不兼容的问题？
 
 特别注意浏览器不兼容的问题当浏览器不兼容导致用户无法正常使用网页时。
 
@@ -212,12 +212,12 @@
 
 ### 关于避免被错误信息尴尬的文章
 
-问：可以分享一篇关于避免被错误信息尴尬的文章吗？答：当然可以！你可以参考这篇文章：[Avoid Being Embarrassed by Your Error Messages](https://www.uxmatters.com/mt/archives/2010/08/avoid-being-embarrassed-by-your-error-messages.php)，它提供了一些建议和原则来改善错误信息的设计，帮助用户更好地理解问题并采取正确的行动。
+可以分享一篇关于避免被错误信息尴尬的文章吗？当然可以！你可以参考这篇文章：[Avoid Being Embarrassed by Your Error Messages](https://www.uxmatters.com/mt/archives/2010/08/avoid-being-embarrassed-by-your-error-messages.php)，它提供了一些建议和原则来改善错误信息的设计，帮助用户更好地理解问题并采取正确的行动。
 
 ### 如何修复糟糕的用户界面的指南
 
-问：有什么资源可以帮助我修复糟糕的用户界面吗？答：当然有！你可以参考这篇文章：[How to fix a bad user interface](https://www.scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack/#partial)，作者在这篇文章中讨论了一些常见的用户界面问题，并提供了一些解决方案，以帮助你改进你的用户界面设计。
+有什么资源可以帮助我修复糟糕的用户界面吗？当然有！你可以参考这篇文章：[How to fix a bad user interface](https://www.scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack/#partial)，作者在这篇文章中讨论了一些常见的用户界面问题，并提供了一些解决方案，以帮助你改进你的用户界面设计。
 
 ### 了解用户界面堆栈的重要性
 
-问：为什么了解用户界面堆栈很重要？答：了解用户界面堆栈是非常重要的，因为它涉及到用户界面元素之间的组织和交互，对用户体验和界面可用性有着重要的影响。你可以参考这篇文章：[How to fix a bad user interface](https://www.scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack/#partial)，作者在这篇文章中详细解释了用户界面堆栈的概念以及为什么忽视它会导致不稳定的用户界面。
+为什么了解用户界面堆栈很重要？了解用户界面堆栈是非常重要的，因为它涉及到用户界面元素之间的组织和交互，对用户体验和界面可用性有着重要的影响。你可以参考这篇文章：[How to fix a bad user interface](https://www.scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack/#partial)，作者在这篇文章中详细解释了用户界面堆栈的概念以及为什么忽视它会导致不稳定的用户界面。

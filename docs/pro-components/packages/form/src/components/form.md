@@ -66,7 +66,7 @@ ProForm 的使用注意事项有如下几点：
 
 ProForm 是基于 antd Form 的可降级封装，与 antd 功能完全对齐，但是在其之上还增加一些预设行为和多种布局。这些布局之间可以无缝切换，并且拥有公共的 API。
 
-#### ProForm 的使用场景是什么？
+### ProForm 的使用场景是什么？
 
 ProForm 适用于以下场景：
 
@@ -76,7 +76,7 @@ ProForm 适用于以下场景：
 - 如果需要作为行内内置的筛选，比如卡片操作栏和表格操作栏，可以使用 LightFilter。
 - 如果需要实现分步表单，需要配置 StepForm 使用 StepsForm。
 
-#### 如何切换 ProForm 的布局？
+### 如何切换 ProForm 的布局？
 
 可以根据需要切换 ProForm 的布局。以下是一个示例用于切换 Form 的 layout 的代码：
 
@@ -604,11 +604,11 @@ ProFormInstance 中的 validateFieldsReturnFormatValue 方法用于验证字段�
 - 类型：无
 - 默认值：无
 
-#### ProForm 中 submitter 的作用是什么？
+### ProForm 中 submitter 的作用是什么？
 
 submitter 是 ProForm 组件中的一个配置项，用于配置提交按钮和重置按钮的相关属性和行为。可以通过 submitter 来设置按钮的文本、隐藏重置按钮、自定义整个区域等。
 
-#### submitter 的参数有哪些以及其作用是什么？
+### submitter 的参数有哪些以及其作用是什么？
 
 submitter 的参数包括：
 
@@ -619,7 +619,7 @@ submitter 的参数包括：
 - resetButtonProps: 重置按钮的属性，可以设置按钮的样式、禁用状态等。
 - render: 自定义操作的渲染方法，可以根据需求完全自定义整个区域的内容。
 
-#### 如何使用 submitter 的 render 方法自定义整个区域？
+### 如何使用 submitter 的 render 方法自定义整个区域？
 
 在 submitter 的 render 方法中，可以通过参数获取到 props（包括 form 等信息）和默认的 dom 数组。根据需要可以自定义整个区域的内容，例如自定义按钮，添加其他操作等。返回一个 ReactNode 数组，即可实现自定义操作的渲染。
 

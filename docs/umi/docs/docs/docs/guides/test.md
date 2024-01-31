@@ -205,10 +205,18 @@ test('renders Greet without name assert by testing-library', () => {
 
 以上就是使用 @testing-library/jest-dom 进行渲染结果判断的步骤。可通过该库提供的断言 API 对渲染结果进行更丰富的断言，详细的断言 API 可以参考[官方文档](https://github.com/testing-library/jest-dom)。
 
-问：`Greet` 组件的测试中，为什么要使用 `await` 关键字？答：`await` 关键字用于等待异步操作完成，这里的异步操作是指在点击事件触发后，执行 `onClick` 函数的过程。使用 `await` 关键字可以保证在异步操作完成之后再继续执行后续的断言和判断。
+### `Greet` 组件的测试中，为什么要使用 `await` 关键字？
 
-问：`Greet` 组件的测试中，`fireEvent.click` 函数的参数是什么？答：`fireEvent.click` 函数的参数是一个 DOM 元素或包含该元素的组件，在测试中我们通常使用 `screen.getByText` 函数来获取需要点击的元素。参数中的正则表达式 `/hello/i` 是用来匹配文本内容为 "hello" 的元素。
+`await` 关键字用于等待异步操作完成，这里的异步操作是指在点击事件触发后，执行 `onClick` 函数的过程。使用 `await` 关键字可以保证在异步操作完成之后再继续执行后续的断言和判断。
 
-问：`Greet` 组件的测试中，`expect(onClick).toBeCalledTimes(1)` 是什么意思？答：`expect(onClick).toBeCalledTimes(1)` 是一个断言语句，用于判断 `onClick` 函数被调用的次数是否为 1。在这个测试中，我们期望点击事件触发后，`onClick` 函数只被调用一次。
+### `Greet` 组件的测试中，`fireEvent.click` 函数的参数是什么？
 
-问：`Greet` 组件的测试中，`container` 是什么？答：`container` 是一个容器变量，可以用来获取测试组件渲染后的 DOM 元素。在这个测试中，我们没有使用 `container` 变量，但它在其他测试中可能会用到。
+`fireEvent.click` 函数的参数是一个 DOM 元素或包含该元素的组件，在测试中我们通常使用 `screen.getByText` 函数来获取需要点击的元素。参数中的正则表达式 `/hello/i` 是用来匹配文本内容为 "hello" 的元素。
+
+### `Greet` 组件的测试中，`expect(onClick).toBeCalledTimes(1)`
+
+是什么意思？
+
+`expect(onClick).toBeCalledTimes(1)` 是一个断言语句，用于判断 `onClick` 函数被调用的次数是否为 1。在这个测试中，我们期望点击事件触发后，`onClick` 函数只被调用一次。
+
+`Greet` 组件的测试中，`container` 是什么？`container` 是一个容器变量，可以用来获取测试组件渲染后的 DOM 元素。在这个测试中，我们没有使用 `container` 变量，但它在其他测试中可能会用到。

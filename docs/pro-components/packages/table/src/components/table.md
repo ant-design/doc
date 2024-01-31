@@ -364,43 +364,39 @@ async (
 
 注意事项：可以根据具体需求配置错误处理功能的显示与隐藏。
 
-#### Q1：RecordCreator 组件的 record 属性是什么作用？
+### Q1：RecordCreator 组件的 record 属性是什么作用？
 
 A1：record 属性用于指定需要新增的行数据，一般包含唯一 key。
 
-#### Q2：RecordCreator 组件的 position 属性有哪些取值？
+### Q2：RecordCreator 组件的 position 属性有哪些取值？
 
 A2：position 属性可以取值为 "top" 或者 "bottom"，用于指定新增行的位置是在表格的开头还是结尾。
 
-#### Q3：RecordCreator 组件还有其他属性吗？
+### Q3：RecordCreator 组件还有其他属性吗？
 
 A3：是的，除了 record 和 position 属性之外，RecordCreator 组件还可以传递 antd 的 ButtonProps 属性，具体可以参考 [ButtonProps](https://ant.design/components/button-cn/#API) 的文档。
 
-#### ColumnStateType 的 defaultValue 属性是什么类型的?
+### ColumnStateType 的 defaultValue 属性是什么类型的?
 
 答案 1： defaultValue 属性的类型是 `Record<string, ColumnsState>`。
 
-问题 2：
-
-#### ColumnStateType 的 value 属性是什么类型的?
+### ColumnStateType 的 value 属性是什么类型的?
 
 答案 2： value 属性的类型是 `Record<string, ColumnsState>`。
 
-问题 3：
-
-#### ColumnStateType 的 onChange 属性是什么类型的?
+### ColumnStateType 的 onChange 属性是什么类型的?
 
 答案 3： onChange 属性的类型是 `(value:Record<string, ColumnsState>)=>void`。
 
 问题 4：
 
-#### ColumnStateType 的 persistenceKey 属性是什么类型的?
+### ColumnStateType 的 persistenceKey 属性是什么类型的?
 
 答案 4： persistenceKey 属性的类型是 `string | number`。
 
 问题 5：
 
-#### ColumnStateType 的 persistenceType 属性是什么类型的?
+### ColumnStateType 的 persistenceType 属性是什么类型的?
 
 答案 5： persistenceType 属性的类型是 `localStorage | sessionStorage`。
 
@@ -439,11 +435,11 @@ Search 搜索表单的默认配置为：
 - defaultCollapsed: `true`
 - showHiddenNum: `false`
 
-#### 问题 菜单栏 options 配置中的 OptionsType 是什么类型？
+### 问题 菜单栏 options 配置中的 OptionsType 是什么类型？
 
 答案 OptionsType 是一个联合类型，可以是一个回调函数、一个布尔值或者是两者的组合。
 
-#### 问题 菜单栏 options 配置中的 OptionConfig 的属性有哪些？
+### 问题 菜单栏 options 配置中的 OptionConfig 的属性有哪些？
 
 答案 OptionConfig 中有以下属性：
 
@@ -455,7 +451,7 @@ Search 搜索表单的默认配置为：
 - reloadIcon: 一个 React 组件，用于自定义刷新图标。
 - densityIcon: 一个 React 组件，用于自定义密度图标。
 
-#### 问题 菜单栏 options 配置中的 SettingOptionType 的属性有哪些？
+### 问题 菜单栏 options 配置中的 SettingOptionType 的属性有哪些？
 
 答案 SettingOptionType 中有以下属性：
 
@@ -468,11 +464,11 @@ Search 搜索表单的默认配置为：
 - children: 一个 React 组件，用于自定义子元素。
 - settingIcon: 一个 React 组件，用于自定义设置图标。
 
-#### ActionRef 是用来做什么的？
+### ActionRef 是用来做什么的？
 
 ActionRef 是用来手动触发 ProTable 组件中的操作的引用。通过创建一个 ref，然后将其传递给 ProTable 的 actionRef 属性，我们就可以在其他地方通过该 ref 来操作 ProTable。
 
-#### ActionRef 提供了哪些操作方法？
+### ActionRef 提供了哪些操作方法？
 
 ActionRef 提供了以下操作方法：
 
@@ -490,7 +486,7 @@ ActionRef 提供了以下操作方法：
 
 通过调用这些方法，我们可以手动触发 ProTable 的各种操作，以满足特定的需求。
 
-#### 如何使用 ActionRef？
+### 如何使用 ActionRef？
 
 要使用 ActionRef，首先需要创建一个 ref 对象，然后将其传递给 ProTable 组件的 actionRef 属性，示例代码如下：
 
@@ -781,19 +777,19 @@ ListToolBarMenu 的默认展示方式是 `inline`。
 
 答案：onChange 是 ListToolBarTabs 组件的切换菜单的回调函数，当菜单项被切换时，会触发 onChange 函数，可以在 onChange 函数中执行一些操作或者更新状态。onChange 函数的参数是 activeKey，表示切换后的菜单项的 key 值。
 
-#### TableDropdown 组件的参数 key 是什么类型的？
+### TableDropdown 组件的参数 key 是什么类型的？
 
 - 类型：`string`
 - 默认值：`-`
 - 说明：唯一标志
 
-#### TableDropdown 组件的参数 name 是什么类型的？
+### TableDropdown 组件的参数 name 是什么类型的？
 
 - 类型：`ReactNode`
 - 默认值：`-`
 - 说明：内容
 
-#### TableDropdown 组件的参数 (...)Menu.Item 是什么类型的？
+### TableDropdown 组件的参数 (...)Menu.Item 是什么类型的？
 
 - 类型：`Menu.Item`
 - 默认值：`-`

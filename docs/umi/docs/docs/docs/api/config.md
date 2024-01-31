@@ -106,17 +106,17 @@ autoprefixer 是一个用于解析 CSS 并自动添加供应商前缀的工具�
 
 你可以在 [autoprefixer 的配置项](https://github.com/postcss/autoprefixer#options) 查看更多配置信息。
 
-**问：autoprefixer 的作用是什么？**
+**autoprefixer 的作用是什么？**
 
-答：autoprefixer 用于解析 CSS 并根据 Can I Use 的数据为 CSS 规则自动添加供应商前缀。
+autoprefixer 用于解析 CSS 并根据 Can I Use 的数据为 CSS 规则自动添加供应商前缀。
 
-**问：autoprefixer 的默认配置是什么？**
+**autoprefixer 的默认配置是什么？**
 
-答：autoprefixer 的默认配置是 `{ flexbox: 'no-2009' }`。
+autoprefixer 的默认配置是 `{ flexbox: 'no-2009' }`。
 
-**问：我可以如何配置 autoprefixer？**
+**我可以如何配置 autoprefixer？**
 
-答：你可以根据需要进行配置，具体的配置项可以在 [autoprefixer 的配置项](https://github.com/postcss/autoprefixer#options) 中查看。
+你可以根据需要进行配置，具体的配置项可以在 [autoprefixer 的配置项](https://github.com/postcss/autoprefixer#options) 中查看。
 
 ### `analyze` 的类型是什么？默认值是什么？
 
@@ -789,7 +789,7 @@ export default {
 
 `exportStatic` 是一个配置项，用于在构建静态站点时针对每个路由单独输出 HTML 文件。通过开启 `exportStatic`，可以将路由页面静态化，适用于静态站点托管的场景。
 
-### 问题 2：如何使用 `exportStatic`？
+### 如何使用 `exportStatic`？
 
 开启 `exportStatic` 后，在默认情况下，会根据路由配置输出相应的 HTML 文件。例如，有以下路由：
 
@@ -828,7 +828,7 @@ export default {
 
 上述配置的作用是，除了默认的路由静态化外，还会将额外的 `/news/1` 和 `/news/2` 路由静态化输出。如果是通过异步函数获取额外的路由，需要返回一个数组。
 
-###如何禁用预渲染？
+### 如何禁用预渲染？
 
 `extraRoutePaths` 不仅支持配置字符串数据，还可以配置成对象数组，用于启用 SSR 时对部分路由禁用预渲染的场景。例如：
 
@@ -915,27 +915,21 @@ forkTSChecker 是一种用于开启 TypeScript 的类型检查的配置项。它
 
 注意：HTML 文件始终没有 hash 后缀。
 
-####
-
 hash 模式的作用是什么？
 
-#### 回答一：
+### 回答一：
 
 hash 模式的作用是让 build 之后的产物包含 hash 后缀，用于增量发布和避免浏览器加载缓存。
 
-####
-
 启用 hash 模式后，产物的命名规则是怎样的？
 
-#### 回答二：
+### 回答二：
 
 启用 hash 模式后，产物的命名规则通常是以原始文件名加上 hash 后缀，例如 `umi.df723s.js` 和 `umi.8sd8fw.css`。
 
-####
-
 HTML 文件是否也会添加 hash 后缀？
 
-#### 回答三：
+### 回答三：
 
 不会，HTML 文件始终没有 hash 后缀。
 
@@ -999,8 +993,6 @@ headScripts: [
 
 什么是 `helmet`？
 
-####
-
 `helmet` 是一个配置 `react-helmet-async` 的集成项。它负责集成 `react-helmet-async` 到项目中。当该配置项为 `false` 时，`react-helmet-async` 不会被集成，因此无法从框架中使用 `import { Helmet }`，同时构建产物的尺寸也会减少。了解更多关于 [react-helmet-async](https://bundlephobia.com/package/react-helmet-async) 的信息。
 
 ### helmet
@@ -1012,8 +1004,6 @@ headScripts: [
 
 `helmet` 的默认值是什么？
 
-####
-
 `helmet` 的默认值是 `true`，即为开启状态。默认情况下，`react-helmet-async` 会被集成到项目中，`import { Helmet }` 可以在项目中被使用。
 
 ### helmet
@@ -1024,8 +1014,6 @@ headScripts: [
 #
 
 如何关闭 `helmet` 的集成？
-
-####
 
 要关闭 `helmet` 的集成，可以将配置项设置为 `false`。这样会导致 `react-helmet-async` 不会被集成到项目中，因此无法从框架中使用 `import { Helmet }`。此外，构建产物的尺寸也会减少。
 
@@ -1390,11 +1378,11 @@ monorepoRedirect 的类型是一个对象，可以包含以下属性：
 
 phantomDependency 是一个配置项，用于执行幽灵依赖检测。当使用未在 package.json 中声明的依赖，以及没有通过 alias 或 externals 进行配置时，会抛错并提醒。
 
-### 问题 2：如何配置 phantomDependency 的 exclude 项？
+### 如何配置 phantomDependency 的 exclude 项？
 
 可以通过 exclude 项实现白名单处理，将需要排除的 npm 依赖的包名添加到 exclude 数组中。
 
-###可以举个例子说明如何配置 phantomDependency 的 exclude 项吗？
+### 可以举个例子说明如何配置 phantomDependency 的 exclude 项吗？
 
 可以参考以下示例代码：
 

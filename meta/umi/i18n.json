@@ -1,0 +1,70 @@
+[
+  {
+    "title": "如何开始使用国际化插件",
+    "md": "要在项目中使用国际化插件，首先需要在 `src/locales` 目录下引入多语言文件。\n多语言文件的命名需遵循以下规范：`<lang><separator><COUNTRY>.(js|json|ts)`。其中，`<separator>` 默认为 `-`，可以通过 `baseSeparator` 项进行配置。\n比如，如果你想在项目中引入简体中文和英文的多语言支持，可以在 `src/locales` 目录下创建 `zh-CN.ts` 和 `en-US.ts` 两个文件：\n```diff\nsrc\n  + locales\n    + zh-CN.ts\n    + en-US.ts\n  pages\n```\n在 `.umirc.ts` 中配置国际化插件：\n```ts\nexport default {\n  locale: {\n    // 默认使用 src/locales/zh-CN.ts 作为多语言文件\n    default: 'zh-CN',\n    baseSeparator: '-',\n  },\n};\n```\n有关配置的更多详细信息，可以参考[配置插件](#配置插件)章节。\n现在，我们可以添加第一条多语言内容了：\n```ts\n// src/locales/zh-CN.ts\nexport default {\n  welcome: '欢迎光临 Umi 的世界！',\n};\n```\n```ts\n// src/locales/en-US.ts\nexport default {\n  welcome: \"Welcome to Umi's world!\",\n};\n```\n你也可以使用 `.json` 文件来存放多语言的内容：\n```json\n// src/locales/zh-CN.json\n{\n  \"welcome\": \"欢迎光临 Umi 的世界！\",\n}\n\n// src/locales/en-US.json\n{\n  \"welcome\": \"Welcome to Umi's world!\",\n}\n```\n准备工作完成后，你就可以在 Umi 中使用多语言内容了。让我们来使用 `<FormattedMessage />` 组件，将前面的 `welcome` 作为参数 `id` 的值传入即可：\n```tsx\nimport { FormattedMessage } from 'umi';\n\nexport default function Page() {\n  return (\n    <div>\n      <FormattedMessage id=\"welcome\" />\n    </div>\n  );\n}\n```\n渲染的结果如下：\n```html\n<!-- zh-CN -->\n<div>欢迎光临 Umi 的世界！</div>\n\n<!-- en-US -->\n<div>Welcome to Umi's world!</div>\n```\n"
+  },
+  {
+    "title": "如何在组件参数中使用多语言内容？",
+    "md": "有时候，在某个组件中，您需要将多语言内容作为参数传递。可以通过 `intl` 对象来实现：\n```tsx\nimport { Alert } from 'antd';\nimport { useIntl } from 'umi';\n\nexport default function Page() {\n  const intl = useIntl();\n  const msg = intl.formatMessage({\n    id: 'welcome',\n  });\n\n  return <Alert message={msg} type=\"success\" />;\n}\n```\n在这段代码中，我们利用了 `react-intl` 提供的 `useIntl()` 接口来初始化 `intl` 对象。然后，我们调用此对象的 `formatMessage()` 方法来格式化字符串。\n这里，`id: 'welcome'` 是一个标识符，对应着多语言配置文件中的一条语言项。`formatMessage()` 方法会根据当前语言环境，从语言配置文件中找到对应的字符串，并进行格式化。最终，我们将格式化后的字符串作为参数传递给了 `Alert` 组件的 `message` 属性，用于显示警告信息。\n以上就是在组件参数中使用多语言内容的方法。可以根据实际需求，在其他组件中进行类似的操作，以实现多语言的功能。\n"
+  },
+  {
+    "title": "如何在项目中添加语言切换功能？",
+    "md": "通过使用预设的 `<SelectLang />` 组件可以快速地向项目中添加语言切换功能。只需要在页面中导入该组件并编写如下代码：\n```tsx\nimport { SelectLang } from 'umi';\n\nexport default function Page() {\n  return <SelectLang />;\n}\n```\n如果需要自定义切换语言的组件，则可以使用`setLocale()`接口来实现。具体操作如下：\n```ts\nimport { setLocale } from 'umi';\n\n// 通过刷新页面实现切换语言\nsetLocale('en-US');\n```\n切换语言时，默认情况下会刷新当前的页面。但是您也可以将第二个参数设置为`false`来实现无刷新切换语言的效果：\n```ts\n// 切换时不刷新页面\nsetLocale('en-US', false);\n```\n如果需要切换为默认的语言，只需调用`setLocale()`方法，不需要传递任何参数：\n```ts\n// 如果默认语言为 zh-CN\n// 调用该方法将具有与 setLocale('zh-CN') 相同的效果\nsetLocale();\n```\n"
+  },
+  {
+    "title": "Umi 多语言默认值的处理方式",
+    "md": "为了保持页面的一致性，当 Umi 在当前的多语言文件中找不到某个 `id` 对应的内容时，它会直接将该 `id` 渲染为页面上的内容。\n"
+  },
+  {
+    "title": "示例",
+    "md": "假设有如下的多语言文件：\n```ts\n// src/locales/zh-CN.ts\nexport default {\n  table: {\n    submit: '提交表单',\n  },\n};\n```\n```ts\n// src/locales/en-US.ts\nexport default {\n  // table: {\n  //   submit: 'SUBMIT TABLE',\n  // },\n};\n```\n并有如下的组件：\n```tsx\nimport { Button } from 'antd';\nimport { FormattedMessage } from 'umi';\n\nexport default function Page() {\n  return (\n    <Button type=\"primary\">\n      <FormattedMessage id=\"table.submit\" />\n    </Button>\n  );\n}\n```\n**渲染结果：**\n在中文环境下：\n```html\n<button type=\"primary\">提交表单</button>\n```\n在英文环境下：\n```html\n<button type=\"primary\">table.submit</button>\n```\n"
+  },
+  {
+    "title": "使用 defaultMessage 参数设置默认值",
+    "md": "当您在还未完成国际化适配，并且希望给出一个默认值时，可以使用 `defaultMessage` 参数：\n```tsx\nimport { Button } from 'antd';\nimport { FormattedMessage } from 'umi';\n\nexport default function Page() {\n  return (\n    <Button type=\"primary\">\n      <FormattedMessage id=\"table.submit\" defaultMessage=\"SUBMIT TABLE\" />\n    </Button>\n  );\n}\n```\n"
+  },
+  {
+    "title": "使用 formatMessage() 方法设置默认值",
+    "md": "您也可以使用 `formatMessage()` 方法来设置默认值：\n```tsx\nimport { Button } from 'antd';\nimport { useIntl } from 'umi';\n\nexport default function Page() {\n  const intl = useIntl();\n  const msg = intl.formatMessage({\n    id: 'table.submit',\n    defaultMessage: 'SUBMIT TABLE',\n  });\n\n  return <Button type=\"primary\">{msg}</Button>;\n}\n```\n"
+  },
+  {
+    "title": "不推荐使用 defaultMessage 配置默认值的原因",
+    "md": "虽然可以使用 `defaultMessage` 配置默认值，但不推荐这样做，因为这会导致编写大量重复的国际化内容。最好的做法是，在进行国际化适配时，确保每个多语言文件都包含所有用到的键。\n"
+  },
+  {
+    "title": "如何动态添加多语言支持",
+    "md": "可以使用`addLocale()`接口在运行时动态添加多语言支持。使用此接口需要传入三个参数：\n* `name`：多语言的 Key，用于标识该语言。\n* `message`：多语言内容的对象。\n* `options`：配置项，包括`momentLocale`和`antd`配置。\n例如，下面是动态引入繁体中文的多语言支持的示例代码：\n```ts\nimport { addLocale } from 'umi';\nimport zhTW from 'antd/es/locale/zh_TW';\n\naddLocale(\n  'zh-TW',\n  {\n    welcome: '歡迎光臨 Umi 的世界！',\n  },\n  {\n    momentLocale: 'zh-tw',\n    antd: zhTW,\n  },\n);\n```\n以上代码中，我们使用`addLocale()`方法动态添加了繁体中文的多语言支持。首先传入了语言的 Key 为`zh-TW`，然后是包含了多语言内容的对象`{ welcome: '歡迎光臨 Umi 的世界！' }`，最后是配置项，其中`momentLocale`设置为`zh-tw`，`antd`配置使用了从`antd`库引入的繁体中文语言包`zhTW`。\n动态添加多语言支持可以很方便地在运行时进行多语言的切换和管理，而无需事先创建和维护大量的多语言文件。\n"
+  },
+  {
+    "title": "获取多语言列表",
+    "md": "使用 `getAllLocales()` 接口可以获取当前所有多语言选项的数组，包括通过 `addLocale()` 方法添加的多语言选项。该接口默认会在 `src/locales` 目录下寻找形如 `zh-CN.(js|json|ts)` 的文件，并返回多语言的 Key。\n```ts\nimport { getAllLocales } from 'umi';\n\ngetAllLocales();\n// [en-US, zh-CN, ...]\n```\n以上代码用于获取当前应用所有的多语言选项的数组。这个数组中包含了通过 `addLocale()` 方法添加的多语言选项。默认情况下，这个接口会在 `src/locales` 目录下寻找以 `zh-CN.(js|json|ts)` 格式命名的文件，并返回多语言的 Key。你可以根据实际需求，修改目录和文件的名称来适配不同的项目要求。\n"
+  },
+  {
+    "title": "如何使用 `useIntl()` 获取 `intl` 对象？",
+    "md": "您可以使用 `useIntl()` 钩子函数来获取 `intl` 对象，以便在开发中使用其提供的方法来满足多样化的需求。\n首先，您需要在 `src/locales` 目录下创建一个 JSON 文件，比如 `en-US.json`，用于存储国际化文案：\n```json\n// src/locales/en-US.json\n{\n  \"welcome\": \"Hi, {name}.\"\n}\n```\n然后，在您的组件中引入 `useIntl`：\n```tsx\nimport { useIntl } from 'umi';\n\nconst YourComponent = () => {\n  const intl = useIntl();\n\n  // 使用 formatMessage() 方法来格式化文案\n  const msg = intl.formatMessage(\n    {\n      id: 'welcome',\n    },\n    {\n      name: 'Jackson',\n    },\n  );\n\n  console.log(msg);\n  // 输出：Hi, Jackson.\n\n  return <div>{msg}</div>;\n};\n\nexport default YourComponent;\n```\n通过以上代码，您就可以在组件中使用 `useIntl()` 钩子函数获取 `intl` 对象，并使用 `formatMessage()` 方法来格式化国际化文案，实现多语言功能。\n如需了解更多关于 `intl` 对象的使用方式，请参阅 [react-intl 的接口文档](https://github.com/formatjs/formatjs/blob/main/website/docs/react-intl/api.md)。\n"
+  },
+  {
+    "title": "`setLocale` how to use?",
+    "md": "The `setLocale()` API can be used to dynamically set the current language with programming methods. It has two parameters:\n| Parameter | Type | Description |\n| --- | --- | --- |\n| `lang` | `String` | The language to switch to |\n| `realReload` | `Boolean` | Whether to refresh the page when switching, default is `true` to reload the page |\n```ts\nimport { setLocale } from 'umi';\n\n// Refresh the page when switching\nsetLocale('en-US');\n\n// Do not refresh the page when switching\nsetLocale('en-US', false);\n```\n"
+  },
+  {
+    "title": "如何在路由配置中实现标题的国际化？",
+    "md": "在路由配置中添加 `title` 项即可启用国际化支持，自动将页面的标题转为对应的多语言内容。\n例如，编写多语言文件如下：\n```ts\n// src/locales/zh-CN.ts\nexport default {\n  'site.title': 'Umi - 企业级 React 应用开发框架',\n  'about.title': 'Umi - 关于我',\n};\n```\n```ts\n// src/locales/en-US.ts\nexport default {\n  'site.title': 'Umi - Enterprise-level React Application Framework',\n  'about.title': 'Umi - About me',\n};\n```\n配置路由内容如下：\n```ts\n// .umirc.ts\nexport default {\n  title: 'site.title',\n  routes: [\n    {\n      path: '/',\n      component: 'Index',\n    },\n    {\n      path: '/about',\n      component: 'About',\n      title: 'about.title',\n    },\n  ],\n};\n```\n访问页面时：\n* `/` 路由。多语言选项为 `zh-CN` 时，页面标题为 `Umi - 企业级 React 应用开发框架`；为 `en-US` 时，页面标题为 `Umi - Enterprise-level React Application Framework`。\n* `/about` 路由。多语言选项为 `zh-CN` 时，页面标题为 `Umi - 关于我`；为 `en-US` 时，页面标题为 `Umi - About me`。\n"
+  },
+  {
+    "title": "如何自定义 `getLocale` 方法获取页面语言？",
+    "md": "您可以按照以下步骤自定义获取页面语言的 `getLocale` 方法：\n1. 在 `src/app.ts` 文件中导入 `qs` 模块。\n```ts\nimport qs from 'qs';\n```\n2. 声明 `getLocale` 方法。\n```ts\nexport const locale = {\n  getLocale() {\n    // ...\n  },\n};\n```\n3. 在 `getLocale` 方法中获取当前页面的语言。\n```ts\nexport const locale = {\n  getLocale() {\n    const { search } = window.location;\n    const { locale = 'zh-CN' } = qs.parse(search, { ignoreQueryPrefix: true });\n    return locale;\n  },\n};\n```\n4. 解析当前页面的链接中的查询参数，获取 `locale` 参数的值。如果链接中没有 `locale` 参数，则默认返回 `'zh-CN'`。\n\n5. 最后将获取到的语言值作为方法的返回值。\n"
+  },
+  {
+    "title": "Umi 的 i18n 自定义选项配置",
+    "md": "Umi 的 i18n 是基于 `react-intl` 实现的，您可以在 `app.ts` 中进行自定义选项配置。以下是一些可用的配置选项，具体配置信息可以参考[react-intl 文档](https://formatjs.io/docs/react-intl/components)。\n```js\n// src/app.ts\nimport { RuntimeConfig } from '@umijs/max';\n\nexport const locale: RuntimeConfig['locale'] = {\n  textComponent: 'span',\n  onError: () => {\n    console.log('error handler...');\n  },\n  // 其他可用配置选项\n  // locale: string\n  // formats: CustomFormats\n  // messages: Record<string, string> | Record<string, MessageFormatElement[]>\n  // defaultLocale: string\n  // defaultFormats: CustomFormats\n  // timeZone?: string\n  // textComponent?: React.ComponentType | keyof React.ReactHTML\n  // wrapRichTextChunksInFragment?: boolean\n  // defaultRichTextElements?: Record<string, FormatXMLElementFn<React.ReactNode>>\n  // onError(err: string): void\n};\n```\n这些配置选项可以帮助您更加灵活地配置 `react-intl` 初始化选项。例如，您可以设置 `textComponent` 来指定默认的文本组件，以便在国际化处理中使用。您还可以通过设置 `onError` 方法来处理错误信息。其他选项包括设置当前的 locale、formats、messages、defaultLocale、defaultFormats、timeZone、wrapRichTextChunksInFragment、defaultRichTextElements 等。\n请根据您的实际需求进行配置，以便更好地使用 Umi 的 i18n 功能。\n"
+  },
+  {
+    "title": "`formatMessage` 语法糖不能触发 DOM 的重新渲染",
+    "md": "虽然 `formatMessage` 使用起来非常方便，但它存在一个严重的问题：它脱离了 React 的生命周期，因此在切换语言时无法触发 DOM 的重新渲染。这导致了一个问题，即切换语言时需要手动刷新浏览器，从而给用户带来了糟糕的体验。\n"
+  },
+  {
+    "title": "推荐使用 `useIntl` 或者 `injectIntl`",
+    "md": "为了解决 `formatMessage` 无法触发 DOM 重新渲染的问题，我们推荐使用 `useIntl` 或者 `injectIntl` 这两个方法来处理国际化。它们都可以实现同样的功能，但是能够与 React 的生命周期结合，从而在切换语言时自动触发 DOM 的重新渲染。\n使用 `useIntl` 或者 `injectIntl` 可以确保在切换语言时，页面上显示的文本会立即更新，而无需手动刷新浏览器。这大大提升了用户的体验，使得国际化功能更加可靠和高效。\n综上所述，虽然 `formatMessage` 使用起来方便，但由于它无法触发 DOM 的重新渲染，所以推荐使用 `useIntl` 或者 `injectIntl` 来处理国际化，以提升用户体验。\n"
+  }
+]

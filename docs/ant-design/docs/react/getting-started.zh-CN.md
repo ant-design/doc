@@ -66,9 +66,7 @@ const App = () => {
 
 通过以上步骤，你就可以在 React 中使用 Ant Design 组件了。
 
-#### 参考资料：
-
-- [Ant Design 官方文档](https://ant.design/docs/react/introduce-cn)
+### [Ant Design 官方文档](https://ant.design/docs/react/introduce-cn)
 
 Q 如何查看组件列表并查阅组件的 API 文档？ A 你可以在组件页面的左侧菜单查看组件列表，并点击相应的组件链接来查阅组件的 API 文档。
 

@@ -1,0 +1,398 @@
+[
+  {
+    "title": "ProTable 是什么？有什么作用？",
+    "md": "ProTable 是一个高级表格组件，它的出现是为了解决在项目中频繁编写表格代码的问题。通过封装了很多常用的逻辑和行为，ProTable 可以简化表格的开发过程。\n"
+  },
+  {
+    "title": "ProTable 与 ProForm 有什么关系？",
+    "md": "ProTable 依托于 ProForm 的能力，可以通过切换查询表单类型、设置变形为简单的 Form 表单等方式，执行新建等功能。 ProForm 是一个多形态的组件，能够灵活适应不同的需求。\n"
+  },
+  {
+    "title": "TechUI Studio 是什么？如何使用？",
+    "md": "TechUI Studio 是一个可视化配置生成初始代码的工具。如果您是内网用户，您可以使用 [TechUI Studio](https://techui-studio.antfin-inc.com/) 来快速生成 ProTable 的初始代码。通过 TechUI Studio，您可以在可视化界面上配置参数和选项，生成符合您需求的代码。\n"
+  },
+  {
+    "title": "ProTable 的 `request` API 是什么？",
+    "md": "`request` 是 ProTable 组件中最重要的 API，通过 `request` 可以配置数据请求的相关参数。它接收一个对象作为参数，对象中必须包含 `data` 和 `success` 字段，同时如果需要手动分页，则还需要包含 `total` 字段。`request` API 会自动处理数据加载过程中的 loading 状态，同时在查询表单查询时和 `params` 参数发生修改时会重新执行。查询表单的值和 `params` 参数也会传入 `request` API。下面是一个使用 `request` API 的例子：\n```tsx\n<ProTable\n  params={params}\n  request={async (\n    params: T & {\n      pageSize: number;\n      current: number;\n    },\n    sort,\n    filter\n  ) => {\n    const msg = await myQuery({\n      page: params.current,\n      pageSize: params.pageSize,\n    });\n    return {\n      datmsg.result,\n      success: true,\n      total: 100,\n    };\n  }}\n/>\n```\n"
+  },
+  {
+    "title": "如何使用 `request` API 进行数据请求？",
+    "md": "要使用 `request` API 进行数据请求，首先需要将它配置在 ProTable 组件上。在 `request` API 函数中，第一个参数 `params` 是查询表单和 `params` 参数的结合，其中一定包含 `pageSize` 和 `current` 这两个参数，它们是 antd 的规范。你可以在 `request` API 中进行数据转化，也可以修改参数。最后，通过返回一个 Promise 对象，将数据返回给 ProTable 组件。下面是一个示例：\n```tsx\nasync (\n  params: T & {\n    pageSize: number;\n    current: number;\n  },\n  sort,\n  filter,\n) => {\n  const msg = await myQuery({\n    page: params.current,\n    pageSize: params.pageSize,\n  });\n  return {\n    datmsg.result,\n    success: true,\n    total: 100,\n};\n```\n"
+  },
+  {
+    "title": "列配置中如何使用 `request` API？",
+    "md": "在 ProTable 的列配置中，也可以使用 `request` API。不过，只有特定的 [valueType](/components/schema#valuetype) 类型支持使用 `request` API。通过设置相应的 `valueType`，可以使用 `request` API 获取和展示列数据。具体用法可以参考 ProTable 的文档。\n"
+  },
+  {
+    "title": "ProTable 属性：request",
+    "md": "描述：获取 `dataSource` 的方法\n类型：`(params?: {pageSize,current},sort,filter) => {data,success,total}`\n默认值：-\n注意事项：需要注意该方法的参数和返回值格式，以确保正确获取和处理数据。\n"
+  },
+  {
+    "title": "ProTable 属性：params",
+    "md": "描述：用于 `request` 查询的额外参数，一旦变化会触发重新加载\n类型：`object`\n默认值：-\n注意事项：当额外参数发生变化时，会触发重新加载数据，需要保证参数格式正确且与后台接口对应。\n"
+  },
+  {
+    "title": "ProTable 属性：postData",
+    "md": "描述：对通过 `request` 获取的数据进行处理\n类型：`(datT[]) => T[]`\n默认值：-\n注意事项：可以对从后台获取的数据进行处理，例如对数组进行排序、筛选等操作。\n"
+  },
+  {
+    "title": "ProTable 属性：defaultData",
+    "md": "描述：默认的数据\n类型：`T[]`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：dataSource",
+    "md": "描述：Table 的数据，ProTable 推荐使用 `request` 来加载\n类型：`T[]`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：onDataSourceChange",
+    "md": "描述：Table 的数据发生改变时触发\n类型：`(dataSource: T[]) => void`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：actionRef",
+    "md": "描述：Table action 的引用，便于自定义触发\n类型：`MutableRefObject<ActionType>`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：formRef",
+    "md": "描述：可以获取到查询表单的 form 实例，用于一些灵活的配置\n类型：`MutableRefObject<FormInstance>`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：toolBarRender",
+    "md": "描述：渲染工具栏，支持返回一个 dom 数组，会自动增加 margin-right\n类型：`(action) => ReactNode[]`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：onLoad",
+    "md": "描述：数据加载完成后触发，会多次触发\n类型：`(dataSource: T[]) => void`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：onLoadingChange",
+    "md": "描述：loading 被修改时触发，一般是网络请求导致的\n类型：`(loading:boolean)=>void`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：onRequestError",
+    "md": "描述：数据加载失败时触发\n类型：`(error) => void`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：tableClassName",
+    "md": "描述：封装的 table 的 className\n类型：`string`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：tableStyle",
+    "md": "描述：封装的 table 的 style\n类型：[CSSProperties](https://www.htmlhelp.com/reference/css/properties.html)\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：options",
+    "md": "描述：table 工具栏，设为 false 时不显示，传入 function 会点击时触发\n类型：`{{ density?: boolean, fullScreen?: boolean \\| function, reload?: boolean \\| function, reloadIcon?: React.ReactNode, densityIcon?: React.ReactNode, setting?: boolean \\| [SettingOptionType](#菜单栏-options-配置) }}`\n默认值：`{ fullScreen: false, reload: true, density: true, setting: true }`\n注意事项：可以根据具体需求配置 table 工具栏的显示方式和功能。\n"
+  },
+  {
+    "title": "ProTable 属性：search",
+    "md": "描述：是否显示搜索表单，传入对象时为搜索表单的配置\n类型：`false` | [SearchConfig](#search-搜索表单)\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：defaultSize",
+    "md": "描述：默认的 size\n类型：SizeType\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：dateFormatter",
+    "md": "描述：转化 moment 格式数据为特定类型，false 不做转化\n类型：`\"string\"` | `\"number\"` | ((value: Moment, valueType: string) => string | number) | `false`\n默认值：`\"string\"`\n"
+  },
+  {
+    "title": "ProTable 属性：beforeSearchSubmit",
+    "md": "描述：搜索之前进行一些修改\n类型：`(params:T)=>T`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：onSizeChange",
+    "md": "描述：table 尺寸发生改变\n类型：`(size: 'default' \\| 'middle' \\| 'small') => void`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：type",
+    "md": "描述：pro-table 类型\n类型：`\"form\"`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：form",
+    "md": "描述：antd form 的配置\n类型：[FormProps](https://ant.design/components/form-cn/#API)\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：onSubmit",
+    "md": "描述：提交表单时触发\n类型：`(params: U) => void`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：onReset",
+    "md": "描述：重置表单时触发\n类型：`() => void`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：columnEmptyText",
+    "md": "描述：空值时的显示，不设置时显示 `-`， false 可以关闭此功能\n类型：`string` | `false`\n默认值：false\n"
+  },
+  {
+    "title": "ProTable 属性：tableRender",
+    "md": "描述：自定义渲染表格函数\n类型：`(props,dom,domList:{ toolbar,alert,table}) => ReactNode`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：toolbar",
+    "md": "描述：透传 `ListToolBar` 配置项\n类型：[ListToolBarProps](#listtoolbarprops)\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：tableExtraRender",
+    "md": "描述：自定义表格的主体函数\n类型：`(props: ProTableProps<T, U>, dataSource: T[]) => ReactNode;`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：manualRequest",
+    "md": "描述：是否需要手动触发首次请求，配置为 `true` 时不可隐藏搜索表单\n类型：`boolean`\n默认值：false\n"
+  },
+  {
+    "title": "ProTable 属性：editable",
+    "md": "描述：可编辑表格的相关配置\n类型：[TableRowEditable](/components/editable-table#editable-编辑行配置)\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：cardBordered",
+    "md": "描述：Table 和 Search 外围 Card 组件的边框\n类型：`boolean` | `{search?: boolean, table?: boolean}`\n默认值：false\n"
+  },
+  {
+    "title": "ProTable 属性：ghost",
+    "md": "描述：幽灵模式，即是否取消表格区域的 padding\n类型：`boolean`\n默认值：false\n"
+  },
+  {
+    "title": "ProTable 属性：debounceTime",
+    "md": "描述：防抖时间\n类型：`number`\n默认值：10\n"
+  },
+  {
+    "title": "ProTable 属性：revalidateOnFocus",
+    "md": "描述：窗口聚焦时自动重新请求\n类型：`boolean`\n默认值：`true`\n"
+  },
+  {
+    "title": "ProTable 属性：columnsState",
+    "md": "描述：受控的列状态，可以操作显示隐藏\n类型：`ColumnStateType`\n默认值：-\n"
+  },
+  {
+    "title": "ProTable 属性：ErrorBoundary",
+    "md": "描述：自带了错误处理功能，防止白屏，`ErrorBoundary=false` 关闭默认错误边界\n类型：`ReactNode`\n默认值：内置 ErrorBoundary\n注意事项：可以根据具体需求配置错误处理功能的显示与隐藏。\n"
+  },
+  {
+    "title": "Q1：RecordCreator 组件的 record 属性是什么作用？",
+    "md": "A1：record 属性用于指定需要新增的行数据，一般包含唯一 key。\n"
+  },
+  {
+    "title": "Q2：RecordCreator 组件的 position 属性有哪些取值？",
+    "md": "A2：position 属性可以取值为 \"top\" 或者 \"bottom\"，用于指定新增行的位置是在表格的开头还是结尾。\n"
+  },
+  {
+    "title": "Q3：RecordCreator 组件还有其他属性吗？",
+    "md": "A3：是的，除了 record 和 position 属性之外，RecordCreator 组件还可以传递 antd 的 ButtonProps 属性，具体可以参考 [ButtonProps](https://ant.design/components/button-cn/#API) 的文档。\n"
+  },
+  {
+    "title": "ColumnStateType 的 defaultValue 属性是什么类型的?",
+    "md": "答案 1： defaultValue 属性的类型是 `Record<string, ColumnsState>`。\n"
+  },
+  {
+    "title": "ColumnStateType 的 value 属性是什么类型的?",
+    "md": "答案 2： value 属性的类型是 `Record<string, ColumnsState>`。\n"
+  },
+  {
+    "title": "ColumnStateType 的 onChange 属性是什么类型的?",
+    "md": "答案 3： onChange 属性的类型是 `(value:Record<string, ColumnsState>)=>void`。\n问题 4：\n"
+  },
+  {
+    "title": "ColumnStateType 的 persistenceKey 属性是什么类型的?",
+    "md": "答案 4： persistenceKey 属性的类型是 `string | number`。\n问题 5：\n"
+  },
+  {
+    "title": "ColumnStateType 的 persistenceType 属性是什么类型的?",
+    "md": "答案 5： persistenceType 属性的类型是 `localStorage | sessionStorage`。\n1. 什么是 Search 搜索表单？\nSearch 搜索表单是一个用于进行搜索操作的组件。它提供了一组属性来配置搜索表单的外观和行为，包括过滤表单类型、查询按钮文本、重置按钮文本、提交按钮文本、标签宽度等。\n2. Search 搜索表单有哪些属性？\nSearch 搜索表单具有以下属性：\n* filterType: 过滤表单类型，可选值为 `'query'` 和 `'light'`。\n* searchText: 查询按钮的文本。\n* resetText: 重置按钮的文本。\n* submitText: 提交按钮的文本。\n* labelWidth: 标签的宽度，可选值为 `'number'` 和 `'auto'`。\n* span: 配置查询表单的列数。\n* className: 封装的搜索 Form 的 className。\n* collapseRender: 收起按钮的 render。\n* defaultCollapsed: 默认是否收起。\n* collapsed: 是否收起。\n* onCollapse: 收起按钮的事件。\n* optionRender: 自定义操作栏。\n* showHiddenNum: 是否显示收起之后显示隐藏个数。\n3. Search 搜索表单的默认配置是什么样的？\nSearch 搜索表单的默认配置为：\n* filterType: `'query'`\n* searchText: `'查询'`\n* resetText: `'重置'`\n* submitText: `'提交'`\n* labelWidth: `'number'`\n* span: `defaultColConfig`\n* defaultCollapsed: `true`\n* showHiddenNum: `false`\n"
+  },
+  {
+    "title": "问题 菜单栏 options 配置中的 OptionsType 是什么类型？",
+    "md": "答案 OptionsType 是一个联合类型，可以是一个回调函数、一个布尔值或者是两者的组合。\n"
+  },
+  {
+    "title": "问题 菜单栏 options 配置中的 OptionConfig 的属性有哪些？",
+    "md": "答案 OptionConfig 中有以下属性：\n* density: 一个布尔值，用于配置密度选项。\n* fullScreen: 一个 OptionsType 类型，用于配置全屏选项。\n* reload: 一个 OptionsType 类型，用于配置刷新选项。\n* setting: 可以是一个布尔值或者 SettingOptionType 类型，用于配置设置选项。\n* search: 可以是一个 OptionSearchProps & { name?: string } 类型的对象或者是布尔值，用于配置搜索选项。\n* reloadIcon: 一个 React 组件，用于自定义刷新图标。\n* densityIcon: 一个 React 组件，用于自定义密度图标。\n"
+  },
+  {
+    "title": "问题 菜单栏 options 配置中的 SettingOptionType 的属性有哪些？",
+    "md": "答案 SettingOptionType 中有以下属性：\n* draggable: 一个布尔值，用于配置设置面板是否可拖拽。\n* checkable: 一个布尔值，用于配置列表项是否可勾选。\n* showListItemOption: 一个布尔值，用于配置是否显示列表项的选项。\n* checkedReset: 一个布尔值，用于配置是否在重置时取消勾选。\n* listsHeight: 一个数字，用于配置列表的高度。\n* extr 一个 React 组件，用于自定义额外的内容。\n* children: 一个 React 组件，用于自定义子元素。\n* settingIcon: 一个 React 组件，用于自定义设置图标。\n"
+  },
+  {
+    "title": "ActionRef 是用来做什么的？",
+    "md": "ActionRef 是用来手动触发 ProTable 组件中的操作的引用。通过创建一个 ref，然后将其传递给 ProTable 的 actionRef 属性，我们就可以在其他地方通过该 ref 来操作 ProTable。\n"
+  },
+  {
+    "title": "ActionRef 提供了哪些操作方法？",
+    "md": "ActionRef 提供了以下操作方法：\n1. `reload(resetPageIndex?: boolean)`: 用于重新加载表格数据。如果传入参数 `resetPageIndex` 为 `true`，则会重置分页索引，默认为 `false`。\n\n2. `reloadAndRest()`: 刷新表格并清空表单数据，同时会重置分页索引。\n\n3. `reset()`: 重置表格的筛选条件和表单数据，并清空分页索引。\n\n4. `clearSelected()`: 清空表格中的选中项。\n\n5. `startEditable(rowKey: Key)`: 开始编辑指定行的数据，rowKey 是要编辑的行的唯一标识。\n\n6. `cancelEditable(rowKey: Key)`: 取消编辑指定行的数据，rowKey 是要取消编辑的行的唯一标识。\n通过调用这些方法，我们可以手动触发 ProTable 的各种操作，以满足特定的需求。\n"
+  },
+  {
+    "title": "如何使用 ActionRef？",
+    "md": "要使用 ActionRef，首先需要创建一个 ref 对象，然后将其传递给 ProTable 组件的 actionRef 属性，示例代码如下：\n```tsx | pure\nimport React, { useRef } from 'react';\nimport { ProTable } from 'antd';\n\ninterface ActionType {\n  reload: (resetPageIndex?: boolean) => void;\n  reloadAndRest: () => void;\n  reset: () => void;\n  clearSelected?: () => void;\n  startEditable: (rowKey: Key) => boolean;\n  cancelEditable: (rowKey: Key) => boolean;\n}\n\nconst MyComponent: React.FC = () => {\n  const ref = useRef<ActionType>();\n\n  return <ProTable actionRef={ref} />;\n};\n```\n以上代码演示了如何在组件中使用 ActionRef。一旦将 ref 对象传递给 ProTable 的 actionRef 属性，就可以在其他地方使用 ref.current 来调用 ActionRef 提供的操作方法，从而手动触发 ProTable 的操作。\n"
+  },
+  {
+    "title": "Columns 列定义 - title 属性",
+    "md": "* 描述：与 antd 中基本相同，但是支持通过传入一个方法。\n* 类型：`ReactNode` 或 `(config: ProColumnType<T>, type: ProTableTypes) => ReactNode`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - tooltip 属性",
+    "md": "* 描述：会在 title 之后展示一个 icon，hover 之后提示一些信息。\n* 类型：`string`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - ellipsis 属性",
+    "md": "* 描述：是否自动缩略。\n* 类型：`boolean` 或 `{showTitle?: boolean}`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - copyable 属性",
+    "md": "* 描述：是否支持复制。\n* 类型：`boolean`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - valueEnum 属性",
+    "md": "* 描述：值的枚举，会自动转化把值当成 key 来取出要显示的内容。\n* 类型：`valueEnum`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - valueType 属性",
+    "md": "* 描述：值的类型，会生成不同的渲染器。\n* 类型：`valueType`。\n* 默认值：`text`。\n"
+  },
+  {
+    "title": "Columns 列定义 - order 属性",
+    "md": "* 描述：查询表单中的权重，权重大排序靠前。\n* 类型：`number`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - fieldProps 属性",
+    "md": "* 描述：查询表单的 props，会透传给表单项，如果渲染出来是 Input，就支持 Input 的所有 props，同理如果是 select，也支持 select 的所有 props。也支持方法传入。\n* 类型：`(form, config) => Record \\| Record`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - formItemProps 属性",
+    "md": "* 描述：传递给 Form.Item 的配置，可以配置 rules，但是默认的查询表单 rules 是不生效的。需要配置 `ignoreRules`。\n* 类型：`(form, config) => formItemProps` 或 `formItemProps`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - renderText 属性",
+    "md": "* 描述：类似 table 的 render，但是必须返回 string，如果只是希望转化枚举，可以使用 valueEnum。\n* 类型：`(text: any, record: T, index: number, action: UseFetchDataAction<T>) => string`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - render 属性",
+    "md": "* 描述：类似 table 的 render，第一个参数变成了 dom，增加了第四个参数 action。\n* 类型：`(text: ReactNode, record: T, index: number, action: UseFetchDataAction<T>) => ReactNode \\| ReactNode[]`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - renderFormItem 属性",
+    "md": "* 描述：渲染查询表单的输入组件。\n* 类型：`(item, { type, defaultRender, formItemProps, fieldProps, ...rest }, form) => ReactNode`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - search 属性",
+    "md": "* 描述：配置列的搜索相关，false 为隐藏。\n* 类型：`false` 或 `{ transform: (value: any) => any }`。\n* 默认值：true。\n"
+  },
+  {
+    "title": "Columns 列定义 - search.transform 属性",
+    "md": "* 描述：转化值的 key, 一般用于时间区间的转化。\n* 类型：`(value: any) => any`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - editable 属性",
+    "md": "* 描述：在编辑表格中是否可编辑的，函数的参数和 table 的 render 一样。\n* 类型：`false` 或 `(text: any, record: T, index: number) => boolean`。\n* 默认值：true。\n"
+  },
+  {
+    "title": "Columns 列定义 - colSize 属性",
+    "md": "* 描述：一个表单项占用的格子数量，占比= colSize \\* span，colSize 默认为 1，span 为 8，span 是 form={{span:8}} 全局设置的。\n* 类型：`number`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - hideInSearch 属性",
+    "md": "* 描述：在查询表单中不展示此项。\n* 类型：`boolean`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - hideInTable 属性",
+    "md": "* 描述：在 Table 中不展示此列。\n* 类型：`boolean`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - hideInForm 属性",
+    "md": "* 描述：在 Form 中不展示此列。\n* 类型：`boolean`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - hideInDescriptions 属性",
+    "md": "* 描述：在 Descriptions 中不展示此列。\n* 类型：`boolean`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - filters 属性",
+    "md": "* 描述：表头的筛选菜单项，当值为 true 时，自动使用 valueEnum 生成。\n* 类型：`boolean` 或 `object[]`。\n* 默认值：false。\n"
+  },
+  {
+    "title": "Columns 列定义 - onFilter 属性",
+    "md": "* 描述：筛选表单，为 true 时使用 ProTable 自带的，为 false 时关闭本地筛选。\n* 类型：`(value, record) => boolean` 或 `false`。\n* 默认值：false。\n"
+  },
+  {
+    "title": "Columns 列定义 - request 属性",
+    "md": "* 描述：从服务器请求枚举。\n* 类型：`request`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - initialValue 属性",
+    "md": "* 描述：查询表单项初始值。\n* 类型：`any`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "Columns 列定义 - disable 属性",
+    "md": "* 描述：列设置中 disabled 的状态。\n* 类型：`boolean` 或 `{ checkbox: boolean; }`。\n* 默认值：无。\n"
+  },
+  {
+    "title": "pro-table 如何开启批量操作？",
+    "md": "与 antd 相同，pro-table 需要设置 `rowSelection` 属性来开启批量操作。在 pro-table 中，你可以通过以下属性来控制批量操作的展示和行为：\n* `alwaysShowAlert`：是否总是展示 alert，默认为无选择时不展示。这个属性是 `rowSelection` 的内置属性。\n\n* `tableAlertRender`：用于自定义批量操作工具栏左侧信息区域的显示内容。你可以通过设置一个函数来自定义显示的内容，函数的参数包括 `selectedRowKeys`（选中行的 keys）、`selectedRows`（选中的行数据）和 `onCleanSelected`（清空选中行的函数）。如果你不需要显示批量操作工具栏左侧信息区域，可以将该属性设置为 `false`。\n\n* `tableAlertOptionRender`：用于自定义批量操作工具栏右侧选项区域的显示内容。与 `tableAlertRender` 类似，你可以设置一个函数来自定义显示的内容。函数的参数包括 `selectedRowKeys`、`selectedRows` 和 `onCleanSelected`。如果你不需要显示批量操作工具栏右侧选项区域，可以将该属性设置为 `false`。\n"
+  },
+  {
+    "title": "pro-table 怎样关闭批量操作？",
+    "md": "要关闭 pro-table 的批量操作功能，你可以通过以下方式设置相应的属性：\n* 将 `alwaysShowAlert` 属性设置为 `false`，这样当没有选择任何行时，将不会展示批量操作工具栏。\n\n* 将 `tableAlertRender` 属性设置为 `false`，这样左侧信息区域将不会显示。\n\n* 将 `tableAlertOptionRender` 属性设置为 `false`，这样右侧选项区域将不会显示。\n请根据你的需求选择适当的方式关闭批量操作功能。\n"
+  },
+  {
+    "title": "ProTable 如何生成搜索表单？",
+    "md": "ProTable 根据列的配置自动生成一个表单，用于筛选列表数据。你可以通过 `request` 参数来获取表单中用户选择的筛选条件。\n下面是一个示例：\n```jsx\n<ProTable\n  request={(params, sort, filter) => {\n    // 在这里使用参数来发起查询请求\n  }}\n/>\n```\n按照规范，表单不需要任何必选参数，当用户点击搜索或重置时，会自动触发 `request` 来发起查询。\n表单的字段类型是根据每个列的 `valueType` 属性来生成的，你可以在[通用配置](/components/schema#valuetype)中查看详细的值类型。\n需要注意的是，如果列的 `valueType` 为 `index`、`indexBorder`、`option` 或者该列没有 `dataIndex` 和 `key` 属性，那么该列将被忽略，不会显示在搜索表单中。\n"
+  },
+  {
+    "title": "ProTable 的搜索表单如何实现？",
+    "md": "ProTable 根据列的配置自动生成搜索表单，具体实现如下：\n1. 根据每个列的 `valueType` 属性生成对应类型的表单字段。\n2. 当用户点击搜索按钮或者重置按钮时，ProTable 会自动触发 `request` 函数来发起查询。\n3. 用户输入的筛选条件将作为参数传递给 `request` 函数。\n4. 根据传入的参数，开发者需要在 `request` 函数中发起相应的查询请求并返回结果。\n需要注意的是，ProTable 规定搜索表单不需要任何必选参数，所有的筛选逻辑都由开发者自行处理。\n"
+  },
+  {
+    "title": "如何配置 ProTable 的搜索表单项？",
+    "md": "你可以通过配置每个列的属性来定制 ProTable 的搜索表单项。\n具体步骤如下：\n1. 使用 `valueType` 属性来指定搜索表单项的字段类型，具体可选类型请查看[通用配置](/components/schema#valuetype)。\n2. 设置 `dataIndex` 和 `key` 属性，这两个属性用于生成表单字段的名称和唯一标识符。\n3. 如果你想要隐藏某些列，可以将 `valueType` 设置为 `index`、`indexBorder` 或 `option`，或者在列的配置中不设置 `dataIndex` 和 `key`。\n通过以上配置，你可以灵活地定制 ProTable 的搜索表单项，满足不同查询需求。\n"
+  },
+  {
+    "title": "1",
+    "md": ""
+  },
+  {
+    "title": "什么是 ListToolBarProps？",
+    "md": "ListToolBarProps 是用于列表和表格的工具栏配置属性。它包含了一系列参数，用于设置工具栏的标题、子标题、tooltip 描述、查询区、操作区、设置区、过滤区等。其中一些参数还可以以 ReactNode 或特定类型作为值。比如，search 参数可以是 ReactNode 类型或 SearchProps 类型。而 tabs 参数仅在 multipleLine 参数为 true 时有效，并配置标签页的相关信息。\n"
+  },
+  {
+    "title": "2",
+    "md": ""
+  },
+  {
+    "title": "ListToolBarProps 中的参数 title 是什么意思？",
+    "md": "ListToolBarProps 中的参数 title 是用于设置工具栏的标题。它的类型为 ReactNode，可以是一个 React 组件、字符串或其他可以渲染为 React 组件的类型。默认值为 `-`。\n"
+  },
+  {
+    "title": "3",
+    "md": ""
+  },
+  {
+    "title": "ListToolBarProps 中的参数 filter 通常用于什么？需要和哪个组件配合使用？",
+    "md": "ListToolBarProps 中的参数 filter 用于设置工具栏的过滤区，通常配合 `LightFilter` 组件一起使用。它的类型为 ReactNode，可以是一个 React 组件、字符串或其他可以渲染为 React 组件的类型。\n"
+  },
+  {
+    "title": "Setting 参数中的 icon 是什么类型的值？",
+    "md": "icon 参数是一个 ReactNode 类型的值。\n"
+  },
+  {
+    "title": "ListToolBarMenu 支持哪些类型的菜单展示方式？",
+    "md": "ListToolBarMenu 支持以下类型的菜单展示方式：\n* `inline`：内联展示\n* `dropdown`：下拉展示\n* `tab`：标签页展示\n"
+  },
+  {
+    "title": "ListToolBarMenu 的默认展示方式是什么？",
+    "md": "ListToolBarMenu 的默认展示方式是 `inline`。\n"
+  },
+  {
+    "title": "如何切换 ListToolBarMenu 的菜单？",
+    "md": "可以通过调用 `onChange` 方法来切换 ListToolBarMenu 的菜单，`onChange` 方法接收一个参数 `activeKey`，表示当前选中的菜单项的值。\n\\#ListToolBarTabs 组件的参数 activeKey 有什么作用？\n答案：activeKey 是 ListToolBarTabs 组件的当前选中项，可以通过设置 activeKey 的值来默认选中对应的菜单项。\n\\#ListToolBarTabs 组件的参数 items 是什么类型？\n答案：items 是 ListToolBarTabs 组件的菜单项，类型为一个数组，数组的每个元素是一个对象，包含 key 和 tab 两个属性，key 为字符串类型，tab 为 ReactNode 类型。\n\\#ListToolBarTabs 组件的参数 onChange 是用来做什么的？\n答案：onChange 是 ListToolBarTabs 组件的切换菜单的回调函数，当菜单项被切换时，会触发 onChange 函数，可以在 onChange 函数中执行一些操作或者更新状态。onChange 函数的参数是 activeKey，表示切换后的菜单项的 key 值。\n"
+  },
+  {
+    "title": "TableDropdown 组件的参数 key 是什么类型的？",
+    "md": "* 类型：`string`\n* 默认值：`-`\n* 说明：唯一标志\n"
+  },
+  {
+    "title": "TableDropdown 组件的参数 name 是什么类型的？",
+    "md": "* 类型：`ReactNode`\n* 默认值：`-`\n* 说明：内容\n"
+  },
+  {
+    "title": "TableDropdown 组件的参数 (...)Menu.Item 是什么类型的？",
+    "md": "* 类型：`Menu.Item`\n* 默认值：`-`\n* 说明：[Menu.Item](https://ant.design/components/menu-cn/#Menu.Item) 是 antd 的组件\n"
+  }
+]

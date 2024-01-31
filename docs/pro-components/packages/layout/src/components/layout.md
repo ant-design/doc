@@ -540,11 +540,11 @@ Layout 的背景颜色的默认值是 `linear-gradient(${antdToken.colorBgContai
 
 ### 问题回答完毕
 
-#### Sider Token 是什么？
+### Sider Token 是什么？
 
 Sider Token 是用于定义侧边菜单的色值的一组 CSS 变量。它们被用于控制侧边菜单的背景颜色、标题字体颜色、分割线颜色、菜单项字体颜色等属性。
 
-#### Sider Token 中都包含哪些 CSS 变量？
+### Sider Token 中都包含哪些 CSS 变量？
 
 Sider Token 包含以下 CSS 变量：
 
@@ -563,7 +563,7 @@ Sider Token 包含以下 CSS 变量：
 - `colorTextCollapsedButton`：用于设置展开收起按钮的字体颜色，默认值为继承自 `colorTextMenuSecondary`。
 - `colorTextCollapsedButtonHover`：用于设置鼠标悬停在展开收起按钮上时的字体颜色，默认值为继承自 `colorTextMenu`。
 
-#### 如何使用 Sider Token？
+### 如何使用 Sider Token？
 
 你可以通过在 CSS 中使用这些 CSS 变量来定制侧边菜单的外观。例如，可以使用 `colorMenuBackground` 变量来设置菜单的背景颜色，使用 `colorTextMenuTitle` 变量来设置侧边菜单的标题字体颜色，以此类推。通过修改这些 CSS 变量的值，你可以轻松地自定义侧边菜单的样式。
 
@@ -587,9 +587,9 @@ Sider Token 包含以下 CSS 变量：
 
 Header 的背景颜色默认是什么？Header 的背景颜色的默认值是 `rgba(240, 242, 245, 0.4)`。
 
-问题 2：menuItem 的字体颜色是什么？menuItem 的字体颜色是 `colorText`。
+### menuItem 的字体颜色是什么？menuItem 的字体颜色是 `colorText`。
 
-问题 3：右上角字体颜色是什么？右上角字体颜色的默认值是 `colorTextSecondary`。
+### 右上角字体颜色是什么？右上角字体颜色的默认值是 `colorTextSecondary`。
 
 问题 4：Header 的高度是多少？回答 4：Header 的高度是 56。
 

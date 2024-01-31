@@ -23,11 +23,11 @@ Umi 提供了一系列的插件 API，以帮助开发者自由编写插件。这
 
 #applyPlugins 方法是用来做什么的？
 
-#### applyPlugins 方法用于获取 `register()` 注册的 hooks 执行后的数据。
+### applyPlugins 方法用于获取 `register()` 注册的 hooks 执行后的数据。
 
 #applyPlugins 方法有哪些参数？
 
-#### applyPlugins 方法有以下参数：
+### applyPlugins 方法有以下参数：
 
 - key: string - hooks 的名称
 - type?: ApplyPluginsType - hooks 的类型
@@ -36,7 +36,7 @@ Umi 提供了一系列的插件 API，以帮助开发者自由编写插件。这
 
 #applyPlugins 方法返回的是什么类型的数据？
 
-#### applyPlugins 方法返回的是一个 Promise 对象，因为该方法是异步函数。
+### applyPlugins 方法返回的是一个 Promise 对象，因为该方法是异步函数。
 
 ### 描述插件配置的函数是什么？描述其参数和返回值。
 
@@ -211,7 +211,7 @@ api.registerMethod({ name: string, fn });
 - 相对于 `umi@3`，在 `umi@4` 中去除了 `exitsError` 参数。
 - 通常不建议注册额外的方法，因为它们不会有 TypeScript 提示，直接使用 `api.register()` 是一个更安全的做法。
 
-#### 示例 1
+### 示例 1
 
 ```ts
 api.registerMethod({
@@ -226,7 +226,7 @@ api.foo('hello, umi!'); // hello, umi!
 
 在示例 1 中，我们向 `api` 上注册了一个名为 `foo` 的方法，该方法会将参数打印到控制台。
 
-#### 示例 2
+### 示例 2
 
 ```ts
 import api from './api';
@@ -471,7 +471,7 @@ api.addBeforeBabelPresets(() => {
 
 在 webpack-dev-middleware 之前添加中间件。传入的 fn 不需要参数，且需要返回一个 express 中间件或其数组。
 
-#### 示例代码
+### 示例代码
 
 ```ts
 api.addBeforeMiddlewares(() => {
@@ -484,7 +484,7 @@ api.addBeforeMiddlewares(() => {
 });
 ```
 
-#### 解释
+### 解释
 
 `addBeforeMiddlewares` 是一个在 webpack-dev-middleware 之前添加中间件的方法。它接受一个不需要参数的函数 `fn`，该函数需要返回一个 express 中间件或其数组。
 
@@ -561,17 +561,17 @@ api.addEntryImports(() => ({
 
 ### addEntryImportsAhead
 
-#### 描述
+### 描述
 
 `addEntryImportsAhead` 是一个 API 方法，用于在入口文件中最前面添加 import 语句。你需要传入一个函数 `fn` 作为参数，该函数不需要任何参数，并且需要返回一个对象或对象数组。
 
-#### 参数
+### 参数
 
 | 参数名 | 类型 | 描述 |
 | --- | --- | --- |
 | fn | () => {source: string, specifier?: string} 或 ({source: string, specifier?: string})[] | 一个函数，它返回一个对象或对象数组，用于指定要添加的 import 语句的信息。 |
 
-#### 示例
+### 示例
 
 ```ts
 api.addEntryImportsAhead(() => ({
@@ -585,15 +585,15 @@ api.addEntryImportsAhead(() => ({
 
 ### source
 
-#### 类型
+### 类型
 
 string
 
-#### 描述
+### 描述
 
 `source` 是一个字符串，用于指定要引入的包名。
 
-#### 示例
+### 示例
 
 ```ts
 source: 'anyPackage';
@@ -603,15 +603,15 @@ source: 'anyPackage';
 
 ### specifier
 
-#### 类型
+### 类型
 
 string | undefined
 
-#### 描述
+### 描述
 
 `specifier` 是一个可选的字符串，用于指定包名的具体引入位置。
 
-#### 示例
+### 示例
 
 ```ts
 specifier: 'anySpecifier';

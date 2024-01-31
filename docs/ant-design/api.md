@@ -1,9 +1,9 @@
 ### ant-design 的 Watermark 有哪些配置？
 
-#### Watermark - Watermark
+#### Watermark - Watermark 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | width | 水印的宽度，`content` 的默认值为自身的宽度 | number | 120 |
 | height | 水印的高度，`content` 的默认值为自身的高度 | number | 64 |
 | inherit | 是否将水印传导给弹出组件如 Modal、Drawer | boolean | true | 5.11.0 |
@@ -15,21 +15,23 @@
 | gap | 水印之间的间距 | \[number, number] | \[100, 100] |
 | offset | 水印距离容器左上角的偏移量，默认为 `gap/2` | \[number, number] | \[gap[0]/2, gap[1]/2] |
 
-#### Watermark - Font
 
-| 参数       | 说明             | 类型                                        |
-| ---------- | ---------------- | ------------------------------------------- | ---------- |
-| color      | 字体颜色         | rgba(0,0,0,.15)                             |
-| fontSize   | 字体大小         | number                                      | 16         |
-| fontWeight | 字体粗细         | `normal` \| `light` \| `weight` \| number   | normal     |
-| fontFamily | 字体类型         | string                                      | sans-serif |
-| fontStyle  | 字体样式         | `none` \| `normal` \| `italic` \| `oblique` | normal     |
-| textAlign  | 指定文本对齐方向 | 5.10.0                                      |
+#### Watermark - Font 
+
+| 参数 | 说明 | 类型 |
+| --- | --- | --- |
+| color | 字体颜色 | rgba(0,0,0,.15) |
+| fontSize | 字体大小 | number | 16 |
+| fontWeight | 字体粗细 | `normal` \| `light` \| `weight` \| number | normal |
+| fontFamily | 字体类型 | string | sans-serif |
+| fontStyle | 字体样式 | `none` \| `normal` \| `italic` \| `oblique` | normal |
+| textAlign | 指定文本对齐方向 | 5.10.0 |
+
 
 ### ant-design 的 Watermark - Watermark 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | width | 水印的宽度，`content` 的默认值为自身的宽度 | number | 120 |
 | height | 水印的高度，`content` 的默认值为自身的高度 | number | 64 |
 | inherit | 是否将水印传导给弹出组件如 Modal、Drawer | boolean | true | 5.11.0 |
@@ -41,177 +43,179 @@
 | gap | 水印之间的间距 | \[number, number] | \[100, 100] |
 | offset | 水印距离容器左上角的偏移量，默认为 `gap/2` | \[number, number] | \[gap[0]/2, gap[1]/2] |
 
-### ant-design 中 Watermark - Watermark的width属性如何使用？
 
-参数: width
+### ant-design 中 Watermark - Watermark的width属性如何使用？ 
 
-说明: 水印的宽度，`content` 的默认值为自身的宽度
+参数: width 
 
-类型: number
+说明: 水印的宽度，`content` 的默认值为自身的宽度 
+
+类型: number 
 
 默认值: 120
 
-### ant-design 中 Watermark - Watermark的height属性如何使用？
+### ant-design 中 Watermark - Watermark的height属性如何使用？ 
 
-参数: height
+参数: height 
 
-说明: 水印的高度，`content` 的默认值为自身的高度
+说明: 水印的高度，`content` 的默认值为自身的高度 
 
-类型: number
+类型: number 
 
 默认值: 64
 
-### ant-design 中 Watermark - Watermark的inherit属性如何使用？
+### ant-design 中 Watermark - Watermark的inherit属性如何使用？ 
 
-参数: inherit
+参数: inherit 
 
-说明: 是否将水印传导给弹出组件如 Modal、Drawer
+说明: 是否将水印传导给弹出组件如 Modal、Drawer 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 5.11.0
 
-### ant-design 中 Watermark - Watermark的rotate属性如何使用？
+### ant-design 中 Watermark - Watermark的rotate属性如何使用？ 
 
-参数: rotate
+参数: rotate 
 
-说明: 水印绘制时，旋转的角度，单位 `°`
+说明: 水印绘制时，旋转的角度，单位 `°` 
 
-类型: number
+类型: number 
 
 默认值: -22
 
-### ant-design 中 Watermark - Watermark的zIndex属性如何使用？
+### ant-design 中 Watermark - Watermark的zIndex属性如何使用？ 
 
-参数: zIndex
+参数: zIndex 
 
-说明: 追加的水印元素的 z-index
+说明: 追加的水印元素的 z-index 
 
-类型: number
+类型: number 
 
 默认值: 9
 
-### ant-design 中 Watermark - Watermark的image属性如何使用？
+### ant-design 中 Watermark - Watermark的image属性如何使用？ 
 
-参数: image
+参数: image 
 
-说明: 图片源，建议导出 2 倍或 3 倍图，优先级高 (支持 base64 格式)
+说明: 图片源，建议导出 2 倍或 3 倍图，优先级高 (支持 base64 格式) 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Watermark - Watermark的content属性如何使用？
-
-参数: content
-
-说明: 水印文字内容
-
-类型: string | string[]
+类型: string 
 
 默认值: -
 
-### ant-design 中 Watermark - Watermark的font属性如何使用？
+### ant-design 中 Watermark - Watermark的content属性如何使用？ 
 
-参数: font
+参数: content 
+
+说明: 水印文字内容 
+
+类型: string | string[] 
+
+默认值: -
+
+### ant-design 中 Watermark - Watermark的font属性如何使用？ 
+
+参数: font 
 
 说明: 文字样式
 
-### ant-design 中 Watermark - Watermark的gap属性如何使用？
+### ant-design 中 Watermark - Watermark的gap属性如何使用？ 
 
-参数: gap
+参数: gap 
 
-说明: 水印之间的间距
+说明: 水印之间的间距 
 
-类型: \[number, number]
+类型: \[number, number] 
 
 默认值: \[100, 100]
 
-### ant-design 中 Watermark - Watermark的offset属性如何使用？
+### ant-design 中 Watermark - Watermark的offset属性如何使用？ 
 
-参数: offset
+参数: offset 
 
-说明: 水印距离容器左上角的偏移量，默认为 `gap/2`
+说明: 水印距离容器左上角的偏移量，默认为 `gap/2` 
 
-类型: \[number, number]
+类型: \[number, number] 
 
 默认值: \[gap[0]/2, gap[1]/2]
 
 ### ant-design 的 Watermark - Font 有哪些配置？
 
-| 参数       | 说明             | 类型                                        |
-| ---------- | ---------------- | ------------------------------------------- | ---------- |
-| color      | 字体颜色         | rgba(0,0,0,.15)                             |
-| fontSize   | 字体大小         | number                                      | 16         |
-| fontWeight | 字体粗细         | `normal` \| `light` \| `weight` \| number   | normal     |
-| fontFamily | 字体类型         | string                                      | sans-serif |
-| fontStyle  | 字体样式         | `none` \| `normal` \| `italic` \| `oblique` | normal     |
-| textAlign  | 指定文本对齐方向 | 5.10.0                                      |
+| 参数 | 说明 | 类型 |
+| --- | --- | --- |
+| color | 字体颜色 | rgba(0,0,0,.15) |
+| fontSize | 字体大小 | number | 16 |
+| fontWeight | 字体粗细 | `normal` \| `light` \| `weight` \| number | normal |
+| fontFamily | 字体类型 | string | sans-serif |
+| fontStyle | 字体样式 | `none` \| `normal` \| `italic` \| `oblique` | normal |
+| textAlign | 指定文本对齐方向 | 5.10.0 |
 
-### ant-design 中 Watermark - Font的color属性如何使用？
 
-参数: color
+### ant-design 中 Watermark - Font的color属性如何使用？ 
 
-说明: 字体颜色
+参数: color 
+
+说明: 字体颜色 
 
 类型: rgba(0,0,0,.15)
 
-### ant-design 中 Watermark - Font的fontSize属性如何使用？
+### ant-design 中 Watermark - Font的fontSize属性如何使用？ 
 
-参数: fontSize
+参数: fontSize 
 
-说明: 字体大小
+说明: 字体大小 
 
-类型: number
+类型: number 
 
 默认值: 16
 
-### ant-design 中 Watermark - Font的fontWeight属性如何使用？
+### ant-design 中 Watermark - Font的fontWeight属性如何使用？ 
 
-参数: fontWeight
+参数: fontWeight 
 
-说明: 字体粗细
+说明: 字体粗细 
 
-类型: `normal` | `light` | `weight` | number
+类型: `normal` | `light` | `weight` | number 
 
 默认值: normal
 
-### ant-design 中 Watermark - Font的fontFamily属性如何使用？
+### ant-design 中 Watermark - Font的fontFamily属性如何使用？ 
 
-参数: fontFamily
+参数: fontFamily 
 
-说明: 字体类型
+说明: 字体类型 
 
-类型: string
+类型: string 
 
 默认值: sans-serif
 
-### ant-design 中 Watermark - Font的fontStyle属性如何使用？
+### ant-design 中 Watermark - Font的fontStyle属性如何使用？ 
 
-参数: fontStyle
+参数: fontStyle 
 
-说明: 字体样式
+说明: 字体样式 
 
-类型: `none` | `normal` | `italic` | `oblique`
+类型: `none` | `normal` | `italic` | `oblique` 
 
 默认值: normal
 
-### ant-design 中 Watermark - Font的textAlign属性如何使用？
+### ant-design 中 Watermark - Font的textAlign属性如何使用？ 
 
-参数: textAlign
+参数: textAlign 
 
-说明: 指定文本对齐方向
+说明: 指定文本对齐方向 
 
 类型: 5.10.0
 
 ### ant-design 的 Upload 有哪些配置？
 
-#### Upload - API
+#### Upload - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | accept | 接受上传的文件类型，详见 [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) | string | - |
 | action | 上传的地址 | string \| (file) => Promise<string> | - |
 | beforeUpload | 上传文件之前的钩子，参数为上传的文件，若返回 `false` 则停止上传。支持返回一个 Promise 对象，Promise 对象 reject 时则停止上传，resolve 时开始上传（ resolve 传入 `File` 或 `Blob` 对象则上传 resolve 传入对象）；也可以返回 `Upload.LIST_IGNORE`，此时列表中将不展示此文件。 **注意：IE9 不支持该方法** | (file, fileList) => boolean \| Promise<File> \| `Upload.LIST_IGNORE` | - |
@@ -241,7 +245,8 @@
 | onPreview | 点击文件链接或预览图标时的回调 | function(file) | - |
 | onRemove | 点击移除文件时的回调，返回值为 false 时不移除。支持返回一个 Promise 对象，Promise 对象 resolve(false) 或 reject 时不移除 | function(file): boolean \| Promise | - |
 
-#### Upload - UploadFile
+
+#### Upload - UploadFile 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -253,10 +258,11 @@
 | uid | 唯一标识符，不设置时会自动生成 | string | - | - |
 | url | 下载地址 | string | - | - |
 
+
 ### ant-design 的 Upload - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | accept | 接受上传的文件类型，详见 [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) | string | - |
 | action | 上传的地址 | string \| (file) => Promise<string> | - |
 | beforeUpload | 上传文件之前的钩子，参数为上传的文件，若返回 `false` 则停止上传。支持返回一个 Promise 对象，Promise 对象 reject 时则停止上传，resolve 时开始上传（ resolve 传入 `File` 或 `Blob` 对象则上传 resolve 传入对象）；也可以返回 `Upload.LIST_IGNORE`，此时列表中将不展示此文件。 **注意：IE9 不支持该方法** | (file, fileList) => boolean \| Promise<File> \| `Upload.LIST_IGNORE` | - |
@@ -286,291 +292,292 @@
 | onPreview | 点击文件链接或预览图标时的回调 | function(file) | - |
 | onRemove | 点击移除文件时的回调，返回值为 false 时不移除。支持返回一个 Promise 对象，Promise 对象 resolve(false) 或 reject 时不移除 | function(file): boolean \| Promise | - |
 
-### ant-design 中 Upload - API的accept属性如何使用？
 
-参数: accept
+### ant-design 中 Upload - API的accept属性如何使用？ 
 
-说明: 接受上传的文件类型，详见 [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept)
+参数: accept 
 
-类型: string
+说明: 接受上传的文件类型，详见 [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) 
 
-默认值: -
-
-### ant-design 中 Upload - API的action属性如何使用？
-
-参数: action
-
-说明: 上传的地址
-
-类型: string | (file) => Promise<string>
+类型: string 
 
 默认值: -
 
-### ant-design 中 Upload - API的beforeUpload属性如何使用？
+### ant-design 中 Upload - API的action属性如何使用？ 
 
-参数: beforeUpload
+参数: action 
 
-说明: 上传文件之前的钩子，参数为上传的文件，若返回 `false` 则停止上传。支持返回一个 Promise 对象，Promise 对象 reject 时则停止上传，resolve 时开始上传（ resolve 传入 `File` 或 `Blob` 对象则上传 resolve 传入对象）；也可以返回 `Upload.LIST_IGNORE`，此时列表中将不展示此文件。 **注意：IE9 不支持该方法**
+说明: 上传的地址 
 
-类型: (file, fileList) => boolean | Promise<File> | `Upload.LIST_IGNORE`
-
-默认值: -
-
-### ant-design 中 Upload - API的customRequest属性如何使用？
-
-参数: customRequest
-
-说明: 通过覆盖默认的上传行为，可以自定义自己的上传实现
-
-类型: function
+类型: string | (file) => Promise<string> 
 
 默认值: -
 
-### ant-design 中 Upload - API的data属性如何使用？
+### ant-design 中 Upload - API的beforeUpload属性如何使用？ 
 
-参数: data
+参数: beforeUpload 
 
-说明: 上传所需额外参数或返回上传额外参数的方法
+说明: 上传文件之前的钩子，参数为上传的文件，若返回 `false` 则停止上传。支持返回一个 Promise 对象，Promise 对象 reject 时则停止上传，resolve 时开始上传（ resolve 传入 `File` 或 `Blob` 对象则上传 resolve 传入对象）；也可以返回 `Upload.LIST_IGNORE`，此时列表中将不展示此文件。 **注意：IE9 不支持该方法** 
 
-类型: object|(file) => object | Promise<object>
-
-默认值: -
-
-### ant-design 中 Upload - API的defaultFileList属性如何使用？
-
-参数: defaultFileList
-
-说明: 默认已经上传的文件列表
-
-类型: object[]
+类型: (file, fileList) => boolean | Promise<File> | `Upload.LIST_IGNORE` 
 
 默认值: -
 
-### ant-design 中 Upload - API的directory属性如何使用？
+### ant-design 中 Upload - API的customRequest属性如何使用？ 
 
-参数: directory
+参数: customRequest 
 
-说明: 支持上传文件夹（[caniuse](https://caniuse.com/#feat=input-file-directory)）
+说明: 通过覆盖默认的上传行为，可以自定义自己的上传实现 
 
-类型: boolean
+类型: function 
+
+默认值: -
+
+### ant-design 中 Upload - API的data属性如何使用？ 
+
+参数: data 
+
+说明: 上传所需额外参数或返回上传额外参数的方法 
+
+类型: object|(file) => object | Promise<object> 
+
+默认值: -
+
+### ant-design 中 Upload - API的defaultFileList属性如何使用？ 
+
+参数: defaultFileList 
+
+说明: 默认已经上传的文件列表 
+
+类型: object[] 
+
+默认值: -
+
+### ant-design 中 Upload - API的directory属性如何使用？ 
+
+参数: directory 
+
+说明: 支持上传文件夹（[caniuse](https://caniuse.com/#feat=input-file-directory)） 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Upload - API的disabled属性如何使用？
+### ant-design 中 Upload - API的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 是否禁用
+说明: 是否禁用 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 对于自定义 Upload children 时请将 disabled 属性同时传给 child node 确保 disabled 渲染效果保持一致
 
-### ant-design 中 Upload - API的fileList属性如何使用？
+### ant-design 中 Upload - API的fileList属性如何使用？ 
 
-参数: fileList
+参数: fileList 
 
-说明: 已经上传的文件列表（受控），使用此参数时，如果遇到 `onChange` 只调用一次的问题，请参考 [#2423](https://github.com/ant-design/ant-design/issues/2423)
+说明: 已经上传的文件列表（受控），使用此参数时，如果遇到 `onChange` 只调用一次的问题，请参考 [#2423](https://github.com/ant-design/ant-design/issues/2423) 
 
 类型: -
 
-### ant-design 中 Upload - API的headers属性如何使用？
+### ant-design 中 Upload - API的headers属性如何使用？ 
 
-参数: headers
+参数: headers 
 
-说明: 设置上传的请求头部，IE10 以上有效
+说明: 设置上传的请求头部，IE10 以上有效 
 
-类型: object
-
-默认值: -
-
-### ant-design 中 Upload - API的iconRender属性如何使用？
-
-参数: iconRender
-
-说明: 自定义显示 icon
-
-类型: (file: UploadFile, listType?: UploadListType) => ReactNode
+类型: object 
 
 默认值: -
 
-### ant-design 中 Upload - API的isImageUrl属性如何使用？
+### ant-design 中 Upload - API的iconRender属性如何使用？ 
 
-参数: isImageUrl
+参数: iconRender 
 
-说明: 自定义缩略图是否使用 <img /> 标签进行显示
+说明: 自定义显示 icon 
+
+类型: (file: UploadFile, listType?: UploadListType) => ReactNode 
+
+默认值: -
+
+### ant-design 中 Upload - API的isImageUrl属性如何使用？ 
+
+参数: isImageUrl 
+
+说明: 自定义缩略图是否使用 <img /> 标签进行显示 
 
 类型: (file: UploadFile) => boolean
 
-### ant-design 中 Upload - API的itemRender属性如何使用？
+### ant-design 中 Upload - API的itemRender属性如何使用？ 
 
-参数: itemRender
+参数: itemRender 
 
-说明: 自定义上传列表项
+说明: 自定义上传列表项 
 
-类型: (originNode: ReactElement, file: UploadFile, fileList: object[], actions: { download: function, preview: function, remove: function }) => React.ReactNode
+类型: (originNode: ReactElement, file: UploadFile, fileList: object[], actions: { download: function, preview: function, remove: function }) => React.ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.16.0
 
-### ant-design 中 Upload - API的listType属性如何使用？
+### ant-design 中 Upload - API的listType属性如何使用？ 
 
-参数: listType
+参数: listType 
 
-说明: 上传列表的内建样式，支持四种基本样式 `text`, `picture`, `picture-card` 和 `picture-circle`
+说明: 上传列表的内建样式，支持四种基本样式 `text`, `picture`, `picture-card` 和 `picture-circle` 
 
-类型: string
+类型: string 
 
-默认值: `text`
+默认值: `text` 
 
 版本: `picture-circle`(5.2.0+)
 
-### ant-design 中 Upload - API的maxCount属性如何使用？
+### ant-design 中 Upload - API的maxCount属性如何使用？ 
 
-参数: maxCount
+参数: maxCount 
 
-说明: 限制上传数量。当为 1 时，始终用最新上传的文件代替当前文件
+说明: 限制上传数量。当为 1 时，始终用最新上传的文件代替当前文件 
 
-类型: number
+类型: number 
 
-默认值: -
+默认值: - 
 
 版本: 4.10.0
 
-### ant-design 中 Upload - API的method属性如何使用？
+### ant-design 中 Upload - API的method属性如何使用？ 
 
-参数: method
+参数: method 
 
-说明: 上传请求的 http method
+说明: 上传请求的 http method 
 
-类型: string
+类型: string 
 
 默认值: `post`
 
-### ant-design 中 Upload - API的multiple属性如何使用？
+### ant-design 中 Upload - API的multiple属性如何使用？ 
 
-参数: multiple
+参数: multiple 
 
-说明: 是否支持多选文件，`ie10+` 支持。开启后按住 ctrl 可选择多个文件
+说明: 是否支持多选文件，`ie10+` 支持。开启后按住 ctrl 可选择多个文件 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Upload - API的name属性如何使用？
+### ant-design 中 Upload - API的name属性如何使用？ 
 
-参数: name
+参数: name 
 
-说明: 发到后台的文件参数名
+说明: 发到后台的文件参数名 
 
-类型: string
+类型: string 
 
 默认值: `file`
 
-### ant-design 中 Upload - API的openFileDialogOnClick属性如何使用？
+### ant-design 中 Upload - API的openFileDialogOnClick属性如何使用？ 
 
-参数: openFileDialogOnClick
+参数: openFileDialogOnClick 
 
-说明: 点击打开文件对话框
+说明: 点击打开文件对话框 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Upload - API的previewFile属性如何使用？
+### ant-design 中 Upload - API的previewFile属性如何使用？ 
 
-参数: previewFile
+参数: previewFile 
 
-说明: 自定义文件预览逻辑
+说明: 自定义文件预览逻辑 
 
-类型: (file: File | Blob) => Promise<dataURL: string>
+类型: (file: File | Blob) => Promise<dataURL: string> 
 
 默认值: -
 
-### ant-design 中 Upload - API的progress属性如何使用？
+### ant-design 中 Upload - API的progress属性如何使用？ 
 
-参数: progress
+参数: progress 
 
-说明: 自定义进度条样式
+说明: 自定义进度条样式 
 
-类型: { strokeWidth: 2, showInfo: false }
+类型: { strokeWidth: 2, showInfo: false } 
 
 默认值: 4.3.0
 
-### ant-design 中 Upload - API的showUploadList属性如何使用？
+### ant-design 中 Upload - API的showUploadList属性如何使用？ 
 
-参数: showUploadList
+参数: showUploadList 
 
-说明: 是否展示文件列表, 可设为一个对象，用于单独设定 `showPreviewIcon`, `showRemoveIcon`, `showDownloadIcon`, `removeIcon` 和 `downloadIcon`
+说明: 是否展示文件列表, 可设为一个对象，用于单独设定 `showPreviewIcon`, `showRemoveIcon`, `showDownloadIcon`, `removeIcon` 和 `downloadIcon` 
 
-类型: boolean | { showPreviewIcon?: boolean, showRemoveIcon?: boolean, showDownloadIcon?: boolean, previewIcon?: ReactNode | (file: UploadFile) => ReactNode, removeIcon?: ReactNode | (file: UploadFile) => ReactNode, downloadIcon?: ReactNode | (file: UploadFile) => ReactNode }
+类型: boolean | { showPreviewIcon?: boolean, showRemoveIcon?: boolean, showDownloadIcon?: boolean, previewIcon?: ReactNode | (file: UploadFile) => ReactNode, removeIcon?: ReactNode | (file: UploadFile) => ReactNode, downloadIcon?: ReactNode | (file: UploadFile) => ReactNode } 
 
-默认值: true
+默认值: true 
 
 版本: function: 4.7.0
 
-### ant-design 中 Upload - API的withCredentials属性如何使用？
+### ant-design 中 Upload - API的withCredentials属性如何使用？ 
 
-参数: withCredentials
+参数: withCredentials 
 
-说明: 上传请求时是否携带 cookie
+说明: 上传请求时是否携带 cookie 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Upload - API的onChange属性如何使用？
+### ant-design 中 Upload - API的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 上传文件改变时的回调，上传每个阶段都会触发该事件。详见 [onChange](#onchange)
+说明: 上传文件改变时的回调，上传每个阶段都会触发该事件。详见 [onChange](#onchange) 
 
-类型: function
-
-默认值: -
-
-### ant-design 中 Upload - API的onDrop属性如何使用？
-
-参数: onDrop
-
-说明: 当文件被拖入上传区域时执行的回调功能
-
-类型: (event: React.DragEvent) => void
+类型: function 
 
 默认值: -
+
+### ant-design 中 Upload - API的onDrop属性如何使用？ 
+
+参数: onDrop 
+
+说明: 当文件被拖入上传区域时执行的回调功能 
+
+类型: (event: React.DragEvent) => void 
+
+默认值: - 
 
 版本: 4.16.0
 
-### ant-design 中 Upload - API的onDownload属性如何使用？
+### ant-design 中 Upload - API的onDownload属性如何使用？ 
 
-参数: onDownload
+参数: onDownload 
 
-说明: 点击下载文件时的回调，如果没有指定，则默认跳转到文件 url 对应的标签页
+说明: 点击下载文件时的回调，如果没有指定，则默认跳转到文件 url 对应的标签页 
 
-类型: function(file): void
+类型: function(file): void 
 
 默认值: (跳转新标签页)
 
-### ant-design 中 Upload - API的onPreview属性如何使用？
+### ant-design 中 Upload - API的onPreview属性如何使用？ 
 
-参数: onPreview
+参数: onPreview 
 
-说明: 点击文件链接或预览图标时的回调
+说明: 点击文件链接或预览图标时的回调 
 
-类型: function(file)
+类型: function(file) 
 
 默认值: -
 
-### ant-design 中 Upload - API的onRemove属性如何使用？
+### ant-design 中 Upload - API的onRemove属性如何使用？ 
 
-参数: onRemove
+参数: onRemove 
 
-说明: 点击移除文件时的回调，返回值为 false 时不移除。支持返回一个 Promise 对象，Promise 对象 resolve(false) 或 reject 时不移除
+说明: 点击移除文件时的回调，返回值为 false 时不移除。支持返回一个 Promise 对象，Promise 对象 resolve(false) 或 reject 时不移除 
 
-类型: function(file): boolean | Promise
+类型: function(file): boolean | Promise 
 
 默认值: -
 
@@ -586,96 +593,97 @@
 | uid | 唯一标识符，不设置时会自动生成 | string | - | - |
 | url | 下载地址 | string | - | - |
 
-### ant-design 中 Upload - UploadFile的crossOrigin属性如何使用？
 
-参数: crossOrigin
+### ant-design 中 Upload - UploadFile的crossOrigin属性如何使用？ 
 
-说明: CORS 属性设置
+参数: crossOrigin 
 
-类型: `'anonymous'` | `'use-credentials'` | `''`
+说明: CORS 属性设置 
 
-默认值: -
+类型: `'anonymous'` | `'use-credentials'` | `''` 
+
+默认值: - 
 
 版本: 4.20.0
 
-### ant-design 中 Upload - UploadFile的name属性如何使用？
+### ant-design 中 Upload - UploadFile的name属性如何使用？ 
 
-参数: name
+参数: name 
 
-说明: 文件名
+说明: 文件名 
 
-类型: string
+类型: string 
 
-默认值: -
-
-版本: -
-
-### ant-design 中 Upload - UploadFile的percent属性如何使用？
-
-参数: percent
-
-说明: 上传进度
-
-类型: number
-
-默认值: -
+默认值: - 
 
 版本: -
 
-### ant-design 中 Upload - UploadFile的status属性如何使用？
+### ant-design 中 Upload - UploadFile的percent属性如何使用？ 
 
-参数: status
+参数: percent 
 
-说明: 上传状态，不同状态展示颜色也会有所不同
+说明: 上传进度 
 
-类型: `error` | `done` | `uploading` | `removed`
+类型: number 
 
-默认值: -
-
-版本: -
-
-### ant-design 中 Upload - UploadFile的thumbUrl属性如何使用？
-
-参数: thumbUrl
-
-说明: 缩略图地址
-
-类型: string
-
-默认值: -
+默认值: - 
 
 版本: -
 
-### ant-design 中 Upload - UploadFile的uid属性如何使用？
+### ant-design 中 Upload - UploadFile的status属性如何使用？ 
 
-参数: uid
+参数: status 
 
-说明: 唯一标识符，不设置时会自动生成
+说明: 上传状态，不同状态展示颜色也会有所不同 
 
-类型: string
+类型: `error` | `done` | `uploading` | `removed` 
 
-默认值: -
+默认值: - 
 
 版本: -
 
-### ant-design 中 Upload - UploadFile的url属性如何使用？
+### ant-design 中 Upload - UploadFile的thumbUrl属性如何使用？ 
 
-参数: url
+参数: thumbUrl 
 
-说明: 下载地址
+说明: 缩略图地址 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
+
+版本: -
+
+### ant-design 中 Upload - UploadFile的uid属性如何使用？ 
+
+参数: uid 
+
+说明: 唯一标识符，不设置时会自动生成 
+
+类型: string 
+
+默认值: - 
+
+版本: -
+
+### ant-design 中 Upload - UploadFile的url属性如何使用？ 
+
+参数: url 
+
+说明: 下载地址 
+
+类型: string 
+
+默认值: - 
 
 版本: -
 
 ### ant-design 的 Typography 有哪些配置？
 
-#### Typography - Typography.Text
+#### Typography - Typography.Text 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | code | 添加代码样式 | boolean | false |
 | copyable | 是否可拷贝，为对象时可进行各种自定义 | boolean \| [copyable](#copyable) | false |
 | delete | 添加删除线样式 | boolean | false |
@@ -690,10 +698,11 @@
 | type | 文本类型 | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
 | underline | 添加下划线样式 | boolean | false |
 
-#### Typography - Typography.Title
+
+#### Typography - Typography.Title 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | code | 添加代码样式 | boolean | false |
 | copyable | 是否可拷贝，为对象时可进行各种自定义 | boolean \| [copyable](#copyable) | false |
 | delete | 添加删除线样式 | boolean | false |
@@ -707,10 +716,11 @@
 | type | 文本类型 | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
 | underline | 添加下划线样式 | boolean | false |
 
-#### Typography - Typography.Paragraph
+
+#### Typography - Typography.Paragraph 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | code | 添加代码样式 | boolean | false |
 | copyable | 是否可拷贝，为对象时可进行各种自定义 | boolean \| [copyable](#copyable) | false |
 | delete | 添加删除线样式 | boolean | false |
@@ -724,7 +734,8 @@
 | type | 文本类型 | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
 | underline | 添加下划线样式 | boolean | false |
 
-#### Typography - copyable
+
+#### Typography - copyable 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -734,7 +745,8 @@
 | tooltips | 自定义提示文案，为 false 时隐藏文案 | \[ReactNode, ReactNode] | \[`复制`, `复制成功`] | 4.4.0 |
 | onCopy | 拷贝成功的回调函数 | function | - |
 
-#### Typography - editable
+
+#### Typography - editable 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -751,10 +763,11 @@
 | triggerType | 编辑模式触发器类型，图标、文本或者两者都设置（不设置图标作为触发器时它会隐藏） | Array<`icon`\|`text`\> | \[`icon`] |
 | enterIcon | 在编辑段中自定义“enter”图标（传递“null”将删除图标） | ReactNode | `<EnterOutlined />` | 4.17.0 |
 
-#### Typography - ellipsis
+
+#### Typography - ellipsis 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | expandable | 是否可展开 | boolean | - |
 | rows | 最多显示的行数 | number | - |
 | suffix | 自定义省略内容后缀 | string | - |
@@ -763,10 +776,11 @@
 | onEllipsis | 触发省略时的回调 | function(ellipsis) | - | 4.2.0 |
 | onExpand | 点击展开时的回调 | function(event) | - |
 
+
 ### ant-design 的 Typography - Typography.Text 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | code | 添加代码样式 | boolean | false |
 | copyable | 是否可拷贝，为对象时可进行各种自定义 | boolean \| [copyable](#copyable) | false |
 | delete | 添加删除线样式 | boolean | false |
@@ -781,146 +795,147 @@
 | type | 文本类型 | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
 | underline | 添加下划线样式 | boolean | false |
 
-### ant-design 中 Typography - Typography.Text的code属性如何使用？
 
-参数: code
+### ant-design 中 Typography - Typography.Text的code属性如何使用？ 
 
-说明: 添加代码样式
+参数: code 
 
-类型: boolean
+说明: 添加代码样式 
 
-默认值: false
-
-### ant-design 中 Typography - Typography.Text的copyable属性如何使用？
-
-参数: copyable
-
-说明: 是否可拷贝，为对象时可进行各种自定义
-
-类型: boolean | [copyable](#copyable)
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Text的delete属性如何使用？
+### ant-design 中 Typography - Typography.Text的copyable属性如何使用？ 
 
-参数: delete
+参数: copyable 
 
-说明: 添加删除线样式
+说明: 是否可拷贝，为对象时可进行各种自定义 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Typography - Typography.Text的disabled属性如何使用？
-
-参数: disabled
-
-说明: 禁用文本
-
-类型: boolean
+类型: boolean | [copyable](#copyable) 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Text的editable属性如何使用？
+### ant-design 中 Typography - Typography.Text的delete属性如何使用？ 
 
-参数: editable
+参数: delete 
 
-说明: 是否可编辑，为对象时可对编辑进行控制
+说明: 添加删除线样式 
 
-类型: boolean | [editable](#editable)
-
-默认值: false
-
-### ant-design 中 Typography - Typography.Text的ellipsis属性如何使用？
-
-参数: ellipsis
-
-说明: 自动溢出省略，为对象时不能设置省略行数、是否可展开、onExpand 展开事件。不同于 Typography.Paragraph，Text 组件自身不带 100% 宽度样式，因而默认情况下初次缩略后宽度便不再变化。如果需要自适应宽度，请手工配置宽度样式
-
-类型: boolean | [Omit<ellipsis, 'expandable' | 'rows' | 'onExpand'>](#ellipsis)
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Text的keyboard属性如何使用？
+### ant-design 中 Typography - Typography.Text的disabled属性如何使用？ 
 
-参数: keyboard
+参数: disabled 
 
-说明: 添加键盘样式
+说明: 禁用文本 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
+
+### ant-design 中 Typography - Typography.Text的editable属性如何使用？ 
+
+参数: editable 
+
+说明: 是否可编辑，为对象时可对编辑进行控制 
+
+类型: boolean | [editable](#editable) 
+
+默认值: false
+
+### ant-design 中 Typography - Typography.Text的ellipsis属性如何使用？ 
+
+参数: ellipsis 
+
+说明: 自动溢出省略，为对象时不能设置省略行数、是否可展开、onExpand 展开事件。不同于 Typography.Paragraph，Text 组件自身不带 100% 宽度样式，因而默认情况下初次缩略后宽度便不再变化。如果需要自适应宽度，请手工配置宽度样式 
+
+类型: boolean | [Omit<ellipsis, 'expandable' | 'rows' | 'onExpand'>](#ellipsis) 
+
+默认值: false
+
+### ant-design 中 Typography - Typography.Text的keyboard属性如何使用？ 
+
+参数: keyboard 
+
+说明: 添加键盘样式 
+
+类型: boolean 
+
+默认值: false 
 
 版本: 4.3.0
 
-### ant-design 中 Typography - Typography.Text的mark属性如何使用？
+### ant-design 中 Typography - Typography.Text的mark属性如何使用？ 
 
-参数: mark
+参数: mark 
 
-说明: 添加标记样式
+说明: 添加标记样式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Text的onClick属性如何使用？
+### ant-design 中 Typography - Typography.Text的onClick属性如何使用？ 
 
-参数: onClick
+参数: onClick 
 
-说明: 点击 Text 时的回调
+说明: 点击 Text 时的回调 
 
-类型: (event) => void
+类型: (event) => void 
 
 默认值: -
 
-### ant-design 中 Typography - Typography.Text的strong属性如何使用？
+### ant-design 中 Typography - Typography.Text的strong属性如何使用？ 
 
-参数: strong
+参数: strong 
 
-说明: 是否加粗
+说明: 是否加粗 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Typography - Typography.Text的italic属性如何使用？
-
-参数: italic
-
-说明: 是否斜体
-
-类型: boolean
+类型: boolean 
 
 默认值: false
+
+### ant-design 中 Typography - Typography.Text的italic属性如何使用？ 
+
+参数: italic 
+
+说明: 是否斜体 
+
+类型: boolean 
+
+默认值: false 
 
 版本: 4.16.0
 
-### ant-design 中 Typography - Typography.Text的type属性如何使用？
+### ant-design 中 Typography - Typography.Text的type属性如何使用？ 
 
-参数: type
+参数: type 
 
-说明: 文本类型
+说明: 文本类型 
 
-类型: `secondary` | `success` | `warning` | `danger`
+类型: `secondary` | `success` | `warning` | `danger` 
 
-默认值: -
+默认值: - 
 
 版本: success: 4.6.0
 
-### ant-design 中 Typography - Typography.Text的underline属性如何使用？
+### ant-design 中 Typography - Typography.Text的underline属性如何使用？ 
 
-参数: underline
+参数: underline 
 
-说明: 添加下划线样式
+说明: 添加下划线样式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
 ### ant-design 的 Typography - Typography.Title 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | code | 添加代码样式 | boolean | false |
 | copyable | 是否可拷贝，为对象时可进行各种自定义 | boolean \| [copyable](#copyable) | false |
 | delete | 添加删除线样式 | boolean | false |
@@ -934,136 +949,137 @@
 | type | 文本类型 | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
 | underline | 添加下划线样式 | boolean | false |
 
-### ant-design 中 Typography - Typography.Title的code属性如何使用？
 
-参数: code
+### ant-design 中 Typography - Typography.Title的code属性如何使用？ 
 
-说明: 添加代码样式
+参数: code 
 
-类型: boolean
+说明: 添加代码样式 
 
-默认值: false
-
-### ant-design 中 Typography - Typography.Title的copyable属性如何使用？
-
-参数: copyable
-
-说明: 是否可拷贝，为对象时可进行各种自定义
-
-类型: boolean | [copyable](#copyable)
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Title的delete属性如何使用？
+### ant-design 中 Typography - Typography.Title的copyable属性如何使用？ 
 
-参数: delete
+参数: copyable 
 
-说明: 添加删除线样式
+说明: 是否可拷贝，为对象时可进行各种自定义 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Typography - Typography.Title的disabled属性如何使用？
-
-参数: disabled
-
-说明: 禁用文本
-
-类型: boolean
+类型: boolean | [copyable](#copyable) 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Title的editable属性如何使用？
+### ant-design 中 Typography - Typography.Title的delete属性如何使用？ 
 
-参数: editable
+参数: delete 
 
-说明: 是否可编辑，为对象时可对编辑进行控制
+说明: 添加删除线样式 
 
-类型: boolean | [editable](#editable)
-
-默认值: false
-
-### ant-design 中 Typography - Typography.Title的ellipsis属性如何使用？
-
-参数: ellipsis
-
-说明: 自动溢出省略，为对象时可设置省略行数、是否可展开、添加后缀等
-
-类型: boolean | [ellipsis](#ellipsis)
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Title的level属性如何使用？
+### ant-design 中 Typography - Typography.Title的disabled属性如何使用？ 
 
-参数: level
+参数: disabled 
 
-说明: 重要程度，相当于 `h1`、`h2`、`h3`、`h4`、`h5`
+说明: 禁用文本 
 
-类型: number: 1, 2, 3, 4, 5
+类型: boolean 
 
-默认值: 1
+默认值: false
+
+### ant-design 中 Typography - Typography.Title的editable属性如何使用？ 
+
+参数: editable 
+
+说明: 是否可编辑，为对象时可对编辑进行控制 
+
+类型: boolean | [editable](#editable) 
+
+默认值: false
+
+### ant-design 中 Typography - Typography.Title的ellipsis属性如何使用？ 
+
+参数: ellipsis 
+
+说明: 自动溢出省略，为对象时可设置省略行数、是否可展开、添加后缀等 
+
+类型: boolean | [ellipsis](#ellipsis) 
+
+默认值: false
+
+### ant-design 中 Typography - Typography.Title的level属性如何使用？ 
+
+参数: level 
+
+说明: 重要程度，相当于 `h1`、`h2`、`h3`、`h4`、`h5` 
+
+类型: number: 1, 2, 3, 4, 5 
+
+默认值: 1 
 
 版本: 5: 4.6.0
 
-### ant-design 中 Typography - Typography.Title的mark属性如何使用？
+### ant-design 中 Typography - Typography.Title的mark属性如何使用？ 
 
-参数: mark
+参数: mark 
 
-说明: 添加标记样式
+说明: 添加标记样式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Title的onClick属性如何使用？
+### ant-design 中 Typography - Typography.Title的onClick属性如何使用？ 
 
-参数: onClick
+参数: onClick 
 
-说明: 点击 Title 时的回调
+说明: 点击 Title 时的回调 
 
-类型: (event) => void
+类型: (event) => void 
 
 默认值: -
 
-### ant-design 中 Typography - Typography.Title的italic属性如何使用？
+### ant-design 中 Typography - Typography.Title的italic属性如何使用？ 
 
-参数: italic
+参数: italic 
 
-说明: 是否斜体
+说明: 是否斜体 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.16.0
 
-### ant-design 中 Typography - Typography.Title的type属性如何使用？
+### ant-design 中 Typography - Typography.Title的type属性如何使用？ 
 
-参数: type
+参数: type 
 
-说明: 文本类型
+说明: 文本类型 
 
-类型: `secondary` | `success` | `warning` | `danger`
+类型: `secondary` | `success` | `warning` | `danger` 
 
-默认值: -
+默认值: - 
 
 版本: success: 4.6.0
 
-### ant-design 中 Typography - Typography.Title的underline属性如何使用？
+### ant-design 中 Typography - Typography.Title的underline属性如何使用？ 
 
-参数: underline
+参数: underline 
 
-说明: 添加下划线样式
+说明: 添加下划线样式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
 ### ant-design 的 Typography - Typography.Paragraph 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | code | 添加代码样式 | boolean | false |
 | copyable | 是否可拷贝，为对象时可进行各种自定义 | boolean \| [copyable](#copyable) | false |
 | delete | 添加删除线样式 | boolean | false |
@@ -1077,127 +1093,128 @@
 | type | 文本类型 | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
 | underline | 添加下划线样式 | boolean | false |
 
-### ant-design 中 Typography - Typography.Paragraph的code属性如何使用？
 
-参数: code
+### ant-design 中 Typography - Typography.Paragraph的code属性如何使用？ 
 
-说明: 添加代码样式
+参数: code 
 
-类型: boolean
+说明: 添加代码样式 
 
-默认值: false
-
-### ant-design 中 Typography - Typography.Paragraph的copyable属性如何使用？
-
-参数: copyable
-
-说明: 是否可拷贝，为对象时可进行各种自定义
-
-类型: boolean | [copyable](#copyable)
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Paragraph的delete属性如何使用？
+### ant-design 中 Typography - Typography.Paragraph的copyable属性如何使用？ 
 
-参数: delete
+参数: copyable 
 
-说明: 添加删除线样式
+说明: 是否可拷贝，为对象时可进行各种自定义 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Typography - Typography.Paragraph的disabled属性如何使用？
-
-参数: disabled
-
-说明: 禁用文本
-
-类型: boolean
+类型: boolean | [copyable](#copyable) 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Paragraph的editable属性如何使用？
+### ant-design 中 Typography - Typography.Paragraph的delete属性如何使用？ 
 
-参数: editable
+参数: delete 
 
-说明: 是否可编辑，为对象时可对编辑进行控制
+说明: 添加删除线样式 
 
-类型: boolean | [editable](#editable)
-
-默认值: false
-
-### ant-design 中 Typography - Typography.Paragraph的ellipsis属性如何使用？
-
-参数: ellipsis
-
-说明: 自动溢出省略，为对象时可设置省略行数、是否可展开、添加后缀等
-
-类型: boolean | [ellipsis](#ellipsis)
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Paragraph的mark属性如何使用？
+### ant-design 中 Typography - Typography.Paragraph的disabled属性如何使用？ 
 
-参数: mark
+参数: disabled 
 
-说明: 添加标记样式
+说明: 禁用文本 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Typography - Typography.Paragraph的onClick属性如何使用？
+### ant-design 中 Typography - Typography.Paragraph的editable属性如何使用？ 
 
-参数: onClick
+参数: editable 
 
-说明: 点击 Paragraph 时的回调
+说明: 是否可编辑，为对象时可对编辑进行控制 
 
-类型: (event) => void
+类型: boolean | [editable](#editable) 
+
+默认值: false
+
+### ant-design 中 Typography - Typography.Paragraph的ellipsis属性如何使用？ 
+
+参数: ellipsis 
+
+说明: 自动溢出省略，为对象时可设置省略行数、是否可展开、添加后缀等 
+
+类型: boolean | [ellipsis](#ellipsis) 
+
+默认值: false
+
+### ant-design 中 Typography - Typography.Paragraph的mark属性如何使用？ 
+
+参数: mark 
+
+说明: 添加标记样式 
+
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Typography - Typography.Paragraph的onClick属性如何使用？ 
+
+参数: onClick 
+
+说明: 点击 Paragraph 时的回调 
+
+类型: (event) => void 
 
 默认值: -
 
-### ant-design 中 Typography - Typography.Paragraph的strong属性如何使用？
+### ant-design 中 Typography - Typography.Paragraph的strong属性如何使用？ 
 
-参数: strong
+参数: strong 
 
-说明: 是否加粗
+说明: 是否加粗 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Typography - Typography.Paragraph的italic属性如何使用？
-
-参数: italic
-
-说明: 是否斜体
-
-类型: boolean
+类型: boolean 
 
 默认值: false
+
+### ant-design 中 Typography - Typography.Paragraph的italic属性如何使用？ 
+
+参数: italic 
+
+说明: 是否斜体 
+
+类型: boolean 
+
+默认值: false 
 
 版本: 4.16.0
 
-### ant-design 中 Typography - Typography.Paragraph的type属性如何使用？
+### ant-design 中 Typography - Typography.Paragraph的type属性如何使用？ 
 
-参数: type
+参数: type 
 
-说明: 文本类型
+说明: 文本类型 
 
-类型: `secondary` | `success` | `warning` | `danger`
+类型: `secondary` | `success` | `warning` | `danger` 
 
-默认值: -
+默认值: - 
 
 版本: success: 4.6.0
 
-### ant-design 中 Typography - Typography.Paragraph的underline属性如何使用？
+### ant-design 中 Typography - Typography.Paragraph的underline属性如何使用？ 
 
-参数: underline
+参数: underline 
 
-说明: 添加下划线样式
+说明: 添加下划线样式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
@@ -1211,59 +1228,60 @@
 | tooltips | 自定义提示文案，为 false 时隐藏文案 | \[ReactNode, ReactNode] | \[`复制`, `复制成功`] | 4.4.0 |
 | onCopy | 拷贝成功的回调函数 | function | - |
 
-### ant-design 中 Typography - copyable的format属性如何使用？
 
-参数: format
+### ant-design 中 Typography - copyable的format属性如何使用？ 
 
-说明: 剪切板数据的 Mime Type
+参数: format 
 
-类型: 'text/plain' | 'text/html'
+说明: 剪切板数据的 Mime Type 
 
-默认值: -
+类型: 'text/plain' | 'text/html' 
+
+默认值: - 
 
 版本: 4.21.0
 
-### ant-design 中 Typography - copyable的icon属性如何使用？
+### ant-design 中 Typography - copyable的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 自定义拷贝图标：[默认图标, 拷贝后的图标]
+说明: 自定义拷贝图标：[默认图标, 拷贝后的图标] 
 
-类型: \[ReactNode, ReactNode]
+类型: \[ReactNode, ReactNode] 
 
-默认值: -
+默认值: - 
 
 版本: 4.6.0
 
-### ant-design 中 Typography - copyable的text属性如何使用？
+### ant-design 中 Typography - copyable的text属性如何使用？ 
 
-参数: text
+参数: text 
 
-说明: 拷贝到剪切板里的文本
+说明: 拷贝到剪切板里的文本 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Typography - copyable的tooltips属性如何使用？
+### ant-design 中 Typography - copyable的tooltips属性如何使用？ 
 
-参数: tooltips
+参数: tooltips 
 
-说明: 自定义提示文案，为 false 时隐藏文案
+说明: 自定义提示文案，为 false 时隐藏文案 
 
-类型: \[ReactNode, ReactNode]
+类型: \[ReactNode, ReactNode] 
 
-默认值: \[`复制`, `复制成功`]
+默认值: \[`复制`, `复制成功`] 
 
 版本: 4.4.0
 
-### ant-design 中 Typography - copyable的onCopy属性如何使用？
+### ant-design 中 Typography - copyable的onCopy属性如何使用？ 
 
-参数: onCopy
+参数: onCopy 
 
-说明: 拷贝成功的回调函数
+说明: 拷贝成功的回调函数 
 
-类型: function
+类型: function 
 
 默认值: -
 
@@ -1284,144 +1302,145 @@
 | triggerType | 编辑模式触发器类型，图标、文本或者两者都设置（不设置图标作为触发器时它会隐藏） | Array<`icon`\|`text`\> | \[`icon`] |
 | enterIcon | 在编辑段中自定义“enter”图标（传递“null”将删除图标） | ReactNode | `<EnterOutlined />` | 4.17.0 |
 
-### ant-design 中 Typography - editable的autoSize属性如何使用？
 
-参数: autoSize
+### ant-design 中 Typography - editable的autoSize属性如何使用？ 
 
-说明: 自动 resize 文本域
+参数: autoSize 
 
-类型: boolean | { minRows: number, maxRows: number }
+说明: 自动 resize 文本域 
 
-默认值: -
+类型: boolean | { minRows: number, maxRows: number } 
+
+默认值: - 
 
 版本: 4.4.0
 
-### ant-design 中 Typography - editable的editing属性如何使用？
+### ant-design 中 Typography - editable的editing属性如何使用？ 
 
-参数: editing
+参数: editing 
 
-说明: 控制是否是编辑中状态
+说明: 控制是否是编辑中状态 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Typography - editable的icon属性如何使用？
+### ant-design 中 Typography - editable的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 自定义编辑图标
+说明: 自定义编辑图标 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: \<EditOutlined />
+默认值: \<EditOutlined /> 
 
 版本: 4.6.0
 
-### ant-design 中 Typography - editable的maxLength属性如何使用？
+### ant-design 中 Typography - editable的maxLength属性如何使用？ 
 
-参数: maxLength
+参数: maxLength 
 
-说明: 编辑中文本域最大长度
+说明: 编辑中文本域最大长度 
 
-类型: number
+类型: number 
 
-默认值: -
+默认值: - 
 
 版本: 4.4.0
 
-### ant-design 中 Typography - editable的tooltip属性如何使用？
+### ant-design 中 Typography - editable的tooltip属性如何使用？ 
 
-参数: tooltip
+参数: tooltip 
 
-说明: 自定义提示文本，为 false 时关闭
+说明: 自定义提示文本，为 false 时关闭 
 
-类型: boolean | ReactNode
+类型: boolean | ReactNode 
 
-默认值: `编辑`
+默认值: `编辑` 
 
 版本: 4.6.0
 
-### ant-design 中 Typography - editable的text属性如何使用？
+### ant-design 中 Typography - editable的text属性如何使用？ 
 
-参数: text
+参数: text 
 
-说明: 显式地指定编辑文案，为空时将隐式地使用 children
+说明: 显式地指定编辑文案，为空时将隐式地使用 children 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 4.24.0
 
-### ant-design 中 Typography - editable的onChange属性如何使用？
+### ant-design 中 Typography - editable的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 文本域编辑时触发
+说明: 文本域编辑时触发 
 
-类型: function(value: string)
-
-默认值: -
-
-### ant-design 中 Typography - editable的onCancel属性如何使用？
-
-参数: onCancel
-
-说明: 按 ESC 退出编辑状态时触发
-
-类型: function
+类型: function(value: string) 
 
 默认值: -
 
-### ant-design 中 Typography - editable的onStart属性如何使用？
+### ant-design 中 Typography - editable的onCancel属性如何使用？ 
 
-参数: onStart
+参数: onCancel 
 
-说明: 进入编辑中状态时触发
+说明: 按 ESC 退出编辑状态时触发 
 
-类型: function
+类型: function 
+
+默认值: -
+
+### ant-design 中 Typography - editable的onStart属性如何使用？ 
+
+参数: onStart 
+
+说明: 进入编辑中状态时触发 
+
+类型: function 
 
 默认值: -
 
-### ant-design 中 Typography - editable的onEnd属性如何使用？
+### ant-design 中 Typography - editable的onEnd属性如何使用？ 
 
-参数: onEnd
+参数: onEnd 
 
-说明: 按 ENTER 结束编辑状态时触发
+说明: 按 ENTER 结束编辑状态时触发 
 
-类型: function
+类型: function 
 
-默认值: -
+默认值: - 
 
 版本: 4.14.0
 
-### ant-design 中 Typography - editable的triggerType属性如何使用？
+### ant-design 中 Typography - editable的triggerType属性如何使用？ 
 
-参数: triggerType
+参数: triggerType 
 
-说明: 编辑模式触发器类型，图标、文本或者两者都设置（不设置图标作为触发器时它会隐藏）
+说明: 编辑模式触发器类型，图标、文本或者两者都设置（不设置图标作为触发器时它会隐藏） 
 
-类型: Array<`icon`|`text`\>
+类型: Array<`icon`|`text`\> 
 
 默认值: \[`icon`]
 
-### ant-design 中 Typography - editable的enterIcon属性如何使用？
+### ant-design 中 Typography - editable的enterIcon属性如何使用？ 
 
-参数: enterIcon
+参数: enterIcon 
 
-说明: 在编辑段中自定义“enter”图标（传递“null”将删除图标）
+说明: 在编辑段中自定义“enter”图标（传递“null”将删除图标） 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: `<EnterOutlined />`
+默认值: `<EnterOutlined />` 
 
 版本: 4.17.0
 
 ### ant-design 的 Typography - ellipsis 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | expandable | 是否可展开 | boolean | - |
 | rows | 最多显示的行数 | number | - |
 | suffix | 自定义省略内容后缀 | string | - |
@@ -1430,83 +1449,84 @@
 | onEllipsis | 触发省略时的回调 | function(ellipsis) | - | 4.2.0 |
 | onExpand | 点击展开时的回调 | function(event) | - |
 
-### ant-design 中 Typography - ellipsis的expandable属性如何使用？
 
-参数: expandable
+### ant-design 中 Typography - ellipsis的expandable属性如何使用？ 
 
-说明: 是否可展开
+参数: expandable 
 
-类型: boolean
+说明: 是否可展开 
 
-默认值: -
-
-### ant-design 中 Typography - ellipsis的rows属性如何使用？
-
-参数: rows
-
-说明: 最多显示的行数
-
-类型: number
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Typography - ellipsis的suffix属性如何使用？
+### ant-design 中 Typography - ellipsis的rows属性如何使用？ 
 
-参数: suffix
+参数: rows 
 
-说明: 自定义省略内容后缀
+说明: 最多显示的行数 
 
-类型: string
+类型: number 
 
 默认值: -
 
-### ant-design 中 Typography - ellipsis的symbol属性如何使用？
+### ant-design 中 Typography - ellipsis的suffix属性如何使用？ 
 
-参数: symbol
+参数: suffix 
 
-说明: 自定义展开描述文案
+说明: 自定义省略内容后缀 
 
-类型: ReactNode
+类型: string 
+
+默认值: -
+
+### ant-design 中 Typography - ellipsis的symbol属性如何使用？ 
+
+参数: symbol 
+
+说明: 自定义展开描述文案 
+
+类型: ReactNode 
 
 默认值: `展开`
 
-### ant-design 中 Typography - ellipsis的tooltip属性如何使用？
+### ant-design 中 Typography - ellipsis的tooltip属性如何使用？ 
 
-参数: tooltip
+参数: tooltip 
 
-说明: 省略时，展示提示信息
+说明: 省略时，展示提示信息 
 
-类型: boolean | ReactNode | [TooltipProps](/components/tooltip-cn/#api)
+类型: boolean | ReactNode | [TooltipProps](/components/tooltip-cn/#api) 
 
-默认值: -
+默认值: - 
 
 版本: 4.11.0
 
-### ant-design 中 Typography - ellipsis的onEllipsis属性如何使用？
+### ant-design 中 Typography - ellipsis的onEllipsis属性如何使用？ 
 
-参数: onEllipsis
+参数: onEllipsis 
 
-说明: 触发省略时的回调
+说明: 触发省略时的回调 
 
-类型: function(ellipsis)
+类型: function(ellipsis) 
 
-默认值: -
+默认值: - 
 
 版本: 4.2.0
 
-### ant-design 中 Typography - ellipsis的onExpand属性如何使用？
+### ant-design 中 Typography - ellipsis的onExpand属性如何使用？ 
 
-参数: onExpand
+参数: onExpand 
 
-说明: 点击展开时的回调
+说明: 点击展开时的回调 
 
-类型: function(event)
+类型: function(event) 
 
 默认值: -
 
 ### ant-design 的 Tree-select 有哪些配置？
 
-#### Tree-select - Tree props
+#### Tree-select - Tree props 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -1561,14 +1581,16 @@
 | onSelect | 被选中时调用 | function(value, node, extra) | - |
 | onTreeExpand | 展示节点时调用 | function(expandedKeys) | - |
 
-#### Tree-select - Tree 方法
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Tree-select - Tree 方法 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-#### Tree-select - TreeNode props
+
+#### Tree-select - TreeNode props 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1580,6 +1602,7 @@
 | selectable | 是否可选 | boolean | true |
 | title | 树节点显示的内容 | ReactNode | `---` |
 | value | 默认根据此属性值进行筛选（其值在整个树范围内唯一） | string | - |
+
 
 ### ant-design 的 Tree-select - Tree props 有哪些配置？
 
@@ -1636,544 +1659,546 @@
 | onSelect | 被选中时调用 | function(value, node, extra) | - |
 | onTreeExpand | 展示节点时调用 | function(expandedKeys) | - |
 
-### ant-design 中 Tree-select - Tree props的allowClear属性如何使用？
 
-参数: allowClear
+### ant-design 中 Tree-select - Tree props的allowClear属性如何使用？ 
 
-说明: 自定义清除按钮
+参数: allowClear 
 
-类型: boolean | { clearIcon?: ReactNode }
+说明: 自定义清除按钮 
 
-默认值: false
+类型: boolean | { clearIcon?: ReactNode } 
+
+默认值: false 
 
 版本: 5.8.0: 支持对象形式
 
-### ant-design 中 Tree-select - Tree props的autoClearSearchValue属性如何使用？
+### ant-design 中 Tree-select - Tree props的autoClearSearchValue属性如何使用？ 
 
-参数: autoClearSearchValue
+参数: autoClearSearchValue 
 
-说明: 当多选模式下值被选择，自动清空搜索框
+说明: 当多选模式下值被选择，自动清空搜索框 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Tree-select - Tree props的defaultValue属性如何使用？
+### ant-design 中 Tree-select - Tree props的defaultValue属性如何使用？ 
 
-参数: defaultValue
+参数: defaultValue 
 
-说明: 指定默认选中的条目
+说明: 指定默认选中的条目 
 
-类型: string | string[]
+类型: string | string[] 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的disabled属性如何使用？
+### ant-design 中 Tree-select - Tree props的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 是否禁用
+说明: 是否禁用 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的popupClassName属性如何使用？
+### ant-design 中 Tree-select - Tree props的popupClassName属性如何使用？ 
 
-参数: popupClassName
+参数: popupClassName 
 
-说明: 下拉菜单的 className 属性
+说明: 下拉菜单的 className 属性 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 4.23.0
 
-### ant-design 中 Tree-select - Tree props的popupMatchSelectWidth属性如何使用？
+### ant-design 中 Tree-select - Tree props的popupMatchSelectWidth属性如何使用？ 
 
-参数: popupMatchSelectWidth
+参数: popupMatchSelectWidth 
 
-说明: 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动
+说明: 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动 
 
-类型: boolean | number
+类型: boolean | number 
 
-默认值: true
+默认值: true 
 
 版本: 5.5.0
 
-### ant-design 中 Tree-select - Tree props的dropdownRender属性如何使用？
+### ant-design 中 Tree-select - Tree props的dropdownRender属性如何使用？ 
 
-参数: dropdownRender
+参数: dropdownRender 
 
-说明: 自定义下拉框内容
+说明: 自定义下拉框内容 
 
-类型: (originNode: ReactNode, props) => ReactNode
-
-默认值: -
-
-### ant-design 中 Tree-select - Tree props的dropdownStyle属性如何使用？
-
-参数: dropdownStyle
-
-说明: 下拉菜单的样式
-
-类型: object
+类型: (originNode: ReactNode, props) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的fieldNames属性如何使用？
+### ant-design 中 Tree-select - Tree props的dropdownStyle属性如何使用？ 
 
-参数: fieldNames
+参数: dropdownStyle 
 
-说明: 自定义节点 label、value、children 的字段
+说明: 下拉菜单的样式 
 
-类型: object
+类型: object 
 
-默认值: { label: `label`, value: `value`, children: `children` }
+默认值: -
+
+### ant-design 中 Tree-select - Tree props的fieldNames属性如何使用？ 
+
+参数: fieldNames 
+
+说明: 自定义节点 label、value、children 的字段 
+
+类型: object 
+
+默认值: { label: `label`, value: `value`, children: `children` } 
 
 版本: 4.17.0
 
-### ant-design 中 Tree-select - Tree props的filterTreeNode属性如何使用？
+### ant-design 中 Tree-select - Tree props的filterTreeNode属性如何使用？ 
 
-参数: filterTreeNode
+参数: filterTreeNode 
 
-说明: 是否根据输入项进行筛选，默认用 treeNodeFilterProp 的值作为要筛选的 TreeNode 的属性值
+说明: 是否根据输入项进行筛选，默认用 treeNodeFilterProp 的值作为要筛选的 TreeNode 的属性值 
 
-类型: boolean | function(inputValue: string, treeNode: TreeNode) (函数需要返回 bool 值)
+类型: boolean | function(inputValue: string, treeNode: TreeNode) (函数需要返回 bool 值) 
 
 默认值: function
 
-### ant-design 中 Tree-select - Tree props的getPopupContainer属性如何使用？
+### ant-design 中 Tree-select - Tree props的getPopupContainer属性如何使用？ 
 
-参数: getPopupContainer
+参数: getPopupContainer 
 
-说明: 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codepen.io/afc163/pen/zEjNOy?editors=0010)
+说明: 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codepen.io/afc163/pen/zEjNOy?editors=0010) 
 
-类型: function(triggerNode)
+类型: function(triggerNode) 
 
 默认值: () => document.body
 
-### ant-design 中 Tree-select - Tree props的labelInValue属性如何使用？
+### ant-design 中 Tree-select - Tree props的labelInValue属性如何使用？ 
 
-参数: labelInValue
+参数: labelInValue 
 
-说明: 是否把每个选项的 label 包装到 value 中，会把 value 类型从 `string` 变为 {value: string, label: ReactNode, halfChecked(treeCheckStrictly 时有效): string[] } 的格式
+说明: 是否把每个选项的 label 包装到 value 中，会把 value 类型从 `string` 变为 {value: string, label: ReactNode, halfChecked(treeCheckStrictly 时有效): string[] } 的格式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的listHeight属性如何使用？
+### ant-design 中 Tree-select - Tree props的listHeight属性如何使用？ 
 
-参数: listHeight
+参数: listHeight 
 
-说明: 设置弹窗滚动高度
+说明: 设置弹窗滚动高度 
 
-类型: number
+类型: number 
 
 默认值: 256
 
-### ant-design 中 Tree-select - Tree props的loadData属性如何使用？
+### ant-design 中 Tree-select - Tree props的loadData属性如何使用？ 
 
-参数: loadData
+参数: loadData 
 
-说明: 异步加载数据。在过滤时不会调用以防止网络堵塞，可参考 FAQ 获得更多内容
+说明: 异步加载数据。在过滤时不会调用以防止网络堵塞，可参考 FAQ 获得更多内容 
 
-类型: function(node)
-
-默认值: -
-
-### ant-design 中 Tree-select - Tree props的maxTagCount属性如何使用？
-
-参数: maxTagCount
-
-说明: 最多显示多少个 tag，响应式模式会对性能产生损耗
-
-类型: number | `responsive`
+类型: function(node) 
 
 默认值: -
+
+### ant-design 中 Tree-select - Tree props的maxTagCount属性如何使用？ 
+
+参数: maxTagCount 
+
+说明: 最多显示多少个 tag，响应式模式会对性能产生损耗 
+
+类型: number | `responsive` 
+
+默认值: - 
 
 版本: responsive: 4.10
 
-### ant-design 中 Tree-select - Tree props的maxTagPlaceholder属性如何使用？
+### ant-design 中 Tree-select - Tree props的maxTagPlaceholder属性如何使用？ 
 
-参数: maxTagPlaceholder
+参数: maxTagPlaceholder 
 
-说明: 隐藏 tag 时显示的内容
+说明: 隐藏 tag 时显示的内容 
 
-类型: ReactNode | function(omittedValues)
-
-默认值: -
-
-### ant-design 中 Tree-select - Tree props的maxTagTextLength属性如何使用？
-
-参数: maxTagTextLength
-
-说明: 最大显示的 tag 文本长度
-
-类型: number
+类型: ReactNode | function(omittedValues) 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的multiple属性如何使用？
+### ant-design 中 Tree-select - Tree props的maxTagTextLength属性如何使用？ 
 
-参数: multiple
+参数: maxTagTextLength 
 
-说明: 支持多选（当设置 treeCheckable 时自动变为 true）
+说明: 最大显示的 tag 文本长度 
 
-类型: boolean
+类型: number 
+
+默认值: -
+
+### ant-design 中 Tree-select - Tree props的multiple属性如何使用？ 
+
+参数: multiple 
+
+说明: 支持多选（当设置 treeCheckable 时自动变为 true） 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的notFoundContent属性如何使用？
+### ant-design 中 Tree-select - Tree props的notFoundContent属性如何使用？ 
 
-参数: notFoundContent
+参数: notFoundContent 
 
-说明: 当下拉列表为空时显示的内容
+说明: 当下拉列表为空时显示的内容 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: `Not Found`
 
-### ant-design 中 Tree-select - Tree props的placeholder属性如何使用？
+### ant-design 中 Tree-select - Tree props的placeholder属性如何使用？ 
 
-参数: placeholder
+参数: placeholder 
 
-说明: 选择框默认文字
+说明: 选择框默认文字 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的placement属性如何使用？
+### ant-design 中 Tree-select - Tree props的placement属性如何使用？ 
 
-参数: placement
+参数: placement 
 
-说明: 选择框弹出的位置
+说明: 选择框弹出的位置 
 
-类型: `bottomLeft` `bottomRight` `topLeft` `topRight`
+类型: `bottomLeft` `bottomRight` `topLeft` `topRight` 
 
 默认值: bottomLeft
 
-### ant-design 中 Tree-select - Tree props的searchValue属性如何使用？
+### ant-design 中 Tree-select - Tree props的searchValue属性如何使用？ 
 
-参数: searchValue
+参数: searchValue 
 
-说明: 搜索框的值，可以通过 `onSearch` 获取用户输入
+说明: 搜索框的值，可以通过 `onSearch` 获取用户输入 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的showCheckedStrategy属性如何使用？
+### ant-design 中 Tree-select - Tree props的showCheckedStrategy属性如何使用？ 
 
-参数: showCheckedStrategy
+参数: showCheckedStrategy 
 
-说明: 配置 `treeCheckable` 时，定义选中项回填的方式。`TreeSelect.SHOW_ALL`: 显示所有选中节点(包括父节点)。`TreeSelect.SHOW_PARENT`: 只显示父节点(当父节点下所有子节点都选中时)。 默认只显示子节点
+说明: 配置 `treeCheckable` 时，定义选中项回填的方式。`TreeSelect.SHOW_ALL`: 显示所有选中节点(包括父节点)。`TreeSelect.SHOW_PARENT`: 只显示父节点(当父节点下所有子节点都选中时)。 默认只显示子节点 
 
-类型: `TreeSelect.SHOW_ALL` | `TreeSelect.SHOW_PARENT` | `TreeSelect.SHOW_CHILD`
+类型: `TreeSelect.SHOW_ALL` | `TreeSelect.SHOW_PARENT` | `TreeSelect.SHOW_CHILD` 
 
 默认值: `TreeSelect.SHOW_CHILD`
 
-### ant-design 中 Tree-select - Tree props的showSearch属性如何使用？
+### ant-design 中 Tree-select - Tree props的showSearch属性如何使用？ 
 
-参数: showSearch
+参数: showSearch 
 
-说明: 是否支持搜索框
+说明: 是否支持搜索框 
 
-类型: boolean
+类型: boolean 
 
 默认值: 单选：false | 多选：true
 
-### ant-design 中 Tree-select - Tree props的size属性如何使用？
+### ant-design 中 Tree-select - Tree props的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 选择框大小
+说明: 选择框大小 
 
-类型: `large` | `middle` | `small`
-
-默认值: -
-
-### ant-design 中 Tree-select - Tree props的status属性如何使用？
-
-参数: status
-
-说明: 设置校验状态
-
-类型: 'error' | 'warning'
+类型: `large` | `middle` | `small` 
 
 默认值: -
+
+### ant-design 中 Tree-select - Tree props的status属性如何使用？ 
+
+参数: status 
+
+说明: 设置校验状态 
+
+类型: 'error' | 'warning' 
+
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Tree-select - Tree props的suffixIcon属性如何使用？
+### ant-design 中 Tree-select - Tree props的suffixIcon属性如何使用？ 
 
-参数: suffixIcon
+参数: suffixIcon 
 
-说明: 自定义的选择框后缀图标
+说明: 自定义的选择框后缀图标 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: `<DownOutlined />`
 
-### ant-design 中 Tree-select - Tree props的switcherIcon属性如何使用？
+### ant-design 中 Tree-select - Tree props的switcherIcon属性如何使用？ 
 
-参数: switcherIcon
+参数: switcherIcon 
 
-说明: 自定义树节点的展开/折叠图标
+说明: 自定义树节点的展开/折叠图标 
 
-类型: ReactNode | ((props: AntTreeNodeProps) => ReactNode)
+类型: ReactNode | ((props: AntTreeNodeProps) => ReactNode) 
 
-默认值: -
+默认值: - 
 
 版本: renderProps: 4.20.0
 
-### ant-design 中 Tree-select - Tree props的tagRender属性如何使用？
+### ant-design 中 Tree-select - Tree props的tagRender属性如何使用？ 
 
-参数: tagRender
+参数: tagRender 
 
-说明: 自定义 tag 内容，多选时生效
+说明: 自定义 tag 内容，多选时生效 
 
-类型: (props) => ReactNode
+类型: (props) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的treeCheckable属性如何使用？
+### ant-design 中 Tree-select - Tree props的treeCheckable属性如何使用？ 
 
-参数: treeCheckable
+参数: treeCheckable 
 
-说明: 显示 Checkbox
+说明: 显示 Checkbox 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Tree-select - Tree props的treeCheckStrictly属性如何使用？
-
-参数: treeCheckStrictly
-
-说明: `checkable` 状态下节点选择完全受控（父子节点选中状态不再关联），会使得 `labelInValue` 强制为 true
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的treeData属性如何使用？
+### ant-design 中 Tree-select - Tree props的treeCheckStrictly属性如何使用？ 
 
-参数: treeData
+参数: treeCheckStrictly 
 
-说明: treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（value 在整个树范围内唯一）
+说明: `checkable` 状态下节点选择完全受控（父子节点选中状态不再关联），会使得 `labelInValue` 强制为 true 
 
-类型: array<{value, title, children, [disabled, disableCheckbox, selectable, checkable]}>
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Tree-select - Tree props的treeData属性如何使用？ 
+
+参数: treeData 
+
+说明: treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（value 在整个树范围内唯一） 
+
+类型: array<{value, title, children, [disabled, disableCheckbox, selectable, checkable]}> 
 
 默认值: \[]
 
-### ant-design 中 Tree-select - Tree props的treeDataSimpleMode属性如何使用？
+### ant-design 中 Tree-select - Tree props的treeDataSimpleMode属性如何使用？ 
 
-参数: treeDataSimpleMode
+参数: treeDataSimpleMode 
 
-说明: 使用简单格式的 treeData，具体设置参考可设置的类型 (此时 treeData 应变为这样的数据结构: [{id:1, pId:0, value:'1', title:"test1",...},...]， `pId` 是父节点的 id)
+说明: 使用简单格式的 treeData，具体设置参考可设置的类型 (此时 treeData 应变为这样的数据结构: [{id:1, pId:0, value:'1', title:"test1",...},...]， `pId` 是父节点的 id) 
 
-类型: boolean | object<{ id: string, pId: string, rootPId: string }>
-
-默认值: false
-
-### ant-design 中 Tree-select - Tree props的treeDefaultExpandAll属性如何使用？
-
-参数: treeDefaultExpandAll
-
-说明: 默认展开所有树节点
-
-类型: boolean
+类型: boolean | object<{ id: string, pId: string, rootPId: string }> 
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的treeDefaultExpandedKeys属性如何使用？
+### ant-design 中 Tree-select - Tree props的treeDefaultExpandAll属性如何使用？ 
 
-参数: treeDefaultExpandedKeys
+参数: treeDefaultExpandAll 
 
-说明: 默认展开的树节点
+说明: 默认展开所有树节点 
 
-类型: string[]
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Tree-select - Tree props的treeDefaultExpandedKeys属性如何使用？ 
+
+参数: treeDefaultExpandedKeys 
+
+说明: 默认展开的树节点 
+
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的treeExpandAction属性如何使用？
+### ant-design 中 Tree-select - Tree props的treeExpandAction属性如何使用？ 
 
-参数: treeExpandAction
+参数: treeExpandAction 
 
-说明: 点击节点 title 时的展开逻辑，可选：false | `click` | `doubleClick`
+说明: 点击节点 title 时的展开逻辑，可选：false | `click` | `doubleClick` 
 
-类型: string | boolean
+类型: string | boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.21.0
 
-### ant-design 中 Tree-select - Tree props的treeExpandedKeys属性如何使用？
+### ant-design 中 Tree-select - Tree props的treeExpandedKeys属性如何使用？ 
 
-参数: treeExpandedKeys
+参数: treeExpandedKeys 
 
-说明: 设置展开的树节点
+说明: 设置展开的树节点 
 
-类型: string[]
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的treeIcon属性如何使用？
+### ant-design 中 Tree-select - Tree props的treeIcon属性如何使用？ 
 
-参数: treeIcon
+参数: treeIcon 
 
-说明: 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式
+说明: 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Tree-select - Tree props的treeLine属性如何使用？
-
-参数: treeLine
-
-说明: 是否展示线条样式，请参考 [Tree - showLine](/components/tree-cn#components-tree-demo-line)
-
-类型: boolean | object
+类型: boolean 
 
 默认值: false
+
+### ant-design 中 Tree-select - Tree props的treeLine属性如何使用？ 
+
+参数: treeLine 
+
+说明: 是否展示线条样式，请参考 [Tree - showLine](/components/tree-cn#components-tree-demo-line) 
+
+类型: boolean | object 
+
+默认值: false 
 
 版本: 4.17.0
 
-### ant-design 中 Tree-select - Tree props的treeLoadedKeys属性如何使用？
+### ant-design 中 Tree-select - Tree props的treeLoadedKeys属性如何使用？ 
 
-参数: treeLoadedKeys
+参数: treeLoadedKeys 
 
-说明: （受控）已经加载的节点，需要配合 `loadData` 使用
+说明: （受控）已经加载的节点，需要配合 `loadData` 使用 
 
-类型: string[]
+类型: string[] 
 
 默认值: \[]
 
-### ant-design 中 Tree-select - Tree props的treeNodeFilterProp属性如何使用？
+### ant-design 中 Tree-select - Tree props的treeNodeFilterProp属性如何使用？ 
 
-参数: treeNodeFilterProp
+参数: treeNodeFilterProp 
 
-说明: 输入项过滤对应的 treeNode 属性
+说明: 输入项过滤对应的 treeNode 属性 
 
-类型: string
+类型: string 
 
 默认值: `value`
 
-### ant-design 中 Tree-select - Tree props的treeNodeLabelProp属性如何使用？
+### ant-design 中 Tree-select - Tree props的treeNodeLabelProp属性如何使用？ 
 
-参数: treeNodeLabelProp
+参数: treeNodeLabelProp 
 
-说明: 作为显示的 prop 设置
+说明: 作为显示的 prop 设置 
 
-类型: string
+类型: string 
 
 默认值: `title`
 
-### ant-design 中 Tree-select - Tree props的value属性如何使用？
+### ant-design 中 Tree-select - Tree props的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 指定当前选中的条目
+说明: 指定当前选中的条目 
 
-类型: string | string[]
+类型: string | string[] 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的variant属性如何使用？
+### ant-design 中 Tree-select - Tree props的variant属性如何使用？ 
 
-参数: variant
+参数: variant 
 
-说明: 形态变体
+说明: 形态变体 
 
-类型: `outlined` | `borderless` | `filled`
+类型: `outlined` | `borderless` | `filled` 
 
-默认值: `outlined`
+默认值: `outlined` 
 
 版本: 5.13.0
 
-### ant-design 中 Tree-select - Tree props的virtual属性如何使用？
+### ant-design 中 Tree-select - Tree props的virtual属性如何使用？ 
 
-参数: virtual
+参数: virtual 
 
-说明: 设置 false 时关闭虚拟滚动
+说明: 设置 false 时关闭虚拟滚动 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 4.1.0
 
-### ant-design 中 Tree-select - Tree props的onChange属性如何使用？
+### ant-design 中 Tree-select - Tree props的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 选中树节点时调用此函数
+说明: 选中树节点时调用此函数 
 
-类型: function(value, label, extra)
-
-默认值: -
-
-### ant-design 中 Tree-select - Tree props的onDropdownVisibleChange属性如何使用？
-
-参数: onDropdownVisibleChange
-
-说明: 展开下拉菜单的回调
-
-类型: function(open)
+类型: function(value, label, extra) 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的onSearch属性如何使用？
+### ant-design 中 Tree-select - Tree props的onDropdownVisibleChange属性如何使用？ 
 
-参数: onSearch
+参数: onDropdownVisibleChange 
 
-说明: 文本框值变化时的回调
+说明: 展开下拉菜单的回调 
 
-类型: function(value: string)
-
-默认值: -
-
-### ant-design 中 Tree-select - Tree props的onSelect属性如何使用？
-
-参数: onSelect
-
-说明: 被选中时调用
-
-类型: function(value, node, extra)
+类型: function(open) 
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的onTreeExpand属性如何使用？
+### ant-design 中 Tree-select - Tree props的onSearch属性如何使用？ 
 
-参数: onTreeExpand
+参数: onSearch 
 
-说明: 展示节点时调用
+说明: 文本框值变化时的回调 
 
-类型: function(expandedKeys)
+类型: function(value: string) 
+
+默认值: -
+
+### ant-design 中 Tree-select - Tree props的onSelect属性如何使用？ 
+
+参数: onSelect 
+
+说明: 被选中时调用 
+
+类型: function(value, node, extra) 
+
+默认值: -
+
+### ant-design 中 Tree-select - Tree props的onTreeExpand属性如何使用？ 
+
+参数: onTreeExpand 
+
+说明: 展示节点时调用 
+
+类型: function(expandedKeys) 
 
 默认值: -
 
 ### ant-design 的 Tree-select - Tree 方法 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Tree-select - Tree 方法的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Tree-select - Tree 方法的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Tree-select - Tree 方法的focus()属性如何使用？
+### ant-design 中 Tree-select - Tree 方法的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
@@ -2190,92 +2215,93 @@
 | title | 树节点显示的内容 | ReactNode | `---` |
 | value | 默认根据此属性值进行筛选（其值在整个树范围内唯一） | string | - |
 
-### ant-design 中 Tree-select - TreeNode props的checkable属性如何使用？
 
-参数: checkable
+### ant-design 中 Tree-select - TreeNode props的checkable属性如何使用？ 
 
-说明: 当树为 Checkbox 时，设置独立节点是否展示 Checkbox
+参数: checkable 
 
-类型: boolean
+说明: 当树为 Checkbox 时，设置独立节点是否展示 Checkbox 
 
-默认值: -
-
-### ant-design 中 Tree-select - TreeNode props的disableCheckbox属性如何使用？
-
-参数: disableCheckbox
-
-说明: 禁掉 Checkbox
-
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Tree-select - TreeNode props的disabled属性如何使用？
-
-参数: disabled
-
-说明: 是否禁用
-
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Tree-select - TreeNode props的isLeaf属性如何使用？
-
-参数: isLeaf
-
-说明: 是否是叶子节点
-
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Tree-select - TreeNode props的key属性如何使用？
-
-参数: key
-
-说明: 此项必须设置（其值在整个树范围内唯一）
-
-类型: string
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Tree-select - TreeNode props的selectable属性如何使用？
+### ant-design 中 Tree-select - TreeNode props的disableCheckbox属性如何使用？ 
 
-参数: selectable
+参数: disableCheckbox 
 
-说明: 是否可选
+说明: 禁掉 Checkbox 
 
-类型: boolean
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Tree-select - TreeNode props的disabled属性如何使用？ 
+
+参数: disabled 
+
+说明: 是否禁用 
+
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Tree-select - TreeNode props的isLeaf属性如何使用？ 
+
+参数: isLeaf 
+
+说明: 是否是叶子节点 
+
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Tree-select - TreeNode props的key属性如何使用？ 
+
+参数: key 
+
+说明: 此项必须设置（其值在整个树范围内唯一） 
+
+类型: string 
+
+默认值: -
+
+### ant-design 中 Tree-select - TreeNode props的selectable属性如何使用？ 
+
+参数: selectable 
+
+说明: 是否可选 
+
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Tree-select - TreeNode props的title属性如何使用？
+### ant-design 中 Tree-select - TreeNode props的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 树节点显示的内容
+说明: 树节点显示的内容 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: `---`
 
-### ant-design 中 Tree-select - TreeNode props的value属性如何使用？
+### ant-design 中 Tree-select - TreeNode props的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 默认根据此属性值进行筛选（其值在整个树范围内唯一）
+说明: 默认根据此属性值进行筛选（其值在整个树范围内唯一） 
 
-类型: string
+类型: string 
 
 默认值: -
 
 ### ant-design 的 Tree 有哪些配置？
 
-#### Tree - Tree props
+#### Tree - Tree props 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | allowDrop | 是否允许拖拽时放置在该节点 | ({ dropNode, dropPosition }) => boolean | - |
 | autoExpandParent | 是否自动展开父节点 | boolean | false |
 | blockNode | 是否节点占据一行 | boolean | false |
@@ -2318,7 +2344,8 @@
 | onRightClick | 响应右键点击 | function({event, node}) | - |
 | onSelect | 点击树节点触发 | function(selectedKeys, e:{selected: boolean, selectedNodes, node, event}) | - |
 
-#### Tree - TreeNode props
+
+#### Tree - TreeNode props 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -2331,22 +2358,25 @@
 | selectable | 设置节点是否可被选中 | boolean | true |
 | title | 标题 | ReactNode | `---` |
 
-#### Tree - DirectoryTree props
+
+#### Tree - DirectoryTree props 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | expandAction | 目录展开逻辑，可选：false \| `click` \| `doubleClick` | string \| boolean | `click` |
 
-#### Tree - Tree 方法
+
+#### Tree - Tree 方法 
 
 | 名称 | 说明 |
 | --- | --- |
 | scrollTo({ key: string \| number; align?: 'top' \| 'bottom' \| 'auto'; offset?: number }) | 虚拟滚动下，滚动到指定 key 条目 |
 
+
 ### ant-design 的 Tree - Tree props 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | allowDrop | 是否允许拖拽时放置在该节点 | ({ dropNode, dropPosition }) => boolean | - |
 | autoExpandParent | 是否自动展开父节点 | boolean | false |
 | blockNode | 是否节点占据一行 | boolean | false |
@@ -2389,425 +2419,426 @@
 | onRightClick | 响应右键点击 | function({event, node}) | - |
 | onSelect | 点击树节点触发 | function(selectedKeys, e:{selected: boolean, selectedNodes, node, event}) | - |
 
-### ant-design 中 Tree - Tree props的allowDrop属性如何使用？
 
-参数: allowDrop
+### ant-design 中 Tree - Tree props的allowDrop属性如何使用？ 
 
-说明: 是否允许拖拽时放置在该节点
+参数: allowDrop 
 
-类型: ({ dropNode, dropPosition }) => boolean
+说明: 是否允许拖拽时放置在该节点 
+
+类型: ({ dropNode, dropPosition }) => boolean 
 
 默认值: -
 
-### ant-design 中 Tree - Tree props的autoExpandParent属性如何使用？
+### ant-design 中 Tree - Tree props的autoExpandParent属性如何使用？ 
 
-参数: autoExpandParent
+参数: autoExpandParent 
 
-说明: 是否自动展开父节点
+说明: 是否自动展开父节点 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Tree - Tree props的blockNode属性如何使用？
-
-参数: blockNode
-
-说明: 是否节点占据一行
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree - Tree props的checkable属性如何使用？
+### ant-design 中 Tree - Tree props的blockNode属性如何使用？ 
 
-参数: checkable
+参数: blockNode 
 
-说明: 节点前添加 Checkbox 复选框
+说明: 是否节点占据一行 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree - Tree props的checkedKeys属性如何使用？
+### ant-design 中 Tree - Tree props的checkable属性如何使用？ 
 
-参数: checkedKeys
+参数: checkable 
 
-说明: （受控）选中复选框的树节点（注意：父子节点有关联，如果传入父节点 key，则子节点自动选中；相应当子节点 key 都传入，父节点也自动选中。当设置 `checkable` 和 `checkStrictly`，它是一个有`checked`和`halfChecked`属性的对象，并且父子节点的选中与否不再关联
+说明: 节点前添加 Checkbox 复选框 
 
-类型: string[] | {checked: string[], halfChecked: string[]}
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Tree - Tree props的checkedKeys属性如何使用？ 
+
+参数: checkedKeys 
+
+说明: （受控）选中复选框的树节点（注意：父子节点有关联，如果传入父节点 key，则子节点自动选中；相应当子节点 key 都传入，父节点也自动选中。当设置 `checkable` 和 `checkStrictly`，它是一个有`checked`和`halfChecked`属性的对象，并且父子节点的选中与否不再关联 
+
+类型: string[] | {checked: string[], halfChecked: string[]} 
 
 默认值: \[]
 
-### ant-design 中 Tree - Tree props的checkStrictly属性如何使用？
+### ant-design 中 Tree - Tree props的checkStrictly属性如何使用？ 
 
-参数: checkStrictly
+参数: checkStrictly 
 
-说明: checkable 状态下节点选择完全受控（父子节点选中状态不再关联）
+说明: checkable 状态下节点选择完全受控（父子节点选中状态不再关联） 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Tree - Tree props的defaultCheckedKeys属性如何使用？
-
-参数: defaultCheckedKeys
-
-说明: 默认选中复选框的树节点
-
-类型: string[]
-
-默认值: \[]
-
-### ant-design 中 Tree - Tree props的defaultExpandAll属性如何使用？
-
-参数: defaultExpandAll
-
-说明: 默认展开所有树节点
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree - Tree props的defaultExpandedKeys属性如何使用？
+### ant-design 中 Tree - Tree props的defaultCheckedKeys属性如何使用？ 
 
-参数: defaultExpandedKeys
+参数: defaultCheckedKeys 
 
-说明: 默认展开指定的树节点
+说明: 默认选中复选框的树节点 
 
-类型: string[]
+类型: string[] 
 
 默认值: \[]
 
-### ant-design 中 Tree - Tree props的defaultExpandParent属性如何使用？
+### ant-design 中 Tree - Tree props的defaultExpandAll属性如何使用？ 
 
-参数: defaultExpandParent
+参数: defaultExpandAll 
 
-说明: 默认展开父节点
+说明: 默认展开所有树节点 
 
-类型: boolean
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Tree - Tree props的defaultExpandedKeys属性如何使用？ 
+
+参数: defaultExpandedKeys 
+
+说明: 默认展开指定的树节点 
+
+类型: string[] 
+
+默认值: \[]
+
+### ant-design 中 Tree - Tree props的defaultExpandParent属性如何使用？ 
+
+参数: defaultExpandParent 
+
+说明: 默认展开父节点 
+
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Tree - Tree props的defaultSelectedKeys属性如何使用？
+### ant-design 中 Tree - Tree props的defaultSelectedKeys属性如何使用？ 
 
-参数: defaultSelectedKeys
+参数: defaultSelectedKeys 
 
-说明: 默认选中的树节点
+说明: 默认选中的树节点 
 
-类型: string[]
+类型: string[] 
 
 默认值: \[]
 
-### ant-design 中 Tree - Tree props的disabled属性如何使用？
+### ant-design 中 Tree - Tree props的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 将树禁用
+说明: 将树禁用 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Tree - Tree props的draggable属性如何使用？
-
-参数: draggable
-
-说明: 设置节点可拖拽，可以通过 `icon: false` 关闭拖拽提示图标
-
-类型: boolean | ((node: DataNode) => boolean) | { icon?: React.ReactNode | false, nodeDraggable?: (node: DataNode) => boolean }
+类型: boolean 
 
 默认值: false
+
+### ant-design 中 Tree - Tree props的draggable属性如何使用？ 
+
+参数: draggable 
+
+说明: 设置节点可拖拽，可以通过 `icon: false` 关闭拖拽提示图标 
+
+类型: boolean | ((node: DataNode) => boolean) | { icon?: React.ReactNode | false, nodeDraggable?: (node: DataNode) => boolean } 
+
+默认值: false 
 
 版本: `config`: 4.17.0
 
-### ant-design 中 Tree - Tree props的expandedKeys属性如何使用？
+### ant-design 中 Tree - Tree props的expandedKeys属性如何使用？ 
 
-参数: expandedKeys
+参数: expandedKeys 
 
-说明: （受控）展开指定的树节点
+说明: （受控）展开指定的树节点 
 
-类型: string[]
+类型: string[] 
 
 默认值: \[]
 
-### ant-design 中 Tree - Tree props的fieldNames属性如何使用？
+### ant-design 中 Tree - Tree props的fieldNames属性如何使用？ 
 
-参数: fieldNames
+参数: fieldNames 
 
-说明: 自定义节点 title、key、children 的字段
+说明: 自定义节点 title、key、children 的字段 
 
-类型: object
+类型: object 
 
-默认值: { title: `title`, key: `key`, children: `children` }
+默认值: { title: `title`, key: `key`, children: `children` } 
 
 版本: 4.17.0
 
-### ant-design 中 Tree - Tree props的filterTreeNode属性如何使用？
+### ant-design 中 Tree - Tree props的filterTreeNode属性如何使用？ 
 
-参数: filterTreeNode
+参数: filterTreeNode 
 
-说明: 按需筛选树节点（高亮），返回 true
+说明: 按需筛选树节点（高亮），返回 true 
 
-类型: function(node)
-
-默认值: -
-
-### ant-design 中 Tree - Tree props的height属性如何使用？
-
-参数: height
-
-说明: 设置虚拟滚动容器高度，设置后内部节点不再支持横向滚动
-
-类型: number
+类型: function(node) 
 
 默认值: -
 
-### ant-design 中 Tree - Tree props的icon属性如何使用？
+### ant-design 中 Tree - Tree props的height属性如何使用？ 
 
-参数: icon
+参数: height 
 
-说明: 自定义树节点图标。
+说明: 设置虚拟滚动容器高度，设置后内部节点不再支持横向滚动 
 
-类型: ReactNode | (props) => ReactNode
-
-默认值: -
-
-### ant-design 中 Tree - Tree props的loadData属性如何使用？
-
-参数: loadData
-
-说明: 异步加载数据
-
-类型: function(node)
+类型: number 
 
 默认值: -
 
-### ant-design 中 Tree - Tree props的loadedKeys属性如何使用？
+### ant-design 中 Tree - Tree props的icon属性如何使用？ 
 
-参数: loadedKeys
+参数: icon 
 
-说明: （受控）已经加载的节点，需要配合 `loadData` 使用
+说明: 自定义树节点图标。 
 
-类型: string[]
+类型: ReactNode | (props) => ReactNode 
+
+默认值: -
+
+### ant-design 中 Tree - Tree props的loadData属性如何使用？ 
+
+参数: loadData 
+
+说明: 异步加载数据 
+
+类型: function(node) 
+
+默认值: -
+
+### ant-design 中 Tree - Tree props的loadedKeys属性如何使用？ 
+
+参数: loadedKeys 
+
+说明: （受控）已经加载的节点，需要配合 `loadData` 使用 
+
+类型: string[] 
 
 默认值: \[]
 
-### ant-design 中 Tree - Tree props的multiple属性如何使用？
+### ant-design 中 Tree - Tree props的multiple属性如何使用？ 
 
-参数: multiple
+参数: multiple 
 
-说明: 支持点选多个节点（节点本身）
+说明: 支持点选多个节点（节点本身） 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree - Tree props的rootStyle属性如何使用？
+### ant-design 中 Tree - Tree props的rootStyle属性如何使用？ 
 
-参数: rootStyle
+参数: rootStyle 
 
-说明: 添加在 Tree 最外层的 style
+说明: 添加在 Tree 最外层的 style 
 
-类型: CSSProperties
+类型: CSSProperties 
 
-默认值: -
+默认值: - 
 
 版本: 4.20.0
 
-### ant-design 中 Tree - Tree props的selectable属性如何使用？
+### ant-design 中 Tree - Tree props的selectable属性如何使用？ 
 
-参数: selectable
+参数: selectable 
 
-说明: 是否可选中
+说明: 是否可选中 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Tree - Tree props的selectedKeys属性如何使用？
+### ant-design 中 Tree - Tree props的selectedKeys属性如何使用？ 
 
-参数: selectedKeys
+参数: selectedKeys 
 
-说明: （受控）设置选中的树节点，多选需设置 `multiple` 为 true
+说明: （受控）设置选中的树节点，多选需设置 `multiple` 为 true 
 
-类型: string[]
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Tree - Tree props的showIcon属性如何使用？
+### ant-design 中 Tree - Tree props的showIcon属性如何使用？ 
 
-参数: showIcon
+参数: showIcon 
 
-说明: 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式
+说明: 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree - Tree props的showLine属性如何使用？
+### ant-design 中 Tree - Tree props的showLine属性如何使用？ 
 
-参数: showLine
+参数: showLine 
 
-说明: 是否展示连接线
+说明: 是否展示连接线 
 
-类型: boolean | {showLeafIcon: boolean | ReactNode | ((props: AntTreeNodeProps) => ReactNode)}
+类型: boolean | {showLeafIcon: boolean | ReactNode | ((props: AntTreeNodeProps) => ReactNode)} 
 
 默认值: false
 
-### ant-design 中 Tree - Tree props的switcherIcon属性如何使用？
+### ant-design 中 Tree - Tree props的switcherIcon属性如何使用？ 
 
-参数: switcherIcon
+参数: switcherIcon 
 
-说明: 自定义树节点的展开/折叠图标
+说明: 自定义树节点的展开/折叠图标 
 
-类型: ReactNode | ((props: AntTreeNodeProps) => ReactNode)
+类型: ReactNode | ((props: AntTreeNodeProps) => ReactNode) 
 
-默认值: -
+默认值: - 
 
 版本: renderProps: 4.20.0
 
-### ant-design 中 Tree - Tree props的titleRender属性如何使用？
+### ant-design 中 Tree - Tree props的titleRender属性如何使用？ 
 
-参数: titleRender
+参数: titleRender 
 
-说明: 自定义渲染节点
+说明: 自定义渲染节点 
 
-类型: (nodeData) => ReactNode
+类型: (nodeData) => ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.5.0
 
-### ant-design 中 Tree - Tree props的treeData属性如何使用？
+### ant-design 中 Tree - Tree props的treeData属性如何使用？ 
 
-参数: treeData
+参数: treeData 
 
-说明: treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（key 在整个树范围内唯一）
+说明: treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（key 在整个树范围内唯一） 
 
-类型: array<{key, title, children, [disabled, selectable]}>
+类型: array<{key, title, children, [disabled, selectable]}> 
 
 默认值: -
 
-### ant-design 中 Tree - Tree props的virtual属性如何使用？
+### ant-design 中 Tree - Tree props的virtual属性如何使用？ 
 
-参数: virtual
+参数: virtual 
 
-说明: 设置 false 时关闭虚拟滚动
+说明: 设置 false 时关闭虚拟滚动 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 4.1.0
 
-### ant-design 中 Tree - Tree props的onCheck属性如何使用？
+### ant-design 中 Tree - Tree props的onCheck属性如何使用？ 
 
-参数: onCheck
+参数: onCheck 
 
-说明: 点击复选框触发
+说明: 点击复选框触发 
 
-类型: function(checkedKeys, e:{checked: boolean, checkedNodes, node, event, halfCheckedKeys})
-
-默认值: -
-
-### ant-design 中 Tree - Tree props的onDragEnd属性如何使用？
-
-参数: onDragEnd
-
-说明: dragend 触发时调用
-
-类型: function({event, node})
+类型: function(checkedKeys, e:{checked: boolean, checkedNodes, node, event, halfCheckedKeys}) 
 
 默认值: -
 
-### ant-design 中 Tree - Tree props的onDragEnter属性如何使用？
+### ant-design 中 Tree - Tree props的onDragEnd属性如何使用？ 
 
-参数: onDragEnter
+参数: onDragEnd 
 
-说明: dragenter 触发时调用
+说明: dragend 触发时调用 
 
-类型: function({event, node, expandedKeys})
-
-默认值: -
-
-### ant-design 中 Tree - Tree props的onDragLeave属性如何使用？
-
-参数: onDragLeave
-
-说明: dragleave 触发时调用
-
-类型: function({event, node})
+类型: function({event, node}) 
 
 默认值: -
 
-### ant-design 中 Tree - Tree props的onDragOver属性如何使用？
+### ant-design 中 Tree - Tree props的onDragEnter属性如何使用？ 
 
-参数: onDragOver
+参数: onDragEnter 
 
-说明: dragover 触发时调用
+说明: dragenter 触发时调用 
 
-类型: function({event, node})
-
-默认值: -
-
-### ant-design 中 Tree - Tree props的onDragStart属性如何使用？
-
-参数: onDragStart
-
-说明: 开始拖拽时调用
-
-类型: function({event, node})
+类型: function({event, node, expandedKeys}) 
 
 默认值: -
 
-### ant-design 中 Tree - Tree props的onDrop属性如何使用？
+### ant-design 中 Tree - Tree props的onDragLeave属性如何使用？ 
 
-参数: onDrop
+参数: onDragLeave 
 
-说明: drop 触发时调用
+说明: dragleave 触发时调用 
 
-类型: function({event, node, dragNode, dragNodesKeys})
-
-默认值: -
-
-### ant-design 中 Tree - Tree props的onExpand属性如何使用？
-
-参数: onExpand
-
-说明: 展开/收起节点时触发
-
-类型: function(expandedKeys, {expanded: boolean, node})
+类型: function({event, node}) 
 
 默认值: -
 
-### ant-design 中 Tree - Tree props的onLoad属性如何使用？
+### ant-design 中 Tree - Tree props的onDragOver属性如何使用？ 
 
-参数: onLoad
+参数: onDragOver 
 
-说明: 节点加载完毕时触发
+说明: dragover 触发时调用 
 
-类型: function(loadedKeys, {event, node})
-
-默认值: -
-
-### ant-design 中 Tree - Tree props的onRightClick属性如何使用？
-
-参数: onRightClick
-
-说明: 响应右键点击
-
-类型: function({event, node})
+类型: function({event, node}) 
 
 默认值: -
 
-### ant-design 中 Tree - Tree props的onSelect属性如何使用？
+### ant-design 中 Tree - Tree props的onDragStart属性如何使用？ 
 
-参数: onSelect
+参数: onDragStart 
 
-说明: 点击树节点触发
+说明: 开始拖拽时调用 
 
-类型: function(selectedKeys, e:{selected: boolean, selectedNodes, node, event})
+类型: function({event, node}) 
+
+默认值: -
+
+### ant-design 中 Tree - Tree props的onDrop属性如何使用？ 
+
+参数: onDrop 
+
+说明: drop 触发时调用 
+
+类型: function({event, node, dragNode, dragNodesKeys}) 
+
+默认值: -
+
+### ant-design 中 Tree - Tree props的onExpand属性如何使用？ 
+
+参数: onExpand 
+
+说明: 展开/收起节点时触发 
+
+类型: function(expandedKeys, {expanded: boolean, node}) 
+
+默认值: -
+
+### ant-design 中 Tree - Tree props的onLoad属性如何使用？ 
+
+参数: onLoad 
+
+说明: 节点加载完毕时触发 
+
+类型: function(loadedKeys, {event, node}) 
+
+默认值: -
+
+### ant-design 中 Tree - Tree props的onRightClick属性如何使用？ 
+
+参数: onRightClick 
+
+说明: 响应右键点击 
+
+类型: function({event, node}) 
+
+默认值: -
+
+### ant-design 中 Tree - Tree props的onSelect属性如何使用？ 
+
+参数: onSelect 
+
+说明: 点击树节点触发 
+
+类型: function(selectedKeys, e:{selected: boolean, selectedNodes, node, event}) 
 
 默认值: -
 
@@ -2824,83 +2855,84 @@
 | selectable | 设置节点是否可被选中 | boolean | true |
 | title | 标题 | ReactNode | `---` |
 
-### ant-design 中 Tree - TreeNode props的checkable属性如何使用？
 
-参数: checkable
+### ant-design 中 Tree - TreeNode props的checkable属性如何使用？ 
 
-说明: 当树为 checkable 时，设置独立节点是否展示 Checkbox
+参数: checkable 
 
-类型: boolean
+说明: 当树为 checkable 时，设置独立节点是否展示 Checkbox 
+
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Tree - TreeNode props的disableCheckbox属性如何使用？
+### ant-design 中 Tree - TreeNode props的disableCheckbox属性如何使用？ 
 
-参数: disableCheckbox
+参数: disableCheckbox 
 
-说明: 禁掉 checkbox
+说明: 禁掉 checkbox 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree - TreeNode props的disabled属性如何使用？
+### ant-design 中 Tree - TreeNode props的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 禁掉响应
+说明: 禁掉响应 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tree - TreeNode props的icon属性如何使用？
+### ant-design 中 Tree - TreeNode props的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 自定义图标。可接收组件，props 为当前节点 props
+说明: 自定义图标。可接收组件，props 为当前节点 props 
 
-类型: ReactNode | (props) => ReactNode
-
-默认值: -
-
-### ant-design 中 Tree - TreeNode props的isLeaf属性如何使用？
-
-参数: isLeaf
-
-说明: 设置为叶子节点 (设置了 `loadData` 时有效)。为 `false` 时会强制将其作为父节点
-
-类型: boolean
+类型: ReactNode | (props) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Tree - TreeNode props的key属性如何使用？
+### ant-design 中 Tree - TreeNode props的isLeaf属性如何使用？ 
 
-参数: key
+参数: isLeaf 
 
-说明: 被树的 (default)ExpandedKeys / (default)CheckedKeys / (default)SelectedKeys 属性所用。注意：整个树范围内的所有节点的 key 值不能重复！
+说明: 设置为叶子节点 (设置了 `loadData` 时有效)。为 `false` 时会强制将其作为父节点 
 
-类型: string
+类型: boolean 
+
+默认值: -
+
+### ant-design 中 Tree - TreeNode props的key属性如何使用？ 
+
+参数: key 
+
+说明: 被树的 (default)ExpandedKeys / (default)CheckedKeys / (default)SelectedKeys 属性所用。注意：整个树范围内的所有节点的 key 值不能重复！ 
+
+类型: string 
 
 默认值: (内部计算出的节点位置)
 
-### ant-design 中 Tree - TreeNode props的selectable属性如何使用？
+### ant-design 中 Tree - TreeNode props的selectable属性如何使用？ 
 
-参数: selectable
+参数: selectable 
 
-说明: 设置节点是否可被选中
+说明: 设置节点是否可被选中 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Tree - TreeNode props的title属性如何使用？
+### ant-design 中 Tree - TreeNode props的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 标题
+说明: 标题 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: `---`
 
@@ -2910,13 +2942,14 @@
 | --- | --- | --- | --- |
 | expandAction | 目录展开逻辑，可选：false \| `click` \| `doubleClick` | string \| boolean | `click` |
 
-### ant-design 中 Tree - DirectoryTree props的expandAction属性如何使用？
 
-参数: expandAction
+### ant-design 中 Tree - DirectoryTree props的expandAction属性如何使用？ 
 
-说明: 目录展开逻辑，可选：false | `click` | `doubleClick`
+参数: expandAction 
 
-类型: string | boolean
+说明: 目录展开逻辑，可选：false | `click` | `doubleClick` 
+
+类型: string | boolean 
 
 默认值: `click`
 
@@ -2926,18 +2959,19 @@
 | --- | --- |
 | scrollTo({ key: string \| number; align?: 'top' \| 'bottom' \| 'auto'; offset?: number }) | 虚拟滚动下，滚动到指定 key 条目 |
 
-### ant-design 中 Tree - Tree 方法的scrollTo({ key: string | number; align?: 'top' | 'bottom' | 'auto'; offset?: number })属性如何使用？
 
-名称: scrollTo({ key: string | number; align?: 'top' | 'bottom' | 'auto'; offset?: number })
+### ant-design 中 Tree - Tree 方法的scrollTo({ key: string | number; align?: 'top' | 'bottom' | 'auto'; offset?: number })属性如何使用？ 
+
+名称: scrollTo({ key: string | number; align?: 'top' | 'bottom' | 'auto'; offset?: number }) 
 
 说明: 虚拟滚动下，滚动到指定 key 条目
 
 ### ant-design 的 Transfer 有哪些配置？
 
-#### Transfer - Transfer
+#### Transfer - Transfer 
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | dataSource | 数据源，其中的数据将会被渲染到左边一栏中，`targetKeys` 中指定的除外 | \[] |
 | disabled | 是否禁用 | boolean | false |
 | selectionsIcon | 自定义下拉菜单图标 | React.ReactNode | 5.8.0 |
@@ -2962,21 +2996,23 @@
 | onSearch | 搜索框内容时改变时的回调函数 | (direction: `left` \| `right`, value: string): void | - |
 | onSelectChange | 选中项发生改变时的回调函数 | (sourceSelectedKeys, targetSelectedKeys): void | - |
 
-#### Transfer - Render Props
 
-| 参数            | 说明           | 类型                                |
-| --------------- | -------------- | ----------------------------------- |
-| direction       | 渲染列表的方向 | `left` \| `right`                   |
-| disabled        | 是否禁用列表   | boolean                             |
-| filteredItems   | 过滤后的数据   | RecordType[]                        |
-| selectedKeys    | 选中的条目     | string[]                            |
-| onItemSelect    | 勾选条目       | (key: string, selected: boolean)    |
-| onItemSelectAll | 勾选一组条目   | (keys: string[], selected: boolean) |
+#### Transfer - Render Props 
+
+| 参数 | 说明 | 类型 |
+| --- | --- | --- |
+| direction | 渲染列表的方向 | `left` \| `right` |
+| disabled | 是否禁用列表 | boolean |
+| filteredItems | 过滤后的数据 | RecordType[] |
+| selectedKeys | 选中的条目 | string[] |
+| onItemSelect | 勾选条目 | (key: string, selected: boolean) |
+| onItemSelectAll | 勾选一组条目 | (keys: string[], selected: boolean) |
+
 
 ### ant-design 的 Transfer - Transfer 有哪些配置？
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | dataSource | 数据源，其中的数据将会被渲染到左边一栏中，`targetKeys` 中指定的除外 | \[] |
 | disabled | 是否禁用 | boolean | false |
 | selectionsIcon | 自定义下拉菜单图标 | React.ReactNode | 5.8.0 |
@@ -3001,307 +3037,309 @@
 | onSearch | 搜索框内容时改变时的回调函数 | (direction: `left` \| `right`, value: string): void | - |
 | onSelectChange | 选中项发生改变时的回调函数 | (sourceSelectedKeys, targetSelectedKeys): void | - |
 
-### ant-design 中 Transfer - Transfer的dataSource属性如何使用？
 
-参数: dataSource
+### ant-design 中 Transfer - Transfer的dataSource属性如何使用？ 
 
-说明: 数据源，其中的数据将会被渲染到左边一栏中，`targetKeys` 中指定的除外
+参数: dataSource 
+
+说明: 数据源，其中的数据将会被渲染到左边一栏中，`targetKeys` 中指定的除外 
 
 类型: \[]
 
-### ant-design 中 Transfer - Transfer的disabled属性如何使用？
+### ant-design 中 Transfer - Transfer的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 是否禁用
+说明: 是否禁用 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Transfer - Transfer的selectionsIcon属性如何使用？
+### ant-design 中 Transfer - Transfer的selectionsIcon属性如何使用？ 
 
-参数: selectionsIcon
+参数: selectionsIcon 
 
-说明: 自定义下拉菜单图标
+说明: 自定义下拉菜单图标 
 
-类型: React.ReactNode
+类型: React.ReactNode 
 
 默认值: 5.8.0
 
-### ant-design 中 Transfer - Transfer的filterOption属性如何使用？
+### ant-design 中 Transfer - Transfer的filterOption属性如何使用？ 
 
-参数: filterOption
+参数: filterOption 
 
-说明: 根据搜索内容进行筛选，接收 `inputValue` `option` `direction` 三个参数，(`direction` 自5.9.0+支持)，当 `option` 符合筛选条件时，应返回 true，反之则返回 false
+说明: 根据搜索内容进行筛选，接收 `inputValue` `option` `direction` 三个参数，(`direction` 自5.9.0+支持)，当 `option` 符合筛选条件时，应返回 true，反之则返回 false 
 
-类型: (inputValue, option, direction: `left` | `right`): boolean
-
-默认值: -
-
-### ant-design 中 Transfer - Transfer的footer属性如何使用？
-
-参数: footer
-
-说明: 底部渲染函数
-
-类型: (props, { direction }) => ReactNode
+类型: (inputValue, option, direction: `left` | `right`): boolean 
 
 默认值: -
+
+### ant-design 中 Transfer - Transfer的footer属性如何使用？ 
+
+参数: footer 
+
+说明: 底部渲染函数 
+
+类型: (props, { direction }) => ReactNode 
+
+默认值: - 
 
 版本: direction: 4.17.0
 
-### ant-design 中 Transfer - Transfer的listStyle属性如何使用？
+### ant-design 中 Transfer - Transfer的listStyle属性如何使用？ 
 
-参数: listStyle
+参数: listStyle 
 
-说明: 两个穿梭框的自定义样式
+说明: 两个穿梭框的自定义样式 
 
-类型: object|({direction: `left` | `right`}) => object
+类型: object|({direction: `left` | `right`}) => object 
 
 默认值: -
 
-### ant-design 中 Transfer - Transfer的locale属性如何使用？
+### ant-design 中 Transfer - Transfer的locale属性如何使用？ 
 
-参数: locale
+参数: locale 
 
-说明: 各种语言
+说明: 各种语言 
 
-类型: { itemUnit: string; itemsUnit: string; searchPlaceholder: string; notFoundContent: ReactNode | ReactNode[]; }
+类型: { itemUnit: string; itemsUnit: string; searchPlaceholder: string; notFoundContent: ReactNode | ReactNode[]; } 
 
 默认值: { itemUnit: `项`, itemsUnit: `项`, searchPlaceholder: `请输入搜索内容` }
 
-### ant-design 中 Transfer - Transfer的oneWay属性如何使用？
+### ant-design 中 Transfer - Transfer的oneWay属性如何使用？ 
 
-参数: oneWay
+参数: oneWay 
 
-说明: 展示为单向样式
+说明: 展示为单向样式 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.3.0
 
-### ant-design 中 Transfer - Transfer的operations属性如何使用？
+### ant-design 中 Transfer - Transfer的operations属性如何使用？ 
 
-参数: operations
+参数: operations 
 
-说明: 操作文案集合，顺序从上至下
+说明: 操作文案集合，顺序从上至下 
 
-类型: string[]
+类型: string[] 
 
 默认值: \[`>`, `<`]
 
-### ant-design 中 Transfer - Transfer的operationStyle属性如何使用？
+### ant-design 中 Transfer - Transfer的operationStyle属性如何使用？ 
 
-参数: operationStyle
+参数: operationStyle 
 
-说明: 操作栏的自定义样式
+说明: 操作栏的自定义样式 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Transfer - Transfer的pagination属性如何使用？
+### ant-design 中 Transfer - Transfer的pagination属性如何使用？ 
 
-参数: pagination
+参数: pagination 
 
-说明: 使用分页样式，自定义渲染列表下无效
+说明: 使用分页样式，自定义渲染列表下无效 
 
-类型: boolean | { pageSize: number, simple: boolean, showSizeChanger?: boolean, showLessItems?: boolean }
+类型: boolean | { pageSize: number, simple: boolean, showSizeChanger?: boolean, showLessItems?: boolean } 
 
-默认值: false
+默认值: false 
 
 版本: 4.3.0
 
-### ant-design 中 Transfer - Transfer的render属性如何使用？
+### ant-design 中 Transfer - Transfer的render属性如何使用？ 
 
-参数: render
+参数: render 
 
-说明: 每行数据渲染函数，该函数的入参为 `dataSource` 中的项，返回值为 ReactElement。或者返回一个普通对象，其中 `label` 字段为 ReactElement，`value` 字段为 title
+说明: 每行数据渲染函数，该函数的入参为 `dataSource` 中的项，返回值为 ReactElement。或者返回一个普通对象，其中 `label` 字段为 ReactElement，`value` 字段为 title 
 
-类型: (record) => ReactNode
-
-默认值: -
-
-### ant-design 中 Transfer - Transfer的selectAllLabels属性如何使用？
-
-参数: selectAllLabels
-
-说明: 自定义顶部多选框标题的集合
-
-类型: (ReactNode | (info: { selectedCount: number, totalCount: number }) => ReactNode)[]
+类型: (record) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Transfer - Transfer的selectedKeys属性如何使用？
+### ant-design 中 Transfer - Transfer的selectAllLabels属性如何使用？ 
 
-参数: selectedKeys
+参数: selectAllLabels 
 
-说明: 设置哪些项应该被选中
+说明: 自定义顶部多选框标题的集合 
 
-类型: string[]
+类型: (ReactNode | (info: { selectedCount: number, totalCount: number }) => ReactNode)[] 
+
+默认值: -
+
+### ant-design 中 Transfer - Transfer的selectedKeys属性如何使用？ 
+
+参数: selectedKeys 
+
+说明: 设置哪些项应该被选中 
+
+类型: string[] 
 
 默认值: \[]
 
-### ant-design 中 Transfer - Transfer的showSearch属性如何使用？
+### ant-design 中 Transfer - Transfer的showSearch属性如何使用？ 
 
-参数: showSearch
+参数: showSearch 
 
-说明: 是否显示搜索框
+说明: 是否显示搜索框 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Transfer - Transfer的showSelectAll属性如何使用？
+### ant-design 中 Transfer - Transfer的showSelectAll属性如何使用？ 
 
-参数: showSelectAll
+参数: showSelectAll 
 
-说明: 是否展示全选勾选框
+说明: 是否展示全选勾选框 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Transfer - Transfer的status属性如何使用？
+### ant-design 中 Transfer - Transfer的status属性如何使用？ 
 
-参数: status
+参数: status 
 
-说明: 设置校验状态
+说明: 设置校验状态 
 
-类型: 'error' | 'warning'
+类型: 'error' | 'warning' 
 
-默认值: -
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Transfer - Transfer的targetKeys属性如何使用？
+### ant-design 中 Transfer - Transfer的targetKeys属性如何使用？ 
 
-参数: targetKeys
+参数: targetKeys 
 
-说明: 显示在右侧框数据的 key 集合
+说明: 显示在右侧框数据的 key 集合 
 
-类型: string[]
+类型: string[] 
 
 默认值: \[]
 
-### ant-design 中 Transfer - Transfer的titles属性如何使用？
+### ant-design 中 Transfer - Transfer的titles属性如何使用？ 
 
-参数: titles
+参数: titles 
 
-说明: 标题集合，顺序从左至右
+说明: 标题集合，顺序从左至右 
 
-类型: ReactNode[]
-
-默认值: -
-
-### ant-design 中 Transfer - Transfer的onChange属性如何使用？
-
-参数: onChange
-
-说明: 选项在两栏之间转移时的回调函数
-
-类型: (targetKeys, direction, moveKeys): void
+类型: ReactNode[] 
 
 默认值: -
 
-### ant-design 中 Transfer - Transfer的onScroll属性如何使用？
+### ant-design 中 Transfer - Transfer的onChange属性如何使用？ 
 
-参数: onScroll
+参数: onChange 
 
-说明: 选项列表滚动时的回调函数
+说明: 选项在两栏之间转移时的回调函数 
 
-类型: (direction, event): void
-
-默认值: -
-
-### ant-design 中 Transfer - Transfer的onSearch属性如何使用？
-
-参数: onSearch
-
-说明: 搜索框内容时改变时的回调函数
-
-类型: (direction: `left` | `right`, value: string): void
+类型: (targetKeys, direction, moveKeys): void 
 
 默认值: -
 
-### ant-design 中 Transfer - Transfer的onSelectChange属性如何使用？
+### ant-design 中 Transfer - Transfer的onScroll属性如何使用？ 
 
-参数: onSelectChange
+参数: onScroll 
 
-说明: 选中项发生改变时的回调函数
+说明: 选项列表滚动时的回调函数 
 
-类型: (sourceSelectedKeys, targetSelectedKeys): void
+类型: (direction, event): void 
+
+默认值: -
+
+### ant-design 中 Transfer - Transfer的onSearch属性如何使用？ 
+
+参数: onSearch 
+
+说明: 搜索框内容时改变时的回调函数 
+
+类型: (direction: `left` | `right`, value: string): void 
+
+默认值: -
+
+### ant-design 中 Transfer - Transfer的onSelectChange属性如何使用？ 
+
+参数: onSelectChange 
+
+说明: 选中项发生改变时的回调函数 
+
+类型: (sourceSelectedKeys, targetSelectedKeys): void 
 
 默认值: -
 
 ### ant-design 的 Transfer - Render Props 有哪些配置？
 
-| 参数            | 说明           | 类型                                |
-| --------------- | -------------- | ----------------------------------- |
-| direction       | 渲染列表的方向 | `left` \| `right`                   |
-| disabled        | 是否禁用列表   | boolean                             |
-| filteredItems   | 过滤后的数据   | RecordType[]                        |
-| selectedKeys    | 选中的条目     | string[]                            |
-| onItemSelect    | 勾选条目       | (key: string, selected: boolean)    |
-| onItemSelectAll | 勾选一组条目   | (keys: string[], selected: boolean) |
+| 参数 | 说明 | 类型 |
+| --- | --- | --- |
+| direction | 渲染列表的方向 | `left` \| `right` |
+| disabled | 是否禁用列表 | boolean |
+| filteredItems | 过滤后的数据 | RecordType[] |
+| selectedKeys | 选中的条目 | string[] |
+| onItemSelect | 勾选条目 | (key: string, selected: boolean) |
+| onItemSelectAll | 勾选一组条目 | (keys: string[], selected: boolean) |
 
-### ant-design 中 Transfer - Render Props的direction属性如何使用？
 
-参数: direction
+### ant-design 中 Transfer - Render Props的direction属性如何使用？ 
 
-说明: 渲染列表的方向
+参数: direction 
+
+说明: 渲染列表的方向 
 
 类型: `left` | `right`
 
-### ant-design 中 Transfer - Render Props的disabled属性如何使用？
+### ant-design 中 Transfer - Render Props的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 是否禁用列表
+说明: 是否禁用列表 
 
 类型: boolean
 
-### ant-design 中 Transfer - Render Props的filteredItems属性如何使用？
+### ant-design 中 Transfer - Render Props的filteredItems属性如何使用？ 
 
-参数: filteredItems
+参数: filteredItems 
 
-说明: 过滤后的数据
+说明: 过滤后的数据 
 
 类型: RecordType[]
 
-### ant-design 中 Transfer - Render Props的selectedKeys属性如何使用？
+### ant-design 中 Transfer - Render Props的selectedKeys属性如何使用？ 
 
-参数: selectedKeys
+参数: selectedKeys 
 
-说明: 选中的条目
+说明: 选中的条目 
 
 类型: string[]
 
-### ant-design 中 Transfer - Render Props的onItemSelect属性如何使用？
+### ant-design 中 Transfer - Render Props的onItemSelect属性如何使用？ 
 
-参数: onItemSelect
+参数: onItemSelect 
 
-说明: 勾选条目
+说明: 勾选条目 
 
 类型: (key: string, selected: boolean)
 
-### ant-design 中 Transfer - Render Props的onItemSelectAll属性如何使用？
+### ant-design 中 Transfer - Render Props的onItemSelectAll属性如何使用？ 
 
-参数: onItemSelectAll
+参数: onItemSelectAll 
 
-说明: 勾选一组条目
+说明: 勾选一组条目 
 
 类型: (keys: string[], selected: boolean)
 
 ### ant-design 的 Tour 有哪些配置？
 
-#### Tour - Tour
+#### Tour - Tour 
 
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | arrow | 是否显示箭头，包含是否指向元素中心的配置 | `boolean` \| `{ pointAtCenter: boolean}` | `true` |
 | closeIcon | 自定义关闭按钮 | `React.ReactNode` | `true` | 5.9.0 |
 | disabledInteraction | 禁用高亮区域交互 | `boolean` | `false` | 5.13.0 |
@@ -3318,10 +3356,11 @@
 | zIndex | Tour 的层级 | number | 1001 | 5.3.0 |
 | getPopupContainer | 设置 Tour 浮层的渲染节点，默认是 body | `(node: HTMLElement) => HTMLElement` | body | 5.12.0 |
 
-#### Tour - TourStep 引导步骤卡片
+
+#### Tour - TourStep 引导步骤卡片 
 
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | target | 获取引导卡片指向的元素，为空时居中于屏幕 | `() => HTMLElement` \| `HTMLElement` | - |
 | arrow | 是否显示箭头，包含是否指向元素中心的配置 | `boolean` \| `{ pointAtCenter: boolean}` | `true` |
 | closeIcon | 自定义关闭按钮 | `React.ReactNode` | `true` | 5.9.0 |
@@ -3336,10 +3375,11 @@
 | prevButtonProps | 上一步按钮的属性 | `{ children: ReactNode; onClick: Function }` | - |
 | scrollIntoViewOptions | 是否支持当前元素滚动到视窗内，也可传入配置指定滚动视窗的相关参数，默认跟随 Tour 的 `scrollIntoViewOptions` 属性 | `boolean \| ScrollIntoViewOptions` | `true` | 5.2.0 |
 
+
 ### ant-design 的 Tour - Tour 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | arrow | 是否显示箭头，包含是否指向元素中心的配置 | `boolean` \| `{ pointAtCenter: boolean}` | `true` |
 | closeIcon | 自定义关闭按钮 | `React.ReactNode` | `true` | 5.9.0 |
 | disabledInteraction | 禁用高亮区域交互 | `boolean` | `false` | 5.13.0 |
@@ -3356,172 +3396,173 @@
 | zIndex | Tour 的层级 | number | 1001 | 5.3.0 |
 | getPopupContainer | 设置 Tour 浮层的渲染节点，默认是 body | `(node: HTMLElement) => HTMLElement` | body | 5.12.0 |
 
-### ant-design 中 Tour - Tour的arrow属性如何使用？
 
-属性: arrow
+### ant-design 中 Tour - Tour的arrow属性如何使用？ 
 
-说明: 是否显示箭头，包含是否指向元素中心的配置
+属性: arrow 
 
-类型: `boolean` | `{ pointAtCenter: boolean}`
+说明: 是否显示箭头，包含是否指向元素中心的配置 
 
-默认值: `true`
-
-### ant-design 中 Tour - Tour的closeIcon属性如何使用？
-
-属性: closeIcon
-
-说明: 自定义关闭按钮
-
-类型: `React.ReactNode`
+类型: `boolean` | `{ pointAtCenter: boolean}` 
 
 默认值: `true`
+
+### ant-design 中 Tour - Tour的closeIcon属性如何使用？ 
+
+属性: closeIcon 
+
+说明: 自定义关闭按钮 
+
+类型: `React.ReactNode` 
+
+默认值: `true` 
 
 版本: 5.9.0
 
-### ant-design 中 Tour - Tour的disabledInteraction属性如何使用？
+### ant-design 中 Tour - Tour的disabledInteraction属性如何使用？ 
 
-属性: disabledInteraction
+属性: disabledInteraction 
 
-说明: 禁用高亮区域交互
+说明: 禁用高亮区域交互 
 
-类型: `boolean`
+类型: `boolean` 
 
-默认值: `false`
+默认值: `false` 
 
 版本: 5.13.0
 
-### ant-design 中 Tour - Tour的placement属性如何使用？
+### ant-design 中 Tour - Tour的placement属性如何使用？ 
 
-属性: placement
+属性: placement 
 
-说明: 引导卡片相对于目标元素的位置
+说明: 引导卡片相对于目标元素的位置 
 
-类型: `center` `left` `leftTop` `leftBottom` `right` `rightTop` `rightBottom` `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight`
+类型: `center` `left` `leftTop` `leftBottom` `right` `rightTop` `rightBottom` `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` 
 
 默认值: `bottom`
 
-### ant-design 中 Tour - Tour的onClose属性如何使用？
+### ant-design 中 Tour - Tour的onClose属性如何使用？ 
 
-属性: onClose
+属性: onClose 
 
-说明: 关闭引导时的回调函数
+说明: 关闭引导时的回调函数 
 
-类型: `Function`
-
-默认值: -
-
-### ant-design 中 Tour - Tour的onFinish属性如何使用？
-
-属性: onFinish
-
-说明: 引导完成时的回调
-
-类型: `Function`
+类型: `Function` 
 
 默认值: -
 
-### ant-design 中 Tour - Tour的mask属性如何使用？
+### ant-design 中 Tour - Tour的onFinish属性如何使用？ 
 
-属性: mask
+属性: onFinish 
 
-说明: 是否启用蒙层，也可传入配置改变蒙层样式和填充色
+说明: 引导完成时的回调 
 
-类型: `boolean | { style?: React.CSSProperties; color?: string; }`
+类型: `Function` 
+
+默认值: -
+
+### ant-design 中 Tour - Tour的mask属性如何使用？ 
+
+属性: mask 
+
+说明: 是否启用蒙层，也可传入配置改变蒙层样式和填充色 
+
+类型: `boolean | { style?: React.CSSProperties; color?: string; }` 
 
 默认值: `true`
 
-### ant-design 中 Tour - Tour的type属性如何使用？
+### ant-design 中 Tour - Tour的type属性如何使用？ 
 
-属性: type
+属性: type 
 
-说明: 类型，影响底色与文字颜色
+说明: 类型，影响底色与文字颜色 
 
-类型: `default` | `primary`
+类型: `default` | `primary` 
 
 默认值: `default`
 
-### ant-design 中 Tour - Tour的open属性如何使用？
+### ant-design 中 Tour - Tour的open属性如何使用？ 
 
-属性: open
+属性: open 
 
-说明: 打开引导
+说明: 打开引导 
 
-类型: `boolean`
-
-默认值: -
-
-### ant-design 中 Tour - Tour的onChange属性如何使用？
-
-属性: onChange
-
-说明: 步骤改变时的回调，current 为当前的步骤
-
-类型: `(current: number) => void`
+类型: `boolean` 
 
 默认值: -
 
-### ant-design 中 Tour - Tour的current属性如何使用？
+### ant-design 中 Tour - Tour的onChange属性如何使用？ 
 
-属性: current
+属性: onChange 
 
-说明: 当前处于哪一步
+说明: 步骤改变时的回调，current 为当前的步骤 
 
-类型: `number`
+类型: `(current: number) => void` 
 
 默认值: -
 
-### ant-design 中 Tour - Tour的scrollIntoViewOptions属性如何使用？
+### ant-design 中 Tour - Tour的current属性如何使用？ 
 
-属性: scrollIntoViewOptions
+属性: current 
 
-说明: 是否支持当前元素滚动到视窗内，也可传入配置指定滚动视窗的相关参数
+说明: 当前处于哪一步 
 
-类型: `boolean | ScrollIntoViewOptions`
+类型: `number` 
 
-默认值: `true`
+默认值: -
+
+### ant-design 中 Tour - Tour的scrollIntoViewOptions属性如何使用？ 
+
+属性: scrollIntoViewOptions 
+
+说明: 是否支持当前元素滚动到视窗内，也可传入配置指定滚动视窗的相关参数 
+
+类型: `boolean | ScrollIntoViewOptions` 
+
+默认值: `true` 
 
 版本: 5.2.0
 
-### ant-design 中 Tour - Tour的indicatorsRender属性如何使用？
+### ant-design 中 Tour - Tour的indicatorsRender属性如何使用？ 
 
-属性: indicatorsRender
+属性: indicatorsRender 
 
-说明: 自定义指示器
+说明: 自定义指示器 
 
-类型: `(current: number, total: number) => ReactNode`
+类型: `(current: number, total: number) => ReactNode` 
 
-默认值: -
+默认值: - 
 
 版本: 5.2.0
 
-### ant-design 中 Tour - Tour的zIndex属性如何使用？
+### ant-design 中 Tour - Tour的zIndex属性如何使用？ 
 
-属性: zIndex
+属性: zIndex 
 
-说明: Tour 的层级
+说明: Tour 的层级 
 
-类型: number
+类型: number 
 
-默认值: 1001
+默认值: 1001 
 
 版本: 5.3.0
 
-### ant-design 中 Tour - Tour的getPopupContainer属性如何使用？
+### ant-design 中 Tour - Tour的getPopupContainer属性如何使用？ 
 
-属性: getPopupContainer
+属性: getPopupContainer 
 
-说明: 设置 Tour 浮层的渲染节点，默认是 body
+说明: 设置 Tour 浮层的渲染节点，默认是 body 
 
-类型: `(node: HTMLElement) => HTMLElement`
+类型: `(node: HTMLElement) => HTMLElement` 
 
-默认值: body
+默认值: body 
 
 版本: 5.12.0
 
 ### ant-design 的 Tour - TourStep 引导步骤卡片 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | target | 获取引导卡片指向的元素，为空时居中于屏幕 | `() => HTMLElement` \| `HTMLElement` | - |
 | arrow | 是否显示箭头，包含是否指向元素中心的配置 | `boolean` \| `{ pointAtCenter: boolean}` | `true` |
 | closeIcon | 自定义关闭按钮 | `React.ReactNode` | `true` | 5.9.0 |
@@ -3536,150 +3577,152 @@
 | prevButtonProps | 上一步按钮的属性 | `{ children: ReactNode; onClick: Function }` | - |
 | scrollIntoViewOptions | 是否支持当前元素滚动到视窗内，也可传入配置指定滚动视窗的相关参数，默认跟随 Tour 的 `scrollIntoViewOptions` 属性 | `boolean \| ScrollIntoViewOptions` | `true` | 5.2.0 |
 
-### ant-design 中 Tour - TourStep 引导步骤卡片的target属性如何使用？
 
-属性: target
+### ant-design 中 Tour - TourStep 引导步骤卡片的target属性如何使用？ 
 
-说明: 获取引导卡片指向的元素，为空时居中于屏幕
+属性: target 
 
-类型: `() => HTMLElement` | `HTMLElement`
+说明: 获取引导卡片指向的元素，为空时居中于屏幕 
+
+类型: `() => HTMLElement` | `HTMLElement` 
 
 默认值: -
 
-### ant-design 中 Tour - TourStep 引导步骤卡片的arrow属性如何使用？
+### ant-design 中 Tour - TourStep 引导步骤卡片的arrow属性如何使用？ 
 
-属性: arrow
+属性: arrow 
 
-说明: 是否显示箭头，包含是否指向元素中心的配置
+说明: 是否显示箭头，包含是否指向元素中心的配置 
 
-类型: `boolean` | `{ pointAtCenter: boolean}`
-
-默认值: `true`
-
-### ant-design 中 Tour - TourStep 引导步骤卡片的closeIcon属性如何使用？
-
-属性: closeIcon
-
-说明: 自定义关闭按钮
-
-类型: `React.ReactNode`
+类型: `boolean` | `{ pointAtCenter: boolean}` 
 
 默认值: `true`
+
+### ant-design 中 Tour - TourStep 引导步骤卡片的closeIcon属性如何使用？ 
+
+属性: closeIcon 
+
+说明: 自定义关闭按钮 
+
+类型: `React.ReactNode` 
+
+默认值: `true` 
 
 版本: 5.9.0
 
-### ant-design 中 Tour - TourStep 引导步骤卡片的cover属性如何使用？
+### ant-design 中 Tour - TourStep 引导步骤卡片的cover属性如何使用？ 
 
-属性: cover
+属性: cover 
 
-说明: 展示的图片或者视频
+说明: 展示的图片或者视频 
 
-类型: `ReactNode`
-
-默认值: -
-
-### ant-design 中 Tour - TourStep 引导步骤卡片的title属性如何使用？
-
-属性: title
-
-说明: 标题
-
-类型: `ReactNode`
+类型: `ReactNode` 
 
 默认值: -
 
-### ant-design 中 Tour - TourStep 引导步骤卡片的description属性如何使用？
+### ant-design 中 Tour - TourStep 引导步骤卡片的title属性如何使用？ 
 
-属性: description
+属性: title 
 
-说明: 主要描述部分
+说明: 标题 
 
-类型: `ReactNode`
+类型: `ReactNode` 
 
 默认值: -
 
-### ant-design 中 Tour - TourStep 引导步骤卡片的placement属性如何使用？
+### ant-design 中 Tour - TourStep 引导步骤卡片的description属性如何使用？ 
 
-属性: placement
+属性: description 
 
-说明: 引导卡片相对于目标元素的位置
+说明: 主要描述部分 
+
+类型: `ReactNode` 
+
+默认值: -
+
+### ant-design 中 Tour - TourStep 引导步骤卡片的placement属性如何使用？ 
+
+属性: placement 
+
+说明: 引导卡片相对于目标元素的位置 
 
 类型: `center` `left` `leftTop` `leftBottom` `right` `rightTop` `rightBottom` `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` `bottom`
 
-### ant-design 中 Tour - TourStep 引导步骤卡片的onClose属性如何使用？
+### ant-design 中 Tour - TourStep 引导步骤卡片的onClose属性如何使用？ 
 
-属性: onClose
+属性: onClose 
 
-说明: 关闭引导时的回调函数
+说明: 关闭引导时的回调函数 
 
-类型: `Function`
+类型: `Function` 
 
 默认值: -
 
-### ant-design 中 Tour - TourStep 引导步骤卡片的mask属性如何使用？
+### ant-design 中 Tour - TourStep 引导步骤卡片的mask属性如何使用？ 
 
-属性: mask
+属性: mask 
 
-说明: 是否启用蒙层，也可传入配置改变蒙层样式和填充色，默认跟随 Tour 的 `mask` 属性
+说明: 是否启用蒙层，也可传入配置改变蒙层样式和填充色，默认跟随 Tour 的 `mask` 属性 
 
-类型: `boolean | { style?: React.CSSProperties; color?: string; }`
+类型: `boolean | { style?: React.CSSProperties; color?: string; }` 
 
 默认值: `true`
 
-### ant-design 中 Tour - TourStep 引导步骤卡片的type属性如何使用？
+### ant-design 中 Tour - TourStep 引导步骤卡片的type属性如何使用？ 
 
-属性: type
+属性: type 
 
-说明: 类型，影响底色与文字颜色
+说明: 类型，影响底色与文字颜色 
 
-类型: `default` | `primary`
+类型: `default` | `primary` 
 
 默认值: `default`
 
-### ant-design 中 Tour - TourStep 引导步骤卡片的nextButtonProps属性如何使用？
+### ant-design 中 Tour - TourStep 引导步骤卡片的nextButtonProps属性如何使用？ 
 
-属性: nextButtonProps
+属性: nextButtonProps 
 
-说明: 下一步按钮的属性
+说明: 下一步按钮的属性 
 
-类型: `{ children: ReactNode; onClick: Function }`
-
-默认值: -
-
-### ant-design 中 Tour - TourStep 引导步骤卡片的prevButtonProps属性如何使用？
-
-属性: prevButtonProps
-
-说明: 上一步按钮的属性
-
-类型: `{ children: ReactNode; onClick: Function }`
+类型: `{ children: ReactNode; onClick: Function }` 
 
 默认值: -
 
-### ant-design 中 Tour - TourStep 引导步骤卡片的scrollIntoViewOptions属性如何使用？
+### ant-design 中 Tour - TourStep 引导步骤卡片的prevButtonProps属性如何使用？ 
 
-属性: scrollIntoViewOptions
+属性: prevButtonProps 
 
-说明: 是否支持当前元素滚动到视窗内，也可传入配置指定滚动视窗的相关参数，默认跟随 Tour 的 `scrollIntoViewOptions` 属性
+说明: 上一步按钮的属性 
 
-类型: `boolean | ScrollIntoViewOptions`
+类型: `{ children: ReactNode; onClick: Function }` 
 
-默认值: `true`
+默认值: -
+
+### ant-design 中 Tour - TourStep 引导步骤卡片的scrollIntoViewOptions属性如何使用？ 
+
+属性: scrollIntoViewOptions 
+
+说明: 是否支持当前元素滚动到视窗内，也可传入配置指定滚动视窗的相关参数，默认跟随 Tour 的 `scrollIntoViewOptions` 属性 
+
+类型: `boolean | ScrollIntoViewOptions` 
+
+默认值: `true` 
 
 版本: 5.2.0
 
 ### ant-design 的 Tooltip 有哪些配置？
 
-#### Tooltip - API
-
-| 参数  | 说明     | 类型                         | 默认值 |
-| ----- | -------- | ---------------------------- | ------ |
-| title | 提示文字 | ReactNode \| () => ReactNode | -      |
-
-#### Tooltip - 共同的 API
+#### Tooltip - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
+| title | 提示文字 | ReactNode \| () => ReactNode | - |
+
+
+#### Tooltip - 共同的 API 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
 | align | 该值将合并到 placement 的配置中，设置参考 [rc-tooltip](https://github.com/react-component/tooltip) | object | - |
 | arrow | 修改箭头的显示状态以及修改箭头是否指向目标元素中心 | boolean \| { pointAtCenter: boolean } | true | 5.2.0 |
 | autoAdjustOverflow | 气泡被遮挡时自动调整位置 | boolean | true |
@@ -3699,26 +3742,28 @@
 | zIndex | 设置 Tooltip 的 `z-index` | number | - |
 | onOpenChange | 显示隐藏的回调 | (open: boolean) => void | - | 4.23.0 |
 
+
 ### ant-design 的 Tooltip - API 有哪些配置？
 
-| 参数  | 说明     | 类型                         | 默认值 |
-| ----- | -------- | ---------------------------- | ------ |
-| title | 提示文字 | ReactNode \| () => ReactNode | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| title | 提示文字 | ReactNode \| () => ReactNode | - |
 
-### ant-design 中 Tooltip - API的title属性如何使用？
 
-参数: title
+### ant-design 中 Tooltip - API的title属性如何使用？ 
 
-说明: 提示文字
+参数: title 
 
-类型: ReactNode | () => ReactNode
+说明: 提示文字 
+
+类型: ReactNode | () => ReactNode 
 
 默认值: -
 
 ### ant-design 的 Tooltip - 共同的 API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | align | 该值将合并到 placement 的配置中，设置参考 [rc-tooltip](https://github.com/react-component/tooltip) | object | - |
 | arrow | 修改箭头的显示状态以及修改箭头是否指向目标元素中心 | boolean \| { pointAtCenter: boolean } | true | 5.2.0 |
 | autoAdjustOverflow | 气泡被遮挡时自动调整位置 | boolean | true |
@@ -3738,201 +3783,202 @@
 | zIndex | 设置 Tooltip 的 `z-index` | number | - |
 | onOpenChange | 显示隐藏的回调 | (open: boolean) => void | - | 4.23.0 |
 
-### ant-design 中 Tooltip - 共同的 API的align属性如何使用？
 
-参数: align
+### ant-design 中 Tooltip - 共同的 API的align属性如何使用？ 
 
-说明: 该值将合并到 placement 的配置中，设置参考 [rc-tooltip](https://github.com/react-component/tooltip)
+参数: align 
 
-类型: object
+说明: 该值将合并到 placement 的配置中，设置参考 [rc-tooltip](https://github.com/react-component/tooltip) 
+
+类型: object 
 
 默认值: -
 
-### ant-design 中 Tooltip - 共同的 API的arrow属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的arrow属性如何使用？ 
 
-参数: arrow
+参数: arrow 
 
-说明: 修改箭头的显示状态以及修改箭头是否指向目标元素中心
+说明: 修改箭头的显示状态以及修改箭头是否指向目标元素中心 
 
-类型: boolean | { pointAtCenter: boolean }
+类型: boolean | { pointAtCenter: boolean } 
 
-默认值: true
+默认值: true 
 
 版本: 5.2.0
 
-### ant-design 中 Tooltip - 共同的 API的autoAdjustOverflow属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的autoAdjustOverflow属性如何使用？ 
 
-参数: autoAdjustOverflow
+参数: autoAdjustOverflow 
 
-说明: 气泡被遮挡时自动调整位置
+说明: 气泡被遮挡时自动调整位置 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Tooltip - 共同的 API的color属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的color属性如何使用？ 
 
-参数: color
+参数: color 
 
-说明: 背景颜色
+说明: 背景颜色 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 4.3.0
 
-### ant-design 中 Tooltip - 共同的 API的defaultOpen属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的defaultOpen属性如何使用？ 
 
-参数: defaultOpen
+参数: defaultOpen 
 
-说明: 默认是否显隐
+说明: 默认是否显隐 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.23.0
 
-### ant-design 中 Tooltip - 共同的 API的destroyTooltipOnHide属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的destroyTooltipOnHide属性如何使用？ 
 
-参数: destroyTooltipOnHide
+参数: destroyTooltipOnHide 
 
-说明: 关闭后是否销毁 Tooltip
+说明: 关闭后是否销毁 Tooltip 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Tooltip - 共同的 API的fresh属性如何使用？
-
-参数: fresh
-
-说明: 默认情况下，Tooltip 在关闭时会缓存内容。设置该属性后会始终保持更新
-
-类型: boolean
+类型: boolean 
 
 默认值: false
+
+### ant-design 中 Tooltip - 共同的 API的fresh属性如何使用？ 
+
+参数: fresh 
+
+说明: 默认情况下，Tooltip 在关闭时会缓存内容。设置该属性后会始终保持更新 
+
+类型: boolean 
+
+默认值: false 
 
 版本: 5.10.0
 
-### ant-design 中 Tooltip - 共同的 API的getPopupContainer属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的getPopupContainer属性如何使用？ 
 
-参数: getPopupContainer
+参数: getPopupContainer 
 
-说明: 浮层渲染父节点，默认渲染到 body 上
+说明: 浮层渲染父节点，默认渲染到 body 上 
 
-类型: (triggerNode: HTMLElement) => HTMLElement
+类型: (triggerNode: HTMLElement) => HTMLElement 
 
 默认值: () => document.body
 
-### ant-design 中 Tooltip - 共同的 API的mouseEnterDelay属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的mouseEnterDelay属性如何使用？ 
 
-参数: mouseEnterDelay
+参数: mouseEnterDelay 
 
-说明: 鼠标移入后延时多少才显示 Tooltip，单位：秒
+说明: 鼠标移入后延时多少才显示 Tooltip，单位：秒 
 
-类型: number
-
-默认值: 0.1
-
-### ant-design 中 Tooltip - 共同的 API的mouseLeaveDelay属性如何使用？
-
-参数: mouseLeaveDelay
-
-说明: 鼠标移出后延时多少才隐藏 Tooltip，单位：秒
-
-类型: number
+类型: number 
 
 默认值: 0.1
 
-### ant-design 中 Tooltip - 共同的 API的overlayClassName属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的mouseLeaveDelay属性如何使用？ 
 
-参数: overlayClassName
+参数: mouseLeaveDelay 
 
-说明: 卡片类名
+说明: 鼠标移出后延时多少才隐藏 Tooltip，单位：秒 
 
-类型: string
+类型: number 
 
-默认值: -
+默认值: 0.1
 
-### ant-design 中 Tooltip - 共同的 API的overlayStyle属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的overlayClassName属性如何使用？ 
 
-参数: overlayStyle
+参数: overlayClassName 
 
-说明: 卡片样式
+说明: 卡片类名 
 
-类型: object
-
-默认值: -
-
-### ant-design 中 Tooltip - 共同的 API的overlayInnerStyle属性如何使用？
-
-参数: overlayInnerStyle
-
-说明: 卡片内容区域的样式对象
-
-类型: object
+类型: string 
 
 默认值: -
 
-### ant-design 中 Tooltip - 共同的 API的placement属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的overlayStyle属性如何使用？ 
 
-参数: placement
+参数: overlayStyle 
 
-说明: 气泡框位置，可选 `top` `left` `right` `bottom` `topLeft` `topRight` `bottomLeft` `bottomRight` `leftTop` `leftBottom` `rightTop` `rightBottom`
+说明: 卡片样式 
 
-类型: string
+类型: object 
+
+默认值: -
+
+### ant-design 中 Tooltip - 共同的 API的overlayInnerStyle属性如何使用？ 
+
+参数: overlayInnerStyle 
+
+说明: 卡片内容区域的样式对象 
+
+类型: object 
+
+默认值: -
+
+### ant-design 中 Tooltip - 共同的 API的placement属性如何使用？ 
+
+参数: placement 
+
+说明: 气泡框位置，可选 `top` `left` `right` `bottom` `topLeft` `topRight` `bottomLeft` `bottomRight` `leftTop` `leftBottom` `rightTop` `rightBottom` 
+
+类型: string 
 
 默认值: `top`
 
-### ant-design 中 Tooltip - 共同的 API的trigger属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的trigger属性如何使用？ 
 
-参数: trigger
+参数: trigger 
 
-说明: 触发行为，可选 `hover` | `focus` | `click` | `contextMenu`，可使用数组设置多个触发行为
+说明: 触发行为，可选 `hover` | `focus` | `click` | `contextMenu`，可使用数组设置多个触发行为 
 
-类型: string | string[]
+类型: string | string[] 
 
 默认值: `hover`
 
-### ant-design 中 Tooltip - 共同的 API的open属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的open属性如何使用？ 
 
-参数: open
+参数: open 
 
-说明: 用于手动控制浮层显隐，小于 4.23.0 使用 `visible`（[为什么?](/docs/react/faq#弹层类组件为什么要统一至-open-属性)）
+说明: 用于手动控制浮层显隐，小于 4.23.0 使用 `visible`（[为什么?](/docs/react/faq#弹层类组件为什么要统一至-open-属性)） 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.23.0
 
-### ant-design 中 Tooltip - 共同的 API的zIndex属性如何使用？
+### ant-design 中 Tooltip - 共同的 API的zIndex属性如何使用？ 
 
-参数: zIndex
+参数: zIndex 
 
-说明: 设置 Tooltip 的 `z-index`
+说明: 设置 Tooltip 的 `z-index` 
 
-类型: number
-
-默认值: -
-
-### ant-design 中 Tooltip - 共同的 API的onOpenChange属性如何使用？
-
-参数: onOpenChange
-
-说明: 显示隐藏的回调
-
-类型: (open: boolean) => void
+类型: number 
 
 默认值: -
+
+### ant-design 中 Tooltip - 共同的 API的onOpenChange属性如何使用？ 
+
+参数: onOpenChange 
+
+说明: 显示隐藏的回调 
+
+类型: (open: boolean) => void 
+
+默认值: - 
 
 版本: 4.23.0
 
 ### ant-design 的 Timeline 有哪些配置？
 
-#### Timeline - Timeline
+#### Timeline - Timeline 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -3942,7 +3988,8 @@
 | reverse | 节点排序 | boolean | false |
 | items | 选项配置 | 5.2.0 |
 
-#### Timeline - Items
+
+#### Timeline - Items 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -3951,6 +3998,7 @@
 | label | 设置标签 | ReactNode | - |
 | children | 设置内容 | ReactNode | - |
 | position | 自定义节点位置 | `left` \| `right` | - |
+
 
 ### ant-design 的 Timeline - Timeline 有哪些配置？
 
@@ -3962,51 +4010,52 @@
 | reverse | 节点排序 | boolean | false |
 | items | 选项配置 | 5.2.0 |
 
-### ant-design 中 Timeline - Timeline的mode属性如何使用？
 
-参数: mode
+### ant-design 中 Timeline - Timeline的mode属性如何使用？ 
 
-说明: 通过设置 `mode` 可以改变时间轴和内容的相对位置
+参数: mode 
 
-类型: `left` | `alternate` | `right`
+说明: 通过设置 `mode` 可以改变时间轴和内容的相对位置 
+
+类型: `left` | `alternate` | `right` 
 
 默认值: -
 
-### ant-design 中 Timeline - Timeline的pending属性如何使用？
+### ant-design 中 Timeline - Timeline的pending属性如何使用？ 
 
-参数: pending
+参数: pending 
 
-说明: 指定最后一个幽灵节点是否存在或内容
+说明: 指定最后一个幽灵节点是否存在或内容 
 
-类型: boolean | ReactNode
+类型: boolean | ReactNode 
 
 默认值: false
 
-### ant-design 中 Timeline - Timeline的pendingDot属性如何使用？
+### ant-design 中 Timeline - Timeline的pendingDot属性如何使用？ 
 
-参数: pendingDot
+参数: pendingDot 
 
-说明: 当最后一个幽灵节点存在時，指定其时间图点
+说明: 当最后一个幽灵节点存在時，指定其时间图点 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: \<LoadingOutlined />
 
-### ant-design 中 Timeline - Timeline的reverse属性如何使用？
+### ant-design 中 Timeline - Timeline的reverse属性如何使用？ 
 
-参数: reverse
+参数: reverse 
 
-说明: 节点排序
+说明: 节点排序 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Timeline - Timeline的items属性如何使用？
+### ant-design 中 Timeline - Timeline的items属性如何使用？ 
 
-参数: items
+参数: items 
 
-说明: 选项配置
+说明: 选项配置 
 
 类型: 5.2.0
 
@@ -4020,59 +4069,60 @@
 | children | 设置内容 | ReactNode | - |
 | position | 自定义节点位置 | `left` \| `right` | - |
 
-### ant-design 中 Timeline - Items的color属性如何使用？
 
-参数: color
+### ant-design 中 Timeline - Items的color属性如何使用？ 
 
-说明: 指定圆圈颜色 `blue`、`red`、`green`、`gray`，或自定义的色值
+参数: color 
 
-类型: string
+说明: 指定圆圈颜色 `blue`、`red`、`green`、`gray`，或自定义的色值 
+
+类型: string 
 
 默认值: `blue`
 
-### ant-design 中 Timeline - Items的dot属性如何使用？
+### ant-design 中 Timeline - Items的dot属性如何使用？ 
 
-参数: dot
+参数: dot 
 
-说明: 自定义时间轴点
+说明: 自定义时间轴点 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Timeline - Items的label属性如何使用？
-
-参数: label
-
-说明: 设置标签
-
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Timeline - Items的children属性如何使用？
+### ant-design 中 Timeline - Items的label属性如何使用？ 
 
-参数: children
+参数: label 
 
-说明: 设置内容
+说明: 设置标签 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Timeline - Items的position属性如何使用？
+### ant-design 中 Timeline - Items的children属性如何使用？ 
 
-参数: position
+参数: children 
 
-说明: 自定义节点位置
+说明: 设置内容 
 
-类型: `left` | `right`
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Timeline - Items的position属性如何使用？ 
+
+参数: position 
+
+说明: 自定义节点位置 
+
+类型: `left` | `right` 
 
 默认值: -
 
 ### ant-design 的 Time-picker 有哪些配置？
 
-#### Time-picker - API
+#### Time-picker - API 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -4107,19 +4157,22 @@
 | onChange | 时间发生变化的回调 | function(time: dayjs, timeString: string): void | - |
 | onOpenChange | 面板打开/关闭时的回调 | (open: boolean) => void | - |
 
-#### Time-picker - 方法
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Time-picker - 方法 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-#### Time-picker - RangePicker
 
-| 参数         | 说明                 | 类型    | 默认值 |
-| ------------ | -------------------- | ------- | ------ | ----- |
-| disabledTime | 不可选择的时间       | -       | 4.19.0 |
-| order        | 始末时间是否自动排序 | boolean | true   | 4.1.0 |
+#### Time-picker - RangePicker 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| disabledTime | 不可选择的时间 | - | 4.19.0 |
+| order | 始末时间是否自动排序 | boolean | true | 4.1.0 |
+
 
 ### ant-design 的 Time-picker - API 有哪些配置？
 
@@ -4156,365 +4209,368 @@
 | onChange | 时间发生变化的回调 | function(time: dayjs, timeString: string): void | - |
 | onOpenChange | 面板打开/关闭时的回调 | (open: boolean) => void | - |
 
-### ant-design 中 Time-picker - API的allowClear属性如何使用？
 
-参数: allowClear
+### ant-design 中 Time-picker - API的allowClear属性如何使用？ 
 
-说明: 自定义清除按钮
+参数: allowClear 
 
-类型: boolean | { clearIcon?: ReactNode }
+说明: 自定义清除按钮 
 
-默认值: true
+类型: boolean | { clearIcon?: ReactNode } 
+
+默认值: true 
 
 版本: 5.8.0: 支持对象类型
 
-### ant-design 中 Time-picker - API的autoFocus属性如何使用？
+### ant-design 中 Time-picker - API的autoFocus属性如何使用？ 
 
-参数: autoFocus
+参数: autoFocus 
 
-说明: 自动获取焦点
+说明: 自动获取焦点 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Time-picker - API的cellRender属性如何使用？
+### ant-design 中 Time-picker - API的cellRender属性如何使用？ 
 
-参数: cellRender
+参数: cellRender 
 
-说明: 自定义单元格的内容
+说明: 自定义单元格的内容 
 
-类型: (current: number, info: { originNode: React.ReactNode, today: dayjs, range?: 'start' | 'end', subType: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode
+类型: (current: number, info: { originNode: React.ReactNode, today: dayjs, range?: 'start' | 'end', subType: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Time-picker - API的changeOnBlur属性如何使用？
+### ant-design 中 Time-picker - API的changeOnBlur属性如何使用？ 
 
-参数: changeOnBlur
+参数: changeOnBlur 
 
-说明: 失去焦点时触发 `change` 事件，例如 datetime 下不再需要点击确认按钮
+说明: 失去焦点时触发 `change` 事件，例如 datetime 下不再需要点击确认按钮 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 5.5.0
 
-### ant-design 中 Time-picker - API的className属性如何使用？
+### ant-design 中 Time-picker - API的className属性如何使用？ 
 
-参数: className
+参数: className 
 
-说明: 选择器类名
+说明: 选择器类名 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Time-picker - API的defaultValue属性如何使用？
+### ant-design 中 Time-picker - API的defaultValue属性如何使用？ 
 
-参数: defaultValue
+参数: defaultValue 
 
-说明: 默认时间
+说明: 默认时间 
 
 类型: -
 
-### ant-design 中 Time-picker - API的disabled属性如何使用？
+### ant-design 中 Time-picker - API的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 禁用全部操作
+说明: 禁用全部操作 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Time-picker - API的disabledTime属性如何使用？
+### ant-design 中 Time-picker - API的disabledTime属性如何使用？ 
 
-参数: disabledTime
+参数: disabledTime 
 
-说明: 不可选择的时间
+说明: 不可选择的时间 
 
-类型: -
+类型: - 
 
 默认值: 4.19.0
 
-### ant-design 中 Time-picker - API的format属性如何使用？
+### ant-design 中 Time-picker - API的format属性如何使用？ 
 
-参数: format
+参数: format 
 
-说明: 展示的时间格式
+说明: 展示的时间格式 
 
-类型: string
+类型: string 
 
 默认值: `HH:mm:ss`
 
-### ant-design 中 Time-picker - API的getPopupContainer属性如何使用？
+### ant-design 中 Time-picker - API的getPopupContainer属性如何使用？ 
 
-参数: getPopupContainer
+参数: getPopupContainer 
 
-说明: 定义浮层的容器，默认为 body 上新建 div
+说明: 定义浮层的容器，默认为 body 上新建 div 
 
-类型: function(trigger)
+类型: function(trigger) 
 
 默认值: -
 
-### ant-design 中 Time-picker - API的hideDisabledOptions属性如何使用？
+### ant-design 中 Time-picker - API的hideDisabledOptions属性如何使用？ 
 
-参数: hideDisabledOptions
+参数: hideDisabledOptions 
 
-说明: 隐藏禁止选择的选项
+说明: 隐藏禁止选择的选项 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Time-picker - API的hourStep属性如何使用？
+### ant-design 中 Time-picker - API的hourStep属性如何使用？ 
 
-参数: hourStep
+参数: hourStep 
 
-说明: 小时选项间隔
+说明: 小时选项间隔 
 
-类型: number
+类型: number 
 
 默认值: 1
 
-### ant-design 中 Time-picker - API的inputReadOnly属性如何使用？
+### ant-design 中 Time-picker - API的inputReadOnly属性如何使用？ 
 
-参数: inputReadOnly
+参数: inputReadOnly 
 
-说明: 设置输入框为只读（避免在移动设备上打开虚拟键盘）
+说明: 设置输入框为只读（避免在移动设备上打开虚拟键盘） 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Time-picker - API的minuteStep属性如何使用？
+### ant-design 中 Time-picker - API的minuteStep属性如何使用？ 
 
-参数: minuteStep
+参数: minuteStep 
 
-说明: 分钟选项间隔
+说明: 分钟选项间隔 
 
-类型: number
+类型: number 
 
 默认值: 1
 
-### ant-design 中 Time-picker - API的open属性如何使用？
+### ant-design 中 Time-picker - API的open属性如何使用？ 
 
-参数: open
+参数: open 
 
-说明: 面板是否打开
+说明: 面板是否打开 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Time-picker - API的placeholder属性如何使用？
+### ant-design 中 Time-picker - API的placeholder属性如何使用？ 
 
-参数: placeholder
+参数: placeholder 
 
-说明: 没有值的时候显示的内容
+说明: 没有值的时候显示的内容 
 
-类型: string | [string, string]
+类型: string | [string, string] 
 
 默认值: `请选择时间`
 
-### ant-design 中 Time-picker - API的placement属性如何使用？
+### ant-design 中 Time-picker - API的placement属性如何使用？ 
 
-参数: placement
+参数: placement 
 
-说明: 选择框弹出的位置
+说明: 选择框弹出的位置 
 
-类型: `bottomLeft` `bottomRight` `topLeft` `topRight`
+类型: `bottomLeft` `bottomRight` `topLeft` `topRight` 
 
 默认值: bottomLeft
 
-### ant-design 中 Time-picker - API的popupClassName属性如何使用？
+### ant-design 中 Time-picker - API的popupClassName属性如何使用？ 
 
-参数: popupClassName
+参数: popupClassName 
 
-说明: 弹出层类名
+说明: 弹出层类名 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Time-picker - API的popupStyle属性如何使用？
-
-参数: popupStyle
-
-说明: 弹出层样式对象
-
-类型: object
+类型: string 
 
 默认值: -
 
-### ant-design 中 Time-picker - API的renderExtraFooter属性如何使用？
+### ant-design 中 Time-picker - API的popupStyle属性如何使用？ 
 
-参数: renderExtraFooter
+参数: popupStyle 
 
-说明: 选择框底部显示自定义的内容
+说明: 弹出层样式对象 
 
-类型: () => ReactNode
+类型: object 
 
 默认值: -
 
-### ant-design 中 Time-picker - API的secondStep属性如何使用？
+### ant-design 中 Time-picker - API的renderExtraFooter属性如何使用？ 
 
-参数: secondStep
+参数: renderExtraFooter 
 
-说明: 秒选项间隔
+说明: 选择框底部显示自定义的内容 
 
-类型: number
+类型: () => ReactNode 
+
+默认值: -
+
+### ant-design 中 Time-picker - API的secondStep属性如何使用？ 
+
+参数: secondStep 
+
+说明: 秒选项间隔 
+
+类型: number 
 
 默认值: 1
 
-### ant-design 中 Time-picker - API的showNow属性如何使用？
+### ant-design 中 Time-picker - API的showNow属性如何使用？ 
 
-参数: showNow
+参数: showNow 
 
-说明: 面板是否显示“此刻”按钮
+说明: 面板是否显示“此刻”按钮 
 
-类型: boolean
+类型: boolean 
 
-默认值: -
+默认值: - 
 
 版本: 4.4.0
 
-### ant-design 中 Time-picker - API的size属性如何使用？
+### ant-design 中 Time-picker - API的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 输入框大小，`large` 高度为 40px，`small` 为 24px，默认是 32px
+说明: 输入框大小，`large` 高度为 40px，`small` 为 24px，默认是 32px 
 
-类型: `large` | `middle` | `small`
-
-默认值: -
-
-### ant-design 中 Time-picker - API的status属性如何使用？
-
-参数: status
-
-说明: 设置校验状态
-
-类型: 'error' | 'warning'
+类型: `large` | `middle` | `small` 
 
 默认值: -
+
+### ant-design 中 Time-picker - API的status属性如何使用？ 
+
+参数: status 
+
+说明: 设置校验状态 
+
+类型: 'error' | 'warning' 
+
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Time-picker - API的suffixIcon属性如何使用？
+### ant-design 中 Time-picker - API的suffixIcon属性如何使用？ 
 
-参数: suffixIcon
+参数: suffixIcon 
 
-说明: 自定义的选择框后缀图标
+说明: 自定义的选择框后缀图标 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Time-picker - API的use12Hours属性如何使用？
+### ant-design 中 Time-picker - API的use12Hours属性如何使用？ 
 
-参数: use12Hours
+参数: use12Hours 
 
-说明: 使用 12 小时制，为 true 时 `format` 默认为 `h:mm:ss a`
+说明: 使用 12 小时制，为 true 时 `format` 默认为 `h:mm:ss a` 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Time-picker - API的value属性如何使用？
+### ant-design 中 Time-picker - API的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 当前时间
+说明: 当前时间 
 
 类型: -
 
-### ant-design 中 Time-picker - API的variant属性如何使用？
+### ant-design 中 Time-picker - API的variant属性如何使用？ 
 
-参数: variant
+参数: variant 
 
-说明: 形态变体
+说明: 形态变体 
 
-类型: `outlined` | `borderless` | `filled`
+类型: `outlined` | `borderless` | `filled` 
 
-默认值: `outlined`
+默认值: `outlined` 
 
 版本: 5.13.0
 
-### ant-design 中 Time-picker - API的onChange属性如何使用？
+### ant-design 中 Time-picker - API的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 时间发生变化的回调
+说明: 时间发生变化的回调 
 
-类型: function(time: dayjs, timeString: string): void
+类型: function(time: dayjs, timeString: string): void 
 
 默认值: -
 
-### ant-design 中 Time-picker - API的onOpenChange属性如何使用？
+### ant-design 中 Time-picker - API的onOpenChange属性如何使用？ 
 
-参数: onOpenChange
+参数: onOpenChange 
 
-说明: 面板打开/关闭时的回调
+说明: 面板打开/关闭时的回调 
 
-类型: (open: boolean) => void
+类型: (open: boolean) => void 
 
 默认值: -
 
 ### ant-design 的 Time-picker - 方法 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Time-picker - 方法的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Time-picker - 方法的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Time-picker - 方法的focus()属性如何使用？
+### ant-design 中 Time-picker - 方法的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 Time-picker - RangePicker 有哪些配置？
 
-| 参数         | 说明                 | 类型    | 默认值 |
-| ------------ | -------------------- | ------- | ------ | ----- |
-| disabledTime | 不可选择的时间       | -       | 4.19.0 |
-| order        | 始末时间是否自动排序 | boolean | true   | 4.1.0 |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| disabledTime | 不可选择的时间 | - | 4.19.0 |
+| order | 始末时间是否自动排序 | boolean | true | 4.1.0 |
 
-### ant-design 中 Time-picker - RangePicker的disabledTime属性如何使用？
 
-参数: disabledTime
+### ant-design 中 Time-picker - RangePicker的disabledTime属性如何使用？ 
 
-说明: 不可选择的时间
+参数: disabledTime 
 
-类型: -
+说明: 不可选择的时间 
+
+类型: - 
 
 默认值: 4.19.0
 
-### ant-design 中 Time-picker - RangePicker的order属性如何使用？
+### ant-design 中 Time-picker - RangePicker的order属性如何使用？ 
 
-参数: order
+参数: order 
 
-说明: 始末时间是否自动排序
+说明: 始末时间是否自动排序 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 4.1.0
 
 ### ant-design 的 Tag 有哪些配置？
 
-#### Tag - Tag
+#### Tag - Tag 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -4524,12 +4580,14 @@
 | bordered | 是否有边框 | boolean | true | 5.4.0 |
 | onClose | 关闭时的回调（可通过 `e.preventDefault()` 来阻止默认行为） | (e) => void | - |
 
-#### Tag - Tag.CheckableTag
 
-| 参数     | 说明                 | 类型              | 默认值 |
-| -------- | -------------------- | ----------------- | ------ |
-| checked  | 设置标签的选中状态   | boolean           | false  |
-| onChange | 点击标签时触发的回调 | (checked) => void | -      |
+#### Tag - Tag.CheckableTag 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| checked | 设置标签的选中状态 | boolean | false |
+| onChange | 点击标签时触发的回调 | (checked) => void | - |
+
 
 ### ant-design 的 Tag - Tag 有哪些配置？
 
@@ -4541,93 +4599,95 @@
 | bordered | 是否有边框 | boolean | true | 5.4.0 |
 | onClose | 关闭时的回调（可通过 `e.preventDefault()` 来阻止默认行为） | (e) => void | - |
 
-### ant-design 中 Tag - Tag的closeIcon属性如何使用？
 
-参数: closeIcon
+### ant-design 中 Tag - Tag的closeIcon属性如何使用？ 
 
-说明: 自定义关闭按钮。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮
+参数: closeIcon 
 
-类型: boolean | ReactNode
+说明: 自定义关闭按钮。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮 
 
-默认值: false
+类型: boolean | ReactNode 
+
+默认值: false 
 
 版本: 4.4.0
 
-### ant-design 中 Tag - Tag的color属性如何使用？
+### ant-design 中 Tag - Tag的color属性如何使用？ 
 
-参数: color
+参数: color 
 
-说明: 标签色
+说明: 标签色 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Tag - Tag的icon属性如何使用？
-
-参数: icon
-
-说明: 设置图标
-
-类型: ReactNode
+类型: string 
 
 默认值: -
 
-### ant-design 中 Tag - Tag的bordered属性如何使用？
+### ant-design 中 Tag - Tag的icon属性如何使用？ 
 
-参数: bordered
+参数: icon 
 
-说明: 是否有边框
+说明: 设置图标 
 
-类型: boolean
+类型: ReactNode 
 
-默认值: true
+默认值: -
+
+### ant-design 中 Tag - Tag的bordered属性如何使用？ 
+
+参数: bordered 
+
+说明: 是否有边框 
+
+类型: boolean 
+
+默认值: true 
 
 版本: 5.4.0
 
-### ant-design 中 Tag - Tag的onClose属性如何使用？
+### ant-design 中 Tag - Tag的onClose属性如何使用？ 
 
-参数: onClose
+参数: onClose 
 
-说明: 关闭时的回调（可通过 `e.preventDefault()` 来阻止默认行为）
+说明: 关闭时的回调（可通过 `e.preventDefault()` 来阻止默认行为） 
 
-类型: (e) => void
+类型: (e) => void 
 
 默认值: -
 
 ### ant-design 的 Tag - Tag.CheckableTag 有哪些配置？
 
-| 参数     | 说明                 | 类型              | 默认值 |
-| -------- | -------------------- | ----------------- | ------ |
-| checked  | 设置标签的选中状态   | boolean           | false  |
-| onChange | 点击标签时触发的回调 | (checked) => void | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| checked | 设置标签的选中状态 | boolean | false |
+| onChange | 点击标签时触发的回调 | (checked) => void | - |
 
-### ant-design 中 Tag - Tag.CheckableTag的checked属性如何使用？
 
-参数: checked
+### ant-design 中 Tag - Tag.CheckableTag的checked属性如何使用？ 
 
-说明: 设置标签的选中状态
+参数: checked 
 
-类型: boolean
+说明: 设置标签的选中状态 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tag - Tag.CheckableTag的onChange属性如何使用？
+### ant-design 中 Tag - Tag.CheckableTag的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 点击标签时触发的回调
+说明: 点击标签时触发的回调 
 
-类型: (checked) => void
+类型: (checked) => void 
 
 默认值: -
 
 ### ant-design 的 Tabs 有哪些配置？
 
-#### Tabs - Tabs
+#### Tabs - Tabs 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | activeKey | 当前激活 tab 面板的 key | string | - |
 | addIcon | 自定义添加按钮 | ReactNode | - | 4.4.0 |
 | animated | 是否使用动画切换 Tabs | boolean\| { inkBar: boolean, tabPane: boolean } | { inkBar: true, tabPane: false } |
@@ -4651,10 +4711,11 @@
 | onTabClick | tab 被点击的回调 | function(key: string, event: MouseEvent) | - |
 | onTabScroll | tab 滚动时触发 | function({ direction: `left` \| `right` \| `top` \| `bottom` }) | - | 4.3.0 |
 
-#### Tabs - TabItemType
+
+#### Tabs - TabItemType 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | closeIcon | 自定义关闭图标，在 `type="editable-card"` 时有效。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮 | boolean \| ReactNode | - |
 | destroyInactiveTabPane | 被隐藏时是否销毁 DOM 结构 | boolean | false | 5.11.0 |
 | disabled | 禁用某一项 | boolean | false |
@@ -4665,10 +4726,11 @@
 | children | 选项卡头显示内容 | ReactNode | - |
 | closable | 是否显示选项卡的关闭按钮，在 `type="editable-card"` 时有效 | boolean | true |
 
+
 ### ant-design 的 Tabs - Tabs 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | activeKey | 当前激活 tab 面板的 key | string | - |
 | addIcon | 自定义添加按钮 | ReactNode | - | 4.4.0 |
 | animated | 是否使用动画切换 Tabs | boolean\| { inkBar: boolean, tabPane: boolean } | { inkBar: true, tabPane: false } |
@@ -4692,244 +4754,245 @@
 | onTabClick | tab 被点击的回调 | function(key: string, event: MouseEvent) | - |
 | onTabScroll | tab 滚动时触发 | function({ direction: `left` \| `right` \| `top` \| `bottom` }) | - | 4.3.0 |
 
-### ant-design 中 Tabs - Tabs的activeKey属性如何使用？
 
-参数: activeKey
+### ant-design 中 Tabs - Tabs的activeKey属性如何使用？ 
 
-说明: 当前激活 tab 面板的 key
+参数: activeKey 
 
-类型: string
+说明: 当前激活 tab 面板的 key 
 
-默认值: -
-
-### ant-design 中 Tabs - Tabs的addIcon属性如何使用？
-
-参数: addIcon
-
-说明: 自定义添加按钮
-
-类型: ReactNode
+类型: string 
 
 默认值: -
+
+### ant-design 中 Tabs - Tabs的addIcon属性如何使用？ 
+
+参数: addIcon 
+
+说明: 自定义添加按钮 
+
+类型: ReactNode 
+
+默认值: - 
 
 版本: 4.4.0
 
-### ant-design 中 Tabs - Tabs的animated属性如何使用？
+### ant-design 中 Tabs - Tabs的animated属性如何使用？ 
 
-参数: animated
+参数: animated 
 
-说明: 是否使用动画切换 Tabs
+说明: 是否使用动画切换 Tabs 
 
-类型: boolean| { inkBar: boolean, tabPane: boolean }
+类型: boolean| { inkBar: boolean, tabPane: boolean } 
 
 默认值: { inkBar: true, tabPane: false }
 
-### ant-design 中 Tabs - Tabs的centered属性如何使用？
+### ant-design 中 Tabs - Tabs的centered属性如何使用？ 
 
-参数: centered
+参数: centered 
 
-说明: 标签居中展示
+说明: 标签居中展示 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.4.0
 
-### ant-design 中 Tabs - Tabs的defaultActiveKey属性如何使用？
+### ant-design 中 Tabs - Tabs的defaultActiveKey属性如何使用？ 
 
-参数: defaultActiveKey
+参数: defaultActiveKey 
 
-说明: 初始化选中面板的 key，如果没有设置 activeKey
+说明: 初始化选中面板的 key，如果没有设置 activeKey 
 
-类型: string
+类型: string 
 
 默认值: `第一个面板`
 
-### ant-design 中 Tabs - Tabs的hideAdd属性如何使用？
+### ant-design 中 Tabs - Tabs的hideAdd属性如何使用？ 
 
-参数: hideAdd
+参数: hideAdd 
 
-说明: 是否隐藏加号图标，在 `type="editable-card"` 时有效
+说明: 是否隐藏加号图标，在 `type="editable-card"` 时有效 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tabs - Tabs的indicator属性如何使用？
+### ant-design 中 Tabs - Tabs的indicator属性如何使用？ 
 
-参数: indicator
+参数: indicator 
 
-说明: 自定义指示条的长度和对齐方式
+说明: 自定义指示条的长度和对齐方式 
 
-类型: { size?: number | (origin: number) => number; align: `start` | `center` | `end`; }
+类型: { size?: number | (origin: number) => number; align: `start` | `center` | `end`; } 
 
-默认值: -
+默认值: - 
 
 版本: 5.13.0
 
-### ant-design 中 Tabs - Tabs的items属性如何使用？
+### ant-design 中 Tabs - Tabs的items属性如何使用？ 
 
-参数: items
+参数: items 
 
-说明: 配置选项卡内容
+说明: 配置选项卡内容 
 
-类型: \[]
+类型: \[] 
 
 默认值: 4.23.0
 
-### ant-design 中 Tabs - Tabs的moreIcon属性如何使用？
+### ant-design 中 Tabs - Tabs的moreIcon属性如何使用？ 
 
-参数: moreIcon
+参数: moreIcon 
 
-说明: 自定义折叠 icon
+说明: 自定义折叠 icon 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: \<EllipsisOutlined />
+默认值: \<EllipsisOutlined /> 
 
 版本: 4.14.0
 
-### ant-design 中 Tabs - Tabs的popupClassName属性如何使用？
+### ant-design 中 Tabs - Tabs的popupClassName属性如何使用？ 
 
-参数: popupClassName
+参数: popupClassName 
 
-说明: 更多菜单的 `className`
+说明: 更多菜单的 `className` 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 4.21.0
 
-### ant-design 中 Tabs - Tabs的renderTabBar属性如何使用？
+### ant-design 中 Tabs - Tabs的renderTabBar属性如何使用？ 
 
-参数: renderTabBar
+参数: renderTabBar 
 
-说明: 替换 TabBar，用于二次封装标签头
+说明: 替换 TabBar，用于二次封装标签头 
 
-类型: (props: DefaultTabBarProps, DefaultTabBar: React.ComponentClass) => React.ReactElement
+类型: (props: DefaultTabBarProps, DefaultTabBar: React.ComponentClass) => React.ReactElement 
 
 默认值: -
 
-### ant-design 中 Tabs - Tabs的size属性如何使用？
+### ant-design 中 Tabs - Tabs的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 大小，提供 `large` `middle` 和 `small` 三种大小
+说明: 大小，提供 `large` `middle` 和 `small` 三种大小 
 
-类型: string
+类型: string 
 
 默认值: `middle`
 
-### ant-design 中 Tabs - Tabs的tabBarExtraContent属性如何使用？
+### ant-design 中 Tabs - Tabs的tabBarExtraContent属性如何使用？ 
 
-参数: tabBarExtraContent
+参数: tabBarExtraContent 
 
-说明: tab bar 上额外的元素
+说明: tab bar 上额外的元素 
 
-类型: ReactNode | {left?: ReactNode, right?: ReactNode}
+类型: ReactNode | {left?: ReactNode, right?: ReactNode} 
 
-默认值: -
+默认值: - 
 
 版本: object: 4.6.0
 
-### ant-design 中 Tabs - Tabs的tabBarGutter属性如何使用？
+### ant-design 中 Tabs - Tabs的tabBarGutter属性如何使用？ 
 
-参数: tabBarGutter
+参数: tabBarGutter 
 
-说明: tabs 之间的间隙
+说明: tabs 之间的间隙 
 
-类型: number
-
-默认值: -
-
-### ant-design 中 Tabs - Tabs的tabBarStyle属性如何使用？
-
-参数: tabBarStyle
-
-说明: tab bar 的样式对象
-
-类型: CSSProperties
+类型: number 
 
 默认值: -
 
-### ant-design 中 Tabs - Tabs的tabPosition属性如何使用？
+### ant-design 中 Tabs - Tabs的tabBarStyle属性如何使用？ 
 
-参数: tabPosition
+参数: tabBarStyle 
 
-说明: 页签位置，可选值有 `top` `right` `bottom` `left`
+说明: tab bar 的样式对象 
 
-类型: string
+类型: CSSProperties 
+
+默认值: -
+
+### ant-design 中 Tabs - Tabs的tabPosition属性如何使用？ 
+
+参数: tabPosition 
+
+说明: 页签位置，可选值有 `top` `right` `bottom` `left` 
+
+类型: string 
 
 默认值: `top`
 
-### ant-design 中 Tabs - Tabs的destroyInactiveTabPane属性如何使用？
+### ant-design 中 Tabs - Tabs的destroyInactiveTabPane属性如何使用？ 
 
-参数: destroyInactiveTabPane
+参数: destroyInactiveTabPane 
 
-说明: 被隐藏时是否销毁 DOM 结构
+说明: 被隐藏时是否销毁 DOM 结构 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tabs - Tabs的type属性如何使用？
+### ant-design 中 Tabs - Tabs的type属性如何使用？ 
 
-参数: type
+参数: type 
 
-说明: 页签的基本样式，可选 `line`、`card` `editable-card` 类型
+说明: 页签的基本样式，可选 `line`、`card` `editable-card` 类型 
 
-类型: string
+类型: string 
 
 默认值: `line`
 
-### ant-design 中 Tabs - Tabs的onChange属性如何使用？
+### ant-design 中 Tabs - Tabs的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 切换面板的回调
+说明: 切换面板的回调 
 
-类型: function(activeKey) {}
-
-默认值: -
-
-### ant-design 中 Tabs - Tabs的onEdit属性如何使用？
-
-参数: onEdit
-
-说明: 新增和删除页签的回调，在 `type="editable-card"` 时有效
-
-类型: (action === 'add' ? event : targetKey, action): void
+类型: function(activeKey) {} 
 
 默认值: -
 
-### ant-design 中 Tabs - Tabs的onTabClick属性如何使用？
+### ant-design 中 Tabs - Tabs的onEdit属性如何使用？ 
 
-参数: onTabClick
+参数: onEdit 
 
-说明: tab 被点击的回调
+说明: 新增和删除页签的回调，在 `type="editable-card"` 时有效 
 
-类型: function(key: string, event: MouseEvent)
+类型: (action === 'add' ? event : targetKey, action): void 
+
+默认值: -
+
+### ant-design 中 Tabs - Tabs的onTabClick属性如何使用？ 
+
+参数: onTabClick 
+
+说明: tab 被点击的回调 
+
+类型: function(key: string, event: MouseEvent) 
 
 默认值: -
 
-### ant-design 中 Tabs - Tabs的onTabScroll属性如何使用？
+### ant-design 中 Tabs - Tabs的onTabScroll属性如何使用？ 
 
-参数: onTabScroll
+参数: onTabScroll 
 
-说明: tab 滚动时触发
+说明: tab 滚动时触发 
 
-类型: function({ direction: `left` | `right` | `top` | `bottom` })
+类型: function({ direction: `left` | `right` | `top` | `bottom` }) 
 
-默认值: -
+默认值: - 
 
 版本: 4.3.0
 
 ### ant-design 的 Tabs - TabItemType 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | closeIcon | 自定义关闭图标，在 `type="editable-card"` 时有效。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮 | boolean \| ReactNode | - |
 | destroyInactiveTabPane | 被隐藏时是否销毁 DOM 结构 | boolean | false | 5.11.0 |
 | disabled | 禁用某一项 | boolean | false |
@@ -4940,106 +5003,107 @@
 | children | 选项卡头显示内容 | ReactNode | - |
 | closable | 是否显示选项卡的关闭按钮，在 `type="editable-card"` 时有效 | boolean | true |
 
-### ant-design 中 Tabs - TabItemType的closeIcon属性如何使用？
 
-参数: closeIcon
+### ant-design 中 Tabs - TabItemType的closeIcon属性如何使用？ 
 
-说明: 自定义关闭图标，在 `type="editable-card"` 时有效。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮
+参数: closeIcon 
 
-类型: boolean | ReactNode
+说明: 自定义关闭图标，在 `type="editable-card"` 时有效。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮 
+
+类型: boolean | ReactNode 
 
 默认值: -
 
-### ant-design 中 Tabs - TabItemType的destroyInactiveTabPane属性如何使用？
+### ant-design 中 Tabs - TabItemType的destroyInactiveTabPane属性如何使用？ 
 
-参数: destroyInactiveTabPane
+参数: destroyInactiveTabPane 
 
-说明: 被隐藏时是否销毁 DOM 结构
+说明: 被隐藏时是否销毁 DOM 结构 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 5.11.0
 
-### ant-design 中 Tabs - TabItemType的disabled属性如何使用？
+### ant-design 中 Tabs - TabItemType的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 禁用某一项
+说明: 禁用某一项 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Tabs - TabItemType的forceRender属性如何使用？
-
-参数: forceRender
-
-说明: 被隐藏时是否渲染 DOM 结构
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Tabs - TabItemType的key属性如何使用？
+### ant-design 中 Tabs - TabItemType的forceRender属性如何使用？ 
 
-参数: key
+参数: forceRender 
 
-说明: 对应 activeKey
+说明: 被隐藏时是否渲染 DOM 结构 
 
-类型: string
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Tabs - TabItemType的key属性如何使用？ 
+
+参数: key 
+
+说明: 对应 activeKey 
+
+类型: string 
+
+默认值: -
+
+### ant-design 中 Tabs - TabItemType的label属性如何使用？ 
+
+参数: label 
+
+说明: 选项卡头显示文字 
+
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Tabs - TabItemType的label属性如何使用？
+### ant-design 中 Tabs - TabItemType的icon属性如何使用？ 
 
-参数: label
+参数: icon 
 
-说明: 选项卡头显示文字
+说明: 选项卡头显示图标 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: -
-
-### ant-design 中 Tabs - TabItemType的icon属性如何使用？
-
-参数: icon
-
-说明: 选项卡头显示图标
-
-类型: ReactNode
-
-默认值: -
+默认值: - 
 
 版本: 5.12.0
 
-### ant-design 中 Tabs - TabItemType的children属性如何使用？
+### ant-design 中 Tabs - TabItemType的children属性如何使用？ 
 
-参数: children
+参数: children 
 
-说明: 选项卡头显示内容
+说明: 选项卡头显示内容 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Tabs - TabItemType的closable属性如何使用？
+### ant-design 中 Tabs - TabItemType的closable属性如何使用？ 
 
-参数: closable
+参数: closable 
 
-说明: 是否显示选项卡的关闭按钮，在 `type="editable-card"` 时有效
+说明: 是否显示选项卡的关闭按钮，在 `type="editable-card"` 时有效 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
 ### ant-design 的 Table 有哪些配置？
 
-#### Table - Table
+#### Table - Table 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | bordered | 是否展示外边框和列边框 | boolean | false |
 | columns | 表格列的配置描述，具体项见下表 | - |
 | components | 覆盖默认的 table 元素，`virtual` 下不支持 `components.body` | - |
@@ -5067,17 +5131,19 @@
 | onRow | 设置行属性 | function(record, index) | - |
 | virtual | 支持虚拟列表，开启后不支持 `components.body` 自定义 | boolean | - | 5.9.0 |
 
-#### Table - Table ref
+
+#### Table - Table ref 
 
 | 参数 | 说明 | 类型 | 版本 |
 | --- | --- | --- | --- |
 | nativeElement | 最外层 div 元素 | HTMLDivElement | 5.11.0 |
 | scrollTo | 滚动到目标位置（设置 `key` 时为 Record 对应的 `rowKey`） | (config: { index?: number, key?: React.Key, top?: number }) => void | 5.11.0 |
 
-#### Table - Column
+
+#### Table - Column 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | align | 设置列的对齐方式 | `left` \| `right` \| `center` | `left` |
 | className | 列样式类名 | string | - |
 | colSpan | 表头列合并，设置为 0 时，不渲染 | number | - |
@@ -5114,22 +5180,25 @@
 | onFilterDropdownOpenChange | 自定义筛选菜单可见变化时调用 | function(visible) {} | - |
 | onHeaderCell | 设置头部单元格属性 | function(column) | - |
 
-#### Table - ColumnGroup
 
-| 参数  | 说明         | 类型      | 默认值 |
-| ----- | ------------ | --------- | ------ |
-| title | 列头显示文字 | ReactNode | -      |
+#### Table - ColumnGroup 
 
-#### Table - pagination
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| title | 列头显示文字 | ReactNode | - |
+
+
+#### Table - pagination 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | position | 指定分页显示的位置， 取值为`topLeft` \| `topCenter` \| `topRight` \|`bottomLeft` \| `bottomCenter` \| `bottomRight` | Array | \[`bottomRight`] |
 
-#### Table - expandable
+
+#### Table - expandable 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | childrenColumnName | 指定树形结构的列名 | string | children |
 | columnTitle | 自定义展开列表头 | ReactNode | - | 4.23.0 |
 | columnWidth | 自定义展开列宽度 | string \| number | - |
@@ -5147,7 +5216,8 @@
 | onExpand | 点击展开图标时触发 | function(record, event) | - |
 | onExpandedRowsChange | 展开的行变化时触发 | function(expandedRows) | - |
 
-#### Table - rowSelection
+
+#### Table - rowSelection 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -5171,7 +5241,8 @@
 | onSelectNone | 用户清空选择的回调 | function() | - |
 | onSelectMultiple | 用户使用键盘 shift 选择多行的回调 | function(selected, selectedRows, changeRows) | - |
 
-#### Table - scroll
+
+#### Table - scroll 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -5179,18 +5250,20 @@
 | x | 设置横向滚动，也可用于指定滚动区域的宽，可以设置为像素值，百分比，`true` 和 ['max-content'](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width#max-content) | string \| number \| true | - |
 | y | 设置纵向滚动，也可用于指定滚动区域的高，可以设置为像素值 | string \| number | - |
 
-#### Table - selection
 
-| 参数     | 说明                       | 类型                        | 默认值 |
-| -------- | -------------------------- | --------------------------- | ------ |
-| key      | React 需要的 key，建议设置 | string                      | -      |
-| text     | 选择项显示的文字           | ReactNode                   | -      |
-| onSelect | 选择项点击回调             | function(changeableRowKeys) | -      |
+#### Table - selection 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| key | React 需要的 key，建议设置 | string | - |
+| text | 选择项显示的文字 | ReactNode | - |
+| onSelect | 选择项点击回调 | function(changeableRowKeys) | - |
+
 
 ### ant-design 的 Table - Table 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | bordered | 是否展示外边框和列边框 | boolean | false |
 | columns | 表格列的配置描述，具体项见下表 | - |
 | components | 覆盖默认的 table 元素，`virtual` 下不支持 `components.body` | - |
@@ -5218,259 +5291,260 @@
 | onRow | 设置行属性 | function(record, index) | - |
 | virtual | 支持虚拟列表，开启后不支持 `components.body` 自定义 | boolean | - | 5.9.0 |
 
-### ant-design 中 Table - Table的bordered属性如何使用？
 
-参数: bordered
+### ant-design 中 Table - Table的bordered属性如何使用？ 
 
-说明: 是否展示外边框和列边框
+参数: bordered 
 
-类型: boolean
+说明: 是否展示外边框和列边框 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Table - Table的columns属性如何使用？
+### ant-design 中 Table - Table的columns属性如何使用？ 
 
-参数: columns
+参数: columns 
 
-说明: 表格列的配置描述，具体项见下表
-
-类型: -
-
-### ant-design 中 Table - Table的components属性如何使用？
-
-参数: components
-
-说明: 覆盖默认的 table 元素，`virtual` 下不支持 `components.body`
+说明: 表格列的配置描述，具体项见下表 
 
 类型: -
 
-### ant-design 中 Table - Table的dataSource属性如何使用？
+### ant-design 中 Table - Table的components属性如何使用？ 
 
-参数: dataSource
+参数: components 
 
-说明: 数据数组
+说明: 覆盖默认的 table 元素，`virtual` 下不支持 `components.body` 
 
-类型: object[]
+类型: -
+
+### ant-design 中 Table - Table的dataSource属性如何使用？ 
+
+参数: dataSource 
+
+说明: 数据数组 
+
+类型: object[] 
 
 默认值: -
 
-### ant-design 中 Table - Table的expandable属性如何使用？
+### ant-design 中 Table - Table的expandable属性如何使用？ 
 
-参数: expandable
+参数: expandable 
 
-说明: 配置展开属性
+说明: 配置展开属性 
 
 类型: -
 
-### ant-design 中 Table - Table的footer属性如何使用？
+### ant-design 中 Table - Table的footer属性如何使用？ 
 
-参数: footer
+参数: footer 
 
-说明: 表格尾部
+说明: 表格尾部 
 
-类型: function(currentPageData)
+类型: function(currentPageData) 
 
 默认值: -
 
-### ant-design 中 Table - Table的getPopupContainer属性如何使用？
+### ant-design 中 Table - Table的getPopupContainer属性如何使用？ 
 
-参数: getPopupContainer
+参数: getPopupContainer 
 
-说明: 设置表格内各类浮层的渲染节点，如筛选菜单
+说明: 设置表格内各类浮层的渲染节点，如筛选菜单 
 
-类型: (triggerNode) => HTMLElement
+类型: (triggerNode) => HTMLElement 
 
 默认值: () => TableHtmlElement
 
-### ant-design 中 Table - Table的loading属性如何使用？
+### ant-design 中 Table - Table的loading属性如何使用？ 
 
-参数: loading
+参数: loading 
 
-说明: 页面是否加载中
+说明: 页面是否加载中 
 
-类型: boolean | [Spin Props](/components/spin-cn#api)
+类型: boolean | [Spin Props](/components/spin-cn#api) 
 
 默认值: false
 
-### ant-design 中 Table - Table的locale属性如何使用？
+### ant-design 中 Table - Table的locale属性如何使用？ 
 
-参数: locale
+参数: locale 
 
-说明: 默认文案设置，目前包括排序、过滤、空数据文案
+说明: 默认文案设置，目前包括排序、过滤、空数据文案 
 
 类型: object
 
-### ant-design 中 Table - Table的pagination属性如何使用？
+### ant-design 中 Table - Table的pagination属性如何使用？ 
 
-参数: pagination
+参数: pagination 
 
-说明: 分页器，参考[配置项](#pagination)或 [pagination](/components/pagination-cn) 文档，设为 false 时不展示和进行分页
+说明: 分页器，参考[配置项](#pagination)或 [pagination](/components/pagination-cn) 文档，设为 false 时不展示和进行分页 
 
-类型: object | `false`
-
-默认值: -
-
-### ant-design 中 Table - Table的rowClassName属性如何使用？
-
-参数: rowClassName
-
-说明: 表格行的类名
-
-类型: function(record, index): string
+类型: object | `false` 
 
 默认值: -
 
-### ant-design 中 Table - Table的rowKey属性如何使用？
+### ant-design 中 Table - Table的rowClassName属性如何使用？ 
 
-参数: rowKey
+参数: rowClassName 
 
-说明: 表格行 key 的取值，可以是字符串或一个函数
+说明: 表格行的类名 
 
-类型: string | function(record): string
+类型: function(record, index): string 
+
+默认值: -
+
+### ant-design 中 Table - Table的rowKey属性如何使用？ 
+
+参数: rowKey 
+
+说明: 表格行 key 的取值，可以是字符串或一个函数 
+
+类型: string | function(record): string 
 
 默认值: `key`
 
-### ant-design 中 Table - Table的rowSelection属性如何使用？
+### ant-design 中 Table - Table的rowSelection属性如何使用？ 
 
-参数: rowSelection
+参数: rowSelection 
 
-说明: 表格行是否可选择，[配置项](#rowselection)
+说明: 表格行是否可选择，[配置项](#rowselection) 
 
-类型: object
-
-默认值: -
-
-### ant-design 中 Table - Table的scroll属性如何使用？
-
-参数: scroll
-
-说明: 表格是否可滚动，也可以指定滚动区域的宽、高，[配置项](#scroll)
-
-类型: object
+类型: object 
 
 默认值: -
 
-### ant-design 中 Table - Table的showHeader属性如何使用？
+### ant-design 中 Table - Table的scroll属性如何使用？ 
 
-参数: showHeader
+参数: scroll 
 
-说明: 是否显示表头
+说明: 表格是否可滚动，也可以指定滚动区域的宽、高，[配置项](#scroll) 
 
-类型: boolean
+类型: object 
+
+默认值: -
+
+### ant-design 中 Table - Table的showHeader属性如何使用？ 
+
+参数: showHeader 
+
+说明: 是否显示表头 
+
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Table - Table的showSorterTooltip属性如何使用？
+### ant-design 中 Table - Table的showSorterTooltip属性如何使用？ 
 
-参数: showSorterTooltip
+参数: showSorterTooltip 
 
-说明: 表头是否显示下一次排序的 tooltip 提示。当参数类型为对象时，将被设置为 Tooltip 的属性
+说明: 表头是否显示下一次排序的 tooltip 提示。当参数类型为对象时，将被设置为 Tooltip 的属性 
 
-类型: boolean | [Tooltip props](/components/tooltip-cn)
+类型: boolean | [Tooltip props](/components/tooltip-cn) 
 
 默认值: true
 
-### ant-design 中 Table - Table的size属性如何使用？
+### ant-design 中 Table - Table的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 表格大小
+说明: 表格大小 
 
-类型: `large` | `middle` | `small`
+类型: `large` | `middle` | `small` 
 
 默认值: `large`
 
-### ant-design 中 Table - Table的sortDirections属性如何使用？
+### ant-design 中 Table - Table的sortDirections属性如何使用？ 
 
-参数: sortDirections
+参数: sortDirections 
 
-说明: 支持的排序方式，取值为 `ascend` `descend`
+说明: 支持的排序方式，取值为 `ascend` `descend` 
 
-类型: Array
+类型: Array 
 
 默认值: \[`ascend`, `descend`]
 
-### ant-design 中 Table - Table的sticky属性如何使用？
+### ant-design 中 Table - Table的sticky属性如何使用？ 
 
-参数: sticky
+参数: sticky 
 
-说明: 设置粘性头部和滚动条
+说明: 设置粘性头部和滚动条 
 
-类型: boolean | `{offsetHeader?: number, offsetScroll?: number, getContainer?: () => HTMLElement}`
+类型: boolean | `{offsetHeader?: number, offsetScroll?: number, getContainer?: () => HTMLElement}` 
 
-默认值: -
+默认值: - 
 
 版本: 4.6.0 (getContainer: 4.7.0)
 
-### ant-design 中 Table - Table的summary属性如何使用？
+### ant-design 中 Table - Table的summary属性如何使用？ 
 
-参数: summary
+参数: summary 
 
-说明: 总结栏
+说明: 总结栏 
 
-类型: (currentData) => ReactNode
+类型: (currentData) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Table - Table的tableLayout属性如何使用？
+### ant-design 中 Table - Table的tableLayout属性如何使用？ 
 
-参数: tableLayout
+参数: tableLayout 
 
-说明: 表格元素的 [table-layout](https://developer.mozilla.org/zh-CN/docs/Web/CSS/table-layout) 属性，设为 `fixed` 表示内容不会影响列的布局
+说明: 表格元素的 [table-layout](https://developer.mozilla.org/zh-CN/docs/Web/CSS/table-layout) 属性，设为 `fixed` 表示内容不会影响列的布局 
 
-类型: - | `auto` | `fixed`
+类型: - | `auto` | `fixed` 
 
 默认值: 无<hr />固定表头/列或使用了 `column.ellipsis` 时，默认值为 `fixed`
 
-### ant-design 中 Table - Table的title属性如何使用？
+### ant-design 中 Table - Table的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 表格标题
+说明: 表格标题 
 
-类型: function(currentPageData)
-
-默认值: -
-
-### ant-design 中 Table - Table的onChange属性如何使用？
-
-参数: onChange
-
-说明: 分页、排序、筛选变化时触发
-
-类型: function(pagination, filters, sorter, extra: { currentDataSource: [], action: `paginate` | `sort` | `filter` })
+类型: function(currentPageData) 
 
 默认值: -
 
-### ant-design 中 Table - Table的onHeaderRow属性如何使用？
+### ant-design 中 Table - Table的onChange属性如何使用？ 
 
-参数: onHeaderRow
+参数: onChange 
 
-说明: 设置头部行属性
+说明: 分页、排序、筛选变化时触发 
 
-类型: function(columns, index)
-
-默认值: -
-
-### ant-design 中 Table - Table的onRow属性如何使用？
-
-参数: onRow
-
-说明: 设置行属性
-
-类型: function(record, index)
+类型: function(pagination, filters, sorter, extra: { currentDataSource: [], action: `paginate` | `sort` | `filter` }) 
 
 默认值: -
 
-### ant-design 中 Table - Table的virtual属性如何使用？
+### ant-design 中 Table - Table的onHeaderRow属性如何使用？ 
 
-参数: virtual
+参数: onHeaderRow 
 
-说明: 支持虚拟列表，开启后不支持 `components.body` 自定义
+说明: 设置头部行属性 
 
-类型: boolean
+类型: function(columns, index) 
 
 默认值: -
+
+### ant-design 中 Table - Table的onRow属性如何使用？ 
+
+参数: onRow 
+
+说明: 设置行属性 
+
+类型: function(record, index) 
+
+默认值: -
+
+### ant-design 中 Table - Table的virtual属性如何使用？ 
+
+参数: virtual 
+
+说明: 支持虚拟列表，开启后不支持 `components.body` 自定义 
+
+类型: boolean 
+
+默认值: - 
 
 版本: 5.9.0
 
@@ -5481,30 +5555,31 @@
 | nativeElement | 最外层 div 元素 | HTMLDivElement | 5.11.0 |
 | scrollTo | 滚动到目标位置（设置 `key` 时为 Record 对应的 `rowKey`） | (config: { index?: number, key?: React.Key, top?: number }) => void | 5.11.0 |
 
-### ant-design 中 Table - Table ref的nativeElement属性如何使用？
 
-参数: nativeElement
+### ant-design 中 Table - Table ref的nativeElement属性如何使用？ 
 
-说明: 最外层 div 元素
+参数: nativeElement 
 
-类型: HTMLDivElement
+说明: 最外层 div 元素 
+
+类型: HTMLDivElement 
 
 版本: 5.11.0
 
-### ant-design 中 Table - Table ref的scrollTo属性如何使用？
+### ant-design 中 Table - Table ref的scrollTo属性如何使用？ 
 
-参数: scrollTo
+参数: scrollTo 
 
-说明: 滚动到目标位置（设置 `key` 时为 Record 对应的 `rowKey`）
+说明: 滚动到目标位置（设置 `key` 时为 Record 对应的 `rowKey`） 
 
-类型: (config: { index?: number, key?: React.Key, top?: number }) => void
+类型: (config: { index?: number, key?: React.Key, top?: number }) => void 
 
 版本: 5.11.0
 
 ### ant-design 的 Table - Column 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | align | 设置列的对齐方式 | `left` \| `right` \| `center` | `left` |
 | className | 列样式类名 | string | - |
 | colSpan | 表头列合并，设置为 0 时，不渲染 | number | - |
@@ -5541,383 +5616,385 @@
 | onFilterDropdownOpenChange | 自定义筛选菜单可见变化时调用 | function(visible) {} | - |
 | onHeaderCell | 设置头部单元格属性 | function(column) | - |
 
-### ant-design 中 Table - Column的align属性如何使用？
 
-参数: align
+### ant-design 中 Table - Column的align属性如何使用？ 
 
-说明: 设置列的对齐方式
+参数: align 
 
-类型: `left` | `right` | `center`
+说明: 设置列的对齐方式 
+
+类型: `left` | `right` | `center` 
 
 默认值: `left`
 
-### ant-design 中 Table - Column的className属性如何使用？
+### ant-design 中 Table - Column的className属性如何使用？ 
 
-参数: className
+参数: className 
 
-说明: 列样式类名
+说明: 列样式类名 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Table - Column的colSpan属性如何使用？
-
-参数: colSpan
-
-说明: 表头列合并，设置为 0 时，不渲染
-
-类型: number
+类型: string 
 
 默认值: -
 
-### ant-design 中 Table - Column的dataIndex属性如何使用？
+### ant-design 中 Table - Column的colSpan属性如何使用？ 
 
-参数: dataIndex
+参数: colSpan 
 
-说明: 列数据在数据项中对应的路径，支持通过数组查询嵌套路径
+说明: 表头列合并，设置为 0 时，不渲染 
 
-类型: string | string[]
-
-默认值: -
-
-### ant-design 中 Table - Column的defaultFilteredValue属性如何使用？
-
-参数: defaultFilteredValue
-
-说明: 默认筛选值
-
-类型: string[]
+类型: number 
 
 默认值: -
 
-### ant-design 中 Table - Column的filterResetToDefaultFilteredValue属性如何使用？
+### ant-design 中 Table - Column的dataIndex属性如何使用？ 
 
-参数: filterResetToDefaultFilteredValue
+参数: dataIndex 
 
-说明: 点击重置按钮的时候，是否恢复默认筛选值
+说明: 列数据在数据项中对应的路径，支持通过数组查询嵌套路径 
 
-类型: boolean
+类型: string | string[] 
+
+默认值: -
+
+### ant-design 中 Table - Column的defaultFilteredValue属性如何使用？ 
+
+参数: defaultFilteredValue 
+
+说明: 默认筛选值 
+
+类型: string[] 
+
+默认值: -
+
+### ant-design 中 Table - Column的filterResetToDefaultFilteredValue属性如何使用？ 
+
+参数: filterResetToDefaultFilteredValue 
+
+说明: 点击重置按钮的时候，是否恢复默认筛选值 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Table - Column的defaultSortOrder属性如何使用？
+### ant-design 中 Table - Column的defaultSortOrder属性如何使用？ 
 
-参数: defaultSortOrder
+参数: defaultSortOrder 
 
-说明: 默认排序顺序
+说明: 默认排序顺序 
 
-类型: `ascend` | `descend`
+类型: `ascend` | `descend` 
 
 默认值: -
 
-### ant-design 中 Table - Column的ellipsis属性如何使用？
+### ant-design 中 Table - Column的ellipsis属性如何使用？ 
 
-参数: ellipsis
+参数: ellipsis 
 
-说明: 超过宽度将自动省略，暂不支持和排序筛选一起使用。<br />设置为 `true` 或 `{ showTitle?: boolean }` 时，表格布局将变成 `tableLayout="fixed"`。
+说明: 超过宽度将自动省略，暂不支持和排序筛选一起使用。<br />设置为 `true` 或 `{ showTitle?: boolean }` 时，表格布局将变成 `tableLayout="fixed"`。 
 
-类型: boolean | { showTitle?: boolean }
+类型: boolean | { showTitle?: boolean } 
 
-默认值: false
+默认值: false 
 
 版本: showTitle: 4.3.0
 
-### ant-design 中 Table - Column的filterDropdown属性如何使用？
+### ant-design 中 Table - Column的filterDropdown属性如何使用？ 
 
-参数: filterDropdown
+参数: filterDropdown 
 
-说明: 可以自定义筛选菜单，此函数只负责渲染图层，需要自行编写各种交互
+说明: 可以自定义筛选菜单，此函数只负责渲染图层，需要自行编写各种交互 
 
-类型: ReactNode | (props: [FilterDropdownProps](https://github.com/ant-design/ant-design/blob/ecc54dda839619e921c0ace530408871f0281c2a/components/table/interface.tsx#L79)) => ReactNode
-
-默认值: -
-
-### ant-design 中 Table - Column的filterDropdownOpen属性如何使用？
-
-参数: filterDropdownOpen
-
-说明: 用于控制自定义筛选菜单是否可见
-
-类型: boolean
+类型: ReactNode | (props: [FilterDropdownProps](https://github.com/ant-design/ant-design/blob/ecc54dda839619e921c0ace530408871f0281c2a/components/table/interface.tsx#L79)) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Table - Column的filtered属性如何使用？
+### ant-design 中 Table - Column的filterDropdownOpen属性如何使用？ 
 
-参数: filtered
+参数: filterDropdownOpen 
 
-说明: 标识数据是否经过过滤，筛选图标会高亮
+说明: 用于控制自定义筛选菜单是否可见 
 
-类型: boolean
+类型: boolean 
+
+默认值: -
+
+### ant-design 中 Table - Column的filtered属性如何使用？ 
+
+参数: filtered 
+
+说明: 标识数据是否经过过滤，筛选图标会高亮 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Table - Column的filteredValue属性如何使用？
+### ant-design 中 Table - Column的filteredValue属性如何使用？ 
 
-参数: filteredValue
+参数: filteredValue 
 
-说明: 筛选的受控属性，外界可用此控制列的筛选状态，值为已筛选的 value 数组
+说明: 筛选的受控属性，外界可用此控制列的筛选状态，值为已筛选的 value 数组 
 
-类型: string[]
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Table - Column的filterIcon属性如何使用？
+### ant-design 中 Table - Column的filterIcon属性如何使用？ 
 
-参数: filterIcon
+参数: filterIcon 
 
-说明: 自定义 filter 图标。
+说明: 自定义 filter 图标。 
 
-类型: ReactNode | (filtered: boolean) => ReactNode
+类型: ReactNode | (filtered: boolean) => ReactNode 
 
 默认值: false
 
-### ant-design 中 Table - Column的filterMultiple属性如何使用？
+### ant-design 中 Table - Column的filterMultiple属性如何使用？ 
 
-参数: filterMultiple
+参数: filterMultiple 
 
-说明: 是否多选
+说明: 是否多选 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Table - Column的filterMode属性如何使用？
+### ant-design 中 Table - Column的filterMode属性如何使用？ 
 
-参数: filterMode
+参数: filterMode 
 
-说明: 指定筛选菜单的用户界面
+说明: 指定筛选菜单的用户界面 
 
-类型: 'menu' | 'tree'
+类型: 'menu' | 'tree' 
 
-默认值: 'menu'
+默认值: 'menu' 
 
 版本: 4.17.0
 
-### ant-design 中 Table - Column的filterSearch属性如何使用？
+### ant-design 中 Table - Column的filterSearch属性如何使用？ 
 
-参数: filterSearch
+参数: filterSearch 
 
-说明: 筛选菜单项是否可搜索
+说明: 筛选菜单项是否可搜索 
 
-类型: boolean | function(input, record):boolean
+类型: boolean | function(input, record):boolean 
 
-默认值: false
+默认值: false 
 
 版本: boolean:4.17.0 function:4.19.0
 
-### ant-design 中 Table - Column的filters属性如何使用？
+### ant-design 中 Table - Column的filters属性如何使用？ 
 
-参数: filters
+参数: filters 
 
-说明: 表头的筛选菜单项
+说明: 表头的筛选菜单项 
 
-类型: object[]
+类型: object[] 
 
 默认值: -
 
-### ant-design 中 Table - Column的fixed属性如何使用？
+### ant-design 中 Table - Column的fixed属性如何使用？ 
 
-参数: fixed
+参数: fixed 
 
-说明: （IE 下无效）列是否固定，可选 `true` (等效于 `left`) `left` `right`
+说明: （IE 下无效）列是否固定，可选 `true` (等效于 `left`) `left` `right` 
 
-类型: boolean | string
+类型: boolean | string 
 
 默认值: false
 
-### ant-design 中 Table - Column的key属性如何使用？
+### ant-design 中 Table - Column的key属性如何使用？ 
 
-参数: key
+参数: key 
 
-说明: React 需要的 key，如果已经设置了唯一的 `dataIndex`，可以忽略这个属性
+说明: React 需要的 key，如果已经设置了唯一的 `dataIndex`，可以忽略这个属性 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Table - Column的render属性如何使用？
-
-参数: render
-
-说明: 生成复杂数据的渲染函数，参数分别为当前行的值，当前行数据，行索引
-
-类型: function(text, record, index) {}
+类型: string 
 
 默认值: -
 
-### ant-design 中 Table - Column的responsive属性如何使用？
+### ant-design 中 Table - Column的render属性如何使用？ 
 
-参数: responsive
+参数: render 
 
-说明: 响应式 breakpoint 配置列表。未设置则始终可见。
+说明: 生成复杂数据的渲染函数，参数分别为当前行的值，当前行数据，行索引 
 
-类型: -
+类型: function(text, record, index) {} 
+
+默认值: -
+
+### ant-design 中 Table - Column的responsive属性如何使用？ 
+
+参数: responsive 
+
+说明: 响应式 breakpoint 配置列表。未设置则始终可见。 
+
+类型: - 
 
 默认值: 4.2.0
 
-### ant-design 中 Table - Column的rowScope属性如何使用？
+### ant-design 中 Table - Column的rowScope属性如何使用？ 
 
-参数: rowScope
+参数: rowScope 
 
-说明: 设置列范围
+说明: 设置列范围 
 
-类型: `row` | `rowgroup`
+类型: `row` | `rowgroup` 
 
-默认值: -
+默认值: - 
 
 版本: 5.1.0
 
-### ant-design 中 Table - Column的shouldCellUpdate属性如何使用？
+### ant-design 中 Table - Column的shouldCellUpdate属性如何使用？ 
 
-参数: shouldCellUpdate
+参数: shouldCellUpdate 
 
-说明: 自定义单元格渲染时机
+说明: 自定义单元格渲染时机 
 
-类型: (record, prevRecord) => boolean
+类型: (record, prevRecord) => boolean 
 
-默认值: -
+默认值: - 
 
 版本: 4.3.0
 
-### ant-design 中 Table - Column的showSorterTooltip属性如何使用？
+### ant-design 中 Table - Column的showSorterTooltip属性如何使用？ 
 
-参数: showSorterTooltip
+参数: showSorterTooltip 
 
-说明: 表头显示下一次排序的 tooltip 提示, 覆盖 table 中 `showSorterTooltip`
+说明: 表头显示下一次排序的 tooltip 提示, 覆盖 table 中 `showSorterTooltip` 
 
-类型: boolean | [Tooltip props](/components/tooltip-cn/#api)
+类型: boolean | [Tooltip props](/components/tooltip-cn/#api) 
 
 默认值: true
 
-### ant-design 中 Table - Column的sortDirections属性如何使用？
+### ant-design 中 Table - Column的sortDirections属性如何使用？ 
 
-参数: sortDirections
+参数: sortDirections 
 
-说明: 支持的排序方式，覆盖 `Table` 中 `sortDirections`， 取值为 `ascend` `descend`
+说明: 支持的排序方式，覆盖 `Table` 中 `sortDirections`， 取值为 `ascend` `descend` 
 
-类型: Array
+类型: Array 
 
 默认值: \[`ascend`, `descend`]
 
-### ant-design 中 Table - Column的sorter属性如何使用？
+### ant-design 中 Table - Column的sorter属性如何使用？ 
 
-参数: sorter
+参数: sorter 
 
-说明: 排序函数，本地排序使用一个函数(参考 [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) 的 compareFunction)。需要服务端排序可设为 `true`（单列排序） 或 `{ multiple: number }`（多列排序）
+说明: 排序函数，本地排序使用一个函数(参考 [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) 的 compareFunction)。需要服务端排序可设为 `true`（单列排序） 或 `{ multiple: number }`（多列排序） 
 
-类型: function | boolean | { compare: function, multiple: number }
-
-默认值: -
-
-### ant-design 中 Table - Column的sortOrder属性如何使用？
-
-参数: sortOrder
-
-说明: 排序的受控属性，外界可用此控制列的排序，可设置为 `ascend` `descend` `null`
-
-类型: `ascend` | `descend` | null
+类型: function | boolean | { compare: function, multiple: number } 
 
 默认值: -
 
-### ant-design 中 Table - Column的sortIcon属性如何使用？
+### ant-design 中 Table - Column的sortOrder属性如何使用？ 
 
-参数: sortIcon
+参数: sortOrder 
 
-说明: 自定义 sort 图标
+说明: 排序的受控属性，外界可用此控制列的排序，可设置为 `ascend` `descend` `null` 
 
-类型: (props: { sortOrder }) => ReactNode
+类型: `ascend` | `descend` | null 
 
 默认值: -
+
+### ant-design 中 Table - Column的sortIcon属性如何使用？ 
+
+参数: sortIcon 
+
+说明: 自定义 sort 图标 
+
+类型: (props: { sortOrder }) => ReactNode 
+
+默认值: - 
 
 版本: 5.6.0
 
-### ant-design 中 Table - Column的title属性如何使用？
+### ant-design 中 Table - Column的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 列头显示文字（函数用法 `3.10.0` 后支持）
+说明: 列头显示文字（函数用法 `3.10.0` 后支持） 
 
-类型: ReactNode | ({ sortOrder, sortColumn, filters }) => ReactNode
-
-默认值: -
-
-### ant-design 中 Table - Column的width属性如何使用？
-
-参数: width
-
-说明: 列宽度（[指定了也不生效？](https://github.com/ant-design/ant-design/issues/13825#issuecomment-449889241)）
-
-类型: string | number
+类型: ReactNode | ({ sortOrder, sortColumn, filters }) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Table - Column的hidden属性如何使用？
+### ant-design 中 Table - Column的width属性如何使用？ 
 
-参数: hidden
+参数: width 
 
-说明: 隐藏列
+说明: 列宽度（[指定了也不生效？](https://github.com/ant-design/ant-design/issues/13825#issuecomment-449889241)） 
 
-类型: boolean
+类型: string | number 
 
-默认值: false
+默认值: -
+
+### ant-design 中 Table - Column的hidden属性如何使用？ 
+
+参数: hidden 
+
+说明: 隐藏列 
+
+类型: boolean 
+
+默认值: false 
 
 版本: 5.13.0
 
-### ant-design 中 Table - Column的onCell属性如何使用？
+### ant-design 中 Table - Column的onCell属性如何使用？ 
 
-参数: onCell
+参数: onCell 
 
-说明: 设置单元格属性
+说明: 设置单元格属性 
 
-类型: function(record, rowIndex)
-
-默认值: -
-
-### ant-design 中 Table - Column的onFilter属性如何使用？
-
-参数: onFilter
-
-说明: 本地模式下，确定筛选的运行函数
-
-类型: function
+类型: function(record, rowIndex) 
 
 默认值: -
 
-### ant-design 中 Table - Column的onFilterDropdownOpenChange属性如何使用？
+### ant-design 中 Table - Column的onFilter属性如何使用？ 
 
-参数: onFilterDropdownOpenChange
+参数: onFilter 
 
-说明: 自定义筛选菜单可见变化时调用
+说明: 本地模式下，确定筛选的运行函数 
 
-类型: function(visible) {}
+类型: function 
 
 默认值: -
 
-### ant-design 中 Table - Column的onHeaderCell属性如何使用？
+### ant-design 中 Table - Column的onFilterDropdownOpenChange属性如何使用？ 
 
-参数: onHeaderCell
+参数: onFilterDropdownOpenChange 
 
-说明: 设置头部单元格属性
+说明: 自定义筛选菜单可见变化时调用 
 
-类型: function(column)
+类型: function(visible) {} 
+
+默认值: -
+
+### ant-design 中 Table - Column的onHeaderCell属性如何使用？ 
+
+参数: onHeaderCell 
+
+说明: 设置头部单元格属性 
+
+类型: function(column) 
 
 默认值: -
 
 ### ant-design 的 Table - ColumnGroup 有哪些配置？
 
-| 参数  | 说明         | 类型      | 默认值 |
-| ----- | ------------ | --------- | ------ |
-| title | 列头显示文字 | ReactNode | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| title | 列头显示文字 | ReactNode | - |
 
-### ant-design 中 Table - ColumnGroup的title属性如何使用？
 
-参数: title
+### ant-design 中 Table - ColumnGroup的title属性如何使用？ 
 
-说明: 列头显示文字
+参数: title 
 
-类型: ReactNode
+说明: 列头显示文字 
+
+类型: ReactNode 
 
 默认值: -
 
@@ -5927,20 +6004,21 @@
 | --- | --- | --- | --- |
 | position | 指定分页显示的位置， 取值为`topLeft` \| `topCenter` \| `topRight` \|`bottomLeft` \| `bottomCenter` \| `bottomRight` | Array | \[`bottomRight`] |
 
-### ant-design 中 Table - pagination的position属性如何使用？
 
-参数: position
+### ant-design 中 Table - pagination的position属性如何使用？ 
 
-说明: 指定分页显示的位置， 取值为`topLeft` | `topCenter` | `topRight` |`bottomLeft` | `bottomCenter` | `bottomRight`
+参数: position 
 
-类型: Array
+说明: 指定分页显示的位置， 取值为`topLeft` | `topCenter` | `topRight` |`bottomLeft` | `bottomCenter` | `bottomRight` 
+
+类型: Array 
 
 默认值: \[`bottomRight`]
 
 ### ant-design 的 Table - expandable 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | childrenColumnName | 指定树形结构的列名 | string | children |
 | columnTitle | 自定义展开列表头 | ReactNode | - | 4.23.0 |
 | columnWidth | 自定义展开列宽度 | string \| number | - |
@@ -5958,169 +6036,170 @@
 | onExpand | 点击展开图标时触发 | function(record, event) | - |
 | onExpandedRowsChange | 展开的行变化时触发 | function(expandedRows) | - |
 
-### ant-design 中 Table - expandable的childrenColumnName属性如何使用？
 
-参数: childrenColumnName
+### ant-design 中 Table - expandable的childrenColumnName属性如何使用？ 
 
-说明: 指定树形结构的列名
+参数: childrenColumnName 
 
-类型: string
+说明: 指定树形结构的列名 
+
+类型: string 
 
 默认值: children
 
-### ant-design 中 Table - expandable的columnTitle属性如何使用？
+### ant-design 中 Table - expandable的columnTitle属性如何使用？ 
 
-参数: columnTitle
+参数: columnTitle 
 
-说明: 自定义展开列表头
+说明: 自定义展开列表头 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.23.0
 
-### ant-design 中 Table - expandable的columnWidth属性如何使用？
+### ant-design 中 Table - expandable的columnWidth属性如何使用？ 
 
-参数: columnWidth
+参数: columnWidth 
 
-说明: 自定义展开列宽度
+说明: 自定义展开列宽度 
 
-类型: string | number
+类型: string | number 
 
 默认值: -
 
-### ant-design 中 Table - expandable的defaultExpandAllRows属性如何使用？
+### ant-design 中 Table - expandable的defaultExpandAllRows属性如何使用？ 
 
-参数: defaultExpandAllRows
+参数: defaultExpandAllRows 
 
-说明: 初始时，是否展开所有行
+说明: 初始时，是否展开所有行 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Table - expandable的defaultExpandedRowKeys属性如何使用？
+### ant-design 中 Table - expandable的defaultExpandedRowKeys属性如何使用？ 
 
-参数: defaultExpandedRowKeys
+参数: defaultExpandedRowKeys 
 
-说明: 默认展开的行
+说明: 默认展开的行 
 
-类型: string[]
-
-默认值: -
-
-### ant-design 中 Table - expandable的expandedRowClassName属性如何使用？
-
-参数: expandedRowClassName
-
-说明: 展开行的 className
-
-类型: function(record, index, indent): string
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Table - expandable的expandedRowKeys属性如何使用？
+### ant-design 中 Table - expandable的expandedRowClassName属性如何使用？ 
 
-参数: expandedRowKeys
+参数: expandedRowClassName 
 
-说明: 展开的行，控制属性
+说明: 展开行的 className 
 
-类型: string[]
-
-默认值: -
-
-### ant-design 中 Table - expandable的expandedRowRender属性如何使用？
-
-参数: expandedRowRender
-
-说明: 额外的展开行
-
-类型: function(record, index, indent, expanded): ReactNode
+类型: function(record, index, indent): string 
 
 默认值: -
 
-### ant-design 中 Table - expandable的expandIcon属性如何使用？
+### ant-design 中 Table - expandable的expandedRowKeys属性如何使用？ 
 
-参数: expandIcon
+参数: expandedRowKeys 
 
-说明: 自定义展开图标，参考[示例](https://codesandbox.io/s/fervent-bird-nuzpr)
+说明: 展开的行，控制属性 
 
-类型: function(props): ReactNode
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Table - expandable的expandRowByClick属性如何使用？
+### ant-design 中 Table - expandable的expandedRowRender属性如何使用？ 
 
-参数: expandRowByClick
+参数: expandedRowRender 
 
-说明: 通过点击行来展开子行
+说明: 额外的展开行 
 
-类型: boolean
+类型: function(record, index, indent, expanded): ReactNode 
+
+默认值: -
+
+### ant-design 中 Table - expandable的expandIcon属性如何使用？ 
+
+参数: expandIcon 
+
+说明: 自定义展开图标，参考[示例](https://codesandbox.io/s/fervent-bird-nuzpr) 
+
+类型: function(props): ReactNode 
+
+默认值: -
+
+### ant-design 中 Table - expandable的expandRowByClick属性如何使用？ 
+
+参数: expandRowByClick 
+
+说明: 通过点击行来展开子行 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Table - expandable的fixed属性如何使用？
+### ant-design 中 Table - expandable的fixed属性如何使用？ 
 
-参数: fixed
+参数: fixed 
 
-说明: 控制展开图标是否固定，可选 `true` `'left'` `'right'`
+说明: 控制展开图标是否固定，可选 `true` `'left'` `'right'` 
 
-类型: boolean | string
+类型: boolean | string 
 
-默认值: false
+默认值: false 
 
 版本: 4.16.0
 
-### ant-design 中 Table - expandable的indentSize属性如何使用？
+### ant-design 中 Table - expandable的indentSize属性如何使用？ 
 
-参数: indentSize
+参数: indentSize 
 
-说明: 展示树形数据时，每层缩进的宽度，以 px 为单位
+说明: 展示树形数据时，每层缩进的宽度，以 px 为单位 
 
-类型: number
+类型: number 
 
 默认值: 15
 
-### ant-design 中 Table - expandable的rowExpandable属性如何使用？
+### ant-design 中 Table - expandable的rowExpandable属性如何使用？ 
 
-参数: rowExpandable
+参数: rowExpandable 
 
-说明: 设置是否允许行展开
+说明: 设置是否允许行展开 
 
-类型: (record) => boolean
+类型: (record) => boolean 
 
 默认值: -
 
-### ant-design 中 Table - expandable的showExpandColumn属性如何使用？
+### ant-design 中 Table - expandable的showExpandColumn属性如何使用？ 
 
-参数: showExpandColumn
+参数: showExpandColumn 
 
-说明: 设置是否展示行展开列
+说明: 设置是否展示行展开列 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 4.18.0
 
-### ant-design 中 Table - expandable的onExpand属性如何使用？
+### ant-design 中 Table - expandable的onExpand属性如何使用？ 
 
-参数: onExpand
+参数: onExpand 
 
-说明: 点击展开图标时触发
+说明: 点击展开图标时触发 
 
-类型: function(record, event)
+类型: function(record, event) 
 
 默认值: -
 
-### ant-design 中 Table - expandable的onExpandedRowsChange属性如何使用？
+### ant-design 中 Table - expandable的onExpandedRowsChange属性如何使用？ 
 
-参数: onExpandedRowsChange
+参数: onExpandedRowsChange 
 
-说明: 展开的行变化时触发
+说明: 展开的行变化时触发 
 
-类型: function(expandedRows)
+类型: function(expandedRows) 
 
 默认值: -
 
@@ -6148,205 +6227,206 @@
 | onSelectNone | 用户清空选择的回调 | function() | - |
 | onSelectMultiple | 用户使用键盘 shift 选择多行的回调 | function(selected, selectedRows, changeRows) | - |
 
-### ant-design 中 Table - rowSelection的checkStrictly属性如何使用？
 
-参数: checkStrictly
+### ant-design 中 Table - rowSelection的checkStrictly属性如何使用？ 
 
-说明: checkable 状态下节点选择完全受控（父子数据选中状态不再关联）
+参数: checkStrictly 
 
-类型: boolean
+说明: checkable 状态下节点选择完全受控（父子数据选中状态不再关联） 
 
-默认值: true
+类型: boolean 
+
+默认值: true 
 
 版本: 4.4.0
 
-### ant-design 中 Table - rowSelection的columnTitle属性如何使用？
+### ant-design 中 Table - rowSelection的columnTitle属性如何使用？ 
 
-参数: columnTitle
+参数: columnTitle 
 
-说明: 自定义列表选择框标题
+说明: 自定义列表选择框标题 
 
-类型: ReactNode | (originalNode: ReactNode) => ReactNode
+类型: ReactNode | (originalNode: ReactNode) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Table - rowSelection的columnWidth属性如何使用？
+### ant-design 中 Table - rowSelection的columnWidth属性如何使用？ 
 
-参数: columnWidth
+参数: columnWidth 
 
-说明: 自定义列表选择框宽度
+说明: 自定义列表选择框宽度 
 
-类型: string | number
+类型: string | number 
 
 默认值: `32px`
 
-### ant-design 中 Table - rowSelection的fixed属性如何使用？
+### ant-design 中 Table - rowSelection的fixed属性如何使用？ 
 
-参数: fixed
+参数: fixed 
 
-说明: 把选择框列固定在左边
+说明: 把选择框列固定在左边 
 
-类型: boolean
-
-默认值: -
-
-### ant-design 中 Table - rowSelection的getCheckboxProps属性如何使用？
-
-参数: getCheckboxProps
-
-说明: 选择框的默认属性配置
-
-类型: function(record)
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Table - rowSelection的hideSelectAll属性如何使用？
+### ant-design 中 Table - rowSelection的getCheckboxProps属性如何使用？ 
 
-参数: hideSelectAll
+参数: getCheckboxProps 
 
-说明: 隐藏全选勾选框与自定义选择项
+说明: 选择框的默认属性配置 
 
-类型: boolean
+类型: function(record) 
 
-默认值: false
+默认值: -
+
+### ant-design 中 Table - rowSelection的hideSelectAll属性如何使用？ 
+
+参数: hideSelectAll 
+
+说明: 隐藏全选勾选框与自定义选择项 
+
+类型: boolean 
+
+默认值: false 
 
 版本: 4.3.0
 
-### ant-design 中 Table - rowSelection的preserveSelectedRowKeys属性如何使用？
+### ant-design 中 Table - rowSelection的preserveSelectedRowKeys属性如何使用？ 
 
-参数: preserveSelectedRowKeys
+参数: preserveSelectedRowKeys 
 
-说明: 当数据被删除时仍然保留选项的 `key`
+说明: 当数据被删除时仍然保留选项的 `key` 
 
-类型: boolean
+类型: boolean 
 
-默认值: -
+默认值: - 
 
 版本: 4.4.0
 
-### ant-design 中 Table - rowSelection的renderCell属性如何使用？
+### ant-design 中 Table - rowSelection的renderCell属性如何使用？ 
 
-参数: renderCell
+参数: renderCell 
 
-说明: 渲染勾选框，用法与 Column 的 `render` 相同
+说明: 渲染勾选框，用法与 Column 的 `render` 相同 
 
-类型: function(checked, record, index, originNode) {}
+类型: function(checked, record, index, originNode) {} 
 
-默认值: -
+默认值: - 
 
 版本: 4.1.0
 
-### ant-design 中 Table - rowSelection的selectedRowKeys属性如何使用？
+### ant-design 中 Table - rowSelection的selectedRowKeys属性如何使用？ 
 
-参数: selectedRowKeys
+参数: selectedRowKeys 
 
-说明: 指定选中项的 key 数组，需要和 onChange 进行配合
+说明: 指定选中项的 key 数组，需要和 onChange 进行配合 
 
-类型: string[] | number[]
-
-默认值: \[]
-
-### ant-design 中 Table - rowSelection的defaultSelectedRowKeys属性如何使用？
-
-参数: defaultSelectedRowKeys
-
-说明: 默认选中项的 key 数组
-
-类型: string[] | number[]
+类型: string[] | number[] 
 
 默认值: \[]
 
-### ant-design 中 Table - rowSelection的selections属性如何使用？
+### ant-design 中 Table - rowSelection的defaultSelectedRowKeys属性如何使用？ 
 
-参数: selections
+参数: defaultSelectedRowKeys 
 
-说明: 自定义选择项 [配置项](#selection), 设为 `true` 时使用默认选择项
+说明: 默认选中项的 key 数组 
 
-类型: object[] | boolean
+类型: string[] | number[] 
+
+默认值: \[]
+
+### ant-design 中 Table - rowSelection的selections属性如何使用？ 
+
+参数: selections 
+
+说明: 自定义选择项 [配置项](#selection), 设为 `true` 时使用默认选择项 
+
+类型: object[] | boolean 
 
 默认值: true
 
-### ant-design 中 Table - rowSelection的type属性如何使用？
+### ant-design 中 Table - rowSelection的type属性如何使用？ 
 
-参数: type
+参数: type 
 
-说明: 多选/单选
+说明: 多选/单选 
 
-类型: `checkbox` | `radio`
+类型: `checkbox` | `radio` 
 
 默认值: `checkbox`
 
-### ant-design 中 Table - rowSelection的onCell属性如何使用？
+### ant-design 中 Table - rowSelection的onCell属性如何使用？ 
 
-参数: onCell
+参数: onCell 
 
-说明: 设置单元格属性，用法与 Column 的 `onCell` 相同
+说明: 设置单元格属性，用法与 Column 的 `onCell` 相同 
 
-类型: function(record, rowIndex)
+类型: function(record, rowIndex) 
 
-默认值: -
+默认值: - 
 
 版本: 5.5.0
 
-### ant-design 中 Table - rowSelection的onChange属性如何使用？
+### ant-design 中 Table - rowSelection的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 选中项发生变化时的回调
+说明: 选中项发生变化时的回调 
 
-类型: function(selectedRowKeys, selectedRows, info: { type })
+类型: function(selectedRowKeys, selectedRows, info: { type }) 
 
-默认值: -
+默认值: - 
 
 版本: `info.type`: 4.21.0
 
-### ant-design 中 Table - rowSelection的onSelect属性如何使用？
+### ant-design 中 Table - rowSelection的onSelect属性如何使用？ 
 
-参数: onSelect
+参数: onSelect 
 
-说明: 用户手动选择/取消选择某行的回调
+说明: 用户手动选择/取消选择某行的回调 
 
-类型: function(record, selected, selectedRows, nativeEvent)
-
-默认值: -
-
-### ant-design 中 Table - rowSelection的onSelectAll属性如何使用？
-
-参数: onSelectAll
-
-说明: 用户手动选择/取消选择所有行的回调
-
-类型: function(selected, selectedRows, changeRows)
+类型: function(record, selected, selectedRows, nativeEvent) 
 
 默认值: -
 
-### ant-design 中 Table - rowSelection的onSelectInvert属性如何使用？
+### ant-design 中 Table - rowSelection的onSelectAll属性如何使用？ 
 
-参数: onSelectInvert
+参数: onSelectAll 
 
-说明: 用户手动选择反选的回调
+说明: 用户手动选择/取消选择所有行的回调 
 
-类型: function(selectedRowKeys)
-
-默认值: -
-
-### ant-design 中 Table - rowSelection的onSelectNone属性如何使用？
-
-参数: onSelectNone
-
-说明: 用户清空选择的回调
-
-类型: function()
+类型: function(selected, selectedRows, changeRows) 
 
 默认值: -
 
-### ant-design 中 Table - rowSelection的onSelectMultiple属性如何使用？
+### ant-design 中 Table - rowSelection的onSelectInvert属性如何使用？ 
 
-参数: onSelectMultiple
+参数: onSelectInvert 
 
-说明: 用户使用键盘 shift 选择多行的回调
+说明: 用户手动选择反选的回调 
 
-类型: function(selected, selectedRows, changeRows)
+类型: function(selectedRowKeys) 
+
+默认值: -
+
+### ant-design 中 Table - rowSelection的onSelectNone属性如何使用？ 
+
+参数: onSelectNone 
+
+说明: 用户清空选择的回调 
+
+类型: function() 
+
+默认值: -
+
+### ant-design 中 Table - rowSelection的onSelectMultiple属性如何使用？ 
+
+参数: onSelectMultiple 
+
+说明: 用户使用键盘 shift 选择多行的回调 
+
+类型: function(selected, selectedRows, changeRows) 
 
 默认值: -
 
@@ -6358,80 +6438,82 @@
 | x | 设置横向滚动，也可用于指定滚动区域的宽，可以设置为像素值，百分比，`true` 和 ['max-content'](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width#max-content) | string \| number \| true | - |
 | y | 设置纵向滚动，也可用于指定滚动区域的高，可以设置为像素值 | string \| number | - |
 
-### ant-design 中 Table - scroll的scrollToFirstRowOnChange属性如何使用？
 
-参数: scrollToFirstRowOnChange
+### ant-design 中 Table - scroll的scrollToFirstRowOnChange属性如何使用？ 
 
-说明: 当分页、排序、筛选变化后是否滚动到表格顶部
+参数: scrollToFirstRowOnChange 
 
-类型: boolean
+说明: 当分页、排序、筛选变化后是否滚动到表格顶部 
 
-默认值: -
-
-### ant-design 中 Table - scroll的x属性如何使用？
-
-参数: x
-
-说明: 设置横向滚动，也可用于指定滚动区域的宽，可以设置为像素值，百分比，`true` 和 ['max-content'](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width#max-content)
-
-类型: string | number | true
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Table - scroll的y属性如何使用？
+### ant-design 中 Table - scroll的x属性如何使用？ 
 
-参数: y
+参数: x 
 
-说明: 设置纵向滚动，也可用于指定滚动区域的高，可以设置为像素值
+说明: 设置横向滚动，也可用于指定滚动区域的宽，可以设置为像素值，百分比，`true` 和 ['max-content'](https://developer.mozilla.org/zh-CN/docs/Web/CSS/width#max-content) 
 
-类型: string | number
+类型: string | number | true 
+
+默认值: -
+
+### ant-design 中 Table - scroll的y属性如何使用？ 
+
+参数: y 
+
+说明: 设置纵向滚动，也可用于指定滚动区域的高，可以设置为像素值 
+
+类型: string | number 
 
 默认值: -
 
 ### ant-design 的 Table - selection 有哪些配置？
 
-| 参数     | 说明                       | 类型                        | 默认值 |
-| -------- | -------------------------- | --------------------------- | ------ |
-| key      | React 需要的 key，建议设置 | string                      | -      |
-| text     | 选择项显示的文字           | ReactNode                   | -      |
-| onSelect | 选择项点击回调             | function(changeableRowKeys) | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| key | React 需要的 key，建议设置 | string | - |
+| text | 选择项显示的文字 | ReactNode | - |
+| onSelect | 选择项点击回调 | function(changeableRowKeys) | - |
 
-### ant-design 中 Table - selection的key属性如何使用？
 
-参数: key
+### ant-design 中 Table - selection的key属性如何使用？ 
 
-说明: React 需要的 key，建议设置
+参数: key 
 
-类型: string
+说明: React 需要的 key，建议设置 
 
-默认值: -
-
-### ant-design 中 Table - selection的text属性如何使用？
-
-参数: text
-
-说明: 选择项显示的文字
-
-类型: ReactNode
+类型: string 
 
 默认值: -
 
-### ant-design 中 Table - selection的onSelect属性如何使用？
+### ant-design 中 Table - selection的text属性如何使用？ 
 
-参数: onSelect
+参数: text 
 
-说明: 选择项点击回调
+说明: 选择项显示的文字 
 
-类型: function(changeableRowKeys)
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Table - selection的onSelect属性如何使用？ 
+
+参数: onSelect 
+
+说明: 选择项点击回调 
+
+类型: function(changeableRowKeys) 
 
 默认值: -
 
 ### ant-design 的 Switch 有哪些配置？
 
-#### Switch - API
+#### Switch - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | autoFocus | 组件自动获取焦点 | boolean | false |
 | checked | 指定当前是否选中 | boolean | false |
 | checkedChildren | 选中时的内容 | ReactNode | - |
@@ -6446,17 +6528,19 @@
 | onChange | 变化时的回调函数 | function(checked: boolean, event: Event) | - |
 | onClick | 点击时的回调函数 | function(checked: boolean, event: Event) | - |
 
-#### Switch - 方法
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Switch - 方法 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
+
 
 ### ant-design 的 Switch - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | autoFocus | 组件自动获取焦点 | boolean | false |
 | checked | 指定当前是否选中 | boolean | false |
 | checkedChildren | 选中时的内容 | ReactNode | - |
@@ -6471,165 +6555,167 @@
 | onChange | 变化时的回调函数 | function(checked: boolean, event: Event) | - |
 | onClick | 点击时的回调函数 | function(checked: boolean, event: Event) | - |
 
-### ant-design 中 Switch - API的autoFocus属性如何使用？
 
-参数: autoFocus
+### ant-design 中 Switch - API的autoFocus属性如何使用？ 
 
-说明: 组件自动获取焦点
+参数: autoFocus 
 
-类型: boolean
+说明: 组件自动获取焦点 
 
-默认值: false
-
-### ant-design 中 Switch - API的checked属性如何使用？
-
-参数: checked
-
-说明: 指定当前是否选中
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Switch - API的checkedChildren属性如何使用？
+### ant-design 中 Switch - API的checked属性如何使用？ 
 
-参数: checkedChildren
+参数: checked 
 
-说明: 选中时的内容
+说明: 指定当前是否选中 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Switch - API的className属性如何使用？
-
-参数: className
-
-说明: Switch 器类名
-
-类型: string
-
-默认值: -
-
-### ant-design 中 Switch - API的defaultChecked属性如何使用？
-
-参数: defaultChecked
-
-说明: 初始是否选中
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Switch - API的defaultValue属性如何使用？
+### ant-design 中 Switch - API的checkedChildren属性如何使用？ 
 
-参数: defaultValue
+参数: checkedChildren 
 
-说明: `defaultChecked` 的别名
+说明: 选中时的内容 
 
-类型: boolean
+类型: ReactNode 
 
 默认值: -
+
+### ant-design 中 Switch - API的className属性如何使用？ 
+
+参数: className 
+
+说明: Switch 器类名 
+
+类型: string 
+
+默认值: -
+
+### ant-design 中 Switch - API的defaultChecked属性如何使用？ 
+
+参数: defaultChecked 
+
+说明: 初始是否选中 
+
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Switch - API的defaultValue属性如何使用？ 
+
+参数: defaultValue 
+
+说明: `defaultChecked` 的别名 
+
+类型: boolean 
+
+默认值: - 
 
 版本: 5.12.0
 
-### ant-design 中 Switch - API的disabled属性如何使用？
+### ant-design 中 Switch - API的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 是否禁用
+说明: 是否禁用 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Switch - API的loading属性如何使用？
-
-参数: loading
-
-说明: 加载中的开关
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Switch - API的size属性如何使用？
+### ant-design 中 Switch - API的loading属性如何使用？ 
 
-参数: size
+参数: loading 
 
-说明: 开关大小，可选值：`default` `small`
+说明: 加载中的开关 
 
-类型: string
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Switch - API的size属性如何使用？ 
+
+参数: size 
+
+说明: 开关大小，可选值：`default` `small` 
+
+类型: string 
 
 默认值: `default`
 
-### ant-design 中 Switch - API的unCheckedChildren属性如何使用？
+### ant-design 中 Switch - API的unCheckedChildren属性如何使用？ 
 
-参数: unCheckedChildren
+参数: unCheckedChildren 
 
-说明: 非选中时的内容
+说明: 非选中时的内容 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Switch - API的value属性如何使用？
-
-参数: value
-
-说明: `checked` 的别名
-
-类型: boolean
+类型: ReactNode 
 
 默认值: -
+
+### ant-design 中 Switch - API的value属性如何使用？ 
+
+参数: value 
+
+说明: `checked` 的别名 
+
+类型: boolean 
+
+默认值: - 
 
 版本: 5.12.0
 
-### ant-design 中 Switch - API的onChange属性如何使用？
+### ant-design 中 Switch - API的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 变化时的回调函数
+说明: 变化时的回调函数 
 
-类型: function(checked: boolean, event: Event)
+类型: function(checked: boolean, event: Event) 
 
 默认值: -
 
-### ant-design 中 Switch - API的onClick属性如何使用？
+### ant-design 中 Switch - API的onClick属性如何使用？ 
 
-参数: onClick
+参数: onClick 
 
-说明: 点击时的回调函数
+说明: 点击时的回调函数 
 
-类型: function(checked: boolean, event: Event)
+类型: function(checked: boolean, event: Event) 
 
 默认值: -
 
 ### ant-design 的 Switch - 方法 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Switch - 方法的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Switch - 方法的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Switch - 方法的focus()属性如何使用？
+### ant-design 中 Switch - 方法的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 Steps 有哪些配置？
 
-#### Steps - Steps
+#### Steps - Steps 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | className | 步骤条类名 | string | - |
 | current | 指定当前步骤，从 0 开始记数。在子 Step 元素中，可以通过 `status` 属性覆盖状态 | number | 0 |
 | direction | 指定步骤条方向。目前支持水平（`horizontal`）和竖直（`vertical`）两种方向 | string | `horizontal` |
@@ -6644,7 +6730,8 @@
 | onChange | 点击切换步骤时触发 | (current) => void | - |
 | items | 配置选项卡内容 | \[] | 4.24.0 |
 
-#### Steps - `type="inline"`
+
+#### Steps - `type="inline"` 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -6655,7 +6742,8 @@
 | onChange | 点击切换步骤时触发 | (current) => void | - |
 | items | 配置选项卡内容，不支持 `icon` `subtitle` | \[] | 4.24.0 |
 
-#### Steps - StepItem
+
+#### Steps - StepItem 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -6666,10 +6754,11 @@
 | subTitle | 子标题 | ReactNode | - |
 | title | 标题 | ReactNode | - |
 
+
 ### ant-design 的 Steps - Steps 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | className | 步骤条类名 | string | - |
 | current | 指定当前步骤，从 0 开始记数。在子 Step 元素中，可以通过 `status` 属性覆盖状态 | number | 0 |
 | direction | 指定步骤条方向。目前支持水平（`horizontal`）和竖直（`vertical`）两种方向 | string | `horizontal` |
@@ -6684,137 +6773,138 @@
 | onChange | 点击切换步骤时触发 | (current) => void | - |
 | items | 配置选项卡内容 | \[] | 4.24.0 |
 
-### ant-design 中 Steps - Steps的className属性如何使用？
 
-参数: className
+### ant-design 中 Steps - Steps的className属性如何使用？ 
 
-说明: 步骤条类名
+参数: className 
 
-类型: string
+说明: 步骤条类名 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Steps - Steps的current属性如何使用？
+### ant-design 中 Steps - Steps的current属性如何使用？ 
 
-参数: current
+参数: current 
 
-说明: 指定当前步骤，从 0 开始记数。在子 Step 元素中，可以通过 `status` 属性覆盖状态
+说明: 指定当前步骤，从 0 开始记数。在子 Step 元素中，可以通过 `status` 属性覆盖状态 
 
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Steps - Steps的direction属性如何使用？
+### ant-design 中 Steps - Steps的direction属性如何使用？ 
 
-参数: direction
+参数: direction 
 
-说明: 指定步骤条方向。目前支持水平（`horizontal`）和竖直（`vertical`）两种方向
+说明: 指定步骤条方向。目前支持水平（`horizontal`）和竖直（`vertical`）两种方向 
 
-类型: string
+类型: string 
 
 默认值: `horizontal`
 
-### ant-design 中 Steps - Steps的initial属性如何使用？
+### ant-design 中 Steps - Steps的initial属性如何使用？ 
 
-参数: initial
+参数: initial 
 
-说明: 起始序号，从 0 开始记数
+说明: 起始序号，从 0 开始记数 
 
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Steps - Steps的labelPlacement属性如何使用？
+### ant-design 中 Steps - Steps的labelPlacement属性如何使用？ 
 
-参数: labelPlacement
+参数: labelPlacement 
 
-说明: 指定标签放置位置，默认水平放图标右侧，可选 `vertical` 放图标下方
+说明: 指定标签放置位置，默认水平放图标右侧，可选 `vertical` 放图标下方 
 
-类型: string
+类型: string 
 
 默认值: `horizontal`
 
-### ant-design 中 Steps - Steps的percent属性如何使用？
+### ant-design 中 Steps - Steps的percent属性如何使用？ 
 
-参数: percent
+参数: percent 
 
-说明: 当前 `process` 步骤显示的进度条进度（只对基本类型的 Steps 生效）
+说明: 当前 `process` 步骤显示的进度条进度（只对基本类型的 Steps 生效） 
 
-类型: number
+类型: number 
 
-默认值: -
+默认值: - 
 
 版本: 4.5.0
 
-### ant-design 中 Steps - Steps的progressDot属性如何使用？
+### ant-design 中 Steps - Steps的progressDot属性如何使用？ 
 
-参数: progressDot
+参数: progressDot 
 
-说明: 点状步骤条，可以设置为一个 function，labelPlacement 将强制为 `vertical`
+说明: 点状步骤条，可以设置为一个 function，labelPlacement 将强制为 `vertical` 
 
-类型: boolean | (iconDot, {index, status, title, description}) => ReactNode
+类型: boolean | (iconDot, {index, status, title, description}) => ReactNode 
 
 默认值: false
 
-### ant-design 中 Steps - Steps的responsive属性如何使用？
+### ant-design 中 Steps - Steps的responsive属性如何使用？ 
 
-参数: responsive
+参数: responsive 
 
-说明: 当屏幕宽度小于 `532px` 时自动变为垂直模式
+说明: 当屏幕宽度小于 `532px` 时自动变为垂直模式 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Steps - Steps的size属性如何使用？
+### ant-design 中 Steps - Steps的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 指定大小，目前支持普通（`default`）和迷你（`small`）
+说明: 指定大小，目前支持普通（`default`）和迷你（`small`） 
 
-类型: string
+类型: string 
 
 默认值: `default`
 
-### ant-design 中 Steps - Steps的status属性如何使用？
+### ant-design 中 Steps - Steps的status属性如何使用？ 
 
-参数: status
+参数: status 
 
-说明: 指定当前步骤的状态，可选 `wait` `process` `finish` `error`
+说明: 指定当前步骤的状态，可选 `wait` `process` `finish` `error` 
 
-类型: string
+类型: string 
 
 默认值: `process`
 
-### ant-design 中 Steps - Steps的type属性如何使用？
+### ant-design 中 Steps - Steps的type属性如何使用？ 
 
-参数: type
+参数: type 
 
-说明: 步骤条类型，可选 `default` `navigation` `inline`
+说明: 步骤条类型，可选 `default` `navigation` `inline` 
 
-类型: string
+类型: string 
 
-默认值: `default`
+默认值: `default` 
 
 版本: inline: 5.0
 
-### ant-design 中 Steps - Steps的onChange属性如何使用？
+### ant-design 中 Steps - Steps的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 点击切换步骤时触发
+说明: 点击切换步骤时触发 
 
-类型: (current) => void
+类型: (current) => void 
 
 默认值: -
 
-### ant-design 中 Steps - Steps的items属性如何使用？
+### ant-design 中 Steps - Steps的items属性如何使用？ 
 
-参数: items
+参数: items 
 
-说明: 配置选项卡内容
+说明: 配置选项卡内容 
 
-类型: \[]
+类型: \[] 
 
 默认值: 4.24.0
 
@@ -6829,63 +6919,64 @@
 | onChange | 点击切换步骤时触发 | (current) => void | - |
 | items | 配置选项卡内容，不支持 `icon` `subtitle` | \[] | 4.24.0 |
 
-### ant-design 中 Steps - `type="inline"`的className属性如何使用？
 
-参数: className
+### ant-design 中 Steps - `type="inline"`的className属性如何使用？ 
 
-说明: 步骤条类名
+参数: className 
 
-类型: string
+说明: 步骤条类名 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Steps - `type="inline"`的current属性如何使用？
+### ant-design 中 Steps - `type="inline"`的current属性如何使用？ 
 
-参数: current
+参数: current 
 
-说明: 指定当前步骤，从 0 开始记数。在子 Step 元素中，可以通过 `status` 属性覆盖状态
+说明: 指定当前步骤，从 0 开始记数。在子 Step 元素中，可以通过 `status` 属性覆盖状态 
 
-类型: number
-
-默认值: 0
-
-### ant-design 中 Steps - `type="inline"`的initial属性如何使用？
-
-参数: initial
-
-说明: 起始序号，从 0 开始记数
-
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Steps - `type="inline"`的status属性如何使用？
+### ant-design 中 Steps - `type="inline"`的initial属性如何使用？ 
 
-参数: status
+参数: initial 
 
-说明: 指定当前步骤的状态，可选 `wait` `process` `finish` `error`
+说明: 起始序号，从 0 开始记数 
 
-类型: string
+类型: number 
+
+默认值: 0
+
+### ant-design 中 Steps - `type="inline"`的status属性如何使用？ 
+
+参数: status 
+
+说明: 指定当前步骤的状态，可选 `wait` `process` `finish` `error` 
+
+类型: string 
 
 默认值: `process`
 
-### ant-design 中 Steps - `type="inline"`的onChange属性如何使用？
+### ant-design 中 Steps - `type="inline"`的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 点击切换步骤时触发
+说明: 点击切换步骤时触发 
 
-类型: (current) => void
+类型: (current) => void 
 
 默认值: -
 
-### ant-design 中 Steps - `type="inline"`的items属性如何使用？
+### ant-design 中 Steps - `type="inline"`的items属性如何使用？ 
 
-参数: items
+参数: items 
 
-说明: 配置选项卡内容，不支持 `icon` `subtitle`
+说明: 配置选项卡内容，不支持 `icon` `subtitle` 
 
-类型: \[]
+类型: \[] 
 
 默认值: 4.24.0
 
@@ -6900,87 +6991,89 @@
 | subTitle | 子标题 | ReactNode | - |
 | title | 标题 | ReactNode | - |
 
-### ant-design 中 Steps - StepItem的description属性如何使用？
 
-参数: description
+### ant-design 中 Steps - StepItem的description属性如何使用？ 
 
-说明: 步骤的详情描述，可选
+参数: description 
 
-类型: ReactNode
+说明: 步骤的详情描述，可选 
+
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Steps - StepItem的disabled属性如何使用？
+### ant-design 中 Steps - StepItem的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 禁用点击
+说明: 禁用点击 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Steps - StepItem的icon属性如何使用？
+### ant-design 中 Steps - StepItem的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 步骤图标的类型，可选
+说明: 步骤图标的类型，可选 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Steps - StepItem的status属性如何使用？
+### ant-design 中 Steps - StepItem的status属性如何使用？ 
 
-参数: status
+参数: status 
 
-说明: 指定状态。当不配置该属性时，会使用 Steps 的 `current` 来自动指定状态。可选：`wait` `process` `finish` `error`
+说明: 指定状态。当不配置该属性时，会使用 Steps 的 `current` 来自动指定状态。可选：`wait` `process` `finish` `error` 
 
-类型: string
+类型: string 
 
 默认值: `wait`
 
-### ant-design 中 Steps - StepItem的subTitle属性如何使用？
+### ant-design 中 Steps - StepItem的subTitle属性如何使用？ 
 
-参数: subTitle
+参数: subTitle 
 
-说明: 子标题
+说明: 子标题 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Steps - StepItem的title属性如何使用？
+### ant-design 中 Steps - StepItem的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 标题
+说明: 标题 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
 ### ant-design 的 Statistic 有哪些配置？
 
-#### Statistic - Statistic
-
-| 参数             | 说明               | 类型                 | 默认值 |
-| ---------------- | ------------------ | -------------------- | ------ | ----- |
-| decimalSeparator | 设置小数点         | string               | `.`    |
-| formatter        | 自定义数值展示     | (value) => ReactNode | -      |
-| groupSeparator   | 设置千分位标识符   | string               | `,`    |
-| loading          | 数值是否加载中     | boolean              | false  | 4.8.0 |
-| precision        | 数值精度           | number               | -      |
-| prefix           | 设置数值的前缀     | ReactNode            | -      |
-| suffix           | 设置数值的后缀     | ReactNode            | -      |
-| title            | 数值的标题         | ReactNode            | -      |
-| value            | 数值内容           | string \| number     | -      |
-| valueStyle       | 设置数值区域的样式 | CSSProperties        | -      |
-
-#### Statistic - Statistic.Countdown
+#### Statistic - Statistic 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
+| decimalSeparator | 设置小数点 | string | `.` |
+| formatter | 自定义数值展示 | (value) => ReactNode | - |
+| groupSeparator | 设置千分位标识符 | string | `,` |
+| loading | 数值是否加载中 | boolean | false | 4.8.0 |
+| precision | 数值精度 | number | - |
+| prefix | 设置数值的前缀 | ReactNode | - |
+| suffix | 设置数值的后缀 | ReactNode | - |
+| title | 数值的标题 | ReactNode | - |
+| value | 数值内容 | string \| number | - |
+| valueStyle | 设置数值区域的样式 | CSSProperties | - |
+
+
+#### Statistic - Statistic.Countdown 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
 | format | 格式化倒计时展示，参考 [dayjs](https://day.js.org/) | string | `HH:mm:ss` |
 | prefix | 设置数值的前缀 | ReactNode | - |
 | suffix | 设置数值的后缀 | ReactNode | - |
@@ -6990,127 +7083,129 @@
 | onFinish | 倒计时完成时触发 | () => void | - |
 | onChange | 倒计时时间变化时触发 | (value: number) => void | - | 4.16.0 |
 
+
 ### ant-design 的 Statistic - Statistic 有哪些配置？
 
-| 参数             | 说明               | 类型                 | 默认值 |
-| ---------------- | ------------------ | -------------------- | ------ | ----- |
-| decimalSeparator | 设置小数点         | string               | `.`    |
-| formatter        | 自定义数值展示     | (value) => ReactNode | -      |
-| groupSeparator   | 设置千分位标识符   | string               | `,`    |
-| loading          | 数值是否加载中     | boolean              | false  | 4.8.0 |
-| precision        | 数值精度           | number               | -      |
-| prefix           | 设置数值的前缀     | ReactNode            | -      |
-| suffix           | 设置数值的后缀     | ReactNode            | -      |
-| title            | 数值的标题         | ReactNode            | -      |
-| value            | 数值内容           | string \| number     | -      |
-| valueStyle       | 设置数值区域的样式 | CSSProperties        | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| decimalSeparator | 设置小数点 | string | `.` |
+| formatter | 自定义数值展示 | (value) => ReactNode | - |
+| groupSeparator | 设置千分位标识符 | string | `,` |
+| loading | 数值是否加载中 | boolean | false | 4.8.0 |
+| precision | 数值精度 | number | - |
+| prefix | 设置数值的前缀 | ReactNode | - |
+| suffix | 设置数值的后缀 | ReactNode | - |
+| title | 数值的标题 | ReactNode | - |
+| value | 数值内容 | string \| number | - |
+| valueStyle | 设置数值区域的样式 | CSSProperties | - |
 
-### ant-design 中 Statistic - Statistic的decimalSeparator属性如何使用？
 
-参数: decimalSeparator
+### ant-design 中 Statistic - Statistic的decimalSeparator属性如何使用？ 
 
-说明: 设置小数点
+参数: decimalSeparator 
 
-类型: string
+说明: 设置小数点 
+
+类型: string 
 
 默认值: `.`
 
-### ant-design 中 Statistic - Statistic的formatter属性如何使用？
+### ant-design 中 Statistic - Statistic的formatter属性如何使用？ 
 
-参数: formatter
+参数: formatter 
 
-说明: 自定义数值展示
+说明: 自定义数值展示 
 
-类型: (value) => ReactNode
+类型: (value) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Statistic - Statistic的groupSeparator属性如何使用？
+### ant-design 中 Statistic - Statistic的groupSeparator属性如何使用？ 
 
-参数: groupSeparator
+参数: groupSeparator 
 
-说明: 设置千分位标识符
+说明: 设置千分位标识符 
 
-类型: string
+类型: string 
 
 默认值: `,`
 
-### ant-design 中 Statistic - Statistic的loading属性如何使用？
+### ant-design 中 Statistic - Statistic的loading属性如何使用？ 
 
-参数: loading
+参数: loading 
 
-说明: 数值是否加载中
+说明: 数值是否加载中 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.8.0
 
-### ant-design 中 Statistic - Statistic的precision属性如何使用？
+### ant-design 中 Statistic - Statistic的precision属性如何使用？ 
 
-参数: precision
+参数: precision 
 
-说明: 数值精度
+说明: 数值精度 
 
-类型: number
-
-默认值: -
-
-### ant-design 中 Statistic - Statistic的prefix属性如何使用？
-
-参数: prefix
-
-说明: 设置数值的前缀
-
-类型: ReactNode
+类型: number 
 
 默认值: -
 
-### ant-design 中 Statistic - Statistic的suffix属性如何使用？
+### ant-design 中 Statistic - Statistic的prefix属性如何使用？ 
 
-参数: suffix
+参数: prefix 
 
-说明: 设置数值的后缀
+说明: 设置数值的前缀 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Statistic - Statistic的title属性如何使用？
-
-参数: title
-
-说明: 数值的标题
-
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Statistic - Statistic的value属性如何使用？
+### ant-design 中 Statistic - Statistic的suffix属性如何使用？ 
 
-参数: value
+参数: suffix 
 
-说明: 数值内容
+说明: 设置数值的后缀 
 
-类型: string | number
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Statistic - Statistic的valueStyle属性如何使用？
+### ant-design 中 Statistic - Statistic的title属性如何使用？ 
 
-参数: valueStyle
+参数: title 
 
-说明: 设置数值区域的样式
+说明: 数值的标题 
 
-类型: CSSProperties
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Statistic - Statistic的value属性如何使用？ 
+
+参数: value 
+
+说明: 数值内容 
+
+类型: string | number 
+
+默认值: -
+
+### ant-design 中 Statistic - Statistic的valueStyle属性如何使用？ 
+
+参数: valueStyle 
+
+说明: 设置数值区域的样式 
+
+类型: CSSProperties 
 
 默认值: -
 
 ### ant-design 的 Statistic - Statistic.Countdown 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | format | 格式化倒计时展示，参考 [dayjs](https://day.js.org/) | string | `HH:mm:ss` |
 | prefix | 设置数值的前缀 | ReactNode | - |
 | suffix | 设置数值的后缀 | ReactNode | - |
@@ -7120,94 +7215,95 @@
 | onFinish | 倒计时完成时触发 | () => void | - |
 | onChange | 倒计时时间变化时触发 | (value: number) => void | - | 4.16.0 |
 
-### ant-design 中 Statistic - Statistic.Countdown的format属性如何使用？
 
-参数: format
+### ant-design 中 Statistic - Statistic.Countdown的format属性如何使用？ 
 
-说明: 格式化倒计时展示，参考 [dayjs](https://day.js.org/)
+参数: format 
 
-类型: string
+说明: 格式化倒计时展示，参考 [dayjs](https://day.js.org/) 
+
+类型: string 
 
 默认值: `HH:mm:ss`
 
-### ant-design 中 Statistic - Statistic.Countdown的prefix属性如何使用？
+### ant-design 中 Statistic - Statistic.Countdown的prefix属性如何使用？ 
 
-参数: prefix
+参数: prefix 
 
-说明: 设置数值的前缀
+说明: 设置数值的前缀 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Statistic - Statistic.Countdown的suffix属性如何使用？
-
-参数: suffix
-
-说明: 设置数值的后缀
-
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Statistic - Statistic.Countdown的title属性如何使用？
+### ant-design 中 Statistic - Statistic.Countdown的suffix属性如何使用？ 
 
-参数: title
+参数: suffix 
 
-说明: 数值的标题
+说明: 设置数值的后缀 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Statistic - Statistic.Countdown的value属性如何使用？
-
-参数: value
-
-说明: 数值内容
-
-类型: number | dayjs
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Statistic - Statistic.Countdown的valueStyle属性如何使用？
+### ant-design 中 Statistic - Statistic.Countdown的title属性如何使用？ 
 
-参数: valueStyle
+参数: title 
 
-说明: 设置数值区域的样式
+说明: 数值的标题 
 
-类型: CSSProperties
-
-默认值: -
-
-### ant-design 中 Statistic - Statistic.Countdown的onFinish属性如何使用？
-
-参数: onFinish
-
-说明: 倒计时完成时触发
-
-类型: () => void
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Statistic - Statistic.Countdown的onChange属性如何使用？
+### ant-design 中 Statistic - Statistic.Countdown的value属性如何使用？ 
 
-参数: onChange
+参数: value 
 
-说明: 倒计时时间变化时触发
+说明: 数值内容 
 
-类型: (value: number) => void
+类型: number | dayjs 
 
 默认值: -
+
+### ant-design 中 Statistic - Statistic.Countdown的valueStyle属性如何使用？ 
+
+参数: valueStyle 
+
+说明: 设置数值区域的样式 
+
+类型: CSSProperties 
+
+默认值: -
+
+### ant-design 中 Statistic - Statistic.Countdown的onFinish属性如何使用？ 
+
+参数: onFinish 
+
+说明: 倒计时完成时触发 
+
+类型: () => void 
+
+默认值: -
+
+### ant-design 中 Statistic - Statistic.Countdown的onChange属性如何使用？ 
+
+参数: onChange 
+
+说明: 倒计时时间变化时触发 
+
+类型: (value: number) => void 
+
+默认值: - 
 
 版本: 4.16.0
 
 ### ant-design 的 Spin 有哪些配置？
 
-#### Spin - API
+#### Spin - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | delay | 延迟显示加载效果的时间（防止闪烁） | number (毫秒) | - |
 | indicator | 加载指示符 | ReactNode | - |
 | size | 组件大小，可选值为 `small` `default` `large` | string | `default` |
@@ -7215,11 +7311,12 @@
 | tip | 当作为包裹元素时，可以自定义描述文案 | ReactNode | - |
 | wrapperClassName | 包装器的类属性 | string | - |
 | fullscreen | 显示带有 `Spin` 组件的背景 | boolean | false | 5.11.0 |
+
 
 ### ant-design 的 Spin - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | delay | 延迟显示加载效果的时间（防止闪烁） | number (毫秒) | - |
 | indicator | 加载指示符 | ReactNode | - |
 | size | 组件大小，可选值为 `small` `default` `large` | string | `default` |
@@ -7228,81 +7325,82 @@
 | wrapperClassName | 包装器的类属性 | string | - |
 | fullscreen | 显示带有 `Spin` 组件的背景 | boolean | false | 5.11.0 |
 
-### ant-design 中 Spin - API的delay属性如何使用？
 
-参数: delay
+### ant-design 中 Spin - API的delay属性如何使用？ 
 
-说明: 延迟显示加载效果的时间（防止闪烁）
+参数: delay 
 
-类型: number (毫秒)
+说明: 延迟显示加载效果的时间（防止闪烁） 
 
-默认值: -
-
-### ant-design 中 Spin - API的indicator属性如何使用？
-
-参数: indicator
-
-说明: 加载指示符
-
-类型: ReactNode
+类型: number (毫秒) 
 
 默认值: -
 
-### ant-design 中 Spin - API的size属性如何使用？
+### ant-design 中 Spin - API的indicator属性如何使用？ 
 
-参数: size
+参数: indicator 
 
-说明: 组件大小，可选值为 `small` `default` `large`
+说明: 加载指示符 
 
-类型: string
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Spin - API的size属性如何使用？ 
+
+参数: size 
+
+说明: 组件大小，可选值为 `small` `default` `large` 
+
+类型: string 
 
 默认值: `default`
 
-### ant-design 中 Spin - API的spinning属性如何使用？
+### ant-design 中 Spin - API的spinning属性如何使用？ 
 
-参数: spinning
+参数: spinning 
 
-说明: 是否为加载中状态
+说明: 是否为加载中状态 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Spin - API的tip属性如何使用？
+### ant-design 中 Spin - API的tip属性如何使用？ 
 
-参数: tip
+参数: tip 
 
-说明: 当作为包裹元素时，可以自定义描述文案
+说明: 当作为包裹元素时，可以自定义描述文案 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Spin - API的wrapperClassName属性如何使用？
-
-参数: wrapperClassName
-
-说明: 包装器的类属性
-
-类型: string
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Spin - API的fullscreen属性如何使用？
+### ant-design 中 Spin - API的wrapperClassName属性如何使用？ 
 
-参数: fullscreen
+参数: wrapperClassName 
 
-说明: 显示带有 `Spin` 组件的背景
+说明: 包装器的类属性 
 
-类型: boolean
+类型: string 
 
-默认值: false
+默认值: -
+
+### ant-design 中 Spin - API的fullscreen属性如何使用？ 
+
+参数: fullscreen 
+
+说明: 显示带有 `Spin` 组件的背景 
+
+类型: boolean 
+
+默认值: false 
 
 版本: 5.11.0
 
 ### ant-design 的 Space 有哪些配置？
 
-#### Space - Space
+#### Space - Space 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -7312,7 +7410,8 @@
 | split | 设置拆分 | ReactNode | - | 4.7.0 |
 | wrap | 是否自动换行，仅在 `horizontal` 时有效 | boolean | false | 4.9.0 |
 
-#### Space - Space.Compact
+
+#### Space - Space.Compact 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -7320,11 +7419,13 @@
 | direction | 指定排列方向 | `vertical` \| `horizontal` | `horizontal` | 4.24.0 |
 | size | 子组件大小 | `large` \| `middle` \| `small` | `middle` | 4.24.0 |
 
-#### Space - `styles`
 
-| 名称 | 说明                      | 版本  |
-| ---- | ------------------------- | ----- |
+#### Space - `styles` 
+
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
 | item | 设置 `Space` 包裹的子组件 | 5.6.0 |
+
 
 ### ant-design 的 Space - Space 有哪些配置？
 
@@ -7336,61 +7437,62 @@
 | split | 设置拆分 | ReactNode | - | 4.7.0 |
 | wrap | 是否自动换行，仅在 `horizontal` 时有效 | boolean | false | 4.9.0 |
 
-### ant-design 中 Space - Space的align属性如何使用？
 
-参数: align
+### ant-design 中 Space - Space的align属性如何使用？ 
 
-说明: 对齐方式
+参数: align 
 
-类型: `start` | `end` |`center` |`baseline`
+说明: 对齐方式 
 
-默认值: -
+类型: `start` | `end` |`center` |`baseline` 
+
+默认值: - 
 
 版本: 4.2.0
 
-### ant-design 中 Space - Space的direction属性如何使用？
+### ant-design 中 Space - Space的direction属性如何使用？ 
 
-参数: direction
+参数: direction 
 
-说明: 间距方向
+说明: 间距方向 
 
-类型: `vertical` | `horizontal`
+类型: `vertical` | `horizontal` 
 
-默认值: `horizontal`
+默认值: `horizontal` 
 
 版本: 4.1.0
 
-### ant-design 中 Space - Space的size属性如何使用？
+### ant-design 中 Space - Space的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 间距大小
+说明: 间距大小 
 
-类型: `small`
+类型: `small` 
 
 默认值: 4.1.0 | Array: 4.9.0
 
-### ant-design 中 Space - Space的split属性如何使用？
+### ant-design 中 Space - Space的split属性如何使用？ 
 
-参数: split
+参数: split 
 
-说明: 设置拆分
+说明: 设置拆分 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.7.0
 
-### ant-design 中 Space - Space的wrap属性如何使用？
+### ant-design 中 Space - Space的wrap属性如何使用？ 
 
-参数: wrap
+参数: wrap 
 
-说明: 是否自动换行，仅在 `horizontal` 时有效
+说明: 是否自动换行，仅在 `horizontal` 时有效 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.9.0
 
@@ -7402,62 +7504,64 @@
 | direction | 指定排列方向 | `vertical` \| `horizontal` | `horizontal` | 4.24.0 |
 | size | 子组件大小 | `large` \| `middle` \| `small` | `middle` | 4.24.0 |
 
-### ant-design 中 Space - Space.Compact的block属性如何使用？
 
-参数: block
+### ant-design 中 Space - Space.Compact的block属性如何使用？ 
 
-说明: 将宽度调整为父元素宽度的选项
+参数: block 
 
-类型: boolean
+说明: 将宽度调整为父元素宽度的选项 
 
-默认值: false
+类型: boolean 
 
-版本: 4.24.0
-
-### ant-design 中 Space - Space.Compact的direction属性如何使用？
-
-参数: direction
-
-说明: 指定排列方向
-
-类型: `vertical` | `horizontal`
-
-默认值: `horizontal`
+默认值: false 
 
 版本: 4.24.0
 
-### ant-design 中 Space - Space.Compact的size属性如何使用？
+### ant-design 中 Space - Space.Compact的direction属性如何使用？ 
 
-参数: size
+参数: direction 
 
-说明: 子组件大小
+说明: 指定排列方向 
 
-类型: `large` | `middle` | `small`
+类型: `vertical` | `horizontal` 
 
-默认值: `middle`
+默认值: `horizontal` 
+
+版本: 4.24.0
+
+### ant-design 中 Space - Space.Compact的size属性如何使用？ 
+
+参数: size 
+
+说明: 子组件大小 
+
+类型: `large` | `middle` | `small` 
+
+默认值: `middle` 
 
 版本: 4.24.0
 
 ### ant-design 的 Space - `styles` 有哪些配置？
 
-| 名称 | 说明                      | 版本  |
-| ---- | ------------------------- | ----- |
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
 | item | 设置 `Space` 包裹的子组件 | 5.6.0 |
 
-### ant-design 中 Space - `styles`的item属性如何使用？
 
-名称: item
+### ant-design 中 Space - `styles`的item属性如何使用？ 
 
-说明: 设置 `Space` 包裹的子组件
+名称: item 
+
+说明: 设置 `Space` 包裹的子组件 
 
 版本: 5.6.0
 
 ### ant-design 的 Slider 有哪些配置？
 
-#### Slider - API
+#### Slider - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | autoFocus | 自动获取焦点 | boolean | false |
 | classNames | 语义化结构 className | Record<SemanticDOM, string> | - | 5.10.0 |
 | defaultValue | 设置初始取值。当 `range` 为 false 时，使用 number，否则用 [number, number] | number \| [number, number] | 0 \| [0, 0] |
@@ -7478,22 +7582,25 @@
 | onChangeComplete | 与 `mouseup` 和 `keyup` 触发时机一致，把当前值作为参数传入 | (value) => void | - |
 | onChange | 当 Slider 的值发生改变时，会触发 onChange 事件，并把改变后的值作为参数传入 | (value) => void | - |
 
-#### Slider - `styles`
 
-| 名称   | 说明                             | 版本   |
-| ------ | -------------------------------- | ------ |
-| track  | 范围选择下，点和点之间单个选取条 | 5.10.0 |
-| tracks | 范围选择下，整个范围选取条       | 5.10.0 |
-| rail   | 背景条                           | 5.10.0 |
-| handle | 抓取点                           | 5.10.0 |
+#### Slider - `styles` 
 
-#### Slider - range
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
+| track | 范围选择下，点和点之间单个选取条 | 5.10.0 |
+| tracks | 范围选择下，整个范围选取条 | 5.10.0 |
+| rail | 背景条 | 5.10.0 |
+| handle | 抓取点 | 5.10.0 |
 
-| 参数           | 说明                 | 类型    | 默认值 | 版本   |
-| -------------- | -------------------- | ------- | ------ | ------ |
-| draggableTrack | 范围刻度是否可被拖拽 | boolean | false  | 4.10.0 |
 
-#### Slider - tooltip
+#### Slider - range 
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| draggableTrack | 范围刻度是否可被拖拽 | boolean | false | 4.10.0 |
+
+
+#### Slider - tooltip 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -7503,17 +7610,19 @@
 | getPopupContainer | Tooltip 渲染父节点，默认渲染到 body 上 | (triggerNode) => HTMLElement | () => document.body | 4.23.0 |
 | formatter | Slider 会把当前值传给 `formatter`，并在 Tooltip 中显示 `formatter` 的返回值，若为 null，则隐藏 Tooltip | value => ReactNode \| null | IDENTITY | 4.23.0 |
 
-#### Slider - 方法
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Slider - 方法 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
+
 
 ### ant-design 的 Slider - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | autoFocus | 自动获取焦点 | boolean | false |
 | classNames | 语义化结构 className | Record<SemanticDOM, string> | - | 5.10.0 |
 | defaultValue | 设置初始取值。当 `range` 为 false 时，使用 number，否则用 [number, number] | number \| [number, number] | 0 \| [0, 0] |
@@ -7534,258 +7643,261 @@
 | onChangeComplete | 与 `mouseup` 和 `keyup` 触发时机一致，把当前值作为参数传入 | (value) => void | - |
 | onChange | 当 Slider 的值发生改变时，会触发 onChange 事件，并把改变后的值作为参数传入 | (value) => void | - |
 
-### ant-design 中 Slider - API的autoFocus属性如何使用？
 
-参数: autoFocus
+### ant-design 中 Slider - API的autoFocus属性如何使用？ 
 
-说明: 自动获取焦点
+参数: autoFocus 
 
-类型: boolean
+说明: 自动获取焦点 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Slider - API的classNames属性如何使用？
+### ant-design 中 Slider - API的classNames属性如何使用？ 
 
-参数: classNames
+参数: classNames 
 
-说明: 语义化结构 className
+说明: 语义化结构 className 
 
-类型: Record<SemanticDOM, string>
+类型: Record<SemanticDOM, string> 
 
-默认值: -
+默认值: - 
 
 版本: 5.10.0
 
-### ant-design 中 Slider - API的defaultValue属性如何使用？
+### ant-design 中 Slider - API的defaultValue属性如何使用？ 
 
-参数: defaultValue
+参数: defaultValue 
 
-说明: 设置初始取值。当 `range` 为 false 时，使用 number，否则用 [number, number]
+说明: 设置初始取值。当 `range` 为 false 时，使用 number，否则用 [number, number] 
 
-类型: number | [number, number]
+类型: number | [number, number] 
 
 默认值: 0 | [0, 0]
 
-### ant-design 中 Slider - API的disabled属性如何使用？
+### ant-design 中 Slider - API的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 值为 true 时，滑块为禁用状态
+说明: 值为 true 时，滑块为禁用状态 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Slider - API的keyboard属性如何使用？
+### ant-design 中 Slider - API的keyboard属性如何使用？ 
 
-参数: keyboard
+参数: keyboard 
 
-说明: 支持使用键盘操作 handler
+说明: 支持使用键盘操作 handler 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 5.2.0+
 
-### ant-design 中 Slider - API的dots属性如何使用？
+### ant-design 中 Slider - API的dots属性如何使用？ 
 
-参数: dots
+参数: dots 
 
-说明: 是否只能拖拽到刻度上
+说明: 是否只能拖拽到刻度上 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Slider - API的included属性如何使用？
+### ant-design 中 Slider - API的included属性如何使用？ 
 
-参数: included
+参数: included 
 
-说明: `marks` 不为空对象时有效，值为 true 时表示值为包含关系，false 表示并列
+说明: `marks` 不为空对象时有效，值为 true 时表示值为包含关系，false 表示并列 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Slider - API的marks属性如何使用？
+### ant-design 中 Slider - API的marks属性如何使用？ 
 
-参数: marks
+参数: marks 
 
-说明: 刻度标记，key 的类型必须为 `number` 且取值在闭区间 [min, max] 内，每个标签可以单独设置样式
+说明: 刻度标记，key 的类型必须为 `number` 且取值在闭区间 [min, max] 内，每个标签可以单独设置样式 
 
-类型: object
+类型: object 
 
 默认值: { number: ReactNode } or { number: { style: CSSProperties, label: ReactNode } }
 
-### ant-design 中 Slider - API的max属性如何使用？
+### ant-design 中 Slider - API的max属性如何使用？ 
 
-参数: max
+参数: max 
 
-说明: 最大值
+说明: 最大值 
 
-类型: number
+类型: number 
 
 默认值: 100
 
-### ant-design 中 Slider - API的min属性如何使用？
+### ant-design 中 Slider - API的min属性如何使用？ 
 
-参数: min
+参数: min 
 
-说明: 最小值
+说明: 最小值 
 
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Slider - API的range属性如何使用？
+### ant-design 中 Slider - API的range属性如何使用？ 
 
-参数: range
+参数: range 
 
-说明: 双滑块模式
+说明: 双滑块模式 
 
-类型: boolean | [range](#range)
-
-默认值: false
-
-### ant-design 中 Slider - API的reverse属性如何使用？
-
-参数: reverse
-
-说明: 反向坐标轴
-
-类型: boolean
+类型: boolean | [range](#range) 
 
 默认值: false
 
-### ant-design 中 Slider - API的step属性如何使用？
+### ant-design 中 Slider - API的reverse属性如何使用？ 
 
-参数: step
+参数: reverse 
 
-说明: 步长，取值必须大于 0，并且可被 (max - min) 整除。当 `marks` 不为空对象时，可以设置 `step` 为 null，此时 Slider 的可选值仅有 marks 标出来的部分
+说明: 反向坐标轴 
 
-类型: number | null
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Slider - API的step属性如何使用？ 
+
+参数: step 
+
+说明: 步长，取值必须大于 0，并且可被 (max - min) 整除。当 `marks` 不为空对象时，可以设置 `step` 为 null，此时 Slider 的可选值仅有 marks 标出来的部分 
+
+类型: number | null 
 
 默认值: 1
 
-### ant-design 中 Slider - API的styles属性如何使用？
+### ant-design 中 Slider - API的styles属性如何使用？ 
 
-参数: styles
+参数: styles 
 
-说明: 语义化结构 className
+说明: 语义化结构 className 
 
-类型: Record<SemanticDOM, React.CSSProperties>
+类型: Record<SemanticDOM, React.CSSProperties> 
 
-默认值: -
+默认值: - 
 
 版本: 5.10.0
 
-### ant-design 中 Slider - API的tooltip属性如何使用？
+### ant-design 中 Slider - API的tooltip属性如何使用？ 
 
-参数: tooltip
+参数: tooltip 
 
-说明: 设置 Tooltip 相关属性
+说明: 设置 Tooltip 相关属性 
 
-类型: -
+类型: - 
 
 默认值: 4.23.0
 
-### ant-design 中 Slider - API的value属性如何使用？
+### ant-design 中 Slider - API的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 设置当前取值。当 `range` 为 false 时，使用 number，否则用 [number, number]
+说明: 设置当前取值。当 `range` 为 false 时，使用 number，否则用 [number, number] 
 
-类型: number | [number, number]
+类型: number | [number, number] 
 
 默认值: -
 
-### ant-design 中 Slider - API的vertical属性如何使用？
+### ant-design 中 Slider - API的vertical属性如何使用？ 
 
-参数: vertical
+参数: vertical 
 
-说明: 值为 true 时，Slider 为垂直方向
+说明: 值为 true 时，Slider 为垂直方向 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Slider - API的onChangeComplete属性如何使用？
+### ant-design 中 Slider - API的onChangeComplete属性如何使用？ 
 
-参数: onChangeComplete
+参数: onChangeComplete 
 
-说明: 与 `mouseup` 和 `keyup` 触发时机一致，把当前值作为参数传入
+说明: 与 `mouseup` 和 `keyup` 触发时机一致，把当前值作为参数传入 
 
-类型: (value) => void
+类型: (value) => void 
 
 默认值: -
 
-### ant-design 中 Slider - API的onChange属性如何使用？
+### ant-design 中 Slider - API的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 当 Slider 的值发生改变时，会触发 onChange 事件，并把改变后的值作为参数传入
+说明: 当 Slider 的值发生改变时，会触发 onChange 事件，并把改变后的值作为参数传入 
 
-类型: (value) => void
+类型: (value) => void 
 
 默认值: -
 
 ### ant-design 的 Slider - `styles` 有哪些配置？
 
-| 名称   | 说明                             | 版本   |
-| ------ | -------------------------------- | ------ |
-| track  | 范围选择下，点和点之间单个选取条 | 5.10.0 |
-| tracks | 范围选择下，整个范围选取条       | 5.10.0 |
-| rail   | 背景条                           | 5.10.0 |
-| handle | 抓取点                           | 5.10.0 |
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
+| track | 范围选择下，点和点之间单个选取条 | 5.10.0 |
+| tracks | 范围选择下，整个范围选取条 | 5.10.0 |
+| rail | 背景条 | 5.10.0 |
+| handle | 抓取点 | 5.10.0 |
 
-### ant-design 中 Slider - `styles`的track属性如何使用？
 
-名称: track
+### ant-design 中 Slider - `styles`的track属性如何使用？ 
 
-说明: 范围选择下，点和点之间单个选取条
+名称: track 
 
-版本: 5.10.0
-
-### ant-design 中 Slider - `styles`的tracks属性如何使用？
-
-名称: tracks
-
-说明: 范围选择下，整个范围选取条
+说明: 范围选择下，点和点之间单个选取条 
 
 版本: 5.10.0
 
-### ant-design 中 Slider - `styles`的rail属性如何使用？
+### ant-design 中 Slider - `styles`的tracks属性如何使用？ 
 
-名称: rail
+名称: tracks 
 
-说明: 背景条
+说明: 范围选择下，整个范围选取条 
 
 版本: 5.10.0
 
-### ant-design 中 Slider - `styles`的handle属性如何使用？
+### ant-design 中 Slider - `styles`的rail属性如何使用？ 
 
-名称: handle
+名称: rail 
 
-说明: 抓取点
+说明: 背景条 
+
+版本: 5.10.0
+
+### ant-design 中 Slider - `styles`的handle属性如何使用？ 
+
+名称: handle 
+
+说明: 抓取点 
 
 版本: 5.10.0
 
 ### ant-design 的 Slider - range 有哪些配置？
 
-| 参数           | 说明                 | 类型    | 默认值 | 版本   |
-| -------------- | -------------------- | ------- | ------ | ------ |
-| draggableTrack | 范围刻度是否可被拖拽 | boolean | false  | 4.10.0 |
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| draggableTrack | 范围刻度是否可被拖拽 | boolean | false | 4.10.0 |
 
-### ant-design 中 Slider - range的draggableTrack属性如何使用？
 
-参数: draggableTrack
+### ant-design 中 Slider - range的draggableTrack属性如何使用？ 
 
-说明: 范围刻度是否可被拖拽
+参数: draggableTrack 
 
-类型: boolean
+说明: 范围刻度是否可被拖拽 
 
-默认值: false
+类型: boolean 
+
+默认值: false 
 
 版本: 4.10.0
 
@@ -7799,88 +7911,90 @@
 | getPopupContainer | Tooltip 渲染父节点，默认渲染到 body 上 | (triggerNode) => HTMLElement | () => document.body | 4.23.0 |
 | formatter | Slider 会把当前值传给 `formatter`，并在 Tooltip 中显示 `formatter` 的返回值，若为 null，则隐藏 Tooltip | value => ReactNode \| null | IDENTITY | 4.23.0 |
 
-### ant-design 中 Slider - tooltip的autoAdjustOverflow属性如何使用？
 
-参数: autoAdjustOverflow
+### ant-design 中 Slider - tooltip的autoAdjustOverflow属性如何使用？ 
 
-说明: 是否自动调整弹出位置
+参数: autoAdjustOverflow 
 
-类型: boolean
+说明: 是否自动调整弹出位置 
 
-默认值: true
+类型: boolean 
+
+默认值: true 
 
 版本: 5.8.0
 
-### ant-design 中 Slider - tooltip的open属性如何使用？
+### ant-design 中 Slider - tooltip的open属性如何使用？ 
 
-参数: open
+参数: open 
 
-说明: 值为 true 时，Tooltip 将会始终显示；否则始终不显示，哪怕在拖拽及移入时
+说明: 值为 true 时，Tooltip 将会始终显示；否则始终不显示，哪怕在拖拽及移入时 
 
-类型: boolean
+类型: boolean 
 
-默认值: -
-
-版本: 4.23.0
-
-### ant-design 中 Slider - tooltip的placement属性如何使用？
-
-参数: placement
-
-说明: 设置 Tooltip 展示位置。参考 [Tooltip](/components/tooltip-cn)
-
-类型: string
-
-默认值: -
+默认值: - 
 
 版本: 4.23.0
 
-### ant-design 中 Slider - tooltip的getPopupContainer属性如何使用？
+### ant-design 中 Slider - tooltip的placement属性如何使用？ 
 
-参数: getPopupContainer
+参数: placement 
 
-说明: Tooltip 渲染父节点，默认渲染到 body 上
+说明: 设置 Tooltip 展示位置。参考 [Tooltip](/components/tooltip-cn) 
 
-类型: (triggerNode) => HTMLElement
+类型: string 
 
-默认值: () => document.body
+默认值: - 
 
 版本: 4.23.0
 
-### ant-design 中 Slider - tooltip的formatter属性如何使用？
+### ant-design 中 Slider - tooltip的getPopupContainer属性如何使用？ 
 
-参数: formatter
+参数: getPopupContainer 
 
-说明: Slider 会把当前值传给 `formatter`，并在 Tooltip 中显示 `formatter` 的返回值，若为 null，则隐藏 Tooltip
+说明: Tooltip 渲染父节点，默认渲染到 body 上 
 
-类型: value => ReactNode | null
+类型: (triggerNode) => HTMLElement 
 
-默认值: IDENTITY
+默认值: () => document.body 
+
+版本: 4.23.0
+
+### ant-design 中 Slider - tooltip的formatter属性如何使用？ 
+
+参数: formatter 
+
+说明: Slider 会把当前值传给 `formatter`，并在 Tooltip 中显示 `formatter` 的返回值，若为 null，则隐藏 Tooltip 
+
+类型: value => ReactNode | null 
+
+默认值: IDENTITY 
 
 版本: 4.23.0
 
 ### ant-design 的 Slider - 方法 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Slider - 方法的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Slider - 方法的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Slider - 方法的focus()属性如何使用？
+### ant-design 中 Slider - 方法的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 Skeleton 有哪些配置？
 
-#### Skeleton - Skeleton
+#### Skeleton - Skeleton 
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -7891,7 +8005,8 @@
 | round | 为 true 时，段落和标题显示圆角 | boolean | false |
 | title | 是否显示标题占位图 | boolean \| [SkeletonTitleProps](#skeletontitleprops) | true |
 
-#### Skeleton - SkeletonAvatarProps
+
+#### Skeleton - SkeletonAvatarProps 
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -7899,34 +8014,39 @@
 | shape | 指定头像的形状 | `circle` \| `square` | - |
 | size | 设置头像占位图的大小 | number \| `large` \| `small` \| `default` | - |
 
-#### Skeleton - SkeletonTitleProps
 
-| 属性  | 说明                 | 类型             | 默认值 |
-| ----- | -------------------- | ---------------- | ------ |
-| width | 设置标题占位图的宽度 | number \| string | -      |
+#### Skeleton - SkeletonTitleProps 
 
-#### Skeleton - SkeletonParagraphProps
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| width | 设置标题占位图的宽度 | number \| string | - |
+
+
+#### Skeleton - SkeletonParagraphProps 
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | rows | 设置段落占位图的行数 | number | - |
 | width | 设置段落占位图的宽度，若为数组时则为对应的每行宽度，反之则是最后一行的宽度 | number \| string \| Array<number \| string> | - |
 
-#### Skeleton - SkeletonButtonProps
+
+#### Skeleton - SkeletonButtonProps 
 
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | active | 是否展示动画效果 | boolean | false |
 | block | 将按钮宽度调整为其父宽度的选项 | boolean | false | 4.17.0 |
 | shape | 指定按钮的形状 | `circle` \| `round` \| `square` \| `default` | - |
 | size | 设置按钮的大小 | `large` \| `small` \| `default` | - |
 
-#### Skeleton - SkeletonInputProps
 
-| 属性   | 说明             | 类型                            | 默认值 |
-| ------ | ---------------- | ------------------------------- | ------ |
-| active | 是否展示动画效果 | boolean                         | false  |
-| size   | 设置输入框的大小 | `large` \| `small` \| `default` | -      |
+#### Skeleton - SkeletonInputProps 
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| active | 是否展示动画效果 | boolean | false |
+| size | 设置输入框的大小 | `large` \| `small` \| `default` | - |
+
 
 ### ant-design 的 Skeleton - Skeleton 有哪些配置？
 
@@ -7939,63 +8059,64 @@
 | round | 为 true 时，段落和标题显示圆角 | boolean | false |
 | title | 是否显示标题占位图 | boolean \| [SkeletonTitleProps](#skeletontitleprops) | true |
 
-### ant-design 中 Skeleton - Skeleton的active属性如何使用？
 
-属性: active
+### ant-design 中 Skeleton - Skeleton的active属性如何使用？ 
 
-说明: 是否展示动画效果
+属性: active 
 
-类型: boolean
+说明: 是否展示动画效果 
 
-默认值: false
-
-### ant-design 中 Skeleton - Skeleton的avatar属性如何使用？
-
-属性: avatar
-
-说明: 是否显示头像占位图
-
-类型: boolean | [SkeletonAvatarProps](#skeletonavatarprops)
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Skeleton - Skeleton的loading属性如何使用？
+### ant-design 中 Skeleton - Skeleton的avatar属性如何使用？ 
 
-属性: loading
+属性: avatar 
 
-说明: 为 true 时，显示占位图。反之则直接展示子组件
+说明: 是否显示头像占位图 
 
-类型: boolean
+类型: boolean | [SkeletonAvatarProps](#skeletonavatarprops) 
+
+默认值: false
+
+### ant-design 中 Skeleton - Skeleton的loading属性如何使用？ 
+
+属性: loading 
+
+说明: 为 true 时，显示占位图。反之则直接展示子组件 
+
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Skeleton - Skeleton的paragraph属性如何使用？
+### ant-design 中 Skeleton - Skeleton的paragraph属性如何使用？ 
 
-属性: paragraph
+属性: paragraph 
 
-说明: 是否显示段落占位图
+说明: 是否显示段落占位图 
 
-类型: boolean | [SkeletonParagraphProps](#skeletonparagraphprops)
+类型: boolean | [SkeletonParagraphProps](#skeletonparagraphprops) 
 
 默认值: true
 
-### ant-design 中 Skeleton - Skeleton的round属性如何使用？
+### ant-design 中 Skeleton - Skeleton的round属性如何使用？ 
 
-属性: round
+属性: round 
 
-说明: 为 true 时，段落和标题显示圆角
+说明: 为 true 时，段落和标题显示圆角 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Skeleton - Skeleton的title属性如何使用？
+### ant-design 中 Skeleton - Skeleton的title属性如何使用？ 
 
-属性: title
+属性: title 
 
-说明: 是否显示标题占位图
+说明: 是否显示标题占位图 
 
-类型: boolean | [SkeletonTitleProps](#skeletontitleprops)
+类型: boolean | [SkeletonTitleProps](#skeletontitleprops) 
 
 默认值: true
 
@@ -8007,49 +8128,51 @@
 | shape | 指定头像的形状 | `circle` \| `square` | - |
 | size | 设置头像占位图的大小 | number \| `large` \| `small` \| `default` | - |
 
-### ant-design 中 Skeleton - SkeletonAvatarProps的active属性如何使用？
 
-属性: active
+### ant-design 中 Skeleton - SkeletonAvatarProps的active属性如何使用？ 
 
-说明: 是否展示动画效果，仅在单独使用头像骨架时生效
+属性: active 
 
-类型: boolean
+说明: 是否展示动画效果，仅在单独使用头像骨架时生效 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Skeleton - SkeletonAvatarProps的shape属性如何使用？
+### ant-design 中 Skeleton - SkeletonAvatarProps的shape属性如何使用？ 
 
-属性: shape
+属性: shape 
 
-说明: 指定头像的形状
+说明: 指定头像的形状 
 
-类型: `circle` | `square`
+类型: `circle` | `square` 
 
 默认值: -
 
-### ant-design 中 Skeleton - SkeletonAvatarProps的size属性如何使用？
+### ant-design 中 Skeleton - SkeletonAvatarProps的size属性如何使用？ 
 
-属性: size
+属性: size 
 
-说明: 设置头像占位图的大小
+说明: 设置头像占位图的大小 
 
-类型: number | `large` | `small` | `default`
+类型: number | `large` | `small` | `default` 
 
 默认值: -
 
 ### ant-design 的 Skeleton - SkeletonTitleProps 有哪些配置？
 
-| 属性  | 说明                 | 类型             | 默认值 |
-| ----- | -------------------- | ---------------- | ------ |
-| width | 设置标题占位图的宽度 | number \| string | -      |
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| width | 设置标题占位图的宽度 | number \| string | - |
 
-### ant-design 中 Skeleton - SkeletonTitleProps的width属性如何使用？
 
-属性: width
+### ant-design 中 Skeleton - SkeletonTitleProps的width属性如何使用？ 
 
-说明: 设置标题占位图的宽度
+属性: width 
 
-类型: number | string
+说明: 设置标题占位图的宽度 
+
+类型: number | string 
 
 默认值: -
 
@@ -8060,107 +8183,110 @@
 | rows | 设置段落占位图的行数 | number | - |
 | width | 设置段落占位图的宽度，若为数组时则为对应的每行宽度，反之则是最后一行的宽度 | number \| string \| Array<number \| string> | - |
 
-### ant-design 中 Skeleton - SkeletonParagraphProps的rows属性如何使用？
 
-属性: rows
+### ant-design 中 Skeleton - SkeletonParagraphProps的rows属性如何使用？ 
 
-说明: 设置段落占位图的行数
+属性: rows 
 
-类型: number
+说明: 设置段落占位图的行数 
+
+类型: number 
 
 默认值: -
 
-### ant-design 中 Skeleton - SkeletonParagraphProps的width属性如何使用？
+### ant-design 中 Skeleton - SkeletonParagraphProps的width属性如何使用？ 
 
-属性: width
+属性: width 
 
-说明: 设置段落占位图的宽度，若为数组时则为对应的每行宽度，反之则是最后一行的宽度
+说明: 设置段落占位图的宽度，若为数组时则为对应的每行宽度，反之则是最后一行的宽度 
 
-类型: number | string | Array<number | string>
+类型: number | string | Array<number | string> 
 
 默认值: -
 
 ### ant-design 的 Skeleton - SkeletonButtonProps 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | active | 是否展示动画效果 | boolean | false |
 | block | 将按钮宽度调整为其父宽度的选项 | boolean | false | 4.17.0 |
 | shape | 指定按钮的形状 | `circle` \| `round` \| `square` \| `default` | - |
 | size | 设置按钮的大小 | `large` \| `small` \| `default` | - |
 
-### ant-design 中 Skeleton - SkeletonButtonProps的active属性如何使用？
 
-属性: active
+### ant-design 中 Skeleton - SkeletonButtonProps的active属性如何使用？ 
 
-说明: 是否展示动画效果
+属性: active 
 
-类型: boolean
+说明: 是否展示动画效果 
 
-默认值: false
-
-### ant-design 中 Skeleton - SkeletonButtonProps的block属性如何使用？
-
-属性: block
-
-说明: 将按钮宽度调整为其父宽度的选项
-
-类型: boolean
+类型: boolean 
 
 默认值: false
+
+### ant-design 中 Skeleton - SkeletonButtonProps的block属性如何使用？ 
+
+属性: block 
+
+说明: 将按钮宽度调整为其父宽度的选项 
+
+类型: boolean 
+
+默认值: false 
 
 版本: 4.17.0
 
-### ant-design 中 Skeleton - SkeletonButtonProps的shape属性如何使用？
+### ant-design 中 Skeleton - SkeletonButtonProps的shape属性如何使用？ 
 
-属性: shape
+属性: shape 
 
-说明: 指定按钮的形状
+说明: 指定按钮的形状 
 
-类型: `circle` | `round` | `square` | `default`
+类型: `circle` | `round` | `square` | `default` 
 
 默认值: -
 
-### ant-design 中 Skeleton - SkeletonButtonProps的size属性如何使用？
+### ant-design 中 Skeleton - SkeletonButtonProps的size属性如何使用？ 
 
-属性: size
+属性: size 
 
-说明: 设置按钮的大小
+说明: 设置按钮的大小 
 
-类型: `large` | `small` | `default`
+类型: `large` | `small` | `default` 
 
 默认值: -
 
 ### ant-design 的 Skeleton - SkeletonInputProps 有哪些配置？
 
-| 属性   | 说明             | 类型                            | 默认值 |
-| ------ | ---------------- | ------------------------------- | ------ |
-| active | 是否展示动画效果 | boolean                         | false  |
-| size   | 设置输入框的大小 | `large` \| `small` \| `default` | -      |
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| active | 是否展示动画效果 | boolean | false |
+| size | 设置输入框的大小 | `large` \| `small` \| `default` | - |
 
-### ant-design 中 Skeleton - SkeletonInputProps的active属性如何使用？
 
-属性: active
+### ant-design 中 Skeleton - SkeletonInputProps的active属性如何使用？ 
 
-说明: 是否展示动画效果
+属性: active 
 
-类型: boolean
+说明: 是否展示动画效果 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Skeleton - SkeletonInputProps的size属性如何使用？
+### ant-design 中 Skeleton - SkeletonInputProps的size属性如何使用？ 
 
-属性: size
+属性: size 
 
-说明: 设置输入框的大小
+说明: 设置输入框的大小 
 
-类型: `large` | `small` | `default`
+类型: `large` | `small` | `default` 
 
 默认值: -
 
 ### ant-design 的 Select 有哪些配置？
 
-#### Select - Select props
+#### Select - Select props 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -8220,28 +8346,32 @@
 | onSearch | 文本框值变化时回调 | function(value: string) | - |
 | onSelect | 被选中时调用，参数为选中项的 value (或 key) 值 | function(value: string \| number \| LabeledValue, option: Option) | - |
 
-#### Select - Select Methods
 
-| 名称    | 说明     |
-| ------- | -------- |
-| blur()  | 取消焦点 |
+#### Select - Select Methods 
+
+| 名称 | 说明 |
+| --- | --- |
+| blur() | 取消焦点 |
 | focus() | 获取焦点 |
 
-#### Select - Option props
 
-| 参数      | 说明                     | 类型             | 默认值 |
-| --------- | ------------------------ | ---------------- | ------ |
-| className | Option 器类名            | string           | -      |
-| disabled  | 是否禁用                 | boolean          | false  |
-| title     | 选项上的原生 title 提示  | string           | -      |
-| value     | 默认根据此属性值进行筛选 | string \| number | -      |
+#### Select - Option props 
 
-#### Select - OptGroup props
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| className | Option 器类名 | string | - |
+| disabled | 是否禁用 | boolean | false |
+| title | 选项上的原生 title 提示 | string | - |
+| value | 默认根据此属性值进行筛选 | string \| number | - |
 
-| 参数  | 说明 | 类型                    | 默认值 |
-| ----- | ---- | ----------------------- | ------ |
-| key   | Key  | string                  | -      |
-| label | 组名 | string \| React.Element | -      |
+
+#### Select - OptGroup props 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| key | Key | string | - |
+| label | 组名 | string \| React.Element | - |
+
 
 ### ant-design 的 Select - Select props 有哪些配置？
 
@@ -8303,678 +8433,682 @@
 | onSearch | 文本框值变化时回调 | function(value: string) | - |
 | onSelect | 被选中时调用，参数为选中项的 value (或 key) 值 | function(value: string \| number \| LabeledValue, option: Option) | - |
 
-### ant-design 中 Select - Select props的allowClear属性如何使用？
 
-参数: allowClear
+### ant-design 中 Select - Select props的allowClear属性如何使用？ 
 
-说明: 自定义清除按钮
+参数: allowClear 
 
-类型: boolean | { clearIcon?: ReactNode }
+说明: 自定义清除按钮 
 
-默认值: false
+类型: boolean | { clearIcon?: ReactNode } 
+
+默认值: false 
 
 版本: 5.8.0: 支持对象类型
 
-### ant-design 中 Select - Select props的autoClearSearchValue属性如何使用？
+### ant-design 中 Select - Select props的autoClearSearchValue属性如何使用？ 
 
-参数: autoClearSearchValue
+参数: autoClearSearchValue 
 
-说明: 是否在选中项后清空搜索框，只在 `mode` 为 `multiple` 或 `tags` 时有效
+说明: 是否在选中项后清空搜索框，只在 `mode` 为 `multiple` 或 `tags` 时有效 
 
-类型: boolean
-
-默认值: true
-
-### ant-design 中 Select - Select props的autoFocus属性如何使用？
-
-参数: autoFocus
-
-说明: 默认获取焦点
-
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Select - Select props的defaultActiveFirstOption属性如何使用？
-
-参数: defaultActiveFirstOption
-
-说明: 是否默认高亮第一个选项
-
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Select - Select props的defaultOpen属性如何使用？
+### ant-design 中 Select - Select props的autoFocus属性如何使用？ 
 
-参数: defaultOpen
+参数: autoFocus 
 
-说明: 是否默认展开下拉菜单
+说明: 默认获取焦点 
 
-类型: boolean
-
-默认值: -
-
-### ant-design 中 Select - Select props的defaultValue属性如何使用？
-
-参数: defaultValue
-
-说明: 指定默认选中的条目
-
-类型: string | string[] |<br />number | number[] | <br />LabeledValue | LabeledValue[]
-
-默认值: -
-
-### ant-design 中 Select - Select props的disabled属性如何使用？
-
-参数: disabled
-
-说明: 是否禁用
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Select - Select props的popupClassName属性如何使用？
+### ant-design 中 Select - Select props的defaultActiveFirstOption属性如何使用？ 
 
-参数: popupClassName
+参数: defaultActiveFirstOption 
 
-说明: 下拉菜单的 className 属性
+说明: 是否默认高亮第一个选项 
 
-类型: string
+类型: boolean 
+
+默认值: true
+
+### ant-design 中 Select - Select props的defaultOpen属性如何使用？ 
+
+参数: defaultOpen 
+
+说明: 是否默认展开下拉菜单 
+
+类型: boolean 
 
 默认值: -
+
+### ant-design 中 Select - Select props的defaultValue属性如何使用？ 
+
+参数: defaultValue 
+
+说明: 指定默认选中的条目 
+
+类型: string | string[] |<br />number | number[] | <br />LabeledValue | LabeledValue[] 
+
+默认值: -
+
+### ant-design 中 Select - Select props的disabled属性如何使用？ 
+
+参数: disabled 
+
+说明: 是否禁用 
+
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Select - Select props的popupClassName属性如何使用？ 
+
+参数: popupClassName 
+
+说明: 下拉菜单的 className 属性 
+
+类型: string 
+
+默认值: - 
 
 版本: 4.23.0
 
-### ant-design 中 Select - Select props的popupMatchSelectWidth属性如何使用？
+### ant-design 中 Select - Select props的popupMatchSelectWidth属性如何使用？ 
 
-参数: popupMatchSelectWidth
+参数: popupMatchSelectWidth 
 
-说明: 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动
+说明: 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动 
 
-类型: boolean | number
+类型: boolean | number 
 
-默认值: true
+默认值: true 
 
 版本: 5.5.0
 
-### ant-design 中 Select - Select props的dropdownRender属性如何使用？
+### ant-design 中 Select - Select props的dropdownRender属性如何使用？ 
 
-参数: dropdownRender
+参数: dropdownRender 
 
-说明: 自定义下拉框内容
+说明: 自定义下拉框内容 
 
-类型: (originNode: ReactNode) => ReactNode
-
-默认值: -
-
-### ant-design 中 Select - Select props的dropdownStyle属性如何使用？
-
-参数: dropdownStyle
-
-说明: 下拉菜单的 style 属性
-
-类型: CSSProperties
+类型: (originNode: ReactNode) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Select - Select props的fieldNames属性如何使用？
+### ant-design 中 Select - Select props的dropdownStyle属性如何使用？ 
 
-参数: fieldNames
+参数: dropdownStyle 
 
-说明: 自定义节点 label、value、options、groupLabel 的字段
+说明: 下拉菜单的 style 属性 
 
-类型: object
+类型: CSSProperties 
 
-默认值: { label: `label`, value: `value`, options: `options`, groupLabel: `label` }
+默认值: -
+
+### ant-design 中 Select - Select props的fieldNames属性如何使用？ 
+
+参数: fieldNames 
+
+说明: 自定义节点 label、value、options、groupLabel 的字段 
+
+类型: object 
+
+默认值: { label: `label`, value: `value`, options: `options`, groupLabel: `label` } 
 
 版本: 4.17.0（`groupLabel` 在 5.6.0 新增）
 
-### ant-design 中 Select - Select props的filterOption属性如何使用？
+### ant-design 中 Select - Select props的filterOption属性如何使用？ 
 
-参数: filterOption
+参数: filterOption 
 
-说明: 是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 true，反之则返回 false。[示例](#select-demo-search)
+说明: 是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 true，反之则返回 false。[示例](#select-demo-search) 
 
-类型: boolean | function(inputValue, option)
+类型: boolean | function(inputValue, option) 
 
 默认值: true
 
-### ant-design 中 Select - Select props的filterSort属性如何使用？
+### ant-design 中 Select - Select props的filterSort属性如何使用？ 
 
-参数: filterSort
+参数: filterSort 
 
-说明: 搜索时对筛选结果项的排序函数, 类似[Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)里的 compareFunction
+说明: 搜索时对筛选结果项的排序函数, 类似[Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)里的 compareFunction 
 
-类型: (optionA: Option, optionB: Option) => number
+类型: (optionA: Option, optionB: Option) => number 
 
-默认值: -
+默认值: - 
 
 版本: 4.9.0
 
-### ant-design 中 Select - Select props的getPopupContainer属性如何使用？
+### ant-design 中 Select - Select props的getPopupContainer属性如何使用？ 
 
-参数: getPopupContainer
+参数: getPopupContainer 
 
-说明: 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codesandbox.io/s/4j168r7jw0)
+说明: 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codesandbox.io/s/4j168r7jw0) 
 
-类型: function(triggerNode)
+类型: function(triggerNode) 
 
 默认值: () => document.body
 
-### ant-design 中 Select - Select props的labelInValue属性如何使用？
+### ant-design 中 Select - Select props的labelInValue属性如何使用？ 
 
-参数: labelInValue
+参数: labelInValue 
 
-说明: 是否把每个选项的 label 包装到 value 中，会把 Select 的 value 类型从 `string` 变为 { value: string, label: ReactNode } 的格式
+说明: 是否把每个选项的 label 包装到 value 中，会把 Select 的 value 类型从 `string` 变为 { value: string, label: ReactNode } 的格式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Select - Select props的listHeight属性如何使用？
+### ant-design 中 Select - Select props的listHeight属性如何使用？ 
 
-参数: listHeight
+参数: listHeight 
 
-说明: 设置弹窗滚动高度
+说明: 设置弹窗滚动高度 
 
-类型: number
+类型: number 
 
 默认值: 256
 
-### ant-design 中 Select - Select props的loading属性如何使用？
+### ant-design 中 Select - Select props的loading属性如何使用？ 
 
-参数: loading
+参数: loading 
 
-说明: 加载中状态
+说明: 加载中状态 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Select - Select props的maxCount属性如何使用？
+### ant-design 中 Select - Select props的maxCount属性如何使用？ 
 
-参数: maxCount
+参数: maxCount 
 
-说明: 指定可选中的最多 items 数量，仅在 `mode` 为 `multiple` 或 `tags` 时生效
+说明: 指定可选中的最多 items 数量，仅在 `mode` 为 `multiple` 或 `tags` 时生效 
 
-类型: number
+类型: number 
 
-默认值: -
+默认值: - 
 
 版本: 5.13.0
 
-### ant-design 中 Select - Select props的maxTagCount属性如何使用？
+### ant-design 中 Select - Select props的maxTagCount属性如何使用？ 
 
-参数: maxTagCount
+参数: maxTagCount 
 
-说明: 最多显示多少个 tag，响应式模式会对性能产生损耗
+说明: 最多显示多少个 tag，响应式模式会对性能产生损耗 
 
-类型: number | `responsive`
+类型: number | `responsive` 
 
-默认值: -
+默认值: - 
 
 版本: responsive: 4.10
 
-### ant-design 中 Select - Select props的maxTagPlaceholder属性如何使用？
+### ant-design 中 Select - Select props的maxTagPlaceholder属性如何使用？ 
 
-参数: maxTagPlaceholder
+参数: maxTagPlaceholder 
 
-说明: 隐藏 tag 时显示的内容
+说明: 隐藏 tag 时显示的内容 
 
-类型: ReactNode | function(omittedValues)
-
-默认值: -
-
-### ant-design 中 Select - Select props的maxTagTextLength属性如何使用？
-
-参数: maxTagTextLength
-
-说明: 最大显示的 tag 文本长度
-
-类型: number
+类型: ReactNode | function(omittedValues) 
 
 默认值: -
 
-### ant-design 中 Select - Select props的menuItemSelectedIcon属性如何使用？
+### ant-design 中 Select - Select props的maxTagTextLength属性如何使用？ 
 
-参数: menuItemSelectedIcon
+参数: maxTagTextLength 
 
-说明: 自定义多选时当前选中的条目图标
+说明: 最大显示的 tag 文本长度 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Select - Select props的mode属性如何使用？
-
-参数: mode
-
-说明: 设置 Select 的模式为多选或标签
-
-类型: `multiple` | `tags`
+类型: number 
 
 默认值: -
 
-### ant-design 中 Select - Select props的notFoundContent属性如何使用？
+### ant-design 中 Select - Select props的menuItemSelectedIcon属性如何使用？ 
 
-参数: notFoundContent
+参数: menuItemSelectedIcon 
 
-说明: 当下拉列表为空时显示的内容
+说明: 自定义多选时当前选中的条目图标 
 
-类型: ReactNode
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Select - Select props的mode属性如何使用？ 
+
+参数: mode 
+
+说明: 设置 Select 的模式为多选或标签 
+
+类型: `multiple` | `tags` 
+
+默认值: -
+
+### ant-design 中 Select - Select props的notFoundContent属性如何使用？ 
+
+参数: notFoundContent 
+
+说明: 当下拉列表为空时显示的内容 
+
+类型: ReactNode 
 
 默认值: `Not Found`
 
-### ant-design 中 Select - Select props的open属性如何使用？
+### ant-design 中 Select - Select props的open属性如何使用？ 
 
-参数: open
+参数: open 
 
-说明: 是否展开下拉菜单
+说明: 是否展开下拉菜单 
 
-类型: boolean
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Select - Select props的optionFilterProp属性如何使用？
+### ant-design 中 Select - Select props的optionFilterProp属性如何使用？ 
 
-参数: optionFilterProp
+参数: optionFilterProp 
 
-说明: 搜索时过滤对应的 `option` 属性，如设置为 `children` 表示对内嵌内容进行搜索。若通过 `options` 属性配置选项内容，建议设置 `optionFilterProp="label"` 来对内容进行搜索。
+说明: 搜索时过滤对应的 `option` 属性，如设置为 `children` 表示对内嵌内容进行搜索。若通过 `options` 属性配置选项内容，建议设置 `optionFilterProp="label"` 来对内容进行搜索。 
 
-类型: string
+类型: string 
 
 默认值: `value`
 
-### ant-design 中 Select - Select props的optionLabelProp属性如何使用？
+### ant-design 中 Select - Select props的optionLabelProp属性如何使用？ 
 
-参数: optionLabelProp
+参数: optionLabelProp 
 
-说明: 回填到选择框的 Option 的属性值，默认是 Option 的子元素。比如在子元素需要高亮效果时，此值可以设为 `value`。[示例](https://codesandbox.io/s/antd-reproduction-template-tk678)
+说明: 回填到选择框的 Option 的属性值，默认是 Option 的子元素。比如在子元素需要高亮效果时，此值可以设为 `value`。[示例](https://codesandbox.io/s/antd-reproduction-template-tk678) 
 
-类型: string
+类型: string 
 
 默认值: `children`
 
-### ant-design 中 Select - Select props的options属性如何使用？
+### ant-design 中 Select - Select props的options属性如何使用？ 
 
-参数: options
+参数: options 
 
-说明: 数据化配置选项内容，相比 jsx 定义会获得更好的渲染性能
+说明: 数据化配置选项内容，相比 jsx 定义会获得更好的渲染性能 
 
-类型: { label, value }[]
-
-默认值: -
-
-### ant-design 中 Select - Select props的optionRender属性如何使用？
-
-参数: optionRender
-
-说明: 自定义渲染下拉选项
-
-类型: (option: FlattenOptionData<BaseOptionType> , info: { index: number }) => React.ReactNode
+类型: { label, value }[] 
 
 默认值: -
+
+### ant-design 中 Select - Select props的optionRender属性如何使用？ 
+
+参数: optionRender 
+
+说明: 自定义渲染下拉选项 
+
+类型: (option: FlattenOptionData<BaseOptionType> , info: { index: number }) => React.ReactNode 
+
+默认值: - 
 
 版本: 5.11.0
 
-### ant-design 中 Select - Select props的placeholder属性如何使用？
+### ant-design 中 Select - Select props的placeholder属性如何使用？ 
 
-参数: placeholder
+参数: placeholder 
 
-说明: 选择框默认文本
+说明: 选择框默认文本 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Select - Select props的placement属性如何使用？
+### ant-design 中 Select - Select props的placement属性如何使用？ 
 
-参数: placement
+参数: placement 
 
-说明: 选择框弹出的位置
+说明: 选择框弹出的位置 
 
-类型: `bottomLeft` `bottomRight` `topLeft` `topRight`
+类型: `bottomLeft` `bottomRight` `topLeft` `topRight` 
 
 默认值: bottomLeft
 
-### ant-design 中 Select - Select props的removeIcon属性如何使用？
+### ant-design 中 Select - Select props的removeIcon属性如何使用？ 
 
-参数: removeIcon
+参数: removeIcon 
 
-说明: 自定义的多选框清除图标
+说明: 自定义的多选框清除图标 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Select - Select props的searchValue属性如何使用？
-
-参数: searchValue
-
-说明: 控制搜索文本
-
-类型: string
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Select - Select props的showSearch属性如何使用？
+### ant-design 中 Select - Select props的searchValue属性如何使用？ 
 
-参数: showSearch
+参数: searchValue 
 
-说明: 配置是否可搜索
+说明: 控制搜索文本 
 
-类型: boolean
+类型: string 
+
+默认值: -
+
+### ant-design 中 Select - Select props的showSearch属性如何使用？ 
+
+参数: showSearch 
+
+说明: 配置是否可搜索 
+
+类型: boolean 
 
 默认值: 单选为 false，多选为 true
 
-### ant-design 中 Select - Select props的size属性如何使用？
+### ant-design 中 Select - Select props的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 选择框大小
+说明: 选择框大小 
 
-类型: `large` | `middle` | `small`
+类型: `large` | `middle` | `small` 
 
 默认值: `middle`
 
-### ant-design 中 Select - Select props的status属性如何使用？
+### ant-design 中 Select - Select props的status属性如何使用？ 
 
-参数: status
+参数: status 
 
-说明: 设置校验状态
+说明: 设置校验状态 
 
-类型: 'error' | 'warning'
+类型: 'error' | 'warning' 
 
-默认值: -
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Select - Select props的suffixIcon属性如何使用？
+### ant-design 中 Select - Select props的suffixIcon属性如何使用？ 
 
-参数: suffixIcon
+参数: suffixIcon 
 
-说明: 自定义的选择框后缀图标。以防止图标被用于其他交互，替换的图标默认不会响应展开、收缩事件，可以通过添加 `pointer-events: none` 样式透传。
+说明: 自定义的选择框后缀图标。以防止图标被用于其他交互，替换的图标默认不会响应展开、收缩事件，可以通过添加 `pointer-events: none` 样式透传。 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: `<DownOutlined />`
 
-### ant-design 中 Select - Select props的tagRender属性如何使用？
+### ant-design 中 Select - Select props的tagRender属性如何使用？ 
 
-参数: tagRender
+参数: tagRender 
 
-说明: 自定义 tag 内容 render，仅在 `mode` 为 `multiple` 或 `tags` 时生效
+说明: 自定义 tag 内容 render，仅在 `mode` 为 `multiple` 或 `tags` 时生效 
 
-类型: (props) => ReactNode
-
-默认值: -
-
-### ant-design 中 Select - Select props的tokenSeparators属性如何使用？
-
-参数: tokenSeparators
-
-说明: 自动分词的分隔符，仅在 `mode="tags"` 时生效
-
-类型: string[]
+类型: (props) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Select - Select props的value属性如何使用？
+### ant-design 中 Select - Select props的tokenSeparators属性如何使用？ 
 
-参数: value
+参数: tokenSeparators 
 
-说明: 指定当前选中的条目，多选时为一个数组。（value 数组引用未变化时，Select 不会更新）
+说明: 自动分词的分隔符，仅在 `mode="tags"` 时生效 
 
-类型: string | string[] | <br />number | number[] | <br />LabeledValue | LabeledValue[]
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Select - Select props的variant属性如何使用？
+### ant-design 中 Select - Select props的value属性如何使用？ 
 
-参数: variant
+参数: value 
 
-说明: 形态变体
+说明: 指定当前选中的条目，多选时为一个数组。（value 数组引用未变化时，Select 不会更新） 
 
-类型: `outlined` | `borderless` | `filled`
+类型: string | string[] | <br />number | number[] | <br />LabeledValue | LabeledValue[] 
 
-默认值: `outlined`
+默认值: -
+
+### ant-design 中 Select - Select props的variant属性如何使用？ 
+
+参数: variant 
+
+说明: 形态变体 
+
+类型: `outlined` | `borderless` | `filled` 
+
+默认值: `outlined` 
 
 版本: 5.13.0
 
-### ant-design 中 Select - Select props的virtual属性如何使用？
+### ant-design 中 Select - Select props的virtual属性如何使用？ 
 
-参数: virtual
+参数: virtual 
 
-说明: 设置 false 时关闭虚拟滚动
+说明: 设置 false 时关闭虚拟滚动 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 4.1.0
 
-### ant-design 中 Select - Select props的onBlur属性如何使用？
+### ant-design 中 Select - Select props的onBlur属性如何使用？ 
 
-参数: onBlur
+参数: onBlur 
 
-说明: 失去焦点时回调
+说明: 失去焦点时回调 
 
-类型: function
-
-默认值: -
-
-### ant-design 中 Select - Select props的onChange属性如何使用？
-
-参数: onChange
-
-说明: 选中 option，或 input 的 value 变化时，调用此函数
-
-类型: function(value, option:Option | Array<Option>)
+类型: function 
 
 默认值: -
 
-### ant-design 中 Select - Select props的onClear属性如何使用？
+### ant-design 中 Select - Select props的onChange属性如何使用？ 
 
-参数: onClear
+参数: onChange 
 
-说明: 清除内容时回调
+说明: 选中 option，或 input 的 value 变化时，调用此函数 
 
-类型: function
+类型: function(value, option:Option | Array<Option>) 
 
 默认值: -
+
+### ant-design 中 Select - Select props的onClear属性如何使用？ 
+
+参数: onClear 
+
+说明: 清除内容时回调 
+
+类型: function 
+
+默认值: - 
 
 版本: 4.6.0
 
-### ant-design 中 Select - Select props的onDeselect属性如何使用？
+### ant-design 中 Select - Select props的onDeselect属性如何使用？ 
 
-参数: onDeselect
+参数: onDeselect 
 
-说明: 取消选中时调用，参数为选中项的 value (或 key) 值，仅在 `multiple` 或 `tags` 模式下生效
+说明: 取消选中时调用，参数为选中项的 value (或 key) 值，仅在 `multiple` 或 `tags` 模式下生效 
 
-类型: function(value: string | number | LabeledValue)
-
-默认值: -
-
-### ant-design 中 Select - Select props的onDropdownVisibleChange属性如何使用？
-
-参数: onDropdownVisibleChange
-
-说明: 展开下拉菜单的回调
-
-类型: function(open)
+类型: function(value: string | number | LabeledValue) 
 
 默认值: -
 
-### ant-design 中 Select - Select props的onFocus属性如何使用？
+### ant-design 中 Select - Select props的onDropdownVisibleChange属性如何使用？ 
 
-参数: onFocus
+参数: onDropdownVisibleChange 
 
-说明: 获得焦点时回调
+说明: 展开下拉菜单的回调 
 
-类型: function
-
-默认值: -
-
-### ant-design 中 Select - Select props的onInputKeyDown属性如何使用？
-
-参数: onInputKeyDown
-
-说明: 按键按下时回调
-
-类型: function
+类型: function(open) 
 
 默认值: -
 
-### ant-design 中 Select - Select props的onMouseEnter属性如何使用？
+### ant-design 中 Select - Select props的onFocus属性如何使用？ 
 
-参数: onMouseEnter
+参数: onFocus 
 
-说明: 鼠标移入时回调
+说明: 获得焦点时回调 
 
-类型: function
-
-默认值: -
-
-### ant-design 中 Select - Select props的onMouseLeave属性如何使用？
-
-参数: onMouseLeave
-
-说明: 鼠标移出时回调
-
-类型: function
+类型: function 
 
 默认值: -
 
-### ant-design 中 Select - Select props的onPopupScroll属性如何使用？
+### ant-design 中 Select - Select props的onInputKeyDown属性如何使用？ 
 
-参数: onPopupScroll
+参数: onInputKeyDown 
 
-说明: 下拉列表滚动时的回调
+说明: 按键按下时回调 
 
-类型: function
-
-默认值: -
-
-### ant-design 中 Select - Select props的onSearch属性如何使用？
-
-参数: onSearch
-
-说明: 文本框值变化时回调
-
-类型: function(value: string)
+类型: function 
 
 默认值: -
 
-### ant-design 中 Select - Select props的onSelect属性如何使用？
+### ant-design 中 Select - Select props的onMouseEnter属性如何使用？ 
 
-参数: onSelect
+参数: onMouseEnter 
 
-说明: 被选中时调用，参数为选中项的 value (或 key) 值
+说明: 鼠标移入时回调 
 
-类型: function(value: string | number | LabeledValue, option: Option)
+类型: function 
+
+默认值: -
+
+### ant-design 中 Select - Select props的onMouseLeave属性如何使用？ 
+
+参数: onMouseLeave 
+
+说明: 鼠标移出时回调 
+
+类型: function 
+
+默认值: -
+
+### ant-design 中 Select - Select props的onPopupScroll属性如何使用？ 
+
+参数: onPopupScroll 
+
+说明: 下拉列表滚动时的回调 
+
+类型: function 
+
+默认值: -
+
+### ant-design 中 Select - Select props的onSearch属性如何使用？ 
+
+参数: onSearch 
+
+说明: 文本框值变化时回调 
+
+类型: function(value: string) 
+
+默认值: -
+
+### ant-design 中 Select - Select props的onSelect属性如何使用？ 
+
+参数: onSelect 
+
+说明: 被选中时调用，参数为选中项的 value (或 key) 值 
+
+类型: function(value: string | number | LabeledValue, option: Option) 
 
 默认值: -
 
 ### ant-design 的 Select - Select Methods 有哪些配置？
 
-| 名称    | 说明     |
-| ------- | -------- |
-| blur()  | 取消焦点 |
+| 名称 | 说明 |
+| --- | --- |
+| blur() | 取消焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Select - Select Methods的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Select - Select Methods的blur()属性如何使用？ 
+
+名称: blur() 
 
 说明: 取消焦点
 
-### ant-design 中 Select - Select Methods的focus()属性如何使用？
+### ant-design 中 Select - Select Methods的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 说明: 获取焦点
 
 ### ant-design 的 Select - Option props 有哪些配置？
 
-| 参数      | 说明                     | 类型             | 默认值 |
-| --------- | ------------------------ | ---------------- | ------ |
-| className | Option 器类名            | string           | -      |
-| disabled  | 是否禁用                 | boolean          | false  |
-| title     | 选项上的原生 title 提示  | string           | -      |
-| value     | 默认根据此属性值进行筛选 | string \| number | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| className | Option 器类名 | string | - |
+| disabled | 是否禁用 | boolean | false |
+| title | 选项上的原生 title 提示 | string | - |
+| value | 默认根据此属性值进行筛选 | string \| number | - |
 
-### ant-design 中 Select - Option props的className属性如何使用？
 
-参数: className
+### ant-design 中 Select - Option props的className属性如何使用？ 
 
-说明: Option 器类名
+参数: className 
 
-类型: string
+说明: Option 器类名 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Select - Option props的disabled属性如何使用？
+### ant-design 中 Select - Option props的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 是否禁用
+说明: 是否禁用 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Select - Option props的title属性如何使用？
+### ant-design 中 Select - Option props的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 选项上的原生 title 提示
+说明: 选项上的原生 title 提示 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Select - Option props的value属性如何使用？
+### ant-design 中 Select - Option props的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 默认根据此属性值进行筛选
+说明: 默认根据此属性值进行筛选 
 
-类型: string | number
+类型: string | number 
 
 默认值: -
 
 ### ant-design 的 Select - OptGroup props 有哪些配置？
 
-| 参数  | 说明 | 类型                    | 默认值 |
-| ----- | ---- | ----------------------- | ------ |
-| key   | Key  | string                  | -      |
-| label | 组名 | string \| React.Element | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| key | Key | string | - |
+| label | 组名 | string \| React.Element | - |
 
-### ant-design 中 Select - OptGroup props的key属性如何使用？
 
-参数: key
+### ant-design 中 Select - OptGroup props的key属性如何使用？ 
 
-说明: Key
+参数: key 
 
-类型: string
+说明: Key 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Select - OptGroup props的label属性如何使用？
+### ant-design 中 Select - OptGroup props的label属性如何使用？ 
 
-参数: label
+参数: label 
 
-说明: 组名
+说明: 组名 
 
-类型: string | React.Element
+类型: string | React.Element 
 
 默认值: -
 
 ### ant-design 的 Segmented 有哪些配置？
 
-#### Segmented - Segmented
+#### Segmented - Segmented 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -8985,6 +9119,7 @@
 | options | 数据化配置选项内容 | string[] \| number[] \| Array<{ label: ReactNode value: string icon? ReactNode disabled?: boolean className?: string }> | \[] |
 | size | 控件尺寸 | `large` \| `middle` \| `small` | `middle` |
 | value | 当前选中的值 | string \| number |
+
 
 ### ant-design 的 Segmented - Segmented 有哪些配置？
 
@@ -8998,73 +9133,74 @@
 | size | 控件尺寸 | `large` \| `middle` \| `small` | `middle` |
 | value | 当前选中的值 | string \| number |
 
-### ant-design 中 Segmented - Segmented的block属性如何使用？
 
-参数: block
+### ant-design 中 Segmented - Segmented的block属性如何使用？ 
 
-说明: 将宽度调整为父元素宽度的选项
+参数: block 
 
-类型: boolean
+说明: 将宽度调整为父元素宽度的选项 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Segmented - Segmented的defaultValue属性如何使用？
+### ant-design 中 Segmented - Segmented的defaultValue属性如何使用？ 
 
-参数: defaultValue
+参数: defaultValue 
 
-说明: 默认选中的值
+说明: 默认选中的值 
 
 类型: string | number
 
-### ant-design 中 Segmented - Segmented的disabled属性如何使用？
+### ant-design 中 Segmented - Segmented的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 是否禁用
+说明: 是否禁用 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Segmented - Segmented的onChange属性如何使用？
+### ant-design 中 Segmented - Segmented的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 选项变化时的回调函数
+说明: 选项变化时的回调函数 
 
 类型: function(value: string | number)
 
-### ant-design 中 Segmented - Segmented的options属性如何使用？
+### ant-design 中 Segmented - Segmented的options属性如何使用？ 
 
-参数: options
+参数: options 
 
-说明: 数据化配置选项内容
+说明: 数据化配置选项内容 
 
-类型: string[] | number[] | Array<{ label: ReactNode value: string icon? ReactNode disabled?: boolean className?: string }>
+类型: string[] | number[] | Array<{ label: ReactNode value: string icon? ReactNode disabled?: boolean className?: string }> 
 
 默认值: \[]
 
-### ant-design 中 Segmented - Segmented的size属性如何使用？
+### ant-design 中 Segmented - Segmented的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 控件尺寸
+说明: 控件尺寸 
 
-类型: `large` | `middle` | `small`
+类型: `large` | `middle` | `small` 
 
 默认值: `middle`
 
-### ant-design 中 Segmented - Segmented的value属性如何使用？
+### ant-design 中 Segmented - Segmented的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 当前选中的值
+说明: 当前选中的值 
 
 类型: string | number
 
 ### ant-design 的 Result 有哪些配置？
 
-#### Result - API
+#### Result - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -9073,6 +9209,7 @@
 | status | 结果的状态，决定图标和颜色 | `success` \| `error` \| `info` \| `warning` \| `404` \| `403` \| `500` | `info` |
 | subTitle | subTitle 文字 | ReactNode | - |
 | title | title 文字 | ReactNode | - |
+
 
 ### ant-design 的 Result - API 有哪些配置？
 
@@ -9084,62 +9221,63 @@
 | subTitle | subTitle 文字 | ReactNode | - |
 | title | title 文字 | ReactNode | - |
 
-### ant-design 中 Result - API的extra属性如何使用？
 
-参数: extra
+### ant-design 中 Result - API的extra属性如何使用？ 
 
-说明: 操作区
+参数: extra 
 
-类型: ReactNode
+说明: 操作区 
 
-默认值: -
-
-### ant-design 中 Result - API的icon属性如何使用？
-
-参数: icon
-
-说明: 自定义 icon
-
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Result - API的status属性如何使用？
+### ant-design 中 Result - API的icon属性如何使用？ 
 
-参数: status
+参数: icon 
 
-说明: 结果的状态，决定图标和颜色
+说明: 自定义 icon 
 
-类型: `success` | `error` | `info` | `warning` | `404` | `403` | `500`
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Result - API的status属性如何使用？ 
+
+参数: status 
+
+说明: 结果的状态，决定图标和颜色 
+
+类型: `success` | `error` | `info` | `warning` | `404` | `403` | `500` 
 
 默认值: `info`
 
-### ant-design 中 Result - API的subTitle属性如何使用？
+### ant-design 中 Result - API的subTitle属性如何使用？ 
 
-参数: subTitle
+参数: subTitle 
 
-说明: subTitle 文字
+说明: subTitle 文字 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Result - API的title属性如何使用？
+### ant-design 中 Result - API的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: title 文字
+说明: title 文字 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
 ### ant-design 的 Rate 有哪些配置？
 
-#### Rate - API
+#### Rate - API 
 
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | allowClear | 是否允许再次点击后清除 | boolean | true |
 | allowHalf | 是否允许半选 | boolean | false |
 | autoFocus | 自动获取焦点 | boolean | false |
@@ -9157,17 +9295,19 @@
 | onHoverChange | 鼠标经过时数值变化的回调 | function(value: number) | - |
 | onKeyDown | 按键回调 | function(event) | - |
 
-#### Rate - 方法
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Rate - 方法 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
+
 
 ### ant-design 的 Rate - API 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | allowClear | 是否允许再次点击后清除 | boolean | true |
 | allowHalf | 是否允许半选 | boolean | false |
 | autoFocus | 自动获取焦点 | boolean | false |
@@ -9185,203 +9325,206 @@
 | onHoverChange | 鼠标经过时数值变化的回调 | function(value: number) | - |
 | onKeyDown | 按键回调 | function(event) | - |
 
-### ant-design 中 Rate - API的allowClear属性如何使用？
 
-属性: allowClear
+### ant-design 中 Rate - API的allowClear属性如何使用？ 
 
-说明: 是否允许再次点击后清除
+属性: allowClear 
 
-类型: boolean
+说明: 是否允许再次点击后清除 
+
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Rate - API的allowHalf属性如何使用？
+### ant-design 中 Rate - API的allowHalf属性如何使用？ 
 
-属性: allowHalf
+属性: allowHalf 
 
-说明: 是否允许半选
+说明: 是否允许半选 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Rate - API的autoFocus属性如何使用？
-
-属性: autoFocus
-
-说明: 自动获取焦点
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Rate - API的character属性如何使用？
+### ant-design 中 Rate - API的autoFocus属性如何使用？ 
 
-属性: character
+属性: autoFocus 
 
-说明: 自定义字符
+说明: 自动获取焦点 
 
-类型: ReactNode | (RateProps) => ReactNode
+类型: boolean 
 
-默认值: \<StarFilled />
+默认值: false
+
+### ant-design 中 Rate - API的character属性如何使用？ 
+
+属性: character 
+
+说明: 自定义字符 
+
+类型: ReactNode | (RateProps) => ReactNode 
+
+默认值: \<StarFilled /> 
 
 版本: function(): 4.4.0
 
-### ant-design 中 Rate - API的className属性如何使用？
+### ant-design 中 Rate - API的className属性如何使用？ 
 
-属性: className
+属性: className 
 
-说明: 自定义样式类名
+说明: 自定义样式类名 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Rate - API的count属性如何使用？
+### ant-design 中 Rate - API的count属性如何使用？ 
 
-属性: count
+属性: count 
 
-说明: star 总数
+说明: star 总数 
 
-类型: number
+类型: number 
 
 默认值: 5
 
-### ant-design 中 Rate - API的defaultValue属性如何使用？
+### ant-design 中 Rate - API的defaultValue属性如何使用？ 
 
-属性: defaultValue
+属性: defaultValue 
 
-说明: 默认值
+说明: 默认值 
 
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Rate - API的disabled属性如何使用？
+### ant-design 中 Rate - API的disabled属性如何使用？ 
 
-属性: disabled
+属性: disabled 
 
-说明: 只读，无法进行交互
+说明: 只读，无法进行交互 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Rate - API的style属性如何使用？
+### ant-design 中 Rate - API的style属性如何使用？ 
 
-属性: style
+属性: style 
 
-说明: 自定义样式对象
+说明: 自定义样式对象 
 
-类型: CSSProperties
-
-默认值: -
-
-### ant-design 中 Rate - API的tooltips属性如何使用？
-
-属性: tooltips
-
-说明: 自定义每项的提示信息
-
-类型: string[]
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Rate - API的value属性如何使用？
+### ant-design 中 Rate - API的tooltips属性如何使用？ 
 
-属性: value
+属性: tooltips 
 
-说明: 当前数，受控值
+说明: 自定义每项的提示信息 
 
-类型: number
-
-默认值: -
-
-### ant-design 中 Rate - API的onBlur属性如何使用？
-
-属性: onBlur
-
-说明: 失去焦点时的回调
-
-类型: function()
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Rate - API的onChange属性如何使用？
+### ant-design 中 Rate - API的value属性如何使用？ 
 
-属性: onChange
+属性: value 
 
-说明: 选择时的回调
+说明: 当前数，受控值 
 
-类型: function(value: number)
-
-默认值: -
-
-### ant-design 中 Rate - API的onFocus属性如何使用？
-
-属性: onFocus
-
-说明: 获取焦点时的回调
-
-类型: function()
+类型: number 
 
 默认值: -
 
-### ant-design 中 Rate - API的onHoverChange属性如何使用？
+### ant-design 中 Rate - API的onBlur属性如何使用？ 
 
-属性: onHoverChange
+属性: onBlur 
 
-说明: 鼠标经过时数值变化的回调
+说明: 失去焦点时的回调 
 
-类型: function(value: number)
+类型: function() 
 
 默认值: -
 
-### ant-design 中 Rate - API的onKeyDown属性如何使用？
+### ant-design 中 Rate - API的onChange属性如何使用？ 
 
-属性: onKeyDown
+属性: onChange 
 
-说明: 按键回调
+说明: 选择时的回调 
 
-类型: function(event)
+类型: function(value: number) 
+
+默认值: -
+
+### ant-design 中 Rate - API的onFocus属性如何使用？ 
+
+属性: onFocus 
+
+说明: 获取焦点时的回调 
+
+类型: function() 
+
+默认值: -
+
+### ant-design 中 Rate - API的onHoverChange属性如何使用？ 
+
+属性: onHoverChange 
+
+说明: 鼠标经过时数值变化的回调 
+
+类型: function(value: number) 
+
+默认值: -
+
+### ant-design 中 Rate - API的onKeyDown属性如何使用？ 
+
+属性: onKeyDown 
+
+说明: 按键回调 
+
+类型: function(event) 
 
 默认值: -
 
 ### ant-design 的 Rate - 方法 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Rate - 方法的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Rate - 方法的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Rate - 方法的focus()属性如何使用？
+### ant-design 中 Rate - 方法的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 Radio 有哪些配置？
 
-#### Radio - Radio/Radio.Button
-
-| 参数           | 说明                              | 类型    | 默认值 |
-| -------------- | --------------------------------- | ------- | ------ |
-| autoFocus      | 自动获取焦点                      | boolean | false  |
-| checked        | 指定当前是否选中                  | boolean | false  |
-| defaultChecked | 初始是否选中                      | boolean | false  |
-| disabled       | 禁用 Radio                        | boolean | false  |
-| value          | 根据 value 进行比较，判断是否选中 | any     | -      |
-
-#### Radio - Radio.Group
+#### Radio - Radio/Radio.Button 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
+| autoFocus | 自动获取焦点 | boolean | false |
+| checked | 指定当前是否选中 | boolean | false |
+| defaultChecked | 初始是否选中 | boolean | false |
+| disabled | 禁用 Radio | boolean | false |
+| value | 根据 value 进行比较，判断是否选中 | any | - |
+
+
+#### Radio - Radio.Group 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
 | buttonStyle | RadioButton 的风格样式，目前有描边和填色两种风格 | `outline` \| `solid` | `outline` |
 | defaultValue | 默认选中的值 | any | - |
 | disabled | 禁选所有子单选器 | boolean | false |
@@ -9392,77 +9535,80 @@
 | value | 用于设置当前选中的值 | any | - |
 | onChange | 选项变化时的回调函数 | function(e:Event) | - |
 
-#### Radio - Radio
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Radio - Radio 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
+
 
 ### ant-design 的 Radio - Radio/Radio.Button 有哪些配置？
 
-| 参数           | 说明                              | 类型    | 默认值 |
-| -------------- | --------------------------------- | ------- | ------ |
-| autoFocus      | 自动获取焦点                      | boolean | false  |
-| checked        | 指定当前是否选中                  | boolean | false  |
-| defaultChecked | 初始是否选中                      | boolean | false  |
-| disabled       | 禁用 Radio                        | boolean | false  |
-| value          | 根据 value 进行比较，判断是否选中 | any     | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| autoFocus | 自动获取焦点 | boolean | false |
+| checked | 指定当前是否选中 | boolean | false |
+| defaultChecked | 初始是否选中 | boolean | false |
+| disabled | 禁用 Radio | boolean | false |
+| value | 根据 value 进行比较，判断是否选中 | any | - |
 
-### ant-design 中 Radio - Radio/Radio.Button的autoFocus属性如何使用？
 
-参数: autoFocus
+### ant-design 中 Radio - Radio/Radio.Button的autoFocus属性如何使用？ 
 
-说明: 自动获取焦点
+参数: autoFocus 
 
-类型: boolean
+说明: 自动获取焦点 
 
-默认值: false
-
-### ant-design 中 Radio - Radio/Radio.Button的checked属性如何使用？
-
-参数: checked
-
-说明: 指定当前是否选中
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Radio - Radio/Radio.Button的defaultChecked属性如何使用？
+### ant-design 中 Radio - Radio/Radio.Button的checked属性如何使用？ 
 
-参数: defaultChecked
+参数: checked 
 
-说明: 初始是否选中
+说明: 指定当前是否选中 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Radio - Radio/Radio.Button的disabled属性如何使用？
-
-参数: disabled
-
-说明: 禁用 Radio
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Radio - Radio/Radio.Button的value属性如何使用？
+### ant-design 中 Radio - Radio/Radio.Button的defaultChecked属性如何使用？ 
 
-参数: value
+参数: defaultChecked 
 
-说明: 根据 value 进行比较，判断是否选中
+说明: 初始是否选中 
 
-类型: any
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Radio - Radio/Radio.Button的disabled属性如何使用？ 
+
+参数: disabled 
+
+说明: 禁用 Radio 
+
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Radio - Radio/Radio.Button的value属性如何使用？ 
+
+参数: value 
+
+说明: 根据 value 进行比较，判断是否选中 
+
+类型: any 
 
 默认值: -
 
 ### ant-design 的 Radio - Radio.Group 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | buttonStyle | RadioButton 的风格样式，目前有描边和填色两种风格 | `outline` \| `solid` | `outline` |
 | defaultValue | 默认选中的值 | any | - |
 | disabled | 禁选所有子单选器 | boolean | false |
@@ -9473,123 +9619,125 @@
 | value | 用于设置当前选中的值 | any | - |
 | onChange | 选项变化时的回调函数 | function(e:Event) | - |
 
-### ant-design 中 Radio - Radio.Group的buttonStyle属性如何使用？
 
-参数: buttonStyle
+### ant-design 中 Radio - Radio.Group的buttonStyle属性如何使用？ 
 
-说明: RadioButton 的风格样式，目前有描边和填色两种风格
+参数: buttonStyle 
 
-类型: `outline` | `solid`
+说明: RadioButton 的风格样式，目前有描边和填色两种风格 
+
+类型: `outline` | `solid` 
 
 默认值: `outline`
 
-### ant-design 中 Radio - Radio.Group的defaultValue属性如何使用？
+### ant-design 中 Radio - Radio.Group的defaultValue属性如何使用？ 
 
-参数: defaultValue
+参数: defaultValue 
 
-说明: 默认选中的值
+说明: 默认选中的值 
 
-类型: any
+类型: any 
 
 默认值: -
 
-### ant-design 中 Radio - Radio.Group的disabled属性如何使用？
+### ant-design 中 Radio - Radio.Group的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 禁选所有子单选器
+说明: 禁选所有子单选器 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Radio - Radio.Group的name属性如何使用？
+### ant-design 中 Radio - Radio.Group的name属性如何使用？ 
 
-参数: name
+参数: name 
 
-说明: RadioGroup 下所有 `input[type="radio"]` 的 `name` 属性
+说明: RadioGroup 下所有 `input[type="radio"]` 的 `name` 属性 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Radio - Radio.Group的options属性如何使用？
-
-参数: options
-
-说明: 以配置形式设置子元素
-
-类型: string[] | number[] | Array<{ label: ReactNode; value: string; disabled?: boolean; }>
+类型: string 
 
 默认值: -
 
-### ant-design 中 Radio - Radio.Group的optionType属性如何使用？
+### ant-design 中 Radio - Radio.Group的options属性如何使用？ 
 
-参数: optionType
+参数: options 
 
-说明: 用于设置 Radio `options` 类型
+说明: 以配置形式设置子元素 
 
-类型: `default` | `button`
+类型: string[] | number[] | Array<{ label: ReactNode; value: string; disabled?: boolean; }> 
 
-默认值: `default`
+默认值: -
+
+### ant-design 中 Radio - Radio.Group的optionType属性如何使用？ 
+
+参数: optionType 
+
+说明: 用于设置 Radio `options` 类型 
+
+类型: `default` | `button` 
+
+默认值: `default` 
 
 版本: 4.4.0
 
-### ant-design 中 Radio - Radio.Group的size属性如何使用？
+### ant-design 中 Radio - Radio.Group的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 大小，只对按钮样式生效
+说明: 大小，只对按钮样式生效 
 
-类型: `large` | `middle` | `small`
-
-默认值: -
-
-### ant-design 中 Radio - Radio.Group的value属性如何使用？
-
-参数: value
-
-说明: 用于设置当前选中的值
-
-类型: any
+类型: `large` | `middle` | `small` 
 
 默认值: -
 
-### ant-design 中 Radio - Radio.Group的onChange属性如何使用？
+### ant-design 中 Radio - Radio.Group的value属性如何使用？ 
 
-参数: onChange
+参数: value 
 
-说明: 选项变化时的回调函数
+说明: 用于设置当前选中的值 
 
-类型: function(e:Event)
+类型: any 
+
+默认值: -
+
+### ant-design 中 Radio - Radio.Group的onChange属性如何使用？ 
+
+参数: onChange 
+
+说明: 选项变化时的回调函数 
+
+类型: function(e:Event) 
 
 默认值: -
 
 ### ant-design 的 Radio - Radio 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Radio - Radio的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Radio - Radio的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Radio - Radio的focus()属性如何使用？
+### ant-design 中 Radio - Radio的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 Qr-code 有哪些配置？
 
-#### Qr-code - API
+#### Qr-code - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | value | 扫描后的文本 | string | - |
 | type | 渲染类型 | `canvas \| svg ` | `canvas` | 5.6.0 |
 | icon | 二维码中图片的地址（目前只支持图片地址） | string | - |
@@ -9601,11 +9749,12 @@
 | errorLevel | 二维码纠错等级 | `'L' \| 'M' \| 'Q' \| 'H' ` | `M` |
 | status | 二维码状态 | `active \| expired \| loading \| scanned` | `active` | scanned: 5.13.0 |
 | onRefresh | 点击"点击刷新"的回调 | `() => void` | - |
+
 
 ### ant-design 的 Qr-code - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | value | 扫描后的文本 | string | - |
 | type | 渲染类型 | `canvas \| svg ` | `canvas` | 5.6.0 |
 | icon | 二维码中图片的地址（目前只支持图片地址） | string | - |
@@ -9618,125 +9767,126 @@
 | status | 二维码状态 | `active \| expired \| loading \| scanned` | `active` | scanned: 5.13.0 |
 | onRefresh | 点击"点击刷新"的回调 | `() => void` | - |
 
-### ant-design 中 Qr-code - API的value属性如何使用？
 
-参数: value
+### ant-design 中 Qr-code - API的value属性如何使用？ 
 
-说明: 扫描后的文本
+参数: value 
 
-类型: string
+说明: 扫描后的文本 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Qr-code - API的type属性如何使用？
+### ant-design 中 Qr-code - API的type属性如何使用？ 
 
-参数: type
+参数: type 
 
-说明: 渲染类型
+说明: 渲染类型 
 
-类型: `canvas | svg `
+类型: `canvas | svg ` 
 
-默认值: `canvas`
+默认值: `canvas` 
 
 版本: 5.6.0
 
-### ant-design 中 Qr-code - API的icon属性如何使用？
+### ant-design 中 Qr-code - API的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 二维码中图片的地址（目前只支持图片地址）
+说明: 二维码中图片的地址（目前只支持图片地址） 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Qr-code - API的size属性如何使用？
+### ant-design 中 Qr-code - API的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 二维码大小
+说明: 二维码大小 
 
-类型: number
+类型: number 
 
 默认值: 160
 
-### ant-design 中 Qr-code - API的iconSize属性如何使用？
+### ant-design 中 Qr-code - API的iconSize属性如何使用？ 
 
-参数: iconSize
+参数: iconSize 
 
-说明: 二维码中图片的大小
+说明: 二维码中图片的大小 
 
-类型: number
+类型: number 
 
 默认值: 40
 
-### ant-design 中 Qr-code - API的color属性如何使用？
+### ant-design 中 Qr-code - API的color属性如何使用？ 
 
-参数: color
+参数: color 
 
-说明: 二维码颜色
+说明: 二维码颜色 
 
-类型: string
+类型: string 
 
 默认值: `#000`
 
-### ant-design 中 Qr-code - API的bgColor属性如何使用？
+### ant-design 中 Qr-code - API的bgColor属性如何使用？ 
 
-参数: bgColor
+参数: bgColor 
 
-说明: 二维码背景颜色
+说明: 二维码背景颜色 
 
-类型: string
+类型: string 
 
-默认值: `transparent`
+默认值: `transparent` 
 
 版本: 5.5.0
 
-### ant-design 中 Qr-code - API的bordered属性如何使用？
+### ant-design 中 Qr-code - API的bordered属性如何使用？ 
 
-参数: bordered
+参数: bordered 
 
-说明: 是否有边框
+说明: 是否有边框 
 
-类型: boolean
+类型: boolean 
 
 默认值: `true`
 
-### ant-design 中 Qr-code - API的errorLevel属性如何使用？
+### ant-design 中 Qr-code - API的errorLevel属性如何使用？ 
 
-参数: errorLevel
+参数: errorLevel 
 
-说明: 二维码纠错等级
+说明: 二维码纠错等级 
 
-类型: `'L' | 'M' | 'Q' | 'H' `
+类型: `'L' | 'M' | 'Q' | 'H' ` 
 
 默认值: `M`
 
-### ant-design 中 Qr-code - API的status属性如何使用？
+### ant-design 中 Qr-code - API的status属性如何使用？ 
 
-参数: status
+参数: status 
 
-说明: 二维码状态
+说明: 二维码状态 
 
-类型: `active | expired | loading | scanned`
+类型: `active | expired | loading | scanned` 
 
-默认值: `active`
+默认值: `active` 
 
 版本: scanned: 5.13.0
 
-### ant-design 中 Qr-code - API的onRefresh属性如何使用？
+### ant-design 中 Qr-code - API的onRefresh属性如何使用？ 
 
-参数: onRefresh
+参数: onRefresh 
 
-说明: 点击"点击刷新"的回调
+说明: 点击"点击刷新"的回调 
 
-类型: `() => void`
+类型: `() => void` 
 
 默认值: -
 
 ### ant-design 的 Progress 有哪些配置？
 
-#### Progress - API
+#### Progress - API 
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -9751,27 +9901,31 @@
 | type | 类型，可选 `line` `circle` `dashboard` | string | `line` | - |
 | size | 进度条的尺寸 | number \| [number \| string, number] \| "small" \| "default" | "default" | v5.3.0 |
 
-#### Progress - `type="line"`
+
+#### Progress - `type="line"` 
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | steps | 进度条总共步数 | number | - | - |
 | strokeColor | 进度条的色彩，传入 object 时为渐变。当有 `steps` 时支持传入一个数组。 | string \| string[] \| { from: string; to: string; direction: string } | - | 4.21.0: `string[]` |
 
-#### Progress - `type="circle"`
+
+#### Progress - `type="circle"` 
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | strokeColor | 圆形进度条线的色彩，传入 object 时为渐变 | string \| { number%: string } | - | - |
 | strokeWidth | 圆形进度条线的宽度，单位是进度条画布宽度的百分比 | number | 6 | - |
 
-#### Progress - `type="dashboard"`
+
+#### Progress - `type="dashboard"` 
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | gapDegree | 仪表盘进度条缺口角度，可取值 0 ~ 295 | number | 75 | - |
 | gapPosition | 仪表盘进度条缺口位置 | `top` \| `bottom` \| `left` \| `right` | `bottom` | - |
 | strokeWidth | 仪表盘进度条线的宽度，单位是进度条画布宽度的百分比 | number | 6 | - |
+
 
 ### ant-design 的 Progress - API 有哪些配置？
 
@@ -9788,123 +9942,124 @@
 | type | 类型，可选 `line` `circle` `dashboard` | string | `line` | - |
 | size | 进度条的尺寸 | number \| [number \| string, number] \| "small" \| "default" | "default" | v5.3.0 |
 
-### ant-design 中 Progress - API的format属性如何使用？
 
-属性: format
+### ant-design 中 Progress - API的format属性如何使用？ 
 
-说明: 内容的模板函数
+属性: format 
 
-类型: function(percent, successPercent)
+说明: 内容的模板函数 
 
-默认值: (percent) => percent + `%`
+类型: function(percent, successPercent) 
 
-版本: -
-
-### ant-design 中 Progress - API的percent属性如何使用？
-
-属性: percent
-
-说明: 百分比
-
-类型: number
-
-默认值: 0
+默认值: (percent) => percent + `%` 
 
 版本: -
 
-### ant-design 中 Progress - API的showInfo属性如何使用？
+### ant-design 中 Progress - API的percent属性如何使用？ 
 
-属性: showInfo
+属性: percent 
 
-说明: 是否显示进度数值或状态图标
+说明: 百分比 
 
-类型: boolean
+类型: number 
 
-默认值: true
-
-版本: -
-
-### ant-design 中 Progress - API的status属性如何使用？
-
-属性: status
-
-说明: 状态，可选：`success` `exception` `normal` `active`(仅限 line)
-
-类型: string
-
-默认值: -
+默认值: 0 
 
 版本: -
 
-### ant-design 中 Progress - API的strokeColor属性如何使用？
+### ant-design 中 Progress - API的showInfo属性如何使用？ 
 
-属性: strokeColor
+属性: showInfo 
 
-说明: 进度条的色彩
+说明: 是否显示进度数值或状态图标 
 
-类型: string
+类型: boolean 
 
-默认值: -
-
-版本: -
-
-### ant-design 中 Progress - API的strokeLinecap属性如何使用？
-
-属性: strokeLinecap
-
-说明: 进度条的样式
-
-类型: `round` | `butt` | `square`，区别详见 [stroke-linecap](https://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-linecap)
-
-默认值: `round`
+默认值: true 
 
 版本: -
 
-### ant-design 中 Progress - API的success属性如何使用？
+### ant-design 中 Progress - API的status属性如何使用？ 
 
-属性: success
+属性: status 
 
-说明: 成功进度条相关配置
+说明: 状态，可选：`success` `exception` `normal` `active`(仅限 line) 
 
-类型: { percent: number, strokeColor: string }
+类型: string 
 
-默认值: -
-
-版本: -
-
-### ant-design 中 Progress - API的trailColor属性如何使用？
-
-属性: trailColor
-
-说明: 未完成的分段的颜色
-
-类型: string
-
-默认值: -
+默认值: - 
 
 版本: -
 
-### ant-design 中 Progress - API的type属性如何使用？
+### ant-design 中 Progress - API的strokeColor属性如何使用？ 
 
-属性: type
+属性: strokeColor 
 
-说明: 类型，可选 `line` `circle` `dashboard`
+说明: 进度条的色彩 
 
-类型: string
+类型: string 
 
-默认值: `line`
+默认值: - 
 
 版本: -
 
-### ant-design 中 Progress - API的size属性如何使用？
+### ant-design 中 Progress - API的strokeLinecap属性如何使用？ 
 
-属性: size
+属性: strokeLinecap 
 
-说明: 进度条的尺寸
+说明: 进度条的样式 
 
-类型: number | [number | string, number] | "small" | "default"
+类型: `round` | `butt` | `square`，区别详见 [stroke-linecap](https://developer.mozilla.org/docs/Web/SVG/Attribute/stroke-linecap) 
 
-默认值: "default"
+默认值: `round` 
+
+版本: -
+
+### ant-design 中 Progress - API的success属性如何使用？ 
+
+属性: success 
+
+说明: 成功进度条相关配置 
+
+类型: { percent: number, strokeColor: string } 
+
+默认值: - 
+
+版本: -
+
+### ant-design 中 Progress - API的trailColor属性如何使用？ 
+
+属性: trailColor 
+
+说明: 未完成的分段的颜色 
+
+类型: string 
+
+默认值: - 
+
+版本: -
+
+### ant-design 中 Progress - API的type属性如何使用？ 
+
+属性: type 
+
+说明: 类型，可选 `line` `circle` `dashboard` 
+
+类型: string 
+
+默认值: `line` 
+
+版本: -
+
+### ant-design 中 Progress - API的size属性如何使用？ 
+
+属性: size 
+
+说明: 进度条的尺寸 
+
+类型: number | [number | string, number] | "small" | "default" 
+
+默认值: "default" 
 
 版本: v5.3.0
 
@@ -9915,27 +10070,28 @@
 | steps | 进度条总共步数 | number | - | - |
 | strokeColor | 进度条的色彩，传入 object 时为渐变。当有 `steps` 时支持传入一个数组。 | string \| string[] \| { from: string; to: string; direction: string } | - | 4.21.0: `string[]` |
 
-### ant-design 中 Progress - `type="line"`的steps属性如何使用？
 
-属性: steps
+### ant-design 中 Progress - `type="line"`的steps属性如何使用？ 
 
-说明: 进度条总共步数
+属性: steps 
 
-类型: number
+说明: 进度条总共步数 
 
-默认值: -
+类型: number 
+
+默认值: - 
 
 版本: -
 
-### ant-design 中 Progress - `type="line"`的strokeColor属性如何使用？
+### ant-design 中 Progress - `type="line"`的strokeColor属性如何使用？ 
 
-属性: strokeColor
+属性: strokeColor 
 
-说明: 进度条的色彩，传入 object 时为渐变。当有 `steps` 时支持传入一个数组。
+说明: 进度条的色彩，传入 object 时为渐变。当有 `steps` 时支持传入一个数组。 
 
-类型: string | string[] | { from: string; to: string; direction: string }
+类型: string | string[] | { from: string; to: string; direction: string } 
 
-默认值: -
+默认值: - 
 
 版本: 4.21.0: `string[]`
 
@@ -9946,27 +10102,28 @@
 | strokeColor | 圆形进度条线的色彩，传入 object 时为渐变 | string \| { number%: string } | - | - |
 | strokeWidth | 圆形进度条线的宽度，单位是进度条画布宽度的百分比 | number | 6 | - |
 
-### ant-design 中 Progress - `type="circle"`的strokeColor属性如何使用？
 
-属性: strokeColor
+### ant-design 中 Progress - `type="circle"`的strokeColor属性如何使用？ 
 
-说明: 圆形进度条线的色彩，传入 object 时为渐变
+属性: strokeColor 
 
-类型: string | { number%: string }
+说明: 圆形进度条线的色彩，传入 object 时为渐变 
 
-默认值: -
+类型: string | { number%: string } 
+
+默认值: - 
 
 版本: -
 
-### ant-design 中 Progress - `type="circle"`的strokeWidth属性如何使用？
+### ant-design 中 Progress - `type="circle"`的strokeWidth属性如何使用？ 
 
-属性: strokeWidth
+属性: strokeWidth 
 
-说明: 圆形进度条线的宽度，单位是进度条画布宽度的百分比
+说明: 圆形进度条线的宽度，单位是进度条画布宽度的百分比 
 
-类型: number
+类型: number 
 
-默认值: 6
+默认值: 6 
 
 版本: -
 
@@ -9978,84 +10135,87 @@
 | gapPosition | 仪表盘进度条缺口位置 | `top` \| `bottom` \| `left` \| `right` | `bottom` | - |
 | strokeWidth | 仪表盘进度条线的宽度，单位是进度条画布宽度的百分比 | number | 6 | - |
 
-### ant-design 中 Progress - `type="dashboard"`的gapDegree属性如何使用？
 
-属性: gapDegree
+### ant-design 中 Progress - `type="dashboard"`的gapDegree属性如何使用？ 
 
-说明: 仪表盘进度条缺口角度，可取值 0 ~ 295
+属性: gapDegree 
 
-类型: number
+说明: 仪表盘进度条缺口角度，可取值 0 ~ 295 
 
-默认值: 75
+类型: number 
 
-版本: -
-
-### ant-design 中 Progress - `type="dashboard"`的gapPosition属性如何使用？
-
-属性: gapPosition
-
-说明: 仪表盘进度条缺口位置
-
-类型: `top` | `bottom` | `left` | `right`
-
-默认值: `bottom`
+默认值: 75 
 
 版本: -
 
-### ant-design 中 Progress - `type="dashboard"`的strokeWidth属性如何使用？
+### ant-design 中 Progress - `type="dashboard"`的gapPosition属性如何使用？ 
 
-属性: strokeWidth
+属性: gapPosition 
 
-说明: 仪表盘进度条线的宽度，单位是进度条画布宽度的百分比
+说明: 仪表盘进度条缺口位置 
 
-类型: number
+类型: `top` | `bottom` | `left` | `right` 
 
-默认值: 6
+默认值: `bottom` 
+
+版本: -
+
+### ant-design 中 Progress - `type="dashboard"`的strokeWidth属性如何使用？ 
+
+属性: strokeWidth 
+
+说明: 仪表盘进度条线的宽度，单位是进度条画布宽度的百分比 
+
+类型: number 
+
+默认值: 6 
 
 版本: -
 
 ### ant-design 的 Popover 有哪些配置？
 
-#### Popover - API
+#### Popover - API 
 
-| 参数    | 说明     | 类型                         | 默认值 |
-| ------- | -------- | ---------------------------- | ------ |
-| content | 卡片内容 | ReactNode \| () => ReactNode | -      |
-| title   | 卡片标题 | ReactNode \| () => ReactNode | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| content | 卡片内容 | ReactNode \| () => ReactNode | - |
+| title | 卡片标题 | ReactNode \| () => ReactNode | - |
+
 
 ### ant-design 的 Popover - API 有哪些配置？
 
-| 参数    | 说明     | 类型                         | 默认值 |
-| ------- | -------- | ---------------------------- | ------ |
-| content | 卡片内容 | ReactNode \| () => ReactNode | -      |
-| title   | 卡片标题 | ReactNode \| () => ReactNode | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| content | 卡片内容 | ReactNode \| () => ReactNode | - |
+| title | 卡片标题 | ReactNode \| () => ReactNode | - |
 
-### ant-design 中 Popover - API的content属性如何使用？
 
-参数: content
+### ant-design 中 Popover - API的content属性如何使用？ 
 
-说明: 卡片内容
+参数: content 
 
-类型: ReactNode | () => ReactNode
+说明: 卡片内容 
+
+类型: ReactNode | () => ReactNode 
 
 默认值: -
 
-### ant-design 中 Popover - API的title属性如何使用？
+### ant-design 中 Popover - API的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 卡片标题
+说明: 卡片标题 
 
-类型: ReactNode | () => ReactNode
+类型: ReactNode | () => ReactNode 
 
 默认值: -
 
 ### ant-design 的 Popconfirm 有哪些配置？
 
-#### Popconfirm - API
+#### Popconfirm - API 
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | cancelButtonProps | cancel 按钮 props | - |
 | cancelText | 取消按钮文字 | string | `取消` |
 | disabled | 阻止点击 Popconfirm 子元素时弹出确认框 | boolean | false |
@@ -10069,11 +10229,12 @@
 | onCancel | 点击取消的回调 | function(e) | - |
 | onConfirm | 点击确认的回调 | function(e) | - |
 | onPopupClick | 弹出气泡点击事件 | function(e) | - | 5.5.0 |
+
 
 ### ant-design 的 Popconfirm - API 有哪些配置？
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | cancelButtonProps | cancel 按钮 props | - |
 | cancelText | 取消按钮文字 | string | `取消` |
 | disabled | 阻止点击 Popconfirm 子元素时弹出确认框 | boolean | false |
@@ -10088,141 +10249,142 @@
 | onConfirm | 点击确认的回调 | function(e) | - |
 | onPopupClick | 弹出气泡点击事件 | function(e) | - | 5.5.0 |
 
-### ant-design 中 Popconfirm - API的cancelButtonProps属性如何使用？
 
-参数: cancelButtonProps
+### ant-design 中 Popconfirm - API的cancelButtonProps属性如何使用？ 
 
-说明: cancel 按钮 props
+参数: cancelButtonProps 
+
+说明: cancel 按钮 props 
 
 类型: -
 
-### ant-design 中 Popconfirm - API的cancelText属性如何使用？
+### ant-design 中 Popconfirm - API的cancelText属性如何使用？ 
 
-参数: cancelText
+参数: cancelText 
 
-说明: 取消按钮文字
+说明: 取消按钮文字 
 
-类型: string
+类型: string 
 
 默认值: `取消`
 
-### ant-design 中 Popconfirm - API的disabled属性如何使用？
+### ant-design 中 Popconfirm - API的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 阻止点击 Popconfirm 子元素时弹出确认框
+说明: 阻止点击 Popconfirm 子元素时弹出确认框 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Popconfirm - API的icon属性如何使用？
+### ant-design 中 Popconfirm - API的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 自定义弹出气泡 Icon 图标
+说明: 自定义弹出气泡 Icon 图标 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: \<ExclamationCircle />
 
-### ant-design 中 Popconfirm - API的okButtonProps属性如何使用？
+### ant-design 中 Popconfirm - API的okButtonProps属性如何使用？ 
 
-参数: okButtonProps
+参数: okButtonProps 
 
-说明: ok 按钮 props
+说明: ok 按钮 props 
 
 类型: -
 
-### ant-design 中 Popconfirm - API的okText属性如何使用？
+### ant-design 中 Popconfirm - API的okText属性如何使用？ 
 
-参数: okText
+参数: okText 
 
-说明: 确认按钮文字
+说明: 确认按钮文字 
 
-类型: string
+类型: string 
 
 默认值: `确定`
 
-### ant-design 中 Popconfirm - API的okType属性如何使用？
+### ant-design 中 Popconfirm - API的okType属性如何使用？ 
 
-参数: okType
+参数: okType 
 
-说明: 确认按钮类型
+说明: 确认按钮类型 
 
-类型: string
+类型: string 
 
 默认值: `primary`
 
-### ant-design 中 Popconfirm - API的showCancel属性如何使用？
+### ant-design 中 Popconfirm - API的showCancel属性如何使用？ 
 
-参数: showCancel
+参数: showCancel 
 
-说明: 是否显示取消按钮
+说明: 是否显示取消按钮 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 4.18.0
 
-### ant-design 中 Popconfirm - API的title属性如何使用？
+### ant-design 中 Popconfirm - API的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 确认框标题
+说明: 确认框标题 
 
-类型: ReactNode | () => ReactNode
-
-默认值: -
-
-### ant-design 中 Popconfirm - API的description属性如何使用？
-
-参数: description
-
-说明: 确认内容的详细描述
-
-类型: ReactNode | () => ReactNode
+类型: ReactNode | () => ReactNode 
 
 默认值: -
+
+### ant-design 中 Popconfirm - API的description属性如何使用？ 
+
+参数: description 
+
+说明: 确认内容的详细描述 
+
+类型: ReactNode | () => ReactNode 
+
+默认值: - 
 
 版本: 5.1.0
 
-### ant-design 中 Popconfirm - API的onCancel属性如何使用？
+### ant-design 中 Popconfirm - API的onCancel属性如何使用？ 
 
-参数: onCancel
+参数: onCancel 
 
-说明: 点击取消的回调
+说明: 点击取消的回调 
 
-类型: function(e)
-
-默认值: -
-
-### ant-design 中 Popconfirm - API的onConfirm属性如何使用？
-
-参数: onConfirm
-
-说明: 点击确认的回调
-
-类型: function(e)
+类型: function(e) 
 
 默认值: -
 
-### ant-design 中 Popconfirm - API的onPopupClick属性如何使用？
+### ant-design 中 Popconfirm - API的onConfirm属性如何使用？ 
 
-参数: onPopupClick
+参数: onConfirm 
 
-说明: 弹出气泡点击事件
+说明: 点击确认的回调 
 
-类型: function(e)
+类型: function(e) 
 
 默认值: -
+
+### ant-design 中 Popconfirm - API的onPopupClick属性如何使用？ 
+
+参数: onPopupClick 
+
+说明: 弹出气泡点击事件 
+
+类型: function(e) 
+
+默认值: - 
 
 版本: 5.5.0
 
 ### ant-design 的 Pagination 有哪些配置？
 
-#### Pagination - API
+#### Pagination - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -10245,6 +10407,7 @@
 | total | 数据总数 | number | 0 |
 | onChange | 页码或 `pageSize` 改变的回调，参数是改变后的页码及每页条数 | function(page, pageSize) | - |
 | onShowSizeChange | pageSize 变化的回调 | function(current, size) | - |
+
 
 ### ant-design 的 Pagination - API 有哪些配置？
 
@@ -10270,199 +10433,200 @@
 | onChange | 页码或 `pageSize` 改变的回调，参数是改变后的页码及每页条数 | function(page, pageSize) | - |
 | onShowSizeChange | pageSize 变化的回调 | function(current, size) | - |
 
-### ant-design 中 Pagination - API的current属性如何使用？
 
-参数: current
+### ant-design 中 Pagination - API的current属性如何使用？ 
 
-说明: 当前页数
+参数: current 
 
-类型: number
+说明: 当前页数 
+
+类型: number 
 
 默认值: -
 
-### ant-design 中 Pagination - API的defaultCurrent属性如何使用？
+### ant-design 中 Pagination - API的defaultCurrent属性如何使用？ 
 
-参数: defaultCurrent
+参数: defaultCurrent 
 
-说明: 默认的当前页数
+说明: 默认的当前页数 
 
-类型: number
+类型: number 
 
 默认值: 1
 
-### ant-design 中 Pagination - API的defaultPageSize属性如何使用？
+### ant-design 中 Pagination - API的defaultPageSize属性如何使用？ 
 
-参数: defaultPageSize
+参数: defaultPageSize 
 
-说明: 默认的每页条数
+说明: 默认的每页条数 
 
-类型: number
+类型: number 
 
 默认值: 10
 
-### ant-design 中 Pagination - API的disabled属性如何使用？
+### ant-design 中 Pagination - API的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 禁用分页
+说明: 禁用分页 
 
-类型: boolean
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Pagination - API的hideOnSinglePage属性如何使用？
+### ant-design 中 Pagination - API的hideOnSinglePage属性如何使用？ 
 
-参数: hideOnSinglePage
+参数: hideOnSinglePage 
 
-说明: 只有一页时是否隐藏分页器
+说明: 只有一页时是否隐藏分页器 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Pagination - API的itemRender属性如何使用？
+### ant-design 中 Pagination - API的itemRender属性如何使用？ 
 
-参数: itemRender
+参数: itemRender 
 
-说明: 用于自定义页码的结构，可用于优化 SEO
+说明: 用于自定义页码的结构，可用于优化 SEO 
 
-类型: (page, type: 'page' | 'prev' | 'next', originalElement) => React.ReactNode
-
-默认值: -
-
-### ant-design 中 Pagination - API的pageSize属性如何使用？
-
-参数: pageSize
-
-说明: 每页条数
-
-类型: number
+类型: (page, type: 'page' | 'prev' | 'next', originalElement) => React.ReactNode 
 
 默认值: -
 
-### ant-design 中 Pagination - API的pageSizeOptions属性如何使用？
+### ant-design 中 Pagination - API的pageSize属性如何使用？ 
 
-参数: pageSizeOptions
+参数: pageSize 
 
-说明: 指定每页可以显示多少条
+说明: 每页条数 
 
-类型: string[] | number[]
+类型: number 
+
+默认值: -
+
+### ant-design 中 Pagination - API的pageSizeOptions属性如何使用？ 
+
+参数: pageSizeOptions 
+
+说明: 指定每页可以显示多少条 
+
+类型: string[] | number[] 
 
 默认值: \[`10`, `20`, `50`, `100`]
 
-### ant-design 中 Pagination - API的responsive属性如何使用？
+### ant-design 中 Pagination - API的responsive属性如何使用？ 
 
-参数: responsive
+参数: responsive 
 
-说明: 当 size 未指定时，根据屏幕宽度自动调整尺寸
+说明: 当 size 未指定时，根据屏幕宽度自动调整尺寸 
 
-类型: boolean
-
-默认值: -
-
-### ant-design 中 Pagination - API的showLessItems属性如何使用？
-
-参数: showLessItems
-
-说明: 是否显示较少页面内容
-
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Pagination - API的showQuickJumper属性如何使用？
-
-参数: showQuickJumper
-
-说明: 是否可以快速跳转至某页
-
-类型: boolean | { goButton: ReactNode }
-
-默认值: false
-
-### ant-design 中 Pagination - API的showSizeChanger属性如何使用？
-
-参数: showSizeChanger
-
-说明: 是否展示 `pageSize` 切换器，当 `total` 大于 50 时默认为 true
-
-类型: boolean
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Pagination - API的showTitle属性如何使用？
+### ant-design 中 Pagination - API的showLessItems属性如何使用？ 
 
-参数: showTitle
+参数: showLessItems 
 
-说明: 是否显示原生 tooltip 页码提示
+说明: 是否显示较少页面内容 
 
-类型: boolean
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Pagination - API的showQuickJumper属性如何使用？ 
+
+参数: showQuickJumper 
+
+说明: 是否可以快速跳转至某页 
+
+类型: boolean | { goButton: ReactNode } 
+
+默认值: false
+
+### ant-design 中 Pagination - API的showSizeChanger属性如何使用？ 
+
+参数: showSizeChanger 
+
+说明: 是否展示 `pageSize` 切换器，当 `total` 大于 50 时默认为 true 
+
+类型: boolean 
+
+默认值: -
+
+### ant-design 中 Pagination - API的showTitle属性如何使用？ 
+
+参数: showTitle 
+
+说明: 是否显示原生 tooltip 页码提示 
+
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Pagination - API的showTotal属性如何使用？
+### ant-design 中 Pagination - API的showTotal属性如何使用？ 
 
-参数: showTotal
+参数: showTotal 
 
-说明: 用于显示数据总量和当前数据顺序
+说明: 用于显示数据总量和当前数据顺序 
 
-类型: function(total, range)
-
-默认值: -
-
-### ant-design 中 Pagination - API的simple属性如何使用？
-
-参数: simple
-
-说明: 当添加该属性时，显示为简单分页
-
-类型: boolean
+类型: function(total, range) 
 
 默认值: -
 
-### ant-design 中 Pagination - API的size属性如何使用？
+### ant-design 中 Pagination - API的simple属性如何使用？ 
 
-参数: size
+参数: simple 
 
-说明: 当为 `small` 时，是小尺寸分页
+说明: 当添加该属性时，显示为简单分页 
 
-类型: `default` | `small`
+类型: boolean 
+
+默认值: -
+
+### ant-design 中 Pagination - API的size属性如何使用？ 
+
+参数: size 
+
+说明: 当为 `small` 时，是小尺寸分页 
+
+类型: `default` | `small` 
 
 默认值: `default`
 
-### ant-design 中 Pagination - API的total属性如何使用？
+### ant-design 中 Pagination - API的total属性如何使用？ 
 
-参数: total
+参数: total 
 
-说明: 数据总数
+说明: 数据总数 
 
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Pagination - API的onChange属性如何使用？
+### ant-design 中 Pagination - API的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 页码或 `pageSize` 改变的回调，参数是改变后的页码及每页条数
+说明: 页码或 `pageSize` 改变的回调，参数是改变后的页码及每页条数 
 
-类型: function(page, pageSize)
+类型: function(page, pageSize) 
 
 默认值: -
 
-### ant-design 中 Pagination - API的onShowSizeChange属性如何使用？
+### ant-design 中 Pagination - API的onShowSizeChange属性如何使用？ 
 
-参数: onShowSizeChange
+参数: onShowSizeChange 
 
-说明: pageSize 变化的回调
+说明: pageSize 变化的回调 
 
-类型: function(current, size)
+类型: function(current, size) 
 
 默认值: -
 
 ### ant-design 的 Notification 有哪些配置？
 
-#### Notification - API
+#### Notification - API 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -10481,10 +10645,11 @@
 | onClose | 当通知关闭时触发 | function | - | - |
 | props | 透传至通知 `div` 上的 props 对象，支持传入 `data-*` `aria-*` 或 `role` 作为对象的属性。需要注意的是，虽然在 TypeScript 类型中声明的类型支持传入 `data-*` 作为对象的属性，但目前只允许传入 `data-testid` 作为对象的属性。 详见 <https://github.com/microsoft/TypeScript/issues/28960> | Object | - | - |
 
-#### Notification - API
+
+#### Notification - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | bottom | 消息从底部弹出时，距离底部的位置，单位像素 | number | 24 |
 | closeIcon | 自定义关闭图标 | boolean \| ReactNode | true | 5.7.0：设置为 null 或 false 时隐藏关闭按钮 |
 | getContainer | 配置渲染节点的输出位置 | () => HTMLNode | () => document.body |
@@ -10494,10 +10659,11 @@
 | top | 消息从顶部弹出时，距离顶部的位置，单位像素 | number | 24 |
 | maxCount | 最大显示数，超过限制时，最早的消息会被自动关闭 | number | - | 4.17.0 |
 
-#### Notification - notification.config
+
+#### Notification - notification.config 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | bottom | 消息从底部弹出时，距离底部的位置，单位像素 | number | 24 |
 | closeIcon | 自定义关闭图标 | boolean \| ReactNode | true | 5.7.0：设置为 null 或 false 时隐藏关闭按钮 |
 | duration | 默认自动关闭延时，单位秒 | number | 4.5 |
@@ -10507,6 +10673,7 @@
 | top | 消息从顶部弹出时，距离顶部的位置，单位像素 | number | 24 |
 | maxCount | 最大显示数，超过限制时，最早的消息会被自动关闭 | number | - | 4.17.0 |
 
+
 ### ant-design 的 Notification - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -10526,176 +10693,177 @@
 | onClose | 当通知关闭时触发 | function | - | - |
 | props | 透传至通知 `div` 上的 props 对象，支持传入 `data-*` `aria-*` 或 `role` 作为对象的属性。需要注意的是，虽然在 TypeScript 类型中声明的类型支持传入 `data-*` 作为对象的属性，但目前只允许传入 `data-testid` 作为对象的属性。 详见 <https://github.com/microsoft/TypeScript/issues/28960> | Object | - | - |
 
-### ant-design 中 Notification - API的btn属性如何使用？
 
-参数: btn
+### ant-design 中 Notification - API的btn属性如何使用？ 
 
-说明: 自定义关闭按钮
+参数: btn 
 
-类型: ReactNode
+说明: 自定义关闭按钮 
 
-默认值: -
+类型: ReactNode 
 
-版本: -
-
-### ant-design 中 Notification - API的className属性如何使用？
-
-参数: className
-
-说明: 自定义 CSS class
-
-类型: string
-
-默认值: -
+默认值: - 
 
 版本: -
 
-### ant-design 中 Notification - API的closeIcon属性如何使用？
+### ant-design 中 Notification - API的className属性如何使用？ 
 
-参数: closeIcon
+参数: className 
 
-说明: 自定义关闭图标
+说明: 自定义 CSS class 
 
-类型: boolean | ReactNode
+类型: string 
 
-默认值: true
+默认值: - 
+
+版本: -
+
+### ant-design 中 Notification - API的closeIcon属性如何使用？ 
+
+参数: closeIcon 
+
+说明: 自定义关闭图标 
+
+类型: boolean | ReactNode 
+
+默认值: true 
 
 版本: 5.7.0：设置为 null 或 false 时隐藏关闭按钮
 
-### ant-design 中 Notification - API的description属性如何使用？
+### ant-design 中 Notification - API的description属性如何使用？ 
 
-参数: description
+参数: description 
 
-说明: 通知提醒内容，必选
+说明: 通知提醒内容，必选 
 
-类型: ReactNode
+类型: ReactNode 
+
+默认值: - 
+
+版本: -
+
+### ant-design 中 Notification - API的duration属性如何使用？ 
+
+参数: duration 
+
+说明: 默认 4.5 秒后自动关闭，配置为 null 则不自动关闭 
+
+类型: number 
+
+默认值: 4.5 
+
+版本: -
+
+### ant-design 中 Notification - API的icon属性如何使用？ 
+
+参数: icon 
+
+说明: 自定义图标 
+
+类型: ReactNode 
+
+默认值: - 
+
+版本: -
+
+### ant-design 中 Notification - API的key属性如何使用？ 
+
+参数: key 
+
+说明: 当前通知唯一标志 
+
+类型: string 
+
+默认值: - 
+
+版本: -
+
+### ant-design 中 Notification - API的message属性如何使用？ 
+
+参数: message 
+
+说明: 通知提醒标题，必选 
+
+类型: ReactNode 
+
+默认值: - 
+
+版本: -
+
+### ant-design 中 Notification - API的placement属性如何使用？ 
+
+参数: placement 
+
+说明: 弹出位置，可选 `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` 
+
+类型: string 
+
+默认值: `topRight` 
+
+版本: -
+
+### ant-design 中 Notification - API的style属性如何使用？ 
+
+参数: style 
+
+说明: 自定义内联样式 
+
+类型: - 
 
 默认值: -
 
-版本: -
+### ant-design 中 Notification - API的role属性如何使用？ 
 
-### ant-design 中 Notification - API的duration属性如何使用？
+参数: role 
 
-参数: duration
+说明: 供屏幕阅读器识别的通知内容语义，默认为 `alert`。此情况下屏幕阅读器会立即打断当前正在阅读的其他内容，转而阅读通知内容 
 
-说明: 默认 4.5 秒后自动关闭，配置为 null 则不自动关闭
+类型: `alert | status` 
 
-类型: number
-
-默认值: 4.5
-
-版本: -
-
-### ant-design 中 Notification - API的icon属性如何使用？
-
-参数: icon
-
-说明: 自定义图标
-
-类型: ReactNode
-
-默认值: -
-
-版本: -
-
-### ant-design 中 Notification - API的key属性如何使用？
-
-参数: key
-
-说明: 当前通知唯一标志
-
-类型: string
-
-默认值: -
-
-版本: -
-
-### ant-design 中 Notification - API的message属性如何使用？
-
-参数: message
-
-说明: 通知提醒标题，必选
-
-类型: ReactNode
-
-默认值: -
-
-版本: -
-
-### ant-design 中 Notification - API的placement属性如何使用？
-
-参数: placement
-
-说明: 弹出位置，可选 `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight`
-
-类型: string
-
-默认值: `topRight`
-
-版本: -
-
-### ant-design 中 Notification - API的style属性如何使用？
-
-参数: style
-
-说明: 自定义内联样式
-
-类型: -
-
-默认值: -
-
-### ant-design 中 Notification - API的role属性如何使用？
-
-参数: role
-
-说明: 供屏幕阅读器识别的通知内容语义，默认为 `alert`。此情况下屏幕阅读器会立即打断当前正在阅读的其他内容，转而阅读通知内容
-
-类型: `alert | status`
-
-默认值: `alert`
+默认值: `alert` 
 
 版本: 5.6.0
 
-### ant-design 中 Notification - API的onClick属性如何使用？
+### ant-design 中 Notification - API的onClick属性如何使用？ 
 
-参数: onClick
+参数: onClick 
 
-说明: 点击通知时触发的回调函数
+说明: 点击通知时触发的回调函数 
 
-类型: function
+类型: function 
 
-默认值: -
-
-版本: -
-
-### ant-design 中 Notification - API的onClose属性如何使用？
-
-参数: onClose
-
-说明: 当通知关闭时触发
-
-类型: function
-
-默认值: -
+默认值: - 
 
 版本: -
 
-### ant-design 中 Notification - API的props属性如何使用？
+### ant-design 中 Notification - API的onClose属性如何使用？ 
 
-参数: props
+参数: onClose 
 
-说明: 透传至通知 `div` 上的 props 对象，支持传入 `data-*` `aria-*` 或 `role` 作为对象的属性。需要注意的是，虽然在 TypeScript 类型中声明的类型支持传入 `data-*` 作为对象的属性，但目前只允许传入 `data-testid` 作为对象的属性。 详见 <https://github.com/microsoft/TypeScript/issues/28960>
+说明: 当通知关闭时触发 
 
-类型: Object
+类型: function 
 
-默认值: -
+默认值: - 
+
+版本: -
+
+### ant-design 中 Notification - API的props属性如何使用？ 
+
+参数: props 
+
+说明: 透传至通知 `div` 上的 props 对象，支持传入 `data-*` `aria-*` 或 `role` 作为对象的属性。需要注意的是，虽然在 TypeScript 类型中声明的类型支持传入 `data-*` 作为对象的属性，但目前只允许传入 `data-testid` 作为对象的属性。 详见 <https://github.com/microsoft/TypeScript/issues/28960> 
+
+类型: Object 
+
+默认值: - 
 
 版本: -
 
 ### ant-design 的 Notification - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | bottom | 消息从底部弹出时，距离底部的位置，单位像素 | number | 24 |
 | closeIcon | 自定义关闭图标 | boolean \| ReactNode | true | 5.7.0：设置为 null 或 false 时隐藏关闭按钮 |
 | getContainer | 配置渲染节点的输出位置 | () => HTMLNode | () => document.body |
@@ -10705,96 +10873,97 @@
 | top | 消息从顶部弹出时，距离顶部的位置，单位像素 | number | 24 |
 | maxCount | 最大显示数，超过限制时，最早的消息会被自动关闭 | number | - | 4.17.0 |
 
-### ant-design 中 Notification - API的bottom属性如何使用？
 
-参数: bottom
+### ant-design 中 Notification - API的bottom属性如何使用？ 
 
-说明: 消息从底部弹出时，距离底部的位置，单位像素
+参数: bottom 
 
-类型: number
+说明: 消息从底部弹出时，距离底部的位置，单位像素 
+
+类型: number 
 
 默认值: 24
 
-### ant-design 中 Notification - API的closeIcon属性如何使用？
+### ant-design 中 Notification - API的closeIcon属性如何使用？ 
 
-参数: closeIcon
+参数: closeIcon 
 
-说明: 自定义关闭图标
+说明: 自定义关闭图标 
 
-类型: boolean | ReactNode
+类型: boolean | ReactNode 
 
-默认值: true
+默认值: true 
 
 版本: 5.7.0：设置为 null 或 false 时隐藏关闭按钮
 
-### ant-design 中 Notification - API的getContainer属性如何使用？
+### ant-design 中 Notification - API的getContainer属性如何使用？ 
 
-参数: getContainer
+参数: getContainer 
 
-说明: 配置渲染节点的输出位置
+说明: 配置渲染节点的输出位置 
 
-类型: () => HTMLNode
+类型: () => HTMLNode 
 
 默认值: () => document.body
 
-### ant-design 中 Notification - API的placement属性如何使用？
+### ant-design 中 Notification - API的placement属性如何使用？ 
 
-参数: placement
+参数: placement 
 
-说明: 弹出位置，可选 `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight`
+说明: 弹出位置，可选 `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` 
 
-类型: string
+类型: string 
 
 默认值: `topRight`
 
-### ant-design 中 Notification - API的rtl属性如何使用？
+### ant-design 中 Notification - API的rtl属性如何使用？ 
 
-参数: rtl
+参数: rtl 
 
-说明: 是否开启 RTL 模式
+说明: 是否开启 RTL 模式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Notification - API的stack属性如何使用？
+### ant-design 中 Notification - API的stack属性如何使用？ 
 
-参数: stack
+参数: stack 
 
-说明: 堆叠模式，超过阈值时会将所有消息收起
+说明: 堆叠模式，超过阈值时会将所有消息收起 
 
-类型: boolean | `{ threshold: number }`
+类型: boolean | `{ threshold: number }` 
 
-默认值: `{ threshold: 3 }`
+默认值: `{ threshold: 3 }` 
 
 版本: 5.10.0
 
-### ant-design 中 Notification - API的top属性如何使用？
+### ant-design 中 Notification - API的top属性如何使用？ 
 
-参数: top
+参数: top 
 
-说明: 消息从顶部弹出时，距离顶部的位置，单位像素
+说明: 消息从顶部弹出时，距离顶部的位置，单位像素 
 
-类型: number
+类型: number 
 
 默认值: 24
 
-### ant-design 中 Notification - API的maxCount属性如何使用？
+### ant-design 中 Notification - API的maxCount属性如何使用？ 
 
-参数: maxCount
+参数: maxCount 
 
-说明: 最大显示数，超过限制时，最早的消息会被自动关闭
+说明: 最大显示数，超过限制时，最早的消息会被自动关闭 
 
-类型: number
+类型: number 
 
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
 ### ant-design 的 Notification - notification.config 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | bottom | 消息从底部弹出时，距离底部的位置，单位像素 | number | 24 |
 | closeIcon | 自定义关闭图标 | boolean \| ReactNode | true | 5.7.0：设置为 null 或 false 时隐藏关闭按钮 |
 | duration | 默认自动关闭延时，单位秒 | number | 4.5 |
@@ -10804,96 +10973,97 @@
 | top | 消息从顶部弹出时，距离顶部的位置，单位像素 | number | 24 |
 | maxCount | 最大显示数，超过限制时，最早的消息会被自动关闭 | number | - | 4.17.0 |
 
-### ant-design 中 Notification - notification.config的bottom属性如何使用？
 
-参数: bottom
+### ant-design 中 Notification - notification.config的bottom属性如何使用？ 
 
-说明: 消息从底部弹出时，距离底部的位置，单位像素
+参数: bottom 
 
-类型: number
+说明: 消息从底部弹出时，距离底部的位置，单位像素 
+
+类型: number 
 
 默认值: 24
 
-### ant-design 中 Notification - notification.config的closeIcon属性如何使用？
+### ant-design 中 Notification - notification.config的closeIcon属性如何使用？ 
 
-参数: closeIcon
+参数: closeIcon 
 
-说明: 自定义关闭图标
+说明: 自定义关闭图标 
 
-类型: boolean | ReactNode
+类型: boolean | ReactNode 
 
-默认值: true
+默认值: true 
 
 版本: 5.7.0：设置为 null 或 false 时隐藏关闭按钮
 
-### ant-design 中 Notification - notification.config的duration属性如何使用？
+### ant-design 中 Notification - notification.config的duration属性如何使用？ 
 
-参数: duration
+参数: duration 
 
-说明: 默认自动关闭延时，单位秒
+说明: 默认自动关闭延时，单位秒 
 
-类型: number
+类型: number 
 
 默认值: 4.5
 
-### ant-design 中 Notification - notification.config的getContainer属性如何使用？
+### ant-design 中 Notification - notification.config的getContainer属性如何使用？ 
 
-参数: getContainer
+参数: getContainer 
 
-说明: 配置渲染节点的输出位置，但依旧为全屏展示
+说明: 配置渲染节点的输出位置，但依旧为全屏展示 
 
-类型: () => HTMLNode
+类型: () => HTMLNode 
 
 默认值: () => document.body
 
-### ant-design 中 Notification - notification.config的placement属性如何使用？
+### ant-design 中 Notification - notification.config的placement属性如何使用？ 
 
-参数: placement
+参数: placement 
 
-说明: 弹出位置，可选 `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight`
+说明: 弹出位置，可选 `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` 
 
-类型: string
+类型: string 
 
 默认值: `topRight`
 
-### ant-design 中 Notification - notification.config的rtl属性如何使用？
+### ant-design 中 Notification - notification.config的rtl属性如何使用？ 
 
-参数: rtl
+参数: rtl 
 
-说明: 是否开启 RTL 模式
+说明: 是否开启 RTL 模式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Notification - notification.config的top属性如何使用？
+### ant-design 中 Notification - notification.config的top属性如何使用？ 
 
-参数: top
+参数: top 
 
-说明: 消息从顶部弹出时，距离顶部的位置，单位像素
+说明: 消息从顶部弹出时，距离顶部的位置，单位像素 
 
-类型: number
+类型: number 
 
 默认值: 24
 
-### ant-design 中 Notification - notification.config的maxCount属性如何使用？
+### ant-design 中 Notification - notification.config的maxCount属性如何使用？ 
 
-参数: maxCount
+参数: maxCount 
 
-说明: 最大显示数，超过限制时，最早的消息会被自动关闭
+说明: 最大显示数，超过限制时，最早的消息会被自动关闭 
 
-类型: number
+类型: number 
 
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
 ### ant-design 的 Modal 有哪些配置？
 
-#### Modal - API
+#### Modal - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | afterClose | Modal 完全关闭后的回调 | function | - |
 | classNames | 配置弹窗内置模块的 className | `header?: string; body?: string; footer?: string; mask?: string; wrapper?: string;` | - |
 | styles | 配置弹窗内置模块的 style | `header?: CSSProperties; body?: CSSProperties; footer?: CSSProperties; mask?: CSSProperties;` | - | 5.10.0 |
@@ -10924,7 +11094,8 @@
 | onOk | 点击确定回调 | function(e) | - |
 | afterOpenChange | 打开和关闭 Modal 时动画结束后的回调 | (open: boolean) => void | - | 5.4.0 |
 
-#### Modal - Modal.method()
+
+#### Modal - Modal.method() 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -10954,17 +11125,19 @@
 | onCancel | 取消回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭 | function(close) | - |
 | onOk | 点击确定回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭 | function(close) | - |
 
-#### Modal - footerRenderParams
 
-| 参数       | 说明     | 类型                         | 默认值 |
-| ---------- | -------- | ---------------------------- | ------ |
-| originNode | 默认节点 | React.ReactNode              | -      |
-| extra      | 扩展选项 | { OkBtn: FC; CancelBtn: FC } | -      |
+#### Modal - footerRenderParams 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| originNode | 默认节点 | React.ReactNode | - |
+| extra | 扩展选项 | { OkBtn: FC; CancelBtn: FC } | - |
+
 
 ### ant-design 的 Modal - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | afterClose | Modal 完全关闭后的回调 | function | - |
 | classNames | 配置弹窗内置模块的 className | `header?: string; body?: string; footer?: string; mask?: string; wrapper?: string;` | - |
 | styles | 配置弹窗内置模块的 style | `header?: CSSProperties; body?: CSSProperties; footer?: CSSProperties; mask?: CSSProperties;` | - | 5.10.0 |
@@ -10995,299 +11168,300 @@
 | onOk | 点击确定回调 | function(e) | - |
 | afterOpenChange | 打开和关闭 Modal 时动画结束后的回调 | (open: boolean) => void | - | 5.4.0 |
 
-### ant-design 中 Modal - API的afterClose属性如何使用？
 
-参数: afterClose
+### ant-design 中 Modal - API的afterClose属性如何使用？ 
 
-说明: Modal 完全关闭后的回调
+参数: afterClose 
 
-类型: function
+说明: Modal 完全关闭后的回调 
 
-默认值: -
-
-### ant-design 中 Modal - API的classNames属性如何使用？
-
-参数: classNames
-
-说明: 配置弹窗内置模块的 className
-
-类型: `header?: string; body?: string; footer?: string; mask?: string; wrapper?: string;`
+类型: function 
 
 默认值: -
 
-### ant-design 中 Modal - API的styles属性如何使用？
+### ant-design 中 Modal - API的classNames属性如何使用？ 
 
-参数: styles
+参数: classNames 
 
-说明: 配置弹窗内置模块的 style
+说明: 配置弹窗内置模块的 className 
 
-类型: `header?: CSSProperties; body?: CSSProperties; footer?: CSSProperties; mask?: CSSProperties;`
+类型: `header?: string; body?: string; footer?: string; mask?: string; wrapper?: string;` 
 
 默认值: -
+
+### ant-design 中 Modal - API的styles属性如何使用？ 
+
+参数: styles 
+
+说明: 配置弹窗内置模块的 style 
+
+类型: `header?: CSSProperties; body?: CSSProperties; footer?: CSSProperties; mask?: CSSProperties;` 
+
+默认值: - 
 
 版本: 5.10.0
 
-### ant-design 中 Modal - API的cancelButtonProps属性如何使用？
+### ant-design 中 Modal - API的cancelButtonProps属性如何使用？ 
 
-参数: cancelButtonProps
+参数: cancelButtonProps 
 
-说明: cancel 按钮 props
+说明: cancel 按钮 props 
 
 类型: -
 
-### ant-design 中 Modal - API的cancelText属性如何使用？
+### ant-design 中 Modal - API的cancelText属性如何使用？ 
 
-参数: cancelText
+参数: cancelText 
 
-说明: 取消按钮文字
+说明: 取消按钮文字 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: `取消`
 
-### ant-design 中 Modal - API的centered属性如何使用？
+### ant-design 中 Modal - API的centered属性如何使用？ 
 
-参数: centered
+参数: centered 
 
-说明: 垂直居中展示 Modal
+说明: 垂直居中展示 Modal 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Modal - API的closeIcon属性如何使用？
+### ant-design 中 Modal - API的closeIcon属性如何使用？ 
 
-参数: closeIcon
+参数: closeIcon 
 
-说明: 自定义关闭图标。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮
+说明: 自定义关闭图标。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮 
 
-类型: boolean | ReactNode
+类型: boolean | ReactNode 
 
 默认值: \<CloseOutlined />
 
-### ant-design 中 Modal - API的confirmLoading属性如何使用？
+### ant-design 中 Modal - API的confirmLoading属性如何使用？ 
 
-参数: confirmLoading
+参数: confirmLoading 
 
-说明: 确定按钮 loading
+说明: 确定按钮 loading 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Modal - API的destroyOnClose属性如何使用？
-
-参数: destroyOnClose
-
-说明: 关闭时销毁 Modal 里的子元素
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Modal - API的focusTriggerAfterClose属性如何使用？
+### ant-design 中 Modal - API的destroyOnClose属性如何使用？ 
 
-参数: focusTriggerAfterClose
+参数: destroyOnClose 
 
-说明: 对话框关闭后是否需要聚焦触发元素
+说明: 关闭时销毁 Modal 里的子元素 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: false
+
+### ant-design 中 Modal - API的focusTriggerAfterClose属性如何使用？ 
+
+参数: focusTriggerAfterClose 
+
+说明: 对话框关闭后是否需要聚焦触发元素 
+
+类型: boolean 
+
+默认值: true 
 
 版本: 4.9.0
 
-### ant-design 中 Modal - API的footer属性如何使用？
+### ant-design 中 Modal - API的footer属性如何使用？ 
 
-参数: footer
+参数: footer 
 
-说明: 底部内容，当不需要默认底部按钮时，可以设为 `footer={null}`
+说明: 底部内容，当不需要默认底部按钮时，可以设为 `footer={null}` 
 
-类型: (params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode | React.ReactNode
+类型: (params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode | React.ReactNode 
 
-默认值: (确定取消按钮)
+默认值: (确定取消按钮) 
 
 版本: 5.9.0
 
-### ant-design 中 Modal - API的forceRender属性如何使用？
+### ant-design 中 Modal - API的forceRender属性如何使用？ 
 
-参数: forceRender
+参数: forceRender 
 
-说明: 强制渲染 Modal
+说明: 强制渲染 Modal 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Modal - API的getContainer属性如何使用？
+### ant-design 中 Modal - API的getContainer属性如何使用？ 
 
-参数: getContainer
+参数: getContainer 
 
-说明: 指定 Modal 挂载的节点，但依旧为全屏展示，`false` 为挂载在当前位置
+说明: 指定 Modal 挂载的节点，但依旧为全屏展示，`false` 为挂载在当前位置 
 
-类型: HTMLElement | () => HTMLElement | Selectors | false
+类型: HTMLElement | () => HTMLElement | Selectors | false 
 
 默认值: document.body
 
-### ant-design 中 Modal - API的keyboard属性如何使用？
+### ant-design 中 Modal - API的keyboard属性如何使用？ 
 
-参数: keyboard
+参数: keyboard 
 
-说明: 是否支持键盘 esc 关闭
+说明: 是否支持键盘 esc 关闭 
 
-类型: boolean
-
-默认值: true
-
-### ant-design 中 Modal - API的mask属性如何使用？
-
-参数: mask
-
-说明: 是否展示遮罩
-
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Modal - API的maskClosable属性如何使用？
+### ant-design 中 Modal - API的mask属性如何使用？ 
 
-参数: maskClosable
+参数: mask 
 
-说明: 点击蒙层是否允许关闭
+说明: 是否展示遮罩 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Modal - API的modalRender属性如何使用？
+### ant-design 中 Modal - API的maskClosable属性如何使用？ 
 
-参数: modalRender
+参数: maskClosable 
 
-说明: 自定义渲染对话框
+说明: 点击蒙层是否允许关闭 
 
-类型: (node: ReactNode) => ReactNode
+类型: boolean 
 
-默认值: -
+默认值: true
+
+### ant-design 中 Modal - API的modalRender属性如何使用？ 
+
+参数: modalRender 
+
+说明: 自定义渲染对话框 
+
+类型: (node: ReactNode) => ReactNode 
+
+默认值: - 
 
 版本: 4.7.0
 
-### ant-design 中 Modal - API的okButtonProps属性如何使用？
+### ant-design 中 Modal - API的okButtonProps属性如何使用？ 
 
-参数: okButtonProps
+参数: okButtonProps 
 
-说明: ok 按钮 props
+说明: ok 按钮 props 
 
 类型: -
 
-### ant-design 中 Modal - API的okText属性如何使用？
+### ant-design 中 Modal - API的okText属性如何使用？ 
 
-参数: okText
+参数: okText 
 
-说明: 确认按钮文字
+说明: 确认按钮文字 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: `确定`
 
-### ant-design 中 Modal - API的okType属性如何使用？
+### ant-design 中 Modal - API的okType属性如何使用？ 
 
-参数: okType
+参数: okType 
 
-说明: 确认按钮类型
+说明: 确认按钮类型 
 
-类型: string
+类型: string 
 
 默认值: `primary`
 
-### ant-design 中 Modal - API的style属性如何使用？
+### ant-design 中 Modal - API的style属性如何使用？ 
 
-参数: style
+参数: style 
 
-说明: 可用于设置浮层的样式，调整浮层位置等
+说明: 可用于设置浮层的样式，调整浮层位置等 
 
-类型: CSSProperties
-
-默认值: -
-
-### ant-design 中 Modal - API的title属性如何使用？
-
-参数: title
-
-说明: 标题
-
-类型: ReactNode
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Modal - API的open属性如何使用？
+### ant-design 中 Modal - API的title属性如何使用？ 
 
-参数: open
+参数: title 
 
-说明: 对话框是否可见
+说明: 标题 
 
-类型: boolean
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Modal - API的width属性如何使用？
+### ant-design 中 Modal - API的open属性如何使用？ 
 
-参数: width
+参数: open 
 
-说明: 宽度
+说明: 对话框是否可见 
 
-类型: string | number
+类型: boolean 
+
+默认值: -
+
+### ant-design 中 Modal - API的width属性如何使用？ 
+
+参数: width 
+
+说明: 宽度 
+
+类型: string | number 
 
 默认值: 520
 
-### ant-design 中 Modal - API的wrapClassName属性如何使用？
+### ant-design 中 Modal - API的wrapClassName属性如何使用？ 
 
-参数: wrapClassName
+参数: wrapClassName 
 
-说明: 对话框外层容器的类名
+说明: 对话框外层容器的类名 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Modal - API的zIndex属性如何使用？
+### ant-design 中 Modal - API的zIndex属性如何使用？ 
 
-参数: zIndex
+参数: zIndex 
 
-说明: 设置 Modal 的 `z-index`
+说明: 设置 Modal 的 `z-index` 
 
-类型: number
+类型: number 
 
 默认值: 1000
 
-### ant-design 中 Modal - API的onCancel属性如何使用？
+### ant-design 中 Modal - API的onCancel属性如何使用？ 
 
-参数: onCancel
+参数: onCancel 
 
-说明: 点击遮罩层或右上角叉或取消按钮的回调
+说明: 点击遮罩层或右上角叉或取消按钮的回调 
 
-类型: function(e)
-
-默认值: -
-
-### ant-design 中 Modal - API的onOk属性如何使用？
-
-参数: onOk
-
-说明: 点击确定回调
-
-类型: function(e)
+类型: function(e) 
 
 默认值: -
 
-### ant-design 中 Modal - API的afterOpenChange属性如何使用？
+### ant-design 中 Modal - API的onOk属性如何使用？ 
 
-参数: afterOpenChange
+参数: onOk 
 
-说明: 打开和关闭 Modal 时动画结束后的回调
+说明: 点击确定回调 
 
-类型: (open: boolean) => void
+类型: function(e) 
 
 默认值: -
+
+### ant-design 中 Modal - API的afterOpenChange属性如何使用？ 
+
+参数: afterOpenChange 
+
+说明: 打开和关闭 Modal 时动画结束后的回调 
+
+类型: (open: boolean) => void 
+
+默认值: - 
 
 版本: 5.4.0
 
@@ -11321,292 +11495,294 @@
 | onCancel | 取消回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭 | function(close) | - |
 | onOk | 点击确定回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭 | function(close) | - |
 
-### ant-design 中 Modal - Modal.method()的afterClose属性如何使用？
 
-参数: afterClose
+### ant-design 中 Modal - Modal.method()的afterClose属性如何使用？ 
 
-说明: Modal 完全关闭后的回调
+参数: afterClose 
 
-类型: function
+说明: Modal 完全关闭后的回调 
 
-默认值: -
+类型: function 
+
+默认值: - 
 
 版本: 4.9.0
 
-### ant-design 中 Modal - Modal.method()的autoFocusButton属性如何使用？
+### ant-design 中 Modal - Modal.method()的autoFocusButton属性如何使用？ 
 
-参数: autoFocusButton
+参数: autoFocusButton 
 
-说明: 指定自动获得焦点的按钮
+说明: 指定自动获得焦点的按钮 
 
-类型: null | `ok` | `cancel`
+类型: null | `ok` | `cancel` 
 
 默认值: `ok`
 
-### ant-design 中 Modal - Modal.method()的cancelButtonProps属性如何使用？
+### ant-design 中 Modal - Modal.method()的cancelButtonProps属性如何使用？ 
 
-参数: cancelButtonProps
+参数: cancelButtonProps 
 
-说明: cancel 按钮 props
+说明: cancel 按钮 props 
 
 类型: -
 
-### ant-design 中 Modal - Modal.method()的cancelText属性如何使用？
+### ant-design 中 Modal - Modal.method()的cancelText属性如何使用？ 
 
-参数: cancelText
+参数: cancelText 
 
-说明: 设置 Modal.confirm 取消按钮文字
+说明: 设置 Modal.confirm 取消按钮文字 
 
-类型: string
+类型: string 
 
 默认值: `取消`
 
-### ant-design 中 Modal - Modal.method()的centered属性如何使用？
+### ant-design 中 Modal - Modal.method()的centered属性如何使用？ 
 
-参数: centered
+参数: centered 
 
-说明: 垂直居中展示 Modal
+说明: 垂直居中展示 Modal 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Modal - Modal.method()的className属性如何使用？
-
-参数: className
-
-说明: 容器类名
-
-类型: string
-
-默认值: -
-
-### ant-design 中 Modal - Modal.method()的closable属性如何使用？
-
-参数: closable
-
-说明: 是否显示右上角的关闭按钮
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-版本: 4.9.0
+### ant-design 中 Modal - Modal.method()的className属性如何使用？ 
 
-### ant-design 中 Modal - Modal.method()的closeIcon属性如何使用？
+参数: className 
 
-参数: closeIcon
+说明: 容器类名 
 
-说明: 自定义关闭图标
-
-类型: ReactNode
-
-默认值: undefined
-
-版本: 4.9.0
-
-### ant-design 中 Modal - Modal.method()的content属性如何使用？
-
-参数: content
-
-说明: 内容
-
-类型: ReactNode
+类型: string 
 
 默认值: -
 
-### ant-design 中 Modal - Modal.method()的footer属性如何使用？
+### ant-design 中 Modal - Modal.method()的closable属性如何使用？ 
 
-参数: footer
+参数: closable 
 
-说明: 底部内容，当不需要默认底部按钮时，可以设为 `footer: null`
+说明: 是否显示右上角的关闭按钮 
 
-类型: (params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode | React.ReactNode
+类型: boolean 
+
+默认值: false 
+
+版本: 4.9.0
+
+### ant-design 中 Modal - Modal.method()的closeIcon属性如何使用？ 
+
+参数: closeIcon 
+
+说明: 自定义关闭图标 
+
+类型: ReactNode 
+
+默认值: undefined 
+
+版本: 4.9.0
+
+### ant-design 中 Modal - Modal.method()的content属性如何使用？ 
+
+参数: content 
+
+说明: 内容 
+
+类型: ReactNode 
 
 默认值: -
+
+### ant-design 中 Modal - Modal.method()的footer属性如何使用？ 
+
+参数: footer 
+
+说明: 底部内容，当不需要默认底部按钮时，可以设为 `footer: null` 
+
+类型: (params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode | React.ReactNode 
+
+默认值: - 
 
 版本: 5.9.0
 
-### ant-design 中 Modal - Modal.method()的getContainer属性如何使用？
+### ant-design 中 Modal - Modal.method()的getContainer属性如何使用？ 
 
-参数: getContainer
+参数: getContainer 
 
-说明: 指定 Modal 挂载的 HTML 节点，false 为挂载在当前 dom
+说明: 指定 Modal 挂载的 HTML 节点，false 为挂载在当前 dom 
 
-类型: HTMLElement | () => HTMLElement | Selectors | false
+类型: HTMLElement | () => HTMLElement | Selectors | false 
 
 默认值: document.body
 
-### ant-design 中 Modal - Modal.method()的icon属性如何使用？
+### ant-design 中 Modal - Modal.method()的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 自定义图标
+说明: 自定义图标 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: \<ExclamationCircleFilled />
 
-### ant-design 中 Modal - Modal.method()的keyboard属性如何使用？
+### ant-design 中 Modal - Modal.method()的keyboard属性如何使用？ 
 
-参数: keyboard
+参数: keyboard 
 
-说明: 是否支持键盘 esc 关闭
+说明: 是否支持键盘 esc 关闭 
 
-类型: boolean
-
-默认值: true
-
-### ant-design 中 Modal - Modal.method()的mask属性如何使用？
-
-参数: mask
-
-说明: 是否展示遮罩
-
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Modal - Modal.method()的maskClosable属性如何使用？
+### ant-design 中 Modal - Modal.method()的mask属性如何使用？ 
 
-参数: maskClosable
+参数: mask 
 
-说明: 点击蒙层是否允许关闭
+说明: 是否展示遮罩 
 
-类型: boolean
+类型: boolean 
+
+默认值: true
+
+### ant-design 中 Modal - Modal.method()的maskClosable属性如何使用？ 
+
+参数: maskClosable 
+
+说明: 点击蒙层是否允许关闭 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Modal - Modal.method()的okButtonProps属性如何使用？
+### ant-design 中 Modal - Modal.method()的okButtonProps属性如何使用？ 
 
-参数: okButtonProps
+参数: okButtonProps 
 
-说明: ok 按钮 props
+说明: ok 按钮 props 
 
 类型: -
 
-### ant-design 中 Modal - Modal.method()的okText属性如何使用？
+### ant-design 中 Modal - Modal.method()的okText属性如何使用？ 
 
-参数: okText
+参数: okText 
 
-说明: 确认按钮文字
+说明: 确认按钮文字 
 
-类型: string
+类型: string 
 
 默认值: `确定`
 
-### ant-design 中 Modal - Modal.method()的okType属性如何使用？
+### ant-design 中 Modal - Modal.method()的okType属性如何使用？ 
 
-参数: okType
+参数: okType 
 
-说明: 确认按钮类型
+说明: 确认按钮类型 
 
-类型: string
+类型: string 
 
 默认值: `primary`
 
-### ant-design 中 Modal - Modal.method()的style属性如何使用？
+### ant-design 中 Modal - Modal.method()的style属性如何使用？ 
 
-参数: style
+参数: style 
 
-说明: 可用于设置浮层的样式，调整浮层位置等
+说明: 可用于设置浮层的样式，调整浮层位置等 
 
-类型: CSSProperties
-
-默认值: -
-
-### ant-design 中 Modal - Modal.method()的title属性如何使用？
-
-参数: title
-
-说明: 标题
-
-类型: ReactNode
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Modal - Modal.method()的width属性如何使用？
+### ant-design 中 Modal - Modal.method()的title属性如何使用？ 
 
-参数: width
+参数: title 
 
-说明: 宽度
+说明: 标题 
 
-类型: string | number
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Modal - Modal.method()的width属性如何使用？ 
+
+参数: width 
+
+说明: 宽度 
+
+类型: string | number 
 
 默认值: 416
 
-### ant-design 中 Modal - Modal.method()的wrapClassName属性如何使用？
+### ant-design 中 Modal - Modal.method()的wrapClassName属性如何使用？ 
 
-参数: wrapClassName
+参数: wrapClassName 
 
-说明: 对话框外层容器的类名
+说明: 对话框外层容器的类名 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 4.18.0
 
-### ant-design 中 Modal - Modal.method()的zIndex属性如何使用？
+### ant-design 中 Modal - Modal.method()的zIndex属性如何使用？ 
 
-参数: zIndex
+参数: zIndex 
 
-说明: 设置 Modal 的 `z-index`
+说明: 设置 Modal 的 `z-index` 
 
-类型: number
+类型: number 
 
 默认值: 1000
 
-### ant-design 中 Modal - Modal.method()的onCancel属性如何使用？
+### ant-design 中 Modal - Modal.method()的onCancel属性如何使用？ 
 
-参数: onCancel
+参数: onCancel 
 
-说明: 取消回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭
+说明: 取消回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭 
 
-类型: function(close)
+类型: function(close) 
 
 默认值: -
 
-### ant-design 中 Modal - Modal.method()的onOk属性如何使用？
+### ant-design 中 Modal - Modal.method()的onOk属性如何使用？ 
 
-参数: onOk
+参数: onOk 
 
-说明: 点击确定回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭
+说明: 点击确定回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭 
 
-类型: function(close)
+类型: function(close) 
 
 默认值: -
 
 ### ant-design 的 Modal - footerRenderParams 有哪些配置？
 
-| 参数       | 说明     | 类型                         | 默认值 |
-| ---------- | -------- | ---------------------------- | ------ |
-| originNode | 默认节点 | React.ReactNode              | -      |
-| extra      | 扩展选项 | { OkBtn: FC; CancelBtn: FC } | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| originNode | 默认节点 | React.ReactNode | - |
+| extra | 扩展选项 | { OkBtn: FC; CancelBtn: FC } | - |
 
-### ant-design 中 Modal - footerRenderParams的originNode属性如何使用？
 
-参数: originNode
+### ant-design 中 Modal - footerRenderParams的originNode属性如何使用？ 
 
-说明: 默认节点
+参数: originNode 
 
-类型: React.ReactNode
+说明: 默认节点 
+
+类型: React.ReactNode 
 
 默认值: -
 
-### ant-design 中 Modal - footerRenderParams的extra属性如何使用？
+### ant-design 中 Modal - footerRenderParams的extra属性如何使用？ 
 
-参数: extra
+参数: extra 
 
-说明: 扩展选项
+说明: 扩展选项 
 
-类型: { OkBtn: FC; CancelBtn: FC }
+类型: { OkBtn: FC; CancelBtn: FC } 
 
 默认值: -
 
 ### ant-design 的 Message 有哪些配置？
 
-#### Message - API
+#### Message - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -11614,7 +11790,8 @@
 | duration | 自动关闭的延时，单位秒。设为 0 时不自动关闭 | number | 3 |
 | onClose | 关闭时触发的回调函数 | function | - |
 
-#### Message - API
+
+#### Message - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -11627,10 +11804,11 @@
 | onClick | 点击 message 时触发的回调函数 | function | - |
 | onClose | 关闭时触发的回调函数 | function | - |
 
-#### Message - message.config
+
+#### Message - message.config 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | duration | 默认自动关闭延时，单位秒 | number | 3 |
 | getContainer | 配置渲染节点的输出位置，但依旧为全屏展示 | () => HTMLElement | () => document.body |
 | maxCount | 最大显示数，超过限制时，最早的消息会被自动关闭 | number | - |
@@ -11638,6 +11816,7 @@
 | rtl | 是否开启 RTL 模式 | boolean | false |
 | top | 消息距离顶部的位置 | number | 8 |
 
+
 ### ant-design 的 Message - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -11646,33 +11825,34 @@
 | duration | 自动关闭的延时，单位秒。设为 0 时不自动关闭 | number | 3 |
 | onClose | 关闭时触发的回调函数 | function | - |
 
-### ant-design 中 Message - API的content属性如何使用？
 
-参数: content
+### ant-design 中 Message - API的content属性如何使用？ 
 
-说明: 提示内容
+参数: content 
 
-类型: ReactNode | config
+说明: 提示内容 
+
+类型: ReactNode | config 
 
 默认值: -
 
-### ant-design 中 Message - API的duration属性如何使用？
+### ant-design 中 Message - API的duration属性如何使用？ 
 
-参数: duration
+参数: duration 
 
-说明: 自动关闭的延时，单位秒。设为 0 时不自动关闭
+说明: 自动关闭的延时，单位秒。设为 0 时不自动关闭 
 
-类型: number
+类型: number 
 
 默认值: 3
 
-### ant-design 中 Message - API的onClose属性如何使用？
+### ant-design 中 Message - API的onClose属性如何使用？ 
 
-参数: onClose
+参数: onClose 
 
-说明: 关闭时触发的回调函数
+说明: 关闭时触发的回调函数 
 
-类型: function
+类型: function 
 
 默认值: -
 
@@ -11689,88 +11869,89 @@
 | onClick | 点击 message 时触发的回调函数 | function | - |
 | onClose | 关闭时触发的回调函数 | function | - |
 
-### ant-design 中 Message - API的className属性如何使用？
 
-参数: className
+### ant-design 中 Message - API的className属性如何使用？ 
 
-说明: 自定义 CSS class
+参数: className 
 
-类型: string
+说明: 自定义 CSS class 
 
-默认值: -
-
-### ant-design 中 Message - API的content属性如何使用？
-
-参数: content
-
-说明: 提示内容
-
-类型: ReactNode
+类型: string 
 
 默认值: -
 
-### ant-design 中 Message - API的duration属性如何使用？
+### ant-design 中 Message - API的content属性如何使用？ 
 
-参数: duration
+参数: content 
 
-说明: 自动关闭的延时，单位秒。设为 0 时不自动关闭
+说明: 提示内容 
 
-类型: number
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Message - API的duration属性如何使用？ 
+
+参数: duration 
+
+说明: 自动关闭的延时，单位秒。设为 0 时不自动关闭 
+
+类型: number 
 
 默认值: 3
 
-### ant-design 中 Message - API的icon属性如何使用？
+### ant-design 中 Message - API的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 自定义图标
+说明: 自定义图标 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Message - API的key属性如何使用？
-
-参数: key
-
-说明: 当前提示的唯一标志
-
-类型: string | number
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Message - API的style属性如何使用？
+### ant-design 中 Message - API的key属性如何使用？ 
 
-参数: style
+参数: key 
 
-说明: 自定义内联样式
+说明: 当前提示的唯一标志 
+
+类型: string | number 
+
+默认值: -
+
+### ant-design 中 Message - API的style属性如何使用？ 
+
+参数: style 
+
+说明: 自定义内联样式 
 
 类型: -
 
-### ant-design 中 Message - API的onClick属性如何使用？
+### ant-design 中 Message - API的onClick属性如何使用？ 
 
-参数: onClick
+参数: onClick 
 
-说明: 点击 message 时触发的回调函数
+说明: 点击 message 时触发的回调函数 
 
-类型: function
+类型: function 
 
 默认值: -
 
-### ant-design 中 Message - API的onClose属性如何使用？
+### ant-design 中 Message - API的onClose属性如何使用？ 
 
-参数: onClose
+参数: onClose 
 
-说明: 关闭时触发的回调函数
+说明: 关闭时触发的回调函数 
 
-类型: function
+类型: function 
 
 默认值: -
 
 ### ant-design 的 Message - message.config 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | duration | 默认自动关闭延时，单位秒 | number | 3 |
 | getContainer | 配置渲染节点的输出位置，但依旧为全屏展示 | () => HTMLElement | () => document.body |
 | maxCount | 最大显示数，超过限制时，最早的消息会被自动关闭 | number | - |
@@ -11778,74 +11959,75 @@
 | rtl | 是否开启 RTL 模式 | boolean | false |
 | top | 消息距离顶部的位置 | number | 8 |
 
-### ant-design 中 Message - message.config的duration属性如何使用？
 
-参数: duration
+### ant-design 中 Message - message.config的duration属性如何使用？ 
 
-说明: 默认自动关闭延时，单位秒
+参数: duration 
 
-类型: number
+说明: 默认自动关闭延时，单位秒 
+
+类型: number 
 
 默认值: 3
 
-### ant-design 中 Message - message.config的getContainer属性如何使用？
+### ant-design 中 Message - message.config的getContainer属性如何使用？ 
 
-参数: getContainer
+参数: getContainer 
 
-说明: 配置渲染节点的输出位置，但依旧为全屏展示
+说明: 配置渲染节点的输出位置，但依旧为全屏展示 
 
-类型: () => HTMLElement
+类型: () => HTMLElement 
 
 默认值: () => document.body
 
-### ant-design 中 Message - message.config的maxCount属性如何使用？
+### ant-design 中 Message - message.config的maxCount属性如何使用？ 
 
-参数: maxCount
+参数: maxCount 
 
-说明: 最大显示数，超过限制时，最早的消息会被自动关闭
+说明: 最大显示数，超过限制时，最早的消息会被自动关闭 
 
-类型: number
+类型: number 
 
 默认值: -
 
-### ant-design 中 Message - message.config的prefixCls属性如何使用？
+### ant-design 中 Message - message.config的prefixCls属性如何使用？ 
 
-参数: prefixCls
+参数: prefixCls 
 
-说明: 消息节点的 className 前缀
+说明: 消息节点的 className 前缀 
 
-类型: string
+类型: string 
 
-默认值: `ant-message`
+默认值: `ant-message` 
 
 版本: 4.5.0
 
-### ant-design 中 Message - message.config的rtl属性如何使用？
+### ant-design 中 Message - message.config的rtl属性如何使用？ 
 
-参数: rtl
+参数: rtl 
 
-说明: 是否开启 RTL 模式
+说明: 是否开启 RTL 模式 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Message - message.config的top属性如何使用？
+### ant-design 中 Message - message.config的top属性如何使用？ 
 
-参数: top
+参数: top 
 
-说明: 消息距离顶部的位置
+说明: 消息距离顶部的位置 
 
-类型: number
+类型: number 
 
 默认值: 8
 
 ### ant-design 的 Menu 有哪些配置？
 
-#### Menu - Menu
+#### Menu - Menu 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | defaultOpenKeys | 初始展开的 SubMenu 菜单项 key 数组 | string[] | - |
 | defaultSelectedKeys | 初始选中的菜单项 key 数组 | string[] | - |
 | expandIcon | 自定义展开图标 | ReactNode \| `(props: SubMenuProps & { isSubMenu: boolean }) => ReactNode` | - | 4.9.0 |
@@ -11869,21 +12051,23 @@
 | onOpenChange | SubMenu 展开/关闭的回调 | function(openKeys: string[]) | - |
 | onSelect | 被选中时调用 | function({ item, key, keyPath, selectedKeys, domEvent }) | - |
 
-#### Menu - MenuItemType
 
-| 参数     | 说明                     | 类型      | 默认值 |
-| -------- | ------------------------ | --------- | ------ |
-| danger   | 展示错误状态样式         | boolean   | false  |
-| disabled | 是否禁用                 | boolean   | false  |
-| icon     | 菜单图标                 | ReactNode | -      |
-| key      | item 的唯一标志          | string    | -      |
-| label    | 菜单项标题               | ReactNode | -      |
-| title    | 设置收缩时展示的悬浮标题 | string    | -      |
+#### Menu - MenuItemType 
 
-#### Menu - SubMenuType
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| danger | 展示错误状态样式 | boolean | false |
+| disabled | 是否禁用 | boolean | false |
+| icon | 菜单图标 | ReactNode | - |
+| key | item 的唯一标志 | string | - |
+| label | 菜单项标题 | ReactNode | - |
+| title | 设置收缩时展示的悬浮标题 | string | - |
+
+
+#### Menu - SubMenuType 
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | children | 子菜单的菜单项 | - |
 | disabled | 是否禁用 | boolean | false |
 | icon | 菜单图标 | ReactNode | - |
@@ -11894,23 +12078,26 @@
 | onTitleClick | 点击子菜单标题 | function({ key, domEvent }) | - |
 | theme | 设置子菜单的主题，默认从 Menu 上继承 | `light` \| `dark` | - |
 
-#### Menu - MenuItemGroupType
 
-| 参数     | 说明         | 类型      |
-| -------- | ------------ | --------- | --- |
-| children | 分组的菜单项 | -         |
-| label    | 分组标题     | ReactNode | -   |
+#### Menu - MenuItemGroupType 
 
-#### Menu - MenuDividerType
+| 参数 | 说明 | 类型 |
+| --- | --- | --- |
+| children | 分组的菜单项 | - |
+| label | 分组标题 | ReactNode | - |
 
-| 参数   | 说明     | 类型    | 默认值 |
-| ------ | -------- | ------- | ------ |
-| dashed | 是否虚线 | boolean | false  |
+
+#### Menu - MenuDividerType 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dashed | 是否虚线 | boolean | false |
+
 
 ### ant-design 的 Menu - Menu 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | defaultOpenKeys | 初始展开的 SubMenu 菜单项 key 数组 | string[] | - |
 | defaultSelectedKeys | 初始选中的菜单项 key 数组 | string[] | - |
 | expandIcon | 自定义展开图标 | ReactNode \| `(props: SubMenuProps & { isSubMenu: boolean }) => ReactNode` | - | 4.9.0 |
@@ -11934,303 +12121,305 @@
 | onOpenChange | SubMenu 展开/关闭的回调 | function(openKeys: string[]) | - |
 | onSelect | 被选中时调用 | function({ item, key, keyPath, selectedKeys, domEvent }) | - |
 
-### ant-design 中 Menu - Menu的defaultOpenKeys属性如何使用？
 
-参数: defaultOpenKeys
+### ant-design 中 Menu - Menu的defaultOpenKeys属性如何使用？ 
 
-说明: 初始展开的 SubMenu 菜单项 key 数组
+参数: defaultOpenKeys 
 
-类型: string[]
+说明: 初始展开的 SubMenu 菜单项 key 数组 
 
-默认值: -
-
-### ant-design 中 Menu - Menu的defaultSelectedKeys属性如何使用？
-
-参数: defaultSelectedKeys
-
-说明: 初始选中的菜单项 key 数组
-
-类型: string[]
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Menu - Menu的expandIcon属性如何使用？
+### ant-design 中 Menu - Menu的defaultSelectedKeys属性如何使用？ 
 
-参数: expandIcon
+参数: defaultSelectedKeys 
 
-说明: 自定义展开图标
+说明: 初始选中的菜单项 key 数组 
 
-类型: ReactNode | `(props: SubMenuProps & { isSubMenu: boolean }) => ReactNode`
+类型: string[] 
 
 默认值: -
+
+### ant-design 中 Menu - Menu的expandIcon属性如何使用？ 
+
+参数: expandIcon 
+
+说明: 自定义展开图标 
+
+类型: ReactNode | `(props: SubMenuProps & { isSubMenu: boolean }) => ReactNode` 
+
+默认值: - 
 
 版本: 4.9.0
 
-### ant-design 中 Menu - Menu的forceSubMenuRender属性如何使用？
+### ant-design 中 Menu - Menu的forceSubMenuRender属性如何使用？ 
 
-参数: forceSubMenuRender
+参数: forceSubMenuRender 
 
-说明: 在子菜单展示之前就渲染进 DOM
+说明: 在子菜单展示之前就渲染进 DOM 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Menu - Menu的inlineCollapsed属性如何使用？
+### ant-design 中 Menu - Menu的inlineCollapsed属性如何使用？ 
 
-参数: inlineCollapsed
+参数: inlineCollapsed 
 
-说明: inline 时菜单是否收起状态
+说明: inline 时菜单是否收起状态 
 
-类型: boolean
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Menu - Menu的inlineIndent属性如何使用？
+### ant-design 中 Menu - Menu的inlineIndent属性如何使用？ 
 
-参数: inlineIndent
+参数: inlineIndent 
 
-说明: inline 模式的菜单缩进宽度
+说明: inline 模式的菜单缩进宽度 
 
-类型: number
+类型: number 
 
 默认值: 24
 
-### ant-design 中 Menu - Menu的items属性如何使用？
+### ant-design 中 Menu - Menu的items属性如何使用？ 
 
-参数: items
+参数: items 
 
-说明: 菜单内容
+说明: 菜单内容 
 
-类型: -
+类型: - 
 
 默认值: 4.20.0
 
-### ant-design 中 Menu - Menu的mode属性如何使用？
+### ant-design 中 Menu - Menu的mode属性如何使用？ 
 
-参数: mode
+参数: mode 
 
-说明: 菜单类型，现在支持垂直、水平、和内嵌模式三种
+说明: 菜单类型，现在支持垂直、水平、和内嵌模式三种 
 
-类型: `vertical` | `horizontal` | `inline`
+类型: `vertical` | `horizontal` | `inline` 
 
 默认值: `vertical`
 
-### ant-design 中 Menu - Menu的multiple属性如何使用？
+### ant-design 中 Menu - Menu的multiple属性如何使用？ 
 
-参数: multiple
+参数: multiple 
 
-说明: 是否允许多选
+说明: 是否允许多选 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Menu - Menu的openKeys属性如何使用？
+### ant-design 中 Menu - Menu的openKeys属性如何使用？ 
 
-参数: openKeys
+参数: openKeys 
 
-说明: 当前展开的 SubMenu 菜单项 key 数组
+说明: 当前展开的 SubMenu 菜单项 key 数组 
 
-类型: string[]
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Menu - Menu的overflowedIndicator属性如何使用？
+### ant-design 中 Menu - Menu的overflowedIndicator属性如何使用？ 
 
-参数: overflowedIndicator
+参数: overflowedIndicator 
 
-说明: 用于自定义 Menu 水平空间不足时的省略收缩的图标
+说明: 用于自定义 Menu 水平空间不足时的省略收缩的图标 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: `<EllipsisOutlined />`
 
-### ant-design 中 Menu - Menu的selectable属性如何使用？
+### ant-design 中 Menu - Menu的selectable属性如何使用？ 
 
-参数: selectable
+参数: selectable 
 
-说明: 是否允许选中
+说明: 是否允许选中 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Menu - Menu的selectedKeys属性如何使用？
+### ant-design 中 Menu - Menu的selectedKeys属性如何使用？ 
 
-参数: selectedKeys
+参数: selectedKeys 
 
-说明: 当前选中的菜单项 key 数组
+说明: 当前选中的菜单项 key 数组 
 
-类型: string[]
-
-默认值: -
-
-### ant-design 中 Menu - Menu的style属性如何使用？
-
-参数: style
-
-说明: 根节点样式
-
-类型: CSSProperties
+类型: string[] 
 
 默认值: -
 
-### ant-design 中 Menu - Menu的subMenuCloseDelay属性如何使用？
+### ant-design 中 Menu - Menu的style属性如何使用？ 
 
-参数: subMenuCloseDelay
+参数: style 
 
-说明: 用户鼠标离开子菜单后关闭延时，单位：秒
+说明: 根节点样式 
 
-类型: number
+类型: CSSProperties 
+
+默认值: -
+
+### ant-design 中 Menu - Menu的subMenuCloseDelay属性如何使用？ 
+
+参数: subMenuCloseDelay 
+
+说明: 用户鼠标离开子菜单后关闭延时，单位：秒 
+
+类型: number 
 
 默认值: 0.1
 
-### ant-design 中 Menu - Menu的subMenuOpenDelay属性如何使用？
+### ant-design 中 Menu - Menu的subMenuOpenDelay属性如何使用？ 
 
-参数: subMenuOpenDelay
+参数: subMenuOpenDelay 
 
-说明: 用户鼠标进入子菜单后开启延时，单位：秒
+说明: 用户鼠标进入子菜单后开启延时，单位：秒 
 
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Menu - Menu的theme属性如何使用？
+### ant-design 中 Menu - Menu的theme属性如何使用？ 
 
-参数: theme
+参数: theme 
 
-说明: 主题颜色
+说明: 主题颜色 
 
-类型: `light` | `dark`
+类型: `light` | `dark` 
 
 默认值: `light`
 
-### ant-design 中 Menu - Menu的triggerSubMenuAction属性如何使用？
+### ant-design 中 Menu - Menu的triggerSubMenuAction属性如何使用？ 
 
-参数: triggerSubMenuAction
+参数: triggerSubMenuAction 
 
-说明: SubMenu 展开/关闭的触发行为
+说明: SubMenu 展开/关闭的触发行为 
 
-类型: `hover` | `click`
+类型: `hover` | `click` 
 
 默认值: `hover`
 
-### ant-design 中 Menu - Menu的onClick属性如何使用？
+### ant-design 中 Menu - Menu的onClick属性如何使用？ 
 
-参数: onClick
+参数: onClick 
 
-说明: 点击 MenuItem 调用此函数
+说明: 点击 MenuItem 调用此函数 
 
-类型: function({ item, key, keyPath, domEvent })
-
-默认值: -
-
-### ant-design 中 Menu - Menu的onDeselect属性如何使用？
-
-参数: onDeselect
-
-说明: 取消选中时调用，仅在 multiple 生效
-
-类型: function({ item, key, keyPath, selectedKeys, domEvent })
+类型: function({ item, key, keyPath, domEvent }) 
 
 默认值: -
 
-### ant-design 中 Menu - Menu的onOpenChange属性如何使用？
+### ant-design 中 Menu - Menu的onDeselect属性如何使用？ 
 
-参数: onOpenChange
+参数: onDeselect 
 
-说明: SubMenu 展开/关闭的回调
+说明: 取消选中时调用，仅在 multiple 生效 
 
-类型: function(openKeys: string[])
+类型: function({ item, key, keyPath, selectedKeys, domEvent }) 
 
 默认值: -
 
-### ant-design 中 Menu - Menu的onSelect属性如何使用？
+### ant-design 中 Menu - Menu的onOpenChange属性如何使用？ 
 
-参数: onSelect
+参数: onOpenChange 
 
-说明: 被选中时调用
+说明: SubMenu 展开/关闭的回调 
 
-类型: function({ item, key, keyPath, selectedKeys, domEvent })
+类型: function(openKeys: string[]) 
+
+默认值: -
+
+### ant-design 中 Menu - Menu的onSelect属性如何使用？ 
+
+参数: onSelect 
+
+说明: 被选中时调用 
+
+类型: function({ item, key, keyPath, selectedKeys, domEvent }) 
 
 默认值: -
 
 ### ant-design 的 Menu - MenuItemType 有哪些配置？
 
-| 参数     | 说明                     | 类型      | 默认值 |
-| -------- | ------------------------ | --------- | ------ |
-| danger   | 展示错误状态样式         | boolean   | false  |
-| disabled | 是否禁用                 | boolean   | false  |
-| icon     | 菜单图标                 | ReactNode | -      |
-| key      | item 的唯一标志          | string    | -      |
-| label    | 菜单项标题               | ReactNode | -      |
-| title    | 设置收缩时展示的悬浮标题 | string    | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| danger | 展示错误状态样式 | boolean | false |
+| disabled | 是否禁用 | boolean | false |
+| icon | 菜单图标 | ReactNode | - |
+| key | item 的唯一标志 | string | - |
+| label | 菜单项标题 | ReactNode | - |
+| title | 设置收缩时展示的悬浮标题 | string | - |
 
-### ant-design 中 Menu - MenuItemType的danger属性如何使用？
 
-参数: danger
+### ant-design 中 Menu - MenuItemType的danger属性如何使用？ 
 
-说明: 展示错误状态样式
+参数: danger 
 
-类型: boolean
+说明: 展示错误状态样式 
 
-默认值: false
-
-### ant-design 中 Menu - MenuItemType的disabled属性如何使用？
-
-参数: disabled
-
-说明: 是否禁用
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Menu - MenuItemType的icon属性如何使用？
+### ant-design 中 Menu - MenuItemType的disabled属性如何使用？ 
 
-参数: icon
+参数: disabled 
 
-说明: 菜单图标
+说明: 是否禁用 
 
-类型: ReactNode
+类型: boolean 
 
-默认值: -
+默认值: false
 
-### ant-design 中 Menu - MenuItemType的key属性如何使用？
+### ant-design 中 Menu - MenuItemType的icon属性如何使用？ 
 
-参数: key
+参数: icon 
 
-说明: item 的唯一标志
+说明: 菜单图标 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Menu - MenuItemType的label属性如何使用？
-
-参数: label
-
-说明: 菜单项标题
-
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Menu - MenuItemType的title属性如何使用？
+### ant-design 中 Menu - MenuItemType的key属性如何使用？ 
 
-参数: title
+参数: key 
 
-说明: 设置收缩时展示的悬浮标题
+说明: item 的唯一标志 
 
-类型: string
+类型: string 
+
+默认值: -
+
+### ant-design 中 Menu - MenuItemType的label属性如何使用？ 
+
+参数: label 
+
+说明: 菜单项标题 
+
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Menu - MenuItemType的title属性如何使用？ 
+
+参数: title 
+
+说明: 设置收缩时展示的悬浮标题 
+
+类型: string 
 
 默认值: -
 
 ### ant-design 的 Menu - SubMenuType 有哪些配置？
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | children | 子菜单的菜单项 | - |
 | disabled | 是否禁用 | boolean | false |
 | icon | 菜单图标 | ReactNode | - |
@@ -12241,138 +12430,141 @@
 | onTitleClick | 点击子菜单标题 | function({ key, domEvent }) | - |
 | theme | 设置子菜单的主题，默认从 Menu 上继承 | `light` \| `dark` | - |
 
-### ant-design 中 Menu - SubMenuType的children属性如何使用？
 
-参数: children
+### ant-design 中 Menu - SubMenuType的children属性如何使用？ 
 
-说明: 子菜单的菜单项
+参数: children 
+
+说明: 子菜单的菜单项 
 
 类型: -
 
-### ant-design 中 Menu - SubMenuType的disabled属性如何使用？
+### ant-design 中 Menu - SubMenuType的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 是否禁用
+说明: 是否禁用 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Menu - SubMenuType的icon属性如何使用？
+### ant-design 中 Menu - SubMenuType的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 菜单图标
+说明: 菜单图标 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Menu - SubMenuType的key属性如何使用？
-
-参数: key
-
-说明: 唯一标志
-
-类型: string
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Menu - SubMenuType的label属性如何使用？
+### ant-design 中 Menu - SubMenuType的key属性如何使用？ 
 
-参数: label
+参数: key 
 
-说明: 菜单项标题
+说明: 唯一标志 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Menu - SubMenuType的popupClassName属性如何使用？
-
-参数: popupClassName
-
-说明: 子菜单样式，`mode="inline"` 时无效
-
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Menu - SubMenuType的popupOffset属性如何使用？
+### ant-design 中 Menu - SubMenuType的label属性如何使用？ 
 
-参数: popupOffset
+参数: label 
 
-说明: 子菜单偏移量，`mode="inline"` 时无效
+说明: 菜单项标题 
 
-类型: \[number, number]
-
-默认值: -
-
-### ant-design 中 Menu - SubMenuType的onTitleClick属性如何使用？
-
-参数: onTitleClick
-
-说明: 点击子菜单标题
-
-类型: function({ key, domEvent })
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Menu - SubMenuType的theme属性如何使用？
+### ant-design 中 Menu - SubMenuType的popupClassName属性如何使用？ 
 
-参数: theme
+参数: popupClassName 
 
-说明: 设置子菜单的主题，默认从 Menu 上继承
+说明: 子菜单样式，`mode="inline"` 时无效 
 
-类型: `light` | `dark`
+类型: string 
+
+默认值: -
+
+### ant-design 中 Menu - SubMenuType的popupOffset属性如何使用？ 
+
+参数: popupOffset 
+
+说明: 子菜单偏移量，`mode="inline"` 时无效 
+
+类型: \[number, number] 
+
+默认值: -
+
+### ant-design 中 Menu - SubMenuType的onTitleClick属性如何使用？ 
+
+参数: onTitleClick 
+
+说明: 点击子菜单标题 
+
+类型: function({ key, domEvent }) 
+
+默认值: -
+
+### ant-design 中 Menu - SubMenuType的theme属性如何使用？ 
+
+参数: theme 
+
+说明: 设置子菜单的主题，默认从 Menu 上继承 
+
+类型: `light` | `dark` 
 
 默认值: -
 
 ### ant-design 的 Menu - MenuItemGroupType 有哪些配置？
 
-| 参数     | 说明         | 类型      |
-| -------- | ------------ | --------- | --- |
-| children | 分组的菜单项 | -         |
-| label    | 分组标题     | ReactNode | -   |
+| 参数 | 说明 | 类型 |
+| --- | --- | --- |
+| children | 分组的菜单项 | - |
+| label | 分组标题 | ReactNode | - |
 
-### ant-design 中 Menu - MenuItemGroupType的children属性如何使用？
 
-参数: children
+### ant-design 中 Menu - MenuItemGroupType的children属性如何使用？ 
 
-说明: 分组的菜单项
+参数: children 
+
+说明: 分组的菜单项 
 
 类型: -
 
-### ant-design 中 Menu - MenuItemGroupType的label属性如何使用？
+### ant-design 中 Menu - MenuItemGroupType的label属性如何使用？ 
 
-参数: label
+参数: label 
 
-说明: 分组标题
+说明: 分组标题 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
 ### ant-design 的 Menu - MenuDividerType 有哪些配置？
 
-| 参数   | 说明     | 类型    | 默认值 |
-| ------ | -------- | ------- | ------ |
-| dashed | 是否虚线 | boolean | false  |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| dashed | 是否虚线 | boolean | false |
 
-### ant-design 中 Menu - MenuDividerType的dashed属性如何使用？
 
-参数: dashed
+### ant-design 中 Menu - MenuDividerType的dashed属性如何使用？ 
 
-说明: 是否虚线
+参数: dashed 
 
-类型: boolean
+说明: 是否虚线 
+
+类型: boolean 
 
 默认值: false
 
 ### ant-design 的 Mentions 有哪些配置？
 
-#### Mentions - Mentions
+#### Mentions - Mentions 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -12398,23 +12590,26 @@
 | onSelect | 选择选项时触发 | (option: OptionProps, prefix: string) => void | - |
 | options | 选项配置 | \[] | 5.1.0 |
 
-#### Mentions - Mentions 方法
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Mentions - Mentions 方法 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-#### Mentions - Option
 
-| 参数      | 说明           | 类型                | 默认值 |
-| --------- | -------------- | ------------------- | ------ |
-| value     | 选择时填充的值 | string              | -      |
-| label     | 选项的标题     | React.ReactNode     | -      |
-| key       | 选项的 key 值  | string              | -      |
-| disabled  | 是否可选       | boolean             | -      |
-| className | css 类名       | string              | -      |
-| style     | 选项样式       | React.CSSProperties | -      |
+#### Mentions - Option 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| value | 选择时填充的值 | string | - |
+| label | 选项的标题 | React.ReactNode | - |
+| key | 选项的 key 值 | string | - |
+| disabled | 是否可选 | boolean | - |
+| className | css 类名 | string | - |
+| style | 选项样式 | React.CSSProperties | - |
+
 
 ### ant-design 的 Mentions - Mentions 有哪些配置？
 
@@ -12442,315 +12637,318 @@
 | onSelect | 选择选项时触发 | (option: OptionProps, prefix: string) => void | - |
 | options | 选项配置 | \[] | 5.1.0 |
 
-### ant-design 中 Mentions - Mentions的allowClear属性如何使用？
 
-参数: allowClear
+### ant-design 中 Mentions - Mentions的allowClear属性如何使用？ 
 
-说明: 支持清除
+参数: allowClear 
 
-类型: boolean | { clearIcon?: ReactNode }
+说明: 支持清除 
 
-默认值: false
+类型: boolean | { clearIcon?: ReactNode } 
+
+默认值: false 
 
 版本: 5.13.0
 
-### ant-design 中 Mentions - Mentions的autoFocus属性如何使用？
+### ant-design 中 Mentions - Mentions的autoFocus属性如何使用？ 
 
-参数: autoFocus
+参数: autoFocus 
 
-说明: 自动获得焦点
+说明: 自动获得焦点 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Mentions - Mentions的autoSize属性如何使用？
-
-参数: autoSize
-
-说明: 自适应内容高度，可设置为 true | false 或对象：{ minRows: 2, maxRows: 6 }
-
-类型: boolean | object
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Mentions - Mentions的defaultValue属性如何使用？
+### ant-design 中 Mentions - Mentions的autoSize属性如何使用？ 
 
-参数: defaultValue
+参数: autoSize 
 
-说明: 默认值
+说明: 自适应内容高度，可设置为 true | false 或对象：{ minRows: 2, maxRows: 6 } 
 
-类型: string
+类型: boolean | object 
 
-默认值: -
+默认值: false
 
-### ant-design 中 Mentions - Mentions的filterOption属性如何使用？
+### ant-design 中 Mentions - Mentions的defaultValue属性如何使用？ 
 
-参数: filterOption
+参数: defaultValue 
 
-说明: 自定义过滤逻辑
+说明: 默认值 
 
-类型: false | (input: string, option: OptionProps) => boolean
-
-默认值: -
-
-### ant-design 中 Mentions - Mentions的getPopupContainer属性如何使用？
-
-参数: getPopupContainer
-
-说明: 指定建议框挂载的 HTML 节点
-
-类型: () => HTMLElement
+类型: string 
 
 默认值: -
 
-### ant-design 中 Mentions - Mentions的notFoundContent属性如何使用？
+### ant-design 中 Mentions - Mentions的filterOption属性如何使用？ 
 
-参数: notFoundContent
+参数: filterOption 
 
-说明: 当下拉列表为空时显示的内容
+说明: 自定义过滤逻辑 
 
-类型: ReactNode
+类型: false | (input: string, option: OptionProps) => boolean 
+
+默认值: -
+
+### ant-design 中 Mentions - Mentions的getPopupContainer属性如何使用？ 
+
+参数: getPopupContainer 
+
+说明: 指定建议框挂载的 HTML 节点 
+
+类型: () => HTMLElement 
+
+默认值: -
+
+### ant-design 中 Mentions - Mentions的notFoundContent属性如何使用？ 
+
+参数: notFoundContent 
+
+说明: 当下拉列表为空时显示的内容 
+
+类型: ReactNode 
 
 默认值: `Not Found`
 
-### ant-design 中 Mentions - Mentions的placement属性如何使用？
+### ant-design 中 Mentions - Mentions的placement属性如何使用？ 
 
-参数: placement
+参数: placement 
 
-说明: 弹出层展示位置
+说明: 弹出层展示位置 
 
-类型: `top` | `bottom`
+类型: `top` | `bottom` 
 
 默认值: `bottom`
 
-### ant-design 中 Mentions - Mentions的prefix属性如何使用？
+### ant-design 中 Mentions - Mentions的prefix属性如何使用？ 
 
-参数: prefix
+参数: prefix 
 
-说明: 设置触发关键字
+说明: 设置触发关键字 
 
-类型: string | string[]
+类型: string | string[] 
 
 默认值: `@`
 
-### ant-design 中 Mentions - Mentions的split属性如何使用？
+### ant-design 中 Mentions - Mentions的split属性如何使用？ 
 
-参数: split
+参数: split 
 
-说明: 设置选中项前后分隔符
+说明: 设置选中项前后分隔符 
 
-类型: string
+类型: string 
 
 默认值: ` `
 
-### ant-design 中 Mentions - Mentions的status属性如何使用？
+### ant-design 中 Mentions - Mentions的status属性如何使用？ 
 
-参数: status
+参数: status 
 
-说明: 设置校验状态
+说明: 设置校验状态 
 
-类型: 'error' | 'warning'
+类型: 'error' | 'warning' 
 
-默认值: -
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Mentions - Mentions的validateSearch属性如何使用？
+### ant-design 中 Mentions - Mentions的validateSearch属性如何使用？ 
 
-参数: validateSearch
+参数: validateSearch 
 
-说明: 自定义触发验证逻辑
+说明: 自定义触发验证逻辑 
 
-类型: (text: string, props: MentionsProps) => void
-
-默认值: -
-
-### ant-design 中 Mentions - Mentions的value属性如何使用？
-
-参数: value
-
-说明: 设置值
-
-类型: string
+类型: (text: string, props: MentionsProps) => void 
 
 默认值: -
 
-### ant-design 中 Mentions - Mentions的variant属性如何使用？
+### ant-design 中 Mentions - Mentions的value属性如何使用？ 
 
-参数: variant
+参数: value 
 
-说明: 形态变体
+说明: 设置值 
 
-类型: `outlined` | `borderless` | `filled`
+类型: string 
 
-默认值: `outlined`
+默认值: -
+
+### ant-design 中 Mentions - Mentions的variant属性如何使用？ 
+
+参数: variant 
+
+说明: 形态变体 
+
+类型: `outlined` | `borderless` | `filled` 
+
+默认值: `outlined` 
 
 版本: 5.13.0
 
-### ant-design 中 Mentions - Mentions的onBlur属性如何使用？
+### ant-design 中 Mentions - Mentions的onBlur属性如何使用？ 
 
-参数: onBlur
+参数: onBlur 
 
-说明: 失去焦点时触发
+说明: 失去焦点时触发 
 
-类型: () => void
-
-默认值: -
-
-### ant-design 中 Mentions - Mentions的onChange属性如何使用？
-
-参数: onChange
-
-说明: 值改变时触发
-
-类型: (text: string) => void
+类型: () => void 
 
 默认值: -
 
-### ant-design 中 Mentions - Mentions的onFocus属性如何使用？
+### ant-design 中 Mentions - Mentions的onChange属性如何使用？ 
 
-参数: onFocus
+参数: onChange 
 
-说明: 获得焦点时触发
+说明: 值改变时触发 
 
-类型: () => void
-
-默认值: -
-
-### ant-design 中 Mentions - Mentions的onResize属性如何使用？
-
-参数: onResize
-
-说明: resize 回调
-
-类型: function({ width, height })
+类型: (text: string) => void 
 
 默认值: -
 
-### ant-design 中 Mentions - Mentions的onSearch属性如何使用？
+### ant-design 中 Mentions - Mentions的onFocus属性如何使用？ 
 
-参数: onSearch
+参数: onFocus 
 
-说明: 搜索时触发
+说明: 获得焦点时触发 
 
-类型: (text: string, prefix: string) => void
-
-默认值: -
-
-### ant-design 中 Mentions - Mentions的onSelect属性如何使用？
-
-参数: onSelect
-
-说明: 选择选项时触发
-
-类型: (option: OptionProps, prefix: string) => void
+类型: () => void 
 
 默认值: -
 
-### ant-design 中 Mentions - Mentions的options属性如何使用？
+### ant-design 中 Mentions - Mentions的onResize属性如何使用？ 
 
-参数: options
+参数: onResize 
 
-说明: 选项配置
+说明: resize 回调 
 
-类型: \[]
+类型: function({ width, height }) 
+
+默认值: -
+
+### ant-design 中 Mentions - Mentions的onSearch属性如何使用？ 
+
+参数: onSearch 
+
+说明: 搜索时触发 
+
+类型: (text: string, prefix: string) => void 
+
+默认值: -
+
+### ant-design 中 Mentions - Mentions的onSelect属性如何使用？ 
+
+参数: onSelect 
+
+说明: 选择选项时触发 
+
+类型: (option: OptionProps, prefix: string) => void 
+
+默认值: -
+
+### ant-design 中 Mentions - Mentions的options属性如何使用？ 
+
+参数: options 
+
+说明: 选项配置 
+
+类型: \[] 
 
 默认值: 5.1.0
 
 ### ant-design 的 Mentions - Mentions 方法 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Mentions - Mentions 方法的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Mentions - Mentions 方法的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Mentions - Mentions 方法的focus()属性如何使用？
+### ant-design 中 Mentions - Mentions 方法的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 Mentions - Option 有哪些配置？
 
-| 参数      | 说明           | 类型                | 默认值 |
-| --------- | -------------- | ------------------- | ------ |
-| value     | 选择时填充的值 | string              | -      |
-| label     | 选项的标题     | React.ReactNode     | -      |
-| key       | 选项的 key 值  | string              | -      |
-| disabled  | 是否可选       | boolean             | -      |
-| className | css 类名       | string              | -      |
-| style     | 选项样式       | React.CSSProperties | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| value | 选择时填充的值 | string | - |
+| label | 选项的标题 | React.ReactNode | - |
+| key | 选项的 key 值 | string | - |
+| disabled | 是否可选 | boolean | - |
+| className | css 类名 | string | - |
+| style | 选项样式 | React.CSSProperties | - |
 
-### ant-design 中 Mentions - Option的value属性如何使用？
 
-参数: value
+### ant-design 中 Mentions - Option的value属性如何使用？ 
 
-说明: 选择时填充的值
+参数: value 
 
-类型: string
+说明: 选择时填充的值 
 
-默认值: -
-
-### ant-design 中 Mentions - Option的label属性如何使用？
-
-参数: label
-
-说明: 选项的标题
-
-类型: React.ReactNode
+类型: string 
 
 默认值: -
 
-### ant-design 中 Mentions - Option的key属性如何使用？
+### ant-design 中 Mentions - Option的label属性如何使用？ 
 
-参数: key
+参数: label 
 
-说明: 选项的 key 值
+说明: 选项的标题 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Mentions - Option的disabled属性如何使用？
-
-参数: disabled
-
-说明: 是否可选
-
-类型: boolean
+类型: React.ReactNode 
 
 默认值: -
 
-### ant-design 中 Mentions - Option的className属性如何使用？
+### ant-design 中 Mentions - Option的key属性如何使用？ 
 
-参数: className
+参数: key 
 
-说明: css 类名
+说明: 选项的 key 值 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Mentions - Option的style属性如何使用？
+### ant-design 中 Mentions - Option的disabled属性如何使用？ 
 
-参数: style
+参数: disabled 
 
-说明: 选项样式
+说明: 是否可选 
 
-类型: React.CSSProperties
+类型: boolean 
+
+默认值: -
+
+### ant-design 中 Mentions - Option的className属性如何使用？ 
+
+参数: className 
+
+说明: css 类名 
+
+类型: string 
+
+默认值: -
+
+### ant-design 中 Mentions - Option的style属性如何使用？ 
+
+参数: style 
+
+说明: 选项样式 
+
+类型: React.CSSProperties 
 
 默认值: -
 
 ### ant-design 的 List 有哪些配置？
 
-#### List - List
+#### List - List 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -12769,40 +12967,45 @@
 | size | list 的尺寸 | `default` \| `large` \| `small` | `default` |
 | split | 是否展示分割线 | boolean | true |
 
-#### List - pagination
 
-| 参数     | 说明               | 类型                         | 默认值   |
-| -------- | ------------------ | ---------------------------- | -------- |
-| position | 指定分页显示的位置 | `top` \| `bottom` \| `both`  | `bottom` |
-| align    | 指定分页对齐的位置 | `start` \| `center` \| `end` | `end`    |
+#### List - pagination 
 
-#### List - List grid props
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| position | 指定分页显示的位置 | `top` \| `bottom` \| `both` | `bottom` |
+| align | 指定分页对齐的位置 | `start` \| `center` \| `end` | `end` |
 
-| 参数   | 说明                 | 类型   | 默认值 |
-| ------ | -------------------- | ------ | ------ |
-| column | 列数                 | number | -      |
-| gutter | 栅格间隔             | number | 0      |
-| xs     | `<576px` 展示的列数  | number | -      |
-| sm     | `≥576px` 展示的列数  | number | -      |
-| md     | `≥768px` 展示的列数  | number | -      |
-| lg     | `≥992px` 展示的列数  | number | -      |
-| xl     | `≥1200px` 展示的列数 | number | -      |
-| xxl    | `≥1600px` 展示的列数 | number | -      |
 
-#### List - List.Item
+#### List - List grid props 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| column | 列数 | number | - |
+| gutter | 栅格间隔 | number | 0 |
+| xs | `<576px` 展示的列数 | number | - |
+| sm | `≥576px` 展示的列数 | number | - |
+| md | `≥768px` 展示的列数 | number | - |
+| lg | `≥992px` 展示的列数 | number | - |
+| xl | `≥1200px` 展示的列数 | number | - |
+| xxl | `≥1600px` 展示的列数 | number | - |
+
+
+#### List - List.Item 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | actions | 列表操作组，根据 `itemLayout` 的不同，位置在卡片底部或者最右侧 | Array<ReactNode> | - |
 | extra | 额外内容，通常用在 `itemLayout` 为 `vertical` 的情况下，展示右侧内容; `horizontal` 展示在列表元素最右侧 | ReactNode | - |
 
-#### List - List.Item.Meta
 
-| 参数        | 说明               | 类型      | 默认值 |
-| ----------- | ------------------ | --------- | ------ |
-| avatar      | 列表元素的图标     | ReactNode | -      |
-| description | 列表元素的描述内容 | ReactNode | -      |
-| title       | 列表元素的标题     | ReactNode | -      |
+#### List - List.Item.Meta 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| avatar | 列表元素的图标 | ReactNode | - |
+| description | 列表元素的描述内容 | ReactNode | - |
+| title | 列表元素的标题 | ReactNode | - |
+
 
 ### ant-design 的 List - List 有哪些配置？
 
@@ -12823,261 +13026,264 @@
 | size | list 的尺寸 | `default` \| `large` \| `small` | `default` |
 | split | 是否展示分割线 | boolean | true |
 
-### ant-design 中 List - List的bordered属性如何使用？
 
-参数: bordered
+### ant-design 中 List - List的bordered属性如何使用？ 
 
-说明: 是否展示边框
+参数: bordered 
 
-类型: boolean
+说明: 是否展示边框 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 List - List的dataSource属性如何使用？
+### ant-design 中 List - List的dataSource属性如何使用？ 
 
-参数: dataSource
+参数: dataSource 
 
-说明: 列表数据源
+说明: 列表数据源 
 
-类型: any[]
-
-默认值: -
-
-### ant-design 中 List - List的footer属性如何使用？
-
-参数: footer
-
-说明: 列表底部
-
-类型: ReactNode
+类型: any[] 
 
 默认值: -
 
-### ant-design 中 List - List的grid属性如何使用？
+### ant-design 中 List - List的footer属性如何使用？ 
 
-参数: grid
+参数: footer 
 
-说明: 列表栅格配置
+说明: 列表底部 
+
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 List - List的grid属性如何使用？ 
+
+参数: grid 
+
+说明: 列表栅格配置 
 
 类型: -
 
-### ant-design 中 List - List的header属性如何使用？
+### ant-design 中 List - List的header属性如何使用？ 
 
-参数: header
+参数: header 
 
-说明: 列表头部
+说明: 列表头部 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 List - List的itemLayout属性如何使用？
-
-参数: itemLayout
-
-说明: 设置 `List.Item` 布局，设置成 `vertical` 则竖直样式显示，默认横排
-
-类型: string
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 List - List的loading属性如何使用？
+### ant-design 中 List - List的itemLayout属性如何使用？ 
 
-参数: loading
+参数: itemLayout 
 
-说明: 当卡片内容还在加载中时，可以用 `loading` 展示一个占位
+说明: 设置 `List.Item` 布局，设置成 `vertical` 则竖直样式显示，默认横排 
 
-类型: boolean | [object](/components/spin-cn#api) ([更多](https://github.com/ant-design/ant-design/issues/8659))
+类型: string 
+
+默认值: -
+
+### ant-design 中 List - List的loading属性如何使用？ 
+
+参数: loading 
+
+说明: 当卡片内容还在加载中时，可以用 `loading` 展示一个占位 
+
+类型: boolean | [object](/components/spin-cn#api) ([更多](https://github.com/ant-design/ant-design/issues/8659)) 
 
 默认值: false
 
-### ant-design 中 List - List的loadMore属性如何使用？
+### ant-design 中 List - List的loadMore属性如何使用？ 
 
-参数: loadMore
+参数: loadMore 
 
-说明: 加载更多
+说明: 加载更多 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 List - List的locale属性如何使用？
+### ant-design 中 List - List的locale属性如何使用？ 
 
-参数: locale
+参数: locale 
 
-说明: 默认文案设置，目前包括空数据文案
+说明: 默认文案设置，目前包括空数据文案 
 
-类型: object
+类型: object 
 
 默认值: {emptyText: `暂无数据`}
 
-### ant-design 中 List - List的pagination属性如何使用？
+### ant-design 中 List - List的pagination属性如何使用？ 
 
-参数: pagination
+参数: pagination 
 
-说明: 对应的 `pagination` 配置，设置 false 不显示
+说明: 对应的 `pagination` 配置，设置 false 不显示 
 
-类型: boolean | object
+类型: boolean | object 
 
 默认值: false
 
-### ant-design 中 List - List的renderItem属性如何使用？
+### ant-design 中 List - List的renderItem属性如何使用？ 
 
-参数: renderItem
+参数: renderItem 
 
-说明: 当使用 dataSource 时，可以用 `renderItem` 自定义渲染列表项
+说明: 当使用 dataSource 时，可以用 `renderItem` 自定义渲染列表项 
 
-类型: (item) => ReactNode
+类型: (item) => ReactNode 
 
 默认值: -
 
-### ant-design 中 List - List的rowKey属性如何使用？
+### ant-design 中 List - List的rowKey属性如何使用？ 
 
-参数: rowKey
+参数: rowKey 
 
-说明: 当 `renderItem` 自定义渲染列表项有效时，自定义每一行的 `key` 的获取方式
+说明: 当 `renderItem` 自定义渲染列表项有效时，自定义每一行的 `key` 的获取方式 
 
-类型: `keyof` T | (item: T) => `React.Key`
+类型: `keyof` T | (item: T) => `React.Key` 
 
 默认值: `"key"`
 
-### ant-design 中 List - List的size属性如何使用？
+### ant-design 中 List - List的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: list 的尺寸
+说明: list 的尺寸 
 
-类型: `default` | `large` | `small`
+类型: `default` | `large` | `small` 
 
 默认值: `default`
 
-### ant-design 中 List - List的split属性如何使用？
+### ant-design 中 List - List的split属性如何使用？ 
 
-参数: split
+参数: split 
 
-说明: 是否展示分割线
+说明: 是否展示分割线 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
 ### ant-design 的 List - pagination 有哪些配置？
 
-| 参数     | 说明               | 类型                         | 默认值   |
-| -------- | ------------------ | ---------------------------- | -------- |
-| position | 指定分页显示的位置 | `top` \| `bottom` \| `both`  | `bottom` |
-| align    | 指定分页对齐的位置 | `start` \| `center` \| `end` | `end`    |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| position | 指定分页显示的位置 | `top` \| `bottom` \| `both` | `bottom` |
+| align | 指定分页对齐的位置 | `start` \| `center` \| `end` | `end` |
 
-### ant-design 中 List - pagination的position属性如何使用？
 
-参数: position
+### ant-design 中 List - pagination的position属性如何使用？ 
 
-说明: 指定分页显示的位置
+参数: position 
 
-类型: `top` | `bottom` | `both`
+说明: 指定分页显示的位置 
+
+类型: `top` | `bottom` | `both` 
 
 默认值: `bottom`
 
-### ant-design 中 List - pagination的align属性如何使用？
+### ant-design 中 List - pagination的align属性如何使用？ 
 
-参数: align
+参数: align 
 
-说明: 指定分页对齐的位置
+说明: 指定分页对齐的位置 
 
-类型: `start` | `center` | `end`
+类型: `start` | `center` | `end` 
 
 默认值: `end`
 
 ### ant-design 的 List - List grid props 有哪些配置？
 
-| 参数   | 说明                 | 类型   | 默认值 |
-| ------ | -------------------- | ------ | ------ |
-| column | 列数                 | number | -      |
-| gutter | 栅格间隔             | number | 0      |
-| xs     | `<576px` 展示的列数  | number | -      |
-| sm     | `≥576px` 展示的列数  | number | -      |
-| md     | `≥768px` 展示的列数  | number | -      |
-| lg     | `≥992px` 展示的列数  | number | -      |
-| xl     | `≥1200px` 展示的列数 | number | -      |
-| xxl    | `≥1600px` 展示的列数 | number | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| column | 列数 | number | - |
+| gutter | 栅格间隔 | number | 0 |
+| xs | `<576px` 展示的列数 | number | - |
+| sm | `≥576px` 展示的列数 | number | - |
+| md | `≥768px` 展示的列数 | number | - |
+| lg | `≥992px` 展示的列数 | number | - |
+| xl | `≥1200px` 展示的列数 | number | - |
+| xxl | `≥1600px` 展示的列数 | number | - |
 
-### ant-design 中 List - List grid props的column属性如何使用？
 
-参数: column
+### ant-design 中 List - List grid props的column属性如何使用？ 
 
-说明: 列数
+参数: column 
 
-类型: number
+说明: 列数 
+
+类型: number 
 
 默认值: -
 
-### ant-design 中 List - List grid props的gutter属性如何使用？
+### ant-design 中 List - List grid props的gutter属性如何使用？ 
 
-参数: gutter
+参数: gutter 
 
-说明: 栅格间隔
+说明: 栅格间隔 
 
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 List - List grid props的xs属性如何使用？
+### ant-design 中 List - List grid props的xs属性如何使用？ 
 
-参数: xs
+参数: xs 
 
-说明: `<576px` 展示的列数
+说明: `<576px` 展示的列数 
 
-类型: number
-
-默认值: -
-
-### ant-design 中 List - List grid props的sm属性如何使用？
-
-参数: sm
-
-说明: `≥576px` 展示的列数
-
-类型: number
+类型: number 
 
 默认值: -
 
-### ant-design 中 List - List grid props的md属性如何使用？
+### ant-design 中 List - List grid props的sm属性如何使用？ 
 
-参数: md
+参数: sm 
 
-说明: `≥768px` 展示的列数
+说明: `≥576px` 展示的列数 
 
-类型: number
-
-默认值: -
-
-### ant-design 中 List - List grid props的lg属性如何使用？
-
-参数: lg
-
-说明: `≥992px` 展示的列数
-
-类型: number
+类型: number 
 
 默认值: -
 
-### ant-design 中 List - List grid props的xl属性如何使用？
+### ant-design 中 List - List grid props的md属性如何使用？ 
 
-参数: xl
+参数: md 
 
-说明: `≥1200px` 展示的列数
+说明: `≥768px` 展示的列数 
 
-类型: number
+类型: number 
 
 默认值: -
 
-### ant-design 中 List - List grid props的xxl属性如何使用？
+### ant-design 中 List - List grid props的lg属性如何使用？ 
 
-参数: xxl
+参数: lg 
 
-说明: `≥1600px` 展示的列数
+说明: `≥992px` 展示的列数 
 
-类型: number
+类型: number 
+
+默认值: -
+
+### ant-design 中 List - List grid props的xl属性如何使用？ 
+
+参数: xl 
+
+说明: `≥1200px` 展示的列数 
+
+类型: number 
+
+默认值: -
+
+### ant-design 中 List - List grid props的xxl属性如何使用？ 
+
+参数: xxl 
+
+说明: `≥1600px` 展示的列数 
+
+类型: number 
 
 默认值: -
 
@@ -13088,67 +13294,69 @@
 | actions | 列表操作组，根据 `itemLayout` 的不同，位置在卡片底部或者最右侧 | Array<ReactNode> | - |
 | extra | 额外内容，通常用在 `itemLayout` 为 `vertical` 的情况下，展示右侧内容; `horizontal` 展示在列表元素最右侧 | ReactNode | - |
 
-### ant-design 中 List - List.Item的actions属性如何使用？
 
-参数: actions
+### ant-design 中 List - List.Item的actions属性如何使用？ 
 
-说明: 列表操作组，根据 `itemLayout` 的不同，位置在卡片底部或者最右侧
+参数: actions 
 
-类型: Array<ReactNode>
+说明: 列表操作组，根据 `itemLayout` 的不同，位置在卡片底部或者最右侧 
+
+类型: Array<ReactNode> 
 
 默认值: -
 
-### ant-design 中 List - List.Item的extra属性如何使用？
+### ant-design 中 List - List.Item的extra属性如何使用？ 
 
-参数: extra
+参数: extra 
 
-说明: 额外内容，通常用在 `itemLayout` 为 `vertical` 的情况下，展示右侧内容; `horizontal` 展示在列表元素最右侧
+说明: 额外内容，通常用在 `itemLayout` 为 `vertical` 的情况下，展示右侧内容; `horizontal` 展示在列表元素最右侧 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
 ### ant-design 的 List - List.Item.Meta 有哪些配置？
 
-| 参数        | 说明               | 类型      | 默认值 |
-| ----------- | ------------------ | --------- | ------ |
-| avatar      | 列表元素的图标     | ReactNode | -      |
-| description | 列表元素的描述内容 | ReactNode | -      |
-| title       | 列表元素的标题     | ReactNode | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| avatar | 列表元素的图标 | ReactNode | - |
+| description | 列表元素的描述内容 | ReactNode | - |
+| title | 列表元素的标题 | ReactNode | - |
 
-### ant-design 中 List - List.Item.Meta的avatar属性如何使用？
 
-参数: avatar
+### ant-design 中 List - List.Item.Meta的avatar属性如何使用？ 
 
-说明: 列表元素的图标
+参数: avatar 
 
-类型: ReactNode
+说明: 列表元素的图标 
 
-默认值: -
-
-### ant-design 中 List - List.Item.Meta的description属性如何使用？
-
-参数: description
-
-说明: 列表元素的描述内容
-
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 List - List.Item.Meta的title属性如何使用？
+### ant-design 中 List - List.Item.Meta的description属性如何使用？ 
 
-参数: title
+参数: description 
 
-说明: 列表元素的标题
+说明: 列表元素的描述内容 
 
-类型: ReactNode
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 List - List.Item.Meta的title属性如何使用？ 
+
+参数: title 
+
+说明: 列表元素的标题 
+
+类型: ReactNode 
 
 默认值: -
 
 ### ant-design 的 Layout 有哪些配置？
 
-#### Layout - Layout
+#### Layout - Layout 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -13156,7 +13364,8 @@
 | hasSider | 表示子元素里有 Sider，一般不用指定。可用于服务端渲染时避免样式闪动 | boolean | - |
 | style | 指定样式 | CSSProperties | - |
 
-#### Layout - Layout.Sider
+
+#### Layout - Layout.Sider 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -13175,6 +13384,7 @@
 | onBreakpoint | 触发响应式布局[断点](/components/grid-cn#api)时的回调 | (broken) => {} | - |
 | onCollapse | 展开-收起时的回调函数，有点击 trigger 以及响应式反馈两种方式可以触发 | (collapsed, type) => {} | - |
 
+
 ### ant-design 的 Layout - Layout 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
@@ -13183,33 +13393,34 @@
 | hasSider | 表示子元素里有 Sider，一般不用指定。可用于服务端渲染时避免样式闪动 | boolean | - |
 | style | 指定样式 | CSSProperties | - |
 
-### ant-design 中 Layout - Layout的className属性如何使用？
 
-参数: className
+### ant-design 中 Layout - Layout的className属性如何使用？ 
 
-说明: 容器 className
+参数: className 
 
-类型: string
+说明: 容器 className 
 
-默认值: -
-
-### ant-design 中 Layout - Layout的hasSider属性如何使用？
-
-参数: hasSider
-
-说明: 表示子元素里有 Sider，一般不用指定。可用于服务端渲染时避免样式闪动
-
-类型: boolean
+类型: string 
 
 默认值: -
 
-### ant-design 中 Layout - Layout的style属性如何使用？
+### ant-design 中 Layout - Layout的hasSider属性如何使用？ 
 
-参数: style
+参数: hasSider 
 
-说明: 指定样式
+说明: 表示子元素里有 Sider，一般不用指定。可用于服务端渲染时避免样式闪动 
 
-类型: CSSProperties
+类型: boolean 
+
+默认值: -
+
+### ant-design 中 Layout - Layout的style属性如何使用？ 
+
+参数: style 
+
+说明: 指定样式 
+
+类型: CSSProperties 
 
 默认值: -
 
@@ -13232,149 +13443,150 @@
 | onBreakpoint | 触发响应式布局[断点](/components/grid-cn#api)时的回调 | (broken) => {} | - |
 | onCollapse | 展开-收起时的回调函数，有点击 trigger 以及响应式反馈两种方式可以触发 | (collapsed, type) => {} | - |
 
-### ant-design 中 Layout - Layout.Sider的breakpoint属性如何使用？
 
-参数: breakpoint
+### ant-design 中 Layout - Layout.Sider的breakpoint属性如何使用？ 
 
-说明: 触发响应式布局的[断点](/components/grid-cn#col)
+参数: breakpoint 
 
-类型: `xs` | `sm` | `md` | `lg` | `xl` | `xxl`
+说明: 触发响应式布局的[断点](/components/grid-cn#col) 
 
-默认值: -
-
-### ant-design 中 Layout - Layout.Sider的className属性如何使用？
-
-参数: className
-
-说明: 容器 className
-
-类型: string
+类型: `xs` | `sm` | `md` | `lg` | `xl` | `xxl` 
 
 默认值: -
 
-### ant-design 中 Layout - Layout.Sider的collapsed属性如何使用？
+### ant-design 中 Layout - Layout.Sider的className属性如何使用？ 
 
-参数: collapsed
+参数: className 
 
-说明: 当前收起状态
+说明: 容器 className 
 
-类型: boolean
+类型: string 
 
 默认值: -
 
-### ant-design 中 Layout - Layout.Sider的collapsedWidth属性如何使用？
+### ant-design 中 Layout - Layout.Sider的collapsed属性如何使用？ 
 
-参数: collapsedWidth
+参数: collapsed 
 
-说明: 收缩宽度，设置为 0 会出现特殊 trigger
+说明: 当前收起状态 
 
-类型: number
+类型: boolean 
+
+默认值: -
+
+### ant-design 中 Layout - Layout.Sider的collapsedWidth属性如何使用？ 
+
+参数: collapsedWidth 
+
+说明: 收缩宽度，设置为 0 会出现特殊 trigger 
+
+类型: number 
 
 默认值: 80
 
-### ant-design 中 Layout - Layout.Sider的collapsible属性如何使用？
+### ant-design 中 Layout - Layout.Sider的collapsible属性如何使用？ 
 
-参数: collapsible
+参数: collapsible 
 
-说明: 是否可收起
+说明: 是否可收起 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Layout - Layout.Sider的defaultCollapsed属性如何使用？
-
-参数: defaultCollapsed
-
-说明: 是否默认收起
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Layout - Layout.Sider的reverseArrow属性如何使用？
+### ant-design 中 Layout - Layout.Sider的defaultCollapsed属性如何使用？ 
 
-参数: reverseArrow
+参数: defaultCollapsed 
 
-说明: 翻转折叠提示箭头的方向，当 Sider 在右边时可以使用
+说明: 是否默认收起 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Layout - Layout.Sider的style属性如何使用？
+### ant-design 中 Layout - Layout.Sider的reverseArrow属性如何使用？ 
 
-参数: style
+参数: reverseArrow 
 
-说明: 指定样式
+说明: 翻转折叠提示箭头的方向，当 Sider 在右边时可以使用 
 
-类型: CSSProperties
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Layout - Layout.Sider的style属性如何使用？ 
+
+参数: style 
+
+说明: 指定样式 
+
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Layout - Layout.Sider的theme属性如何使用？
+### ant-design 中 Layout - Layout.Sider的theme属性如何使用？ 
 
-参数: theme
+参数: theme 
 
-说明: 主题颜色
+说明: 主题颜色 
 
-类型: `light` | `dark`
+类型: `light` | `dark` 
 
 默认值: `dark`
 
-### ant-design 中 Layout - Layout.Sider的trigger属性如何使用？
+### ant-design 中 Layout - Layout.Sider的trigger属性如何使用？ 
 
-参数: trigger
+参数: trigger 
 
-说明: 自定义 trigger，设置为 null 时隐藏 trigger
+说明: 自定义 trigger，设置为 null 时隐藏 trigger 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Layout - Layout.Sider的width属性如何使用？
+### ant-design 中 Layout - Layout.Sider的width属性如何使用？ 
 
-参数: width
+参数: width 
 
-说明: 宽度
+说明: 宽度 
 
-类型: number | string
+类型: number | string 
 
 默认值: 200
 
-### ant-design 中 Layout - Layout.Sider的zeroWidthTriggerStyle属性如何使用？
+### ant-design 中 Layout - Layout.Sider的zeroWidthTriggerStyle属性如何使用？ 
 
-参数: zeroWidthTriggerStyle
+参数: zeroWidthTriggerStyle 
 
-说明: 指定当 `collapsedWidth` 为 0 时出现的特殊 trigger 的样式
+说明: 指定当 `collapsedWidth` 为 0 时出现的特殊 trigger 的样式 
 
-类型: object
-
-默认值: -
-
-### ant-design 中 Layout - Layout.Sider的onBreakpoint属性如何使用？
-
-参数: onBreakpoint
-
-说明: 触发响应式布局[断点](/components/grid-cn#api)时的回调
-
-类型: (broken) => {}
+类型: object 
 
 默认值: -
 
-### ant-design 中 Layout - Layout.Sider的onCollapse属性如何使用？
+### ant-design 中 Layout - Layout.Sider的onBreakpoint属性如何使用？ 
 
-参数: onCollapse
+参数: onBreakpoint 
 
-说明: 展开-收起时的回调函数，有点击 trigger 以及响应式反馈两种方式可以触发
+说明: 触发响应式布局[断点](/components/grid-cn#api)时的回调 
 
-类型: (collapsed, type) => {}
+类型: (broken) => {} 
+
+默认值: -
+
+### ant-design 中 Layout - Layout.Sider的onCollapse属性如何使用？ 
+
+参数: onCollapse 
+
+说明: 展开-收起时的回调函数，有点击 trigger 以及响应式反馈两种方式可以触发 
+
+类型: (collapsed, type) => {} 
 
 默认值: -
 
 ### ant-design 的 Input-number 有哪些配置？
 
-#### Input-number - API
+#### Input-number - API 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -13405,12 +13617,14 @@
 | onPressEnter | 按下回车的回调 | function(e) | - | - |
 | onStep | 点击上下箭头的回调 | (value: number, info: { offset: number, type: 'up' \| 'down' }) => void | - | 4.7.0 |
 
-#### Input-number - 方法
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Input-number - 方法 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
+
 
 ### ant-design 的 Input-number - API 有哪些配置？
 
@@ -13443,337 +13657,339 @@
 | onPressEnter | 按下回车的回调 | function(e) | - | - |
 | onStep | 点击上下箭头的回调 | (value: number, info: { offset: number, type: 'up' \| 'down' }) => void | - | 4.7.0 |
 
-### ant-design 中 Input-number - API的addonAfter属性如何使用？
 
-参数: addonAfter
+### ant-design 中 Input-number - API的addonAfter属性如何使用？ 
 
-说明: 带标签的 input，设置后置标签
+参数: addonAfter 
 
-类型: ReactNode
+说明: 带标签的 input，设置后置标签 
 
-默认值: -
+类型: ReactNode 
 
-版本: 4.17.0
-
-### ant-design 中 Input-number - API的addonBefore属性如何使用？
-
-参数: addonBefore
-
-说明: 带标签的 input，设置前置标签
-
-类型: ReactNode
-
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Input-number - API的autoFocus属性如何使用？
+### ant-design 中 Input-number - API的addonBefore属性如何使用？ 
 
-参数: autoFocus
+参数: addonBefore 
 
-说明: 自动获取焦点
+说明: 带标签的 input，设置前置标签 
 
-类型: boolean
+类型: ReactNode 
 
-默认值: false
+默认值: - 
+
+版本: 4.17.0
+
+### ant-design 中 Input-number - API的autoFocus属性如何使用？ 
+
+参数: autoFocus 
+
+说明: 自动获取焦点 
+
+类型: boolean 
+
+默认值: false 
 
 版本: -
 
-### ant-design 中 Input-number - API的changeOnBlur属性如何使用？
+### ant-design 中 Input-number - API的changeOnBlur属性如何使用？ 
 
-参数: changeOnBlur
+参数: changeOnBlur 
 
-说明: 是否在失去焦点时，触发 `onChange` 事件（例如值超出范围时，重新限制回范围并触发事件）
+说明: 是否在失去焦点时，触发 `onChange` 事件（例如值超出范围时，重新限制回范围并触发事件） 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 5.11.0
 
-### ant-design 中 Input-number - API的controls属性如何使用？
+### ant-design 中 Input-number - API的controls属性如何使用？ 
 
-参数: controls
+参数: controls 
 
-说明: 是否显示增减按钮，也可设置自定义箭头图标
+说明: 是否显示增减按钮，也可设置自定义箭头图标 
 
-类型: boolean | { upIcon?: React.ReactNode; downIcon?: React.ReactNode; }
+类型: boolean | { upIcon?: React.ReactNode; downIcon?: React.ReactNode; } 
 
-默认值: -
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Input-number - API的decimalSeparator属性如何使用？
+### ant-design 中 Input-number - API的decimalSeparator属性如何使用？ 
 
-参数: decimalSeparator
+参数: decimalSeparator 
 
-说明: 小数点
+说明: 小数点 
 
-类型: string
+类型: string 
 
-默认值: -
-
-版本: -
-
-### ant-design 中 Input-number - API的placeholder属性如何使用？
-
-参数: placeholder
-
-说明: 占位符
-
-类型: string
-
-默认值: -
-
-### ant-design 中 Input-number - API的defaultValue属性如何使用？
-
-参数: defaultValue
-
-说明: 初始值
-
-类型: number
-
-默认值: -
+默认值: - 
 
 版本: -
 
-### ant-design 中 Input-number - API的disabled属性如何使用？
+### ant-design 中 Input-number - API的placeholder属性如何使用？ 
 
-参数: disabled
+参数: placeholder 
 
-说明: 禁用
+说明: 占位符 
 
-类型: boolean
+类型: string 
 
-默认值: false
+默认值: -
+
+### ant-design 中 Input-number - API的defaultValue属性如何使用？ 
+
+参数: defaultValue 
+
+说明: 初始值 
+
+类型: number 
+
+默认值: - 
 
 版本: -
 
-### ant-design 中 Input-number - API的formatter属性如何使用？
+### ant-design 中 Input-number - API的disabled属性如何使用？ 
 
-参数: formatter
+参数: disabled 
 
-说明: 指定输入框展示值的格式
+说明: 禁用 
 
-类型: function(value: number | string, info: { userTyping: boolean, input: string }): string
+类型: boolean 
 
-默认值: -
+默认值: false 
+
+版本: -
+
+### ant-design 中 Input-number - API的formatter属性如何使用？ 
+
+参数: formatter 
+
+说明: 指定输入框展示值的格式 
+
+类型: function(value: number | string, info: { userTyping: boolean, input: string }): string 
+
+默认值: - 
 
 版本: info: 4.17.0
 
-### ant-design 中 Input-number - API的keyboard属性如何使用？
+### ant-design 中 Input-number - API的keyboard属性如何使用？ 
 
-参数: keyboard
+参数: keyboard 
 
-说明: 是否启用键盘快捷行为
+说明: 是否启用键盘快捷行为 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 4.12.0
 
-### ant-design 中 Input-number - API的max属性如何使用？
+### ant-design 中 Input-number - API的max属性如何使用？ 
 
-参数: max
+参数: max 
 
-说明: 最大值
+说明: 最大值 
 
-类型: number
-
-默认值: -
-
-### ant-design 中 Input-number - API的min属性如何使用？
-
-参数: min
-
-说明: 最小值
-
-类型: number
+类型: number 
 
 默认值: -
 
-### ant-design 中 Input-number - API的parser属性如何使用？
+### ant-design 中 Input-number - API的min属性如何使用？ 
 
-参数: parser
+参数: min 
 
-说明: 指定从 `formatter` 里转换回数字的方式，和 `formatter` 搭配使用
+说明: 最小值 
 
-类型: function(string): number
+类型: number 
 
 默认值: -
+
+### ant-design 中 Input-number - API的parser属性如何使用？ 
+
+参数: parser 
+
+说明: 指定从 `formatter` 里转换回数字的方式，和 `formatter` 搭配使用 
+
+类型: function(string): number 
+
+默认值: - 
 
 版本: -
 
-### ant-design 中 Input-number - API的precision属性如何使用？
+### ant-design 中 Input-number - API的precision属性如何使用？ 
 
-参数: precision
+参数: precision 
 
-说明: 数值精度，配置 `formatter` 时会以 `formatter` 为准
+说明: 数值精度，配置 `formatter` 时会以 `formatter` 为准 
 
-类型: number
+类型: number 
 
-默认值: -
-
-版本: -
-
-### ant-design 中 Input-number - API的readOnly属性如何使用？
-
-参数: readOnly
-
-说明: 只读
-
-类型: boolean
-
-默认值: false
+默认值: - 
 
 版本: -
 
-### ant-design 中 Input-number - API的status属性如何使用？
+### ant-design 中 Input-number - API的readOnly属性如何使用？ 
 
-参数: status
+参数: readOnly 
 
-说明: 设置校验状态
+说明: 只读 
 
-类型: 'error' | 'warning'
+类型: boolean 
 
-默认值: -
+默认值: false 
+
+版本: -
+
+### ant-design 中 Input-number - API的status属性如何使用？ 
+
+参数: status 
+
+说明: 设置校验状态 
+
+类型: 'error' | 'warning' 
+
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Input-number - API的prefix属性如何使用？
+### ant-design 中 Input-number - API的prefix属性如何使用？ 
 
-参数: prefix
+参数: prefix 
 
-说明: 带有前缀图标的 input
+说明: 带有前缀图标的 input 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Input-number - API的size属性如何使用？
+### ant-design 中 Input-number - API的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 输入框大小
+说明: 输入框大小 
 
-类型: `large` | `middle` | `small`
+类型: `large` | `middle` | `small` 
 
-默认值: -
-
-版本: -
-
-### ant-design 中 Input-number - API的step属性如何使用？
-
-参数: step
-
-说明: 每次改变步数，可以为小数
-
-类型: number | string
-
-默认值: 1
+默认值: - 
 
 版本: -
 
-### ant-design 中 Input-number - API的stringMode属性如何使用？
+### ant-design 中 Input-number - API的step属性如何使用？ 
 
-参数: stringMode
+参数: step 
 
-说明: 字符值模式，开启后支持高精度小数。同时 `onChange` 将返回 string 类型
+说明: 每次改变步数，可以为小数 
 
-类型: boolean
+类型: number | string 
 
-默认值: false
+默认值: 1 
+
+版本: -
+
+### ant-design 中 Input-number - API的stringMode属性如何使用？ 
+
+参数: stringMode 
+
+说明: 字符值模式，开启后支持高精度小数。同时 `onChange` 将返回 string 类型 
+
+类型: boolean 
+
+默认值: false 
 
 版本: 4.13.0
 
-### ant-design 中 Input-number - API的value属性如何使用？
+### ant-design 中 Input-number - API的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 当前值
+说明: 当前值 
 
-类型: number
+类型: number 
 
-默认值: -
+默认值: - 
 
 版本: -
 
-### ant-design 中 Input-number - API的variant属性如何使用？
+### ant-design 中 Input-number - API的variant属性如何使用？ 
 
-参数: variant
+参数: variant 
 
-说明: 形态变体
+说明: 形态变体 
 
-类型: `outlined` | `borderless` | `filled`
+类型: `outlined` | `borderless` | `filled` 
 
-默认值: `outlined`
+默认值: `outlined` 
 
 版本: 5.13.0
 
-### ant-design 中 Input-number - API的onChange属性如何使用？
+### ant-design 中 Input-number - API的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 变化回调
+说明: 变化回调 
 
-类型: function(value: number | string | null)
+类型: function(value: number | string | null) 
 
-默认值: -
-
-版本: -
-
-### ant-design 中 Input-number - API的onPressEnter属性如何使用？
-
-参数: onPressEnter
-
-说明: 按下回车的回调
-
-类型: function(e)
-
-默认值: -
+默认值: - 
 
 版本: -
 
-### ant-design 中 Input-number - API的onStep属性如何使用？
+### ant-design 中 Input-number - API的onPressEnter属性如何使用？ 
 
-参数: onStep
+参数: onPressEnter 
 
-说明: 点击上下箭头的回调
+说明: 按下回车的回调 
 
-类型: (value: number, info: { offset: number, type: 'up' | 'down' }) => void
+类型: function(e) 
 
-默认值: -
+默认值: - 
+
+版本: -
+
+### ant-design 中 Input-number - API的onStep属性如何使用？ 
+
+参数: onStep 
+
+说明: 点击上下箭头的回调 
+
+类型: (value: number, info: { offset: number, type: 'up' | 'down' }) => void 
+
+默认值: - 
 
 版本: 4.7.0
 
 ### ant-design 的 Input-number - 方法 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Input-number - 方法的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Input-number - 方法的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Input-number - 方法的focus()属性如何使用？
+### ant-design 中 Input-number - 方法的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 Input 有哪些配置？
 
-#### Input - Input
+#### Input - Input 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | addonAfter | 带标签的 input，设置后置标签 | ReactNode | - |
 | addonBefore | 带标签的 input，设置前置标签 | ReactNode | - |
 | allowClear | 可以点击清除图标删除内容 | boolean \| { clearIcon: ReactNode } | - |
@@ -13795,15 +14011,17 @@
 | onChange | 输入框内容变化时的回调 | function(e) | - |
 | onPressEnter | 按下回车的回调 | function(e) | - |
 
-#### Input - Input.TextArea
+
+#### Input - Input.TextArea 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | autoSize | 自适应内容高度，可设置为 true \| false 或对象：{ minRows: 2, maxRows: 6 } | boolean \| object | false |
 | classNames | 语义化结构 class | Record<[SemanticDOM](#inputtextarea-1), string> | - | 5.4.0 |
 | styles | 语义化结构 style | Record<[SemanticDOM](#inputtextarea-1), CSSProperties> | - | 5.4.0 |
 
-#### Input - Input.Search
+
+#### Input - Input.Search 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -13811,47 +14029,53 @@
 | loading | 搜索 loading | boolean | false |
 | onSearch | 点击搜索图标、清除图标，或按下回车键时的回调 | function(value, event, { source: "input" \| "clear" }) | - |
 
-#### Input - Input.Password
+
+#### Input - Input.Password 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | iconRender | 自定义切换按钮 | (visible) => ReactNode | (visible) => (visible ? <EyeOutlined /> : <EyeInvisibleOutlined />) | 4.3.0 |
 | visibilityToggle | 是否显示切换按钮或者控制密码显隐 | boolean \| [VisibilityToggle](#visibilitytoggle) | true |
 
-#### Input - VisibilityToggle
+
+#### Input - VisibilityToggle 
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
 | visible | 用于手动控制密码显隐 | boolean | false | 4.24 |
 | onVisibleChange | 显隐密码的回调 | (visible) => void | - | 4.24 |
 
-#### Input - Input Methods
+
+#### Input - Input Methods 
 
 | 名称 | 说明 | 参数 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | blur | 取消焦点 | - |
 | focus | 获取焦点 | (option?: { preventScroll?: boolean, cursor?: 'start' \| 'end' \| 'all' }) | option - 4.10.0 |
 
-#### Input - Input
 
-| 名称   | 说明               | 版本  |
-| ------ | ------------------ | ----- |
-| input  | `input` 元素       | 5.4.0 |
+#### Input - Input 
+
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
+| input | `input` 元素 | 5.4.0 |
 | prefix | 所有前缀的包裹元素 | 5.4.0 |
 | suffix | 所有后缀的包裹元素 | 5.4.0 |
-| count  | 文字计数元素       | 5.4.0 |
+| count | 文字计数元素 | 5.4.0 |
 
-#### Input - Input.TextArea
 
-| 名称     | 说明            | 版本  |
-| -------- | --------------- | ----- |
+#### Input - Input.TextArea 
+
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
 | textarea | `textarea` 元素 | 5.4.0 |
-| count    | 文字计数元素    | 5.4.0 |
+| count | 文字计数元素 | 5.4.0 |
+
 
 ### ant-design 的 Input - Input 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | addonAfter | 带标签的 input，设置后置标签 | ReactNode | - |
 | addonBefore | 带标签的 input，设置前置标签 | ReactNode | - |
 | allowClear | 可以点击清除图标删除内容 | boolean \| { clearIcon: ReactNode } | - |
@@ -13873,255 +14097,257 @@
 | onChange | 输入框内容变化时的回调 | function(e) | - |
 | onPressEnter | 按下回车的回调 | function(e) | - |
 
-### ant-design 中 Input - Input的addonAfter属性如何使用？
 
-参数: addonAfter
+### ant-design 中 Input - Input的addonAfter属性如何使用？ 
 
-说明: 带标签的 input，设置后置标签
+参数: addonAfter 
 
-类型: ReactNode
+说明: 带标签的 input，设置后置标签 
 
-默认值: -
-
-### ant-design 中 Input - Input的addonBefore属性如何使用？
-
-参数: addonBefore
-
-说明: 带标签的 input，设置前置标签
-
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Input - Input的allowClear属性如何使用？
+### ant-design 中 Input - Input的addonBefore属性如何使用？ 
 
-参数: allowClear
+参数: addonBefore 
 
-说明: 可以点击清除图标删除内容
+说明: 带标签的 input，设置前置标签 
 
-类型: boolean | { clearIcon: ReactNode }
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Input - Input的allowClear属性如何使用？ 
+
+参数: allowClear 
+
+说明: 可以点击清除图标删除内容 
+
+类型: boolean | { clearIcon: ReactNode } 
 
 默认值: -
 
-### ant-design 中 Input - Input的classNames属性如何使用？
+### ant-design 中 Input - Input的classNames属性如何使用？ 
 
-参数: classNames
+参数: classNames 
 
-说明: 语义化结构 class
+说明: 语义化结构 class 
 
-类型: Record<[SemanticDOM](#input-1), string>
+类型: Record<[SemanticDOM](#input-1), string> 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Input - Input的count属性如何使用？
+### ant-design 中 Input - Input的count属性如何使用？ 
 
-参数: count
+参数: count 
 
-说明: 字符计数配置
+说明: 字符计数配置 
 
-类型: -
+类型: - 
 
 默认值: 5.10.0
 
-### ant-design 中 Input - Input的defaultValue属性如何使用？
+### ant-design 中 Input - Input的defaultValue属性如何使用？ 
 
-参数: defaultValue
+参数: defaultValue 
 
-说明: 输入框默认内容
+说明: 输入框默认内容 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Input - Input的disabled属性如何使用？
+### ant-design 中 Input - Input的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 是否禁用状态，默认为 false
+说明: 是否禁用状态，默认为 false 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Input - Input的id属性如何使用？
+### ant-design 中 Input - Input的id属性如何使用？ 
 
-参数: id
+参数: id 
 
-说明: 输入框的 id
+说明: 输入框的 id 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Input - Input的maxLength属性如何使用？
-
-参数: maxLength
-
-说明: 最大长度
-
-类型: number
+类型: string 
 
 默认值: -
 
-### ant-design 中 Input - Input的prefix属性如何使用？
+### ant-design 中 Input - Input的maxLength属性如何使用？ 
 
-参数: prefix
+参数: maxLength 
 
-说明: 带有前缀图标的 input
+说明: 最大长度 
 
-类型: ReactNode
+类型: number 
 
 默认值: -
 
-### ant-design 中 Input - Input的showCount属性如何使用？
+### ant-design 中 Input - Input的prefix属性如何使用？ 
 
-参数: showCount
+参数: prefix 
 
-说明: 是否展示字数
+说明: 带有前缀图标的 input 
 
-类型: boolean | { formatter: (info: { value: string, count: number, maxLength?: number }) => ReactNode }
+类型: ReactNode 
 
-默认值: false
+默认值: -
+
+### ant-design 中 Input - Input的showCount属性如何使用？ 
+
+参数: showCount 
+
+说明: 是否展示字数 
+
+类型: boolean | { formatter: (info: { value: string, count: number, maxLength?: number }) => ReactNode } 
+
+默认值: false 
 
 版本: 4.18.0 info.value: 4.23.0
 
-### ant-design 中 Input - Input的status属性如何使用？
+### ant-design 中 Input - Input的status属性如何使用？ 
 
-参数: status
+参数: status 
 
-说明: 设置校验状态
+说明: 设置校验状态 
 
-类型: 'error' | 'warning'
+类型: 'error' | 'warning' 
 
-默认值: -
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Input - Input的styles属性如何使用？
+### ant-design 中 Input - Input的styles属性如何使用？ 
 
-参数: styles
+参数: styles 
 
-说明: 语义化结构 style
+说明: 语义化结构 style 
 
-类型: Record<[SemanticDOM](#input-1), CSSProperties>
+类型: Record<[SemanticDOM](#input-1), CSSProperties> 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Input - Input的size属性如何使用？
+### ant-design 中 Input - Input的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 控件大小。注：标准表单内的输入框大小限制为 `middle`
+说明: 控件大小。注：标准表单内的输入框大小限制为 `middle` 
 
-类型: `large` | `middle` | `small`
-
-默认值: -
-
-### ant-design 中 Input - Input的suffix属性如何使用？
-
-参数: suffix
-
-说明: 带有后缀图标的 input
-
-类型: ReactNode
+类型: `large` | `middle` | `small` 
 
 默认值: -
 
-### ant-design 中 Input - Input的type属性如何使用？
+### ant-design 中 Input - Input的suffix属性如何使用？ 
 
-参数: type
+参数: suffix 
 
-说明: 声明 input 类型，同原生 input 标签的 type 属性，见：[MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input#属性)(请直接使用 `Input.TextArea` 代替 `type="textarea"`)
+说明: 带有后缀图标的 input 
 
-类型: string
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Input - Input的type属性如何使用？ 
+
+参数: type 
+
+说明: 声明 input 类型，同原生 input 标签的 type 属性，见：[MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input#属性)(请直接使用 `Input.TextArea` 代替 `type="textarea"`) 
+
+类型: string 
 
 默认值: `text`
 
-### ant-design 中 Input - Input的value属性如何使用？
+### ant-design 中 Input - Input的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 输入框内容
+说明: 输入框内容 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Input - Input的variant属性如何使用？
+### ant-design 中 Input - Input的variant属性如何使用？ 
 
-参数: variant
+参数: variant 
 
-说明: 形态变体
+说明: 形态变体 
 
-类型: `outlined` | `borderless` | `filled`
+类型: `outlined` | `borderless` | `filled` 
 
-默认值: `outlined`
+默认值: `outlined` 
 
 版本: 5.13.0
 
-### ant-design 中 Input - Input的onChange属性如何使用？
+### ant-design 中 Input - Input的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 输入框内容变化时的回调
+说明: 输入框内容变化时的回调 
 
-类型: function(e)
+类型: function(e) 
 
 默认值: -
 
-### ant-design 中 Input - Input的onPressEnter属性如何使用？
+### ant-design 中 Input - Input的onPressEnter属性如何使用？ 
 
-参数: onPressEnter
+参数: onPressEnter 
 
-说明: 按下回车的回调
+说明: 按下回车的回调 
 
-类型: function(e)
+类型: function(e) 
 
 默认值: -
 
 ### ant-design 的 Input - Input.TextArea 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | autoSize | 自适应内容高度，可设置为 true \| false 或对象：{ minRows: 2, maxRows: 6 } | boolean \| object | false |
 | classNames | 语义化结构 class | Record<[SemanticDOM](#inputtextarea-1), string> | - | 5.4.0 |
 | styles | 语义化结构 style | Record<[SemanticDOM](#inputtextarea-1), CSSProperties> | - | 5.4.0 |
 
-### ant-design 中 Input - Input.TextArea的autoSize属性如何使用？
 
-参数: autoSize
+### ant-design 中 Input - Input.TextArea的autoSize属性如何使用？ 
 
-说明: 自适应内容高度，可设置为 true | false 或对象：{ minRows: 2, maxRows: 6 }
+参数: autoSize 
 
-类型: boolean | object
+说明: 自适应内容高度，可设置为 true | false 或对象：{ minRows: 2, maxRows: 6 } 
+
+类型: boolean | object 
 
 默认值: false
 
-### ant-design 中 Input - Input.TextArea的classNames属性如何使用？
+### ant-design 中 Input - Input.TextArea的classNames属性如何使用？ 
 
-参数: classNames
+参数: classNames 
 
-说明: 语义化结构 class
+说明: 语义化结构 class 
 
-类型: Record<[SemanticDOM](#inputtextarea-1), string>
+类型: Record<[SemanticDOM](#inputtextarea-1), string> 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Input - Input.TextArea的styles属性如何使用？
+### ant-design 中 Input - Input.TextArea的styles属性如何使用？ 
 
-参数: styles
+参数: styles 
 
-说明: 语义化结构 style
+说明: 语义化结构 style 
 
-类型: Record<[SemanticDOM](#inputtextarea-1), CSSProperties>
+类型: Record<[SemanticDOM](#inputtextarea-1), CSSProperties> 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
@@ -14133,33 +14359,34 @@
 | loading | 搜索 loading | boolean | false |
 | onSearch | 点击搜索图标、清除图标，或按下回车键时的回调 | function(value, event, { source: "input" \| "clear" }) | - |
 
-### ant-design 中 Input - Input.Search的enterButton属性如何使用？
 
-参数: enterButton
+### ant-design 中 Input - Input.Search的enterButton属性如何使用？ 
 
-说明: 是否有确认按钮，可设为按钮文字。该属性会与 `addonAfter` 冲突。
+参数: enterButton 
 
-类型: boolean | ReactNode
+说明: 是否有确认按钮，可设为按钮文字。该属性会与 `addonAfter` 冲突。 
 
-默认值: false
-
-### ant-design 中 Input - Input.Search的loading属性如何使用？
-
-参数: loading
-
-说明: 搜索 loading
-
-类型: boolean
+类型: boolean | ReactNode 
 
 默认值: false
 
-### ant-design 中 Input - Input.Search的onSearch属性如何使用？
+### ant-design 中 Input - Input.Search的loading属性如何使用？ 
 
-参数: onSearch
+参数: loading 
 
-说明: 点击搜索图标、清除图标，或按下回车键时的回调
+说明: 搜索 loading 
 
-类型: function(value, event, { source: "input" | "clear" })
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Input - Input.Search的onSearch属性如何使用？ 
+
+参数: onSearch 
+
+说明: 点击搜索图标、清除图标，或按下回车键时的回调 
+
+类型: function(value, event, { source: "input" | "clear" }) 
 
 默认值: -
 
@@ -14170,25 +14397,26 @@
 | iconRender | 自定义切换按钮 | (visible) => ReactNode | (visible) => (visible ? <EyeOutlined /> : <EyeInvisibleOutlined />) | 4.3.0 |
 | visibilityToggle | 是否显示切换按钮或者控制密码显隐 | boolean \| [VisibilityToggle](#visibilitytoggle) | true |
 
-### ant-design 中 Input - Input.Password的iconRender属性如何使用？
 
-参数: iconRender
+### ant-design 中 Input - Input.Password的iconRender属性如何使用？ 
 
-说明: 自定义切换按钮
+参数: iconRender 
 
-类型: (visible) => ReactNode
+说明: 自定义切换按钮 
 
-默认值: (visible) => (visible ? <EyeOutlined /> : <EyeInvisibleOutlined />)
+类型: (visible) => ReactNode 
+
+默认值: (visible) => (visible ? <EyeOutlined /> : <EyeInvisibleOutlined />) 
 
 版本: 4.3.0
 
-### ant-design 中 Input - Input.Password的visibilityToggle属性如何使用？
+### ant-design 中 Input - Input.Password的visibilityToggle属性如何使用？ 
 
-参数: visibilityToggle
+参数: visibilityToggle 
 
-说明: 是否显示切换按钮或者控制密码显隐
+说明: 是否显示切换按钮或者控制密码显隐 
 
-类型: boolean | [VisibilityToggle](#visibilitytoggle)
+类型: boolean | [VisibilityToggle](#visibilitytoggle) 
 
 默认值: true
 
@@ -14199,122 +14427,126 @@
 | visible | 用于手动控制密码显隐 | boolean | false | 4.24 |
 | onVisibleChange | 显隐密码的回调 | (visible) => void | - | 4.24 |
 
-### ant-design 中 Input - VisibilityToggle的visible属性如何使用？
 
-Property: visible
+### ant-design 中 Input - VisibilityToggle的visible属性如何使用？ 
 
-Description: 用于手动控制密码显隐
+Property: visible 
 
-Type: boolean
+Description: 用于手动控制密码显隐 
 
-Default: false
+Type: boolean 
+
+Default: false 
 
 Version: 4.24
 
-### ant-design 中 Input - VisibilityToggle的onVisibleChange属性如何使用？
+### ant-design 中 Input - VisibilityToggle的onVisibleChange属性如何使用？ 
 
-Property: onVisibleChange
+Property: onVisibleChange 
 
-Description: 显隐密码的回调
+Description: 显隐密码的回调 
 
-Type: (visible) => void
+Type: (visible) => void 
 
-Default: -
+Default: - 
 
 Version: 4.24
 
 ### ant-design 的 Input - Input Methods 有哪些配置？
 
 | 名称 | 说明 | 参数 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | blur | 取消焦点 | - |
 | focus | 获取焦点 | (option?: { preventScroll?: boolean, cursor?: 'start' \| 'end' \| 'all' }) | option - 4.10.0 |
 
-### ant-design 中 Input - Input Methods的blur属性如何使用？
 
-名称: blur
+### ant-design 中 Input - Input Methods的blur属性如何使用？ 
 
-说明: 取消焦点
+名称: blur 
+
+说明: 取消焦点 
 
 参数: -
 
-### ant-design 中 Input - Input Methods的focus属性如何使用？
+### ant-design 中 Input - Input Methods的focus属性如何使用？ 
 
-名称: focus
+名称: focus 
 
-说明: 获取焦点
+说明: 获取焦点 
 
-参数: (option?: { preventScroll?: boolean, cursor?: 'start' | 'end' | 'all' })
+参数: (option?: { preventScroll?: boolean, cursor?: 'start' | 'end' | 'all' }) 
 
 版本: option - 4.10.0
 
 ### ant-design 的 Input - Input 有哪些配置？
 
-| 名称   | 说明               | 版本  |
-| ------ | ------------------ | ----- |
-| input  | `input` 元素       | 5.4.0 |
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
+| input | `input` 元素 | 5.4.0 |
 | prefix | 所有前缀的包裹元素 | 5.4.0 |
 | suffix | 所有后缀的包裹元素 | 5.4.0 |
-| count  | 文字计数元素       | 5.4.0 |
+| count | 文字计数元素 | 5.4.0 |
 
-### ant-design 中 Input - Input的input属性如何使用？
 
-名称: input
+### ant-design 中 Input - Input的input属性如何使用？ 
 
-说明: `input` 元素
+名称: input 
 
-版本: 5.4.0
-
-### ant-design 中 Input - Input的prefix属性如何使用？
-
-名称: prefix
-
-说明: 所有前缀的包裹元素
+说明: `input` 元素 
 
 版本: 5.4.0
 
-### ant-design 中 Input - Input的suffix属性如何使用？
+### ant-design 中 Input - Input的prefix属性如何使用？ 
 
-名称: suffix
+名称: prefix 
 
-说明: 所有后缀的包裹元素
+说明: 所有前缀的包裹元素 
 
 版本: 5.4.0
 
-### ant-design 中 Input - Input的count属性如何使用？
+### ant-design 中 Input - Input的suffix属性如何使用？ 
 
-名称: count
+名称: suffix 
 
-说明: 文字计数元素
+说明: 所有后缀的包裹元素 
+
+版本: 5.4.0
+
+### ant-design 中 Input - Input的count属性如何使用？ 
+
+名称: count 
+
+说明: 文字计数元素 
 
 版本: 5.4.0
 
 ### ant-design 的 Input - Input.TextArea 有哪些配置？
 
-| 名称     | 说明            | 版本  |
-| -------- | --------------- | ----- |
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
 | textarea | `textarea` 元素 | 5.4.0 |
-| count    | 文字计数元素    | 5.4.0 |
+| count | 文字计数元素 | 5.4.0 |
 
-### ant-design 中 Input - Input.TextArea的textarea属性如何使用？
 
-名称: textarea
+### ant-design 中 Input - Input.TextArea的textarea属性如何使用？ 
 
-说明: `textarea` 元素
+名称: textarea 
+
+说明: `textarea` 元素 
 
 版本: 5.4.0
 
-### ant-design 中 Input - Input.TextArea的count属性如何使用？
+### ant-design 中 Input - Input.TextArea的count属性如何使用？ 
 
-名称: count
+名称: count 
 
-说明: 文字计数元素
+说明: 文字计数元素 
 
 版本: 5.4.0
 
 ### ant-design 的 Image 有哪些配置？
 
-#### Image - Image
+#### Image - Image 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -14327,7 +14559,8 @@ Version: 4.24
 | width | 图像宽度 | string \| number | - | 4.6.0 |
 | onError | 加载错误回调 | (event: Event) => void | - | 4.12.0 |
 
-#### Image - PreviewType
+
+#### Image - PreviewType 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -14348,7 +14581,8 @@ Version: 4.24
 | onTransform | 预览图 transform 变化的回调 | { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } | - | 5.7.0 |
 | onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean) => void | - | - |
 
-#### Image - PreviewGroup
+
+#### Image - PreviewGroup 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -14356,7 +14590,8 @@ Version: 4.24
 | items | 预览数组 | string[] \| { src: string, crossOrigin: string, ... }[] | - | 5.7.0 |
 | fallback | 加载失败容错地址 | string | - | 5.7.0 |
 
-#### Image - PreviewGroupType
+
+#### Image - PreviewGroupType 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -14379,6 +14614,7 @@ Version: 4.24
 | onChange | 切换预览图的回调 | (current: number, prevCurrent: number) => void | - | 5.3.0 |
 | onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean, current: number) => void | - | current 参数 5.3.0 |
 
+
 ### ant-design 的 Image - Image 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -14392,99 +14628,100 @@ Version: 4.24
 | width | 图像宽度 | string \| number | - | 4.6.0 |
 | onError | 加载错误回调 | (event: Event) => void | - | 4.12.0 |
 
-### ant-design 中 Image - Image的alt属性如何使用？
 
-参数: alt
+### ant-design 中 Image - Image的alt属性如何使用？ 
 
-说明: 图像描述
+参数: alt 
 
-类型: string
+说明: 图像描述 
 
-默认值: -
+类型: string 
 
-版本: 4.6.0
-
-### ant-design 中 Image - Image的fallback属性如何使用？
-
-参数: fallback
-
-说明: 加载失败容错地址
-
-类型: string
-
-默认值: -
+默认值: - 
 
 版本: 4.6.0
 
-### ant-design 中 Image - Image的height属性如何使用？
+### ant-design 中 Image - Image的fallback属性如何使用？ 
 
-参数: height
+参数: fallback 
 
-说明: 图像高度
+说明: 加载失败容错地址 
 
-类型: string | number
+类型: string 
 
-默认值: -
-
-版本: 4.6.0
-
-### ant-design 中 Image - Image的placeholder属性如何使用？
-
-参数: placeholder
-
-说明: 加载占位，为 `true` 时使用默认占位
-
-类型: ReactNode
-
-默认值: -
+默认值: - 
 
 版本: 4.6.0
 
-### ant-design 中 Image - Image的preview属性如何使用？
+### ant-design 中 Image - Image的height属性如何使用？ 
 
-参数: preview
+参数: height 
 
-说明: 预览参数，为 `false` 时禁用
+说明: 图像高度 
 
-类型: boolean | [PreviewType](#previewtype)
+类型: string | number 
 
-默认值: true
+默认值: - 
+
+版本: 4.6.0
+
+### ant-design 中 Image - Image的placeholder属性如何使用？ 
+
+参数: placeholder 
+
+说明: 加载占位，为 `true` 时使用默认占位 
+
+类型: ReactNode 
+
+默认值: - 
+
+版本: 4.6.0
+
+### ant-design 中 Image - Image的preview属性如何使用？ 
+
+参数: preview 
+
+说明: 预览参数，为 `false` 时禁用 
+
+类型: boolean | [PreviewType](#previewtype) 
+
+默认值: true 
 
 版本: 4.6.0 [PreviewType](#previewyype):4.7.0
 
-### ant-design 中 Image - Image的src属性如何使用？
+### ant-design 中 Image - Image的src属性如何使用？ 
 
-参数: src
+参数: src 
 
-说明: 图片地址
+说明: 图片地址 
 
-类型: string
+类型: string 
 
-默认值: -
-
-版本: 4.6.0
-
-### ant-design 中 Image - Image的width属性如何使用？
-
-参数: width
-
-说明: 图像宽度
-
-类型: string | number
-
-默认值: -
+默认值: - 
 
 版本: 4.6.0
 
-### ant-design 中 Image - Image的onError属性如何使用？
+### ant-design 中 Image - Image的width属性如何使用？ 
 
-参数: onError
+参数: width 
 
-说明: 加载错误回调
+说明: 图像宽度 
 
-类型: (event: Event) => void
+类型: string | number 
 
-默认值: -
+默认值: - 
+
+版本: 4.6.0
+
+### ant-design 中 Image - Image的onError属性如何使用？ 
+
+参数: onError 
+
+说明: 加载错误回调 
+
+类型: (event: Event) => void 
+
+默认值: - 
 
 版本: 4.12.0
 
@@ -14509,195 +14746,196 @@ Version: 4.24
 | onTransform | 预览图 transform 变化的回调 | { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } | - | 5.7.0 |
 | onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean) => void | - | - |
 
-### ant-design 中 Image - PreviewType的visible属性如何使用？
 
-参数: visible
+### ant-design 中 Image - PreviewType的visible属性如何使用？ 
 
-说明: 是否显示
+参数: visible 
 
-类型: boolean
+说明: 是否显示 
 
-默认值: -
+类型: boolean 
+
+默认值: - 
 
 版本: -
 
-### ant-design 中 Image - PreviewType的src属性如何使用？
+### ant-design 中 Image - PreviewType的src属性如何使用？ 
 
-参数: src
+参数: src 
 
-说明: 自定义预览 src
+说明: 自定义预览 src 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 4.10.0
 
-### ant-design 中 Image - PreviewType的getContainer属性如何使用？
+### ant-design 中 Image - PreviewType的getContainer属性如何使用？ 
 
-参数: getContainer
+参数: getContainer 
 
-说明: 指定预览挂载的节点，但依旧为全屏展示，false 为挂载在当前位置
+说明: 指定预览挂载的节点，但依旧为全屏展示，false 为挂载在当前位置 
 
-类型: string | HTMLElement | (() => HTMLElement) | false
+类型: string | HTMLElement | (() => HTMLElement) | false 
 
-默认值: -
+默认值: - 
 
 版本: 4.8.0
 
-### ant-design 中 Image - PreviewType的movable属性如何使用？
+### ant-design 中 Image - PreviewType的movable属性如何使用？ 
 
-参数: movable
+参数: movable 
 
-说明: 是否可移动
+说明: 是否可移动 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 5.8.0
 
-### ant-design 中 Image - PreviewType的mask属性如何使用？
+### ant-design 中 Image - PreviewType的mask属性如何使用？ 
 
-参数: mask
+参数: mask 
 
-说明: 缩略图遮罩
+说明: 缩略图遮罩 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.9.0
 
-### ant-design 中 Image - PreviewType的maskClassName属性如何使用？
+### ant-design 中 Image - PreviewType的maskClassName属性如何使用？ 
 
-参数: maskClassName
+参数: maskClassName 
 
-说明: 缩略图遮罩类名
+说明: 缩略图遮罩类名 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 4.11.0
 
-### ant-design 中 Image - PreviewType的rootClassName属性如何使用？
+### ant-design 中 Image - PreviewType的rootClassName属性如何使用？ 
 
-参数: rootClassName
+参数: rootClassName 
 
-说明: 预览图的根 DOM 类名
+说明: 预览图的根 DOM 类名 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Image - PreviewType的scaleStep属性如何使用？
+### ant-design 中 Image - PreviewType的scaleStep属性如何使用？ 
 
-参数: scaleStep
+参数: scaleStep 
 
-说明: `1 + scaleStep` 为缩放放大的每步倍数
+说明: `1 + scaleStep` 为缩放放大的每步倍数 
 
-类型: number
+类型: number 
 
-默认值: 0.5
-
-版本: -
-
-### ant-design 中 Image - PreviewType的minScale属性如何使用？
-
-参数: minScale
-
-说明: 最小缩放倍数
-
-类型: number
-
-默认值: 1
-
-版本: 5.7.0
-
-### ant-design 中 Image - PreviewType的maxScale属性如何使用？
-
-参数: maxScale
-
-说明: 最大放大倍数
-
-类型: number
-
-默认值: 50
-
-版本: 5.7.0
-
-### ant-design 中 Image - PreviewType的closeIcon属性如何使用？
-
-参数: closeIcon
-
-说明: 自定义关闭 Icon
-
-类型: React.ReactNode
-
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Image - PreviewType的forceRender属性如何使用？
-
-参数: forceRender
-
-说明: 强制渲染预览图
-
-类型: boolean
-
-默认值: -
+默认值: 0.5 
 
 版本: -
 
-### ant-design 中 Image - PreviewType的toolbarRender属性如何使用？
+### ant-design 中 Image - PreviewType的minScale属性如何使用？ 
 
-参数: toolbarRender
+参数: minScale 
 
-说明: 自定义工具栏
+说明: 最小缩放倍数 
 
-类型: (originalNode: React.ReactElement, info: Omit<[ToolbarRenderInfoType](#toolbarrenderinfotype), 'current' | 'total'>) => React.ReactNode
+类型: number 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Image - PreviewType的imageRender属性如何使用？
-
-参数: imageRender
-
-说明: 自定义预览内容
-
-类型: (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype) }) => React.ReactNode
-
-默认值: -
+默认值: 1 
 
 版本: 5.7.0
 
-### ant-design 中 Image - PreviewType的onTransform属性如何使用？
+### ant-design 中 Image - PreviewType的maxScale属性如何使用？ 
 
-参数: onTransform
+参数: maxScale 
 
-说明: 预览图 transform 变化的回调
+说明: 最大放大倍数 
 
-类型: { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) }
+类型: number 
 
-默认值: -
+默认值: 50 
 
 版本: 5.7.0
 
-### ant-design 中 Image - PreviewType的onVisibleChange属性如何使用？
+### ant-design 中 Image - PreviewType的closeIcon属性如何使用？ 
 
-参数: onVisibleChange
+参数: closeIcon 
 
-说明: 当 `visible` 发生改变时的回调
+说明: 自定义关闭 Icon 
 
-类型: (visible: boolean, prevVisible: boolean) => void
+类型: React.ReactNode 
 
-默认值: -
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Image - PreviewType的forceRender属性如何使用？ 
+
+参数: forceRender 
+
+说明: 强制渲染预览图 
+
+类型: boolean 
+
+默认值: - 
+
+版本: -
+
+### ant-design 中 Image - PreviewType的toolbarRender属性如何使用？ 
+
+参数: toolbarRender 
+
+说明: 自定义工具栏 
+
+类型: (originalNode: React.ReactElement, info: Omit<[ToolbarRenderInfoType](#toolbarrenderinfotype), 'current' | 'total'>) => React.ReactNode 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Image - PreviewType的imageRender属性如何使用？ 
+
+参数: imageRender 
+
+说明: 自定义预览内容 
+
+类型: (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype) }) => React.ReactNode 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Image - PreviewType的onTransform属性如何使用？ 
+
+参数: onTransform 
+
+说明: 预览图 transform 变化的回调 
+
+类型: { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Image - PreviewType的onVisibleChange属性如何使用？ 
+
+参数: onVisibleChange 
+
+说明: 当 `visible` 发生改变时的回调 
+
+类型: (visible: boolean, prevVisible: boolean) => void 
+
+默认值: - 
 
 版本: -
 
@@ -14709,39 +14947,40 @@ Version: 4.24
 | items | 预览数组 | string[] \| { src: string, crossOrigin: string, ... }[] | - | 5.7.0 |
 | fallback | 加载失败容错地址 | string | - | 5.7.0 |
 
-### ant-design 中 Image - PreviewGroup的preview属性如何使用？
 
-参数: preview
+### ant-design 中 Image - PreviewGroup的preview属性如何使用？ 
 
-说明: 预览参数，为 `false` 时禁用
+参数: preview 
 
-类型: boolean | [PreviewGroupType](#previewgrouptype)
+说明: 预览参数，为 `false` 时禁用 
 
-默认值: true
+类型: boolean | [PreviewGroupType](#previewgrouptype) 
+
+默认值: true 
 
 版本: 4.6.0 [PreviewGroupType](#previewgrouptype):4.7.0
 
-### ant-design 中 Image - PreviewGroup的items属性如何使用？
+### ant-design 中 Image - PreviewGroup的items属性如何使用？ 
 
-参数: items
+参数: items 
 
-说明: 预览数组
+说明: 预览数组 
 
-类型: string[] | { src: string, crossOrigin: string, ... }[]
+类型: string[] | { src: string, crossOrigin: string, ... }[] 
 
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Image - PreviewGroup的fallback属性如何使用？
+### ant-design 中 Image - PreviewGroup的fallback属性如何使用？ 
 
-参数: fallback
+参数: fallback 
 
-说明: 加载失败容错地址
+说明: 加载失败容错地址 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
@@ -14768,225 +15007,226 @@ Version: 4.24
 | onChange | 切换预览图的回调 | (current: number, prevCurrent: number) => void | - | 5.3.0 |
 | onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean, current: number) => void | - | current 参数 5.3.0 |
 
-### ant-design 中 Image - PreviewGroupType的visible属性如何使用？
 
-参数: visible
+### ant-design 中 Image - PreviewGroupType的visible属性如何使用？ 
 
-说明: 是否显示
+参数: visible 
 
-类型: boolean
+说明: 是否显示 
 
-默认值: -
+类型: boolean 
+
+默认值: - 
 
 版本: -
 
-### ant-design 中 Image - PreviewGroupType的getContainer属性如何使用？
+### ant-design 中 Image - PreviewGroupType的getContainer属性如何使用？ 
 
-参数: getContainer
+参数: getContainer 
 
-说明: 指定预览挂载的节点，但依旧为全屏展示，false 为挂载在当前位置
+说明: 指定预览挂载的节点，但依旧为全屏展示，false 为挂载在当前位置 
 
-类型: string | HTMLElement | (() => HTMLElement) | false
+类型: string | HTMLElement | (() => HTMLElement) | false 
 
-默认值: -
+默认值: - 
 
 版本: 4.8.0
 
-### ant-design 中 Image - PreviewGroupType的movable属性如何使用？
+### ant-design 中 Image - PreviewGroupType的movable属性如何使用？ 
 
-参数: movable
+参数: movable 
 
-说明: 是否可移动
+说明: 是否可移动 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 5.8.0
 
-### ant-design 中 Image - PreviewGroupType的current属性如何使用？
+### ant-design 中 Image - PreviewGroupType的current属性如何使用？ 
 
-参数: current
+参数: current 
 
-说明: 当前预览图的 index
+说明: 当前预览图的 index 
 
-类型: number
+类型: number 
 
-默认值: -
+默认值: - 
 
 版本: 4.12.0
 
-### ant-design 中 Image - PreviewGroupType的mask属性如何使用？
+### ant-design 中 Image - PreviewGroupType的mask属性如何使用？ 
 
-参数: mask
+参数: mask 
 
-说明: 缩略图遮罩
+说明: 缩略图遮罩 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.9.0
 
-### ant-design 中 Image - PreviewGroupType的maskClassName属性如何使用？
+### ant-design 中 Image - PreviewGroupType的maskClassName属性如何使用？ 
 
-参数: maskClassName
+参数: maskClassName 
 
-说明: 缩略图遮罩类名
+说明: 缩略图遮罩类名 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 4.11.0
 
-### ant-design 中 Image - PreviewGroupType的rootClassName属性如何使用？
+### ant-design 中 Image - PreviewGroupType的rootClassName属性如何使用？ 
 
-参数: rootClassName
+参数: rootClassName 
 
-说明: 预览图的根 DOM 类名
+说明: 预览图的根 DOM 类名 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Image - PreviewGroupType的scaleStep属性如何使用？
+### ant-design 中 Image - PreviewGroupType的scaleStep属性如何使用？ 
 
-参数: scaleStep
+参数: scaleStep 
 
-说明: `1 + scaleStep` 为缩放放大的每步倍数
+说明: `1 + scaleStep` 为缩放放大的每步倍数 
 
-类型: number
+类型: number 
 
-默认值: 0.5
-
-版本: -
-
-### ant-design 中 Image - PreviewGroupType的minScale属性如何使用？
-
-参数: minScale
-
-说明: 最小缩放倍数
-
-类型: number
-
-默认值: 1
-
-版本: 5.7.0
-
-### ant-design 中 Image - PreviewGroupType的maxScale属性如何使用？
-
-参数: maxScale
-
-说明: 最大放大倍数
-
-类型: number
-
-默认值: 50
-
-版本: 5.7.0
-
-### ant-design 中 Image - PreviewGroupType的closeIcon属性如何使用？
-
-参数: closeIcon
-
-说明: 自定义关闭 Icon
-
-类型: React.ReactNode
-
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Image - PreviewGroupType的forceRender属性如何使用？
-
-参数: forceRender
-
-说明: 强制渲染预览图
-
-类型: boolean
-
-默认值: -
+默认值: 0.5 
 
 版本: -
 
-### ant-design 中 Image - PreviewGroupType的countRender属性如何使用？
+### ant-design 中 Image - PreviewGroupType的minScale属性如何使用？ 
 
-参数: countRender
+参数: minScale 
 
-说明: 自定义预览计数内容
+说明: 最小缩放倍数 
 
-类型: (current: number, total: number) => React.ReactNode
+类型: number 
 
-默认值: -
+默认值: 1 
+
+版本: 5.7.0
+
+### ant-design 中 Image - PreviewGroupType的maxScale属性如何使用？ 
+
+参数: maxScale 
+
+说明: 最大放大倍数 
+
+类型: number 
+
+默认值: 50 
+
+版本: 5.7.0
+
+### ant-design 中 Image - PreviewGroupType的closeIcon属性如何使用？ 
+
+参数: closeIcon 
+
+说明: 自定义关闭 Icon 
+
+类型: React.ReactNode 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Image - PreviewGroupType的forceRender属性如何使用？ 
+
+参数: forceRender 
+
+说明: 强制渲染预览图 
+
+类型: boolean 
+
+默认值: - 
+
+版本: -
+
+### ant-design 中 Image - PreviewGroupType的countRender属性如何使用？ 
+
+参数: countRender 
+
+说明: 自定义预览计数内容 
+
+类型: (current: number, total: number) => React.ReactNode 
+
+默认值: - 
 
 版本: 4.20.0
 
-### ant-design 中 Image - PreviewGroupType的toolbarRender属性如何使用？
+### ant-design 中 Image - PreviewGroupType的toolbarRender属性如何使用？ 
 
-参数: toolbarRender
+参数: toolbarRender 
 
-说明: 自定义工具栏
+说明: 自定义工具栏 
 
-类型: (originalNode: React.ReactElement, info: [ToolbarRenderInfoType](#toolbarrenderinfotype)) => React.ReactNode
+类型: (originalNode: React.ReactElement, info: [ToolbarRenderInfoType](#toolbarrenderinfotype)) => React.ReactNode 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Image - PreviewGroupType的imageRender属性如何使用？
-
-参数: imageRender
-
-说明: 自定义预览内容
-
-类型: (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), current: number }) => React.ReactNode
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Image - PreviewGroupType的onTransform属性如何使用？
+### ant-design 中 Image - PreviewGroupType的imageRender属性如何使用？ 
 
-参数: onTransform
+参数: imageRender 
 
-说明: 预览图 transform 变化的回调
+说明: 自定义预览内容 
 
-类型: { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) }
+类型: (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), current: number }) => React.ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Image - PreviewGroupType的onChange属性如何使用？
+### ant-design 中 Image - PreviewGroupType的onTransform属性如何使用？ 
 
-参数: onChange
+参数: onTransform 
 
-说明: 切换预览图的回调
+说明: 预览图 transform 变化的回调 
 
-类型: (current: number, prevCurrent: number) => void
+类型: { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } 
 
-默认值: -
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Image - PreviewGroupType的onChange属性如何使用？ 
+
+参数: onChange 
+
+说明: 切换预览图的回调 
+
+类型: (current: number, prevCurrent: number) => void 
+
+默认值: - 
 
 版本: 5.3.0
 
-### ant-design 中 Image - PreviewGroupType的onVisibleChange属性如何使用？
+### ant-design 中 Image - PreviewGroupType的onVisibleChange属性如何使用？ 
 
-参数: onVisibleChange
+参数: onVisibleChange 
 
-说明: 当 `visible` 发生改变时的回调
+说明: 当 `visible` 发生改变时的回调 
 
-类型: (visible: boolean, prevVisible: boolean, current: number) => void
+类型: (visible: boolean, prevVisible: boolean, current: number) => void 
 
-默认值: -
+默认值: - 
 
 版本: current 参数 5.3.0
 
 ### ant-design 的 Icon 有哪些配置？
 
-#### Icon - 通用图标
+#### Icon - 通用图标 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -14996,7 +15236,8 @@ Version: 4.24
 | style | 设置图标的样式，例如 `fontSize` 和 `color` | CSSProperties | - |
 | twoToneColor | 仅适用双色图标。设置双色图标的主要颜色 | string (十六进制颜色) | - |
 
-#### Icon - 自定义 Icon
+
+#### Icon - 自定义 Icon 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -15005,22 +15246,25 @@ Version: 4.24
 | spin | 是否有旋转动画 | boolean | false |
 | style | 设置图标的样式，例如 `fontSize` 和 `color` | CSSProperties | - |
 
-#### Icon - 自定义 font 图标
+
+#### Icon - 自定义 font 图标 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | extraCommonProps | 给所有的 `svg` 图标 `<Icon />` 组件设置额外的属性 | { [key: string]: any } | {} |
 | scriptUrl | string \| string[] | - |
 
-#### Icon - 自定义 SVG 图标
 
-| 字段      | 说明                    | 类型             | 只读值         |
-| --------- | ----------------------- | ---------------- | -------------- |
-| className | 计算后的 `svg` 类名     | string           | -              |
-| fill      | `svg` 元素填充的颜色    | string           | `currentColor` |
-| height    | `svg` 元素高度          | string \| number | `1em`          |
-| style     | 计算后的 `svg` 元素样式 | CSSProperties    | -              |
-| width     | `svg` 元素宽度          | string \| number | `1em`          |
+#### Icon - 自定义 SVG 图标 
+
+| 字段 | 说明 | 类型 | 只读值 |
+| --- | --- | --- | --- |
+| className | 计算后的 `svg` 类名 | string | - |
+| fill | `svg` 元素填充的颜色 | string | `currentColor` |
+| height | `svg` 元素高度 | string \| number | `1em` |
+| style | 计算后的 `svg` 元素样式 | CSSProperties | - |
+| width | `svg` 元素宽度 | string \| number | `1em` |
+
 
 ### ant-design 的 Icon - 通用图标 有哪些配置？
 
@@ -15032,53 +15276,54 @@ Version: 4.24
 | style | 设置图标的样式，例如 `fontSize` 和 `color` | CSSProperties | - |
 | twoToneColor | 仅适用双色图标。设置双色图标的主要颜色 | string (十六进制颜色) | - |
 
-### ant-design 中 Icon - 通用图标的className属性如何使用？
 
-参数: className
+### ant-design 中 Icon - 通用图标的className属性如何使用？ 
 
-说明: 设置图标的样式名
+参数: className 
 
-类型: string
+说明: 设置图标的样式名 
 
-默认值: -
-
-### ant-design 中 Icon - 通用图标的rotate属性如何使用？
-
-参数: rotate
-
-说明: 图标旋转角度（IE9 无效）
-
-类型: number
+类型: string 
 
 默认值: -
 
-### ant-design 中 Icon - 通用图标的spin属性如何使用？
+### ant-design 中 Icon - 通用图标的rotate属性如何使用？ 
 
-参数: spin
+参数: rotate 
 
-说明: 是否有旋转动画
+说明: 图标旋转角度（IE9 无效） 
 
-类型: boolean
+类型: number 
+
+默认值: -
+
+### ant-design 中 Icon - 通用图标的spin属性如何使用？ 
+
+参数: spin 
+
+说明: 是否有旋转动画 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Icon - 通用图标的style属性如何使用？
+### ant-design 中 Icon - 通用图标的style属性如何使用？ 
 
-参数: style
+参数: style 
 
-说明: 设置图标的样式，例如 `fontSize` 和 `color`
+说明: 设置图标的样式，例如 `fontSize` 和 `color` 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Icon - 通用图标的twoToneColor属性如何使用？
+### ant-design 中 Icon - 通用图标的twoToneColor属性如何使用？ 
 
-参数: twoToneColor
+参数: twoToneColor 
 
-说明: 仅适用双色图标。设置双色图标的主要颜色
+说明: 仅适用双色图标。设置双色图标的主要颜色 
 
-类型: string (十六进制颜色)
+类型: string (十六进制颜色) 
 
 默认值: -
 
@@ -15091,43 +15336,44 @@ Version: 4.24
 | spin | 是否有旋转动画 | boolean | false |
 | style | 设置图标的样式，例如 `fontSize` 和 `color` | CSSProperties | - |
 
-### ant-design 中 Icon - 自定义 Icon的component属性如何使用？
 
-参数: component
+### ant-design 中 Icon - 自定义 Icon的component属性如何使用？ 
 
-说明: 控制如何渲染图标，通常是一个渲染根标签为 `<svg>` 的 React 组件
+参数: component 
 
-类型: ComponentType<CustomIconComponentProps>
+说明: 控制如何渲染图标，通常是一个渲染根标签为 `<svg>` 的 React 组件 
 
-默认值: -
-
-### ant-design 中 Icon - 自定义 Icon的rotate属性如何使用？
-
-参数: rotate
-
-说明: 图标旋转角度（IE9 无效）
-
-类型: number
+类型: ComponentType<CustomIconComponentProps> 
 
 默认值: -
 
-### ant-design 中 Icon - 自定义 Icon的spin属性如何使用？
+### ant-design 中 Icon - 自定义 Icon的rotate属性如何使用？ 
 
-参数: spin
+参数: rotate 
 
-说明: 是否有旋转动画
+说明: 图标旋转角度（IE9 无效） 
 
-类型: boolean
+类型: number 
+
+默认值: -
+
+### ant-design 中 Icon - 自定义 Icon的spin属性如何使用？ 
+
+参数: spin 
+
+说明: 是否有旋转动画 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Icon - 自定义 Icon的style属性如何使用？
+### ant-design 中 Icon - 自定义 Icon的style属性如何使用？ 
 
-参数: style
+参数: style 
 
-说明: 设置图标的样式，例如 `fontSize` 和 `color`
+说明: 设置图标的样式，例如 `fontSize` 和 `color` 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: -
 
@@ -15138,87 +15384,89 @@ Version: 4.24
 | extraCommonProps | 给所有的 `svg` 图标 `<Icon />` 组件设置额外的属性 | { [key: string]: any } | {} |
 | scriptUrl | string \| string[] | - |
 
-### ant-design 中 Icon - 自定义 font 图标的extraCommonProps属性如何使用？
 
-参数: extraCommonProps
+### ant-design 中 Icon - 自定义 font 图标的extraCommonProps属性如何使用？ 
 
-说明: 给所有的 `svg` 图标 `<Icon />` 组件设置额外的属性
+参数: extraCommonProps 
 
-类型: { [key: string]: any }
+说明: 给所有的 `svg` 图标 `<Icon />` 组件设置额外的属性 
+
+类型: { [key: string]: any } 
 
 默认值: {}
 
-### ant-design 中 Icon - 自定义 font 图标的scriptUrl属性如何使用？
+### ant-design 中 Icon - 自定义 font 图标的scriptUrl属性如何使用？ 
 
-参数: scriptUrl
+参数: scriptUrl 
 
-说明: string | string[]
+说明: string | string[] 
 
 类型: -
 
 ### ant-design 的 Icon - 自定义 SVG 图标 有哪些配置？
 
-| 字段      | 说明                    | 类型             | 只读值         |
-| --------- | ----------------------- | ---------------- | -------------- |
-| className | 计算后的 `svg` 类名     | string           | -              |
-| fill      | `svg` 元素填充的颜色    | string           | `currentColor` |
-| height    | `svg` 元素高度          | string \| number | `1em`          |
-| style     | 计算后的 `svg` 元素样式 | CSSProperties    | -              |
-| width     | `svg` 元素宽度          | string \| number | `1em`          |
+| 字段 | 说明 | 类型 | 只读值 |
+| --- | --- | --- | --- |
+| className | 计算后的 `svg` 类名 | string | - |
+| fill | `svg` 元素填充的颜色 | string | `currentColor` |
+| height | `svg` 元素高度 | string \| number | `1em` |
+| style | 计算后的 `svg` 元素样式 | CSSProperties | - |
+| width | `svg` 元素宽度 | string \| number | `1em` |
 
-### ant-design 中 Icon - 自定义 SVG 图标的className属性如何使用？
 
-字段: className
+### ant-design 中 Icon - 自定义 SVG 图标的className属性如何使用？ 
 
-说明: 计算后的 `svg` 类名
+字段: className 
 
-类型: string
+说明: 计算后的 `svg` 类名 
+
+类型: string 
 
 只读值: -
 
-### ant-design 中 Icon - 自定义 SVG 图标的fill属性如何使用？
+### ant-design 中 Icon - 自定义 SVG 图标的fill属性如何使用？ 
 
-字段: fill
+字段: fill 
 
-说明: `svg` 元素填充的颜色
+说明: `svg` 元素填充的颜色 
 
-类型: string
+类型: string 
 
 只读值: `currentColor`
 
-### ant-design 中 Icon - 自定义 SVG 图标的height属性如何使用？
+### ant-design 中 Icon - 自定义 SVG 图标的height属性如何使用？ 
 
-字段: height
+字段: height 
 
-说明: `svg` 元素高度
+说明: `svg` 元素高度 
 
-类型: string | number
+类型: string | number 
 
 只读值: `1em`
 
-### ant-design 中 Icon - 自定义 SVG 图标的style属性如何使用？
+### ant-design 中 Icon - 自定义 SVG 图标的style属性如何使用？ 
 
-字段: style
+字段: style 
 
-说明: 计算后的 `svg` 元素样式
+说明: 计算后的 `svg` 元素样式 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 只读值: -
 
-### ant-design 中 Icon - 自定义 SVG 图标的width属性如何使用？
+### ant-design 中 Icon - 自定义 SVG 图标的width属性如何使用？ 
 
-字段: width
+字段: width 
 
-说明: `svg` 元素宽度
+说明: `svg` 元素宽度 
 
-类型: string | number
+类型: string | number 
 
 只读值: `1em`
 
 ### ant-design 的 Grid 有哪些配置？
 
-#### Grid - Row
+#### Grid - Row 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -15227,7 +15475,8 @@ Version: 4.24
 | justify | 水平排列方式 | `start` \| `end` \| `center` \| `space-around` \| `space-between` \| `space-evenly` \| `{[key in 'xs' \| 'sm' \| 'md' \| 'lg' \| 'xl' \| 'xxl']: 'start' \| 'end' \| 'center' \| 'space-around' \| 'space-between' \| 'space-evenly'}` | `start` | object: 4.24.0 |
 | wrap | 是否自动换行 | boolean | true | 4.8.0 |
 
-#### Grid - Col
+
+#### Grid - Col 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -15244,6 +15493,7 @@ Version: 4.24
 | xl | `屏幕 ≥ 1200px` 响应式栅格，可为栅格数或一个包含其他属性的对象 | number \| object | - |
 | xxl | `屏幕 ≥ 1600px` 响应式栅格，可为栅格数或一个包含其他属性的对象 | number \| object | - |
 
+
 ### ant-design 的 Grid - Row 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -15253,49 +15503,50 @@ Version: 4.24
 | justify | 水平排列方式 | `start` \| `end` \| `center` \| `space-around` \| `space-between` \| `space-evenly` \| `{[key in 'xs' \| 'sm' \| 'md' \| 'lg' \| 'xl' \| 'xxl']: 'start' \| 'end' \| 'center' \| 'space-around' \| 'space-between' \| 'space-evenly'}` | `start` | object: 4.24.0 |
 | wrap | 是否自动换行 | boolean | true | 4.8.0 |
 
-### ant-design 中 Grid - Row的align属性如何使用？
 
-参数: align
+### ant-design 中 Grid - Row的align属性如何使用？ 
 
-说明: 垂直对齐方式
+参数: align 
 
-类型: `top` | `middle` | `bottom` | `stretch` | `{[key in 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl']: 'top' | 'middle' | 'bottom' | 'stretch'}`
+说明: 垂直对齐方式 
 
-默认值: `top`
+类型: `top` | `middle` | `bottom` | `stretch` | `{[key in 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl']: 'top' | 'middle' | 'bottom' | 'stretch'}` 
+
+默认值: `top` 
 
 版本: object: 4.24.0
 
-### ant-design 中 Grid - Row的gutter属性如何使用？
+### ant-design 中 Grid - Row的gutter属性如何使用？ 
 
-参数: gutter
+参数: gutter 
 
-说明: 栅格间隔，可以写成像素值或支持响应式的对象写法来设置水平间隔 { xs: 8, sm: 16, md: 24}。或者使用数组形式同时设置 `[水平间距, 垂直间距]`
+说明: 栅格间隔，可以写成像素值或支持响应式的对象写法来设置水平间隔 { xs: 8, sm: 16, md: 24}。或者使用数组形式同时设置 `[水平间距, 垂直间距]` 
 
-类型: number | object | array
+类型: number | object | array 
 
 默认值: 0
 
-### ant-design 中 Grid - Row的justify属性如何使用？
+### ant-design 中 Grid - Row的justify属性如何使用？ 
 
-参数: justify
+参数: justify 
 
-说明: 水平排列方式
+说明: 水平排列方式 
 
-类型: `start` | `end` | `center` | `space-around` | `space-between` | `space-evenly` | `{[key in 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl']: 'start' | 'end' | 'center' | 'space-around' | 'space-between' | 'space-evenly'}`
+类型: `start` | `end` | `center` | `space-around` | `space-between` | `space-evenly` | `{[key in 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl']: 'start' | 'end' | 'center' | 'space-around' | 'space-between' | 'space-evenly'}` 
 
-默认值: `start`
+默认值: `start` 
 
 版本: object: 4.24.0
 
-### ant-design 中 Grid - Row的wrap属性如何使用？
+### ant-design 中 Grid - Row的wrap属性如何使用？ 
 
-参数: wrap
+参数: wrap 
 
-说明: 是否自动换行
+说明: 是否自动换行 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 4.8.0
 
@@ -15316,132 +15567,133 @@ Version: 4.24
 | xl | `屏幕 ≥ 1200px` 响应式栅格，可为栅格数或一个包含其他属性的对象 | number \| object | - |
 | xxl | `屏幕 ≥ 1600px` 响应式栅格，可为栅格数或一个包含其他属性的对象 | number \| object | - |
 
-### ant-design 中 Grid - Col的flex属性如何使用？
 
-参数: flex
+### ant-design 中 Grid - Col的flex属性如何使用？ 
 
-说明: flex 布局属性
+参数: flex 
 
-类型: string | number
+说明: flex 布局属性 
+
+类型: string | number 
 
 默认值: -
 
-### ant-design 中 Grid - Col的offset属性如何使用？
+### ant-design 中 Grid - Col的offset属性如何使用？ 
 
-参数: offset
+参数: offset 
 
-说明: 栅格左侧的间隔格数，间隔内不可以有栅格
+说明: 栅格左侧的间隔格数，间隔内不可以有栅格 
 
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Grid - Col的order属性如何使用？
+### ant-design 中 Grid - Col的order属性如何使用？ 
 
-参数: order
+参数: order 
 
-说明: 栅格顺序
+说明: 栅格顺序 
 
-类型: number
-
-默认值: 0
-
-### ant-design 中 Grid - Col的pull属性如何使用？
-
-参数: pull
-
-说明: 栅格向左移动格数
-
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Grid - Col的push属性如何使用？
+### ant-design 中 Grid - Col的pull属性如何使用？ 
 
-参数: push
+参数: pull 
 
-说明: 栅格向右移动格数
+说明: 栅格向左移动格数 
 
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Grid - Col的span属性如何使用？
+### ant-design 中 Grid - Col的push属性如何使用？ 
 
-参数: span
+参数: push 
 
-说明: 栅格占位格数，为 0 时相当于 `display: none`
+说明: 栅格向右移动格数 
 
-类型: number
+类型: number 
 
-默认值: -
+默认值: 0
 
-### ant-design 中 Grid - Col的xs属性如何使用？
+### ant-design 中 Grid - Col的span属性如何使用？ 
 
-参数: xs
+参数: span 
 
-说明: `屏幕 < 576px` 响应式栅格，可为栅格数或一个包含其他属性的对象
+说明: 栅格占位格数，为 0 时相当于 `display: none` 
 
-类型: number | object
-
-默认值: -
-
-### ant-design 中 Grid - Col的sm属性如何使用？
-
-参数: sm
-
-说明: `屏幕 ≥ 576px` 响应式栅格，可为栅格数或一个包含其他属性的对象
-
-类型: number | object
+类型: number 
 
 默认值: -
 
-### ant-design 中 Grid - Col的md属性如何使用？
+### ant-design 中 Grid - Col的xs属性如何使用？ 
 
-参数: md
+参数: xs 
 
-说明: `屏幕 ≥ 768px` 响应式栅格，可为栅格数或一个包含其他属性的对象
+说明: `屏幕 < 576px` 响应式栅格，可为栅格数或一个包含其他属性的对象 
 
-类型: number | object
-
-默认值: -
-
-### ant-design 中 Grid - Col的lg属性如何使用？
-
-参数: lg
-
-说明: `屏幕 ≥ 992px` 响应式栅格，可为栅格数或一个包含其他属性的对象
-
-类型: number | object
+类型: number | object 
 
 默认值: -
 
-### ant-design 中 Grid - Col的xl属性如何使用？
+### ant-design 中 Grid - Col的sm属性如何使用？ 
 
-参数: xl
+参数: sm 
 
-说明: `屏幕 ≥ 1200px` 响应式栅格，可为栅格数或一个包含其他属性的对象
+说明: `屏幕 ≥ 576px` 响应式栅格，可为栅格数或一个包含其他属性的对象 
 
-类型: number | object
+类型: number | object 
 
 默认值: -
 
-### ant-design 中 Grid - Col的xxl属性如何使用？
+### ant-design 中 Grid - Col的md属性如何使用？ 
 
-参数: xxl
+参数: md 
 
-说明: `屏幕 ≥ 1600px` 响应式栅格，可为栅格数或一个包含其他属性的对象
+说明: `屏幕 ≥ 768px` 响应式栅格，可为栅格数或一个包含其他属性的对象 
 
-类型: number | object
+类型: number | object 
+
+默认值: -
+
+### ant-design 中 Grid - Col的lg属性如何使用？ 
+
+参数: lg 
+
+说明: `屏幕 ≥ 992px` 响应式栅格，可为栅格数或一个包含其他属性的对象 
+
+类型: number | object 
+
+默认值: -
+
+### ant-design 中 Grid - Col的xl属性如何使用？ 
+
+参数: xl 
+
+说明: `屏幕 ≥ 1200px` 响应式栅格，可为栅格数或一个包含其他属性的对象 
+
+类型: number | object 
+
+默认值: -
+
+### ant-design 中 Grid - Col的xxl属性如何使用？ 
+
+参数: xxl 
+
+说明: `屏幕 ≥ 1600px` 响应式栅格，可为栅格数或一个包含其他属性的对象 
+
+类型: number | object 
 
 默认值: -
 
 ### ant-design 的 Form 有哪些配置？
 
-#### Form - Form
+#### Form - Form 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | colon | 配置 Form.Item 的 `colon` 的默认值。表示是否显示 label 后面的冒号 (只有在属性 layout 为 horizontal 时有效) | boolean | true |
 | disabled | 设置表单组件禁用，仅对 antd 组件有效 | boolean | false | 4.21.0 |
 | component | 设置 Form 渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType \| false | form |
@@ -15467,10 +15719,11 @@ Version: 4.24
 | onFinishFailed | 提交表单且数据验证失败后回调事件 | function({ values, errorFields, outOfDate }) | - |
 | onValuesChange | 字段值更新时触发回调事件 | function(changedValues, allValues) | - |
 
-#### Form - Form.Item
+
+#### Form - Form.Item 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | colon | 配合 `label` 属性使用，表示是否显示 `label` 后面的冒号 | boolean | true |
 | dependencies | 设置依赖字段，说明[见下](#dependencies) | - |
 | extra | 额外的提示信息，和 `help` 类似，当需要错误信息和提示文案同时出现时，可以使用这个。 | ReactNode | - |
@@ -15501,16 +15754,18 @@ Version: 4.24
 | valuePropName | 子节点的值的属性，如 Switch、Checkbox 的是 `checked`。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效 | string | `value` |
 | wrapperCol | 需要为输入控件设置布局样式时，使用该属性，用法同 `labelCol`。你可以通过 Form 的 `wrapperCol` 进行统一设置，不会作用于嵌套 Item。当和 Form 同时设置时，以 Item 为准 | - |
 
-#### Form - Form.List
+
+#### Form - Form.List 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | children | 渲染函数 | (fields: Field[], operation: { add, remove, move }, meta: { errors }) => React.ReactNode | - |
 | initialValue | 设置子元素默认值，如果与 Form 的 `initialValues` 冲突则以 Form 为准 | any[] | - | 4.9.0 |
 | name | 字段名，支持数组。List 本身也是字段，因而 `getFieldsValue()` 默认会返回 List 下所有值，你可以通过[参数](#getfieldsvalue)改变这一行为 | - |
 | rules | 校验规则，仅支持自定义规则。需要配合 [ErrorList](#formerrorlist) 一同使用。 | { validator, message }[] | - | 4.7.0 |
 
-#### Form - operation
+
+#### Form - operation 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -15518,23 +15773,26 @@ Version: 4.24
 | move | 移动表单项 | (from: number, to: number) => void | - |
 | remove | 删除表单项 | (index: number \| number[]) => void | number[] | 4.5.0 |
 
-#### Form - Form.ErrorList
 
-| 参数   | 说明     | 类型        | 默认值 |
-| ------ | -------- | ----------- | ------ |
-| errors | 错误列表 | ReactNode[] | -      |
+#### Form - Form.ErrorList 
 
-#### Form - Form.Provider
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| errors | 错误列表 | ReactNode[] | - |
+
+
+#### Form - Form.Provider 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | onFormChange | 子表单字段更新时触发 | function(formName: string, info: { changedFields, forms }) | - |
 | onFormFinish | 子表单提交时触发 | function(formName: string, info: { values, forms }) | - |
 
-#### Form - FormInstance
+
+#### Form - FormInstance 
 
 | 名称 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | getFieldError | 获取对应字段名的错误信息 | (name: [NamePath](#namepath)) => string[] |
 | getFieldInstance | 获取对应字段实例 | (name: [NamePath](#namepath)) => any | 4.4.0 |
 | getFieldsError | 获取一组字段名对应的错误信息，返回为数组形式 | (nameList?: [NamePath](#namepath)\[]) => FieldError[] |
@@ -15551,21 +15809,23 @@ Version: 4.24
 | submit | 提交表单，与点击 `submit` 按钮效果相同 | () => void |
 | validateFields | 触发表单验证，设置 `recursive` 时会递归校验所有包含的路径 | (nameList?: [NamePath](#namepath)\[], config?: [ValidateConfig](#validateFields)) => Promise |
 
-#### Form - FieldData
 
-| 名称       | 说明             | 类型     |
-| ---------- | ---------------- | -------- |
-| errors     | 错误信息         | string[] |
-| warnings   | 警告信息         | string[] |
-| name       | 字段名称         |
-| touched    | 是否被用户操作过 | boolean  |
-| validating | 是否正在校验     | boolean  |
-| value      | 字段对应值       | any      |
+#### Form - FieldData 
 
-#### Form - Rule
+| 名称 | 说明 | 类型 |
+| --- | --- | --- |
+| errors | 错误信息 | string[] |
+| warnings | 警告信息 | string[] |
+| name | 字段名称 |
+| touched | 是否被用户操作过 | boolean |
+| validating | 是否正在校验 | boolean |
+| value | 字段对应值 | any |
+
+
+#### Form - Rule 
 
 | 名称 | 说明 |
-| --- | --- | --- | --- |
+| --- | --- |
 | defaultField | 仅在 `type` 为 `array` 类型时有效，用于指定数组元素的校验规则 |
 | enum | 是否匹配枚举中的值（需要将 `type` 设置为 `enum`） | any[] |
 | fields | 仅在 `type` 为 `array` 或 `object` 类型时有效，用于指定子元素的校验规则 | Record<string, [rule](#rule)\> |
@@ -15582,17 +15842,19 @@ Version: 4.24
 | warningOnly | 仅警告，不阻塞表单提交 | boolean | 4.17.0 |
 | whitespace | 如果字段仅包含空格则校验不通过，只在 `type: 'string'` 时生效 | boolean |
 
-#### Form - WatchOptions
+
+#### Form - WatchOptions 
 
 | 名称 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | form | 指定 Form 实例 | FormInstance | 当前 context 中的 Form | 5.4.0 |
 | preserve | 是否监视没有对应的 `Form.Item` 的字段 | boolean | false | 5.4.0 |
 
+
 ### ant-design 的 Form - Form 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | colon | 配置 Form.Item 的 `colon` 的默认值。表示是否显示 label 后面的冒号 (只有在属性 layout 为 horizontal 时有效) | boolean | true |
 | disabled | 设置表单组件禁用，仅对 antd 组件有效 | boolean | false | 4.21.0 |
 | component | 设置 Form 渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType \| false | form |
@@ -15618,252 +15880,253 @@ Version: 4.24
 | onFinishFailed | 提交表单且数据验证失败后回调事件 | function({ values, errorFields, outOfDate }) | - |
 | onValuesChange | 字段值更新时触发回调事件 | function(changedValues, allValues) | - |
 
-### ant-design 中 Form - Form的colon属性如何使用？
 
-参数: colon
+### ant-design 中 Form - Form的colon属性如何使用？ 
 
-说明: 配置 Form.Item 的 `colon` 的默认值。表示是否显示 label 后面的冒号 (只有在属性 layout 为 horizontal 时有效)
+参数: colon 
 
-类型: boolean
+说明: 配置 Form.Item 的 `colon` 的默认值。表示是否显示 label 后面的冒号 (只有在属性 layout 为 horizontal 时有效) 
+
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Form - Form的disabled属性如何使用？
+### ant-design 中 Form - Form的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 设置表单组件禁用，仅对 antd 组件有效
+说明: 设置表单组件禁用，仅对 antd 组件有效 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.21.0
 
-### ant-design 中 Form - Form的component属性如何使用？
+### ant-design 中 Form - Form的component属性如何使用？ 
 
-参数: component
+参数: component 
 
-说明: 设置 Form 渲染元素，为 `false` 则不创建 DOM 节点
+说明: 设置 Form 渲染元素，为 `false` 则不创建 DOM 节点 
 
-类型: ComponentType | false
+类型: ComponentType | false 
 
 默认值: form
 
-### ant-design 中 Form - Form的fields属性如何使用？
+### ant-design 中 Form - Form的fields属性如何使用？ 
 
-参数: fields
+参数: fields 
 
-说明: 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#components-form-demo-global-state)
-
-类型: -
-
-### ant-design 中 Form - Form的form属性如何使用？
-
-参数: form
-
-说明: 经 `Form.useForm()` 创建的 form 控制实例，不提供时会自动创建
+说明: 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#components-form-demo-global-state) 
 
 类型: -
 
-### ant-design 中 Form - Form的feedbackIcons属性如何使用？
+### ant-design 中 Form - Form的form属性如何使用？ 
 
-参数: feedbackIcons
+参数: form 
 
-说明: 当 `Form.Item` 有 `hasFeedback` 属性时可以自定义图标
+说明: 经 `Form.useForm()` 创建的 form 控制实例，不提供时会自动创建 
 
 类型: -
+
+### ant-design 中 Form - Form的feedbackIcons属性如何使用？ 
+
+参数: feedbackIcons 
+
+说明: 当 `Form.Item` 有 `hasFeedback` 属性时可以自定义图标 
+
+类型: - 
 
 默认值: 5.9.0
 
-### ant-design 中 Form - Form的initialValues属性如何使用？
+### ant-design 中 Form - Form的initialValues属性如何使用？ 
 
-参数: initialValues
+参数: initialValues 
 
-说明: 表单默认值，只有初始化以及重置时生效
+说明: 表单默认值，只有初始化以及重置时生效 
 
-类型: object
+类型: object 
 
 默认值: -
 
-### ant-design 中 Form - Form的labelAlign属性如何使用？
+### ant-design 中 Form - Form的labelAlign属性如何使用？ 
 
-参数: labelAlign
+参数: labelAlign 
 
-说明: label 标签的文本对齐方式
+说明: label 标签的文本对齐方式 
 
-类型: `left` | `right`
+类型: `left` | `right` 
 
 默认值: `right`
 
-### ant-design 中 Form - Form的labelWrap属性如何使用？
+### ant-design 中 Form - Form的labelWrap属性如何使用？ 
 
-参数: labelWrap
+参数: labelWrap 
 
-说明: label 标签的文本换行方式
+说明: label 标签的文本换行方式 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.18.0
 
-### ant-design 中 Form - Form的labelCol属性如何使用？
+### ant-design 中 Form - Form的labelCol属性如何使用？ 
 
-参数: labelCol
+参数: labelCol 
 
-说明: label 标签布局，同 `<Col>` 组件，设置 `span` `offset` 值，如 `{span: 3, offset: 12}` 或 `sm: {span: 3, offset: 12}`
+说明: label 标签布局，同 `<Col>` 组件，设置 `span` `offset` 值，如 `{span: 3, offset: 12}` 或 `sm: {span: 3, offset: 12}` 
 
 类型: -
 
-### ant-design 中 Form - Form的layout属性如何使用？
+### ant-design 中 Form - Form的layout属性如何使用？ 
 
-参数: layout
+参数: layout 
 
-说明: 表单布局
+说明: 表单布局 
 
-类型: `horizontal` | `vertical` | `inline`
+类型: `horizontal` | `vertical` | `inline` 
 
 默认值: `horizontal`
 
-### ant-design 中 Form - Form的name属性如何使用？
+### ant-design 中 Form - Form的name属性如何使用？ 
 
-参数: name
+参数: name 
 
-说明: 表单名称，会作为表单字段 `id` 前缀使用
+说明: 表单名称，会作为表单字段 `id` 前缀使用 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Form - Form的preserve属性如何使用？
+### ant-design 中 Form - Form的preserve属性如何使用？ 
 
-参数: preserve
+参数: preserve 
 
-说明: 当字段被删除时保留字段值。你可以通过 `getFieldsValue(true)` 来获取保留字段值
+说明: 当字段被删除时保留字段值。你可以通过 `getFieldsValue(true)` 来获取保留字段值 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 4.4.0
 
-### ant-design 中 Form - Form的requiredMark属性如何使用？
+### ant-design 中 Form - Form的requiredMark属性如何使用？ 
 
-参数: requiredMark
+参数: requiredMark 
 
-说明: 必选样式，可以切换为必选或者可选展示样式。此为 Form 配置，Form.Item 无法单独配置
+说明: 必选样式，可以切换为必选或者可选展示样式。此为 Form 配置，Form.Item 无法单独配置 
 
-类型: boolean | `optional` | ((label: ReactNode, info: { required: boolean }) => ReactNode)
+类型: boolean | `optional` | ((label: ReactNode, info: { required: boolean }) => ReactNode) 
 
-默认值: true
+默认值: true 
 
 版本: `renderProps`: 5.9.0
 
-### ant-design 中 Form - Form的scrollToFirstError属性如何使用？
+### ant-design 中 Form - Form的scrollToFirstError属性如何使用？ 
 
-参数: scrollToFirstError
+参数: scrollToFirstError 
 
-说明: 提交失败自动滚动到第一个错误字段
+说明: 提交失败自动滚动到第一个错误字段 
 
-类型: boolean | [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options)
+类型: boolean | [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options) 
 
 默认值: false
 
-### ant-design 中 Form - Form的size属性如何使用？
+### ant-design 中 Form - Form的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 设置字段组件的尺寸（仅限 antd 组件）
+说明: 设置字段组件的尺寸（仅限 antd 组件） 
 
-类型: `small` | `middle` | `large`
+类型: `small` | `middle` | `large` 
 
 默认值: -
 
-### ant-design 中 Form - Form的validateMessages属性如何使用？
+### ant-design 中 Form - Form的validateMessages属性如何使用？ 
 
-参数: validateMessages
+参数: validateMessages 
 
-说明: 验证提示模板，说明[见下](#validatemessages)
+说明: 验证提示模板，说明[见下](#validatemessages) 
 
 类型: -
 
-### ant-design 中 Form - Form的validateTrigger属性如何使用？
+### ant-design 中 Form - Form的validateTrigger属性如何使用？ 
 
-参数: validateTrigger
+参数: validateTrigger 
 
-说明: 统一设置字段触发验证的时机
+说明: 统一设置字段触发验证的时机 
 
-类型: string | string[]
+类型: string | string[] 
 
-默认值: `onChange`
+默认值: `onChange` 
 
 版本: 4.3.0
 
-### ant-design 中 Form - Form的variant属性如何使用？
+### ant-design 中 Form - Form的variant属性如何使用？ 
 
-参数: variant
+参数: variant 
 
-说明: 表单内控件变体
+说明: 表单内控件变体 
 
-类型: `outlined` | `borderless` | `filled`
+类型: `outlined` | `borderless` | `filled` 
 
-默认值: `outlined`
+默认值: `outlined` 
 
 版本: 5.13.0
 
-### ant-design 中 Form - Form的wrapperCol属性如何使用？
+### ant-design 中 Form - Form的wrapperCol属性如何使用？ 
 
-参数: wrapperCol
+参数: wrapperCol 
 
-说明: 需要为输入控件设置布局样式时，使用该属性，用法同 labelCol
+说明: 需要为输入控件设置布局样式时，使用该属性，用法同 labelCol 
 
 类型: -
 
-### ant-design 中 Form - Form的onFieldsChange属性如何使用？
+### ant-design 中 Form - Form的onFieldsChange属性如何使用？ 
 
-参数: onFieldsChange
+参数: onFieldsChange 
 
-说明: 字段更新时触发回调事件
+说明: 字段更新时触发回调事件 
 
-类型: function(changedFields, allFields)
-
-默认值: -
-
-### ant-design 中 Form - Form的onFinish属性如何使用？
-
-参数: onFinish
-
-说明: 提交表单且数据验证成功后回调事件
-
-类型: function(values)
+类型: function(changedFields, allFields) 
 
 默认值: -
 
-### ant-design 中 Form - Form的onFinishFailed属性如何使用？
+### ant-design 中 Form - Form的onFinish属性如何使用？ 
 
-参数: onFinishFailed
+参数: onFinish 
 
-说明: 提交表单且数据验证失败后回调事件
+说明: 提交表单且数据验证成功后回调事件 
 
-类型: function({ values, errorFields, outOfDate })
+类型: function(values) 
 
 默认值: -
 
-### ant-design 中 Form - Form的onValuesChange属性如何使用？
+### ant-design 中 Form - Form的onFinishFailed属性如何使用？ 
 
-参数: onValuesChange
+参数: onFinishFailed 
 
-说明: 字段值更新时触发回调事件
+说明: 提交表单且数据验证失败后回调事件 
 
-类型: function(changedValues, allValues)
+类型: function({ values, errorFields, outOfDate }) 
+
+默认值: -
+
+### ant-design 中 Form - Form的onValuesChange属性如何使用？ 
+
+参数: onValuesChange 
+
+说明: 字段值更新时触发回调事件 
+
+类型: function(changedValues, allValues) 
 
 默认值: -
 
 ### ant-design 的 Form - Form.Item 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | colon | 配合 `label` 属性使用，表示是否显示 `label` 后面的冒号 | boolean | true |
 | dependencies | 设置依赖字段，说明[见下](#dependencies) | - |
 | extra | 额外的提示信息，和 `help` 类似，当需要错误信息和提示文案同时出现时，可以使用这个。 | ReactNode | - |
@@ -15894,352 +16157,354 @@ Version: 4.24
 | valuePropName | 子节点的值的属性，如 Switch、Checkbox 的是 `checked`。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效 | string | `value` |
 | wrapperCol | 需要为输入控件设置布局样式时，使用该属性，用法同 `labelCol`。你可以通过 Form 的 `wrapperCol` 进行统一设置，不会作用于嵌套 Item。当和 Form 同时设置时，以 Item 为准 | - |
 
-### ant-design 中 Form - Form.Item的colon属性如何使用？
 
-参数: colon
+### ant-design 中 Form - Form.Item的colon属性如何使用？ 
 
-说明: 配合 `label` 属性使用，表示是否显示 `label` 后面的冒号
+参数: colon 
 
-类型: boolean
+说明: 配合 `label` 属性使用，表示是否显示 `label` 后面的冒号 
+
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Form - Form.Item的dependencies属性如何使用？
+### ant-design 中 Form - Form.Item的dependencies属性如何使用？ 
 
-参数: dependencies
+参数: dependencies 
 
-说明: 设置依赖字段，说明[见下](#dependencies)
+说明: 设置依赖字段，说明[见下](#dependencies) 
 
 类型: -
 
-### ant-design 中 Form - Form.Item的extra属性如何使用？
+### ant-design 中 Form - Form.Item的extra属性如何使用？ 
 
-参数: extra
+参数: extra 
 
-说明: 额外的提示信息，和 `help` 类似，当需要错误信息和提示文案同时出现时，可以使用这个。
+说明: 额外的提示信息，和 `help` 类似，当需要错误信息和提示文案同时出现时，可以使用这个。 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Form - Form.Item的getValueFromEvent属性如何使用？
-
-参数: getValueFromEvent
-
-说明: 设置如何将 event 的值转换成字段值
-
-类型: (..args: any[]) => any
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Form - Form.Item的getValueProps属性如何使用？
+### ant-design 中 Form - Form.Item的getValueFromEvent属性如何使用？ 
 
-参数: getValueProps
+参数: getValueFromEvent 
 
-说明: 为子元素添加额外的属性 (不建议通过 `getValueProps` 生成动态函数 prop，请直接将其传递给子组件)
+说明: 设置如何将 event 的值转换成字段值 
 
-类型: (value: any) => Record<string, any>
+类型: (..args: any[]) => any 
 
 默认值: -
+
+### ant-design 中 Form - Form.Item的getValueProps属性如何使用？ 
+
+参数: getValueProps 
+
+说明: 为子元素添加额外的属性 (不建议通过 `getValueProps` 生成动态函数 prop，请直接将其传递给子组件) 
+
+类型: (value: any) => Record<string, any> 
+
+默认值: - 
 
 版本: 4.2.0
 
-### ant-design 中 Form - Form.Item的hasFeedback属性如何使用？
+### ant-design 中 Form - Form.Item的hasFeedback属性如何使用？ 
 
-参数: hasFeedback
+参数: hasFeedback 
 
-说明: 配合 `validateStatus` 属性使用，展示校验状态图标，建议只配合 Input 组件使用 此外，它还可以通过 Icons 属性获取反馈图标。
+说明: 配合 `validateStatus` 属性使用，展示校验状态图标，建议只配合 Input 组件使用 此外，它还可以通过 Icons 属性获取反馈图标。 
 
-类型: boolean | { icons: [FeedbackIcons](#feedbackicons) }
+类型: boolean | { icons: [FeedbackIcons](#feedbackicons) } 
 
-默认值: false
+默认值: false 
 
 版本: icons: 5.9.0
 
-### ant-design 中 Form - Form.Item的help属性如何使用？
+### ant-design 中 Form - Form.Item的help属性如何使用？ 
 
-参数: help
+参数: help 
 
-说明: 提示信息，如不设置，则会根据校验规则自动生成
+说明: 提示信息，如不设置，则会根据校验规则自动生成 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Form - Form.Item的hidden属性如何使用？
+### ant-design 中 Form - Form.Item的hidden属性如何使用？ 
 
-参数: hidden
+参数: hidden 
 
-说明: 是否隐藏字段（依然会收集和校验字段）
+说明: 是否隐藏字段（依然会收集和校验字段） 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.4.0
 
-### ant-design 中 Form - Form.Item的htmlFor属性如何使用？
+### ant-design 中 Form - Form.Item的htmlFor属性如何使用？ 
 
-参数: htmlFor
+参数: htmlFor 
 
-说明: 设置子元素 label `htmlFor` 属性
+说明: 设置子元素 label `htmlFor` 属性 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Form - Form.Item的initialValue属性如何使用？
-
-参数: initialValue
-
-说明: 设置子元素默认值，如果与 Form 的 `initialValues` 冲突则以 Form 为准
-
-类型: string
+类型: string 
 
 默认值: -
+
+### ant-design 中 Form - Form.Item的initialValue属性如何使用？ 
+
+参数: initialValue 
+
+说明: 设置子元素默认值，如果与 Form 的 `initialValues` 冲突则以 Form 为准 
+
+类型: string 
+
+默认值: - 
 
 版本: 4.2.0
 
-### ant-design 中 Form - Form.Item的label属性如何使用？
+### ant-design 中 Form - Form.Item的label属性如何使用？ 
 
-参数: label
+参数: label 
 
-说明: `label` 标签的文本
+说明: `label` 标签的文本 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Form - Form.Item的labelAlign属性如何使用？
+### ant-design 中 Form - Form.Item的labelAlign属性如何使用？ 
 
-参数: labelAlign
+参数: labelAlign 
 
-说明: 标签文本对齐方式
+说明: 标签文本对齐方式 
 
-类型: `left` | `right`
+类型: `left` | `right` 
 
 默认值: `right`
 
-### ant-design 中 Form - Form.Item的labelCol属性如何使用？
+### ant-design 中 Form - Form.Item的labelCol属性如何使用？ 
 
-参数: labelCol
+参数: labelCol 
 
-说明: `label` 标签布局，同 `<Col>` 组件，设置 `span` `offset` 值，如 `{span: 3, offset: 12}` 或 `sm: {span: 3, offset: 12}`。你可以通过 Form 的 `labelCol` 进行统一设置，不会作用于嵌套 Item。当和 Form 同时设置时，以 Item 为准
+说明: `label` 标签布局，同 `<Col>` 组件，设置 `span` `offset` 值，如 `{span: 3, offset: 12}` 或 `sm: {span: 3, offset: 12}`。你可以通过 Form 的 `labelCol` 进行统一设置，不会作用于嵌套 Item。当和 Form 同时设置时，以 Item 为准 
 
 类型: -
 
-### ant-design 中 Form - Form.Item的messageVariables属性如何使用？
+### ant-design 中 Form - Form.Item的messageVariables属性如何使用？ 
 
-参数: messageVariables
+参数: messageVariables 
 
-说明: 默认验证字段的信息
+说明: 默认验证字段的信息 
 
-类型: Record<string, string>
+类型: Record<string, string> 
 
-默认值: -
+默认值: - 
 
 版本: 4.7.0
 
-### ant-design 中 Form - Form.Item的name属性如何使用？
+### ant-design 中 Form - Form.Item的name属性如何使用？ 
 
-参数: name
+参数: name 
 
-说明: 字段名，支持数组
+说明: 字段名，支持数组 
 
 类型: -
 
-### ant-design 中 Form - Form.Item的normalize属性如何使用？
+### ant-design 中 Form - Form.Item的normalize属性如何使用？ 
 
-参数: normalize
+参数: normalize 
 
-说明: 组件获取值后进行转换，再放入 Form 中。不支持异步
+说明: 组件获取值后进行转换，再放入 Form 中。不支持异步 
 
-类型: (value, prevValue, prevValues) => any
+类型: (value, prevValue, prevValues) => any 
 
 默认值: -
 
-### ant-design 中 Form - Form.Item的noStyle属性如何使用？
+### ant-design 中 Form - Form.Item的noStyle属性如何使用？ 
 
-参数: noStyle
+参数: noStyle 
 
-说明: 为 `true` 时不带样式，作为纯字段控件使用。当自身没有 `validateStatus` 而父元素存在有 `validateStatus` 的 Form.Item 会继承父元素的 `validateStatus`
+说明: 为 `true` 时不带样式，作为纯字段控件使用。当自身没有 `validateStatus` 而父元素存在有 `validateStatus` 的 Form.Item 会继承父元素的 `validateStatus` 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Form - Form.Item的preserve属性如何使用？
+### ant-design 中 Form - Form.Item的preserve属性如何使用？ 
 
-参数: preserve
+参数: preserve 
 
-说明: 当字段被删除时保留字段值
+说明: 当字段被删除时保留字段值 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 4.4.0
 
-### ant-design 中 Form - Form.Item的required属性如何使用？
+### ant-design 中 Form - Form.Item的required属性如何使用？ 
 
-参数: required
+参数: required 
 
-说明: 必填样式设置。如不设置，则会根据校验规则自动生成
+说明: 必填样式设置。如不设置，则会根据校验规则自动生成 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Form - Form.Item的rules属性如何使用？
+### ant-design 中 Form - Form.Item的rules属性如何使用？ 
 
-参数: rules
+参数: rules 
 
-说明: 校验规则，设置字段的校验逻辑。点击[此处](#components-form-demo-basic)查看示例
+说明: 校验规则，设置字段的校验逻辑。点击[此处](#components-form-demo-basic)查看示例 
 
 类型: -
 
-### ant-design 中 Form - Form.Item的shouldUpdate属性如何使用？
+### ant-design 中 Form - Form.Item的shouldUpdate属性如何使用？ 
 
-参数: shouldUpdate
+参数: shouldUpdate 
 
-说明: 自定义字段更新逻辑，说明[见下](#shouldupdate)
+说明: 自定义字段更新逻辑，说明[见下](#shouldupdate) 
 
-类型: boolean | (prevValue, curValue) => boolean
+类型: boolean | (prevValue, curValue) => boolean 
 
 默认值: false
 
-### ant-design 中 Form - Form.Item的tooltip属性如何使用？
+### ant-design 中 Form - Form.Item的tooltip属性如何使用？ 
 
-参数: tooltip
+参数: tooltip 
 
-说明: 配置提示信息
+说明: 配置提示信息 
 
-类型: ReactNode | [TooltipProps & { icon: ReactNode }](/components/tooltip-cn#api)
+类型: ReactNode | [TooltipProps & { icon: ReactNode }](/components/tooltip-cn#api) 
 
-默认值: -
+默认值: - 
 
 版本: 4.7.0
 
-### ant-design 中 Form - Form.Item的trigger属性如何使用？
+### ant-design 中 Form - Form.Item的trigger属性如何使用？ 
 
-参数: trigger
+参数: trigger 
 
-说明: 设置收集字段值变更的时机。点击[此处](#components-form-demo-customized-form-controls)查看示例
+说明: 设置收集字段值变更的时机。点击[此处](#components-form-demo-customized-form-controls)查看示例 
 
-类型: string
+类型: string 
 
 默认值: `onChange`
 
-### ant-design 中 Form - Form.Item的validateFirst属性如何使用？
+### ant-design 中 Form - Form.Item的validateFirst属性如何使用？ 
 
-参数: validateFirst
+参数: validateFirst 
 
-说明: 当某一规则校验不通过时，是否停止剩下的规则的校验。设置 `parallel` 时会并行校验
+说明: 当某一规则校验不通过时，是否停止剩下的规则的校验。设置 `parallel` 时会并行校验 
 
-类型: boolean | `parallel`
+类型: boolean | `parallel` 
 
-默认值: false
+默认值: false 
 
 版本: `parallel`: 4.5.0
 
-### ant-design 中 Form - Form.Item的validateDebounce属性如何使用？
+### ant-design 中 Form - Form.Item的validateDebounce属性如何使用？ 
 
-参数: validateDebounce
+参数: validateDebounce 
 
-说明: 设置防抖，延迟毫秒数后进行校验
+说明: 设置防抖，延迟毫秒数后进行校验 
 
-类型: number
+类型: number 
 
-默认值: -
+默认值: - 
 
 版本: 5.9.0
 
-### ant-design 中 Form - Form.Item的validateStatus属性如何使用？
+### ant-design 中 Form - Form.Item的validateStatus属性如何使用？ 
 
-参数: validateStatus
+参数: validateStatus 
 
-说明: 校验状态，如不设置，则会根据校验规则自动生成，可选：'success' 'warning' 'error' 'validating'
+说明: 校验状态，如不设置，则会根据校验规则自动生成，可选：'success' 'warning' 'error' 'validating' 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Form - Form.Item的validateTrigger属性如何使用？
+### ant-design 中 Form - Form.Item的validateTrigger属性如何使用？ 
 
-参数: validateTrigger
+参数: validateTrigger 
 
-说明: 设置字段校验的时机
+说明: 设置字段校验的时机 
 
-类型: string | string[]
+类型: string | string[] 
 
 默认值: `onChange`
 
-### ant-design 中 Form - Form.Item的valuePropName属性如何使用？
+### ant-design 中 Form - Form.Item的valuePropName属性如何使用？ 
 
-参数: valuePropName
+参数: valuePropName 
 
-说明: 子节点的值的属性，如 Switch、Checkbox 的是 `checked`。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效
+说明: 子节点的值的属性，如 Switch、Checkbox 的是 `checked`。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效 
 
-类型: string
+类型: string 
 
 默认值: `value`
 
-### ant-design 中 Form - Form.Item的wrapperCol属性如何使用？
+### ant-design 中 Form - Form.Item的wrapperCol属性如何使用？ 
 
-参数: wrapperCol
+参数: wrapperCol 
 
-说明: 需要为输入控件设置布局样式时，使用该属性，用法同 `labelCol`。你可以通过 Form 的 `wrapperCol` 进行统一设置，不会作用于嵌套 Item。当和 Form 同时设置时，以 Item 为准
+说明: 需要为输入控件设置布局样式时，使用该属性，用法同 `labelCol`。你可以通过 Form 的 `wrapperCol` 进行统一设置，不会作用于嵌套 Item。当和 Form 同时设置时，以 Item 为准 
 
 类型: -
 
 ### ant-design 的 Form - Form.List 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | children | 渲染函数 | (fields: Field[], operation: { add, remove, move }, meta: { errors }) => React.ReactNode | - |
 | initialValue | 设置子元素默认值，如果与 Form 的 `initialValues` 冲突则以 Form 为准 | any[] | - | 4.9.0 |
 | name | 字段名，支持数组。List 本身也是字段，因而 `getFieldsValue()` 默认会返回 List 下所有值，你可以通过[参数](#getfieldsvalue)改变这一行为 | - |
 | rules | 校验规则，仅支持自定义规则。需要配合 [ErrorList](#formerrorlist) 一同使用。 | { validator, message }[] | - | 4.7.0 |
 
-### ant-design 中 Form - Form.List的children属性如何使用？
 
-参数: children
+### ant-design 中 Form - Form.List的children属性如何使用？ 
 
-说明: 渲染函数
+参数: children 
 
-类型: (fields: Field[], operation: { add, remove, move }, meta: { errors }) => React.ReactNode
+说明: 渲染函数 
 
-默认值: -
-
-### ant-design 中 Form - Form.List的initialValue属性如何使用？
-
-参数: initialValue
-
-说明: 设置子元素默认值，如果与 Form 的 `initialValues` 冲突则以 Form 为准
-
-类型: any[]
+类型: (fields: Field[], operation: { add, remove, move }, meta: { errors }) => React.ReactNode 
 
 默认值: -
+
+### ant-design 中 Form - Form.List的initialValue属性如何使用？ 
+
+参数: initialValue 
+
+说明: 设置子元素默认值，如果与 Form 的 `initialValues` 冲突则以 Form 为准 
+
+类型: any[] 
+
+默认值: - 
 
 版本: 4.9.0
 
-### ant-design 中 Form - Form.List的name属性如何使用？
+### ant-design 中 Form - Form.List的name属性如何使用？ 
 
-参数: name
+参数: name 
 
-说明: 字段名，支持数组。List 本身也是字段，因而 `getFieldsValue()` 默认会返回 List 下所有值，你可以通过[参数](#getfieldsvalue)改变这一行为
+说明: 字段名，支持数组。List 本身也是字段，因而 `getFieldsValue()` 默认会返回 List 下所有值，你可以通过[参数](#getfieldsvalue)改变这一行为 
 
 类型: -
 
-### ant-design 中 Form - Form.List的rules属性如何使用？
+### ant-design 中 Form - Form.List的rules属性如何使用？ 
 
-参数: rules
+参数: rules 
 
-说明: 校验规则，仅支持自定义规则。需要配合 [ErrorList](#formerrorlist) 一同使用。
+说明: 校验规则，仅支持自定义规则。需要配合 [ErrorList](#formerrorlist) 一同使用。 
 
-类型: { validator, message }[]
+类型: { validator, message }[] 
 
-默认值: -
+默认值: - 
 
 版本: 4.7.0
 
@@ -16251,53 +16516,55 @@ Version: 4.24
 | move | 移动表单项 | (from: number, to: number) => void | - |
 | remove | 删除表单项 | (index: number \| number[]) => void | number[] | 4.5.0 |
 
-### ant-design 中 Form - operation的add属性如何使用？
 
-参数: add
+### ant-design 中 Form - operation的add属性如何使用？ 
 
-说明: 新增表单项
+参数: add 
 
-类型: (defaultValue?: any, insertIndex?: number) => void
+说明: 新增表单项 
 
-默认值: insertIndex
+类型: (defaultValue?: any, insertIndex?: number) => void 
+
+默认值: insertIndex 
 
 版本: 4.6.0
 
-### ant-design 中 Form - operation的move属性如何使用？
+### ant-design 中 Form - operation的move属性如何使用？ 
 
-参数: move
+参数: move 
 
-说明: 移动表单项
+说明: 移动表单项 
 
-类型: (from: number, to: number) => void
+类型: (from: number, to: number) => void 
 
 默认值: -
 
-### ant-design 中 Form - operation的remove属性如何使用？
+### ant-design 中 Form - operation的remove属性如何使用？ 
 
-参数: remove
+参数: remove 
 
-说明: 删除表单项
+说明: 删除表单项 
 
-类型: (index: number | number[]) => void
+类型: (index: number | number[]) => void 
 
-默认值: number[]
+默认值: number[] 
 
 版本: 4.5.0
 
 ### ant-design 的 Form - Form.ErrorList 有哪些配置？
 
-| 参数   | 说明     | 类型        | 默认值 |
-| ------ | -------- | ----------- | ------ |
-| errors | 错误列表 | ReactNode[] | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| errors | 错误列表 | ReactNode[] | - |
 
-### ant-design 中 Form - Form.ErrorList的errors属性如何使用？
 
-参数: errors
+### ant-design 中 Form - Form.ErrorList的errors属性如何使用？ 
 
-说明: 错误列表
+参数: errors 
 
-类型: ReactNode[]
+说明: 错误列表 
+
+类型: ReactNode[] 
 
 默认值: -
 
@@ -16308,30 +16575,31 @@ Version: 4.24
 | onFormChange | 子表单字段更新时触发 | function(formName: string, info: { changedFields, forms }) | - |
 | onFormFinish | 子表单提交时触发 | function(formName: string, info: { values, forms }) | - |
 
-### ant-design 中 Form - Form.Provider的onFormChange属性如何使用？
 
-参数: onFormChange
+### ant-design 中 Form - Form.Provider的onFormChange属性如何使用？ 
 
-说明: 子表单字段更新时触发
+参数: onFormChange 
 
-类型: function(formName: string, info: { changedFields, forms })
+说明: 子表单字段更新时触发 
+
+类型: function(formName: string, info: { changedFields, forms }) 
 
 默认值: -
 
-### ant-design 中 Form - Form.Provider的onFormFinish属性如何使用？
+### ant-design 中 Form - Form.Provider的onFormFinish属性如何使用？ 
 
-参数: onFormFinish
+参数: onFormFinish 
 
-说明: 子表单提交时触发
+说明: 子表单提交时触发 
 
-类型: function(formName: string, info: { values, forms })
+类型: function(formName: string, info: { values, forms }) 
 
 默认值: -
 
 ### ant-design 的 Form - FormInstance 有哪些配置？
 
 | 名称 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | getFieldError | 获取对应字段名的错误信息 | (name: [NamePath](#namepath)) => string[] |
 | getFieldInstance | 获取对应字段实例 | (name: [NamePath](#namepath)) => any | 4.4.0 |
 | getFieldsError | 获取一组字段名对应的错误信息，返回为数组形式 | (nameList?: [NamePath](#namepath)\[]) => FieldError[] |
@@ -16348,189 +16616,191 @@ Version: 4.24
 | submit | 提交表单，与点击 `submit` 按钮效果相同 | () => void |
 | validateFields | 触发表单验证，设置 `recursive` 时会递归校验所有包含的路径 | (nameList?: [NamePath](#namepath)\[], config?: [ValidateConfig](#validateFields)) => Promise |
 
-### ant-design 中 Form - FormInstance的getFieldError属性如何使用？
 
-名称: getFieldError
+### ant-design 中 Form - FormInstance的getFieldError属性如何使用？ 
 
-说明: 获取对应字段名的错误信息
+名称: getFieldError 
+
+说明: 获取对应字段名的错误信息 
 
 类型: (name: [NamePath](#namepath)) => string[]
 
-### ant-design 中 Form - FormInstance的getFieldInstance属性如何使用？
+### ant-design 中 Form - FormInstance的getFieldInstance属性如何使用？ 
 
-名称: getFieldInstance
+名称: getFieldInstance 
 
-说明: 获取对应字段实例
+说明: 获取对应字段实例 
 
-类型: (name: [NamePath](#namepath)) => any
+类型: (name: [NamePath](#namepath)) => any 
 
 版本: 4.4.0
 
-### ant-design 中 Form - FormInstance的getFieldsError属性如何使用？
+### ant-design 中 Form - FormInstance的getFieldsError属性如何使用？ 
 
-名称: getFieldsError
+名称: getFieldsError 
 
-说明: 获取一组字段名对应的错误信息，返回为数组形式
+说明: 获取一组字段名对应的错误信息，返回为数组形式 
 
 类型: (nameList?: [NamePath](#namepath)\[]) => FieldError[]
 
-### ant-design 中 Form - FormInstance的getFieldsValue属性如何使用？
+### ant-design 中 Form - FormInstance的getFieldsValue属性如何使用？ 
 
-名称: getFieldsValue
+名称: getFieldsValue 
 
 说明: 获取一组字段名对应的值，会按照对应结构返回。默认返回现存字段值，当调用 `getFieldsValue(true)` 时返回所有值
 
-### ant-design 中 Form - FormInstance的getFieldValue属性如何使用？
+### ant-design 中 Form - FormInstance的getFieldValue属性如何使用？ 
 
-名称: getFieldValue
+名称: getFieldValue 
 
-说明: 获取对应字段名的值
+说明: 获取对应字段名的值 
 
 类型: (name: [NamePath](#namepath)) => any
 
-### ant-design 中 Form - FormInstance的isFieldsTouched属性如何使用？
+### ant-design 中 Form - FormInstance的isFieldsTouched属性如何使用？ 
 
-名称: isFieldsTouched
+名称: isFieldsTouched 
 
-说明: 检查一组字段是否被用户操作过，`allTouched` 为 `true` 时检查是否所有字段都被操作过
+说明: 检查一组字段是否被用户操作过，`allTouched` 为 `true` 时检查是否所有字段都被操作过 
 
 类型: (nameList?: [NamePath](#namepath)\[], allTouched?: boolean) => boolean
 
-### ant-design 中 Form - FormInstance的isFieldTouched属性如何使用？
+### ant-design 中 Form - FormInstance的isFieldTouched属性如何使用？ 
 
-名称: isFieldTouched
+名称: isFieldTouched 
 
-说明: 检查对应字段是否被用户操作过
-
-类型: (name: [NamePath](#namepath)) => boolean
-
-### ant-design 中 Form - FormInstance的isFieldValidating属性如何使用？
-
-名称: isFieldValidating
-
-说明: 检查对应字段是否正在校验
+说明: 检查对应字段是否被用户操作过 
 
 类型: (name: [NamePath](#namepath)) => boolean
 
-### ant-design 中 Form - FormInstance的resetFields属性如何使用？
+### ant-design 中 Form - FormInstance的isFieldValidating属性如何使用？ 
 
-名称: resetFields
+名称: isFieldValidating 
 
-说明: 重置一组字段到 `initialValues`
+说明: 检查对应字段是否正在校验 
+
+类型: (name: [NamePath](#namepath)) => boolean
+
+### ant-design 中 Form - FormInstance的resetFields属性如何使用？ 
+
+名称: resetFields 
+
+说明: 重置一组字段到 `initialValues` 
 
 类型: (fields?: [NamePath](#namepath)\[]) => void
 
-### ant-design 中 Form - FormInstance的scrollToField属性如何使用？
+### ant-design 中 Form - FormInstance的scrollToField属性如何使用？ 
 
-名称: scrollToField
+名称: scrollToField 
 
-说明: 滚动到对应字段位置
+说明: 滚动到对应字段位置 
 
 类型: (name: [NamePath](#namepath), options: [ScrollOptions](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options)) => void
 
-### ant-design 中 Form - FormInstance的setFields属性如何使用？
+### ant-design 中 Form - FormInstance的setFields属性如何使用？ 
 
-名称: setFields
+名称: setFields 
 
-说明: 设置一组字段状态
+说明: 设置一组字段状态 
 
 类型: (fields: [FieldData](#fielddata)\[]) => void
 
-### ant-design 中 Form - FormInstance的setFieldValue属性如何使用？
+### ant-design 中 Form - FormInstance的setFieldValue属性如何使用？ 
 
-名称: setFieldValue
+名称: setFieldValue 
 
-说明: 设置表单的值（该值将直接传入 form store 中并且**重置错误信息**。如果你不希望传入对象被修改，请克隆后传入）
+说明: 设置表单的值（该值将直接传入 form store 中并且**重置错误信息**。如果你不希望传入对象被修改，请克隆后传入） 
 
-类型: (name: [NamePath](#namepath), value: any) => void
+类型: (name: [NamePath](#namepath), value: any) => void 
 
 版本: 4.22.0
 
-### ant-design 中 Form - FormInstance的setFieldsValue属性如何使用？
+### ant-design 中 Form - FormInstance的setFieldsValue属性如何使用？ 
 
-名称: setFieldsValue
+名称: setFieldsValue 
 
-说明: 设置表单的值（该值将直接传入 form store 中并且**重置错误信息**。如果你不希望传入对象被修改，请克隆后传入）。如果你只想修改 Form.List 中单项值，请通过 `setFieldValue` 进行指定
+说明: 设置表单的值（该值将直接传入 form store 中并且**重置错误信息**。如果你不希望传入对象被修改，请克隆后传入）。如果你只想修改 Form.List 中单项值，请通过 `setFieldValue` 进行指定 
 
 类型: (values) => void
 
-### ant-design 中 Form - FormInstance的submit属性如何使用？
+### ant-design 中 Form - FormInstance的submit属性如何使用？ 
 
-名称: submit
+名称: submit 
 
-说明: 提交表单，与点击 `submit` 按钮效果相同
+说明: 提交表单，与点击 `submit` 按钮效果相同 
 
 类型: () => void
 
-### ant-design 中 Form - FormInstance的validateFields属性如何使用？
+### ant-design 中 Form - FormInstance的validateFields属性如何使用？ 
 
-名称: validateFields
+名称: validateFields 
 
-说明: 触发表单验证，设置 `recursive` 时会递归校验所有包含的路径
+说明: 触发表单验证，设置 `recursive` 时会递归校验所有包含的路径 
 
 类型: (nameList?: [NamePath](#namepath)\[], config?: [ValidateConfig](#validateFields)) => Promise
 
 ### ant-design 的 Form - FieldData 有哪些配置？
 
-| 名称       | 说明             | 类型     |
-| ---------- | ---------------- | -------- |
-| errors     | 错误信息         | string[] |
-| warnings   | 警告信息         | string[] |
-| name       | 字段名称         |
-| touched    | 是否被用户操作过 | boolean  |
-| validating | 是否正在校验     | boolean  |
-| value      | 字段对应值       | any      |
+| 名称 | 说明 | 类型 |
+| --- | --- | --- |
+| errors | 错误信息 | string[] |
+| warnings | 警告信息 | string[] |
+| name | 字段名称 |
+| touched | 是否被用户操作过 | boolean |
+| validating | 是否正在校验 | boolean |
+| value | 字段对应值 | any |
 
-### ant-design 中 Form - FieldData的errors属性如何使用？
 
-名称: errors
+### ant-design 中 Form - FieldData的errors属性如何使用？ 
 
-说明: 错误信息
+名称: errors 
 
-类型: string[]
-
-### ant-design 中 Form - FieldData的warnings属性如何使用？
-
-名称: warnings
-
-说明: 警告信息
+说明: 错误信息 
 
 类型: string[]
 
-### ant-design 中 Form - FieldData的name属性如何使用？
+### ant-design 中 Form - FieldData的warnings属性如何使用？ 
 
-名称: name
+名称: warnings 
+
+说明: 警告信息 
+
+类型: string[]
+
+### ant-design 中 Form - FieldData的name属性如何使用？ 
+
+名称: name 
 
 说明: 字段名称
 
-### ant-design 中 Form - FieldData的touched属性如何使用？
+### ant-design 中 Form - FieldData的touched属性如何使用？ 
 
-名称: touched
+名称: touched 
 
-说明: 是否被用户操作过
-
-类型: boolean
-
-### ant-design 中 Form - FieldData的validating属性如何使用？
-
-名称: validating
-
-说明: 是否正在校验
+说明: 是否被用户操作过 
 
 类型: boolean
 
-### ant-design 中 Form - FieldData的value属性如何使用？
+### ant-design 中 Form - FieldData的validating属性如何使用？ 
 
-名称: value
+名称: validating 
 
-说明: 字段对应值
+说明: 是否正在校验 
+
+类型: boolean
+
+### ant-design 中 Form - FieldData的value属性如何使用？ 
+
+名称: value 
+
+说明: 字段对应值 
 
 类型: any
 
 ### ant-design 的 Form - Rule 有哪些配置？
 
 | 名称 | 说明 |
-| --- | --- | --- | --- |
+| --- | --- |
 | defaultField | 仅在 `type` 为 `array` 类型时有效，用于指定数组元素的校验规则 |
 | enum | 是否匹配枚举中的值（需要将 `type` 设置为 `enum`） | any[] |
 | fields | 仅在 `type` 为 `array` 或 `object` 类型时有效，用于指定子元素的校验规则 | Record<string, [rule](#rule)\> |
@@ -16547,123 +16817,124 @@ Version: 4.24
 | warningOnly | 仅警告，不阻塞表单提交 | boolean | 4.17.0 |
 | whitespace | 如果字段仅包含空格则校验不通过，只在 `type: 'string'` 时生效 | boolean |
 
-### ant-design 中 Form - Rule的defaultField属性如何使用？
 
-名称: defaultField
+### ant-design 中 Form - Rule的defaultField属性如何使用？ 
+
+名称: defaultField 
 
 说明: 仅在 `type` 为 `array` 类型时有效，用于指定数组元素的校验规则
 
-### ant-design 中 Form - Rule的enum属性如何使用？
+### ant-design 中 Form - Rule的enum属性如何使用？ 
 
-名称: enum
+名称: enum 
 
-说明: 是否匹配枚举中的值（需要将 `type` 设置为 `enum`）
+说明: 是否匹配枚举中的值（需要将 `type` 设置为 `enum`） 
 
 类型: any[]
 
-### ant-design 中 Form - Rule的fields属性如何使用？
+### ant-design 中 Form - Rule的fields属性如何使用？ 
 
-名称: fields
+名称: fields 
 
-说明: 仅在 `type` 为 `array` 或 `object` 类型时有效，用于指定子元素的校验规则
+说明: 仅在 `type` 为 `array` 或 `object` 类型时有效，用于指定子元素的校验规则 
 
 类型: Record<string, [rule](#rule)\>
 
-### ant-design 中 Form - Rule的len属性如何使用？
+### ant-design 中 Form - Rule的len属性如何使用？ 
 
-名称: len
+名称: len 
 
-说明: string 类型时为字符串长度；number 类型时为确定数字； array 类型时为数组长度
-
-类型: number
-
-### ant-design 中 Form - Rule的max属性如何使用？
-
-名称: max
-
-说明: 必须设置 `type`：string 类型为字符串最大长度；number 类型时为最大值；array 类型时为数组最大长度
+说明: string 类型时为字符串长度；number 类型时为确定数字； array 类型时为数组长度 
 
 类型: number
 
-### ant-design 中 Form - Rule的message属性如何使用？
+### ant-design 中 Form - Rule的max属性如何使用？ 
 
-名称: message
+名称: max 
 
-说明: 错误信息，不设置时会通过[模板](#validatemessages)自动生成
+说明: 必须设置 `type`：string 类型为字符串最大长度；number 类型时为最大值；array 类型时为数组最大长度 
+
+类型: number
+
+### ant-design 中 Form - Rule的message属性如何使用？ 
+
+名称: message 
+
+说明: 错误信息，不设置时会通过[模板](#validatemessages)自动生成 
 
 类型: string
 
-### ant-design 中 Form - Rule的min属性如何使用？
+### ant-design 中 Form - Rule的min属性如何使用？ 
 
-名称: min
+名称: min 
 
-说明: 必须设置 `type`：string 类型为字符串最小长度；number 类型时为最小值；array 类型时为数组最小长度
+说明: 必须设置 `type`：string 类型为字符串最小长度；number 类型时为最小值；array 类型时为数组最小长度 
 
 类型: number
 
-### ant-design 中 Form - Rule的pattern属性如何使用？
+### ant-design 中 Form - Rule的pattern属性如何使用？ 
 
-名称: pattern
+名称: pattern 
 
-说明: 正则表达式匹配
+说明: 正则表达式匹配 
 
 类型: RegExp
 
-### ant-design 中 Form - Rule的required属性如何使用？
+### ant-design 中 Form - Rule的required属性如何使用？ 
 
-名称: required
+名称: required 
 
-说明: 是否为必选字段
+说明: 是否为必选字段 
 
 类型: boolean
 
-### ant-design 中 Form - Rule的transform属性如何使用？
+### ant-design 中 Form - Rule的transform属性如何使用？ 
 
-名称: transform
+名称: transform 
 
-说明: 将字段值转换成目标值后进行校验
+说明: 将字段值转换成目标值后进行校验 
 
 类型: (value) => any
 
-### ant-design 中 Form - Rule的type属性如何使用？
+### ant-design 中 Form - Rule的type属性如何使用？ 
 
-名称: type
+名称: type 
 
-说明: 类型，常见有 `string` |`number` |`boolean` |`url` | `email`。更多请参考[此处](https://github.com/yiminghe/async-validator#type)
+说明: 类型，常见有 `string` |`number` |`boolean` |`url` | `email`。更多请参考[此处](https://github.com/yiminghe/async-validator#type) 
 
 类型: string
 
-### ant-design 中 Form - Rule的validateTrigger属性如何使用？
+### ant-design 中 Form - Rule的validateTrigger属性如何使用？ 
 
-名称: validateTrigger
+名称: validateTrigger 
 
-说明: 设置触发验证时机，必须是 Form.Item 的 `validateTrigger` 的子集
+说明: 设置触发验证时机，必须是 Form.Item 的 `validateTrigger` 的子集 
 
 类型: string | string[]
 
-### ant-design 中 Form - Rule的validator属性如何使用？
+### ant-design 中 Form - Rule的validator属性如何使用？ 
 
-名称: validator
+名称: validator 
 
-说明: 自定义校验，接收 Promise 作为返回值。[示例](#components-form-demo-register)参考
+说明: 自定义校验，接收 Promise 作为返回值。[示例](#components-form-demo-register)参考 
 
 类型: ([rule](#rule), value) => Promise
 
-### ant-design 中 Form - Rule的warningOnly属性如何使用？
+### ant-design 中 Form - Rule的warningOnly属性如何使用？ 
 
-名称: warningOnly
+名称: warningOnly 
 
-说明: 仅警告，不阻塞表单提交
+说明: 仅警告，不阻塞表单提交 
 
-类型: boolean
+类型: boolean 
 
 版本: 4.17.0
 
-### ant-design 中 Form - Rule的whitespace属性如何使用？
+### ant-design 中 Form - Rule的whitespace属性如何使用？ 
 
-名称: whitespace
+名称: whitespace 
 
-说明: 如果字段仅包含空格则校验不通过，只在 `type: 'string'` 时生效
+说明: 如果字段仅包含空格则校验不通过，只在 `type: 'string'` 时生效 
 
 类型: boolean
 
@@ -16674,33 +16945,34 @@ Version: 4.24
 | form | 指定 Form 实例 | FormInstance | 当前 context 中的 Form | 5.4.0 |
 | preserve | 是否监视没有对应的 `Form.Item` 的字段 | boolean | false | 5.4.0 |
 
-### ant-design 中 Form - WatchOptions的form属性如何使用？
 
-名称: form
+### ant-design 中 Form - WatchOptions的form属性如何使用？ 
 
-说明: 指定 Form 实例
+名称: form 
 
-类型: FormInstance
+说明: 指定 Form 实例 
 
-默认值: 当前 context 中的 Form
+类型: FormInstance 
+
+默认值: 当前 context 中的 Form 
 
 版本: 5.4.0
 
-### ant-design 中 Form - WatchOptions的preserve属性如何使用？
+### ant-design 中 Form - WatchOptions的preserve属性如何使用？ 
 
-名称: preserve
+名称: preserve 
 
-说明: 是否监视没有对应的 `Form.Item` 的字段
+说明: 是否监视没有对应的 `Form.Item` 的字段 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 5.4.0
 
 ### ant-design 的 Float-button 有哪些配置？
 
-#### Float-button - 共同的 API
+#### Float-button - 共同的 API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16714,7 +16986,8 @@ Version: 4.24
 | target | 相当于 a 标签的 target 属性，href 存在时生效 | string | - |
 | badge | 带徽标数字的悬浮按钮（不支持 `status` 以及相关属性） | - | 5.4.0 |
 
-#### Float-button - FloatButton.Group
+
+#### Float-button - FloatButton.Group 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16723,7 +16996,8 @@ Version: 4.24
 | open | 受控展开，需配合 trigger 一起使用 | boolean | - |
 | onOpenChange | 展开收起时的回调，需配合 trigger 一起使用 | (open: boolean) => void | - |
 
-#### Float-button - FloatButton.BackTop
+
+#### Float-button - FloatButton.BackTop 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16731,6 +17005,7 @@ Version: 4.24
 | target | 设置需要监听其滚动事件的元素 | () => HTMLElement | () => window |
 | visibilityHeight | 滚动高度达到此参数值才出现 BackTop | number | 400 |
 | onClick | 点击按钮的回调函数 | () => void | - |
+
 
 ### ant-design 的 Float-button - 共同的 API 有哪些配置？
 
@@ -16746,93 +17021,94 @@ Version: 4.24
 | target | 相当于 a 标签的 target 属性，href 存在时生效 | string | - |
 | badge | 带徽标数字的悬浮按钮（不支持 `status` 以及相关属性） | - | 5.4.0 |
 
-### ant-design 中 Float-button - 共同的 API的icon属性如何使用？
 
-参数: icon
+### ant-design 中 Float-button - 共同的 API的icon属性如何使用？ 
 
-说明: 自定义图标
+参数: icon 
 
-类型: ReactNode
+说明: 自定义图标 
 
-默认值: -
-
-### ant-design 中 Float-button - 共同的 API的description属性如何使用？
-
-参数: description
-
-说明: 文字及其它内容
-
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Float-button - 共同的 API的tooltip属性如何使用？
+### ant-design 中 Float-button - 共同的 API的description属性如何使用？ 
 
-参数: tooltip
+参数: description 
 
-说明: 气泡卡片的内容
+说明: 文字及其它内容 
 
-类型: ReactNode | () => ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Float-button - 共同的 API的type属性如何使用？
+### ant-design 中 Float-button - 共同的 API的tooltip属性如何使用？ 
 
-参数: type
+参数: tooltip 
 
-说明: 设置按钮类型
+说明: 气泡卡片的内容 
 
-类型: `default` | `primary`
+类型: ReactNode | () => ReactNode 
+
+默认值: -
+
+### ant-design 中 Float-button - 共同的 API的type属性如何使用？ 
+
+参数: type 
+
+说明: 设置按钮类型 
+
+类型: `default` | `primary` 
 
 默认值: `default`
 
-### ant-design 中 Float-button - 共同的 API的shape属性如何使用？
+### ant-design 中 Float-button - 共同的 API的shape属性如何使用？ 
 
-参数: shape
+参数: shape 
 
-说明: 设置按钮形状
+说明: 设置按钮形状 
 
-类型: `circle` | `square`
+类型: `circle` | `square` 
 
 默认值: `circle`
 
-### ant-design 中 Float-button - 共同的 API的onClick属性如何使用？
+### ant-design 中 Float-button - 共同的 API的onClick属性如何使用？ 
 
-参数: onClick
+参数: onClick 
 
-说明: 点击按钮时的回调
+说明: 点击按钮时的回调 
 
-类型: (event) => void
-
-默认值: -
-
-### ant-design 中 Float-button - 共同的 API的href属性如何使用？
-
-参数: href
-
-说明: 点击跳转的地址，指定此属性 button 的行为和 a 链接一致
-
-类型: string
+类型: (event) => void 
 
 默认值: -
 
-### ant-design 中 Float-button - 共同的 API的target属性如何使用？
+### ant-design 中 Float-button - 共同的 API的href属性如何使用？ 
 
-参数: target
+参数: href 
 
-说明: 相当于 a 标签的 target 属性，href 存在时生效
+说明: 点击跳转的地址，指定此属性 button 的行为和 a 链接一致 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Float-button - 共同的 API的badge属性如何使用？
+### ant-design 中 Float-button - 共同的 API的target属性如何使用？ 
 
-参数: badge
+参数: target 
 
-说明: 带徽标数字的悬浮按钮（不支持 `status` 以及相关属性）
+说明: 相当于 a 标签的 target 属性，href 存在时生效 
 
-类型: -
+类型: string 
+
+默认值: -
+
+### ant-design 中 Float-button - 共同的 API的badge属性如何使用？ 
+
+参数: badge 
+
+说明: 带徽标数字的悬浮按钮（不支持 `status` 以及相关属性） 
+
+类型: - 
 
 默认值: 5.4.0
 
@@ -16845,43 +17121,44 @@ Version: 4.24
 | open | 受控展开，需配合 trigger 一起使用 | boolean | - |
 | onOpenChange | 展开收起时的回调，需配合 trigger 一起使用 | (open: boolean) => void | - |
 
-### ant-design 中 Float-button - FloatButton.Group的shape属性如何使用？
 
-参数: shape
+### ant-design 中 Float-button - FloatButton.Group的shape属性如何使用？ 
 
-说明: 设置包含的 FloatButton 按钮形状
+参数: shape 
 
-类型: `circle` | `square`
+说明: 设置包含的 FloatButton 按钮形状 
+
+类型: `circle` | `square` 
 
 默认值: `circle`
 
-### ant-design 中 Float-button - FloatButton.Group的trigger属性如何使用？
+### ant-design 中 Float-button - FloatButton.Group的trigger属性如何使用？ 
 
-参数: trigger
+参数: trigger 
 
-说明: 触发方式（有触发方式为菜单模式）
+说明: 触发方式（有触发方式为菜单模式） 
 
-类型: `click` | `hover`
-
-默认值: -
-
-### ant-design 中 Float-button - FloatButton.Group的open属性如何使用？
-
-参数: open
-
-说明: 受控展开，需配合 trigger 一起使用
-
-类型: boolean
+类型: `click` | `hover` 
 
 默认值: -
 
-### ant-design 中 Float-button - FloatButton.Group的onOpenChange属性如何使用？
+### ant-design 中 Float-button - FloatButton.Group的open属性如何使用？ 
 
-参数: onOpenChange
+参数: open 
 
-说明: 展开收起时的回调，需配合 trigger 一起使用
+说明: 受控展开，需配合 trigger 一起使用 
 
-类型: (open: boolean) => void
+类型: boolean 
+
+默认值: -
+
+### ant-design 中 Float-button - FloatButton.Group的onOpenChange属性如何使用？ 
+
+参数: onOpenChange 
+
+说明: 展开收起时的回调，需配合 trigger 一起使用 
+
+类型: (open: boolean) => void 
 
 默认值: -
 
@@ -16894,49 +17171,50 @@ Version: 4.24
 | visibilityHeight | 滚动高度达到此参数值才出现 BackTop | number | 400 |
 | onClick | 点击按钮的回调函数 | () => void | - |
 
-### ant-design 中 Float-button - FloatButton.BackTop的duration属性如何使用？
 
-参数: duration
+### ant-design 中 Float-button - FloatButton.BackTop的duration属性如何使用？ 
 
-说明: 回到顶部所需时间（ms）
+参数: duration 
 
-类型: number
+说明: 回到顶部所需时间（ms） 
+
+类型: number 
 
 默认值: 450
 
-### ant-design 中 Float-button - FloatButton.BackTop的target属性如何使用？
+### ant-design 中 Float-button - FloatButton.BackTop的target属性如何使用？ 
 
-参数: target
+参数: target 
 
-说明: 设置需要监听其滚动事件的元素
+说明: 设置需要监听其滚动事件的元素 
 
-类型: () => HTMLElement
+类型: () => HTMLElement 
 
 默认值: () => window
 
-### ant-design 中 Float-button - FloatButton.BackTop的visibilityHeight属性如何使用？
+### ant-design 中 Float-button - FloatButton.BackTop的visibilityHeight属性如何使用？ 
 
-参数: visibilityHeight
+参数: visibilityHeight 
 
-说明: 滚动高度达到此参数值才出现 BackTop
+说明: 滚动高度达到此参数值才出现 BackTop 
 
-类型: number
+类型: number 
 
 默认值: 400
 
-### ant-design 中 Float-button - FloatButton.BackTop的onClick属性如何使用？
+### ant-design 中 Float-button - FloatButton.BackTop的onClick属性如何使用？ 
 
-参数: onClick
+参数: onClick 
 
-说明: 点击按钮的回调函数
+说明: 点击按钮的回调函数 
 
-类型: () => void
+类型: () => void 
 
 默认值: -
 
 ### ant-design 的 Flex 有哪些配置？
 
-#### Flex - API
+#### Flex - API 
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16947,6 +17225,7 @@ Version: 4.24
 | flex | flex CSS 简写属性 | 参考 [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex) | normal |
 | gap | 设置网格之间的间隙 | `small` \| `middle` \| `large` \| string \| number | - |
 | component | 自定义元素类型 | React.ComponentType | `div` |
+
 
 ### ant-design 的 Flex - API 有哪些配置？
 
@@ -16960,85 +17239,87 @@ Version: 4.24
 | gap | 设置网格之间的间隙 | `small` \| `middle` \| `large` \| string \| number | - |
 | component | 自定义元素类型 | React.ComponentType | `div` |
 
-### ant-design 中 Flex - API的vertical属性如何使用？
 
-属性: vertical
+### ant-design 中 Flex - API的vertical属性如何使用？ 
 
-说明: flex 主轴的方向是否垂直，使用 `flex-direction: column`
+属性: vertical 
 
-类型: boolean
+说明: flex 主轴的方向是否垂直，使用 `flex-direction: column` 
+
+类型: boolean 
 
 默认值: `false`
 
-### ant-design 中 Flex - API的wrap属性如何使用？
+### ant-design 中 Flex - API的wrap属性如何使用？ 
 
-属性: wrap
+属性: wrap 
 
-说明: 设置元素单行显示还是多行显示
+说明: 设置元素单行显示还是多行显示 
 
-类型: 参考 [flex-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap)
+类型: 参考 [flex-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap) 
 
 默认值: nowrap
 
-### ant-design 中 Flex - API的justify属性如何使用？
+### ant-design 中 Flex - API的justify属性如何使用？ 
 
-属性: justify
+属性: justify 
 
-说明: 设置元素在主轴方向上的对齐方式
+说明: 设置元素在主轴方向上的对齐方式 
 
-类型: 参考 [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content)
-
-默认值: normal
-
-### ant-design 中 Flex - API的align属性如何使用？
-
-属性: align
-
-说明: 设置元素在交叉轴方向上的对齐方式
-
-类型: 参考 [align-items](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items)
+类型: 参考 [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content) 
 
 默认值: normal
 
-### ant-design 中 Flex - API的flex属性如何使用？
+### ant-design 中 Flex - API的align属性如何使用？ 
 
-属性: flex
+属性: align 
 
-说明: flex CSS 简写属性
+说明: 设置元素在交叉轴方向上的对齐方式 
 
-类型: 参考 [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex)
+类型: 参考 [align-items](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items) 
 
 默认值: normal
 
-### ant-design 中 Flex - API的gap属性如何使用？
+### ant-design 中 Flex - API的flex属性如何使用？ 
 
-属性: gap
+属性: flex 
 
-说明: 设置网格之间的间隙
+说明: flex CSS 简写属性 
 
-类型: `small` | `middle` | `large` | string | number
+类型: 参考 [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex) 
+
+默认值: normal
+
+### ant-design 中 Flex - API的gap属性如何使用？ 
+
+属性: gap 
+
+说明: 设置网格之间的间隙 
+
+类型: `small` | `middle` | `large` | string | number 
 
 默认值: -
 
-### ant-design 中 Flex - API的component属性如何使用？
+### ant-design 中 Flex - API的component属性如何使用？ 
 
-属性: component
+属性: component 
 
-说明: 自定义元素类型
+说明: 自定义元素类型 
 
-类型: React.ComponentType
+类型: React.ComponentType 
 
 默认值: `div`
 
 ### ant-design 的 Empty 有哪些配置？
 
-#### Empty - API
+#### Empty - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | description | 自定义描述内容 | ReactNode | - |
 | image | 设置显示图片，为 string 时表示自定义图片地址。 | ReactNode | `Empty.PRESENTED_IMAGE_DEFAULT` |
 | imageStyle | 图片样式 | CSSProperties | - |
+
 
 ### ant-design 的 Empty - API 有哪些配置？
 
@@ -17048,42 +17329,43 @@ Version: 4.24
 | image | 设置显示图片，为 string 时表示自定义图片地址。 | ReactNode | `Empty.PRESENTED_IMAGE_DEFAULT` |
 | imageStyle | 图片样式 | CSSProperties | - |
 
-### ant-design 中 Empty - API的description属性如何使用？
 
-参数: description
+### ant-design 中 Empty - API的description属性如何使用？ 
 
-说明: 自定义描述内容
+参数: description 
 
-类型: ReactNode
+说明: 自定义描述内容 
+
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Empty - API的image属性如何使用？
+### ant-design 中 Empty - API的image属性如何使用？ 
 
-参数: image
+参数: image 
 
-说明: 设置显示图片，为 string 时表示自定义图片地址。
+说明: 设置显示图片，为 string 时表示自定义图片地址。 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: `Empty.PRESENTED_IMAGE_DEFAULT`
 
-### ant-design 中 Empty - API的imageStyle属性如何使用？
+### ant-design 中 Empty - API的imageStyle属性如何使用？ 
 
-参数: imageStyle
+参数: imageStyle 
 
-说明: 图片样式
+说明: 图片样式 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: -
 
 ### ant-design 的 Dropdown 有哪些配置？
 
-#### Dropdown - Dropdown
+#### Dropdown - Dropdown 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | arrow | 下拉框箭头是否显示 | boolean \| { pointAtCenter: boolean } | false |
 | autoAdjustOverflow | 下拉框被遮挡时自动调整位置 | boolean | true | 5.2.0 |
 | autoFocus | 打开后自动聚焦下拉框 | boolean | false | 4.21.0 |
@@ -17099,10 +17381,11 @@ Version: 4.24
 | open | 菜单是否显示，小于 4.23.0 使用 `visible`（[为什么?](/docs/react/faq#弹层类组件为什么要统一至-open-属性)） | boolean | - | 4.23.0 |
 | onOpenChange | 菜单显示状态改变时调用，点击菜单按钮导致的消失不会触发。小于 4.23.0 使用 `onVisibleChange`（[为什么?](/docs/react/faq#弹层类组件为什么要统一至-open-属性)） | (open: boolean, info: { source: 'trigger' \| 'menu' }) => void | - | `info.source`: 5.11.0 |
 
-#### Dropdown - Dropdown.Button
+
+#### Dropdown - Dropdown.Button 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | buttonsRender | 自定义左右两个按钮 | (buttons: ReactNode[]) => ReactNode[] | - |
 | loading | 设置按钮载入状态 | boolean \| { delay: number } | false |
 | danger | 设置危险按钮 | boolean | - | 4.23.0 |
@@ -17111,10 +17394,11 @@ Version: 4.24
 | type | 按钮类型，和 [Button](/components/button-cn#api) 一致 | string | `default` |
 | onClick | 点击左侧按钮的回调，和 [Button](/components/button-cn#api) 一致 | (event) => void | - |
 
+
 ### ant-design 的 Dropdown - Dropdown 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | arrow | 下拉框箭头是否显示 | boolean \| { pointAtCenter: boolean } | false |
 | autoAdjustOverflow | 下拉框被遮挡时自动调整位置 | boolean | true | 5.2.0 |
 | autoFocus | 打开后自动聚焦下拉框 | boolean | false | 4.21.0 |
@@ -17130,160 +17414,161 @@ Version: 4.24
 | open | 菜单是否显示，小于 4.23.0 使用 `visible`（[为什么?](/docs/react/faq#弹层类组件为什么要统一至-open-属性)） | boolean | - | 4.23.0 |
 | onOpenChange | 菜单显示状态改变时调用，点击菜单按钮导致的消失不会触发。小于 4.23.0 使用 `onVisibleChange`（[为什么?](/docs/react/faq#弹层类组件为什么要统一至-open-属性)） | (open: boolean, info: { source: 'trigger' \| 'menu' }) => void | - | `info.source`: 5.11.0 |
 
-### ant-design 中 Dropdown - Dropdown的arrow属性如何使用？
 
-参数: arrow
+### ant-design 中 Dropdown - Dropdown的arrow属性如何使用？ 
 
-说明: 下拉框箭头是否显示
+参数: arrow 
 
-类型: boolean | { pointAtCenter: boolean }
+说明: 下拉框箭头是否显示 
+
+类型: boolean | { pointAtCenter: boolean } 
 
 默认值: false
 
-### ant-design 中 Dropdown - Dropdown的autoAdjustOverflow属性如何使用？
+### ant-design 中 Dropdown - Dropdown的autoAdjustOverflow属性如何使用？ 
 
-参数: autoAdjustOverflow
+参数: autoAdjustOverflow 
 
-说明: 下拉框被遮挡时自动调整位置
+说明: 下拉框被遮挡时自动调整位置 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 5.2.0
 
-### ant-design 中 Dropdown - Dropdown的autoFocus属性如何使用？
+### ant-design 中 Dropdown - Dropdown的autoFocus属性如何使用？ 
 
-参数: autoFocus
+参数: autoFocus 
 
-说明: 打开后自动聚焦下拉框
+说明: 打开后自动聚焦下拉框 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.21.0
 
-### ant-design 中 Dropdown - Dropdown的disabled属性如何使用？
+### ant-design 中 Dropdown - Dropdown的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 菜单是否禁用
+说明: 菜单是否禁用 
 
-类型: boolean
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Dropdown - Dropdown的destroyPopupOnHide属性如何使用？
+### ant-design 中 Dropdown - Dropdown的destroyPopupOnHide属性如何使用？ 
 
-参数: destroyPopupOnHide
+参数: destroyPopupOnHide 
 
-说明: 关闭后是否销毁 Dropdown
+说明: 关闭后是否销毁 Dropdown 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Dropdown - Dropdown的dropdownRender属性如何使用？
+### ant-design 中 Dropdown - Dropdown的dropdownRender属性如何使用？ 
 
-参数: dropdownRender
+参数: dropdownRender 
 
-说明: 自定义下拉框内容
+说明: 自定义下拉框内容 
 
-类型: (menus: ReactNode) => ReactNode
+类型: (menus: ReactNode) => ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.24.0
 
-### ant-design 中 Dropdown - Dropdown的getPopupContainer属性如何使用？
+### ant-design 中 Dropdown - Dropdown的getPopupContainer属性如何使用？ 
 
-参数: getPopupContainer
+参数: getPopupContainer 
 
-说明: 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codepen.io/afc163/pen/zEjNOy?editors=0010)
+说明: 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codepen.io/afc163/pen/zEjNOy?editors=0010) 
 
-类型: (triggerNode: HTMLElement) => HTMLElement
+类型: (triggerNode: HTMLElement) => HTMLElement 
 
 默认值: () => document.body
 
-### ant-design 中 Dropdown - Dropdown的menu属性如何使用？
+### ant-design 中 Dropdown - Dropdown的menu属性如何使用？ 
 
-参数: menu
+参数: menu 
 
-说明: 菜单配置项
+说明: 菜单配置项 
 
-类型: -
+类型: - 
 
 默认值: 4.24.0
 
-### ant-design 中 Dropdown - Dropdown的overlayClassName属性如何使用？
+### ant-design 中 Dropdown - Dropdown的overlayClassName属性如何使用？ 
 
-参数: overlayClassName
+参数: overlayClassName 
 
-说明: 下拉根元素的类名称
+说明: 下拉根元素的类名称 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Dropdown - Dropdown的overlayStyle属性如何使用？
-
-参数: overlayStyle
-
-说明: 下拉根元素的样式
-
-类型: CSSProperties
+类型: string 
 
 默认值: -
 
-### ant-design 中 Dropdown - Dropdown的placement属性如何使用？
+### ant-design 中 Dropdown - Dropdown的overlayStyle属性如何使用？ 
 
-参数: placement
+参数: overlayStyle 
 
-说明: 菜单弹出位置：`bottom` `bottomLeft` `bottomRight` `top` `topLeft` `topRight`
+说明: 下拉根元素的样式 
 
-类型: string
+类型: CSSProperties 
+
+默认值: -
+
+### ant-design 中 Dropdown - Dropdown的placement属性如何使用？ 
+
+参数: placement 
+
+说明: 菜单弹出位置：`bottom` `bottomLeft` `bottomRight` `top` `topLeft` `topRight` 
+
+类型: string 
 
 默认值: `bottomLeft`
 
-### ant-design 中 Dropdown - Dropdown的trigger属性如何使用？
+### ant-design 中 Dropdown - Dropdown的trigger属性如何使用？ 
 
-参数: trigger
+参数: trigger 
 
-说明: 触发下拉的行为，移动端不支持 hover
+说明: 触发下拉的行为，移动端不支持 hover 
 
-类型: Array<`click`|`hover`|`contextMenu`\>
+类型: Array<`click`|`hover`|`contextMenu`\> 
 
 默认值: \[`hover`]
 
-### ant-design 中 Dropdown - Dropdown的open属性如何使用？
+### ant-design 中 Dropdown - Dropdown的open属性如何使用？ 
 
-参数: open
+参数: open 
 
-说明: 菜单是否显示，小于 4.23.0 使用 `visible`（[为什么?](/docs/react/faq#弹层类组件为什么要统一至-open-属性)）
+说明: 菜单是否显示，小于 4.23.0 使用 `visible`（[为什么?](/docs/react/faq#弹层类组件为什么要统一至-open-属性)） 
 
-类型: boolean
+类型: boolean 
 
-默认值: -
+默认值: - 
 
 版本: 4.23.0
 
-### ant-design 中 Dropdown - Dropdown的onOpenChange属性如何使用？
+### ant-design 中 Dropdown - Dropdown的onOpenChange属性如何使用？ 
 
-参数: onOpenChange
+参数: onOpenChange 
 
-说明: 菜单显示状态改变时调用，点击菜单按钮导致的消失不会触发。小于 4.23.0 使用 `onVisibleChange`（[为什么?](/docs/react/faq#弹层类组件为什么要统一至-open-属性)）
+说明: 菜单显示状态改变时调用，点击菜单按钮导致的消失不会触发。小于 4.23.0 使用 `onVisibleChange`（[为什么?](/docs/react/faq#弹层类组件为什么要统一至-open-属性)） 
 
-类型: (open: boolean, info: { source: 'trigger' | 'menu' }) => void
+类型: (open: boolean, info: { source: 'trigger' | 'menu' }) => void 
 
-默认值: -
+默认值: - 
 
 版本: `info.source`: 5.11.0
 
 ### ant-design 的 Dropdown - Dropdown.Button 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | buttonsRender | 自定义左右两个按钮 | (buttons: ReactNode[]) => ReactNode[] | - |
 | loading | 设置按钮载入状态 | boolean \| { delay: number } | false |
 | danger | 设置危险按钮 | boolean | - | 4.23.0 |
@@ -17292,81 +17577,82 @@ Version: 4.24
 | type | 按钮类型，和 [Button](/components/button-cn#api) 一致 | string | `default` |
 | onClick | 点击左侧按钮的回调，和 [Button](/components/button-cn#api) 一致 | (event) => void | - |
 
-### ant-design 中 Dropdown - Dropdown.Button的buttonsRender属性如何使用？
 
-参数: buttonsRender
+### ant-design 中 Dropdown - Dropdown.Button的buttonsRender属性如何使用？ 
 
-说明: 自定义左右两个按钮
+参数: buttonsRender 
 
-类型: (buttons: ReactNode[]) => ReactNode[]
+说明: 自定义左右两个按钮 
+
+类型: (buttons: ReactNode[]) => ReactNode[] 
 
 默认值: -
 
-### ant-design 中 Dropdown - Dropdown.Button的loading属性如何使用？
+### ant-design 中 Dropdown - Dropdown.Button的loading属性如何使用？ 
 
-参数: loading
+参数: loading 
 
-说明: 设置按钮载入状态
+说明: 设置按钮载入状态 
 
-类型: boolean | { delay: number }
+类型: boolean | { delay: number } 
 
 默认值: false
 
-### ant-design 中 Dropdown - Dropdown.Button的danger属性如何使用？
+### ant-design 中 Dropdown - Dropdown.Button的danger属性如何使用？ 
 
-参数: danger
+参数: danger 
 
-说明: 设置危险按钮
+说明: 设置危险按钮 
 
-类型: boolean
+类型: boolean 
 
-默认值: -
+默认值: - 
 
 版本: 4.23.0
 
-### ant-design 中 Dropdown - Dropdown.Button的icon属性如何使用？
+### ant-design 中 Dropdown - Dropdown.Button的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 右侧的 icon
+说明: 右侧的 icon 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Dropdown - Dropdown.Button的size属性如何使用？
+### ant-design 中 Dropdown - Dropdown.Button的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 按钮大小，和 [Button](/components/button-cn#api) 一致
+说明: 按钮大小，和 [Button](/components/button-cn#api) 一致 
 
-类型: string
-
-默认值: `default`
-
-### ant-design 中 Dropdown - Dropdown.Button的type属性如何使用？
-
-参数: type
-
-说明: 按钮类型，和 [Button](/components/button-cn#api) 一致
-
-类型: string
+类型: string 
 
 默认值: `default`
 
-### ant-design 中 Dropdown - Dropdown.Button的onClick属性如何使用？
+### ant-design 中 Dropdown - Dropdown.Button的type属性如何使用？ 
 
-参数: onClick
+参数: type 
 
-说明: 点击左侧按钮的回调，和 [Button](/components/button-cn#api) 一致
+说明: 按钮类型，和 [Button](/components/button-cn#api) 一致 
 
-类型: (event) => void
+类型: string 
+
+默认值: `default`
+
+### ant-design 中 Dropdown - Dropdown.Button的onClick属性如何使用？ 
+
+参数: onClick 
+
+说明: 点击左侧按钮的回调，和 [Button](/components/button-cn#api) 一致 
+
+类型: (event) => void 
 
 默认值: -
 
 ### ant-design 的 Drawer 有哪些配置？
 
-#### Drawer - API
+#### Drawer - API 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -17395,6 +17681,7 @@ Version: 4.24
 | width | 宽度 | string \| number | 378 |
 | zIndex | 设置 Drawer 的 `z-index` | number | 1000 |
 | onClose | 点击遮罩层或左上角叉或取消按钮的回调 | function(e) | - |
+
 
 ### ant-design 的 Drawer - API 有哪些配置？
 
@@ -17426,272 +17713,273 @@ Version: 4.24
 | zIndex | 设置 Drawer 的 `z-index` | number | 1000 |
 | onClose | 点击遮罩层或左上角叉或取消按钮的回调 | function(e) | - |
 
-### ant-design 中 Drawer - API的autoFocus属性如何使用？
 
-参数: autoFocus
+### ant-design 中 Drawer - API的autoFocus属性如何使用？ 
 
-说明: 抽屉展开后是否将焦点切换至其 Dom 节点
+参数: autoFocus 
 
-类型: boolean
+说明: 抽屉展开后是否将焦点切换至其 Dom 节点 
 
-默认值: true
+类型: boolean 
+
+默认值: true 
 
 版本: 4.17.0
 
-### ant-design 中 Drawer - API的afterOpenChange属性如何使用？
+### ant-design 中 Drawer - API的afterOpenChange属性如何使用？ 
 
-参数: afterOpenChange
+参数: afterOpenChange 
 
-说明: 切换抽屉时动画结束后的回调
+说明: 切换抽屉时动画结束后的回调 
 
-类型: function(open)
-
-默认值: -
-
-### ant-design 中 Drawer - API的className属性如何使用？
-
-参数: className
-
-说明: Drawer 容器外层 className 设置，如果需要设置最外层，请使用 rootClassName
-
-类型: string
+类型: function(open) 
 
 默认值: -
 
-### ant-design 中 Drawer - API的classNames属性如何使用？
+### ant-design 中 Drawer - API的className属性如何使用？ 
 
-参数: classNames
+参数: className 
 
-说明: 配置抽屉内置模块的 className
+说明: Drawer 容器外层 className 设置，如果需要设置最外层，请使用 rootClassName 
 
-类型: `header?: string; body?: string; footer?: string; mask?: string; content?: string; wrapper?: string;`
+类型: string 
+
+默认值: -
+
+### ant-design 中 Drawer - API的classNames属性如何使用？ 
+
+参数: classNames 
+
+说明: 配置抽屉内置模块的 className 
+
+类型: `header?: string; body?: string; footer?: string; mask?: string; content?: string; wrapper?: string;` 
 
 默认值: -
 
-### ant-design 中 Drawer - API的styles属性如何使用？
+### ant-design 中 Drawer - API的styles属性如何使用？ 
 
-参数: styles
+参数: styles 
 
-说明: 配置抽屉内置模块的 style
+说明: 配置抽屉内置模块的 style 
 
-类型: `header?: CSSProperties; body?: CSSProperties; footer?: CSSProperties; mask?: CSSProperties; content?: CSSProperties; wrapper?: CSSProperties;`
+类型: `header?: CSSProperties; body?: CSSProperties; footer?: CSSProperties; mask?: CSSProperties; content?: CSSProperties; wrapper?: CSSProperties;` 
 
-默认值: -
+默认值: - 
 
 版本: 5.10.0
 
-### ant-design 中 Drawer - API的closeIcon属性如何使用？
+### ant-design 中 Drawer - API的closeIcon属性如何使用？ 
 
-参数: closeIcon
+参数: closeIcon 
 
-说明: 自定义关闭图标。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮
+说明: 自定义关闭图标。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮 
 
-类型: boolean | ReactNode
+类型: boolean | ReactNode 
 
 默认值: \<CloseOutlined />
 
-### ant-design 中 Drawer - API的destroyOnClose属性如何使用？
+### ant-design 中 Drawer - API的destroyOnClose属性如何使用？ 
 
-参数: destroyOnClose
+参数: destroyOnClose 
 
-说明: 关闭时销毁 Drawer 里的子元素
+说明: 关闭时销毁 Drawer 里的子元素 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Drawer - API的extra属性如何使用？
+### ant-design 中 Drawer - API的extra属性如何使用？ 
 
-参数: extra
+参数: extra 
 
-说明: 抽屉右上角的操作区域
+说明: 抽屉右上角的操作区域 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Drawer - API的footer属性如何使用？
+### ant-design 中 Drawer - API的footer属性如何使用？ 
 
-参数: footer
+参数: footer 
 
-说明: 抽屉的页脚
+说明: 抽屉的页脚 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Drawer - API的forceRender属性如何使用？
+### ant-design 中 Drawer - API的forceRender属性如何使用？ 
 
-参数: forceRender
+参数: forceRender 
 
-说明: 预渲染 Drawer 内元素
+说明: 预渲染 Drawer 内元素 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Drawer - API的getContainer属性如何使用？
+### ant-design 中 Drawer - API的getContainer属性如何使用？ 
 
-参数: getContainer
+参数: getContainer 
 
-说明: 指定 Drawer 挂载的节点，**并在容器内展现**，`false` 为挂载在当前位置
+说明: 指定 Drawer 挂载的节点，**并在容器内展现**，`false` 为挂载在当前位置 
 
-类型: HTMLElement | () => HTMLElement | Selectors | false
+类型: HTMLElement | () => HTMLElement | Selectors | false 
 
 默认值: body
 
-### ant-design 中 Drawer - API的height属性如何使用？
+### ant-design 中 Drawer - API的height属性如何使用？ 
 
-参数: height
+参数: height 
 
-说明: 高度，在 `placement` 为 `top` 或 `bottom` 时使用
+说明: 高度，在 `placement` 为 `top` 或 `bottom` 时使用 
 
-类型: string | number
+类型: string | number 
 
 默认值: 378
 
-### ant-design 中 Drawer - API的keyboard属性如何使用？
+### ant-design 中 Drawer - API的keyboard属性如何使用？ 
 
-参数: keyboard
+参数: keyboard 
 
-说明: 是否支持键盘 esc 关闭
+说明: 是否支持键盘 esc 关闭 
 
-类型: boolean
-
-默认值: true
-
-### ant-design 中 Drawer - API的mask属性如何使用？
-
-参数: mask
-
-说明: 是否展示遮罩
-
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Drawer - API的maskClosable属性如何使用？
+### ant-design 中 Drawer - API的mask属性如何使用？ 
 
-参数: maskClosable
+参数: mask 
 
-说明: 点击蒙层是否允许关闭
+说明: 是否展示遮罩 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Drawer - API的placement属性如何使用？
+### ant-design 中 Drawer - API的maskClosable属性如何使用？ 
 
-参数: placement
+参数: maskClosable 
 
-说明: 抽屉的方向
+说明: 点击蒙层是否允许关闭 
 
-类型: `top` | `right` | `bottom` | `left`
+类型: boolean 
+
+默认值: true
+
+### ant-design 中 Drawer - API的placement属性如何使用？ 
+
+参数: placement 
+
+说明: 抽屉的方向 
+
+类型: `top` | `right` | `bottom` | `left` 
 
 默认值: `right`
 
-### ant-design 中 Drawer - API的push属性如何使用？
+### ant-design 中 Drawer - API的push属性如何使用？ 
 
-参数: push
+参数: push 
 
-说明: 用于设置多层 Drawer 的推动行为
+说明: 用于设置多层 Drawer 的推动行为 
 
-类型: boolean | { distance: string | number }
+类型: boolean | { distance: string | number } 
 
-默认值: { distance: 180 }
+默认值: { distance: 180 } 
 
 版本: 4.5.0+
 
-### ant-design 中 Drawer - API的rootStyle属性如何使用？
+### ant-design 中 Drawer - API的rootStyle属性如何使用？ 
 
-参数: rootStyle
+参数: rootStyle 
 
-说明: 可用于设置 Drawer 最外层容器的样式，和 `style` 的区别是作用节点包括 `mask`
+说明: 可用于设置 Drawer 最外层容器的样式，和 `style` 的区别是作用节点包括 `mask` 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Drawer - API的size属性如何使用？
+### ant-design 中 Drawer - API的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 预设抽屉宽度（或高度），default `378px` 和 large `736px`
+说明: 预设抽屉宽度（或高度），default `378px` 和 large `736px` 
 
-类型: 'default' | 'large'
+类型: 'default' | 'large' 
 
-默认值: 'default'
+默认值: 'default' 
 
 版本: 4.17.0
 
-### ant-design 中 Drawer - API的style属性如何使用？
+### ant-design 中 Drawer - API的style属性如何使用？ 
 
-参数: style
+参数: style 
 
-说明: 设计 Drawer 容器样式，如果你只需要设置内容部分请使用 `bodyStyle`
+说明: 设计 Drawer 容器样式，如果你只需要设置内容部分请使用 `bodyStyle` 
 
-类型: CSSProperties
-
-默认值: -
-
-### ant-design 中 Drawer - API的title属性如何使用？
-
-参数: title
-
-说明: 标题
-
-类型: ReactNode
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Drawer - API的open属性如何使用？
+### ant-design 中 Drawer - API的title属性如何使用？ 
 
-参数: open
+参数: title 
 
-说明: Drawer 是否可见
+说明: 标题 
 
-类型: boolean
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Drawer - API的width属性如何使用？
+### ant-design 中 Drawer - API的open属性如何使用？ 
 
-参数: width
+参数: open 
 
-说明: 宽度
+说明: Drawer 是否可见 
 
-类型: string | number
+类型: boolean 
+
+默认值: -
+
+### ant-design 中 Drawer - API的width属性如何使用？ 
+
+参数: width 
+
+说明: 宽度 
+
+类型: string | number 
 
 默认值: 378
 
-### ant-design 中 Drawer - API的zIndex属性如何使用？
+### ant-design 中 Drawer - API的zIndex属性如何使用？ 
 
-参数: zIndex
+参数: zIndex 
 
-说明: 设置 Drawer 的 `z-index`
+说明: 设置 Drawer 的 `z-index` 
 
-类型: number
+类型: number 
 
 默认值: 1000
 
-### ant-design 中 Drawer - API的onClose属性如何使用？
+### ant-design 中 Drawer - API的onClose属性如何使用？ 
 
-参数: onClose
+参数: onClose 
 
-说明: 点击遮罩层或左上角叉或取消按钮的回调
+说明: 点击遮罩层或左上角叉或取消按钮的回调 
 
-类型: function(e)
+类型: function(e) 
 
 默认值: -
 
 ### ant-design 的 Divider 有哪些配置？
 
-#### Divider - API
+#### Divider - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | children | 嵌套的标题 | ReactNode | - |
 | className | 分割线样式类 | string | - |
 | dashed | 是否虚线 | boolean | false |
@@ -17700,11 +17988,12 @@ Version: 4.24
 | plain | 文字是否显示为普通正文样式 | boolean | false | 4.2.0 |
 | style | 分割线样式对象 | CSSProperties | - |
 | type | 水平还是垂直类型 | `horizontal` \| `vertical` | `horizontal` |
+
 
 ### ant-design 的 Divider - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | children | 嵌套的标题 | ReactNode | - |
 | className | 分割线样式类 | string | - |
 | dashed | 是否虚线 | boolean | false |
@@ -17714,94 +18003,95 @@ Version: 4.24
 | style | 分割线样式对象 | CSSProperties | - |
 | type | 水平还是垂直类型 | `horizontal` \| `vertical` | `horizontal` |
 
-### ant-design 中 Divider - API的children属性如何使用？
 
-参数: children
+### ant-design 中 Divider - API的children属性如何使用？ 
 
-说明: 嵌套的标题
+参数: children 
 
-类型: ReactNode
+说明: 嵌套的标题 
 
-默认值: -
-
-### ant-design 中 Divider - API的className属性如何使用？
-
-参数: className
-
-说明: 分割线样式类
-
-类型: string
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Divider - API的dashed属性如何使用？
+### ant-design 中 Divider - API的className属性如何使用？ 
 
-参数: dashed
+参数: className 
 
-说明: 是否虚线
+说明: 分割线样式类 
 
-类型: boolean
+类型: string 
+
+默认值: -
+
+### ant-design 中 Divider - API的dashed属性如何使用？ 
+
+参数: dashed 
+
+说明: 是否虚线 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Divider - API的orientation属性如何使用？
+### ant-design 中 Divider - API的orientation属性如何使用？ 
 
-参数: orientation
+参数: orientation 
 
-说明: 分割线标题的位置
+说明: 分割线标题的位置 
 
-类型: `left` | `right` | `center`
+类型: `left` | `right` | `center` 
 
 默认值: `center`
 
-### ant-design 中 Divider - API的orientationMargin属性如何使用？
+### ant-design 中 Divider - API的orientationMargin属性如何使用？ 
 
-参数: orientationMargin
+参数: orientationMargin 
 
-说明: 标题和最近 left/right 边框之间的距离，去除了分割线，同时 `orientation` 必须为 `left` 或 `right`。如果传入 `string` 类型的数字且不带单位，默认单位是 px
+说明: 标题和最近 left/right 边框之间的距离，去除了分割线，同时 `orientation` 必须为 `left` 或 `right`。如果传入 `string` 类型的数字且不带单位，默认单位是 px 
 
-类型: string | number
+类型: string | number 
 
 默认值: -
 
-### ant-design 中 Divider - API的plain属性如何使用？
+### ant-design 中 Divider - API的plain属性如何使用？ 
 
-参数: plain
+参数: plain 
 
-说明: 文字是否显示为普通正文样式
+说明: 文字是否显示为普通正文样式 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.2.0
 
-### ant-design 中 Divider - API的style属性如何使用？
+### ant-design 中 Divider - API的style属性如何使用？ 
 
-参数: style
+参数: style 
 
-说明: 分割线样式对象
+说明: 分割线样式对象 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Divider - API的type属性如何使用？
+### ant-design 中 Divider - API的type属性如何使用？ 
 
-参数: type
+参数: type 
 
-说明: 水平还是垂直类型
+说明: 水平还是垂直类型 
 
-类型: `horizontal` | `vertical`
+类型: `horizontal` | `vertical` 
 
 默认值: `horizontal`
 
 ### ant-design 的 Descriptions 有哪些配置？
 
-#### Descriptions - Descriptions
+#### Descriptions - Descriptions 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | bordered | 是否展示边框 | boolean | false |
 | colon | 配置 `Descriptions.Item` 的 `colon` 的默认值 | boolean | true |
 | column | 一行的 `DescriptionItems` 数量，可以写成像素值或支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}` | number \| [Record<Breakpoint, number>](https://github.com/ant-design/ant-design/blob/84ca0d23ae52e4f0940f20b0e22eabe743f90dca/components/descriptions/index.tsx#L111C21-L111C56) | 3 |
@@ -17813,7 +18103,8 @@ Version: 4.24
 | size | 设置列表的大小。可以设置为 `middle` 、`small`, 或不填（只有设置 `bordered={true}` 生效） | `default` \| `middle` \| `small` | - |
 | title | 描述列表的标题，显示在最顶部 | ReactNode | - |
 
-#### Descriptions - DescriptionItem
+
+#### Descriptions - DescriptionItem 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -17822,10 +18113,11 @@ Version: 4.24
 | labelStyle | 自定义标签样式 | CSSProperties | - | 4.9.0 |
 | span | 包含列的数量 | number \| [Screens](/components/grid#col) | 1 | `screens: 5.9.0` |
 
+
 ### ant-design 的 Descriptions - Descriptions 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | bordered | 是否展示边框 | boolean | false |
 | colon | 配置 `Descriptions.Item` 的 `colon` 的默认值 | boolean | true |
 | column | 一行的 `DescriptionItems` 数量，可以写成像素值或支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}` | number \| [Record<Breakpoint, number>](https://github.com/ant-design/ant-design/blob/84ca0d23ae52e4f0940f20b0e22eabe743f90dca/components/descriptions/index.tsx#L111C21-L111C56) | 3 |
@@ -17837,109 +18129,110 @@ Version: 4.24
 | size | 设置列表的大小。可以设置为 `middle` 、`small`, 或不填（只有设置 `bordered={true}` 生效） | `default` \| `middle` \| `small` | - |
 | title | 描述列表的标题，显示在最顶部 | ReactNode | - |
 
-### ant-design 中 Descriptions - Descriptions的bordered属性如何使用？
 
-参数: bordered
+### ant-design 中 Descriptions - Descriptions的bordered属性如何使用？ 
 
-说明: 是否展示边框
+参数: bordered 
 
-类型: boolean
+说明: 是否展示边框 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Descriptions - Descriptions的colon属性如何使用？
+### ant-design 中 Descriptions - Descriptions的colon属性如何使用？ 
 
-参数: colon
+参数: colon 
 
-说明: 配置 `Descriptions.Item` 的 `colon` 的默认值
+说明: 配置 `Descriptions.Item` 的 `colon` 的默认值 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Descriptions - Descriptions的column属性如何使用？
+### ant-design 中 Descriptions - Descriptions的column属性如何使用？ 
 
-参数: column
+参数: column 
 
-说明: 一行的 `DescriptionItems` 数量，可以写成像素值或支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`
+说明: 一行的 `DescriptionItems` 数量，可以写成像素值或支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}` 
 
-类型: number | [Record<Breakpoint, number>](https://github.com/ant-design/ant-design/blob/84ca0d23ae52e4f0940f20b0e22eabe743f90dca/components/descriptions/index.tsx#L111C21-L111C56)
+类型: number | [Record<Breakpoint, number>](https://github.com/ant-design/ant-design/blob/84ca0d23ae52e4f0940f20b0e22eabe743f90dca/components/descriptions/index.tsx#L111C21-L111C56) 
 
 默认值: 3
 
-### ant-design 中 Descriptions - Descriptions的contentStyle属性如何使用？
+### ant-design 中 Descriptions - Descriptions的contentStyle属性如何使用？ 
 
-参数: contentStyle
+参数: contentStyle 
 
-说明: 自定义内容样式
+说明: 自定义内容样式 
 
-类型: CSSProperties
+类型: CSSProperties 
 
-默认值: -
+默认值: - 
 
 版本: 4.10.0
 
-### ant-design 中 Descriptions - Descriptions的extra属性如何使用？
+### ant-design 中 Descriptions - Descriptions的extra属性如何使用？ 
 
-参数: extra
+参数: extra 
 
-说明: 描述列表的操作区域，显示在右上方
+说明: 描述列表的操作区域，显示在右上方 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.5.0
 
-### ant-design 中 Descriptions - Descriptions的items属性如何使用？
+### ant-design 中 Descriptions - Descriptions的items属性如何使用？ 
 
-参数: items
+参数: items 
 
-说明: 描述列表项内容
+说明: 描述列表项内容 
 
-类型: -
+类型: - 
 
 默认值: 5.8.0
 
-### ant-design 中 Descriptions - Descriptions的labelStyle属性如何使用？
+### ant-design 中 Descriptions - Descriptions的labelStyle属性如何使用？ 
 
-参数: labelStyle
+参数: labelStyle 
 
-说明: 自定义标签样式
+说明: 自定义标签样式 
 
-类型: CSSProperties
+类型: CSSProperties 
 
-默认值: -
+默认值: - 
 
 版本: 4.10.0
 
-### ant-design 中 Descriptions - Descriptions的layout属性如何使用？
+### ant-design 中 Descriptions - Descriptions的layout属性如何使用？ 
 
-参数: layout
+参数: layout 
 
-说明: 描述布局
+说明: 描述布局 
 
-类型: `horizontal` | `vertical`
+类型: `horizontal` | `vertical` 
 
 默认值: `horizontal`
 
-### ant-design 中 Descriptions - Descriptions的size属性如何使用？
+### ant-design 中 Descriptions - Descriptions的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 设置列表的大小。可以设置为 `middle` 、`small`, 或不填（只有设置 `bordered={true}` 生效）
+说明: 设置列表的大小。可以设置为 `middle` 、`small`, 或不填（只有设置 `bordered={true}` 生效） 
 
-类型: `default` | `middle` | `small`
+类型: `default` | `middle` | `small` 
 
 默认值: -
 
-### ant-design 中 Descriptions - Descriptions的title属性如何使用？
+### ant-design 中 Descriptions - Descriptions的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 描述列表的标题，显示在最顶部
+说明: 描述列表的标题，显示在最顶部 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
@@ -17952,55 +18245,56 @@ Version: 4.24
 | labelStyle | 自定义标签样式 | CSSProperties | - | 4.9.0 |
 | span | 包含列的数量 | number \| [Screens](/components/grid#col) | 1 | `screens: 5.9.0` |
 
-### ant-design 中 Descriptions - DescriptionItem的contentStyle属性如何使用？
 
-参数: contentStyle
+### ant-design 中 Descriptions - DescriptionItem的contentStyle属性如何使用？ 
 
-说明: 自定义内容样式
+参数: contentStyle 
 
-类型: CSSProperties
+说明: 自定义内容样式 
 
-默认值: -
+类型: CSSProperties 
 
-版本: 4.9.0
-
-### ant-design 中 Descriptions - DescriptionItem的label属性如何使用？
-
-参数: label
-
-说明: 内容的描述
-
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Descriptions - DescriptionItem的labelStyle属性如何使用？
-
-参数: labelStyle
-
-说明: 自定义标签样式
-
-类型: CSSProperties
-
-默认值: -
+默认值: - 
 
 版本: 4.9.0
 
-### ant-design 中 Descriptions - DescriptionItem的span属性如何使用？
+### ant-design 中 Descriptions - DescriptionItem的label属性如何使用？ 
 
-参数: span
+参数: label 
 
-说明: 包含列的数量
+说明: 内容的描述 
 
-类型: number | [Screens](/components/grid#col)
+类型: ReactNode 
 
-默认值: 1
+默认值: -
+
+### ant-design 中 Descriptions - DescriptionItem的labelStyle属性如何使用？ 
+
+参数: labelStyle 
+
+说明: 自定义标签样式 
+
+类型: CSSProperties 
+
+默认值: - 
+
+版本: 4.9.0
+
+### ant-design 中 Descriptions - DescriptionItem的span属性如何使用？ 
+
+参数: span 
+
+说明: 包含列的数量 
+
+类型: number | [Screens](/components/grid#col) 
+
+默认值: 1 
 
 版本: `screens: 5.9.0`
 
 ### ant-design 的 Date-picker 有哪些配置？
 
-#### Date-picker - 共同的 API
+#### Date-picker - 共同的 API 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -18037,17 +18331,19 @@ Version: 4.24
 | onOpenChange | 弹出日历和关闭日历的回调 | function(open) | - |
 | onPanelChange | 日历面板切换的回调 | function(value, mode) | - |
 
-#### Date-picker - 共同的方法
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Date-picker - 共同的方法 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-#### Date-picker - DatePicker
+
+#### Date-picker - DatePicker 
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | defaultValue | 默认日期，如果开始时间或结束时间为 `null` 或者 `undefined`，日期范围将是一个开区间 | - |
 | disabledTime | 不可选择的时间 | function(date) | - |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | `YYYY-MM-DD` |
@@ -18061,50 +18357,55 @@ Version: 4.24
 | onOk | 点击确定按钮的回调 | function() | - |
 | onPanelChange | 日期面板变化时的回调 | function(value, mode) | - |
 
-#### Date-picker - DatePicker[picker=year]
+
+#### Date-picker - DatePicker[picker=year] 
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | defaultValue | 默认日期 | - |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | `YYYY` |
 | renderExtraFooter | 在面板中添加额外的页脚 | () => React.ReactNode | - |
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-#### Date-picker - DatePicker[picker=quarter]
+
+#### Date-picker - DatePicker[picker=quarter] 
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | defaultValue | 默认日期 | - |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | `YYYY-\QQ` |
 | renderExtraFooter | 在面板中添加额外的页脚 | () => React.ReactNode | - |
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-#### Date-picker - DatePicker[picker=month]
+
+#### Date-picker - DatePicker[picker=month] 
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | defaultValue | 默认日期 | - |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | `YYYY-MM` |
 | renderExtraFooter | 在面板中添加额外的页脚 | () => React.ReactNode | - |
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-#### Date-picker - DatePicker[picker=week]
+
+#### Date-picker - DatePicker[picker=week] 
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | defaultValue | 默认日期 | - |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | `YYYY-wo` |
 | renderExtraFooter | 在面板中添加额外的页脚 | (mode) => React.ReactNode | - |
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-#### Date-picker - RangePicker
+
+#### Date-picker - RangePicker 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | allowEmpty | 允许起始项部分为空 | \[boolean, boolean] | \[false, false] |
 | dateRender | 自定义日期单元格的内容，5.4.0 起用 `cellRender` 代替 | function(currentDate: dayjs, today: dayjs) => React.ReactNode | - | < 5.4.0 |
 | cellRender | 自定义单元格的内容。 | (current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
@@ -18120,6 +18421,7 @@ Version: 4.24
 | value | 日期 | - |
 | onCalendarChange | 待选日期发生变化的回调。`info` 参数自 4.4.0 添加 | function(dates: [dayjs, dayjs], dateStrings: [string, string], info: { range:`start`\|`end` }) | - |
 | onChange | 日期范围发生变化的回调 | function(dates: [dayjs, dayjs], dateStrings: [string, string]) | - |
+
 
 ### ant-design 的 Date-picker - 共同的 API 有哪些配置？
 
@@ -18158,369 +18460,371 @@ Version: 4.24
 | onOpenChange | 弹出日历和关闭日历的回调 | function(open) | - |
 | onPanelChange | 日历面板切换的回调 | function(value, mode) | - |
 
-### ant-design 中 Date-picker - 共同的 API的allowClear属性如何使用？
 
-参数: allowClear
+### ant-design 中 Date-picker - 共同的 API的allowClear属性如何使用？ 
 
-说明: 自定义清除按钮
+参数: allowClear 
 
-类型: boolean | { clearIcon?: ReactNode }
+说明: 自定义清除按钮 
 
-默认值: true
+类型: boolean | { clearIcon?: ReactNode } 
+
+默认值: true 
 
 版本: 5.8.0: 支持对象类型
 
-### ant-design 中 Date-picker - 共同的 API的autoFocus属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的autoFocus属性如何使用？ 
 
-参数: autoFocus
+参数: autoFocus 
 
-说明: 自动获取焦点
+说明: 自动获取焦点 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Date-picker - 共同的 API的className属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的className属性如何使用？ 
 
-参数: className
+参数: className 
 
-说明: 选择器 className
+说明: 选择器 className 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Date-picker - 共同的 API的dateRender属性如何使用？
-
-参数: dateRender
-
-说明: 自定义日期单元格的内容，5.4.0 起用 `cellRender` 代替
-
-类型: function(currentDate: dayjs, today: dayjs) => React.ReactNode
+类型: string 
 
 默认值: -
+
+### ant-design 中 Date-picker - 共同的 API的dateRender属性如何使用？ 
+
+参数: dateRender 
+
+说明: 自定义日期单元格的内容，5.4.0 起用 `cellRender` 代替 
+
+类型: function(currentDate: dayjs, today: dayjs) => React.ReactNode 
+
+默认值: - 
 
 版本: < 5.4.0
 
-### ant-design 中 Date-picker - 共同的 API的changeOnBlur属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的changeOnBlur属性如何使用？ 
 
-参数: changeOnBlur
+参数: changeOnBlur 
 
-说明: 失去焦点时触发 `change` 事件，例如 datetime 下不再需要点击确认按钮
+说明: 失去焦点时触发 `change` 事件，例如 datetime 下不再需要点击确认按钮 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 5.5.0
 
-### ant-design 中 Date-picker - 共同的 API的cellRender属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的cellRender属性如何使用？ 
 
-参数: cellRender
+参数: cellRender 
 
-说明: 自定义单元格的内容
+说明: 自定义单元格的内容 
 
-类型: (current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode
+类型: (current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Date-picker - 共同的 API的disabled属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 禁用
+说明: 禁用 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Date-picker - 共同的 API的disabledDate属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的disabledDate属性如何使用？ 
 
-参数: disabledDate
+参数: disabledDate 
 
-说明: 不可选择的日期
+说明: 不可选择的日期 
 
-类型: (currentDate: dayjs) => boolean
+类型: (currentDate: dayjs) => boolean 
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的format属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的format属性如何使用？ 
 
-参数: format
+参数: format 
 
 说明: 设置日期格式，为数组时支持多格式匹配，展示以第一个为准。配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。示例：[自定义格式](#components-date-picker-demo-format)
 
-### ant-design 中 Date-picker - 共同的 API的popupClassName属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的popupClassName属性如何使用？ 
 
-参数: popupClassName
+参数: popupClassName 
 
-说明: 额外的弹出日历 className
+说明: 额外的弹出日历 className 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 4.23.0
 
-### ant-design 中 Date-picker - 共同的 API的getPopupContainer属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的getPopupContainer属性如何使用？ 
 
-参数: getPopupContainer
+参数: getPopupContainer 
 
-说明: 定义浮层的容器，默认为 body 上新建 div
+说明: 定义浮层的容器，默认为 body 上新建 div 
 
-类型: function(trigger)
+类型: function(trigger) 
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的inputReadOnly属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的inputReadOnly属性如何使用？ 
 
-参数: inputReadOnly
+参数: inputReadOnly 
 
-说明: 设置输入框为只读（避免在移动设备上打开虚拟键盘）
+说明: 设置输入框为只读（避免在移动设备上打开虚拟键盘） 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Date-picker - 共同的 API的locale属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的locale属性如何使用？ 
 
-参数: locale
+参数: locale 
 
-说明: 国际化配置
+说明: 国际化配置 
 
 类型: object
 
-### ant-design 中 Date-picker - 共同的 API的mode属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的mode属性如何使用？ 
 
-参数: mode
+参数: mode 
 
-说明: 日期面板的状态（[设置后无法选择年份/月份？](/docs/react/faq#当我指定了-datepickerrangepicker-的-mode-属性后点击后无法选择年份月份)）
+说明: 日期面板的状态（[设置后无法选择年份/月份？](/docs/react/faq#当我指定了-datepickerrangepicker-的-mode-属性后点击后无法选择年份月份)） 
 
-类型: `time` | `date` | `month` | `year` | `decade`
-
-默认值: -
-
-### ant-design 中 Date-picker - 共同的 API的nextIcon属性如何使用？
-
-参数: nextIcon
-
-说明: 自定义下一个图标
-
-类型: ReactNode
+类型: `time` | `date` | `month` | `year` | `decade` 
 
 默认值: -
+
+### ant-design 中 Date-picker - 共同的 API的nextIcon属性如何使用？ 
+
+参数: nextIcon 
+
+说明: 自定义下一个图标 
+
+类型: ReactNode 
+
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Date-picker - 共同的 API的open属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的open属性如何使用？ 
 
-参数: open
+参数: open 
 
-说明: 控制弹层是否展开
+说明: 控制弹层是否展开 
 
-类型: boolean
-
-默认值: -
-
-### ant-design 中 Date-picker - 共同的 API的panelRender属性如何使用？
-
-参数: panelRender
-
-说明: 自定义渲染面板
-
-类型: (panelNode) => ReactNode
+类型: boolean 
 
 默认值: -
+
+### ant-design 中 Date-picker - 共同的 API的panelRender属性如何使用？ 
+
+参数: panelRender 
+
+说明: 自定义渲染面板 
+
+类型: (panelNode) => ReactNode 
+
+默认值: - 
 
 版本: 4.5.0
 
-### ant-design 中 Date-picker - 共同的 API的picker属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的picker属性如何使用？ 
 
-参数: picker
+参数: picker 
 
-说明: 设置选择器类型
+说明: 设置选择器类型 
 
-类型: `date` | `week` | `month` | `quarter` | `year`
+类型: `date` | `week` | `month` | `quarter` | `year` 
 
-默认值: `date`
+默认值: `date` 
 
 版本: `quarter`: 4.1.0
 
-### ant-design 中 Date-picker - 共同的 API的placeholder属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的placeholder属性如何使用？ 
 
-参数: placeholder
+参数: placeholder 
 
-说明: 输入框提示文字
+说明: 输入框提示文字 
 
-类型: string | [string, string]
+类型: string | [string, string] 
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的placement属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的placement属性如何使用？ 
 
-参数: placement
+参数: placement 
 
-说明: 选择框弹出的位置
+说明: 选择框弹出的位置 
 
-类型: `bottomLeft` `bottomRight` `topLeft` `topRight`
+类型: `bottomLeft` `bottomRight` `topLeft` `topRight` 
 
 默认值: bottomLeft
 
-### ant-design 中 Date-picker - 共同的 API的popupStyle属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的popupStyle属性如何使用？ 
 
-参数: popupStyle
+参数: popupStyle 
 
-说明: 额外的弹出日历样式
+说明: 额外的弹出日历样式 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: {}
 
-### ant-design 中 Date-picker - 共同的 API的prevIcon属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的prevIcon属性如何使用？ 
 
-参数: prevIcon
+参数: prevIcon 
 
-说明: 自定义上一个图标
+说明: 自定义上一个图标 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Date-picker - 共同的 API的presets属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的presets属性如何使用？ 
 
-参数: presets
+参数: presets 
 
-说明: 预设时间范围快捷选择, 自 `5.8.0` 起 value 支持函数返回值
+说明: 预设时间范围快捷选择, 自 `5.8.0` 起 value 支持函数返回值 
 
-类型: { label: React.ReactNode, value: Dayjs | (() => Dayjs) }[]
-
-默认值: -
-
-### ant-design 中 Date-picker - 共同的 API的size属性如何使用？
-
-参数: size
-
-说明: 输入框大小，`large` 高度为 40px，`small` 为 24px，默认是 32px
-
-类型: `large` | `middle` | `small`
+类型: { label: React.ReactNode, value: Dayjs | (() => Dayjs) }[] 
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的status属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的size属性如何使用？ 
 
-参数: status
+参数: size 
 
-说明: 设置校验状态
+说明: 输入框大小，`large` 高度为 40px，`small` 为 24px，默认是 32px 
 
-类型: 'error' | 'warning'
+类型: `large` | `middle` | `small` 
 
 默认值: -
+
+### ant-design 中 Date-picker - 共同的 API的status属性如何使用？ 
+
+参数: status 
+
+说明: 设置校验状态 
+
+类型: 'error' | 'warning' 
+
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Date-picker - 共同的 API的style属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的style属性如何使用？ 
 
-参数: style
+参数: style 
 
-说明: 自定义输入框样式
+说明: 自定义输入框样式 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: {}
 
-### ant-design 中 Date-picker - 共同的 API的suffixIcon属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的suffixIcon属性如何使用？ 
 
-参数: suffixIcon
+参数: suffixIcon 
 
-说明: 自定义的选择框后缀图标
+说明: 自定义的选择框后缀图标 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Date-picker - 共同的 API的superNextIcon属性如何使用？
-
-参数: superNextIcon
-
-说明: 自定义 `>>` 切换图标
-
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
+
+### ant-design 中 Date-picker - 共同的 API的superNextIcon属性如何使用？ 
+
+参数: superNextIcon 
+
+说明: 自定义 `>>` 切换图标 
+
+类型: ReactNode 
+
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Date-picker - 共同的 API的superPrevIcon属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的superPrevIcon属性如何使用？ 
 
-参数: superPrevIcon
+参数: superPrevIcon 
 
-说明: 自定义 `<<` 切换图标
+说明: 自定义 `<<` 切换图标 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Date-picker - 共同的 API的variant属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的variant属性如何使用？ 
 
-参数: variant
+参数: variant 
 
-说明: 形态变体
+说明: 形态变体 
 
-类型: `outlined` | `borderless` | `filled`
+类型: `outlined` | `borderless` | `filled` 
 
-默认值: `outlined`
+默认值: `outlined` 
 
 版本: 5.13.0
 
-### ant-design 中 Date-picker - 共同的 API的onOpenChange属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的onOpenChange属性如何使用？ 
 
-参数: onOpenChange
+参数: onOpenChange 
 
-说明: 弹出日历和关闭日历的回调
+说明: 弹出日历和关闭日历的回调 
 
-类型: function(open)
+类型: function(open) 
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的onPanelChange属性如何使用？
+### ant-design 中 Date-picker - 共同的 API的onPanelChange属性如何使用？ 
 
-参数: onPanelChange
+参数: onPanelChange 
 
-说明: 日历面板切换的回调
+说明: 日历面板切换的回调 
 
-类型: function(value, mode)
+类型: function(value, mode) 
 
 默认值: -
 
 ### ant-design 的 Date-picker - 共同的方法 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Date-picker - 共同的方法的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Date-picker - 共同的方法的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Date-picker - 共同的方法的focus()属性如何使用？
+### ant-design 中 Date-picker - 共同的方法的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 Date-picker - DatePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | defaultValue | 默认日期，如果开始时间或结束时间为 `null` 或者 `undefined`，日期范围将是一个开区间 | - |
 | disabledTime | 不可选择的时间 | function(date) | - |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | `YYYY-MM-DD` |
@@ -18534,338 +18838,343 @@ Version: 4.24
 | onOk | 点击确定按钮的回调 | function() | - |
 | onPanelChange | 日期面板变化时的回调 | function(value, mode) | - |
 
-### ant-design 中 Date-picker - DatePicker的defaultValue属性如何使用？
 
-参数: defaultValue
+### ant-design 中 Date-picker - DatePicker的defaultValue属性如何使用？ 
 
-说明: 默认日期，如果开始时间或结束时间为 `null` 或者 `undefined`，日期范围将是一个开区间
+参数: defaultValue 
+
+说明: 默认日期，如果开始时间或结束时间为 `null` 或者 `undefined`，日期范围将是一个开区间 
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker的disabledTime属性如何使用？
+### ant-design 中 Date-picker - DatePicker的disabledTime属性如何使用？ 
 
-参数: disabledTime
+参数: disabledTime 
 
-说明: 不可选择的时间
+说明: 不可选择的时间 
 
-类型: function(date)
+类型: function(date) 
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker的format属性如何使用？
+### ant-design 中 Date-picker - DatePicker的format属性如何使用？ 
 
-参数: format
+参数: format 
 
-说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。
+说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 
 
 类型: `YYYY-MM-DD`
 
-### ant-design 中 Date-picker - DatePicker的renderExtraFooter属性如何使用？
+### ant-design 中 Date-picker - DatePicker的renderExtraFooter属性如何使用？ 
 
-参数: renderExtraFooter
+参数: renderExtraFooter 
 
-说明: 在面板中添加额外的页脚
+说明: 在面板中添加额外的页脚 
 
-类型: (mode) => React.ReactNode
-
-默认值: -
-
-### ant-design 中 Date-picker - DatePicker的showNow属性如何使用？
-
-参数: showNow
-
-说明: 当设定了 `showTime` 的时候，面板是否显示“此刻”按钮
-
-类型: boolean
+类型: (mode) => React.ReactNode 
 
 默认值: -
+
+### ant-design 中 Date-picker - DatePicker的showNow属性如何使用？ 
+
+参数: showNow 
+
+说明: 当设定了 `showTime` 的时候，面板是否显示“此刻”按钮 
+
+类型: boolean 
+
+默认值: - 
 
 版本: 4.4.0
 
-### ant-design 中 Date-picker - DatePicker的showTime属性如何使用？
+### ant-design 中 Date-picker - DatePicker的showTime属性如何使用？ 
 
-参数: showTime
+参数: showTime 
 
-说明: 增加时间选择功能
+说明: 增加时间选择功能 
 
 类型: Object | boolean
 
-### ant-design 中 Date-picker - DatePicker的showTime.defaultValue属性如何使用？
+### ant-design 中 Date-picker - DatePicker的showTime.defaultValue属性如何使用？ 
 
-参数: showTime.defaultValue
+参数: showTime.defaultValue 
 
-说明: 设置用户选择日期时默认的时分秒，[例子](#components-date-picker-demo-disabled-date)
+说明: 设置用户选择日期时默认的时分秒，[例子](#components-date-picker-demo-disabled-date) 
 
 类型: dayjs()
 
-### ant-design 中 Date-picker - DatePicker的showToday属性如何使用？
+### ant-design 中 Date-picker - DatePicker的showToday属性如何使用？ 
 
-参数: showToday
+参数: showToday 
 
-说明: 是否展示“今天”按钮
+说明: 是否展示“今天”按钮 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Date-picker - DatePicker的value属性如何使用？
+### ant-design 中 Date-picker - DatePicker的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 日期
+说明: 日期 
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker的onChange属性如何使用？
+### ant-design 中 Date-picker - DatePicker的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 时间发生变化的回调
+说明: 时间发生变化的回调 
 
-类型: function(date: dayjs, dateString: string)
-
-默认值: -
-
-### ant-design 中 Date-picker - DatePicker的onOk属性如何使用？
-
-参数: onOk
-
-说明: 点击确定按钮的回调
-
-类型: function()
+类型: function(date: dayjs, dateString: string) 
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker的onPanelChange属性如何使用？
+### ant-design 中 Date-picker - DatePicker的onOk属性如何使用？ 
 
-参数: onPanelChange
+参数: onOk 
 
-说明: 日期面板变化时的回调
+说明: 点击确定按钮的回调 
 
-类型: function(value, mode)
+类型: function() 
+
+默认值: -
+
+### ant-design 中 Date-picker - DatePicker的onPanelChange属性如何使用？ 
+
+参数: onPanelChange 
+
+说明: 日期面板变化时的回调 
+
+类型: function(value, mode) 
 
 默认值: -
 
 ### ant-design 的 Date-picker - DatePicker[picker=year] 有哪些配置？
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | defaultValue | 默认日期 | - |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | `YYYY` |
 | renderExtraFooter | 在面板中添加额外的页脚 | () => React.ReactNode | - |
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的defaultValue属性如何使用？
 
-参数: defaultValue
+### ant-design 中 Date-picker - DatePicker[picker=year]的defaultValue属性如何使用？ 
 
-说明: 默认日期
+参数: defaultValue 
+
+说明: 默认日期 
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的format属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=year]的format属性如何使用？ 
 
-参数: format
+参数: format 
 
-说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。
+说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 
 
 类型: `YYYY`
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的renderExtraFooter属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=year]的renderExtraFooter属性如何使用？ 
 
-参数: renderExtraFooter
+参数: renderExtraFooter 
 
-说明: 在面板中添加额外的页脚
+说明: 在面板中添加额外的页脚 
 
-类型: () => React.ReactNode
+类型: () => React.ReactNode 
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的value属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=year]的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 日期
+说明: 日期 
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的onChange属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=year]的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 时间发生变化的回调，发生在用户选择时间时
+说明: 时间发生变化的回调，发生在用户选择时间时 
 
-类型: function(date: dayjs, dateString: string)
+类型: function(date: dayjs, dateString: string) 
 
 默认值: -
 
 ### ant-design 的 Date-picker - DatePicker[picker=quarter] 有哪些配置？
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | defaultValue | 默认日期 | - |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | `YYYY-\QQ` |
 | renderExtraFooter | 在面板中添加额外的页脚 | () => React.ReactNode | - |
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的defaultValue属性如何使用？
 
-参数: defaultValue
+### ant-design 中 Date-picker - DatePicker[picker=quarter]的defaultValue属性如何使用？ 
 
-说明: 默认日期
+参数: defaultValue 
+
+说明: 默认日期 
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的format属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=quarter]的format属性如何使用？ 
 
-参数: format
+参数: format 
 
-说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。
+说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 
 
 类型: `YYYY-\QQ`
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的renderExtraFooter属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=quarter]的renderExtraFooter属性如何使用？ 
 
-参数: renderExtraFooter
+参数: renderExtraFooter 
 
-说明: 在面板中添加额外的页脚
+说明: 在面板中添加额外的页脚 
 
-类型: () => React.ReactNode
+类型: () => React.ReactNode 
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的value属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=quarter]的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 日期
+说明: 日期 
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的onChange属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=quarter]的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 时间发生变化的回调，发生在用户选择时间时
+说明: 时间发生变化的回调，发生在用户选择时间时 
 
-类型: function(date: dayjs, dateString: string)
+类型: function(date: dayjs, dateString: string) 
 
 默认值: -
 
 ### ant-design 的 Date-picker - DatePicker[picker=month] 有哪些配置？
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | defaultValue | 默认日期 | - |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | `YYYY-MM` |
 | renderExtraFooter | 在面板中添加额外的页脚 | () => React.ReactNode | - |
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的defaultValue属性如何使用？
 
-参数: defaultValue
+### ant-design 中 Date-picker - DatePicker[picker=month]的defaultValue属性如何使用？ 
 
-说明: 默认日期
+参数: defaultValue 
+
+说明: 默认日期 
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的format属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=month]的format属性如何使用？ 
 
-参数: format
+参数: format 
 
-说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。
+说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 
 
 类型: `YYYY-MM`
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的renderExtraFooter属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=month]的renderExtraFooter属性如何使用？ 
 
-参数: renderExtraFooter
+参数: renderExtraFooter 
 
-说明: 在面板中添加额外的页脚
+说明: 在面板中添加额外的页脚 
 
-类型: () => React.ReactNode
+类型: () => React.ReactNode 
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的value属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=month]的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 日期
+说明: 日期 
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的onChange属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=month]的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 时间发生变化的回调，发生在用户选择时间时
+说明: 时间发生变化的回调，发生在用户选择时间时 
 
-类型: function(date: dayjs, dateString: string)
+类型: function(date: dayjs, dateString: string) 
 
 默认值: -
 
 ### ant-design 的 Date-picker - DatePicker[picker=week] 有哪些配置？
 
 | 参数 | 说明 | 类型 |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | defaultValue | 默认日期 | - |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | `YYYY-wo` |
 | renderExtraFooter | 在面板中添加额外的页脚 | (mode) => React.ReactNode | - |
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的defaultValue属性如何使用？
 
-参数: defaultValue
+### ant-design 中 Date-picker - DatePicker[picker=week]的defaultValue属性如何使用？ 
 
-说明: 默认日期
+参数: defaultValue 
+
+说明: 默认日期 
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的format属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=week]的format属性如何使用？ 
 
-参数: format
+参数: format 
 
-说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。
+说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 
 
 类型: `YYYY-wo`
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的renderExtraFooter属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=week]的renderExtraFooter属性如何使用？ 
 
-参数: renderExtraFooter
+参数: renderExtraFooter 
 
-说明: 在面板中添加额外的页脚
+说明: 在面板中添加额外的页脚 
 
-类型: (mode) => React.ReactNode
+类型: (mode) => React.ReactNode 
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的value属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=week]的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 日期
+说明: 日期 
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的onChange属性如何使用？
+### ant-design 中 Date-picker - DatePicker[picker=week]的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 时间发生变化的回调，发生在用户选择时间时
+说明: 时间发生变化的回调，发生在用户选择时间时 
 
-类型: function(date: dayjs, dateString: string)
+类型: function(date: dayjs, dateString: string) 
 
 默认值: -
 
 ### ant-design 的 Date-picker - RangePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | allowEmpty | 允许起始项部分为空 | \[boolean, boolean] | \[false, false] |
 | dateRender | 自定义日期单元格的内容，5.4.0 起用 `cellRender` 代替 | function(currentDate: dayjs, today: dayjs) => React.ReactNode | - | < 5.4.0 |
 | cellRender | 自定义单元格的内容。 | (current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
@@ -18882,156 +19191,157 @@ Version: 4.24
 | onCalendarChange | 待选日期发生变化的回调。`info` 参数自 4.4.0 添加 | function(dates: [dayjs, dayjs], dateStrings: [string, string], info: { range:`start`\|`end` }) | - |
 | onChange | 日期范围发生变化的回调 | function(dates: [dayjs, dayjs], dateStrings: [string, string]) | - |
 
-### ant-design 中 Date-picker - RangePicker的allowEmpty属性如何使用？
 
-参数: allowEmpty
+### ant-design 中 Date-picker - RangePicker的allowEmpty属性如何使用？ 
 
-说明: 允许起始项部分为空
+参数: allowEmpty 
 
-类型: \[boolean, boolean]
+说明: 允许起始项部分为空 
+
+类型: \[boolean, boolean] 
 
 默认值: \[false, false]
 
-### ant-design 中 Date-picker - RangePicker的dateRender属性如何使用？
+### ant-design 中 Date-picker - RangePicker的dateRender属性如何使用？ 
 
-参数: dateRender
+参数: dateRender 
 
-说明: 自定义日期单元格的内容，5.4.0 起用 `cellRender` 代替
+说明: 自定义日期单元格的内容，5.4.0 起用 `cellRender` 代替 
 
-类型: function(currentDate: dayjs, today: dayjs) => React.ReactNode
+类型: function(currentDate: dayjs, today: dayjs) => React.ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: < 5.4.0
 
-### ant-design 中 Date-picker - RangePicker的cellRender属性如何使用？
+### ant-design 中 Date-picker - RangePicker的cellRender属性如何使用？ 
 
-参数: cellRender
+参数: cellRender 
 
-说明: 自定义单元格的内容。
+说明: 自定义单元格的内容。 
 
-类型: (current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode
+类型: (current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Date-picker - RangePicker的defaultValue属性如何使用？
+### ant-design 中 Date-picker - RangePicker的defaultValue属性如何使用？ 
 
-参数: defaultValue
+参数: defaultValue 
 
-说明: 默认日期
+说明: 默认日期 
 
 类型: -
 
-### ant-design 中 Date-picker - RangePicker的disabled属性如何使用？
+### ant-design 中 Date-picker - RangePicker的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 禁用起始项
+说明: 禁用起始项 
 
-类型: \[boolean, boolean]
-
-默认值: -
-
-### ant-design 中 Date-picker - RangePicker的disabledTime属性如何使用？
-
-参数: disabledTime
-
-说明: 不可选择的时间
-
-类型: function(date: dayjs, partial: `start` | `end`)
+类型: \[boolean, boolean] 
 
 默认值: -
 
-### ant-design 中 Date-picker - RangePicker的format属性如何使用？
+### ant-design 中 Date-picker - RangePicker的disabledTime属性如何使用？ 
 
-参数: format
+参数: disabledTime 
 
-说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。
+说明: 不可选择的时间 
+
+类型: function(date: dayjs, partial: `start` | `end`) 
+
+默认值: -
+
+### ant-design 中 Date-picker - RangePicker的format属性如何使用？ 
+
+参数: format 
+
+说明: 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 
 
 类型: `YYYY-MM-DD HH:mm:ss`
 
-### ant-design 中 Date-picker - RangePicker的presets属性如何使用？
+### ant-design 中 Date-picker - RangePicker的presets属性如何使用？ 
 
-参数: presets
+参数: presets 
 
-说明: 预设时间范围快捷选择，自 `5.8.0` 起 value 支持函数返回值
+说明: 预设时间范围快捷选择，自 `5.8.0` 起 value 支持函数返回值 
 
-类型: { label: React.ReactNode, value: (Dayjs | (() => Dayjs))[] }[]
-
-默认值: -
-
-### ant-design 中 Date-picker - RangePicker的renderExtraFooter属性如何使用？
-
-参数: renderExtraFooter
-
-说明: 在面板中添加额外的页脚
-
-类型: () => React.ReactNode
+类型: { label: React.ReactNode, value: (Dayjs | (() => Dayjs))[] }[] 
 
 默认值: -
 
-### ant-design 中 Date-picker - RangePicker的separator属性如何使用？
+### ant-design 中 Date-picker - RangePicker的renderExtraFooter属性如何使用？ 
 
-参数: separator
+参数: renderExtraFooter 
 
-说明: 设置分隔符
+说明: 在面板中添加额外的页脚 
 
-类型: React.ReactNode
+类型: () => React.ReactNode 
+
+默认值: -
+
+### ant-design 中 Date-picker - RangePicker的separator属性如何使用？ 
+
+参数: separator 
+
+说明: 设置分隔符 
+
+类型: React.ReactNode 
 
 默认值: `<SwapRightOutlined />`
 
-### ant-design 中 Date-picker - RangePicker的showTime属性如何使用？
+### ant-design 中 Date-picker - RangePicker的showTime属性如何使用？ 
 
-参数: showTime
+参数: showTime 
 
-说明: 增加时间选择功能
+说明: 增加时间选择功能 
 
 类型: Object|boolean
 
-### ant-design 中 Date-picker - RangePicker的showTime.defaultValue属性如何使用？
+### ant-design 中 Date-picker - RangePicker的showTime.defaultValue属性如何使用？ 
 
-参数: showTime.defaultValue
+参数: showTime.defaultValue 
 
-说明: 设置用户选择日期时默认的时分秒，[例子](#components-date-picker-demo-disabled-date)
+说明: 设置用户选择日期时默认的时分秒，[例子](#components-date-picker-demo-disabled-date) 
 
 类型: \[dayjs(), dayjs()]
 
-### ant-design 中 Date-picker - RangePicker的value属性如何使用？
+### ant-design 中 Date-picker - RangePicker的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 日期
+说明: 日期 
 
 类型: -
 
-### ant-design 中 Date-picker - RangePicker的onCalendarChange属性如何使用？
+### ant-design 中 Date-picker - RangePicker的onCalendarChange属性如何使用？ 
 
-参数: onCalendarChange
+参数: onCalendarChange 
 
-说明: 待选日期发生变化的回调。`info` 参数自 4.4.0 添加
+说明: 待选日期发生变化的回调。`info` 参数自 4.4.0 添加 
 
-类型: function(dates: [dayjs, dayjs], dateStrings: [string, string], info: { range:`start`|`end` })
+类型: function(dates: [dayjs, dayjs], dateStrings: [string, string], info: { range:`start`|`end` }) 
 
 默认值: -
 
-### ant-design 中 Date-picker - RangePicker的onChange属性如何使用？
+### ant-design 中 Date-picker - RangePicker的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 日期范围发生变化的回调
+说明: 日期范围发生变化的回调 
 
-类型: function(dates: [dayjs, dayjs], dateStrings: [string, string])
+类型: function(dates: [dayjs, dayjs], dateStrings: [string, string]) 
 
 默认值: -
 
 ### ant-design 的 Config-provider 有哪些配置？
 
-#### Config-provider - API
+#### Config-provider - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | autoInsertSpaceInButton | 设置为 `false` 时，移除按钮中 2 个汉字之间的空格 | boolean | true |
 | componentDisabled | 设置 antd 组件禁用状态 | boolean | - | 4.21.0 |
 | componentSize | 设置 antd 组件大小 | `small` \| `middle` \| `large` | - |
@@ -19049,14 +19359,16 @@ Version: 4.24
 | virtual | 设置 `false` 时关闭虚拟滚动 | boolean | - | 4.3.0 |
 | warning | 设置警告等级，`strict` 为 `false` 时会将废弃相关信息聚合为单条信息 | { strict: boolean } | - | 5.10.0 |
 
-#### Config-provider - ConfigProvider.useConfig()
+
+#### Config-provider - ConfigProvider.useConfig() 
 
 | 返回值 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | componentDisabled | antd 组件禁用状态 | boolean | - | 5.3.0 |
 | componentSize | antd 组件大小状态 | `small` \| `middle` \| `large` | - | 5.3.0 |
 
-#### Config-provider - 组件配置
+
+#### Config-provider - 组件配置 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -19116,10 +19428,11 @@ Version: 4.24
 | upload | 设置 Upload 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | wave | 设置水波纹特效 | { disabled?: boolean, showEffect?: (node: HTMLElement, info: { className, token, component }) => void } | - | 5.8.0 |
 
+
 ### ant-design 的 Config-provider - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | autoInsertSpaceInButton | 设置为 `false` 时，移除按钮中 2 个汉字之间的空格 | boolean | true |
 | componentDisabled | 设置 antd 组件禁用状态 | boolean | - | 4.21.0 |
 | componentSize | 设置 antd 组件大小 | `small` \| `middle` \| `large` | - |
@@ -19137,177 +19450,178 @@ Version: 4.24
 | virtual | 设置 `false` 时关闭虚拟滚动 | boolean | - | 4.3.0 |
 | warning | 设置警告等级，`strict` 为 `false` 时会将废弃相关信息聚合为单条信息 | { strict: boolean } | - | 5.10.0 |
 
-### ant-design 中 Config-provider - API的autoInsertSpaceInButton属性如何使用？
 
-参数: autoInsertSpaceInButton
+### ant-design 中 Config-provider - API的autoInsertSpaceInButton属性如何使用？ 
 
-说明: 设置为 `false` 时，移除按钮中 2 个汉字之间的空格
+参数: autoInsertSpaceInButton 
 
-类型: boolean
+说明: 设置为 `false` 时，移除按钮中 2 个汉字之间的空格 
+
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Config-provider - API的componentDisabled属性如何使用？
+### ant-design 中 Config-provider - API的componentDisabled属性如何使用？ 
 
-参数: componentDisabled
+参数: componentDisabled 
 
-说明: 设置 antd 组件禁用状态
+说明: 设置 antd 组件禁用状态 
 
-类型: boolean
+类型: boolean 
 
-默认值: -
+默认值: - 
 
 版本: 4.21.0
 
-### ant-design 中 Config-provider - API的componentSize属性如何使用？
+### ant-design 中 Config-provider - API的componentSize属性如何使用？ 
 
-参数: componentSize
+参数: componentSize 
 
-说明: 设置 antd 组件大小
+说明: 设置 antd 组件大小 
 
-类型: `small` | `middle` | `large`
-
-默认值: -
-
-### ant-design 中 Config-provider - API的csp属性如何使用？
-
-参数: csp
-
-说明: 设置 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) 配置
-
-类型: { nonce: string }
+类型: `small` | `middle` | `large` 
 
 默认值: -
 
-### ant-design 中 Config-provider - API的direction属性如何使用？
+### ant-design 中 Config-provider - API的csp属性如何使用？ 
 
-参数: direction
+参数: csp 
 
-说明: 设置文本展示方向。 [示例](#components-config-provider-demo-direction)
+说明: 设置 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) 配置 
 
-类型: `ltr` | `rtl`
+类型: { nonce: string } 
+
+默认值: -
+
+### ant-design 中 Config-provider - API的direction属性如何使用？ 
+
+参数: direction 
+
+说明: 设置文本展示方向。 [示例](#components-config-provider-demo-direction) 
+
+类型: `ltr` | `rtl` 
 
 默认值: `ltr`
 
-### ant-design 中 Config-provider - API的getPopupContainer属性如何使用？
+### ant-design 中 Config-provider - API的getPopupContainer属性如何使用？ 
 
-参数: getPopupContainer
+参数: getPopupContainer 
 
-说明: 弹出框（Select, Tooltip, Menu 等等）渲染父节点，默认渲染到 body 上。
+说明: 弹出框（Select, Tooltip, Menu 等等）渲染父节点，默认渲染到 body 上。 
 
-类型: function(triggerNode)
+类型: function(triggerNode) 
 
 默认值: () => document.body
 
-### ant-design 中 Config-provider - API的getTargetContainer属性如何使用？
+### ant-design 中 Config-provider - API的getTargetContainer属性如何使用？ 
 
-参数: getTargetContainer
+参数: getTargetContainer 
 
-说明: 配置 Affix、Anchor 滚动监听容器。
+说明: 配置 Affix、Anchor 滚动监听容器。 
 
-类型: () => HTMLElement
+类型: () => HTMLElement 
 
-默认值: () => window
+默认值: () => window 
 
 版本: 4.2.0
 
-### ant-design 中 Config-provider - API的iconPrefixCls属性如何使用？
+### ant-design 中 Config-provider - API的iconPrefixCls属性如何使用？ 
 
-参数: iconPrefixCls
+参数: iconPrefixCls 
 
-说明: 设置图标统一样式前缀
+说明: 设置图标统一样式前缀 
 
-类型: string
+类型: string 
 
-默认值: `anticon`
+默认值: `anticon` 
 
 版本: 4.11.0
 
-### ant-design 中 Config-provider - API的locale属性如何使用？
+### ant-design 中 Config-provider - API的locale属性如何使用？ 
 
-参数: locale
+参数: locale 
 
-说明: 语言包配置，语言包可到 [antd/locale](http://unpkg.com/antd/locale/) 目录下寻找
+说明: 语言包配置，语言包可到 [antd/locale](http://unpkg.com/antd/locale/) 目录下寻找 
 
-类型: object
-
-默认值: -
-
-### ant-design 中 Config-provider - API的popupMatchSelectWidth属性如何使用？
-
-参数: popupMatchSelectWidth
-
-说明: 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。`false` 时会关闭虚拟滚动
-
-类型: boolean | number
+类型: object 
 
 默认值: -
 
-版本: 5.5.0
+### ant-design 中 Config-provider - API的popupMatchSelectWidth属性如何使用？ 
 
-### ant-design 中 Config-provider - API的popupOverflow属性如何使用？
+参数: popupMatchSelectWidth 
 
-参数: popupOverflow
+说明: 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。`false` 时会关闭虚拟滚动 
 
-说明: Select 类组件弹层展示逻辑，默认为可视区域滚动，可配置成滚动区域滚动
+类型: boolean | number 
 
-类型: 'viewport' | 'scroll' <InlinePopover previewURL="https://user-images.githubusercontent.com/5378891/230344474-5b9f7e09-0a5d-49e8-bae8-7d2abed6c837.png"></InlinePopover>
-
-默认值: 'viewport'
+默认值: - 
 
 版本: 5.5.0
 
-### ant-design 中 Config-provider - API的prefixCls属性如何使用？
+### ant-design 中 Config-provider - API的popupOverflow属性如何使用？ 
 
-参数: prefixCls
+参数: popupOverflow 
 
-说明: 设置统一样式前缀
+说明: Select 类组件弹层展示逻辑，默认为可视区域滚动，可配置成滚动区域滚动 
 
-类型: string
+类型: 'viewport' | 'scroll' <InlinePopover previewURL="https://user-images.githubusercontent.com/5378891/230344474-5b9f7e09-0a5d-49e8-bae8-7d2abed6c837.png"></InlinePopover> 
+
+默认值: 'viewport' 
+
+版本: 5.5.0
+
+### ant-design 中 Config-provider - API的prefixCls属性如何使用？ 
+
+参数: prefixCls 
+
+说明: 设置统一样式前缀 
+
+类型: string 
 
 默认值: `ant`
 
-### ant-design 中 Config-provider - API的renderEmpty属性如何使用？
+### ant-design 中 Config-provider - API的renderEmpty属性如何使用？ 
 
-参数: renderEmpty
+参数: renderEmpty 
 
-说明: 自定义组件空状态。参考 [空状态](/components/empty-cn)
+说明: 自定义组件空状态。参考 [空状态](/components/empty-cn) 
 
-类型: function(componentName: string): ReactNode
+类型: function(componentName: string): ReactNode 
 
 默认值: -
 
-### ant-design 中 Config-provider - API的theme属性如何使用？
+### ant-design 中 Config-provider - API的theme属性如何使用？ 
 
-参数: theme
+参数: theme 
 
-说明: 设置主题，参考 [定制主题](/docs/react/customize-theme-cn)
+说明: 设置主题，参考 [定制主题](/docs/react/customize-theme-cn) 
 
-类型: -
+类型: - 
 
 默认值: 5.0.0
 
-### ant-design 中 Config-provider - API的virtual属性如何使用？
+### ant-design 中 Config-provider - API的virtual属性如何使用？ 
 
-参数: virtual
+参数: virtual 
 
-说明: 设置 `false` 时关闭虚拟滚动
+说明: 设置 `false` 时关闭虚拟滚动 
 
-类型: boolean
+类型: boolean 
 
-默认值: -
+默认值: - 
 
 版本: 4.3.0
 
-### ant-design 中 Config-provider - API的warning属性如何使用？
+### ant-design 中 Config-provider - API的warning属性如何使用？ 
 
-参数: warning
+参数: warning 
 
-说明: 设置警告等级，`strict` 为 `false` 时会将废弃相关信息聚合为单条信息
+说明: 设置警告等级，`strict` 为 `false` 时会将废弃相关信息聚合为单条信息 
 
-类型: { strict: boolean }
+类型: { strict: boolean } 
 
-默认值: -
+默认值: - 
 
 版本: 5.10.0
 
@@ -19318,27 +19632,28 @@ Version: 4.24
 | componentDisabled | antd 组件禁用状态 | boolean | - | 5.3.0 |
 | componentSize | antd 组件大小状态 | `small` \| `middle` \| `large` | - | 5.3.0 |
 
-### ant-design 中 Config-provider - ConfigProvider.useConfig()的componentDisabled属性如何使用？
 
-返回值: componentDisabled
+### ant-design 中 Config-provider - ConfigProvider.useConfig()的componentDisabled属性如何使用？ 
 
-说明: antd 组件禁用状态
+返回值: componentDisabled 
 
-类型: boolean
+说明: antd 组件禁用状态 
 
-默认值: -
+类型: boolean 
+
+默认值: - 
 
 版本: 5.3.0
 
-### ant-design 中 Config-provider - ConfigProvider.useConfig()的componentSize属性如何使用？
+### ant-design 中 Config-provider - ConfigProvider.useConfig()的componentSize属性如何使用？ 
 
-返回值: componentSize
+返回值: componentSize 
 
-说明: antd 组件大小状态
+说明: antd 组件大小状态 
 
-类型: `small` | `middle` | `large`
+类型: `small` | `middle` | `large` 
 
-默认值: -
+默认值: - 
 
 版本: 5.3.0
 
@@ -19402,672 +19717,673 @@ Version: 4.24
 | upload | 设置 Upload 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | wave | 设置水波纹特效 | { disabled?: boolean, showEffect?: (node: HTMLElement, info: { className, token, component }) => void } | - | 5.8.0 |
 
-### ant-design 中 Config-provider - 组件配置的alert属性如何使用？
 
-参数: alert
+### ant-design 中 Config-provider - 组件配置的alert属性如何使用？ 
 
-说明: 设置 Alert 组件的通用属性
+参数: alert 
 
-类型: { className?: string, style?: React.CSSProperties }
+说明: 设置 Alert 组件的通用属性 
 
-默认值: -
+类型: { className?: string, style?: React.CSSProperties } 
 
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的anchor属性如何使用？
-
-参数: anchor
-
-说明: 设置 Anchor 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的avatar属性如何使用？
+### ant-design 中 Config-provider - 组件配置的anchor属性如何使用？ 
 
-参数: avatar
+参数: anchor 
 
-说明: 设置 Avatar 组件的通用属性
+说明: 设置 Anchor 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的badge属性如何使用？
-
-参数: badge
-
-说明: 设置 Badge 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties, classNames?: { count?: string, indicator?: string }, styles?: { count?: React.CSSProperties, indicator?: React.CSSProperties } }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的breadcrumb属性如何使用？
+### ant-design 中 Config-provider - 组件配置的avatar属性如何使用？ 
 
-参数: breadcrumb
+参数: avatar 
 
-说明: 设置 Breadcrumb 组件的通用属性
+说明: 设置 Avatar 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的button属性如何使用？
+### ant-design 中 Config-provider - 组件配置的badge属性如何使用？ 
 
-参数: button
+参数: badge 
 
-说明: 设置 Button 组件的通用属性
+说明: 设置 Badge 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties, classNames?: { icon: string }, styles?: { icon: React.CSSProperties } }
+类型: { className?: string, style?: React.CSSProperties, classNames?: { count?: string, indicator?: string }, styles?: { count?: React.CSSProperties, indicator?: React.CSSProperties } } 
 
-默认值: -
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的breadcrumb属性如何使用？ 
+
+参数: breadcrumb 
+
+说明: 设置 Breadcrumb 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的button属性如何使用？ 
+
+参数: button 
+
+说明: 设置 Button 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties, classNames?: { icon: string }, styles?: { icon: React.CSSProperties } } 
+
+默认值: - 
 
 版本: 5.6.0
 
-### ant-design 中 Config-provider - 组件配置的calendar属性如何使用？
+### ant-design 中 Config-provider - 组件配置的calendar属性如何使用？ 
 
-参数: calendar
+参数: calendar 
 
-说明: 设置 Calendar 组件的通用属性
+说明: 设置 Calendar 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的card属性如何使用？
-
-参数: card
-
-说明: 设置 Card 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的carousel属性如何使用？
+### ant-design 中 Config-provider - 组件配置的card属性如何使用？ 
 
-参数: carousel
+参数: card 
 
-说明: 设置 Carousel 组件的通用属性
+说明: 设置 Card 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的cascader属性如何使用？
-
-参数: cascader
-
-说明: 设置 Cascader 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的checkbox属性如何使用？
+### ant-design 中 Config-provider - 组件配置的carousel属性如何使用？ 
 
-参数: checkbox
+参数: carousel 
 
-说明: 设置 Checkbox 组件的通用属性
+说明: 设置 Carousel 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的collapse属性如何使用？
-
-参数: collapse
-
-说明: 设置 Collapse 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的colorPicker属性如何使用？
+### ant-design 中 Config-provider - 组件配置的cascader属性如何使用？ 
 
-参数: colorPicker
+参数: cascader 
 
-说明: 设置 ColorPicker 组件的通用属性
+说明: 设置 Cascader 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的datePicker属性如何使用？
-
-参数: datePicker
-
-说明: 设置 DatePicker 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的rangePicker属性如何使用？
+### ant-design 中 Config-provider - 组件配置的checkbox属性如何使用？ 
 
-参数: rangePicker
+参数: checkbox 
 
-说明: 设置 RangePicker 组件的通用属性
+说明: 设置 Checkbox 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的collapse属性如何使用？ 
+
+参数: collapse 
+
+说明: 设置 Collapse 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的colorPicker属性如何使用？ 
+
+参数: colorPicker 
+
+说明: 设置 ColorPicker 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的datePicker属性如何使用？ 
+
+参数: datePicker 
+
+说明: 设置 DatePicker 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的rangePicker属性如何使用？ 
+
+参数: rangePicker 
+
+说明: 设置 RangePicker 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
 
 版本: 5.11.0
 
-### ant-design 中 Config-provider - 组件配置的descriptions属性如何使用？
+### ant-design 中 Config-provider - 组件配置的descriptions属性如何使用？ 
 
-参数: descriptions
+参数: descriptions 
 
-说明: 设置 Descriptions 组件的通用属性
+说明: 设置 Descriptions 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的divider属性如何使用？
-
-参数: divider
-
-说明: 设置 Divider 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的drawer属性如何使用？
+### ant-design 中 Config-provider - 组件配置的divider属性如何使用？ 
 
-参数: drawer
+参数: divider 
 
-说明: 设置 Drawer 组件的通用属性
+说明: 设置 Divider 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties, classNames?: [DrawerProps\["classNames"\]](/components/drawer-cn#api), styles?: [DrawerProps\["styles"\]](/components/drawer-cn#api) }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的drawer属性如何使用？ 
+
+参数: drawer 
+
+说明: 设置 Drawer 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties, classNames?: [DrawerProps\["classNames"\]](/components/drawer-cn#api), styles?: [DrawerProps\["styles"\]](/components/drawer-cn#api) } 
+
+默认值: - 
 
 版本: 5.7.0, `classNames` 和 `styles`: 5.10.0
 
-### ant-design 中 Config-provider - 组件配置的dropdown属性如何使用？
+### ant-design 中 Config-provider - 组件配置的dropdown属性如何使用？ 
 
-参数: dropdown
+参数: dropdown 
 
-说明: 设置 Dropdown 组件的通用属性
+说明: 设置 Dropdown 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
+默认值: - 
 
 版本: 5.11.0
 
-### ant-design 中 Config-provider - 组件配置的empty属性如何使用？
+### ant-design 中 Config-provider - 组件配置的empty属性如何使用？ 
 
-参数: empty
+参数: empty 
 
-说明: 设置 Empty 组件的通用属性
+说明: 设置 Empty 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的flex属性如何使用？
+### ant-design 中 Config-provider - 组件配置的flex属性如何使用？ 
 
-参数: flex
+参数: flex 
 
-说明: 设置 Flex 组件的通用属性
+说明: 设置 Flex 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties, vertical?: boolean }
+类型: { className?: string, style?: React.CSSProperties, vertical?: boolean } 
 
-默认值: -
+默认值: - 
 
 版本: 5.10.0
 
-### ant-design 中 Config-provider - 组件配置的form属性如何使用？
+### ant-design 中 Config-provider - 组件配置的form属性如何使用？ 
 
-参数: form
+参数: form 
 
-说明: 设置 Form 组件的通用属性
+说明: 设置 Form 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties, validateMessages?: [ValidateMessages](/components/form-cn#validatemessages), requiredMark?: boolean | `optional`, colon?: boolean, scrollToFirstError?: boolean | [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options)}
+类型: { className?: string, style?: React.CSSProperties, validateMessages?: [ValidateMessages](/components/form-cn#validatemessages), requiredMark?: boolean | `optional`, colon?: boolean, scrollToFirstError?: boolean | [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options)} 
 
-默认值: -
+默认值: - 
 
 版本: requiredMark: 4.8.0; colon: 4.18.0; scrollToFirstError: 5.2.0; className: 5.7.0; style: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的image属性如何使用？
+### ant-design 中 Config-provider - 组件配置的image属性如何使用？ 
 
-参数: image
+参数: image 
 
-说明: 设置 Image 组件的通用属性
+说明: 设置 Image 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的input属性如何使用？
-
-参数: input
-
-说明: 设置 Input 组件的通用属性
-
-类型: { autoComplete?: string, className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的layout属性如何使用？
+### ant-design 中 Config-provider - 组件配置的input属性如何使用？ 
 
-参数: layout
+参数: input 
 
-说明: 设置 Layout 组件的通用属性
+说明: 设置 Input 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { autoComplete?: string, className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的list属性如何使用？
-
-参数: list
-
-说明: 设置 List 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的menu属性如何使用？
+### ant-design 中 Config-provider - 组件配置的layout属性如何使用？ 
 
-参数: menu
+参数: layout 
 
-说明: 设置 Menu 组件的通用属性
+说明: 设置 Layout 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的mentions属性如何使用？
-
-参数: mentions
-
-说明: 设置 Mentions 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的message属性如何使用？
+### ant-design 中 Config-provider - 组件配置的list属性如何使用？ 
 
-参数: message
+参数: list 
 
-说明: 设置 Message 组件的通用属性
+说明: 设置 List 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的modal属性如何使用？
+### ant-design 中 Config-provider - 组件配置的menu属性如何使用？ 
 
-参数: modal
+参数: menu 
 
-说明: 设置 Modal 组件的通用属性
+说明: 设置 Menu 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties, classNames?: [ModalProps\["classNames"\]](/components/modal-cn#api), styles?: [ModalProps\["styles"\]](/components/modal-cn#api) }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的mentions属性如何使用？ 
+
+参数: mentions 
+
+说明: 设置 Mentions 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的message属性如何使用？ 
+
+参数: message 
+
+说明: 设置 Message 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的modal属性如何使用？ 
+
+参数: modal 
+
+说明: 设置 Modal 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties, classNames?: [ModalProps\["classNames"\]](/components/modal-cn#api), styles?: [ModalProps\["styles"\]](/components/modal-cn#api) } 
+
+默认值: - 
 
 版本: 5.7.0, `classNames` 和 `styles`: 5.10.0
 
-### ant-design 中 Config-provider - 组件配置的notification属性如何使用？
+### ant-design 中 Config-provider - 组件配置的notification属性如何使用？ 
 
-参数: notification
+参数: notification 
 
-说明: 设置 Notification 组件的通用属性
+说明: 设置 Notification 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的pagination属性如何使用？
-
-参数: pagination
-
-说明: 设置 Pagination 组件的通用属性
-
-类型: { showSizeChanger?: boolean, className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的progress属性如何使用？
+### ant-design 中 Config-provider - 组件配置的pagination属性如何使用？ 
 
-参数: progress
+参数: pagination 
 
-说明: 设置 Progress 组件的通用属性
+说明: 设置 Pagination 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { showSizeChanger?: boolean, className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的radio属性如何使用？
-
-参数: radio
-
-说明: 设置 Radio 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的rate属性如何使用？
+### ant-design 中 Config-provider - 组件配置的progress属性如何使用？ 
 
-参数: rate
+参数: progress 
 
-说明: 设置 Rate 组件的通用属性
+说明: 设置 Progress 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的result属性如何使用？
-
-参数: result
-
-说明: 设置 Result 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的skeleton属性如何使用？
+### ant-design 中 Config-provider - 组件配置的radio属性如何使用？ 
 
-参数: skeleton
+参数: radio 
 
-说明: 设置 Skeleton 组件的通用属性
+说明: 设置 Radio 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的segmented属性如何使用？
-
-参数: segmented
-
-说明: 设置 Segmented 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的select属性如何使用？
+### ant-design 中 Config-provider - 组件配置的rate属性如何使用？ 
 
-参数: select
+参数: rate 
 
-说明: 设置 Select 组件的通用属性
+说明: 设置 Rate 组件的通用属性 
 
-类型: { className?: string, showSearch?: boolean, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的slider属性如何使用？
-
-参数: slider
-
-说明: 设置 Slider 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的switch属性如何使用？
+### ant-design 中 Config-provider - 组件配置的result属性如何使用？ 
 
-参数: switch
+参数: result 
 
-说明: 设置 Switch 组件的通用属性
+说明: 设置 Result 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的space属性如何使用？
+### ant-design 中 Config-provider - 组件配置的skeleton属性如何使用？ 
 
-参数: space
+参数: skeleton 
 
-说明: 设置 Space 的通用属性，参考 [Space](/components/space-cn)
+说明: 设置 Skeleton 组件的通用属性 
 
-类型: { size: `small` | `middle` | `large` | `number`, className?: string, style?: React.CSSProperties, classNames?: { item: string }, styles?: { item: React.CSSProperties } }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的segmented属性如何使用？ 
+
+参数: segmented 
+
+说明: 设置 Segmented 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的select属性如何使用？ 
+
+参数: select 
+
+说明: 设置 Select 组件的通用属性 
+
+类型: { className?: string, showSearch?: boolean, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的slider属性如何使用？ 
+
+参数: slider 
+
+说明: 设置 Slider 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的switch属性如何使用？ 
+
+参数: switch 
+
+说明: 设置 Switch 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的space属性如何使用？ 
+
+参数: space 
+
+说明: 设置 Space 的通用属性，参考 [Space](/components/space-cn) 
+
+类型: { size: `small` | `middle` | `large` | `number`, className?: string, style?: React.CSSProperties, classNames?: { item: string }, styles?: { item: React.CSSProperties } } 
+
+默认值: - 
 
 版本: 5.6.0
 
-### ant-design 中 Config-provider - 组件配置的spin属性如何使用？
+### ant-design 中 Config-provider - 组件配置的spin属性如何使用？ 
 
-参数: spin
+参数: spin 
 
-说明: 设置 Spin 组件的通用属性
+说明: 设置 Spin 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的statistic属性如何使用？
-
-参数: statistic
-
-说明: 设置 Statistic 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的steps属性如何使用？
+### ant-design 中 Config-provider - 组件配置的statistic属性如何使用？ 
 
-参数: steps
+参数: statistic 
 
-说明: 设置 Steps 组件的通用属性
+说明: 设置 Statistic 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的table属性如何使用？
-
-参数: table
-
-说明: 设置 Table 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的tabs属性如何使用？
+### ant-design 中 Config-provider - 组件配置的steps属性如何使用？ 
 
-参数: tabs
+参数: steps 
 
-说明: 设置 Tabs 组件的通用属性
+说明: 设置 Steps 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties, indicator?: { size?: GetIndicatorSize, align?: `start` | `center` | `end` }}
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的tag属性如何使用？
-
-参数: tag
-
-说明: 设置 Tag 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的timeline属性如何使用？
+### ant-design 中 Config-provider - 组件配置的table属性如何使用？ 
 
-参数: timeline
+参数: table 
 
-说明: 设置 Timeline 组件的通用属性
+说明: 设置 Table 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的timePicker属性如何使用？
-
-参数: timePicker
-
-说明: 设置 TimePicker 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的transfer属性如何使用？
+### ant-design 中 Config-provider - 组件配置的tabs属性如何使用？ 
 
-参数: transfer
+参数: tabs 
 
-说明: 设置 Transfer 组件的通用属性
+说明: 设置 Tabs 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties, indicator?: { size?: GetIndicatorSize, align?: `start` | `center` | `end` }} 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的tree属性如何使用？
-
-参数: tree
-
-说明: 设置 Tree 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的typography属性如何使用？
+### ant-design 中 Config-provider - 组件配置的tag属性如何使用？ 
 
-参数: typography
+参数: tag 
 
-说明: 设置 Typography 组件的通用属性
+说明: 设置 Tag 组件的通用属性 
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Config-provider - 组件配置的upload属性如何使用？
-
-参数: upload
-
-说明: 设置 Upload 组件的通用属性
-
-类型: { className?: string, style?: React.CSSProperties }
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的wave属性如何使用？
+### ant-design 中 Config-provider - 组件配置的timeline属性如何使用？ 
 
-参数: wave
+参数: timeline 
 
-说明: 设置水波纹特效
+说明: 设置 Timeline 组件的通用属性 
 
-类型: { disabled?: boolean, showEffect?: (node: HTMLElement, info: { className, token, component }) => void }
+类型: { className?: string, style?: React.CSSProperties } 
 
-默认值: -
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的timePicker属性如何使用？ 
+
+参数: timePicker 
+
+说明: 设置 TimePicker 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的transfer属性如何使用？ 
+
+参数: transfer 
+
+说明: 设置 Transfer 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的tree属性如何使用？ 
+
+参数: tree 
+
+说明: 设置 Tree 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的typography属性如何使用？ 
+
+参数: typography 
+
+说明: 设置 Typography 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的upload属性如何使用？ 
+
+参数: upload 
+
+说明: 设置 Upload 组件的通用属性 
+
+类型: { className?: string, style?: React.CSSProperties } 
+
+默认值: - 
+
+版本: 5.7.0
+
+### ant-design 中 Config-provider - 组件配置的wave属性如何使用？ 
+
+参数: wave 
+
+说明: 设置水波纹特效 
+
+类型: { disabled?: boolean, showEffect?: (node: HTMLElement, info: { className, token, component }) => void } 
+
+默认值: - 
 
 版本: 5.8.0
 
 ### ant-design 的 Color-picker 有哪些配置？
 
-#### Color-picker - API
+#### Color-picker - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | allowClear | 允许清除选择的颜色 | boolean | false |
 | arrow | 配置弹出的箭头 | `boolean \| { pointAtCenter: boolean }` | true |
 | children | 颜色选择器的触发器 | React.ReactNode | - |
@@ -20091,7 +20407,8 @@ Version: 4.24
 | onOpenChange | 当 `open` 被改变时的回调 | `(open: boolean) => void` | - |
 | onClear | 清除的回调 | `() => void` | - | 5.6.0 |
 
-#### Color-picker - Color
+
+#### Color-picker - Color 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -20102,10 +20419,11 @@ Version: 4.24
 | toRgb | 转换成 `rgb` 对象 | `() => ({ r: number, g: number, b: number, a number })` | - |
 | toRgbString | 转换成 `rgb` 格式颜色字符串，返回格式如：`rgb(22, 119, 255)` | `() => string` | - |
 
+
 ### ant-design 的 Color-picker - API 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | allowClear | 允许清除选择的颜色 | boolean | false |
 | arrow | 配置弹出的箭头 | `boolean \| { pointAtCenter: boolean }` | true |
 | children | 颜色选择器的触发器 | React.ReactNode | - |
@@ -20129,241 +20447,242 @@ Version: 4.24
 | onOpenChange | 当 `open` 被改变时的回调 | `(open: boolean) => void` | - |
 | onClear | 清除的回调 | `() => void` | - | 5.6.0 |
 
-### ant-design 中 Color-picker - API的allowClear属性如何使用？
 
-参数: allowClear
+### ant-design 中 Color-picker - API的allowClear属性如何使用？ 
 
-说明: 允许清除选择的颜色
+参数: allowClear 
 
-类型: boolean
+说明: 允许清除选择的颜色 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Color-picker - API的arrow属性如何使用？
+### ant-design 中 Color-picker - API的arrow属性如何使用？ 
 
-参数: arrow
+参数: arrow 
 
-说明: 配置弹出的箭头
+说明: 配置弹出的箭头 
 
-类型: `boolean | { pointAtCenter: boolean }`
+类型: `boolean | { pointAtCenter: boolean }` 
 
 默认值: true
 
-### ant-design 中 Color-picker - API的children属性如何使用？
+### ant-design 中 Color-picker - API的children属性如何使用？ 
 
-参数: children
+参数: children 
 
-说明: 颜色选择器的触发器
+说明: 颜色选择器的触发器 
 
-类型: React.ReactNode
-
-默认值: -
-
-### ant-design 中 Color-picker - API的defaultValue属性如何使用？
-
-参数: defaultValue
-
-说明: 颜色默认的值
-
-类型: string | `Color`
+类型: React.ReactNode 
 
 默认值: -
 
-### ant-design 中 Color-picker - API的defaultFormat属性如何使用？
+### ant-design 中 Color-picker - API的defaultValue属性如何使用？ 
 
-参数: defaultFormat
+参数: defaultValue 
 
-说明: 颜色格式默认的值
+说明: 颜色默认的值 
 
-类型: `rgb` | `hex` | `hsb`
+类型: string | `Color` 
 
 默认值: -
+
+### ant-design 中 Color-picker - API的defaultFormat属性如何使用？ 
+
+参数: defaultFormat 
+
+说明: 颜色格式默认的值 
+
+类型: `rgb` | `hex` | `hsb` 
+
+默认值: - 
 
 版本: 5.9.0
 
-### ant-design 中 Color-picker - API的disabled属性如何使用？
+### ant-design 中 Color-picker - API的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 禁用颜色选择器
+说明: 禁用颜色选择器 
 
-类型: boolean
-
-默认值: -
-
-### ant-design 中 Color-picker - API的disabledAlpha属性如何使用？
-
-参数: disabledAlpha
-
-说明: 禁用透明度
-
-类型: boolean
+类型: boolean 
 
 默认值: -
+
+### ant-design 中 Color-picker - API的disabledAlpha属性如何使用？ 
+
+参数: disabledAlpha 
+
+说明: 禁用透明度 
+
+类型: boolean 
+
+默认值: - 
 
 版本: 5.8.0
 
-### ant-design 中 Color-picker - API的destroyTooltipOnHide属性如何使用？
+### ant-design 中 Color-picker - API的destroyTooltipOnHide属性如何使用？ 
 
-参数: destroyTooltipOnHide
+参数: destroyTooltipOnHide 
 
-说明: 关闭后是否销毁弹窗
+说明: 关闭后是否销毁弹窗 
 
-类型: `boolean`
+类型: `boolean` 
 
-默认值: false
+默认值: false 
 
 版本: 5.7.0
 
-### ant-design 中 Color-picker - API的format属性如何使用？
+### ant-design 中 Color-picker - API的format属性如何使用？ 
 
-参数: format
+参数: format 
 
-说明: 颜色格式
+说明: 颜色格式 
 
-类型: `rgb` | `hex` | `hsb`
+类型: `rgb` | `hex` | `hsb` 
 
 默认值: `hex`
 
-### ant-design 中 Color-picker - API的open属性如何使用？
+### ant-design 中 Color-picker - API的open属性如何使用？ 
 
-参数: open
+参数: open 
 
-说明: 是否显示弹出窗口
+说明: 是否显示弹出窗口 
 
-类型: boolean
-
-默认值: -
-
-### ant-design 中 Color-picker - API的presets属性如何使用？
-
-参数: presets
-
-说明: 预设的颜色
-
-类型: `{ label: ReactNode, colors: Array<string | Color>, defaultOpen?: boolean }[]`
+类型: boolean 
 
 默认值: -
+
+### ant-design 中 Color-picker - API的presets属性如何使用？ 
+
+参数: presets 
+
+说明: 预设的颜色 
+
+类型: `{ label: ReactNode, colors: Array<string | Color>, defaultOpen?: boolean }[]` 
+
+默认值: - 
 
 版本: `defaultOpen: 5.11.0`
 
-### ant-design 中 Color-picker - API的placement属性如何使用？
+### ant-design 中 Color-picker - API的placement属性如何使用？ 
 
-参数: placement
+参数: placement 
 
-说明: 弹出窗口的位置
+说明: 弹出窗口的位置 
 
-类型: `top` | `topLeft` | `topRight` | `bottom` | `bottomLeft` | `bottomRight`
+类型: `top` | `topLeft` | `topRight` | `bottom` | `bottomLeft` | `bottomRight` 
 
 默认值: `bottomLeft`
 
-### ant-design 中 Color-picker - API的panelRender属性如何使用？
+### ant-design 中 Color-picker - API的panelRender属性如何使用？ 
 
-参数: panelRender
+参数: panelRender 
 
-说明: 自定义渲染面板
+说明: 自定义渲染面板 
 
-类型: `(panel: React.ReactNode, extra: { components: { Picker: FC; Presets: FC } }) => React.ReactNode`
+类型: `(panel: React.ReactNode, extra: { components: { Picker: FC; Presets: FC } }) => React.ReactNode` 
 
-默认值: -
-
-版本: 5.7.0
-
-### ant-design 中 Color-picker - API的showText属性如何使用？
-
-参数: showText
-
-说明: 显示颜色文本
-
-类型: boolean | `(color: Color) => React.ReactNode`
-
-默认值: -
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Color-picker - API的size属性如何使用？
+### ant-design 中 Color-picker - API的showText属性如何使用？ 
 
-参数: size
+参数: showText 
 
-说明: 设置触发器大小
+说明: 显示颜色文本 
 
-类型: `large` | `middle` | `small`
+类型: boolean | `(color: Color) => React.ReactNode` 
 
-默认值: `middle`
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Color-picker - API的trigger属性如何使用？
+### ant-design 中 Color-picker - API的size属性如何使用？ 
 
-参数: trigger
+参数: size 
 
-说明: 颜色选择器的触发模式
+说明: 设置触发器大小 
 
-类型: `hover` | `click`
+类型: `large` | `middle` | `small` 
+
+默认值: `middle` 
+
+版本: 5.7.0
+
+### ant-design 中 Color-picker - API的trigger属性如何使用？ 
+
+参数: trigger 
+
+说明: 颜色选择器的触发模式 
+
+类型: `hover` | `click` 
 
 默认值: `click`
 
-### ant-design 中 Color-picker - API的value属性如何使用？
+### ant-design 中 Color-picker - API的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 颜色的值
+说明: 颜色的值 
 
-类型: string | `Color`
-
-默认值: -
-
-### ant-design 中 Color-picker - API的onChange属性如何使用？
-
-参数: onChange
-
-说明: 颜色变化的回调
-
-类型: `(value: Color, hex: string) => void`
+类型: string | `Color` 
 
 默认值: -
 
-### ant-design 中 Color-picker - API的onChangeComplete属性如何使用？
+### ant-design 中 Color-picker - API的onChange属性如何使用？ 
 
-参数: onChangeComplete
+参数: onChange 
 
-说明: 颜色选择完成的回调
+说明: 颜色变化的回调 
 
-类型: `(value: Color) => void`
+类型: `(value: Color, hex: string) => void` 
 
 默认值: -
+
+### ant-design 中 Color-picker - API的onChangeComplete属性如何使用？ 
+
+参数: onChangeComplete 
+
+说明: 颜色选择完成的回调 
+
+类型: `(value: Color) => void` 
+
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Color-picker - API的onFormatChange属性如何使用？
+### ant-design 中 Color-picker - API的onFormatChange属性如何使用？ 
 
-参数: onFormatChange
+参数: onFormatChange 
 
-说明: 颜色格式变化的回调
+说明: 颜色格式变化的回调 
 
-类型: `(format: 'hex' | 'rgb' | 'hsb') => void`
-
-默认值: -
-
-### ant-design 中 Color-picker - API的onOpenChange属性如何使用？
-
-参数: onOpenChange
-
-说明: 当 `open` 被改变时的回调
-
-类型: `(open: boolean) => void`
+类型: `(format: 'hex' | 'rgb' | 'hsb') => void` 
 
 默认值: -
 
-### ant-design 中 Color-picker - API的onClear属性如何使用？
+### ant-design 中 Color-picker - API的onOpenChange属性如何使用？ 
 
-参数: onClear
+参数: onOpenChange 
 
-说明: 清除的回调
+说明: 当 `open` 被改变时的回调 
 
-类型: `() => void`
+类型: `(open: boolean) => void` 
 
 默认值: -
+
+### ant-design 中 Color-picker - API的onClear属性如何使用？ 
+
+参数: onClear 
+
+说明: 清除的回调 
+
+类型: `() => void` 
+
+默认值: - 
 
 版本: 5.6.0
 
@@ -20378,72 +20697,73 @@ Version: 4.24
 | toRgb | 转换成 `rgb` 对象 | `() => ({ r: number, g: number, b: number, a number })` | - |
 | toRgbString | 转换成 `rgb` 格式颜色字符串，返回格式如：`rgb(22, 119, 255)` | `() => string` | - |
 
-### ant-design 中 Color-picker - Color的toHex属性如何使用？
 
-参数: toHex
+### ant-design 中 Color-picker - Color的toHex属性如何使用？ 
 
-说明: 转换成 `hex` 格式字符，返回格式如：`1677ff`
+参数: toHex 
 
-类型: `() => string`
+说明: 转换成 `hex` 格式字符，返回格式如：`1677ff` 
 
-默认值: -
-
-### ant-design 中 Color-picker - Color的toHexString属性如何使用？
-
-参数: toHexString
-
-说明: 转换成 `hex` 格式颜色字符串，返回格式如：`#1677ff`
-
-类型: `() => string`
+类型: `() => string` 
 
 默认值: -
 
-### ant-design 中 Color-picker - Color的toHsb属性如何使用？
+### ant-design 中 Color-picker - Color的toHexString属性如何使用？ 
 
-参数: toHsb
+参数: toHexString 
 
-说明: 转换成 `hsb` 对象
+说明: 转换成 `hex` 格式颜色字符串，返回格式如：`#1677ff` 
 
-类型: `() => ({ h: number, s: number, b: number, a number })`
-
-默认值: -
-
-### ant-design 中 Color-picker - Color的toHsbString属性如何使用？
-
-参数: toHsbString
-
-说明: 转换成 `hsb` 格式颜色字符串，返回格式如：`hsb(215, 91%, 100%)`
-
-类型: `() => string`
+类型: `() => string` 
 
 默认值: -
 
-### ant-design 中 Color-picker - Color的toRgb属性如何使用？
+### ant-design 中 Color-picker - Color的toHsb属性如何使用？ 
 
-参数: toRgb
+参数: toHsb 
 
-说明: 转换成 `rgb` 对象
+说明: 转换成 `hsb` 对象 
 
-类型: `() => ({ r: number, g: number, b: number, a number })`
+类型: `() => ({ h: number, s: number, b: number, a number })` 
 
 默认值: -
 
-### ant-design 中 Color-picker - Color的toRgbString属性如何使用？
+### ant-design 中 Color-picker - Color的toHsbString属性如何使用？ 
 
-参数: toRgbString
+参数: toHsbString 
 
-说明: 转换成 `rgb` 格式颜色字符串，返回格式如：`rgb(22, 119, 255)`
+说明: 转换成 `hsb` 格式颜色字符串，返回格式如：`hsb(215, 91%, 100%)` 
 
-类型: `() => string`
+类型: `() => string` 
+
+默认值: -
+
+### ant-design 中 Color-picker - Color的toRgb属性如何使用？ 
+
+参数: toRgb 
+
+说明: 转换成 `rgb` 对象 
+
+类型: `() => ({ r: number, g: number, b: number, a number })` 
+
+默认值: -
+
+### ant-design 中 Color-picker - Color的toRgbString属性如何使用？ 
+
+参数: toRgbString 
+
+说明: 转换成 `rgb` 格式颜色字符串，返回格式如：`rgb(22, 119, 255)` 
+
+类型: `() => string` 
 
 默认值: -
 
 ### ant-design 的 Collapse 有哪些配置？
 
-#### Collapse - Collapse
+#### Collapse - Collapse 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | accordion | 手风琴模式 | boolean | false |
 | activeKey | 当前激活 tab 面板的 key | string[] \| string <br/> number[] \| number | 默认无，accordion 模式下默认第一个元素 |
 | bordered | 带边框风格的折叠面板 | boolean | true |
@@ -20457,7 +20777,8 @@ Version: 4.24
 | onChange | 切换面板的回调 | function | - |
 | items | 折叠项目内容 | - | 5.6.0 |
 
-#### Collapse - Collapse.Panel
+
+#### Collapse - Collapse.Panel 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -20468,10 +20789,11 @@ Version: 4.24
 | key | 对应 activeKey | string \| number | - |
 | showArrow | 是否展示当前面板上的箭头（为 false 时，collapsible 不能置为 icon） | boolean | true |
 
+
 ### ant-design 的 Collapse - Collapse 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | accordion | 手风琴模式 | boolean | false |
 | activeKey | 当前激活 tab 面板的 key | string[] \| string <br/> number[] \| number | 默认无，accordion 模式下默认第一个元素 |
 | bordered | 带边框风格的折叠面板 | boolean | true |
@@ -20485,131 +20807,132 @@ Version: 4.24
 | onChange | 切换面板的回调 | function | - |
 | items | 折叠项目内容 | - | 5.6.0 |
 
-### ant-design 中 Collapse - Collapse的accordion属性如何使用？
 
-参数: accordion
+### ant-design 中 Collapse - Collapse的accordion属性如何使用？ 
 
-说明: 手风琴模式
+参数: accordion 
 
-类型: boolean
+说明: 手风琴模式 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Collapse - Collapse的activeKey属性如何使用？
+### ant-design 中 Collapse - Collapse的activeKey属性如何使用？ 
 
-参数: activeKey
+参数: activeKey 
 
-说明: 当前激活 tab 面板的 key
+说明: 当前激活 tab 面板的 key 
 
-类型: string[] | string <br/> number[] | number
+类型: string[] | string <br/> number[] | number 
 
 默认值: 默认无，accordion 模式下默认第一个元素
 
-### ant-design 中 Collapse - Collapse的bordered属性如何使用？
+### ant-design 中 Collapse - Collapse的bordered属性如何使用？ 
 
-参数: bordered
+参数: bordered 
 
-说明: 带边框风格的折叠面板
+说明: 带边框风格的折叠面板 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Collapse - Collapse的collapsible属性如何使用？
+### ant-design 中 Collapse - Collapse的collapsible属性如何使用？ 
 
-参数: collapsible
+参数: collapsible 
 
-说明: 所有子面板是否可折叠或指定可折叠触发区域
+说明: 所有子面板是否可折叠或指定可折叠触发区域 
 
-类型: `header` | `icon` | `disabled`
+类型: `header` | `icon` | `disabled` 
 
-默认值: -
+默认值: - 
 
 版本: 4.9.0
 
-### ant-design 中 Collapse - Collapse的defaultActiveKey属性如何使用？
+### ant-design 中 Collapse - Collapse的defaultActiveKey属性如何使用？ 
 
-参数: defaultActiveKey
+参数: defaultActiveKey 
 
-说明: 初始化选中面板的 key
+说明: 初始化选中面板的 key 
 
-类型: string[] | string<br/> number[] | number
+类型: string[] | string<br/> number[] | number 
 
 默认值: -
 
-### ant-design 中 Collapse - Collapse的destroyInactivePanel属性如何使用？
+### ant-design 中 Collapse - Collapse的destroyInactivePanel属性如何使用？ 
 
-参数: destroyInactivePanel
+参数: destroyInactivePanel 
 
-说明: 销毁折叠隐藏的面板
+说明: 销毁折叠隐藏的面板 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Collapse - Collapse的expandIcon属性如何使用？
+### ant-design 中 Collapse - Collapse的expandIcon属性如何使用？ 
 
-参数: expandIcon
+参数: expandIcon 
 
-说明: 自定义切换图标
+说明: 自定义切换图标 
 
-类型: (panelProps) => ReactNode
-
-默认值: -
-
-### ant-design 中 Collapse - Collapse的expandIconPosition属性如何使用？
-
-参数: expandIconPosition
-
-说明: 设置图标位置
-
-类型: `start` | `end`
+类型: (panelProps) => ReactNode 
 
 默认值: -
+
+### ant-design 中 Collapse - Collapse的expandIconPosition属性如何使用？ 
+
+参数: expandIconPosition 
+
+说明: 设置图标位置 
+
+类型: `start` | `end` 
+
+默认值: - 
 
 版本: 4.21.0
 
-### ant-design 中 Collapse - Collapse的ghost属性如何使用？
+### ant-design 中 Collapse - Collapse的ghost属性如何使用？ 
 
-参数: ghost
+参数: ghost 
 
-说明: 使折叠面板透明且无边框
+说明: 使折叠面板透明且无边框 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 4.4.0
 
-### ant-design 中 Collapse - Collapse的size属性如何使用？
+### ant-design 中 Collapse - Collapse的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 设置折叠面板大小
+说明: 设置折叠面板大小 
 
-类型: `large` | `middle` | `small`
+类型: `large` | `middle` | `small` 
 
-默认值: `middle`
+默认值: `middle` 
 
 版本: 5.2.0
 
-### ant-design 中 Collapse - Collapse的onChange属性如何使用？
+### ant-design 中 Collapse - Collapse的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 切换面板的回调
+说明: 切换面板的回调 
 
-类型: function
+类型: function 
 
 默认值: -
 
-### ant-design 中 Collapse - Collapse的items属性如何使用？
+### ant-design 中 Collapse - Collapse的items属性如何使用？ 
 
-参数: items
+参数: items 
 
-说明: 折叠项目内容
+说明: 折叠项目内容 
 
-类型: -
+类型: - 
 
 默认值: 5.6.0
 
@@ -20624,71 +20947,72 @@ Version: 4.24
 | key | 对应 activeKey | string \| number | - |
 | showArrow | 是否展示当前面板上的箭头（为 false 时，collapsible 不能置为 icon） | boolean | true |
 
-### ant-design 中 Collapse - Collapse.Panel的collapsible属性如何使用？
 
-参数: collapsible
+### ant-design 中 Collapse - Collapse.Panel的collapsible属性如何使用？ 
 
-说明: 是否可折叠或指定可折叠触发区域
+参数: collapsible 
 
-类型: `header` | `icon` | `disabled`
+说明: 是否可折叠或指定可折叠触发区域 
 
-默认值: -
+类型: `header` | `icon` | `disabled` 
+
+默认值: - 
 
 版本: 4.9.0 (icon: 4.24.0)
 
-### ant-design 中 Collapse - Collapse.Panel的extra属性如何使用？
+### ant-design 中 Collapse - Collapse.Panel的extra属性如何使用？ 
 
-参数: extra
+参数: extra 
 
-说明: 自定义渲染每个面板右上角的内容
+说明: 自定义渲染每个面板右上角的内容 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Collapse - Collapse.Panel的forceRender属性如何使用？
+### ant-design 中 Collapse - Collapse.Panel的forceRender属性如何使用？ 
 
-参数: forceRender
+参数: forceRender 
 
-说明: 被隐藏时是否渲染 DOM 结构
+说明: 被隐藏时是否渲染 DOM 结构 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Collapse - Collapse.Panel的header属性如何使用？
+### ant-design 中 Collapse - Collapse.Panel的header属性如何使用？ 
 
-参数: header
+参数: header 
 
-说明: 面板头内容
+说明: 面板头内容 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Collapse - Collapse.Panel的key属性如何使用？
-
-参数: key
-
-说明: 对应 activeKey
-
-类型: string | number
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Collapse - Collapse.Panel的showArrow属性如何使用？
+### ant-design 中 Collapse - Collapse.Panel的key属性如何使用？ 
 
-参数: showArrow
+参数: key 
 
-说明: 是否展示当前面板上的箭头（为 false 时，collapsible 不能置为 icon）
+说明: 对应 activeKey 
 
-类型: boolean
+类型: string | number 
+
+默认值: -
+
+### ant-design 中 Collapse - Collapse.Panel的showArrow属性如何使用？ 
+
+参数: showArrow 
+
+说明: 是否展示当前面板上的箭头（为 false 时，collapsible 不能置为 icon） 
+
+类型: boolean 
 
 默认值: true
 
 ### ant-design 的 Checkbox 有哪些配置？
 
-#### Checkbox - Checkbox
+#### Checkbox - Checkbox 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -20699,7 +21023,8 @@ Version: 4.24
 | indeterminate | 设置 indeterminate 状态，只负责样式控制 | boolean | false |
 | onChange | 变化时的回调函数 | (e: CheckboxChangeEvent) => void | - |
 
-#### Checkbox - Checkbox Group
+
+#### Checkbox - Checkbox Group 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -20710,12 +21035,14 @@ Version: 4.24
 | value | 指定选中的选项 | (string \| number \| boolean)[] | \[] |
 | onChange | 变化时的回调函数 | (checkedValue: CheckboxValueType[]) => void | - |
 
-#### Checkbox - Checkbox
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Checkbox - Checkbox 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
+
 
 ### ant-design 的 Checkbox - Checkbox 有哪些配置？
 
@@ -20728,63 +21055,64 @@ Version: 4.24
 | indeterminate | 设置 indeterminate 状态，只负责样式控制 | boolean | false |
 | onChange | 变化时的回调函数 | (e: CheckboxChangeEvent) => void | - |
 
-### ant-design 中 Checkbox - Checkbox的autoFocus属性如何使用？
 
-参数: autoFocus
+### ant-design 中 Checkbox - Checkbox的autoFocus属性如何使用？ 
 
-说明: 自动获取焦点
+参数: autoFocus 
 
-类型: boolean
+说明: 自动获取焦点 
 
-默认值: false
-
-### ant-design 中 Checkbox - Checkbox的checked属性如何使用？
-
-参数: checked
-
-说明: 指定当前是否选中
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Checkbox - Checkbox的defaultChecked属性如何使用？
+### ant-design 中 Checkbox - Checkbox的checked属性如何使用？ 
 
-参数: defaultChecked
+参数: checked 
 
-说明: 初始是否选中
+说明: 指定当前是否选中 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Checkbox - Checkbox的disabled属性如何使用？
-
-参数: disabled
-
-说明: 失效状态
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Checkbox - Checkbox的indeterminate属性如何使用？
+### ant-design 中 Checkbox - Checkbox的defaultChecked属性如何使用？ 
 
-参数: indeterminate
+参数: defaultChecked 
 
-说明: 设置 indeterminate 状态，只负责样式控制
+说明: 初始是否选中 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Checkbox - Checkbox的onChange属性如何使用？
+### ant-design 中 Checkbox - Checkbox的disabled属性如何使用？ 
 
-参数: onChange
+参数: disabled 
 
-说明: 变化时的回调函数
+说明: 失效状态 
 
-类型: (e: CheckboxChangeEvent) => void
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Checkbox - Checkbox的indeterminate属性如何使用？ 
+
+参数: indeterminate 
+
+说明: 设置 indeterminate 状态，只负责样式控制 
+
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Checkbox - Checkbox的onChange属性如何使用？ 
+
+参数: onChange 
+
+说明: 变化时的回调函数 
+
+类型: (e: CheckboxChangeEvent) => void 
 
 默认值: -
 
@@ -20799,88 +21127,90 @@ Version: 4.24
 | value | 指定选中的选项 | (string \| number \| boolean)[] | \[] |
 | onChange | 变化时的回调函数 | (checkedValue: CheckboxValueType[]) => void | - |
 
-### ant-design 中 Checkbox - Checkbox Group的defaultValue属性如何使用？
 
-参数: defaultValue
+### ant-design 中 Checkbox - Checkbox Group的defaultValue属性如何使用？ 
 
-说明: 默认选中的选项
+参数: defaultValue 
 
-类型: (string | number)[]
+说明: 默认选中的选项 
+
+类型: (string | number)[] 
 
 默认值: \[]
 
-### ant-design 中 Checkbox - Checkbox Group的disabled属性如何使用？
+### ant-design 中 Checkbox - Checkbox Group的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 整组失效
+说明: 整组失效 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Checkbox - Checkbox Group的name属性如何使用？
+### ant-design 中 Checkbox - Checkbox Group的name属性如何使用？ 
 
-参数: name
+参数: name 
 
-说明: CheckboxGroup 下所有 `input[type="checkbox"]` 的 `name` 属性
+说明: CheckboxGroup 下所有 `input[type="checkbox"]` 的 `name` 属性 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Checkbox - Checkbox Group的options属性如何使用？
+### ant-design 中 Checkbox - Checkbox Group的options属性如何使用？ 
 
-参数: options
+参数: options 
 
-说明: 指定可选项
+说明: 指定可选项 
 
-类型: string[] | number[] | Option[]
-
-默认值: \[]
-
-### ant-design 中 Checkbox - Checkbox Group的value属性如何使用？
-
-参数: value
-
-说明: 指定选中的选项
-
-类型: (string | number | boolean)[]
+类型: string[] | number[] | Option[] 
 
 默认值: \[]
 
-### ant-design 中 Checkbox - Checkbox Group的onChange属性如何使用？
+### ant-design 中 Checkbox - Checkbox Group的value属性如何使用？ 
 
-参数: onChange
+参数: value 
 
-说明: 变化时的回调函数
+说明: 指定选中的选项 
 
-类型: (checkedValue: CheckboxValueType[]) => void
+类型: (string | number | boolean)[] 
+
+默认值: \[]
+
+### ant-design 中 Checkbox - Checkbox Group的onChange属性如何使用？ 
+
+参数: onChange 
+
+说明: 变化时的回调函数 
+
+类型: (checkedValue: CheckboxValueType[]) => void 
 
 默认值: -
 
 ### ant-design 的 Checkbox - Checkbox 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Checkbox - Checkbox的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Checkbox - Checkbox的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Checkbox - Checkbox的focus()属性如何使用？
+### ant-design 中 Checkbox - Checkbox的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 Cascader 有哪些配置？
 
-#### Cascader - API
+#### Cascader - API 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -20924,7 +21254,8 @@ Version: 4.24
 | onSearch | 监听搜索，返回输入的值 | (search: string) => void | - | 4.17.0 |
 | dropdownMenuColumnStyle | 下拉菜单列的样式 | CSSProperties | - |
 
-#### Cascader - showSearch
+
+#### Cascader - showSearch 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -20934,12 +21265,14 @@ Version: 4.24
 | render | 用于渲染 filter 后的选项 | function(inputValue, path): ReactNode | - |
 | sort | 用于排序 filter 后的选项 | function(a, b, inputValue) | - |
 
-#### Cascader - 方法
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Cascader - 方法 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
+
 
 ### ant-design 的 Cascader - API 有哪些配置？
 
@@ -20985,427 +21318,428 @@ Version: 4.24
 | onSearch | 监听搜索，返回输入的值 | (search: string) => void | - | 4.17.0 |
 | dropdownMenuColumnStyle | 下拉菜单列的样式 | CSSProperties | - |
 
-### ant-design 中 Cascader - API的allowClear属性如何使用？
 
-参数: allowClear
+### ant-design 中 Cascader - API的allowClear属性如何使用？ 
 
-说明: 支持清除
+参数: allowClear 
 
-类型: boolean | { clearIcon?: ReactNode }
+说明: 支持清除 
 
-默认值: true
+类型: boolean | { clearIcon?: ReactNode } 
+
+默认值: true 
 
 版本: 5.8.0: 支持对象形式
 
-### ant-design 中 Cascader - API的autoClearSearchValue属性如何使用？
+### ant-design 中 Cascader - API的autoClearSearchValue属性如何使用？ 
 
-参数: autoClearSearchValue
+参数: autoClearSearchValue 
 
-说明: 是否在选中项后清空搜索框，只在 `multiple` 为 `true` 时有效
+说明: 是否在选中项后清空搜索框，只在 `multiple` 为 `true` 时有效 
 
-类型: boolean
+类型: boolean 
 
-默认值: true
+默认值: true 
 
 版本: 5.9.0
 
-### ant-design 中 Cascader - API的autoFocus属性如何使用？
+### ant-design 中 Cascader - API的autoFocus属性如何使用？ 
 
-参数: autoFocus
+参数: autoFocus 
 
-说明: 自动获取焦点
+说明: 自动获取焦点 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Cascader - API的changeOnSelect属性如何使用？
-
-参数: changeOnSelect
-
-说明: （单选时生效）当此项为 true 时，点选每级菜单选项值都会发生变化，具体见上面的演示
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Cascader - API的className属性如何使用？
+### ant-design 中 Cascader - API的changeOnSelect属性如何使用？ 
 
-参数: className
+参数: changeOnSelect 
 
-说明: 自定义类名
+说明: （单选时生效）当此项为 true 时，点选每级菜单选项值都会发生变化，具体见上面的演示 
 
-类型: string
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Cascader - API的className属性如何使用？ 
+
+参数: className 
+
+说明: 自定义类名 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Cascader - API的defaultValue属性如何使用？
+### ant-design 中 Cascader - API的defaultValue属性如何使用？ 
 
-参数: defaultValue
+参数: defaultValue 
 
-说明: 默认的选中项
+说明: 默认的选中项 
 
-类型: string[] | number[]
+类型: string[] | number[] 
 
 默认值: \[]
 
-### ant-design 中 Cascader - API的disabled属性如何使用？
+### ant-design 中 Cascader - API的disabled属性如何使用？ 
 
-参数: disabled
+参数: disabled 
 
-说明: 禁用
+说明: 禁用 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Cascader - API的displayRender属性如何使用？
+### ant-design 中 Cascader - API的displayRender属性如何使用？ 
 
-参数: displayRender
+参数: displayRender 
 
-说明: 选择后展示的渲染函数
+说明: 选择后展示的渲染函数 
 
-类型: (label, selectedOptions) => ReactNode
+类型: (label, selectedOptions) => ReactNode 
 
-默认值: label => label.join(`/`)
+默认值: label => label.join(`/`) 
 
 版本: `multiple`: 4.18.0
 
-### ant-design 中 Cascader - API的tagRender属性如何使用？
+### ant-design 中 Cascader - API的tagRender属性如何使用？ 
 
-参数: tagRender
+参数: tagRender 
 
-说明: 自定义 tag 内容 render，仅在多选时生效
+说明: 自定义 tag 内容 render，仅在多选时生效 
 
-类型: ({ label: string, onClose: function, value: string }) => ReactNode
-
-默认值: -
-
-### ant-design 中 Cascader - API的popupClassName属性如何使用？
-
-参数: popupClassName
-
-说明: 自定义浮层类名
-
-类型: string
+类型: ({ label: string, onClose: function, value: string }) => ReactNode 
 
 默认值: -
+
+### ant-design 中 Cascader - API的popupClassName属性如何使用？ 
+
+参数: popupClassName 
+
+说明: 自定义浮层类名 
+
+类型: string 
+
+默认值: - 
 
 版本: 4.23.0
 
-### ant-design 中 Cascader - API的dropdownRender属性如何使用？
+### ant-design 中 Cascader - API的dropdownRender属性如何使用？ 
 
-参数: dropdownRender
+参数: dropdownRender 
 
-说明: 自定义下拉框内容
+说明: 自定义下拉框内容 
 
-类型: (menus: ReactNode) => ReactNode
+类型: (menus: ReactNode) => ReactNode 
 
-默认值: -
-
-版本: 4.4.0
-
-### ant-design 中 Cascader - API的expandIcon属性如何使用？
-
-参数: expandIcon
-
-说明: 自定义次级菜单展开图标
-
-类型: ReactNode
-
-默认值: -
+默认值: - 
 
 版本: 4.4.0
 
-### ant-design 中 Cascader - API的expandTrigger属性如何使用？
+### ant-design 中 Cascader - API的expandIcon属性如何使用？ 
 
-参数: expandTrigger
+参数: expandIcon 
 
-说明: 次级菜单的展开方式，可选 'click' 和 'hover'
+说明: 自定义次级菜单展开图标 
 
-类型: string
+类型: ReactNode 
+
+默认值: - 
+
+版本: 4.4.0
+
+### ant-design 中 Cascader - API的expandTrigger属性如何使用？ 
+
+参数: expandTrigger 
+
+说明: 次级菜单的展开方式，可选 'click' 和 'hover' 
+
+类型: string 
 
 默认值: `click`
 
-### ant-design 中 Cascader - API的fieldNames属性如何使用？
+### ant-design 中 Cascader - API的fieldNames属性如何使用？ 
 
-参数: fieldNames
+参数: fieldNames 
 
-说明: 自定义 options 中 label value children 的字段
+说明: 自定义 options 中 label value children 的字段 
 
-类型: object
+类型: object 
 
 默认值: { label: `label`, value: `value`, children: `children` }
 
-### ant-design 中 Cascader - API的getPopupContainer属性如何使用？
+### ant-design 中 Cascader - API的getPopupContainer属性如何使用？ 
 
-参数: getPopupContainer
+参数: getPopupContainer 
 
-说明: 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codepen.io/afc163/pen/zEjNOy?editors=0010)
+说明: 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codepen.io/afc163/pen/zEjNOy?editors=0010) 
 
-类型: function(triggerNode)
+类型: function(triggerNode) 
 
 默认值: () => document.body
 
-### ant-design 中 Cascader - API的loadData属性如何使用？
+### ant-design 中 Cascader - API的loadData属性如何使用？ 
 
-参数: loadData
+参数: loadData 
 
-说明: 用于动态加载选项，无法与 `showSearch` 一起使用
+说明: 用于动态加载选项，无法与 `showSearch` 一起使用 
 
-类型: (selectedOptions) => void
-
-默认值: -
-
-### ant-design 中 Cascader - API的maxTagCount属性如何使用？
-
-参数: maxTagCount
-
-说明: 最多显示多少个 tag，响应式模式会对性能产生损耗
-
-类型: number | `responsive`
+类型: (selectedOptions) => void 
 
 默认值: -
+
+### ant-design 中 Cascader - API的maxTagCount属性如何使用？ 
+
+参数: maxTagCount 
+
+说明: 最多显示多少个 tag，响应式模式会对性能产生损耗 
+
+类型: number | `responsive` 
+
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的maxTagPlaceholder属性如何使用？
+### ant-design 中 Cascader - API的maxTagPlaceholder属性如何使用？ 
 
-参数: maxTagPlaceholder
+参数: maxTagPlaceholder 
 
-说明: 隐藏 tag 时显示的内容
+说明: 隐藏 tag 时显示的内容 
 
-类型: ReactNode | function(omittedValues)
+类型: ReactNode | function(omittedValues) 
 
-默认值: -
-
-版本: 4.17.0
-
-### ant-design 中 Cascader - API的maxTagTextLength属性如何使用？
-
-参数: maxTagTextLength
-
-说明: 最大显示的 tag 文本长度
-
-类型: number
-
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的notFoundContent属性如何使用？
+### ant-design 中 Cascader - API的maxTagTextLength属性如何使用？ 
 
-参数: notFoundContent
+参数: maxTagTextLength 
 
-说明: 当下拉列表为空时显示的内容
+说明: 最大显示的 tag 文本长度 
 
-类型: string
+类型: number 
+
+默认值: - 
+
+版本: 4.17.0
+
+### ant-design 中 Cascader - API的notFoundContent属性如何使用？ 
+
+参数: notFoundContent 
+
+说明: 当下拉列表为空时显示的内容 
+
+类型: string 
 
 默认值: `Not Found`
 
-### ant-design 中 Cascader - API的open属性如何使用？
+### ant-design 中 Cascader - API的open属性如何使用？ 
 
-参数: open
+参数: open 
 
-说明: 控制浮层显隐
+说明: 控制浮层显隐 
 
-类型: boolean
+类型: boolean 
 
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的options属性如何使用？
+### ant-design 中 Cascader - API的options属性如何使用？ 
 
-参数: options
+参数: options 
 
-说明: 可选项数据源
+说明: 可选项数据源 
 
 类型: -
 
-### ant-design 中 Cascader - API的placeholder属性如何使用？
+### ant-design 中 Cascader - API的placeholder属性如何使用？ 
 
-参数: placeholder
+参数: placeholder 
 
-说明: 输入框占位文本
+说明: 输入框占位文本 
 
-类型: string
+类型: string 
 
 默认值: `请选择`
 
-### ant-design 中 Cascader - API的placement属性如何使用？
+### ant-design 中 Cascader - API的placement属性如何使用？ 
 
-参数: placement
+参数: placement 
 
-说明: 浮层预设位置
+说明: 浮层预设位置 
 
-类型: `bottomLeft` `bottomRight` `topLeft` `topRight`
+类型: `bottomLeft` `bottomRight` `topLeft` `topRight` 
 
-默认值: `bottomLeft`
+默认值: `bottomLeft` 
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的showSearch属性如何使用？
+### ant-design 中 Cascader - API的showSearch属性如何使用？ 
 
-参数: showSearch
+参数: showSearch 
 
-说明: 在选择框中显示搜索框
+说明: 在选择框中显示搜索框 
 
-类型: boolean | [Object](#showsearch)
+类型: boolean | [Object](#showsearch) 
 
 默认值: false
 
-### ant-design 中 Cascader - API的size属性如何使用？
+### ant-design 中 Cascader - API的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 输入框大小
+说明: 输入框大小 
 
-类型: `large` | `middle` | `small`
-
-默认值: -
-
-### ant-design 中 Cascader - API的status属性如何使用？
-
-参数: status
-
-说明: 设置校验状态
-
-类型: 'error' | 'warning'
+类型: `large` | `middle` | `small` 
 
 默认值: -
+
+### ant-design 中 Cascader - API的status属性如何使用？ 
+
+参数: status 
+
+说明: 设置校验状态 
+
+类型: 'error' | 'warning' 
+
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Cascader - API的style属性如何使用？
+### ant-design 中 Cascader - API的style属性如何使用？ 
 
-参数: style
+参数: style 
 
-说明: 自定义样式
+说明: 自定义样式 
 
-类型: CSSProperties
-
-默认值: -
-
-### ant-design 中 Cascader - API的suffixIcon属性如何使用？
-
-参数: suffixIcon
-
-说明: 自定义的选择框后缀图标
-
-类型: ReactNode
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Cascader - API的value属性如何使用？
+### ant-design 中 Cascader - API的suffixIcon属性如何使用？ 
 
-参数: value
+参数: suffixIcon 
 
-说明: 指定选中项
+说明: 自定义的选择框后缀图标 
 
-类型: string[] | number[]
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Cascader - API的variant属性如何使用？
+### ant-design 中 Cascader - API的value属性如何使用？ 
 
-参数: variant
+参数: value 
 
-说明: 形态变体
+说明: 指定选中项 
 
-类型: `outlined` | `borderless` | `filled`
+类型: string[] | number[] 
 
-默认值: `outlined`
+默认值: -
+
+### ant-design 中 Cascader - API的variant属性如何使用？ 
+
+参数: variant 
+
+说明: 形态变体 
+
+类型: `outlined` | `borderless` | `filled` 
+
+默认值: `outlined` 
 
 版本: 5.13.0
 
-### ant-design 中 Cascader - API的onChange属性如何使用？
+### ant-design 中 Cascader - API的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 选择完成后的回调
+说明: 选择完成后的回调 
 
-类型: (value, selectedOptions) => void
-
-默认值: -
-
-### ant-design 中 Cascader - API的onDropdownVisibleChange属性如何使用？
-
-参数: onDropdownVisibleChange
-
-说明: 显示/隐藏浮层的回调
-
-类型: (value) => void
+类型: (value, selectedOptions) => void 
 
 默认值: -
+
+### ant-design 中 Cascader - API的onDropdownVisibleChange属性如何使用？ 
+
+参数: onDropdownVisibleChange 
+
+说明: 显示/隐藏浮层的回调 
+
+类型: (value) => void 
+
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的multiple属性如何使用？
+### ant-design 中 Cascader - API的multiple属性如何使用？ 
 
-参数: multiple
+参数: multiple 
 
-说明: 支持多选节点
+说明: 支持多选节点 
 
-类型: boolean
+类型: boolean 
 
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的showCheckedStrategy属性如何使用？
+### ant-design 中 Cascader - API的showCheckedStrategy属性如何使用？ 
 
-参数: showCheckedStrategy
+参数: showCheckedStrategy 
 
-说明: 定义选中项回填的方式。`Cascader.SHOW_CHILD`: 只显示选中的子节点。`Cascader.SHOW_PARENT`: 只显示父节点（当父节点下所有子节点都选中时）。
+说明: 定义选中项回填的方式。`Cascader.SHOW_CHILD`: 只显示选中的子节点。`Cascader.SHOW_PARENT`: 只显示父节点（当父节点下所有子节点都选中时）。 
 
-类型: `Cascader.SHOW_PARENT` | `Cascader.SHOW_CHILD`
+类型: `Cascader.SHOW_PARENT` | `Cascader.SHOW_CHILD` 
 
-默认值: `Cascader.SHOW_PARENT`
+默认值: `Cascader.SHOW_PARENT` 
 
 版本: 4.20.0
 
-### ant-design 中 Cascader - API的removeIcon属性如何使用？
+### ant-design 中 Cascader - API的removeIcon属性如何使用？ 
 
-参数: removeIcon
+参数: removeIcon 
 
-说明: 自定义的多选框清除图标
+说明: 自定义的多选框清除图标 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Cascader - API的searchValue属性如何使用？
-
-参数: searchValue
-
-说明: 设置搜索的值，需要与 `showSearch` 配合使用
-
-类型: string
+类型: ReactNode 
 
 默认值: -
+
+### ant-design 中 Cascader - API的searchValue属性如何使用？ 
+
+参数: searchValue 
+
+说明: 设置搜索的值，需要与 `showSearch` 配合使用 
+
+类型: string 
+
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的onSearch属性如何使用？
+### ant-design 中 Cascader - API的onSearch属性如何使用？ 
 
-参数: onSearch
+参数: onSearch 
 
-说明: 监听搜索，返回输入的值
+说明: 监听搜索，返回输入的值 
 
-类型: (search: string) => void
+类型: (search: string) => void 
 
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的dropdownMenuColumnStyle属性如何使用？
+### ant-design 中 Cascader - API的dropdownMenuColumnStyle属性如何使用？ 
 
-参数: dropdownMenuColumnStyle
+参数: dropdownMenuColumnStyle 
 
-说明: 下拉菜单列的样式
+说明: 下拉菜单列的样式 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: -
 
@@ -21419,78 +21753,80 @@ Version: 4.24
 | render | 用于渲染 filter 后的选项 | function(inputValue, path): ReactNode | - |
 | sort | 用于排序 filter 后的选项 | function(a, b, inputValue) | - |
 
-### ant-design 中 Cascader - showSearch的filter属性如何使用？
 
-参数: filter
+### ant-design 中 Cascader - showSearch的filter属性如何使用？ 
 
-说明: 接收 `inputValue` `path` 两个参数，当 `path` 符合筛选条件时，应返回 true，反之则返回 false
+参数: filter 
 
-类型: function(inputValue, path): boolean
+说明: 接收 `inputValue` `path` 两个参数，当 `path` 符合筛选条件时，应返回 true，反之则返回 false 
+
+类型: function(inputValue, path): boolean 
 
 默认值: -
 
-### ant-design 中 Cascader - showSearch的limit属性如何使用？
+### ant-design 中 Cascader - showSearch的limit属性如何使用？ 
 
-参数: limit
+参数: limit 
 
-说明: 搜索结果展示数量
+说明: 搜索结果展示数量 
 
-类型: number | false
+类型: number | false 
 
 默认值: 50
 
-### ant-design 中 Cascader - showSearch的matchInputWidth属性如何使用？
+### ant-design 中 Cascader - showSearch的matchInputWidth属性如何使用？ 
 
-参数: matchInputWidth
+参数: matchInputWidth 
 
-说明: 搜索结果列表是否与输入框同宽（[效果](https://github.com/ant-design/ant-design/issues/25779)）
+说明: 搜索结果列表是否与输入框同宽（[效果](https://github.com/ant-design/ant-design/issues/25779)） 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Cascader - showSearch的render属性如何使用？
+### ant-design 中 Cascader - showSearch的render属性如何使用？ 
 
-参数: render
+参数: render 
 
-说明: 用于渲染 filter 后的选项
+说明: 用于渲染 filter 后的选项 
 
-类型: function(inputValue, path): ReactNode
+类型: function(inputValue, path): ReactNode 
 
 默认值: -
 
-### ant-design 中 Cascader - showSearch的sort属性如何使用？
+### ant-design 中 Cascader - showSearch的sort属性如何使用？ 
 
-参数: sort
+参数: sort 
 
-说明: 用于排序 filter 后的选项
+说明: 用于排序 filter 后的选项 
 
-类型: function(a, b, inputValue)
+类型: function(a, b, inputValue) 
 
 默认值: -
 
 ### ant-design 的 Cascader - 方法 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Cascader - 方法的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Cascader - 方法的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Cascader - 方法的focus()属性如何使用？
+### ant-design 中 Cascader - 方法的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 Carousel 有哪些配置？
 
-#### Carousel - API
+#### Carousel - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -21507,13 +21843,15 @@ Version: 4.24
 | beforeChange | 切换面板的回调 | (current: number, next: number) => void | - |
 | waitForAnimate | 是否等待切换动画 | boolean | false |
 
-#### Carousel - 方法
+
+#### Carousel - 方法 
 
 | 名称 | 描述 |
 | --- | --- |
 | goTo(slideNumber, dontAnimate) | 切换到指定面板, dontAnimate = true 时，不使用动画 |
 | next() | 切换到下一面板 |
 | prev() | 切换到上一面板 |
+
 
 ### ant-design 的 Carousel - API 有哪些配置？
 
@@ -21532,123 +21870,124 @@ Version: 4.24
 | beforeChange | 切换面板的回调 | (current: number, next: number) => void | - |
 | waitForAnimate | 是否等待切换动画 | boolean | false |
 
-### ant-design 中 Carousel - API的autoplay属性如何使用？
 
-参数: autoplay
+### ant-design 中 Carousel - API的autoplay属性如何使用？ 
 
-说明: 是否自动切换
+参数: autoplay 
 
-类型: boolean
+说明: 是否自动切换 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Carousel - API的autoplaySpeed属性如何使用？
+### ant-design 中 Carousel - API的autoplaySpeed属性如何使用？ 
 
-参数: autoplaySpeed
+参数: autoplaySpeed 
 
-说明: 自动切换的间隔（毫秒）
+说明: 自动切换的间隔（毫秒） 
 
-类型: number
+类型: number 
 
 默认值: 3000
 
-### ant-design 中 Carousel - API的dotPosition属性如何使用？
+### ant-design 中 Carousel - API的dotPosition属性如何使用？ 
 
-参数: dotPosition
+参数: dotPosition 
 
-说明: 面板指示点位置，可选 `top` `bottom` `left` `right`
+说明: 面板指示点位置，可选 `top` `bottom` `left` `right` 
 
-类型: string
+类型: string 
 
 默认值: `bottom`
 
-### ant-design 中 Carousel - API的dots属性如何使用？
+### ant-design 中 Carousel - API的dots属性如何使用？ 
 
-参数: dots
+参数: dots 
 
-说明: 是否显示面板指示点，如果为 `object` 则同时可以指定 `dotsClass` 或者
+说明: 是否显示面板指示点，如果为 `object` 则同时可以指定 `dotsClass` 或者 
 
-类型: boolean | { className?: string }
+类型: boolean | { className?: string } 
 
 默认值: true
 
-### ant-design 中 Carousel - API的fade属性如何使用？
+### ant-design 中 Carousel - API的fade属性如何使用？ 
 
-参数: fade
+参数: fade 
 
-说明: 使用渐变切换动效
+说明: 使用渐变切换动效 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Carousel - API的infinite属性如何使用？
+### ant-design 中 Carousel - API的infinite属性如何使用？ 
 
-参数: infinite
+参数: infinite 
 
-说明: 是否无限循环切换（实现方式是复制两份 children 元素，如果子元素有副作用则可能会引发 bug）
+说明: 是否无限循环切换（实现方式是复制两份 children 元素，如果子元素有副作用则可能会引发 bug） 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Carousel - API的speed属性如何使用？
+### ant-design 中 Carousel - API的speed属性如何使用？ 
 
-参数: speed
+参数: speed 
 
-说明: 切换动效的时间（毫秒）
+说明: 切换动效的时间（毫秒） 
 
-类型: number
+类型: number 
 
 默认值: 500
 
-### ant-design 中 Carousel - API的easing属性如何使用？
+### ant-design 中 Carousel - API的easing属性如何使用？ 
 
-参数: easing
+参数: easing 
 
-说明: 动画效果
+说明: 动画效果 
 
-类型: string
+类型: string 
 
 默认值: `linear`
 
-### ant-design 中 Carousel - API的effect属性如何使用？
+### ant-design 中 Carousel - API的effect属性如何使用？ 
 
-参数: effect
+参数: effect 
 
-说明: 动画效果函数
+说明: 动画效果函数 
 
-类型: `scrollx` | `fade`
+类型: `scrollx` | `fade` 
 
 默认值: `scrollx`
 
-### ant-design 中 Carousel - API的afterChange属性如何使用？
+### ant-design 中 Carousel - API的afterChange属性如何使用？ 
 
-参数: afterChange
+参数: afterChange 
 
-说明: 切换面板的回调
+说明: 切换面板的回调 
 
-类型: (current: number) => void
-
-默认值: -
-
-### ant-design 中 Carousel - API的beforeChange属性如何使用？
-
-参数: beforeChange
-
-说明: 切换面板的回调
-
-类型: (current: number, next: number) => void
+类型: (current: number) => void 
 
 默认值: -
 
-### ant-design 中 Carousel - API的waitForAnimate属性如何使用？
+### ant-design 中 Carousel - API的beforeChange属性如何使用？ 
 
-参数: waitForAnimate
+参数: beforeChange 
 
-说明: 是否等待切换动画
+说明: 切换面板的回调 
 
-类型: boolean
+类型: (current: number, next: number) => void 
+
+默认值: -
+
+### ant-design 中 Carousel - API的waitForAnimate属性如何使用？ 
+
+参数: waitForAnimate 
+
+说明: 是否等待切换动画 
+
+类型: boolean 
 
 默认值: false
 
@@ -21660,27 +21999,28 @@ Version: 4.24
 | next() | 切换到下一面板 |
 | prev() | 切换到上一面板 |
 
-### ant-design 中 Carousel - 方法的goTo(slideNumber, dontAnimate)属性如何使用？
 
-名称: goTo(slideNumber, dontAnimate)
+### ant-design 中 Carousel - 方法的goTo(slideNumber, dontAnimate)属性如何使用？ 
+
+名称: goTo(slideNumber, dontAnimate) 
 
 描述: 切换到指定面板, dontAnimate = true 时，不使用动画
 
-### ant-design 中 Carousel - 方法的next()属性如何使用？
+### ant-design 中 Carousel - 方法的next()属性如何使用？ 
 
-名称: next()
+名称: next() 
 
 描述: 切换到下一面板
 
-### ant-design 中 Carousel - 方法的prev()属性如何使用？
+### ant-design 中 Carousel - 方法的prev()属性如何使用？ 
 
-名称: prev()
+名称: prev() 
 
 描述: 切换到上一面板
 
 ### ant-design 的 Card 有哪些配置？
 
-#### Card - Card
+#### Card - Card 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -21702,23 +22042,26 @@ Version: 4.24
 | type | 卡片类型，可设置为 `inner` 或 不设置 | string | - |
 | onTabChange | 页签切换的回调 | (key) => void | - |
 
-#### Card - Card.Grid
 
-| 参数      | 说明                   | 类型          | 默认值 |
-| --------- | ---------------------- | ------------- | ------ |
-| className | 网格容器类名           | string        | -      |
-| hoverable | 鼠标移过时可浮起       | boolean       | true   |
-| style     | 定义网格容器类名的样式 | CSSProperties | -      |
+#### Card - Card.Grid 
 
-#### Card - Card.Meta
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| className | 网格容器类名 | string | - |
+| hoverable | 鼠标移过时可浮起 | boolean | true |
+| style | 定义网格容器类名的样式 | CSSProperties | - |
 
-| 参数        | 说明               | 类型          | 默认值 |
-| ----------- | ------------------ | ------------- | ------ |
-| avatar      | 头像/图标          | ReactNode     | -      |
-| className   | 容器类名           | string        | -      |
-| description | 描述内容           | ReactNode     | -      |
-| style       | 定义容器类名的样式 | CSSProperties | -      |
-| title       | 标题内容           | ReactNode     | -      |
+
+#### Card - Card.Meta 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| avatar | 头像/图标 | ReactNode | - |
+| className | 容器类名 | string | - |
+| description | 描述内容 | ReactNode | - |
+| style | 定义容器类名的样式 | CSSProperties | - |
+| title | 标题内容 | ReactNode | - |
+
 
 ### ant-design 的 Card - Card 有哪些配置？
 
@@ -21742,273 +22085,276 @@ Version: 4.24
 | type | 卡片类型，可设置为 `inner` 或 不设置 | string | - |
 | onTabChange | 页签切换的回调 | (key) => void | - |
 
-### ant-design 中 Card - Card的actions属性如何使用？
 
-参数: actions
+### ant-design 中 Card - Card的actions属性如何使用？ 
 
-说明: 卡片操作组，位置在卡片底部
+参数: actions 
 
-类型: Array<ReactNode>
+说明: 卡片操作组，位置在卡片底部 
 
-默认值: -
-
-### ant-design 中 Card - Card的activeTabKey属性如何使用？
-
-参数: activeTabKey
-
-说明: 当前激活页签的 key
-
-类型: string
+类型: Array<ReactNode> 
 
 默认值: -
 
-### ant-design 中 Card - Card的bodyStyle属性如何使用？
+### ant-design 中 Card - Card的activeTabKey属性如何使用？ 
 
-参数: bodyStyle
+参数: activeTabKey 
 
-说明: 内容区域自定义样式
+说明: 当前激活页签的 key 
 
-类型: CSSProperties
+类型: string 
 
 默认值: -
 
-### ant-design 中 Card - Card的bordered属性如何使用？
+### ant-design 中 Card - Card的bodyStyle属性如何使用？ 
 
-参数: bordered
+参数: bodyStyle 
 
-说明: 是否有边框
+说明: 内容区域自定义样式 
 
-类型: boolean
+类型: CSSProperties 
+
+默认值: -
+
+### ant-design 中 Card - Card的bordered属性如何使用？ 
+
+参数: bordered 
+
+说明: 是否有边框 
+
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Card - Card的cover属性如何使用？
+### ant-design 中 Card - Card的cover属性如何使用？ 
 
-参数: cover
+参数: cover 
 
-说明: 卡片封面
+说明: 卡片封面 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Card - Card的defaultActiveTabKey属性如何使用？
+### ant-design 中 Card - Card的defaultActiveTabKey属性如何使用？ 
 
-参数: defaultActiveTabKey
+参数: defaultActiveTabKey 
 
-说明: 初始化选中页签的 key，如果没有设置 activeTabKey
+说明: 初始化选中页签的 key，如果没有设置 activeTabKey 
 
-类型: string
+类型: string 
 
 默认值: `第一个页签`
 
-### ant-design 中 Card - Card的extra属性如何使用？
+### ant-design 中 Card - Card的extra属性如何使用？ 
 
-参数: extra
+参数: extra 
 
-说明: 卡片右上角的操作区域
+说明: 卡片右上角的操作区域 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Card - Card的headStyle属性如何使用？
-
-参数: headStyle
-
-说明: 自定义标题区域样式
-
-类型: CSSProperties
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Card - Card的hoverable属性如何使用？
+### ant-design 中 Card - Card的headStyle属性如何使用？ 
 
-参数: hoverable
+参数: headStyle 
 
-说明: 鼠标移过时可浮起
+说明: 自定义标题区域样式 
 
-类型: boolean
+类型: CSSProperties 
+
+默认值: -
+
+### ant-design 中 Card - Card的hoverable属性如何使用？ 
+
+参数: hoverable 
+
+说明: 鼠标移过时可浮起 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Card - Card的loading属性如何使用？
+### ant-design 中 Card - Card的loading属性如何使用？ 
 
-参数: loading
+参数: loading 
 
-说明: 当卡片内容还在加载中时，可以用 loading 展示一个占位
+说明: 当卡片内容还在加载中时，可以用 loading 展示一个占位 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Card - Card的size属性如何使用？
+### ant-design 中 Card - Card的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: card 的尺寸
+说明: card 的尺寸 
 
-类型: `default` | `small`
+类型: `default` | `small` 
 
 默认值: `default`
 
-### ant-design 中 Card - Card的tabBarExtraContent属性如何使用？
+### ant-design 中 Card - Card的tabBarExtraContent属性如何使用？ 
 
-参数: tabBarExtraContent
+参数: tabBarExtraContent 
 
-说明: tab bar 上额外的元素
+说明: tab bar 上额外的元素 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Card - Card的tabList属性如何使用？
+### ant-design 中 Card - Card的tabList属性如何使用？ 
 
-参数: tabList
+参数: tabList 
 
-说明: 页签标题列表
+说明: 页签标题列表 
 
 类型: -
 
-### ant-design 中 Card - Card的tabProps属性如何使用？
+### ant-design 中 Card - Card的tabProps属性如何使用？ 
 
-参数: tabProps
+参数: tabProps 
 
-说明: -
+说明: - 
 
 类型: -
 
-### ant-design 中 Card - Card的title属性如何使用？
+### ant-design 中 Card - Card的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 卡片标题
+说明: 卡片标题 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Card - Card的type属性如何使用？
-
-参数: type
-
-说明: 卡片类型，可设置为 `inner` 或 不设置
-
-类型: string
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Card - Card的onTabChange属性如何使用？
+### ant-design 中 Card - Card的type属性如何使用？ 
 
-参数: onTabChange
+参数: type 
 
-说明: 页签切换的回调
+说明: 卡片类型，可设置为 `inner` 或 不设置 
 
-类型: (key) => void
+类型: string 
+
+默认值: -
+
+### ant-design 中 Card - Card的onTabChange属性如何使用？ 
+
+参数: onTabChange 
+
+说明: 页签切换的回调 
+
+类型: (key) => void 
 
 默认值: -
 
 ### ant-design 的 Card - Card.Grid 有哪些配置？
 
-| 参数      | 说明                   | 类型          | 默认值 |
-| --------- | ---------------------- | ------------- | ------ |
-| className | 网格容器类名           | string        | -      |
-| hoverable | 鼠标移过时可浮起       | boolean       | true   |
-| style     | 定义网格容器类名的样式 | CSSProperties | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| className | 网格容器类名 | string | - |
+| hoverable | 鼠标移过时可浮起 | boolean | true |
+| style | 定义网格容器类名的样式 | CSSProperties | - |
 
-### ant-design 中 Card - Card.Grid的className属性如何使用？
 
-参数: className
+### ant-design 中 Card - Card.Grid的className属性如何使用？ 
 
-说明: 网格容器类名
+参数: className 
 
-类型: string
+说明: 网格容器类名 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Card - Card.Grid的hoverable属性如何使用？
+### ant-design 中 Card - Card.Grid的hoverable属性如何使用？ 
 
-参数: hoverable
+参数: hoverable 
 
-说明: 鼠标移过时可浮起
+说明: 鼠标移过时可浮起 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Card - Card.Grid的style属性如何使用？
+### ant-design 中 Card - Card.Grid的style属性如何使用？ 
 
-参数: style
+参数: style 
 
-说明: 定义网格容器类名的样式
+说明: 定义网格容器类名的样式 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: -
 
 ### ant-design 的 Card - Card.Meta 有哪些配置？
 
-| 参数        | 说明               | 类型          | 默认值 |
-| ----------- | ------------------ | ------------- | ------ |
-| avatar      | 头像/图标          | ReactNode     | -      |
-| className   | 容器类名           | string        | -      |
-| description | 描述内容           | ReactNode     | -      |
-| style       | 定义容器类名的样式 | CSSProperties | -      |
-| title       | 标题内容           | ReactNode     | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| avatar | 头像/图标 | ReactNode | - |
+| className | 容器类名 | string | - |
+| description | 描述内容 | ReactNode | - |
+| style | 定义容器类名的样式 | CSSProperties | - |
+| title | 标题内容 | ReactNode | - |
 
-### ant-design 中 Card - Card.Meta的avatar属性如何使用？
 
-参数: avatar
+### ant-design 中 Card - Card.Meta的avatar属性如何使用？ 
 
-说明: 头像/图标
+参数: avatar 
 
-类型: ReactNode
+说明: 头像/图标 
 
-默认值: -
-
-### ant-design 中 Card - Card.Meta的className属性如何使用？
-
-参数: className
-
-说明: 容器类名
-
-类型: string
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Card - Card.Meta的description属性如何使用？
+### ant-design 中 Card - Card.Meta的className属性如何使用？ 
 
-参数: description
+参数: className 
 
-说明: 描述内容
+说明: 容器类名 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Card - Card.Meta的style属性如何使用？
-
-参数: style
-
-说明: 定义容器类名的样式
-
-类型: CSSProperties
+类型: string 
 
 默认值: -
 
-### ant-design 中 Card - Card.Meta的title属性如何使用？
+### ant-design 中 Card - Card.Meta的description属性如何使用？ 
 
-参数: title
+参数: description 
 
-说明: 标题内容
+说明: 描述内容 
 
-类型: ReactNode
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Card - Card.Meta的style属性如何使用？ 
+
+参数: style 
+
+说明: 定义容器类名的样式 
+
+类型: CSSProperties 
+
+默认值: -
+
+### ant-design 中 Card - Card.Meta的title属性如何使用？ 
+
+参数: title 
+
+说明: 标题内容 
+
+类型: ReactNode 
 
 默认值: -
 
 ### ant-design 的 Calendar 有哪些配置？
 
-#### Calendar - API
+#### Calendar - API 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -22031,6 +22377,7 @@ Version: 4.24
 | onChange | 日期变化回调 | function(date: Dayjs) | - |
 | onPanelChange | 日期面板变化回调 | function(date: Dayjs, mode: string) | - |
 | onSelect | 选择日期回调，包含来源信息 | function(date: Dayjs, info: { source: 'year' \| 'month' \| 'date' \| 'customize' }) | - | `info`: 5.6.0 |
+
 
 ### ant-design 的 Calendar - API 有哪些配置？
 
@@ -22056,214 +22403,215 @@ Version: 4.24
 | onPanelChange | 日期面板变化回调 | function(date: Dayjs, mode: string) | - |
 | onSelect | 选择日期回调，包含来源信息 | function(date: Dayjs, info: { source: 'year' \| 'month' \| 'date' \| 'customize' }) | - | `info`: 5.6.0 |
 
-### ant-design 中 Calendar - API的dateCellRender属性如何使用？
 
-参数: dateCellRender
+### ant-design 中 Calendar - API的dateCellRender属性如何使用？ 
 
-说明: 自定义渲染日期单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender`
+参数: dateCellRender 
 
-类型: function(date: Dayjs): ReactNode
+说明: 自定义渲染日期单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender` 
 
-默认值: -
+类型: function(date: Dayjs): ReactNode 
 
-版本: < 5.4.0
-
-### ant-design 中 Calendar - API的cellRender属性如何使用？
-
-参数: cellRender
-
-说明: 自定义单元格的内容
-
-类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode
-
-默认值: -
-
-版本: 5.4.0
-
-### ant-design 中 Calendar - API的dateFullCellRender属性如何使用？
-
-参数: dateFullCellRender
-
-说明: 自定义渲染日期单元格，返回内容覆盖单元格，>= 5.4.0 请用 `fullCellRender`
-
-类型: function(date: Dayjs): ReactNode
-
-默认值: -
+默认值: - 
 
 版本: < 5.4.0
 
-### ant-design 中 Calendar - API的fullCellRender属性如何使用？
+### ant-design 中 Calendar - API的cellRender属性如何使用？ 
 
-参数: fullCellRender
+参数: cellRender 
 
-说明: 自定义单元格的内容
+说明: 自定义单元格的内容 
 
-类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode
+类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Calendar - API的defaultValue属性如何使用？
+### ant-design 中 Calendar - API的dateFullCellRender属性如何使用？ 
 
-参数: defaultValue
+参数: dateFullCellRender 
 
-说明: 默认展示的日期
+说明: 自定义渲染日期单元格，返回内容覆盖单元格，>= 5.4.0 请用 `fullCellRender` 
+
+类型: function(date: Dayjs): ReactNode 
+
+默认值: - 
+
+版本: < 5.4.0
+
+### ant-design 中 Calendar - API的fullCellRender属性如何使用？ 
+
+参数: fullCellRender 
+
+说明: 自定义单元格的内容 
+
+类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode 
+
+默认值: - 
+
+版本: 5.4.0
+
+### ant-design 中 Calendar - API的defaultValue属性如何使用？ 
+
+参数: defaultValue 
+
+说明: 默认展示的日期 
 
 类型: -
 
-### ant-design 中 Calendar - API的disabledDate属性如何使用？
+### ant-design 中 Calendar - API的disabledDate属性如何使用？ 
 
-参数: disabledDate
+参数: disabledDate 
 
-说明: 不可选择的日期，参数为当前 `value`，注意使用时[不要直接修改](https://github.com/ant-design/ant-design/issues/30987)
+说明: 不可选择的日期，参数为当前 `value`，注意使用时[不要直接修改](https://github.com/ant-design/ant-design/issues/30987) 
 
-类型: (currentDate: Dayjs) => boolean
+类型: (currentDate: Dayjs) => boolean 
 
 默认值: -
 
-### ant-design 中 Calendar - API的fullscreen属性如何使用？
+### ant-design 中 Calendar - API的fullscreen属性如何使用？ 
 
-参数: fullscreen
+参数: fullscreen 
 
-说明: 是否全屏显示
+说明: 是否全屏显示 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Calendar - API的headerRender属性如何使用？
+### ant-design 中 Calendar - API的headerRender属性如何使用？ 
 
-参数: headerRender
+参数: headerRender 
 
-说明: 自定义头部内容
+说明: 自定义头部内容 
 
-类型: function(object:{value: Dayjs, type: string, onChange: f(), onTypeChange: f()})
+类型: function(object:{value: Dayjs, type: string, onChange: f(), onTypeChange: f()}) 
 
 默认值: -
 
-### ant-design 中 Calendar - API的locale属性如何使用？
+### ant-design 中 Calendar - API的locale属性如何使用？ 
 
-参数: locale
+参数: locale 
 
-说明: 国际化配置
+说明: 国际化配置 
 
 类型: object
 
-### ant-design 中 Calendar - API的mode属性如何使用？
+### ant-design 中 Calendar - API的mode属性如何使用？ 
 
-参数: mode
+参数: mode 
 
-说明: 初始模式
+说明: 初始模式 
 
-类型: `month` | `year`
+类型: `month` | `year` 
 
 默认值: `month`
 
-### ant-design 中 Calendar - API的monthCellRender属性如何使用？
+### ant-design 中 Calendar - API的monthCellRender属性如何使用？ 
 
-参数: monthCellRender
+参数: monthCellRender 
 
-说明: 自定义渲染月单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender`
+说明: 自定义渲染月单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender` 
 
-类型: function(date: Dayjs): ReactNode
+类型: function(date: Dayjs): ReactNode 
 
-默认值: -
-
-版本: < 5.4.0
-
-### ant-design 中 Calendar - API的cellRender属性如何使用？
-
-参数: cellRender
-
-说明: 自定义单元格的内容
-
-类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode
-
-默认值: -
-
-版本: 5.4.0
-
-### ant-design 中 Calendar - API的monthFullCellRender属性如何使用？
-
-参数: monthFullCellRender
-
-说明: 自定义渲染月单元格，返回内容覆盖单元格，>= 5.4.0 请用 `fullCellRender`
-
-类型: function(date: Dayjs): ReactNode
-
-默认值: -
+默认值: - 
 
 版本: < 5.4.0
 
-### ant-design 中 Calendar - API的fullCellRender属性如何使用？
+### ant-design 中 Calendar - API的cellRender属性如何使用？ 
 
-参数: fullCellRender
+参数: cellRender 
 
-说明: 自定义单元格的内容
+说明: 自定义单元格的内容 
 
-类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode
+类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Calendar - API的validRange属性如何使用？
+### ant-design 中 Calendar - API的monthFullCellRender属性如何使用？ 
 
-参数: validRange
+参数: monthFullCellRender 
 
-说明: 设置可以显示的日期
+说明: 自定义渲染月单元格，返回内容覆盖单元格，>= 5.4.0 请用 `fullCellRender` 
 
-类型: \[[dayjs](https://day.js.org/), [dayjs](https://day.js.org/)]
+类型: function(date: Dayjs): ReactNode 
+
+默认值: - 
+
+版本: < 5.4.0
+
+### ant-design 中 Calendar - API的fullCellRender属性如何使用？ 
+
+参数: fullCellRender 
+
+说明: 自定义单元格的内容 
+
+类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' | 'end', type: PanelMode, locale?: Locale, subType?: 'hour' | 'minute' | 'second' | 'meridiem' }) => React.ReactNode 
+
+默认值: - 
+
+版本: 5.4.0
+
+### ant-design 中 Calendar - API的validRange属性如何使用？ 
+
+参数: validRange 
+
+说明: 设置可以显示的日期 
+
+类型: \[[dayjs](https://day.js.org/), [dayjs](https://day.js.org/)] 
 
 默认值: -
 
-### ant-design 中 Calendar - API的value属性如何使用？
+### ant-design 中 Calendar - API的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 展示日期
+说明: 展示日期 
 
 类型: -
 
-### ant-design 中 Calendar - API的onChange属性如何使用？
+### ant-design 中 Calendar - API的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 日期变化回调
+说明: 日期变化回调 
 
-类型: function(date: Dayjs)
-
-默认值: -
-
-### ant-design 中 Calendar - API的onPanelChange属性如何使用？
-
-参数: onPanelChange
-
-说明: 日期面板变化回调
-
-类型: function(date: Dayjs, mode: string)
+类型: function(date: Dayjs) 
 
 默认值: -
 
-### ant-design 中 Calendar - API的onSelect属性如何使用？
+### ant-design 中 Calendar - API的onPanelChange属性如何使用？ 
 
-参数: onSelect
+参数: onPanelChange 
 
-说明: 选择日期回调，包含来源信息
+说明: 日期面板变化回调 
 
-类型: function(date: Dayjs, info: { source: 'year' | 'month' | 'date' | 'customize' })
+类型: function(date: Dayjs, mode: string) 
 
 默认值: -
+
+### ant-design 中 Calendar - API的onSelect属性如何使用？ 
+
+参数: onSelect 
+
+说明: 选择日期回调，包含来源信息 
+
+类型: function(date: Dayjs, info: { source: 'year' | 'month' | 'date' | 'customize' }) 
+
+默认值: - 
 
 版本: `info`: 5.6.0
 
 ### ant-design 的 Button 有哪些配置？
 
-#### Button - API
+#### Button - API 
 
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | block | 将按钮宽度调整为其父宽度的选项 | boolean | false |
 | classNames | 语义化结构 class | Record<SemanticDOM, string> | - | 5.4.0 |
 | danger | 设置危险按钮 | boolean | false |
@@ -22280,16 +22628,18 @@ Version: 4.24
 | type | 设置按钮类型 | `primary` \| `dashed` \| `link` \| `text` \| `default` | `default` |
 | onClick | 点击按钮时的回调 | (event: MouseEvent) => void | - |
 
-#### Button - `styles`
 
-| 名称 | 说明         | 版本  |
-| ---- | ------------ | ----- |
+#### Button - `styles` 
+
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
 | icon | 设置图标元素 | 5.5.0 |
+
 
 ### ant-design 的 Button - API 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | block | 将按钮宽度调整为其父宽度的选项 | boolean | false |
 | classNames | 语义化结构 class | Record<SemanticDOM, string> | - | 5.4.0 |
 | danger | 设置危险按钮 | boolean | false |
@@ -22306,177 +22656,179 @@ Version: 4.24
 | type | 设置按钮类型 | `primary` \| `dashed` \| `link` \| `text` \| `default` | `default` |
 | onClick | 点击按钮时的回调 | (event: MouseEvent) => void | - |
 
-### ant-design 中 Button - API的block属性如何使用？
 
-属性: block
+### ant-design 中 Button - API的block属性如何使用？ 
 
-说明: 将按钮宽度调整为其父宽度的选项
+属性: block 
 
-类型: boolean
+说明: 将按钮宽度调整为其父宽度的选项 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Button - API的classNames属性如何使用？
+### ant-design 中 Button - API的classNames属性如何使用？ 
 
-属性: classNames
+属性: classNames 
 
-说明: 语义化结构 class
+说明: 语义化结构 class 
 
-类型: Record<SemanticDOM, string>
+类型: Record<SemanticDOM, string> 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Button - API的danger属性如何使用？
+### ant-design 中 Button - API的danger属性如何使用？ 
 
-属性: danger
+属性: danger 
 
-说明: 设置危险按钮
+说明: 设置危险按钮 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Button - API的disabled属性如何使用？
-
-属性: disabled
-
-说明: 设置按钮失效状态
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Button - API的ghost属性如何使用？
+### ant-design 中 Button - API的disabled属性如何使用？ 
 
-属性: ghost
+属性: disabled 
 
-说明: 幽灵属性，使按钮背景透明
+说明: 设置按钮失效状态 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Button - API的href属性如何使用？
+### ant-design 中 Button - API的ghost属性如何使用？ 
 
-属性: href
+属性: ghost 
 
-说明: 点击跳转的地址，指定此属性 button 的行为和 a 链接一致
+说明: 幽灵属性，使按钮背景透明 
 
-类型: string
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Button - API的href属性如何使用？ 
+
+属性: href 
+
+说明: 点击跳转的地址，指定此属性 button 的行为和 a 链接一致 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Button - API的htmlType属性如何使用？
+### ant-design 中 Button - API的htmlType属性如何使用？ 
 
-属性: htmlType
+属性: htmlType 
 
-说明: 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type)
+说明: 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) 
 
-类型: string
+类型: string 
 
 默认值: `button`
 
-### ant-design 中 Button - API的icon属性如何使用？
+### ant-design 中 Button - API的icon属性如何使用？ 
 
-属性: icon
+属性: icon 
 
-说明: 设置按钮的图标组件
+说明: 设置按钮的图标组件 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Button - API的loading属性如何使用？
+### ant-design 中 Button - API的loading属性如何使用？ 
 
-属性: loading
+属性: loading 
 
-说明: 设置按钮载入状态
+说明: 设置按钮载入状态 
 
-类型: boolean | { delay: number }
+类型: boolean | { delay: number } 
 
 默认值: false
 
-### ant-design 中 Button - API的shape属性如何使用？
+### ant-design 中 Button - API的shape属性如何使用？ 
 
-属性: shape
+属性: shape 
 
-说明: 设置按钮形状
+说明: 设置按钮形状 
 
-类型: `default` | `circle` | `round`
+类型: `default` | `circle` | `round` 
 
 默认值: `default`
 
-### ant-design 中 Button - API的size属性如何使用？
+### ant-design 中 Button - API的size属性如何使用？ 
 
-属性: size
+属性: size 
 
-说明: 设置按钮大小
+说明: 设置按钮大小 
 
-类型: `large` | `middle` | `small`
+类型: `large` | `middle` | `small` 
 
 默认值: `middle`
 
-### ant-design 中 Button - API的styles属性如何使用？
+### ant-design 中 Button - API的styles属性如何使用？ 
 
-属性: styles
+属性: styles 
 
-说明: 语义化结构 style
+说明: 语义化结构 style 
 
-类型: Record<SemanticDOM, CSSProperties>
+类型: Record<SemanticDOM, CSSProperties> 
 
-默认值: -
+默认值: - 
 
 版本: 5.4.0
 
-### ant-design 中 Button - API的target属性如何使用？
+### ant-design 中 Button - API的target属性如何使用？ 
 
-属性: target
+属性: target 
 
-说明: 相当于 a 链接的 target 属性，href 存在时生效
+说明: 相当于 a 链接的 target 属性，href 存在时生效 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Button - API的type属性如何使用？
+### ant-design 中 Button - API的type属性如何使用？ 
 
-属性: type
+属性: type 
 
-说明: 设置按钮类型
+说明: 设置按钮类型 
 
-类型: `primary` | `dashed` | `link` | `text` | `default`
+类型: `primary` | `dashed` | `link` | `text` | `default` 
 
 默认值: `default`
 
-### ant-design 中 Button - API的onClick属性如何使用？
+### ant-design 中 Button - API的onClick属性如何使用？ 
 
-属性: onClick
+属性: onClick 
 
-说明: 点击按钮时的回调
+说明: 点击按钮时的回调 
 
-类型: (event: MouseEvent) => void
+类型: (event: MouseEvent) => void 
 
 默认值: -
 
 ### ant-design 的 Button - `styles` 有哪些配置？
 
-| 名称 | 说明         | 版本  |
-| ---- | ------------ | ----- |
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
 | icon | 设置图标元素 | 5.5.0 |
 
-### ant-design 中 Button - `styles`的icon属性如何使用？
 
-名称: icon
+### ant-design 中 Button - `styles`的icon属性如何使用？ 
 
-说明: 设置图标元素
+名称: icon 
+
+说明: 设置图标元素 
 
 版本: 5.5.0
 
 ### ant-design 的 Breadcrumb 有哪些配置？
 
-#### Breadcrumb - Breadcrumb
+#### Breadcrumb - Breadcrumb 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -22485,10 +22837,11 @@ Version: 4.24
 | items | 路由栈信息 | - | 5.3.0 |
 | separator | 分隔符自定义 | ReactNode | `/` |
 
-#### Breadcrumb - RouteItemType
+
+#### Breadcrumb - RouteItemType 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | className | 自定义类名 | string | - |
 | dropdownProps | 弹出下拉菜单的自定义配置 | - |
 | href | 链接的目的地，不能和 `path` 共用 | string | - |
@@ -22497,12 +22850,14 @@ Version: 4.24
 | onClick | 单击事件 | (e:MouseEvent) => void | - |
 | title | 名称 | ReactNode | - | 5.3.0 |
 
-#### Breadcrumb - SeparatorType
 
-| 参数      | 说明           | 类型        | 默认值 |
-| --------- | -------------- | ----------- | ------ | ----- |
-| type      | 标记为分隔符   | `separator` | 5.3.0  |
-| separator | 要显示的分隔符 | ReactNode   | `/`    | 5.3.0 |
+#### Breadcrumb - SeparatorType 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| type | 标记为分隔符 | `separator` | 5.3.0 |
+| separator | 要显示的分隔符 | ReactNode | `/` | 5.3.0 |
+
 
 ### ant-design 的 Breadcrumb - Breadcrumb 有哪些配置？
 
@@ -22513,50 +22868,51 @@ Version: 4.24
 | items | 路由栈信息 | - | 5.3.0 |
 | separator | 分隔符自定义 | ReactNode | `/` |
 
-### ant-design 中 Breadcrumb - Breadcrumb的itemRender属性如何使用？
 
-参数: itemRender
+### ant-design 中 Breadcrumb - Breadcrumb的itemRender属性如何使用？ 
 
-说明: 自定义链接函数，和 react-router 配置使用
+参数: itemRender 
 
-类型: (route, params, routes, paths) => ReactNode
+说明: 自定义链接函数，和 react-router 配置使用 
 
-默认值: -
-
-### ant-design 中 Breadcrumb - Breadcrumb的params属性如何使用？
-
-参数: params
-
-说明: 路由的参数
-
-类型: object
+类型: (route, params, routes, paths) => ReactNode 
 
 默认值: -
 
-### ant-design 中 Breadcrumb - Breadcrumb的items属性如何使用？
+### ant-design 中 Breadcrumb - Breadcrumb的params属性如何使用？ 
 
-参数: items
+参数: params 
 
-说明: 路由栈信息
+说明: 路由的参数 
 
-类型: -
+类型: object 
+
+默认值: -
+
+### ant-design 中 Breadcrumb - Breadcrumb的items属性如何使用？ 
+
+参数: items 
+
+说明: 路由栈信息 
+
+类型: - 
 
 默认值: 5.3.0
 
-### ant-design 中 Breadcrumb - Breadcrumb的separator属性如何使用？
+### ant-design 中 Breadcrumb - Breadcrumb的separator属性如何使用？ 
 
-参数: separator
+参数: separator 
 
-说明: 分隔符自定义
+说明: 分隔符自定义 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: `/`
 
 ### ant-design 的 Breadcrumb - RouteItemType 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | className | 自定义类名 | string | - |
 | dropdownProps | 弹出下拉菜单的自定义配置 | - |
 | href | 链接的目的地，不能和 `path` 共用 | string | - |
@@ -22565,111 +22921,113 @@ Version: 4.24
 | onClick | 单击事件 | (e:MouseEvent) => void | - |
 | title | 名称 | ReactNode | - | 5.3.0 |
 
-### ant-design 中 Breadcrumb - RouteItemType的className属性如何使用？
 
-参数: className
+### ant-design 中 Breadcrumb - RouteItemType的className属性如何使用？ 
 
-说明: 自定义类名
+参数: className 
 
-类型: string
+说明: 自定义类名 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Breadcrumb - RouteItemType的dropdownProps属性如何使用？
+### ant-design 中 Breadcrumb - RouteItemType的dropdownProps属性如何使用？ 
 
-参数: dropdownProps
+参数: dropdownProps 
 
-说明: 弹出下拉菜单的自定义配置
+说明: 弹出下拉菜单的自定义配置 
 
 类型: -
 
-### ant-design 中 Breadcrumb - RouteItemType的href属性如何使用？
+### ant-design 中 Breadcrumb - RouteItemType的href属性如何使用？ 
 
-参数: href
+参数: href 
 
-说明: 链接的目的地，不能和 `path` 共用
+说明: 链接的目的地，不能和 `path` 共用 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Breadcrumb - RouteItemType的path属性如何使用？
-
-参数: path
-
-说明: 拼接路径，每一层都会拼接前一个 `path` 信息。不能和 `href` 共用
-
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Breadcrumb - RouteItemType的menu属性如何使用？
+### ant-design 中 Breadcrumb - RouteItemType的path属性如何使用？ 
 
-参数: menu
+参数: path 
 
-说明: 菜单配置项
+说明: 拼接路径，每一层都会拼接前一个 `path` 信息。不能和 `href` 共用 
 
-类型: -
+类型: string 
+
+默认值: -
+
+### ant-design 中 Breadcrumb - RouteItemType的menu属性如何使用？ 
+
+参数: menu 
+
+说明: 菜单配置项 
+
+类型: - 
 
 默认值: 4.24.0
 
-### ant-design 中 Breadcrumb - RouteItemType的onClick属性如何使用？
+### ant-design 中 Breadcrumb - RouteItemType的onClick属性如何使用？ 
 
-参数: onClick
+参数: onClick 
 
-说明: 单击事件
+说明: 单击事件 
 
-类型: (e:MouseEvent) => void
-
-默认值: -
-
-### ant-design 中 Breadcrumb - RouteItemType的title属性如何使用？
-
-参数: title
-
-说明: 名称
-
-类型: ReactNode
+类型: (e:MouseEvent) => void 
 
 默认值: -
+
+### ant-design 中 Breadcrumb - RouteItemType的title属性如何使用？ 
+
+参数: title 
+
+说明: 名称 
+
+类型: ReactNode 
+
+默认值: - 
 
 版本: 5.3.0
 
 ### ant-design 的 Breadcrumb - SeparatorType 有哪些配置？
 
-| 参数      | 说明           | 类型        | 默认值 |
-| --------- | -------------- | ----------- | ------ | ----- |
-| type      | 标记为分隔符   | `separator` | 5.3.0  |
-| separator | 要显示的分隔符 | ReactNode   | `/`    | 5.3.0 |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| type | 标记为分隔符 | `separator` | 5.3.0 |
+| separator | 要显示的分隔符 | ReactNode | `/` | 5.3.0 |
 
-### ant-design 中 Breadcrumb - SeparatorType的type属性如何使用？
 
-参数: type
+### ant-design 中 Breadcrumb - SeparatorType的type属性如何使用？ 
 
-说明: 标记为分隔符
+参数: type 
 
-类型: `separator`
+说明: 标记为分隔符 
+
+类型: `separator` 
 
 默认值: 5.3.0
 
-### ant-design 中 Breadcrumb - SeparatorType的separator属性如何使用？
+### ant-design 中 Breadcrumb - SeparatorType的separator属性如何使用？ 
 
-参数: separator
+参数: separator 
 
-说明: 要显示的分隔符
+说明: 要显示的分隔符 
 
-类型: ReactNode
+类型: ReactNode 
 
-默认值: `/`
+默认值: `/` 
 
 版本: 5.3.0
 
 ### ant-design 的 Badge 有哪些配置？
 
-#### Badge - Badge
+#### Badge - Badge 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | color | 自定义小圆点的颜色 | string | - |
 | count | 展示的数字，大于 overflowCount 时显示为 `${overflowCount}+`，为 0 时隐藏 | ReactNode | - |
 | classNames | 语义化结构 class | Record<SemanticDOM, string> | - | 5.7.0 |
@@ -22683,7 +23041,8 @@ Version: 4.24
 | text | 在设置了 `status` 的前提下有效，设置状态点的文本 | ReactNode | - |
 | title | 设置鼠标放在状态点上时显示的文字 | string | - |
 
-#### Badge - Badge.Ribbon
+
+#### Badge - Badge.Ribbon 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -22691,17 +23050,19 @@ Version: 4.24
 | placement | 缎带的位置，`start` 和 `end` 随文字方向（RTL 或 LTR）变动 | `start` \| `end` | `end` |
 | text | 缎带中填入的内容 | ReactNode | - |
 
-#### Badge - `styles`
 
-| 名称      | 说明         | 版本  |
-| --------- | ------------ | ----- |
-| root      | 设置根元素   | 5.7.0 |
+#### Badge - `styles` 
+
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
+| root | 设置根元素 | 5.7.0 |
 | indicator | 设置徽标元素 | 5.7.0 |
+
 
 ### ant-design 的 Badge - Badge 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | color | 自定义小圆点的颜色 | string | - |
 | count | 展示的数字，大于 overflowCount 时显示为 `${overflowCount}+`，为 0 时隐藏 | ReactNode | - |
 | classNames | 语义化结构 class | Record<SemanticDOM, string> | - | 5.7.0 |
@@ -22715,129 +23076,130 @@ Version: 4.24
 | text | 在设置了 `status` 的前提下有效，设置状态点的文本 | ReactNode | - |
 | title | 设置鼠标放在状态点上时显示的文字 | string | - |
 
-### ant-design 中 Badge - Badge的color属性如何使用？
 
-参数: color
+### ant-design 中 Badge - Badge的color属性如何使用？ 
 
-说明: 自定义小圆点的颜色
+参数: color 
 
-类型: string
+说明: 自定义小圆点的颜色 
 
-默认值: -
-
-### ant-design 中 Badge - Badge的count属性如何使用？
-
-参数: count
-
-说明: 展示的数字，大于 overflowCount 时显示为 `${overflowCount}+`，为 0 时隐藏
-
-类型: ReactNode
+类型: string 
 
 默认值: -
 
-### ant-design 中 Badge - Badge的classNames属性如何使用？
+### ant-design 中 Badge - Badge的count属性如何使用？ 
 
-参数: classNames
+参数: count 
 
-说明: 语义化结构 class
+说明: 展示的数字，大于 overflowCount 时显示为 `${overflowCount}+`，为 0 时隐藏 
 
-类型: Record<SemanticDOM, string>
+类型: ReactNode 
 
 默认值: -
+
+### ant-design 中 Badge - Badge的classNames属性如何使用？ 
+
+参数: classNames 
+
+说明: 语义化结构 class 
+
+类型: Record<SemanticDOM, string> 
+
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Badge - Badge的dot属性如何使用？
+### ant-design 中 Badge - Badge的dot属性如何使用？ 
 
-参数: dot
+参数: dot 
 
-说明: 不展示数字，只有一个小红点
+说明: 不展示数字，只有一个小红点 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Badge - Badge的offset属性如何使用？
+### ant-design 中 Badge - Badge的offset属性如何使用？ 
 
-参数: offset
+参数: offset 
 
-说明: 设置状态点的位置偏移
+说明: 设置状态点的位置偏移 
 
-类型: \[number, number]
+类型: \[number, number] 
 
 默认值: -
 
-### ant-design 中 Badge - Badge的overflowCount属性如何使用？
+### ant-design 中 Badge - Badge的overflowCount属性如何使用？ 
 
-参数: overflowCount
+参数: overflowCount 
 
-说明: 展示封顶的数字值
+说明: 展示封顶的数字值 
 
-类型: number
+类型: number 
 
 默认值: 99
 
-### ant-design 中 Badge - Badge的showZero属性如何使用？
+### ant-design 中 Badge - Badge的showZero属性如何使用？ 
 
-参数: showZero
+参数: showZero 
 
-说明: 当数值为 0 时，是否展示 Badge
+说明: 当数值为 0 时，是否展示 Badge 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Badge - Badge的size属性如何使用？
+### ant-design 中 Badge - Badge的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 在设置了 `count` 的前提下有效，设置小圆点的大小
+说明: 在设置了 `count` 的前提下有效，设置小圆点的大小 
 
-类型: `default` | `small`
+类型: `default` | `small` 
 
-默认值: -
+默认值: - 
 
 版本: -
 
-### ant-design 中 Badge - Badge的status属性如何使用？
+### ant-design 中 Badge - Badge的status属性如何使用？ 
 
-参数: status
+参数: status 
 
-说明: 设置 Badge 为状态点
+说明: 设置 Badge 为状态点 
 
-类型: `success` | `processing` | `default` | `error` | `warning`
-
-默认值: -
-
-### ant-design 中 Badge - Badge的styles属性如何使用？
-
-参数: styles
-
-说明: 语义化结构 style
-
-类型: Record<SemanticDOM, CSSProperties>
+类型: `success` | `processing` | `default` | `error` | `warning` 
 
 默认值: -
+
+### ant-design 中 Badge - Badge的styles属性如何使用？ 
+
+参数: styles 
+
+说明: 语义化结构 style 
+
+类型: Record<SemanticDOM, CSSProperties> 
+
+默认值: - 
 
 版本: 5.7.0
 
-### ant-design 中 Badge - Badge的text属性如何使用？
+### ant-design 中 Badge - Badge的text属性如何使用？ 
 
-参数: text
+参数: text 
 
-说明: 在设置了 `status` 的前提下有效，设置状态点的文本
+说明: 在设置了 `status` 的前提下有效，设置状态点的文本 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Badge - Badge的title属性如何使用？
+### ant-design 中 Badge - Badge的title属性如何使用？ 
 
-参数: title
+参数: title 
 
-说明: 设置鼠标放在状态点上时显示的文字
+说明: 设置鼠标放在状态点上时显示的文字 
 
-类型: string
+类型: string 
 
 默认值: -
 
@@ -22849,65 +23211,67 @@ Version: 4.24
 | placement | 缎带的位置，`start` 和 `end` 随文字方向（RTL 或 LTR）变动 | `start` \| `end` | `end` |
 | text | 缎带中填入的内容 | ReactNode | - |
 
-### ant-design 中 Badge - Badge.Ribbon的color属性如何使用？
 
-参数: color
+### ant-design 中 Badge - Badge.Ribbon的color属性如何使用？ 
 
-说明: 自定义缎带的颜色
+参数: color 
 
-类型: string
+说明: 自定义缎带的颜色 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Badge - Badge.Ribbon的placement属性如何使用？
+### ant-design 中 Badge - Badge.Ribbon的placement属性如何使用？ 
 
-参数: placement
+参数: placement 
 
-说明: 缎带的位置，`start` 和 `end` 随文字方向（RTL 或 LTR）变动
+说明: 缎带的位置，`start` 和 `end` 随文字方向（RTL 或 LTR）变动 
 
-类型: `start` | `end`
+类型: `start` | `end` 
 
 默认值: `end`
 
-### ant-design 中 Badge - Badge.Ribbon的text属性如何使用？
+### ant-design 中 Badge - Badge.Ribbon的text属性如何使用？ 
 
-参数: text
+参数: text 
 
-说明: 缎带中填入的内容
+说明: 缎带中填入的内容 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
 ### ant-design 的 Badge - `styles` 有哪些配置？
 
-| 名称      | 说明         | 版本  |
-| --------- | ------------ | ----- |
-| root      | 设置根元素   | 5.7.0 |
+| 名称 | 说明 | 版本 |
+| --- | --- | --- |
+| root | 设置根元素 | 5.7.0 |
 | indicator | 设置徽标元素 | 5.7.0 |
 
-### ant-design 中 Badge - `styles`的root属性如何使用？
 
-名称: root
+### ant-design 中 Badge - `styles`的root属性如何使用？ 
 
-说明: 设置根元素
+名称: root 
+
+说明: 设置根元素 
 
 版本: 5.7.0
 
-### ant-design 中 Badge - `styles`的indicator属性如何使用？
+### ant-design 中 Badge - `styles`的indicator属性如何使用？ 
 
-名称: indicator
+名称: indicator 
 
-说明: 设置徽标元素
+说明: 设置徽标元素 
 
 版本: 5.7.0
 
 ### ant-design 的 Avatar 有哪些配置？
 
-#### Avatar - Avatar
+#### Avatar - Avatar 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | alt | 图像无法显示时的替代文本 | string | - |
 | gap | 字符类型距离左右两侧边界单位像素 | number | 4 | 4.3.0 |
 | icon | 设置头像的自定义图标 | ReactNode | - |
@@ -22919,10 +23283,11 @@ Version: 4.24
 | crossOrigin | CORS 属性设置 | `'anonymous'` \| `'use-credentials'` \| `''` | - | 4.17.0 |
 | onError | 图片加载失败的事件，返回 false 会关闭组件默认的 fallback 行为 | () => boolean | - |
 
-#### Avatar - Avatar.Group (4.5.0+)
+
+#### Avatar - Avatar.Group (4.5.0+) 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | maxCount | 显示的最大头像个数 | number | - |
 | maxPopoverPlacement | 多余头像气泡弹出位置 | `top` \| `bottom` | `top` |
 | maxPopoverTrigger | 设置多余头像 Popover 的触发方式 | `hover` \| `focus` \| `click` | `hover` | 4.17.0 |
@@ -22930,10 +23295,11 @@ Version: 4.24
 | size | 设置头像的大小 | number \| `large` \| `small` \| `default` \| { xs: number, sm: number, ...} | `default` | 4.8.0 |
 | shape | 设置头像的形状 | `circle` \| `square` | `circle` | 5.8.0 |
 
+
 ### ant-design 的 Avatar - Avatar 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | alt | 图像无法显示时的替代文本 | string | - |
 | gap | 字符类型距离左右两侧边界单位像素 | number | 4 | 4.3.0 |
 | icon | 设置头像的自定义图标 | ReactNode | - |
@@ -22945,118 +23311,119 @@ Version: 4.24
 | crossOrigin | CORS 属性设置 | `'anonymous'` \| `'use-credentials'` \| `''` | - | 4.17.0 |
 | onError | 图片加载失败的事件，返回 false 会关闭组件默认的 fallback 行为 | () => boolean | - |
 
-### ant-design 中 Avatar - Avatar的alt属性如何使用？
 
-参数: alt
+### ant-design 中 Avatar - Avatar的alt属性如何使用？ 
 
-说明: 图像无法显示时的替代文本
+参数: alt 
 
-类型: string
+说明: 图像无法显示时的替代文本 
+
+类型: string 
 
 默认值: -
 
-### ant-design 中 Avatar - Avatar的gap属性如何使用？
+### ant-design 中 Avatar - Avatar的gap属性如何使用？ 
 
-参数: gap
+参数: gap 
 
-说明: 字符类型距离左右两侧边界单位像素
+说明: 字符类型距离左右两侧边界单位像素 
 
-类型: number
+类型: number 
 
-默认值: 4
+默认值: 4 
 
 版本: 4.3.0
 
-### ant-design 中 Avatar - Avatar的icon属性如何使用？
+### ant-design 中 Avatar - Avatar的icon属性如何使用？ 
 
-参数: icon
+参数: icon 
 
-说明: 设置头像的自定义图标
+说明: 设置头像的自定义图标 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Avatar - Avatar的shape属性如何使用？
+### ant-design 中 Avatar - Avatar的shape属性如何使用？ 
 
-参数: shape
+参数: shape 
 
-说明: 指定头像的形状
+说明: 指定头像的形状 
 
-类型: `circle` | `square`
+类型: `circle` | `square` 
 
 默认值: `circle`
 
-### ant-design 中 Avatar - Avatar的size属性如何使用？
+### ant-design 中 Avatar - Avatar的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 设置头像的大小
+说明: 设置头像的大小 
 
-类型: number | `large` | `small` | `default` | { xs: number, sm: number, ...}
+类型: number | `large` | `small` | `default` | { xs: number, sm: number, ...} 
 
-默认值: `default`
+默认值: `default` 
 
 版本: 4.7.0
 
-### ant-design 中 Avatar - Avatar的src属性如何使用？
+### ant-design 中 Avatar - Avatar的src属性如何使用？ 
 
-参数: src
+参数: src 
 
-说明: 图片类头像的资源地址或者图片元素
+说明: 图片类头像的资源地址或者图片元素 
 
-类型: string | ReactNode
+类型: string | ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: ReactNode: 4.8.0
 
-### ant-design 中 Avatar - Avatar的srcSet属性如何使用？
+### ant-design 中 Avatar - Avatar的srcSet属性如何使用？ 
 
-参数: srcSet
+参数: srcSet 
 
-说明: 设置图片类头像响应式资源地址
+说明: 设置图片类头像响应式资源地址 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Avatar - Avatar的draggable属性如何使用？
+### ant-design 中 Avatar - Avatar的draggable属性如何使用？ 
 
-参数: draggable
+参数: draggable 
 
-说明: 图片是否允许拖动
+说明: 图片是否允许拖动 
 
-类型: boolean | `'true'` | `'false'`
+类型: boolean | `'true'` | `'false'` 
 
 默认值: true
 
-### ant-design 中 Avatar - Avatar的crossOrigin属性如何使用？
+### ant-design 中 Avatar - Avatar的crossOrigin属性如何使用？ 
 
-参数: crossOrigin
+参数: crossOrigin 
 
-说明: CORS 属性设置
+说明: CORS 属性设置 
 
-类型: `'anonymous'` | `'use-credentials'` | `''`
+类型: `'anonymous'` | `'use-credentials'` | `''` 
 
-默认值: -
+默认值: - 
 
 版本: 4.17.0
 
-### ant-design 中 Avatar - Avatar的onError属性如何使用？
+### ant-design 中 Avatar - Avatar的onError属性如何使用？ 
 
-参数: onError
+参数: onError 
 
-说明: 图片加载失败的事件，返回 false 会关闭组件默认的 fallback 行为
+说明: 图片加载失败的事件，返回 false 会关闭组件默认的 fallback 行为 
 
-类型: () => boolean
+类型: () => boolean 
 
 默认值: -
 
 ### ant-design 的 Avatar - Avatar.Group (4.5.0+) 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | maxCount | 显示的最大头像个数 | number | - |
 | maxPopoverPlacement | 多余头像气泡弹出位置 | `top` \| `bottom` | `top` |
 | maxPopoverTrigger | 设置多余头像 Popover 的触发方式 | `hover` \| `focus` \| `click` | `hover` | 4.17.0 |
@@ -23064,75 +23431,76 @@ Version: 4.24
 | size | 设置头像的大小 | number \| `large` \| `small` \| `default` \| { xs: number, sm: number, ...} | `default` | 4.8.0 |
 | shape | 设置头像的形状 | `circle` \| `square` | `circle` | 5.8.0 |
 
-### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxCount属性如何使用？
 
-参数: maxCount
+### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxCount属性如何使用？ 
 
-说明: 显示的最大头像个数
+参数: maxCount 
 
-类型: number
+说明: 显示的最大头像个数 
+
+类型: number 
 
 默认值: -
 
-### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxPopoverPlacement属性如何使用？
+### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxPopoverPlacement属性如何使用？ 
 
-参数: maxPopoverPlacement
+参数: maxPopoverPlacement 
 
-说明: 多余头像气泡弹出位置
+说明: 多余头像气泡弹出位置 
 
-类型: `top` | `bottom`
+类型: `top` | `bottom` 
 
 默认值: `top`
 
-### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxPopoverTrigger属性如何使用？
+### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxPopoverTrigger属性如何使用？ 
 
-参数: maxPopoverTrigger
+参数: maxPopoverTrigger 
 
-说明: 设置多余头像 Popover 的触发方式
+说明: 设置多余头像 Popover 的触发方式 
 
-类型: `hover` | `focus` | `click`
+类型: `hover` | `focus` | `click` 
 
-默认值: `hover`
+默认值: `hover` 
 
 版本: 4.17.0
 
-### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxStyle属性如何使用？
+### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxStyle属性如何使用？ 
 
-参数: maxStyle
+参数: maxStyle 
 
-说明: 多余头像样式
+说明: 多余头像样式 
 
-类型: CSSProperties
+类型: CSSProperties 
 
 默认值: -
 
-### ant-design 中 Avatar - Avatar.Group (4.5.0+)的size属性如何使用？
+### ant-design 中 Avatar - Avatar.Group (4.5.0+)的size属性如何使用？ 
 
-参数: size
+参数: size 
 
-说明: 设置头像的大小
+说明: 设置头像的大小 
 
-类型: number | `large` | `small` | `default` | { xs: number, sm: number, ...}
+类型: number | `large` | `small` | `default` | { xs: number, sm: number, ...} 
 
-默认值: `default`
+默认值: `default` 
 
 版本: 4.8.0
 
-### ant-design 中 Avatar - Avatar.Group (4.5.0+)的shape属性如何使用？
+### ant-design 中 Avatar - Avatar.Group (4.5.0+)的shape属性如何使用？ 
 
-参数: shape
+参数: shape 
 
-说明: 设置头像的形状
+说明: 设置头像的形状 
 
-类型: `circle` | `square`
+类型: `circle` | `square` 
 
-默认值: `circle`
+默认值: `circle` 
 
 版本: 5.8.0
 
 ### ant-design 的 Auto-complete 有哪些配置？
 
-#### Auto-complete - API
+#### Auto-complete - API 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -23165,12 +23533,14 @@ Version: 4.24
 | onSelect | 被选中时调用，参数为选中项的 value 值 | function(value, option) | - |
 | onClear | 清除内容时的回调 | function | - | 4.6.0 |
 
-#### Auto-complete - 方法
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+#### Auto-complete - 方法 
+
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
+
 
 ### ant-design 的 Auto-complete - API 有哪些配置？
 
@@ -23205,326 +23575,329 @@ Version: 4.24
 | onSelect | 被选中时调用，参数为选中项的 value 值 | function(value, option) | - |
 | onClear | 清除内容时的回调 | function | - | 4.6.0 |
 
-### ant-design 中 Auto-complete - API的allowClear属性如何使用？
 
-参数: allowClear
+### ant-design 中 Auto-complete - API的allowClear属性如何使用？ 
 
-说明: 支持清除
+参数: allowClear 
 
-类型: boolean | { clearIcon?: ReactNode }
+说明: 支持清除 
 
-默认值: false
+类型: boolean | { clearIcon?: ReactNode } 
+
+默认值: false 
 
 版本: 5.8.0: 支持对象形式
 
-### ant-design 中 Auto-complete - API的autoFocus属性如何使用？
+### ant-design 中 Auto-complete - API的autoFocus属性如何使用？ 
 
-参数: autoFocus
+参数: autoFocus 
 
-说明: 自动获取焦点
+说明: 自动获取焦点 
 
-类型: boolean
-
-默认值: false
-
-### ant-design 中 Auto-complete - API的backfill属性如何使用？
-
-参数: backfill
-
-说明: 使用键盘选择选项的时候把选中项回填到输入框中
-
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Auto-complete - API的children (自动完成的数据源)属性如何使用？
+### ant-design 中 Auto-complete - API的backfill属性如何使用？ 
 
-参数: children (自动完成的数据源)
+参数: backfill 
 
-说明: 自动完成的数据源
+说明: 使用键盘选择选项的时候把选中项回填到输入框中 
 
-类型: React.ReactElement<OptionProps> | Array<React.ReactElement<OptionProps>>
+类型: boolean 
+
+默认值: false
+
+### ant-design 中 Auto-complete - API的children (自动完成的数据源)属性如何使用？ 
+
+参数: children (自动完成的数据源) 
+
+说明: 自动完成的数据源 
+
+类型: React.ReactElement<OptionProps> | Array<React.ReactElement<OptionProps>> 
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的children (自定义输入框)属性如何使用？
+### ant-design 中 Auto-complete - API的children (自定义输入框)属性如何使用？ 
 
-参数: children (自定义输入框)
+参数: children (自定义输入框) 
 
-说明: 自定义输入框
+说明: 自定义输入框 
 
-类型: HTMLInputElement | HTMLTextAreaElement | React.ReactElement<InputProps>
+类型: HTMLInputElement | HTMLTextAreaElement | React.ReactElement<InputProps> 
 
 默认值: \<Input />
 
-### ant-design 中 Auto-complete - API的defaultActiveFirstOption属性如何使用？
+### ant-design 中 Auto-complete - API的defaultActiveFirstOption属性如何使用？ 
 
-参数: defaultActiveFirstOption
+参数: defaultActiveFirstOption 
 
-说明: 是否默认高亮第一个选项
+说明: 是否默认高亮第一个选项 
 
-类型: boolean
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Auto-complete - API的defaultOpen属性如何使用？
+### ant-design 中 Auto-complete - API的defaultOpen属性如何使用？ 
 
-参数: defaultOpen
+参数: defaultOpen 
 
-说明: 是否默认展开下拉菜单
+说明: 是否默认展开下拉菜单 
 
-类型: boolean
-
-默认值: -
-
-### ant-design 中 Auto-complete - API的defaultValue属性如何使用？
-
-参数: defaultValue
-
-说明: 指定默认选中的条目
-
-类型: string
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的disabled属性如何使用？
+### ant-design 中 Auto-complete - API的defaultValue属性如何使用？ 
 
-参数: disabled
+参数: defaultValue 
 
-说明: 是否禁用
+说明: 指定默认选中的条目 
 
-类型: boolean
+类型: string 
+
+默认值: -
+
+### ant-design 中 Auto-complete - API的disabled属性如何使用？ 
+
+参数: disabled 
+
+说明: 是否禁用 
+
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Auto-complete - API的dropdownRender属性如何使用？
+### ant-design 中 Auto-complete - API的dropdownRender属性如何使用？ 
 
-参数: dropdownRender
+参数: dropdownRender 
 
-说明: 自定义下拉框内容
+说明: 自定义下拉框内容 
 
-类型: (menus: ReactNode) => ReactNode
+类型: (menus: ReactNode) => ReactNode 
 
-默认值: -
+默认值: - 
 
 版本: 4.24.0
 
-### ant-design 中 Auto-complete - API的popupClassName属性如何使用？
+### ant-design 中 Auto-complete - API的popupClassName属性如何使用？ 
 
-参数: popupClassName
+参数: popupClassName 
 
-说明: 下拉菜单的 className 属性
+说明: 下拉菜单的 className 属性 
 
-类型: string
+类型: string 
 
-默认值: -
+默认值: - 
 
 版本: 4.23.0
 
-### ant-design 中 Auto-complete - API的dropdownMatchSelectWidth属性如何使用？
+### ant-design 中 Auto-complete - API的dropdownMatchSelectWidth属性如何使用？ 
 
-参数: dropdownMatchSelectWidth
+参数: dropdownMatchSelectWidth 
 
-说明: 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动
+说明: 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动 
 
-类型: boolean | number
-
-默认值: true
-
-### ant-design 中 Auto-complete - API的filterOption属性如何使用？
-
-参数: filterOption
-
-说明: 是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 true，反之则返回 false
-
-类型: boolean | function(inputValue, option)
+类型: boolean | number 
 
 默认值: true
 
-### ant-design 中 Auto-complete - API的getPopupContainer属性如何使用？
+### ant-design 中 Auto-complete - API的filterOption属性如何使用？ 
 
-参数: getPopupContainer
+参数: filterOption 
 
-说明: 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codesandbox.io/s/4j168r7jw0)
+说明: 是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 true，反之则返回 false 
 
-类型: function(triggerNode)
+类型: boolean | function(inputValue, option) 
+
+默认值: true
+
+### ant-design 中 Auto-complete - API的getPopupContainer属性如何使用？ 
+
+参数: getPopupContainer 
+
+说明: 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codesandbox.io/s/4j168r7jw0) 
+
+类型: function(triggerNode) 
 
 默认值: () => document.body
 
-### ant-design 中 Auto-complete - API的notFoundContent属性如何使用？
+### ant-design 中 Auto-complete - API的notFoundContent属性如何使用？ 
 
-参数: notFoundContent
+参数: notFoundContent 
 
-说明: 当下拉列表为空时显示的内容
+说明: 当下拉列表为空时显示的内容 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Auto-complete - API的open属性如何使用？
-
-参数: open
-
-说明: 是否展开下拉菜单
-
-类型: boolean
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的options属性如何使用？
+### ant-design 中 Auto-complete - API的open属性如何使用？ 
 
-参数: options
+参数: open 
 
-说明: 数据化配置选项内容，相比 jsx 定义会获得更好的渲染性能
+说明: 是否展开下拉菜单 
 
-类型: { label, value }[]
-
-默认值: -
-
-### ant-design 中 Auto-complete - API的placeholder属性如何使用？
-
-参数: placeholder
-
-说明: 输入框提示
-
-类型: string
+类型: boolean 
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的status属性如何使用？
+### ant-design 中 Auto-complete - API的options属性如何使用？ 
 
-参数: status
+参数: options 
 
-说明: 设置校验状态
+说明: 数据化配置选项内容，相比 jsx 定义会获得更好的渲染性能 
 
-类型: 'error' | 'warning'
+类型: { label, value }[] 
 
 默认值: -
+
+### ant-design 中 Auto-complete - API的placeholder属性如何使用？ 
+
+参数: placeholder 
+
+说明: 输入框提示 
+
+类型: string 
+
+默认值: -
+
+### ant-design 中 Auto-complete - API的status属性如何使用？ 
+
+参数: status 
+
+说明: 设置校验状态 
+
+类型: 'error' | 'warning' 
+
+默认值: - 
 
 版本: 4.19.0
 
-### ant-design 中 Auto-complete - API的value属性如何使用？
+### ant-design 中 Auto-complete - API的value属性如何使用？ 
 
-参数: value
+参数: value 
 
-说明: 指定当前选中的条目
+说明: 指定当前选中的条目 
 
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的variant属性如何使用？
+### ant-design 中 Auto-complete - API的variant属性如何使用？ 
 
-参数: variant
+参数: variant 
 
-说明: 形态变体
+说明: 形态变体 
 
-类型: `outlined` | `borderless` | `filled`
+类型: `outlined` | `borderless` | `filled` 
 
-默认值: `outlined`
+默认值: `outlined` 
 
 版本: 5.13.0
 
-### ant-design 中 Auto-complete - API的onBlur属性如何使用？
+### ant-design 中 Auto-complete - API的onBlur属性如何使用？ 
 
-参数: onBlur
+参数: onBlur 
 
-说明: 失去焦点时的回调
+说明: 失去焦点时的回调 
 
-类型: function()
-
-默认值: -
-
-### ant-design 中 Auto-complete - API的onChange属性如何使用？
-
-参数: onChange
-
-说明: 选中 option，或 input 的 value 变化时，调用此函数
-
-类型: function(value)
+类型: function() 
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的onDropdownVisibleChange属性如何使用？
+### ant-design 中 Auto-complete - API的onChange属性如何使用？ 
 
-参数: onDropdownVisibleChange
+参数: onChange 
 
-说明: 展开下拉菜单的回调
+说明: 选中 option，或 input 的 value 变化时，调用此函数 
 
-类型: function(open)
-
-默认值: -
-
-### ant-design 中 Auto-complete - API的onFocus属性如何使用？
-
-参数: onFocus
-
-说明: 获得焦点时的回调
-
-类型: function()
+类型: function(value) 
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的onSearch属性如何使用？
+### ant-design 中 Auto-complete - API的onDropdownVisibleChange属性如何使用？ 
 
-参数: onSearch
+参数: onDropdownVisibleChange 
 
-说明: 搜索补全项的时候调用
+说明: 展开下拉菜单的回调 
 
-类型: function(value)
-
-默认值: -
-
-### ant-design 中 Auto-complete - API的onSelect属性如何使用？
-
-参数: onSelect
-
-说明: 被选中时调用，参数为选中项的 value 值
-
-类型: function(value, option)
+类型: function(open) 
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的onClear属性如何使用？
+### ant-design 中 Auto-complete - API的onFocus属性如何使用？ 
 
-参数: onClear
+参数: onFocus 
 
-说明: 清除内容时的回调
+说明: 获得焦点时的回调 
 
-类型: function
+类型: function() 
 
 默认值: -
+
+### ant-design 中 Auto-complete - API的onSearch属性如何使用？ 
+
+参数: onSearch 
+
+说明: 搜索补全项的时候调用 
+
+类型: function(value) 
+
+默认值: -
+
+### ant-design 中 Auto-complete - API的onSelect属性如何使用？ 
+
+参数: onSelect 
+
+说明: 被选中时调用，参数为选中项的 value 值 
+
+类型: function(value, option) 
+
+默认值: -
+
+### ant-design 中 Auto-complete - API的onClear属性如何使用？ 
+
+参数: onClear 
+
+说明: 清除内容时的回调 
+
+类型: function 
+
+默认值: - 
 
 版本: 4.6.0
 
 ### ant-design 的 Auto-complete - 方法 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
+| 名称 | 描述 |
+| --- | --- |
+| blur() | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Auto-complete - 方法的blur()属性如何使用？
 
-名称: blur()
+### ant-design 中 Auto-complete - 方法的blur()属性如何使用？ 
+
+名称: blur() 
 
 描述: 移除焦点
 
-### ant-design 中 Auto-complete - 方法的focus()属性如何使用？
+### ant-design 中 Auto-complete - 方法的focus()属性如何使用？ 
 
-名称: focus()
+名称: focus() 
 
 描述: 获取焦点
 
 ### ant-design 的 App 有哪些配置？
 
-#### App - App
+#### App - App 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | component | 设置渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType | div | 5.11.0 |
 | message | App 内 Message 的全局配置 | - | 5.3.0 |
 | notification | App 内 Notification 的全局配置 | - | 5.3.0 |
+
 
 ### ant-design 的 App - App 有哪些配置？
 
@@ -23534,44 +23907,45 @@ Version: 4.24
 | message | App 内 Message 的全局配置 | - | 5.3.0 |
 | notification | App 内 Notification 的全局配置 | - | 5.3.0 |
 
-### ant-design 中 App - App的component属性如何使用？
 
-参数: component
+### ant-design 中 App - App的component属性如何使用？ 
 
-说明: 设置渲染元素，为 `false` 则不创建 DOM 节点
+参数: component 
 
-类型: ComponentType
+说明: 设置渲染元素，为 `false` 则不创建 DOM 节点 
 
-默认值: div
+类型: ComponentType 
+
+默认值: div 
 
 版本: 5.11.0
 
-### ant-design 中 App - App的message属性如何使用？
+### ant-design 中 App - App的message属性如何使用？ 
 
-参数: message
+参数: message 
 
-说明: App 内 Message 的全局配置
+说明: App 内 Message 的全局配置 
 
-类型: -
+类型: - 
 
 默认值: 5.3.0
 
-### ant-design 中 App - App的notification属性如何使用？
+### ant-design 中 App - App的notification属性如何使用？ 
 
-参数: notification
+参数: notification 
 
-说明: App 内 Notification 的全局配置
+说明: App 内 Notification 的全局配置 
 
-类型: -
+类型: - 
 
 默认值: 5.3.0
 
 ### ant-design 的 Anchor 有哪些配置？
 
-#### Anchor - Anchor Props
+#### Anchor - Anchor Props 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | affix | 固定模式 | boolean | true |
 | bounds | 锚点区域边界 | number | 5 |
 | getContainer | 指定滚动的容器 | () => HTMLElement | () => window |
@@ -23585,10 +23959,11 @@ Version: 4.24
 | direction | 设置导航方向 | `vertical` \| `horizontal` | `vertical` | 5.2.0 |
 | replace | 替换浏览器历史记录中项目的 href 而不是推送它 | boolean | false | 5.7.0 |
 
-#### Anchor - AnchorItem
+
+#### Anchor - AnchorItem 
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | key | 唯一标志 | string \| number | - |
 | href | 锚点链接 | string | - |
 | target | 该属性指定在何处显示链接的资源 | string | - |
@@ -23596,18 +23971,20 @@ Version: 4.24
 | children | 嵌套的 Anchor Link，`注意：水平方向该属性不支持` | - |
 | replace | 替换浏览器历史记录中的项目 href 而不是推送它 | boolean | false | 5.7.0 |
 
-#### Anchor - Link Props
 
-| 参数   | 说明                           | 类型      | 默认值 |
-| ------ | ------------------------------ | --------- | ------ |
-| href   | 锚点链接                       | string    | -      |
-| target | 该属性指定在何处显示链接的资源 | string    | -      |
-| title  | 文字内容                       | ReactNode | -      |
+#### Anchor - Link Props 
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| href | 锚点链接 | string | - |
+| target | 该属性指定在何处显示链接的资源 | string | - |
+| title | 文字内容 | ReactNode | - |
+
 
 ### ant-design 的 Anchor - Anchor Props 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | affix | 固定模式 | boolean | true |
 | bounds | 锚点区域边界 | number | 5 |
 | getContainer | 指定滚动的容器 | () => HTMLElement | () => window |
@@ -23621,134 +23998,135 @@ Version: 4.24
 | direction | 设置导航方向 | `vertical` \| `horizontal` | `vertical` | 5.2.0 |
 | replace | 替换浏览器历史记录中项目的 href 而不是推送它 | boolean | false | 5.7.0 |
 
-### ant-design 中 Anchor - Anchor Props的affix属性如何使用？
 
-参数: affix
+### ant-design 中 Anchor - Anchor Props的affix属性如何使用？ 
 
-说明: 固定模式
+参数: affix 
 
-类型: boolean
+说明: 固定模式 
+
+类型: boolean 
 
 默认值: true
 
-### ant-design 中 Anchor - Anchor Props的bounds属性如何使用？
+### ant-design 中 Anchor - Anchor Props的bounds属性如何使用？ 
 
-参数: bounds
+参数: bounds 
 
-说明: 锚点区域边界
+说明: 锚点区域边界 
 
-类型: number
+类型: number 
 
 默认值: 5
 
-### ant-design 中 Anchor - Anchor Props的getContainer属性如何使用？
+### ant-design 中 Anchor - Anchor Props的getContainer属性如何使用？ 
 
-参数: getContainer
+参数: getContainer 
 
-说明: 指定滚动的容器
+说明: 指定滚动的容器 
 
-类型: () => HTMLElement
+类型: () => HTMLElement 
 
 默认值: () => window
 
-### ant-design 中 Anchor - Anchor Props的getCurrentAnchor属性如何使用？
+### ant-design 中 Anchor - Anchor Props的getCurrentAnchor属性如何使用？ 
 
-参数: getCurrentAnchor
+参数: getCurrentAnchor 
 
-说明: 自定义高亮的锚点
+说明: 自定义高亮的锚点 
 
-类型: (activeLink: string) => string
+类型: (activeLink: string) => string 
 
 默认值: -
 
-### ant-design 中 Anchor - Anchor Props的offsetTop属性如何使用？
+### ant-design 中 Anchor - Anchor Props的offsetTop属性如何使用？ 
 
-参数: offsetTop
+参数: offsetTop 
 
-说明: 距离窗口顶部达到指定偏移量后触发
+说明: 距离窗口顶部达到指定偏移量后触发 
 
 类型: number
 
-### ant-design 中 Anchor - Anchor Props的showInkInFixed属性如何使用？
+### ant-design 中 Anchor - Anchor Props的showInkInFixed属性如何使用？ 
 
-参数: showInkInFixed
+参数: showInkInFixed 
 
-说明: `affix={false}` 时是否显示小方块
+说明: `affix={false}` 时是否显示小方块 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Anchor - Anchor Props的targetOffset属性如何使用？
+### ant-design 中 Anchor - Anchor Props的targetOffset属性如何使用？ 
 
-参数: targetOffset
+参数: targetOffset 
 
-说明: 锚点滚动偏移量，默认与 offsetTop 相同，[例子](#components-anchor-demo-targetoffset)
+说明: 锚点滚动偏移量，默认与 offsetTop 相同，[例子](#components-anchor-demo-targetoffset) 
 
-类型: number
-
-默认值: -
-
-### ant-design 中 Anchor - Anchor Props的onChange属性如何使用？
-
-参数: onChange
-
-说明: 监听锚点链接改变
-
-类型: (currentActiveLink: string) => void
+类型: number 
 
 默认值: -
 
-### ant-design 中 Anchor - Anchor Props的onClick属性如何使用？
+### ant-design 中 Anchor - Anchor Props的onChange属性如何使用？ 
 
-参数: onClick
+参数: onChange 
 
-说明: `click` 事件的 handler
+说明: 监听锚点链接改变 
 
-类型: (e: MouseEvent, link: object) => void
+类型: (currentActiveLink: string) => void 
+
+默认值: -
+
+### ant-design 中 Anchor - Anchor Props的onClick属性如何使用？ 
+
+参数: onClick 
+
+说明: `click` 事件的 handler 
+
+类型: (e: MouseEvent, link: object) => void 
 
 默认值: -
 
-### ant-design 中 Anchor - Anchor Props的items属性如何使用？
+### ant-design 中 Anchor - Anchor Props的items属性如何使用？ 
 
-参数: items
+参数: items 
 
-说明: 数据化配置选项内容，支持通过 children 嵌套
+说明: 数据化配置选项内容，支持通过 children 嵌套 
 
-类型: { key, href, title, target, children }[] [具体见](#anchoritem)
+类型: { key, href, title, target, children }[] [具体见](#anchoritem) 
 
-默认值: -
+默认值: - 
 
 版本: 5.1.0
 
-### ant-design 中 Anchor - Anchor Props的direction属性如何使用？
+### ant-design 中 Anchor - Anchor Props的direction属性如何使用？ 
 
-参数: direction
+参数: direction 
 
-说明: 设置导航方向
+说明: 设置导航方向 
 
-类型: `vertical` | `horizontal`
+类型: `vertical` | `horizontal` 
 
-默认值: `vertical`
+默认值: `vertical` 
 
 版本: 5.2.0
 
-### ant-design 中 Anchor - Anchor Props的replace属性如何使用？
+### ant-design 中 Anchor - Anchor Props的replace属性如何使用？ 
 
-参数: replace
+参数: replace 
 
-说明: 替换浏览器历史记录中项目的 href 而不是推送它
+说明: 替换浏览器历史记录中项目的 href 而不是推送它 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 5.7.0
 
 ### ant-design 的 Anchor - AnchorItem 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | key | 唯一标志 | string \| number | - |
 | href | 锚点链接 | string | - |
 | target | 该属性指定在何处显示链接的资源 | string | - |
@@ -23756,107 +24134,109 @@ Version: 4.24
 | children | 嵌套的 Anchor Link，`注意：水平方向该属性不支持` | - |
 | replace | 替换浏览器历史记录中的项目 href 而不是推送它 | boolean | false | 5.7.0 |
 
-### ant-design 中 Anchor - AnchorItem的key属性如何使用？
 
-参数: key
+### ant-design 中 Anchor - AnchorItem的key属性如何使用？ 
 
-说明: 唯一标志
+参数: key 
 
-类型: string | number
+说明: 唯一标志 
 
-默认值: -
-
-### ant-design 中 Anchor - AnchorItem的href属性如何使用？
-
-参数: href
-
-说明: 锚点链接
-
-类型: string
+类型: string | number 
 
 默认值: -
 
-### ant-design 中 Anchor - AnchorItem的target属性如何使用？
+### ant-design 中 Anchor - AnchorItem的href属性如何使用？ 
 
-参数: target
+参数: href 
 
-说明: 该属性指定在何处显示链接的资源
+说明: 锚点链接 
 
-类型: string
-
-默认值: -
-
-### ant-design 中 Anchor - AnchorItem的title属性如何使用？
-
-参数: title
-
-说明: 文字内容
-
-类型: ReactNode
+类型: string 
 
 默认值: -
 
-### ant-design 中 Anchor - AnchorItem的children属性如何使用？
+### ant-design 中 Anchor - AnchorItem的target属性如何使用？ 
 
-参数: children
+参数: target 
 
-说明: 嵌套的 Anchor Link，`注意：水平方向该属性不支持`
+说明: 该属性指定在何处显示链接的资源 
+
+类型: string 
+
+默认值: -
+
+### ant-design 中 Anchor - AnchorItem的title属性如何使用？ 
+
+参数: title 
+
+说明: 文字内容 
+
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Anchor - AnchorItem的children属性如何使用？ 
+
+参数: children 
+
+说明: 嵌套的 Anchor Link，`注意：水平方向该属性不支持` 
 
 类型: -
 
-### ant-design 中 Anchor - AnchorItem的replace属性如何使用？
+### ant-design 中 Anchor - AnchorItem的replace属性如何使用？ 
 
-参数: replace
+参数: replace 
 
-说明: 替换浏览器历史记录中的项目 href 而不是推送它
+说明: 替换浏览器历史记录中的项目 href 而不是推送它 
 
-类型: boolean
+类型: boolean 
 
-默认值: false
+默认值: false 
 
 版本: 5.7.0
 
 ### ant-design 的 Anchor - Link Props 有哪些配置？
 
-| 参数   | 说明                           | 类型      | 默认值 |
-| ------ | ------------------------------ | --------- | ------ |
-| href   | 锚点链接                       | string    | -      |
-| target | 该属性指定在何处显示链接的资源 | string    | -      |
-| title  | 文字内容                       | ReactNode | -      |
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| href | 锚点链接 | string | - |
+| target | 该属性指定在何处显示链接的资源 | string | - |
+| title | 文字内容 | ReactNode | - |
 
-### ant-design 中 Anchor - Link Props的href属性如何使用？
 
-参数: href
+### ant-design 中 Anchor - Link Props的href属性如何使用？ 
 
-说明: 锚点链接
+参数: href 
 
-类型: string
+说明: 锚点链接 
 
-默认值: -
-
-### ant-design 中 Anchor - Link Props的target属性如何使用？
-
-参数: target
-
-说明: 该属性指定在何处显示链接的资源
-
-类型: string
+类型: string 
 
 默认值: -
 
-### ant-design 中 Anchor - Link Props的title属性如何使用？
+### ant-design 中 Anchor - Link Props的target属性如何使用？ 
 
-参数: title
+参数: target 
 
-说明: 文字内容
+说明: 该属性指定在何处显示链接的资源 
 
-类型: ReactNode
+类型: string 
+
+默认值: -
+
+### ant-design 中 Anchor - Link Props的title属性如何使用？ 
+
+参数: title 
+
+说明: 文字内容 
+
+类型: ReactNode 
 
 默认值: -
 
 ### ant-design 的 Alert 有哪些配置？
 
-#### Alert - API
+#### Alert - API 
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -23871,12 +24251,14 @@ Version: 4.24
 | type | 指定警告提示的样式，有四种选择 `success`、`info`、`warning`、`error` | string | `info`，`banner` 模式下默认值为 `warning` |
 | onClose | 关闭时触发的回调函数 | (e: MouseEvent) => void | - |
 
-#### Alert - Alert.ErrorBoundary
+
+#### Alert - Alert.ErrorBoundary 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | description | 自定义错误内容，如果未指定会展示报错堆栈 | ReactNode | {{ error stack }} |
 | message | 自定义错误标题，如果未指定会展示原生报错信息 | ReactNode | {{ error }} |
+
 
 ### ant-design 的 Alert - API 有哪些配置？
 
@@ -23893,105 +24275,106 @@ Version: 4.24
 | type | 指定警告提示的样式，有四种选择 `success`、`info`、`warning`、`error` | string | `info`，`banner` 模式下默认值为 `warning` |
 | onClose | 关闭时触发的回调函数 | (e: MouseEvent) => void | - |
 
-### ant-design 中 Alert - API的action属性如何使用？
 
-参数: action
+### ant-design 中 Alert - API的action属性如何使用？ 
 
-说明: 自定义操作项
+参数: action 
 
-类型: ReactNode
+说明: 自定义操作项 
 
-默认值: -
+类型: ReactNode 
+
+默认值: - 
 
 版本: 4.9.0
 
-### ant-design 中 Alert - API的afterClose属性如何使用？
+### ant-design 中 Alert - API的afterClose属性如何使用？ 
 
-参数: afterClose
+参数: afterClose 
 
-说明: 关闭动画结束后触发的回调函数
+说明: 关闭动画结束后触发的回调函数 
 
-类型: () => void
+类型: () => void 
 
 默认值: -
 
-### ant-design 中 Alert - API的banner属性如何使用？
+### ant-design 中 Alert - API的banner属性如何使用？ 
 
-参数: banner
+参数: banner 
 
-说明: 是否用作顶部公告
+说明: 是否用作顶部公告 
 
-类型: boolean
+类型: boolean 
 
 默认值: false
 
-### ant-design 中 Alert - API的closeIcon属性如何使用？
+### ant-design 中 Alert - API的closeIcon属性如何使用？ 
 
-参数: closeIcon
+参数: closeIcon 
 
-说明: 自定义关闭 Icon，>=5.7.0: 设置为 `null` 或 `false` 时隐藏关闭按钮
+说明: 自定义关闭 Icon，>=5.7.0: 设置为 `null` 或 `false` 时隐藏关闭按钮 
 
-类型: boolean | ReactNode
+类型: boolean | ReactNode 
 
 默认值: `<CloseOutlined />`
 
-### ant-design 中 Alert - API的description属性如何使用？
+### ant-design 中 Alert - API的description属性如何使用？ 
 
-参数: description
+参数: description 
 
-说明: 警告提示的辅助性文字介绍
+说明: 警告提示的辅助性文字介绍 
 
-类型: ReactNode
-
-默认值: -
-
-### ant-design 中 Alert - API的icon属性如何使用？
-
-参数: icon
-
-说明: 自定义图标，`showIcon` 为 true 时有效
-
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Alert - API的message属性如何使用？
+### ant-design 中 Alert - API的icon属性如何使用？ 
 
-参数: message
+参数: icon 
 
-说明: 警告提示内容
+说明: 自定义图标，`showIcon` 为 true 时有效 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: -
 
-### ant-design 中 Alert - API的showIcon属性如何使用？
+### ant-design 中 Alert - API的message属性如何使用？ 
 
-参数: showIcon
+参数: message 
 
-说明: 是否显示辅助图标
+说明: 警告提示内容 
 
-类型: boolean
+类型: ReactNode 
+
+默认值: -
+
+### ant-design 中 Alert - API的showIcon属性如何使用？ 
+
+参数: showIcon 
+
+说明: 是否显示辅助图标 
+
+类型: boolean 
 
 默认值: false，`banner` 模式下默认值为 true
 
-### ant-design 中 Alert - API的type属性如何使用？
+### ant-design 中 Alert - API的type属性如何使用？ 
 
-参数: type
+参数: type 
 
-说明: 指定警告提示的样式，有四种选择 `success`、`info`、`warning`、`error`
+说明: 指定警告提示的样式，有四种选择 `success`、`info`、`warning`、`error` 
 
-类型: string
+类型: string 
 
 默认值: `info`，`banner` 模式下默认值为 `warning`
 
-### ant-design 中 Alert - API的onClose属性如何使用？
+### ant-design 中 Alert - API的onClose属性如何使用？ 
 
-参数: onClose
+参数: onClose 
 
-说明: 关闭时触发的回调函数
+说明: 关闭时触发的回调函数 
 
-类型: (e: MouseEvent) => void
+类型: (e: MouseEvent) => void 
 
 默认值: -
 
@@ -24002,29 +24385,30 @@ Version: 4.24
 | description | 自定义错误内容，如果未指定会展示报错堆栈 | ReactNode | {{ error stack }} |
 | message | 自定义错误标题，如果未指定会展示原生报错信息 | ReactNode | {{ error }} |
 
-### ant-design 中 Alert - Alert.ErrorBoundary的description属性如何使用？
 
-参数: description
+### ant-design 中 Alert - Alert.ErrorBoundary的description属性如何使用？ 
 
-说明: 自定义错误内容，如果未指定会展示报错堆栈
+参数: description 
 
-类型: ReactNode
+说明: 自定义错误内容，如果未指定会展示报错堆栈 
+
+类型: ReactNode 
 
 默认值: {{ error stack }}
 
-### ant-design 中 Alert - Alert.ErrorBoundary的message属性如何使用？
+### ant-design 中 Alert - Alert.ErrorBoundary的message属性如何使用？ 
 
-参数: message
+参数: message 
 
-说明: 自定义错误标题，如果未指定会展示原生报错信息
+说明: 自定义错误标题，如果未指定会展示原生报错信息 
 
-类型: ReactNode
+类型: ReactNode 
 
 默认值: {{ error }}
 
 ### ant-design 的 Affix 有哪些配置？
 
-#### Affix - API
+#### Affix - API 
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -24032,6 +24416,7 @@ Version: 4.24
 | offsetTop | 距离窗口顶部达到指定偏移量后触发 | number | 0 |
 | target | 设置 `Affix` 需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数 | () => HTMLElement | () => window |
 | onChange | 固定状态改变时触发的回调函数 | (affixed?: boolean) => void | - |
+
 
 ### ant-design 的 Affix - API 有哪些配置？
 
@@ -24042,42 +24427,43 @@ Version: 4.24
 | target | 设置 `Affix` 需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数 | () => HTMLElement | () => window |
 | onChange | 固定状态改变时触发的回调函数 | (affixed?: boolean) => void | - |
 
-### ant-design 中 Affix - API的offsetBottom属性如何使用？
 
-参数: offsetBottom
+### ant-design 中 Affix - API的offsetBottom属性如何使用？ 
 
-说明: 距离窗口底部达到指定偏移量后触发
+参数: offsetBottom 
 
-类型: number
+说明: 距离窗口底部达到指定偏移量后触发 
+
+类型: number 
 
 默认值: -
 
-### ant-design 中 Affix - API的offsetTop属性如何使用？
+### ant-design 中 Affix - API的offsetTop属性如何使用？ 
 
-参数: offsetTop
+参数: offsetTop 
 
-说明: 距离窗口顶部达到指定偏移量后触发
+说明: 距离窗口顶部达到指定偏移量后触发 
 
-类型: number
+类型: number 
 
 默认值: 0
 
-### ant-design 中 Affix - API的target属性如何使用？
+### ant-design 中 Affix - API的target属性如何使用？ 
 
-参数: target
+参数: target 
 
-说明: 设置 `Affix` 需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数
+说明: 设置 `Affix` 需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数 
 
-类型: () => HTMLElement
+类型: () => HTMLElement 
 
 默认值: () => window
 
-### ant-design 中 Affix - API的onChange属性如何使用？
+### ant-design 中 Affix - API的onChange属性如何使用？ 
 
-参数: onChange
+参数: onChange 
 
-说明: 固定状态改变时触发的回调函数
+说明: 固定状态改变时触发的回调函数 
 
-类型: (affixed?: boolean) => void
+类型: (affixed?: boolean) => void 
 
 默认值: -

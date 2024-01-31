@@ -181,7 +181,7 @@ ProFormList 自带了两个操作按钮：删除按钮和复制按钮。用户�
 
 - 获取所有数据：使用 `actionRef.current.getList` 方法，例如 `actionRef?.current.getList?.()`。
 
-### 问题 2：如何在表单列表中使用 actionRef 进行操作？
+### 如何在表单列表中使用 actionRef 进行操作？
 
 答案 2：要在表单列表组件中使用 `actionRef` 进行操作，你需要将 `actionRef` 属性传递给 `<ProFormList>` 组件。下面是一个示例：
 
@@ -193,7 +193,7 @@ ProFormList 自带了两个操作按钮：删除按钮和复制按钮。用户�
 
 请确保在 `<ProFormList>` 组件外部创建和定义 `actionRef`。然后，你可以在相关按钮的 `onClick` 事件中调用 `actionRef.current` 来执行具体的操作。
 
-###如何使用 actionRef 进行操作的权限控制？
+### 如何使用 actionRef 进行操作的权限控制？
 
 答案 3：如果你想要在使用 `actionRef` 进行具体操作之前进行权限控制，你可以使用 `actionGuard` 属性来指定权限控制的函数。该函数会在每次操作前被调用，并接收操作名称和相关参数作为参数。你可以在函数内部进行权限判断和限制。例如：
 
@@ -332,17 +332,17 @@ type RenderActionParams = {
 
 以上是对 ProFormList 的 RenderProps 模式参数的详细说明。通过了解这些参数，可以更好地理解和使用 ProFormList 的 RenderProps 模式。
 
-#### `ProFormFieldSet` 是用来做什么的？
+### `ProFormFieldSet` 是用来做什么的？
 
-答：`ProFormFieldSet` 可以将内部的多个 children 的值组合并且存储在 `ProForm` 中。
+`ProFormFieldSet` 可以将内部的多个 children 的值组合并且存储在 `ProForm` 中。
 
-#### 问题 2：`ProFormFieldSet`怎样进行数据转化？
+### `ProFormFieldSet`怎样进行数据转化？
 
-答：在提交时，可以通过 `transform` 属性对值进行转化。
+在提交时，可以通过 `transform` 属性对值进行转化。
 
-####`ProFormFieldSet` 可以用来组合哪些输入框？
+### `ProFormFieldSet` 可以用来组合哪些输入框？
 
-答：`ProFormFieldSet` 可以方便地组合多个输入框，例如 `ProFormText`。
+`ProFormFieldSet` 可以方便地组合多个输入框，例如 `ProFormText`。
 
 ### ProFormDependency 的作用是什么？
 

@@ -180,15 +180,15 @@ import imgUrl from './image.png';
 
 希望以上信息能够对你有所帮助！如果你还有其他问题，可以继续提问哦。
 
-#### 什么是`.umi-production`目录？
+### 什么是`.umi-production`目录？
 
 `.umi-production`目录是在 build 过程中生成的临时文件目录。在 build 过程中，入口文件、路由等文件都会被临时生成到该目录下。
 
-#### 为什么要避免提交`.umi-production`目录到 Git 仓库？
+### 为什么要避免提交`.umi-production`目录到 Git 仓库？
 
 `.umi-production`目录中的文件通常是临时生成的，并不需要被纳入版本控制。因此，为了避免不必要的冗余和文件冲突，我们应将`.umi-production`目录添加到`.gitignore`中，从而防止将其提交到 Git 仓库中。
 
-#### 如何正确处理`.umi-production`目录？
+### 如何正确处理`.umi-production`目录？
 
 在使用 Git 进行版本控制时，我们应将`.umi-production`目录添加到`.gitignore`文件中，从而告诉 Git 忽略该目录及其下的所有文件，避免将临时生成的文件提交到 Git 仓库。这样可以减少 Git 仓库的体积，避免文件冲突和冗余。
 
@@ -241,11 +241,11 @@ routes: [
 
 希望以上信息能对你有所帮助。
 
-#### 约定式路由的默认生成规则是什么？
+### 约定式路由的默认生成规则是什么？
 
 约定式路由默认以 `pages/*` 文件夹的文件层级结构来生成路由表。
 
-#### 配置式路由中，component 的相对路径是如何查找文件的？
+### 配置式路由中，component 的相对路径是如何查找文件的？
 
 在配置式路由中，`component` 若写为相对路径，将从该文件夹为起点开始寻找文件。例如，`./index` 等价于 `@/pages/index`。
 

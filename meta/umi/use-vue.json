@@ -1,0 +1,18 @@
+[
+  {
+    "title": "什么是命名路由？",
+    "md": "命名路由是指在定义路由时可以为每个路由提供一个唯一的名称，除了路由的路径外，可以通过该名称来进行路由跳转。\n"
+  },
+  {
+    "title": "如何为路由提供名称？",
+    "md": "可以在定义路由时，通过name属性为路由提供一个名称。例如：\n```ts\nexport default {\n  routes: [\n    {\n      path: '/user/:username',\n      name: 'user',\n      component: 'index',\n    },\n  ],\n};\n```\n在上述例子中，为路径为`/user/:username`的路由提供了一个名称为`user`。\n"
+  },
+  {
+    "title": "如何使用命名路由进行导航？",
+    "md": "要使用命名路由进行导航，可以通过`router-link`组件的`to`属性传递一个对象来链接到一个命名的路由。例如：\n```html\n<router-link :to=\"{ name: 'user', params: { username: 'erina' }}\">\n  User\n</router-link>\n```\n在上述例子中，通过`router-link`组件的`to`属性，使用`name`属性为`user`的路由，并传递`params`参数`{ username: 'erina' }`，来生成一个包含链接文本`User`的可点击的路由链接。\n"
+  },
+  {
+    "title": "如何使用命名路由进行编程式导航？",
+    "md": "使用命名路由进行编程式导航与使用命令式调用`router.push`方法一致。例如：\n```ts\nrouter.push({ name: 'user', params: { username: 'erina' } });\n```\n在上述例子中，通过调用`router.push`方法，传递一个包含`name`属性为`user`的路由和`params`参数`{ username: 'erina' }`，实现了导航到路径`/user/erina`的效果。\n"
+  }
+]

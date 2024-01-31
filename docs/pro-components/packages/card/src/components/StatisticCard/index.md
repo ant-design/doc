@@ -136,7 +136,7 @@ const App = () => {
 
 `StatisticCard` 是一个统计卡片组件，用于展示带有统计数值和图标的卡片。
 
-#### 参数说明
+### 参数说明
 
 - `title`：卡片标题，可以是字符串或 ReactNode。例如，`"访问量"` 或 `<span>访问量</span>`。
 - `extra`：卡片右上角的操作区域，可以是字符串或 ReactNode。例如，`"指标说明"` 或 `<span>指标说明</span>`。
@@ -150,7 +150,7 @@ const App = () => {
 - `chartPlacement`：图表位置，相对于 statistic 的位置。可选值有 `left`，`right`，`bottom`。
 - `footer`：额外指标展示，可以是任意的 ReactNode。用于展示额外的指标信息。
 
-#### 示例
+### 示例
 
 ```jsx
 <StatisticCard

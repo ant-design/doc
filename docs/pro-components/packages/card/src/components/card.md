@@ -219,7 +219,7 @@ export default Demo;
 | tooltip   | 标题右侧图标 hover 提示信息 | `string`          | -      |      |
 | headStyle | 标题的 style 样式           | `CSSProperties`   | -      |      |
 
-### 问题 2：ProCard 的内容区有哪些参数？
+### ProCard 的内容区有哪些参数？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -233,7 +233,7 @@ export default Demo;
 | type | 卡片类型 | `inner` \| `default` | - |  |
 | size | 卡片尺寸 | `default` \| `small` | - |  |
 
-###ProCard 的操作组有哪些参数？
+### ProCard 的操作组有哪些参数？
 
 | 参数    | 说明                       | 类型               | 默认值 | 版本 |
 | ------- | -------------------------- | ------------------ | ------ | ---- |
@@ -278,13 +278,13 @@ ProCardTabs 的 items 参数是基于 antd 拓展的页签的基本配置，必�
 
 ItemsProps 是一个用于支持 Tabs 下页签的属性对象。
 
-#### 参数列表
+### 参数列表
 
 | 参数      | 说明                 | 类型      | 默认值 |
 | :-------- | :------------------- | :-------- | :----- |
 | cardProps | ProCard 卡片属性透传 | `ProCard` | -      |
 
-#### 参数说明
+### 参数说明
 
 - `cardProps`：ProCard 卡片属性透传，类型为 `ProCard`，默认值为 `-`。
 

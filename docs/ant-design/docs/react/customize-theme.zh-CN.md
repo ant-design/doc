@@ -42,11 +42,11 @@ Ant Design 5.0 版本支持灵活的样式定制，以满足业务和品牌上�
 
 在静态方法中需要使用 context 信息时，可以通过 `Modal.useModal` 方法返回 modal 实体以及 contextHolder 节点，并将它们插入到需要获取 context 信息的位置。另外，还可以使用 [App 包裹组件](/components/app-cn) 来简化使用 `useModal` 等方法时手动插入 contextHolder 的操作。
 
-1. 问：如何通过 `theme` 中的 `token` 属性修改主题变量？答：可以通过 `theme` 中的 `token` 属性来修改一些主题变量。在示例代码中的 `ConfigProvider` 组件中，设置 `theme` 属性为一个对象，其中的 `token` 属性用于指定要修改的主题变量。
+1. 如何通过 `theme` 中的 `token` 属性修改主题变量？可以通过 `theme` 中的 `token` 属性来修改一些主题变量。在示例代码中的 `ConfigProvider` 组件中，设置 `theme` 属性为一个对象，其中的 `token` 属性用于指定要修改的主题变量。
 
-2. 问：什么是 Seed Token？有什么作用？答：Seed Token 是指那些会影响其他主题变量的主题变量。在示例代码中，`colorPrimary` 和 `borderRadius` 就是 Seed Token。通过修改这些 Seed Token 的值，可以同时影响其他相关主题变量的样式。
+2. 什么是 Seed Token？有什么作用？Seed Token 是指那些会影响其他主题变量的主题变量。在示例代码中，`colorPrimary` 和 `borderRadius` 就是 Seed Token。通过修改这些 Seed Token 的值，可以同时影响其他相关主题变量的样式。
 
-3. 问：什么是派生变量？如何使用派生变量？答：派生变量是指那些受到 Seed Token 影响的其他主题变量。在示例代码中，`colorBgContainer` 就是一个派生变量。它的值受到 `colorPrimary` 的影响。可以通过设置派生变量的值，来改变相关元素的样式。
+3. 什么是派生变量？如何使用派生变量？派生变量是指那些受到 Seed Token 影响的其他主题变量。在示例代码中，`colorBgContainer` 就是一个派生变量。它的值受到 `colorPrimary` 的影响。可以通过设置派生变量的值，来改变相关元素的样式。
 
 ### Ant Design 5.x 中的主题算法有哪些？
 

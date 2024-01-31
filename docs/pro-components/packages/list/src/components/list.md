@@ -1,10 +1,10 @@
-## 问：ProList 与 antd 的 List 有什么区别？
+## ProList 与 antd 的 List 有什么区别？
 
-答：ProList 与 antd 的 List 相比，API 设计上更像 Table，使得可以通过配置化的方式快速定义数据项的展现形式。另外，ProList 基于 ProTable 实现，除了 Table 相关的 API 以外， ProList 还支持大部分 ProTable 的 API。
+ProList 与 antd 的 List 相比，API 设计上更像 Table，使得可以通过配置化的方式快速定义数据项的展现形式。另外，ProList 基于 ProTable 实现，除了 Table 相关的 API 以外， ProList 还支持大部分 ProTable 的 API。
 
-### 问：ProList 的常用参数有哪些？
+### ProList 的常用参数有哪些？
 
-答：ProList 的常用参数如下：
+ProList 的常用参数如下：
 
 - dataSource: 与 antd 相同的配置，表示数据源，类型为数组，默认值为 `false`。
 - actionRef: Table action 的引用，便于自定义触发，类型为 MutableRefObject<ActionType>。
@@ -23,9 +23,9 @@
 - itemHeaderRender: 自定义每一列的 header，不同于 itemRender 的是它会保留多选和展开收起。
 - itemCardProps: 自定义卡片列表的 proCard props，只在卡片列表下生效。
 
-### 问：如何使用 itemHeaderRender 和 itemCardProps？
+### 如何使用 itemHeaderRender 和 itemCardProps？
 
-答：itemHeaderRender 和 itemCardProps 是 ProList 的两个参数。
+itemHeaderRender 和 itemCardProps 是 ProList 的两个参数。
 
 - itemHeaderRender 是用来自定义每一列的 header，与 itemRender 不同的是，它会保留多选和展开收起。你可以将自定义的组件传入到 itemHeaderRender 中，实现个性化的列表列头显示。
 
@@ -33,7 +33,7 @@
 
 ### Metas.[Meta] 通用 API
 
-#### 参数
+### 参数
 
 - **dataIndex**: 数据在数据项中对应的路径，支持通过数组查询嵌套路径
 
@@ -49,11 +49,11 @@
   - 类型: `(text: React.ReactNode, record: T, index: number) => React.ReactNode | React.ReactNode[]`
   - 默认值: `-`
 
-#### 说明
+### 说明
 
 Metas.[Meta] 是一个通用 API，用于配置 ProTable 的元数据项。
 
-#### 示例
+### 示例
 
 ```jsx
 import { ProTable } from 'antd';
@@ -92,7 +92,7 @@ const MyTable = () => {
 };
 ```
 
-#### 参考链接
+### 参考链接
 
 - [ProTable API 文档](https://procomponents.ant.design/components/table#protable)
 
@@ -120,14 +120,14 @@ Metas.description 的参数说明如下：
 
 其中，`dataIndex` 参数表示元数据（Metas）的描述信息。默认值为 `'description'`。
 
-#### Metas.actions 的参数 dataIndex 是什么意思？
+### Metas.actions 的参数 dataIndex 是什么意思？
 
 参数 dataIndex 在 Metas.actions 中的作用是什么？
 
-#### Metas.actions 的参数 cardActionProps 如何使用？
+### Metas.actions 的参数 cardActionProps 如何使用？
 
 参数 cardActionProps 在 Metas.actions 中有什么用途？如何使用它？
 
-#### Metas.actions 的参数 cardActionProps 的默认值是什么？
+### Metas.actions 的参数 cardActionProps 的默认值是什么？
 
 参数 cardActionProps 在 Metas.actions 中的默认值是什么？

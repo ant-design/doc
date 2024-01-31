@@ -228,33 +228,33 @@ BreadCrumb 面包屑的 Component Token 包括以下内容：
 
 以上是关于 Ant Design Button 按钮的样式设置的一些常用变量和 Token 信息，可根据需求进行使用和调整。
 
-#### Calendar 日历的 `@calendar-bg` 变量是什么作用？
+### Calendar 日历的 `@calendar-bg` 变量是什么作用？
 
-答：`@calendar-bg` 变量由于样式变化已废弃，不再使用。
+`@calendar-bg` 变量由于样式变化已废弃，不再使用。
 
-#### Calendar 日历的 `@calendar-input-bg` 变量是什么作用？
+### Calendar 日历的 `@calendar-input-bg` 变量是什么作用？
 
-答：`@calendar-input-bg` 变量由于样式变化已废弃，不再使用。
+`@calendar-input-bg` 变量由于样式变化已废弃，不再使用。
 
-#### Calendar 日历的 `@calendar-border-color` 变量是什么作用？
+### Calendar 日历的 `@calendar-border-color` 变量是什么作用？
 
-答：`@calendar-border-color` 变量由于样式变化已废弃，不再使用。
+`@calendar-border-color` 变量由于样式变化已废弃，不再使用。
 
-#### 问题四：Calendar 日历的 `@calendar-item-active-bg` 变量是什么作用？
+### Calendar 日历的 `@calendar-item-active-bg` 变量是什么作用？
 
-答：`@calendar-item-active-bg` 变量用于设置日历中选中项的背景颜色。
+`@calendar-item-active-bg` 变量用于设置日历中选中项的背景颜色。
 
-#### 问题五：Calendar 日历的 `@calendar-column-active-bg` 变量是什么作用？
+### Calendar 日历的 `@calendar-column-active-bg` 变量是什么作用？
 
-答：`@calendar-column-active-bg` 变量由于样式变化已废弃，不再使用。
+`@calendar-column-active-bg` 变量由于样式变化已废弃，不再使用。
 
-#### 问题六：Calendar 日历的 `@calendar-full-bg` 变量是什么作用？
+### Calendar 日历的 `@calendar-full-bg` 变量是什么作用？
 
-答：`@calendar-full-bg` 变量用于设置整个日历的背景颜色。
+`@calendar-full-bg` 变量用于设置整个日历的背景颜色。
 
-#### 问题七：Calendar 日历的 `@calendar-full-panel-bg` 变量是什么作用？
+### Calendar 日历的 `@calendar-full-panel-bg` 变量是什么作用？
 
-答：`@calendar-full-panel-bg` 变量用于设置完整面板日历的背景颜色。
+`@calendar-full-panel-bg` 变量用于设置完整面板日历的背景颜色。
 
 ### Card 卡片的 Less 变量
 
@@ -401,91 +401,91 @@ Checkbox 多选框的样式变化信息有：
 
 ### DatePicker 日期选择框
 
-#### `@picker-bg`
+### `@picker-bg`
 
 - Less 变量
 - Component Token: `colorBgContainer`
 - 备注: 全局 Token
 
-#### `@picker-basic-cell-hover-color`
+### `@picker-basic-cell-hover-color`
 
 - Less 变量
 - Component Token: `cellHoverBg`
 - 备注: -
 
-#### `@picker-basic-cell-active-with-range-color`
+### `@picker-basic-cell-active-with-range-color`
 
 - Less 变量
 - Component Token: `cellActiveWithRangeBg`
 - 备注: -
 
-#### `@picker-basic-cell-hover-with-range-color`
+### `@picker-basic-cell-hover-with-range-color`
 
 - Less 变量
 - Component Token: `cellHoverWithRangeBg`
 - 备注: -
 
-#### `@picker-basic-cell-disabled-bg`
+### `@picker-basic-cell-disabled-bg`
 
 - Less 变量
 - Component Token: `cellBgDisabled`
 - 备注: -
 
-#### `@picker-border-color`
+### `@picker-border-color`
 
 - Less 变量
 - Component Token: `colorSplit`
 - 备注: 全局 Token
 
-#### `@picker-date-hover-range-border-color`
+### `@picker-date-hover-range-border-color`
 
 - Less 变量
 - Component Token: `cellRangeBorderColor`
 - 备注: -
 
-#### `@picker-date-hover-range-color`
+### `@picker-date-hover-range-color`
 
 - Less 变量
 - Component Token: `cellHoverWithRangeColor`
 - 备注: -
 
-#### `@picker-time-panel-column-width`
+### `@picker-time-panel-column-width`
 
 - Less 变量
 - Component Token: `timeColumnWidth`
 - 备注: -
 
-#### `@picker-time-panel-column-height`
+### `@picker-time-panel-column-height`
 
 - Less 变量
 - Component Token: `timeColumnHeight`
 - 备注: -
 
-#### `@picker-time-panel-cell-height`
+### `@picker-time-panel-cell-height`
 
 - Less 变量
 - Component Token: `timeCellHeight`
 - 备注: -
 
-#### `@picker-panel-cell-height`
+### `@picker-panel-cell-height`
 
 - Less 变量
 - Component Token: `cellHeight`
 - 备注: -
 
-#### `@picker-panel-cell-width`
+### `@picker-panel-cell-width`
 
 - Less 变量
 - Component Token: `cellWidth`
 - 备注: -
 
-#### `@picker-text-height`
+### `@picker-text-height`
 
 - Less 变量
 - Component Token: `textHeight`
 - 备注: -
 
-#### `@picker-panel-without-time-cell-height`
+### `@picker-panel-without-time-cell-height`
 
 - Less 变量
 - Component Token: `withoutTimeCellHeight`
@@ -687,35 +687,35 @@ Ant Design Dropdown 下拉菜单组件选中项的背景色通过 CSS 变量 `@d
 | `@input-number-handler-bg` | `handleBg` | - |
 | `@input-number-handler-border-color` | `handleBorderColor` | - |
 
-#### `@input-number-hover-border-color`
+### `@input-number-hover-border-color`
 
 - Component Token: `hoverBorderColor`
 - 备注: 无
 
 该 less 变量用于定义数字输入框在鼠标悬停时的边框颜色。
 
-#### `@input-number-handler-active-bg`
+### `@input-number-handler-active-bg`
 
 - Component Token: `handleActiveBg`
 - 备注: 无
 
 该 less 变量用于定义数字输入框中加减按钮在按下时的背景颜色。
 
-#### `@input-number-handler-hover-bg`
+### `@input-number-handler-hover-bg`
 
 - Component Token: `handleHoverColor`
 - 备注: 4.x 中命名有误，实际上是 color
 
 该 less 变量用于定义数字输入框中加减按钮在鼠标悬停时的背景颜色。
 
-#### 4. `@input-number-handler-bg`
+### 4. `@input-number-handler-bg`
 
 - Component Token: `handleBg`
 - 备注: 无
 
 该 less 变量用于定义数字输入框中加减按钮的背景颜色。
 
-#### 5. `@input-number-handler-border-color`
+### 5. `@input-number-handler-border-color`
 
 - Component Token: `handleBorderColor`
 - 备注: 无
@@ -752,66 +752,66 @@ Layout 布局中的 `@layout-zero-trigger-height` 有何作用？`@layout-zero-t
 
 ### List 列表
 
-#### `@list-header-background` less 变量对应的 Component Token 是 `headerBg`，有何作用？
+### `@list-header-background` less 变量对应的 Component Token 是 `headerBg`，有何作用？
 
 - `@list-header-background` 是用于设置列表头部背景颜色的 less 变量。
 - `headerBg` 是对应的 Component Token，表示设置列表头部背景颜色的设计标识。
 - 通过设置 `headerBg` 的值，可以实现自定义列表头部的背景颜色。
 
-#### `@list-footer-background` less 变量对应的 Component Token 是 `footerBg`，有何作用？
+### `@list-footer-background` less 变量对应的 Component Token 是 `footerBg`，有何作用？
 
 - `@list-footer-background` 是用于设置列表底部背景颜色的 less 变量。
 - `footerBg` 是对应的 Component Token，表示设置列表底部背景颜色的设计标识。
 - 通过设置 `footerBg` 的值，可以实现自定义列表底部的背景颜色。
 
-#### `@list-empty-text-padding` less 变量对应的 Component Token 是 `emptyTextPadding`，有何作用？
+### `@list-empty-text-padding` less 变量对应的 Component Token 是 `emptyTextPadding`，有何作用？
 
 - `@list-empty-text-padding` 是用于设置空列表文本的内边距的 less 变量。
 - `emptyTextPadding` 是对应的 Component Token，表示设置空列表文本的内边距的设计标识。
 - 通过设置 `emptyTextPadding` 的值，可以控制空列表文本的内边距大小。
 
-#### `@list-item-padding` less 变量对应的 Component Token 是 `itemPadding`，有何作用？
+### `@list-item-padding` less 变量对应的 Component Token 是 `itemPadding`，有何作用？
 
 - `@list-item-padding` 是用于设置列表项的内边距的 less 变量。
 - `itemPadding` 是对应的 Component Token，表示设置列表项的内边距的设计标识。
 - 通过设置 `itemPadding` 的值，可以控制列表项的内边距大小。
 
-#### `@list-item-padding-sm` less 变量对应的 Component Token 是 `itemPaddingSM`，有何作用？
+### `@list-item-padding-sm` less 变量对应的 Component Token 是 `itemPaddingSM`，有何作用？
 
 - `@list-item-padding-sm` 是用于设置小尺寸列表项的内边距的 less 变量。
 - `itemPaddingSM` 是对应的 Component Token，表示设置小尺寸列表项的内边距的设计标识。
 - 通过设置 `itemPaddingSM` 的值，可以控制小尺寸列表项的内边距大小。
 
-#### `@list-item-padding-lg` less 变量对应的 Component Token 是 `itemPaddingLG`，有何作用？
+### `@list-item-padding-lg` less 变量对应的 Component Token 是 `itemPaddingLG`，有何作用？
 
 - `@list-item-padding-lg` 是用于设置大尺寸列表项的内边距的 less 变量。
 - `itemPaddingLG` 是对应的 Component Token，表示设置大尺寸列表项的内边距的设计标识。
 - 通过设置 `itemPaddingLG` 的值，可以控制大尺寸列表项的内边距大小。
 
-#### `@list-item-meta-margin-bottom` less 变量对应的 Component Token 是 `metaMarginBottom`，有何作用？
+### `@list-item-meta-margin-bottom` less 变量对应的 Component Token 是 `metaMarginBottom`，有何作用？
 
 - `@list-item-meta-margin-bottom` 是用于设置列表项元数据底部边距的 less 变量。
 - `metaMarginBottom` 是对应的 Component Token，表示设置列表项元数据底部边距的设计标识。
 - 通过设置 `metaMarginBottom` 的值，可以控制列表项元数据底部边距的大小。
 
-#### `@list-item-meta-avatar-margin-right` less 变量对应的 Component Token 是 `avatarMarginRight`，有何作用？
+### `@list-item-meta-avatar-margin-right` less 变量对应的 Component Token 是 `avatarMarginRight`，有何作用？
 
 - `@list-item-meta-avatar-margin-right` 是用于设置列表项元数据中头像的右边距的 less 变量。
 - `avatarMarginRight` 是对应的 Component Token，表示设置列表项元数据中头像的右边距的设计标识。
 - 通过设置 `avatarMarginRight` 的值，可以控制列表项元数据中头像的右边距大小。
 
-#### `@list-item-meta-title-margin-bottom` less 变量对应的 Component Token 是 `titleMarginBottom`，有何作用？
+### `@list-item-meta-title-margin-bottom` less 变量对应的 Component Token 是 `titleMarginBottom`，有何作用？
 
 - `@list-item-meta-title-margin-bottom` 是用于设置列表项元数据标题底部边距的 less 变量。
 - `titleMarginBottom` 是对应的 Component Token，表示设置列表项元数据标题底部边距的设计标识。
 - 通过设置 `titleMarginBottom` 的值，可以控制列表项元数据标题底部边距的大小。
 
-#### `@list-customize-card-bg` 是什么作用？
+### `@list-customize-card-bg` 是什么作用？
 
 - `@list-customize-card-bg` 是用于自定义列表项背景颜色的 less 变量。
 - 由于样式变化，该 less 变量已废弃，不推荐使用。
 
-#### `@list-item-meta-description-font-size` less 变量对应的 Component Token 是 `descriptionFontSize`，有何作用？
+### `@list-item-meta-description-font-size` less 变量对应的 Component Token 是 `descriptionFontSize`，有何作用？
 
 - `@list-item-meta-description-font-size` 是用于设置列表项元数据描述文本大小的 less 变量。
 - `descriptionFontSize` 是对应的 Component Token，表示设置列表项元数据描述文本大小的设计标识。
@@ -819,13 +819,13 @@ Layout 布局中的 `@layout-zero-trigger-height` 有何作用？`@layout-zero-t
 
 ### Mentions 提及
 
-#### `@mentions-dropdown-bg` less 变量对应的全局 Token 是 `colorBgElevated`，有何作用？
+### `@mentions-dropdown-bg` less 变量对应的全局 Token 是 `colorBgElevated`，有何作用？
 
 - `@mentions-dropdown-bg` 是用于设置提及下拉菜单背景颜色的 less 变量。
 - `colorBgElevated` 是对应的全局 Token，表示设置提及下拉菜单背景颜色的设计标识。
 - 通过设置 `colorBgElevated` 的值，可以控制提及下拉菜单的背景颜色。
 
-#### `@mentions-dropdown-menu-item-hover-bg` 是什么作用？
+### `@mentions-dropdown-menu-item-hover-bg` 是什么作用？
 
 - `@mentions-dropdown-menu-item-hover-bg` 是用于设置提及下拉菜单项悬停背景颜色的 less 变量。
 - 该 less 变量已废弃，不推荐使用。
@@ -1114,43 +1114,43 @@ Less variables 是用来定义样式中的变量，可以方便地在样式文�
 
 ### Radio 单选框 - `radioSize`
 
-#### less 变量
+### less 变量
 
 `@radio-size`
 
-#### Component Token
+### Component Token
 
 `radioSize`
 
-#### 备注
+### 备注
 
 -
 
 ### Radio 单选框 - `lineWidth`
 
-#### less 变量
+### less 变量
 
 `@radio-border-width`
 
-#### Component Token
+### Component Token
 
 `lineWidth`
 
-#### 备注
+### 备注
 
 全局 Token
 
 ### Radio 单选框 - `dotColorDisabled`
 
-#### less 变量
+### less 变量
 
 `@radio-dot-disabled-color`
 
-#### Component Token
+### Component Token
 
 `dotColorDisabled`
 
-#### 备注
+### 备注
 
 -
 
@@ -1194,7 +1194,7 @@ Less variables 是用来定义样式中的变量，可以方便地在样式文�
 - `@result-subtitle-font-size` 对应 `subtitleFontSize`
 - `@result-extra-margin` 对应 `extraMargin`
 
-### 问题 2：如何在 Ant Design 5.x 中使用 CSS 变量模式来自定义 `result` 组件的样式？
+### 如何在 Ant Design 5.x 中使用 CSS 变量模式来自定义 `result` 组件的样式？
 
 答案：在 Ant Design 5.x 中，可以使用 CSS 变量模式来自定义 `result` 组件的样式。通过定义对应的 Less 变量，可以控制组件的样式属性。以下是一个示例：
 
@@ -1220,7 +1220,7 @@ Less variables 是用来定义样式中的变量，可以方便地在样式文�
 
 上述示例中，通过设置对应的 Less 变量，可以自定义 `result` 组件中标题、副标题和额外样式的字体大小和外边距。
 
-###为什么在 Ant Design 5.x 中推荐开启 CSS 变量模式？
+### 为什么在 Ant Design 5.x 中推荐开启 CSS 变量模式？
 
 答案：在 Ant Design 5.x 中推荐开启 CSS 变量模式的原因有以下几点：
 
@@ -1293,43 +1293,43 @@ Segment 组件的 Less 变量和 Component Token 如下：
 
 ### Skeleton 骨架屏
 
-问：骨架屏的 Less 变量有哪些？答：骨架屏的 Less 变量包括 `@skeleton-block-radius`、`@skeleton-title-height`、`@skeleton-color`、`@skeleton-to-color`、`@skeleton-paragraph-margin-top`和`@skeleton-paragraph-li-height`。
+骨架屏的 Less 变量有哪些？骨架屏的 Less 变量包括 `@skeleton-block-radius`、`@skeleton-title-height`、`@skeleton-color`、`@skeleton-to-color`、`@skeleton-paragraph-margin-top`和`@skeleton-paragraph-li-height`。
 
-问：骨架屏的 Component Token 有哪些？答：骨架屏的 Component Token 包括 `blockRadius`、`titleHeight`、`gradientFromColor`、`gradientToColor`、`paragraphMarginTop`和`paragraphLiHeight`。
+骨架屏的 Component Token 有哪些？骨架屏的 Component Token 包括 `blockRadius`、`titleHeight`、`gradientFromColor`、`gradientToColor`、`paragraphMarginTop`和`paragraphLiHeight`。
 
-问：有哪个样式变量已废弃？答：`@skeleton-paragraph-li-margin-top`是因为样式变化而已废弃的。
+有哪个样式变量已废弃？`@skeleton-paragraph-li-margin-top`是因为样式变化而已废弃的。
 
 ### Skeleton 骨架屏的变量说明
 
-问：骨架屏的 `@skeleton-block-radius` 变量是什么含义？答：`@skeleton-block-radius` 是用于设置骨架屏块的圆角半径的变量。
+骨架屏的 `@skeleton-block-radius` 变量是什么含义？`@skeleton-block-radius` 是用于设置骨架屏块的圆角半径的变量。
 
-问：骨架屏的 `@skeleton-title-height` 变量是什么含义？答：`@skeleton-title-height` 是用于设置骨架屏标题的高度的变量。
+骨架屏的 `@skeleton-title-height` 变量是什么含义？`@skeleton-title-height` 是用于设置骨架屏标题的高度的变量。
 
-问：骨架屏的 `@skeleton-color` 变量是什么含义？答：`@skeleton-color` 是用于设置骨架屏渐变颜色的起始颜色的变量。
+骨架屏的 `@skeleton-color` 变量是什么含义？`@skeleton-color` 是用于设置骨架屏渐变颜色的起始颜色的变量。
 
-问：骨架屏的 `@skeleton-to-color` 变量是什么含义？答：`@skeleton-to-color` 是用于设置骨架屏渐变颜色的结束颜色的变量。
+骨架屏的 `@skeleton-to-color` 变量是什么含义？`@skeleton-to-color` 是用于设置骨架屏渐变颜色的结束颜色的变量。
 
-问：骨架屏的 `@skeleton-paragraph-margin-top` 变量是什么含义？答：`@skeleton-paragraph-margin-top` 是用于设置骨架屏段落的上边距的变量。
+骨架屏的 `@skeleton-paragraph-margin-top` 变量是什么含义？`@skeleton-paragraph-margin-top` 是用于设置骨架屏段落的上边距的变量。
 
-问：骨架屏的 `@skeleton-paragraph-li-height` 变量是什么含义？答：`@skeleton-paragraph-li-height` 是用于设置骨架屏段落列表项的高度的变量。
+骨架屏的 `@skeleton-paragraph-li-height` 变量是什么含义？`@skeleton-paragraph-li-height` 是用于设置骨架屏段落列表项的高度的变量。
 
 ### Skeleton 骨架屏的变量对应关系
 
-问：骨架屏的 `blockRadius` 对应哪个 Less 变量？答：`blockRadius` 对应 `@skeleton-block-radius` 这个 Less 变量。
+骨架屏的 `blockRadius` 对应哪个 Less 变量？`blockRadius` 对应 `@skeleton-block-radius` 这个 Less 变量。
 
-问：骨架屏的 `titleHeight` 对应哪个 Less 变量？答：`titleHeight` 对应 `@skeleton-title-height` 这个 Less 变量。
+骨架屏的 `titleHeight` 对应哪个 Less 变量？`titleHeight` 对应 `@skeleton-title-height` 这个 Less 变量。
 
-问：骨架屏的 `gradientFromColor` 对应哪个 Less 变量？答：`gradientFromColor` 对应 `@skeleton-color` 这个 Less 变量。
+骨架屏的 `gradientFromColor` 对应哪个 Less 变量？`gradientFromColor` 对应 `@skeleton-color` 这个 Less 变量。
 
-问：骨架屏的 `gradientToColor` 对应哪个 Less 变量？答：`gradientToColor` 对应 `@skeleton-to-color` 这个 Less 变量。
+骨架屏的 `gradientToColor` 对应哪个 Less 变量？`gradientToColor` 对应 `@skeleton-to-color` 这个 Less 变量。
 
-问：骨架屏的 `paragraphMarginTop` 对应哪个 Less 变量？答：`paragraphMarginTop` 对应 `@skeleton-paragraph-margin-top` 这个 Less 变量。
+骨架屏的 `paragraphMarginTop` 对应哪个 Less 变量？`paragraphMarginTop` 对应 `@skeleton-paragraph-margin-top` 这个 Less 变量。
 
-问：骨架屏的 `paragraphLiHeight` 对应哪个 Less 变量？答：`paragraphLiHeight` 对应 `@skeleton-paragraph-li-height` 这个 Less 变量。
+骨架屏的 `paragraphLiHeight` 对应哪个 Less 变量？`paragraphLiHeight` 对应 `@skeleton-paragraph-li-height` 这个 Less 变量。
 
 ### 骨架屏变量废弃说明
 
-问：为什么 `@skeleton-paragraph-li-margin-top` 变量已废弃？答：`@skeleton-paragraph-li-margin-top` 变量已废弃是因为样式变化导致不再需要使用该变量。
+为什么 `@skeleton-paragraph-li-margin-top` 变量已废弃？`@skeleton-paragraph-li-margin-top` 变量已废弃是因为样式变化导致不再需要使用该变量。
 
 ### Slider 滑动输入条
 
@@ -1369,11 +1369,11 @@ Segment 组件的 Less 变量和 Component Token 如下：
 
 ### Spin 加载中
 
-#### Less 变量 `@spin-dot-size-sm` 用于控制 Spin 小号点的大小，对应的 Component Token 是 `dotSizeSM`。
+### Less 变量 `@spin-dot-size-sm` 用于控制 Spin 小号点的大小，对应的 Component Token 是 `dotSizeSM`。
 
-#### Less 变量 `@spin-dot-size` 用于控制 Spin 默认点的大小，对应的 Component Token 是 `dotSize`。
+### Less 变量 `@spin-dot-size` 用于控制 Spin 默认点的大小，对应的 Component Token 是 `dotSize`。
 
-#### Less 变量 `@spin-dot-size-lg` 用于控制 Spin 大号点的大小，对应的 Component Token 是 `dotSizeLG`。
+### Less 变量 `@spin-dot-size-lg` 用于控制 Spin 大号点的大小，对应的 Component Token 是 `dotSizeLG`。
 
 ### 统计数值的标题字体大小是多少？
 
@@ -1389,15 +1389,15 @@ Segment 组件的 Less 变量和 Component Token 如下：
 
 ### 关于步骤条的颜色设置
 
-问：在 Ant Design 的步骤条组件中，如何设置步骤条末尾的颜色？
+在 Ant Design 的步骤条组件中，如何设置步骤条末尾的颜色？
 
-答：可以通过设置 Less 变量 `@process-tail-color` 或者 Component Token `colorSplit` 来改变步骤条末尾的颜色。
+可以通过设置 Less 变量 `@process-tail-color` 或者 Component Token `colorSplit` 来改变步骤条末尾的颜色。
 
 ### 关于步骤条图标的大小和位置
 
-问：在 Ant Design 的步骤条组件中，如何控制步骤条图标的大小和位置？
+在 Ant Design 的步骤条组件中，如何控制步骤条图标的大小和位置？
 
-答：可以使用以下 Less 变量和 Component Token 来控制步骤条图标的大小和位置：
+可以使用以下 Less 变量和 Component Token 来控制步骤条图标的大小和位置：
 
 - `@steps-icon-size` 或者 `iconSize`：设置步骤条图标的大小
 - `@steps-icon-custom-size` 或者 `customIconSize`：设置自定义图标的大小
@@ -1409,9 +1409,9 @@ Segment 组件的 Less 变量和 Component Token 如下：
 
 ### 关于步骤条描述文本的样式设置
 
-问：在 Ant Design 的步骤条组件中，如何设置步骤条描述文本的样式？
+在 Ant Design 的步骤条组件中，如何设置步骤条描述文本的样式？
 
-答：可以使用以下 Less 变量和 Component Token 来控制步骤条描述文本的样式：
+可以使用以下 Less 变量和 Component Token 来控制步骤条描述文本的样式：
 
 - `@steps-title-line-height` 或者 `titleLineHeight`：设置描述文本的行高
 - `@steps-description-max-width` 或者 `descriptionMaxWidth`：设置描述文本的最大宽度
@@ -1582,43 +1582,43 @@ Timeline 时间轴的项底部间距由 `@timeline-item-padding-bottom` 这个 L
 
 ### Tooltip 文字提示
 
-#### `@tooltip-max-width`
+### `@tooltip-max-width`
 
 - 类型：`String`
 - 默认值：`-`
 - 备注：可由 `className` 或 `style` 直接修改
 
-#### `@tooltip-color`
+### `@tooltip-color`
 
 - 类型：`String`
 - 默认值：`colorTextLightSolid`
 - 备注：全局 Token
 
-#### `@tooltip-bg`
+### `@tooltip-bg`
 
 - 类型：`String`
 - 默认值：`colorBgSpotlight`
 - 备注：全局 token
 
-#### `@tooltip-arrow-width`
+### `@tooltip-arrow-width`
 
 - 类型：`String`
 - 默认值：`sizePopupArrow`
 - 备注：全局 Token
 
-#### `@tooltip-distance`
+### `@tooltip-distance`
 
 - 类型：`String`
 - 默认值：`marginXXS`
 - 备注：全局 Token
 
-#### `@tooltip-arrow-color`
+### `@tooltip-arrow-color`
 
 - 类型：`String`
 - 默认值：同 `@tooltip-bg`
 - 备注：已废弃
 
-#### `@tooltip-border-radius`
+### `@tooltip-border-radius`
 
 - 类型：`String`
 - 默认值：`borderRadius`
@@ -1669,7 +1669,7 @@ Timeline 时间轴的项底部间距由 `@timeline-item-padding-bottom` 这个 L
 
 ### Tree 树形控件
 
-#### Less 变量
+### Less 变量
 
 - `@tree-bg`
 

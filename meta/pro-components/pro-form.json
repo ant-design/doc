@@ -1,0 +1,14 @@
+[
+  {
+    "title": "ProForm 的 layout 切换功能如何使用？",
+    "md": "ProForm 提供了多种预设的 layout，通过改变外面包裹的 Layout 即可实现切换。以下是一个 demo 的代码示例：\n```tsx\n<code src=\"../../packages/form/src/demos/layout-change.tsx\"></code>\n```\n"
+  },
+  {
+    "title": "ProForm 的 layout 切换功能有哪些主要特点？",
+    "md": "ProForm 的 layout 切换功能的主要特点包括：\n* 提供了多种预设的 layout\n* 通过改变外面包裹的 Layout 即可实现切换\n* 代码示例可以参考 [layout-change.tsx](../../packages/form/src/demos/layout-change.tsx)\n"
+  },
+  {
+    "title": "如何使用 ProForm 的 layout 切换功能来实现表单布局的切换？",
+    "md": "要使用 ProForm 的 layout 切换功能来实现表单布局的切换，只需要按照以下步骤操作：\n1. 参考代码示例 [layout-change.tsx](../../packages/form/src/demos/layout-change.tsx)\n2. 根据需求选择合适的预设 layout\n3. 改变外面包裹的 Layout 即可实现切换\n4. 查看效果并进行调整和优化\n以上是 ProForm 的 layout 切换功能的使用方法及相关特点，希望对你有所帮助。\n"
+  }
+]

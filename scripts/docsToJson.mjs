@@ -23,7 +23,11 @@ const parseMDAndWrite = (fileList) => {
     ast.children.forEach((node) => {
       if (node.type === 'heading' && node.depth === 3) {
         apiJSON.push({
-          title: remark.stringify(node)?.replace(/\n/g, '').trim(),
+          title: remark
+            .stringify(node)
+            ?.replace(/\n/g, '')
+            ?.replace('### ', '')
+            ?.trim(),
           md: '',
         });
       } else {
@@ -34,16 +38,23 @@ const parseMDAndWrite = (fileList) => {
         }
       }
     });
-
-    fs.writeFileSync(
-      path.join(
-        __dirname,
-        '..',
-        'meta',
-        path.basename(fileName).split('.').at(0) + '.json',
-      ),
-      JSON.stringify(apiJSON, null, 2),
+    const metaPath = path.join(
+      __dirname,
+      '..',
+      'meta',
+      fileName.split(path.sep).at(1),
     );
+
+    if (metaPath) {
+      fs.mkdirSync(metaPath, { recursive: true });
+    }
+
+    if (apiJSON.length > 0) {
+      fs.writeFileSync(
+        path.join(metaPath, path.basename(fileName).split('.').at(0) + '.json'),
+        JSON.stringify(apiJSON, null, 2),
+      );
+    }
   });
 };
 

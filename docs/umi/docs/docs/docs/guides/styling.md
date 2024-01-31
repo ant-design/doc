@@ -40,13 +40,13 @@ export default function () {
 
 通过使用 CSS Modules，每个样式类都会有一个唯一的类名，确保样式只在对应的页面或组件中生效。这样可以避免全局样式冲突的问题。
 
-什么是 CSS Modules？
+### 什么是 CSS Modules？
 
-答：CSS Modules 是一种将样式模块化的技术。在使用 CSS Modules 时，我们可以在 JavaScript 代码中引入样式文件，并将样式赋予一个变量名。这样，样式只会作用于该模块内部，不会对全局样式产生影响。
+CSS Modules 是一种将样式模块化的技术。在使用 CSS Modules 时，我们可以在 JavaScript 代码中引入样式文件，并将样式赋予一个变量名。这样，样式只会作用于该模块内部，不会对全局样式产生影响。
 
-问题 2：如何在 JavaScript 文件中使用 CSS Modules？
+### 如何在 JavaScript 文件中使用 CSS Modules？
 
-答：要在 JavaScript 文件中使用 CSS Modules，首先需要引入样式文件。可以使用 `import` 语句引入样式文件，并将其赋予一个变量名。然后，可以使用该变量名作为 `className` 属性的值来应用样式。
+要在 JavaScript 文件中使用 CSS Modules，首先需要引入样式文件。可以使用 `import` 语句引入样式文件，并将其赋予一个变量名。然后，可以使用该变量名作为 `className` 属性的值来应用样式。
 
 例如，在一个名为 `index.css` 的样式文件中声明了一个名为 `title` 的样式，我们可以在 `index.tsx` 文件中这样使用：
 
@@ -60,9 +60,9 @@ export default function () {
 
 这样，`title` 样式只会应用于包裹在 `className={styles.title}` 中的 `div` 元素。
 
-问题 3：CSS Modules 可以解决什么问题？
+### CSS Modules 可以解决什么问题？
 
-答：CSS Modules 提供了一种样式模块化的解决方案，可以避免样式的全局污染问题。通过将样式赋予一个变量名，可以确保样式只会作用于当前模块内部，不会影响其他模块的样式。这样可以提高代码的可维护性和复用性，避免样式冲突和命名冲突的问题。
+CSS Modules 提供了一种样式模块化的解决方案，可以避免样式的全局污染问题。通过将样式赋予一个变量名，可以确保样式只会作用于当前模块内部，不会影响其他模块的样式。这样可以提高代码的可维护性和复用性，避免样式冲突和命名冲突的问题。
 
 ### Umi 中支持的 CSS 预处理器有哪些？
 

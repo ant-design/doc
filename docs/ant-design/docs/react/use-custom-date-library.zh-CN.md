@@ -81,7 +81,7 @@ TimePicker.tsx 可以在 React 项目中的任何需要选择时间的地方使�
 4. 在 `components` 文件夹中创建一个新文件，并将其命名为 `Calendar.tsx`。
 5. 在 `Calendar.tsx` 文件中编写你的代码。
 
-### 问题 2：如何导入所需的模块和类型？
+### 如何导入所需的模块和类型？
 
 你可以使用以下代码来导入 `Calendar` 组件和相关的类型：
 
@@ -91,7 +91,7 @@ import type { Moment } from 'moment';
 import momentGenerateConfig from 'rc-picker/es/generate/moment';
 ```
 
-###如何使用 `Calendar.generateCalendar` 方法生成自定义的 `MyCalendar` 组件？
+### 如何使用 `Calendar.generateCalendar` 方法生成自定义的 `MyCalendar` 组件？
 
 你可以使用以下代码将 `Calendar.generateCalendar` 方法生成的组件赋值给 `MyCalendar` 变量：
 

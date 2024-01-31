@@ -122,7 +122,7 @@ export default () => (
 
 ### 问题 Ant Design 5.x 中的 CSS 变量模式需要配置哪些参数？
 
-答：Ant Design 5.x 的 CSS 变量模式需要配置以下参数：
+Ant Design 5.x 的 CSS 变量模式需要配置以下参数：
 
 - `rootValue`：根元素字体大小，默认值为 16
 - `precision`：转换后的小数点位数，默认值为 5
@@ -132,11 +132,11 @@ export default () => (
 
 ### 问题 在 Ant Design 5.x 中，如何设置根元素的字体大小？
 
-答：在 Ant Design 5.x 中，可以通过配置 `rootValue` 参数来设置根元素的字体大小。默认值为 16，可以根据具体需求进行调整。
+在 Ant Design 5.x 中，可以通过配置 `rootValue` 参数来设置根元素的字体大小。默认值为 16，可以根据具体需求进行调整。
 
 ### 问题 在 Ant Design 5.x 中，是否可以转换媒体查询中的 px？
 
-答：是的，在 Ant Design 5.x 中，可以通过配置 `mediaQuery` 参数来决定是否转换媒体查询中的 px。默认值为 false，如果需要转换，请将该参数设置为 true。
+是的，在 Ant Design 5.x 中，可以通过配置 `mediaQuery` 参数来决定是否转换媒体查询中的 px。默认值为 false，如果需要转换，请将该参数设置为 true。
 
 ### 在 Shadow DOM 场景中，为什么需要使用 `StyleProvider` 组件？
 
