@@ -104,10 +104,11 @@ let count = 0;
 for await (const file of jsonFileList) {
   count++;
   const json = JSON.parse(fs.readFileSync(file, 'utf-8'));
-
+  console.log('正在处理', `(${count}/${jsonFileList.length}`);
   let index = 0;
   for await (const api of json) {
     index++;
+    console.log('正在处理', `(${index}/${json.length}`);
     const vector = await genEmbedding(api);
     const mdVector = await genEmbedding({
       title: api.md,
