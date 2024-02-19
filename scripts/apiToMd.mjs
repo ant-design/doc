@@ -8,6 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const apiPath = path.join(__dirname, '..', 'api');
 
 fs.readdirSync(path.join(__dirname, '..', 'api')).forEach((jsonName) => {
+  console.log('转化 => ' + jsonName);
   const json = JSON.parse(fs.readFileSync(path.join(apiPath, jsonName)));
   const packageName = path.basename(jsonName).split('.').at(0);
   const mdFile = json.map((item) => {
@@ -46,7 +47,9 @@ fs.readdirSync(path.join(__dirname, '..', 'api')).forEach((jsonName) => {
 ${row.property
   .map((item) => {
     return `| ${Object.values(item)
-      .map((apiItem) => apiItem?.toString().replaceAll('|', '\\|'))
+      .map((apiItem) =>
+        apiItem?.toString().replaceAll('|', '\\|').replaceAll('\\\\|', '\\|'),
+      )
       .join(' | ')} |`;
   })
   .join('\n')}

@@ -359,7 +359,7 @@
 
 描述: 是否显示搜索表单，传入对象时为搜索表单的配置
 
-类型: `false` | [SearchConfig](#search-搜索表单)
+类型: `false` \| [SearchConfig](#search-搜索表单)
 
 默认值: -
 
@@ -379,7 +379,7 @@
 
 描述: 转化 moment 格式数据为特定类型，false 不做转化
 
-类型: `"string"` | `"number"` | ((value: Moment, valueType: string) => string | number) | `false`
+类型: `"string"` \| `"number"` \| ((value: Moment, valueType: string) => string | number) | `false`
 
 默认值: `"string"`
 
@@ -447,7 +447,7 @@
 
 描述: 空值时的显示，不设置时显示 `-`， false 可以关闭此功能
 
-类型: `string` | `false`
+类型: `string` \| `false`
 
 默认值: false
 
@@ -581,7 +581,7 @@
 
 描述: 行增加在哪里，开始或者末尾
 
-类型: `top` | `bottom`
+类型: `top` \| `bottom`
 
 默认值: `bottom`
 
@@ -679,7 +679,7 @@
 
 描述: 过滤表单类型
 
-类型: `'query'` | `'light'`
+类型: `'query'` \| `'light'`
 
 默认值: `'query'`
 
@@ -719,7 +719,7 @@
 
 描述: 标签的宽度
 
-类型: `'number'` | `'auto'`
+类型: `'number'` \| `'auto'`
 
 默认值: 80
 
@@ -729,7 +729,7 @@
 
 描述: 配置查询表单的列数
 
-类型: `'number'` | [`'ColConfig'`](#ColConfig)
+类型: `'number'` \| [`'ColConfig'`](#ColConfig)
 
 默认值: defaultColConfig
 
@@ -859,7 +859,7 @@
 
 描述: 是否自动缩略
 
-类型: `boolean` | `{showTitle?: boolean}`
+类型: `boolean` \| `{showTitle?: boolean}`
 
 默认值: -
 
@@ -915,7 +915,7 @@
 
 描述: 传递给 Form.Item 的配置，可以配置 rules，但是默认的查询表单 rules 是不生效的。需要配置 `ignoreRules`
 
-类型: `(form,config)=>formItemProps` | `formItemProps`
+类型: `(form,config)=>formItemProps` \| `formItemProps`
 
 默认值: -
 
@@ -955,7 +955,7 @@
 
 描述: 配置列的搜索相关，false 为隐藏
 
-类型: `false` | `{ transform: (value: any) => any }`
+类型: `false` \| `{ transform: (value: any) => any }`
 
 默认值: true
 
@@ -973,7 +973,7 @@
 
 属性: 在编辑表格中是否可编辑的，函数的参数和 table 的 render 一样
 
-描述: `false` | `(text: any, record: T,index: number) => boolean`
+描述: `false` \| `(text: any, record: T,index: number) => boolean`
 
 类型: true
 
@@ -1033,7 +1033,7 @@
 
 描述: 表头的筛选菜单项，当值为 true 时，自动使用 valueEnum 生成
 
-类型: `boolean` | `object[]`
+类型: `boolean` \| `object[]`
 
 默认值: false
 
@@ -1043,7 +1043,7 @@
 
 描述: 筛选表单，为 true 时使用 ProTable 自带的，为 false 时关闭本地筛选
 
-类型: `(value, record) => boolean` | `false`
+类型: `(value, record) => boolean` \| `false`
 
 默认值: false
 
@@ -1071,7 +1071,7 @@
 
 描述: 列设置中`disabled`的状态
 
-类型: `boolean` | `{ checkbox: boolean; }`
+类型: `boolean` \| `{ checkbox: boolean; }`
 
 默认值: -
 
@@ -1164,7 +1164,7 @@
 
 说明: 查询区
 
-类型: `ReactNode` | `SearchProps`
+类型: `ReactNode` \| `SearchProps`
 
 默认值: -
 
@@ -1292,7 +1292,7 @@
 
 说明: 类型
 
-类型: `inline` | `dropdown` | `tab`
+类型: `inline` \| `dropdown` \| `tab`
 
 默认值: `inline`
 
@@ -1540,7 +1540,7 @@
 
 描述: 可编辑表格的类型，单行编辑或者多行编辑
 
-类型: `single` | `multiple`
+类型: `single` \| `multiple`
 
 默认值: -
 
@@ -1794,7 +1794,7 @@
 
 说明: 统计信息骨架屏的数量
 
-类型: `number` | `false`
+类型: `number` \| `false`
 
 默认值: -
 
@@ -1804,7 +1804,7 @@
 
 说明: 列表的骨架屏，可以控制数量
 
-类型: `number` | `false`
+类型: `number` \| `false`
 
 默认值: -
 
@@ -1975,7 +1975,7 @@
 
 说明: 行的 key，一般是行 id
 
-类型: `string` | `(row,index)=>string`
+类型: `string` \| `(row,index)=>string`
 
 默认值: `'id'`
 
@@ -1995,7 +1995,7 @@
 
 说明: 是否加载中
 
-类型: `boolean` | `(item: any) => boolean`
+类型: `boolean` \| `(item: any) => boolean`
 
 默认值: `false`
 
@@ -2025,7 +2025,7 @@
 
 说明: 与 antd 相同的[配置](https://ant.design/components/table-cn/#expandable)
 
-类型: `object` | `false`
+类型: `object` \| `false`
 
 默认值: -
 
@@ -2035,7 +2035,7 @@
 
 说明: 何时展示 actions，CardList 模式下不生效
 
-类型: `'hover'` | `'always'`
+类型: `'hover'` \| `'always'`
 
 默认值: `'always'`
 
@@ -2045,7 +2045,7 @@
 
 说明: 何时展示 extra
 
-类型: `'hover'` | `'always'`
+类型: `'hover'` \| `'always'`
 
 默认值: `'always'`
 
@@ -2075,7 +2075,7 @@
 
 说明: 自定义列表行的类名
 
-类型: `string`| `(row, index) => string`
+类型: `string`\| `(row, index) => string`
 
 默认值: -
 
@@ -2113,7 +2113,7 @@
 
 说明: 数据在数据项中对应的路径，支持通过数组查询嵌套路径
 
-类型: `string` | `string[]`
+类型: `string` \| `string[]`
 
 默认值: -
 
@@ -2123,7 +2123,7 @@
 
 说明: 值的类型，和 ProTable 一致
 
-类型: `'text'` | `'date'` ...
+类型: `'text'` \| `'date'` ...
 
 默认值: `'text'`
 
@@ -2511,7 +2511,7 @@
 
 说明: layout 的左上角 logo 的 url
 
-类型: `ReactNode` | `()=> ReactNode`
+类型: `ReactNode` \| `()=> ReactNode`
 
 默认值: -
 
@@ -2569,7 +2569,7 @@
 
 说明: 渲染 logo 和 title, 优先级比 `headerTitleRender` 更高
 
-类型: `ReactNode` | `(logo,title)=>ReactNode`
+类型: `ReactNode` \| `(logo,title)=>ReactNode`
 
 默认值: -
 
@@ -2629,7 +2629,7 @@
 
 说明: layout 的菜单模式，side：右侧导航，top：顶部导航
 
-类型: `side` | `top`|`mix`
+类型: `side` \| `top`|`mix`
 
 默认值: `side`
 
@@ -2639,7 +2639,7 @@
 
 说明: layout 的内容模式，Fluid：自适应，Fixed：定宽 1200px
 
-类型: `Fluid` | `Fixed`
+类型: `Fluid` \| `Fixed`
 
 默认值: `Fluid`
 
@@ -2707,7 +2707,7 @@
 
 说明: 当前 layout 的语言设置
 
-类型: `zh-CN` | `zh-TW` | `en-US`
+类型: `zh-CN` \| `zh-TW` \| `en-US`
 
 默认值: navigator.language
 
@@ -3028,7 +3028,7 @@
 
 说明: 菜单的类型
 
-类型: `sub` | `group`
+类型: `sub` \| `group`
 
 默认值: `group`
 
@@ -3301,7 +3301,7 @@
 
 说明: 内容模式
 
-类型: `Fluid` | `Fixed`
+类型: `Fluid` \| `Fixed`
 
 默认值: -
 
@@ -3727,7 +3727,7 @@ token: colorBgPageContainerFixed
 
 说明: 水印文字内容
 
-类型: `string` | `string[]`
+类型: `string` \| `string[]`
 
 默认值: -
 
@@ -3751,7 +3751,7 @@ token: colorBgPageContainerFixed
 
 说明: 文字大小
 
-类型: `string` | `number`
+类型: `string` \| `number`
 
 默认值: 16
 
@@ -4310,7 +4310,7 @@ token: colorBgPageContainerFixed
 
 说明: 提交按钮相关配置
 
-类型: `boolean` | `SubmitterProps`
+类型: `boolean` \| `SubmitterProps`
 
 默认值: `true`
 
@@ -4320,7 +4320,7 @@ token: colorBgPageContainerFixed
 
 说明: 同步参数到 url 上，url 只支持 string，在使用之前最好读一下[url 中的参数类型](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)
 
-类型: `true` | `(values,type)=>values`
+类型: `true` \| `(values,type)=>values`
 
 默认值: -
 
@@ -4422,9 +4422,9 @@ token: colorBgPageContainerFixed
 
 类型: { gutter: 8 }
 
-### pro-components 中 ProForm - ProForm的注意 `LightFilter` 和 `QueryFilter` 仅支持除 `wrapperCol` | `labelCol` | `layout` 外的其他 antd `Form` 组件参数属性如何使用？
+### pro-components 中 ProForm - ProForm的注意 `LightFilter` 和 `QueryFilter` 仅支持除 `wrapperCol` \| `labelCol` \| `layout` 外的其他 antd `Form` 组件参数属性如何使用？
 
-参数: 注意 `LightFilter` 和 `QueryFilter` 仅支持除 `wrapperCol` | `labelCol` | `layout` 外的其他 antd `Form` 组件参数
+参数: 注意 `LightFilter` 和 `QueryFilter` 仅支持除 `wrapperCol` \| `labelCol` \| `layout` 外的其他 antd `Form` 组件参数
 
 说明: -
 
@@ -4858,7 +4858,7 @@ token: colorBgPageContainerFixed
 
 字段名称: `dataIndex`
 
-类型: `React.key` | `React.key[]`
+类型: `React.key` \| `React.key[]`
 
 说明: 与实体映射的 key，数组会被转化 `[a,b] => Entity.a.b`
 
@@ -4890,7 +4890,7 @@ token: colorBgPageContainerFixed
 
 字段名称: `valueEnum`
 
-类型: `(Entity)=> ValueEnum` | `ValueEnum`
+类型: `(Entity)=> ValueEnum` \| `ValueEnum`
 
 说明: 支持 object 和 Map，Map 是支持其他基础类型作为 key
 
@@ -4898,7 +4898,7 @@ token: colorBgPageContainerFixed
 
 字段名称: `fieldProps`
 
-类型: `(form,config)=>fieldProps`| `fieldProps`
+类型: `(form,config)=>fieldProps`\| `fieldProps`
 
 说明: 传给渲染的组件的 props，自定义的时候也会传递
 
@@ -4906,7 +4906,7 @@ token: colorBgPageContainerFixed
 
 字段名称: `formItemProps`
 
-类型: `(form,config)=>formItemProps` | `formItemProps`
+类型: `(form,config)=>formItemProps` \| `formItemProps`
 
 说明: 传递给 Form.Item 的配置
 
@@ -5152,7 +5152,7 @@ token: colorBgPageContainerFixed
 
 说明: label 宽度
 
-类型: `number` | `'auto'`
+类型: `number` \| `'auto'`
 
 默认值: `80`
 
@@ -5476,7 +5476,7 @@ token: colorBgPageContainerFixed
 
 说明: 是否调整大小
 
-类型: `{onResize,maxWidth,minWidth}` | `Boolean`
+类型: `{onResize,maxWidth,minWidth}` \| `Boolean`
 
 默认值: { onResize: () => { }, maxWidth: window.innerWidth \* 0.8, minWidth: 300}
 
@@ -6410,7 +6410,7 @@ token: colorBgPageContainerFixed
 
 说明: 与 select 相同，根据 options 生成子节点，推荐使用。
 
-类型: `string[]` | `{label:ReactNode,value:string}[]`
+类型: `string[]` \| `{label:ReactNode,value:string}[]`
 
 默认值: -
 
@@ -6420,7 +6420,7 @@ token: colorBgPageContainerFixed
 
 说明: 配置 checkbox 的样子，支持垂直`vertical` 和 `horizontal`
 
-类型: `horizontal` | `vertical`
+类型: `horizontal` \| `vertical`
 
 默认值: -
 
@@ -6470,7 +6470,7 @@ token: colorBgPageContainerFixed
 
 说明: 与 select 相同，根据 options 生成子节点，推荐使用。
 
-类型: `string[]` | `{label:ReactNode,value:string}[]`
+类型: `string[]` \| `{label:ReactNode,value:string}[]`
 
 默认值: -
 
@@ -6529,7 +6529,7 @@ token: colorBgPageContainerFixed
 
 说明: 与 cascader 相同，根据 options 生成子节点，推荐使用。
 
-类型: `string[]` | `{label:ReactNode,value:string}[]`
+类型: `string[]` \| `{label:ReactNode,value:string}[]`
 
 默认值: -
 
@@ -6724,7 +6724,7 @@ token: colorBgPageContainerFixed
 
 说明: 自定义 Popover 的值，false 可以关闭他
 
-类型: `((props: InputNumberProps, defaultText: string) => React.ReactNode)`| `boolean`
+类型: `((props: InputNumberProps, defaultText: string) => React.ReactNode)`\| `boolean`
 
 默认值: false
 
@@ -7010,7 +7010,7 @@ token: colorBgPageContainerFixed
 
 说明: 描述列表的操作区域，显示在右上方
 
-类型: `string` | `ReactNode`
+类型: `string` \| `ReactNode`
 
 默认值: -
 
@@ -7040,7 +7040,7 @@ token: colorBgPageContainerFixed
 
 说明: 设置列表的大小。可以设置为 `middle` 、`small`，或不填（只有设置 `bordered={true}` 生效）
 
-类型: `default` | `middle` | `small`
+类型: `default` \| `middle` \| `small`
 
 默认值: -
 
@@ -7050,7 +7050,7 @@ token: colorBgPageContainerFixed
 
 说明: 描述布局
 
-类型: `horizontal` | `vertical`
+类型: `horizontal` \| `vertical`
 
 默认值: `horizontal`
 
@@ -7360,7 +7360,7 @@ token: colorBgPageContainerFixed
 
 说明: 返回数据的 key 与 ProDescriptions 的 request 配合使用，用于配置式的定义列表
 
-类型: `React.Text` | `React.Text[]`
+类型: `React.Text` \| `React.Text[]`
 
 默认值: -
 
@@ -7370,7 +7370,7 @@ token: colorBgPageContainerFixed
 
 说明: 在编辑表格中是否可编辑的，函数的参数和 table 的 render 一样
 
-类型: `false` | `(text: any, record: T,index: number) => boolean`
+类型: `false` \| `(text: any, record: T,index: number) => boolean`
 
 默认值: true
 
@@ -7532,7 +7532,7 @@ token: colorBgPageContainerFixed
 
 说明: 内容布局，支持垂直居中
 
-类型: `default` | `center`
+类型: `default` \| `center`
 
 默认值: default
 
@@ -7542,7 +7542,7 @@ token: colorBgPageContainerFixed
 
 说明: 加载中，支持自定义 loading 样式
 
-类型: `boolean` | `ReactNode`
+类型: `boolean` \| `ReactNode`
 
 默认值: false
 
@@ -7552,7 +7552,7 @@ token: colorBgPageContainerFixed
 
 说明: 栅格布局宽度，24 栅格，支持指定宽度 px 或百分比，支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`, 仅在嵌套的子卡片上设置有效。
 
-类型: `number` | `string`
+类型: `number` \| `string`
 
 默认值: 24
 
@@ -7562,7 +7562,7 @@ token: colorBgPageContainerFixed
 
 说明: 数字或使用数组形式同时设置 [水平间距，垂直间距], 支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`
 
-类型: `number` | `array`
+类型: `number` \| `array`
 
 默认值: 0
 
@@ -7572,7 +7572,7 @@ token: colorBgPageContainerFixed
 
 说明: 拆分卡片的方向
 
-类型: `vertical` | `horizontal`
+类型: `vertical` \| `horizontal`
 
 默认值: -
 
@@ -7582,7 +7582,7 @@ token: colorBgPageContainerFixed
 
 说明: 卡片类型
 
-类型: `inner` | `default`
+类型: `inner` \| `default`
 
 默认值: -
 
@@ -7592,7 +7592,7 @@ token: colorBgPageContainerFixed
 
 说明: 卡片尺寸
 
-类型: `default` | `small`
+类型: `default` \| `small`
 
 默认值: -
 

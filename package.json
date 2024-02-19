@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "genApi": "node scripts/readApi.mjs && node scripts/docsToJson.mjs && node scripts/apiToMd.mjs && npm run prettier",
+    "genChangeLog": "node scripts/readChange.mjs",
     "prettier": "prettier --write \"docs/**/**.{js,jsx,tsx,ts,less,md,yaml,json}\" --loglevel warn",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

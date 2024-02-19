@@ -7,7 +7,7 @@ import parse from 'remark-parse';
 import { unified } from 'unified';
 import { visit } from 'unist-util-visit';
 import { fileURLToPath } from 'url';
-
+const myRemark = remark().use(remarkGfm);
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 /**
@@ -72,7 +72,7 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
     let property = [];
 
     if (node.type === 'heading') {
-      tableTitle = remark.stringify(node.children[0]);
+      tableTitle = myRemark.stringify(node.children[0]);
     }
     if (node.type !== 'table') {
       return;
@@ -88,7 +88,7 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
             cell.children
               .map((child) => {
                 if (child.type === 'delete') return '';
-                return remark.stringify(child);
+                return myRemark.stringify(child);
               })
               .join(''),
           );
@@ -163,6 +163,7 @@ function readApiConfigs(directory, prefixName) {
 }
 
 async function readProComponents() {
+  console.log('readProComponents--->');
   const directoryPath = path.join(
     __dirname,
     '..',
@@ -178,6 +179,7 @@ async function readProComponents() {
 }
 
 async function readAntDesign() {
+  console.log('readAntDesign--->');
   const directoryPath = path.join(__dirname, '..', 'ant-design', 'components');
   const apiConfigs = readApiConfigs(directoryPath, '');
 
@@ -188,6 +190,8 @@ async function readAntDesign() {
 }
 
 async function readUmi() {
+  console.log('readUmi--->');
+
   const processor = unified().use(parse).use(remarkGfm, { singleTilde: false });
   const directoryPath = path.join(
     __dirname,
@@ -206,22 +210,21 @@ async function readUmi() {
     // 解析Markdown为抽象语法树（AST）
     const ast = processor.parse(markdownContent);
     let apiJSON = [];
-
     ast.children.forEach((node) => {
       if (node.type === 'heading') {
         if (node.depth === 1) {
           apiJSON.push({
-            title: remark
+            title: myRemark
               .stringify(node.children[0])
               ?.replace(/\n/g, '')
               .trim(),
             properties: [],
-            md: remark.stringify(node)?.replace(/\n/g, '').trim(),
+            md: myRemark.stringify(node)?.replace(/\n/g, '').trim(),
           });
         }
         if (node.depth === 2 && apiJSON.at(-1)) {
           apiJSON.at(-1).properties.push({
-            title: remark
+            title: myRemark
               .stringify(node.children[0])
               ?.replace(/\n/g, '')
               .trim(),
@@ -233,7 +236,8 @@ async function readUmi() {
             .at(-1)
             .properties.at(-1)
             ?.property?.push({
-              title: remark
+              title: remark()
+                .use(remarkGfm)
                 .stringify(node.children[0])
                 ?.replace(/\n/g, '')
                 .trim(),
@@ -244,12 +248,12 @@ async function readUmi() {
         if (apiJSON.at(-1)?.properties?.at(-1)?.property?.at(-1)) {
           let md = apiJSON.at(-1).properties.at(-1).property.at(-1).md;
 
-          md = md + remark.stringify(node);
+          md = md + myRemark.stringify(node);
 
           apiJSON.at(-1).properties.at(-1).property.at(-1).md = md;
         } else if (apiJSON.at(-1)?.properties?.at(-1)) {
           let md = apiJSON.at(-1).properties.at(-1).md || '';
-          md = md + remark.stringify(node) + '\n';
+          md = md + myRemark.stringify(node) + '\n';
           apiJSON.at(-1).properties.at(-1).md = md;
         }
       }

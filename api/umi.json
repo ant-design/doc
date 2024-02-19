@@ -24,36 +24,40 @@
             "md": "若你需要定义初始化数据，使用 `getInitialState` 、`useModel` 等 [数据流](../max/data-flow) 相关功能：\n1. 你可以创建自带数据流功能的 `@umijs/max` 项目，详见 [Umi max 简介](../max/introduce) 。\n\n2. 或者手动开启数据流功能的插件使用该功能：\n\n   ```bash\n     pnpm add -D @umijs/plugins\n   ```\n\n   ```ts\n   // .umirc.ts\n   export default {\n     plugins: [\n       '@umijs/plugins/dist/initial-state',\n       '@umijs/plugins/dist/model',\n     ],\n     initialState: {},\n     model: {},\n   };\n   ```\n"
           },
           {
+            "title": "getInitialState",
+            "md": "* Type: `getInitialState: () => Promise<DataType extends any> | any`\n`getInitialState()` 的返回值将成为全局初始状态。例如：\n```ts\n// src/app.ts\nimport { fetchInitialData } from \"@/services/initial\";\n\nexport async function () {\n  const initialData = await fetchInitialData();\n  return initialData;\n}\n```\n现在，各种插件和您定义的组件都可以通过 `useModel('@@initialState')` 直接获取到这份全局的初始状态，如下所示：\n```tsx\nimport { useModel } from \"umi\";\n\nexport default function Page() {\n  const { initialState, loading, error, refresh, setInitialState } =\n    useModel(\"@@initialState\");\n  return <>{initialState}</>;\n}\n```\n| 对象属性              | 类型                     | 介绍                                                                         |\n| ----------------- | ---------------------- | -------------------------------------------------------------------------- |\n| `initialState`    | `any`                  | 导出的 `getInitialState()` 方法的返回值                                             |\n| `loading`         | `boolean`              | `getInitialState()` 或 `refresh()` 方法是否正在进行中。在首次获取到初始状态前，页面其他部分的渲染都会**被阻止** |\n| `error`           | `Error`                | 如果导出的 `getInitialState()` 方法运行时报错，报错的错误信息                                  |\n| `refresh`         | `() => void`           | 重新执行 `getInitialState` 方法，并获取新的全局初始状态                                      |\n| `setInitialState` | `(state: any) => void` | 手动设置 `initialState` 的值，手动设置完毕会将 `loading` 置为 `false`                       |\n"
+          },
+          {
             "title": "layout",
-            "md": "修改[内置布局](../max/layout-menu)的配置，比如配置退出登陆、自定义导航暴露的渲染区域等。\n> 注意：需要开启 [layout](../api/config#layout) 插件，才能使用它的运行时配置。\n```js\nexport const layout = {\n  logout: () => {}, // do something\n};\n```\n更多具体配置参考[插件文档](../max/layout-menu#运行时配置)。\n"
+            "md": "* Type: `RuntimeConfig | ProLayoutProps`\n修改[内置布局](../max/layout-menu)的配置，比如配置退出登陆、自定义导航暴露的渲染区域等。\n> 注意：需要开启 [layout](../api/config#layout) 插件，才能使用它的运行时配置。\n```tsx\nimport { RuntimeConfig } from 'umi';\n\nexport const layout: RuntimeConfig = {\n  logout: () => {}, // do something\n};\n```\n更多具体配置参考[插件文档](../max/layout-menu#运行时配置)。\n"
           },
           {
-            "title": "onRouteChange({ routes, clientRoutes, location, action, basename, isFirst })",
-            "md": "在初始加载和路由切换时做一些事情。\n比如用于做埋点统计，\n```ts\nexport function onRouteChange({\n  location,\n  clientRoutes,\n  routes,\n  action,\n  basename,\n  isFirst,\n}) {\n  bacon(location.pathname);\n}\n```\n比如用于设置标题，\n```ts\nimport { matchRoutes } from 'umi';\n\nexport function onRouteChange({ clientRoutes, location }) {\n  const route = matchRoutes(clientRoutes, location.pathname)?.pop()?.route;\n  if (route) {\n    document.title = route.title || '';\n  }\n}\n```\n"
+            "title": "onRouteChange",
+            "md": "* type: `(args: { routes: Routes; clientRoutes: Routes; location: Location; action: Action; basename: string; isFirst: boolean }) => void`\n在初始加载和路由切换时做一些事情。\n比如用于做埋点统计，\n```ts\nexport function onRouteChange({\n  location,\n  clientRoutes,\n  routes,\n  action,\n  basename,\n  isFirst,\n}) {\n  bacon(location.pathname);\n}\n```\n比如用于设置标题，\n```ts\nimport { matchRoutes } from 'umi';\n\nexport function onRouteChange({ clientRoutes, location }) {\n  const route = matchRoutes(clientRoutes, location.pathname)?.pop()?.route;\n  if (route) {\n    document.title = route.title || '';\n  }\n}\n```\n"
           },
           {
-            "title": "patchRoutes({ routes })",
-            "md": "```ts\nexport function patchRoutes({ routes, routeComponents }) {\n  console.log('patchRoutes', routes, routeComponents);\n}\n```\n* `routes`: 打平的路由列表。\n\n* `routeComponents`: 路由对应的组件映射。\n注：如需动态更新路由，建议使用 `patchClientRoutes()` ，否则你可能需要同时修改 `routes` 和 `routeComponents`。\n"
+            "title": "patchRoutes",
+            "md": "* type: `(args: { routes: Routes; routeComponents }) => void`\n```ts\nexport function patchRoutes({ routes, routeComponents }) {\n  console.log('patchRoutes', routes, routeComponents);\n}\n```\n* `routes`: 打平的路由列表。\n\n* `routeComponents`: 路由对应的组件映射。\n注：如需动态更新路由，建议使用 `patchClientRoutes()` ，否则你可能需要同时修改 `routes` 和 `routeComponents`。\n"
           },
           {
-            "title": "patchClientRoutes({ routes })",
-            "md": "修改被 react-router 渲染前的树状路由表，接收内容同 [useRoutes](https://reactrouter.com/en/main/hooks/use-routes)。\n比如在最前面添加一个 `/foo` 路由，\n```tsx\nimport Page from '@/extraRoutes/foo';\n\nexport function patchClientRoutes({ routes }) {\n  routes.unshift({\n    path: '/foo',\n    element: <Page />,\n  });\n}\n```\n比如在最前面添加一个重定向路由：\n```tsx\nimport { Navigate } from 'umi';\n\nexport const patchClientRoutes = ({ routes }) => {\n  routes.unshift({\n    path: '/',\n    element: <Navigate to=\"/home\" replace />,\n  });\n};\n```\n比如添加一个嵌套路由：\n```tsx\nimport Page from '@/extraRoutes/foo';\n\nexport const patchClientRoutes = ({ routes }) => {\n  routes.push({\n    path: '/group',\n    children: [{\n      path: '/group/page',\n      element: <Page />,\n    }],\n  });\n};\n```\n比如和 `render` 配置配合使用，请求服务端根据响应动态更新路由，\n```ts\nlet extraRoutes;\n\nexport function patchClientRoutes({ routes }) {\n  // 根据 extraRoutes 对 routes 做一些修改\n  patch(routes, extraRoutes);\n}\n\nexport function render(oldRender) {\n  fetch('/api/routes')\n    .then((res) => res.json())\n    .then((res) => {\n      extraRoutes = res.routes;\n      oldRender();\n    });\n}\n```\n注意：\n* 直接修改 routes，不需要返回\n"
+            "title": "patchClientRoutes",
+            "md": "* type: `(args: { routes: Routes; }) => void`\n修改被 react-router 渲染前的树状路由表，接收内容同 [useRoutes](https://reactrouter.com/en/main/hooks/use-routes)。\n比如在最前面添加一个 `/foo` 路由，\n```tsx\nimport Page from '@/extraRoutes/foo';\n\nexport function patchClientRoutes({ routes }) {\n  routes.unshift({\n    path: '/foo',\n    element: <Page />,\n  });\n}\n```\n比如在最前面添加一个重定向路由：\n```tsx\nimport { Navigate } from 'umi';\n\nexport const patchClientRoutes = ({ routes }) => {\n  routes.unshift({\n    path: '/',\n    element: <Navigate to=\"/home\" replace />,\n  });\n};\n```\n比如添加一个嵌套路由：\n```tsx\nimport Page from '@/extraRoutes/foo';\n\nexport const patchClientRoutes = ({ routes }) => {\n  routes.push({\n    path: '/group',\n    children: [{\n      path: '/group/page',\n      element: <Page />,\n    }],\n  });\n};\n```\n比如和 `render` 配置配合使用，请求服务端根据响应动态更新路由，\n```ts\nlet extraRoutes;\n\nexport function patchClientRoutes({ routes }) {\n  // 根据 extraRoutes 对 routes 做一些修改\n  patch(routes, extraRoutes);\n}\n\nexport function render(oldRender) {\n  fetch('/api/routes')\n    .then((res) => res.json())\n    .then((res) => {\n      extraRoutes = res.routes;\n      oldRender();\n    });\n}\n```\n注意：\n* 直接修改 routes，不需要返回\n"
           },
           {
             "title": "qiankun",
             "md": "Umi 内置了 `qiankun` 插件来提供微前端的能力，具体参考[插件配置](../max/micro-frontend)。\n"
           },
           {
-            "title": "render(oldRender:",
-            "md": "覆写 render。\n比如用于渲染之前做权限校验，\n```bash\nexport function render(oldRender) {\n  fetch('/api/auth').then(auth => {\n    if (auth.isLogin) { oldRender() }\n    else {\n      location.href = '/login';\n      oldRender()\n    }\n  });\n}\n```\n"
+            "title": "render",
+            "md": "* Type: `(oldRender: Function)=>void`\n覆写 render。\n比如用于渲染之前做权限校验，\n```bash\nexport function render(oldRender) {\n  fetch('/api/auth').then(auth => {\n    if (auth.isLogin) { oldRender() }\n    else {\n      location.href = '/login';\n      oldRender()\n    }\n  });\n}\n```\n"
           },
           {
             "title": "request",
             "md": "如果你使用了 `import { request } from 'umi';` 来请求数据，那么你可以通过该配置来自定义中间件、拦截器、错误处理适配等。具体参考 [request](../max/request) 插件配置。\n"
           },
           {
-            "title": "rootContainer(lastRootContainer, args)",
-            "md": "修改交给 react-dom 渲染时的根组件。\n比如用于在外面包一个 Provider，\n```js\nexport function rootContainer(container) {\n  return React.createElement(ThemeProvider, null, container);\n}\n```\nargs 包含：\n* routes，全量路由配置\n* plugin，运行时插件机制\n* history，history 实例\n"
+            "title": "rootContainer",
+            "md": "* Type: `(container: JSX.Element,args: { routes: Routes; plugin; history: History }) => JSX.Element;`\n修改交给 react-dom 渲染时的根组件。\n比如用于在外面包一个 Provider，\n```js\nexport function rootContainer(container, args) {\n  return React.createElement(ThemeProvider, null, container);\n}\n```\nargs 包含：\n* routes，全量路由配置\n* plugin，运行时插件机制\n* history，history 实例\n"
           }
         ],
         "md": "> 以下配置项按字母排序。\n\n"
@@ -642,7 +646,7 @@
       {
         "title": "lessLoader",
         "property": [],
-        "md": "* 类型：`object`\n* 默认值：`{ modifyVars: userConfig.theme, javascriptEnabled: true }`\n\n设置 less-loader 的 Options。具体参考参考 [less-loader 的 Options](https://github.com/webpack-contrib/less-loader#lessoptions)。\n\n> 默认是用 less@4 版本，如果需要兼容 less@3 请配置使用[less-options-math](https://lesscss.org/usage/#less-options-math)。\n\n"
+        "md": "* 类型：`object`\n* 默认值：`{ modifyVars: userConfig.theme, javascriptEnabled: true }`\n\n设置 less-loader 的 Options。具体参考参考 [less-loader 的 Options](https://github.com/webpack-contrib/less-loader#lessoptions)。\n\n> 默认是用 less\\@4 版本，如果需要兼容 less\\@3 请配置使用[less-options-math](https://lesscss.org/usage/#less-options-math)。\n\n"
       },
       {
         "title": "legacy",
