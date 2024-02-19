@@ -1,3 +1,8 @@
+### 在 `2024-01-31` 更新的 `@ant-design/pro-components@2.6.49` 版本更新了什么？
+
+- fix(layout): fix bgLayout no work error. [4a21fdf](https://github.com/ant-design/pro-components/commit/4a21fdf)
+- fix(field): fieldProps.options not effective in ProFormSegmented (#8129). [#8129](https://github.com/ant-design/pro-components/pull/#8129) [@ChuChencheng](https://github.com/ChuChencheng)
+
 ### 在 `2024-01-18` 更新的 `@ant-design/pro-components@2.6.47` 版本更新了什么？
 
 - fix(layout): fix bgLayout no work error. [4a21fdf](https://github.com/ant-design/pro-components/commit/4a21fdf)
