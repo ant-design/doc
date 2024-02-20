@@ -111,7 +111,7 @@
     "title": "Upload",
     "properties": [
       {
-        "title": "Upload - API",
+        "title": "Upload - Upload",
         "property": [
           {
             "参数": "accept",
@@ -765,10 +765,10 @@
     ]
   },
   {
-    "title": "Tree-select",
+    "title": "TreeSelect",
     "properties": [
       {
-        "title": "Tree-select - Tree props",
+        "title": "TreeSelect - Tree props",
         "property": [
           {
             "参数": "allowClear",
@@ -1084,7 +1084,7 @@
         ]
       },
       {
-        "title": "Tree-select - Tree 方法",
+        "title": "TreeSelect - Tree 方法",
         "property": [
           {
             "名称": "blur()",
@@ -1097,7 +1097,7 @@
         ]
       },
       {
-        "title": "Tree-select - TreeNode props",
+        "title": "TreeSelect - TreeNode props",
         "property": [
           {
             "参数": "checkable",
@@ -1866,7 +1866,7 @@
     "title": "Tooltip",
     "properties": [
       {
-        "title": "Tooltip - API",
+        "title": "Tooltip - Tooltip",
         "property": [
           {
             "参数": "title",
@@ -1877,7 +1877,7 @@
         ]
       },
       {
-        "title": "Tooltip - 共同的 API",
+        "title": "Tooltip - Tooltip",
         "property": [
           {
             "参数": "align",
@@ -2072,10 +2072,10 @@
     ]
   },
   {
-    "title": "Time-picker",
+    "title": "TimePicker",
     "properties": [
       {
-        "title": "Time-picker - API",
+        "title": "TimePicker - TimePicker",
         "property": [
           {
             "参数": "allowClear",
@@ -2271,7 +2271,7 @@
         ]
       },
       {
-        "title": "Time-picker - 方法",
+        "title": "TimePicker - 方法",
         "property": [
           {
             "名称": "blur()",
@@ -2284,7 +2284,7 @@
         ]
       },
       {
-        "title": "Time-picker - RangePicker",
+        "title": "TimePicker - RangePicker",
         "property": [
           {
             "参数": "disabledTime",
@@ -3276,7 +3276,7 @@
     "title": "Switch",
     "properties": [
       {
-        "title": "Switch - API",
+        "title": "Switch - Switch",
         "property": [
           {
             "参数": "autoFocus",
@@ -3464,7 +3464,7 @@
         ]
       },
       {
-        "title": "Steps - `type=\"inline\"`",
+        "title": "Steps - Steps",
         "property": [
           {
             "参数": "className",
@@ -3676,7 +3676,7 @@
     "title": "Spin",
     "properties": [
       {
-        "title": "Spin - API",
+        "title": "Spin - Spin",
         "property": [
           {
             "参数": "delay",
@@ -3809,7 +3809,7 @@
     "title": "Slider",
     "properties": [
       {
-        "title": "Slider - API",
+        "title": "Slider - Slider",
         "property": [
           {
             "参数": "autoFocus",
@@ -4603,7 +4603,7 @@
     "title": "Result",
     "properties": [
       {
-        "title": "Result - API",
+        "title": "Result - Result",
         "property": [
           {
             "参数": "extra",
@@ -4643,7 +4643,7 @@
     "title": "Rate",
     "properties": [
       {
-        "title": "Rate - API",
+        "title": "Rate - Rate",
         "property": [
           {
             "属性": "allowClear",
@@ -4873,10 +4873,10 @@
     ]
   },
   {
-    "title": "Qr-code",
+    "title": "QrCode",
     "properties": [
       {
-        "title": "Qr-code - API",
+        "title": "QrCode - QrCode",
         "property": [
           {
             "参数": "value",
@@ -4955,7 +4955,7 @@
     "title": "Progress",
     "properties": [
       {
-        "title": "Progress - API",
+        "title": "Progress - Progress",
         "property": [
           {
             "属性": "format",
@@ -5030,7 +5030,7 @@
         ]
       },
       {
-        "title": "Progress - `type=\"line\"`",
+        "title": "Progress - Progress",
         "property": [
           {
             "属性": "steps",
@@ -5049,7 +5049,7 @@
         ]
       },
       {
-        "title": "Progress - `type=\"circle\"`",
+        "title": "Progress - Progress",
         "property": [
           {
             "属性": "strokeColor",
@@ -5068,7 +5068,7 @@
         ]
       },
       {
-        "title": "Progress - `type=\"dashboard\"`",
+        "title": "Progress - Progress",
         "property": [
           {
             "属性": "gapDegree",
@@ -5099,7 +5099,7 @@
     "title": "Popover",
     "properties": [
       {
-        "title": "Popover - API",
+        "title": "Popover - Popover",
         "property": [
           {
             "参数": "content",
@@ -5121,7 +5121,7 @@
     "title": "Popconfirm",
     "properties": [
       {
-        "title": "Popconfirm - API",
+        "title": "Popconfirm - Popconfirm",
         "property": [
           {
             "参数": "cancelButtonProps",
@@ -5210,7 +5210,7 @@
     "title": "Pagination",
     "properties": [
       {
-        "title": "Pagination - API",
+        "title": "Pagination - Pagination",
         "property": [
           {
             "参数": "current",
@@ -5334,7 +5334,7 @@
     "title": "Notification",
     "properties": [
       {
-        "title": "Notification - API",
+        "title": "Notification - Notification",
         "property": [
           {
             "参数": "btn",
@@ -5436,7 +5436,7 @@
         ]
       },
       {
-        "title": "Notification - API",
+        "title": "Notification - Notification",
         "property": [
           {
             "参数": "bottom",
@@ -5552,7 +5552,7 @@
     "title": "Modal",
     "properties": [
       {
-        "title": "Modal - API",
+        "title": "Modal - Modal",
         "property": [
           {
             "参数": "afterClose",
@@ -5914,7 +5914,7 @@
     "title": "Message",
     "properties": [
       {
-        "title": "Message - API",
+        "title": "Message - Message",
         "property": [
           {
             "参数": "content",
@@ -5937,7 +5937,7 @@
         ]
       },
       {
-        "title": "Message - API",
+        "title": "Message - Message",
         "property": [
           {
             "参数": "className",
@@ -6815,10 +6815,10 @@
     ]
   },
   {
-    "title": "Input-number",
+    "title": "InputNumber",
     "properties": [
       {
-        "title": "Input-number - API",
+        "title": "InputNumber - InputNumber",
         "property": [
           {
             "参数": "addonAfter",
@@ -7009,7 +7009,7 @@
         ]
       },
       {
-        "title": "Input-number - 方法",
+        "title": "InputNumber - 方法",
         "property": [
           {
             "名称": "blur()",
@@ -8469,10 +8469,10 @@
     ]
   },
   {
-    "title": "Float-button",
+    "title": "FloatButton",
     "properties": [
       {
-        "title": "Float-button - 共同的 API",
+        "title": "FloatButton - FloatButton",
         "property": [
           {
             "参数": "icon",
@@ -8531,7 +8531,7 @@
         ]
       },
       {
-        "title": "Float-button - FloatButton.Group",
+        "title": "FloatButton - FloatButton.Group",
         "property": [
           {
             "参数": "shape",
@@ -8566,7 +8566,7 @@
         ]
       },
       {
-        "title": "Float-button - FloatButton.BackTop",
+        "title": "FloatButton - FloatButton.BackTop",
         "property": [
           {
             "参数": "duration",
@@ -8600,7 +8600,7 @@
     "title": "Flex",
     "properties": [
       {
-        "title": "Flex - API",
+        "title": "Flex - Flex",
         "property": [
           {
             "属性": "vertical",
@@ -8652,7 +8652,7 @@
     "title": "Empty",
     "properties": [
       {
-        "title": "Empty - API",
+        "title": "Empty - Empty",
         "property": [
           {
             "参数": "description",
@@ -8827,7 +8827,7 @@
     "title": "Drawer",
     "properties": [
       {
-        "title": "Drawer - API",
+        "title": "Drawer - Drawer",
         "property": [
           {
             "参数": "autoFocus",
@@ -8991,7 +8991,7 @@
     "title": "Divider",
     "properties": [
       {
-        "title": "Divider - API",
+        "title": "Divider - Divider",
         "property": [
           {
             "参数": "children",
@@ -9152,10 +9152,10 @@
     ]
   },
   {
-    "title": "Date-picker",
+    "title": "DatePicker",
     "properties": [
       {
-        "title": "Date-picker - 共同的 API",
+        "title": "DatePicker - DatePicker",
         "property": [
           {
             "参数": "allowClear",
@@ -9398,7 +9398,7 @@
         ]
       },
       {
-        "title": "Date-picker - 共同的方法",
+        "title": "DatePicker - 共同的方法",
         "property": [
           {
             "名称": "blur()",
@@ -9411,7 +9411,7 @@
         ]
       },
       {
-        "title": "Date-picker - DatePicker",
+        "title": "DatePicker - DatePicker",
         "property": [
           {
             "参数": "defaultPickerValue",
@@ -9503,7 +9503,7 @@
         ]
       },
       {
-        "title": "Date-picker - DatePicker[picker=year]",
+        "title": "DatePicker - DatePicker",
         "property": [
           {
             "参数": "defaultValue",
@@ -9542,7 +9542,7 @@
         ]
       },
       {
-        "title": "Date-picker - DatePicker[picker=quarter]",
+        "title": "DatePicker - DatePicker",
         "property": [
           {
             "参数": "defaultValue",
@@ -9581,7 +9581,7 @@
         ]
       },
       {
-        "title": "Date-picker - DatePicker[picker=month]",
+        "title": "DatePicker - DatePicker",
         "property": [
           {
             "参数": "defaultValue",
@@ -9620,7 +9620,7 @@
         ]
       },
       {
-        "title": "Date-picker - DatePicker[picker=week]",
+        "title": "DatePicker - DatePicker",
         "property": [
           {
             "参数": "defaultValue",
@@ -9659,7 +9659,7 @@
         ]
       },
       {
-        "title": "Date-picker - RangePicker",
+        "title": "DatePicker - RangePicker",
         "property": [
           {
             "参数": "allowEmpty",
@@ -9786,10 +9786,10 @@
     ]
   },
   {
-    "title": "Config-provider",
+    "title": "ConfigProvider",
     "properties": [
       {
-        "title": "Config-provider - API",
+        "title": "ConfigProvider - ConfigProvider",
         "property": [
           {
             "参数": "autoInsertSpaceInButton",
@@ -9897,7 +9897,7 @@
         ]
       },
       {
-        "title": "Config-provider - ConfigProvider.useConfig()",
+        "title": "ConfigProvider - ConfigProvider.useConfig()",
         "property": [
           {
             "返回值": "componentDisabled",
@@ -9916,7 +9916,7 @@
         ]
       },
       {
-        "title": "Config-provider - 组件配置",
+        "title": "ConfigProvider - ConfigProvider",
         "property": [
           {
             "参数": "alert",
@@ -10315,10 +10315,10 @@
     ]
   },
   {
-    "title": "Color-picker",
+    "title": "ColorPicker",
     "properties": [
       {
-        "title": "Color-picker - API",
+        "title": "ColorPicker - ColorPicker",
         "property": [
           {
             "参数": "allowClear",
@@ -10464,7 +10464,7 @@
         ]
       },
       {
-        "title": "Color-picker - Color",
+        "title": "ColorPicker - Color",
         "property": [
           {
             "参数": "toHex",
@@ -10738,7 +10738,7 @@
     "title": "Cascader",
     "properties": [
       {
-        "title": "Cascader - API",
+        "title": "Cascader - Cascader",
         "property": [
           {
             "参数": "allowClear",
@@ -11047,7 +11047,7 @@
     "title": "Carousel",
     "properties": [
       {
-        "title": "Carousel - API",
+        "title": "Carousel - Carousel",
         "property": [
           {
             "参数": "autoplay",
@@ -11311,7 +11311,7 @@
         ]
       },
       {
-        "title": "Card - `styles`",
+        "title": "Card - Card",
         "property": [
           {
             "名称": "header",
@@ -11351,7 +11351,7 @@
     "title": "Calendar",
     "properties": [
       {
-        "title": "Calendar - API",
+        "title": "Calendar - Calendar",
         "property": [
           {
             "参数": "dateCellRender",
@@ -11481,7 +11481,7 @@
     "title": "Button",
     "properties": [
       {
-        "title": "Button - API",
+        "title": "Button - Button",
         "property": [
           {
             "属性": "block",
@@ -11901,10 +11901,10 @@
     ]
   },
   {
-    "title": "Auto-complete",
+    "title": "AutoComplete",
     "properties": [
       {
-        "title": "Auto-complete - API",
+        "title": "AutoComplete - AutoComplete",
         "property": [
           {
             "参数": "allowClear",
@@ -12083,7 +12083,7 @@
         ]
       },
       {
-        "title": "Auto-complete - 方法",
+        "title": "AutoComplete - 方法",
         "property": [
           {
             "名称": "blur()",
@@ -12278,7 +12278,7 @@
     "title": "Alert",
     "properties": [
       {
-        "title": "Alert - API",
+        "title": "Alert - Alert",
         "property": [
           {
             "参数": "action",
@@ -12366,7 +12366,7 @@
     "title": "Affix",
     "properties": [
       {
-        "title": "Affix - API",
+        "title": "Affix - Affix",
         "property": [
           {
             "参数": "offsetBottom",

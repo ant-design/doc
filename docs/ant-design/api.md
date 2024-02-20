@@ -208,7 +208,7 @@
 
 ### ant-design 的 Upload 有哪些配置？
 
-#### Upload - API
+#### Upload - Upload
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -253,7 +253,7 @@
 | uid | 唯一标识符，不设置时会自动生成 | string | - | - |
 | url | 下载地址 | string | - | - |
 
-### ant-design 的 Upload - API 有哪些配置？
+### ant-design 的 Upload - Upload 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -286,7 +286,7 @@
 | onPreview | 点击文件链接或预览图标时的回调 | function(file) | - |
 | onRemove | 点击移除文件时的回调，返回值为 false 时不移除。支持返回一个 Promise 对象，Promise 对象 resolve(false) 或 reject 时不移除 | function(file): boolean \| Promise | - |
 
-### ant-design 中 Upload - API的accept属性如何使用？
+### ant-design 中 Upload - Upload的accept属性如何使用？
 
 参数: accept
 
@@ -296,7 +296,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的action属性如何使用？
+### ant-design 中 Upload - Upload的action属性如何使用？
 
 参数: action
 
@@ -306,7 +306,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的beforeUpload属性如何使用？
+### ant-design 中 Upload - Upload的beforeUpload属性如何使用？
 
 参数: beforeUpload
 
@@ -316,7 +316,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的customRequest属性如何使用？
+### ant-design 中 Upload - Upload的customRequest属性如何使用？
 
 参数: customRequest
 
@@ -326,7 +326,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的data属性如何使用？
+### ant-design 中 Upload - Upload的data属性如何使用？
 
 参数: data
 
@@ -336,7 +336,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的defaultFileList属性如何使用？
+### ant-design 中 Upload - Upload的defaultFileList属性如何使用？
 
 参数: defaultFileList
 
@@ -346,7 +346,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的directory属性如何使用？
+### ant-design 中 Upload - Upload的directory属性如何使用？
 
 参数: directory
 
@@ -356,7 +356,7 @@
 
 默认值: false
 
-### ant-design 中 Upload - API的disabled属性如何使用？
+### ant-design 中 Upload - Upload的disabled属性如何使用？
 
 参数: disabled
 
@@ -368,7 +368,7 @@
 
 版本: 对于自定义 Upload children 时请将 disabled 属性同时传给 child node 确保 disabled 渲染效果保持一致
 
-### ant-design 中 Upload - API的fileList属性如何使用？
+### ant-design 中 Upload - Upload的fileList属性如何使用？
 
 参数: fileList
 
@@ -376,7 +376,7 @@
 
 类型: -
 
-### ant-design 中 Upload - API的headers属性如何使用？
+### ant-design 中 Upload - Upload的headers属性如何使用？
 
 参数: headers
 
@@ -386,7 +386,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的iconRender属性如何使用？
+### ant-design 中 Upload - Upload的iconRender属性如何使用？
 
 参数: iconRender
 
@@ -396,7 +396,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的isImageUrl属性如何使用？
+### ant-design 中 Upload - Upload的isImageUrl属性如何使用？
 
 参数: isImageUrl
 
@@ -404,7 +404,7 @@
 
 类型: (file: UploadFile) => boolean
 
-### ant-design 中 Upload - API的itemRender属性如何使用？
+### ant-design 中 Upload - Upload的itemRender属性如何使用？
 
 参数: itemRender
 
@@ -416,7 +416,7 @@
 
 版本: 4.16.0
 
-### ant-design 中 Upload - API的listType属性如何使用？
+### ant-design 中 Upload - Upload的listType属性如何使用？
 
 参数: listType
 
@@ -428,7 +428,7 @@
 
 版本: `picture-circle`(5.2.0+)
 
-### ant-design 中 Upload - API的maxCount属性如何使用？
+### ant-design 中 Upload - Upload的maxCount属性如何使用？
 
 参数: maxCount
 
@@ -440,7 +440,7 @@
 
 版本: 4.10.0
 
-### ant-design 中 Upload - API的method属性如何使用？
+### ant-design 中 Upload - Upload的method属性如何使用？
 
 参数: method
 
@@ -450,7 +450,7 @@
 
 默认值: `post`
 
-### ant-design 中 Upload - API的multiple属性如何使用？
+### ant-design 中 Upload - Upload的multiple属性如何使用？
 
 参数: multiple
 
@@ -460,7 +460,7 @@
 
 默认值: false
 
-### ant-design 中 Upload - API的name属性如何使用？
+### ant-design 中 Upload - Upload的name属性如何使用？
 
 参数: name
 
@@ -470,7 +470,7 @@
 
 默认值: `file`
 
-### ant-design 中 Upload - API的openFileDialogOnClick属性如何使用？
+### ant-design 中 Upload - Upload的openFileDialogOnClick属性如何使用？
 
 参数: openFileDialogOnClick
 
@@ -480,7 +480,7 @@
 
 默认值: true
 
-### ant-design 中 Upload - API的previewFile属性如何使用？
+### ant-design 中 Upload - Upload的previewFile属性如何使用？
 
 参数: previewFile
 
@@ -490,7 +490,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的progress属性如何使用？
+### ant-design 中 Upload - Upload的progress属性如何使用？
 
 参数: progress
 
@@ -500,7 +500,7 @@
 
 默认值: 4.3.0
 
-### ant-design 中 Upload - API的showUploadList属性如何使用？
+### ant-design 中 Upload - Upload的showUploadList属性如何使用？
 
 参数: showUploadList
 
@@ -512,7 +512,7 @@
 
 版本: function: 4.7.0
 
-### ant-design 中 Upload - API的withCredentials属性如何使用？
+### ant-design 中 Upload - Upload的withCredentials属性如何使用？
 
 参数: withCredentials
 
@@ -522,7 +522,7 @@
 
 默认值: false
 
-### ant-design 中 Upload - API的onChange属性如何使用？
+### ant-design 中 Upload - Upload的onChange属性如何使用？
 
 参数: onChange
 
@@ -532,7 +532,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的onDrop属性如何使用？
+### ant-design 中 Upload - Upload的onDrop属性如何使用？
 
 参数: onDrop
 
@@ -544,7 +544,7 @@
 
 版本: 4.16.0
 
-### ant-design 中 Upload - API的onDownload属性如何使用？
+### ant-design 中 Upload - Upload的onDownload属性如何使用？
 
 参数: onDownload
 
@@ -554,7 +554,7 @@
 
 默认值: (跳转新标签页)
 
-### ant-design 中 Upload - API的onPreview属性如何使用？
+### ant-design 中 Upload - Upload的onPreview属性如何使用？
 
 参数: onPreview
 
@@ -564,7 +564,7 @@
 
 默认值: -
 
-### ant-design 中 Upload - API的onRemove属性如何使用？
+### ant-design 中 Upload - Upload的onRemove属性如何使用？
 
 参数: onRemove
 
@@ -1504,9 +1504,9 @@
 
 默认值: -
 
-### ant-design 的 Tree-select 有哪些配置？
+### ant-design 的 TreeSelect 有哪些配置？
 
-#### Tree-select - Tree props
+#### TreeSelect - Tree props
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -1561,14 +1561,14 @@
 | onSelect | 被选中时调用 | function(value, node, extra) | - |
 | onTreeExpand | 展示节点时调用 | function(expandedKeys) | - |
 
-#### Tree-select - Tree 方法
+#### TreeSelect - Tree 方法
 
 | 名称    | 描述     |
 | ------- | -------- |
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-#### Tree-select - TreeNode props
+#### TreeSelect - TreeNode props
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -1581,7 +1581,7 @@
 | title | 树节点显示的内容 | ReactNode | `---` |
 | value | 默认根据此属性值进行筛选（其值在整个树范围内唯一） | string | - |
 
-### ant-design 的 Tree-select - Tree props 有哪些配置？
+### ant-design 的 TreeSelect - Tree props 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -1636,7 +1636,7 @@
 | onSelect | 被选中时调用 | function(value, node, extra) | - |
 | onTreeExpand | 展示节点时调用 | function(expandedKeys) | - |
 
-### ant-design 中 Tree-select - Tree props的allowClear属性如何使用？
+### ant-design 中 TreeSelect - Tree props的allowClear属性如何使用？
 
 参数: allowClear
 
@@ -1648,7 +1648,7 @@
 
 版本: 5.8.0: 支持对象形式
 
-### ant-design 中 Tree-select - Tree props的autoClearSearchValue属性如何使用？
+### ant-design 中 TreeSelect - Tree props的autoClearSearchValue属性如何使用？
 
 参数: autoClearSearchValue
 
@@ -1658,7 +1658,7 @@
 
 默认值: true
 
-### ant-design 中 Tree-select - Tree props的defaultValue属性如何使用？
+### ant-design 中 TreeSelect - Tree props的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -1668,7 +1668,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的disabled属性如何使用？
+### ant-design 中 TreeSelect - Tree props的disabled属性如何使用？
 
 参数: disabled
 
@@ -1678,7 +1678,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的popupClassName属性如何使用？
+### ant-design 中 TreeSelect - Tree props的popupClassName属性如何使用？
 
 参数: popupClassName
 
@@ -1690,7 +1690,7 @@
 
 版本: 4.23.0
 
-### ant-design 中 Tree-select - Tree props的popupMatchSelectWidth属性如何使用？
+### ant-design 中 TreeSelect - Tree props的popupMatchSelectWidth属性如何使用？
 
 参数: popupMatchSelectWidth
 
@@ -1702,7 +1702,7 @@
 
 版本: 5.5.0
 
-### ant-design 中 Tree-select - Tree props的dropdownRender属性如何使用？
+### ant-design 中 TreeSelect - Tree props的dropdownRender属性如何使用？
 
 参数: dropdownRender
 
@@ -1712,7 +1712,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的dropdownStyle属性如何使用？
+### ant-design 中 TreeSelect - Tree props的dropdownStyle属性如何使用？
 
 参数: dropdownStyle
 
@@ -1722,7 +1722,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的fieldNames属性如何使用？
+### ant-design 中 TreeSelect - Tree props的fieldNames属性如何使用？
 
 参数: fieldNames
 
@@ -1734,7 +1734,7 @@
 
 版本: 4.17.0
 
-### ant-design 中 Tree-select - Tree props的filterTreeNode属性如何使用？
+### ant-design 中 TreeSelect - Tree props的filterTreeNode属性如何使用？
 
 参数: filterTreeNode
 
@@ -1744,7 +1744,7 @@
 
 默认值: function
 
-### ant-design 中 Tree-select - Tree props的getPopupContainer属性如何使用？
+### ant-design 中 TreeSelect - Tree props的getPopupContainer属性如何使用？
 
 参数: getPopupContainer
 
@@ -1754,7 +1754,7 @@
 
 默认值: () => document.body
 
-### ant-design 中 Tree-select - Tree props的labelInValue属性如何使用？
+### ant-design 中 TreeSelect - Tree props的labelInValue属性如何使用？
 
 参数: labelInValue
 
@@ -1764,7 +1764,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的listHeight属性如何使用？
+### ant-design 中 TreeSelect - Tree props的listHeight属性如何使用？
 
 参数: listHeight
 
@@ -1774,7 +1774,7 @@
 
 默认值: 256
 
-### ant-design 中 Tree-select - Tree props的loadData属性如何使用？
+### ant-design 中 TreeSelect - Tree props的loadData属性如何使用？
 
 参数: loadData
 
@@ -1784,7 +1784,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的maxTagCount属性如何使用？
+### ant-design 中 TreeSelect - Tree props的maxTagCount属性如何使用？
 
 参数: maxTagCount
 
@@ -1796,7 +1796,7 @@
 
 版本: responsive: 4.10
 
-### ant-design 中 Tree-select - Tree props的maxTagPlaceholder属性如何使用？
+### ant-design 中 TreeSelect - Tree props的maxTagPlaceholder属性如何使用？
 
 参数: maxTagPlaceholder
 
@@ -1806,7 +1806,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的maxTagTextLength属性如何使用？
+### ant-design 中 TreeSelect - Tree props的maxTagTextLength属性如何使用？
 
 参数: maxTagTextLength
 
@@ -1816,7 +1816,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的multiple属性如何使用？
+### ant-design 中 TreeSelect - Tree props的multiple属性如何使用？
 
 参数: multiple
 
@@ -1826,7 +1826,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的notFoundContent属性如何使用？
+### ant-design 中 TreeSelect - Tree props的notFoundContent属性如何使用？
 
 参数: notFoundContent
 
@@ -1836,7 +1836,7 @@
 
 默认值: `Not Found`
 
-### ant-design 中 Tree-select - Tree props的placeholder属性如何使用？
+### ant-design 中 TreeSelect - Tree props的placeholder属性如何使用？
 
 参数: placeholder
 
@@ -1846,7 +1846,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的placement属性如何使用？
+### ant-design 中 TreeSelect - Tree props的placement属性如何使用？
 
 参数: placement
 
@@ -1856,7 +1856,7 @@
 
 默认值: bottomLeft
 
-### ant-design 中 Tree-select - Tree props的searchValue属性如何使用？
+### ant-design 中 TreeSelect - Tree props的searchValue属性如何使用？
 
 参数: searchValue
 
@@ -1866,7 +1866,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的showCheckedStrategy属性如何使用？
+### ant-design 中 TreeSelect - Tree props的showCheckedStrategy属性如何使用？
 
 参数: showCheckedStrategy
 
@@ -1876,7 +1876,7 @@
 
 默认值: `TreeSelect.SHOW_CHILD`
 
-### ant-design 中 Tree-select - Tree props的showSearch属性如何使用？
+### ant-design 中 TreeSelect - Tree props的showSearch属性如何使用？
 
 参数: showSearch
 
@@ -1886,7 +1886,7 @@
 
 默认值: 单选：false | 多选：true
 
-### ant-design 中 Tree-select - Tree props的size属性如何使用？
+### ant-design 中 TreeSelect - Tree props的size属性如何使用？
 
 参数: size
 
@@ -1896,7 +1896,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的status属性如何使用？
+### ant-design 中 TreeSelect - Tree props的status属性如何使用？
 
 参数: status
 
@@ -1908,7 +1908,7 @@
 
 版本: 4.19.0
 
-### ant-design 中 Tree-select - Tree props的suffixIcon属性如何使用？
+### ant-design 中 TreeSelect - Tree props的suffixIcon属性如何使用？
 
 参数: suffixIcon
 
@@ -1918,7 +1918,7 @@
 
 默认值: `<DownOutlined />`
 
-### ant-design 中 Tree-select - Tree props的switcherIcon属性如何使用？
+### ant-design 中 TreeSelect - Tree props的switcherIcon属性如何使用？
 
 参数: switcherIcon
 
@@ -1930,7 +1930,7 @@
 
 版本: renderProps: 4.20.0
 
-### ant-design 中 Tree-select - Tree props的tagRender属性如何使用？
+### ant-design 中 TreeSelect - Tree props的tagRender属性如何使用？
 
 参数: tagRender
 
@@ -1940,7 +1940,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的treeCheckable属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeCheckable属性如何使用？
 
 参数: treeCheckable
 
@@ -1950,7 +1950,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的treeCheckStrictly属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeCheckStrictly属性如何使用？
 
 参数: treeCheckStrictly
 
@@ -1960,7 +1960,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的treeData属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeData属性如何使用？
 
 参数: treeData
 
@@ -1970,7 +1970,7 @@
 
 默认值: \[]
 
-### ant-design 中 Tree-select - Tree props的treeDataSimpleMode属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeDataSimpleMode属性如何使用？
 
 参数: treeDataSimpleMode
 
@@ -1980,7 +1980,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的treeDefaultExpandAll属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeDefaultExpandAll属性如何使用？
 
 参数: treeDefaultExpandAll
 
@@ -1990,7 +1990,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的treeDefaultExpandedKeys属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeDefaultExpandedKeys属性如何使用？
 
 参数: treeDefaultExpandedKeys
 
@@ -2000,7 +2000,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的treeExpandAction属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeExpandAction属性如何使用？
 
 参数: treeExpandAction
 
@@ -2012,7 +2012,7 @@
 
 版本: 4.21.0
 
-### ant-design 中 Tree-select - Tree props的treeExpandedKeys属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeExpandedKeys属性如何使用？
 
 参数: treeExpandedKeys
 
@@ -2022,7 +2022,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的treeIcon属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeIcon属性如何使用？
 
 参数: treeIcon
 
@@ -2032,7 +2032,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - Tree props的treeLine属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeLine属性如何使用？
 
 参数: treeLine
 
@@ -2044,7 +2044,7 @@
 
 版本: 4.17.0
 
-### ant-design 中 Tree-select - Tree props的treeLoadedKeys属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeLoadedKeys属性如何使用？
 
 参数: treeLoadedKeys
 
@@ -2054,7 +2054,7 @@
 
 默认值: \[]
 
-### ant-design 中 Tree-select - Tree props的treeNodeFilterProp属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeNodeFilterProp属性如何使用？
 
 参数: treeNodeFilterProp
 
@@ -2064,7 +2064,7 @@
 
 默认值: `value`
 
-### ant-design 中 Tree-select - Tree props的treeNodeLabelProp属性如何使用？
+### ant-design 中 TreeSelect - Tree props的treeNodeLabelProp属性如何使用？
 
 参数: treeNodeLabelProp
 
@@ -2074,7 +2074,7 @@
 
 默认值: `title`
 
-### ant-design 中 Tree-select - Tree props的value属性如何使用？
+### ant-design 中 TreeSelect - Tree props的value属性如何使用？
 
 参数: value
 
@@ -2084,7 +2084,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的variant属性如何使用？
+### ant-design 中 TreeSelect - Tree props的variant属性如何使用？
 
 参数: variant
 
@@ -2096,7 +2096,7 @@
 
 版本: 5.13.0
 
-### ant-design 中 Tree-select - Tree props的virtual属性如何使用？
+### ant-design 中 TreeSelect - Tree props的virtual属性如何使用？
 
 参数: virtual
 
@@ -2108,7 +2108,7 @@
 
 版本: 4.1.0
 
-### ant-design 中 Tree-select - Tree props的onChange属性如何使用？
+### ant-design 中 TreeSelect - Tree props的onChange属性如何使用？
 
 参数: onChange
 
@@ -2118,7 +2118,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的onDropdownVisibleChange属性如何使用？
+### ant-design 中 TreeSelect - Tree props的onDropdownVisibleChange属性如何使用？
 
 参数: onDropdownVisibleChange
 
@@ -2128,7 +2128,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的onSearch属性如何使用？
+### ant-design 中 TreeSelect - Tree props的onSearch属性如何使用？
 
 参数: onSearch
 
@@ -2138,7 +2138,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的onSelect属性如何使用？
+### ant-design 中 TreeSelect - Tree props的onSelect属性如何使用？
 
 参数: onSelect
 
@@ -2148,7 +2148,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - Tree props的onTreeExpand属性如何使用？
+### ant-design 中 TreeSelect - Tree props的onTreeExpand属性如何使用？
 
 参数: onTreeExpand
 
@@ -2158,26 +2158,26 @@
 
 默认值: -
 
-### ant-design 的 Tree-select - Tree 方法 有哪些配置？
+### ant-design 的 TreeSelect - Tree 方法 有哪些配置？
 
 | 名称    | 描述     |
 | ------- | -------- |
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Tree-select - Tree 方法的blur()属性如何使用？
+### ant-design 中 TreeSelect - Tree 方法的blur()属性如何使用？
 
 名称: blur()
 
 描述: 移除焦点
 
-### ant-design 中 Tree-select - Tree 方法的focus()属性如何使用？
+### ant-design 中 TreeSelect - Tree 方法的focus()属性如何使用？
 
 名称: focus()
 
 描述: 获取焦点
 
-### ant-design 的 Tree-select - TreeNode props 有哪些配置？
+### ant-design 的 TreeSelect - TreeNode props 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -2190,7 +2190,7 @@
 | title | 树节点显示的内容 | ReactNode | `---` |
 | value | 默认根据此属性值进行筛选（其值在整个树范围内唯一） | string | - |
 
-### ant-design 中 Tree-select - TreeNode props的checkable属性如何使用？
+### ant-design 中 TreeSelect - TreeNode props的checkable属性如何使用？
 
 参数: checkable
 
@@ -2200,7 +2200,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - TreeNode props的disableCheckbox属性如何使用？
+### ant-design 中 TreeSelect - TreeNode props的disableCheckbox属性如何使用？
 
 参数: disableCheckbox
 
@@ -2210,7 +2210,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - TreeNode props的disabled属性如何使用？
+### ant-design 中 TreeSelect - TreeNode props的disabled属性如何使用？
 
 参数: disabled
 
@@ -2220,7 +2220,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - TreeNode props的isLeaf属性如何使用？
+### ant-design 中 TreeSelect - TreeNode props的isLeaf属性如何使用？
 
 参数: isLeaf
 
@@ -2230,7 +2230,7 @@
 
 默认值: false
 
-### ant-design 中 Tree-select - TreeNode props的key属性如何使用？
+### ant-design 中 TreeSelect - TreeNode props的key属性如何使用？
 
 参数: key
 
@@ -2240,7 +2240,7 @@
 
 默认值: -
 
-### ant-design 中 Tree-select - TreeNode props的selectable属性如何使用？
+### ant-design 中 TreeSelect - TreeNode props的selectable属性如何使用？
 
 参数: selectable
 
@@ -2250,7 +2250,7 @@
 
 默认值: true
 
-### ant-design 中 Tree-select - TreeNode props的title属性如何使用？
+### ant-design 中 TreeSelect - TreeNode props的title属性如何使用？
 
 参数: title
 
@@ -2260,7 +2260,7 @@
 
 默认值: `---`
 
-### ant-design 中 Tree-select - TreeNode props的value属性如何使用？
+### ant-design 中 TreeSelect - TreeNode props的value属性如何使用？
 
 参数: value
 
@@ -3670,13 +3670,13 @@
 
 ### ant-design 的 Tooltip 有哪些配置？
 
-#### Tooltip - API
+#### Tooltip - Tooltip
 
 | 参数  | 说明     | 类型                         | 默认值 |
 | ----- | -------- | ---------------------------- | ------ |
 | title | 提示文字 | ReactNode \| () => ReactNode | -      |
 
-#### Tooltip - 共同的 API
+#### Tooltip - Tooltip
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -3699,13 +3699,13 @@
 | zIndex | 设置 Tooltip 的 `z-index` | number | - |
 | onOpenChange | 显示隐藏的回调 | (open: boolean) => void | - | 4.23.0 |
 
-### ant-design 的 Tooltip - API 有哪些配置？
+### ant-design 的 Tooltip - Tooltip 有哪些配置？
 
 | 参数  | 说明     | 类型                         | 默认值 |
 | ----- | -------- | ---------------------------- | ------ |
 | title | 提示文字 | ReactNode \| () => ReactNode | -      |
 
-### ant-design 中 Tooltip - API的title属性如何使用？
+### ant-design 中 Tooltip - Tooltip的title属性如何使用？
 
 参数: title
 
@@ -3715,7 +3715,7 @@
 
 默认值: -
 
-### ant-design 的 Tooltip - 共同的 API 有哪些配置？
+### ant-design 的 Tooltip - Tooltip 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -3738,7 +3738,7 @@
 | zIndex | 设置 Tooltip 的 `z-index` | number | - |
 | onOpenChange | 显示隐藏的回调 | (open: boolean) => void | - | 4.23.0 |
 
-### ant-design 中 Tooltip - 共同的 API的align属性如何使用？
+### ant-design 中 Tooltip - Tooltip的align属性如何使用？
 
 参数: align
 
@@ -3748,7 +3748,7 @@
 
 默认值: -
 
-### ant-design 中 Tooltip - 共同的 API的arrow属性如何使用？
+### ant-design 中 Tooltip - Tooltip的arrow属性如何使用？
 
 参数: arrow
 
@@ -3760,7 +3760,7 @@
 
 版本: 5.2.0
 
-### ant-design 中 Tooltip - 共同的 API的autoAdjustOverflow属性如何使用？
+### ant-design 中 Tooltip - Tooltip的autoAdjustOverflow属性如何使用？
 
 参数: autoAdjustOverflow
 
@@ -3770,7 +3770,7 @@
 
 默认值: true
 
-### ant-design 中 Tooltip - 共同的 API的color属性如何使用？
+### ant-design 中 Tooltip - Tooltip的color属性如何使用？
 
 参数: color
 
@@ -3782,7 +3782,7 @@
 
 版本: 4.3.0
 
-### ant-design 中 Tooltip - 共同的 API的defaultOpen属性如何使用？
+### ant-design 中 Tooltip - Tooltip的defaultOpen属性如何使用？
 
 参数: defaultOpen
 
@@ -3794,7 +3794,7 @@
 
 版本: 4.23.0
 
-### ant-design 中 Tooltip - 共同的 API的destroyTooltipOnHide属性如何使用？
+### ant-design 中 Tooltip - Tooltip的destroyTooltipOnHide属性如何使用？
 
 参数: destroyTooltipOnHide
 
@@ -3804,7 +3804,7 @@
 
 默认值: false
 
-### ant-design 中 Tooltip - 共同的 API的fresh属性如何使用？
+### ant-design 中 Tooltip - Tooltip的fresh属性如何使用？
 
 参数: fresh
 
@@ -3816,7 +3816,7 @@
 
 版本: 5.10.0
 
-### ant-design 中 Tooltip - 共同的 API的getPopupContainer属性如何使用？
+### ant-design 中 Tooltip - Tooltip的getPopupContainer属性如何使用？
 
 参数: getPopupContainer
 
@@ -3826,7 +3826,7 @@
 
 默认值: () => document.body
 
-### ant-design 中 Tooltip - 共同的 API的mouseEnterDelay属性如何使用？
+### ant-design 中 Tooltip - Tooltip的mouseEnterDelay属性如何使用？
 
 参数: mouseEnterDelay
 
@@ -3836,7 +3836,7 @@
 
 默认值: 0.1
 
-### ant-design 中 Tooltip - 共同的 API的mouseLeaveDelay属性如何使用？
+### ant-design 中 Tooltip - Tooltip的mouseLeaveDelay属性如何使用？
 
 参数: mouseLeaveDelay
 
@@ -3846,7 +3846,7 @@
 
 默认值: 0.1
 
-### ant-design 中 Tooltip - 共同的 API的overlayClassName属性如何使用？
+### ant-design 中 Tooltip - Tooltip的overlayClassName属性如何使用？
 
 参数: overlayClassName
 
@@ -3856,7 +3856,7 @@
 
 默认值: -
 
-### ant-design 中 Tooltip - 共同的 API的overlayStyle属性如何使用？
+### ant-design 中 Tooltip - Tooltip的overlayStyle属性如何使用？
 
 参数: overlayStyle
 
@@ -3866,7 +3866,7 @@
 
 默认值: -
 
-### ant-design 中 Tooltip - 共同的 API的overlayInnerStyle属性如何使用？
+### ant-design 中 Tooltip - Tooltip的overlayInnerStyle属性如何使用？
 
 参数: overlayInnerStyle
 
@@ -3876,7 +3876,7 @@
 
 默认值: -
 
-### ant-design 中 Tooltip - 共同的 API的placement属性如何使用？
+### ant-design 中 Tooltip - Tooltip的placement属性如何使用？
 
 参数: placement
 
@@ -3886,7 +3886,7 @@
 
 默认值: `top`
 
-### ant-design 中 Tooltip - 共同的 API的trigger属性如何使用？
+### ant-design 中 Tooltip - Tooltip的trigger属性如何使用？
 
 参数: trigger
 
@@ -3896,7 +3896,7 @@
 
 默认值: `hover`
 
-### ant-design 中 Tooltip - 共同的 API的open属性如何使用？
+### ant-design 中 Tooltip - Tooltip的open属性如何使用？
 
 参数: open
 
@@ -3908,7 +3908,7 @@
 
 版本: 4.23.0
 
-### ant-design 中 Tooltip - 共同的 API的zIndex属性如何使用？
+### ant-design 中 Tooltip - Tooltip的zIndex属性如何使用？
 
 参数: zIndex
 
@@ -3918,7 +3918,7 @@
 
 默认值: -
 
-### ant-design 中 Tooltip - 共同的 API的onOpenChange属性如何使用？
+### ant-design 中 Tooltip - Tooltip的onOpenChange属性如何使用？
 
 参数: onOpenChange
 
@@ -4070,9 +4070,9 @@
 
 默认值: -
 
-### ant-design 的 Time-picker 有哪些配置？
+### ant-design 的 TimePicker 有哪些配置？
 
-#### Time-picker - API
+#### TimePicker - TimePicker
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -4108,21 +4108,21 @@
 | onChange | 时间发生变化的回调 | function(time: dayjs, timeString: string): void | - |
 | onOpenChange | 面板打开/关闭时的回调 | (open: boolean) => void | - |
 
-#### Time-picker - 方法
+#### TimePicker - 方法
 
 | 名称    | 描述     |
 | ------- | -------- |
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-#### Time-picker - RangePicker
+#### TimePicker - RangePicker
 
 | 参数         | 说明                 | 类型    | 默认值 |
 | ------------ | -------------------- | ------- | ------ | ----- |
 | disabledTime | 不可选择的时间       | -       | 4.19.0 |
 | order        | 始末时间是否自动排序 | boolean | true   | 4.1.0 |
 
-### ant-design 的 Time-picker - API 有哪些配置？
+### ant-design 的 TimePicker - TimePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -4158,7 +4158,7 @@
 | onChange | 时间发生变化的回调 | function(time: dayjs, timeString: string): void | - |
 | onOpenChange | 面板打开/关闭时的回调 | (open: boolean) => void | - |
 
-### ant-design 中 Time-picker - API的allowClear属性如何使用？
+### ant-design 中 TimePicker - TimePicker的allowClear属性如何使用？
 
 参数: allowClear
 
@@ -4170,7 +4170,7 @@
 
 版本: 5.8.0: 支持对象类型
 
-### ant-design 中 Time-picker - API的autoFocus属性如何使用？
+### ant-design 中 TimePicker - TimePicker的autoFocus属性如何使用？
 
 参数: autoFocus
 
@@ -4180,7 +4180,7 @@
 
 默认值: false
 
-### ant-design 中 Time-picker - API的cellRender属性如何使用？
+### ant-design 中 TimePicker - TimePicker的cellRender属性如何使用？
 
 参数: cellRender
 
@@ -4192,7 +4192,7 @@
 
 版本: 5.4.0
 
-### ant-design 中 Time-picker - API的changeOnScroll属性如何使用？
+### ant-design 中 TimePicker - TimePicker的changeOnScroll属性如何使用？
 
 参数: changeOnScroll
 
@@ -4204,7 +4204,7 @@
 
 版本: 5.14.0
 
-### ant-design 中 Time-picker - API的className属性如何使用？
+### ant-design 中 TimePicker - TimePicker的className属性如何使用？
 
 参数: className
 
@@ -4214,7 +4214,7 @@
 
 默认值: -
 
-### ant-design 中 Time-picker - API的defaultValue属性如何使用？
+### ant-design 中 TimePicker - TimePicker的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -4222,7 +4222,7 @@
 
 类型: -
 
-### ant-design 中 Time-picker - API的disabled属性如何使用？
+### ant-design 中 TimePicker - TimePicker的disabled属性如何使用？
 
 参数: disabled
 
@@ -4232,7 +4232,7 @@
 
 默认值: false
 
-### ant-design 中 Time-picker - API的disabledTime属性如何使用？
+### ant-design 中 TimePicker - TimePicker的disabledTime属性如何使用？
 
 参数: disabledTime
 
@@ -4242,7 +4242,7 @@
 
 默认值: 4.19.0
 
-### ant-design 中 Time-picker - API的format属性如何使用？
+### ant-design 中 TimePicker - TimePicker的format属性如何使用？
 
 参数: format
 
@@ -4252,7 +4252,7 @@
 
 默认值: `HH:mm:ss`
 
-### ant-design 中 Time-picker - API的getPopupContainer属性如何使用？
+### ant-design 中 TimePicker - TimePicker的getPopupContainer属性如何使用？
 
 参数: getPopupContainer
 
@@ -4262,7 +4262,7 @@
 
 默认值: -
 
-### ant-design 中 Time-picker - API的hideDisabledOptions属性如何使用？
+### ant-design 中 TimePicker - TimePicker的hideDisabledOptions属性如何使用？
 
 参数: hideDisabledOptions
 
@@ -4272,7 +4272,7 @@
 
 默认值: false
 
-### ant-design 中 Time-picker - API的hourStep属性如何使用？
+### ant-design 中 TimePicker - TimePicker的hourStep属性如何使用？
 
 参数: hourStep
 
@@ -4282,7 +4282,7 @@
 
 默认值: 1
 
-### ant-design 中 Time-picker - API的inputReadOnly属性如何使用？
+### ant-design 中 TimePicker - TimePicker的inputReadOnly属性如何使用？
 
 参数: inputReadOnly
 
@@ -4292,7 +4292,7 @@
 
 默认值: false
 
-### ant-design 中 Time-picker - API的minuteStep属性如何使用？
+### ant-design 中 TimePicker - TimePicker的minuteStep属性如何使用？
 
 参数: minuteStep
 
@@ -4302,7 +4302,7 @@
 
 默认值: 1
 
-### ant-design 中 Time-picker - API的needConfirm属性如何使用？
+### ant-design 中 TimePicker - TimePicker的needConfirm属性如何使用？
 
 参数: needConfirm
 
@@ -4314,7 +4314,7 @@
 
 版本: 5.14.0
 
-### ant-design 中 Time-picker - API的open属性如何使用？
+### ant-design 中 TimePicker - TimePicker的open属性如何使用？
 
 参数: open
 
@@ -4324,7 +4324,7 @@
 
 默认值: false
 
-### ant-design 中 Time-picker - API的placeholder属性如何使用？
+### ant-design 中 TimePicker - TimePicker的placeholder属性如何使用？
 
 参数: placeholder
 
@@ -4334,7 +4334,7 @@
 
 默认值: `请选择时间`
 
-### ant-design 中 Time-picker - API的placement属性如何使用？
+### ant-design 中 TimePicker - TimePicker的placement属性如何使用？
 
 参数: placement
 
@@ -4344,7 +4344,7 @@
 
 默认值: bottomLeft
 
-### ant-design 中 Time-picker - API的popupClassName属性如何使用？
+### ant-design 中 TimePicker - TimePicker的popupClassName属性如何使用？
 
 参数: popupClassName
 
@@ -4354,7 +4354,7 @@
 
 默认值: -
 
-### ant-design 中 Time-picker - API的popupStyle属性如何使用？
+### ant-design 中 TimePicker - TimePicker的popupStyle属性如何使用？
 
 参数: popupStyle
 
@@ -4364,7 +4364,7 @@
 
 默认值: -
 
-### ant-design 中 Time-picker - API的renderExtraFooter属性如何使用？
+### ant-design 中 TimePicker - TimePicker的renderExtraFooter属性如何使用？
 
 参数: renderExtraFooter
 
@@ -4374,7 +4374,7 @@
 
 默认值: -
 
-### ant-design 中 Time-picker - API的secondStep属性如何使用？
+### ant-design 中 TimePicker - TimePicker的secondStep属性如何使用？
 
 参数: secondStep
 
@@ -4384,7 +4384,7 @@
 
 默认值: 1
 
-### ant-design 中 Time-picker - API的showNow属性如何使用？
+### ant-design 中 TimePicker - TimePicker的showNow属性如何使用？
 
 参数: showNow
 
@@ -4396,7 +4396,7 @@
 
 版本: 4.4.0
 
-### ant-design 中 Time-picker - API的size属性如何使用？
+### ant-design 中 TimePicker - TimePicker的size属性如何使用？
 
 参数: size
 
@@ -4406,7 +4406,7 @@
 
 默认值: -
 
-### ant-design 中 Time-picker - API的status属性如何使用？
+### ant-design 中 TimePicker - TimePicker的status属性如何使用？
 
 参数: status
 
@@ -4418,7 +4418,7 @@
 
 版本: 4.19.0
 
-### ant-design 中 Time-picker - API的suffixIcon属性如何使用？
+### ant-design 中 TimePicker - TimePicker的suffixIcon属性如何使用？
 
 参数: suffixIcon
 
@@ -4428,7 +4428,7 @@
 
 默认值: -
 
-### ant-design 中 Time-picker - API的use12Hours属性如何使用？
+### ant-design 中 TimePicker - TimePicker的use12Hours属性如何使用？
 
 参数: use12Hours
 
@@ -4438,7 +4438,7 @@
 
 默认值: false
 
-### ant-design 中 Time-picker - API的value属性如何使用？
+### ant-design 中 TimePicker - TimePicker的value属性如何使用？
 
 参数: value
 
@@ -4446,7 +4446,7 @@
 
 类型: -
 
-### ant-design 中 Time-picker - API的variant属性如何使用？
+### ant-design 中 TimePicker - TimePicker的variant属性如何使用？
 
 参数: variant
 
@@ -4458,7 +4458,7 @@
 
 版本: 5.13.0
 
-### ant-design 中 Time-picker - API的onChange属性如何使用？
+### ant-design 中 TimePicker - TimePicker的onChange属性如何使用？
 
 参数: onChange
 
@@ -4468,7 +4468,7 @@
 
 默认值: -
 
-### ant-design 中 Time-picker - API的onOpenChange属性如何使用？
+### ant-design 中 TimePicker - TimePicker的onOpenChange属性如何使用？
 
 参数: onOpenChange
 
@@ -4478,33 +4478,33 @@
 
 默认值: -
 
-### ant-design 的 Time-picker - 方法 有哪些配置？
+### ant-design 的 TimePicker - 方法 有哪些配置？
 
 | 名称    | 描述     |
 | ------- | -------- |
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Time-picker - 方法的blur()属性如何使用？
+### ant-design 中 TimePicker - 方法的blur()属性如何使用？
 
 名称: blur()
 
 描述: 移除焦点
 
-### ant-design 中 Time-picker - 方法的focus()属性如何使用？
+### ant-design 中 TimePicker - 方法的focus()属性如何使用？
 
 名称: focus()
 
 描述: 获取焦点
 
-### ant-design 的 Time-picker - RangePicker 有哪些配置？
+### ant-design 的 TimePicker - RangePicker 有哪些配置？
 
 | 参数         | 说明                 | 类型    | 默认值 |
 | ------------ | -------------------- | ------- | ------ | ----- |
 | disabledTime | 不可选择的时间       | -       | 4.19.0 |
 | order        | 始末时间是否自动排序 | boolean | true   | 4.1.0 |
 
-### ant-design 中 Time-picker - RangePicker的disabledTime属性如何使用？
+### ant-design 中 TimePicker - RangePicker的disabledTime属性如何使用？
 
 参数: disabledTime
 
@@ -4514,7 +4514,7 @@
 
 默认值: 4.19.0
 
-### ant-design 中 Time-picker - RangePicker的order属性如何使用？
+### ant-design 中 TimePicker - RangePicker的order属性如何使用？
 
 参数: order
 
@@ -6442,7 +6442,7 @@
 
 ### ant-design 的 Switch 有哪些配置？
 
-#### Switch - API
+#### Switch - Switch
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -6467,7 +6467,7 @@
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 的 Switch - API 有哪些配置？
+### ant-design 的 Switch - Switch 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -6485,7 +6485,7 @@
 | onChange | 变化时的回调函数 | function(checked: boolean, event: Event) | - |
 | onClick | 点击时的回调函数 | function(checked: boolean, event: Event) | - |
 
-### ant-design 中 Switch - API的autoFocus属性如何使用？
+### ant-design 中 Switch - Switch的autoFocus属性如何使用？
 
 参数: autoFocus
 
@@ -6495,7 +6495,7 @@
 
 默认值: false
 
-### ant-design 中 Switch - API的checked属性如何使用？
+### ant-design 中 Switch - Switch的checked属性如何使用？
 
 参数: checked
 
@@ -6505,7 +6505,7 @@
 
 默认值: false
 
-### ant-design 中 Switch - API的checkedChildren属性如何使用？
+### ant-design 中 Switch - Switch的checkedChildren属性如何使用？
 
 参数: checkedChildren
 
@@ -6515,7 +6515,7 @@
 
 默认值: -
 
-### ant-design 中 Switch - API的className属性如何使用？
+### ant-design 中 Switch - Switch的className属性如何使用？
 
 参数: className
 
@@ -6525,7 +6525,7 @@
 
 默认值: -
 
-### ant-design 中 Switch - API的defaultChecked属性如何使用？
+### ant-design 中 Switch - Switch的defaultChecked属性如何使用？
 
 参数: defaultChecked
 
@@ -6535,7 +6535,7 @@
 
 默认值: false
 
-### ant-design 中 Switch - API的defaultValue属性如何使用？
+### ant-design 中 Switch - Switch的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -6547,7 +6547,7 @@
 
 版本: 5.12.0
 
-### ant-design 中 Switch - API的disabled属性如何使用？
+### ant-design 中 Switch - Switch的disabled属性如何使用？
 
 参数: disabled
 
@@ -6557,7 +6557,7 @@
 
 默认值: false
 
-### ant-design 中 Switch - API的loading属性如何使用？
+### ant-design 中 Switch - Switch的loading属性如何使用？
 
 参数: loading
 
@@ -6567,7 +6567,7 @@
 
 默认值: false
 
-### ant-design 中 Switch - API的size属性如何使用？
+### ant-design 中 Switch - Switch的size属性如何使用？
 
 参数: size
 
@@ -6577,7 +6577,7 @@
 
 默认值: `default`
 
-### ant-design 中 Switch - API的unCheckedChildren属性如何使用？
+### ant-design 中 Switch - Switch的unCheckedChildren属性如何使用？
 
 参数: unCheckedChildren
 
@@ -6587,7 +6587,7 @@
 
 默认值: -
 
-### ant-design 中 Switch - API的value属性如何使用？
+### ant-design 中 Switch - Switch的value属性如何使用？
 
 参数: value
 
@@ -6599,7 +6599,7 @@
 
 版本: 5.12.0
 
-### ant-design 中 Switch - API的onChange属性如何使用？
+### ant-design 中 Switch - Switch的onChange属性如何使用？
 
 参数: onChange
 
@@ -6609,7 +6609,7 @@
 
 默认值: -
 
-### ant-design 中 Switch - API的onClick属性如何使用？
+### ant-design 中 Switch - Switch的onClick属性如何使用？
 
 参数: onClick
 
@@ -6658,7 +6658,7 @@
 | onChange | 点击切换步骤时触发 | (current) => void | - |
 | items | 配置选项卡内容 | \[] | 4.24.0 |
 
-#### Steps - `type="inline"`
+#### Steps - Steps
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -6832,7 +6832,7 @@
 
 默认值: 4.24.0
 
-### ant-design 的 Steps - `type="inline"` 有哪些配置？
+### ant-design 的 Steps - Steps 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -6843,7 +6843,7 @@
 | onChange | 点击切换步骤时触发 | (current) => void | - |
 | items | 配置选项卡内容，不支持 `icon` `subtitle` | \[] | 4.24.0 |
 
-### ant-design 中 Steps - `type="inline"`的className属性如何使用？
+### ant-design 中 Steps - Steps的className属性如何使用？
 
 参数: className
 
@@ -6853,7 +6853,7 @@
 
 默认值: -
 
-### ant-design 中 Steps - `type="inline"`的current属性如何使用？
+### ant-design 中 Steps - Steps的current属性如何使用？
 
 参数: current
 
@@ -6863,7 +6863,7 @@
 
 默认值: 0
 
-### ant-design 中 Steps - `type="inline"`的initial属性如何使用？
+### ant-design 中 Steps - Steps的initial属性如何使用？
 
 参数: initial
 
@@ -6873,7 +6873,7 @@
 
 默认值: 0
 
-### ant-design 中 Steps - `type="inline"`的status属性如何使用？
+### ant-design 中 Steps - Steps的status属性如何使用？
 
 参数: status
 
@@ -6883,7 +6883,7 @@
 
 默认值: `process`
 
-### ant-design 中 Steps - `type="inline"`的onChange属性如何使用？
+### ant-design 中 Steps - Steps的onChange属性如何使用？
 
 参数: onChange
 
@@ -6893,7 +6893,7 @@
 
 默认值: -
 
-### ant-design 中 Steps - `type="inline"`的items属性如何使用？
+### ant-design 中 Steps - Steps的items属性如何使用？
 
 参数: items
 
@@ -7218,7 +7218,7 @@
 
 ### ant-design 的 Spin 有哪些配置？
 
-#### Spin - API
+#### Spin - Spin
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -7230,7 +7230,7 @@
 | wrapperClassName | 包装器的类属性 | string | - |
 | fullscreen | 显示带有 `Spin` 组件的背景 | boolean | false | 5.11.0 |
 
-### ant-design 的 Spin - API 有哪些配置？
+### ant-design 的 Spin - Spin 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -7242,7 +7242,7 @@
 | wrapperClassName | 包装器的类属性 | string | - |
 | fullscreen | 显示带有 `Spin` 组件的背景 | boolean | false | 5.11.0 |
 
-### ant-design 中 Spin - API的delay属性如何使用？
+### ant-design 中 Spin - Spin的delay属性如何使用？
 
 参数: delay
 
@@ -7252,7 +7252,7 @@
 
 默认值: -
 
-### ant-design 中 Spin - API的indicator属性如何使用？
+### ant-design 中 Spin - Spin的indicator属性如何使用？
 
 参数: indicator
 
@@ -7262,7 +7262,7 @@
 
 默认值: -
 
-### ant-design 中 Spin - API的size属性如何使用？
+### ant-design 中 Spin - Spin的size属性如何使用？
 
 参数: size
 
@@ -7272,7 +7272,7 @@
 
 默认值: `default`
 
-### ant-design 中 Spin - API的spinning属性如何使用？
+### ant-design 中 Spin - Spin的spinning属性如何使用？
 
 参数: spinning
 
@@ -7282,7 +7282,7 @@
 
 默认值: true
 
-### ant-design 中 Spin - API的tip属性如何使用？
+### ant-design 中 Spin - Spin的tip属性如何使用？
 
 参数: tip
 
@@ -7292,7 +7292,7 @@
 
 默认值: -
 
-### ant-design 中 Spin - API的wrapperClassName属性如何使用？
+### ant-design 中 Spin - Spin的wrapperClassName属性如何使用？
 
 参数: wrapperClassName
 
@@ -7302,7 +7302,7 @@
 
 默认值: -
 
-### ant-design 中 Spin - API的fullscreen属性如何使用？
+### ant-design 中 Spin - Spin的fullscreen属性如何使用？
 
 参数: fullscreen
 
@@ -7468,7 +7468,7 @@
 
 ### ant-design 的 Slider 有哪些配置？
 
-#### Slider - API
+#### Slider - Slider
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -7515,7 +7515,7 @@
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 的 Slider - API 有哪些配置？
+### ant-design 的 Slider - Slider 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -7539,7 +7539,7 @@
 | onChangeComplete | 与 `mouseup` 和 `keyup` 触发时机一致，把当前值作为参数传入 | (value) => void | - |
 | onChange | 当 Slider 的值发生改变时，会触发 onChange 事件，并把改变后的值作为参数传入 | (value) => void | - |
 
-### ant-design 中 Slider - API的autoFocus属性如何使用？
+### ant-design 中 Slider - Slider的autoFocus属性如何使用？
 
 参数: autoFocus
 
@@ -7549,7 +7549,7 @@
 
 默认值: false
 
-### ant-design 中 Slider - API的classNames属性如何使用？
+### ant-design 中 Slider - Slider的classNames属性如何使用？
 
 参数: classNames
 
@@ -7559,7 +7559,7 @@
 
 默认值: 5.10.0
 
-### ant-design 中 Slider - API的defaultValue属性如何使用？
+### ant-design 中 Slider - Slider的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -7569,7 +7569,7 @@
 
 默认值: 0 | [0, 0]
 
-### ant-design 中 Slider - API的disabled属性如何使用？
+### ant-design 中 Slider - Slider的disabled属性如何使用？
 
 参数: disabled
 
@@ -7579,7 +7579,7 @@
 
 默认值: false
 
-### ant-design 中 Slider - API的keyboard属性如何使用？
+### ant-design 中 Slider - Slider的keyboard属性如何使用？
 
 参数: keyboard
 
@@ -7591,7 +7591,7 @@
 
 版本: 5.2.0+
 
-### ant-design 中 Slider - API的dots属性如何使用？
+### ant-design 中 Slider - Slider的dots属性如何使用？
 
 参数: dots
 
@@ -7601,7 +7601,7 @@
 
 默认值: false
 
-### ant-design 中 Slider - API的included属性如何使用？
+### ant-design 中 Slider - Slider的included属性如何使用？
 
 参数: included
 
@@ -7611,7 +7611,7 @@
 
 默认值: true
 
-### ant-design 中 Slider - API的marks属性如何使用？
+### ant-design 中 Slider - Slider的marks属性如何使用？
 
 参数: marks
 
@@ -7621,7 +7621,7 @@
 
 默认值: { number: ReactNode } or { number: { style: CSSProperties, label: ReactNode } }
 
-### ant-design 中 Slider - API的max属性如何使用？
+### ant-design 中 Slider - Slider的max属性如何使用？
 
 参数: max
 
@@ -7631,7 +7631,7 @@
 
 默认值: 100
 
-### ant-design 中 Slider - API的min属性如何使用？
+### ant-design 中 Slider - Slider的min属性如何使用？
 
 参数: min
 
@@ -7641,7 +7641,7 @@
 
 默认值: 0
 
-### ant-design 中 Slider - API的range属性如何使用？
+### ant-design 中 Slider - Slider的range属性如何使用？
 
 参数: range
 
@@ -7651,7 +7651,7 @@
 
 默认值: false
 
-### ant-design 中 Slider - API的reverse属性如何使用？
+### ant-design 中 Slider - Slider的reverse属性如何使用？
 
 参数: reverse
 
@@ -7661,7 +7661,7 @@
 
 默认值: false
 
-### ant-design 中 Slider - API的step属性如何使用？
+### ant-design 中 Slider - Slider的step属性如何使用？
 
 参数: step
 
@@ -7671,7 +7671,7 @@
 
 默认值: 1
 
-### ant-design 中 Slider - API的styles属性如何使用？
+### ant-design 中 Slider - Slider的styles属性如何使用？
 
 参数: styles
 
@@ -7681,7 +7681,7 @@
 
 默认值: 5.10.0
 
-### ant-design 中 Slider - API的tooltip属性如何使用？
+### ant-design 中 Slider - Slider的tooltip属性如何使用？
 
 参数: tooltip
 
@@ -7691,7 +7691,7 @@
 
 默认值: 4.23.0
 
-### ant-design 中 Slider - API的value属性如何使用？
+### ant-design 中 Slider - Slider的value属性如何使用？
 
 参数: value
 
@@ -7701,7 +7701,7 @@
 
 默认值: -
 
-### ant-design 中 Slider - API的vertical属性如何使用？
+### ant-design 中 Slider - Slider的vertical属性如何使用？
 
 参数: vertical
 
@@ -7711,7 +7711,7 @@
 
 默认值: false
 
-### ant-design 中 Slider - API的onChangeComplete属性如何使用？
+### ant-design 中 Slider - Slider的onChangeComplete属性如何使用？
 
 参数: onChangeComplete
 
@@ -7721,7 +7721,7 @@
 
 默认值: -
 
-### ant-design 中 Slider - API的onChange属性如何使用？
+### ant-design 中 Slider - Slider的onChange属性如何使用？
 
 参数: onChange
 
@@ -9024,7 +9024,7 @@
 
 ### ant-design 的 Result 有哪些配置？
 
-#### Result - API
+#### Result - Result
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -9034,7 +9034,7 @@
 | subTitle | subTitle 文字 | ReactNode | - |
 | title | title 文字 | ReactNode | - |
 
-### ant-design 的 Result - API 有哪些配置？
+### ant-design 的 Result - Result 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -9044,7 +9044,7 @@
 | subTitle | subTitle 文字 | ReactNode | - |
 | title | title 文字 | ReactNode | - |
 
-### ant-design 中 Result - API的extra属性如何使用？
+### ant-design 中 Result - Result的extra属性如何使用？
 
 参数: extra
 
@@ -9054,7 +9054,7 @@
 
 默认值: -
 
-### ant-design 中 Result - API的icon属性如何使用？
+### ant-design 中 Result - Result的icon属性如何使用？
 
 参数: icon
 
@@ -9064,7 +9064,7 @@
 
 默认值: -
 
-### ant-design 中 Result - API的status属性如何使用？
+### ant-design 中 Result - Result的status属性如何使用？
 
 参数: status
 
@@ -9074,7 +9074,7 @@
 
 默认值: `info`
 
-### ant-design 中 Result - API的subTitle属性如何使用？
+### ant-design 中 Result - Result的subTitle属性如何使用？
 
 参数: subTitle
 
@@ -9084,7 +9084,7 @@
 
 默认值: -
 
-### ant-design 中 Result - API的title属性如何使用？
+### ant-design 中 Result - Result的title属性如何使用？
 
 参数: title
 
@@ -9096,7 +9096,7 @@
 
 ### ant-design 的 Rate 有哪些配置？
 
-#### Rate - API
+#### Rate - Rate
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -9124,7 +9124,7 @@
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 的 Rate - API 有哪些配置？
+### ant-design 的 Rate - Rate 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -9145,7 +9145,7 @@
 | onHoverChange | 鼠标经过时数值变化的回调 | function(value: number) | - |
 | onKeyDown | 按键回调 | function(event) | - |
 
-### ant-design 中 Rate - API的allowClear属性如何使用？
+### ant-design 中 Rate - Rate的allowClear属性如何使用？
 
 属性: allowClear
 
@@ -9155,7 +9155,7 @@
 
 默认值: true
 
-### ant-design 中 Rate - API的allowHalf属性如何使用？
+### ant-design 中 Rate - Rate的allowHalf属性如何使用？
 
 属性: allowHalf
 
@@ -9165,7 +9165,7 @@
 
 默认值: false
 
-### ant-design 中 Rate - API的autoFocus属性如何使用？
+### ant-design 中 Rate - Rate的autoFocus属性如何使用？
 
 属性: autoFocus
 
@@ -9175,7 +9175,7 @@
 
 默认值: false
 
-### ant-design 中 Rate - API的character属性如何使用？
+### ant-design 中 Rate - Rate的character属性如何使用？
 
 属性: character
 
@@ -9187,7 +9187,7 @@
 
 版本: function(): 4.4.0
 
-### ant-design 中 Rate - API的className属性如何使用？
+### ant-design 中 Rate - Rate的className属性如何使用？
 
 属性: className
 
@@ -9197,7 +9197,7 @@
 
 默认值: -
 
-### ant-design 中 Rate - API的count属性如何使用？
+### ant-design 中 Rate - Rate的count属性如何使用？
 
 属性: count
 
@@ -9207,7 +9207,7 @@
 
 默认值: 5
 
-### ant-design 中 Rate - API的defaultValue属性如何使用？
+### ant-design 中 Rate - Rate的defaultValue属性如何使用？
 
 属性: defaultValue
 
@@ -9217,7 +9217,7 @@
 
 默认值: 0
 
-### ant-design 中 Rate - API的disabled属性如何使用？
+### ant-design 中 Rate - Rate的disabled属性如何使用？
 
 属性: disabled
 
@@ -9227,7 +9227,7 @@
 
 默认值: false
 
-### ant-design 中 Rate - API的style属性如何使用？
+### ant-design 中 Rate - Rate的style属性如何使用？
 
 属性: style
 
@@ -9237,7 +9237,7 @@
 
 默认值: -
 
-### ant-design 中 Rate - API的tooltips属性如何使用？
+### ant-design 中 Rate - Rate的tooltips属性如何使用？
 
 属性: tooltips
 
@@ -9247,7 +9247,7 @@
 
 默认值: -
 
-### ant-design 中 Rate - API的value属性如何使用？
+### ant-design 中 Rate - Rate的value属性如何使用？
 
 属性: value
 
@@ -9257,7 +9257,7 @@
 
 默认值: -
 
-### ant-design 中 Rate - API的onBlur属性如何使用？
+### ant-design 中 Rate - Rate的onBlur属性如何使用？
 
 属性: onBlur
 
@@ -9267,7 +9267,7 @@
 
 默认值: -
 
-### ant-design 中 Rate - API的onChange属性如何使用？
+### ant-design 中 Rate - Rate的onChange属性如何使用？
 
 属性: onChange
 
@@ -9277,7 +9277,7 @@
 
 默认值: -
 
-### ant-design 中 Rate - API的onFocus属性如何使用？
+### ant-design 中 Rate - Rate的onFocus属性如何使用？
 
 属性: onFocus
 
@@ -9287,7 +9287,7 @@
 
 默认值: -
 
-### ant-design 中 Rate - API的onHoverChange属性如何使用？
+### ant-design 中 Rate - Rate的onHoverChange属性如何使用？
 
 属性: onHoverChange
 
@@ -9297,7 +9297,7 @@
 
 默认值: -
 
-### ant-design 中 Rate - API的onKeyDown属性如何使用？
+### ant-design 中 Rate - Rate的onKeyDown属性如何使用？
 
 属性: onKeyDown
 
@@ -9544,25 +9544,9 @@
 
 描述: 获取焦点
 
-### ant-design 的 Qr-code 有哪些配置？
+### ant-design 的 QrCode 有哪些配置？
 
-#### Qr-code - API
-
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | --- |
-| value | 扫描后的文本 | string | - |
-| type | 渲染类型 | `canvas \| svg ` | `canvas` | 5.6.0 |
-| icon | 二维码中图片的地址（目前只支持图片地址） | string | - |
-| size | 二维码大小 | number | 160 |
-| iconSize | 二维码中图片的大小 | number | 40 |
-| color | 二维码颜色 | string | `#000` |
-| bgColor | 二维码背景颜色 | string | `transparent` | 5.5.0 |
-| bordered | 是否有边框 | boolean | `true` |
-| errorLevel | 二维码纠错等级 | `'L' \| 'M' \| 'Q' \| 'H' ` | `M` |
-| status | 二维码状态 | `active \| expired \| loading \| scanned` | `active` | scanned: 5.13.0 |
-| onRefresh | 点击"点击刷新"的回调 | `() => void` | - |
-
-### ant-design 的 Qr-code - API 有哪些配置？
+#### QrCode - QrCode
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -9578,7 +9562,23 @@
 | status | 二维码状态 | `active \| expired \| loading \| scanned` | `active` | scanned: 5.13.0 |
 | onRefresh | 点击"点击刷新"的回调 | `() => void` | - |
 
-### ant-design 中 Qr-code - API的value属性如何使用？
+### ant-design 的 QrCode - QrCode 有哪些配置？
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- | --- |
+| value | 扫描后的文本 | string | - |
+| type | 渲染类型 | `canvas \| svg ` | `canvas` | 5.6.0 |
+| icon | 二维码中图片的地址（目前只支持图片地址） | string | - |
+| size | 二维码大小 | number | 160 |
+| iconSize | 二维码中图片的大小 | number | 40 |
+| color | 二维码颜色 | string | `#000` |
+| bgColor | 二维码背景颜色 | string | `transparent` | 5.5.0 |
+| bordered | 是否有边框 | boolean | `true` |
+| errorLevel | 二维码纠错等级 | `'L' \| 'M' \| 'Q' \| 'H' ` | `M` |
+| status | 二维码状态 | `active \| expired \| loading \| scanned` | `active` | scanned: 5.13.0 |
+| onRefresh | 点击"点击刷新"的回调 | `() => void` | - |
+
+### ant-design 中 QrCode - QrCode的value属性如何使用？
 
 参数: value
 
@@ -9588,7 +9588,7 @@
 
 默认值: -
 
-### ant-design 中 Qr-code - API的type属性如何使用？
+### ant-design 中 QrCode - QrCode的type属性如何使用？
 
 参数: type
 
@@ -9600,7 +9600,7 @@
 
 版本: 5.6.0
 
-### ant-design 中 Qr-code - API的icon属性如何使用？
+### ant-design 中 QrCode - QrCode的icon属性如何使用？
 
 参数: icon
 
@@ -9610,7 +9610,7 @@
 
 默认值: -
 
-### ant-design 中 Qr-code - API的size属性如何使用？
+### ant-design 中 QrCode - QrCode的size属性如何使用？
 
 参数: size
 
@@ -9620,7 +9620,7 @@
 
 默认值: 160
 
-### ant-design 中 Qr-code - API的iconSize属性如何使用？
+### ant-design 中 QrCode - QrCode的iconSize属性如何使用？
 
 参数: iconSize
 
@@ -9630,7 +9630,7 @@
 
 默认值: 40
 
-### ant-design 中 Qr-code - API的color属性如何使用？
+### ant-design 中 QrCode - QrCode的color属性如何使用？
 
 参数: color
 
@@ -9640,7 +9640,7 @@
 
 默认值: `#000`
 
-### ant-design 中 Qr-code - API的bgColor属性如何使用？
+### ant-design 中 QrCode - QrCode的bgColor属性如何使用？
 
 参数: bgColor
 
@@ -9652,7 +9652,7 @@
 
 版本: 5.5.0
 
-### ant-design 中 Qr-code - API的bordered属性如何使用？
+### ant-design 中 QrCode - QrCode的bordered属性如何使用？
 
 参数: bordered
 
@@ -9662,7 +9662,7 @@
 
 默认值: `true`
 
-### ant-design 中 Qr-code - API的errorLevel属性如何使用？
+### ant-design 中 QrCode - QrCode的errorLevel属性如何使用？
 
 参数: errorLevel
 
@@ -9672,7 +9672,7 @@
 
 默认值: `M`
 
-### ant-design 中 Qr-code - API的status属性如何使用？
+### ant-design 中 QrCode - QrCode的status属性如何使用？
 
 参数: status
 
@@ -9684,7 +9684,7 @@
 
 版本: scanned: 5.13.0
 
-### ant-design 中 Qr-code - API的onRefresh属性如何使用？
+### ant-design 中 QrCode - QrCode的onRefresh属性如何使用？
 
 参数: onRefresh
 
@@ -9696,7 +9696,7 @@
 
 ### ant-design 的 Progress 有哪些配置？
 
-#### Progress - API
+#### Progress - Progress
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -9711,21 +9711,21 @@
 | type | 类型，可选 `line` `circle` `dashboard` | string | `line` | - |
 | size | 进度条的尺寸 | number \| [number \| string, number] \| "small" \| "default" | "default" | v5.3.0 |
 
-#### Progress - `type="line"`
+#### Progress - Progress
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | steps | 进度条总共步数 | number | - | - |
 | strokeColor | 进度条的色彩，传入 object 时为渐变。当有 `steps` 时支持传入一个数组。 | string \| string[] \| { from: string; to: string; direction: string } | - | 4.21.0: `string[]` |
 
-#### Progress - `type="circle"`
+#### Progress - Progress
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | strokeColor | 圆形进度条线的色彩，传入 object 时为渐变 | string \| { number%: string } | - | - |
 | strokeWidth | 圆形进度条线的宽度，单位是进度条画布宽度的百分比 | number | 6 | - |
 
-#### Progress - `type="dashboard"`
+#### Progress - Progress
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -9733,7 +9733,7 @@
 | gapPosition | 仪表盘进度条缺口位置 | `top` \| `bottom` \| `left` \| `right` | `bottom` | - |
 | strokeWidth | 仪表盘进度条线的宽度，单位是进度条画布宽度的百分比 | number | 6 | - |
 
-### ant-design 的 Progress - API 有哪些配置？
+### ant-design 的 Progress - Progress 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -9748,7 +9748,7 @@
 | type | 类型，可选 `line` `circle` `dashboard` | string | `line` | - |
 | size | 进度条的尺寸 | number \| [number \| string, number] \| "small" \| "default" | "default" | v5.3.0 |
 
-### ant-design 中 Progress - API的format属性如何使用？
+### ant-design 中 Progress - Progress的format属性如何使用？
 
 属性: format
 
@@ -9760,7 +9760,7 @@
 
 版本: -
 
-### ant-design 中 Progress - API的percent属性如何使用？
+### ant-design 中 Progress - Progress的percent属性如何使用？
 
 属性: percent
 
@@ -9772,7 +9772,7 @@
 
 版本: -
 
-### ant-design 中 Progress - API的showInfo属性如何使用？
+### ant-design 中 Progress - Progress的showInfo属性如何使用？
 
 属性: showInfo
 
@@ -9784,7 +9784,7 @@
 
 版本: -
 
-### ant-design 中 Progress - API的status属性如何使用？
+### ant-design 中 Progress - Progress的status属性如何使用？
 
 属性: status
 
@@ -9796,7 +9796,7 @@
 
 版本: -
 
-### ant-design 中 Progress - API的strokeColor属性如何使用？
+### ant-design 中 Progress - Progress的strokeColor属性如何使用？
 
 属性: strokeColor
 
@@ -9808,7 +9808,7 @@
 
 版本: -
 
-### ant-design 中 Progress - API的strokeLinecap属性如何使用？
+### ant-design 中 Progress - Progress的strokeLinecap属性如何使用？
 
 属性: strokeLinecap
 
@@ -9820,7 +9820,7 @@
 
 版本: -
 
-### ant-design 中 Progress - API的success属性如何使用？
+### ant-design 中 Progress - Progress的success属性如何使用？
 
 属性: success
 
@@ -9832,7 +9832,7 @@
 
 版本: -
 
-### ant-design 中 Progress - API的trailColor属性如何使用？
+### ant-design 中 Progress - Progress的trailColor属性如何使用？
 
 属性: trailColor
 
@@ -9844,7 +9844,7 @@
 
 版本: -
 
-### ant-design 中 Progress - API的type属性如何使用？
+### ant-design 中 Progress - Progress的type属性如何使用？
 
 属性: type
 
@@ -9856,7 +9856,7 @@
 
 版本: -
 
-### ant-design 中 Progress - API的size属性如何使用？
+### ant-design 中 Progress - Progress的size属性如何使用？
 
 属性: size
 
@@ -9868,14 +9868,14 @@
 
 版本: v5.3.0
 
-### ant-design 的 Progress - `type="line"` 有哪些配置？
+### ant-design 的 Progress - Progress 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | steps | 进度条总共步数 | number | - | - |
 | strokeColor | 进度条的色彩，传入 object 时为渐变。当有 `steps` 时支持传入一个数组。 | string \| string[] \| { from: string; to: string; direction: string } | - | 4.21.0: `string[]` |
 
-### ant-design 中 Progress - `type="line"`的steps属性如何使用？
+### ant-design 中 Progress - Progress的steps属性如何使用？
 
 属性: steps
 
@@ -9887,7 +9887,7 @@
 
 版本: -
 
-### ant-design 中 Progress - `type="line"`的strokeColor属性如何使用？
+### ant-design 中 Progress - Progress的strokeColor属性如何使用？
 
 属性: strokeColor
 
@@ -9899,14 +9899,14 @@
 
 版本: 4.21.0: `string[]`
 
-### ant-design 的 Progress - `type="circle"` 有哪些配置？
+### ant-design 的 Progress - Progress 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | strokeColor | 圆形进度条线的色彩，传入 object 时为渐变 | string \| { number%: string } | - | - |
 | strokeWidth | 圆形进度条线的宽度，单位是进度条画布宽度的百分比 | number | 6 | - |
 
-### ant-design 中 Progress - `type="circle"`的strokeColor属性如何使用？
+### ant-design 中 Progress - Progress的strokeColor属性如何使用？
 
 属性: strokeColor
 
@@ -9918,7 +9918,7 @@
 
 版本: -
 
-### ant-design 中 Progress - `type="circle"`的strokeWidth属性如何使用？
+### ant-design 中 Progress - Progress的strokeWidth属性如何使用？
 
 属性: strokeWidth
 
@@ -9930,7 +9930,7 @@
 
 版本: -
 
-### ant-design 的 Progress - `type="dashboard"` 有哪些配置？
+### ant-design 的 Progress - Progress 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -9938,7 +9938,7 @@
 | gapPosition | 仪表盘进度条缺口位置 | `top` \| `bottom` \| `left` \| `right` | `bottom` | - |
 | strokeWidth | 仪表盘进度条线的宽度，单位是进度条画布宽度的百分比 | number | 6 | - |
 
-### ant-design 中 Progress - `type="dashboard"`的gapDegree属性如何使用？
+### ant-design 中 Progress - Progress的gapDegree属性如何使用？
 
 属性: gapDegree
 
@@ -9950,7 +9950,7 @@
 
 版本: -
 
-### ant-design 中 Progress - `type="dashboard"`的gapPosition属性如何使用？
+### ant-design 中 Progress - Progress的gapPosition属性如何使用？
 
 属性: gapPosition
 
@@ -9962,7 +9962,7 @@
 
 版本: -
 
-### ant-design 中 Progress - `type="dashboard"`的strokeWidth属性如何使用？
+### ant-design 中 Progress - Progress的strokeWidth属性如何使用？
 
 属性: strokeWidth
 
@@ -9976,21 +9976,21 @@
 
 ### ant-design 的 Popover 有哪些配置？
 
-#### Popover - API
+#### Popover - Popover
 
 | 参数    | 说明     | 类型                         | 默认值 |
 | ------- | -------- | ---------------------------- | ------ |
 | content | 卡片内容 | ReactNode \| () => ReactNode | -      |
 | title   | 卡片标题 | ReactNode \| () => ReactNode | -      |
 
-### ant-design 的 Popover - API 有哪些配置？
+### ant-design 的 Popover - Popover 有哪些配置？
 
 | 参数    | 说明     | 类型                         | 默认值 |
 | ------- | -------- | ---------------------------- | ------ |
 | content | 卡片内容 | ReactNode \| () => ReactNode | -      |
 | title   | 卡片标题 | ReactNode \| () => ReactNode | -      |
 
-### ant-design 中 Popover - API的content属性如何使用？
+### ant-design 中 Popover - Popover的content属性如何使用？
 
 参数: content
 
@@ -10000,7 +10000,7 @@
 
 默认值: -
 
-### ant-design 中 Popover - API的title属性如何使用？
+### ant-design 中 Popover - Popover的title属性如何使用？
 
 参数: title
 
@@ -10012,7 +10012,7 @@
 
 ### ant-design 的 Popconfirm 有哪些配置？
 
-#### Popconfirm - API
+#### Popconfirm - Popconfirm
 
 | 参数 | 说明 | 类型 |
 | --- | --- | --- | --- | --- |
@@ -10030,7 +10030,7 @@
 | onConfirm | 点击确认的回调 | function(e) | - |
 | onPopupClick | 弹出气泡点击事件 | function(e) | - | 5.5.0 |
 
-### ant-design 的 Popconfirm - API 有哪些配置？
+### ant-design 的 Popconfirm - Popconfirm 有哪些配置？
 
 | 参数 | 说明 | 类型 |
 | --- | --- | --- | --- | --- |
@@ -10048,7 +10048,7 @@
 | onConfirm | 点击确认的回调 | function(e) | - |
 | onPopupClick | 弹出气泡点击事件 | function(e) | - | 5.5.0 |
 
-### ant-design 中 Popconfirm - API的cancelButtonProps属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的cancelButtonProps属性如何使用？
 
 参数: cancelButtonProps
 
@@ -10056,7 +10056,7 @@
 
 类型: -
 
-### ant-design 中 Popconfirm - API的cancelText属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的cancelText属性如何使用？
 
 参数: cancelText
 
@@ -10066,7 +10066,7 @@
 
 默认值: `取消`
 
-### ant-design 中 Popconfirm - API的disabled属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的disabled属性如何使用？
 
 参数: disabled
 
@@ -10076,7 +10076,7 @@
 
 默认值: false
 
-### ant-design 中 Popconfirm - API的icon属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的icon属性如何使用？
 
 参数: icon
 
@@ -10086,7 +10086,7 @@
 
 默认值: \<ExclamationCircle />
 
-### ant-design 中 Popconfirm - API的okButtonProps属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的okButtonProps属性如何使用？
 
 参数: okButtonProps
 
@@ -10094,7 +10094,7 @@
 
 类型: -
 
-### ant-design 中 Popconfirm - API的okText属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的okText属性如何使用？
 
 参数: okText
 
@@ -10104,7 +10104,7 @@
 
 默认值: `确定`
 
-### ant-design 中 Popconfirm - API的okType属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的okType属性如何使用？
 
 参数: okType
 
@@ -10114,7 +10114,7 @@
 
 默认值: `primary`
 
-### ant-design 中 Popconfirm - API的showCancel属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的showCancel属性如何使用？
 
 参数: showCancel
 
@@ -10126,7 +10126,7 @@
 
 版本: 4.18.0
 
-### ant-design 中 Popconfirm - API的title属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的title属性如何使用？
 
 参数: title
 
@@ -10136,7 +10136,7 @@
 
 默认值: -
 
-### ant-design 中 Popconfirm - API的description属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的description属性如何使用？
 
 参数: description
 
@@ -10148,7 +10148,7 @@
 
 版本: 5.1.0
 
-### ant-design 中 Popconfirm - API的onCancel属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的onCancel属性如何使用？
 
 参数: onCancel
 
@@ -10158,7 +10158,7 @@
 
 默认值: -
 
-### ant-design 中 Popconfirm - API的onConfirm属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的onConfirm属性如何使用？
 
 参数: onConfirm
 
@@ -10168,7 +10168,7 @@
 
 默认值: -
 
-### ant-design 中 Popconfirm - API的onPopupClick属性如何使用？
+### ant-design 中 Popconfirm - Popconfirm的onPopupClick属性如何使用？
 
 参数: onPopupClick
 
@@ -10182,7 +10182,7 @@
 
 ### ant-design 的 Pagination 有哪些配置？
 
-#### Pagination - API
+#### Pagination - Pagination
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -10206,7 +10206,7 @@
 | onChange | 页码或 `pageSize` 改变的回调，参数是改变后的页码及每页条数 | function(page, pageSize) | - |
 | onShowSizeChange | pageSize 变化的回调 | function(current, size) | - |
 
-### ant-design 的 Pagination - API 有哪些配置？
+### ant-design 的 Pagination - Pagination 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -10230,7 +10230,7 @@
 | onChange | 页码或 `pageSize` 改变的回调，参数是改变后的页码及每页条数 | function(page, pageSize) | - |
 | onShowSizeChange | pageSize 变化的回调 | function(current, size) | - |
 
-### ant-design 中 Pagination - API的current属性如何使用？
+### ant-design 中 Pagination - Pagination的current属性如何使用？
 
 参数: current
 
@@ -10240,7 +10240,7 @@
 
 默认值: -
 
-### ant-design 中 Pagination - API的defaultCurrent属性如何使用？
+### ant-design 中 Pagination - Pagination的defaultCurrent属性如何使用？
 
 参数: defaultCurrent
 
@@ -10250,7 +10250,7 @@
 
 默认值: 1
 
-### ant-design 中 Pagination - API的defaultPageSize属性如何使用？
+### ant-design 中 Pagination - Pagination的defaultPageSize属性如何使用？
 
 参数: defaultPageSize
 
@@ -10260,7 +10260,7 @@
 
 默认值: 10
 
-### ant-design 中 Pagination - API的disabled属性如何使用？
+### ant-design 中 Pagination - Pagination的disabled属性如何使用？
 
 参数: disabled
 
@@ -10270,7 +10270,7 @@
 
 默认值: -
 
-### ant-design 中 Pagination - API的hideOnSinglePage属性如何使用？
+### ant-design 中 Pagination - Pagination的hideOnSinglePage属性如何使用？
 
 参数: hideOnSinglePage
 
@@ -10280,7 +10280,7 @@
 
 默认值: false
 
-### ant-design 中 Pagination - API的itemRender属性如何使用？
+### ant-design 中 Pagination - Pagination的itemRender属性如何使用？
 
 参数: itemRender
 
@@ -10290,7 +10290,7 @@
 
 默认值: -
 
-### ant-design 中 Pagination - API的pageSize属性如何使用？
+### ant-design 中 Pagination - Pagination的pageSize属性如何使用？
 
 参数: pageSize
 
@@ -10300,7 +10300,7 @@
 
 默认值: -
 
-### ant-design 中 Pagination - API的pageSizeOptions属性如何使用？
+### ant-design 中 Pagination - Pagination的pageSizeOptions属性如何使用？
 
 参数: pageSizeOptions
 
@@ -10310,7 +10310,7 @@
 
 默认值: \[`10`, `20`, `50`, `100`]
 
-### ant-design 中 Pagination - API的responsive属性如何使用？
+### ant-design 中 Pagination - Pagination的responsive属性如何使用？
 
 参数: responsive
 
@@ -10320,7 +10320,7 @@
 
 默认值: -
 
-### ant-design 中 Pagination - API的showLessItems属性如何使用？
+### ant-design 中 Pagination - Pagination的showLessItems属性如何使用？
 
 参数: showLessItems
 
@@ -10330,7 +10330,7 @@
 
 默认值: false
 
-### ant-design 中 Pagination - API的showQuickJumper属性如何使用？
+### ant-design 中 Pagination - Pagination的showQuickJumper属性如何使用？
 
 参数: showQuickJumper
 
@@ -10340,7 +10340,7 @@
 
 默认值: false
 
-### ant-design 中 Pagination - API的showSizeChanger属性如何使用？
+### ant-design 中 Pagination - Pagination的showSizeChanger属性如何使用？
 
 参数: showSizeChanger
 
@@ -10350,7 +10350,7 @@
 
 默认值: -
 
-### ant-design 中 Pagination - API的showTitle属性如何使用？
+### ant-design 中 Pagination - Pagination的showTitle属性如何使用？
 
 参数: showTitle
 
@@ -10360,7 +10360,7 @@
 
 默认值: true
 
-### ant-design 中 Pagination - API的showTotal属性如何使用？
+### ant-design 中 Pagination - Pagination的showTotal属性如何使用？
 
 参数: showTotal
 
@@ -10370,7 +10370,7 @@
 
 默认值: -
 
-### ant-design 中 Pagination - API的simple属性如何使用？
+### ant-design 中 Pagination - Pagination的simple属性如何使用？
 
 参数: simple
 
@@ -10380,7 +10380,7 @@
 
 默认值: -
 
-### ant-design 中 Pagination - API的size属性如何使用？
+### ant-design 中 Pagination - Pagination的size属性如何使用？
 
 参数: size
 
@@ -10390,7 +10390,7 @@
 
 默认值: `default`
 
-### ant-design 中 Pagination - API的total属性如何使用？
+### ant-design 中 Pagination - Pagination的total属性如何使用？
 
 参数: total
 
@@ -10400,7 +10400,7 @@
 
 默认值: 0
 
-### ant-design 中 Pagination - API的onChange属性如何使用？
+### ant-design 中 Pagination - Pagination的onChange属性如何使用？
 
 参数: onChange
 
@@ -10410,7 +10410,7 @@
 
 默认值: -
 
-### ant-design 中 Pagination - API的onShowSizeChange属性如何使用？
+### ant-design 中 Pagination - Pagination的onShowSizeChange属性如何使用？
 
 参数: onShowSizeChange
 
@@ -10422,7 +10422,7 @@
 
 ### ant-design 的 Notification 有哪些配置？
 
-#### Notification - API
+#### Notification - Notification
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -10441,7 +10441,7 @@
 | onClose | 当通知关闭时触发 | function | - | - |
 | props | 透传至通知 `div` 上的 props 对象，支持传入 `data-*` `aria-*` 或 `role` 作为对象的属性。需要注意的是，虽然在 TypeScript 类型中声明的类型支持传入 `data-*` 作为对象的属性，但目前只允许传入 `data-testid` 作为对象的属性。 详见 <https://github.com/microsoft/TypeScript/issues/28960> | Object | - | - |
 
-#### Notification - API
+#### Notification - Notification
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -10467,7 +10467,7 @@
 | top | 消息从顶部弹出时，距离顶部的位置，单位像素 | number | 24 |
 | maxCount | 最大显示数，超过限制时，最早的消息会被自动关闭 | number | - | 4.17.0 |
 
-### ant-design 的 Notification - API 有哪些配置？
+### ant-design 的 Notification - Notification 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -10486,7 +10486,7 @@
 | onClose | 当通知关闭时触发 | function | - | - |
 | props | 透传至通知 `div` 上的 props 对象，支持传入 `data-*` `aria-*` 或 `role` 作为对象的属性。需要注意的是，虽然在 TypeScript 类型中声明的类型支持传入 `data-*` 作为对象的属性，但目前只允许传入 `data-testid` 作为对象的属性。 详见 <https://github.com/microsoft/TypeScript/issues/28960> | Object | - | - |
 
-### ant-design 中 Notification - API的btn属性如何使用？
+### ant-design 中 Notification - Notification的btn属性如何使用？
 
 参数: btn
 
@@ -10498,7 +10498,7 @@
 
 版本: -
 
-### ant-design 中 Notification - API的className属性如何使用？
+### ant-design 中 Notification - Notification的className属性如何使用？
 
 参数: className
 
@@ -10510,7 +10510,7 @@
 
 版本: -
 
-### ant-design 中 Notification - API的closeIcon属性如何使用？
+### ant-design 中 Notification - Notification的closeIcon属性如何使用？
 
 参数: closeIcon
 
@@ -10522,7 +10522,7 @@
 
 版本: 5.7.0：设置为 null 或 false 时隐藏关闭按钮
 
-### ant-design 中 Notification - API的description属性如何使用？
+### ant-design 中 Notification - Notification的description属性如何使用？
 
 参数: description
 
@@ -10534,7 +10534,7 @@
 
 版本: -
 
-### ant-design 中 Notification - API的duration属性如何使用？
+### ant-design 中 Notification - Notification的duration属性如何使用？
 
 参数: duration
 
@@ -10546,7 +10546,7 @@
 
 版本: -
 
-### ant-design 中 Notification - API的icon属性如何使用？
+### ant-design 中 Notification - Notification的icon属性如何使用？
 
 参数: icon
 
@@ -10558,7 +10558,7 @@
 
 版本: -
 
-### ant-design 中 Notification - API的key属性如何使用？
+### ant-design 中 Notification - Notification的key属性如何使用？
 
 参数: key
 
@@ -10570,7 +10570,7 @@
 
 版本: -
 
-### ant-design 中 Notification - API的message属性如何使用？
+### ant-design 中 Notification - Notification的message属性如何使用？
 
 参数: message
 
@@ -10582,7 +10582,7 @@
 
 版本: -
 
-### ant-design 中 Notification - API的placement属性如何使用？
+### ant-design 中 Notification - Notification的placement属性如何使用？
 
 参数: placement
 
@@ -10594,7 +10594,7 @@
 
 版本: -
 
-### ant-design 中 Notification - API的style属性如何使用？
+### ant-design 中 Notification - Notification的style属性如何使用？
 
 参数: style
 
@@ -10604,7 +10604,7 @@
 
 默认值: -
 
-### ant-design 中 Notification - API的role属性如何使用？
+### ant-design 中 Notification - Notification的role属性如何使用？
 
 参数: role
 
@@ -10616,7 +10616,7 @@
 
 版本: 5.6.0
 
-### ant-design 中 Notification - API的onClick属性如何使用？
+### ant-design 中 Notification - Notification的onClick属性如何使用？
 
 参数: onClick
 
@@ -10628,7 +10628,7 @@
 
 版本: -
 
-### ant-design 中 Notification - API的onClose属性如何使用？
+### ant-design 中 Notification - Notification的onClose属性如何使用？
 
 参数: onClose
 
@@ -10640,7 +10640,7 @@
 
 版本: -
 
-### ant-design 中 Notification - API的props属性如何使用？
+### ant-design 中 Notification - Notification的props属性如何使用？
 
 参数: props
 
@@ -10652,7 +10652,7 @@
 
 版本: -
 
-### ant-design 的 Notification - API 有哪些配置？
+### ant-design 的 Notification - Notification 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -10665,7 +10665,7 @@
 | top | 消息从顶部弹出时，距离顶部的位置，单位像素 | number | 24 |
 | maxCount | 最大显示数，超过限制时，最早的消息会被自动关闭 | number | - | 4.17.0 |
 
-### ant-design 中 Notification - API的bottom属性如何使用？
+### ant-design 中 Notification - Notification的bottom属性如何使用？
 
 参数: bottom
 
@@ -10675,7 +10675,7 @@
 
 默认值: 24
 
-### ant-design 中 Notification - API的closeIcon属性如何使用？
+### ant-design 中 Notification - Notification的closeIcon属性如何使用？
 
 参数: closeIcon
 
@@ -10687,7 +10687,7 @@
 
 版本: 5.7.0：设置为 null 或 false 时隐藏关闭按钮
 
-### ant-design 中 Notification - API的getContainer属性如何使用？
+### ant-design 中 Notification - Notification的getContainer属性如何使用？
 
 参数: getContainer
 
@@ -10697,7 +10697,7 @@
 
 默认值: () => document.body
 
-### ant-design 中 Notification - API的placement属性如何使用？
+### ant-design 中 Notification - Notification的placement属性如何使用？
 
 参数: placement
 
@@ -10707,7 +10707,7 @@
 
 默认值: `topRight`
 
-### ant-design 中 Notification - API的rtl属性如何使用？
+### ant-design 中 Notification - Notification的rtl属性如何使用？
 
 参数: rtl
 
@@ -10717,7 +10717,7 @@
 
 默认值: false
 
-### ant-design 中 Notification - API的stack属性如何使用？
+### ant-design 中 Notification - Notification的stack属性如何使用？
 
 参数: stack
 
@@ -10729,7 +10729,7 @@
 
 版本: 5.10.0
 
-### ant-design 中 Notification - API的top属性如何使用？
+### ant-design 中 Notification - Notification的top属性如何使用？
 
 参数: top
 
@@ -10739,7 +10739,7 @@
 
 默认值: 24
 
-### ant-design 中 Notification - API的maxCount属性如何使用？
+### ant-design 中 Notification - Notification的maxCount属性如何使用？
 
 参数: maxCount
 
@@ -10850,7 +10850,7 @@
 
 ### ant-design 的 Modal 有哪些配置？
 
-#### Modal - API
+#### Modal - Modal
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -10921,7 +10921,7 @@
 | originNode | 默认节点 | React.ReactNode              | -      |
 | extra      | 扩展选项 | { OkBtn: FC; CancelBtn: FC } | -      |
 
-### ant-design 的 Modal - API 有哪些配置？
+### ant-design 的 Modal - Modal 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -10955,7 +10955,7 @@
 | onOk | 点击确定回调 | function(e) | - |
 | afterOpenChange | 打开和关闭 Modal 时动画结束后的回调 | (open: boolean) => void | - | 5.4.0 |
 
-### ant-design 中 Modal - API的afterClose属性如何使用？
+### ant-design 中 Modal - Modal的afterClose属性如何使用？
 
 参数: afterClose
 
@@ -10965,7 +10965,7 @@
 
 默认值: -
 
-### ant-design 中 Modal - API的classNames属性如何使用？
+### ant-design 中 Modal - Modal的classNames属性如何使用？
 
 参数: classNames
 
@@ -10975,7 +10975,7 @@
 
 默认值: -
 
-### ant-design 中 Modal - API的styles属性如何使用？
+### ant-design 中 Modal - Modal的styles属性如何使用？
 
 参数: styles
 
@@ -10987,7 +10987,7 @@
 
 版本: 5.10.0
 
-### ant-design 中 Modal - API的cancelButtonProps属性如何使用？
+### ant-design 中 Modal - Modal的cancelButtonProps属性如何使用？
 
 参数: cancelButtonProps
 
@@ -10995,7 +10995,7 @@
 
 类型: -
 
-### ant-design 中 Modal - API的cancelText属性如何使用？
+### ant-design 中 Modal - Modal的cancelText属性如何使用？
 
 参数: cancelText
 
@@ -11005,7 +11005,7 @@
 
 默认值: `取消`
 
-### ant-design 中 Modal - API的centered属性如何使用？
+### ant-design 中 Modal - Modal的centered属性如何使用？
 
 参数: centered
 
@@ -11015,7 +11015,7 @@
 
 默认值: false
 
-### ant-design 中 Modal - API的closeIcon属性如何使用？
+### ant-design 中 Modal - Modal的closeIcon属性如何使用？
 
 参数: closeIcon
 
@@ -11025,7 +11025,7 @@
 
 默认值: \<CloseOutlined />
 
-### ant-design 中 Modal - API的confirmLoading属性如何使用？
+### ant-design 中 Modal - Modal的confirmLoading属性如何使用？
 
 参数: confirmLoading
 
@@ -11035,7 +11035,7 @@
 
 默认值: false
 
-### ant-design 中 Modal - API的destroyOnClose属性如何使用？
+### ant-design 中 Modal - Modal的destroyOnClose属性如何使用？
 
 参数: destroyOnClose
 
@@ -11045,7 +11045,7 @@
 
 默认值: false
 
-### ant-design 中 Modal - API的focusTriggerAfterClose属性如何使用？
+### ant-design 中 Modal - Modal的focusTriggerAfterClose属性如何使用？
 
 参数: focusTriggerAfterClose
 
@@ -11057,7 +11057,7 @@
 
 版本: 4.9.0
 
-### ant-design 中 Modal - API的footer属性如何使用？
+### ant-design 中 Modal - Modal的footer属性如何使用？
 
 参数: footer
 
@@ -11069,7 +11069,7 @@
 
 版本: 5.9.0
 
-### ant-design 中 Modal - API的forceRender属性如何使用？
+### ant-design 中 Modal - Modal的forceRender属性如何使用？
 
 参数: forceRender
 
@@ -11079,7 +11079,7 @@
 
 默认值: false
 
-### ant-design 中 Modal - API的getContainer属性如何使用？
+### ant-design 中 Modal - Modal的getContainer属性如何使用？
 
 参数: getContainer
 
@@ -11089,7 +11089,7 @@
 
 默认值: document.body
 
-### ant-design 中 Modal - API的keyboard属性如何使用？
+### ant-design 中 Modal - Modal的keyboard属性如何使用？
 
 参数: keyboard
 
@@ -11099,7 +11099,7 @@
 
 默认值: true
 
-### ant-design 中 Modal - API的mask属性如何使用？
+### ant-design 中 Modal - Modal的mask属性如何使用？
 
 参数: mask
 
@@ -11109,7 +11109,7 @@
 
 默认值: true
 
-### ant-design 中 Modal - API的maskClosable属性如何使用？
+### ant-design 中 Modal - Modal的maskClosable属性如何使用？
 
 参数: maskClosable
 
@@ -11119,7 +11119,7 @@
 
 默认值: true
 
-### ant-design 中 Modal - API的modalRender属性如何使用？
+### ant-design 中 Modal - Modal的modalRender属性如何使用？
 
 参数: modalRender
 
@@ -11131,7 +11131,7 @@
 
 版本: 4.7.0
 
-### ant-design 中 Modal - API的okButtonProps属性如何使用？
+### ant-design 中 Modal - Modal的okButtonProps属性如何使用？
 
 参数: okButtonProps
 
@@ -11139,7 +11139,7 @@
 
 类型: -
 
-### ant-design 中 Modal - API的okText属性如何使用？
+### ant-design 中 Modal - Modal的okText属性如何使用？
 
 参数: okText
 
@@ -11149,7 +11149,7 @@
 
 默认值: `确定`
 
-### ant-design 中 Modal - API的okType属性如何使用？
+### ant-design 中 Modal - Modal的okType属性如何使用？
 
 参数: okType
 
@@ -11159,7 +11159,7 @@
 
 默认值: `primary`
 
-### ant-design 中 Modal - API的style属性如何使用？
+### ant-design 中 Modal - Modal的style属性如何使用？
 
 参数: style
 
@@ -11169,7 +11169,7 @@
 
 默认值: -
 
-### ant-design 中 Modal - API的title属性如何使用？
+### ant-design 中 Modal - Modal的title属性如何使用？
 
 参数: title
 
@@ -11179,7 +11179,7 @@
 
 默认值: -
 
-### ant-design 中 Modal - API的open属性如何使用？
+### ant-design 中 Modal - Modal的open属性如何使用？
 
 参数: open
 
@@ -11189,7 +11189,7 @@
 
 默认值: -
 
-### ant-design 中 Modal - API的width属性如何使用？
+### ant-design 中 Modal - Modal的width属性如何使用？
 
 参数: width
 
@@ -11199,7 +11199,7 @@
 
 默认值: 520
 
-### ant-design 中 Modal - API的wrapClassName属性如何使用？
+### ant-design 中 Modal - Modal的wrapClassName属性如何使用？
 
 参数: wrapClassName
 
@@ -11209,7 +11209,7 @@
 
 默认值: -
 
-### ant-design 中 Modal - API的zIndex属性如何使用？
+### ant-design 中 Modal - Modal的zIndex属性如何使用？
 
 参数: zIndex
 
@@ -11219,7 +11219,7 @@
 
 默认值: 1000
 
-### ant-design 中 Modal - API的onCancel属性如何使用？
+### ant-design 中 Modal - Modal的onCancel属性如何使用？
 
 参数: onCancel
 
@@ -11229,7 +11229,7 @@
 
 默认值: -
 
-### ant-design 中 Modal - API的onOk属性如何使用？
+### ant-design 中 Modal - Modal的onOk属性如何使用？
 
 参数: onOk
 
@@ -11239,7 +11239,7 @@
 
 默认值: -
 
-### ant-design 中 Modal - API的afterOpenChange属性如何使用？
+### ant-design 中 Modal - Modal的afterOpenChange属性如何使用？
 
 参数: afterOpenChange
 
@@ -11566,7 +11566,7 @@
 
 ### ant-design 的 Message 有哪些配置？
 
-#### Message - API
+#### Message - Message
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -11574,7 +11574,7 @@
 | duration | 自动关闭的延时，单位秒。设为 0 时不自动关闭 | number | 3 |
 | onClose | 关闭时触发的回调函数 | function | - |
 
-#### Message - API
+#### Message - Message
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -11598,7 +11598,7 @@
 | rtl | 是否开启 RTL 模式 | boolean | false |
 | top | 消息距离顶部的位置 | number | 8 |
 
-### ant-design 的 Message - API 有哪些配置？
+### ant-design 的 Message - Message 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -11606,7 +11606,7 @@
 | duration | 自动关闭的延时，单位秒。设为 0 时不自动关闭 | number | 3 |
 | onClose | 关闭时触发的回调函数 | function | - |
 
-### ant-design 中 Message - API的content属性如何使用？
+### ant-design 中 Message - Message的content属性如何使用？
 
 参数: content
 
@@ -11616,7 +11616,7 @@
 
 默认值: -
 
-### ant-design 中 Message - API的duration属性如何使用？
+### ant-design 中 Message - Message的duration属性如何使用？
 
 参数: duration
 
@@ -11626,7 +11626,7 @@
 
 默认值: 3
 
-### ant-design 中 Message - API的onClose属性如何使用？
+### ant-design 中 Message - Message的onClose属性如何使用？
 
 参数: onClose
 
@@ -11636,7 +11636,7 @@
 
 默认值: -
 
-### ant-design 的 Message - API 有哪些配置？
+### ant-design 的 Message - Message 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -11649,7 +11649,7 @@
 | onClick | 点击 message 时触发的回调函数 | function | - |
 | onClose | 关闭时触发的回调函数 | function | - |
 
-### ant-design 中 Message - API的className属性如何使用？
+### ant-design 中 Message - Message的className属性如何使用？
 
 参数: className
 
@@ -11659,7 +11659,7 @@
 
 默认值: -
 
-### ant-design 中 Message - API的content属性如何使用？
+### ant-design 中 Message - Message的content属性如何使用？
 
 参数: content
 
@@ -11669,7 +11669,7 @@
 
 默认值: -
 
-### ant-design 中 Message - API的duration属性如何使用？
+### ant-design 中 Message - Message的duration属性如何使用？
 
 参数: duration
 
@@ -11679,7 +11679,7 @@
 
 默认值: 3
 
-### ant-design 中 Message - API的icon属性如何使用？
+### ant-design 中 Message - Message的icon属性如何使用？
 
 参数: icon
 
@@ -11689,7 +11689,7 @@
 
 默认值: -
 
-### ant-design 中 Message - API的key属性如何使用？
+### ant-design 中 Message - Message的key属性如何使用？
 
 参数: key
 
@@ -11699,7 +11699,7 @@
 
 默认值: -
 
-### ant-design 中 Message - API的style属性如何使用？
+### ant-design 中 Message - Message的style属性如何使用？
 
 参数: style
 
@@ -11707,7 +11707,7 @@
 
 类型: -
 
-### ant-design 中 Message - API的onClick属性如何使用？
+### ant-design 中 Message - Message的onClick属性如何使用？
 
 参数: onClick
 
@@ -11717,7 +11717,7 @@
 
 默认值: -
 
-### ant-design 中 Message - API的onClose属性如何使用？
+### ant-design 中 Message - Message的onClose属性如何使用？
 
 参数: onClose
 
@@ -13332,9 +13332,9 @@
 
 默认值: -
 
-### ant-design 的 Input-number 有哪些配置？
+### ant-design 的 InputNumber 有哪些配置？
 
-#### Input-number - API
+#### InputNumber - InputNumber
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -13366,14 +13366,14 @@
 | onPressEnter | 按下回车的回调 | function(e) | - | - |
 | onStep | 点击上下箭头的回调 | (value: number, info: { offset: number, type: 'up' \| 'down' }) => void | - | 4.7.0 |
 
-#### Input-number - 方法
+#### InputNumber - 方法
 
 | 名称    | 描述     |
 | ------- | -------- |
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 的 Input-number - API 有哪些配置？
+### ant-design 的 InputNumber - InputNumber 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -13405,7 +13405,7 @@
 | onPressEnter | 按下回车的回调 | function(e) | - | - |
 | onStep | 点击上下箭头的回调 | (value: number, info: { offset: number, type: 'up' \| 'down' }) => void | - | 4.7.0 |
 
-### ant-design 中 Input-number - API的addonAfter属性如何使用？
+### ant-design 中 InputNumber - InputNumber的addonAfter属性如何使用？
 
 参数: addonAfter
 
@@ -13417,7 +13417,7 @@
 
 版本: 4.17.0
 
-### ant-design 中 Input-number - API的addonBefore属性如何使用？
+### ant-design 中 InputNumber - InputNumber的addonBefore属性如何使用？
 
 参数: addonBefore
 
@@ -13429,7 +13429,7 @@
 
 版本: 4.17.0
 
-### ant-design 中 Input-number - API的autoFocus属性如何使用？
+### ant-design 中 InputNumber - InputNumber的autoFocus属性如何使用？
 
 参数: autoFocus
 
@@ -13441,7 +13441,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的changeOnBlur属性如何使用？
+### ant-design 中 InputNumber - InputNumber的changeOnBlur属性如何使用？
 
 参数: changeOnBlur
 
@@ -13453,7 +13453,7 @@
 
 版本: 5.11.0
 
-### ant-design 中 Input-number - API的changeOnWheel属性如何使用？
+### ant-design 中 InputNumber - InputNumber的changeOnWheel属性如何使用？
 
 参数: changeOnWheel
 
@@ -13465,7 +13465,7 @@
 
 版本: 5.14.0
 
-### ant-design 中 Input-number - API的controls属性如何使用？
+### ant-design 中 InputNumber - InputNumber的controls属性如何使用？
 
 参数: controls
 
@@ -13477,7 +13477,7 @@
 
 版本: 4.19.0
 
-### ant-design 中 Input-number - API的decimalSeparator属性如何使用？
+### ant-design 中 InputNumber - InputNumber的decimalSeparator属性如何使用？
 
 参数: decimalSeparator
 
@@ -13489,7 +13489,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的placeholder属性如何使用？
+### ant-design 中 InputNumber - InputNumber的placeholder属性如何使用？
 
 参数: placeholder
 
@@ -13499,7 +13499,7 @@
 
 默认值: -
 
-### ant-design 中 Input-number - API的defaultValue属性如何使用？
+### ant-design 中 InputNumber - InputNumber的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -13511,7 +13511,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的disabled属性如何使用？
+### ant-design 中 InputNumber - InputNumber的disabled属性如何使用？
 
 参数: disabled
 
@@ -13523,7 +13523,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的formatter属性如何使用？
+### ant-design 中 InputNumber - InputNumber的formatter属性如何使用？
 
 参数: formatter
 
@@ -13535,7 +13535,7 @@
 
 版本: info: 4.17.0
 
-### ant-design 中 Input-number - API的keyboard属性如何使用？
+### ant-design 中 InputNumber - InputNumber的keyboard属性如何使用？
 
 参数: keyboard
 
@@ -13547,7 +13547,7 @@
 
 版本: 4.12.0
 
-### ant-design 中 Input-number - API的max属性如何使用？
+### ant-design 中 InputNumber - InputNumber的max属性如何使用？
 
 参数: max
 
@@ -13557,7 +13557,7 @@
 
 默认值: -
 
-### ant-design 中 Input-number - API的min属性如何使用？
+### ant-design 中 InputNumber - InputNumber的min属性如何使用？
 
 参数: min
 
@@ -13567,7 +13567,7 @@
 
 默认值: -
 
-### ant-design 中 Input-number - API的parser属性如何使用？
+### ant-design 中 InputNumber - InputNumber的parser属性如何使用？
 
 参数: parser
 
@@ -13579,7 +13579,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的precision属性如何使用？
+### ant-design 中 InputNumber - InputNumber的precision属性如何使用？
 
 参数: precision
 
@@ -13591,7 +13591,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的readOnly属性如何使用？
+### ant-design 中 InputNumber - InputNumber的readOnly属性如何使用？
 
 参数: readOnly
 
@@ -13603,7 +13603,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的status属性如何使用？
+### ant-design 中 InputNumber - InputNumber的status属性如何使用？
 
 参数: status
 
@@ -13615,7 +13615,7 @@
 
 版本: 4.19.0
 
-### ant-design 中 Input-number - API的prefix属性如何使用？
+### ant-design 中 InputNumber - InputNumber的prefix属性如何使用？
 
 参数: prefix
 
@@ -13627,7 +13627,7 @@
 
 版本: 4.17.0
 
-### ant-design 中 Input-number - API的size属性如何使用？
+### ant-design 中 InputNumber - InputNumber的size属性如何使用？
 
 参数: size
 
@@ -13639,7 +13639,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的step属性如何使用？
+### ant-design 中 InputNumber - InputNumber的step属性如何使用？
 
 参数: step
 
@@ -13651,7 +13651,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的stringMode属性如何使用？
+### ant-design 中 InputNumber - InputNumber的stringMode属性如何使用？
 
 参数: stringMode
 
@@ -13663,7 +13663,7 @@
 
 版本: 4.13.0
 
-### ant-design 中 Input-number - API的value属性如何使用？
+### ant-design 中 InputNumber - InputNumber的value属性如何使用？
 
 参数: value
 
@@ -13675,7 +13675,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的variant属性如何使用？
+### ant-design 中 InputNumber - InputNumber的variant属性如何使用？
 
 参数: variant
 
@@ -13687,7 +13687,7 @@
 
 版本: 5.13.0
 
-### ant-design 中 Input-number - API的onChange属性如何使用？
+### ant-design 中 InputNumber - InputNumber的onChange属性如何使用？
 
 参数: onChange
 
@@ -13699,7 +13699,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的onPressEnter属性如何使用？
+### ant-design 中 InputNumber - InputNumber的onPressEnter属性如何使用？
 
 参数: onPressEnter
 
@@ -13711,7 +13711,7 @@
 
 版本: -
 
-### ant-design 中 Input-number - API的onStep属性如何使用？
+### ant-design 中 InputNumber - InputNumber的onStep属性如何使用？
 
 参数: onStep
 
@@ -13723,20 +13723,20 @@
 
 版本: 4.7.0
 
-### ant-design 的 Input-number - 方法 有哪些配置？
+### ant-design 的 InputNumber - 方法 有哪些配置？
 
 | 名称    | 描述     |
 | ------- | -------- |
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Input-number - 方法的blur()属性如何使用？
+### ant-design 中 InputNumber - 方法的blur()属性如何使用？
 
 名称: blur()
 
 描述: 移除焦点
 
-### ant-design 中 Input-number - 方法的focus()属性如何使用？
+### ant-design 中 InputNumber - 方法的focus()属性如何使用？
 
 名称: focus()
 
@@ -16592,9 +16592,9 @@ Version: 4.24
 
 版本: 5.4.0
 
-### ant-design 的 Float-button 有哪些配置？
+### ant-design 的 FloatButton 有哪些配置？
 
-#### Float-button - 共同的 API
+#### FloatButton - FloatButton
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16608,7 +16608,7 @@ Version: 4.24
 | target | 相当于 a 标签的 target 属性，href 存在时生效 | string | - |
 | badge | 带徽标数字的悬浮按钮（不支持 `status` 以及相关属性） | - | 5.4.0 |
 
-#### Float-button - FloatButton.Group
+#### FloatButton - FloatButton.Group
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16618,7 +16618,7 @@ Version: 4.24
 | closeIcon | 自定义关闭按钮 | React.ReactNode | `<CloseOutlined />` |
 | onOpenChange | 展开收起时的回调，需配合 trigger 一起使用 | (open: boolean) => void | - |
 
-#### Float-button - FloatButton.BackTop
+#### FloatButton - FloatButton.BackTop
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16627,7 +16627,7 @@ Version: 4.24
 | visibilityHeight | 滚动高度达到此参数值才出现 BackTop | number | 400 |
 | onClick | 点击按钮的回调函数 | () => void | - |
 
-### ant-design 的 Float-button - 共同的 API 有哪些配置？
+### ant-design 的 FloatButton - FloatButton 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16641,7 +16641,7 @@ Version: 4.24
 | target | 相当于 a 标签的 target 属性，href 存在时生效 | string | - |
 | badge | 带徽标数字的悬浮按钮（不支持 `status` 以及相关属性） | - | 5.4.0 |
 
-### ant-design 中 Float-button - 共同的 API的icon属性如何使用？
+### ant-design 中 FloatButton - FloatButton的icon属性如何使用？
 
 参数: icon
 
@@ -16651,7 +16651,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Float-button - 共同的 API的description属性如何使用？
+### ant-design 中 FloatButton - FloatButton的description属性如何使用？
 
 参数: description
 
@@ -16661,7 +16661,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Float-button - 共同的 API的tooltip属性如何使用？
+### ant-design 中 FloatButton - FloatButton的tooltip属性如何使用？
 
 参数: tooltip
 
@@ -16671,7 +16671,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Float-button - 共同的 API的type属性如何使用？
+### ant-design 中 FloatButton - FloatButton的type属性如何使用？
 
 参数: type
 
@@ -16681,7 +16681,7 @@ Version: 4.24
 
 默认值: `default`
 
-### ant-design 中 Float-button - 共同的 API的shape属性如何使用？
+### ant-design 中 FloatButton - FloatButton的shape属性如何使用？
 
 参数: shape
 
@@ -16691,7 +16691,7 @@ Version: 4.24
 
 默认值: `circle`
 
-### ant-design 中 Float-button - 共同的 API的onClick属性如何使用？
+### ant-design 中 FloatButton - FloatButton的onClick属性如何使用？
 
 参数: onClick
 
@@ -16701,7 +16701,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Float-button - 共同的 API的href属性如何使用？
+### ant-design 中 FloatButton - FloatButton的href属性如何使用？
 
 参数: href
 
@@ -16711,7 +16711,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Float-button - 共同的 API的target属性如何使用？
+### ant-design 中 FloatButton - FloatButton的target属性如何使用？
 
 参数: target
 
@@ -16721,7 +16721,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Float-button - 共同的 API的badge属性如何使用？
+### ant-design 中 FloatButton - FloatButton的badge属性如何使用？
 
 参数: badge
 
@@ -16731,7 +16731,7 @@ Version: 4.24
 
 默认值: 5.4.0
 
-### ant-design 的 Float-button - FloatButton.Group 有哪些配置？
+### ant-design 的 FloatButton - FloatButton.Group 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16741,7 +16741,7 @@ Version: 4.24
 | closeIcon | 自定义关闭按钮 | React.ReactNode | `<CloseOutlined />` |
 | onOpenChange | 展开收起时的回调，需配合 trigger 一起使用 | (open: boolean) => void | - |
 
-### ant-design 中 Float-button - FloatButton.Group的shape属性如何使用？
+### ant-design 中 FloatButton - FloatButton.Group的shape属性如何使用？
 
 参数: shape
 
@@ -16751,7 +16751,7 @@ Version: 4.24
 
 默认值: `circle`
 
-### ant-design 中 Float-button - FloatButton.Group的trigger属性如何使用？
+### ant-design 中 FloatButton - FloatButton.Group的trigger属性如何使用？
 
 参数: trigger
 
@@ -16761,7 +16761,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Float-button - FloatButton.Group的open属性如何使用？
+### ant-design 中 FloatButton - FloatButton.Group的open属性如何使用？
 
 参数: open
 
@@ -16771,7 +16771,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Float-button - FloatButton.Group的closeIcon属性如何使用？
+### ant-design 中 FloatButton - FloatButton.Group的closeIcon属性如何使用？
 
 参数: closeIcon
 
@@ -16781,7 +16781,7 @@ Version: 4.24
 
 默认值: `<CloseOutlined />`
 
-### ant-design 中 Float-button - FloatButton.Group的onOpenChange属性如何使用？
+### ant-design 中 FloatButton - FloatButton.Group的onOpenChange属性如何使用？
 
 参数: onOpenChange
 
@@ -16791,7 +16791,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 的 Float-button - FloatButton.BackTop 有哪些配置？
+### ant-design 的 FloatButton - FloatButton.BackTop 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16800,7 +16800,7 @@ Version: 4.24
 | visibilityHeight | 滚动高度达到此参数值才出现 BackTop | number | 400 |
 | onClick | 点击按钮的回调函数 | () => void | - |
 
-### ant-design 中 Float-button - FloatButton.BackTop的duration属性如何使用？
+### ant-design 中 FloatButton - FloatButton.BackTop的duration属性如何使用？
 
 参数: duration
 
@@ -16810,7 +16810,7 @@ Version: 4.24
 
 默认值: 450
 
-### ant-design 中 Float-button - FloatButton.BackTop的target属性如何使用？
+### ant-design 中 FloatButton - FloatButton.BackTop的target属性如何使用？
 
 参数: target
 
@@ -16820,7 +16820,7 @@ Version: 4.24
 
 默认值: () => window
 
-### ant-design 中 Float-button - FloatButton.BackTop的visibilityHeight属性如何使用？
+### ant-design 中 FloatButton - FloatButton.BackTop的visibilityHeight属性如何使用？
 
 参数: visibilityHeight
 
@@ -16830,7 +16830,7 @@ Version: 4.24
 
 默认值: 400
 
-### ant-design 中 Float-button - FloatButton.BackTop的onClick属性如何使用？
+### ant-design 中 FloatButton - FloatButton.BackTop的onClick属性如何使用？
 
 参数: onClick
 
@@ -16842,7 +16842,7 @@ Version: 4.24
 
 ### ant-design 的 Flex 有哪些配置？
 
-#### Flex - API
+#### Flex - Flex
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16854,7 +16854,7 @@ Version: 4.24
 | gap | 设置网格之间的间隙 | `small` \| `middle` \| `large` \| string \| number | - |
 | component | 自定义元素类型 | React.ComponentType | `div` |
 
-### ant-design 的 Flex - API 有哪些配置？
+### ant-design 的 Flex - Flex 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16866,7 +16866,7 @@ Version: 4.24
 | gap | 设置网格之间的间隙 | `small` \| `middle` \| `large` \| string \| number | - |
 | component | 自定义元素类型 | React.ComponentType | `div` |
 
-### ant-design 中 Flex - API的vertical属性如何使用？
+### ant-design 中 Flex - Flex的vertical属性如何使用？
 
 属性: vertical
 
@@ -16876,7 +16876,7 @@ Version: 4.24
 
 默认值: `false`
 
-### ant-design 中 Flex - API的wrap属性如何使用？
+### ant-design 中 Flex - Flex的wrap属性如何使用？
 
 属性: wrap
 
@@ -16886,7 +16886,7 @@ Version: 4.24
 
 默认值: nowrap
 
-### ant-design 中 Flex - API的justify属性如何使用？
+### ant-design 中 Flex - Flex的justify属性如何使用？
 
 属性: justify
 
@@ -16896,7 +16896,7 @@ Version: 4.24
 
 默认值: normal
 
-### ant-design 中 Flex - API的align属性如何使用？
+### ant-design 中 Flex - Flex的align属性如何使用？
 
 属性: align
 
@@ -16906,7 +16906,7 @@ Version: 4.24
 
 默认值: normal
 
-### ant-design 中 Flex - API的flex属性如何使用？
+### ant-design 中 Flex - Flex的flex属性如何使用？
 
 属性: flex
 
@@ -16916,7 +16916,7 @@ Version: 4.24
 
 默认值: normal
 
-### ant-design 中 Flex - API的gap属性如何使用？
+### ant-design 中 Flex - Flex的gap属性如何使用？
 
 属性: gap
 
@@ -16926,7 +16926,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Flex - API的component属性如何使用？
+### ant-design 中 Flex - Flex的component属性如何使用？
 
 属性: component
 
@@ -16938,7 +16938,7 @@ Version: 4.24
 
 ### ant-design 的 Empty 有哪些配置？
 
-#### Empty - API
+#### Empty - Empty
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16946,7 +16946,7 @@ Version: 4.24
 | image | 设置显示图片，为 string 时表示自定义图片地址。 | ReactNode | `Empty.PRESENTED_IMAGE_DEFAULT` |
 | imageStyle | 图片样式 | CSSProperties | - |
 
-### ant-design 的 Empty - API 有哪些配置？
+### ant-design 的 Empty - Empty 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -16954,7 +16954,7 @@ Version: 4.24
 | image | 设置显示图片，为 string 时表示自定义图片地址。 | ReactNode | `Empty.PRESENTED_IMAGE_DEFAULT` |
 | imageStyle | 图片样式 | CSSProperties | - |
 
-### ant-design 中 Empty - API的description属性如何使用？
+### ant-design 中 Empty - Empty的description属性如何使用？
 
 参数: description
 
@@ -16964,7 +16964,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Empty - API的image属性如何使用？
+### ant-design 中 Empty - Empty的image属性如何使用？
 
 参数: image
 
@@ -16974,7 +16974,7 @@ Version: 4.24
 
 默认值: `Empty.PRESENTED_IMAGE_DEFAULT`
 
-### ant-design 中 Empty - API的imageStyle属性如何使用？
+### ant-design 中 Empty - Empty的imageStyle属性如何使用？
 
 参数: imageStyle
 
@@ -17272,7 +17272,7 @@ Version: 4.24
 
 ### ant-design 的 Drawer 有哪些配置？
 
-#### Drawer - API
+#### Drawer - Drawer
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -17302,7 +17302,7 @@ Version: 4.24
 | zIndex | 设置 Drawer 的 `z-index` | number | 1000 |
 | onClose | 点击遮罩层或左上角叉或取消按钮的回调 | function(e) | - |
 
-### ant-design 的 Drawer - API 有哪些配置？
+### ant-design 的 Drawer - Drawer 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -17332,7 +17332,7 @@ Version: 4.24
 | zIndex | 设置 Drawer 的 `z-index` | number | 1000 |
 | onClose | 点击遮罩层或左上角叉或取消按钮的回调 | function(e) | - |
 
-### ant-design 中 Drawer - API的autoFocus属性如何使用？
+### ant-design 中 Drawer - Drawer的autoFocus属性如何使用？
 
 参数: autoFocus
 
@@ -17344,7 +17344,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Drawer - API的afterOpenChange属性如何使用？
+### ant-design 中 Drawer - Drawer的afterOpenChange属性如何使用？
 
 参数: afterOpenChange
 
@@ -17354,7 +17354,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Drawer - API的className属性如何使用？
+### ant-design 中 Drawer - Drawer的className属性如何使用？
 
 参数: className
 
@@ -17364,7 +17364,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Drawer - API的classNames属性如何使用？
+### ant-design 中 Drawer - Drawer的classNames属性如何使用？
 
 参数: classNames
 
@@ -17374,7 +17374,7 @@ Version: 4.24
 
 默认值: 5.10.0
 
-### ant-design 中 Drawer - API的closeIcon属性如何使用？
+### ant-design 中 Drawer - Drawer的closeIcon属性如何使用？
 
 参数: closeIcon
 
@@ -17384,7 +17384,7 @@ Version: 4.24
 
 默认值: \<CloseOutlined />
 
-### ant-design 中 Drawer - API的destroyOnClose属性如何使用？
+### ant-design 中 Drawer - Drawer的destroyOnClose属性如何使用？
 
 参数: destroyOnClose
 
@@ -17394,7 +17394,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Drawer - API的extra属性如何使用？
+### ant-design 中 Drawer - Drawer的extra属性如何使用？
 
 参数: extra
 
@@ -17406,7 +17406,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Drawer - API的footer属性如何使用？
+### ant-design 中 Drawer - Drawer的footer属性如何使用？
 
 参数: footer
 
@@ -17416,7 +17416,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Drawer - API的forceRender属性如何使用？
+### ant-design 中 Drawer - Drawer的forceRender属性如何使用？
 
 参数: forceRender
 
@@ -17426,7 +17426,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Drawer - API的getContainer属性如何使用？
+### ant-design 中 Drawer - Drawer的getContainer属性如何使用？
 
 参数: getContainer
 
@@ -17436,7 +17436,7 @@ Version: 4.24
 
 默认值: body
 
-### ant-design 中 Drawer - API的height属性如何使用？
+### ant-design 中 Drawer - Drawer的height属性如何使用？
 
 参数: height
 
@@ -17446,7 +17446,7 @@ Version: 4.24
 
 默认值: 378
 
-### ant-design 中 Drawer - API的keyboard属性如何使用？
+### ant-design 中 Drawer - Drawer的keyboard属性如何使用？
 
 参数: keyboard
 
@@ -17456,7 +17456,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Drawer - API的mask属性如何使用？
+### ant-design 中 Drawer - Drawer的mask属性如何使用？
 
 参数: mask
 
@@ -17466,7 +17466,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Drawer - API的maskClosable属性如何使用？
+### ant-design 中 Drawer - Drawer的maskClosable属性如何使用？
 
 参数: maskClosable
 
@@ -17476,7 +17476,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Drawer - API的placement属性如何使用？
+### ant-design 中 Drawer - Drawer的placement属性如何使用？
 
 参数: placement
 
@@ -17486,7 +17486,7 @@ Version: 4.24
 
 默认值: `right`
 
-### ant-design 中 Drawer - API的push属性如何使用？
+### ant-design 中 Drawer - Drawer的push属性如何使用？
 
 参数: push
 
@@ -17498,7 +17498,7 @@ Version: 4.24
 
 版本: 4.5.0+
 
-### ant-design 中 Drawer - API的rootStyle属性如何使用？
+### ant-design 中 Drawer - Drawer的rootStyle属性如何使用？
 
 参数: rootStyle
 
@@ -17508,7 +17508,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Drawer - API的size属性如何使用？
+### ant-design 中 Drawer - Drawer的size属性如何使用？
 
 参数: size
 
@@ -17520,7 +17520,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Drawer - API的style属性如何使用？
+### ant-design 中 Drawer - Drawer的style属性如何使用？
 
 参数: style
 
@@ -17530,7 +17530,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Drawer - API的styles属性如何使用？
+### ant-design 中 Drawer - Drawer的styles属性如何使用？
 
 参数: styles
 
@@ -17540,7 +17540,7 @@ Version: 4.24
 
 默认值: 5.10.0
 
-### ant-design 中 Drawer - API的title属性如何使用？
+### ant-design 中 Drawer - Drawer的title属性如何使用？
 
 参数: title
 
@@ -17550,7 +17550,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Drawer - API的open属性如何使用？
+### ant-design 中 Drawer - Drawer的open属性如何使用？
 
 参数: open
 
@@ -17560,7 +17560,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Drawer - API的width属性如何使用？
+### ant-design 中 Drawer - Drawer的width属性如何使用？
 
 参数: width
 
@@ -17570,7 +17570,7 @@ Version: 4.24
 
 默认值: 378
 
-### ant-design 中 Drawer - API的zIndex属性如何使用？
+### ant-design 中 Drawer - Drawer的zIndex属性如何使用？
 
 参数: zIndex
 
@@ -17580,7 +17580,7 @@ Version: 4.24
 
 默认值: 1000
 
-### ant-design 中 Drawer - API的onClose属性如何使用？
+### ant-design 中 Drawer - Drawer的onClose属性如何使用？
 
 参数: onClose
 
@@ -17592,7 +17592,7 @@ Version: 4.24
 
 ### ant-design 的 Divider 有哪些配置？
 
-#### Divider - API
+#### Divider - Divider
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -17605,7 +17605,7 @@ Version: 4.24
 | style | 分割线样式对象 | CSSProperties | - |
 | type | 水平还是垂直类型 | `horizontal` \| `vertical` | `horizontal` |
 
-### ant-design 的 Divider - API 有哪些配置？
+### ant-design 的 Divider - Divider 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -17618,7 +17618,7 @@ Version: 4.24
 | style | 分割线样式对象 | CSSProperties | - |
 | type | 水平还是垂直类型 | `horizontal` \| `vertical` | `horizontal` |
 
-### ant-design 中 Divider - API的children属性如何使用？
+### ant-design 中 Divider - Divider的children属性如何使用？
 
 参数: children
 
@@ -17628,7 +17628,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Divider - API的className属性如何使用？
+### ant-design 中 Divider - Divider的className属性如何使用？
 
 参数: className
 
@@ -17638,7 +17638,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Divider - API的dashed属性如何使用？
+### ant-design 中 Divider - Divider的dashed属性如何使用？
 
 参数: dashed
 
@@ -17648,7 +17648,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Divider - API的orientation属性如何使用？
+### ant-design 中 Divider - Divider的orientation属性如何使用？
 
 参数: orientation
 
@@ -17658,7 +17658,7 @@ Version: 4.24
 
 默认值: `center`
 
-### ant-design 中 Divider - API的orientationMargin属性如何使用？
+### ant-design 中 Divider - Divider的orientationMargin属性如何使用？
 
 参数: orientationMargin
 
@@ -17668,7 +17668,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Divider - API的plain属性如何使用？
+### ant-design 中 Divider - Divider的plain属性如何使用？
 
 参数: plain
 
@@ -17680,7 +17680,7 @@ Version: 4.24
 
 版本: 4.2.0
 
-### ant-design 中 Divider - API的style属性如何使用？
+### ant-design 中 Divider - Divider的style属性如何使用？
 
 参数: style
 
@@ -17690,7 +17690,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Divider - API的type属性如何使用？
+### ant-design 中 Divider - Divider的type属性如何使用？
 
 参数: type
 
@@ -17902,9 +17902,9 @@ Version: 4.24
 
 版本: `screens: 5.9.0`
 
-### ant-design 的 Date-picker 有哪些配置？
+### ant-design 的 DatePicker 有哪些配置？
 
-#### Date-picker - 共同的 API
+#### DatePicker - DatePicker
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -17946,14 +17946,14 @@ Version: 4.24
 | onOpenChange | 弹出日历和关闭日历的回调 | function(open) | - |
 | onPanelChange | 日历面板切换的回调 | function(value, mode) | - |
 
-#### Date-picker - 共同的方法
+#### DatePicker - 共同的方法
 
 | 名称    | 描述     |
 | ------- | -------- |
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-#### Date-picker - DatePicker
+#### DatePicker - DatePicker
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -17973,7 +17973,7 @@ Version: 4.24
 | onOk | 点击确定按钮的回调 | function() | - |
 | onPanelChange | 日期面板变化时的回调 | function(value, mode) | - |
 
-#### Date-picker - DatePicker[picker=year]
+#### DatePicker - DatePicker
 
 | 参数 | 说明 | 类型 |
 | --- | --- | --- | --- | --- |
@@ -17984,7 +17984,7 @@ Version: 4.24
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-#### Date-picker - DatePicker[picker=quarter]
+#### DatePicker - DatePicker
 
 | 参数 | 说明 | 类型 |
 | --- | --- | --- | --- | --- |
@@ -17995,7 +17995,7 @@ Version: 4.24
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-#### Date-picker - DatePicker[picker=month]
+#### DatePicker - DatePicker
 
 | 参数 | 说明 | 类型 |
 | --- | --- | --- | --- | --- |
@@ -18006,7 +18006,7 @@ Version: 4.24
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-#### Date-picker - DatePicker[picker=week]
+#### DatePicker - DatePicker
 
 | 参数 | 说明 | 类型 |
 | --- | --- | --- | --- | --- |
@@ -18017,7 +18017,7 @@ Version: 4.24
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-#### Date-picker - RangePicker
+#### DatePicker - RangePicker
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -18042,7 +18042,7 @@ Version: 4.24
 | onFocus | 聚焦时回调 | function(event, { range: 'start' \| 'end' }) | - | `range`: 5.14.0 |
 | onBlur | 失焦时回调 | function(event, { range: 'start' \| 'end' }) | - | `range`: 5.14.0 |
 
-### ant-design 的 Date-picker - 共同的 API 有哪些配置？
+### ant-design 的 DatePicker - DatePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -18084,7 +18084,7 @@ Version: 4.24
 | onOpenChange | 弹出日历和关闭日历的回调 | function(open) | - |
 | onPanelChange | 日历面板切换的回调 | function(value, mode) | - |
 
-### ant-design 中 Date-picker - 共同的 API的allowClear属性如何使用？
+### ant-design 中 DatePicker - DatePicker的allowClear属性如何使用？
 
 参数: allowClear
 
@@ -18096,7 +18096,7 @@ Version: 4.24
 
 版本: 5.8.0: 支持对象类型
 
-### ant-design 中 Date-picker - 共同的 API的autoFocus属性如何使用？
+### ant-design 中 DatePicker - DatePicker的autoFocus属性如何使用？
 
 参数: autoFocus
 
@@ -18106,7 +18106,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Date-picker - 共同的 API的className属性如何使用？
+### ant-design 中 DatePicker - DatePicker的className属性如何使用？
 
 参数: className
 
@@ -18116,7 +18116,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的dateRender属性如何使用？
+### ant-design 中 DatePicker - DatePicker的dateRender属性如何使用？
 
 参数: dateRender
 
@@ -18128,7 +18128,7 @@ Version: 4.24
 
 版本: < 5.4.0
 
-### ant-design 中 Date-picker - 共同的 API的cellRender属性如何使用？
+### ant-design 中 DatePicker - DatePicker的cellRender属性如何使用？
 
 参数: cellRender
 
@@ -18140,7 +18140,7 @@ Version: 4.24
 
 版本: 5.4.0
 
-### ant-design 中 Date-picker - 共同的 API的components属性如何使用？
+### ant-design 中 DatePicker - DatePicker的components属性如何使用？
 
 参数: components
 
@@ -18152,7 +18152,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - 共同的 API的disabled属性如何使用？
+### ant-design 中 DatePicker - DatePicker的disabled属性如何使用？
 
 参数: disabled
 
@@ -18162,7 +18162,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Date-picker - 共同的 API的disabledDate属性如何使用？
+### ant-design 中 DatePicker - DatePicker的disabledDate属性如何使用？
 
 参数: disabledDate
 
@@ -18174,13 +18174,13 @@ Version: 4.24
 
 版本: `info`: 5.14.0
 
-### ant-design 中 Date-picker - 共同的 API的format属性如何使用？
+### ant-design 中 DatePicker - DatePicker的format属性如何使用？
 
 参数: format
 
 说明: 设置日期格式，为数组时支持多格式匹配，展示以第一个为准。配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。示例：[自定义格式](#components-date-picker-demo-format)
 
-### ant-design 中 Date-picker - 共同的 API的order属性如何使用？
+### ant-design 中 DatePicker - DatePicker的order属性如何使用？
 
 参数: order
 
@@ -18192,7 +18192,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - 共同的 API的preserveInvalidOnBlur属性如何使用？
+### ant-design 中 DatePicker - DatePicker的preserveInvalidOnBlur属性如何使用？
 
 参数: preserveInvalidOnBlur
 
@@ -18204,7 +18204,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - 共同的 API的popupClassName属性如何使用？
+### ant-design 中 DatePicker - DatePicker的popupClassName属性如何使用？
 
 参数: popupClassName
 
@@ -18216,7 +18216,7 @@ Version: 4.24
 
 版本: 4.23.0
 
-### ant-design 中 Date-picker - 共同的 API的getPopupContainer属性如何使用？
+### ant-design 中 DatePicker - DatePicker的getPopupContainer属性如何使用？
 
 参数: getPopupContainer
 
@@ -18226,7 +18226,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的inputReadOnly属性如何使用？
+### ant-design 中 DatePicker - DatePicker的inputReadOnly属性如何使用？
 
 参数: inputReadOnly
 
@@ -18236,7 +18236,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Date-picker - 共同的 API的locale属性如何使用？
+### ant-design 中 DatePicker - DatePicker的locale属性如何使用？
 
 参数: locale
 
@@ -18244,7 +18244,7 @@ Version: 4.24
 
 类型: object
 
-### ant-design 中 Date-picker - 共同的 API的minDate属性如何使用？
+### ant-design 中 DatePicker - DatePicker的minDate属性如何使用？
 
 参数: minDate
 
@@ -18256,7 +18256,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - 共同的 API的maxDate属性如何使用？
+### ant-design 中 DatePicker - DatePicker的maxDate属性如何使用？
 
 参数: maxDate
 
@@ -18268,7 +18268,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - 共同的 API的mode属性如何使用？
+### ant-design 中 DatePicker - DatePicker的mode属性如何使用？
 
 参数: mode
 
@@ -18278,7 +18278,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的needConfirm属性如何使用？
+### ant-design 中 DatePicker - DatePicker的needConfirm属性如何使用？
 
 参数: needConfirm
 
@@ -18290,7 +18290,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - 共同的 API的nextIcon属性如何使用？
+### ant-design 中 DatePicker - DatePicker的nextIcon属性如何使用？
 
 参数: nextIcon
 
@@ -18302,7 +18302,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Date-picker - 共同的 API的open属性如何使用？
+### ant-design 中 DatePicker - DatePicker的open属性如何使用？
 
 参数: open
 
@@ -18312,7 +18312,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的panelRender属性如何使用？
+### ant-design 中 DatePicker - DatePicker的panelRender属性如何使用？
 
 参数: panelRender
 
@@ -18324,7 +18324,7 @@ Version: 4.24
 
 版本: 4.5.0
 
-### ant-design 中 Date-picker - 共同的 API的picker属性如何使用？
+### ant-design 中 DatePicker - DatePicker的picker属性如何使用？
 
 参数: picker
 
@@ -18336,7 +18336,7 @@ Version: 4.24
 
 版本: `quarter`: 4.1.0
 
-### ant-design 中 Date-picker - 共同的 API的placeholder属性如何使用？
+### ant-design 中 DatePicker - DatePicker的placeholder属性如何使用？
 
 参数: placeholder
 
@@ -18346,7 +18346,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的placement属性如何使用？
+### ant-design 中 DatePicker - DatePicker的placement属性如何使用？
 
 参数: placement
 
@@ -18356,7 +18356,7 @@ Version: 4.24
 
 默认值: bottomLeft
 
-### ant-design 中 Date-picker - 共同的 API的popupStyle属性如何使用？
+### ant-design 中 DatePicker - DatePicker的popupStyle属性如何使用？
 
 参数: popupStyle
 
@@ -18366,7 +18366,7 @@ Version: 4.24
 
 默认值: {}
 
-### ant-design 中 Date-picker - 共同的 API的prevIcon属性如何使用？
+### ant-design 中 DatePicker - DatePicker的prevIcon属性如何使用？
 
 参数: prevIcon
 
@@ -18378,7 +18378,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Date-picker - 共同的 API的presets属性如何使用？
+### ant-design 中 DatePicker - DatePicker的presets属性如何使用？
 
 参数: presets
 
@@ -18388,7 +18388,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的size属性如何使用？
+### ant-design 中 DatePicker - DatePicker的size属性如何使用？
 
 参数: size
 
@@ -18398,7 +18398,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的status属性如何使用？
+### ant-design 中 DatePicker - DatePicker的status属性如何使用？
 
 参数: status
 
@@ -18410,7 +18410,7 @@ Version: 4.24
 
 版本: 4.19.0
 
-### ant-design 中 Date-picker - 共同的 API的style属性如何使用？
+### ant-design 中 DatePicker - DatePicker的style属性如何使用？
 
 参数: style
 
@@ -18420,7 +18420,7 @@ Version: 4.24
 
 默认值: {}
 
-### ant-design 中 Date-picker - 共同的 API的suffixIcon属性如何使用？
+### ant-design 中 DatePicker - DatePicker的suffixIcon属性如何使用？
 
 参数: suffixIcon
 
@@ -18430,7 +18430,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的superNextIcon属性如何使用？
+### ant-design 中 DatePicker - DatePicker的superNextIcon属性如何使用？
 
 参数: superNextIcon
 
@@ -18442,7 +18442,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Date-picker - 共同的 API的superPrevIcon属性如何使用？
+### ant-design 中 DatePicker - DatePicker的superPrevIcon属性如何使用？
 
 参数: superPrevIcon
 
@@ -18454,7 +18454,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Date-picker - 共同的 API的variant属性如何使用？
+### ant-design 中 DatePicker - DatePicker的variant属性如何使用？
 
 参数: variant
 
@@ -18466,7 +18466,7 @@ Version: 4.24
 
 版本: 5.13.0
 
-### ant-design 中 Date-picker - 共同的 API的onOpenChange属性如何使用？
+### ant-design 中 DatePicker - DatePicker的onOpenChange属性如何使用？
 
 参数: onOpenChange
 
@@ -18476,7 +18476,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - 共同的 API的onPanelChange属性如何使用？
+### ant-design 中 DatePicker - DatePicker的onPanelChange属性如何使用？
 
 参数: onPanelChange
 
@@ -18486,26 +18486,26 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 的 Date-picker - 共同的方法 有哪些配置？
+### ant-design 的 DatePicker - 共同的方法 有哪些配置？
 
 | 名称    | 描述     |
 | ------- | -------- |
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Date-picker - 共同的方法的blur()属性如何使用？
+### ant-design 中 DatePicker - 共同的方法的blur()属性如何使用？
 
 名称: blur()
 
 描述: 移除焦点
 
-### ant-design 中 Date-picker - 共同的方法的focus()属性如何使用？
+### ant-design 中 DatePicker - 共同的方法的focus()属性如何使用？
 
 名称: focus()
 
 描述: 获取焦点
 
-### ant-design 的 Date-picker - DatePicker 有哪些配置？
+### ant-design 的 DatePicker - DatePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -18525,7 +18525,7 @@ Version: 4.24
 | onOk | 点击确定按钮的回调 | function() | - |
 | onPanelChange | 日期面板变化时的回调 | function(value, mode) | - |
 
-### ant-design 中 Date-picker - DatePicker的defaultPickerValue属性如何使用？
+### ant-design 中 DatePicker - DatePicker的defaultPickerValue属性如何使用？
 
 参数: defaultPickerValue
 
@@ -18535,7 +18535,7 @@ Version: 4.24
 
 默认值: 5.14.0
 
-### ant-design 中 Date-picker - DatePicker的defaultValue属性如何使用？
+### ant-design 中 DatePicker - DatePicker的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -18543,7 +18543,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker的disabledTime属性如何使用？
+### ant-design 中 DatePicker - DatePicker的disabledTime属性如何使用？
 
 参数: disabledTime
 
@@ -18553,7 +18553,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker的format属性如何使用？
+### ant-design 中 DatePicker - DatePicker的format属性如何使用？
 
 参数: format
 
@@ -18561,7 +18561,7 @@ Version: 4.24
 
 类型: `YYYY-MM-DD`
 
-### ant-design 中 Date-picker - DatePicker的multiple属性如何使用？
+### ant-design 中 DatePicker - DatePicker的multiple属性如何使用？
 
 参数: multiple
 
@@ -18573,7 +18573,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - DatePicker的pickerValue属性如何使用？
+### ant-design 中 DatePicker - DatePicker的pickerValue属性如何使用？
 
 参数: pickerValue
 
@@ -18583,7 +18583,7 @@ Version: 4.24
 
 默认值: 5.14.0
 
-### ant-design 中 Date-picker - DatePicker的renderExtraFooter属性如何使用？
+### ant-design 中 DatePicker - DatePicker的renderExtraFooter属性如何使用？
 
 参数: renderExtraFooter
 
@@ -18593,7 +18593,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker的showNow属性如何使用？
+### ant-design 中 DatePicker - DatePicker的showNow属性如何使用？
 
 参数: showNow
 
@@ -18603,7 +18603,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker的showTime属性如何使用？
+### ant-design 中 DatePicker - DatePicker的showTime属性如何使用？
 
 参数: showTime
 
@@ -18611,7 +18611,7 @@ Version: 4.24
 
 类型: Object | boolean
 
-### ant-design 中 Date-picker - DatePicker的showTime.defaultValue属性如何使用？
+### ant-design 中 DatePicker - DatePicker的showTime.defaultValue属性如何使用？
 
 参数: showTime.defaultValue
 
@@ -18619,7 +18619,7 @@ Version: 4.24
 
 类型: dayjs()
 
-### ant-design 中 Date-picker - DatePicker的showWeek属性如何使用？
+### ant-design 中 DatePicker - DatePicker的showWeek属性如何使用？
 
 参数: showWeek
 
@@ -18631,7 +18631,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - DatePicker的value属性如何使用？
+### ant-design 中 DatePicker - DatePicker的value属性如何使用？
 
 参数: value
 
@@ -18639,7 +18639,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker的onChange属性如何使用？
+### ant-design 中 DatePicker - DatePicker的onChange属性如何使用？
 
 参数: onChange
 
@@ -18649,7 +18649,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker的onOk属性如何使用？
+### ant-design 中 DatePicker - DatePicker的onOk属性如何使用？
 
 参数: onOk
 
@@ -18659,7 +18659,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker的onPanelChange属性如何使用？
+### ant-design 中 DatePicker - DatePicker的onPanelChange属性如何使用？
 
 参数: onPanelChange
 
@@ -18669,7 +18669,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 的 Date-picker - DatePicker[picker=year] 有哪些配置？
+### ant-design 的 DatePicker - DatePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 |
 | --- | --- | --- | --- | --- |
@@ -18680,7 +18680,7 @@ Version: 4.24
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的defaultValue属性如何使用？
+### ant-design 中 DatePicker - DatePicker的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -18688,7 +18688,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的format属性如何使用？
+### ant-design 中 DatePicker - DatePicker的format属性如何使用？
 
 参数: format
 
@@ -18696,7 +18696,7 @@ Version: 4.24
 
 类型: `YYYY`
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的multiple属性如何使用？
+### ant-design 中 DatePicker - DatePicker的multiple属性如何使用？
 
 参数: multiple
 
@@ -18708,7 +18708,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的renderExtraFooter属性如何使用？
+### ant-design 中 DatePicker - DatePicker的renderExtraFooter属性如何使用？
 
 参数: renderExtraFooter
 
@@ -18718,7 +18718,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的value属性如何使用？
+### ant-design 中 DatePicker - DatePicker的value属性如何使用？
 
 参数: value
 
@@ -18726,7 +18726,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=year]的onChange属性如何使用？
+### ant-design 中 DatePicker - DatePicker的onChange属性如何使用？
 
 参数: onChange
 
@@ -18736,7 +18736,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 的 Date-picker - DatePicker[picker=quarter] 有哪些配置？
+### ant-design 的 DatePicker - DatePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 |
 | --- | --- | --- | --- | --- |
@@ -18747,7 +18747,7 @@ Version: 4.24
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的defaultValue属性如何使用？
+### ant-design 中 DatePicker - DatePicker的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -18755,7 +18755,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的format属性如何使用？
+### ant-design 中 DatePicker - DatePicker的format属性如何使用？
 
 参数: format
 
@@ -18763,7 +18763,7 @@ Version: 4.24
 
 类型: `YYYY-\QQ`
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的multiple属性如何使用？
+### ant-design 中 DatePicker - DatePicker的multiple属性如何使用？
 
 参数: multiple
 
@@ -18775,7 +18775,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的renderExtraFooter属性如何使用？
+### ant-design 中 DatePicker - DatePicker的renderExtraFooter属性如何使用？
 
 参数: renderExtraFooter
 
@@ -18785,7 +18785,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的value属性如何使用？
+### ant-design 中 DatePicker - DatePicker的value属性如何使用？
 
 参数: value
 
@@ -18793,7 +18793,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=quarter]的onChange属性如何使用？
+### ant-design 中 DatePicker - DatePicker的onChange属性如何使用？
 
 参数: onChange
 
@@ -18803,7 +18803,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 的 Date-picker - DatePicker[picker=month] 有哪些配置？
+### ant-design 的 DatePicker - DatePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 |
 | --- | --- | --- | --- | --- |
@@ -18814,7 +18814,7 @@ Version: 4.24
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的defaultValue属性如何使用？
+### ant-design 中 DatePicker - DatePicker的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -18822,7 +18822,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的format属性如何使用？
+### ant-design 中 DatePicker - DatePicker的format属性如何使用？
 
 参数: format
 
@@ -18830,7 +18830,7 @@ Version: 4.24
 
 类型: `YYYY-MM`
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的multiple属性如何使用？
+### ant-design 中 DatePicker - DatePicker的multiple属性如何使用？
 
 参数: multiple
 
@@ -18842,7 +18842,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的renderExtraFooter属性如何使用？
+### ant-design 中 DatePicker - DatePicker的renderExtraFooter属性如何使用？
 
 参数: renderExtraFooter
 
@@ -18852,7 +18852,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的value属性如何使用？
+### ant-design 中 DatePicker - DatePicker的value属性如何使用？
 
 参数: value
 
@@ -18860,7 +18860,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=month]的onChange属性如何使用？
+### ant-design 中 DatePicker - DatePicker的onChange属性如何使用？
 
 参数: onChange
 
@@ -18870,7 +18870,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 的 Date-picker - DatePicker[picker=week] 有哪些配置？
+### ant-design 的 DatePicker - DatePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 |
 | --- | --- | --- | --- | --- |
@@ -18881,7 +18881,7 @@ Version: 4.24
 | value | 日期 | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - |
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的defaultValue属性如何使用？
+### ant-design 中 DatePicker - DatePicker的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -18889,7 +18889,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的format属性如何使用？
+### ant-design 中 DatePicker - DatePicker的format属性如何使用？
 
 参数: format
 
@@ -18897,7 +18897,7 @@ Version: 4.24
 
 类型: `YYYY-wo`
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的multiple属性如何使用？
+### ant-design 中 DatePicker - DatePicker的multiple属性如何使用？
 
 参数: multiple
 
@@ -18909,7 +18909,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的renderExtraFooter属性如何使用？
+### ant-design 中 DatePicker - DatePicker的renderExtraFooter属性如何使用？
 
 参数: renderExtraFooter
 
@@ -18919,7 +18919,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的value属性如何使用？
+### ant-design 中 DatePicker - DatePicker的value属性如何使用？
 
 参数: value
 
@@ -18927,7 +18927,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - DatePicker[picker=week]的onChange属性如何使用？
+### ant-design 中 DatePicker - DatePicker的onChange属性如何使用？
 
 参数: onChange
 
@@ -18937,7 +18937,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 的 Date-picker - RangePicker 有哪些配置？
+### ant-design 的 DatePicker - RangePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -18962,7 +18962,7 @@ Version: 4.24
 | onFocus | 聚焦时回调 | function(event, { range: 'start' \| 'end' }) | - | `range`: 5.14.0 |
 | onBlur | 失焦时回调 | function(event, { range: 'start' \| 'end' }) | - | `range`: 5.14.0 |
 
-### ant-design 中 Date-picker - RangePicker的allowEmpty属性如何使用？
+### ant-design 中 DatePicker - RangePicker的allowEmpty属性如何使用？
 
 参数: allowEmpty
 
@@ -18972,7 +18972,7 @@ Version: 4.24
 
 默认值: \[false, false]
 
-### ant-design 中 Date-picker - RangePicker的cellRender属性如何使用？
+### ant-design 中 DatePicker - RangePicker的cellRender属性如何使用？
 
 参数: cellRender
 
@@ -18984,7 +18984,7 @@ Version: 4.24
 
 版本: 5.4.0
 
-### ant-design 中 Date-picker - RangePicker的dateRender属性如何使用？
+### ant-design 中 DatePicker - RangePicker的dateRender属性如何使用？
 
 参数: dateRender
 
@@ -18996,7 +18996,7 @@ Version: 4.24
 
 版本: < 5.4.0
 
-### ant-design 中 Date-picker - RangePicker的defaultPickerValue属性如何使用？
+### ant-design 中 DatePicker - RangePicker的defaultPickerValue属性如何使用？
 
 参数: defaultPickerValue
 
@@ -19006,7 +19006,7 @@ Version: 4.24
 
 默认值: 5.14.0
 
-### ant-design 中 Date-picker - RangePicker的defaultValue属性如何使用？
+### ant-design 中 DatePicker - RangePicker的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -19014,7 +19014,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - RangePicker的disabled属性如何使用？
+### ant-design 中 DatePicker - RangePicker的disabled属性如何使用？
 
 参数: disabled
 
@@ -19024,7 +19024,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - RangePicker的disabledTime属性如何使用？
+### ant-design 中 DatePicker - RangePicker的disabledTime属性如何使用？
 
 参数: disabledTime
 
@@ -19034,7 +19034,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - RangePicker的format属性如何使用？
+### ant-design 中 DatePicker - RangePicker的format属性如何使用？
 
 参数: format
 
@@ -19042,7 +19042,7 @@ Version: 4.24
 
 类型: `YYYY-MM-DD HH:mm:ss`
 
-### ant-design 中 Date-picker - RangePicker的id属性如何使用？
+### ant-design 中 DatePicker - RangePicker的id属性如何使用？
 
 参数: id
 
@@ -19054,7 +19054,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Date-picker - RangePicker的pickerValue属性如何使用？
+### ant-design 中 DatePicker - RangePicker的pickerValue属性如何使用？
 
 参数: pickerValue
 
@@ -19064,7 +19064,7 @@ Version: 4.24
 
 默认值: 5.14.0
 
-### ant-design 中 Date-picker - RangePicker的presets属性如何使用？
+### ant-design 中 DatePicker - RangePicker的presets属性如何使用？
 
 参数: presets
 
@@ -19074,7 +19074,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - RangePicker的renderExtraFooter属性如何使用？
+### ant-design 中 DatePicker - RangePicker的renderExtraFooter属性如何使用？
 
 参数: renderExtraFooter
 
@@ -19084,7 +19084,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - RangePicker的separator属性如何使用？
+### ant-design 中 DatePicker - RangePicker的separator属性如何使用？
 
 参数: separator
 
@@ -19094,7 +19094,7 @@ Version: 4.24
 
 默认值: `<SwapRightOutlined />`
 
-### ant-design 中 Date-picker - RangePicker的showTime属性如何使用？
+### ant-design 中 DatePicker - RangePicker的showTime属性如何使用？
 
 参数: showTime
 
@@ -19102,7 +19102,7 @@ Version: 4.24
 
 类型: Object|boolean
 
-### ant-design 中 Date-picker - RangePicker的showTime.defaultValue属性如何使用？
+### ant-design 中 DatePicker - RangePicker的showTime.defaultValue属性如何使用？
 
 参数: showTime.defaultValue
 
@@ -19110,7 +19110,7 @@ Version: 4.24
 
 类型: \[dayjs(), dayjs()]
 
-### ant-design 中 Date-picker - RangePicker的value属性如何使用？
+### ant-design 中 DatePicker - RangePicker的value属性如何使用？
 
 参数: value
 
@@ -19118,7 +19118,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Date-picker - RangePicker的onCalendarChange属性如何使用？
+### ant-design 中 DatePicker - RangePicker的onCalendarChange属性如何使用？
 
 参数: onCalendarChange
 
@@ -19128,7 +19128,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - RangePicker的onChange属性如何使用？
+### ant-design 中 DatePicker - RangePicker的onChange属性如何使用？
 
 参数: onChange
 
@@ -19138,7 +19138,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Date-picker - RangePicker的onFocus属性如何使用？
+### ant-design 中 DatePicker - RangePicker的onFocus属性如何使用？
 
 参数: onFocus
 
@@ -19150,7 +19150,7 @@ Version: 4.24
 
 版本: `range`: 5.14.0
 
-### ant-design 中 Date-picker - RangePicker的onBlur属性如何使用？
+### ant-design 中 DatePicker - RangePicker的onBlur属性如何使用？
 
 参数: onBlur
 
@@ -19162,9 +19162,9 @@ Version: 4.24
 
 版本: `range`: 5.14.0
 
-### ant-design 的 Config-provider 有哪些配置？
+### ant-design 的 ConfigProvider 有哪些配置？
 
-#### Config-provider - API
+#### ConfigProvider - ConfigProvider
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -19185,14 +19185,14 @@ Version: 4.24
 | virtual | 设置 `false` 时关闭虚拟滚动 | boolean | - | 4.3.0 |
 | warning | 设置警告等级，`strict` 为 `false` 时会将废弃相关信息聚合为单条信息 | { strict: boolean } | - | 5.10.0 |
 
-#### Config-provider - ConfigProvider.useConfig()
+#### ConfigProvider - ConfigProvider.useConfig()
 
 | 返回值 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | componentDisabled | antd 组件禁用状态 | boolean | - | 5.3.0 |
 | componentSize | antd 组件大小状态 | `small` \| `middle` \| `large` | - | 5.3.0 |
 
-#### Config-provider - 组件配置
+#### ConfigProvider - ConfigProvider
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -19253,7 +19253,7 @@ Version: 4.24
 | upload | 设置 Upload 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | wave | 设置水波纹特效 | { disabled?: boolean, showEffect?: (node: HTMLElement, info: { className, token, component }) => void } | - | 5.8.0 |
 
-### ant-design 的 Config-provider - API 有哪些配置？
+### ant-design 的 ConfigProvider - ConfigProvider 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -19274,7 +19274,7 @@ Version: 4.24
 | virtual | 设置 `false` 时关闭虚拟滚动 | boolean | - | 4.3.0 |
 | warning | 设置警告等级，`strict` 为 `false` 时会将废弃相关信息聚合为单条信息 | { strict: boolean } | - | 5.10.0 |
 
-### ant-design 中 Config-provider - API的autoInsertSpaceInButton属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的autoInsertSpaceInButton属性如何使用？
 
 参数: autoInsertSpaceInButton
 
@@ -19284,7 +19284,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Config-provider - API的componentDisabled属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的componentDisabled属性如何使用？
 
 参数: componentDisabled
 
@@ -19296,7 +19296,7 @@ Version: 4.24
 
 版本: 4.21.0
 
-### ant-design 中 Config-provider - API的componentSize属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的componentSize属性如何使用？
 
 参数: componentSize
 
@@ -19306,7 +19306,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Config-provider - API的csp属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的csp属性如何使用？
 
 参数: csp
 
@@ -19316,7 +19316,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Config-provider - API的direction属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的direction属性如何使用？
 
 参数: direction
 
@@ -19326,7 +19326,7 @@ Version: 4.24
 
 默认值: `ltr`
 
-### ant-design 中 Config-provider - API的getPopupContainer属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的getPopupContainer属性如何使用？
 
 参数: getPopupContainer
 
@@ -19336,7 +19336,7 @@ Version: 4.24
 
 默认值: () => document.body
 
-### ant-design 中 Config-provider - API的getTargetContainer属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的getTargetContainer属性如何使用？
 
 参数: getTargetContainer
 
@@ -19348,7 +19348,7 @@ Version: 4.24
 
 版本: 4.2.0
 
-### ant-design 中 Config-provider - API的iconPrefixCls属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的iconPrefixCls属性如何使用？
 
 参数: iconPrefixCls
 
@@ -19360,7 +19360,7 @@ Version: 4.24
 
 版本: 4.11.0
 
-### ant-design 中 Config-provider - API的locale属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的locale属性如何使用？
 
 参数: locale
 
@@ -19370,7 +19370,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Config-provider - API的popupMatchSelectWidth属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的popupMatchSelectWidth属性如何使用？
 
 参数: popupMatchSelectWidth
 
@@ -19382,7 +19382,7 @@ Version: 4.24
 
 版本: 5.5.0
 
-### ant-design 中 Config-provider - API的popupOverflow属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的popupOverflow属性如何使用？
 
 参数: popupOverflow
 
@@ -19394,7 +19394,7 @@ Version: 4.24
 
 版本: 5.5.0
 
-### ant-design 中 Config-provider - API的prefixCls属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的prefixCls属性如何使用？
 
 参数: prefixCls
 
@@ -19404,7 +19404,7 @@ Version: 4.24
 
 默认值: `ant`
 
-### ant-design 中 Config-provider - API的renderEmpty属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的renderEmpty属性如何使用？
 
 参数: renderEmpty
 
@@ -19414,7 +19414,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Config-provider - API的theme属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的theme属性如何使用？
 
 参数: theme
 
@@ -19424,7 +19424,7 @@ Version: 4.24
 
 默认值: 5.0.0
 
-### ant-design 中 Config-provider - API的virtual属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的virtual属性如何使用？
 
 参数: virtual
 
@@ -19436,7 +19436,7 @@ Version: 4.24
 
 版本: 4.3.0
 
-### ant-design 中 Config-provider - API的warning属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的warning属性如何使用？
 
 参数: warning
 
@@ -19448,14 +19448,14 @@ Version: 4.24
 
 版本: 5.10.0
 
-### ant-design 的 Config-provider - ConfigProvider.useConfig() 有哪些配置？
+### ant-design 的 ConfigProvider - ConfigProvider.useConfig() 有哪些配置？
 
 | 返回值 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | componentDisabled | antd 组件禁用状态 | boolean | - | 5.3.0 |
 | componentSize | antd 组件大小状态 | `small` \| `middle` \| `large` | - | 5.3.0 |
 
-### ant-design 中 Config-provider - ConfigProvider.useConfig()的componentDisabled属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider.useConfig()的componentDisabled属性如何使用？
 
 返回值: componentDisabled
 
@@ -19467,7 +19467,7 @@ Version: 4.24
 
 版本: 5.3.0
 
-### ant-design 中 Config-provider - ConfigProvider.useConfig()的componentSize属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider.useConfig()的componentSize属性如何使用？
 
 返回值: componentSize
 
@@ -19479,7 +19479,7 @@ Version: 4.24
 
 版本: 5.3.0
 
-### ant-design 的 Config-provider - 组件配置 有哪些配置？
+### ant-design 的 ConfigProvider - ConfigProvider 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -19540,7 +19540,7 @@ Version: 4.24
 | upload | 设置 Upload 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | wave | 设置水波纹特效 | { disabled?: boolean, showEffect?: (node: HTMLElement, info: { className, token, component }) => void } | - | 5.8.0 |
 
-### ant-design 中 Config-provider - 组件配置的alert属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的alert属性如何使用？
 
 参数: alert
 
@@ -19552,7 +19552,7 @@ Version: 4.24
 
 版本: 5.7.0, closeIcon: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的anchor属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的anchor属性如何使用？
 
 参数: anchor
 
@@ -19564,7 +19564,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的avatar属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的avatar属性如何使用？
 
 参数: avatar
 
@@ -19576,7 +19576,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的badge属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的badge属性如何使用？
 
 参数: badge
 
@@ -19588,7 +19588,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的breadcrumb属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的breadcrumb属性如何使用？
 
 参数: breadcrumb
 
@@ -19600,7 +19600,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的button属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的button属性如何使用？
 
 参数: button
 
@@ -19612,7 +19612,7 @@ Version: 4.24
 
 版本: 5.6.0
 
-### ant-design 中 Config-provider - 组件配置的calendar属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的calendar属性如何使用？
 
 参数: calendar
 
@@ -19624,7 +19624,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的card属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的card属性如何使用？
 
 参数: card
 
@@ -19636,7 +19636,7 @@ Version: 4.24
 
 版本: 5.7.0, `classNames` 和 `styles`: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的carousel属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的carousel属性如何使用？
 
 参数: carousel
 
@@ -19648,7 +19648,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的cascader属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的cascader属性如何使用？
 
 参数: cascader
 
@@ -19660,7 +19660,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的checkbox属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的checkbox属性如何使用？
 
 参数: checkbox
 
@@ -19672,7 +19672,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的collapse属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的collapse属性如何使用？
 
 参数: collapse
 
@@ -19684,7 +19684,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的colorPicker属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的colorPicker属性如何使用？
 
 参数: colorPicker
 
@@ -19696,7 +19696,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的datePicker属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的datePicker属性如何使用？
 
 参数: datePicker
 
@@ -19708,7 +19708,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的rangePicker属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的rangePicker属性如何使用？
 
 参数: rangePicker
 
@@ -19720,7 +19720,7 @@ Version: 4.24
 
 版本: 5.11.0
 
-### ant-design 中 Config-provider - 组件配置的descriptions属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的descriptions属性如何使用？
 
 参数: descriptions
 
@@ -19732,7 +19732,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的divider属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的divider属性如何使用？
 
 参数: divider
 
@@ -19744,7 +19744,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的drawer属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的drawer属性如何使用？
 
 参数: drawer
 
@@ -19756,7 +19756,7 @@ Version: 4.24
 
 版本: 5.7.0, `classNames` 和 `styles`: 5.10.0, `closeIcon`: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的dropdown属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的dropdown属性如何使用？
 
 参数: dropdown
 
@@ -19768,7 +19768,7 @@ Version: 4.24
 
 版本: 5.11.0
 
-### ant-design 中 Config-provider - 组件配置的empty属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的empty属性如何使用？
 
 参数: empty
 
@@ -19780,7 +19780,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的flex属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的flex属性如何使用？
 
 参数: flex
 
@@ -19792,7 +19792,7 @@ Version: 4.24
 
 版本: 5.10.0
 
-### ant-design 中 Config-provider - 组件配置的form属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的form属性如何使用？
 
 参数: form
 
@@ -19804,7 +19804,7 @@ Version: 4.24
 
 版本: requiredMark: 4.8.0; colon: 4.18.0; scrollToFirstError: 5.2.0; className: 5.7.0; style: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的image属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的image属性如何使用？
 
 参数: image
 
@@ -19816,7 +19816,7 @@ Version: 4.24
 
 版本: 5.7.0, closeIcon: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的input属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的input属性如何使用？
 
 参数: input
 
@@ -19828,7 +19828,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的layout属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的layout属性如何使用？
 
 参数: layout
 
@@ -19840,7 +19840,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的list属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的list属性如何使用？
 
 参数: list
 
@@ -19852,7 +19852,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的menu属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的menu属性如何使用？
 
 参数: menu
 
@@ -19864,7 +19864,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的mentions属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的mentions属性如何使用？
 
 参数: mentions
 
@@ -19876,7 +19876,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的message属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的message属性如何使用？
 
 参数: message
 
@@ -19888,7 +19888,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的modal属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的modal属性如何使用？
 
 参数: modal
 
@@ -19900,7 +19900,7 @@ Version: 4.24
 
 版本: 5.7.0, `classNames` 和 `styles`: 5.10.0, `closeIcon`: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的notification属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的notification属性如何使用？
 
 参数: notification
 
@@ -19912,7 +19912,7 @@ Version: 4.24
 
 版本: 5.7.0, `closeIcon`: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的pagination属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的pagination属性如何使用？
 
 参数: pagination
 
@@ -19924,7 +19924,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的progress属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的progress属性如何使用？
 
 参数: progress
 
@@ -19936,7 +19936,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的radio属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的radio属性如何使用？
 
 参数: radio
 
@@ -19948,7 +19948,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的rate属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的rate属性如何使用？
 
 参数: rate
 
@@ -19960,7 +19960,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的result属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的result属性如何使用？
 
 参数: result
 
@@ -19972,7 +19972,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的skeleton属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的skeleton属性如何使用？
 
 参数: skeleton
 
@@ -19984,7 +19984,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的segmented属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的segmented属性如何使用？
 
 参数: segmented
 
@@ -19996,7 +19996,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的select属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的select属性如何使用？
 
 参数: select
 
@@ -20008,7 +20008,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的slider属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的slider属性如何使用？
 
 参数: slider
 
@@ -20020,7 +20020,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的switch属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的switch属性如何使用？
 
 参数: switch
 
@@ -20032,7 +20032,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的space属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的space属性如何使用？
 
 参数: space
 
@@ -20044,7 +20044,7 @@ Version: 4.24
 
 版本: 5.6.0
 
-### ant-design 中 Config-provider - 组件配置的spin属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的spin属性如何使用？
 
 参数: spin
 
@@ -20056,7 +20056,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的statistic属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的statistic属性如何使用？
 
 参数: statistic
 
@@ -20068,7 +20068,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的steps属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的steps属性如何使用？
 
 参数: steps
 
@@ -20080,7 +20080,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的table属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的table属性如何使用？
 
 参数: table
 
@@ -20092,7 +20092,7 @@ Version: 4.24
 
 版本: 5.7.0, expandable: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的tabs属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的tabs属性如何使用？
 
 参数: tabs
 
@@ -20104,7 +20104,7 @@ Version: 4.24
 
 版本: 5.7.0, `moreIcon` and `addIcon`: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的tag属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的tag属性如何使用？
 
 参数: tag
 
@@ -20116,7 +20116,7 @@ Version: 4.24
 
 版本: 5.7.0, closeIcon: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的timeline属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的timeline属性如何使用？
 
 参数: timeline
 
@@ -20128,7 +20128,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的timePicker属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的timePicker属性如何使用？
 
 参数: timePicker
 
@@ -20140,7 +20140,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的tour属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的tour属性如何使用？
 
 参数: tour
 
@@ -20152,7 +20152,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的transfer属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的transfer属性如何使用？
 
 参数: transfer
 
@@ -20164,7 +20164,7 @@ Version: 4.24
 
 版本: 5.7.0, selectionsIcon: 5.14.0
 
-### ant-design 中 Config-provider - 组件配置的tree属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的tree属性如何使用？
 
 参数: tree
 
@@ -20176,7 +20176,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的typography属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的typography属性如何使用？
 
 参数: typography
 
@@ -20188,7 +20188,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的upload属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的upload属性如何使用？
 
 参数: upload
 
@@ -20200,7 +20200,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Config-provider - 组件配置的wave属性如何使用？
+### ant-design 中 ConfigProvider - ConfigProvider的wave属性如何使用？
 
 参数: wave
 
@@ -20212,9 +20212,9 @@ Version: 4.24
 
 版本: 5.8.0
 
-### ant-design 的 Color-picker 有哪些配置？
+### ant-design 的 ColorPicker 有哪些配置？
 
-#### Color-picker - API
+#### ColorPicker - ColorPicker
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -20241,7 +20241,7 @@ Version: 4.24
 | onOpenChange | 当 `open` 被改变时的回调 | `(open: boolean) => void` | - |
 | onClear | 清除的回调 | `() => void` | - | 5.6.0 |
 
-#### Color-picker - Color
+#### ColorPicker - Color
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -20252,7 +20252,7 @@ Version: 4.24
 | toRgb | 转换成 `rgb` 对象 | `() => ({ r: number, g: number, b: number, a number })` | - |
 | toRgbString | 转换成 `rgb` 格式颜色字符串，返回格式如：`rgb(22, 119, 255)` | `() => string` | - |
 
-### ant-design 的 Color-picker - API 有哪些配置？
+### ant-design 的 ColorPicker - ColorPicker 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
@@ -20279,7 +20279,7 @@ Version: 4.24
 | onOpenChange | 当 `open` 被改变时的回调 | `(open: boolean) => void` | - |
 | onClear | 清除的回调 | `() => void` | - | 5.6.0 |
 
-### ant-design 中 Color-picker - API的allowClear属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的allowClear属性如何使用？
 
 参数: allowClear
 
@@ -20289,7 +20289,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Color-picker - API的arrow属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的arrow属性如何使用？
 
 参数: arrow
 
@@ -20299,7 +20299,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Color-picker - API的children属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的children属性如何使用？
 
 参数: children
 
@@ -20309,7 +20309,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - API的defaultValue属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -20319,7 +20319,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - API的defaultFormat属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的defaultFormat属性如何使用？
 
 参数: defaultFormat
 
@@ -20331,7 +20331,7 @@ Version: 4.24
 
 版本: 5.9.0
 
-### ant-design 中 Color-picker - API的disabled属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的disabled属性如何使用？
 
 参数: disabled
 
@@ -20341,7 +20341,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - API的disabledAlpha属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的disabledAlpha属性如何使用？
 
 参数: disabledAlpha
 
@@ -20353,7 +20353,7 @@ Version: 4.24
 
 版本: 5.8.0
 
-### ant-design 中 Color-picker - API的destroyTooltipOnHide属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的destroyTooltipOnHide属性如何使用？
 
 参数: destroyTooltipOnHide
 
@@ -20365,7 +20365,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Color-picker - API的format属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的format属性如何使用？
 
 参数: format
 
@@ -20375,7 +20375,7 @@ Version: 4.24
 
 默认值: `hex`
 
-### ant-design 中 Color-picker - API的open属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的open属性如何使用？
 
 参数: open
 
@@ -20385,7 +20385,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - API的presets属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的presets属性如何使用？
 
 参数: presets
 
@@ -20397,7 +20397,7 @@ Version: 4.24
 
 版本: `defaultOpen: 5.11.0`
 
-### ant-design 中 Color-picker - API的placement属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的placement属性如何使用？
 
 参数: placement
 
@@ -20407,7 +20407,7 @@ Version: 4.24
 
 默认值: `bottomLeft`
 
-### ant-design 中 Color-picker - API的panelRender属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的panelRender属性如何使用？
 
 参数: panelRender
 
@@ -20419,7 +20419,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Color-picker - API的showText属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的showText属性如何使用？
 
 参数: showText
 
@@ -20431,7 +20431,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Color-picker - API的size属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的size属性如何使用？
 
 参数: size
 
@@ -20443,7 +20443,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Color-picker - API的trigger属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的trigger属性如何使用？
 
 参数: trigger
 
@@ -20453,7 +20453,7 @@ Version: 4.24
 
 默认值: `click`
 
-### ant-design 中 Color-picker - API的value属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的value属性如何使用？
 
 参数: value
 
@@ -20463,7 +20463,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - API的onChange属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的onChange属性如何使用？
 
 参数: onChange
 
@@ -20473,7 +20473,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - API的onChangeComplete属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的onChangeComplete属性如何使用？
 
 参数: onChangeComplete
 
@@ -20485,7 +20485,7 @@ Version: 4.24
 
 版本: 5.7.0
 
-### ant-design 中 Color-picker - API的onFormatChange属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的onFormatChange属性如何使用？
 
 参数: onFormatChange
 
@@ -20495,7 +20495,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - API的onOpenChange属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的onOpenChange属性如何使用？
 
 参数: onOpenChange
 
@@ -20505,7 +20505,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - API的onClear属性如何使用？
+### ant-design 中 ColorPicker - ColorPicker的onClear属性如何使用？
 
 参数: onClear
 
@@ -20517,7 +20517,7 @@ Version: 4.24
 
 版本: 5.6.0
 
-### ant-design 的 Color-picker - Color 有哪些配置？
+### ant-design 的 ColorPicker - Color 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -20528,7 +20528,7 @@ Version: 4.24
 | toRgb | 转换成 `rgb` 对象 | `() => ({ r: number, g: number, b: number, a number })` | - |
 | toRgbString | 转换成 `rgb` 格式颜色字符串，返回格式如：`rgb(22, 119, 255)` | `() => string` | - |
 
-### ant-design 中 Color-picker - Color的toHex属性如何使用？
+### ant-design 中 ColorPicker - Color的toHex属性如何使用？
 
 参数: toHex
 
@@ -20538,7 +20538,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - Color的toHexString属性如何使用？
+### ant-design 中 ColorPicker - Color的toHexString属性如何使用？
 
 参数: toHexString
 
@@ -20548,7 +20548,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - Color的toHsb属性如何使用？
+### ant-design 中 ColorPicker - Color的toHsb属性如何使用？
 
 参数: toHsb
 
@@ -20558,7 +20558,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - Color的toHsbString属性如何使用？
+### ant-design 中 ColorPicker - Color的toHsbString属性如何使用？
 
 参数: toHsbString
 
@@ -20568,7 +20568,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - Color的toRgb属性如何使用？
+### ant-design 中 ColorPicker - Color的toRgb属性如何使用？
 
 参数: toRgb
 
@@ -20578,7 +20578,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Color-picker - Color的toRgbString属性如何使用？
+### ant-design 中 ColorPicker - Color的toRgbString属性如何使用？
 
 参数: toRgbString
 
@@ -21030,7 +21030,7 @@ Version: 4.24
 
 ### ant-design 的 Cascader 有哪些配置？
 
-#### Cascader - API
+#### Cascader - Cascader
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -21091,7 +21091,7 @@ Version: 4.24
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 的 Cascader - API 有哪些配置？
+### ant-design 的 Cascader - Cascader 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -21135,7 +21135,7 @@ Version: 4.24
 | onSearch | 监听搜索，返回输入的值 | (search: string) => void | - | 4.17.0 |
 | dropdownMenuColumnStyle | 下拉菜单列的样式 | CSSProperties | - |
 
-### ant-design 中 Cascader - API的allowClear属性如何使用？
+### ant-design 中 Cascader - Cascader的allowClear属性如何使用？
 
 参数: allowClear
 
@@ -21147,7 +21147,7 @@ Version: 4.24
 
 版本: 5.8.0: 支持对象形式
 
-### ant-design 中 Cascader - API的autoClearSearchValue属性如何使用？
+### ant-design 中 Cascader - Cascader的autoClearSearchValue属性如何使用？
 
 参数: autoClearSearchValue
 
@@ -21159,7 +21159,7 @@ Version: 4.24
 
 版本: 5.9.0
 
-### ant-design 中 Cascader - API的autoFocus属性如何使用？
+### ant-design 中 Cascader - Cascader的autoFocus属性如何使用？
 
 参数: autoFocus
 
@@ -21169,7 +21169,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Cascader - API的changeOnSelect属性如何使用？
+### ant-design 中 Cascader - Cascader的changeOnSelect属性如何使用？
 
 参数: changeOnSelect
 
@@ -21179,7 +21179,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Cascader - API的className属性如何使用？
+### ant-design 中 Cascader - Cascader的className属性如何使用？
 
 参数: className
 
@@ -21189,7 +21189,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Cascader - API的defaultValue属性如何使用？
+### ant-design 中 Cascader - Cascader的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -21199,7 +21199,7 @@ Version: 4.24
 
 默认值: \[]
 
-### ant-design 中 Cascader - API的disabled属性如何使用？
+### ant-design 中 Cascader - Cascader的disabled属性如何使用？
 
 参数: disabled
 
@@ -21209,7 +21209,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Cascader - API的displayRender属性如何使用？
+### ant-design 中 Cascader - Cascader的displayRender属性如何使用？
 
 参数: displayRender
 
@@ -21221,7 +21221,7 @@ Version: 4.24
 
 版本: `multiple`: 4.18.0
 
-### ant-design 中 Cascader - API的tagRender属性如何使用？
+### ant-design 中 Cascader - Cascader的tagRender属性如何使用？
 
 参数: tagRender
 
@@ -21231,7 +21231,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Cascader - API的popupClassName属性如何使用？
+### ant-design 中 Cascader - Cascader的popupClassName属性如何使用？
 
 参数: popupClassName
 
@@ -21243,7 +21243,7 @@ Version: 4.24
 
 版本: 4.23.0
 
-### ant-design 中 Cascader - API的dropdownRender属性如何使用？
+### ant-design 中 Cascader - Cascader的dropdownRender属性如何使用？
 
 参数: dropdownRender
 
@@ -21255,7 +21255,7 @@ Version: 4.24
 
 版本: 4.4.0
 
-### ant-design 中 Cascader - API的expandIcon属性如何使用？
+### ant-design 中 Cascader - Cascader的expandIcon属性如何使用？
 
 参数: expandIcon
 
@@ -21267,7 +21267,7 @@ Version: 4.24
 
 版本: 4.4.0
 
-### ant-design 中 Cascader - API的expandTrigger属性如何使用？
+### ant-design 中 Cascader - Cascader的expandTrigger属性如何使用？
 
 参数: expandTrigger
 
@@ -21277,7 +21277,7 @@ Version: 4.24
 
 默认值: `click`
 
-### ant-design 中 Cascader - API的fieldNames属性如何使用？
+### ant-design 中 Cascader - Cascader的fieldNames属性如何使用？
 
 参数: fieldNames
 
@@ -21287,7 +21287,7 @@ Version: 4.24
 
 默认值: { label: `label`, value: `value`, children: `children` }
 
-### ant-design 中 Cascader - API的getPopupContainer属性如何使用？
+### ant-design 中 Cascader - Cascader的getPopupContainer属性如何使用？
 
 参数: getPopupContainer
 
@@ -21297,7 +21297,7 @@ Version: 4.24
 
 默认值: () => document.body
 
-### ant-design 中 Cascader - API的loadData属性如何使用？
+### ant-design 中 Cascader - Cascader的loadData属性如何使用？
 
 参数: loadData
 
@@ -21307,7 +21307,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Cascader - API的maxTagCount属性如何使用？
+### ant-design 中 Cascader - Cascader的maxTagCount属性如何使用？
 
 参数: maxTagCount
 
@@ -21319,7 +21319,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的maxTagPlaceholder属性如何使用？
+### ant-design 中 Cascader - Cascader的maxTagPlaceholder属性如何使用？
 
 参数: maxTagPlaceholder
 
@@ -21331,7 +21331,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的maxTagTextLength属性如何使用？
+### ant-design 中 Cascader - Cascader的maxTagTextLength属性如何使用？
 
 参数: maxTagTextLength
 
@@ -21343,7 +21343,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的notFoundContent属性如何使用？
+### ant-design 中 Cascader - Cascader的notFoundContent属性如何使用？
 
 参数: notFoundContent
 
@@ -21353,7 +21353,7 @@ Version: 4.24
 
 默认值: `Not Found`
 
-### ant-design 中 Cascader - API的open属性如何使用？
+### ant-design 中 Cascader - Cascader的open属性如何使用？
 
 参数: open
 
@@ -21365,7 +21365,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的options属性如何使用？
+### ant-design 中 Cascader - Cascader的options属性如何使用？
 
 参数: options
 
@@ -21373,7 +21373,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Cascader - API的placeholder属性如何使用？
+### ant-design 中 Cascader - Cascader的placeholder属性如何使用？
 
 参数: placeholder
 
@@ -21383,7 +21383,7 @@ Version: 4.24
 
 默认值: `请选择`
 
-### ant-design 中 Cascader - API的placement属性如何使用？
+### ant-design 中 Cascader - Cascader的placement属性如何使用？
 
 参数: placement
 
@@ -21395,7 +21395,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的showSearch属性如何使用？
+### ant-design 中 Cascader - Cascader的showSearch属性如何使用？
 
 参数: showSearch
 
@@ -21405,7 +21405,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Cascader - API的size属性如何使用？
+### ant-design 中 Cascader - Cascader的size属性如何使用？
 
 参数: size
 
@@ -21415,7 +21415,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Cascader - API的status属性如何使用？
+### ant-design 中 Cascader - Cascader的status属性如何使用？
 
 参数: status
 
@@ -21427,7 +21427,7 @@ Version: 4.24
 
 版本: 4.19.0
 
-### ant-design 中 Cascader - API的style属性如何使用？
+### ant-design 中 Cascader - Cascader的style属性如何使用？
 
 参数: style
 
@@ -21437,7 +21437,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Cascader - API的suffixIcon属性如何使用？
+### ant-design 中 Cascader - Cascader的suffixIcon属性如何使用？
 
 参数: suffixIcon
 
@@ -21447,7 +21447,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Cascader - API的value属性如何使用？
+### ant-design 中 Cascader - Cascader的value属性如何使用？
 
 参数: value
 
@@ -21457,7 +21457,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Cascader - API的variant属性如何使用？
+### ant-design 中 Cascader - Cascader的variant属性如何使用？
 
 参数: variant
 
@@ -21469,7 +21469,7 @@ Version: 4.24
 
 版本: 5.13.0
 
-### ant-design 中 Cascader - API的onChange属性如何使用？
+### ant-design 中 Cascader - Cascader的onChange属性如何使用？
 
 参数: onChange
 
@@ -21479,7 +21479,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Cascader - API的onDropdownVisibleChange属性如何使用？
+### ant-design 中 Cascader - Cascader的onDropdownVisibleChange属性如何使用？
 
 参数: onDropdownVisibleChange
 
@@ -21491,7 +21491,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的multiple属性如何使用？
+### ant-design 中 Cascader - Cascader的multiple属性如何使用？
 
 参数: multiple
 
@@ -21503,7 +21503,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的showCheckedStrategy属性如何使用？
+### ant-design 中 Cascader - Cascader的showCheckedStrategy属性如何使用？
 
 参数: showCheckedStrategy
 
@@ -21515,7 +21515,7 @@ Version: 4.24
 
 版本: 4.20.0
 
-### ant-design 中 Cascader - API的removeIcon属性如何使用？
+### ant-design 中 Cascader - Cascader的removeIcon属性如何使用？
 
 参数: removeIcon
 
@@ -21525,7 +21525,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Cascader - API的searchValue属性如何使用？
+### ant-design 中 Cascader - Cascader的searchValue属性如何使用？
 
 参数: searchValue
 
@@ -21537,7 +21537,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的onSearch属性如何使用？
+### ant-design 中 Cascader - Cascader的onSearch属性如何使用？
 
 参数: onSearch
 
@@ -21549,7 +21549,7 @@ Version: 4.24
 
 版本: 4.17.0
 
-### ant-design 中 Cascader - API的dropdownMenuColumnStyle属性如何使用？
+### ant-design 中 Cascader - Cascader的dropdownMenuColumnStyle属性如何使用？
 
 参数: dropdownMenuColumnStyle
 
@@ -21640,7 +21640,7 @@ Version: 4.24
 
 ### ant-design 的 Carousel 有哪些配置？
 
-#### Carousel - API
+#### Carousel - Carousel
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -21665,7 +21665,7 @@ Version: 4.24
 | next() | 切换到下一面板 |
 | prev() | 切换到上一面板 |
 
-### ant-design 的 Carousel - API 有哪些配置？
+### ant-design 的 Carousel - Carousel 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -21682,7 +21682,7 @@ Version: 4.24
 | beforeChange | 切换面板的回调 | (current: number, next: number) => void | - |
 | waitForAnimate | 是否等待切换动画 | boolean | false |
 
-### ant-design 中 Carousel - API的autoplay属性如何使用？
+### ant-design 中 Carousel - Carousel的autoplay属性如何使用？
 
 参数: autoplay
 
@@ -21692,7 +21692,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Carousel - API的autoplaySpeed属性如何使用？
+### ant-design 中 Carousel - Carousel的autoplaySpeed属性如何使用？
 
 参数: autoplaySpeed
 
@@ -21702,7 +21702,7 @@ Version: 4.24
 
 默认值: 3000
 
-### ant-design 中 Carousel - API的dotPosition属性如何使用？
+### ant-design 中 Carousel - Carousel的dotPosition属性如何使用？
 
 参数: dotPosition
 
@@ -21712,7 +21712,7 @@ Version: 4.24
 
 默认值: `bottom`
 
-### ant-design 中 Carousel - API的dots属性如何使用？
+### ant-design 中 Carousel - Carousel的dots属性如何使用？
 
 参数: dots
 
@@ -21722,7 +21722,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Carousel - API的fade属性如何使用？
+### ant-design 中 Carousel - Carousel的fade属性如何使用？
 
 参数: fade
 
@@ -21732,7 +21732,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Carousel - API的infinite属性如何使用？
+### ant-design 中 Carousel - Carousel的infinite属性如何使用？
 
 参数: infinite
 
@@ -21742,7 +21742,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Carousel - API的speed属性如何使用？
+### ant-design 中 Carousel - Carousel的speed属性如何使用？
 
 参数: speed
 
@@ -21752,7 +21752,7 @@ Version: 4.24
 
 默认值: 500
 
-### ant-design 中 Carousel - API的easing属性如何使用？
+### ant-design 中 Carousel - Carousel的easing属性如何使用？
 
 参数: easing
 
@@ -21762,7 +21762,7 @@ Version: 4.24
 
 默认值: `linear`
 
-### ant-design 中 Carousel - API的effect属性如何使用？
+### ant-design 中 Carousel - Carousel的effect属性如何使用？
 
 参数: effect
 
@@ -21772,7 +21772,7 @@ Version: 4.24
 
 默认值: `scrollx`
 
-### ant-design 中 Carousel - API的afterChange属性如何使用？
+### ant-design 中 Carousel - Carousel的afterChange属性如何使用？
 
 参数: afterChange
 
@@ -21782,7 +21782,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Carousel - API的beforeChange属性如何使用？
+### ant-design 中 Carousel - Carousel的beforeChange属性如何使用？
 
 参数: beforeChange
 
@@ -21792,7 +21792,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Carousel - API的waitForAnimate属性如何使用？
+### ant-design 中 Carousel - Carousel的waitForAnimate属性如何使用？
 
 参数: waitForAnimate
 
@@ -21870,7 +21870,7 @@ Version: 4.24
 | style       | 定义容器类名的样式 | CSSProperties | -      |
 | title       | 标题内容           | ReactNode     | -      |
 
-#### Card - `styles`
+#### Card - Card
 
 | 名称    | 说明                     | 版本   |
 | ------- | ------------------------ | ------ |
@@ -22171,7 +22171,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 的 Card - `styles` 有哪些配置？
+### ant-design 的 Card - Card 有哪些配置？
 
 | 名称    | 说明                     | 版本   |
 | ------- | ------------------------ | ------ |
@@ -22182,7 +22182,7 @@ Version: 4.24
 | actions | 设置卡片底部操作组       | 5.14.0 |
 | cover   | 设置标题封面             | 5.14.0 |
 
-### ant-design 中 Card - `styles`的header属性如何使用？
+### ant-design 中 Card - Card的header属性如何使用？
 
 名称: header
 
@@ -22190,7 +22190,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Card - `styles`的body属性如何使用？
+### ant-design 中 Card - Card的body属性如何使用？
 
 名称: body
 
@@ -22198,7 +22198,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Card - `styles`的extra属性如何使用？
+### ant-design 中 Card - Card的extra属性如何使用？
 
 名称: extra
 
@@ -22206,7 +22206,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Card - `styles`的title属性如何使用？
+### ant-design 中 Card - Card的title属性如何使用？
 
 名称: title
 
@@ -22214,7 +22214,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Card - `styles`的actions属性如何使用？
+### ant-design 中 Card - Card的actions属性如何使用？
 
 名称: actions
 
@@ -22222,7 +22222,7 @@ Version: 4.24
 
 版本: 5.14.0
 
-### ant-design 中 Card - `styles`的cover属性如何使用？
+### ant-design 中 Card - Card的cover属性如何使用？
 
 名称: cover
 
@@ -22232,7 +22232,7 @@ Version: 4.24
 
 ### ant-design 的 Calendar 有哪些配置？
 
-#### Calendar - API
+#### Calendar - Calendar
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -22256,7 +22256,7 @@ Version: 4.24
 | onPanelChange | 日期面板变化回调 | function(date: Dayjs, mode: string) | - |
 | onSelect | 选择日期回调，包含来源信息 | function(date: Dayjs, info: { source: 'year' \| 'month' \| 'date' \| 'customize' }) | - | `info`: 5.6.0 |
 
-### ant-design 的 Calendar - API 有哪些配置？
+### ant-design 的 Calendar - Calendar 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -22280,7 +22280,7 @@ Version: 4.24
 | onPanelChange | 日期面板变化回调 | function(date: Dayjs, mode: string) | - |
 | onSelect | 选择日期回调，包含来源信息 | function(date: Dayjs, info: { source: 'year' \| 'month' \| 'date' \| 'customize' }) | - | `info`: 5.6.0 |
 
-### ant-design 中 Calendar - API的dateCellRender属性如何使用？
+### ant-design 中 Calendar - Calendar的dateCellRender属性如何使用？
 
 参数: dateCellRender
 
@@ -22292,7 +22292,7 @@ Version: 4.24
 
 版本: < 5.4.0
 
-### ant-design 中 Calendar - API的cellRender属性如何使用？
+### ant-design 中 Calendar - Calendar的cellRender属性如何使用？
 
 参数: cellRender
 
@@ -22304,7 +22304,7 @@ Version: 4.24
 
 版本: 5.4.0
 
-### ant-design 中 Calendar - API的dateFullCellRender属性如何使用？
+### ant-design 中 Calendar - Calendar的dateFullCellRender属性如何使用？
 
 参数: dateFullCellRender
 
@@ -22316,7 +22316,7 @@ Version: 4.24
 
 版本: < 5.4.0
 
-### ant-design 中 Calendar - API的fullCellRender属性如何使用？
+### ant-design 中 Calendar - Calendar的fullCellRender属性如何使用？
 
 参数: fullCellRender
 
@@ -22328,7 +22328,7 @@ Version: 4.24
 
 版本: 5.4.0
 
-### ant-design 中 Calendar - API的defaultValue属性如何使用？
+### ant-design 中 Calendar - Calendar的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -22336,7 +22336,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Calendar - API的disabledDate属性如何使用？
+### ant-design 中 Calendar - Calendar的disabledDate属性如何使用？
 
 参数: disabledDate
 
@@ -22346,7 +22346,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Calendar - API的fullscreen属性如何使用？
+### ant-design 中 Calendar - Calendar的fullscreen属性如何使用？
 
 参数: fullscreen
 
@@ -22356,7 +22356,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Calendar - API的headerRender属性如何使用？
+### ant-design 中 Calendar - Calendar的headerRender属性如何使用？
 
 参数: headerRender
 
@@ -22366,7 +22366,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Calendar - API的locale属性如何使用？
+### ant-design 中 Calendar - Calendar的locale属性如何使用？
 
 参数: locale
 
@@ -22374,7 +22374,7 @@ Version: 4.24
 
 类型: object
 
-### ant-design 中 Calendar - API的mode属性如何使用？
+### ant-design 中 Calendar - Calendar的mode属性如何使用？
 
 参数: mode
 
@@ -22384,7 +22384,7 @@ Version: 4.24
 
 默认值: `month`
 
-### ant-design 中 Calendar - API的monthCellRender属性如何使用？
+### ant-design 中 Calendar - Calendar的monthCellRender属性如何使用？
 
 参数: monthCellRender
 
@@ -22396,7 +22396,7 @@ Version: 4.24
 
 版本: < 5.4.0
 
-### ant-design 中 Calendar - API的cellRender属性如何使用？
+### ant-design 中 Calendar - Calendar的cellRender属性如何使用？
 
 参数: cellRender
 
@@ -22408,7 +22408,7 @@ Version: 4.24
 
 版本: 5.4.0
 
-### ant-design 中 Calendar - API的monthFullCellRender属性如何使用？
+### ant-design 中 Calendar - Calendar的monthFullCellRender属性如何使用？
 
 参数: monthFullCellRender
 
@@ -22420,7 +22420,7 @@ Version: 4.24
 
 版本: < 5.4.0
 
-### ant-design 中 Calendar - API的fullCellRender属性如何使用？
+### ant-design 中 Calendar - Calendar的fullCellRender属性如何使用？
 
 参数: fullCellRender
 
@@ -22432,7 +22432,7 @@ Version: 4.24
 
 版本: 5.4.0
 
-### ant-design 中 Calendar - API的validRange属性如何使用？
+### ant-design 中 Calendar - Calendar的validRange属性如何使用？
 
 参数: validRange
 
@@ -22442,7 +22442,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Calendar - API的value属性如何使用？
+### ant-design 中 Calendar - Calendar的value属性如何使用？
 
 参数: value
 
@@ -22450,7 +22450,7 @@ Version: 4.24
 
 类型: -
 
-### ant-design 中 Calendar - API的onChange属性如何使用？
+### ant-design 中 Calendar - Calendar的onChange属性如何使用？
 
 参数: onChange
 
@@ -22460,7 +22460,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Calendar - API的onPanelChange属性如何使用？
+### ant-design 中 Calendar - Calendar的onPanelChange属性如何使用？
 
 参数: onPanelChange
 
@@ -22470,7 +22470,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Calendar - API的onSelect属性如何使用？
+### ant-design 中 Calendar - Calendar的onSelect属性如何使用？
 
 参数: onSelect
 
@@ -22484,7 +22484,7 @@ Version: 4.24
 
 ### ant-design 的 Button 有哪些配置？
 
-#### Button - API
+#### Button - Button
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -22504,7 +22504,7 @@ Version: 4.24
 | type | 设置按钮类型 | `primary` \| `dashed` \| `link` \| `text` \| `default` | `default` |
 | onClick | 点击按钮时的回调 | (event: MouseEvent) => void | - |
 
-### ant-design 的 Button - API 有哪些配置？
+### ant-design 的 Button - Button 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -22524,7 +22524,7 @@ Version: 4.24
 | type | 设置按钮类型 | `primary` \| `dashed` \| `link` \| `text` \| `default` | `default` |
 | onClick | 点击按钮时的回调 | (event: MouseEvent) => void | - |
 
-### ant-design 中 Button - API的block属性如何使用？
+### ant-design 中 Button - Button的block属性如何使用？
 
 属性: block
 
@@ -22534,7 +22534,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Button - API的classNames属性如何使用？
+### ant-design 中 Button - Button的classNames属性如何使用？
 
 属性: classNames
 
@@ -22544,7 +22544,7 @@ Version: 4.24
 
 默认值: 5.4.0
 
-### ant-design 中 Button - API的danger属性如何使用？
+### ant-design 中 Button - Button的danger属性如何使用？
 
 属性: danger
 
@@ -22554,7 +22554,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Button - API的disabled属性如何使用？
+### ant-design 中 Button - Button的disabled属性如何使用？
 
 属性: disabled
 
@@ -22564,7 +22564,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Button - API的ghost属性如何使用？
+### ant-design 中 Button - Button的ghost属性如何使用？
 
 属性: ghost
 
@@ -22574,7 +22574,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Button - API的href属性如何使用？
+### ant-design 中 Button - Button的href属性如何使用？
 
 属性: href
 
@@ -22584,7 +22584,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Button - API的htmlType属性如何使用？
+### ant-design 中 Button - Button的htmlType属性如何使用？
 
 属性: htmlType
 
@@ -22594,7 +22594,7 @@ Version: 4.24
 
 默认值: `button`
 
-### ant-design 中 Button - API的icon属性如何使用？
+### ant-design 中 Button - Button的icon属性如何使用？
 
 属性: icon
 
@@ -22604,7 +22604,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Button - API的loading属性如何使用？
+### ant-design 中 Button - Button的loading属性如何使用？
 
 属性: loading
 
@@ -22614,7 +22614,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Button - API的shape属性如何使用？
+### ant-design 中 Button - Button的shape属性如何使用？
 
 属性: shape
 
@@ -22624,7 +22624,7 @@ Version: 4.24
 
 默认值: `default`
 
-### ant-design 中 Button - API的size属性如何使用？
+### ant-design 中 Button - Button的size属性如何使用？
 
 属性: size
 
@@ -22634,7 +22634,7 @@ Version: 4.24
 
 默认值: `middle`
 
-### ant-design 中 Button - API的styles属性如何使用？
+### ant-design 中 Button - Button的styles属性如何使用？
 
 属性: styles
 
@@ -22644,7 +22644,7 @@ Version: 4.24
 
 默认值: 5.4.0
 
-### ant-design 中 Button - API的target属性如何使用？
+### ant-design 中 Button - Button的target属性如何使用？
 
 属性: target
 
@@ -22654,7 +22654,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Button - API的type属性如何使用？
+### ant-design 中 Button - Button的type属性如何使用？
 
 属性: type
 
@@ -22664,7 +22664,7 @@ Version: 4.24
 
 默认值: `default`
 
-### ant-design 中 Button - API的onClick属性如何使用？
+### ant-design 中 Button - Button的onClick属性如何使用？
 
 属性: onClick
 
@@ -23296,9 +23296,9 @@ Version: 4.24
 
 版本: 5.8.0
 
-### ant-design 的 Auto-complete 有哪些配置？
+### ant-design 的 AutoComplete 有哪些配置？
 
-#### Auto-complete - API
+#### AutoComplete - AutoComplete
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -23331,14 +23331,14 @@ Version: 4.24
 | onSelect | 被选中时调用，参数为选中项的 value 值 | function(value, option) | - |
 | onClear | 清除内容时的回调 | function | - | 4.6.0 |
 
-#### Auto-complete - 方法
+#### AutoComplete - 方法
 
 | 名称    | 描述     |
 | ------- | -------- |
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 的 Auto-complete - API 有哪些配置？
+### ant-design 的 AutoComplete - AutoComplete 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -23371,7 +23371,7 @@ Version: 4.24
 | onSelect | 被选中时调用，参数为选中项的 value 值 | function(value, option) | - |
 | onClear | 清除内容时的回调 | function | - | 4.6.0 |
 
-### ant-design 中 Auto-complete - API的allowClear属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的allowClear属性如何使用？
 
 参数: allowClear
 
@@ -23383,7 +23383,7 @@ Version: 4.24
 
 版本: 5.8.0: 支持对象形式
 
-### ant-design 中 Auto-complete - API的autoFocus属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的autoFocus属性如何使用？
 
 参数: autoFocus
 
@@ -23393,7 +23393,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Auto-complete - API的backfill属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的backfill属性如何使用？
 
 参数: backfill
 
@@ -23403,7 +23403,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Auto-complete - API的children (自动完成的数据源)属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的children (自动完成的数据源)属性如何使用？
 
 参数: children (自动完成的数据源)
 
@@ -23413,7 +23413,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的children (自定义输入框)属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的children (自定义输入框)属性如何使用？
 
 参数: children (自定义输入框)
 
@@ -23423,7 +23423,7 @@ Version: 4.24
 
 默认值: \<Input />
 
-### ant-design 中 Auto-complete - API的defaultActiveFirstOption属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的defaultActiveFirstOption属性如何使用？
 
 参数: defaultActiveFirstOption
 
@@ -23433,7 +23433,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Auto-complete - API的defaultOpen属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的defaultOpen属性如何使用？
 
 参数: defaultOpen
 
@@ -23443,7 +23443,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的defaultValue属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的defaultValue属性如何使用？
 
 参数: defaultValue
 
@@ -23453,7 +23453,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的disabled属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的disabled属性如何使用？
 
 参数: disabled
 
@@ -23463,7 +23463,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Auto-complete - API的dropdownRender属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的dropdownRender属性如何使用？
 
 参数: dropdownRender
 
@@ -23475,7 +23475,7 @@ Version: 4.24
 
 版本: 4.24.0
 
-### ant-design 中 Auto-complete - API的popupClassName属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的popupClassName属性如何使用？
 
 参数: popupClassName
 
@@ -23487,7 +23487,7 @@ Version: 4.24
 
 版本: 4.23.0
 
-### ant-design 中 Auto-complete - API的dropdownMatchSelectWidth属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的dropdownMatchSelectWidth属性如何使用？
 
 参数: dropdownMatchSelectWidth
 
@@ -23497,7 +23497,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Auto-complete - API的filterOption属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的filterOption属性如何使用？
 
 参数: filterOption
 
@@ -23507,7 +23507,7 @@ Version: 4.24
 
 默认值: true
 
-### ant-design 中 Auto-complete - API的getPopupContainer属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的getPopupContainer属性如何使用？
 
 参数: getPopupContainer
 
@@ -23517,7 +23517,7 @@ Version: 4.24
 
 默认值: () => document.body
 
-### ant-design 中 Auto-complete - API的notFoundContent属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的notFoundContent属性如何使用？
 
 参数: notFoundContent
 
@@ -23527,7 +23527,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的open属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的open属性如何使用？
 
 参数: open
 
@@ -23537,7 +23537,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的options属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的options属性如何使用？
 
 参数: options
 
@@ -23547,7 +23547,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的placeholder属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的placeholder属性如何使用？
 
 参数: placeholder
 
@@ -23557,7 +23557,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的status属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的status属性如何使用？
 
 参数: status
 
@@ -23569,7 +23569,7 @@ Version: 4.24
 
 版本: 4.19.0
 
-### ant-design 中 Auto-complete - API的value属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的value属性如何使用？
 
 参数: value
 
@@ -23579,7 +23579,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的variant属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的variant属性如何使用？
 
 参数: variant
 
@@ -23591,7 +23591,7 @@ Version: 4.24
 
 版本: 5.13.0
 
-### ant-design 中 Auto-complete - API的onBlur属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的onBlur属性如何使用？
 
 参数: onBlur
 
@@ -23601,7 +23601,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的onChange属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的onChange属性如何使用？
 
 参数: onChange
 
@@ -23611,7 +23611,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的onDropdownVisibleChange属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的onDropdownVisibleChange属性如何使用？
 
 参数: onDropdownVisibleChange
 
@@ -23621,7 +23621,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的onFocus属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的onFocus属性如何使用？
 
 参数: onFocus
 
@@ -23631,7 +23631,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的onSearch属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的onSearch属性如何使用？
 
 参数: onSearch
 
@@ -23641,7 +23641,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的onSelect属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的onSelect属性如何使用？
 
 参数: onSelect
 
@@ -23651,7 +23651,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Auto-complete - API的onClear属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的onClear属性如何使用？
 
 参数: onClear
 
@@ -23663,20 +23663,20 @@ Version: 4.24
 
 版本: 4.6.0
 
-### ant-design 的 Auto-complete - 方法 有哪些配置？
+### ant-design 的 AutoComplete - 方法 有哪些配置？
 
 | 名称    | 描述     |
 | ------- | -------- |
 | blur()  | 移除焦点 |
 | focus() | 获取焦点 |
 
-### ant-design 中 Auto-complete - 方法的blur()属性如何使用？
+### ant-design 中 AutoComplete - 方法的blur()属性如何使用？
 
 名称: blur()
 
 描述: 移除焦点
 
-### ant-design 中 Auto-complete - 方法的focus()属性如何使用？
+### ant-design 中 AutoComplete - 方法的focus()属性如何使用？
 
 名称: focus()
 
@@ -24022,7 +24022,7 @@ Version: 4.24
 
 ### ant-design 的 Alert 有哪些配置？
 
-#### Alert - API
+#### Alert - Alert
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -24044,7 +24044,7 @@ Version: 4.24
 | description | 自定义错误内容，如果未指定会展示报错堆栈 | ReactNode | {{ error stack }} |
 | message | 自定义错误标题，如果未指定会展示原生报错信息 | ReactNode | {{ error }} |
 
-### ant-design 的 Alert - API 有哪些配置？
+### ant-design 的 Alert - Alert 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
@@ -24059,7 +24059,7 @@ Version: 4.24
 | type | 指定警告提示的样式，有四种选择 `success`、`info`、`warning`、`error` | string | `info`，`banner` 模式下默认值为 `warning` |
 | onClose | 关闭时触发的回调函数 | (e: MouseEvent) => void | - |
 
-### ant-design 中 Alert - API的action属性如何使用？
+### ant-design 中 Alert - Alert的action属性如何使用？
 
 参数: action
 
@@ -24071,7 +24071,7 @@ Version: 4.24
 
 版本: 4.9.0
 
-### ant-design 中 Alert - API的afterClose属性如何使用？
+### ant-design 中 Alert - Alert的afterClose属性如何使用？
 
 参数: afterClose
 
@@ -24081,7 +24081,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Alert - API的banner属性如何使用？
+### ant-design 中 Alert - Alert的banner属性如何使用？
 
 参数: banner
 
@@ -24091,7 +24091,7 @@ Version: 4.24
 
 默认值: false
 
-### ant-design 中 Alert - API的closeIcon属性如何使用？
+### ant-design 中 Alert - Alert的closeIcon属性如何使用？
 
 参数: closeIcon
 
@@ -24101,7 +24101,7 @@ Version: 4.24
 
 默认值: `<CloseOutlined />`
 
-### ant-design 中 Alert - API的description属性如何使用？
+### ant-design 中 Alert - Alert的description属性如何使用？
 
 参数: description
 
@@ -24111,7 +24111,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Alert - API的icon属性如何使用？
+### ant-design 中 Alert - Alert的icon属性如何使用？
 
 参数: icon
 
@@ -24121,7 +24121,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Alert - API的message属性如何使用？
+### ant-design 中 Alert - Alert的message属性如何使用？
 
 参数: message
 
@@ -24131,7 +24131,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Alert - API的showIcon属性如何使用？
+### ant-design 中 Alert - Alert的showIcon属性如何使用？
 
 参数: showIcon
 
@@ -24141,7 +24141,7 @@ Version: 4.24
 
 默认值: false，`banner` 模式下默认值为 true
 
-### ant-design 中 Alert - API的type属性如何使用？
+### ant-design 中 Alert - Alert的type属性如何使用？
 
 参数: type
 
@@ -24151,7 +24151,7 @@ Version: 4.24
 
 默认值: `info`，`banner` 模式下默认值为 `warning`
 
-### ant-design 中 Alert - API的onClose属性如何使用？
+### ant-design 中 Alert - Alert的onClose属性如何使用？
 
 参数: onClose
 
@@ -24190,7 +24190,7 @@ Version: 4.24
 
 ### ant-design 的 Affix 有哪些配置？
 
-#### Affix - API
+#### Affix - Affix
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -24199,7 +24199,7 @@ Version: 4.24
 | target | 设置 `Affix` 需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数 | () => HTMLElement | () => window |
 | onChange | 固定状态改变时触发的回调函数 | (affixed?: boolean) => void | - |
 
-### ant-design 的 Affix - API 有哪些配置？
+### ant-design 的 Affix - Affix 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
@@ -24208,7 +24208,7 @@ Version: 4.24
 | target | 设置 `Affix` 需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数 | () => HTMLElement | () => window |
 | onChange | 固定状态改变时触发的回调函数 | (affixed?: boolean) => void | - |
 
-### ant-design 中 Affix - API的offsetBottom属性如何使用？
+### ant-design 中 Affix - Affix的offsetBottom属性如何使用？
 
 参数: offsetBottom
 
@@ -24218,7 +24218,7 @@ Version: 4.24
 
 默认值: -
 
-### ant-design 中 Affix - API的offsetTop属性如何使用？
+### ant-design 中 Affix - Affix的offsetTop属性如何使用？
 
 参数: offsetTop
 
@@ -24228,7 +24228,7 @@ Version: 4.24
 
 默认值: 0
 
-### ant-design 中 Affix - API的target属性如何使用？
+### ant-design 中 Affix - Affix的target属性如何使用？
 
 参数: target
 
@@ -24238,7 +24238,7 @@ Version: 4.24
 
 默认值: () => window
 
-### ant-design 中 Affix - API的onChange属性如何使用？
+### ant-design 中 Affix - Affix的onChange属性如何使用？
 
 参数: onChange
 

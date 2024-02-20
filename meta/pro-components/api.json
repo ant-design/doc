@@ -485,38 +485,38 @@
   },
   {
     "title": "pro-components 的 Table 有哪些配置？",
-    "md": "#### ProTable - API\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| `value` | 同 dataSource，传入一个数组，是 table 渲染的元数据 | `T[]` | `undefined` |\n| `onChange` | dataSource 修改时触发，删除和修改都会触发，如果设置了 value，Table 会成为一个受控组件。 | `(value:T[])=>void` | `undefined` |\n| `recordCreatorProps` | 新建一行数据的相关配置 | - |\n| `maxLength` | 最大的行数，到达最大行数新建按钮会自动消失 | number | - |\n| `editable` | 可编辑表格的相关配置 | - |\n| `controlled` | 是否受控，如果受控每次编辑都会触发 onChange，并且会修改 dataSource | `boolean` | false |\n| `editableFormRef` | table 所有的 form，带了一些表格特有的操作 | `React.Ref<EditableFormInstance<T>>` | `undefined` |\n#### ProTable - editable 编辑行配置\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| type | 可编辑表格的类型，单行编辑或者多行编辑 | `single` | `multiple` | - |\n| form | 可编辑表格的 form 实例，使用 `Form.useForm` 生成后使用 | `FormInstance` | - |\n| formProps | 可以配置 form 的属性，但是不支持 onFinish | - |\n| editableKeys | 正在编辑的行，受控属性。 默认 `key` 会使用 `rowKey` 的配置，如果没有配置会使用 `index`，建议使用 rowKey | `Key[]` | - |\n| onChange | 行数据被修改的时候触发 | `(editableKeys: Key[], editableRows: T[]) => void` | - |\n| onSave | 保存一行的时候触发 | `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>` | - |\n| saveText | 保存一行的文字 | `React.ReactNode` | `保存` |\n| onDelete | 删除一行的时候触发 | `(key: Key, row: T) => Promise<any>` | - |\n| deleteText | 删除一行的文字 | `React.ReactNode` | `删除` |\n| onCancel | 取消编辑一行时触发 | `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>` | - |\n| cancelText | 取消编辑一行的文字 | `React.ReactNode` | `取消` |\n| actionRender | 自定义编辑模式的操作栏 | `(row: T, config: ActionRenderConfig<T>) => ReactNode[]` | - |\n| deletePopconfirmMessage | 删除时弹出的确认框提示消息 | `ReactNode` | `删除此项？` |\n| onlyOneLineEditorAlertMessage | 只能编辑一行的的提示 | `ReactNode` | `只能同时编辑一行` |\n| onlyAddOneLineAlertMessage | 只能同时新增一行的提示 | `ReactNode` | `只能新增一行` |\n"
+    "md": "#### ProTable - ProTable\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| `value` | 同 dataSource，传入一个数组，是 table 渲染的元数据 | `T[]` | `undefined` |\n| `onChange` | dataSource 修改时触发，删除和修改都会触发，如果设置了 value，Table 会成为一个受控组件。 | `(value:T[])=>void` | `undefined` |\n| `recordCreatorProps` | 新建一行数据的相关配置 | - |\n| `maxLength` | 最大的行数，到达最大行数新建按钮会自动消失 | number | - |\n| `editable` | 可编辑表格的相关配置 | - |\n| `controlled` | 是否受控，如果受控每次编辑都会触发 onChange，并且会修改 dataSource | `boolean` | false |\n| `editableFormRef` | table 所有的 form，带了一些表格特有的操作 | `React.Ref<EditableFormInstance<T>>` | `undefined` |\n#### ProTable - editable 编辑行配置\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| type | 可编辑表格的类型，单行编辑或者多行编辑 | `single` | `multiple` | - |\n| form | 可编辑表格的 form 实例，使用 `Form.useForm` 生成后使用 | `FormInstance` | - |\n| formProps | 可以配置 form 的属性，但是不支持 onFinish | - |\n| editableKeys | 正在编辑的行，受控属性。 默认 `key` 会使用 `rowKey` 的配置，如果没有配置会使用 `index`，建议使用 rowKey | `Key[]` | - |\n| onChange | 行数据被修改的时候触发 | `(editableKeys: Key[], editableRows: T[]) => void` | - |\n| onSave | 保存一行的时候触发 | `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>` | - |\n| saveText | 保存一行的文字 | `React.ReactNode` | `保存` |\n| onDelete | 删除一行的时候触发 | `(key: Key, row: T) => Promise<any>` | - |\n| deleteText | 删除一行的文字 | `React.ReactNode` | `删除` |\n| onCancel | 取消编辑一行时触发 | `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>` | - |\n| cancelText | 取消编辑一行的文字 | `React.ReactNode` | `取消` |\n| actionRender | 自定义编辑模式的操作栏 | `(row: T, config: ActionRenderConfig<T>) => ReactNode[]` | - |\n| deletePopconfirmMessage | 删除时弹出的确认框提示消息 | `ReactNode` | `删除此项？` |\n| onlyOneLineEditorAlertMessage | 只能编辑一行的的提示 | `ReactNode` | `只能同时编辑一行` |\n| onlyAddOneLineAlertMessage | 只能同时新增一行的提示 | `ReactNode` | `只能新增一行` |\n"
   },
   {
-    "title": "pro-components 的 ProTable - API 有哪些配置？",
+    "title": "pro-components 的 ProTable - ProTable 有哪些配置？",
     "md": "| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| `value` | 同 dataSource，传入一个数组，是 table 渲染的元数据 | `T[]` | `undefined` |\n| `onChange` | dataSource 修改时触发，删除和修改都会触发，如果设置了 value，Table 会成为一个受控组件。 | `(value:T[])=>void` | `undefined` |\n| `recordCreatorProps` | 新建一行数据的相关配置 | - |\n| `maxLength` | 最大的行数，到达最大行数新建按钮会自动消失 | number | - |\n| `editable` | 可编辑表格的相关配置 | - |\n| `controlled` | 是否受控，如果受控每次编辑都会触发 onChange，并且会修改 dataSource | `boolean` | false |\n| `editableFormRef` | table 所有的 form，带了一些表格特有的操作 | `React.Ref<EditableFormInstance<T>>` | `undefined` |\n"
   },
   {
-    "title": "pro-components 中 ProTable - API的`value`属性如何使用？",
+    "title": "pro-components 中 ProTable - ProTable的`value`属性如何使用？",
     "md": "属性: `value`\n描述: 同 dataSource，传入一个数组，是 table 渲染的元数据\n类型: `T[]`\n默认值: `undefined`\n"
   },
   {
-    "title": "pro-components 中 ProTable - API的`onChange`属性如何使用？",
+    "title": "pro-components 中 ProTable - ProTable的`onChange`属性如何使用？",
     "md": "属性: `onChange`\n描述: dataSource 修改时触发，删除和修改都会触发，如果设置了 value，Table 会成为一个受控组件。\n类型: `(value:T[])=>void`\n默认值: `undefined`\n"
   },
   {
-    "title": "pro-components 中 ProTable - API的`recordCreatorProps`属性如何使用？",
+    "title": "pro-components 中 ProTable - ProTable的`recordCreatorProps`属性如何使用？",
     "md": "属性: `recordCreatorProps`\n描述: 新建一行数据的相关配置\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - API的`maxLength`属性如何使用？",
+    "title": "pro-components 中 ProTable - ProTable的`maxLength`属性如何使用？",
     "md": "属性: `maxLength`\n描述: 最大的行数，到达最大行数新建按钮会自动消失\n类型: number\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - API的`editable`属性如何使用？",
+    "title": "pro-components 中 ProTable - ProTable的`editable`属性如何使用？",
     "md": "属性: `editable`\n描述: 可编辑表格的相关配置\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - API的`controlled`属性如何使用？",
+    "title": "pro-components 中 ProTable - ProTable的`controlled`属性如何使用？",
     "md": "属性: `controlled`\n描述: 是否受控，如果受控每次编辑都会触发 onChange，并且会修改 dataSource\n类型: `boolean`\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProTable - API的`editableFormRef`属性如何使用？",
+    "title": "pro-components 中 ProTable - ProTable的`editableFormRef`属性如何使用？",
     "md": "属性: `editableFormRef`\n描述: table 所有的 form，带了一些表格特有的操作\n类型: `React.Ref<EditableFormInstance<T>>`\n默认值: `undefined`\n"
   },
   {
@@ -585,62 +585,62 @@
   },
   {
     "title": "pro-components 的 Table 有哪些配置？",
-    "md": "#### ProTable - API\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| dragSortKey | 如配置此参数，则会在该 key 对应的行显示拖拽排序把手，允许拖拽排序 | `string` | - |\n| dragSortHandlerRender | 渲染自定义拖动排序把手的函数 如配置了 dragSortKey 但未配置此参数，则使用默认把手图标 | `(rowData: T, idx: number) => React.ReactNode` | `<MenuOutlined className=\"dragSortDefaultHandle\" style={{ cursor: 'grab', color: '#999' }} />` |\n| onDragSortEnd | 拖动排序完成回调 | `(beforeIndex: number, afterIndex: number, newDataSource: T[]) => Promise<void> \\| void` | - |\n"
+    "md": "#### ProTable - ProTable\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| dragSortKey | 如配置此参数，则会在该 key 对应的行显示拖拽排序把手，允许拖拽排序 | `string` | - |\n| dragSortHandlerRender | 渲染自定义拖动排序把手的函数 如配置了 dragSortKey 但未配置此参数，则使用默认把手图标 | `(rowData: T, idx: number) => React.ReactNode` | `<MenuOutlined className=\"dragSortDefaultHandle\" style={{ cursor: 'grab', color: '#999' }} />` |\n| onDragSortEnd | 拖动排序完成回调 | `(beforeIndex: number, afterIndex: number, newDataSource: T[]) => Promise<void> \\| void` | - |\n"
   },
   {
-    "title": "pro-components 的 ProTable - API 有哪些配置？",
+    "title": "pro-components 的 ProTable - ProTable 有哪些配置？",
     "md": "| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| dragSortKey | 如配置此参数，则会在该 key 对应的行显示拖拽排序把手，允许拖拽排序 | `string` | - |\n| dragSortHandlerRender | 渲染自定义拖动排序把手的函数 如配置了 dragSortKey 但未配置此参数，则使用默认把手图标 | `(rowData: T, idx: number) => React.ReactNode` | `<MenuOutlined className=\"dragSortDefaultHandle\" style={{ cursor: 'grab', color: '#999' }} />` |\n| onDragSortEnd | 拖动排序完成回调 | `(beforeIndex: number, afterIndex: number, newDataSource: T[]) => Promise<void> \\| void` | - |\n"
   },
   {
-    "title": "pro-components 中 ProTable - API的dragSortKey属性如何使用？",
+    "title": "pro-components 中 ProTable - ProTable的dragSortKey属性如何使用？",
     "md": "属性: dragSortKey\n描述: 如配置此参数，则会在该 key 对应的行显示拖拽排序把手，允许拖拽排序\n类型: `string`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - API的dragSortHandlerRender属性如何使用？",
+    "title": "pro-components 中 ProTable - ProTable的dragSortHandlerRender属性如何使用？",
     "md": "属性: dragSortHandlerRender\n描述: 渲染自定义拖动排序把手的函数 如配置了 dragSortKey 但未配置此参数，则使用默认把手图标\n类型: `(rowData: T, idx: number) => React.ReactNode`\n默认值: `<MenuOutlined className=\"dragSortDefaultHandle\" style={{ cursor: 'grab', color: '#999' }} />`\n"
   },
   {
-    "title": "pro-components 中 ProTable - API的onDragSortEnd属性如何使用？",
+    "title": "pro-components 中 ProTable - ProTable的onDragSortEnd属性如何使用？",
     "md": "属性: onDragSortEnd\n描述: 拖动排序完成回调\n类型: `(beforeIndex: number, afterIndex: number, newDataSource: T[]) => Promise<void> | void`\n默认值: -\n"
   },
   {
     "title": "pro-components 的 Skeleton 有哪些配置？",
-    "md": "#### ProSkeleton - API\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| type | 不同类型的骨架屏 | `'list' \\| 'result' \\| 'descriptions'` | list |\n| active | 是否显示动态 | boolean | true |\n| pageHeader | 是否显示 pageHeader 的骨架屏 descriptions 和 list 有效 | - | - |\n| statistic | 统计信息骨架屏的数量 | `number` | `false` | - |\n| list | 列表的骨架屏，可以控制数量 | `number` | `false` | - |\n| toolbar | 列表的操作栏骨架屏 | boolean | - |\n| renderFormItem | 自定义 `mode=update 或 edit` 下的 dom 表现，一般用于渲染编辑框 | - | - |\n| render | 自定义 `mode=read` 下的 dom 表现，只是单纯的表现形式 | - | - |\n"
+    "md": "#### ProSkeleton - ProSkeleton\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| type | 不同类型的骨架屏 | `'list' \\| 'result' \\| 'descriptions'` | list |\n| active | 是否显示动态 | boolean | true |\n| pageHeader | 是否显示 pageHeader 的骨架屏 descriptions 和 list 有效 | - | - |\n| statistic | 统计信息骨架屏的数量 | `number` | `false` | - |\n| list | 列表的骨架屏，可以控制数量 | `number` | `false` | - |\n| toolbar | 列表的操作栏骨架屏 | boolean | - |\n| renderFormItem | 自定义 `mode=update 或 edit` 下的 dom 表现，一般用于渲染编辑框 | - | - |\n| render | 自定义 `mode=read` 下的 dom 表现，只是单纯的表现形式 | - | - |\n"
   },
   {
-    "title": "pro-components 的 ProSkeleton - API 有哪些配置？",
+    "title": "pro-components 的 ProSkeleton - ProSkeleton 有哪些配置？",
     "md": "| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| type | 不同类型的骨架屏 | `'list' \\| 'result' \\| 'descriptions'` | list |\n| active | 是否显示动态 | boolean | true |\n| pageHeader | 是否显示 pageHeader 的骨架屏 descriptions 和 list 有效 | - | - |\n| statistic | 统计信息骨架屏的数量 | `number` | `false` | - |\n| list | 列表的骨架屏，可以控制数量 | `number` | `false` | - |\n| toolbar | 列表的操作栏骨架屏 | boolean | - |\n| renderFormItem | 自定义 `mode=update 或 edit` 下的 dom 表现，一般用于渲染编辑框 | - | - |\n| render | 自定义 `mode=read` 下的 dom 表现，只是单纯的表现形式 | - | - |\n"
   },
   {
-    "title": "pro-components 中 ProSkeleton - API的type属性如何使用？",
+    "title": "pro-components 中 ProSkeleton - ProSkeleton的type属性如何使用？",
     "md": "参数: type\n说明: 不同类型的骨架屏\n类型: `'list' | 'result' | 'descriptions'`\n默认值: list\n"
   },
   {
-    "title": "pro-components 中 ProSkeleton - API的active属性如何使用？",
+    "title": "pro-components 中 ProSkeleton - ProSkeleton的active属性如何使用？",
     "md": "参数: active\n说明: 是否显示动态\n类型: boolean\n默认值: true\n"
   },
   {
-    "title": "pro-components 中 ProSkeleton - API的pageHeader属性如何使用？",
+    "title": "pro-components 中 ProSkeleton - ProSkeleton的pageHeader属性如何使用？",
     "md": "参数: pageHeader\n说明: 是否显示 pageHeader 的骨架屏 descriptions 和 list 有效\n类型: -\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProSkeleton - API的statistic属性如何使用？",
+    "title": "pro-components 中 ProSkeleton - ProSkeleton的statistic属性如何使用？",
     "md": "参数: statistic\n说明: 统计信息骨架屏的数量\n类型: `number` | `false`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProSkeleton - API的list属性如何使用？",
+    "title": "pro-components 中 ProSkeleton - ProSkeleton的list属性如何使用？",
     "md": "参数: list\n说明: 列表的骨架屏，可以控制数量\n类型: `number` | `false`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProSkeleton - API的toolbar属性如何使用？",
+    "title": "pro-components 中 ProSkeleton - ProSkeleton的toolbar属性如何使用？",
     "md": "参数: toolbar\n说明: 列表的操作栏骨架屏\n类型: boolean\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProSkeleton - API的renderFormItem属性如何使用？",
+    "title": "pro-components 中 ProSkeleton - ProSkeleton的renderFormItem属性如何使用？",
     "md": "参数: renderFormItem\n说明: 自定义 `mode=update 或 edit` 下的 dom 表现，一般用于渲染编辑框\n类型: -\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProSkeleton - API的render属性如何使用？",
+    "title": "pro-components 中 ProSkeleton - ProSkeleton的render属性如何使用？",
     "md": "参数: render\n说明: 自定义 `mode=read` 下的 dom 表现，只是单纯的表现形式\n类型: -\n默认值: -\n"
   },
   {
@@ -1361,114 +1361,114 @@
   },
   {
     "title": "pro-components 的 Layout 有哪些配置？",
-    "md": "#### ProLayout - API\n| 参数 | 说明 | 类型 |\n| --- | --- | --- | --- | --- |\n| avatar | 标题栏旁的头像 | - |\n| backIcon | 自定义 back icon ，如果为 false 不渲染 back icon | ReactNode | boolean | \\<ArrowLeft /> |\n| breadcrumb | 面包屑的配置 | - |\n| breadcrumbRender | 自定义面包屑区域的内容 | `(props, originBreadcrumb) => ReactNode` | - | 4.11.0 |\n| extra | 操作区，位于 title 行的行尾 | ReactNode | - |\n| footer | PageHeader 的页脚，一般用于渲染 TabBar | ReactNode | - |\n| ghost | pageHeader 的类型，将会改变背景颜色 | boolean | true |\n| subTitle | 自定义的二级标题文字 | ReactNode | - |\n| tags | title 旁的 tag 列表 | - |\n| title | 自定义标题文字 | ReactNode | - |\n| onBack | 返回按钮的点击事件 | () => void | - |\n"
+    "md": "#### ProLayout - ProLayout\n| 参数 | 说明 | 类型 |\n| --- | --- | --- | --- | --- |\n| avatar | 标题栏旁的头像 | - |\n| backIcon | 自定义 back icon ，如果为 false 不渲染 back icon | ReactNode | boolean | \\<ArrowLeft /> |\n| breadcrumb | 面包屑的配置 | - |\n| breadcrumbRender | 自定义面包屑区域的内容 | `(props, originBreadcrumb) => ReactNode` | - | 4.11.0 |\n| extra | 操作区，位于 title 行的行尾 | ReactNode | - |\n| footer | PageHeader 的页脚，一般用于渲染 TabBar | ReactNode | - |\n| ghost | pageHeader 的类型，将会改变背景颜色 | boolean | true |\n| subTitle | 自定义的二级标题文字 | ReactNode | - |\n| tags | title 旁的 tag 列表 | - |\n| title | 自定义标题文字 | ReactNode | - |\n| onBack | 返回按钮的点击事件 | () => void | - |\n"
   },
   {
-    "title": "pro-components 的 ProLayout - API 有哪些配置？",
+    "title": "pro-components 的 ProLayout - ProLayout 有哪些配置？",
     "md": "| 参数 | 说明 | 类型 |\n| --- | --- | --- | --- | --- |\n| avatar | 标题栏旁的头像 | - |\n| backIcon | 自定义 back icon ，如果为 false 不渲染 back icon | ReactNode | boolean | \\<ArrowLeft /> |\n| breadcrumb | 面包屑的配置 | - |\n| breadcrumbRender | 自定义面包屑区域的内容 | `(props, originBreadcrumb) => ReactNode` | - | 4.11.0 |\n| extra | 操作区，位于 title 行的行尾 | ReactNode | - |\n| footer | PageHeader 的页脚，一般用于渲染 TabBar | ReactNode | - |\n| ghost | pageHeader 的类型，将会改变背景颜色 | boolean | true |\n| subTitle | 自定义的二级标题文字 | ReactNode | - |\n| tags | title 旁的 tag 列表 | - |\n| title | 自定义标题文字 | ReactNode | - |\n| onBack | 返回按钮的点击事件 | () => void | - |\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的avatar属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的avatar属性如何使用？",
     "md": "参数: avatar\n说明: 标题栏旁的头像\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的backIcon属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的backIcon属性如何使用？",
     "md": "参数: backIcon\n说明: 自定义 back icon ，如果为 false 不渲染 back icon\n类型: ReactNode | boolean\n默认值: \\<ArrowLeft />\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的breadcrumb属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的breadcrumb属性如何使用？",
     "md": "参数: breadcrumb\n说明: 面包屑的配置\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的breadcrumbRender属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的breadcrumbRender属性如何使用？",
     "md": "参数: breadcrumbRender\n说明: 自定义面包屑区域的内容\n类型: `(props, originBreadcrumb) => ReactNode`\n默认值: -\n版本: 4.11.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的extra属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的extra属性如何使用？",
     "md": "参数: extra\n说明: 操作区，位于 title 行的行尾\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的footer属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的footer属性如何使用？",
     "md": "参数: footer\n说明: PageHeader 的页脚，一般用于渲染 TabBar\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的ghost属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的ghost属性如何使用？",
     "md": "参数: ghost\n说明: pageHeader 的类型，将会改变背景颜色\n类型: boolean\n默认值: true\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的subTitle属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的subTitle属性如何使用？",
     "md": "参数: subTitle\n说明: 自定义的二级标题文字\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的tags属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的tags属性如何使用？",
     "md": "参数: tags\n说明: title 旁的 tag 列表\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的title属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的title属性如何使用？",
     "md": "参数: title\n说明: 自定义标题文字\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的onBack属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的onBack属性如何使用？",
     "md": "参数: onBack\n说明: 返回按钮的点击事件\n类型: () => void\n默认值: -\n"
   },
   {
     "title": "pro-components 的 Layout 有哪些配置？",
-    "md": "#### ProLayout - API\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| content | 内容区 | ReactNode | - |\n| extraContent | 额外内容区，位于 content 的右侧 | ReactNode | - |\n| tabList | tab 标题列表 | `{key: string, tab: ReactNode}[]` | - |\n| tabActiveKey | 当前高亮的 tab 项 | string | - |\n| onTabChange | 切换面板的回调 | `(key) => void` | - |\n| tabBarExtraContent | tab bar 上额外的元素 | `React.ReactNode` | - |\n| header | `PageHeaderProps` | - |\n| ghost | 配置头部区域的背景颜色为透明 | boolean | false |\n| fixedHeader | 固定 pageHeader 的内容到顶部，如果页面内容较少，最好不要使用，会有严重的遮挡问题 | `boolean` | - |\n| affixProps | 固钉的配置，与 antd 完全相同 | `AffixProps` | - |\n| footer | 悬浮在底部的操作栏，传入一个数组，会自动加空格 | `ReactNode[]` | - |\n| waterMarkProps | 配置水印，Layout 会透传给 PageContainer，但是以 PageContainer 的配置优先 | - |\n| tabProps | Tabs 的相关属性，只有卡片样式的页签支持新增和关闭选项。使用 `closable={false}` 禁止关闭 | - |\n#### ProLayout - FooterToolbar\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| extra | 额外内容区，位于 content 的右侧 | `ReactNode` | - |\n| children | 内容区域 | `ReactNode`|`ReactNode[]` | - |\n"
+    "md": "#### ProLayout - ProLayout\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| content | 内容区 | ReactNode | - |\n| extraContent | 额外内容区，位于 content 的右侧 | ReactNode | - |\n| tabList | tab 标题列表 | `{key: string, tab: ReactNode}[]` | - |\n| tabActiveKey | 当前高亮的 tab 项 | string | - |\n| onTabChange | 切换面板的回调 | `(key) => void` | - |\n| tabBarExtraContent | tab bar 上额外的元素 | `React.ReactNode` | - |\n| header | `PageHeaderProps` | - |\n| ghost | 配置头部区域的背景颜色为透明 | boolean | false |\n| fixedHeader | 固定 pageHeader 的内容到顶部，如果页面内容较少，最好不要使用，会有严重的遮挡问题 | `boolean` | - |\n| affixProps | 固钉的配置，与 antd 完全相同 | `AffixProps` | - |\n| footer | 悬浮在底部的操作栏，传入一个数组，会自动加空格 | `ReactNode[]` | - |\n| waterMarkProps | 配置水印，Layout 会透传给 PageContainer，但是以 PageContainer 的配置优先 | - |\n| tabProps | Tabs 的相关属性，只有卡片样式的页签支持新增和关闭选项。使用 `closable={false}` 禁止关闭 | - |\n#### ProLayout - FooterToolbar\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| extra | 额外内容区，位于 content 的右侧 | `ReactNode` | - |\n| children | 内容区域 | `ReactNode`|`ReactNode[]` | - |\n"
   },
   {
-    "title": "pro-components 的 ProLayout - API 有哪些配置？",
+    "title": "pro-components 的 ProLayout - ProLayout 有哪些配置？",
     "md": "| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| content | 内容区 | ReactNode | - |\n| extraContent | 额外内容区，位于 content 的右侧 | ReactNode | - |\n| tabList | tab 标题列表 | `{key: string, tab: ReactNode}[]` | - |\n| tabActiveKey | 当前高亮的 tab 项 | string | - |\n| onTabChange | 切换面板的回调 | `(key) => void` | - |\n| tabBarExtraContent | tab bar 上额外的元素 | `React.ReactNode` | - |\n| header | `PageHeaderProps` | - |\n| ghost | 配置头部区域的背景颜色为透明 | boolean | false |\n| fixedHeader | 固定 pageHeader 的内容到顶部，如果页面内容较少，最好不要使用，会有严重的遮挡问题 | `boolean` | - |\n| affixProps | 固钉的配置，与 antd 完全相同 | `AffixProps` | - |\n| footer | 悬浮在底部的操作栏，传入一个数组，会自动加空格 | `ReactNode[]` | - |\n| waterMarkProps | 配置水印，Layout 会透传给 PageContainer，但是以 PageContainer 的配置优先 | - |\n| tabProps | Tabs 的相关属性，只有卡片样式的页签支持新增和关闭选项。使用 `closable={false}` 禁止关闭 | - |\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的content属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的content属性如何使用？",
     "md": "参数: content\n说明: 内容区\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的extraContent属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的extraContent属性如何使用？",
     "md": "参数: extraContent\n说明: 额外内容区，位于 content 的右侧\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的tabList属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的tabList属性如何使用？",
     "md": "参数: tabList\n说明: tab 标题列表\n类型: `{key: string, tab: ReactNode}[]`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的tabActiveKey属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的tabActiveKey属性如何使用？",
     "md": "参数: tabActiveKey\n说明: 当前高亮的 tab 项\n类型: string\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的onTabChange属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的onTabChange属性如何使用？",
     "md": "参数: onTabChange\n说明: 切换面板的回调\n类型: `(key) => void`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的tabBarExtraContent属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的tabBarExtraContent属性如何使用？",
     "md": "参数: tabBarExtraContent\n说明: tab bar 上额外的元素\n类型: `React.ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的header属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的header属性如何使用？",
     "md": "参数: header\n说明: `PageHeaderProps`\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的ghost属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的ghost属性如何使用？",
     "md": "参数: ghost\n说明: 配置头部区域的背景颜色为透明\n类型: boolean\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的fixedHeader属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的fixedHeader属性如何使用？",
     "md": "参数: fixedHeader\n说明: 固定 pageHeader 的内容到顶部，如果页面内容较少，最好不要使用，会有严重的遮挡问题\n类型: `boolean`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的affixProps属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的affixProps属性如何使用？",
     "md": "参数: affixProps\n说明: 固钉的配置，与 antd 完全相同\n类型: `AffixProps`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的footer属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的footer属性如何使用？",
     "md": "参数: footer\n说明: 悬浮在底部的操作栏，传入一个数组，会自动加空格\n类型: `ReactNode[]`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的waterMarkProps属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的waterMarkProps属性如何使用？",
     "md": "参数: waterMarkProps\n说明: 配置水印，Layout 会透传给 PageContainer，但是以 PageContainer 的配置优先\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - API的tabProps属性如何使用？",
+    "title": "pro-components 中 ProLayout - ProLayout的tabProps属性如何使用？",
     "md": "参数: tabProps\n说明: Tabs 的相关属性，只有卡片样式的页签支持新增和关闭选项。使用 `closable={false}` 禁止关闭\n类型: -\n"
   },
   {
@@ -1633,42 +1633,42 @@
   },
   {
     "title": "pro-components 的 Form 有哪些配置？",
-    "md": "#### ProForm - API\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| current | 当前表单的步骤数，从 `0` 开始 | `number` | 0 |\n| onCurrentChange | current 发生改变的事件 | `(current:number)=>void` | - |\n| onFinish | 表单最后一步提交成功触发，如果返回`true`就会自动重置表单（包括`StepForm`变回第一步） | `(values:T)=>void \\| boolean` | - |\n| stepsProps | StepsForm 自带的 Steps 的 props，使用方式与 [antd](https://ant.design/components/steps-cn/) 相同，但是去掉了 current 和 onChange | - |\n| stepFormRender | 自定义当前展示的表单，返回 dom 在表单内部 | `(form) => ReactNode` | - |\n| stepsFormRender | 自定义整个表单区域，返回的 dom 在表单的外部 | `(form,submitter) => ReactNode` | - |\n| stepsRender | 自定义步骤器 | `(steps,dom)=>ReactNode` | - |\n| formRef | StepForm action 的引用，便于自定义触发 | `MutableRefObject<FormInstance>` | - |\n#### ProForm - StepForm\n| 参数     | 说明             | 类型                         | 默认值 |\n| -------- | ---------------- | ---------------------------- | ------ |\n| onFinish | 表单提交成功触发 | `(values:T)=>Promise<false>` | -      |\n"
+    "md": "#### ProForm - ProForm\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| current | 当前表单的步骤数，从 `0` 开始 | `number` | 0 |\n| onCurrentChange | current 发生改变的事件 | `(current:number)=>void` | - |\n| onFinish | 表单最后一步提交成功触发，如果返回`true`就会自动重置表单（包括`StepForm`变回第一步） | `(values:T)=>void \\| boolean` | - |\n| stepsProps | StepsForm 自带的 Steps 的 props，使用方式与 [antd](https://ant.design/components/steps-cn/) 相同，但是去掉了 current 和 onChange | - |\n| stepFormRender | 自定义当前展示的表单，返回 dom 在表单内部 | `(form) => ReactNode` | - |\n| stepsFormRender | 自定义整个表单区域，返回的 dom 在表单的外部 | `(form,submitter) => ReactNode` | - |\n| stepsRender | 自定义步骤器 | `(steps,dom)=>ReactNode` | - |\n| formRef | StepForm action 的引用，便于自定义触发 | `MutableRefObject<FormInstance>` | - |\n#### ProForm - StepForm\n| 参数     | 说明             | 类型                         | 默认值 |\n| -------- | ---------------- | ---------------------------- | ------ |\n| onFinish | 表单提交成功触发 | `(values:T)=>Promise<false>` | -      |\n"
   },
   {
-    "title": "pro-components 的 ProForm - API 有哪些配置？",
+    "title": "pro-components 的 ProForm - ProForm 有哪些配置？",
     "md": "| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| current | 当前表单的步骤数，从 `0` 开始 | `number` | 0 |\n| onCurrentChange | current 发生改变的事件 | `(current:number)=>void` | - |\n| onFinish | 表单最后一步提交成功触发，如果返回`true`就会自动重置表单（包括`StepForm`变回第一步） | `(values:T)=>void \\| boolean` | - |\n| stepsProps | StepsForm 自带的 Steps 的 props，使用方式与 [antd](https://ant.design/components/steps-cn/) 相同，但是去掉了 current 和 onChange | - |\n| stepFormRender | 自定义当前展示的表单，返回 dom 在表单内部 | `(form) => ReactNode` | - |\n| stepsFormRender | 自定义整个表单区域，返回的 dom 在表单的外部 | `(form,submitter) => ReactNode` | - |\n| stepsRender | 自定义步骤器 | `(steps,dom)=>ReactNode` | - |\n| formRef | StepForm action 的引用，便于自定义触发 | `MutableRefObject<FormInstance>` | - |\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的current属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的current属性如何使用？",
     "md": "参数: current\n说明: 当前表单的步骤数，从 `0` 开始\n类型: `number`\n默认值: 0\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的onCurrentChange属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的onCurrentChange属性如何使用？",
     "md": "参数: onCurrentChange\n说明: current 发生改变的事件\n类型: `(current:number)=>void`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的onFinish属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的onFinish属性如何使用？",
     "md": "参数: onFinish\n说明: 表单最后一步提交成功触发，如果返回`true`就会自动重置表单（包括`StepForm`变回第一步）\n类型: `(values:T)=>void | boolean`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的stepsProps属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的stepsProps属性如何使用？",
     "md": "参数: stepsProps\n说明: StepsForm 自带的 Steps 的 props，使用方式与 [antd](https://ant.design/components/steps-cn/) 相同，但是去掉了 current 和 onChange\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的stepFormRender属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的stepFormRender属性如何使用？",
     "md": "参数: stepFormRender\n说明: 自定义当前展示的表单，返回 dom 在表单内部\n类型: `(form) => ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的stepsFormRender属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的stepsFormRender属性如何使用？",
     "md": "参数: stepsFormRender\n说明: 自定义整个表单区域，返回的 dom 在表单的外部\n类型: `(form,submitter) => ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的stepsRender属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的stepsRender属性如何使用？",
     "md": "参数: stepsRender\n说明: 自定义步骤器\n类型: `(steps,dom)=>ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的formRef属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的formRef属性如何使用？",
     "md": "参数: formRef\n说明: StepForm action 的引用，便于自定义触发\n类型: `MutableRefObject<FormInstance>`\n默认值: -\n"
   },
   {
@@ -1681,26 +1681,26 @@
   },
   {
     "title": "pro-components 的 Form 有哪些配置？",
-    "md": "#### ProForm - API\n| 字段名称 | 类型 |\n| --- | --- | --- |\n| `layoutType` | 使用的表单布局模式 |\n| `steps` | `StepFormProps[]` | `layoutType=steps`中的分步表单配置，需要配置 columns 为数组使用 |\n| `columns` | 表单的定义，一般是 json 对象，如果是分步表单，需要使用 json 数组来生成多个表单 |\n| `shouldUpdate` | `(newValues: Record<string, any>, oldValues: Record<string, any>) => boolean \\| boolean` | 细粒化控制是否渲染。<br /> 为`true`时会自动重新渲染表单项。<br /> 为`false`时不会更新表单项但可以使用[dependencies 触发更新](#结合-shouldupdatefalse-和-dependencies-触发更新)，<br /> 为`function` 时根据返回值判断是否重新渲染表单项，等同直接赋值 `true` 或 `false` [参考示例](#动态控制是否重渲染) |\n#### ProForm - ProFormLayoutType\n| 字段名称                |\n| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |\n| `Form`                  |\n| `ModalForm`             | 弹框表单，配置之后支持 [ModalForm](/components/modal-form) 的所有配置                                                                   |\n| `DrawerForm`            | 抽屉表单，配置之后支持 [DrawerForm](/components/modal-form) 的所有配置                                                                  |\n| `StepsForm`|`StepForm` | 配置之后为分步表单，有两种模式一种使用 `steps` 和 `columns` 来生成，一种是通过 `layoutType=StepsForm` 嵌套 `layoutType=StepForm` 来实现 |\n| `LightFilter`           | 轻量筛选，配置之后支持 [`LightFilter`](/components/query-filter) 的所有配置                                                             |\n| `QueryFilter`           | 查询表单，配置之后支持 [`QueryFilter`](/components/query-filter) 的所有配置                                                             |\n| `Embed`                 | 内嵌模式，只生成表单项，不生成 Form 可以混合使用                                                                                        |\n#### ProForm - Schema 定义\n| 字段名称 | 类型 | 说明 |\n| --- | --- | --- |\n| `key` | `React.key` | 确定这个列的唯一值，一般用于 dataIndex 重复的情况 |\n| `dataIndex` | `React.key` | `React.key[]` | 与实体映射的 key，数组会被转化 `[a,b] => Entity.a.b` |\n| `valueType` | `ProFieldValueType` | 数据的渲渲染方式，我们自带了一部分，你也可以自定义 valueType |\n| `title` | `ReactNode` |`(props,type,dom)=> ReactNode` | 标题的内容，在 form 中是 label |\n| `tooltip` | `string` | 会在 title 旁边展示一个 icon，鼠标浮动之后展示 |\n| `valueEnum` | `(Entity)=> ValueEnum` | `ValueEnum` | 支持 object 和 Map，Map 是支持其他基础类型作为 key |\n| `fieldProps` | `(form,config)=>fieldProps`| `fieldProps` | 传给渲染的组件的 props，自定义的时候也会传递 |\n| `formItemProps` | `(form,config)=>formItemProps` | `formItemProps` | 传递给 Form.Item 的配置 |\n| `formItemProps.rules` | `Rule[]` | 表单项的校验规则。需要注意的是，如果当前表单项为`formList`时，此规则仅校验列表是否为空，且仅接受元组`[{required: boolean, message: string}]`，用于开启和关闭非空校验及指定空列表提示消息 |\n| `proFieldProps` | `proFieldProps` | 设置到 `ProField` 上面的 `props`，内部属性 |\n| `renderText` | `(text: any, record: Entity, index: number, action: ProCoreActionType) => any` | 修改的数据是会被 valueType 定义的渲染组件消费 |\n| `render` | `(dom,entity,index, action, schema) => React.ReactNode` | 自定义只读模式的 dom,`render` 方法只管理的只读模式，编辑模式需要使用 `renderFormItem` |\n| `renderFormItem` | `(schema,config,form) => React.ReactNode` | 自定义编辑模式，返回一个 ReactNode，会自动包裹 value 和 onChange。 请使用 dependency 组件控制是否渲染列 |\n| `request` | `(params,props) => Promise<{label,value}[]>` | 从远程请求网络数据，一般用于选择类组件 |\n| `params` | `Record<string, any>` | 额外传递给 `request` 的参数，组件不做处理，但是变化会引起`request` 重新请求数据 |\n| `dependencies` | `string \\| number \\| (string \\| number)[]` | 所依赖的 values 变化后，触发 renderFormItem，fieldProps，formItemProps 重新执行，并把 values 注入到 params 里 [示例](#使用-dependencies-触发-fieldpropsformitempropsrenderformitem-更新) |\n| `hideInDescriptions` | `boolean` | 在 descriptions 中隐藏 |\n| `hideInForm` | `boolean` | 在 Form 中隐藏 |\n| `hideInTable` | `boolean` | 在 Table 中隐藏 |\n| `hideInSearch` | `boolean` | 在 Table 的查询表格中隐藏 |\n| `columns` | `ProFormColumnsType[] \\| (values) => ProFormColumnsType[]` | 嵌套子项，valueType 为 dependency 时，请使用`(values) => ProFormColumnsType[]`其他情况使用 `ProFormColumnsType[]` |\n| `colProps` | 在开启 grid 模式时传递给 Col |\n| `rowProps` | 开启栅格化模式时传递给 Row |\n"
+    "md": "#### ProForm - ProForm\n| 字段名称 | 类型 |\n| --- | --- | --- |\n| `layoutType` | 使用的表单布局模式 |\n| `steps` | `StepFormProps[]` | `layoutType=steps`中的分步表单配置，需要配置 columns 为数组使用 |\n| `columns` | 表单的定义，一般是 json 对象，如果是分步表单，需要使用 json 数组来生成多个表单 |\n| `shouldUpdate` | `(newValues: Record<string, any>, oldValues: Record<string, any>) => boolean \\| boolean` | 细粒化控制是否渲染。<br /> 为`true`时会自动重新渲染表单项。<br /> 为`false`时不会更新表单项但可以使用[dependencies 触发更新](#结合-shouldupdatefalse-和-dependencies-触发更新)，<br /> 为`function` 时根据返回值判断是否重新渲染表单项，等同直接赋值 `true` 或 `false` [参考示例](#动态控制是否重渲染) |\n#### ProForm - ProFormLayoutType\n| 字段名称                |\n| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |\n| `Form`                  |\n| `ModalForm`             | 弹框表单，配置之后支持 [ModalForm](/components/modal-form) 的所有配置                                                                   |\n| `DrawerForm`            | 抽屉表单，配置之后支持 [DrawerForm](/components/modal-form) 的所有配置                                                                  |\n| `StepsForm`|`StepForm` | 配置之后为分步表单，有两种模式一种使用 `steps` 和 `columns` 来生成，一种是通过 `layoutType=StepsForm` 嵌套 `layoutType=StepForm` 来实现 |\n| `LightFilter`           | 轻量筛选，配置之后支持 [`LightFilter`](/components/query-filter) 的所有配置                                                             |\n| `QueryFilter`           | 查询表单，配置之后支持 [`QueryFilter`](/components/query-filter) 的所有配置                                                             |\n| `Embed`                 | 内嵌模式，只生成表单项，不生成 Form 可以混合使用                                                                                        |\n#### ProForm - Schema 定义\n| 字段名称 | 类型 | 说明 |\n| --- | --- | --- |\n| `key` | `React.key` | 确定这个列的唯一值，一般用于 dataIndex 重复的情况 |\n| `dataIndex` | `React.key` | `React.key[]` | 与实体映射的 key，数组会被转化 `[a,b] => Entity.a.b` |\n| `valueType` | `ProFieldValueType` | 数据的渲渲染方式，我们自带了一部分，你也可以自定义 valueType |\n| `title` | `ReactNode` |`(props,type,dom)=> ReactNode` | 标题的内容，在 form 中是 label |\n| `tooltip` | `string` | 会在 title 旁边展示一个 icon，鼠标浮动之后展示 |\n| `valueEnum` | `(Entity)=> ValueEnum` | `ValueEnum` | 支持 object 和 Map，Map 是支持其他基础类型作为 key |\n| `fieldProps` | `(form,config)=>fieldProps`| `fieldProps` | 传给渲染的组件的 props，自定义的时候也会传递 |\n| `formItemProps` | `(form,config)=>formItemProps` | `formItemProps` | 传递给 Form.Item 的配置 |\n| `formItemProps.rules` | `Rule[]` | 表单项的校验规则。需要注意的是，如果当前表单项为`formList`时，此规则仅校验列表是否为空，且仅接受元组`[{required: boolean, message: string}]`，用于开启和关闭非空校验及指定空列表提示消息 |\n| `proFieldProps` | `proFieldProps` | 设置到 `ProField` 上面的 `props`，内部属性 |\n| `renderText` | `(text: any, record: Entity, index: number, action: ProCoreActionType) => any` | 修改的数据是会被 valueType 定义的渲染组件消费 |\n| `render` | `(dom,entity,index, action, schema) => React.ReactNode` | 自定义只读模式的 dom,`render` 方法只管理的只读模式，编辑模式需要使用 `renderFormItem` |\n| `renderFormItem` | `(schema,config,form) => React.ReactNode` | 自定义编辑模式，返回一个 ReactNode，会自动包裹 value 和 onChange。 请使用 dependency 组件控制是否渲染列 |\n| `request` | `(params,props) => Promise<{label,value}[]>` | 从远程请求网络数据，一般用于选择类组件 |\n| `params` | `Record<string, any>` | 额外传递给 `request` 的参数，组件不做处理，但是变化会引起`request` 重新请求数据 |\n| `dependencies` | `string \\| number \\| (string \\| number)[]` | 所依赖的 values 变化后，触发 renderFormItem，fieldProps，formItemProps 重新执行，并把 values 注入到 params 里 [示例](#使用-dependencies-触发-fieldpropsformitempropsrenderformitem-更新) |\n| `hideInDescriptions` | `boolean` | 在 descriptions 中隐藏 |\n| `hideInForm` | `boolean` | 在 Form 中隐藏 |\n| `hideInTable` | `boolean` | 在 Table 中隐藏 |\n| `hideInSearch` | `boolean` | 在 Table 的查询表格中隐藏 |\n| `columns` | `ProFormColumnsType[] \\| (values) => ProFormColumnsType[]` | 嵌套子项，valueType 为 dependency 时，请使用`(values) => ProFormColumnsType[]`其他情况使用 `ProFormColumnsType[]` |\n| `colProps` | 在开启 grid 模式时传递给 Col |\n| `rowProps` | 开启栅格化模式时传递给 Row |\n"
   },
   {
-    "title": "pro-components 的 ProForm - API 有哪些配置？",
+    "title": "pro-components 的 ProForm - ProForm 有哪些配置？",
     "md": "| 字段名称 | 类型 |\n| --- | --- | --- |\n| `layoutType` | 使用的表单布局模式 |\n| `steps` | `StepFormProps[]` | `layoutType=steps`中的分步表单配置，需要配置 columns 为数组使用 |\n| `columns` | 表单的定义，一般是 json 对象，如果是分步表单，需要使用 json 数组来生成多个表单 |\n| `shouldUpdate` | `(newValues: Record<string, any>, oldValues: Record<string, any>) => boolean \\| boolean` | 细粒化控制是否渲染。<br /> 为`true`时会自动重新渲染表单项。<br /> 为`false`时不会更新表单项但可以使用[dependencies 触发更新](#结合-shouldupdatefalse-和-dependencies-触发更新)，<br /> 为`function` 时根据返回值判断是否重新渲染表单项，等同直接赋值 `true` 或 `false` [参考示例](#动态控制是否重渲染) |\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的`layoutType`属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的`layoutType`属性如何使用？",
     "md": "字段名称: `layoutType`\n类型: 使用的表单布局模式\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的`steps`属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的`steps`属性如何使用？",
     "md": "字段名称: `steps`\n类型: `StepFormProps[]`\n说明: `layoutType=steps`中的分步表单配置，需要配置 columns 为数组使用\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的`columns`属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的`columns`属性如何使用？",
     "md": "字段名称: `columns`\n类型: 表单的定义，一般是 json 对象，如果是分步表单，需要使用 json 数组来生成多个表单\n"
   },
   {
-    "title": "pro-components 中 ProForm - API的`shouldUpdate`属性如何使用？",
+    "title": "pro-components 中 ProForm - ProForm的`shouldUpdate`属性如何使用？",
     "md": "字段名称: `shouldUpdate`\n类型: `(newValues: Record<string, any>, oldValues: Record<string, any>) => boolean | boolean`\n说明: 细粒化控制是否渲染。<br /> 为`true`时会自动重新渲染表单项。<br /> 为`false`时不会更新表单项但可以使用[dependencies 触发更新](#结合-shouldupdatefalse-和-dependencies-触发更新)，<br /> 为`function` 时根据返回值判断是否重新渲染表单项，等同直接赋值 `true` 或 `false` [参考示例](#动态控制是否重渲染)\n"
   },
   {
@@ -2709,110 +2709,110 @@
   },
   {
     "title": "pro-components 的 Card 有哪些配置？",
-    "md": "#### ProCard - API\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- | --- |\n| title | 标题 | `React.ReactNode` | - |\n| subTitle | 副标题 | `React.ReactNode` | - |\n| tooltip | 标题右侧图标 hover 提示信息 | `string` | - |\n| headStyle | 标题的 style 样式 | `CSSProperties` | - |\n| bodyStyle | 内容区的 style 样式 | `CSSProperties` | - |\n| extra | 右上角自定义区域 | `React.ReactNode` | - |\n| layout | 内容布局，支持垂直居中 | `default` | `center` | default |\n| loading | 加载中，支持自定义 loading 样式 | `boolean` | `ReactNode` | false |\n| colSpan | 栅格布局宽度，24 栅格，支持指定宽度 px 或百分比，支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`, 仅在嵌套的子卡片上设置有效。 | `number` | `string` | 24 |\n| gutter | 数字或使用数组形式同时设置 \\[水平间距，垂直间距], 支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}` | `number` | `array` | 0 |\n| split | 拆分卡片的方向 | `vertical` | `horizontal` | - |\n| type | 卡片类型 | `inner` | `default` | - |\n| size | 卡片尺寸 | `default` | `small` | - |\n| actions | 卡片操作组，位置在卡片底部 | `Array&lt;ReactNode>` | - |\n| direction | 指定 Flex 方向，仅在嵌套子卡片时有效，默认方向为 row 横向 | `column` | - |\n| wrap | 是否支持换行，仅在嵌套子卡片时有效 | false | - | 1.12.0 |\n| bordered | 是否有边框 | `boolean` | false |\n| ghost | 幽灵模式，即是否取消卡片内容区域的 padding 和 卡片的背景颜色。 | `boolean` | false |\n| headerBordered | 页头是否有分割线 | `boolean` | false |\n| collapsed | 受控属性，是否折叠 | `boolean` | false |\n| collapsible | 配置是否可折叠，受控时无效 | `boolean` | false |\n| collapsibleIconRender | 替换默认折叠图标 | `({ collapsed }: { collapsed: boolean }) => React.ReactNode` | - |\n| defaultCollapsed | 默认折叠，受控时无效 | `boolean` | false |\n| onCollapse | 收起卡片的事件，受控时无效 | `(collapsed: boolean) => void` | - |\n| tabs | 标签页配置 | 见下面 ProCardTabs | - |\n#### ProCard - ProCardTabs\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| activeKey | 当前选中项 | string | - |\n| type | 页签的基本样式，可选 `line`、`card`、`editable-card` 类型 | string | inline |\n| onChange | 回调 | `(activeKey: string) => void;` | - |\n| items | 基于 antd 拓展的页签的基本配置，必填 | `ItemsProps` | - |\n#### ProCard - ItemsProps\n| 参数      | 说明                 | 类型      | 默认值 |\n| --------- | -------------------- | --------- | ------ |\n| cardProps | ProCard 卡片属性透传 | `ProCard` | -      |\n#### ProCard - ProCard.TabPane\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| key | 对应 activeKey，用于标定是否选中和 dom 更新，一定不要重复，不然会造成表现异常 | `string` | - |\n| tab | 选项卡头显示文字 | `ReactNode` | - |\n| disabled | 不可用 | `boolean` | false |\n| cardProps | ProCard 卡片属性透传 | `ProCard` | - |\n#### ProCard - ProCard.Divider\n| 参数 | 说明     | 类型                     | 默认值 |\n| ---- | -------- | ------------------------ | ------ |\n| type | 分隔类型 | `horizontal \\| vertical` | -      |\n"
+    "md": "#### ProCard - ProCard\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- | --- |\n| title | 标题 | `React.ReactNode` | - |\n| subTitle | 副标题 | `React.ReactNode` | - |\n| tooltip | 标题右侧图标 hover 提示信息 | `string` | - |\n| headStyle | 标题的 style 样式 | `CSSProperties` | - |\n| bodyStyle | 内容区的 style 样式 | `CSSProperties` | - |\n| extra | 右上角自定义区域 | `React.ReactNode` | - |\n| layout | 内容布局，支持垂直居中 | `default` | `center` | default |\n| loading | 加载中，支持自定义 loading 样式 | `boolean` | `ReactNode` | false |\n| colSpan | 栅格布局宽度，24 栅格，支持指定宽度 px 或百分比，支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`, 仅在嵌套的子卡片上设置有效。 | `number` | `string` | 24 |\n| gutter | 数字或使用数组形式同时设置 \\[水平间距，垂直间距], 支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}` | `number` | `array` | 0 |\n| split | 拆分卡片的方向 | `vertical` | `horizontal` | - |\n| type | 卡片类型 | `inner` | `default` | - |\n| size | 卡片尺寸 | `default` | `small` | - |\n| actions | 卡片操作组，位置在卡片底部 | `Array&lt;ReactNode>` | - |\n| direction | 指定 Flex 方向，仅在嵌套子卡片时有效，默认方向为 row 横向 | `column` | - |\n| wrap | 是否支持换行，仅在嵌套子卡片时有效 | false | - | 1.12.0 |\n| bordered | 是否有边框 | `boolean` | false |\n| ghost | 幽灵模式，即是否取消卡片内容区域的 padding 和 卡片的背景颜色。 | `boolean` | false |\n| headerBordered | 页头是否有分割线 | `boolean` | false |\n| collapsed | 受控属性，是否折叠 | `boolean` | false |\n| collapsible | 配置是否可折叠，受控时无效 | `boolean` | false |\n| collapsibleIconRender | 替换默认折叠图标 | `({ collapsed }: { collapsed: boolean }) => React.ReactNode` | - |\n| defaultCollapsed | 默认折叠，受控时无效 | `boolean` | false |\n| onCollapse | 收起卡片的事件，受控时无效 | `(collapsed: boolean) => void` | - |\n| tabs | 标签页配置 | 见下面 ProCardTabs | - |\n#### ProCard - ProCardTabs\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| activeKey | 当前选中项 | string | - |\n| type | 页签的基本样式，可选 `line`、`card`、`editable-card` 类型 | string | inline |\n| onChange | 回调 | `(activeKey: string) => void;` | - |\n| items | 基于 antd 拓展的页签的基本配置，必填 | `ItemsProps` | - |\n#### ProCard - ItemsProps\n| 参数      | 说明                 | 类型      | 默认值 |\n| --------- | -------------------- | --------- | ------ |\n| cardProps | ProCard 卡片属性透传 | `ProCard` | -      |\n#### ProCard - ProCard.TabPane\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| key | 对应 activeKey，用于标定是否选中和 dom 更新，一定不要重复，不然会造成表现异常 | `string` | - |\n| tab | 选项卡头显示文字 | `ReactNode` | - |\n| disabled | 不可用 | `boolean` | false |\n| cardProps | ProCard 卡片属性透传 | `ProCard` | - |\n#### ProCard - ProCard.Divider\n| 参数 | 说明     | 类型                     | 默认值 |\n| ---- | -------- | ------------------------ | ------ |\n| type | 分隔类型 | `horizontal \\| vertical` | -      |\n"
   },
   {
-    "title": "pro-components 的 ProCard - API 有哪些配置？",
+    "title": "pro-components 的 ProCard - ProCard 有哪些配置？",
     "md": "| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- | --- |\n| title | 标题 | `React.ReactNode` | - |\n| subTitle | 副标题 | `React.ReactNode` | - |\n| tooltip | 标题右侧图标 hover 提示信息 | `string` | - |\n| headStyle | 标题的 style 样式 | `CSSProperties` | - |\n| bodyStyle | 内容区的 style 样式 | `CSSProperties` | - |\n| extra | 右上角自定义区域 | `React.ReactNode` | - |\n| layout | 内容布局，支持垂直居中 | `default` | `center` | default |\n| loading | 加载中，支持自定义 loading 样式 | `boolean` | `ReactNode` | false |\n| colSpan | 栅格布局宽度，24 栅格，支持指定宽度 px 或百分比，支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`, 仅在嵌套的子卡片上设置有效。 | `number` | `string` | 24 |\n| gutter | 数字或使用数组形式同时设置 \\[水平间距，垂直间距], 支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}` | `number` | `array` | 0 |\n| split | 拆分卡片的方向 | `vertical` | `horizontal` | - |\n| type | 卡片类型 | `inner` | `default` | - |\n| size | 卡片尺寸 | `default` | `small` | - |\n| actions | 卡片操作组，位置在卡片底部 | `Array&lt;ReactNode>` | - |\n| direction | 指定 Flex 方向，仅在嵌套子卡片时有效，默认方向为 row 横向 | `column` | - |\n| wrap | 是否支持换行，仅在嵌套子卡片时有效 | false | - | 1.12.0 |\n| bordered | 是否有边框 | `boolean` | false |\n| ghost | 幽灵模式，即是否取消卡片内容区域的 padding 和 卡片的背景颜色。 | `boolean` | false |\n| headerBordered | 页头是否有分割线 | `boolean` | false |\n| collapsed | 受控属性，是否折叠 | `boolean` | false |\n| collapsible | 配置是否可折叠，受控时无效 | `boolean` | false |\n| collapsibleIconRender | 替换默认折叠图标 | `({ collapsed }: { collapsed: boolean }) => React.ReactNode` | - |\n| defaultCollapsed | 默认折叠，受控时无效 | `boolean` | false |\n| onCollapse | 收起卡片的事件，受控时无效 | `(collapsed: boolean) => void` | - |\n| tabs | 标签页配置 | 见下面 ProCardTabs | - |\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的title属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的title属性如何使用？",
     "md": "参数: title\n说明: 标题\n类型: `React.ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的subTitle属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的subTitle属性如何使用？",
     "md": "参数: subTitle\n说明: 副标题\n类型: `React.ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的tooltip属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的tooltip属性如何使用？",
     "md": "参数: tooltip\n说明: 标题右侧图标 hover 提示信息\n类型: `string`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的headStyle属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的headStyle属性如何使用？",
     "md": "参数: headStyle\n说明: 标题的 style 样式\n类型: `CSSProperties`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的bodyStyle属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的bodyStyle属性如何使用？",
     "md": "参数: bodyStyle\n说明: 内容区的 style 样式\n类型: `CSSProperties`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的extra属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的extra属性如何使用？",
     "md": "参数: extra\n说明: 右上角自定义区域\n类型: `React.ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的layout属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的layout属性如何使用？",
     "md": "参数: layout\n说明: 内容布局，支持垂直居中\n类型: `default` | `center`\n默认值: default\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的loading属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的loading属性如何使用？",
     "md": "参数: loading\n说明: 加载中，支持自定义 loading 样式\n类型: `boolean` | `ReactNode`\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的colSpan属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的colSpan属性如何使用？",
     "md": "参数: colSpan\n说明: 栅格布局宽度，24 栅格，支持指定宽度 px 或百分比，支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`, 仅在嵌套的子卡片上设置有效。\n类型: `number` | `string`\n默认值: 24\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的gutter属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的gutter属性如何使用？",
     "md": "参数: gutter\n说明: 数字或使用数组形式同时设置 \\[水平间距，垂直间距], 支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}`\n类型: `number` | `array`\n默认值: 0\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的split属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的split属性如何使用？",
     "md": "参数: split\n说明: 拆分卡片的方向\n类型: `vertical` | `horizontal`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的type属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的type属性如何使用？",
     "md": "参数: type\n说明: 卡片类型\n类型: `inner` | `default`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的size属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的size属性如何使用？",
     "md": "参数: size\n说明: 卡片尺寸\n类型: `default` | `small`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的actions属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的actions属性如何使用？",
     "md": "参数: actions\n说明: 卡片操作组，位置在卡片底部\n类型: `Array&lt;ReactNode>`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的direction属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的direction属性如何使用？",
     "md": "参数: direction\n说明: 指定 Flex 方向，仅在嵌套子卡片时有效，默认方向为 row 横向\n类型: `column`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的wrap属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的wrap属性如何使用？",
     "md": "参数: wrap\n说明: 是否支持换行，仅在嵌套子卡片时有效\n类型: false\n默认值: -\n版本: 1.12.0\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的bordered属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的bordered属性如何使用？",
     "md": "参数: bordered\n说明: 是否有边框\n类型: `boolean`\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的ghost属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的ghost属性如何使用？",
     "md": "参数: ghost\n说明: 幽灵模式，即是否取消卡片内容区域的 padding 和 卡片的背景颜色。\n类型: `boolean`\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的headerBordered属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的headerBordered属性如何使用？",
     "md": "参数: headerBordered\n说明: 页头是否有分割线\n类型: `boolean`\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的collapsed属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的collapsed属性如何使用？",
     "md": "参数: collapsed\n说明: 受控属性，是否折叠\n类型: `boolean`\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的collapsible属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的collapsible属性如何使用？",
     "md": "参数: collapsible\n说明: 配置是否可折叠，受控时无效\n类型: `boolean`\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的collapsibleIconRender属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的collapsibleIconRender属性如何使用？",
     "md": "参数: collapsibleIconRender\n说明: 替换默认折叠图标\n类型: `({ collapsed }: { collapsed: boolean }) => React.ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的defaultCollapsed属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的defaultCollapsed属性如何使用？",
     "md": "参数: defaultCollapsed\n说明: 默认折叠，受控时无效\n类型: `boolean`\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的onCollapse属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的onCollapse属性如何使用？",
     "md": "参数: onCollapse\n说明: 收起卡片的事件，受控时无效\n类型: `(collapsed: boolean) => void`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProCard - API的tabs属性如何使用？",
+    "title": "pro-components 中 ProCard - ProCard的tabs属性如何使用？",
     "md": "参数: tabs\n说明: 标签页配置\n类型: 见下面 ProCardTabs\n默认值: -\n"
   },
   {

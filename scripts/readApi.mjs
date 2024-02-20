@@ -17,6 +17,14 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
  * @returns {string} 转换后的字符串。
  */
 function capitalizeFirstLetter(str) {
+  if (str.includes('-')) {
+    str = str
+      .split('-')
+      .map((item) => {
+        return capitalizeFirstLetter(item);
+      })
+      .join('');
+  }
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
@@ -110,12 +118,19 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
     });
 
     if (property.length) {
+      const componentName = prefixName + packageName;
+      const subTitle = tableTitle?.replace(/\n/g, '').trim();
       properties.push({
         title:
-          prefixName +
-          packageName +
+          componentName +
           ' - ' +
-          tableTitle?.replace(/\n/g, '').trim(),
+          (subTitle === 'API' ||
+          subTitle === '共同的 API' ||
+          subTitle.startsWith('`') ||
+          subTitle.includes('=') ||
+          subTitle === '组件配置'
+            ? componentName
+            : subTitle),
         property,
       });
     }
