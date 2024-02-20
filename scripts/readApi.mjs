@@ -88,19 +88,11 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
     const rows = node.children.filter((child) => child.type === 'tableRow');
     rows.forEach((row) => {
       const cells = row.children.filter((child) => child.type === 'tableCell');
+
       const rowData = [];
 
       cells.forEach((cell) => {
-        if (cell.children[0]?.value) {
-          rowData.push(
-            cell.children
-              .map((child) => {
-                if (child.type === 'delete') return '';
-                return myRemark.stringify(child);
-              })
-              .join(''),
-          );
-        }
+        rowData.push(myRemark.stringify(cell).trim() || '-');
       });
 
       property.push(rowData);
@@ -108,6 +100,7 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
     const [props, ...rest] = property;
     property = rest.map((row) => {
       const obj = {};
+
       row.forEach((cell, index) => {
         obj[props[index]?.replace(/\n/g, '').trim()] = cell
           ?.replace(/\n/g, '')
@@ -120,6 +113,22 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
     if (property.length) {
       const componentName = prefixName + packageName;
       const subTitle = tableTitle?.replace(/\n/g, '').trim();
+
+      let url = filePath.split(path.sep).at(1);
+      if (prefixName === '') {
+        url = `https://ant-design.antgroup.com/components/${url}-cn#${subTitle}`;
+      }
+
+      if (prefixName === 'Pro') {
+        url = filePath
+          .split(path.sep)
+          .filter((item) => item !== '' && item !== 'index.md')
+          .at(-1)
+          .replace('.md', '')
+          .replace(/([a-z])([A-Z])/g, '$1-$2')
+          .toLowerCase();
+        url = `https://pro-components.antdigital.dev/components/${url}#${subTitle}`;
+      }
       properties.push({
         title:
           componentName +
@@ -131,6 +140,7 @@ function extractTableFromMd(mdContent, filePath, prefixName) {
           subTitle === '组件配置'
             ? componentName
             : subTitle),
+        url,
         property,
       });
     }
