@@ -485,122 +485,122 @@
   },
   {
     "title": "pro-components 的 Table 有哪些配置？",
-    "md": "#### ProTable - ProTable\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| `value` | 同 dataSource，传入一个数组，是 table 渲染的元数据 | `T[]` | `undefined` |\n| `onChange` | dataSource 修改时触发，删除和修改都会触发，如果设置了 value，Table 会成为一个受控组件。 | `(value:T[])=>void` | `undefined` |\n| `recordCreatorProps` | 新建一行数据的相关配置 | - |\n| `maxLength` | 最大的行数，到达最大行数新建按钮会自动消失 | number | - |\n| `editable` | 可编辑表格的相关配置 | - |\n| `controlled` | 是否受控，如果受控每次编辑都会触发 onChange，并且会修改 dataSource | `boolean` | false |\n| `editableFormRef` | table 所有的 form，带了一些表格特有的操作 | `React.Ref<EditableFormInstance<T>>` | `undefined` |\n#### ProTable - editable 编辑行配置\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| type | 可编辑表格的类型，单行编辑或者多行编辑 | `single` | `multiple` | - |\n| form | 可编辑表格的 form 实例，使用 `Form.useForm` 生成后使用 | `FormInstance` | - |\n| formProps | 可以配置 form 的属性，但是不支持 onFinish | - |\n| editableKeys | 正在编辑的行，受控属性。 默认 `key` 会使用 `rowKey` 的配置，如果没有配置会使用 `index`，建议使用 rowKey | `Key[]` | - |\n| onChange | 行数据被修改的时候触发 | `(editableKeys: Key[], editableRows: T[]) => void` | - |\n| onSave | 保存一行的时候触发 | `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>` | - |\n| saveText | 保存一行的文字 | `React.ReactNode` | `保存` |\n| onDelete | 删除一行的时候触发 | `(key: Key, row: T) => Promise<any>` | - |\n| deleteText | 删除一行的文字 | `React.ReactNode` | `删除` |\n| onCancel | 取消编辑一行时触发 | `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>` | - |\n| cancelText | 取消编辑一行的文字 | `React.ReactNode` | `取消` |\n| actionRender | 自定义编辑模式的操作栏 | `(row: T, config: ActionRenderConfig<T>) => ReactNode[]` | - |\n| deletePopconfirmMessage | 删除时弹出的确认框提示消息 | `ReactNode` | `删除此项？` |\n| onlyOneLineEditorAlertMessage | 只能编辑一行的的提示 | `ReactNode` | `只能同时编辑一行` |\n| onlyAddOneLineAlertMessage | 只能同时新增一行的提示 | `ReactNode` | `只能新增一行` |\n"
+    "md": "#### ProTable - EditableProTable\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| `value` | 同 dataSource，传入一个数组，是 table 渲染的元数据 | `T[]` | `undefined` |\n| `onChange` | dataSource 修改时触发，删除和修改都会触发，如果设置了 value，Table 会成为一个受控组件。 | `(value:T[])=>void` | `undefined` |\n| `recordCreatorProps` | 新建一行数据的相关配置 | - |\n| `maxLength` | 最大的行数，到达最大行数新建按钮会自动消失 | number | - |\n| `editable` | 可编辑表格的相关配置 | - |\n| `controlled` | 是否受控，如果受控每次编辑都会触发 onChange，并且会修改 dataSource | `boolean` | false |\n| `editableFormRef` | table 所有的 form，带了一些表格特有的操作 | `React.Ref<EditableFormInstance<T>>` | `undefined` |\n#### ProTable - TableRowEditable\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| type | 可编辑表格的类型，单行编辑或者多行编辑 | `single` | `multiple` | - |\n| form | 可编辑表格的 form 实例，使用 `Form.useForm` 生成后使用 | `FormInstance` | - |\n| formProps | 可以配置 form 的属性，但是不支持 onFinish | - |\n| editableKeys | 正在编辑的行，受控属性。 默认 `key` 会使用 `rowKey` 的配置，如果没有配置会使用 `index`，建议使用 rowKey | `Key[]` | - |\n| onChange | 行数据被修改的时候触发 | `(editableKeys: Key[], editableRows: T[]) => void` | - |\n| onSave | 保存一行的时候触发 | `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>` | - |\n| saveText | 保存一行的文字 | `React.ReactNode` | `保存` |\n| onDelete | 删除一行的时候触发 | `(key: Key, row: T) => Promise<any>` | - |\n| deleteText | 删除一行的文字 | `React.ReactNode` | `删除` |\n| onCancel | 取消编辑一行时触发 | `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>` | - |\n| cancelText | 取消编辑一行的文字 | `React.ReactNode` | `取消` |\n| actionRender | 自定义编辑模式的操作栏 | `(row: T, config: ActionRenderConfig<T>) => ReactNode[]` | - |\n| deletePopconfirmMessage | 删除时弹出的确认框提示消息 | `ReactNode` | `删除此项？` |\n| onlyOneLineEditorAlertMessage | 只能编辑一行的的提示 | `ReactNode` | `只能同时编辑一行` |\n| onlyAddOneLineAlertMessage | 只能同时新增一行的提示 | `ReactNode` | `只能新增一行` |\n"
   },
   {
-    "title": "pro-components 的 ProTable - ProTable 有哪些配置？",
+    "title": "pro-components 的 ProTable - EditableProTable 有哪些配置？",
     "md": "| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| `value` | 同 dataSource，传入一个数组，是 table 渲染的元数据 | `T[]` | `undefined` |\n| `onChange` | dataSource 修改时触发，删除和修改都会触发，如果设置了 value，Table 会成为一个受控组件。 | `(value:T[])=>void` | `undefined` |\n| `recordCreatorProps` | 新建一行数据的相关配置 | - |\n| `maxLength` | 最大的行数，到达最大行数新建按钮会自动消失 | number | - |\n| `editable` | 可编辑表格的相关配置 | - |\n| `controlled` | 是否受控，如果受控每次编辑都会触发 onChange，并且会修改 dataSource | `boolean` | false |\n| `editableFormRef` | table 所有的 form，带了一些表格特有的操作 | `React.Ref<EditableFormInstance<T>>` | `undefined` |\n"
   },
   {
-    "title": "pro-components 中 ProTable - ProTable的`value`属性如何使用？",
+    "title": "pro-components 中 ProTable - EditableProTable的`value`属性如何使用？",
     "md": "属性: `value`\n描述: 同 dataSource，传入一个数组，是 table 渲染的元数据\n类型: `T[]`\n默认值: `undefined`\n"
   },
   {
-    "title": "pro-components 中 ProTable - ProTable的`onChange`属性如何使用？",
+    "title": "pro-components 中 ProTable - EditableProTable的`onChange`属性如何使用？",
     "md": "属性: `onChange`\n描述: dataSource 修改时触发，删除和修改都会触发，如果设置了 value，Table 会成为一个受控组件。\n类型: `(value:T[])=>void`\n默认值: `undefined`\n"
   },
   {
-    "title": "pro-components 中 ProTable - ProTable的`recordCreatorProps`属性如何使用？",
+    "title": "pro-components 中 ProTable - EditableProTable的`recordCreatorProps`属性如何使用？",
     "md": "属性: `recordCreatorProps`\n描述: 新建一行数据的相关配置\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - ProTable的`maxLength`属性如何使用？",
+    "title": "pro-components 中 ProTable - EditableProTable的`maxLength`属性如何使用？",
     "md": "属性: `maxLength`\n描述: 最大的行数，到达最大行数新建按钮会自动消失\n类型: number\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - ProTable的`editable`属性如何使用？",
+    "title": "pro-components 中 ProTable - EditableProTable的`editable`属性如何使用？",
     "md": "属性: `editable`\n描述: 可编辑表格的相关配置\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - ProTable的`controlled`属性如何使用？",
+    "title": "pro-components 中 ProTable - EditableProTable的`controlled`属性如何使用？",
     "md": "属性: `controlled`\n描述: 是否受控，如果受控每次编辑都会触发 onChange，并且会修改 dataSource\n类型: `boolean`\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProTable - ProTable的`editableFormRef`属性如何使用？",
+    "title": "pro-components 中 ProTable - EditableProTable的`editableFormRef`属性如何使用？",
     "md": "属性: `editableFormRef`\n描述: table 所有的 form，带了一些表格特有的操作\n类型: `React.Ref<EditableFormInstance<T>>`\n默认值: `undefined`\n"
   },
   {
-    "title": "pro-components 的 ProTable - editable 编辑行配置 有哪些配置？",
+    "title": "pro-components 的 ProTable - TableRowEditable 有哪些配置？",
     "md": "| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| type | 可编辑表格的类型，单行编辑或者多行编辑 | `single` | `multiple` | - |\n| form | 可编辑表格的 form 实例，使用 `Form.useForm` 生成后使用 | `FormInstance` | - |\n| formProps | 可以配置 form 的属性，但是不支持 onFinish | - |\n| editableKeys | 正在编辑的行，受控属性。 默认 `key` 会使用 `rowKey` 的配置，如果没有配置会使用 `index`，建议使用 rowKey | `Key[]` | - |\n| onChange | 行数据被修改的时候触发 | `(editableKeys: Key[], editableRows: T[]) => void` | - |\n| onSave | 保存一行的时候触发 | `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>` | - |\n| saveText | 保存一行的文字 | `React.ReactNode` | `保存` |\n| onDelete | 删除一行的时候触发 | `(key: Key, row: T) => Promise<any>` | - |\n| deleteText | 删除一行的文字 | `React.ReactNode` | `删除` |\n| onCancel | 取消编辑一行时触发 | `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>` | - |\n| cancelText | 取消编辑一行的文字 | `React.ReactNode` | `取消` |\n| actionRender | 自定义编辑模式的操作栏 | `(row: T, config: ActionRenderConfig<T>) => ReactNode[]` | - |\n| deletePopconfirmMessage | 删除时弹出的确认框提示消息 | `ReactNode` | `删除此项？` |\n| onlyOneLineEditorAlertMessage | 只能编辑一行的的提示 | `ReactNode` | `只能同时编辑一行` |\n| onlyAddOneLineAlertMessage | 只能同时新增一行的提示 | `ReactNode` | `只能新增一行` |\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的type属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的type属性如何使用？",
     "md": "属性: type\n描述: 可编辑表格的类型，单行编辑或者多行编辑\n类型: `single` | `multiple`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的form属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的form属性如何使用？",
     "md": "属性: form\n描述: 可编辑表格的 form 实例，使用 `Form.useForm` 生成后使用\n类型: `FormInstance`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的formProps属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的formProps属性如何使用？",
     "md": "属性: formProps\n描述: 可以配置 form 的属性，但是不支持 onFinish\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的editableKeys属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的editableKeys属性如何使用？",
     "md": "属性: editableKeys\n描述: 正在编辑的行，受控属性。 默认 `key` 会使用 `rowKey` 的配置，如果没有配置会使用 `index`，建议使用 rowKey\n类型: `Key[]`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的onChange属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的onChange属性如何使用？",
     "md": "属性: onChange\n描述: 行数据被修改的时候触发\n类型: `(editableKeys: Key[], editableRows: T[]) => void`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的onSave属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的onSave属性如何使用？",
     "md": "属性: onSave\n描述: 保存一行的时候触发\n类型: `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的saveText属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的saveText属性如何使用？",
     "md": "属性: saveText\n描述: 保存一行的文字\n类型: `React.ReactNode`\n默认值: `保存`\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的onDelete属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的onDelete属性如何使用？",
     "md": "属性: onDelete\n描述: 删除一行的时候触发\n类型: `(key: Key, row: T) => Promise<any>`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的deleteText属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的deleteText属性如何使用？",
     "md": "属性: deleteText\n描述: 删除一行的文字\n类型: `React.ReactNode`\n默认值: `删除`\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的onCancel属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的onCancel属性如何使用？",
     "md": "属性: onCancel\n描述: 取消编辑一行时触发\n类型: `(key: Key, row: T,originRow:T,newLine?:newLineConfig) => Promise<any>`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的cancelText属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的cancelText属性如何使用？",
     "md": "属性: cancelText\n描述: 取消编辑一行的文字\n类型: `React.ReactNode`\n默认值: `取消`\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的actionRender属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的actionRender属性如何使用？",
     "md": "属性: actionRender\n描述: 自定义编辑模式的操作栏\n类型: `(row: T, config: ActionRenderConfig<T>) => ReactNode[]`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的deletePopconfirmMessage属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的deletePopconfirmMessage属性如何使用？",
     "md": "属性: deletePopconfirmMessage\n描述: 删除时弹出的确认框提示消息\n类型: `ReactNode`\n默认值: `删除此项？`\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的onlyOneLineEditorAlertMessage属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的onlyOneLineEditorAlertMessage属性如何使用？",
     "md": "属性: onlyOneLineEditorAlertMessage\n描述: 只能编辑一行的的提示\n类型: `ReactNode`\n默认值: `只能同时编辑一行`\n"
   },
   {
-    "title": "pro-components 中 ProTable - editable 编辑行配置的onlyAddOneLineAlertMessage属性如何使用？",
+    "title": "pro-components 中 ProTable - TableRowEditable的onlyAddOneLineAlertMessage属性如何使用？",
     "md": "属性: onlyAddOneLineAlertMessage\n描述: 只能同时新增一行的提示\n类型: `ReactNode`\n默认值: `只能新增一行`\n"
   },
   {
     "title": "pro-components 的 Table 有哪些配置？",
-    "md": "#### ProTable - ProTable\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| dragSortKey | 如配置此参数，则会在该 key 对应的行显示拖拽排序把手，允许拖拽排序 | `string` | - |\n| dragSortHandlerRender | 渲染自定义拖动排序把手的函数 如配置了 dragSortKey 但未配置此参数，则使用默认把手图标 | `(rowData: T, idx: number) => React.ReactNode` | `<MenuOutlined className=\"dragSortDefaultHandle\" style={{ cursor: 'grab', color: '#999' }} />` |\n| onDragSortEnd | 拖动排序完成回调 | `(beforeIndex: number, afterIndex: number, newDataSource: T[]) => Promise<void> \\| void` | - |\n"
+    "md": "#### ProTable - DragSortTable\n| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| dragSortKey | 如配置此参数，则会在该 key 对应的行显示拖拽排序把手，允许拖拽排序 | `string` | - |\n| dragSortHandlerRender | 渲染自定义拖动排序把手的函数 如配置了 dragSortKey 但未配置此参数，则使用默认把手图标 | `(rowData: T, idx: number) => React.ReactNode` | `<MenuOutlined className=\"dragSortDefaultHandle\" style={{ cursor: 'grab', color: '#999' }} />` |\n| onDragSortEnd | 拖动排序完成回调 | `(beforeIndex: number, afterIndex: number, newDataSource: T[]) => Promise<void> \\| void` | - |\n"
   },
   {
-    "title": "pro-components 的 ProTable - ProTable 有哪些配置？",
+    "title": "pro-components 的 ProTable - DragSortTable 有哪些配置？",
     "md": "| 属性 | 描述 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| dragSortKey | 如配置此参数，则会在该 key 对应的行显示拖拽排序把手，允许拖拽排序 | `string` | - |\n| dragSortHandlerRender | 渲染自定义拖动排序把手的函数 如配置了 dragSortKey 但未配置此参数，则使用默认把手图标 | `(rowData: T, idx: number) => React.ReactNode` | `<MenuOutlined className=\"dragSortDefaultHandle\" style={{ cursor: 'grab', color: '#999' }} />` |\n| onDragSortEnd | 拖动排序完成回调 | `(beforeIndex: number, afterIndex: number, newDataSource: T[]) => Promise<void> \\| void` | - |\n"
   },
   {
-    "title": "pro-components 中 ProTable - ProTable的dragSortKey属性如何使用？",
+    "title": "pro-components 中 ProTable - DragSortTable的dragSortKey属性如何使用？",
     "md": "属性: dragSortKey\n描述: 如配置此参数，则会在该 key 对应的行显示拖拽排序把手，允许拖拽排序\n类型: `string`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProTable - ProTable的dragSortHandlerRender属性如何使用？",
+    "title": "pro-components 中 ProTable - DragSortTable的dragSortHandlerRender属性如何使用？",
     "md": "属性: dragSortHandlerRender\n描述: 渲染自定义拖动排序把手的函数 如配置了 dragSortKey 但未配置此参数，则使用默认把手图标\n类型: `(rowData: T, idx: number) => React.ReactNode`\n默认值: `<MenuOutlined className=\"dragSortDefaultHandle\" style={{ cursor: 'grab', color: '#999' }} />`\n"
   },
   {
-    "title": "pro-components 中 ProTable - ProTable的onDragSortEnd属性如何使用？",
+    "title": "pro-components 中 ProTable - DragSortTable的onDragSortEnd属性如何使用？",
     "md": "属性: onDragSortEnd\n描述: 拖动排序完成回调\n类型: `(beforeIndex: number, afterIndex: number, newDataSource: T[]) => Promise<void> | void`\n默认值: -\n"
   },
   {
@@ -1293,182 +1293,178 @@
   },
   {
     "title": "pro-components 的 Layout 有哪些配置？",
-    "md": "#### ProLayout - 基础参数\n| 参数 | 说明 | 类型 | 默认值 | 版本 |\n| --- | --- | --- | --- | --- |\n| width | 水印的宽度 | number | 120 | 2.2.0 |\n| height | 水印的高度 | number | 64 | 2.2.0 |\n| rotate | 水印绘制时，旋转的角度，单位 ° | number | -22 | 2.2.0 |\n| image | 图片源，建议导出 2 倍或 3 倍图，优先使用图片渲染水印 | `string` | - | 2.2.0 |\n| zIndex | 追加的水印元素的 z-index | number | 9 | 2.2.0 |\n| content | 水印文字内容 | `string` | `string[]` | - | 2.2.0 |\n| fontColor | 水印文字颜色 | `string` | `rgba(0,0,0,.15)` | 2.2.0 |\n| fontSize | 文字大小 | `string` | `number` | 16 | 2.2.0 |\n#### ProLayout - 高级参数\n| 参数 | 说明 | 类型 | 默认值 | 版本 |\n| --- | --- | --- | --- | --- |\n| markStyle | 水印层的样式 | React.CSSProperties | - | 2.3.0 |\n| markClassName | 水印层的类名 | string | - | 2.3.0 |\n| gapX | 水印之间的水平间距 | number | 212 | 2.4.0 |\n| gapY | 水印之间的垂直间距 | number | 222 | 2.4.0 |\n| offsetLeft | 水印在 canvas 画布上绘制的水平偏移量，正常情况下，水印绘制在中间位置，即 `offsetLeft = gapX / 2` | number | `offsetLeft = gapX / 2` | 2.4.0 |\n| offsetTop | 水印在 canvas 画布上绘制的垂直偏移量，正常情况下，水印绘制在中间位置，即 `offsetTop = gapY / 2` | number | `offsetTop = gapY / 2` | 2.4.0 |\n"
+    "md": "#### ProLayout - WaterMark\n| 参数 | 说明 | 类型 | 默认值 | 版本 |\n| --- | --- | --- | --- | --- |\n| width | 水印的宽度 | number | 120 | 2.2.0 |\n| height | 水印的高度 | number | 64 | 2.2.0 |\n| rotate | 水印绘制时，旋转的角度，单位 ° | number | -22 | 2.2.0 |\n| image | 图片源，建议导出 2 倍或 3 倍图，优先使用图片渲染水印 | `string` | - | 2.2.0 |\n| zIndex | 追加的水印元素的 z-index | number | 9 | 2.2.0 |\n| content | 水印文字内容 | `string` | `string[]` | - | 2.2.0 |\n| fontColor | 水印文字颜色 | `string` | `rgba(0,0,0,.15)` | 2.2.0 |\n| fontSize | 文字大小 | `string` | `number` | 16 | 2.2.0 |\n| markStyle | 水印层的样式 | React.CSSProperties | - | 2.3.0 |\n| markClassName | 水印层的类名 | string | - | 2.3.0 |\n| gapX | 水印之间的水平间距 | number | 212 | 2.4.0 |\n| gapY | 水印之间的垂直间距 | number | 222 | 2.4.0 |\n| offsetLeft | 水印在 canvas 画布上绘制的水平偏移量，正常情况下，水印绘制在中间位置，即 `offsetLeft = gapX / 2` | number | `offsetLeft = gapX / 2` | 2.4.0 |\n| offsetTop | 水印在 canvas 画布上绘制的垂直偏移量，正常情况下，水印绘制在中间位置，即 `offsetTop = gapY / 2` | number | `offsetTop = gapY / 2` | 2.4.0 |\n"
   },
   {
-    "title": "pro-components 的 ProLayout - 基础参数 有哪些配置？",
-    "md": "| 参数 | 说明 | 类型 | 默认值 | 版本 |\n| --- | --- | --- | --- | --- |\n| width | 水印的宽度 | number | 120 | 2.2.0 |\n| height | 水印的高度 | number | 64 | 2.2.0 |\n| rotate | 水印绘制时，旋转的角度，单位 ° | number | -22 | 2.2.0 |\n| image | 图片源，建议导出 2 倍或 3 倍图，优先使用图片渲染水印 | `string` | - | 2.2.0 |\n| zIndex | 追加的水印元素的 z-index | number | 9 | 2.2.0 |\n| content | 水印文字内容 | `string` | `string[]` | - | 2.2.0 |\n| fontColor | 水印文字颜色 | `string` | `rgba(0,0,0,.15)` | 2.2.0 |\n| fontSize | 文字大小 | `string` | `number` | 16 | 2.2.0 |\n"
+    "title": "pro-components 的 ProLayout - WaterMark 有哪些配置？",
+    "md": "| 参数 | 说明 | 类型 | 默认值 | 版本 |\n| --- | --- | --- | --- | --- |\n| width | 水印的宽度 | number | 120 | 2.2.0 |\n| height | 水印的高度 | number | 64 | 2.2.0 |\n| rotate | 水印绘制时，旋转的角度，单位 ° | number | -22 | 2.2.0 |\n| image | 图片源，建议导出 2 倍或 3 倍图，优先使用图片渲染水印 | `string` | - | 2.2.0 |\n| zIndex | 追加的水印元素的 z-index | number | 9 | 2.2.0 |\n| content | 水印文字内容 | `string` | `string[]` | - | 2.2.0 |\n| fontColor | 水印文字颜色 | `string` | `rgba(0,0,0,.15)` | 2.2.0 |\n| fontSize | 文字大小 | `string` | `number` | 16 | 2.2.0 |\n| markStyle | 水印层的样式 | React.CSSProperties | - | 2.3.0 |\n| markClassName | 水印层的类名 | string | - | 2.3.0 |\n| gapX | 水印之间的水平间距 | number | 212 | 2.4.0 |\n| gapY | 水印之间的垂直间距 | number | 222 | 2.4.0 |\n| offsetLeft | 水印在 canvas 画布上绘制的水平偏移量，正常情况下，水印绘制在中间位置，即 `offsetLeft = gapX / 2` | number | `offsetLeft = gapX / 2` | 2.4.0 |\n| offsetTop | 水印在 canvas 画布上绘制的垂直偏移量，正常情况下，水印绘制在中间位置，即 `offsetTop = gapY / 2` | number | `offsetTop = gapY / 2` | 2.4.0 |\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 基础参数的width属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的width属性如何使用？",
     "md": "参数: width\n说明: 水印的宽度\n类型: number\n默认值: 120\n版本: 2.2.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 基础参数的height属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的height属性如何使用？",
     "md": "参数: height\n说明: 水印的高度\n类型: number\n默认值: 64\n版本: 2.2.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 基础参数的rotate属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的rotate属性如何使用？",
     "md": "参数: rotate\n说明: 水印绘制时，旋转的角度，单位 °\n类型: number\n默认值: -22\n版本: 2.2.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 基础参数的image属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的image属性如何使用？",
     "md": "参数: image\n说明: 图片源，建议导出 2 倍或 3 倍图，优先使用图片渲染水印\n类型: `string`\n默认值: -\n版本: 2.2.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 基础参数的zIndex属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的zIndex属性如何使用？",
     "md": "参数: zIndex\n说明: 追加的水印元素的 z-index\n类型: number\n默认值: 9\n版本: 2.2.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 基础参数的content属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的content属性如何使用？",
     "md": "参数: content\n说明: 水印文字内容\n类型: `string` | `string[]`\n默认值: -\n版本: 2.2.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 基础参数的fontColor属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的fontColor属性如何使用？",
     "md": "参数: fontColor\n说明: 水印文字颜色\n类型: `string`\n默认值: `rgba(0,0,0,.15)`\n版本: 2.2.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 基础参数的fontSize属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的fontSize属性如何使用？",
     "md": "参数: fontSize\n说明: 文字大小\n类型: `string` | `number`\n默认值: 16\n版本: 2.2.0\n"
   },
   {
-    "title": "pro-components 的 ProLayout - 高级参数 有哪些配置？",
-    "md": "| 参数 | 说明 | 类型 | 默认值 | 版本 |\n| --- | --- | --- | --- | --- |\n| markStyle | 水印层的样式 | React.CSSProperties | - | 2.3.0 |\n| markClassName | 水印层的类名 | string | - | 2.3.0 |\n| gapX | 水印之间的水平间距 | number | 212 | 2.4.0 |\n| gapY | 水印之间的垂直间距 | number | 222 | 2.4.0 |\n| offsetLeft | 水印在 canvas 画布上绘制的水平偏移量，正常情况下，水印绘制在中间位置，即 `offsetLeft = gapX / 2` | number | `offsetLeft = gapX / 2` | 2.4.0 |\n| offsetTop | 水印在 canvas 画布上绘制的垂直偏移量，正常情况下，水印绘制在中间位置，即 `offsetTop = gapY / 2` | number | `offsetTop = gapY / 2` | 2.4.0 |\n"
-  },
-  {
-    "title": "pro-components 中 ProLayout - 高级参数的markStyle属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的markStyle属性如何使用？",
     "md": "参数: markStyle\n说明: 水印层的样式\n类型: React.CSSProperties\n默认值: -\n版本: 2.3.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 高级参数的markClassName属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的markClassName属性如何使用？",
     "md": "参数: markClassName\n说明: 水印层的类名\n类型: string\n默认值: -\n版本: 2.3.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 高级参数的gapX属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的gapX属性如何使用？",
     "md": "参数: gapX\n说明: 水印之间的水平间距\n类型: number\n默认值: 212\n版本: 2.4.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 高级参数的gapY属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的gapY属性如何使用？",
     "md": "参数: gapY\n说明: 水印之间的垂直间距\n类型: number\n默认值: 222\n版本: 2.4.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 高级参数的offsetLeft属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的offsetLeft属性如何使用？",
     "md": "参数: offsetLeft\n说明: 水印在 canvas 画布上绘制的水平偏移量，正常情况下，水印绘制在中间位置，即 `offsetLeft = gapX / 2`\n类型: number\n默认值: `offsetLeft = gapX / 2`\n版本: 2.4.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - 高级参数的offsetTop属性如何使用？",
+    "title": "pro-components 中 ProLayout - WaterMark的offsetTop属性如何使用？",
     "md": "参数: offsetTop\n说明: 水印在 canvas 画布上绘制的垂直偏移量，正常情况下，水印绘制在中间位置，即 `offsetTop = gapY / 2`\n类型: number\n默认值: `offsetTop = gapY / 2`\n版本: 2.4.0\n"
   },
   {
     "title": "pro-components 的 Layout 有哪些配置？",
-    "md": "#### ProLayout - ProLayout\n| 参数 | 说明 | 类型 |\n| --- | --- | --- | --- | --- |\n| avatar | 标题栏旁的头像 | - |\n| backIcon | 自定义 back icon ，如果为 false 不渲染 back icon | ReactNode | boolean | \\<ArrowLeft /> |\n| breadcrumb | 面包屑的配置 | - |\n| breadcrumbRender | 自定义面包屑区域的内容 | `(props, originBreadcrumb) => ReactNode` | - | 4.11.0 |\n| extra | 操作区，位于 title 行的行尾 | ReactNode | - |\n| footer | PageHeader 的页脚，一般用于渲染 TabBar | ReactNode | - |\n| ghost | pageHeader 的类型，将会改变背景颜色 | boolean | true |\n| subTitle | 自定义的二级标题文字 | ReactNode | - |\n| tags | title 旁的 tag 列表 | - |\n| title | 自定义标题文字 | ReactNode | - |\n| onBack | 返回按钮的点击事件 | () => void | - |\n"
+    "md": "#### ProLayout - PageHeader\n| 参数 | 说明 | 类型 |\n| --- | --- | --- | --- | --- |\n| avatar | 标题栏旁的头像 | - |\n| backIcon | 自定义 back icon ，如果为 false 不渲染 back icon | ReactNode | boolean | \\<ArrowLeft /> |\n| breadcrumb | 面包屑的配置 | - |\n| breadcrumbRender | 自定义面包屑区域的内容 | `(props, originBreadcrumb) => ReactNode` | - | 4.11.0 |\n| extra | 操作区，位于 title 行的行尾 | ReactNode | - |\n| footer | PageHeader 的页脚，一般用于渲染 TabBar | ReactNode | - |\n| ghost | pageHeader 的类型，将会改变背景颜色 | boolean | true |\n| subTitle | 自定义的二级标题文字 | ReactNode | - |\n| tags | title 旁的 tag 列表 | - |\n| title | 自定义标题文字 | ReactNode | - |\n| onBack | 返回按钮的点击事件 | () => void | - |\n"
   },
   {
-    "title": "pro-components 的 ProLayout - ProLayout 有哪些配置？",
+    "title": "pro-components 的 ProLayout - PageHeader 有哪些配置？",
     "md": "| 参数 | 说明 | 类型 |\n| --- | --- | --- | --- | --- |\n| avatar | 标题栏旁的头像 | - |\n| backIcon | 自定义 back icon ，如果为 false 不渲染 back icon | ReactNode | boolean | \\<ArrowLeft /> |\n| breadcrumb | 面包屑的配置 | - |\n| breadcrumbRender | 自定义面包屑区域的内容 | `(props, originBreadcrumb) => ReactNode` | - | 4.11.0 |\n| extra | 操作区，位于 title 行的行尾 | ReactNode | - |\n| footer | PageHeader 的页脚，一般用于渲染 TabBar | ReactNode | - |\n| ghost | pageHeader 的类型，将会改变背景颜色 | boolean | true |\n| subTitle | 自定义的二级标题文字 | ReactNode | - |\n| tags | title 旁的 tag 列表 | - |\n| title | 自定义标题文字 | ReactNode | - |\n| onBack | 返回按钮的点击事件 | () => void | - |\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的avatar属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的avatar属性如何使用？",
     "md": "参数: avatar\n说明: 标题栏旁的头像\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的backIcon属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的backIcon属性如何使用？",
     "md": "参数: backIcon\n说明: 自定义 back icon ，如果为 false 不渲染 back icon\n类型: ReactNode | boolean\n默认值: \\<ArrowLeft />\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的breadcrumb属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的breadcrumb属性如何使用？",
     "md": "参数: breadcrumb\n说明: 面包屑的配置\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的breadcrumbRender属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的breadcrumbRender属性如何使用？",
     "md": "参数: breadcrumbRender\n说明: 自定义面包屑区域的内容\n类型: `(props, originBreadcrumb) => ReactNode`\n默认值: -\n版本: 4.11.0\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的extra属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的extra属性如何使用？",
     "md": "参数: extra\n说明: 操作区，位于 title 行的行尾\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的footer属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的footer属性如何使用？",
     "md": "参数: footer\n说明: PageHeader 的页脚，一般用于渲染 TabBar\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的ghost属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的ghost属性如何使用？",
     "md": "参数: ghost\n说明: pageHeader 的类型，将会改变背景颜色\n类型: boolean\n默认值: true\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的subTitle属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的subTitle属性如何使用？",
     "md": "参数: subTitle\n说明: 自定义的二级标题文字\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的tags属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的tags属性如何使用？",
     "md": "参数: tags\n说明: title 旁的 tag 列表\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的title属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的title属性如何使用？",
     "md": "参数: title\n说明: 自定义标题文字\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的onBack属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageHeader的onBack属性如何使用？",
     "md": "参数: onBack\n说明: 返回按钮的点击事件\n类型: () => void\n默认值: -\n"
   },
   {
     "title": "pro-components 的 Layout 有哪些配置？",
-    "md": "#### ProLayout - ProLayout\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| content | 内容区 | ReactNode | - |\n| extraContent | 额外内容区，位于 content 的右侧 | ReactNode | - |\n| tabList | tab 标题列表 | `{key: string, tab: ReactNode}[]` | - |\n| tabActiveKey | 当前高亮的 tab 项 | string | - |\n| onTabChange | 切换面板的回调 | `(key) => void` | - |\n| tabBarExtraContent | tab bar 上额外的元素 | `React.ReactNode` | - |\n| header | `PageHeaderProps` | - |\n| ghost | 配置头部区域的背景颜色为透明 | boolean | false |\n| fixedHeader | 固定 pageHeader 的内容到顶部，如果页面内容较少，最好不要使用，会有严重的遮挡问题 | `boolean` | - |\n| affixProps | 固钉的配置，与 antd 完全相同 | `AffixProps` | - |\n| footer | 悬浮在底部的操作栏，传入一个数组，会自动加空格 | `ReactNode[]` | - |\n| waterMarkProps | 配置水印，Layout 会透传给 PageContainer，但是以 PageContainer 的配置优先 | - |\n| tabProps | Tabs 的相关属性，只有卡片样式的页签支持新增和关闭选项。使用 `closable={false}` 禁止关闭 | - |\n#### ProLayout - FooterToolbar\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| extra | 额外内容区，位于 content 的右侧 | `ReactNode` | - |\n| children | 内容区域 | `ReactNode`|`ReactNode[]` | - |\n"
+    "md": "#### ProLayout - PageContainer\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| content | 内容区 | ReactNode | - |\n| extraContent | 额外内容区，位于 content 的右侧 | ReactNode | - |\n| tabList | tab 标题列表 | `{key: string, tab: ReactNode}[]` | - |\n| tabActiveKey | 当前高亮的 tab 项 | string | - |\n| onTabChange | 切换面板的回调 | `(key) => void` | - |\n| tabBarExtraContent | tab bar 上额外的元素 | `React.ReactNode` | - |\n| header | `PageHeaderProps` | - |\n| ghost | 配置头部区域的背景颜色为透明 | boolean | false |\n| fixedHeader | 固定 pageHeader 的内容到顶部，如果页面内容较少，最好不要使用，会有严重的遮挡问题 | `boolean` | - |\n| affixProps | 固钉的配置，与 antd 完全相同 | `AffixProps` | - |\n| footer | 悬浮在底部的操作栏，传入一个数组，会自动加空格 | `ReactNode[]` | - |\n| waterMarkProps | 配置水印，Layout 会透传给 PageContainer，但是以 PageContainer 的配置优先 | - |\n| tabProps | Tabs 的相关属性，只有卡片样式的页签支持新增和关闭选项。使用 `closable={false}` 禁止关闭 | - |\n#### ProLayout - FooterToolbar\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| extra | 额外内容区，位于 content 的右侧 | `ReactNode` | - |\n| children | 内容区域 | `ReactNode`|`ReactNode[]` | - |\n"
   },
   {
-    "title": "pro-components 的 ProLayout - ProLayout 有哪些配置？",
+    "title": "pro-components 的 ProLayout - PageContainer 有哪些配置？",
     "md": "| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| content | 内容区 | ReactNode | - |\n| extraContent | 额外内容区，位于 content 的右侧 | ReactNode | - |\n| tabList | tab 标题列表 | `{key: string, tab: ReactNode}[]` | - |\n| tabActiveKey | 当前高亮的 tab 项 | string | - |\n| onTabChange | 切换面板的回调 | `(key) => void` | - |\n| tabBarExtraContent | tab bar 上额外的元素 | `React.ReactNode` | - |\n| header | `PageHeaderProps` | - |\n| ghost | 配置头部区域的背景颜色为透明 | boolean | false |\n| fixedHeader | 固定 pageHeader 的内容到顶部，如果页面内容较少，最好不要使用，会有严重的遮挡问题 | `boolean` | - |\n| affixProps | 固钉的配置，与 antd 完全相同 | `AffixProps` | - |\n| footer | 悬浮在底部的操作栏，传入一个数组，会自动加空格 | `ReactNode[]` | - |\n| waterMarkProps | 配置水印，Layout 会透传给 PageContainer，但是以 PageContainer 的配置优先 | - |\n| tabProps | Tabs 的相关属性，只有卡片样式的页签支持新增和关闭选项。使用 `closable={false}` 禁止关闭 | - |\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的content属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的content属性如何使用？",
     "md": "参数: content\n说明: 内容区\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的extraContent属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的extraContent属性如何使用？",
     "md": "参数: extraContent\n说明: 额外内容区，位于 content 的右侧\n类型: ReactNode\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的tabList属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的tabList属性如何使用？",
     "md": "参数: tabList\n说明: tab 标题列表\n类型: `{key: string, tab: ReactNode}[]`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的tabActiveKey属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的tabActiveKey属性如何使用？",
     "md": "参数: tabActiveKey\n说明: 当前高亮的 tab 项\n类型: string\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的onTabChange属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的onTabChange属性如何使用？",
     "md": "参数: onTabChange\n说明: 切换面板的回调\n类型: `(key) => void`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的tabBarExtraContent属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的tabBarExtraContent属性如何使用？",
     "md": "参数: tabBarExtraContent\n说明: tab bar 上额外的元素\n类型: `React.ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的header属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的header属性如何使用？",
     "md": "参数: header\n说明: `PageHeaderProps`\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的ghost属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的ghost属性如何使用？",
     "md": "参数: ghost\n说明: 配置头部区域的背景颜色为透明\n类型: boolean\n默认值: false\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的fixedHeader属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的fixedHeader属性如何使用？",
     "md": "参数: fixedHeader\n说明: 固定 pageHeader 的内容到顶部，如果页面内容较少，最好不要使用，会有严重的遮挡问题\n类型: `boolean`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的affixProps属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的affixProps属性如何使用？",
     "md": "参数: affixProps\n说明: 固钉的配置，与 antd 完全相同\n类型: `AffixProps`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的footer属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的footer属性如何使用？",
     "md": "参数: footer\n说明: 悬浮在底部的操作栏，传入一个数组，会自动加空格\n类型: `ReactNode[]`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的waterMarkProps属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的waterMarkProps属性如何使用？",
     "md": "参数: waterMarkProps\n说明: 配置水印，Layout 会透传给 PageContainer，但是以 PageContainer 的配置优先\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProLayout - ProLayout的tabProps属性如何使用？",
+    "title": "pro-components 中 ProLayout - PageContainer的tabProps属性如何使用？",
     "md": "参数: tabProps\n说明: Tabs 的相关属性，只有卡片样式的页签支持新增和关闭选项。使用 `closable={false}` 禁止关闭\n类型: -\n"
   },
   {
@@ -1633,42 +1629,42 @@
   },
   {
     "title": "pro-components 的 Form 有哪些配置？",
-    "md": "#### ProForm - ProForm\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| current | 当前表单的步骤数，从 `0` 开始 | `number` | 0 |\n| onCurrentChange | current 发生改变的事件 | `(current:number)=>void` | - |\n| onFinish | 表单最后一步提交成功触发，如果返回`true`就会自动重置表单（包括`StepForm`变回第一步） | `(values:T)=>void \\| boolean` | - |\n| stepsProps | StepsForm 自带的 Steps 的 props，使用方式与 [antd](https://ant.design/components/steps-cn/) 相同，但是去掉了 current 和 onChange | - |\n| stepFormRender | 自定义当前展示的表单，返回 dom 在表单内部 | `(form) => ReactNode` | - |\n| stepsFormRender | 自定义整个表单区域，返回的 dom 在表单的外部 | `(form,submitter) => ReactNode` | - |\n| stepsRender | 自定义步骤器 | `(steps,dom)=>ReactNode` | - |\n| formRef | StepForm action 的引用，便于自定义触发 | `MutableRefObject<FormInstance>` | - |\n#### ProForm - StepForm\n| 参数     | 说明             | 类型                         | 默认值 |\n| -------- | ---------------- | ---------------------------- | ------ |\n| onFinish | 表单提交成功触发 | `(values:T)=>Promise<false>` | -      |\n"
+    "md": "#### ProForm - StepsForm\n| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| current | 当前表单的步骤数，从 `0` 开始 | `number` | 0 |\n| onCurrentChange | current 发生改变的事件 | `(current:number)=>void` | - |\n| onFinish | 表单最后一步提交成功触发，如果返回`true`就会自动重置表单（包括`StepForm`变回第一步） | `(values:T)=>void \\| boolean` | - |\n| stepsProps | StepsForm 自带的 Steps 的 props，使用方式与 [antd](https://ant.design/components/steps-cn/) 相同，但是去掉了 current 和 onChange | - |\n| stepFormRender | 自定义当前展示的表单，返回 dom 在表单内部 | `(form) => ReactNode` | - |\n| stepsFormRender | 自定义整个表单区域，返回的 dom 在表单的外部 | `(form,submitter) => ReactNode` | - |\n| stepsRender | 自定义步骤器 | `(steps,dom)=>ReactNode` | - |\n| formRef | StepForm action 的引用，便于自定义触发 | `MutableRefObject<FormInstance>` | - |\n#### ProForm - StepForm\n| 参数     | 说明             | 类型                         | 默认值 |\n| -------- | ---------------- | ---------------------------- | ------ |\n| onFinish | 表单提交成功触发 | `(values:T)=>Promise<false>` | -      |\n"
   },
   {
-    "title": "pro-components 的 ProForm - ProForm 有哪些配置？",
+    "title": "pro-components 的 ProForm - StepsForm 有哪些配置？",
     "md": "| 参数 | 说明 | 类型 | 默认值 |\n| --- | --- | --- | --- |\n| current | 当前表单的步骤数，从 `0` 开始 | `number` | 0 |\n| onCurrentChange | current 发生改变的事件 | `(current:number)=>void` | - |\n| onFinish | 表单最后一步提交成功触发，如果返回`true`就会自动重置表单（包括`StepForm`变回第一步） | `(values:T)=>void \\| boolean` | - |\n| stepsProps | StepsForm 自带的 Steps 的 props，使用方式与 [antd](https://ant.design/components/steps-cn/) 相同，但是去掉了 current 和 onChange | - |\n| stepFormRender | 自定义当前展示的表单，返回 dom 在表单内部 | `(form) => ReactNode` | - |\n| stepsFormRender | 自定义整个表单区域，返回的 dom 在表单的外部 | `(form,submitter) => ReactNode` | - |\n| stepsRender | 自定义步骤器 | `(steps,dom)=>ReactNode` | - |\n| formRef | StepForm action 的引用，便于自定义触发 | `MutableRefObject<FormInstance>` | - |\n"
   },
   {
-    "title": "pro-components 中 ProForm - ProForm的current属性如何使用？",
+    "title": "pro-components 中 ProForm - StepsForm的current属性如何使用？",
     "md": "参数: current\n说明: 当前表单的步骤数，从 `0` 开始\n类型: `number`\n默认值: 0\n"
   },
   {
-    "title": "pro-components 中 ProForm - ProForm的onCurrentChange属性如何使用？",
+    "title": "pro-components 中 ProForm - StepsForm的onCurrentChange属性如何使用？",
     "md": "参数: onCurrentChange\n说明: current 发生改变的事件\n类型: `(current:number)=>void`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - ProForm的onFinish属性如何使用？",
+    "title": "pro-components 中 ProForm - StepsForm的onFinish属性如何使用？",
     "md": "参数: onFinish\n说明: 表单最后一步提交成功触发，如果返回`true`就会自动重置表单（包括`StepForm`变回第一步）\n类型: `(values:T)=>void | boolean`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - ProForm的stepsProps属性如何使用？",
+    "title": "pro-components 中 ProForm - StepsForm的stepsProps属性如何使用？",
     "md": "参数: stepsProps\n说明: StepsForm 自带的 Steps 的 props，使用方式与 [antd](https://ant.design/components/steps-cn/) 相同，但是去掉了 current 和 onChange\n类型: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - ProForm的stepFormRender属性如何使用？",
+    "title": "pro-components 中 ProForm - StepsForm的stepFormRender属性如何使用？",
     "md": "参数: stepFormRender\n说明: 自定义当前展示的表单，返回 dom 在表单内部\n类型: `(form) => ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - ProForm的stepsFormRender属性如何使用？",
+    "title": "pro-components 中 ProForm - StepsForm的stepsFormRender属性如何使用？",
     "md": "参数: stepsFormRender\n说明: 自定义整个表单区域，返回的 dom 在表单的外部\n类型: `(form,submitter) => ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - ProForm的stepsRender属性如何使用？",
+    "title": "pro-components 中 ProForm - StepsForm的stepsRender属性如何使用？",
     "md": "参数: stepsRender\n说明: 自定义步骤器\n类型: `(steps,dom)=>ReactNode`\n默认值: -\n"
   },
   {
-    "title": "pro-components 中 ProForm - ProForm的formRef属性如何使用？",
+    "title": "pro-components 中 ProForm - StepsForm的formRef属性如何使用？",
     "md": "参数: formRef\n说明: StepForm action 的引用，便于自定义触发\n类型: `MutableRefObject<FormInstance>`\n默认值: -\n"
   },
   {
