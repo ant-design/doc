@@ -232,11 +232,6 @@ async function readUmi() {
   for (const fileName of markdownFiles) {
     const markdownContent = fs.readFileSync(fileName, 'utf-8');
 
-    console.log(
-      'fileName--->',
-      fileName.split(path.sep).at(-1).split('.').at(0),
-    );
-
     let url = fileName.split(path.sep).at(-1).split('.').at(0);
 
     url = `https://umijs.org/docs/api/${url}`;
@@ -263,7 +258,10 @@ async function readUmi() {
               .stringify(node.children[0])
               ?.replace(/\n/g, '')
               .trim(),
-            url,
+            url:
+              url +
+              '#' +
+              myRemark.stringify(node.children[0])?.replace(/\n/g, '').trim(),
             property: [],
           });
         }
@@ -272,11 +270,17 @@ async function readUmi() {
             .at(-1)
             .properties.at(-1)
             ?.property?.push({
-              title: remark()
-                .use(remarkGfm)
+              title: myRemark()
                 .stringify(node.children[0])
                 ?.replace(/\n/g, '')
                 .trim(),
+              url:
+                url +
+                '#' +
+                myRemark()
+                  .stringify(node.children[0])
+                  ?.replace(/\n/g, '')
+                  .trim(),
               md: '',
             });
         }
