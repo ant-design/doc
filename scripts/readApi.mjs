@@ -229,8 +229,17 @@ async function readUmi() {
   );
   const markdownFiles = readMarkdownFiles(directoryPath);
   const apiConfigs = [];
-  for (const file of markdownFiles) {
-    const markdownContent = fs.readFileSync(file, 'utf-8');
+  for (const fileName of markdownFiles) {
+    const markdownContent = fs.readFileSync(fileName, 'utf-8');
+
+    console.log(
+      'fileName--->',
+      fileName.split(path.sep).at(-1).split('.').at(0),
+    );
+
+    let url = fileName.split(path.sep).at(-1).split('.').at(0);
+
+    url = `https://umijs.org/docs/api/${url}`;
 
     // 解析Markdown为抽象语法树（AST）
     const ast = processor.parse(markdownContent);
@@ -244,6 +253,7 @@ async function readUmi() {
               ?.replace(/\n/g, '')
               .trim(),
             properties: [],
+            url,
             md: myRemark.stringify(node)?.replace(/\n/g, '').trim(),
           });
         }
@@ -253,6 +263,7 @@ async function readUmi() {
               .stringify(node.children[0])
               ?.replace(/\n/g, '')
               .trim(),
+            url,
             property: [],
           });
         }
