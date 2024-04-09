@@ -124,6 +124,8 @@ export const layout: RuntimeConfig = {
 
 #### onRouteChange
 
+<HashAnchorCompat from="#onroutechange-routes-clientroutes-location-action-basename-isfirst-" to="#onroutechange"></HashAnchorCompat>
+
 - type: `(args: { routes: Routes; clientRoutes: Routes; location: Location; action: Action; basename: string; isFirst: boolean }) => void` 在初始加载和路由切换时做一些事情。比如用于做埋点统计，
 
 ```ts
@@ -154,6 +156,8 @@ export function onRouteChange({ clientRoutes, location }) {
 
 #### patchRoutes
 
+<HashAnchorCompat from="#patchroutes-routes-" to="#patchroutes"></HashAnchorCompat>
+
 - type: `(args: { routes: Routes; routeComponents }) => void`
 
 ```ts
@@ -167,6 +171,8 @@ export function patchRoutes({ routes, routeComponents }) {
 - `routeComponents`: 路由对应的组件映射。注：如需动态更新路由，建议使用 `patchClientRoutes()` ，否则你可能需要同时修改 `routes` 和 `routeComponents`。
 
 #### patchClientRoutes
+
+<HashAnchorCompat from="#patchclientroutes-routes-" to="#patchclientroutes"></HashAnchorCompat>
 
 - type: `(args: { routes: Routes; }) => void` 修改被 react-router 渲染前的树状路由表，接收内容同 [useRoutes](https://reactrouter.com/en/main/hooks/use-routes)。比如在最前面添加一个 `/foo` 路由，
 
@@ -242,6 +248,8 @@ Umi 内置了 `qiankun` 插件来提供微前端的能力，具体参考[插件�
 
 #### render
 
+<HashAnchorCompat from="#renderoldrender-function" to="#render"></HashAnchorCompat>
+
 - Type: `(oldRender: Function)=>void` 覆写 render。比如用于渲染之前做权限校验，
 
 ```bash
@@ -261,6 +269,8 @@ export function render(oldRender) {
 如果你使用了 `import { request } from 'umi';` 来请求数据，那么你可以通过该配置来自定义中间件、拦截器、错误处理适配等。具体参考 [request](../max/request) 插件配置。
 
 #### rootContainer
+
+<HashAnchorCompat from="#rootcontainerlastrootcontainer-args" to="#rootcontainer"></HashAnchorCompat>
 
 - Type: `(container: JSX.Element,args: { routes: Routes; plugin; history: History }) => JSX.Element;` 修改交给 react-dom 渲染时的根组件。比如用于在外面包一个 Provider，
 
@@ -371,6 +381,8 @@ export const layout: RuntimeConfig = {
 
 ### umi 如何使用 onRouteChange?
 
+<HashAnchorCompat from="#onroutechange-routes-clientroutes-location-action-basename-isfirst-" to="#onroutechange"></HashAnchorCompat>
+
 - type: `(args: { routes: Routes; clientRoutes: Routes; location: Location; action: Action; basename: string; isFirst: boolean }) => void` 在初始加载和路由切换时做一些事情。比如用于做埋点统计，
 
 ```ts
@@ -401,6 +413,8 @@ export function onRouteChange({ clientRoutes, location }) {
 
 ### umi 如何使用 patchRoutes?
 
+<HashAnchorCompat from="#patchroutes-routes-" to="#patchroutes"></HashAnchorCompat>
+
 - type: `(args: { routes: Routes; routeComponents }) => void`
 
 ```ts
@@ -414,6 +428,8 @@ export function patchRoutes({ routes, routeComponents }) {
 - `routeComponents`: 路由对应的组件映射。注：如需动态更新路由，建议使用 `patchClientRoutes()` ，否则你可能需要同时修改 `routes` 和 `routeComponents`。
 
 ### umi 如何使用 patchClientRoutes?
+
+<HashAnchorCompat from="#patchclientroutes-routes-" to="#patchclientroutes"></HashAnchorCompat>
 
 - type: `(args: { routes: Routes; }) => void` 修改被 react-router 渲染前的树状路由表，接收内容同 [useRoutes](https://reactrouter.com/en/main/hooks/use-routes)。比如在最前面添加一个 `/foo` 路由，
 
@@ -489,6 +505,8 @@ Umi 内置了 `qiankun` 插件来提供微前端的能力，具体参考[插件�
 
 ### umi 如何使用 render?
 
+<HashAnchorCompat from="#renderoldrender-function" to="#render"></HashAnchorCompat>
+
 - Type: `(oldRender: Function)=>void` 覆写 render。比如用于渲染之前做权限校验，
 
 ```bash
@@ -508,6 +526,8 @@ export function render(oldRender) {
 如果你使用了 `import { request } from 'umi';` 来请求数据，那么你可以通过该配置来自定义中间件、拦截器、错误处理适配等。具体参考 [request](../max/request) 插件配置。
 
 ### umi 如何使用 rootContainer?
+
+<HashAnchorCompat from="#rootcontainerlastrootcontainer-args" to="#rootcontainer"></HashAnchorCompat>
 
 - Type: `(container: JSX.Element,args: { routes: Routes; plugin; history: History }) => JSX.Element;` 修改交给 react-dom 渲染时的根组件。比如用于在外面包一个 Provider，
 

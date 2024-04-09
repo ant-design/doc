@@ -1,762 +1,892 @@
+### 在 `2024-03-27` 更新的 `@ant-design/pro-components@2.7.0` 版本更新了什么？
+  
+  * fix(form): DrawerForm ssr 错误 : window is not defined (#8244). [#8244](https://github.com/ant-design/pro-components/pull/#8244) [@edram](https://github.com/edram)
+* fix(table): densityLarger 中文简体和繁体国际化，文案问题修改 (#8241). [#8241](https://github.com/ant-design/pro-components/pull/#8241) [@lk0606](https://github.com/lk0606)
+* feat(card): ProCard support colStyle. [bfcf8aa](https://github.com/ant-design/pro-components/commit/bfcf8aa)
+
+  
+### 在 `2024-03-22` 更新的 `@ant-design/pro-components@2.6.52` 版本更新了什么？
+  
+  * feat(form): ProFormFieldSet support funtion. [efbdab6](https://github.com/ant-design/pro-components/commit/efbdab6)
+
+  
+### 在 `2024-03-20` 更新的 `@ant-design/pro-components@2.6.51` 版本更新了什么？
+  
+  * feat(form): ProFormFieldSet support funtion. [efbdab6](https://github.com/ant-design/pro-components/commit/efbdab6)
+
+  
+### 在 `2024-03-15` 更新的 `@ant-design/pro-components@2.6.50` 版本更新了什么？
+  
+  * fix(components): remove deprecated tip props. [85de8a2](https://github.com/ant-design/pro-components/commit/85de8a2)
+* fix(components): compatible 5.13.0 border. [ddf0c82](https://github.com/ant-design/pro-components/commit/ddf0c82)
+* fix(form): PasswordStrength support morse options. [3ab9f11](https://github.com/ant-design/pro-components/commit/3ab9f11)
+* fix(list): support add string line. [9ec366d](https://github.com/ant-design/pro-components/commit/9ec366d)
+* feat(table): add click event for icon element (#8167). [#8167](https://github.com/ant-design/pro-components/pull/#8167) [@Been101](https://github.com/Been101)
+
+  
 ### 在 `2024-01-31` 更新的 `@ant-design/pro-components@2.6.49` 版本更新了什么？
+  
+  * fix(layout): fix bgLayout no work error. [4a21fdf](https://github.com/ant-design/pro-components/commit/4a21fdf)
+* fix(field): fieldProps.options not effective in ProFormSegmented (#8129). [#8129](https://github.com/ant-design/pro-components/pull/#8129) [@ChuChencheng](https://github.com/ChuChencheng)
 
-- fix(layout): fix bgLayout no work error. [4a21fdf](https://github.com/ant-design/pro-components/commit/4a21fdf)
-- fix(field): fieldProps.options not effective in ProFormSegmented (#8129). [#8129](https://github.com/ant-design/pro-components/pull/#8129) [@ChuChencheng](https://github.com/ChuChencheng)
-
+  
 ### 在 `2024-01-18` 更新的 `@ant-design/pro-components@2.6.47` 版本更新了什么？
+  
+  * fix(layout): fix bgLayout no work error. [4a21fdf](https://github.com/ant-design/pro-components/commit/4a21fdf)
+* fix(form): fix DrawerForm and ModalForm button error. [7bf4b30](https://github.com/ant-design/pro-components/commit/7bf4b30)
+* fix(form): 修复默认情况下 sumbitter render 和 render 时候 dom 位置不一致的问题 (#8096). [#8096](https://github.com/ant-design/pro-components/pull/#8096) [@Shinji-Li](https://github.com/Shinji-Li)
+* feat(table): column SettingTitle 内容太长时显示省略&弹出 tooltip (#8070). [#8070](https://github.com/ant-design/pro-components/pull/#8070) [@xlboy](https://github.com/xlboy)
 
-- fix(layout): fix bgLayout no work error. [4a21fdf](https://github.com/ant-design/pro-components/commit/4a21fdf)
-- fix(form): fix DrawerForm and ModalForm button error. [7bf4b30](https://github.com/ant-design/pro-components/commit/7bf4b30)
-- fix(form): 修复默认情况下 sumbitter render 和 render 时候 dom 位置不一致的问题 (#8096). [#8096](https://github.com/ant-design/pro-components/pull/#8096) [@Shinji-Li](https://github.com/Shinji-Li)
-- feat(table): column SettingTitle 内容太长时显示省略&弹出 tooltip (#8070). [#8070](https://github.com/ant-design/pro-components/pull/#8070) [@xlboy](https://github.com/xlboy)
-
+  
 ### 在 `2024-01-15` 更新的 `@ant-design/pro-components@2.6.46` 版本更新了什么？
+  
+  * fix(layout): fix bgLayout no work error. [4a21fdf](https://github.com/ant-design/pro-components/commit/4a21fdf)
+* fix(form): fix ProFormPage submit error. [2260b0d](https://github.com/ant-design/pro-components/commit/2260b0d)
 
-- fix(layout): fix bgLayout no work error. [4a21fdf](https://github.com/ant-design/pro-components/commit/4a21fdf)
-- fix(form): fix ProFormPage submit error. [2260b0d](https://github.com/ant-design/pro-components/commit/2260b0d)
-
+  
 ### 在 `2024-01-15` 更新的 `@ant-design/pro-components@2.6.45` 版本更新了什么？
+  
+  * fix(layout): if bgImgStyleList is null ,no render bg-list dom. [0b26161](https://github.com/ant-design/pro-components/commit/0b26161)
+* feat(form): 添加 FormItemRender 组件 (#8012). [#8012](https://github.com/ant-design/pro-components/pull/#8012) [@hans000](https://github.com/hans000)
+* fix(form): fix ProFormDateRangePicker readonly no warp error. [b2276c3](https://github.com/ant-design/pro-components/commit/b2276c3)
+* fix(form): 修复 dateFormatter 使用 string 类型提示错误 (#8029). [#8029](https://github.com/ant-design/pro-components/pull/#8029) [@yjhtry](https://github.com/yjhtry)
+* fix(form): add playsInline props. [e1233d1](https://github.com/ant-design/pro-components/commit/e1233d1)
+* fix(form): 修复特殊情况（不使用 ProFormMoney 使用 FieldMoney）下格式化错误的问题 (#8024). [#8024](https://github.com/ant-design/pro-components/pull/#8024) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix(form): 修复特殊情况下多出 moneySymbol 的问题 (#8004). [#8004](https://github.com/ant-design/pro-components/pull/#8004) [@ONLY-yours](https://github.com/ONLY-yours)
+* chore(form): adjust `submitter` dom order (#7988). [#7988](https://github.com/ant-design/pro-components/pull/#7988) [@kungege](https://github.com/kungege)
+* fix(form): remove extra `div` (#7987). [#7987](https://github.com/ant-design/pro-components/pull/#7987) [@kungege](https://github.com/kungege)
+* fix(form): no set maxHeight. [64dc9f7](https://github.com/ant-design/pro-components/commit/64dc9f7)
+* fix(list): 修复 ProFormList 透传部分属性到 FormItem 中导致的 react 警告 (#8051). [#8051](https://github.com/ant-design/pro-components/pull/#8051) [@SANmq](https://github.com/SANmq)
+* fix(table): Record Creator re-render when props change (#8018). [#8018](https://github.com/ant-design/pro-components/pull/#8018) [@bartelemi](https://github.com/bartelemi)
+* fix(table): 修复同时使用 defalutValue 和 Storage 存储的情况下，defalutValue 失效的问题 (#7979). [#7979](https://github.com/ant-design/pro-components/pull/#7979) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- fix(layout): if bgImgStyleList is null ,no render bg-list dom. [0b26161](https://github.com/ant-design/pro-components/commit/0b26161)
-- feat(form): 添加 FormItemRender 组件 (#8012). [#8012](https://github.com/ant-design/pro-components/pull/#8012) [@hans000](https://github.com/hans000)
-- fix(form): fix ProFormDateRangePicker readonly no warp error. [b2276c3](https://github.com/ant-design/pro-components/commit/b2276c3)
-- fix(form): 修复 dateFormatter 使用 string 类型提示错误 (#8029). [#8029](https://github.com/ant-design/pro-components/pull/#8029) [@yjhtry](https://github.com/yjhtry)
-- fix(form): add playsInline props. [e1233d1](https://github.com/ant-design/pro-components/commit/e1233d1)
-- fix(form): 修复特殊情况（不使用 ProFormMoney 使用 FieldMoney）下格式化错误的问题 (#8024). [#8024](https://github.com/ant-design/pro-components/pull/#8024) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix(form): 修复特殊情况下多出 moneySymbol 的问题 (#8004). [#8004](https://github.com/ant-design/pro-components/pull/#8004) [@ONLY-yours](https://github.com/ONLY-yours)
-- chore(form): adjust `submitter` dom order (#7988). [#7988](https://github.com/ant-design/pro-components/pull/#7988) [@kungege](https://github.com/kungege)
-- fix(form): remove extra `div` (#7987). [#7987](https://github.com/ant-design/pro-components/pull/#7987) [@kungege](https://github.com/kungege)
-- fix(form): no set maxHeight. [64dc9f7](https://github.com/ant-design/pro-components/commit/64dc9f7)
-- fix(list): 修复 ProFormList 透传部分属性到 FormItem 中导致的 react 警告 (#8051). [#8051](https://github.com/ant-design/pro-components/pull/#8051) [@SANmq](https://github.com/SANmq)
-- fix(table): Record Creator re-render when props change (#8018). [#8018](https://github.com/ant-design/pro-components/pull/#8018) [@bartelemi](https://github.com/bartelemi)
-- fix(table): 修复同时使用 defalutValue 和 Storage 存储的情况下，defalutValue 失效的问题 (#7979). [#7979](https://github.com/ant-design/pro-components/pull/#7979) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2023-12-12` 更新的 `@ant-design/pro-components@2.6.44` 版本更新了什么？
+  
+  * fix(layout): pass SiderProps to avatar render function (#7963). [#7963](https://github.com/ant-design/pro-components/pull/#7963) [@jaulz](https://github.com/jaulz)
+* fix(layout): slove DensityIcon setting not work (#7942). [#7942](https://github.com/ant-design/pro-components/pull/#7942) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix(form): fix cjs require statement (#7952). [#7952](https://github.com/ant-design/pro-components/pull/#7952) [@shijistar](https://github.com/shijistar)
+* fix(table): remove unless code (#7954). [#7954](https://github.com/ant-design/pro-components/pull/#7954) [@linxianxi](https://github.com/linxianxi)
+* fix(table): DragSortTable --- Reorder columns by dragging and dropping columns will have issues when the table has fixed columns first (#7936). [#7936](https://github.com/ant-design/pro-components/pull/#7936) [@tanjianyong](https://github.com/tanjianyong)
+* fix(Descriptions): fix emptytext alway set error. [85f1366](https://github.com/ant-design/pro-components/commit/85f1366)
 
-- fix(layout): pass SiderProps to avatar render function (#7963). [#7963](https://github.com/ant-design/pro-components/pull/#7963) [@jaulz](https://github.com/jaulz)
-- fix(layout): slove DensityIcon setting not work (#7942). [#7942](https://github.com/ant-design/pro-components/pull/#7942) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix(form): fix cjs require statement (#7952). [#7952](https://github.com/ant-design/pro-components/pull/#7952) [@shijistar](https://github.com/shijistar)
-- fix(table): remove unless code (#7954). [#7954](https://github.com/ant-design/pro-components/pull/#7954) [@linxianxi](https://github.com/linxianxi)
-- fix(table): DragSortTable --- Reorder columns by dragging and dropping columns will have issues when the table has fixed columns first (#7936). [#7936](https://github.com/ant-design/pro-components/pull/#7936) [@tanjianyong](https://github.com/tanjianyong)
-- fix(Descriptions): fix emptytext alway set error. [85f1366](https://github.com/ant-design/pro-components/commit/85f1366)
-
+  
 ### 在 `2023-11-20` 更新的 `@ant-design/pro-components@2.6.42` 版本更新了什么？
+  
+  * feat(form): ProFormCaptcha onTiming callback (#7908). [#7908](https://github.com/ant-design/pro-components/pull/#7908) [@ModestFun](https://github.com/ModestFun)
+* fix(table): slove editable wrapper by null initvalue (#7900). [#7900](https://github.com/ant-design/pro-components/pull/#7900) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- feat(form): ProFormCaptcha onTiming callback (#7908). [#7908](https://github.com/ant-design/pro-components/pull/#7908) [@ModestFun](https://github.com/ModestFun)
-- fix(table): slove editable wrapper by null initvalue (#7900). [#7900](https://github.com/ant-design/pro-components/pull/#7900) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2023-11-15` 更新的 `@ant-design/pro-components@2.6.41` 版本更新了什么？
+  
+  * fix(form): fix statusRender no work error. [a94f13e](https://github.com/ant-design/pro-components/commit/a94f13e)
 
-- fix(form): fix statusRender no work error. [a94f13e](https://github.com/ant-design/pro-components/commit/a94f13e)
-
+  
 ### 在 `2023-11-15` 更新的 `@ant-design/pro-components@2.6.40` 版本更新了什么？
+  
+  * fix(form): PasssWordStrength remove progressDom. [77099e4](https://github.com/ant-design/pro-components/commit/77099e4)
 
-- fix(form): PasssWordStrength remove progressDom. [77099e4](https://github.com/ant-design/pro-components/commit/77099e4)
-
+  
 ### 在 `2023-11-15` 更新的 `@ant-design/pro-components@2.6.39` 版本更新了什么？
+  
+  * fix(form): PassWord getPercent support status. [7c1bf34](https://github.com/ant-design/pro-components/commit/7c1bf34)
+* fix(form): PasssWord statusRender support value. [5abe403](https://github.com/ant-design/pro-components/commit/5abe403)
+* fix(form): PasssWord use Progress step. [ee6beb6](https://github.com/ant-design/pro-components/commit/ee6beb6)
 
-- fix(form): PassWord getPercent support status. [7c1bf34](https://github.com/ant-design/pro-components/commit/7c1bf34)
-- fix(form): PasssWord statusRender support value. [5abe403](https://github.com/ant-design/pro-components/commit/5abe403)
-- fix(form): PasssWord use Progress step. [ee6beb6](https://github.com/ant-design/pro-components/commit/ee6beb6)
-
+  
 ### 在 `2023-11-15` 更新的 `@ant-design/pro-components@2.6.38` 版本更新了什么？
+  
+  * fix(form): Password support strengthText. [fcade9f](https://github.com/ant-design/pro-components/commit/fcade9f)
 
-- fix(form): Password support strengthText. [fcade9f](https://github.com/ant-design/pro-components/commit/fcade9f)
-
+  
 ### 在 `2023-11-15` 更新的 `@ant-design/pro-components@2.6.37` 版本更新了什么？
+  
+  * fix(form): Password support popoverProps. [39aa69b](https://github.com/ant-design/pro-components/commit/39aa69b)
 
-- fix(form): Password support popoverProps. [39aa69b](https://github.com/ant-design/pro-components/commit/39aa69b)
-
+  
 ### 在 `2023-11-14` 更新的 `@ant-design/pro-components@2.6.36` 版本更新了什么？
+  
+  * feat (utils): FieldLabel 的 VALUE\_MAX\_LENGTH 可以通过参数传入 (#7845) (#7846). [#7845](https://github.com/ant-design/pro-components/pull/#7845) [@Rabbit](https://github.com/Rabbit)
+* fix(layout): fix popupBg no work error. [ea20878](https://github.com/ant-design/pro-components/commit/ea20878)
+* fix(layout): \[antd: Drawer] `bodyStyle` is deprecated waring (#7864). [#7864](https://github.com/ant-design/pro-components/pull/#7864) [@OXXD](https://github.com/OXXD)
+* fix(layout): fix ProLayout did not match error. [cb330f9](https://github.com/ant-design/pro-components/commit/cb330f9)
+* fix(form): fix ProFormMoney customSymbol no work error. [d0f30b8](https://github.com/ant-design/pro-components/commit/d0f30b8)
+* fix (form): 修复 FieldOptions 中子元素换行问题 (#7856). [#7856](https://github.com/ant-design/pro-components/pull/#7856) [@zavven](https://github.com/zavven)
+* style (list): 样式修复 (#7855). [#7855](https://github.com/ant-design/pro-components/pull/#7855) [@xliez](https://github.com/xliez)
+* fix(table): less render function. [b314a37](https://github.com/ant-design/pro-components/commit/b314a37)
+* fix(field): remove useDeepCompareMemo which causing renderFormItem not updated (#7887). [#7887](https://github.com/ant-design/pro-components/pull/#7887) [@mjss](https://github.com/mjss)
+* fix (descriptions): fix ProTable 和 ProDescriptions render 行为不一样的问题. [227d302](https://github.com/ant-design/pro-components/commit/227d302)
+* fix(descriptions): fix save and cancel are not aligned when using Form rules. [ebd1898](https://github.com/ant-design/pro-components/commit/ebd1898)
 
-- feat (utils): FieldLabel 的 VALUE_MAX_LENGTH 可以通过参数传入 (#7845) (#7846). [#7845](https://github.com/ant-design/pro-components/pull/#7845) [@Rabbit](https://github.com/Rabbit)
-- fix(layout): fix popupBg no work error. [ea20878](https://github.com/ant-design/pro-components/commit/ea20878)
-- fix(layout): \[antd: Drawer] `bodyStyle` is deprecated waring (#7864). [#7864](https://github.com/ant-design/pro-components/pull/#7864) [@OXXD](https://github.com/OXXD)
-- fix(layout): fix ProLayout did not match error. [cb330f9](https://github.com/ant-design/pro-components/commit/cb330f9)
-- fix(form): fix ProFormMoney customSymbol no work error. [d0f30b8](https://github.com/ant-design/pro-components/commit/d0f30b8)
-- fix (form): 修复 FieldOptions 中子元素换行问题 (#7856). [#7856](https://github.com/ant-design/pro-components/pull/#7856) [@zavven](https://github.com/zavven)
-- style (list): 样式修复 (#7855). [#7855](https://github.com/ant-design/pro-components/pull/#7855) [@xliez](https://github.com/xliez)
-- fix(table): less render function. [b314a37](https://github.com/ant-design/pro-components/commit/b314a37)
-- fix(field): remove useDeepCompareMemo which causing renderFormItem not updated (#7887). [#7887](https://github.com/ant-design/pro-components/pull/#7887) [@mjss](https://github.com/mjss)
-- fix (descriptions): fix ProTable 和 ProDescriptions render 行为不一样的问题. [227d302](https://github.com/ant-design/pro-components/commit/227d302)
-- fix(descriptions): fix save and cancel are not aligned when using Form rules. [ebd1898](https://github.com/ant-design/pro-components/commit/ebd1898)
-
+  
 ### 在 `2023-11-01` 更新的 `@ant-design/pro-components@2.6.35` 版本更新了什么？
+  
+  * fix (layout): 修复 Layout 菜单 submenu 和 grounp 混用的时候收起错误. [d99a14d](https://github.com/ant-design/pro-components/commit/d99a14d)
+* fix(form): fix addonWarpStyle no work error. [e5374b7](https://github.com/ant-design/pro-components/commit/e5374b7)
+* fix (table): 修复不能单独展示 filter 的问题. [b77b5d4](https://github.com/ant-design/pro-components/commit/b77b5d4)
 
-- fix (layout): 修复 Layout 菜单 submenu 和 grounp 混用的时候收起错误. [d99a14d](https://github.com/ant-design/pro-components/commit/d99a14d)
-- fix(form): fix addonWarpStyle no work error. [e5374b7](https://github.com/ant-design/pro-components/commit/e5374b7)
-- fix (table): 修复不能单独展示 filter 的问题. [b77b5d4](https://github.com/ant-design/pro-components/commit/b77b5d4)
-
+  
 ### 在 `2023-10-26` 更新的 `@ant-design/pro-components@2.6.33` 版本更新了什么？
+  
+  * revert (layout): 回滚 Layout Menu 的获取逻辑 (#7819). [#7819](https://github.com/ant-design/pro-components/pull/#7819) [@ONLY-yours](https://github.com/ONLY-yours)
+* feat(form):addonBefore warp support style. [5dd732e](https://github.com/ant-design/pro-components/commit/5dd732e)
 
-- revert (layout): 回滚 Layout Menu 的获取逻辑 (#7819). [#7819](https://github.com/ant-design/pro-components/pull/#7819) [@ONLY-yours](https://github.com/ONLY-yours)
-- feat(form):addonBefore warp support style. [5dd732e](https://github.com/ant-design/pro-components/commit/5dd732e)
-
+  
 ### 在 `2023-10-24` 更新的 `@ant-design/pro-components@2.6.32` 版本更新了什么？
+  
+  * fix(layout): fix layout menu align error. [24cf799](https://github.com/ant-design/pro-components/commit/24cf799)
+* feat(table): expose `index` in `onDragSortEnd` (#7803). [#7803](https://github.com/ant-design/pro-components/pull/#7803) [@kungege](https://github.com/kungege)
+* fix (card): 移除 stopPropagation，让事件继续冒泡 (#7785). [#7785](https://github.com/ant-design/pro-components/pull/#7785) [@xliez](https://github.com/xliez)
 
-- fix(layout): fix layout menu align error. [24cf799](https://github.com/ant-design/pro-components/commit/24cf799)
-- feat(table): expose `index` in `onDragSortEnd` (#7803). [#7803](https://github.com/ant-design/pro-components/pull/#7803) [@kungege](https://github.com/kungege)
-- fix (card): 移除 stopPropagation，让事件继续冒泡 (#7785). [#7785](https://github.com/ant-design/pro-components/pull/#7785) [@xliez](https://github.com/xliez)
-
+  
 ### 在 `2023-10-19` 更新的 `@ant-design/pro-components@2.6.31` 版本更新了什么？
+  
+  * fix(layout): add `title` property to `ProHelp` component (#7795). [#7795](https://github.com/ant-design/pro-components/pull/#7795) [@yuetyeelo2855](https://github.com/yuetyeelo2855)
+* fix (layout): Page Contianer 无 Header 边界情况调整 (#7779). [#7779](https://github.com/ant-design/pro-components/pull/#7779) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix (table): 修复 EditableProTable 实时编辑表格存在 name 属性且有分页的时候，渲染的数据总是为第一页 (#7794). [#7794](https://github.com/ant-design/pro-components/pull/#7794) [@xliez](https://github.com/xliez)
 
-- fix(layout): add `title` property to `ProHelp` component (#7795). [#7795](https://github.com/ant-design/pro-components/pull/#7795) [@yuetyeelo2855](https://github.com/yuetyeelo2855)
-- fix (layout): Page Contianer 无 Header 边界情况调整 (#7779). [#7779](https://github.com/ant-design/pro-components/pull/#7779) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix (table): 修复 EditableProTable 实时编辑表格存在 name 属性且有分页的时候，渲染的数据总是为第一页 (#7794). [#7794](https://github.com/ant-design/pro-components/pull/#7794) [@xliez](https://github.com/xliez)
-
+  
 ### 在 `2023-10-11` 更新的 `@ant-design/pro-components@2.6.29` 版本更新了什么？
+  
+  * fix (layout): 修复 layout 组件在销毁时，删除了其他不相关的 SWR 缓存 (#7737). [#7737](https://github.com/ant-design/pro-components/pull/#7737) [@febear](https://github.com/febear)
+* fix(form): fix loginPage style error. [80ace22](https://github.com/ant-design/pro-components/commit/80ace22)
+* fix (form): 增加透传给 FormItem 的 style 和 className (#7769). [#7769](https://github.com/ant-design/pro-components/pull/#7769) [@ONLY-yours](https://github.com/ONLY-yours)
+* feat (form): 优化密码只读模式展现形式 (#7736). [#7736](https://github.com/ant-design/pro-components/pull/#7736) [@gamemock](https://github.com/gamemock)
+* fix (form): 首次同步到 url 参数时也执行 syncToUrl (#7741). [#7741](https://github.com/ant-design/pro-components/pull/#7741) [@ldc-37](https://github.com/ldc-37)
 
-- fix (layout): 修复 layout 组件在销毁时，删除了其他不相关的 SWR 缓存 (#7737). [#7737](https://github.com/ant-design/pro-components/pull/#7737) [@febear](https://github.com/febear)
-- fix(form): fix loginPage style error. [80ace22](https://github.com/ant-design/pro-components/commit/80ace22)
-- fix (form): 增加透传给 FormItem 的 style 和 className (#7769). [#7769](https://github.com/ant-design/pro-components/pull/#7769) [@ONLY-yours](https://github.com/ONLY-yours)
-- feat (form): 优化密码只读模式展现形式 (#7736). [#7736](https://github.com/ant-design/pro-components/pull/#7736) [@gamemock](https://github.com/gamemock)
-- fix (form): 首次同步到 url 参数时也执行 syncToUrl (#7741). [#7741](https://github.com/ant-design/pro-components/pull/#7741) [@ldc-37](https://github.com/ldc-37)
-
+  
 ### 在 `2023-09-26` 更新的 `@ant-design/pro-components@2.6.28` 版本更新了什么？
+  
+  * feat(form): LoginFormPage support backgroundVideoUrl. [6dc50b0](https://github.com/ant-design/pro-components/commit/6dc50b0)
 
-- feat(form): LoginFormPage support backgroundVideoUrl. [6dc50b0](https://github.com/ant-design/pro-components/commit/6dc50b0)
-
+  
 ### 在 `2023-09-26` 更新的 `@ant-design/pro-components@2.6.27` 版本更新了什么？
+  
+  * fix(form): fix Captcha style no work error. [f31381d](https://github.com/ant-design/pro-components/commit/f31381d)
 
-- fix(form): fix Captcha style no work error. [f31381d](https://github.com/ant-design/pro-components/commit/f31381d)
-
+  
 ### 在 `2023-09-26` 更新的 `@ant-design/pro-components@2.6.26` 版本更新了什么？
+  
+  * feat(form): support more style config. [b8c3954](https://github.com/ant-design/pro-components/commit/b8c3954)
 
-- feat(form): support more style config. [b8c3954](https://github.com/ant-design/pro-components/commit/b8c3954)
-
+  
 ### 在 `2023-09-26` 更新的 `@ant-design/pro-components@2.6.25` 版本更新了什么？
+  
+  * fix(form): the `onChange` event in `ProFormUploadButton` has been triggered multiple times (#7732). [#7732](https://github.com/ant-design/pro-components/pull/#7732) [@kungege](https://github.com/kungege)
+* feat(form): new LoginFormPage style (#7734). [#7734](https://github.com/ant-design/pro-components/pull/#7734) [@chenshuai2144](https://github.com/chenshuai2144)
+* fix(table): unuse Tab.TabPanel (#7731). [#7731](https://github.com/ant-design/pro-components/pull/#7731) [@leshalv](https://github.com/leshalv)
 
-- fix(form): the `onChange` event in `ProFormUploadButton` has been triggered multiple times (#7732). [#7732](https://github.com/ant-design/pro-components/pull/#7732) [@kungege](https://github.com/kungege)
-- feat(form): new LoginFormPage style (#7734). [#7734](https://github.com/ant-design/pro-components/pull/#7734) [@chenshuai2144](https://github.com/chenshuai2144)
-- fix(table): unuse Tab.TabPanel (#7731). [#7731](https://github.com/ant-design/pro-components/pull/#7731) [@leshalv](https://github.com/leshalv)
-
+  
 ### 在 `2023-09-25` 更新的 `@ant-design/pro-components@2.6.24` 版本更新了什么？
+  
+  * fix(layout): fix colorBgMenuElevated no extends colorBgHeader error. [d915ed1](https://github.com/ant-design/pro-components/commit/d915ed1)
+* fix (layout): 统一 PageContainer 计算到 styles.ts 中 (#7699). [#7699](https://github.com/ant-design/pro-components/pull/#7699) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix (Table): 修改 search transform 类型 (#7708). [#7708](https://github.com/ant-design/pro-components/pull/#7708) [@linxianxi](https://github.com/linxianxi)
+* fix (table): 修复 editableFormRef hooks 未正确传递 deps 依赖导致 value 取值不是最新 (#7707). [#7707](https://github.com/ant-design/pro-components/pull/#7707) [@xliez](https://github.com/xliez)
 
-- fix(layout): fix colorBgMenuElevated no extends colorBgHeader error. [d915ed1](https://github.com/ant-design/pro-components/commit/d915ed1)
-- fix (layout): 统一 PageContainer 计算到 styles.ts 中 (#7699). [#7699](https://github.com/ant-design/pro-components/pull/#7699) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix (Table): 修改 search transform 类型 (#7708). [#7708](https://github.com/ant-design/pro-components/pull/#7708) [@linxianxi](https://github.com/linxianxi)
-- fix (table): 修复 editableFormRef hooks 未正确传递 deps 依赖导致 value 取值不是最新 (#7707). [#7707](https://github.com/ant-design/pro-components/pull/#7707) [@xliez](https://github.com/xliez)
-
+  
 ### 在 `2023-09-20` 更新的 `@ant-design/pro-components@2.6.23` 版本更新了什么？
+  
+  * fix(layout): WaterMark support dark theme. [0898061](https://github.com/ant-design/pro-components/commit/0898061)
+* fix (table): 修复 ColumnSetting Tree 组件 title 过长导致强制换行的问题. [08ded31](https://github.com/ant-design/pro-components/commit/08ded31)
 
-- fix(layout): WaterMark support dark theme. [0898061](https://github.com/ant-design/pro-components/commit/0898061)
-- fix (table): 修复 ColumnSetting Tree 组件 title 过长导致强制换行的问题. [08ded31](https://github.com/ant-design/pro-components/commit/08ded31)
-
+  
 ### 在 `2023-09-18` 更新的 `@ant-design/pro-components@2.6.21` 版本更新了什么？
+  
+  * fix (layout): 默认宽度更改为 1152. [84cc927](https://github.com/ant-design/pro-components/commit/84cc927)
+* fix(layout): deprecated warning (#7693). [#7693](https://github.com/ant-design/pro-components/pull/#7693) [@kungege](https://github.com/kungege)
+* fix(table): less render function. [b3ef405](https://github.com/ant-design/pro-components/commit/b3ef405)
 
-- fix (layout): 默认宽度更改为 1152. [84cc927](https://github.com/ant-design/pro-components/commit/84cc927)
-- fix(layout): deprecated warning (#7693). [#7693](https://github.com/ant-design/pro-components/pull/#7693) [@kungege](https://github.com/kungege)
-- fix(table): less render function. [b3ef405](https://github.com/ant-design/pro-components/commit/b3ef405)
-
+  
 ### 在 `2023-09-18` 更新的 `@ant-design/pro-components@2.6.20` 版本更新了什么？
+  
+  * fix(layout): default set contentWidth=Fixed. [065524d](https://github.com/ant-design/pro-components/commit/065524d)
+* fix (form): 修复 treeSelect 组件 bordered 属性无法生效 (#7687). [#7687](https://github.com/ant-design/pro-components/pull/#7687) [@badrylin](https://github.com/badrylin)
+* fix(form): form list support readonly. [6407072](https://github.com/ant-design/pro-components/commit/6407072)
+* fix(table): EditableProTable reset FormItem grid. [c53ecce](https://github.com/ant-design/pro-components/commit/c53ecce)
+* fix(card): check card extra tag token fixed (#7669). [#7669](https://github.com/ant-design/pro-components/pull/#7669) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- fix(layout): default set contentWidth=Fixed. [065524d](https://github.com/ant-design/pro-components/commit/065524d)
-- fix (form): 修复 treeSelect 组件 bordered 属性无法生效 (#7687). [#7687](https://github.com/ant-design/pro-components/pull/#7687) [@badrylin](https://github.com/badrylin)
-- fix(form): form list support readonly. [6407072](https://github.com/ant-design/pro-components/commit/6407072)
-- fix(table): EditableProTable reset FormItem grid. [c53ecce](https://github.com/ant-design/pro-components/commit/c53ecce)
-- fix(card): check card extra tag token fixed (#7669). [#7669](https://github.com/ant-design/pro-components/pull/#7669) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2023-09-14` 更新的 `@ant-design/pro-components@2.6.19` 版本更新了什么？
+  
+  * fix (layout): 默认宽度更改为 1152. [8fd2665](https://github.com/ant-design/pro-components/commit/8fd2665)
+* feat (layout): 更新 PageContainer Token 样式和计算规则 (#7645). [#7645](https://github.com/ant-design/pro-components/pull/#7645) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix (form): 优化 PassWord 展现形式 (#7657). [#7657](https://github.com/ant-design/pro-components/pull/#7657) [@leshalv](https://github.com/leshalv)
+* fix(card): check card extra tag token fixed (#7669). [#7669](https://github.com/ant-design/pro-components/pull/#7669) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- fix (layout): 默认宽度更改为 1152. [8fd2665](https://github.com/ant-design/pro-components/commit/8fd2665)
-- feat (layout): 更新 PageContainer Token 样式和计算规则 (#7645). [#7645](https://github.com/ant-design/pro-components/pull/#7645) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix (form): 优化 PassWord 展现形式 (#7657). [#7657](https://github.com/ant-design/pro-components/pull/#7657) [@leshalv](https://github.com/leshalv)
-- fix(card): check card extra tag token fixed (#7669). [#7669](https://github.com/ant-design/pro-components/pull/#7669) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2023-09-07` 更新的 `@ant-design/pro-components@2.6.18` 版本更新了什么？
+  
+  * fix(layout): fix click url no work error. [9252b14](https://github.com/ant-design/pro-components/commit/9252b14)
+* fix (form): 修复 DrawerForm width 控制权重失效的问题 (#7642). [#7642](https://github.com/ant-design/pro-components/pull/#7642) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- fix(layout): fix click url no work error. [9252b14](https://github.com/ant-design/pro-components/commit/9252b14)
-- fix (form): 修复 DrawerForm width 控制权重失效的问题 (#7642). [#7642](https://github.com/ant-design/pro-components/pull/#7642) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2023-09-06` 更新的 `@ant-design/pro-components@2.6.17` 版本更新了什么？
+  
+  * Prevented default and propagation of click events on appList items in the layout. Commit: [9b3cd65](https://github.com/ant-design/pro-components/commit/9b3cd65)
+* Fixed an error in the layout where the menu title was not centered. Commit: [904a89f](https://github.com/ant-design/pro-components/commit/904a89f)
+* Fixed the datepicker format in the form. Pull Request: [#7622](https://github.com/ant-design/pro-components/pull/#7622) by [@SummyGitHub](https://github.com/SummyGitHub)
+* Updated the default value and documentation of the `resize` parameter in DrawerForm. Pull Request: [#7621](https://github.com/ant-design/pro-components/pull/#7621) by [@LengYXin](https://github.com/LengYXin)
+* Added support for `colSize` in form dependencies. Pull Request: [#7611](https://github.com/ant-design/pro-components/pull/#7611) by [@yiyi17](https://github.com/yiyi17)
+* Fixed an error where `marginBlockEnd` was not applying `marginLG`. Commit: [6e5f384](https://github.com/ant-design/pro-components/commit/6e5f384)
+* Fixed an error where `containerClassName` and `containerStyle` were not working in formList. Commit: [7a2c9e0](https://github.com/ant-design/pro-components/commit/7a2c9e0)
+* Fixed a typo and made a modification in `sortConfig` to prevent triggering request again on pagination. Pull Request: [#7616](https://github.com/ant-design/pro-components/pull/#7616) by [@caronchen](https://github.com/caronchen)
 
-- Prevented default and propagation of click events on appList items in the layout. Commit: [9b3cd65](https://github.com/ant-design/pro-components/commit/9b3cd65)
-- Fixed an error in the layout where the menu title was not centered. Commit: [904a89f](https://github.com/ant-design/pro-components/commit/904a89f)
-- Fixed the datepicker format in the form. Pull Request: [#7622](https://github.com/ant-design/pro-components/pull/#7622) by [@SummyGitHub](https://github.com/SummyGitHub)
-- Updated the default value and documentation of the `resize` parameter in DrawerForm. Pull Request: [#7621](https://github.com/ant-design/pro-components/pull/#7621) by [@LengYXin](https://github.com/LengYXin)
-- Added support for `colSize` in form dependencies. Pull Request: [#7611](https://github.com/ant-design/pro-components/pull/#7611) by [@yiyi17](https://github.com/yiyi17)
-- Fixed an error where `marginBlockEnd` was not applying `marginLG`. Commit: [6e5f384](https://github.com/ant-design/pro-components/commit/6e5f384)
-- Fixed an error where `containerClassName` and `containerStyle` were not working in formList. Commit: [7a2c9e0](https://github.com/ant-design/pro-components/commit/7a2c9e0)
-- Fixed a typo and made a modification in `sortConfig` to prevent triggering request again on pagination. Pull Request: [#7616](https://github.com/ant-design/pro-components/pull/#7616) by [@caronchen](https://github.com/caronchen)
-
+  
 ### 在 `2023-08-29` 更新的 `@ant-design/pro-components@2.6.15` 版本更新了什么？
+  
+  * Resolved an issue with a potential infinite loop caused by `stringify`. Pull Request: [#7599](https://github.com/ant-design/pro-components/pull/#7599) by [@kiner-tang](https://github.com/kiner-tang). Unfortunately, the commit message or details of the fix are not provided.
+* Added a new feature to the table component where columns can now have a `fixable` configuration. Pull Request: [#7586](https://github.com/ant-design/pro-components/pull/#7586) by [@LeoZeda](https://github.com/LeoZeda). No further details about the feature are provided.
 
-- Resolved an issue with a potential infinite loop caused by `stringify`. Pull Request: [#7599](https://github.com/ant-design/pro-components/pull/#7599) by [@kiner-tang](https://github.com/kiner-tang). Unfortunately, the commit message or details of the fix are not provided.
-- Added a new feature to the table component where columns can now have a `fixable` configuration. Pull Request: [#7586](https://github.com/ant-design/pro-components/pull/#7586) by [@LeoZeda](https://github.com/LeoZeda). No further details about the feature are provided.
-
+  
 ### 在 `2023-08-28` 更新的 `@ant-design/pro-components@2.6.14` 版本更新了什么？
+  
+  * Fixed an error in the layout where the menuItem icon was not aligned correctly. Commit: [62f1bb5](https://github.com/ant-design/pro-components/commit/62f1bb5)
+* Fixed a styling issue with the sider token in the layout. Pull Request: [#7574](https://github.com/ant-design/pro-components/pull/#7574) by [@daifuyang](https://github.com/daifuyang)
+* Updated the usage of `useBreakpoint` utility in the layout. Commits: [af522ee](https://github.com/ant-design/pro-components/commit/af522ee), [3a174d1](https://github.com/ant-design/pro-components/commit/3a174d1)
+* Fixed an inconsistency in the textarea's read-only state styling. Pull Request: [#7579](https://github.com/ant-design/pro-components/pull/#7579) by [@HoPGoldy](https://github.com/HoPGoldy)
+* Fixed an error in the form where `FormItem` had a null name but still had data. Pull Request: [#7583](https://github.com/ant-design/pro-components/pull/#7583) by [@chenshuai2144](https://github.com/chenshuai2144)
+* Fixed an issue where the generic parameter `ValueTypeWithFieldPropsBase` was not working correctly. Pull Request: [#7582](https://github.com/ant-design/pro-components/pull/#7582) by [@ldc-37](https://github.com/ldc-37)
+* Added support for `emptyText` in the descriptions component. Commit: [d5ccc34](https://github.com/ant-design/pro-components/commit/d5ccc34)
+* Fixed an error where the label was not working when the `valueType` was null in the descriptions component. Commit: [8779112](https://github.com/ant-design/pro-components/commit/8779112)
 
-- Fixed an error in the layout where the menuItem icon was not aligned correctly. Commit: [62f1bb5](https://github.com/ant-design/pro-components/commit/62f1bb5)
-- Fixed a styling issue with the sider token in the layout. Pull Request: [#7574](https://github.com/ant-design/pro-components/pull/#7574) by [@daifuyang](https://github.com/daifuyang)
-- Updated the usage of `useBreakpoint` utility in the layout. Commits: [af522ee](https://github.com/ant-design/pro-components/commit/af522ee), [3a174d1](https://github.com/ant-design/pro-components/commit/3a174d1)
-- Fixed an inconsistency in the textarea's read-only state styling. Pull Request: [#7579](https://github.com/ant-design/pro-components/pull/#7579) by [@HoPGoldy](https://github.com/HoPGoldy)
-- Fixed an error in the form where `FormItem` had a null name but still had data. Pull Request: [#7583](https://github.com/ant-design/pro-components/pull/#7583) by [@chenshuai2144](https://github.com/chenshuai2144)
-- Fixed an issue where the generic parameter `ValueTypeWithFieldPropsBase` was not working correctly. Pull Request: [#7582](https://github.com/ant-design/pro-components/pull/#7582) by [@ldc-37](https://github.com/ldc-37)
-- Added support for `emptyText` in the descriptions component. Commit: [d5ccc34](https://github.com/ant-design/pro-components/commit/d5ccc34)
-- Fixed an error where the label was not working when the `valueType` was null in the descriptions component. Commit: [8779112](https://github.com/ant-design/pro-components/commit/8779112)
-
+  
 ### 在 `2023-08-17` 更新的 `@ant-design/pro-components@2.6.13` 版本更新了什么？
+  
+  * fix(layout): pageContainer token not work (#7524). [#7524](https://github.com/ant-design/pro-components/pull/#7524) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix(layout): fix ProFormSelect unsupport title error. [d41b1a7](https://github.com/ant-design/pro-components/commit/d41b1a7)
+* fix(layout): if src=null, un render avatar. [c721e07](https://github.com/ant-design/pro-components/commit/c721e07)
+* fix(layout): collapsed use vertical mode. [e82170f](https://github.com/ant-design/pro-components/commit/e82170f)
+* feat (form): 修复 field color style width:100% 导致的样式不美观问题 & ts 定义 (#7510). [#7510](https://github.com/ant-design/pro-components/pull/#7510) [@LengYXin](https://github.com/LengYXin)
+* feat(table): custom `toolbar` icon (#7521). [#7521](https://github.com/ant-design/pro-components/pull/#7521) [@kungege](https://github.com/kungege)
+* fix(Descriptions): fix use key props error. [c8987bb](https://github.com/ant-design/pro-components/commit/c8987bb)
 
-- fix(layout): pageContainer token not work (#7524). [#7524](https://github.com/ant-design/pro-components/pull/#7524) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix(layout): fix ProFormSelect unsupport title error. [d41b1a7](https://github.com/ant-design/pro-components/commit/d41b1a7)
-- fix(layout): if src=null, un render avatar. [c721e07](https://github.com/ant-design/pro-components/commit/c721e07)
-- fix(layout): collapsed use vertical mode. [e82170f](https://github.com/ant-design/pro-components/commit/e82170f)
-- feat (form): 修复 field color style width:100% 导致的样式不美观问题 & ts 定义 (#7510). [#7510](https://github.com/ant-design/pro-components/pull/#7510) [@LengYXin](https://github.com/LengYXin)
-- feat(table): custom `toolbar` icon (#7521). [#7521](https://github.com/ant-design/pro-components/pull/#7521) [@kungege](https://github.com/kungege)
-- fix(Descriptions): fix use key props error. [c8987bb](https://github.com/ant-design/pro-components/commit/c8987bb)
-
+  
 ### 在 `2023-08-10` 更新的 `@ant-design/pro-components@2.6.12` 版本更新了什么？
+  
+  * fix (form): 修复 compact warning (#7496). [#7496](https://github.com/ant-design/pro-components/pull/#7496) [@xliez](https://github.com/xliez)
+* feat (form): transform 支持深合并 (#7494). [#7494](https://github.com/ant-design/pro-components/pull/#7494) [@xliez](https://github.com/xliez)
+* fix (form): 修复 transform 方法与预期不符 (#7486). [#7486](https://github.com/ant-design/pro-components/pull/#7486) [@xliez](https://github.com/xliez)
+* fix (form): 表单项配置 request 并且自定义 renderFormItem 时，没有透传 options 和 loading (#7457). [#7457](https://github.com/ant-design/pro-components/pull/#7457) [@Yang-yibu](https://github.com/Yang-yibu)
+* fix (table): DragSortTable 每次 render 执行时 Table DOM 会销毁重建新的 DOM (#7490). [#7490](https://github.com/ant-design/pro-components/pull/#7490) [@xliez](https://github.com/xliez)
+* feat (field): 调整 field color 为 antd 新的 ColorPicker (#7403). [#7403](https://github.com/ant-design/pro-components/pull/#7403) [@LengYXin](https://github.com/LengYXin)
 
-- fix (form): 修复 compact warning (#7496). [#7496](https://github.com/ant-design/pro-components/pull/#7496) [@xliez](https://github.com/xliez)
-- feat (form): transform 支持深合并 (#7494). [#7494](https://github.com/ant-design/pro-components/pull/#7494) [@xliez](https://github.com/xliez)
-- fix (form): 修复 transform 方法与预期不符 (#7486). [#7486](https://github.com/ant-design/pro-components/pull/#7486) [@xliez](https://github.com/xliez)
-- fix (form): 表单项配置 request 并且自定义 renderFormItem 时，没有透传 options 和 loading (#7457). [#7457](https://github.com/ant-design/pro-components/pull/#7457) [@Yang-yibu](https://github.com/Yang-yibu)
-- fix (table): DragSortTable 每次 render 执行时 Table DOM 会销毁重建新的 DOM (#7490). [#7490](https://github.com/ant-design/pro-components/pull/#7490) [@xliez](https://github.com/xliez)
-- feat (field): 调整 field color 为 antd 新的 ColorPicker (#7403). [#7403](https://github.com/ant-design/pro-components/pull/#7403) [@LengYXin](https://github.com/LengYXin)
-
+  
 ### 在 `2023-08-04` 更新的 `@ant-design/pro-components@2.6.11` 版本更新了什么？
+  
+  * fix(layout): fix menu item no align error. [450a823](https://github.com/ant-design/pro-components/commit/450a823)
+* fix(form): form field support mobile width best. [56ccc63](https://github.com/ant-design/pro-components/commit/56ccc63)
+* fix(form): update `ReturnType<SearchConvertKeyFn>` (#7462). [#7462](https://github.com/ant-design/pro-components/pull/#7462) [@q1uxu](https://github.com/q1uxu)
+* fix(table): restrict movement to only the vertical axis.. [5a8f9fb](https://github.com/ant-design/pro-components/commit/5a8f9fb)
 
-- fix(layout): fix menu item no align error. [450a823](https://github.com/ant-design/pro-components/commit/450a823)
-- fix(form): form field support mobile width best. [56ccc63](https://github.com/ant-design/pro-components/commit/56ccc63)
-- fix(form): update `ReturnType<SearchConvertKeyFn>` (#7462). [#7462](https://github.com/ant-design/pro-components/pull/#7462) [@q1uxu](https://github.com/q1uxu)
-- fix(table): restrict movement to only the vertical axis.. [5a8f9fb](https://github.com/ant-design/pro-components/commit/5a8f9fb)
-
+  
 ### 在 `2023-07-31` 更新的 `@ant-design/pro-components@2.6.10` 版本更新了什么？
+  
+  * fix(layout): fix col size error. [749a303](https://github.com/ant-design/pro-components/commit/749a303)
 
-- fix(layout): fix col size error. [749a303](https://github.com/ant-design/pro-components/commit/749a303)
-
+  
 ### 在 `2023-07-31` 更新的 `@ant-design/pro-components@2.6.9` 版本更新了什么？
+  
+  * feat(components): hebrew support (#7435). [#7435](https://github.com/ant-design/pro-components/pull/#7435) [@edenHechtArbox](https://github.com/edenHechtArbox)
+* fix(layout): fix pop menu style error. [36bfccf](https://github.com/ant-design/pro-components/commit/36bfccf)
+* fix(layout): fix colorBgMenuItemHover no work error. [3efdd46](https://github.com/ant-design/pro-components/commit/3efdd46)
+* fix(layout): fix footer links hover no work error. [a2bdb21](https://github.com/ant-design/pro-components/commit/a2bdb21)
+* feat(form): StepForm added layoutRender props (#7431). [#7431](https://github.com/ant-design/pro-components/pull/#7431) [@xXAvoraXx](https://github.com/xXAvoraXx)
 
-- feat(components): hebrew support (#7435). [#7435](https://github.com/ant-design/pro-components/pull/#7435) [@edenHechtArbox](https://github.com/edenHechtArbox)
-- fix(layout): fix pop menu style error. [36bfccf](https://github.com/ant-design/pro-components/commit/36bfccf)
-- fix(layout): fix colorBgMenuItemHover no work error. [3efdd46](https://github.com/ant-design/pro-components/commit/3efdd46)
-- fix(layout): fix footer links hover no work error. [a2bdb21](https://github.com/ant-design/pro-components/commit/a2bdb21)
-- feat(form): StepForm added layoutRender props (#7431). [#7431](https://github.com/ant-design/pro-components/pull/#7431) [@xXAvoraXx](https://github.com/xXAvoraXx)
-
+  
 ### 在 `2023-07-24` 更新的 `@ant-design/pro-components@2.6.8` 版本更新了什么？
+  
+  * fix(layout): fix submenu popup text is center error. [7191501](https://github.com/ant-design/pro-components/commit/7191501)
+* fix(form): StepForm support moblie width. [6eee22f](https://github.com/ant-design/pro-components/commit/6eee22f)
+* fix(form): ProFormSet support lightProps. [0593fe1](https://github.com/ant-design/pro-components/commit/0593fe1)
+* fix(form): ProForm support readonly. [e466f4e](https://github.com/ant-design/pro-components/commit/e466f4e)
+* fix(form): fix transform no set false error. [f547ed0](https://github.com/ant-design/pro-components/commit/f547ed0)
 
-- fix(layout): fix submenu popup text is center error. [7191501](https://github.com/ant-design/pro-components/commit/7191501)
-- fix(form): StepForm support moblie width. [6eee22f](https://github.com/ant-design/pro-components/commit/6eee22f)
-- fix(form): ProFormSet support lightProps. [0593fe1](https://github.com/ant-design/pro-components/commit/0593fe1)
-- fix(form): ProForm support readonly. [e466f4e](https://github.com/ant-design/pro-components/commit/e466f4e)
-- fix(form): fix transform no set false error. [f547ed0](https://github.com/ant-design/pro-components/commit/f547ed0)
-
+  
 ### 在 `2023-07-19` 更新的 `@ant-design/pro-components@2.6.7` 版本更新了什么？
+  
+  * fix(layout): fix sider collpse no work error. [e17dee6](https://github.com/ant-design/pro-components/commit/e17dee6)
 
-- fix(layout): fix sider collpse no work error. [e17dee6](https://github.com/ant-design/pro-components/commit/e17dee6)
-
+  
 ### 在 `2023-07-19` 更新的 `@ant-design/pro-components@2.6.6` 版本更新了什么？
+  
+  * fix(layout): disable SiderContext when Sider other dom. [4d53446](https://github.com/ant-design/pro-components/commit/4d53446)
+* fix(layout): fix FooterToolBar width error. [54d9afe](https://github.com/ant-design/pro-components/commit/54d9afe)
+* fix(layout): Layout siderMenu delete getContainer = false. [ed0c88b](https://github.com/ant-design/pro-components/commit/ed0c88b)
+* fix(layout): menuItem support disableTooltip. [84b79c8](https://github.com/ant-design/pro-components/commit/84b79c8)
+* fix (form): 修复当 LightFilter 折叠模式 icon 样式问题 (#7388). [#7388](https://github.com/ant-design/pro-components/pull/#7388) [@datoou](https://github.com/datoou)
+* feat(form): drawer support resizable (#7288). [#7288](https://github.com/ant-design/pro-components/pull/#7288) [@natashaamin](https://github.com/natashaamin)
+* fix(form): fix jsonCode bgColor no work in dart mode. [03927db](https://github.com/ant-design/pro-components/commit/03927db)
+* fix(form): use 'Space.Compact' instead 'Input.Group'. [89e1fb4](https://github.com/ant-design/pro-components/commit/89e1fb4)
+* fix(form): LightFilter default set popupMatchSelectWidth=false. [27667aa](https://github.com/ant-design/pro-components/commit/27667aa)
+* fix(form): select use options. [59d5e72](https://github.com/ant-design/pro-components/commit/59d5e72)
+* feat(form): StepsForm support multifile StepForm. [ccc35f5](https://github.com/ant-design/pro-components/commit/ccc35f5)
+* fix(form): Fix the issue of the ProFormMoney component causing duplicate currency symbols when using trigger=onBlur. [bc94215](https://github.com/ant-design/pro-components/commit/bc94215)
+* fix(form): ModalForm and DrawerForm support params type. [76470d8](https://github.com/ant-design/pro-components/commit/76470d8)
+* fix(form): support OptionType types. [189f933](https://github.com/ant-design/pro-components/commit/189f933)
+* fix(form): CheckBox readonly mode support warp. [646f4a7](https://github.com/ant-design/pro-components/commit/646f4a7)
+* fix(list): ProList card support on checked. [2a0257e](https://github.com/ant-design/pro-components/commit/2a0257e)
+* fix(table): params change awaly reload fetch. [b147a16](https://github.com/ant-design/pro-components/commit/b147a16)
+* feat(table): ProTable support optionsRender. [8b56b6a](https://github.com/ant-design/pro-components/commit/8b56b6a)
+* fix(table): fix renderFormItem render twice render time. [c3b8ffd](https://github.com/ant-design/pro-components/commit/c3b8ffd)
+* fix(table): Protable support EXPAND\_COLUMN and SELECTION\_COLUMN. [3454347](https://github.com/ant-design/pro-components/commit/3454347)
+* fix(table): when checkable=false, no render all select boxs. [5421e41](https://github.com/ant-design/pro-components/commit/5421e41)
+* fix(table): Fix the columnsSetting styling issue in controlling column state when the table header is too long. [5b746b3](https://github.com/ant-design/pro-components/commit/5b746b3)
+* fix(table): Fix the issue where align="center" is not working. [db6fc65](https://github.com/ant-design/pro-components/commit/db6fc65)
+* fix(table): Fix the issue of actionref not being synchronized. [2160fb8](https://github.com/ant-design/pro-components/commit/2160fb8)
+* fix(table): dataSource support string list. [7b81b4c](https://github.com/ant-design/pro-components/commit/7b81b4c)
+* fix(descriptions): contentStyle add minwidth=0. [9087253](https://github.com/ant-design/pro-components/commit/9087253)
 
-- fix(layout): disable SiderContext when Sider other dom. [4d53446](https://github.com/ant-design/pro-components/commit/4d53446)
-- fix(layout): fix FooterToolBar width error. [54d9afe](https://github.com/ant-design/pro-components/commit/54d9afe)
-- fix(layout): Layout siderMenu delete getContainer = false. [ed0c88b](https://github.com/ant-design/pro-components/commit/ed0c88b)
-- fix(layout): menuItem support disableTooltip. [84b79c8](https://github.com/ant-design/pro-components/commit/84b79c8)
-- fix (form): 修复当 LightFilter 折叠模式 icon 样式问题 (#7388). [#7388](https://github.com/ant-design/pro-components/pull/#7388) [@datoou](https://github.com/datoou)
-- feat(form): drawer support resizable (#7288). [#7288](https://github.com/ant-design/pro-components/pull/#7288) [@natashaamin](https://github.com/natashaamin)
-- fix(form): fix jsonCode bgColor no work in dart mode. [03927db](https://github.com/ant-design/pro-components/commit/03927db)
-- fix(form): use 'Space.Compact' instead 'Input.Group'. [89e1fb4](https://github.com/ant-design/pro-components/commit/89e1fb4)
-- fix(form): LightFilter default set popupMatchSelectWidth=false. [27667aa](https://github.com/ant-design/pro-components/commit/27667aa)
-- fix(form): select use options. [59d5e72](https://github.com/ant-design/pro-components/commit/59d5e72)
-- feat(form): StepsForm support multifile StepForm. [ccc35f5](https://github.com/ant-design/pro-components/commit/ccc35f5)
-- fix(form): Fix the issue of the ProFormMoney component causing duplicate currency symbols when using trigger=onBlur. [bc94215](https://github.com/ant-design/pro-components/commit/bc94215)
-- fix(form): ModalForm and DrawerForm support params type. [76470d8](https://github.com/ant-design/pro-components/commit/76470d8)
-- fix(form): support OptionType types. [189f933](https://github.com/ant-design/pro-components/commit/189f933)
-- fix(form): CheckBox readonly mode support warp. [646f4a7](https://github.com/ant-design/pro-components/commit/646f4a7)
-- fix(list): ProList card support on checked. [2a0257e](https://github.com/ant-design/pro-components/commit/2a0257e)
-- fix(table): params change awaly reload fetch. [b147a16](https://github.com/ant-design/pro-components/commit/b147a16)
-- feat(table): ProTable support optionsRender. [8b56b6a](https://github.com/ant-design/pro-components/commit/8b56b6a)
-- fix(table): fix renderFormItem render twice render time. [c3b8ffd](https://github.com/ant-design/pro-components/commit/c3b8ffd)
-- fix(table): Protable support EXPAND_COLUMN and SELECTION_COLUMN. [3454347](https://github.com/ant-design/pro-components/commit/3454347)
-- fix(table): when checkable=false, no render all select boxs. [5421e41](https://github.com/ant-design/pro-components/commit/5421e41)
-- fix(table): Fix the columnsSetting styling issue in controlling column state when the table header is too long. [5b746b3](https://github.com/ant-design/pro-components/commit/5b746b3)
-- fix(table): Fix the issue where align="center" is not working. [db6fc65](https://github.com/ant-design/pro-components/commit/db6fc65)
-- fix(table): Fix the issue of actionref not being synchronized. [2160fb8](https://github.com/ant-design/pro-components/commit/2160fb8)
-- fix(table): dataSource support string list. [7b81b4c](https://github.com/ant-design/pro-components/commit/7b81b4c)
-- fix(descriptions): contentStyle add minwidth=0. [9087253](https://github.com/ant-design/pro-components/commit/9087253)
-
+  
 ### 在 `2023-07-14` 更新的 `@ant-design/pro-components@2.6.5` 版本更新了什么？
+  
+  * fix(layout): Fix the issue of excessively long titles not being truncated.. [0e67775](https://github.com/ant-design/pro-components/commit/0e67775)
+* fix(layout): fix abnormal animation playback.. [854ce2b](https://github.com/ant-design/pro-components/commit/854ce2b)
+* fix(form): Fix the display style of the switch. [8cdeda4](https://github.com/ant-design/pro-components/commit/8cdeda4)
+* fix(form): InlineErrorFormItemPopover support radio and checkbox. [8c6ede6](https://github.com/ant-design/pro-components/commit/8c6ede6)
+* fix(table): export editor pro table props (#7330). [#7330](https://github.com/ant-design/pro-components/pull/#7330) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix(card): change checkCard checked token (#7352). [#7352](https://github.com/ant-design/pro-components/pull/#7352) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix(card): remove onChange stopPropagation. [5f4bb48](https://github.com/ant-design/pro-components/commit/5f4bb48)
 
-- fix(layout): Fix the issue of excessively long titles not being truncated.. [0e67775](https://github.com/ant-design/pro-components/commit/0e67775)
-- fix(layout): fix abnormal animation playback.. [854ce2b](https://github.com/ant-design/pro-components/commit/854ce2b)
-- fix(form): Fix the display style of the switch. [8cdeda4](https://github.com/ant-design/pro-components/commit/8cdeda4)
-- fix(form): InlineErrorFormItemPopover support radio and checkbox. [8c6ede6](https://github.com/ant-design/pro-components/commit/8c6ede6)
-- fix(table): export editor pro table props (#7330). [#7330](https://github.com/ant-design/pro-components/pull/#7330) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix(card): change checkCard checked token (#7352). [#7352](https://github.com/ant-design/pro-components/pull/#7352) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix(card): remove onChange stopPropagation. [5f4bb48](https://github.com/ant-design/pro-components/commit/5f4bb48)
-
+  
 ### 在 `2023-07-04` 更新的 `@ant-design/pro-components@2.6.4` 版本更新了什么？
+  
+  * fix(layout): support antd@5.6.4. [a6ee785](https://github.com/ant-design/pro-components/commit/a6ee785)
+* feat (layout): 添加 appListRender api (#7286). [#7286](https://github.com/ant-design/pro-components/pull/#7286) [@sansheng741](https://github.com/sansheng741)
+* feat (form): ProForm 支持第二个泛型参数 (#7318). [#7318](https://github.com/ant-design/pro-components/pull/#7318) [@q1uxu](https://github.com/q1uxu)
+* fix (form): 修复当 value 为搜索条件 option 显示不出来的问题 (#7283). [#7283](https://github.com/ant-design/pro-components/pull/#7283) [@ldwonday](https://github.com/ldwonday)
+* feat(table): add support of custom render serch form (#7307). [#7307](https://github.com/ant-design/pro-components/pull/#7307) [@mashirozx](https://github.com/mashirozx)
 
-- fix(layout): support antd@5.6.4. [a6ee785](https://github.com/ant-design/pro-components/commit/a6ee785)
-- feat (layout): 添加 appListRender api (#7286). [#7286](https://github.com/ant-design/pro-components/pull/#7286) [@sansheng741](https://github.com/sansheng741)
-- feat (form): ProForm 支持第二个泛型参数 (#7318). [#7318](https://github.com/ant-design/pro-components/pull/#7318) [@q1uxu](https://github.com/q1uxu)
-- fix (form): 修复当 value 为搜索条件 option 显示不出来的问题 (#7283). [#7283](https://github.com/ant-design/pro-components/pull/#7283) [@ldwonday](https://github.com/ldwonday)
-- feat(table): add support of custom render serch form (#7307). [#7307](https://github.com/ant-design/pro-components/pull/#7307) [@mashirozx](https://github.com/mashirozx)
-
+  
 ### 在 `2023-06-30` 更新的 `@ant-design/pro-components@2.6.3` 版本更新了什么？
+  
+  * fix(layout): submenu close tooltip. [a550039](https://github.com/ant-design/pro-components/commit/a550039)
+* fix(form): fix block when QueryFilter set grid. [393fbe8](https://github.com/ant-design/pro-components/commit/393fbe8)
+* fix(form): fix className is undefined error. [a27d453](https://github.com/ant-design/pro-components/commit/a27d453)
+* fix(form): fix DigitRange un support theme error. [70ad3bc](https://github.com/ant-design/pro-components/commit/70ad3bc)
+* fix(form): formRef.current change will update formitem list. [5e977db](https://github.com/ant-design/pro-components/commit/5e977db)
+* fix(table): fix filter and sort is null no trigger change error. [8c444d7](https://github.com/ant-design/pro-components/commit/8c444d7)
+* fix(card): close onClick and onchange Propagation. [c86532f](https://github.com/ant-design/pro-components/commit/c86532f)
 
-- fix(layout): submenu close tooltip. [a550039](https://github.com/ant-design/pro-components/commit/a550039)
-- fix(form): fix block when QueryFilter set grid. [393fbe8](https://github.com/ant-design/pro-components/commit/393fbe8)
-- fix(form): fix className is undefined error. [a27d453](https://github.com/ant-design/pro-components/commit/a27d453)
-- fix(form): fix DigitRange un support theme error. [70ad3bc](https://github.com/ant-design/pro-components/commit/70ad3bc)
-- fix(form): formRef.current change will update formitem list. [5e977db](https://github.com/ant-design/pro-components/commit/5e977db)
-- fix(table): fix filter and sort is null no trigger change error. [8c444d7](https://github.com/ant-design/pro-components/commit/8c444d7)
-- fix(card): close onClick and onchange Propagation. [c86532f](https://github.com/ant-design/pro-components/commit/c86532f)
-
+  
 ### 在 `2023-06-19` 更新的 `@ant-design/pro-components@2.6.2` 版本更新了什么？
+  
+  * fix(form): fix inline form reset value for destoy. [dc9420a](https://github.com/ant-design/pro-components/commit/dc9420a)
 
-- fix(form): fix inline form reset value for destoy. [dc9420a](https://github.com/ant-design/pro-components/commit/dc9420a)
-
+  
 ### 在 `2023-06-19` 更新的 `@ant-design/pro-components@2.6.0` 版本更新了什么？
+  
+  * fix(form): alway use shouldUpdate for json. [7933961](https://github.com/ant-design/pro-components/commit/7933961)
+* fix(form): onInit use ProFormInstance. [ad537a5](https://github.com/ant-design/pro-components/commit/ad537a5)
+* fix(table): add Form.Item shouldUpdate function. [db3224b](https://github.com/ant-design/pro-components/commit/db3224b)
+* feat (field): LightFilter 中使用 ProFormSelect 的两个 bug 修复 (#7225) (#7233). [#7225](https://github.com/ant-design/pro-components/pull/#7225) [@Rabbit](https://github.com/Rabbit)
 
-- fix(form): alway use shouldUpdate for json. [7933961](https://github.com/ant-design/pro-components/commit/7933961)
-- fix(form): onInit use ProFormInstance. [ad537a5](https://github.com/ant-design/pro-components/commit/ad537a5)
-- fix(table): add Form.Item shouldUpdate function. [db3224b](https://github.com/ant-design/pro-components/commit/db3224b)
-- feat (field): LightFilter 中使用 ProFormSelect 的两个 bug 修复 (#7225) (#7233). [#7225](https://github.com/ant-design/pro-components/pull/#7225) [@Rabbit](https://github.com/Rabbit)
-
+  
 ### 在 `2023-06-16` 更新的 `@ant-design/pro-components@2.5.11` 版本更新了什么？
+  
+  * fix(layout): fix ErrorBoundary types error. [5bb5be1](https://github.com/ant-design/pro-components/commit/5bb5be1)
+* fix(table): fix editableFormRef no work error. [0cd2e4d](https://github.com/ant-design/pro-components/commit/0cd2e4d)
 
-- fix(layout): fix ErrorBoundary types error. [5bb5be1](https://github.com/ant-design/pro-components/commit/5bb5be1)
-- fix(table): fix editableFormRef no work error. [0cd2e4d](https://github.com/ant-design/pro-components/commit/0cd2e4d)
-
+  
 ### 在 `2023-06-15` 更新的 `@ant-design/pro-components@2.5.10` 版本更新了什么？
+  
+  * fix(form): fix table render less error. [dcd3888](https://github.com/ant-design/pro-components/commit/dcd3888)
 
-- fix(form): fix table render less error. [dcd3888](https://github.com/ant-design/pro-components/commit/dcd3888)
-
+  
 ### 在 `2023-06-14` 更新的 `@ant-design/pro-components@2.5.9` 版本更新了什么？
+  
+  * fix(form): fix shouldUpdate no work error. [ff8bbef](https://github.com/ant-design/pro-components/commit/ff8bbef)
 
-- fix(form): fix shouldUpdate no work error. [ff8bbef](https://github.com/ant-design/pro-components/commit/ff8bbef)
-
+  
 ### 在 `2023-06-12` 更新的 `@ant-design/pro-components@2.5.7` 版本更新了什么？
+  
+  * fix (components): fix useToken no supoort antd@4 的问题. [58b96e9](https://github.com/ant-design/pro-components/commit/58b96e9)
 
-- fix (components): fix useToken no supoort antd@4 的问题. [58b96e9](https://github.com/ant-design/pro-components/commit/58b96e9)
-
+  
 ### 在 `2023-06-12` 更新的 `@ant-design/pro-components@2.5.6` 版本更新了什么？
+  
+  * fix(components): remove hashid empty. [b46bb80](https://github.com/ant-design/pro-components/commit/b46bb80)
+* fix(layout): support antd@5.6 token. [28291fe](https://github.com/ant-design/pro-components/commit/28291fe)
+* fix (form): 修复 ProTable 的 columns.proFieldProps 不生效 (#7205). [#7205](https://github.com/ant-design/pro-components/pull/#7205) [@fanck0605](https://github.com/fanck0605)
+* fix(form): ColorPicker use antd style-n. [8d3cd04](https://github.com/ant-design/pro-components/commit/8d3cd04)
+* fix(form): ProFormColorPicker support disable. [973ac28](https://github.com/ant-design/pro-components/commit/973ac28)
+* fix(form): fix set addonAfter valuePropName will no work error. [8072666](https://github.com/ant-design/pro-components/commit/8072666)
+* fix (form): 修复 fn \[curK] 为函数时，参数 undefined 导致的报错 (#7163). [#7163](https://github.com/ant-design/pro-components/pull/#7163) [@Soulwail](https://github.com/Soulwail)
+* fix (table): 修复 Editable 的 record.id 使用 index，且 index 为 0 时，导致无法添加新行 (#7176). [#7176](https://github.com/ant-design/pro-components/pull/#7176) [@Soulwail](https://github.com/Soulwail)
+* fix(card): fix ProCard small header style error. [17ccf69](https://github.com/ant-design/pro-components/commit/17ccf69)
 
-- fix(components): remove hashid empty. [b46bb80](https://github.com/ant-design/pro-components/commit/b46bb80)
-- fix(layout): support antd@5.6 token. [28291fe](https://github.com/ant-design/pro-components/commit/28291fe)
-- fix (form): 修复 ProTable 的 columns.proFieldProps 不生效 (#7205). [#7205](https://github.com/ant-design/pro-components/pull/#7205) [@fanck0605](https://github.com/fanck0605)
-- fix(form): ColorPicker use antd style-n. [8d3cd04](https://github.com/ant-design/pro-components/commit/8d3cd04)
-- fix(form): ProFormColorPicker support disable. [973ac28](https://github.com/ant-design/pro-components/commit/973ac28)
-- fix(form): fix set addonAfter valuePropName will no work error. [8072666](https://github.com/ant-design/pro-components/commit/8072666)
-- fix (form): 修复 fn \[curK] 为函数时，参数 undefined 导致的报错 (#7163). [#7163](https://github.com/ant-design/pro-components/pull/#7163) [@Soulwail](https://github.com/Soulwail)
-- fix (table): 修复 Editable 的 record.id 使用 index，且 index 为 0 时，导致无法添加新行 (#7176). [#7176](https://github.com/ant-design/pro-components/pull/#7176) [@Soulwail](https://github.com/Soulwail)
-- fix(card): fix ProCard small header style error. [17ccf69](https://github.com/ant-design/pro-components/commit/17ccf69)
-
+  
 ### 在 `2023-06-02` 更新的 `@ant-design/pro-components@2.5.5` 版本更新了什么？
+  
+  * fix(form): fix Cascader light mode no work error. [4ce56dc](https://github.com/ant-design/pro-components/commit/4ce56dc)
 
-- fix(form): fix Cascader light mode no work error. [4ce56dc](https://github.com/ant-design/pro-components/commit/4ce56dc)
-
+  
 ### 在 `2023-05-30` 更新的 `@ant-design/pro-components@2.5.3` 版本更新了什么？
+  
+  * chore: 修复 ts 定义缺失的问题。
 
-- chore: 修复 ts 定义缺失的问题。
-
+  
 ### 在 `2023-05-30` 更新的 `@ant-design/pro-components@2.5.2` 版本更新了什么？
+  
+  * fix(form): fix \_transformArray is null will throw error. [ba1d9e9](https://github.com/ant-design/pro-components/commit/ba1d9e9)
 
-- fix(form): fix \_transformArray is null will throw error. [ba1d9e9](https://github.com/ant-design/pro-components/commit/ba1d9e9)
-
+  
 ### 在 `2023-05-29` 更新的 `@ant-design/pro-components@2.5.0` 版本更新了什么？
+  
+  * fix (layout): 修复 collapsedShowTitle 样式错误问题 (#7098). [#7098](https://github.com/ant-design/pro-components/pull/#7098) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix (form): 解决 ProFormList 多重嵌套 ProFormList 下的表单组件未调用 transform 方法问题 (#7138). [#7138](https://github.com/ant-design/pro-components/pull/#7138) [@kaneruan](https://github.com/kaneruan)
+* fix(form): use oninit reset formRef. [1deedf2](https://github.com/ant-design/pro-components/commit/1deedf2)
+* fix(form): close icon style (#7091). [#7091](https://github.com/ant-design/pro-components/pull/#7091) [@kungege](https://github.com/kungege)
+* fix(list): Extend ProListMeta\<T> type with `renderFormItem` (#7136). [#7136](https://github.com/ant-design/pro-components/pull/#7136) [@bartelemi](https://github.com/bartelemi)
+* fix (list): 修复 ProFormList 使用 className 无效问题 (#7128). [#7128](https://github.com/ant-design/pro-components/pull/#7128) [@leshalv](https://github.com/leshalv)
+* fix(list): `onChange ` prop don't work (#7129). [#7129](https://github.com/ant-design/pro-components/pull/#7129) [@kungege](https://github.com/kungege)
+* fix(table): Edit to make defaultValue become higher priority to reset column setting (#7113). [#7113](https://github.com/ant-design/pro-components/pull/#7113) [@ianccy](https://github.com/ianccy)
+* feat(table): use @dnd-kit (#7131). [#7131](https://github.com/ant-design/pro-components/pull/#7131) [@chenshuai2144](https://github.com/chenshuai2144)
+* fix(table): component EditableProTable actionDeleteRef function Single row status Locked (#7124). [#7124](https://github.com/ant-design/pro-components/pull/#7124) [@varown](https://github.com/varown)
 
-- fix (layout): 修复 collapsedShowTitle 样式错误问题 (#7098). [#7098](https://github.com/ant-design/pro-components/pull/#7098) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix (form): 解决 ProFormList 多重嵌套 ProFormList 下的表单组件未调用 transform 方法问题 (#7138). [#7138](https://github.com/ant-design/pro-components/pull/#7138) [@kaneruan](https://github.com/kaneruan)
-- fix(form): use oninit reset formRef. [1deedf2](https://github.com/ant-design/pro-components/commit/1deedf2)
-- fix(form): close icon style (#7091). [#7091](https://github.com/ant-design/pro-components/pull/#7091) [@kungege](https://github.com/kungege)
-- fix(list): Extend ProListMeta\<T> type with `renderFormItem` (#7136). [#7136](https://github.com/ant-design/pro-components/pull/#7136) [@bartelemi](https://github.com/bartelemi)
-- fix (list): 修复 ProFormList 使用 className 无效问题 (#7128). [#7128](https://github.com/ant-design/pro-components/pull/#7128) [@leshalv](https://github.com/leshalv)
-- fix(list): `onChange ` prop don't work (#7129). [#7129](https://github.com/ant-design/pro-components/pull/#7129) [@kungege](https://github.com/kungege)
-- fix(table): Edit to make defaultValue become higher priority to reset column setting (#7113). [#7113](https://github.com/ant-design/pro-components/pull/#7113) [@ianccy](https://github.com/ianccy)
-- feat(table): use @dnd-kit (#7131). [#7131](https://github.com/ant-design/pro-components/pull/#7131) [@chenshuai2144](https://github.com/chenshuai2144)
-- fix(table): component EditableProTable actionDeleteRef function Single row status Locked (#7124). [#7124](https://github.com/ant-design/pro-components/pull/#7124) [@varown](https://github.com/varown)
-
+  
 ### 在 `2023-05-15` 更新的 `@ant-design/pro-components@2.4.15` 版本更新了什么？
+  
+  * fix(layout): support fix header scroll use new color (#7071). [#7071](https://github.com/ant-design/pro-components/pull/#7071) [@chenshuai2144](https://github.com/chenshuai2144)
+* fix(layout): set layout headermenu height to 40. [f50cfd2](https://github.com/ant-design/pro-components/commit/f50cfd2)
+* fix (form): 修复 form 自定义组件过多卡顿的问题 (#7018). [#7018](https://github.com/ant-design/pro-components/pull/#7018) [@ldwonday](https://github.com/ldwonday)
+* fix (form):ProFormList 支持更多类型 (#7051). [#7051](https://github.com/ant-design/pro-components/pull/#7051) [@leshalv](https://github.com/leshalv)
+* feat(form): rewirte light date form (#7052). [#7052](https://github.com/ant-design/pro-components/pull/#7052) [@chenshuai2144](https://github.com/chenshuai2144)
+* fix (form): 当设置了 digit 的 stringMode 为 true，但是组件没有返回 string (#7031). [#7031](https://github.com/ant-design/pro-components/pull/#7031) [@ldwonday](https://github.com/ldwonday)
 
-- fix(layout): support fix header scroll use new color (#7071). [#7071](https://github.com/ant-design/pro-components/pull/#7071) [@chenshuai2144](https://github.com/chenshuai2144)
-- fix(layout): set layout headermenu height to 40. [f50cfd2](https://github.com/ant-design/pro-components/commit/f50cfd2)
-- fix (form): 修复 form 自定义组件过多卡顿的问题 (#7018). [#7018](https://github.com/ant-design/pro-components/pull/#7018) [@ldwonday](https://github.com/ldwonday)
-- fix (form):ProFormList 支持更多类型 (#7051). [#7051](https://github.com/ant-design/pro-components/pull/#7051) [@leshalv](https://github.com/leshalv)
-- feat(form): rewirte light date form (#7052). [#7052](https://github.com/ant-design/pro-components/pull/#7052) [@chenshuai2144](https://github.com/chenshuai2144)
-- fix (form): 当设置了 digit 的 stringMode 为 true，但是组件没有返回 string (#7031). [#7031](https://github.com/ant-design/pro-components/pull/#7031) [@ldwonday](https://github.com/ldwonday)
-
+  
 ### 在 `2023-05-08` 更新的 `@ant-design/pro-components@2.4.14` 版本更新了什么？
+  
+  * fix(layout): fix menu classname no work error. [c64e81c](https://github.com/ant-design/pro-components/commit/c64e81c)
 
-- fix(layout): fix menu classname no work error. [c64e81c](https://github.com/ant-design/pro-components/commit/c64e81c)
-
+  
 ### 在 `2023-05-08` 更新的 `@ant-design/pro-components@2.4.13` 版本更新了什么？
+  
+  * fix(layout): use best className slove token error. [8090248](https://github.com/ant-design/pro-components/commit/8090248)
+* fix(form): fix ModalForm ref less error. [06721c3](https://github.com/ant-design/pro-components/commit/06721c3)
+* fix(table): table should support dependencies (#7019). [#7019](https://github.com/ant-design/pro-components/pull/#7019) [@chenshuai2144](https://github.com/chenshuai2144)
 
-- fix(layout): use best className slove token error. [8090248](https://github.com/ant-design/pro-components/commit/8090248)
-- fix(form): fix ModalForm ref less error. [06721c3](https://github.com/ant-design/pro-components/commit/06721c3)
-- fix(table): table should support dependencies (#7019). [#7019](https://github.com/ant-design/pro-components/pull/#7019) [@chenshuai2144](https://github.com/chenshuai2144)
-
+  
 ### 在 `2023-05-04` 更新的 `@ant-design/pro-components@2.4.11` 版本更新了什么？
+  
+  * fix(layout): paddingBlockStart set value=8. [6eac5b6](https://github.com/ant-design/pro-components/commit/6eac5b6)
+* feat(layout): help add extraRender api (#6982). [#6982](https://github.com/ant-design/pro-components/pull/#6982) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix (table): 修复 useLocaleFilter 方法未判断存在 children 的情况 (#6987). [#6987](https://github.com/ant-design/pro-components/pull/#6987) [@zhou0322-lab](https://github.com/zhou0322-lab)
 
-- fix(layout): paddingBlockStart set value=8. [6eac5b6](https://github.com/ant-design/pro-components/commit/6eac5b6)
-- feat(layout): help add extraRender api (#6982). [#6982](https://github.com/ant-design/pro-components/pull/#6982) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix (table): 修复 useLocaleFilter 方法未判断存在 children 的情况 (#6987). [#6987](https://github.com/ant-design/pro-components/pull/#6987) [@zhou0322-lab](https://github.com/zhou0322-lab)
-
+  
 ### 在 `2023-04-26` 更新的 `@ant-design/pro-components@2.4.9` 版本更新了什么？
+  
+  * fix(layout): up layout mix css level. [18e8157](https://github.com/ant-design/pro-components/commit/18e8157)
 
-- fix(layout): up layout mix css level. [18e8157](https://github.com/ant-design/pro-components/commit/18e8157)
-
+  
 ### 在 `2023-04-25` 更新的 `@ant-design/pro-components@2.4.5` 版本更新了什么？
+  
+  * fix(components): Optimize theme type (#6895). [#6895](https://github.com/ant-design/pro-components/pull/#6895) [@thinkasany](https://github.com/thinkasany)
+* fix (components): 修复在浏览器环境下 hashed 必为 false 的 bug (#6900). [#6900](https://github.com/ant-design/pro-components/pull/#6900) [@clf17222592](https://github.com/clf17222592)
+* feat(layout): ProHelp support navigationSwitch. [2406457](https://github.com/ant-design/pro-components/commit/2406457)
+* feat(layout): ProHelp support more feature (#6970). [#6970](https://github.com/ant-design/pro-components/pull/#6970) [@chenshuai2144](https://github.com/chenshuai2144)
+* feat(form): add some DateRangePicker components (#6850). [#6850](https://github.com/ant-design/pro-components/pull/#6850) [@lzm0x219](https://github.com/lzm0x219)
+* fix(form): fix parsed NaN value not display in readonly mode (#6932). [#6932](https://github.com/ant-design/pro-components/pull/#6932) [@xliez](https://github.com/xliez)
+* fix (form): 修复 SchemaFormRef 的问题 (#6943). [#6943](https://github.com/ant-design/pro-components/pull/#6943) [@ldwonday](https://github.com/ldwonday)
+* fix(form): chage step form first button judge (#6915). [#6915](https://github.com/ant-design/pro-components/pull/#6915) [@ONLY-yours](https://github.com/ONLY-yours)
+* 🐛 fix(form): Optimize render type assertion (#6886). [#6886](https://github.com/ant-design/pro-components/pull/#6886) [@thinkasany](https://github.com/thinkasany)
+* fix (form): 兼容 antd@4 ProFormTimePicker format 异常问题 (#6863). [#6863](https://github.com/ant-design/pro-components/pull/#6863) [@powerfulyang](https://github.com/powerfulyang)
+* fix (form): 修复 form 重复渲染的 bug (#6874). [#6874](https://github.com/ant-design/pro-components/pull/#6874) [@ldwonday](https://github.com/ldwonday)
+* fix(list): add pro-utils to package.json deps (#6894). [#6894](https://github.com/ant-design/pro-components/pull/#6894) [@Andreybest](https://github.com/Andreybest)
+* fix (table): 修复当 loading 为对象时，pro-table 无法接管 loading 状态，必须手动控制的问题 (#6962). [#6962](https://github.com/ant-design/pro-components/pull/#6962) [@clf17222592](https://github.com/clf17222592)
+* fix(table): new fetch function (#6923). [#6923](https://github.com/ant-design/pro-components/pull/#6923) [@chenshuai2144](https://github.com/chenshuai2144)
+* fix (card): 修复 title 为数字 0 时不展示的问题 (#6884). [#6884](https://github.com/ant-design/pro-components/pull/#6884) [@fliu2476](https://github.com/fliu2476)
 
-- fix(components): Optimize theme type (#6895). [#6895](https://github.com/ant-design/pro-components/pull/#6895) [@thinkasany](https://github.com/thinkasany)
-- fix (components): 修复在浏览器环境下 hashed 必为 false 的 bug (#6900). [#6900](https://github.com/ant-design/pro-components/pull/#6900) [@clf17222592](https://github.com/clf17222592)
-- feat(layout): ProHelp support navigationSwitch. [2406457](https://github.com/ant-design/pro-components/commit/2406457)
-- feat(layout): ProHelp support more feature (#6970). [#6970](https://github.com/ant-design/pro-components/pull/#6970) [@chenshuai2144](https://github.com/chenshuai2144)
-- feat(form): add some DateRangePicker components (#6850). [#6850](https://github.com/ant-design/pro-components/pull/#6850) [@lzm0x219](https://github.com/lzm0x219)
-- fix(form): fix parsed NaN value not display in readonly mode (#6932). [#6932](https://github.com/ant-design/pro-components/pull/#6932) [@xliez](https://github.com/xliez)
-- fix (form): 修复 SchemaFormRef 的问题 (#6943). [#6943](https://github.com/ant-design/pro-components/pull/#6943) [@ldwonday](https://github.com/ldwonday)
-- fix(form): chage step form first button judge (#6915). [#6915](https://github.com/ant-design/pro-components/pull/#6915) [@ONLY-yours](https://github.com/ONLY-yours)
-- 🐛 fix(form): Optimize render type assertion (#6886). [#6886](https://github.com/ant-design/pro-components/pull/#6886) [@thinkasany](https://github.com/thinkasany)
-- fix (form): 兼容 antd@4 ProFormTimePicker format 异常问题 (#6863). [#6863](https://github.com/ant-design/pro-components/pull/#6863) [@powerfulyang](https://github.com/powerfulyang)
-- fix (form): 修复 form 重复渲染的 bug (#6874). [#6874](https://github.com/ant-design/pro-components/pull/#6874) [@ldwonday](https://github.com/ldwonday)
-- fix(list): add pro-utils to package.json deps (#6894). [#6894](https://github.com/ant-design/pro-components/pull/#6894) [@Andreybest](https://github.com/Andreybest)
-- fix (table): 修复当 loading 为对象时，pro-table 无法接管 loading 状态，必须手动控制的问题 (#6962). [#6962](https://github.com/ant-design/pro-components/pull/#6962) [@clf17222592](https://github.com/clf17222592)
-- fix(table): new fetch function (#6923). [#6923](https://github.com/ant-design/pro-components/pull/#6923) [@chenshuai2144](https://github.com/chenshuai2144)
-- fix (card): 修复 title 为数字 0 时不展示的问题 (#6884). [#6884](https://github.com/ant-design/pro-components/pull/#6884) [@fliu2476](https://github.com/fliu2476)
-
+  
 ### 在 `2023-03-27` 更新的 `@ant-design/pro-components@2.4.3` 版本更新了什么？
+  
+  * feat(components): Add translation for Slovak and Czech (#6802). [#6802](https://github.com/ant-design/pro-components/pull/#6802) [@craftedsro](https://github.com/craftedsro)
+* fix(layout):fix drawer bgColor error. [907bead](https://github.com/ant-design/pro-components/commit/907bead)
+* fix(layout): remove ProLayout defaultProps. [7d1891f](https://github.com/ant-design/pro-components/commit/7d1891f)
+* fix(layout): slove menu content inlineflex & child not 100% problem (#6819). [#6819](https://github.com/ant-design/pro-components/pull/#6819) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix(layout): Provide a hack method to bypass the breadcrumb error check of antd and remove the error message.. [bcb32b9](https://github.com/ant-design/pro-components/commit/bcb32b9)
+* feat(form): introduce proFieldProps in BaseFormProps and pass it to all Fields with the lowest priority (#6847). [#6847](https://github.com/ant-design/pro-components/pull/#6847) [@shijistar](https://github.com/shijistar)
+* feat (table): ProTable 的 toolbar.tabs 和 toolbar.menu 配置下增加 defaultActiveKey 选项 (#6818). [#6818](https://github.com/ant-design/pro-components/pull/#6818) [@hans000](https://github.com/hans000)
+* fix(card): remove reset fontFamily. [b33dfef](https://github.com/ant-design/pro-components/commit/b33dfef)
+* fix(card): fix StatisticCard value style error. [5de24b7](https://github.com/ant-design/pro-components/commit/5de24b7)
+* fix(descriptions): fix Descriptions action no center error. [11c1166](https://github.com/ant-design/pro-components/commit/11c1166)
 
-- feat(components): Add translation for Slovak and Czech (#6802). [#6802](https://github.com/ant-design/pro-components/pull/#6802) [@craftedsro](https://github.com/craftedsro)
-- fix(layout):fix drawer bgColor error. [907bead](https://github.com/ant-design/pro-components/commit/907bead)
-- fix(layout): remove ProLayout defaultProps. [7d1891f](https://github.com/ant-design/pro-components/commit/7d1891f)
-- fix(layout): slove menu content inlineflex & child not 100% problem (#6819). [#6819](https://github.com/ant-design/pro-components/pull/#6819) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix(layout): Provide a hack method to bypass the breadcrumb error check of antd and remove the error message.. [bcb32b9](https://github.com/ant-design/pro-components/commit/bcb32b9)
-- feat(form): introduce proFieldProps in BaseFormProps and pass it to all Fields with the lowest priority (#6847). [#6847](https://github.com/ant-design/pro-components/pull/#6847) [@shijistar](https://github.com/shijistar)
-- feat (table): ProTable 的 toolbar.tabs 和 toolbar.menu 配置下增加 defaultActiveKey 选项 (#6818). [#6818](https://github.com/ant-design/pro-components/pull/#6818) [@hans000](https://github.com/hans000)
-- fix(card): remove reset fontFamily. [b33dfef](https://github.com/ant-design/pro-components/commit/b33dfef)
-- fix(card): fix StatisticCard value style error. [5de24b7](https://github.com/ant-design/pro-components/commit/5de24b7)
-- fix(descriptions): fix Descriptions action no center error. [11c1166](https://github.com/ant-design/pro-components/commit/11c1166)
-
+  
 ### 在 `2023-03-14` 更新的 `@ant-design/pro-components@2.4.2` 版本更新了什么？
+  
+  * feat(form): QueryFilter support submitterColSpanProps. [11dbc0c](https://github.com/ant-design/pro-components/commit/11dbc0c)
+* fix(form): fix AdvancedSearch demo no work error. [226fbac](https://github.com/ant-design/pro-components/commit/226fbac)
+* fix(form): fix collapse button unuse colorPrimary txt. [55b8aab](https://github.com/ant-design/pro-components/commit/55b8aab)
+* fix(list): fix usePaginationArgs and useSelection args error. [fe331b9](https://github.com/ant-design/pro-components/commit/fe331b9)
 
-- feat(form): QueryFilter support submitterColSpanProps. [11dbc0c](https://github.com/ant-design/pro-components/commit/11dbc0c)
-- fix(form): fix AdvancedSearch demo no work error. [226fbac](https://github.com/ant-design/pro-components/commit/226fbac)
-- fix(form): fix collapse button unuse colorPrimary txt. [55b8aab](https://github.com/ant-design/pro-components/commit/55b8aab)
-- fix(list): fix usePaginationArgs and useSelection args error. [fe331b9](https://github.com/ant-design/pro-components/commit/fe331b9)
-
+  
 ### 在 `2023-03-13` 更新的 `@ant-design/pro-components@2.4.1` 版本更新了什么？
+  
+  * fix(layout): fix sider menu height. [e8963cc](https://github.com/ant-design/pro-components/commit/e8963cc)
+* fix(layout): remove procard use antd card. [02e1830](https://github.com/ant-design/pro-components/commit/02e1830)
+* fix(form): Select request not trigger twice when keywords not change … (#6717). [#6717](https://github.com/ant-design/pro-components/pull/#6717) [@zd5043039119](https://github.com/zd5043039119)
 
-- fix(layout): fix sider menu height. [e8963cc](https://github.com/ant-design/pro-components/commit/e8963cc)
-- fix(layout): remove procard use antd card. [02e1830](https://github.com/ant-design/pro-components/commit/02e1830)
-- fix(form): Select request not trigger twice when keywords not change … (#6717). [#6717](https://github.com/ant-design/pro-components/pull/#6717) [@zd5043039119](https://github.com/zd5043039119)
-
+  
 ### 在 `2023-03-09` 更新的 `@ant-design/pro-components@2.4.0` 版本更新了什么？
+  
+  * fix(layout): fix menu item icon style error (#6745). [#6745](https://github.com/ant-design/pro-components/pull/#6745) [@chenshuai2144](https://github.com/chenshuai2144)
+* fix(layout): fix colorBgPageContainerFixed no use colorBgElevated error. [712bc82](https://github.com/ant-design/pro-components/commit/712bc82)
+* fix(layout): fix sider menu Drawer onCollapse no work error. [7d638f4](https://github.com/ant-design/pro-components/commit/7d638f4)
+* fix(form): Select request not trigger twice when keywords not change … (#6717). [#6717](https://github.com/ant-design/pro-components/pull/#6717) [@zd5043039119](https://github.com/zd5043039119)
 
-- fix(layout): fix menu item icon style error (#6745). [#6745](https://github.com/ant-design/pro-components/pull/#6745) [@chenshuai2144](https://github.com/chenshuai2144)
-- fix(layout): fix colorBgPageContainerFixed no use colorBgElevated error. [712bc82](https://github.com/ant-design/pro-components/commit/712bc82)
-- fix(layout): fix sider menu Drawer onCollapse no work error. [7d638f4](https://github.com/ant-design/pro-components/commit/7d638f4)
-- fix(form): Select request not trigger twice when keywords not change … (#6717). [#6717](https://github.com/ant-design/pro-components/pull/#6717) [@zd5043039119](https://github.com/zd5043039119)
-
+  
 ### 在 `2023-03-08` 更新的 `@ant-design/pro-components@2.3.59` 版本更新了什么？
+  
+  * feat(components): support antd@5.4.0 (#6730). [#6730](https://github.com/ant-design/pro-components/pull/#6730) [@chenshuai2144](https://github.com/chenshuai2144)
+* chore(layout):change == to === (#6735). [#6735](https://github.com/ant-design/pro-components/pull/#6735) [@dingxyang](https://github.com/dingxyang)
+* fix (layout): siderMenu 中的 subMenu 在 dark 模式下显示不正常 (#6721). [#6721](https://github.com/ant-design/pro-components/pull/#6721) [@crazyurus](https://github.com/crazyurus)
+* fix(layout): avatarProps not work when actionsRender is falsy (#6695). [#6695](https://github.com/ant-design/pro-components/pull/#6695) [@xliez](https://github.com/xliez)
+* feat(layout): add ProHelp components (#6654). [#6654](https://github.com/ant-design/pro-components/pull/#6654) [@chenshuai2144](https://github.com/chenshuai2144)
+* fix (form): 修复 label 属性没有传值的问题 (#6728). [#6728](https://github.com/ant-design/pro-components/pull/#6728) [@hans000](https://github.com/hans000)
+* fix (form): lightSelect 默认转小写 #6692 (#6696). [#6696](https://github.com/ant-design/pro-components/pull/#6696) [@XueMeijing](https://github.com/XueMeijing)
+* fix (table): 修复 maxLength 选项配置为 0 时逻辑不符合预期的问题 (#6719). [#6719](https://github.com/ant-design/pro-components/pull/#6719) [@hans000](https://github.com/hans000)
 
-- feat(components): support antd@5.4.0 (#6730). [#6730](https://github.com/ant-design/pro-components/pull/#6730) [@chenshuai2144](https://github.com/chenshuai2144)
-- chore(layout):change == to === (#6735). [#6735](https://github.com/ant-design/pro-components/pull/#6735) [@dingxyang](https://github.com/dingxyang)
-- fix (layout): siderMenu 中的 subMenu 在 dark 模式下显示不正常 (#6721). [#6721](https://github.com/ant-design/pro-components/pull/#6721) [@crazyurus](https://github.com/crazyurus)
-- fix(layout): avatarProps not work when actionsRender is falsy (#6695). [#6695](https://github.com/ant-design/pro-components/pull/#6695) [@xliez](https://github.com/xliez)
-- feat(layout): add ProHelp components (#6654). [#6654](https://github.com/ant-design/pro-components/pull/#6654) [@chenshuai2144](https://github.com/chenshuai2144)
-- fix (form): 修复 label 属性没有传值的问题 (#6728). [#6728](https://github.com/ant-design/pro-components/pull/#6728) [@hans000](https://github.com/hans000)
-- fix (form): lightSelect 默认转小写 #6692 (#6696). [#6696](https://github.com/ant-design/pro-components/pull/#6696) [@XueMeijing](https://github.com/XueMeijing)
-- fix (table): 修复 maxLength 选项配置为 0 时逻辑不符合预期的问题 (#6719). [#6719](https://github.com/ant-design/pro-components/pull/#6719) [@hans000](https://github.com/hans000)
-
+  
 ### 在 `2023-02-28` 更新的 `@ant-design/pro-components@2.4.16` 版本更新了什么？
+  
+  * fix(layout): menuHeaderRender not work (#6676). [#6676](https://github.com/ant-design/pro-components/pull/#6676) [@elrrrrrrr](https://github.com/elrrrrrrr)
+* fix(layout): if layout's avatarProps doesn't exist, the actionsRender props should also take effect (#6642). [#6642](https://github.com/ant-design/pro-components/pull/#6642) [@BooYeu](https://github.com/BooYeu)
+* 💥 feat (layout): layout 提供在菜单为空时隐藏 Sider 的功能 (#6643). [#6643](https://github.com/ant-design/pro-components/pull/#6643) [@wtchaos](https://github.com/wtchaos)
+* feat(form): ProFormTreeSelect support fetchDataOnSearch (#6638). [#6638](https://github.com/ant-design/pro-components/pull/#6638) [@Eliot00](https://github.com/Eliot00)
+* fix(form): textarea read-mode error (#6632). [#6632](https://github.com/ant-design/pro-components/pull/#6632) [@jaluik](https://github.com/jaluik)
+* fix (table): selectedRows 拿不到最新的值 (#6671). [#6671](https://github.com/ant-design/pro-components/pull/#6671) [@hans000](https://github.com/hans000)
+* fix (table): ProTable 组件 toolbar menu 属性为 tab 时抖动问题 (#6584) (#6641). [#6584](https://github.com/ant-design/pro-components/pull/#6584) [@chencc](https://github.com/chencc)
 
-- fix(layout): menuHeaderRender not work (#6676). [#6676](https://github.com/ant-design/pro-components/pull/#6676) [@elrrrrrrr](https://github.com/elrrrrrrr)
-- fix(layout): if layout's avatarProps doesn't exist, the actionsRender props should also take effect (#6642). [#6642](https://github.com/ant-design/pro-components/pull/#6642) [@BooYeu](https://github.com/BooYeu)
-- 💥 feat (layout): layout 提供在菜单为空时隐藏 Sider 的功能 (#6643). [#6643](https://github.com/ant-design/pro-components/pull/#6643) [@wtchaos](https://github.com/wtchaos)
-- feat(form): ProFormTreeSelect support fetchDataOnSearch (#6638). [#6638](https://github.com/ant-design/pro-components/pull/#6638) [@Eliot00](https://github.com/Eliot00)
-- fix(form): textarea read-mode error (#6632). [#6632](https://github.com/ant-design/pro-components/pull/#6632) [@jaluik](https://github.com/jaluik)
-- fix (table): selectedRows 拿不到最新的值 (#6671). [#6671](https://github.com/ant-design/pro-components/pull/#6671) [@hans000](https://github.com/hans000)
-- fix (table): ProTable 组件 toolbar menu 属性为 tab 时抖动问题 (#6584) (#6641). [#6584](https://github.com/ant-design/pro-components/pull/#6584) [@chencc](https://github.com/chencc)
-
+  
 ### 在 `2023-02-17` 更新的 `@ant-design/pro-components@2.3.57` 版本更新了什么？
+  
+  * fix(layout): fix rightContentRender alway work error. [796ab12](https://github.com/ant-design/pro-components/commit/796ab12)
 
-- fix(layout): fix rightContentRender alway work error. [796ab12](https://github.com/ant-design/pro-components/commit/796ab12)
-
+  
 ### 在 `2023-02-17` 更新的 `@ant-design/pro-components@2.3.56` 版本更新了什么？
+  
+  * fix(components): src alway use es path. [4a13142](https://github.com/ant-design/pro-components/commit/4a13142)
 
-- fix(components): src alway use es path. [4a13142](https://github.com/ant-design/pro-components/commit/4a13142)
-
+  
 ### 在 `2023-02-10` 更新的 `@ant-design/pro-components@2.3.54` 版本更新了什么？
+  
+  * fix(components): fix lib has es path error. [157f1f1](https://github.com/ant-design/pro-components/commit/157f1f1)
 
-- fix(components): fix lib has es path error. [157f1f1](https://github.com/ant-design/pro-components/commit/157f1f1)
-
+  
 ### 在 `2023-02-08` 更新的 `@ant-design/pro-components@2.3.53` 版本更新了什么？
+  
+  * fix(components): remove useLayoutEffect to useEffect. [19ccf1c](https://github.com/ant-design/pro-components/commit/19ccf1c)
+* fix(layout): use logical properties and values instead margin. [a3c1b31](https://github.com/ant-design/pro-components/commit/a3c1b31)
+* fix (layout): 修复因为 Sider 折叠导致菜单展开状态丢失的 bug (#6472). [#6472](https://github.com/ant-design/pro-components/pull/#6472) [@wtchaos](https://github.com/wtchaos)
+* feat (layout): pro-layout top 模式下支持 headerTitleRender (#6560). [#6560](https://github.com/ant-design/pro-components/pull/#6560) [@Hahet](https://github.com/Hahet)
+* fix(layout): Group-list demo fix (#6512). [#6512](https://github.com/ant-design/pro-components/pull/#6512) [@chengaway](https://github.com/chengaway)
+* fix (layout): ItemClick 自定义点击事件，回传触发 Popover 元素 ref (#6504). [#6504](https://github.com/ant-design/pro-components/pull/#6504) [@chengaway](https://github.com/chengaway)
+* fix(form): FieldLabel support i18n #6578(#6578). [#6578](https://github.com/ant-design/pro-components/pull/#6578) [@kungege](https://github.com/kungege)
+* fix(form): dataindex should take precedence over key. [8249ccd](https://github.com/ant-design/pro-components/commit/8249ccd)
+* fix(form): slove form list label defalut mode show problem (#6549). [#6549](https://github.com/ant-design/pro-components/pull/#6549) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix (form): 修复了 textarea 在只读模式下的对齐和换行的问题 (#6524). [#6524](https://github.com/ant-design/pro-components/pull/#6524) [@WilenChen](https://github.com/WilenChen)
+* fix (form): debounceTime 在 SchemaForm 上配置不生效的问题 (#6557). [#6557](https://github.com/ant-design/pro-components/pull/#6557) [@ldwonday](https://github.com/ldwonday)
+* fix(table): fix keyframes style no work error. [122484e](https://github.com/ant-design/pro-components/commit/122484e)
+* fix (table): 列设置里面拖动列改变顺序会导致重新发布按钮出现多次 (#6565). [#6565](https://github.com/ant-design/pro-components/pull/#6565) [@nocodeempire](https://github.com/nocodeempire)
+* fix (table): 删除 EditableTable 的 console.log (#6526). [#6526](https://github.com/ant-design/pro-components/pull/#6526) [@sushi-su](https://github.com/sushi-su)
+* fix(descriptions): fix fetch error no retry fetch error. [9158e71](https://github.com/ant-design/pro-components/commit/9158e71)
 
-- fix(components): remove useLayoutEffect to useEffect. [19ccf1c](https://github.com/ant-design/pro-components/commit/19ccf1c)
-- fix(layout): use logical properties and values instead margin. [a3c1b31](https://github.com/ant-design/pro-components/commit/a3c1b31)
-- fix (layout): 修复因为 Sider 折叠导致菜单展开状态丢失的 bug (#6472). [#6472](https://github.com/ant-design/pro-components/pull/#6472) [@wtchaos](https://github.com/wtchaos)
-- feat (layout): pro-layout top 模式下支持 headerTitleRender (#6560). [#6560](https://github.com/ant-design/pro-components/pull/#6560) [@Hahet](https://github.com/Hahet)
-- fix(layout): Group-list demo fix (#6512). [#6512](https://github.com/ant-design/pro-components/pull/#6512) [@chengaway](https://github.com/chengaway)
-- fix (layout): ItemClick 自定义点击事件，回传触发 Popover 元素 ref (#6504). [#6504](https://github.com/ant-design/pro-components/pull/#6504) [@chengaway](https://github.com/chengaway)
-- fix(form): FieldLabel support i18n #6578(#6578). [#6578](https://github.com/ant-design/pro-components/pull/#6578) [@kungege](https://github.com/kungege)
-- fix(form): dataindex should take precedence over key. [8249ccd](https://github.com/ant-design/pro-components/commit/8249ccd)
-- fix(form): slove form list label defalut mode show problem (#6549). [#6549](https://github.com/ant-design/pro-components/pull/#6549) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix (form): 修复了 textarea 在只读模式下的对齐和换行的问题 (#6524). [#6524](https://github.com/ant-design/pro-components/pull/#6524) [@WilenChen](https://github.com/WilenChen)
-- fix (form): debounceTime 在 SchemaForm 上配置不生效的问题 (#6557). [#6557](https://github.com/ant-design/pro-components/pull/#6557) [@ldwonday](https://github.com/ldwonday)
-- fix(table): fix keyframes style no work error. [122484e](https://github.com/ant-design/pro-components/commit/122484e)
-- fix (table): 列设置里面拖动列改变顺序会导致重新发布按钮出现多次 (#6565). [#6565](https://github.com/ant-design/pro-components/pull/#6565) [@nocodeempire](https://github.com/nocodeempire)
-- fix (table): 删除 EditableTable 的 console.log (#6526). [#6526](https://github.com/ant-design/pro-components/pull/#6526) [@sushi-su](https://github.com/sushi-su)
-- fix(descriptions): fix fetch error no retry fetch error. [9158e71](https://github.com/ant-design/pro-components/commit/9158e71)
-
+  
 ### 在 `2023-01-10` 更新的 `@ant-design/pro-components@2.3.52` 版本更新了什么？
+  
+  * fix(layout): replace marginTop to marigin-block-start. [5d0f58f](https://github.com/ant-design/pro-components/commit/5d0f58f)
+* fix(layout): fix ProLayout pageTitleRender not overriding document title (#6492). [#6492](https://github.com/ant-design/pro-components/pull/#6492) [@whyour](https://github.com/whyour)
+* fix(layout): open sider from right on rtl direction (#6491). [#6491](https://github.com/ant-design/pro-components/pull/#6491) [@3hson](https://github.com/3hson)
+* fix (layout): 修复分组逻辑部分代码 (#6488). [#6488](https://github.com/ant-design/pro-components/pull/#6488) [@chengaway](https://github.com/chengaway)
+* fix(layout): support click mask close. [06a8920](https://github.com/ant-design/pro-components/commit/06a8920)
+* fix (layout): 调整菜单收缩时 margin 与展开时 一致 (#6481). [#6481](https://github.com/ant-design/pro-components/pull/#6481) [@hihuangwei](https://github.com/hihuangwei)
+* fix(form): fix formref no work error in BetaSchemaForm. [7b9bbdd](https://github.com/ant-design/pro-components/commit/7b9bbdd)
+* fix (Table): 列配置子项 disable 时，无法拖动调整顺序 (#6476). [#6476](https://github.com/ant-design/pro-components/pull/#6476) [@chiaweilee](https://github.com/chiaweilee)
+* fix (Table): 列配置子项 disable 时，“固定” 按钮点击无效 (#6475). [#6475](https://github.com/ant-design/pro-components/pull/#6475) [@chiaweilee](https://github.com/chiaweilee)
+* fix (Table): 列配置点击 “列展示” 全选操作时，顺序排列和 disable 状态异常 (#6477). [#6477](https://github.com/ant-design/pro-components/pull/#6477) [@chiaweilee](https://github.com/chiaweilee)
+* fix(table): fix cancelEditable will reset value error. [40fba50](https://github.com/ant-design/pro-components/commit/40fba50)
 
-- fix(layout): replace marginTop to marigin-block-start. [5d0f58f](https://github.com/ant-design/pro-components/commit/5d0f58f)
-- fix(layout): fix ProLayout pageTitleRender not overriding document title (#6492). [#6492](https://github.com/ant-design/pro-components/pull/#6492) [@whyour](https://github.com/whyour)
-- fix(layout): open sider from right on rtl direction (#6491). [#6491](https://github.com/ant-design/pro-components/pull/#6491) [@3hson](https://github.com/3hson)
-- fix (layout): 修复分组逻辑部分代码 (#6488). [#6488](https://github.com/ant-design/pro-components/pull/#6488) [@chengaway](https://github.com/chengaway)
-- fix(layout): support click mask close. [06a8920](https://github.com/ant-design/pro-components/commit/06a8920)
-- fix (layout): 调整菜单收缩时 margin 与展开时 一致 (#6481). [#6481](https://github.com/ant-design/pro-components/pull/#6481) [@hihuangwei](https://github.com/hihuangwei)
-- fix(form): fix formref no work error in BetaSchemaForm. [7b9bbdd](https://github.com/ant-design/pro-components/commit/7b9bbdd)
-- fix (Table): 列配置子项 disable 时，无法拖动调整顺序 (#6476). [#6476](https://github.com/ant-design/pro-components/pull/#6476) [@chiaweilee](https://github.com/chiaweilee)
-- fix (Table): 列配置子项 disable 时，“固定” 按钮点击无效 (#6475). [#6475](https://github.com/ant-design/pro-components/pull/#6475) [@chiaweilee](https://github.com/chiaweilee)
-- fix (Table): 列配置点击 “列展示” 全选操作时，顺序排列和 disable 状态异常 (#6477). [#6477](https://github.com/ant-design/pro-components/pull/#6477) [@chiaweilee](https://github.com/chiaweilee)
-- fix(table): fix cancelEditable will reset value error. [40fba50](https://github.com/ant-design/pro-components/commit/40fba50)
-
+  
 ### 在 `2023-01-06` 更新的 `@ant-design/pro-components@2.3.51` 版本更新了什么？
+  
+  * feat (layout): 修复 prolayout 传入自定义 prefixCls 时样式异常 (#6464). [#6464](https://github.com/ant-design/pro-components/pull/#6464) [@Hahet](https://github.com/Hahet)
+* feat(layout): remove unuse deps. [9cac437](https://github.com/ant-design/pro-components/commit/9cac437)
+* fix(form): fix ProFormDigitRange label formart style. [6250094](https://github.com/ant-design/pro-components/commit/6250094)
 
-- feat (layout): 修复 prolayout 传入自定义 prefixCls 时样式异常 (#6464). [#6464](https://github.com/ant-design/pro-components/pull/#6464) [@Hahet](https://github.com/Hahet)
-- feat(layout): remove unuse deps. [9cac437](https://github.com/ant-design/pro-components/commit/9cac437)
-- fix(form): fix ProFormDigitRange label formart style. [6250094](https://github.com/ant-design/pro-components/commit/6250094)
-
+  
 ### 在 `2023-01-04` 更新的 `@ant-design/pro-components@2.3.50` 版本更新了什么？
+  
+  * fix(layout): fix colorBgMenuItemCollapsedElevated no work error. [6aa0d2c](https://github.com/ant-design/pro-components/commit/6aa0d2c)
+* fix (layout): 调整 margin ，与 Table 组件分页 margin 一致 (#6438). [#6438](https://github.com/ant-design/pro-components/pull/#6438) [@hihuangwei](https://github.com/hihuangwei)
+* fix (layout): Layout 分组逻辑调整 (#6451). [#6451](https://github.com/ant-design/pro-components/pull/#6451) [@chengaway](https://github.com/chengaway)
+* fix (layout): 修复 AppsLogoComponents 样式警告 (#6440). [#6440](https://github.com/ant-design/pro-components/pull/#6440) [@leshalv](https://github.com/leshalv)
+* fix (form): Light FilterightWrapper 当中清除功能的默认行为，使得 LightFilter 当中的 Checkbox 可以正常地被清除功能重置 (#6450). [#6450](https://github.com/ant-design/pro-components/pull/#6450) [@Leo-captain](https://github.com/Leo-captain)
+* fix(table): fix columnsState.defaultValue no work error. [2b9a283](https://github.com/ant-design/pro-components/commit/2b9a283)
 
-- fix(layout): fix colorBgMenuItemCollapsedElevated no work error. [6aa0d2c](https://github.com/ant-design/pro-components/commit/6aa0d2c)
-- fix (layout): 调整 margin ，与 Table 组件分页 margin 一致 (#6438). [#6438](https://github.com/ant-design/pro-components/pull/#6438) [@hihuangwei](https://github.com/hihuangwei)
-- fix (layout): Layout 分组逻辑调整 (#6451). [#6451](https://github.com/ant-design/pro-components/pull/#6451) [@chengaway](https://github.com/chengaway)
-- fix (layout): 修复 AppsLogoComponents 样式警告 (#6440). [#6440](https://github.com/ant-design/pro-components/pull/#6440) [@leshalv](https://github.com/leshalv)
-- fix (form): Light FilterightWrapper 当中清除功能的默认行为，使得 LightFilter 当中的 Checkbox 可以正常地被清除功能重置 (#6450). [#6450](https://github.com/ant-design/pro-components/pull/#6450) [@Leo-captain](https://github.com/Leo-captain)
-- fix(table): fix columnsState.defaultValue no work error. [2b9a283](https://github.com/ant-design/pro-components/commit/2b9a283)
-
+  
 ### 在 `2022-12-29` 更新的 `@ant-design/pro-components@2.3.48` 版本更新了什么？
+  
+  * feat (layout): Layout 新增 跨站点导航 分组形式 (#6431). [#6431](https://github.com/ant-design/pro-components/pull/#6431) [@chengaway](https://github.com/chengaway)
+* fix (layout): 修复 extraContent 在 md 尺寸不位于 content 右侧的 bug (#6389). [#6389](https://github.com/ant-design/pro-components/pull/#6389) [@edram](https://github.com/edram)
+* feat (layout): sider token 增加 colorBgElevated (#6384). [#6384](https://github.com/ant-design/pro-components/pull/#6384) [@sushi-su](https://github.com/sushi-su)
+* fix(form): treeSelect do not default reset to empty string. [387d2d7](https://github.com/ant-design/pro-components/commit/387d2d7)
+* fix(form): do not remove collapsed dom. [769177f](https://github.com/ant-design/pro-components/commit/769177f)
+* fix(form): `ProFormList` style does not work (#6398). [#6398](https://github.com/ant-design/pro-components/pull/#6398) [@kungege](https://github.com/kungege)
+* fix (form): 优化 checkbox 在 hashPriority=high 不生效问题 (#6400). [#6400](https://github.com/ant-design/pro-components/pull/#6400) [@leshalv](https://github.com/leshalv)
+* fix(list): fix card list style error (#6436). [#6436](https://github.com/ant-design/pro-components/pull/#6436) [@chenshuai2144](https://github.com/chenshuai2144)
+* fix(table): no render onSearch will SearchProps has onSearch. [a1383e2](https://github.com/ant-design/pro-components/commit/a1383e2)
+* fix(table): use flex replace Space (#6426). [#6426](https://github.com/ant-design/pro-components/pull/#6426) [@chenshuai2144](https://github.com/chenshuai2144)
+* fix(table): fix childrenColumnName is null error. [0fb584c](https://github.com/ant-design/pro-components/commit/0fb584c)
+* fix (table): 轻量筛选替换查询表单，将 padding 调为 8px 更为统一美观 (#6423). [#6423](https://github.com/ant-design/pro-components/pull/#6423) [@hihuangwei](https://github.com/hihuangwei)
+* fix(card): slove nested table background color was cover by pro-card (#6410). [#6410](https://github.com/ant-design/pro-components/pull/#6410) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix(card): disable & checked style fixed (#6414). [#6414](https://github.com/ant-design/pro-components/pull/#6414) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- feat (layout): Layout 新增 跨站点导航 分组形式 (#6431). [#6431](https://github.com/ant-design/pro-components/pull/#6431) [@chengaway](https://github.com/chengaway)
-- fix (layout): 修复 extraContent 在 md 尺寸不位于 content 右侧的 bug (#6389). [#6389](https://github.com/ant-design/pro-components/pull/#6389) [@edram](https://github.com/edram)
-- feat (layout): sider token 增加 colorBgElevated (#6384). [#6384](https://github.com/ant-design/pro-components/pull/#6384) [@sushi-su](https://github.com/sushi-su)
-- fix(form): treeSelect do not default reset to empty string. [387d2d7](https://github.com/ant-design/pro-components/commit/387d2d7)
-- fix(form): do not remove collapsed dom. [769177f](https://github.com/ant-design/pro-components/commit/769177f)
-- fix(form): `ProFormList` style does not work (#6398). [#6398](https://github.com/ant-design/pro-components/pull/#6398) [@kungege](https://github.com/kungege)
-- fix (form): 优化 checkbox 在 hashPriority=high 不生效问题 (#6400). [#6400](https://github.com/ant-design/pro-components/pull/#6400) [@leshalv](https://github.com/leshalv)
-- fix(list): fix card list style error (#6436). [#6436](https://github.com/ant-design/pro-components/pull/#6436) [@chenshuai2144](https://github.com/chenshuai2144)
-- fix(table): no render onSearch will SearchProps has onSearch. [a1383e2](https://github.com/ant-design/pro-components/commit/a1383e2)
-- fix(table): use flex replace Space (#6426). [#6426](https://github.com/ant-design/pro-components/pull/#6426) [@chenshuai2144](https://github.com/chenshuai2144)
-- fix(table): fix childrenColumnName is null error. [0fb584c](https://github.com/ant-design/pro-components/commit/0fb584c)
-- fix (table): 轻量筛选替换查询表单，将 padding 调为 8px 更为统一美观 (#6423). [#6423](https://github.com/ant-design/pro-components/pull/#6423) [@hihuangwei](https://github.com/hihuangwei)
-- fix(card): slove nested table background color was cover by pro-card (#6410). [#6410](https://github.com/ant-design/pro-components/pull/#6410) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix(card): disable & checked style fixed (#6414). [#6414](https://github.com/ant-design/pro-components/pull/#6414) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2022-12-13` 更新的 `@ant-design/pro-components@2.3.47` 版本更新了什么？
+  
+  * feat(components): bump swr from 1.x to 2.x (#6367). [#6367](https://github.com/ant-design/pro-components/pull/#6367) [@sushi-su](https://github.com/sushi-su)
 
-- feat(components): bump swr from 1.x to 2.x (#6367). [#6367](https://github.com/ant-design/pro-components/pull/#6367) [@sushi-su](https://github.com/sushi-su)
-
+  
 ### 在 `2022-12-08` 更新的 `@ant-design/pro-components@2.3.43` 版本更新了什么？
+  
+  * fix(layout): no set default colorPrimary. [f85103e](https://github.com/ant-design/pro-components/commit/f85103e)
 
-- fix(layout): no set default colorPrimary. [f85103e](https://github.com/ant-design/pro-components/commit/f85103e)
-
+  
 ### 在 `2022-12-08` 更新的 `@ant-design/pro-components@2.3.42` 版本更新了什么？
+  
+  * fix(layout): support configprovide darkAlgorithm. [dabf05e](https://github.com/ant-design/pro-components/commit/dabf05e)
+* fix (form): 修复 ProFormSelect 在 LightFilter 中自定义过滤无效 (#6341). [#6341](https://github.com/ant-design/pro-components/pull/#6341) [@SeaHaiWorld](https://github.com/SeaHaiWorld)
+* fix(table): fix table extra classname break (#6334). [#6334](https://github.com/ant-design/pro-components/pull/#6334) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- fix(layout): support configprovide darkAlgorithm. [dabf05e](https://github.com/ant-design/pro-components/commit/dabf05e)
-- fix (form): 修复 ProFormSelect 在 LightFilter 中自定义过滤无效 (#6341). [#6341](https://github.com/ant-design/pro-components/pull/#6341) [@SeaHaiWorld](https://github.com/SeaHaiWorld)
-- fix(table): fix table extra classname break (#6334). [#6334](https://github.com/ant-design/pro-components/pull/#6334) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2022-12-05` 更新的 `@ant-design/pro-components@2.3.40` 版本更新了什么？
+  
+  * fix (layout): 修复 PageContainer 设置为 fixedHeader，内容滚动的时候 Title 抖动问题 (#6330). [#6330](https://github.com/ant-design/pro-components/pull/#6330) [@lhzhou180606](https://github.com/lhzhou180606)
+* fix(layout): fix bgColor token no work error. [bad0f2f](https://github.com/ant-design/pro-components/commit/bad0f2f)
+* fix (form): 修复 SearchSelect 组件在设置了 showSearch 和 多选模式下，当搜索并选中后，搜索的文字没有清空的问题 (#6302). [#6302](https://github.com/ant-design/pro-components/pull/#6302) [@catmiao8](https://github.com/catmiao8)
+* fix (table): 修复 table 使用后端分页时（频繁变化 dataSource 场景）多选功能 selectedRow 缓存丢失 (#6314). [#6314](https://github.com/ant-design/pro-components/pull/#6314) [@YingJiangHui](https://github.com/YingJiangHui)
+* fix(card): fix card style error. [60ac49c](https://github.com/ant-design/pro-components/commit/60ac49c)
 
-- fix (layout): 修复 PageContainer 设置为 fixedHeader，内容滚动的时候 Title 抖动问题 (#6330). [#6330](https://github.com/ant-design/pro-components/pull/#6330) [@lhzhou180606](https://github.com/lhzhou180606)
-- fix(layout): fix bgColor token no work error. [bad0f2f](https://github.com/ant-design/pro-components/commit/bad0f2f)
-- fix (form): 修复 SearchSelect 组件在设置了 showSearch 和 多选模式下，当搜索并选中后，搜索的文字没有清空的问题 (#6302). [#6302](https://github.com/ant-design/pro-components/pull/#6302) [@catmiao8](https://github.com/catmiao8)
-- fix (table): 修复 table 使用后端分页时（频繁变化 dataSource 场景）多选功能 selectedRow 缓存丢失 (#6314). [#6314](https://github.com/ant-design/pro-components/pull/#6314) [@YingJiangHui](https://github.com/YingJiangHui)
-- fix(card): fix card style error. [60ac49c](https://github.com/ant-design/pro-components/commit/60ac49c)
-
+  
 ### 在 `2022-12-01` 更新的 `@ant-design/pro-components@2.3.37` 版本更新了什么？
+  
+  * fix(table): fix table style error. [3fbfddd](https://github.com/ant-design/pro-components/commit/3fbfddd)
 
-- fix(table): fix table style error. [3fbfddd](https://github.com/ant-design/pro-components/commit/3fbfddd)
-
+  
 ### 在 `2022-11-30` 更新的 `@ant-design/pro-components@2.3.36` 版本更新了什么？
+  
+  * fix(layout): fix collapsedshowtitle style error. [e4dc580](https://github.com/ant-design/pro-components/commit/e4dc580)
+* fix (layout): 修复 Footer <a> 标签单独使用时带有下划线问题 (#6300). [#6300](https://github.com/ant-design/pro-components/pull/#6300) [@leshalv](https://github.com/leshalv)
+* feat(layout): support stylish. [60c0b54](https://github.com/ant-design/pro-components/commit/60c0b54)
+* fix(layout): better theme gen style. [fcbc182](https://github.com/ant-design/pro-components/commit/fcbc182)
+* fix(layout): update drawer style. [eb7ace8](https://github.com/ant-design/pro-components/commit/eb7ace8)
+* feat(layout): fix dark style no work error. [3e06527](https://github.com/ant-design/pro-components/commit/3e06527)
+* fix(form): new antd version use items props. [9f520bf](https://github.com/ant-design/pro-components/commit/9f520bf)
+* fix(form): formRef repeats the assignment (#6278). [#6278](https://github.com/ant-design/pro-components/pull/#6278) [@caijf](https://github.com/caijf)
+* fix (table): Sortable 组件提取到外部防止不必要的页面重建 (#6246). [#6246](https://github.com/ant-design/pro-components/pull/#6246) [@yqz0203](https://github.com/yqz0203)
+* fix (descriptions): 修复 ProDescriptions 编辑带有校验情况下，样式排版问题 (#6254). [#6254](https://github.com/ant-design/pro-components/pull/#6254) [@leshalv](https://github.com/leshalv)
 
-- fix(layout): fix collapsedshowtitle style error. [e4dc580](https://github.com/ant-design/pro-components/commit/e4dc580)
-- fix (layout): 修复 Footer <a> 标签单独使用时带有下划线问题 (#6300). [#6300](https://github.com/ant-design/pro-components/pull/#6300) [@leshalv](https://github.com/leshalv)
-- feat(layout): support stylish. [60c0b54](https://github.com/ant-design/pro-components/commit/60c0b54)
-- fix(layout): better theme gen style. [fcbc182](https://github.com/ant-design/pro-components/commit/fcbc182)
-- fix(layout): update drawer style. [eb7ace8](https://github.com/ant-design/pro-components/commit/eb7ace8)
-- feat(layout): fix dark style no work error. [3e06527](https://github.com/ant-design/pro-components/commit/3e06527)
-- fix(form): new antd version use items props. [9f520bf](https://github.com/ant-design/pro-components/commit/9f520bf)
-- fix(form): formRef repeats the assignment (#6278). [#6278](https://github.com/ant-design/pro-components/pull/#6278) [@caijf](https://github.com/caijf)
-- fix (table): Sortable 组件提取到外部防止不必要的页面重建 (#6246). [#6246](https://github.com/ant-design/pro-components/pull/#6246) [@yqz0203](https://github.com/yqz0203)
-- fix (descriptions): 修复 ProDescriptions 编辑带有校验情况下，样式排版问题 (#6254). [#6254](https://github.com/ant-design/pro-components/pull/#6254) [@leshalv](https://github.com/leshalv)
-
+  
 ### 在 `2022-11-17` 更新的 `@ant-design/pro-components@2.3.34` 版本更新了什么？
+  
+  * chore(form): update @ant-design/pro-form peer dependency "@types/lodash.merge" to be optional (#6220). [#6220](https://github.com/ant-design/pro-components/pull/#6220) [@lzm0x219](https://github.com/lzm0x219)
+* fix (form): 只读模式下的 ProFormSelect 应该支持 wrap (#6235). [#6235](https://github.com/ant-design/pro-components/pull/#6235) [@kiner-tang](https://github.com/kiner-tang)
+* fix(table): fix nested table style (#6228). [#6228](https://github.com/ant-design/pro-components/pull/#6228) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- chore(form): update @ant-design/pro-form peer dependency "@types/lodash.merge" to be optional (#6220). [#6220](https://github.com/ant-design/pro-components/pull/#6220) [@lzm0x219](https://github.com/lzm0x219)
-- fix (form): 只读模式下的 ProFormSelect 应该支持 wrap (#6235). [#6235](https://github.com/ant-design/pro-components/pull/#6235) [@kiner-tang](https://github.com/kiner-tang)
-- fix(table): fix nested table style (#6228). [#6228](https://github.com/ant-design/pro-components/pull/#6228) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2022-11-15` 更新的 `@ant-design/pro-components@2.3.33` 版本更新了什么？
+  
+  * fix (form): 修复 checkbox 在 ant design 5 vertical 布局失效问题 (#6214). [#6214](https://github.com/ant-design/pro-components/pull/#6214) [@leshalv](https://github.com/leshalv)
+* fix(table): change css cache error. [a5bc4cb](https://github.com/ant-design/pro-components/commit/a5bc4cb)
+* fix(Descriptions): fix ellipsis type error. [d051be5](https://github.com/ant-design/pro-components/commit/d051be5)
 
-- fix (form): 修复 checkbox 在 ant design 5 vertical 布局失效问题 (#6214). [#6214](https://github.com/ant-design/pro-components/pull/#6214) [@leshalv](https://github.com/leshalv)
-- fix(table): change css cache error. [a5bc4cb](https://github.com/ant-design/pro-components/commit/a5bc4cb)
-- fix(Descriptions): fix ellipsis type error. [d051be5](https://github.com/ant-design/pro-components/commit/d051be5)
-
+  
 ### 在 `2022-11-14` 更新的 `@ant-design/pro-components@2.3.32` 版本更新了什么？
+  
+  * fix (form): 修复 checkbox 在 ant design 5 vertical 布局失效问题 (#6214). [#6214](https://github.com/ant-design/pro-components/pull/#6214) [@leshalv](https://github.com/leshalv)
 
-- fix (form): 修复 checkbox 在 ant design 5 vertical 布局失效问题 (#6214). [#6214](https://github.com/ant-design/pro-components/pull/#6214) [@leshalv](https://github.com/leshalv)
-
+  
 ### 在 `2022-11-14` 更新的 `@ant-design/pro-components@2.3.31` 版本更新了什么？
+  
+  * fix (layout): 在内容定宽下，TopNavHeader 的样式问题 (#6182). [#6182](https://github.com/ant-design/pro-components/pull/#6182) [@hqwlkj](https://github.com/hqwlkj)
+* fix(form): reset ProFormList when new form. [b9ba5d0](https://github.com/ant-design/pro-components/commit/b9ba5d0)
+* fix (table): 修复 DragSortTable 的 dataSource 值变更后未生效 (#6207). [#6207](https://github.com/ant-design/pro-components/pull/#6207) [@acg-developer](https://github.com/acg-developer)
+* fix (table): 修复拖拽排序表格使用数据源时数据源改变后未更新数据问题 (#6211). [#6211](https://github.com/ant-design/pro-components/pull/#6211) [@kiner-tang](https://github.com/kiner-tang)
+* fix(table): column not working correctly after reset (#6159). [#6159](https://github.com/ant-design/pro-components/pull/#6159) [@Zeng-J](https://github.com/Zeng-J)
 
-- fix (layout): 在内容定宽下，TopNavHeader 的样式问题 (#6182). [#6182](https://github.com/ant-design/pro-components/pull/#6182) [@hqwlkj](https://github.com/hqwlkj)
-- fix(form): reset ProFormList when new form. [b9ba5d0](https://github.com/ant-design/pro-components/commit/b9ba5d0)
-- fix (table): 修复 DragSortTable 的 dataSource 值变更后未生效 (#6207). [#6207](https://github.com/ant-design/pro-components/pull/#6207) [@acg-developer](https://github.com/acg-developer)
-- fix (table): 修复拖拽排序表格使用数据源时数据源改变后未更新数据问题 (#6211). [#6211](https://github.com/ant-design/pro-components/pull/#6211) [@kiner-tang](https://github.com/kiner-tang)
-- fix(table): column not working correctly after reset (#6159). [#6159](https://github.com/ant-design/pro-components/pull/#6159) [@Zeng-J](https://github.com/Zeng-J)
-
+  
 ### 在 `2022-11-08` 更新的 `@ant-design/pro-components@2.3.30` 版本更新了什么？
+  
+  * fix(utils): alway check process is undefined. [a861967](https://github.com/ant-design/pro-components/commit/a861967)
+* fix(table): update table alert style. [1302a90](https://github.com/ant-design/pro-components/commit/1302a90)
 
-- fix(utils): alway check process is undefined. [a861967](https://github.com/ant-design/pro-components/commit/a861967)
-- fix(table): update table alert style. [1302a90](https://github.com/ant-design/pro-components/commit/1302a90)
-
+  
 ### 在 `2022-11-07` 更新的 `@ant-design/pro-components@2.3.29` 版本更新了什么？
+  
+  * fix(utils): do not use process?.env?.ANTD\_VERSION. [a295b3d](https://github.com/ant-design/pro-components/commit/a295b3d)
+* fix (table): 兼容 ellipsis 不想显示 Tooltip #6158 (#6160). [#6160](https://github.com/ant-design/pro-components/pull/#6160) [@DerrickTel](https://github.com/DerrickTel)
 
-- fix(utils): do not use process?.env?.ANTD_VERSION. [a295b3d](https://github.com/ant-design/pro-components/commit/a295b3d)
-- fix (table): 兼容 ellipsis 不想显示 Tooltip #6158 (#6160). [#6160](https://github.com/ant-design/pro-components/pull/#6160) [@DerrickTel](https://github.com/DerrickTel)
-
+  
 ### 在 `2022-11-03` 更新的 `@ant-design/pro-components@2.3.28` 版本更新了什么？
+  
+  * fix(layout): PageContainer support childrenContentStyle. [2a487cf](https://github.com/ant-design/pro-components/commit/2a487cf)
+* fix(layout): fix sub menu padding style. [324e083](https://github.com/ant-design/pro-components/commit/324e083)
+* feat(table): add new api actionRef.saveEditable (#6081). [#6081](https://github.com/ant-design/pro-components/pull/#6081) [@shijistar](https://github.com/shijistar)
 
-- fix(layout): PageContainer support childrenContentStyle. [2a487cf](https://github.com/ant-design/pro-components/commit/2a487cf)
-- fix(layout): fix sub menu padding style. [324e083](https://github.com/ant-design/pro-components/commit/324e083)
-- feat(table): add new api actionRef.saveEditable (#6081). [#6081](https://github.com/ant-design/pro-components/pull/#6081) [@shijistar](https://github.com/shijistar)
-
+  
 ### 在 `2022-10-24` 更新的 `@ant-design/pro-components@2.3.24` 版本更新了什么？
+  
+  * fix(table): column drag order error when move upward (#6113). [#6113](https://github.com/ant-design/pro-components/pull/#6113) [@xiawenqi](https://github.com/xiawenqi)
+* fix(layout): auto open hashid (#6114). [#6114](https://github.com/ant-design/pro-components/pull/#6114) [@chenshuai2144](https://github.com/chenshuai2144)
 
-- fix(table): column drag order error when move upward (#6113). [#6113](https://github.com/ant-design/pro-components/pull/#6113) [@xiawenqi](https://github.com/xiawenqi)
-- fix(layout): auto open hashid (#6114). [#6114](https://github.com/ant-design/pro-components/pull/#6114) [@chenshuai2144](https://github.com/chenshuai2144)
-
+  
 ### 在 `2022-10-21` 更新的 `@ant-design/pro-components@2.3.21` 版本更新了什么？
+  
+  * fix(layout): support dynamic token set (#6106). [#6106](https://github.com/ant-design/pro-components/pull/#6106) [@chenshuai2144](https://github.com/chenshuai2144)
+* fix(layout): fix listtool bar style error. [820a5b7](https://github.com/ant-design/pro-components/commit/820a5b7)
+* fix (layout): 默认开启 hash. [47f30c9](https://github.com/ant-design/pro-components/commit/47f30c9)
+* fix(form): ProFormDigit value will fixed when not set precision(#6101). [#6101](https://github.com/ant-design/pro-components/pull/#6101) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix (table): 修复 inline 类型样式丢失问题 (#6092). [#6092](https://github.com/ant-design/pro-components/pull/#6092) [@sushi-su](https://github.com/sushi-su)
+* fix(table): use ellipsis type exported from antd/rc-table (#6105). [#6105](https://github.com/ant-design/pro-components/pull/#6105) [@Jungzl](https://github.com/Jungzl)
+* fix(table): fix table select rows style error. [dff31f3](https://github.com/ant-design/pro-components/commit/dff31f3)
+* fix(card): static style fixed (#6100). [#6100](https://github.com/ant-design/pro-components/pull/#6100) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- fix(layout): support dynamic token set (#6106). [#6106](https://github.com/ant-design/pro-components/pull/#6106) [@chenshuai2144](https://github.com/chenshuai2144)
-- fix(layout): fix listtool bar style error. [820a5b7](https://github.com/ant-design/pro-components/commit/820a5b7)
-- fix (layout): 默认开启 hash. [47f30c9](https://github.com/ant-design/pro-components/commit/47f30c9)
-- fix(form): ProFormDigit value will fixed when not set precision(#6101). [#6101](https://github.com/ant-design/pro-components/pull/#6101) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix (table): 修复 inline 类型样式丢失问题 (#6092). [#6092](https://github.com/ant-design/pro-components/pull/#6092) [@sushi-su](https://github.com/sushi-su)
-- fix(table): use ellipsis type exported from antd/rc-table (#6105). [#6105](https://github.com/ant-design/pro-components/pull/#6105) [@Jungzl](https://github.com/Jungzl)
-- fix(table): fix table select rows style error. [dff31f3](https://github.com/ant-design/pro-components/commit/dff31f3)
-- fix(card): static style fixed (#6100). [#6100](https://github.com/ant-design/pro-components/pull/#6100) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2022-10-19` 更新的 `@ant-design/pro-components@2.3.20` 版本更新了什么？
+  
+  * fix (Layout): 修复 PageContainer 设置 fixedHeader 属性后，样式 ant-pro-page-container-warp 未生效问题 (#6078). [#6078](https://github.com/ant-design/pro-components/pull/#6078) [@hqwlkj](https://github.com/hqwlkj)
+* fix(layout): add ghost classname. [7df07ba](https://github.com/ant-design/pro-components/commit/7df07ba)
+* fix(layout): alway set pageheader is ghost. [e06d908](https://github.com/ant-design/pro-components/commit/e06d908)
+* fix (form): 金额格式化支持负数形式展示 (#6080). [#6080](https://github.com/ant-design/pro-components/pull/#6080) [@kiner-tang](https://github.com/kiner-tang)
+* fix(form): fix intl no work error. [ecfc9d6](https://github.com/ant-design/pro-components/commit/ecfc9d6)
+* fix(card): fix card hover error style. [7ab8e7e](https://github.com/ant-design/pro-components/commit/7ab8e7e)
 
-- fix (Layout): 修复 PageContainer 设置 fixedHeader 属性后，样式 ant-pro-page-container-warp 未生效问题 (#6078). [#6078](https://github.com/ant-design/pro-components/pull/#6078) [@hqwlkj](https://github.com/hqwlkj)
-- fix(layout): add ghost classname. [7df07ba](https://github.com/ant-design/pro-components/commit/7df07ba)
-- fix(layout): alway set pageheader is ghost. [e06d908](https://github.com/ant-design/pro-components/commit/e06d908)
-- fix (form): 金额格式化支持负数形式展示 (#6080). [#6080](https://github.com/ant-design/pro-components/pull/#6080) [@kiner-tang](https://github.com/kiner-tang)
-- fix(form): fix intl no work error. [ecfc9d6](https://github.com/ant-design/pro-components/commit/ecfc9d6)
-- fix(card): fix card hover error style. [7ab8e7e](https://github.com/ant-design/pro-components/commit/7ab8e7e)
-
+  
 ### 在 `2022-10-14` 更新的 `@ant-design/pro-components@2.3.18` 版本更新了什么？
+  
+  * fix(utils): remove act import. [fc76519](https://github.com/ant-design/pro-components/commit/fc76519)
+* fix(layout): AppsLogo stopPropagation. [2235842](https://github.com/ant-design/pro-components/commit/2235842)
+* fix(layout): Support for multiple PageContainers to be used together. [7a9aad7](https://github.com/ant-design/pro-components/commit/7a9aad7)
+* fix(layout): use img height. [224b573](https://github.com/ant-design/pro-components/commit/224b573)
+* fix(layout): support hover token. [8eb4545](https://github.com/ant-design/pro-components/commit/8eb4545)
+* fix (form): ProFormList 组件 required 时需要提供加星号样式 (#5995). [#5995](https://github.com/ant-design/pro-components/pull/#5995) [@Zeng-J](https://github.com/Zeng-J)
+* fix(form): Fixed a bug with nested FormList. [2100074](https://github.com/ant-design/pro-components/commit/2100074)
+* fix(table): support tooltip=false, close ellipsis tooltip. [1c6c7ef](https://github.com/ant-design/pro-components/commit/1c6c7ef)
+* fix(table): table search style fixed (#6069). [#6069](https://github.com/ant-design/pro-components/pull/#6069) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- fix(utils): remove act import. [fc76519](https://github.com/ant-design/pro-components/commit/fc76519)
-- fix(layout): AppsLogo stopPropagation. [2235842](https://github.com/ant-design/pro-components/commit/2235842)
-- fix(layout): Support for multiple PageContainers to be used together. [7a9aad7](https://github.com/ant-design/pro-components/commit/7a9aad7)
-- fix(layout): use img height. [224b573](https://github.com/ant-design/pro-components/commit/224b573)
-- fix(layout): support hover token. [8eb4545](https://github.com/ant-design/pro-components/commit/8eb4545)
-- fix (form): ProFormList 组件 required 时需要提供加星号样式 (#5995). [#5995](https://github.com/ant-design/pro-components/pull/#5995) [@Zeng-J](https://github.com/Zeng-J)
-- fix(form): Fixed a bug with nested FormList. [2100074](https://github.com/ant-design/pro-components/commit/2100074)
-- fix(table): support tooltip=false, close ellipsis tooltip. [1c6c7ef](https://github.com/ant-design/pro-components/commit/1c6c7ef)
-- fix(table): table search style fixed (#6069). [#6069](https://github.com/ant-design/pro-components/pull/#6069) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2022-10-13` 更新的 `@ant-design/pro-components@2.3.17` 版本更新了什么？
+  
+  * fix (layout): 优化页面滑动的问题. [367c667](https://github.com/ant-design/pro-components/commit/367c667)
+* fix(layout): use inline style. [827349d](https://github.com/ant-design/pro-components/commit/827349d)
+* fix(form): fix filter dropdown not close (#6067). [#6067](https://github.com/ant-design/pro-components/pull/#6067) [@ONLY-yours](https://github.com/ONLY-yours)
+* fix(table): fix no has key when maxsize call error. [657e971](https://github.com/ant-design/pro-components/commit/657e971)
+* fix(table): card add hashid. [b98c387](https://github.com/ant-design/pro-components/commit/b98c387)
 
-- fix (layout): 优化页面滑动的问题. [367c667](https://github.com/ant-design/pro-components/commit/367c667)
-- fix(layout): use inline style. [827349d](https://github.com/ant-design/pro-components/commit/827349d)
-- fix(form): fix filter dropdown not close (#6067). [#6067](https://github.com/ant-design/pro-components/pull/#6067) [@ONLY-yours](https://github.com/ONLY-yours)
-- fix(table): fix no has key when maxsize call error. [657e971](https://github.com/ant-design/pro-components/commit/657e971)
-- fix(table): card add hashid. [b98c387](https://github.com/ant-design/pro-components/commit/b98c387)
-
+  
 ### 在 `2022-10-11` 更新的 `@ant-design/pro-components@2.3.15` 版本更新了什么？
+  
+  * fix(layout): fix PageContainer token no rerender error. [5611a16](https://github.com/ant-design/pro-components/commit/5611a16)
+* fix(form): ProFormDependency support T. [7b0c85d](https://github.com/ant-design/pro-components/commit/7b0c85d)
+* fix(form): fix key and visible use. [0ebd3db](https://github.com/ant-design/pro-components/commit/0ebd3db)
+* fix(field): use open replace visible. [8dcf66a](https://github.com/ant-design/pro-components/commit/8dcf66a)
 
-- fix(layout): fix PageContainer token no rerender error. [5611a16](https://github.com/ant-design/pro-components/commit/5611a16)
-- fix(form): ProFormDependency support T. [7b0c85d](https://github.com/ant-design/pro-components/commit/7b0c85d)
-- fix(form): fix key and visible use. [0ebd3db](https://github.com/ant-design/pro-components/commit/0ebd3db)
-- fix(field): use open replace visible. [8dcf66a](https://github.com/ant-design/pro-components/commit/8dcf66a)
-
+  
 ### 在 `2022-10-10` 更新的 `@ant-design/pro-components@2.3.14` 版本更新了什么？
+  
+  * fix(layout): support pageContainer.token. [0abcbd4](https://github.com/ant-design/pro-components/commit/0abcbd4)
+* fix(layout): support pageContainer.token. [bd6e110](https://github.com/ant-design/pro-components/commit/bd6e110)
+* fix(layout): fix pageheader style overwrite. [5b1a774](https://github.com/ant-design/pro-components/commit/5b1a774)
+* fix(layout): fix layout margin style error. [3f9e8b5](https://github.com/ant-design/pro-components/commit/3f9e8b5)
+* fix(layout): fix back icon style error. [1ecdad4](https://github.com/ant-design/pro-components/commit/1ecdad4)
+* fix(form): fix showSearch title no work error. [96da32d](https://github.com/ant-design/pro-components/commit/96da32d)
+* fix(form): remove redundant code (#6030). [#6030](https://github.com/ant-design/pro-components/pull/#6030) [@kiner-tang](https://github.com/kiner-tang)
+* fix (form): 修复 ListItem 自定义样式和样式名称不生效的 BUG (#5982). [#5982](https://github.com/ant-design/pro-components/pull/#5982) [@hqwlkj](https://github.com/hqwlkj)
+* fix (form): 解决 moneySymbol 设置为 false 时金额格式化异常问题 (#6012). [#6012](https://github.com/ant-design/pro-components/pull/#6012) [@kiner-tang](https://github.com/kiner-tang)
+* fix (form): 修复 ModalForm 和 DrawerForm 关闭过程中表单内容闪现初始值的问题 (#6009). [#6009](https://github.com/ant-design/pro-components/pull/#6009) [@kiner-tang](https://github.com/kiner-tang)
+* fix (table):DragSortTable - 拖动排序表格设置 rowClassName 无效问题 (#6038). [#6038](https://github.com/ant-design/pro-components/pull/#6038) [@hqwlkj](https://github.com/hqwlkj)
 
-- fix(layout): support pageContainer.token. [0abcbd4](https://github.com/ant-design/pro-components/commit/0abcbd4)
-- fix(layout): support pageContainer.token. [bd6e110](https://github.com/ant-design/pro-components/commit/bd6e110)
-- fix(layout): fix pageheader style overwrite. [5b1a774](https://github.com/ant-design/pro-components/commit/5b1a774)
-- fix(layout): fix layout margin style error. [3f9e8b5](https://github.com/ant-design/pro-components/commit/3f9e8b5)
-- fix(layout): fix back icon style error. [1ecdad4](https://github.com/ant-design/pro-components/commit/1ecdad4)
-- fix(form): fix showSearch title no work error. [96da32d](https://github.com/ant-design/pro-components/commit/96da32d)
-- fix(form): remove redundant code (#6030). [#6030](https://github.com/ant-design/pro-components/pull/#6030) [@kiner-tang](https://github.com/kiner-tang)
-- fix (form): 修复 ListItem 自定义样式和样式名称不生效的 BUG (#5982). [#5982](https://github.com/ant-design/pro-components/pull/#5982) [@hqwlkj](https://github.com/hqwlkj)
-- fix (form): 解决 moneySymbol 设置为 false 时金额格式化异常问题 (#6012). [#6012](https://github.com/ant-design/pro-components/pull/#6012) [@kiner-tang](https://github.com/kiner-tang)
-- fix (form): 修复 ModalForm 和 DrawerForm 关闭过程中表单内容闪现初始值的问题 (#6009). [#6009](https://github.com/ant-design/pro-components/pull/#6009) [@kiner-tang](https://github.com/kiner-tang)
-- fix (table):DragSortTable - 拖动排序表格设置 rowClassName 无效问题 (#6038). [#6038](https://github.com/ant-design/pro-components/pull/#6038) [@hqwlkj](https://github.com/hqwlkj)
-
+  
 ### 在 `2022-09-28` 更新的 `@ant-design/pro-components@2.3.13` 版本更新了什么？
+  
+  * fix(components): provide support getPrefixCls. [b3da61f](https://github.com/ant-design/pro-components/commit/b3da61f)
+* fix(form): fix visible props warning (#5937). [#5937](https://github.com/ant-design/pro-components/pull/#5937) [@zzcbnz](https://github.com/zzcbnz)
+* fix (table): 解决 CheckCard 与 Table 联用时 CheckCard 样式丢失问题 (#5980). [#5980](https://github.com/ant-design/pro-components/pull/#5980) [@kiner-tang](https://github.com/kiner-tang)
 
-- fix(components): provide support getPrefixCls. [b3da61f](https://github.com/ant-design/pro-components/commit/b3da61f)
-- fix(form): fix visible props warning (#5937). [#5937](https://github.com/ant-design/pro-components/pull/#5937) [@zzcbnz](https://github.com/zzcbnz)
-- fix (table): 解决 CheckCard 与 Table 联用时 CheckCard 样式丢失问题 (#5980). [#5980](https://github.com/ant-design/pro-components/pull/#5980) [@kiner-tang](https://github.com/kiner-tang)
-
+  
 ### 在 `2022-09-22` 更新的 `@ant-design/pro-components@2.3.12` 版本更新了什么？
+  
+  * fix(layout): awlay use route.children. [44b6fe1](https://github.com/ant-design/pro-components/commit/44b6fe1)
+* fix(form): export FormListContext (#5968). [#5968](https://github.com/ant-design/pro-components/pull/#5968) [@houkunlin](https://github.com/houkunlin)
+* fix (list): 修复类型问题：未将 RecordType 的泛型传入 meta 中 (#5962). [#5962](https://github.com/ant-design/pro-components/pull/#5962) [@SoraYama](https://github.com/SoraYama)
+* fix(table): option button alignment problem (#5959). [#5959](https://github.com/ant-design/pro-components/pull/#5959) [@GoodbyeNJN](https://github.com/GoodbyeNJN)
+* fix (table): useEditableArray 修复无法正确添加深度大于 1 的子记录 (#5949). [#5949](https://github.com/ant-design/pro-components/pull/#5949) [@zd5043039119](https://github.com/zd5043039119)
+* fix(field): fix ProFormSegmented style (#5969). [#5969](https://github.com/ant-design/pro-components/pull/#5969) [@DBvc](https://github.com/DBvc)
+* fix(card): card key props warning (#5941). [#5941](https://github.com/ant-design/pro-components/pull/#5941) [@zzcbnz](https://github.com/zzcbnz)
 
-- fix(layout): awlay use route.children. [44b6fe1](https://github.com/ant-design/pro-components/commit/44b6fe1)
-- fix(form): export FormListContext (#5968). [#5968](https://github.com/ant-design/pro-components/pull/#5968) [@houkunlin](https://github.com/houkunlin)
-- fix (list): 修复类型问题：未将 RecordType 的泛型传入 meta 中 (#5962). [#5962](https://github.com/ant-design/pro-components/pull/#5962) [@SoraYama](https://github.com/SoraYama)
-- fix(table): option button alignment problem (#5959). [#5959](https://github.com/ant-design/pro-components/pull/#5959) [@GoodbyeNJN](https://github.com/GoodbyeNJN)
-- fix (table): useEditableArray 修复无法正确添加深度大于 1 的子记录 (#5949). [#5949](https://github.com/ant-design/pro-components/pull/#5949) [@zd5043039119](https://github.com/zd5043039119)
-- fix(field): fix ProFormSegmented style (#5969). [#5969](https://github.com/ant-design/pro-components/pull/#5969) [@DBvc](https://github.com/DBvc)
-- fix(card): card key props warning (#5941). [#5941](https://github.com/ant-design/pro-components/pull/#5941) [@zzcbnz](https://github.com/zzcbnz)
-
+  
 ### 在 `2022-09-21` 更新的 `@ant-design/pro-components@2.3.10` 版本更新了什么？
+  
+  * fix(layout): fix colorPrimary change no rerender style error. [be6ab65](https://github.com/ant-design/pro-components/commit/be6ab65)
+* feat(layout): remove routers types. [6c54c7e](https://github.com/ant-design/pro-components/commit/6c54c7e)
+* fix(table): use better style import funtion. [8ce8d5a](https://github.com/ant-design/pro-components/commit/8ce8d5a)
+* fix(card): fixed col width digit lost (#5958). [#5958](https://github.com/ant-design/pro-components/pull/#5958) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- fix(layout): fix colorPrimary change no rerender style error. [be6ab65](https://github.com/ant-design/pro-components/commit/be6ab65)
-- feat(layout): remove routers types. [6c54c7e](https://github.com/ant-design/pro-components/commit/6c54c7e)
-- fix(table): use better style import funtion. [8ce8d5a](https://github.com/ant-design/pro-components/commit/8ce8d5a)
-- fix(card): fixed col width digit lost (#5958). [#5958](https://github.com/ant-design/pro-components/pull/#5958) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2022-09-16` 更新的 `@ant-design/pro-components@2.3.9` 版本更新了什么？
+  
+  * fix(table): fix dateformat no work error. [c30c107](https://github.com/ant-design/pro-components/commit/c30c107)
 
-- fix(table): fix dateformat no work error. [c30c107](https://github.com/ant-design/pro-components/commit/c30c107)
-
+  
 ### 在 `2022-09-14` 更新的 `@ant-design/pro-components@2.3.8` 版本更新了什么？
+  
+  * fix(components): fix ref error. [c9e1e98](https://github.com/ant-design/pro-components/commit/c9e1e98)
+* fix(utils): remove unuse code. [bcbdbf6](https://github.com/ant-design/pro-components/commit/bcbdbf6)
+* fix(layout): fix colorBgPageContainer (#5911). [#5911](https://github.com/ant-design/pro-components/pull/#5911) [@drizzlesconsin](https://github.com/drizzlesconsin)
+* fix(layout): custom header padding (#5912). [#5912](https://github.com/ant-design/pro-components/pull/#5912) [@drizzlesconsin](https://github.com/drizzlesconsin)
+* fix(form): fix select keyword lose. [797f853](https://github.com/ant-design/pro-components/commit/797f853)
+* feat(form): add ProFormSegmented (#5913). [#5913](https://github.com/ant-design/pro-components/pull/#5913) [@leoooy](https://github.com/leoooy)
+* fix (form): 修复 ProFormRadio.Group layout 作用反了 (#5918). [#5918](https://github.com/ant-design/pro-components/pull/#5918) [@leshalv](https://github.com/leshalv)
+* fix(table): fix configuration issues with nested columns. [c2c9d9d](https://github.com/ant-design/pro-components/commit/c2c9d9d)
+* fix(table): fix ColumnSetting style error. [ec39ccc](https://github.com/ant-design/pro-components/commit/ec39ccc)
+* fix(card): Card.Tabs.Pane Render null (#5926). [#5926](https://github.com/ant-design/pro-components/pull/#5926) [@ONLY-yours](https://github.com/ONLY-yours)
 
-- fix(components): fix ref error. [c9e1e98](https://github.com/ant-design/pro-components/commit/c9e1e98)
-- fix(utils): remove unuse code. [bcbdbf6](https://github.com/ant-design/pro-components/commit/bcbdbf6)
-- fix(layout): fix colorBgPageContainer (#5911). [#5911](https://github.com/ant-design/pro-components/pull/#5911) [@drizzlesconsin](https://github.com/drizzlesconsin)
-- fix(layout): custom header padding (#5912). [#5912](https://github.com/ant-design/pro-components/pull/#5912) [@drizzlesconsin](https://github.com/drizzlesconsin)
-- fix(form): fix select keyword lose. [797f853](https://github.com/ant-design/pro-components/commit/797f853)
-- feat(form): add ProFormSegmented (#5913). [#5913](https://github.com/ant-design/pro-components/pull/#5913) [@leoooy](https://github.com/leoooy)
-- fix (form): 修复 ProFormRadio.Group layout 作用反了 (#5918). [#5918](https://github.com/ant-design/pro-components/pull/#5918) [@leshalv](https://github.com/leshalv)
-- fix(table): fix configuration issues with nested columns. [c2c9d9d](https://github.com/ant-design/pro-components/commit/c2c9d9d)
-- fix(table): fix ColumnSetting style error. [ec39ccc](https://github.com/ant-design/pro-components/commit/ec39ccc)
-- fix(card): Card.Tabs.Pane Render null (#5926). [#5926](https://github.com/ant-design/pro-components/pull/#5926) [@ONLY-yours](https://github.com/ONLY-yours)
-
+  
 ### 在 `2022-09-09` 更新的 `@ant-design/pro-components@2.3.7` 版本更新了什么？
+  
+  * fix(components): fix compareVersions error. [9751208](https://github.com/ant-design/pro-components/commit/9751208)
 
-- fix(components): fix compareVersions error. [9751208](https://github.com/ant-design/pro-components/commit/9751208)
-
+  
 ### 在 `2022-09-08` 更新的 `@ant-design/pro-components@2.3.6` 版本更新了什么？
+  
+  * fix(components): fix open props warning. [77703c8](https://github.com/ant-design/pro-components/commit/77703c8)
+* fix(components): fix css var error. [bd5d3bf](https://github.com/ant-design/pro-components/commit/bd5d3bf)
+* fix(components): unuse theme import. [bcac384](https://github.com/ant-design/pro-components/commit/bcac384)
 
-- fix(components): fix open props warning. [77703c8](https://github.com/ant-design/pro-components/commit/77703c8)
-- fix(components): fix css var error. [bd5d3bf](https://github.com/ant-design/pro-components/commit/bd5d3bf)
-- fix(components): unuse theme import. [bcac384](https://github.com/ant-design/pro-components/commit/bcac384)
-
+  
 ### 在 `2022-09-05` 更新的 `@ant-design/pro-components@2.3.5` 版本更新了什么？
+  
+  * fix(components): export more types from components (#5840). [#5840](https://github.com/ant-design/pro-components/pull/#5840) [@Jungzl](https://github.com/Jungzl)
 
-- fix(components): export more types from components (#5840). [#5840](https://github.com/ant-design/pro-components/pull/#5840) [@Jungzl](https://github.com/Jungzl)
-
+  
 ### 在 `2022-09-02` 更新的 `@ant-design/pro-components@2.3.3` 版本更新了什么？
+  
+  * fix(components): add antd version dependencies. [aa5fd10](https://github.com/ant-design/pro-components/commit/aa5fd10)
+* feat(components): add @ant-design/pro-component (#5258). [#5258](https://github.com/ant-design/pro-components/pull/#5258) [@chenshuai2144](https://github.com/chenshuai2144)
 
-- fix(components): add antd version dependencies. [aa5fd10](https://github.com/ant-design/pro-components/commit/aa5fd10)
-- feat(components): add @ant-design/pro-component (#5258). [#5258](https://github.com/ant-design/pro-components/pull/#5258) [@chenshuai2144](https://github.com/chenshuai2144)
-
+  
 ### 在 `2022-08-24` 更新的 `@ant-design/pro-components@2.0.5` 版本更新了什么？
+  
+  * fix(components): add antd version dependencies. [aa5fd10](https://github.com/ant-design/pro-components/commit/aa5fd10)
+* feat(components): add @ant-design/pro-component (#5258). [#5258](https://github.com/ant-design/pro-components/pull/#5258) [@chenshuai2144](https://github.com/chenshuai2144)
 
-- fix(components): add antd version dependencies. [aa5fd10](https://github.com/ant-design/pro-components/commit/aa5fd10)
-- feat(components): add @ant-design/pro-component (#5258). [#5258](https://github.com/ant-design/pro-components/pull/#5258) [@chenshuai2144](https://github.com/chenshuai2144)
-
+  
 ### 在 `2022-09-07` 更新的 `@ant-design/pro-components@2.0.0` 版本更新了什么？
+  
+  * fix(components): fix css var error. [bd5d3bf](https://github.com/ant-design/pro-components/commit/bd5d3bf)
+* fix(components): unuse theme import. [bcac384](https://github.com/ant-design/pro-components/commit/bcac384)
+* fix(components): export more types from components (#5840). [#5840](https://github.com/ant-design/pro-components/pull/#5840) [@Jungzl](https://github.com/Jungzl)
+* fix(components): add antd version dependencies. [aa5fd10](https://github.com/ant-design/pro-components/commit/aa5fd10)
+* feat(components): add @ant-design/pro-component (#5258). [#5258](https://github.com/ant-design/pro-components/pull/#5258) [@chenshuai2144](https://github.com/chenshuai2144)
 
-- fix(components): fix css var error. [bd5d3bf](https://github.com/ant-design/pro-components/commit/bd5d3bf)
-- fix(components): unuse theme import. [bcac384](https://github.com/ant-design/pro-components/commit/bcac384)
-- fix(components): export more types from components (#5840). [#5840](https://github.com/ant-design/pro-components/pull/#5840) [@Jungzl](https://github.com/Jungzl)
-- fix(components): add antd version dependencies. [aa5fd10](https://github.com/ant-design/pro-components/commit/aa5fd10)
-- feat(components): add @ant-design/pro-component (#5258). [#5258](https://github.com/ant-design/pro-components/pull/#5258) [@chenshuai2144](https://github.com/chenshuai2144)
+  

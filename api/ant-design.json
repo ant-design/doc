@@ -807,9 +807,9 @@
           {
             "参数": "expandable",
             "说明": "是否可展开",
-            "类型": "boolean",
+            "类型": "boolean \\| 'collapsible'",
             "默认值": "-",
-            "版本": "-"
+            "版本": "`collapsible`: 5.16.0"
           },
           {
             "参数": "rows",
@@ -828,8 +828,8 @@
           {
             "参数": "symbol",
             "说明": "自定义展开描述文案",
-            "类型": "ReactNode",
-            "默认值": "`展开`",
+            "类型": "ReactNode \\| ((expanded: boolean) => ReactNode)",
+            "默认值": "`展开` `收起`",
             "版本": "-"
           },
           {
@@ -840,6 +840,20 @@
             "版本": "4.11.0"
           },
           {
+            "参数": "defaultExpanded",
+            "说明": "默认展开或收起",
+            "类型": "boolean",
+            "默认值": "-",
+            "版本": "5.16.0"
+          },
+          {
+            "参数": "expanded",
+            "说明": "展开或收起",
+            "类型": "boolean",
+            "默认值": "-",
+            "版本": "5.16.0"
+          },
+          {
             "参数": "onEllipsis",
             "说明": "触发省略时的回调",
             "类型": "function(ellipsis)",
@@ -848,10 +862,10 @@
           },
           {
             "参数": "onExpand",
-            "说明": "点击展开时的回调",
-            "类型": "function(event)",
+            "说明": "点击展开或收起时的回调",
+            "类型": "function(event, { expanded: boolean })",
             "默认值": "-",
-            "版本": "-"
+            "版本": "`info`: 5.16.0"
           }
         ]
       }
@@ -1779,7 +1793,7 @@
           {
             "参数": "selectedKeys",
             "说明": "设置哪些项应该被选中",
-            "类型": "string\\[]",
+            "类型": "string\\[] \\| number\\[]",
             "默认值": "\\[]",
             "版本": "-"
           },
@@ -1807,7 +1821,7 @@
           {
             "参数": "targetKeys",
             "说明": "显示在右侧框数据的 key 集合",
-            "类型": "string\\[]",
+            "类型": "string\\[] \\| number\\[]",
             "默认值": "\\[]",
             "版本": "-"
           },
@@ -1873,19 +1887,19 @@
           {
             "参数": "selectedKeys",
             "说明": "选中的条目",
-            "类型": "string\\[]",
+            "类型": "string\\[] \\| number\\[]",
             "版本": "-"
           },
           {
             "参数": "onItemSelect",
             "说明": "勾选条目",
-            "类型": "(key: string, selected: boolean)",
+            "类型": "(key: string \\| number, selected: boolean)",
             "版本": "-"
           },
           {
             "参数": "onItemSelectAll",
             "说明": "勾选一组条目",
-            "类型": "(keys: string\\[], selected: boolean)",
+            "类型": "(keys: string\\[] \\| number\\[], selected: boolean)",
             "版本": "-"
           }
         ]
@@ -2542,6 +2556,13 @@
             "版本": "5.13.0"
           },
           {
+            "参数": "onCalendarChange",
+            "说明": "待选日期发生变化的回调。`info` 参数自 4.4.0 添加",
+            "类型": "function(dates: \\[dayjs, dayjs], dateStrings: \\[string, string], info: { range:`start`\\|`end` })",
+            "默认值": "-",
+            "版本": "-"
+          },
+          {
             "参数": "onChange",
             "说明": "时间发生变化的回调",
             "类型": "function(time: dayjs, timeString: string): void",
@@ -2633,7 +2654,7 @@
           {
             "参数": "onClose",
             "说明": "关闭时的回调（可通过 `e.preventDefault()` 来阻止默认行为）",
-            "类型": "(e) => void",
+            "类型": "(e: React.MouseEvent\\<HTMLElement, MouseEvent>) => void",
             "默认值": "-",
             "版本": "-"
           }
@@ -2675,9 +2696,9 @@
           },
           {
             "参数": "addIcon",
-            "说明": "自定义添加按钮",
+            "说明": "自定义添加按钮，设置 `type=\"editable-card\"` 时有效",
             "类型": "ReactNode",
-            "默认值": "-",
+            "默认值": "`<PlusOutlined />`",
             "版本": "4.4.0"
           },
           {
@@ -2698,7 +2719,7 @@
             "参数": "defaultActiveKey",
             "说明": "初始化选中面板的 key，如果没有设置 activeKey",
             "类型": "string",
-            "默认值": "`第一个面板`",
+            "默认值": "`第一个面板的 key`",
             "版本": "-"
           },
           {
@@ -2726,8 +2747,15 @@
             "参数": "moreIcon",
             "说明": "自定义折叠 icon",
             "类型": "ReactNode",
-            "默认值": "\\<EllipsisOutlined />",
+            "默认值": "`<EllipsisOutlined />`",
             "版本": "4.14.0"
+          },
+          {
+            "参数": "removeIcon",
+            "说明": "自定义删除按钮，设置 `type=\"editable-card\"` 时有效",
+            "类型": "ReactNode",
+            "默认值": "`<CloseOutlined />`",
+            "版本": "5.15.0"
           },
           {
             "参数": "popupClassName",
@@ -2992,6 +3020,13 @@
             "版本": "-"
           },
           {
+            "参数": "rowHoverable",
+            "说明": "表格行是否开启 hover 交互",
+            "类型": "boolean",
+            "默认值": "true",
+            "版本": "5.16.0"
+          },
+          {
             "参数": "scroll",
             "说明": "表格是否可滚动，也可以指定滚动区域的宽、高，[配置项](#scroll)",
             "类型": "object",
@@ -3008,9 +3043,9 @@
           {
             "参数": "showSorterTooltip",
             "说明": "表头是否显示下一次排序的 tooltip 提示。当参数类型为对象时，将被设置为 Tooltip 的属性",
-            "类型": "boolean \\| [Tooltip props](/components/tooltip-cn)",
-            "默认值": "true",
-            "版本": "-"
+            "类型": "boolean \\| [Tooltip props](/components/tooltip-cn) & `{target?: 'full-header' \\| 'sorter-icon' }`",
+            "默认值": "{ target: 'full-header' }",
+            "版本": "5.16.0"
           },
           {
             "参数": "size",
@@ -3055,6 +3090,13 @@
             "版本": "-"
           },
           {
+            "参数": "virtual",
+            "说明": "支持虚拟列表",
+            "类型": "boolean",
+            "默认值": "-",
+            "版本": "5.9.0"
+          },
+          {
             "参数": "onChange",
             "说明": "分页、排序、筛选变化时触发",
             "类型": "function(pagination, filters, sorter, extra: { currentDataSource: \\[], action: `paginate` \\| `sort` \\| `filter` })",
@@ -3076,11 +3118,11 @@
             "版本": "-"
           },
           {
-            "参数": "virtual",
-            "说明": "支持虚拟列表",
-            "类型": "boolean",
+            "参数": "onScroll",
+            "说明": "表单内容滚动时触发（虚拟滚动下只有垂直滚动会触发事件）",
+            "类型": "function(event)",
             "默认值": "-",
-            "版本": "5.9.0"
+            "版本": "5.16.0"
           }
         ]
       },
@@ -3198,6 +3240,13 @@
             "版本": "-"
           },
           {
+            "参数": "filterOnClose",
+            "说明": "是否在筛选菜单关闭时触发筛选",
+            "类型": "boolean",
+            "默认值": "true",
+            "版本": "5.15.0"
+          },
+          {
             "参数": "filterMultiple",
             "说明": "是否多选",
             "类型": "boolean",
@@ -3270,9 +3319,9 @@
           {
             "参数": "showSorterTooltip",
             "说明": "表头显示下一次排序的 tooltip 提示, 覆盖 table 中 `showSorterTooltip`",
-            "类型": "boolean \\| [Tooltip props](/components/tooltip-cn/#api)",
-            "默认值": "true",
-            "版本": "-"
+            "类型": "boolean \\| [Tooltip props](/components/tooltip-cn/#api) & `{target?: 'full-header' \\| 'sorter-icon' }`",
+            "默认值": "{ target: 'full-header' }",
+            "版本": "5.16.0"
           },
           {
             "参数": "sortDirections",
@@ -4112,7 +4161,7 @@
           {
             "参数": "value",
             "说明": "数值内容",
-            "类型": "number \\| dayjs",
+            "类型": "number",
             "默认值": "-",
             "版本": "-"
           },
@@ -4930,6 +4979,13 @@
             "版本": "-"
           },
           {
+            "参数": "labelRender",
+            "说明": "自定义当前选中的 label 内容 render",
+            "类型": "(label: ReactNode) => ReactNode",
+            "默认值": "-",
+            "版本": "5.15.0"
+          },
+          {
             "参数": "tokenSeparators",
             "说明": "自动分词的分隔符，仅在 `mode=\"tags\"` 时生效",
             "类型": "string\\[]",
@@ -5107,7 +5163,21 @@
           {
             "参数": "label",
             "说明": "组名",
-            "类型": "string \\| React.Element",
+            "类型": "React.ReactNode",
+            "默认值": "-",
+            "版本": "-"
+          },
+          {
+            "参数": "className",
+            "说明": "Option 器类名",
+            "类型": "string",
+            "默认值": "-",
+            "版本": "-"
+          },
+          {
+            "参数": "title",
+            "说明": "选项上的原生 title 提示",
+            "类型": "string",
             "默认值": "-",
             "版本": "-"
           }
@@ -5431,7 +5501,7 @@
           {
             "参数": "options",
             "说明": "以配置形式设置子元素",
-            "类型": "string\\[] \\| number\\[] \\| Array<{ label: ReactNode; value: string; disabled?: boolean; }>",
+            "类型": "string\\[] \\| number\\[] \\| Array<[CheckboxOptionType](#CheckboxOptionType)>",
             "默认值": "-",
             "版本": "-",
             "undefined": "-"
@@ -5467,6 +5537,68 @@
             "默认值": "-",
             "版本": "-",
             "undefined": "-"
+          }
+        ]
+      },
+      {
+        "title": "Radio - CheckboxOptionType",
+        "url": "https://ant-design.antgroup.com/components/radio-cn#CheckboxOptionType",
+        "property": [
+          {
+            "Property": "label",
+            "Description": "用于作为 Radio 选项展示的文本",
+            "Type": "`string`",
+            "Default": "-",
+            "Version": "4.4.0"
+          },
+          {
+            "Property": "value",
+            "Description": "关联 Radio 选项的值",
+            "Type": "`string` \\| `number` \\| `boolean`",
+            "Default": "-",
+            "Version": "4.4.0"
+          },
+          {
+            "Property": "style",
+            "Description": "应用到 Radio 选项的 style",
+            "Type": "`React.CSSProperties`",
+            "Default": "-",
+            "Version": "4.4.0"
+          },
+          {
+            "Property": "disabled",
+            "Description": "指定 Radio 选项是否要禁用",
+            "Type": "`boolean`",
+            "Default": "`false`",
+            "Version": "4.4.0"
+          },
+          {
+            "Property": "title",
+            "Description": "添加 Title 属性值",
+            "Type": "`string`",
+            "Default": "-",
+            "Version": "4.4.0"
+          },
+          {
+            "Property": "id",
+            "Description": "添加 Radio Id 属性值",
+            "Type": "`string`",
+            "Default": "-",
+            "Version": "4.4.0"
+          },
+          {
+            "Property": "onChange",
+            "Description": "当 Radio Group 的值发送改变时触发",
+            "Type": "`(e: CheckboxChangeEvent) => void;`",
+            "Default": "-",
+            "Version": "4.4.0"
+          },
+          {
+            "Property": "required",
+            "Description": "指定 Radio 选项是否必填",
+            "Type": "`boolean`",
+            "Default": "`false`",
+            "Version": "4.4.0"
           }
         ]
       },
@@ -5670,6 +5802,13 @@
         "url": "https://ant-design.antgroup.com/components/progress-cn#`type=\"circle\"`",
         "property": [
           {
+            "属性": "steps",
+            "说明": "进度条总共步数，传入 object 时，count 指步数，gap 指间隔大小。传 number 类型时，gap 默认为 2。",
+            "类型": "number \\| { count: number, gap: number }",
+            "默认值": "-",
+            "版本": "5.16.0"
+          },
+          {
             "属性": "strokeColor",
             "说明": "圆形进度条线的色彩，传入 object 时为渐变",
             "类型": "string \\| { number%: string }",
@@ -5689,6 +5828,13 @@
         "title": "Progress - Progress",
         "url": "https://ant-design.antgroup.com/components/progress-cn#`type=\"dashboard\"`",
         "property": [
+          {
+            "属性": "steps",
+            "说明": "进度条总共步数，传入 object 时，count 指步数，gap 指间隔大小。传 number 类型时，gap 默认为 2。",
+            "类型": "number \\| { count: number, gap: number }",
+            "默认值": "-",
+            "版本": "5.16.0"
+          },
           {
             "属性": "gapDegree",
             "说明": "仪表盘进度条缺口角度，可取值 0 \\~ 295",
@@ -6480,7 +6626,7 @@
             "参数": "closable",
             "说明": "是否显示右上角的关闭按钮",
             "类型": "boolean",
-            "默认值": "false",
+            "默认值": "true",
             "版本": "4.9.0"
           },
           {
@@ -8081,6 +8227,75 @@
         ]
       },
       {
+        "title": "Input - Input.OTP",
+        "url": "https://ant-design.antgroup.com/components/input-cn#Input.OTP",
+        "property": [
+          {
+            "参数": "defaultValue",
+            "说明": "默认值",
+            "类型": "string",
+            "默认值": "-",
+            "版本": "-"
+          },
+          {
+            "参数": "disabled",
+            "说明": "是否禁用",
+            "类型": "boolean",
+            "默认值": "false",
+            "版本": "-"
+          },
+          {
+            "参数": "formatter",
+            "说明": "格式化展示，留空字段会被 ` ` 填充",
+            "类型": "(value: string) => string",
+            "默认值": "-",
+            "版本": "-"
+          },
+          {
+            "参数": "length",
+            "说明": "输入元素数量",
+            "类型": "number",
+            "默认值": "6",
+            "版本": "-"
+          },
+          {
+            "参数": "status",
+            "说明": "设置校验状态",
+            "类型": "'error' \\| 'warning'",
+            "默认值": "-",
+            "版本": "-"
+          },
+          {
+            "参数": "size",
+            "说明": "输入框大小",
+            "类型": "`small` \\| `middle` \\| `large`",
+            "默认值": "`middle`",
+            "版本": "-"
+          },
+          {
+            "参数": "variant",
+            "说明": "形态变体",
+            "类型": "`outlined` \\| `borderless` \\| `filled`",
+            "默认值": "`outlined`",
+            "版本": "-"
+          },
+          {
+            "参数": "value",
+            "说明": "输入框内容",
+            "类型": "string",
+            "默认值": "-",
+            "版本": "-"
+          },
+          {
+            "参数": "onChange",
+            "说明": "当输入框内容全部填充时触发回调",
+            "类型": "function(value: string)",
+            "默认值": "-",
+            "版本": "-"
+          }
+        ]
+      },
+      {
         "title": "Input - VisibilityToggle",
         "url": "https://ant-design.antgroup.com/components/input-cn#VisibilityToggle",
         "property": [
@@ -8501,8 +8716,8 @@
           },
           {
             "参数": "twoToneColor",
-            "说明": "仅适用双色图标。设置双色图标的主要颜色",
-            "类型": "string (十六进制颜色)",
+            "说明": "仅适用双色图标。设置双色图标的主要颜色，支持设置十六进制颜色字符串",
+            "类型": "string \\| string\\[]",
             "默认值": "-",
             "版本": "-"
           }
@@ -9106,7 +9321,7 @@
           },
           {
             "参数": "valuePropName",
-            "说明": "子节点的值的属性，如 Switch、Checkbox 的是 `checked`。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效",
+            "说明": "子节点的值的属性。注意：Switch、Checkbox 的 valuePropName 应该是是 `checked`，否则无法获取这个两个组件的值。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效",
             "类型": "string",
             "默认值": "`value`",
             "版本": "-"
@@ -9874,7 +10089,7 @@
         "property": [
           {
             "参数": "autoFocus",
-            "说明": "抽屉展开后是否将焦点切换至其 Dom 节点",
+            "说明": "抽屉展开后是否将焦点切换至其 DOM 节点",
             "类型": "boolean",
             "默认值": "true",
             "版本": "4.17.0"
@@ -10997,7 +11212,7 @@
           },
           {
             "参数": "csp",
-            "说明": "设置 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) 配置",
+            "说明": "设置 [Content Security Policy](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP) 配置",
             "类型": "{ nonce: string }",
             "默认值": "-",
             "版本": "-"
@@ -11192,9 +11407,9 @@
           {
             "参数": "collapse",
             "说明": "设置 Collapse 组件的通用属性",
-            "类型": "{ className?: string, style?: React.CSSProperties }",
+            "类型": "{ className?: string, style?: React.CSSProperties, expandIcon?: (props) => ReactNode }",
             "默认值": "-",
-            "版本": "5.7.0"
+            "版本": "5.7.0, expandIcon: 5.15.0"
           },
           {
             "参数": "colorPicker",
@@ -11260,6 +11475,13 @@
             "版本": "5.10.0"
           },
           {
+            "参数": "floatButtonGroup",
+            "说明": "设置 FloatButton.Group 组件的通用属性",
+            "类型": "{ closeIcon?: React.ReactNode }",
+            "默认值": "-",
+            "版本": "5.16.0"
+          },
+          {
             "参数": "form",
             "说明": "设置 Form 组件的通用属性",
             "类型": "{ className?: string, style?: React.CSSProperties, validateMessages?: [ValidateMessages](/components/form-cn#validatemessages), requiredMark?: boolean \\| `optional`, colon?: boolean, scrollToFirstError?: boolean \\| [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options)}",
@@ -11276,9 +11498,16 @@
           {
             "参数": "input",
             "说明": "设置 Input 组件的通用属性",
-            "类型": "{ autoComplete?: string, className?: string, style?: React.CSSProperties }",
+            "类型": "{ autoComplete?: string, className?: string, style?: React.CSSProperties, allowClear?: boolean \\| { clearIcon?: ReactNode } }",
             "默认值": "-",
-            "版本": "5.7.0"
+            "版本": "5.7.0, allowClear: 5.15.0"
+          },
+          {
+            "参数": "textArea",
+            "说明": "设置 TextArea 组件的通用属性",
+            "类型": "{ autoComplete?: string, className?: string, style?: React.CSSProperties, allowClear?: boolean \\| { clearIcon?: ReactNode } }",
+            "默认值": "-",
+            "版本": "5.15.0"
           },
           {
             "参数": "layout",
@@ -11297,9 +11526,9 @@
           {
             "参数": "menu",
             "说明": "设置 Menu 组件的通用属性",
-            "类型": "{ className?: string, style?: React.CSSProperties }",
+            "类型": "{ className?: string, style?: React.CSSProperties, expandIcon?: ReactNode \\| props => ReactNode }",
             "默认值": "-",
-            "版本": "5.7.0"
+            "版本": "5.7.0, expandIcon: 5.15.0"
           },
           {
             "参数": "mentions",
@@ -11437,9 +11666,9 @@
           {
             "参数": "tabs",
             "说明": "设置 Tabs 组件的通用属性",
-            "类型": "{ className?: string, style?: React.CSSProperties, indicator?: { size?: GetIndicatorSize, align?: `start` \\| `center` \\| `end` }, moreIcon?: ReactNode, addIcon?: ReactNode }",
+            "类型": "{ className?: string, style?: React.CSSProperties, indicator?: { size?: GetIndicatorSize, align?: `start` \\| `center` \\| `end` }, moreIcon?: ReactNode, addIcon?: ReactNode, removeIcon?: ReactNode }",
             "默认值": "-",
-            "版本": "5.7.0, `moreIcon` and `addIcon`: 5.14.0"
+            "版本": "5.7.0, `moreIcon` and `addIcon`: 5.14.0, `removeIcon`: 5.15.0"
           },
           {
             "参数": "tag",
@@ -12254,6 +12483,13 @@
             "类型": "CSSProperties",
             "默认值": "-",
             "版本": "-"
+          },
+          {
+            "参数": "optionRender",
+            "说明": "自定义渲染下拉选项",
+            "类型": "(option: Option) => React.ReactNode",
+            "默认值": "-",
+            "版本": "5.16.0"
           }
         ]
       },
@@ -12468,7 +12704,7 @@
             "参数": "defaultActiveTabKey",
             "说明": "初始化选中页签的 key，如果没有设置 activeTabKey",
             "类型": "string",
-            "默认值": "`第一个页签`",
+            "默认值": "`第一个页签的 key`",
             "版本": "-"
           },
           {
@@ -13742,10 +13978,10 @@
             "版本": "-"
           },
           {
-            "参数": "closeIcon",
-            "说明": "自定义关闭 Icon，>=5.7.0: 设置为 `null` 或 `false` 时隐藏关闭按钮",
-            "类型": "ReactNode",
-            "默认值": "`<CloseOutlined />`",
+            "参数": "closable",
+            "说明": "可关闭配置，>=5.15.0: 支持 `aria-*`",
+            "类型": "boolean \\| ({ closeIcon?: React.ReactNode } & React.AriaAttributes)",
+            "默认值": "`false`",
             "版本": "-"
           },
           {

@@ -208,7 +208,7 @@
             "属性": "revalidateOnFocus",
             "描述": "窗口聚焦时自动重新请求",
             "类型": "`boolean`",
-            "默认值": "`true`"
+            "默认值": "`false`"
           },
           {
             "属性": "columnsState",
@@ -1778,6 +1778,11 @@
             "默认值": "`rgba(255,255,255,0.75)`"
           },
           {
+            "token": "colorBgMenuItemActive",
+            "说明": "menuItem 的点击时背景颜色",
+            "默认值": "`rgba(0, 0, 0, 0.15)`"
+          },
+          {
             "token": "colorBgMenuItemHover",
             "说明": "menuItem 的 hover 背景颜色",
             "默认值": "`rgba(90, 75, 75, 0.03)`"
@@ -2238,7 +2243,7 @@
           {
             "参数": "onFinish",
             "说明": "提交表单且数据验证成功后回调事件，同 antd 4 `Form` 组件 API",
-            "类型": "`(values)=>Promise<void>`",
+            "类型": "`(values)=>Promise<void> ｜ void`",
             "默认值": "-"
           },
           {

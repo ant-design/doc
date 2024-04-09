@@ -41,17 +41,17 @@
           {
             "title": "onRouteChange",
             "url": "https://umijs.org/docs/api/runtime-config#onRouteChange",
-            "md": "* type: `(args: { routes: Routes; clientRoutes: Routes; location: Location; action: Action; basename: string; isFirst: boolean }) => void`\n在初始加载和路由切换时做一些事情。\n比如用于做埋点统计，\n```ts\nexport function onRouteChange({\n  location,\n  clientRoutes,\n  routes,\n  action,\n  basename,\n  isFirst,\n}) {\n  bacon(location.pathname);\n}\n```\n比如用于设置标题，\n```ts\nimport { matchRoutes } from 'umi';\n\nexport function onRouteChange({ clientRoutes, location }) {\n  const route = matchRoutes(clientRoutes, location.pathname)?.pop()?.route;\n  if (route) {\n    document.title = route.title || '';\n  }\n}\n```\n"
+            "md": "<HashAnchorCompat from=\"#onroutechange-routes-clientroutes-location-action-basename-isfirst-\" to=\"#onroutechange\"></HashAnchorCompat>\n* type: `(args: { routes: Routes; clientRoutes: Routes; location: Location; action: Action; basename: string; isFirst: boolean }) => void`\n在初始加载和路由切换时做一些事情。\n比如用于做埋点统计，\n```ts\nexport function onRouteChange({\n  location,\n  clientRoutes,\n  routes,\n  action,\n  basename,\n  isFirst,\n}) {\n  bacon(location.pathname);\n}\n```\n比如用于设置标题，\n```ts\nimport { matchRoutes } from 'umi';\n\nexport function onRouteChange({ clientRoutes, location }) {\n  const route = matchRoutes(clientRoutes, location.pathname)?.pop()?.route;\n  if (route) {\n    document.title = route.title || '';\n  }\n}\n```\n"
           },
           {
             "title": "patchRoutes",
             "url": "https://umijs.org/docs/api/runtime-config#patchRoutes",
-            "md": "* type: `(args: { routes: Routes; routeComponents }) => void`\n```ts\nexport function patchRoutes({ routes, routeComponents }) {\n  console.log('patchRoutes', routes, routeComponents);\n}\n```\n* `routes`: 打平的路由列表。\n\n* `routeComponents`: 路由对应的组件映射。\n注：如需动态更新路由，建议使用 `patchClientRoutes()` ，否则你可能需要同时修改 `routes` 和 `routeComponents`。\n"
+            "md": "<HashAnchorCompat from=\"#patchroutes-routes-\" to=\"#patchroutes\"></HashAnchorCompat>\n* type: `(args: { routes: Routes; routeComponents }) => void`\n```ts\nexport function patchRoutes({ routes, routeComponents }) {\n  console.log('patchRoutes', routes, routeComponents);\n}\n```\n* `routes`: 打平的路由列表。\n\n* `routeComponents`: 路由对应的组件映射。\n注：如需动态更新路由，建议使用 `patchClientRoutes()` ，否则你可能需要同时修改 `routes` 和 `routeComponents`。\n"
           },
           {
             "title": "patchClientRoutes",
             "url": "https://umijs.org/docs/api/runtime-config#patchClientRoutes",
-            "md": "* type: `(args: { routes: Routes; }) => void`\n修改被 react-router 渲染前的树状路由表，接收内容同 [useRoutes](https://reactrouter.com/en/main/hooks/use-routes)。\n比如在最前面添加一个 `/foo` 路由，\n```tsx\nimport Page from '@/extraRoutes/foo';\n\nexport function patchClientRoutes({ routes }) {\n  routes.unshift({\n    path: '/foo',\n    element: <Page />,\n  });\n}\n```\n比如在最前面添加一个重定向路由：\n```tsx\nimport { Navigate } from 'umi';\n\nexport const patchClientRoutes = ({ routes }) => {\n  routes.unshift({\n    path: '/',\n    element: <Navigate to=\"/home\" replace />,\n  });\n};\n```\n比如添加一个嵌套路由：\n```tsx\nimport Page from '@/extraRoutes/foo';\n\nexport const patchClientRoutes = ({ routes }) => {\n  routes.push({\n    path: '/group',\n    children: [{\n      path: '/group/page',\n      element: <Page />,\n    }],\n  });\n};\n```\n比如和 `render` 配置配合使用，请求服务端根据响应动态更新路由，\n```ts\nlet extraRoutes;\n\nexport function patchClientRoutes({ routes }) {\n  // 根据 extraRoutes 对 routes 做一些修改\n  patch(routes, extraRoutes);\n}\n\nexport function render(oldRender) {\n  fetch('/api/routes')\n    .then((res) => res.json())\n    .then((res) => {\n      extraRoutes = res.routes;\n      oldRender();\n    });\n}\n```\n注意：\n* 直接修改 routes，不需要返回\n"
+            "md": "<HashAnchorCompat from=\"#patchclientroutes-routes-\" to=\"#patchclientroutes\"></HashAnchorCompat>\n* type: `(args: { routes: Routes; }) => void`\n修改被 react-router 渲染前的树状路由表，接收内容同 [useRoutes](https://reactrouter.com/en/main/hooks/use-routes)。\n比如在最前面添加一个 `/foo` 路由，\n```tsx\nimport Page from '@/extraRoutes/foo';\n\nexport function patchClientRoutes({ routes }) {\n  routes.unshift({\n    path: '/foo',\n    element: <Page />,\n  });\n}\n```\n比如在最前面添加一个重定向路由：\n```tsx\nimport { Navigate } from 'umi';\n\nexport const patchClientRoutes = ({ routes }) => {\n  routes.unshift({\n    path: '/',\n    element: <Navigate to=\"/home\" replace />,\n  });\n};\n```\n比如添加一个嵌套路由：\n```tsx\nimport Page from '@/extraRoutes/foo';\n\nexport const patchClientRoutes = ({ routes }) => {\n  routes.push({\n    path: '/group',\n    children: [{\n      path: '/group/page',\n      element: <Page />,\n    }],\n  });\n};\n```\n比如和 `render` 配置配合使用，请求服务端根据响应动态更新路由，\n```ts\nlet extraRoutes;\n\nexport function patchClientRoutes({ routes }) {\n  // 根据 extraRoutes 对 routes 做一些修改\n  patch(routes, extraRoutes);\n}\n\nexport function render(oldRender) {\n  fetch('/api/routes')\n    .then((res) => res.json())\n    .then((res) => {\n      extraRoutes = res.routes;\n      oldRender();\n    });\n}\n```\n注意：\n* 直接修改 routes，不需要返回\n"
           },
           {
             "title": "qiankun",
@@ -61,7 +61,7 @@
           {
             "title": "render",
             "url": "https://umijs.org/docs/api/runtime-config#render",
-            "md": "* Type: `(oldRender: Function)=>void`\n覆写 render。\n比如用于渲染之前做权限校验，\n```bash\nexport function render(oldRender) {\n  fetch('/api/auth').then(auth => {\n    if (auth.isLogin) { oldRender() }\n    else {\n      location.href = '/login';\n      oldRender()\n    }\n  });\n}\n```\n"
+            "md": "<HashAnchorCompat from=\"#renderoldrender-function\" to=\"#render\"></HashAnchorCompat>\n* Type: `(oldRender: Function)=>void`\n覆写 render。\n比如用于渲染之前做权限校验，\n```bash\nexport function render(oldRender) {\n  fetch('/api/auth').then(auth => {\n    if (auth.isLogin) { oldRender() }\n    else {\n      location.href = '/login';\n      oldRender()\n    }\n  });\n}\n```\n"
           },
           {
             "title": "request",
@@ -71,7 +71,7 @@
           {
             "title": "rootContainer",
             "url": "https://umijs.org/docs/api/runtime-config#rootContainer",
-            "md": "* Type: `(container: JSX.Element,args: { routes: Routes; plugin; history: History }) => JSX.Element;`\n修改交给 react-dom 渲染时的根组件。\n比如用于在外面包一个 Provider，\n```js\nexport function rootContainer(container, args) {\n  return React.createElement(ThemeProvider, null, container);\n}\n```\nargs 包含：\n* routes，全量路由配置\n* plugin，运行时插件机制\n* history，history 实例\n"
+            "md": "<HashAnchorCompat from=\"#rootcontainerlastrootcontainer-args\" to=\"#rootcontainer\"></HashAnchorCompat>\n* Type: `(container: JSX.Element,args: { routes: Routes; plugin; history: History }) => JSX.Element;`\n修改交给 react-dom 渲染时的根组件。\n比如用于在外面包一个 Provider，\n```js\nexport function rootContainer(container, args) {\n  return React.createElement(ThemeProvider, null, container);\n}\n```\nargs 包含：\n* routes，全量路由配置\n* plugin，运行时插件机制\n* history，history 实例\n"
           }
         ],
         "md": "> 以下配置项按字母排序。\n\n"

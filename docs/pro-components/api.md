@@ -37,7 +37,7 @@
 | cardBordered | Table 和 Search 外围 Card 组件的边框 | `boolean \| {search?: boolean, table?: boolean}` | false |
 | ghost | 幽灵模式，即是否取消表格区域的 padding | `boolean` | false |
 | debounceTime | 防抖时间 | `number` | 10 |
-| revalidateOnFocus | 窗口聚焦时自动重新请求 | `boolean` | `true` |
+| revalidateOnFocus | 窗口聚焦时自动重新请求 | `boolean` | `false` |
 | columnsState | 受控的列状态，可以操作显示隐藏 | `ColumnStateType` | - |
 | ErrorBoundary | 自带了错误处理功能，防止白屏，`ErrorBoundary=false` 关闭默认错误边界 | `ReactNode` | 内置 ErrorBoundary |
 
@@ -201,7 +201,7 @@
 | cardBordered | Table 和 Search 外围 Card 组件的边框 | `boolean \| {search?: boolean, table?: boolean}` | false |
 | ghost | 幽灵模式，即是否取消表格区域的 padding | `boolean` | false |
 | debounceTime | 防抖时间 | `number` | 10 |
-| revalidateOnFocus | 窗口聚焦时自动重新请求 | `boolean` | `true` |
+| revalidateOnFocus | 窗口聚焦时自动重新请求 | `boolean` | `false` |
 | columnsState | 受控的列状态，可以操作显示隐藏 | `ColumnStateType` | - |
 | ErrorBoundary | 自带了错误处理功能，防止白屏，`ErrorBoundary=false` 关闭默认错误边界 | `ReactNode` | 内置 ErrorBoundary |
 
@@ -543,7 +543,7 @@
 
 类型: `boolean`
 
-默认值: `true`
+默认值: `false`
 
 ### pro-components 中 ProTable - ProTable的columnsState属性如何使用？
 
@@ -2434,6 +2434,7 @@
 | colorTextMenuSelected | menuItem 的选中字体颜色 | `rgb(0,0,0)` |
 | colorTextMenuActive | menuItem hover 的选中字体颜色 | `rgba(0, 0, 0, 0.85)` |
 | colorTextMenuItemHover | menuItem 的 hover 字体颜色 | `rgba(255,255,255,0.75)` |
+| colorBgMenuItemActive | menuItem 的点击时背景颜色 | `rgba(0, 0, 0, 0.15)` |
 | colorBgMenuItemHover | menuItem 的 hover 背景颜色 | `rgba(90, 75, 75, 0.03)` |
 | colorBgMenuItemSelected | menuItem 的选中背景颜色 | `rgba(0, 0, 0, 0.04)` |
 | colorBgMenuItemCollapsedElevated | 收起 menuItem 的弹出菜单背景颜色 | `transparent` |
@@ -3412,6 +3413,7 @@ token: colorBgAppListIconHover
 | colorTextMenuSelected | menuItem 的选中字体颜色 | `rgb(0,0,0)` |
 | colorTextMenuActive | menuItem hover 的选中字体颜色 | `rgba(0, 0, 0, 0.85)` |
 | colorTextMenuItemHover | menuItem 的 hover 字体颜色 | `rgba(255,255,255,0.75)` |
+| colorBgMenuItemActive | menuItem 的点击时背景颜色 | `rgba(0, 0, 0, 0.15)` |
 | colorBgMenuItemHover | menuItem 的 hover 背景颜色 | `rgba(90, 75, 75, 0.03)` |
 | colorBgMenuItemSelected | menuItem 的选中背景颜色 | `rgba(0, 0, 0, 0.04)` |
 | colorBgMenuItemCollapsedElevated | 收起 menuItem 的弹出菜单背景颜色 | `transparent` |
@@ -3482,6 +3484,14 @@ token: colorTextMenuItemHover
 说明: menuItem 的 hover 字体颜色
 
 默认值: `rgba(255,255,255,0.75)`
+
+### pro-components 中 ProLayout - Sider Token的colorBgMenuItemActive属性如何使用？
+
+token: colorBgMenuItemActive
+
+说明: menuItem 的点击时背景颜色
+
+默认值: `rgba(0, 0, 0, 0.15)`
 
 ### pro-components 中 ProLayout - Sider Token的colorBgMenuItemHover属性如何使用？
 
@@ -4268,7 +4278,7 @@ token: colorBgPageContainerFixed
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| onFinish | 提交表单且数据验证成功后回调事件，同 antd 4 `Form` 组件 API | `(values)=>Promise<void>` | - |
+| onFinish | 提交表单且数据验证成功后回调事件，同 antd 4 `Form` 组件 API | `(values)=>Promise<void> ｜ void` | - |
 | onReset | 点击重置按钮的回调 | `(e)=>void` | - |
 | submitter | 提交按钮相关配置 | `boolean` \| `SubmitterProps` | `true` |
 | syncToUrl | 同步参数到 url 上，url 只支持 string，在使用之前最好读一下[url 中的参数类型](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams) | `true` \| `(values,type)=>values` | - |
@@ -4354,7 +4364,7 @@ token: colorBgPageContainerFixed
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| onFinish | 提交表单且数据验证成功后回调事件，同 antd 4 `Form` 组件 API | `(values)=>Promise<void>` | - |
+| onFinish | 提交表单且数据验证成功后回调事件，同 antd 4 `Form` 组件 API | `(values)=>Promise<void> ｜ void` | - |
 | onReset | 点击重置按钮的回调 | `(e)=>void` | - |
 | submitter | 提交按钮相关配置 | `boolean` \| `SubmitterProps` | `true` |
 | syncToUrl | 同步参数到 url 上，url 只支持 string，在使用之前最好读一下[url 中的参数类型](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams) | `true` \| `(values,type)=>values` | - |
@@ -4376,7 +4386,7 @@ token: colorBgPageContainerFixed
 
 说明: 提交表单且数据验证成功后回调事件，同 antd 4 `Form` 组件 API
 
-类型: `(values)=>Promise<void>`
+类型: `(values)=>Promise<void> ｜ void`
 
 默认值: -
 
