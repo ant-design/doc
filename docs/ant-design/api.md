@@ -24,7 +24,7 @@
 | fontWeight | 字体粗细 | `normal` \| `light` \| `weight` \| number | normal | - |
 | fontFamily | 字体类型 | string | sans-serif | - |
 | fontStyle | 字体样式 | `none` \| `normal` \| `italic` \| `oblique` | normal | - |
-| textAlign | 指定文本对齐方向 | [CanvasTextAlign](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textAlign) | 5.10.0 |
+| textAlign | 指定文本对齐方向 | [CanvasTextAlign](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textAlign) | `center` | 5.10.0 |
 
 ### ant-design 的 Watermark - Watermark 有哪些配置？
 
@@ -170,7 +170,7 @@
 | fontWeight | 字体粗细 | `normal` \| `light` \| `weight` \| number | normal | - |
 | fontFamily | 字体类型 | string | sans-serif | - |
 | fontStyle | 字体样式 | `none` \| `normal` \| `italic` \| `oblique` | normal | - |
-| textAlign | 指定文本对齐方向 | [CanvasTextAlign](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textAlign) | 5.10.0 |
+| textAlign | 指定文本对齐方向 | [CanvasTextAlign](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textAlign) | `center` | 5.10.0 |
 
 ### ant-design 中 Watermark - Font的color属性如何使用？
 
@@ -240,7 +240,9 @@
 
 类型: [CanvasTextAlign](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textAlign)
 
-默认值: 5.10.0
+默认值: `center`
+
+版本: 5.10.0
 
 ### ant-design 的 Upload 有哪些配置？
 
@@ -269,7 +271,7 @@
 | openFileDialogOnClick | 点击打开文件对话框 | boolean | true | - |
 | previewFile | 自定义文件预览逻辑 | (file: File \| Blob) => Promise\<dataURL: string> | - | - |
 | progress | 自定义进度条样式 | [ProgressProps](/components/progress-cn#api)（仅支持 `type="line"`） | { strokeWidth: 2, showInfo: false } | 4.3.0 |
-| showUploadList | 是否展示文件列表, 可设为一个对象，用于单独设定 `showPreviewIcon`, `showRemoveIcon`, `showDownloadIcon`, `removeIcon` 和 `downloadIcon` | boolean \| { showPreviewIcon?: boolean, showRemoveIcon?: boolean, showDownloadIcon?: boolean, previewIcon?: ReactNode \| (file: UploadFile) => ReactNode, removeIcon?: ReactNode \| (file: UploadFile) => ReactNode, downloadIcon?: ReactNode \| (file: UploadFile) => ReactNode } | true | function: 4.7.0 |
+| showUploadList | 是否展示文件列表, 可设为一个对象，用于单独设定 `extra`(5.20.0+), `showPreviewIcon`, `showRemoveIcon`, `showDownloadIcon`, `removeIcon` 和 `downloadIcon` | boolean \| { extra?: ReactNode \| (file: UploadFile) => ReactNode, showPreviewIcon?: boolean \| (file: UploadFile) => boolean, showDownloadIcon?: boolean \| (file: UploadFile) => boolean, showRemoveIcon?: boolean \| (file: UploadFile) => boolean, previewIcon?: ReactNode \| (file: UploadFile) => ReactNode, removeIcon?: ReactNode \| (file: UploadFile) => ReactNode, downloadIcon?: ReactNode \| (file: UploadFile) => ReactNode } | true | `extra`: 5.20.0, `showPreviewIcon` function: 5.21.0, `showRemoveIcon` function: 5.21.0, `showDownloadIcon` function: 5.21.0 |
 | withCredentials | 上传请求时是否携带 cookie | boolean | false | - |
 | onChange | 上传文件改变时的回调，上传每个阶段都会触发该事件。详见 [onChange](#onchange) | function | - | - |
 | onDrop | 当文件被拖入上传区域时执行的回调功能 | (event: React.DragEvent) => void | - | 4.16.0 |
@@ -314,7 +316,7 @@
 | openFileDialogOnClick | 点击打开文件对话框 | boolean | true | - |
 | previewFile | 自定义文件预览逻辑 | (file: File \| Blob) => Promise\<dataURL: string> | - | - |
 | progress | 自定义进度条样式 | [ProgressProps](/components/progress-cn#api)（仅支持 `type="line"`） | { strokeWidth: 2, showInfo: false } | 4.3.0 |
-| showUploadList | 是否展示文件列表, 可设为一个对象，用于单独设定 `showPreviewIcon`, `showRemoveIcon`, `showDownloadIcon`, `removeIcon` 和 `downloadIcon` | boolean \| { showPreviewIcon?: boolean, showRemoveIcon?: boolean, showDownloadIcon?: boolean, previewIcon?: ReactNode \| (file: UploadFile) => ReactNode, removeIcon?: ReactNode \| (file: UploadFile) => ReactNode, downloadIcon?: ReactNode \| (file: UploadFile) => ReactNode } | true | function: 4.7.0 |
+| showUploadList | 是否展示文件列表, 可设为一个对象，用于单独设定 `extra`(5.20.0+), `showPreviewIcon`, `showRemoveIcon`, `showDownloadIcon`, `removeIcon` 和 `downloadIcon` | boolean \| { extra?: ReactNode \| (file: UploadFile) => ReactNode, showPreviewIcon?: boolean \| (file: UploadFile) => boolean, showDownloadIcon?: boolean \| (file: UploadFile) => boolean, showRemoveIcon?: boolean \| (file: UploadFile) => boolean, previewIcon?: ReactNode \| (file: UploadFile) => ReactNode, removeIcon?: ReactNode \| (file: UploadFile) => ReactNode, downloadIcon?: ReactNode \| (file: UploadFile) => ReactNode } | true | `extra`: 5.20.0, `showPreviewIcon` function: 5.21.0, `showRemoveIcon` function: 5.21.0, `showDownloadIcon` function: 5.21.0 |
 | withCredentials | 上传请求时是否携带 cookie | boolean | false | - |
 | onChange | 上传文件改变时的回调，上传每个阶段都会触发该事件。详见 [onChange](#onchange) | function | - | - |
 | onDrop | 当文件被拖入上传区域时执行的回调功能 | (event: React.DragEvent) => void | - | 4.16.0 |
@@ -578,13 +580,13 @@
 
 参数: showUploadList
 
-说明: 是否展示文件列表, 可设为一个对象，用于单独设定 `showPreviewIcon`, `showRemoveIcon`, `showDownloadIcon`, `removeIcon` 和 `downloadIcon`
+说明: 是否展示文件列表, 可设为一个对象，用于单独设定 `extra`(5.20.0+), `showPreviewIcon`, `showRemoveIcon`, `showDownloadIcon`, `removeIcon` 和 `downloadIcon`
 
-类型: boolean \| { showPreviewIcon?: boolean, showRemoveIcon?: boolean, showDownloadIcon?: boolean, previewIcon?: ReactNode \| (file: UploadFile) => ReactNode, removeIcon?: ReactNode \| (file: UploadFile) => ReactNode, downloadIcon?: ReactNode \| (file: UploadFile) => ReactNode }
+类型: boolean \| { extra?: ReactNode \| (file: UploadFile) => ReactNode, showPreviewIcon?: boolean \| (file: UploadFile) => boolean, showDownloadIcon?: boolean \| (file: UploadFile) => boolean, showRemoveIcon?: boolean \| (file: UploadFile) => boolean, previewIcon?: ReactNode \| (file: UploadFile) => ReactNode, removeIcon?: ReactNode \| (file: UploadFile) => ReactNode, downloadIcon?: ReactNode \| (file: UploadFile) => ReactNode }
 
 默认值: true
 
-版本: function: 4.7.0
+版本: `extra`: 5.20.0, `showPreviewIcon` function: 5.21.0, `showRemoveIcon` function: 5.21.0, `showDownloadIcon` function: 5.21.0
 
 ### ant-design 中 Upload - Upload的withCredentials属性如何使用？
 
@@ -765,7 +767,7 @@
 | delete | 添加删除线样式 | boolean | false | - |
 | disabled | 禁用文本 | boolean | false | - |
 | editable | 是否可编辑，为对象时可对编辑进行控制 | boolean \| [editable](#editable) | false | [editable](#editable) |
-| ellipsis | 自动溢出省略，为对象时不能设置省略行数、是否可展开、onExpand 展开事件。不同于 Typography.Paragraph，Text 组件自身不带 100% 宽度样式，因而默认情况下初次缩略后宽度便不再变化。如果需要自适应宽度，请手工配置宽度样式 | boolean \| [Omit\<ellipsis, 'expandable' \| 'rows' \| 'onExpand'>](#ellipsis) | false | [ellipsis](#ellipsis) |
+| ellipsis | 自动溢出省略，为对象时不能设置省略行数、是否可展开、onExpand 展开事件。不同于 Typography.Paragraph，Text 组件自身不带 100% 宽度样式，因而默认情况下初次缩略后宽度便不再变化。如果需要自适应宽度，请手动配置宽度样式 | boolean \| [Omit\<ellipsis, 'expandable' \| 'rows' \| 'onExpand'>](#ellipsis) | false | [ellipsis](#ellipsis) |
 | keyboard | 添加键盘样式 | boolean | false | 4.3.0 |
 | mark | 添加标记样式 | boolean | false | - |
 | onClick | 点击 Text 时的回调 | (event) => void | - | - |
@@ -817,6 +819,7 @@
 | text | 拷贝到剪切板里的文本 | string | - | - |
 | tooltips | 自定义提示文案，为 false 时隐藏文案 | \[ReactNode, ReactNode] | \[`复制`, `复制成功`] | 4.4.0 |
 | onCopy | 拷贝成功的回调函数 | function | - | - |
+| tabIndex | 自定义复制按钮的 tabIndex | number | 0 | 5.17.0 |
 
 #### Typography - editable
 
@@ -834,6 +837,7 @@
 | onEnd | 按 ENTER 结束编辑状态时触发 | function | - | 4.14.0 |
 | triggerType | 编辑模式触发器类型，图标、文本或者两者都设置（不设置图标作为触发器时它会隐藏） | Array<`icon`\|`text`> | \[`icon`] | - |
 | enterIcon | 在编辑段中自定义“enter”图标（传递“null”将删除图标） | ReactNode | `<EnterOutlined />` | 4.17.0 |
+| tabIndex | 自定义编辑按钮的 tabIndex | number | 0 | 5.17.0 |
 
 #### Typography - ellipsis
 
@@ -858,7 +862,7 @@
 | delete | 添加删除线样式 | boolean | false | - |
 | disabled | 禁用文本 | boolean | false | - |
 | editable | 是否可编辑，为对象时可对编辑进行控制 | boolean \| [editable](#editable) | false | [editable](#editable) |
-| ellipsis | 自动溢出省略，为对象时不能设置省略行数、是否可展开、onExpand 展开事件。不同于 Typography.Paragraph，Text 组件自身不带 100% 宽度样式，因而默认情况下初次缩略后宽度便不再变化。如果需要自适应宽度，请手工配置宽度样式 | boolean \| [Omit\<ellipsis, 'expandable' \| 'rows' \| 'onExpand'>](#ellipsis) | false | [ellipsis](#ellipsis) |
+| ellipsis | 自动溢出省略，为对象时不能设置省略行数、是否可展开、onExpand 展开事件。不同于 Typography.Paragraph，Text 组件自身不带 100% 宽度样式，因而默认情况下初次缩略后宽度便不再变化。如果需要自适应宽度，请手动配置宽度样式 | boolean \| [Omit\<ellipsis, 'expandable' \| 'rows' \| 'onExpand'>](#ellipsis) | false | [ellipsis](#ellipsis) |
 | keyboard | 添加键盘样式 | boolean | false | 4.3.0 |
 | mark | 添加标记样式 | boolean | false | - |
 | onClick | 点击 Text 时的回调 | (event) => void | - | - |
@@ -931,7 +935,7 @@
 
 参数: ellipsis
 
-说明: 自动溢出省略，为对象时不能设置省略行数、是否可展开、onExpand 展开事件。不同于 Typography.Paragraph，Text 组件自身不带 100% 宽度样式，因而默认情况下初次缩略后宽度便不再变化。如果需要自适应宽度，请手工配置宽度样式
+说明: 自动溢出省略，为对象时不能设置省略行数、是否可展开、onExpand 展开事件。不同于 Typography.Paragraph，Text 组件自身不带 100% 宽度样式，因而默认情况下初次缩略后宽度便不再变化。如果需要自适应宽度，请手动配置宽度样式
 
 类型: boolean \| [Omit\<ellipsis, 'expandable' \| 'rows' \| 'onExpand'>](#ellipsis)
 
@@ -1354,6 +1358,7 @@
 | text | 拷贝到剪切板里的文本 | string | - | - |
 | tooltips | 自定义提示文案，为 false 时隐藏文案 | \[ReactNode, ReactNode] | \[`复制`, `复制成功`] | 4.4.0 |
 | onCopy | 拷贝成功的回调函数 | function | - | - |
+| tabIndex | 自定义复制按钮的 tabIndex | number | 0 | 5.17.0 |
 
 ### ant-design 中 Typography - copyable的format属性如何使用？
 
@@ -1415,6 +1420,18 @@
 
 版本: -
 
+### ant-design 中 Typography - copyable的tabIndex属性如何使用？
+
+参数: tabIndex
+
+说明: 自定义复制按钮的 tabIndex
+
+类型: number
+
+默认值: 0
+
+版本: 5.17.0
+
 ### ant-design 的 Typography - editable 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -1431,6 +1448,7 @@
 | onEnd | 按 ENTER 结束编辑状态时触发 | function | - | 4.14.0 |
 | triggerType | 编辑模式触发器类型，图标、文本或者两者都设置（不设置图标作为触发器时它会隐藏） | Array<`icon`\|`text`> | \[`icon`] | - |
 | enterIcon | 在编辑段中自定义“enter”图标（传递“null”将删除图标） | ReactNode | `<EnterOutlined />` | 4.17.0 |
+| tabIndex | 自定义编辑按钮的 tabIndex | number | 0 | 5.17.0 |
 
 ### ant-design 中 Typography - editable的autoSize属性如何使用？
 
@@ -1575,6 +1593,18 @@
 默认值: `<EnterOutlined />`
 
 版本: 4.17.0
+
+### ant-design 中 Typography - editable的tabIndex属性如何使用？
+
+参数: tabIndex
+
+说明: 自定义编辑按钮的 tabIndex
+
+类型: number
+
+默认值: 0
+
+版本: 5.17.0
 
 ### ant-design 的 Typography - ellipsis 有哪些配置？
 
@@ -1725,6 +1755,7 @@
 | notFoundContent | 当下拉列表为空时显示的内容 | ReactNode | `Not Found` | - |
 | placeholder | 选择框默认文字 | string | - | - |
 | placement | 选择框弹出的位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | bottomLeft | - |
+| prefix | 自定义前缀 | ReactNode | - | 5.22.0 |
 | searchValue | 搜索框的值，可以通过 `onSearch` 获取用户输入 | string | - | - |
 | showCheckedStrategy | 配置 `treeCheckable` 时，定义选中项回填的方式。`TreeSelect.SHOW_ALL`: 显示所有选中节点(包括父节点)。`TreeSelect.SHOW_PARENT`: 只显示父节点(当父节点下所有子节点都选中时)。 默认只显示子节点 | `TreeSelect.SHOW_ALL` \| `TreeSelect.SHOW_PARENT` \| `TreeSelect.SHOW_CHILD` | `TreeSelect.SHOW_CHILD` | - |
 | showSearch | 是否支持搜索框 | boolean | 单选：false \| 多选：true | - |
@@ -1737,12 +1768,13 @@
 | treeCheckStrictly | `checkable` 状态下节点选择完全受控（父子节点选中状态不再关联），会使得 `labelInValue` 强制为 true | boolean | false | - |
 | treeData | treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（value 在整个树范围内唯一） | array<{value, title, children, \[disabled, disableCheckbox, selectable, checkable]}> | \[] | - |
 | treeDataSimpleMode | 使用简单格式的 treeData，具体设置参考可设置的类型 (此时 treeData 应变为这样的数据结构: \[{id:1, pId:0, value:'1', title:"test1",...},...]， `pId` 是父节点的 id) | boolean \| object<{ id: string, pId: string, rootPId: string }> | false | - |
+| treeTitleRender | 自定义渲染节点 | (nodeData) => ReactNode | - | 5.12.0 |
 | treeDefaultExpandAll | 默认展开所有树节点 | boolean | false | - |
 | treeDefaultExpandedKeys | 默认展开的树节点 | string\[] | - | - |
 | treeExpandAction | 点击节点 title 时的展开逻辑，可选：false \| `click` \| `doubleClick` | string \| boolean | false | 4.21.0 |
 | treeExpandedKeys | 设置展开的树节点 | string\[] | - | - |
 | treeIcon | 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式 | boolean | false | - |
-| treeLine | 是否展示线条样式，请参考 [Tree - showLine](/components/tree-cn#components-tree-demo-line) | boolean \| object | false | 4.17.0 |
+| treeLine | 是否展示线条样式，请参考 [Tree - showLine](/components/tree-cn#tree-demo-line) | boolean \| object | false | 4.17.0 |
 | treeLoadedKeys | （受控）已经加载的节点，需要配合 `loadData` 使用 | string\[] | \[] | - |
 | treeNodeFilterProp | 输入项过滤对应的 treeNode 属性 | string | `value` | - |
 | treeNodeLabelProp | 作为显示的 prop 设置 | string | `title` | - |
@@ -1754,6 +1786,7 @@
 | onSearch | 文本框值变化时的回调 | function(value: string) | - | - |
 | onSelect | 被选中时调用 | function(value, node, extra) | - | - |
 | onTreeExpand | 展示节点时调用 | function(expandedKeys) | - | - |
+| onPopupScroll | 下拉列表滚动时的回调 | (event: UIEvent) => void | - | 5.17.0 |
 
 #### TreeSelect - Tree 方法
 
@@ -1800,6 +1833,7 @@
 | notFoundContent | 当下拉列表为空时显示的内容 | ReactNode | `Not Found` | - |
 | placeholder | 选择框默认文字 | string | - | - |
 | placement | 选择框弹出的位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | bottomLeft | - |
+| prefix | 自定义前缀 | ReactNode | - | 5.22.0 |
 | searchValue | 搜索框的值，可以通过 `onSearch` 获取用户输入 | string | - | - |
 | showCheckedStrategy | 配置 `treeCheckable` 时，定义选中项回填的方式。`TreeSelect.SHOW_ALL`: 显示所有选中节点(包括父节点)。`TreeSelect.SHOW_PARENT`: 只显示父节点(当父节点下所有子节点都选中时)。 默认只显示子节点 | `TreeSelect.SHOW_ALL` \| `TreeSelect.SHOW_PARENT` \| `TreeSelect.SHOW_CHILD` | `TreeSelect.SHOW_CHILD` | - |
 | showSearch | 是否支持搜索框 | boolean | 单选：false \| 多选：true | - |
@@ -1812,12 +1846,13 @@
 | treeCheckStrictly | `checkable` 状态下节点选择完全受控（父子节点选中状态不再关联），会使得 `labelInValue` 强制为 true | boolean | false | - |
 | treeData | treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（value 在整个树范围内唯一） | array<{value, title, children, \[disabled, disableCheckbox, selectable, checkable]}> | \[] | - |
 | treeDataSimpleMode | 使用简单格式的 treeData，具体设置参考可设置的类型 (此时 treeData 应变为这样的数据结构: \[{id:1, pId:0, value:'1', title:"test1",...},...]， `pId` 是父节点的 id) | boolean \| object<{ id: string, pId: string, rootPId: string }> | false | - |
+| treeTitleRender | 自定义渲染节点 | (nodeData) => ReactNode | - | 5.12.0 |
 | treeDefaultExpandAll | 默认展开所有树节点 | boolean | false | - |
 | treeDefaultExpandedKeys | 默认展开的树节点 | string\[] | - | - |
 | treeExpandAction | 点击节点 title 时的展开逻辑，可选：false \| `click` \| `doubleClick` | string \| boolean | false | 4.21.0 |
 | treeExpandedKeys | 设置展开的树节点 | string\[] | - | - |
 | treeIcon | 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式 | boolean | false | - |
-| treeLine | 是否展示线条样式，请参考 [Tree - showLine](/components/tree-cn#components-tree-demo-line) | boolean \| object | false | 4.17.0 |
+| treeLine | 是否展示线条样式，请参考 [Tree - showLine](/components/tree-cn#tree-demo-line) | boolean \| object | false | 4.17.0 |
 | treeLoadedKeys | （受控）已经加载的节点，需要配合 `loadData` 使用 | string\[] | \[] | - |
 | treeNodeFilterProp | 输入项过滤对应的 treeNode 属性 | string | `value` | - |
 | treeNodeLabelProp | 作为显示的 prop 设置 | string | `title` | - |
@@ -1829,6 +1864,7 @@
 | onSearch | 文本框值变化时的回调 | function(value: string) | - | - |
 | onSelect | 被选中时调用 | function(value, node, extra) | - | - |
 | onTreeExpand | 展示节点时调用 | function(expandedKeys) | - | - |
+| onPopupScroll | 下拉列表滚动时的回调 | (event: UIEvent) => void | - | 5.17.0 |
 
 ### ant-design 中 TreeSelect - Tree props的allowClear属性如何使用？
 
@@ -2082,6 +2118,18 @@
 
 版本: -
 
+### ant-design 中 TreeSelect - Tree props的prefix属性如何使用？
+
+参数: prefix
+
+说明: 自定义前缀
+
+类型: ReactNode
+
+默认值: -
+
+版本: 5.22.0
+
 ### ant-design 中 TreeSelect - Tree props的searchValue属性如何使用？
 
 参数: searchValue
@@ -2226,6 +2274,18 @@
 
 版本: -
 
+### ant-design 中 TreeSelect - Tree props的treeTitleRender属性如何使用？
+
+参数: treeTitleRender
+
+说明: 自定义渲染节点
+
+类型: (nodeData) => ReactNode
+
+默认值: -
+
+版本: 5.12.0
+
 ### ant-design 中 TreeSelect - Tree props的treeDefaultExpandAll属性如何使用？
 
 参数: treeDefaultExpandAll
@@ -2290,7 +2350,7 @@
 
 参数: treeLine
 
-说明: 是否展示线条样式，请参考 [Tree - showLine](/components/tree-cn#components-tree-demo-line)
+说明: 是否展示线条样式，请参考 [Tree - showLine](/components/tree-cn#tree-demo-line)
 
 类型: boolean \| object
 
@@ -2429,6 +2489,18 @@
 默认值: -
 
 版本: -
+
+### ant-design 中 TreeSelect - Tree props的onPopupScroll属性如何使用？
+
+参数: onPopupScroll
+
+说明: 下拉列表滚动时的回调
+
+类型: (event: UIEvent) => void
+
+默认值: -
+
+版本: 5.17.0
 
 ### ant-design 的 TreeSelect - Tree 方法 有哪些配置？
 
@@ -2585,16 +2657,17 @@
 | fieldNames | 自定义节点 title、key、children 的字段 | object | { title: `title`, key: `key`, children: `children` } | 4.17.0 |
 | filterTreeNode | 按需筛选树节点（高亮），返回 true | function(node) | - | - |
 | height | 设置虚拟滚动容器高度，设置后内部节点不再支持横向滚动 | number | - | - |
-| icon | 自定义树节点图标。 | ReactNode \| (props) => ReactNode | - | - |
+| icon | 在标题之前插入自定义图标。需要设置 `showIcon` 为 true | ReactNode \| (props) => ReactNode | - | - |
 | loadData | 异步加载数据 | function(node) | - | - |
 | loadedKeys | （受控）已经加载的节点，需要配合 `loadData` 使用 | string\[] | \[] | - |
 | multiple | 支持点选多个节点（节点本身） | boolean | false | - |
 | rootStyle | 添加在 Tree 最外层的 style | CSSProperties | - | 4.20.0 |
 | selectable | 是否可选中 | boolean | true | - |
 | selectedKeys | （受控）设置选中的树节点，多选需设置 `multiple` 为 true | string\[] | - | - |
-| showIcon | 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式 | boolean | false | - |
+| showIcon | 控制是否展示 `icon` 节点，没有默认样式 | boolean | false | - |
 | showLine | 是否展示连接线 | boolean \| { showLeafIcon: ReactNode \| ((props: AntTreeNodeProps) => ReactNode) } | false | - |
-| switcherIcon | 自定义树节点的展开/折叠图标 | ReactNode \| ((props: AntTreeNodeProps) => ReactNode) | - | renderProps: 4.20.0 |
+| switcherIcon | 自定义树节点的展开/折叠图标（带有默认 rotate 角度样式） | ReactNode \| ((props: AntTreeNodeProps) => ReactNode) | - | renderProps: 4.20.0 |
+| switcherLoadingIcon | 自定义树节点的加载图标 | ReactNode | - | 5.20.0 |
 | titleRender | 自定义渲染节点 | (nodeData) => ReactNode | - | 4.5.0 |
 | treeData | treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（key 在整个树范围内唯一） | array<{key, title, children, \[disabled, selectable]}> | - | - |
 | virtual | 设置 false 时关闭虚拟滚动 | boolean | true | 4.1.0 |
@@ -2656,16 +2729,17 @@
 | fieldNames | 自定义节点 title、key、children 的字段 | object | { title: `title`, key: `key`, children: `children` } | 4.17.0 |
 | filterTreeNode | 按需筛选树节点（高亮），返回 true | function(node) | - | - |
 | height | 设置虚拟滚动容器高度，设置后内部节点不再支持横向滚动 | number | - | - |
-| icon | 自定义树节点图标。 | ReactNode \| (props) => ReactNode | - | - |
+| icon | 在标题之前插入自定义图标。需要设置 `showIcon` 为 true | ReactNode \| (props) => ReactNode | - | - |
 | loadData | 异步加载数据 | function(node) | - | - |
 | loadedKeys | （受控）已经加载的节点，需要配合 `loadData` 使用 | string\[] | \[] | - |
 | multiple | 支持点选多个节点（节点本身） | boolean | false | - |
 | rootStyle | 添加在 Tree 最外层的 style | CSSProperties | - | 4.20.0 |
 | selectable | 是否可选中 | boolean | true | - |
 | selectedKeys | （受控）设置选中的树节点，多选需设置 `multiple` 为 true | string\[] | - | - |
-| showIcon | 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式 | boolean | false | - |
+| showIcon | 控制是否展示 `icon` 节点，没有默认样式 | boolean | false | - |
 | showLine | 是否展示连接线 | boolean \| { showLeafIcon: ReactNode \| ((props: AntTreeNodeProps) => ReactNode) } | false | - |
-| switcherIcon | 自定义树节点的展开/折叠图标 | ReactNode \| ((props: AntTreeNodeProps) => ReactNode) | - | renderProps: 4.20.0 |
+| switcherIcon | 自定义树节点的展开/折叠图标（带有默认 rotate 角度样式） | ReactNode \| ((props: AntTreeNodeProps) => ReactNode) | - | renderProps: 4.20.0 |
+| switcherLoadingIcon | 自定义树节点的加载图标 | ReactNode | - | 5.20.0 |
 | titleRender | 自定义渲染节点 | (nodeData) => ReactNode | - | 4.5.0 |
 | treeData | treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（key 在整个树范围内唯一） | array<{key, title, children, \[disabled, selectable]}> | - | - |
 | virtual | 设置 false 时关闭虚拟滚动 | boolean | true | 4.1.0 |
@@ -2889,7 +2963,7 @@
 
 参数: icon
 
-说明: 自定义树节点图标。
+说明: 在标题之前插入自定义图标。需要设置 `showIcon` 为 true
 
 类型: ReactNode \| (props) => ReactNode
 
@@ -2973,7 +3047,7 @@
 
 参数: showIcon
 
-说明: 是否展示 TreeNode title 前的图标，没有默认样式，如设置为 true，需要自行定义图标相关样式
+说明: 控制是否展示 `icon` 节点，没有默认样式
 
 类型: boolean
 
@@ -2997,13 +3071,25 @@
 
 参数: switcherIcon
 
-说明: 自定义树节点的展开/折叠图标
+说明: 自定义树节点的展开/折叠图标（带有默认 rotate 角度样式）
 
 类型: ReactNode \| ((props: AntTreeNodeProps) => ReactNode)
 
 默认值: -
 
 版本: renderProps: 4.20.0
+
+### ant-design 中 Tree - Tree props的switcherLoadingIcon属性如何使用？
+
+参数: switcherLoadingIcon
+
+说明: 自定义树节点的加载图标
+
+类型: ReactNode
+
+默认值: -
+
+版本: 5.20.0
 
 ### ant-design 中 Tree - Tree props的titleRender属性如何使用？
 
@@ -3735,6 +3821,7 @@
 | arrow | 是否显示箭头，包含是否指向元素中心的配置 | `boolean` \| `{ pointAtCenter: boolean}` | `true` | - |
 | closeIcon | 自定义关闭按钮 | `React.ReactNode` | `true` | 5.9.0 |
 | disabledInteraction | 禁用高亮区域交互 | `boolean` | `false` | 5.13.0 |
+| gap | 控制高亮区域的圆角边框和显示间距 | `{ offset?: number \| [number, number]; radius?: number }` | `{ offset?: 6 ; radius?: 2 }` | 5.0.0 (数组类型的 `offset`: 5.9.0 ) |
 | placement | 引导卡片相对于目标元素的位置 | `center` `left` `leftTop` `leftBottom` `right` `rightTop` `rightBottom` `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` | `bottom` | - |
 | onClose | 关闭引导时的回调函数 | `Function` | - | - |
 | onFinish | 引导完成时的回调 | `Function` | - | - |
@@ -3773,6 +3860,7 @@
 | arrow | 是否显示箭头，包含是否指向元素中心的配置 | `boolean` \| `{ pointAtCenter: boolean}` | `true` | - |
 | closeIcon | 自定义关闭按钮 | `React.ReactNode` | `true` | 5.9.0 |
 | disabledInteraction | 禁用高亮区域交互 | `boolean` | `false` | 5.13.0 |
+| gap | 控制高亮区域的圆角边框和显示间距 | `{ offset?: number \| [number, number]; radius?: number }` | `{ offset?: 6 ; radius?: 2 }` | 5.0.0 (数组类型的 `offset`: 5.9.0 ) |
 | placement | 引导卡片相对于目标元素的位置 | `center` `left` `leftTop` `leftBottom` `right` `rightTop` `rightBottom` `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` | `bottom` | - |
 | onClose | 关闭引导时的回调函数 | `Function` | - | - |
 | onFinish | 引导完成时的回调 | `Function` | - | - |
@@ -3821,6 +3909,18 @@
 默认值: `false`
 
 版本: 5.13.0
+
+### ant-design 中 Tour - Tour的gap属性如何使用？
+
+属性: gap
+
+说明: 控制高亮区域的圆角边框和显示间距
+
+类型: `{ offset?: number \| [number, number]; radius?: number }`
+
+默认值: `{ offset?: 6 ; radius?: 2 }`
+
+版本: 5.0.0 (数组类型的 `offset`: 5.9.0 )
 
 ### ant-design 中 Tour - Tour的placement属性如何使用？
 
@@ -4152,7 +4252,7 @@
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| align | 该值将合并到 placement 的配置中，设置参考 [rc-tooltip](https://github.com/react-component/tooltip) | object | - | - |
+| align | 该值将合并到 placement 的配置中，设置参考 [dom-align](https://github.com/yiminghe/dom-align) | object | - | - |
 | arrow | 修改箭头的显示状态以及修改箭头是否指向目标元素中心 | boolean \| { pointAtCenter: boolean } | true | 5.2.0 |
 | autoAdjustOverflow | 气泡被遮挡时自动调整位置 | boolean | true | - |
 | color | 背景颜色 | string | - | 4.3.0 |
@@ -4191,7 +4291,7 @@
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| align | 该值将合并到 placement 的配置中，设置参考 [rc-tooltip](https://github.com/react-component/tooltip) | object | - | - |
+| align | 该值将合并到 placement 的配置中，设置参考 [dom-align](https://github.com/yiminghe/dom-align) | object | - | - |
 | arrow | 修改箭头的显示状态以及修改箭头是否指向目标元素中心 | boolean \| { pointAtCenter: boolean } | true | 5.2.0 |
 | autoAdjustOverflow | 气泡被遮挡时自动调整位置 | boolean | true | - |
 | color | 背景颜色 | string | - | 4.3.0 |
@@ -4214,7 +4314,7 @@
 
 参数: align
 
-说明: 该值将合并到 placement 的配置中，设置参考 [rc-tooltip](https://github.com/react-component/tooltip)
+说明: 该值将合并到 placement 的配置中，设置参考 [dom-align](https://github.com/yiminghe/dom-align)
 
 类型: object
 
@@ -4430,13 +4530,13 @@
 
 #### Timeline - Timeline
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| mode | 通过设置 `mode` 可以改变时间轴和内容的相对位置 | `left` \| `alternate` \| `right` | - |
-| pending | 指定最后一个幽灵节点是否存在或内容 | ReactNode | false |
-| pendingDot | 当最后一个幽灵节点存在時，指定其时间图点 | ReactNode | \<LoadingOutlined /> |
-| reverse | 节点排序 | boolean | false |
-| items | 选项配置 | [Items](#Items)\[] | 5.2.0 |
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| mode | 通过设置 `mode` 可以改变时间轴和内容的相对位置 | `left` \| `alternate` \| `right` | - | - |
+| pending | 指定最后一个幽灵节点是否存在或内容 | ReactNode | false | - |
+| pendingDot | 当最后一个幽灵节点存在時，指定其时间图点 | ReactNode | \<LoadingOutlined /> | - |
+| reverse | 节点排序 | boolean | false | - |
+| items | 选项配置 | [Items](#Items)\[] | - | 5.2.0 |
 
 #### Timeline - Items
 
@@ -4450,13 +4550,13 @@
 
 ### ant-design 的 Timeline - Timeline 有哪些配置？
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| mode | 通过设置 `mode` 可以改变时间轴和内容的相对位置 | `left` \| `alternate` \| `right` | - |
-| pending | 指定最后一个幽灵节点是否存在或内容 | ReactNode | false |
-| pendingDot | 当最后一个幽灵节点存在時，指定其时间图点 | ReactNode | \<LoadingOutlined /> |
-| reverse | 节点排序 | boolean | false |
-| items | 选项配置 | [Items](#Items)\[] | 5.2.0 |
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| mode | 通过设置 `mode` 可以改变时间轴和内容的相对位置 | `left` \| `alternate` \| `right` | - | - |
+| pending | 指定最后一个幽灵节点是否存在或内容 | ReactNode | false | - |
+| pendingDot | 当最后一个幽灵节点存在時，指定其时间图点 | ReactNode | \<LoadingOutlined /> | - |
+| reverse | 节点排序 | boolean | false | - |
+| items | 选项配置 | [Items](#Items)\[] | - | 5.2.0 |
 
 ### ant-design 中 Timeline - Timeline的mode属性如何使用？
 
@@ -4468,6 +4568,8 @@
 
 默认值: -
 
+版本: -
+
 ### ant-design 中 Timeline - Timeline的pending属性如何使用？
 
 参数: pending
@@ -4477,6 +4579,8 @@
 类型: ReactNode
 
 默认值: false
+
+版本: -
 
 ### ant-design 中 Timeline - Timeline的pendingDot属性如何使用？
 
@@ -4488,6 +4592,8 @@
 
 默认值: \<LoadingOutlined />
 
+版本: -
+
 ### ant-design 中 Timeline - Timeline的reverse属性如何使用？
 
 参数: reverse
@@ -4498,6 +4604,8 @@
 
 默认值: false
 
+版本: -
+
 ### ant-design 中 Timeline - Timeline的items属性如何使用？
 
 参数: items
@@ -4506,7 +4614,9 @@
 
 类型: [Items](#Items)\[]
 
-默认值: 5.2.0
+默认值: -
+
+版本: 5.2.0
 
 ### ant-design 的 Timeline - Items 有哪些配置？
 
@@ -4594,6 +4704,7 @@
 | placement | 选择框弹出的位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | bottomLeft | - |
 | popupClassName | 弹出层类名 | string | - | - |
 | popupStyle | 弹出层样式对象 | object | - | - |
+| prefix | 自定义前缀 | ReactNode | - | 5.22.0 |
 | renderExtraFooter | 选择框底部显示自定义的内容 | () => ReactNode | - | - |
 | secondStep | 秒选项间隔 | number | 1 | - |
 | showNow | 面板是否显示“此刻”按钮 | boolean | - | 4.4.0 |
@@ -4645,6 +4756,7 @@
 | placement | 选择框弹出的位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | bottomLeft | - |
 | popupClassName | 弹出层类名 | string | - | - |
 | popupStyle | 弹出层样式对象 | object | - | - |
+| prefix | 自定义前缀 | ReactNode | - | 5.22.0 |
 | renderExtraFooter | 选择框底部显示自定义的内容 | () => ReactNode | - | - |
 | secondStep | 秒选项间隔 | number | 1 | - |
 | showNow | 面板是否显示“此刻”按钮 | boolean | - | 4.4.0 |
@@ -4897,6 +5009,18 @@
 默认值: -
 
 版本: -
+
+### ant-design 中 TimePicker - TimePicker的prefix属性如何使用？
+
+参数: prefix
+
+说明: 自定义前缀
+
+类型: ReactNode
+
+默认值: -
+
+版本: 5.22.0
 
 ### ant-design 中 TimePicker - TimePicker的renderExtraFooter属性如何使用？
 
@@ -5226,7 +5350,7 @@
 | hideAdd | 是否隐藏加号图标，在 `type="editable-card"` 时有效 | boolean | false | - |
 | indicator | 自定义指示条的长度和对齐方式 | { size?: number \| (origin: number) => number; align: `start` \| `center` \| `end`; } | - | 5.13.0 |
 | items | 配置选项卡内容 | [TabItemType](#tabitemtype) | \[] | 4.23.0 |
-| moreIcon | 自定义折叠 icon | ReactNode | `<EllipsisOutlined />` | 4.14.0 |
+| more | 自定义折叠菜单属性 | [MoreProps](#moreprops) | { icon: `<EllipsisOutlined />` , trigger: 'hover' } | - |
 | removeIcon | 自定义删除按钮，设置 `type="editable-card"` 时有效 | ReactNode | `<CloseOutlined />` | 5.15.0 |
 | popupClassName | 更多菜单的 `className` | string | - | 4.21.0 |
 | renderTabBar | 替换 TabBar，用于二次封装标签头 | (props: DefaultTabBarProps, DefaultTabBar: React.ComponentClass) => React.ReactElement | - | - |
@@ -5256,6 +5380,13 @@
 | children | 选项卡头显示内容 | ReactNode | - | - |
 | closable | 是否显示选项卡的关闭按钮，在 `type="editable-card"` 时有效 | boolean | true | - |
 
+#### Tabs - MoreProps
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| icon | 自定义折叠图标 | ReactNode | - | - |
+| [DropdownProps](/components/dropdown-cn#api) | - | - | - | - |
+
 ### ant-design 的 Tabs - Tabs 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -5268,7 +5399,7 @@
 | hideAdd | 是否隐藏加号图标，在 `type="editable-card"` 时有效 | boolean | false | - |
 | indicator | 自定义指示条的长度和对齐方式 | { size?: number \| (origin: number) => number; align: `start` \| `center` \| `end`; } | - | 5.13.0 |
 | items | 配置选项卡内容 | [TabItemType](#tabitemtype) | \[] | 4.23.0 |
-| moreIcon | 自定义折叠 icon | ReactNode | `<EllipsisOutlined />` | 4.14.0 |
+| more | 自定义折叠菜单属性 | [MoreProps](#moreprops) | { icon: `<EllipsisOutlined />` , trigger: 'hover' } | - |
 | removeIcon | 自定义删除按钮，设置 `type="editable-card"` 时有效 | ReactNode | `<CloseOutlined />` | 5.15.0 |
 | popupClassName | 更多菜单的 `className` | string | - | 4.21.0 |
 | renderTabBar | 替换 TabBar，用于二次封装标签头 | (props: DefaultTabBarProps, DefaultTabBar: React.ComponentClass) => React.ReactElement | - | - |
@@ -5380,17 +5511,17 @@
 
 版本: 4.23.0
 
-### ant-design 中 Tabs - Tabs的moreIcon属性如何使用？
+### ant-design 中 Tabs - Tabs的more属性如何使用？
 
-参数: moreIcon
+参数: more
 
-说明: 自定义折叠 icon
+说明: 自定义折叠菜单属性
 
-类型: ReactNode
+类型: [MoreProps](#moreprops)
 
-默认值: `<EllipsisOutlined />`
+默认值: { icon: `<EllipsisOutlined />` , trigger: 'hover' }
 
-版本: 4.14.0
+版本: -
 
 ### ant-design 中 Tabs - Tabs的removeIcon属性如何使用？
 
@@ -5682,6 +5813,37 @@
 
 版本: -
 
+### ant-design 的 Tabs - MoreProps 有哪些配置？
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| icon | 自定义折叠图标 | ReactNode | - | - |
+| [DropdownProps](/components/dropdown-cn#api) | - | - | - | - |
+
+### ant-design 中 Tabs - MoreProps的icon属性如何使用？
+
+参数: icon
+
+说明: 自定义折叠图标
+
+类型: ReactNode
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Tabs - MoreProps的[DropdownProps](/components/dropdown-cn#api)属性如何使用？
+
+参数: [DropdownProps](/components/dropdown-cn#api)
+
+说明: -
+
+类型: -
+
+默认值: -
+
+版本: -
+
 ### ant-design 的 Table 有哪些配置？
 
 #### Table - Table
@@ -5737,7 +5899,6 @@
 | defaultSortOrder | 默认排序顺序 | `ascend` \| `descend` | - | - |
 | ellipsis | 超过宽度将自动省略，暂不支持和排序筛选一起使用。<br />设置为 `true` 或 `{ showTitle?: boolean }` 时，表格布局将变成 `tableLayout="fixed"`。 | boolean \| { showTitle?: boolean } | false | showTitle: 4.3.0 |
 | filterDropdown | 可以自定义筛选菜单，此函数只负责渲染图层，需要自行编写各种交互 | ReactNode \| (props: [FilterDropdownProps](https://github.com/ant-design/ant-design/blob/ecc54dda839619e921c0ace530408871f0281c2a/components/table/interface.tsx#L79)) => ReactNode | - | - |
-| filterDropdownOpen | 用于控制自定义筛选菜单是否可见 | boolean | - | - |
 | filtered | 标识数据是否经过过滤，筛选图标会高亮 | boolean | false | - |
 | filteredValue | 筛选的受控属性，外界可用此控制列的筛选状态，值为已筛选的 value 数组 | string\[] | - | - |
 | filterIcon | 自定义 filter 图标。 | ReactNode \| (filtered: boolean) => ReactNode | false | - |
@@ -5746,6 +5907,7 @@
 | filterMode | 指定筛选菜单的用户界面 | 'menu' \| 'tree' | 'menu' | 4.17.0 |
 | filterSearch | 筛选菜单项是否可搜索 | boolean \| function(input, record):boolean | false | boolean:4.17.0 function:4.19.0 |
 | filters | 表头的筛选菜单项 | object\[] | - | - |
+| filterDropdownProps | 自定义下拉属性，在 `<5.22.0` 之前可用 `filterDropdownOpen` 和 `onFilterDropdownOpenChange` | [DropdownProps](/components/dropdown#api) | - | 5.22.0 |
 | fixed | （IE 下无效）列是否固定，可选 `true` (等效于 `left`) `left` `right` | boolean \| string | false | - |
 | key | React 需要的 key，如果已经设置了唯一的 `dataIndex`，可以忽略这个属性 | string | - | - |
 | render | 生成复杂数据的渲染函数，参数分别为当前行的值，当前行数据，行索引 | function(text, record, index) {} | - | - |
@@ -5759,10 +5921,10 @@
 | sortIcon | 自定义 sort 图标 | (props: { sortOrder }) => ReactNode | - | 5.6.0 |
 | title | 列头显示文字（函数用法 `3.10.0` 后支持） | ReactNode \| ({ sortOrder, sortColumn, filters }) => ReactNode | - | - |
 | width | 列宽度（[指定了也不生效？](https://github.com/ant-design/ant-design/issues/13825#issuecomment-449889241)） | string \| number | - | - |
+| minWidth | 最小列宽度，只在 `tableLayout="auto"` 时有效 | number | - | 5.21.0 |
 | hidden | 隐藏列 | boolean | false | 5.13.0 |
 | onCell | 设置单元格属性 | function(record, rowIndex) | - | - |
 | onFilter | 本地模式下，确定筛选的运行函数 | function | - | - |
-| onFilterDropdownOpenChange | 自定义筛选菜单可见变化时调用 | function(visible) {} | - | - |
 | onHeaderCell | 设置头部单元格属性 | function(column) | - | - |
 
 #### Table - ColumnGroup
@@ -5786,16 +5948,16 @@
 | columnWidth | 自定义展开列宽度 | string \| number | - | - |
 | defaultExpandAllRows | 初始时，是否展开所有行 | boolean | false | - |
 | defaultExpandedRowKeys | 默认展开的行 | string\[] | - | - |
-| expandedRowClassName | 展开行的 className | function(record, index, indent): string | - | - |
+| expandedRowClassName | 展开行的 className | string \| (record, index, indent) => string | - | string: 5.22.0 |
 | expandedRowKeys | 展开的行，控制属性 | string\[] | - | - |
 | expandedRowRender | 额外的展开行 | function(record, index, indent, expanded): ReactNode | - | - |
 | expandIcon | 自定义展开图标，参考[示例](https://codesandbox.io/s/fervent-bird-nuzpr) | function(props): ReactNode | - | - |
 | expandRowByClick | 通过点击行来展开子行 | boolean | false | - |
 | fixed | 控制展开图标是否固定，可选 `true` `'left'` `'right'` | boolean \| string | false | 4.16.0 |
 | indentSize | 展示树形数据时，每层缩进的宽度，以 px 为单位 | number | 15 | - |
-| rowExpandable | 设置是否允许行展开 | (record) => boolean | - | - |
-| showExpandColumn | 设置是否展示行展开列 | boolean | true | 4.18.0 |
-| onExpand | 点击展开图标时触发 | function(record, event) | - | - |
+| rowExpandable | 设置是否允许行展开（`dataSource` 若存在 `children` 字段将不生效） | (record) => boolean | - | - |
+| showExpandColumn | 是否显示展开图标列 | boolean | true | 4.18.0 |
+| onExpand | 点击展开图标时触发 | function(expanded, record) | - | - |
 | onExpandedRowsChange | 展开的行变化时触发 | function(expandedRows) | - | - |
 
 #### Table - rowSelection
@@ -6247,7 +6409,6 @@
 | defaultSortOrder | 默认排序顺序 | `ascend` \| `descend` | - | - |
 | ellipsis | 超过宽度将自动省略，暂不支持和排序筛选一起使用。<br />设置为 `true` 或 `{ showTitle?: boolean }` 时，表格布局将变成 `tableLayout="fixed"`。 | boolean \| { showTitle?: boolean } | false | showTitle: 4.3.0 |
 | filterDropdown | 可以自定义筛选菜单，此函数只负责渲染图层，需要自行编写各种交互 | ReactNode \| (props: [FilterDropdownProps](https://github.com/ant-design/ant-design/blob/ecc54dda839619e921c0ace530408871f0281c2a/components/table/interface.tsx#L79)) => ReactNode | - | - |
-| filterDropdownOpen | 用于控制自定义筛选菜单是否可见 | boolean | - | - |
 | filtered | 标识数据是否经过过滤，筛选图标会高亮 | boolean | false | - |
 | filteredValue | 筛选的受控属性，外界可用此控制列的筛选状态，值为已筛选的 value 数组 | string\[] | - | - |
 | filterIcon | 自定义 filter 图标。 | ReactNode \| (filtered: boolean) => ReactNode | false | - |
@@ -6256,6 +6417,7 @@
 | filterMode | 指定筛选菜单的用户界面 | 'menu' \| 'tree' | 'menu' | 4.17.0 |
 | filterSearch | 筛选菜单项是否可搜索 | boolean \| function(input, record):boolean | false | boolean:4.17.0 function:4.19.0 |
 | filters | 表头的筛选菜单项 | object\[] | - | - |
+| filterDropdownProps | 自定义下拉属性，在 `<5.22.0` 之前可用 `filterDropdownOpen` 和 `onFilterDropdownOpenChange` | [DropdownProps](/components/dropdown#api) | - | 5.22.0 |
 | fixed | （IE 下无效）列是否固定，可选 `true` (等效于 `left`) `left` `right` | boolean \| string | false | - |
 | key | React 需要的 key，如果已经设置了唯一的 `dataIndex`，可以忽略这个属性 | string | - | - |
 | render | 生成复杂数据的渲染函数，参数分别为当前行的值，当前行数据，行索引 | function(text, record, index) {} | - | - |
@@ -6269,10 +6431,10 @@
 | sortIcon | 自定义 sort 图标 | (props: { sortOrder }) => ReactNode | - | 5.6.0 |
 | title | 列头显示文字（函数用法 `3.10.0` 后支持） | ReactNode \| ({ sortOrder, sortColumn, filters }) => ReactNode | - | - |
 | width | 列宽度（[指定了也不生效？](https://github.com/ant-design/ant-design/issues/13825#issuecomment-449889241)） | string \| number | - | - |
+| minWidth | 最小列宽度，只在 `tableLayout="auto"` 时有效 | number | - | 5.21.0 |
 | hidden | 隐藏列 | boolean | false | 5.13.0 |
 | onCell | 设置单元格属性 | function(record, rowIndex) | - | - |
 | onFilter | 本地模式下，确定筛选的运行函数 | function | - | - |
-| onFilterDropdownOpenChange | 自定义筛选菜单可见变化时调用 | function(visible) {} | - | - |
 | onHeaderCell | 设置头部单元格属性 | function(column) | - | - |
 
 ### ant-design 中 Table - Column的align属性如何使用？
@@ -6383,18 +6545,6 @@
 
 版本: -
 
-### ant-design 中 Table - Column的filterDropdownOpen属性如何使用？
-
-参数: filterDropdownOpen
-
-说明: 用于控制自定义筛选菜单是否可见
-
-类型: boolean
-
-默认值: -
-
-版本: -
-
 ### ant-design 中 Table - Column的filtered属性如何使用？
 
 参数: filtered
@@ -6490,6 +6640,18 @@
 默认值: -
 
 版本: -
+
+### ant-design 中 Table - Column的filterDropdownProps属性如何使用？
+
+参数: filterDropdownProps
+
+说明: 自定义下拉属性，在 `<5.22.0` 之前可用 `filterDropdownOpen` 和 `onFilterDropdownOpenChange`
+
+类型: [DropdownProps](/components/dropdown#api)
+
+默认值: -
+
+版本: 5.22.0
 
 ### ant-design 中 Table - Column的fixed属性如何使用？
 
@@ -6647,6 +6809,18 @@
 
 版本: -
 
+### ant-design 中 Table - Column的minWidth属性如何使用？
+
+参数: minWidth
+
+说明: 最小列宽度，只在 `tableLayout="auto"` 时有效
+
+类型: number
+
+默认值: -
+
+版本: 5.21.0
+
 ### ant-design 中 Table - Column的hidden属性如何使用？
 
 参数: hidden
@@ -6678,18 +6852,6 @@
 说明: 本地模式下，确定筛选的运行函数
 
 类型: function
-
-默认值: -
-
-版本: -
-
-### ant-design 中 Table - Column的onFilterDropdownOpenChange属性如何使用？
-
-参数: onFilterDropdownOpenChange
-
-说明: 自定义筛选菜单可见变化时调用
-
-类型: function(visible) {}
 
 默认值: -
 
@@ -6748,16 +6910,16 @@
 | columnWidth | 自定义展开列宽度 | string \| number | - | - |
 | defaultExpandAllRows | 初始时，是否展开所有行 | boolean | false | - |
 | defaultExpandedRowKeys | 默认展开的行 | string\[] | - | - |
-| expandedRowClassName | 展开行的 className | function(record, index, indent): string | - | - |
+| expandedRowClassName | 展开行的 className | string \| (record, index, indent) => string | - | string: 5.22.0 |
 | expandedRowKeys | 展开的行，控制属性 | string\[] | - | - |
 | expandedRowRender | 额外的展开行 | function(record, index, indent, expanded): ReactNode | - | - |
 | expandIcon | 自定义展开图标，参考[示例](https://codesandbox.io/s/fervent-bird-nuzpr) | function(props): ReactNode | - | - |
 | expandRowByClick | 通过点击行来展开子行 | boolean | false | - |
 | fixed | 控制展开图标是否固定，可选 `true` `'left'` `'right'` | boolean \| string | false | 4.16.0 |
 | indentSize | 展示树形数据时，每层缩进的宽度，以 px 为单位 | number | 15 | - |
-| rowExpandable | 设置是否允许行展开 | (record) => boolean | - | - |
-| showExpandColumn | 设置是否展示行展开列 | boolean | true | 4.18.0 |
-| onExpand | 点击展开图标时触发 | function(record, event) | - | - |
+| rowExpandable | 设置是否允许行展开（`dataSource` 若存在 `children` 字段将不生效） | (record) => boolean | - | - |
+| showExpandColumn | 是否显示展开图标列 | boolean | true | 4.18.0 |
+| onExpand | 点击展开图标时触发 | function(expanded, record) | - | - |
 | onExpandedRowsChange | 展开的行变化时触发 | function(expandedRows) | - | - |
 
 ### ant-design 中 Table - expandable的childrenColumnName属性如何使用？
@@ -6826,11 +6988,11 @@
 
 说明: 展开行的 className
 
-类型: function(record, index, indent): string
+类型: string \| (record, index, indent) => string
 
 默认值: -
 
-版本: -
+版本: string: 5.22.0
 
 ### ant-design 中 Table - expandable的expandedRowKeys属性如何使用？
 
@@ -6908,7 +7070,7 @@
 
 参数: rowExpandable
 
-说明: 设置是否允许行展开
+说明: 设置是否允许行展开（`dataSource` 若存在 `children` 字段将不生效）
 
 类型: (record) => boolean
 
@@ -6920,7 +7082,7 @@
 
 参数: showExpandColumn
 
-说明: 设置是否展示行展开列
+说明: 是否显示展开图标列
 
 类型: boolean
 
@@ -6934,7 +7096,7 @@
 
 说明: 点击展开图标时触发
 
-类型: function(record, event)
+类型: function(expanded, record)
 
 默认值: -
 
@@ -8156,6 +8318,168 @@
 
 版本: 4.16.0
 
+### ant-design 的 Splitter 有哪些配置？
+
+#### Splitter - Splitter
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| layout | 布局方向 | `horizontal` \| `vertical` | `horizontal` | - |
+| onResizeStart | 开始拖拽之前回调 | `(sizes: number[]) => void` | - | - |
+| onResize | 面板大小变化回调 | `(sizes: number[]) => void` | - | - |
+| onResizeEnd | 拖拽结束回调 | `(sizes: number[]) => void` | - | - |
+
+#### Splitter - Panel
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| defaultSize | 初始面板大小，支持数字 px 或者文字 '百分比%' 类型 | `number \| string` | - | - |
+| min | 最小阈值，支持数字 px 或者文字 '百分比%' 类型 | `number \| string` | - | - |
+| max | 最大阈值，支持数字 px 或者文字 '百分比%' 类型 | `number \| string` | - | - |
+| size | 受控面板大小，支持数字 px 或者文字 '百分比%' 类型 | `number \| string` | - | - |
+| collapsible | 快速折叠 | `boolean \| { start?: boolean; end?: boolean }` | `false` | - |
+| resizable | 是否开启拖拽伸缩 | `boolean` | `true` | - |
+
+### ant-design 的 Splitter - Splitter 有哪些配置？
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| layout | 布局方向 | `horizontal` \| `vertical` | `horizontal` | - |
+| onResizeStart | 开始拖拽之前回调 | `(sizes: number[]) => void` | - | - |
+| onResize | 面板大小变化回调 | `(sizes: number[]) => void` | - | - |
+| onResizeEnd | 拖拽结束回调 | `(sizes: number[]) => void` | - | - |
+
+### ant-design 中 Splitter - Splitter的layout属性如何使用？
+
+参数: layout
+
+说明: 布局方向
+
+类型: `horizontal` \| `vertical`
+
+默认值: `horizontal`
+
+版本: -
+
+### ant-design 中 Splitter - Splitter的onResizeStart属性如何使用？
+
+参数: onResizeStart
+
+说明: 开始拖拽之前回调
+
+类型: `(sizes: number[]) => void`
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Splitter - Splitter的onResize属性如何使用？
+
+参数: onResize
+
+说明: 面板大小变化回调
+
+类型: `(sizes: number[]) => void`
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Splitter - Splitter的onResizeEnd属性如何使用？
+
+参数: onResizeEnd
+
+说明: 拖拽结束回调
+
+类型: `(sizes: number[]) => void`
+
+默认值: -
+
+版本: -
+
+### ant-design 的 Splitter - Panel 有哪些配置？
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| defaultSize | 初始面板大小，支持数字 px 或者文字 '百分比%' 类型 | `number \| string` | - | - |
+| min | 最小阈值，支持数字 px 或者文字 '百分比%' 类型 | `number \| string` | - | - |
+| max | 最大阈值，支持数字 px 或者文字 '百分比%' 类型 | `number \| string` | - | - |
+| size | 受控面板大小，支持数字 px 或者文字 '百分比%' 类型 | `number \| string` | - | - |
+| collapsible | 快速折叠 | `boolean \| { start?: boolean; end?: boolean }` | `false` | - |
+| resizable | 是否开启拖拽伸缩 | `boolean` | `true` | - |
+
+### ant-design 中 Splitter - Panel的defaultSize属性如何使用？
+
+参数: defaultSize
+
+说明: 初始面板大小，支持数字 px 或者文字 '百分比%' 类型
+
+类型: `number \| string`
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Splitter - Panel的min属性如何使用？
+
+参数: min
+
+说明: 最小阈值，支持数字 px 或者文字 '百分比%' 类型
+
+类型: `number \| string`
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Splitter - Panel的max属性如何使用？
+
+参数: max
+
+说明: 最大阈值，支持数字 px 或者文字 '百分比%' 类型
+
+类型: `number \| string`
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Splitter - Panel的size属性如何使用？
+
+参数: size
+
+说明: 受控面板大小，支持数字 px 或者文字 '百分比%' 类型
+
+类型: `number \| string`
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Splitter - Panel的collapsible属性如何使用？
+
+参数: collapsible
+
+说明: 快速折叠
+
+类型: `boolean \| { start?: boolean; end?: boolean }`
+
+默认值: `false`
+
+版本: -
+
+### ant-design 中 Splitter - Panel的resizable属性如何使用？
+
+参数: resizable
+
+说明: 是否开启拖拽伸缩
+
+类型: `boolean`
+
+默认值: `true`
+
+版本: -
+
 ### ant-design 的 Spin 有哪些配置？
 
 #### Spin - Spin
@@ -8163,24 +8487,26 @@
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
 | delay | 延迟显示加载效果的时间（防止闪烁） | number (毫秒) | - |
-| indicator | 加载指示符 | ReactNode | - |
-| size | 组件大小，可选值为 `small` `default` `large` | string | `default` |
-| spinning | 是否为加载中状态 | boolean | true |
+| fullscreen | 显示带有 `Spin` 组件的背景 | boolean | false | 5.11.0 |
+| indicator | 加载指示符 | ReactNode | - | - |
+| percent | 展示进度，当设置 `percent="auto"` 时会预估一个永远不会停止的进度 | number \| 'auto' | - | 5.18.0 |
+| size | 组件大小，可选值为 `small` `default` `large` | string | `default` | - |
+| spinning | 是否为加载中状态 | boolean | true | - |
 | tip | 当作为包裹元素时，可以自定义描述文案 | ReactNode | - |
 | wrapperClassName | 包装器的类属性 | string | - |
-| fullscreen | 显示带有 `Spin` 组件的背景 | boolean | false | 5.11.0 |
 
 ### ant-design 的 Spin - Spin 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
 | delay | 延迟显示加载效果的时间（防止闪烁） | number (毫秒) | - |
-| indicator | 加载指示符 | ReactNode | - |
-| size | 组件大小，可选值为 `small` `default` `large` | string | `default` |
-| spinning | 是否为加载中状态 | boolean | true |
+| fullscreen | 显示带有 `Spin` 组件的背景 | boolean | false | 5.11.0 |
+| indicator | 加载指示符 | ReactNode | - | - |
+| percent | 展示进度，当设置 `percent="auto"` 时会预估一个永远不会停止的进度 | number \| 'auto' | - | 5.18.0 |
+| size | 组件大小，可选值为 `small` `default` `large` | string | `default` | - |
+| spinning | 是否为加载中状态 | boolean | true | - |
 | tip | 当作为包裹元素时，可以自定义描述文案 | ReactNode | - |
 | wrapperClassName | 包装器的类属性 | string | - |
-| fullscreen | 显示带有 `Spin` 组件的背景 | boolean | false | 5.11.0 |
 
 ### ant-design 中 Spin - Spin的delay属性如何使用？
 
@@ -8192,6 +8518,18 @@
 
 默认值: -
 
+### ant-design 中 Spin - Spin的fullscreen属性如何使用？
+
+参数: fullscreen
+
+说明: 显示带有 `Spin` 组件的背景
+
+类型: boolean
+
+默认值: false
+
+版本: 5.11.0
+
 ### ant-design 中 Spin - Spin的indicator属性如何使用？
 
 参数: indicator
@@ -8201,6 +8539,20 @@
 类型: ReactNode
 
 默认值: -
+
+版本: -
+
+### ant-design 中 Spin - Spin的percent属性如何使用？
+
+参数: percent
+
+说明: 展示进度，当设置 `percent="auto"` 时会预估一个永远不会停止的进度
+
+类型: number \| 'auto'
+
+默认值: -
+
+版本: 5.18.0
 
 ### ant-design 中 Spin - Spin的size属性如何使用？
 
@@ -8212,6 +8564,8 @@
 
 默认值: `default`
 
+版本: -
+
 ### ant-design 中 Spin - Spin的spinning属性如何使用？
 
 参数: spinning
@@ -8221,6 +8575,8 @@
 类型: boolean
 
 默认值: true
+
+版本: -
 
 ### ant-design 中 Spin - Spin的tip属性如何使用？
 
@@ -8242,18 +8598,6 @@
 
 默认值: -
 
-### ant-design 中 Spin - Spin的fullscreen属性如何使用？
-
-参数: fullscreen
-
-说明: 显示带有 `Spin` 组件的背景
-
-类型: boolean
-
-默认值: false
-
-版本: 5.11.0
-
 ### ant-design 的 Space 有哪些配置？
 
 #### Space - Space
@@ -8264,7 +8608,7 @@
 | classNames | 语义化 className | [Record\<SemanticDOM, string>](#semantic-dom) | - | - |
 | direction | 间距方向 | `vertical` \| `horizontal` | `horizontal` | 4.1.0 |
 | size | 间距大小 | [Size](#size) \| [Size\[\]](#size) | `small` | 4.1.0 \| Array: 4.9.0 |
-| split | 设置拆分 | ReactNode | - | 4.7.0 |
+| split | 设置分隔符 | ReactNode | - | 4.7.0 |
 | styles | 语义化 style | [Record\<SemanticDOM, CSSProperties>](#semantic-dom) | - | - |
 | wrap | 是否自动换行，仅在 `horizontal` 时有效 | boolean | false | 4.9.0 |
 
@@ -8284,7 +8628,7 @@
 | classNames | 语义化 className | [Record\<SemanticDOM, string>](#semantic-dom) | - | - |
 | direction | 间距方向 | `vertical` \| `horizontal` | `horizontal` | 4.1.0 |
 | size | 间距大小 | [Size](#size) \| [Size\[\]](#size) | `small` | 4.1.0 \| Array: 4.9.0 |
-| split | 设置拆分 | ReactNode | - | 4.7.0 |
+| split | 设置分隔符 | ReactNode | - | 4.7.0 |
 | styles | 语义化 style | [Record\<SemanticDOM, CSSProperties>](#semantic-dom) | - | - |
 | wrap | 是否自动换行，仅在 `horizontal` 时有效 | boolean | false | 4.9.0 |
 
@@ -8340,7 +8684,7 @@
 
 参数: split
 
-说明: 设置拆分
+说明: 设置分隔符
 
 类型: ReactNode
 
@@ -8434,7 +8778,7 @@
 | min | 最小值 | number | 0 | - |
 | range | 双滑块模式 | boolean \| [range](#range) | false | - |
 | reverse | 反向坐标轴 | boolean | false | - |
-| step | 步长，取值必须大于 0，并且可被 (max - min) 整除。当 `marks` 不为空对象时，可以设置 `step` 为 null，此时 Slider 的可选值仅有 marks 标出来的部分 | number \| null | 1 | - |
+| step | 步长，取值必须大于 0，并且可被 (max - min) 整除。当 `marks` 不为空对象时，可以设置 `step` 为 null，此时 Slider 的可选值仅有 `marks`、`min` 和 `max` | number \| null | 1 | - |
 | styles | 语义化结构 styles | [Record\<SemanticDOM, React.CSSProperties>](#semantic-dom) | - | 5.10.0 |
 | tooltip | 设置 Tooltip 相关属性 | [tooltip](#tooltip) | - | 4.23.0 |
 | value | 设置当前取值。当 `range` 为 false 时，使用 number，否则用 \[number, number] | number \| \[number, number] | - | - |
@@ -8444,9 +8788,12 @@
 
 #### Slider - range
 
-| 参数           | 说明                 | 类型    | 默认值 | 版本   |
-| -------------- | -------------------- | ------- | ------ | ------ |
-| draggableTrack | 范围刻度是否可被拖拽 | boolean | false  | 4.10.0 |
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| draggableTrack | 范围刻度是否可被拖拽 | boolean | false | - |
+| editable | 启动动态增减节点，不能和 `draggableTrack` 一同使用 | boolean | false | 5.20.0 |
+| minCount | 配置 `editable` 时，最小节点数量 | number | 0 | 5.20.0 |
+| maxCount | 配置 `editable` 时，最大节点数量 | number | - | 5.20.0 |
 
 #### Slider - tooltip
 
@@ -8481,7 +8828,7 @@
 | min | 最小值 | number | 0 | - |
 | range | 双滑块模式 | boolean \| [range](#range) | false | - |
 | reverse | 反向坐标轴 | boolean | false | - |
-| step | 步长，取值必须大于 0，并且可被 (max - min) 整除。当 `marks` 不为空对象时，可以设置 `step` 为 null，此时 Slider 的可选值仅有 marks 标出来的部分 | number \| null | 1 | - |
+| step | 步长，取值必须大于 0，并且可被 (max - min) 整除。当 `marks` 不为空对象时，可以设置 `step` 为 null，此时 Slider 的可选值仅有 `marks`、`min` 和 `max` | number \| null | 1 | - |
 | styles | 语义化结构 styles | [Record\<SemanticDOM, React.CSSProperties>](#semantic-dom) | - | 5.10.0 |
 | tooltip | 设置 Tooltip 相关属性 | [tooltip](#tooltip) | - | 4.23.0 |
 | value | 设置当前取值。当 `range` 为 false 时，使用 number，否则用 \[number, number] | number \| \[number, number] | - | - |
@@ -8637,7 +8984,7 @@
 
 参数: step
 
-说明: 步长，取值必须大于 0，并且可被 (max - min) 整除。当 `marks` 不为空对象时，可以设置 `step` 为 null，此时 Slider 的可选值仅有 marks 标出来的部分
+说明: 步长，取值必须大于 0，并且可被 (max - min) 整除。当 `marks` 不为空对象时，可以设置 `step` 为 null，此时 Slider 的可选值仅有 `marks`、`min` 和 `max`
 
 类型: number \| null
 
@@ -8719,9 +9066,12 @@
 
 ### ant-design 的 Slider - range 有哪些配置？
 
-| 参数           | 说明                 | 类型    | 默认值 | 版本   |
-| -------------- | -------------------- | ------- | ------ | ------ |
-| draggableTrack | 范围刻度是否可被拖拽 | boolean | false  | 4.10.0 |
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| draggableTrack | 范围刻度是否可被拖拽 | boolean | false | - |
+| editable | 启动动态增减节点，不能和 `draggableTrack` 一同使用 | boolean | false | 5.20.0 |
+| minCount | 配置 `editable` 时，最小节点数量 | number | 0 | 5.20.0 |
+| maxCount | 配置 `editable` 时，最大节点数量 | number | - | 5.20.0 |
 
 ### ant-design 中 Slider - range的draggableTrack属性如何使用？
 
@@ -8733,7 +9083,43 @@
 
 默认值: false
 
-版本: 4.10.0
+版本: -
+
+### ant-design 中 Slider - range的editable属性如何使用？
+
+参数: editable
+
+说明: 启动动态增减节点，不能和 `draggableTrack` 一同使用
+
+类型: boolean
+
+默认值: false
+
+版本: 5.20.0
+
+### ant-design 中 Slider - range的minCount属性如何使用？
+
+参数: minCount
+
+说明: 配置 `editable` 时，最小节点数量
+
+类型: number
+
+默认值: 0
+
+版本: 5.20.0
+
+### ant-design 中 Slider - range的maxCount属性如何使用？
+
+参数: maxCount
+
+说明: 配置 `editable` 时，最大节点数量
+
+类型: number
+
+默认值: -
+
+版本: 5.20.0
 
 ### ant-design 的 Slider - tooltip 有哪些配置？
 
@@ -9133,7 +9519,7 @@
 | dropdownStyle | 下拉菜单的 style 属性 | CSSProperties | - | - |
 | fieldNames | 自定义节点 label、value、options、groupLabel 的字段 | object | { label: `label`, value: `value`, options: `options`, groupLabel: `label` } | 4.17.0（`groupLabel` 在 5.6.0 新增） |
 | filterOption | 是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 true，反之则返回 false。[示例](#select-demo-search) | boolean \| function(inputValue, option) | true | - |
-| filterSort | 搜索时对筛选结果项的排序函数, 类似[Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)里的 compareFunction | (optionA: Option, optionB: Option) => number | - | 4.9.0 |
+| filterSort | 搜索时对筛选结果项的排序函数, 类似[Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)里的 compareFunction | (optionA: Option, optionB: Option, info: { searchValue: string }) => number | - | `searchValue`: 5.19.0 |
 | getPopupContainer | 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codesandbox.io/s/4j168r7jw0) | function(triggerNode) | () => document.body | - |
 | labelInValue | 是否把每个选项的 label 包装到 value 中，会把 Select 的 value 类型从 `string` 变为 { value: string, label: ReactNode } 的格式 | boolean | false | - |
 | listHeight | 设置弹窗滚动高度 | number | 256 | - |
@@ -9152,6 +9538,7 @@
 | optionRender | 自定义渲染下拉选项 | (option: FlattenOptionData\<BaseOptionType> , info: { index: number }) => React.ReactNode | - | 5.11.0 |
 | placeholder | 选择框默认文本 | string | - | - |
 | placement | 选择框弹出的位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | bottomLeft | - |
+| prefix | 自定义前缀 | ReactNode | - | 5.22.0 |
 | removeIcon | 自定义的多选框清除图标 | ReactNode | - | - |
 | searchValue | 控制搜索文本 | string | - | - |
 | showSearch | 配置是否可搜索 | boolean | 单选为 false，多选为 true | - |
@@ -9159,7 +9546,7 @@
 | status | 设置校验状态 | 'error' \| 'warning' | - | 4.19.0 |
 | suffixIcon | 自定义的选择框后缀图标。以防止图标被用于其他交互，替换的图标默认不会响应展开、收缩事件，可以通过添加 `pointer-events: none` 样式透传。 | ReactNode | `<DownOutlined />` | - |
 | tagRender | 自定义 tag 内容 render，仅在 `mode` 为 `multiple` 或 `tags` 时生效 | (props) => ReactNode | - | - |
-| labelRender | 自定义当前选中的 label 内容 render | (label: ReactNode) => ReactNode | - | 5.15.0 |
+| labelRender | 自定义当前选中的 label 内容 render （LabelInValueType的定义见 [LabelInValueType](https://github.com/react-component/select/blob/b39c28aa2a94e7754ebc570f200ab5fd33bd31e7/src/Select.tsx#L70)） | (props: LabelInValueType) => ReactNode | - | 5.15.0 |
 | tokenSeparators | 自动分词的分隔符，仅在 `mode="tags"` 时生效 | string\[] | - | - |
 | value | 指定当前选中的条目，多选时为一个数组。（value 数组引用未变化时，Select 不会更新） | string \| string\[] \| <br />number \| number\[] \| <br />LabeledValue \| LabeledValue\[] | - | - |
 | variant | 形态变体 | `outlined` \| `borderless` \| `filled` | `outlined` | 5.13.0 |
@@ -9168,12 +9555,10 @@
 | onChange | 选中 option，或 input 的 value 变化时，调用此函数 | function(value, option:Option \| Array\<Option>) | - | - |
 | onClear | 清除内容时回调 | function | - | 4.6.0 |
 | onDeselect | 取消选中时调用，参数为选中项的 value (或 key) 值，仅在 `multiple` 或 `tags` 模式下生效 | function(value: string \| number \| LabeledValue) | - | - |
-| onDropdownVisibleChange | 展开下拉菜单的回调 | function(open) | - | - |
-| onFocus | 获得焦点时回调 | function | - | - |
-| onInputKeyDown | 按键按下时回调 | function | - | - |
-| onMouseEnter | 鼠标移入时回调 | function | - | - |
-| onMouseLeave | 鼠标移出时回调 | function | - | - |
-| onPopupScroll | 下拉列表滚动时的回调 | function | - | - |
+| onDropdownVisibleChange | 展开下拉菜单的回调 | (open: boolean) => void | - | - |
+| onFocus | 获得焦点时回调 | (event: FocusEvent) => void | - | - |
+| onInputKeyDown | 按键按下时回调 | (event: KeyboardEvent) => void | - | - |
+| onPopupScroll | 下拉列表滚动时的回调 | (event: UIEvent) => void | - | - |
 | onSearch | 文本框值变化时回调 | function(value: string) | - | - |
 | onSelect | 被选中时调用，参数为选中项的 value (或 key) 值 | function(value: string \| number \| LabeledValue, option: Option) | - | - |
 
@@ -9219,7 +9604,7 @@
 | dropdownStyle | 下拉菜单的 style 属性 | CSSProperties | - | - |
 | fieldNames | 自定义节点 label、value、options、groupLabel 的字段 | object | { label: `label`, value: `value`, options: `options`, groupLabel: `label` } | 4.17.0（`groupLabel` 在 5.6.0 新增） |
 | filterOption | 是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 true，反之则返回 false。[示例](#select-demo-search) | boolean \| function(inputValue, option) | true | - |
-| filterSort | 搜索时对筛选结果项的排序函数, 类似[Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)里的 compareFunction | (optionA: Option, optionB: Option) => number | - | 4.9.0 |
+| filterSort | 搜索时对筛选结果项的排序函数, 类似[Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)里的 compareFunction | (optionA: Option, optionB: Option, info: { searchValue: string }) => number | - | `searchValue`: 5.19.0 |
 | getPopupContainer | 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codesandbox.io/s/4j168r7jw0) | function(triggerNode) | () => document.body | - |
 | labelInValue | 是否把每个选项的 label 包装到 value 中，会把 Select 的 value 类型从 `string` 变为 { value: string, label: ReactNode } 的格式 | boolean | false | - |
 | listHeight | 设置弹窗滚动高度 | number | 256 | - |
@@ -9238,6 +9623,7 @@
 | optionRender | 自定义渲染下拉选项 | (option: FlattenOptionData\<BaseOptionType> , info: { index: number }) => React.ReactNode | - | 5.11.0 |
 | placeholder | 选择框默认文本 | string | - | - |
 | placement | 选择框弹出的位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | bottomLeft | - |
+| prefix | 自定义前缀 | ReactNode | - | 5.22.0 |
 | removeIcon | 自定义的多选框清除图标 | ReactNode | - | - |
 | searchValue | 控制搜索文本 | string | - | - |
 | showSearch | 配置是否可搜索 | boolean | 单选为 false，多选为 true | - |
@@ -9245,7 +9631,7 @@
 | status | 设置校验状态 | 'error' \| 'warning' | - | 4.19.0 |
 | suffixIcon | 自定义的选择框后缀图标。以防止图标被用于其他交互，替换的图标默认不会响应展开、收缩事件，可以通过添加 `pointer-events: none` 样式透传。 | ReactNode | `<DownOutlined />` | - |
 | tagRender | 自定义 tag 内容 render，仅在 `mode` 为 `multiple` 或 `tags` 时生效 | (props) => ReactNode | - | - |
-| labelRender | 自定义当前选中的 label 内容 render | (label: ReactNode) => ReactNode | - | 5.15.0 |
+| labelRender | 自定义当前选中的 label 内容 render （LabelInValueType的定义见 [LabelInValueType](https://github.com/react-component/select/blob/b39c28aa2a94e7754ebc570f200ab5fd33bd31e7/src/Select.tsx#L70)） | (props: LabelInValueType) => ReactNode | - | 5.15.0 |
 | tokenSeparators | 自动分词的分隔符，仅在 `mode="tags"` 时生效 | string\[] | - | - |
 | value | 指定当前选中的条目，多选时为一个数组。（value 数组引用未变化时，Select 不会更新） | string \| string\[] \| <br />number \| number\[] \| <br />LabeledValue \| LabeledValue\[] | - | - |
 | variant | 形态变体 | `outlined` \| `borderless` \| `filled` | `outlined` | 5.13.0 |
@@ -9254,12 +9640,10 @@
 | onChange | 选中 option，或 input 的 value 变化时，调用此函数 | function(value, option:Option \| Array\<Option>) | - | - |
 | onClear | 清除内容时回调 | function | - | 4.6.0 |
 | onDeselect | 取消选中时调用，参数为选中项的 value (或 key) 值，仅在 `multiple` 或 `tags` 模式下生效 | function(value: string \| number \| LabeledValue) | - | - |
-| onDropdownVisibleChange | 展开下拉菜单的回调 | function(open) | - | - |
-| onFocus | 获得焦点时回调 | function | - | - |
-| onInputKeyDown | 按键按下时回调 | function | - | - |
-| onMouseEnter | 鼠标移入时回调 | function | - | - |
-| onMouseLeave | 鼠标移出时回调 | function | - | - |
-| onPopupScroll | 下拉列表滚动时的回调 | function | - | - |
+| onDropdownVisibleChange | 展开下拉菜单的回调 | (open: boolean) => void | - | - |
+| onFocus | 获得焦点时回调 | (event: FocusEvent) => void | - | - |
+| onInputKeyDown | 按键按下时回调 | (event: KeyboardEvent) => void | - | - |
+| onPopupScroll | 下拉列表滚动时的回调 | (event: UIEvent) => void | - | - |
 | onSearch | 文本框值变化时回调 | function(value: string) | - | - |
 | onSelect | 被选中时调用，参数为选中项的 value (或 key) 值 | function(value: string \| number \| LabeledValue, option: Option) | - | - |
 
@@ -9425,11 +9809,11 @@
 
 说明: 搜索时对筛选结果项的排序函数, 类似[Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)里的 compareFunction
 
-类型: (optionA: Option, optionB: Option) => number
+类型: (optionA: Option, optionB: Option, info: { searchValue: string }) => number
 
 默认值: -
 
-版本: 4.9.0
+版本: `searchValue`: 5.19.0
 
 ### ant-design 中 Select - Select props的getPopupContainer属性如何使用？
 
@@ -9647,6 +10031,18 @@
 
 版本: -
 
+### ant-design 中 Select - Select props的prefix属性如何使用？
+
+参数: prefix
+
+说明: 自定义前缀
+
+类型: ReactNode
+
+默认值: -
+
+版本: 5.22.0
+
 ### ant-design 中 Select - Select props的removeIcon属性如何使用？
 
 参数: removeIcon
@@ -9735,9 +10131,9 @@
 
 参数: labelRender
 
-说明: 自定义当前选中的 label 内容 render
+说明: 自定义当前选中的 label 内容 render （LabelInValueType的定义见 [LabelInValueType](https://github.com/react-component/select/blob/b39c28aa2a94e7754ebc570f200ab5fd33bd31e7/src/Select.tsx#L70)）
 
-类型: (label: ReactNode) => ReactNode
+类型: (props: LabelInValueType) => ReactNode
 
 默认值: -
 
@@ -9845,7 +10241,7 @@
 
 说明: 展开下拉菜单的回调
 
-类型: function(open)
+类型: (open: boolean) => void
 
 默认值: -
 
@@ -9857,7 +10253,7 @@
 
 说明: 获得焦点时回调
 
-类型: function
+类型: (event: FocusEvent) => void
 
 默认值: -
 
@@ -9869,31 +10265,7 @@
 
 说明: 按键按下时回调
 
-类型: function
-
-默认值: -
-
-版本: -
-
-### ant-design 中 Select - Select props的onMouseEnter属性如何使用？
-
-参数: onMouseEnter
-
-说明: 鼠标移入时回调
-
-类型: function
-
-默认值: -
-
-版本: -
-
-### ant-design 中 Select - Select props的onMouseLeave属性如何使用？
-
-参数: onMouseLeave
-
-说明: 鼠标移出时回调
-
-类型: function
+类型: (event: KeyboardEvent) => void
 
 默认值: -
 
@@ -9905,7 +10277,7 @@
 
 说明: 下拉列表滚动时的回调
 
-类型: function
+类型: (event: UIEvent) => void
 
 默认值: -
 
@@ -10082,9 +10454,20 @@
 | defaultValue | 默认选中的值 | string \| number | - | - |
 | disabled | 是否禁用 | boolean | false | - |
 | onChange | 选项变化时的回调函数 | function(value: string \| number) | - | - |
-| options | 数据化配置选项内容 | string\[] \| number\[] \| Array<{ label: ReactNode value: string icon? ReactNode disabled?: boolean className?: string }> | \[] | - |
+| options | 数据化配置选项内容 | string\[] \| number\[] \| SegmentedItemType\[] | \[] | - |
 | size | 控件尺寸 | `large` \| `middle` \| `small` | `middle` | - |
+| vertical | 排列方向 | boolean | `false` | 5.21.0 |
 | value | 当前选中的值 | string \| number | - | - |
+
+#### Segmented - SegmentedItemType
+
+| 属性      | 描述             | 类型             | 默认值 | 版本 |
+| --------- | ---------------- | ---------------- | ------ | ---- |
+| label     | 分段项的显示文本 | ReactNode        | -      | -    |
+| value     | 分段项的值       | string \| number | -      | -    |
+| icon      | 分段项的显示图标 | ReactNode        | -      | -    |
+| disabled  | 分段项的禁用状态 | boolean          | false  | -    |
+| className | 自定义类名       | string           | -      | -    |
 
 ### ant-design 的 Segmented - Segmented 有哪些配置？
 
@@ -10094,8 +10477,9 @@
 | defaultValue | 默认选中的值 | string \| number | - | - |
 | disabled | 是否禁用 | boolean | false | - |
 | onChange | 选项变化时的回调函数 | function(value: string \| number) | - | - |
-| options | 数据化配置选项内容 | string\[] \| number\[] \| Array<{ label: ReactNode value: string icon? ReactNode disabled?: boolean className?: string }> | \[] | - |
+| options | 数据化配置选项内容 | string\[] \| number\[] \| SegmentedItemType\[] | \[] | - |
 | size | 控件尺寸 | `large` \| `middle` \| `small` | `middle` | - |
+| vertical | 排列方向 | boolean | `false` | 5.21.0 |
 | value | 当前选中的值 | string \| number | - | - |
 
 ### ant-design 中 Segmented - Segmented的block属性如何使用？
@@ -10152,7 +10536,7 @@
 
 说明: 数据化配置选项内容
 
-类型: string\[] \| number\[] \| Array<{ label: ReactNode value: string icon? ReactNode disabled?: boolean className?: string }>
+类型: string\[] \| number\[] \| SegmentedItemType\[]
 
 默认值: \[]
 
@@ -10170,6 +10554,18 @@
 
 版本: -
 
+### ant-design 中 Segmented - Segmented的vertical属性如何使用？
+
+参数: vertical
+
+说明: 排列方向
+
+类型: boolean
+
+默认值: `false`
+
+版本: 5.21.0
+
 ### ant-design 中 Segmented - Segmented的value属性如何使用？
 
 参数: value
@@ -10177,6 +10573,76 @@
 说明: 当前选中的值
 
 类型: string \| number
+
+默认值: -
+
+版本: -
+
+### ant-design 的 Segmented - SegmentedItemType 有哪些配置？
+
+| 属性      | 描述             | 类型             | 默认值 | 版本 |
+| --------- | ---------------- | ---------------- | ------ | ---- |
+| label     | 分段项的显示文本 | ReactNode        | -      | -    |
+| value     | 分段项的值       | string \| number | -      | -    |
+| icon      | 分段项的显示图标 | ReactNode        | -      | -    |
+| disabled  | 分段项的禁用状态 | boolean          | false  | -    |
+| className | 自定义类名       | string           | -      | -    |
+
+### ant-design 中 Segmented - SegmentedItemType的label属性如何使用？
+
+属性: label
+
+描述: 分段项的显示文本
+
+类型: ReactNode
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Segmented - SegmentedItemType的value属性如何使用？
+
+属性: value
+
+描述: 分段项的值
+
+类型: string \| number
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Segmented - SegmentedItemType的icon属性如何使用？
+
+属性: icon
+
+描述: 分段项的显示图标
+
+类型: ReactNode
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Segmented - SegmentedItemType的disabled属性如何使用？
+
+属性: disabled
+
+描述: 分段项的禁用状态
+
+类型: boolean
+
+默认值: false
+
+版本: -
+
+### ant-design 中 Segmented - SegmentedItemType的className属性如何使用？
+
+属性: className
+
+描述: 自定义类名
+
+类型: string
 
 默认值: -
 
@@ -10268,6 +10734,7 @@
 | count | star 总数 | number | 5 | - |
 | defaultValue | 默认值 | number | 0 | - |
 | disabled | 只读，无法进行交互 | boolean | false | - |
+| keyboard | 支持使用键盘操作 | boolean | true | 5.18.0 |
 | style | 自定义样式对象 | CSSProperties | - | - |
 | tooltips | 自定义每项的提示信息 | string\[] | - | - |
 | value | 当前数，受控值 | number | - | - |
@@ -10296,6 +10763,7 @@
 | count | star 总数 | number | 5 | - |
 | defaultValue | 默认值 | number | 0 | - |
 | disabled | 只读，无法进行交互 | boolean | false | - |
+| keyboard | 支持使用键盘操作 | boolean | true | 5.18.0 |
 | style | 自定义样式对象 | CSSProperties | - | - |
 | tooltips | 自定义每项的提示信息 | string\[] | - | - |
 | value | 当前数，受控值 | number | - | - |
@@ -10400,6 +10868,18 @@
 默认值: false
 
 版本: -
+
+### ant-design 中 Rate - Rate的keyboard属性如何使用？
+
+属性: keyboard
+
+说明: 支持使用键盘操作
+
+类型: boolean
+
+默认值: true
+
+版本: 5.18.0
 
 ### ant-design 中 Rate - Rate的style属性如何使用？
 
@@ -10536,10 +11016,11 @@
 | defaultValue | 默认选中的值 | any | - | - | - |
 | disabled | 禁选所有子单选器 | boolean | false | - | - |
 | name | RadioGroup 下所有 `input[type="radio"]` 的 `name` 属性 | string | - | - | - |
-| options | 以配置形式设置子元素 | string\[] \| number\[] \| Array<[CheckboxOptionType](#CheckboxOptionType)> | - | - | - |
+| options | 以配置形式设置子元素 | string\[] \| number\[] \| Array<[CheckboxOptionType](#checkboxoptiontype)> | - | - | - |
 | optionType | 用于设置 Radio `options` 类型 | `default` \| `button` | `default` | 4.4.0 | - |
 | size | 大小，只对按钮样式生效 | `large` \| `middle` \| `small` | - | - | - |
 | value | 用于设置当前选中的值 | any | - | - | - |
+| block | 将 RadioGroup 宽度调整为其父宽度的选项 | boolean | false | 5.21.0 | - |
 | onChange | 选项变化时的回调函数 | function(e:Event) | - | - | - |
 
 #### Radio - CheckboxOptionType
@@ -10630,10 +11111,11 @@
 | defaultValue | 默认选中的值 | any | - | - | - |
 | disabled | 禁选所有子单选器 | boolean | false | - | - |
 | name | RadioGroup 下所有 `input[type="radio"]` 的 `name` 属性 | string | - | - | - |
-| options | 以配置形式设置子元素 | string\[] \| number\[] \| Array<[CheckboxOptionType](#CheckboxOptionType)> | - | - | - |
+| options | 以配置形式设置子元素 | string\[] \| number\[] \| Array<[CheckboxOptionType](#checkboxoptiontype)> | - | - | - |
 | optionType | 用于设置 Radio `options` 类型 | `default` \| `button` | `default` | 4.4.0 | - |
 | size | 大小，只对按钮样式生效 | `large` \| `middle` \| `small` | - | - | - |
 | value | 用于设置当前选中的值 | any | - | - | - |
+| block | 将 RadioGroup 宽度调整为其父宽度的选项 | boolean | false | 5.21.0 | - |
 | onChange | 选项变化时的回调函数 | function(e:Event) | - | - | - |
 
 ### ant-design 中 Radio - Radio.Group的buttonStyle属性如何使用？
@@ -10698,7 +11180,7 @@ undefined: -
 
 说明: 以配置形式设置子元素
 
-类型: string\[] \| number\[] \| Array<[CheckboxOptionType](#CheckboxOptionType)>
+类型: string\[] \| number\[] \| Array<[CheckboxOptionType](#checkboxoptiontype)>
 
 默认值: -
 
@@ -10745,6 +11227,20 @@ undefined: -
 默认值: -
 
 版本: -
+
+undefined: -
+
+### ant-design 中 Radio - Radio.Group的block属性如何使用？
+
+参数: block
+
+说明: 将 RadioGroup 宽度调整为其父宽度的选项
+
+类型: boolean
+
+默认值: false
+
+版本: 5.21.0
 
 undefined: -
 
@@ -10900,12 +11396,13 @@ Version: 4.4.0
 | type | 渲染类型 | `canvas \| svg ` | `canvas` | 5.6.0 |
 | icon | 二维码中图片的地址（目前只支持图片地址） | string | - |
 | size | 二维码大小 | number | 160 |
-| iconSize | 二维码中图片的大小 | number | 40 |
+| iconSize | 二维码中图片的大小 | number \| { width: number; height: number } | 40 | 5.19.0 |
 | color | 二维码颜色 | string | `#000` |
 | bgColor | 二维码背景颜色 | string | `transparent` | 5.5.0 |
 | bordered | 是否有边框 | boolean | `true` |
 | errorLevel | 二维码纠错等级 | `'L' \| 'M' \| 'Q' \| 'H' ` | `M` |
 | status | 二维码状态 | `active \| expired \| loading \| scanned` | `active` | scanned: 5.13.0 |
+| statusRender | 自定义状态渲染器 | (info: [StatusRenderInfo](/components/qr-code-cn#statusrenderinfo)) => React.ReactNode | - | 5.20.0 |
 | onRefresh | 点击"点击刷新"的回调 | `() => void` | - |
 
 ### ant-design 的 QrCode - QrCode 有哪些配置？
@@ -10916,12 +11413,13 @@ Version: 4.4.0
 | type | 渲染类型 | `canvas \| svg ` | `canvas` | 5.6.0 |
 | icon | 二维码中图片的地址（目前只支持图片地址） | string | - |
 | size | 二维码大小 | number | 160 |
-| iconSize | 二维码中图片的大小 | number | 40 |
+| iconSize | 二维码中图片的大小 | number \| { width: number; height: number } | 40 | 5.19.0 |
 | color | 二维码颜色 | string | `#000` |
 | bgColor | 二维码背景颜色 | string | `transparent` | 5.5.0 |
 | bordered | 是否有边框 | boolean | `true` |
 | errorLevel | 二维码纠错等级 | `'L' \| 'M' \| 'Q' \| 'H' ` | `M` |
 | status | 二维码状态 | `active \| expired \| loading \| scanned` | `active` | scanned: 5.13.0 |
+| statusRender | 自定义状态渲染器 | (info: [StatusRenderInfo](/components/qr-code-cn#statusrenderinfo)) => React.ReactNode | - | 5.20.0 |
 | onRefresh | 点击"点击刷新"的回调 | `() => void` | - |
 
 ### ant-design 中 QrCode - QrCode的value属性如何使用？
@@ -10972,9 +11470,11 @@ Version: 4.4.0
 
 说明: 二维码中图片的大小
 
-类型: number
+类型: number \| { width: number; height: number }
 
 默认值: 40
+
+版本: 5.19.0
 
 ### ant-design 中 QrCode - QrCode的color属性如何使用？
 
@@ -11030,6 +11530,18 @@ Version: 4.4.0
 
 版本: scanned: 5.13.0
 
+### ant-design 中 QrCode - QrCode的statusRender属性如何使用？
+
+参数: statusRender
+
+说明: 自定义状态渲染器
+
+类型: (info: [StatusRenderInfo](/components/qr-code-cn#statusrenderinfo)) => React.ReactNode
+
+默认值: -
+
+版本: 5.20.0
+
 ### ant-design 中 QrCode - QrCode的onRefresh属性如何使用？
 
 参数: onRefresh
@@ -11055,7 +11567,7 @@ Version: 4.4.0
 | success | 成功进度条相关配置 | { percent: number, strokeColor: string } | - | - |
 | trailColor | 未完成的分段的颜色 | string | - | - |
 | type | 类型，可选 `line` `circle` `dashboard` | string | `line` | - |
-| size | 进度条的尺寸 | number \| \[number \| string, number] \| "small" \| "default" | "default" | v5.3.0 |
+| size | 进度条的尺寸 | number \| \[number \| string, number] \| { width: number, height: number } \| "small" \| "default" | "default" | 5.3.0, Object: 5.18.0 |
 
 #### Progress - Progress
 
@@ -11063,6 +11575,7 @@ Version: 4.4.0
 | --- | --- | --- | --- | --- |
 | steps | 进度条总共步数 | number | - | - |
 | strokeColor | 进度条的色彩，传入 object 时为渐变。当有 `steps` 时支持传入一个数组。 | string \| string\[] \| { from: string; to: string; direction: string } | - | 4.21.0: `string[]` |
+| percentPosition | 进度数值位置，传入对象，`align` 表示数值的水平位置，`type` 表示数值在进度条内部还是外部 | { align: string; type: string } | { align: "end", type: "outer" } | 5.18.0 |
 
 #### Progress - Progress
 
@@ -11094,7 +11607,7 @@ Version: 4.4.0
 | success | 成功进度条相关配置 | { percent: number, strokeColor: string } | - | - |
 | trailColor | 未完成的分段的颜色 | string | - | - |
 | type | 类型，可选 `line` `circle` `dashboard` | string | `line` | - |
-| size | 进度条的尺寸 | number \| \[number \| string, number] \| "small" \| "default" | "default" | v5.3.0 |
+| size | 进度条的尺寸 | number \| \[number \| string, number] \| { width: number, height: number } \| "small" \| "default" | "default" | 5.3.0, Object: 5.18.0 |
 
 ### ant-design 中 Progress - Progress的format属性如何使用？
 
@@ -11210,11 +11723,11 @@ Version: 4.4.0
 
 说明: 进度条的尺寸
 
-类型: number \| \[number \| string, number] \| "small" \| "default"
+类型: number \| \[number \| string, number] \| { width: number, height: number } \| "small" \| "default"
 
 默认值: "default"
 
-版本: v5.3.0
+版本: 5.3.0, Object: 5.18.0
 
 ### ant-design 的 Progress - Progress 有哪些配置？
 
@@ -11222,6 +11735,7 @@ Version: 4.4.0
 | --- | --- | --- | --- | --- |
 | steps | 进度条总共步数 | number | - | - |
 | strokeColor | 进度条的色彩，传入 object 时为渐变。当有 `steps` 时支持传入一个数组。 | string \| string\[] \| { from: string; to: string; direction: string } | - | 4.21.0: `string[]` |
+| percentPosition | 进度数值位置，传入对象，`align` 表示数值的水平位置，`type` 表示数值在进度条内部还是外部 | { align: string; type: string } | { align: "end", type: "outer" } | 5.18.0 |
 
 ### ant-design 中 Progress - Progress的steps属性如何使用？
 
@@ -11246,6 +11760,18 @@ Version: 4.4.0
 默认值: -
 
 版本: 4.21.0: `string[]`
+
+### ant-design 中 Progress - Progress的percentPosition属性如何使用？
+
+属性: percentPosition
+
+说明: 进度数值位置，传入对象，`align` 表示数值的水平位置，`type` 表示数值在进度条内部还是外部
+
+类型: { align: string; type: string }
+
+默认值: { align: "end", type: "outer" }
+
+版本: 5.18.0
 
 ### ant-design 的 Progress - Progress 有哪些配置？
 
@@ -11588,6 +12114,7 @@ Version: 4.4.0
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
+| align | 对齐方式 | start \| center \| end | - | 5.19.0 |
 | current | 当前页数 | number | - | - |
 | defaultCurrent | 默认的当前页数 | number | 1 | - |
 | defaultPageSize | 默认的每页条数 | number | 10 | - |
@@ -11599,10 +12126,10 @@ Version: 4.4.0
 | responsive | 当 size 未指定时，根据屏幕宽度自动调整尺寸 | boolean | - | - |
 | showLessItems | 是否显示较少页面内容 | boolean | false | - |
 | showQuickJumper | 是否可以快速跳转至某页 | boolean \| { goButton: ReactNode } | false | - |
-| showSizeChanger | 是否展示 `pageSize` 切换器，当 `total` 大于 50 时默认为 true | boolean | - | - |
+| showSizeChanger | 是否展示 `pageSize` 切换器，当 `total` 大于 50 时默认为 true | boolean \| [SelectProps](/components/select-cn#api) | - | SelectProps: 5.21.0 |
 | showTitle | 是否显示原生 tooltip 页码提示 | boolean | true | - |
 | showTotal | 用于显示数据总量和当前数据顺序 | function(total, range) | - | - |
-| simple | 当添加该属性时，显示为简单分页 | boolean | - | - |
+| simple | 当添加该属性时，显示为简单分页 | boolean \| { readOnly?: boolean } | - | - |
 | size | 当为 `small` 时，是小尺寸分页 | `default` \| `small` | `default` | - |
 | total | 数据总数 | number | 0 | - |
 | onChange | 页码或 `pageSize` 改变的回调，参数是改变后的页码及每页条数 | function(page, pageSize) | - | - |
@@ -11612,6 +12139,7 @@ Version: 4.4.0
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
+| align | 对齐方式 | start \| center \| end | - | 5.19.0 |
 | current | 当前页数 | number | - | - |
 | defaultCurrent | 默认的当前页数 | number | 1 | - |
 | defaultPageSize | 默认的每页条数 | number | 10 | - |
@@ -11623,14 +12151,26 @@ Version: 4.4.0
 | responsive | 当 size 未指定时，根据屏幕宽度自动调整尺寸 | boolean | - | - |
 | showLessItems | 是否显示较少页面内容 | boolean | false | - |
 | showQuickJumper | 是否可以快速跳转至某页 | boolean \| { goButton: ReactNode } | false | - |
-| showSizeChanger | 是否展示 `pageSize` 切换器，当 `total` 大于 50 时默认为 true | boolean | - | - |
+| showSizeChanger | 是否展示 `pageSize` 切换器，当 `total` 大于 50 时默认为 true | boolean \| [SelectProps](/components/select-cn#api) | - | SelectProps: 5.21.0 |
 | showTitle | 是否显示原生 tooltip 页码提示 | boolean | true | - |
 | showTotal | 用于显示数据总量和当前数据顺序 | function(total, range) | - | - |
-| simple | 当添加该属性时，显示为简单分页 | boolean | - | - |
+| simple | 当添加该属性时，显示为简单分页 | boolean \| { readOnly?: boolean } | - | - |
 | size | 当为 `small` 时，是小尺寸分页 | `default` \| `small` | `default` | - |
 | total | 数据总数 | number | 0 | - |
 | onChange | 页码或 `pageSize` 改变的回调，参数是改变后的页码及每页条数 | function(page, pageSize) | - | - |
 | onShowSizeChange | pageSize 变化的回调 | function(current, size) | - | - |
+
+### ant-design 中 Pagination - Pagination的align属性如何使用？
+
+参数: align
+
+说明: 对齐方式
+
+类型: start \| center \| end
+
+默认值: -
+
+版本: 5.19.0
 
 ### ant-design 中 Pagination - Pagination的current属性如何使用？
 
@@ -11770,11 +12310,11 @@ Version: 4.4.0
 
 说明: 是否展示 `pageSize` 切换器，当 `total` 大于 50 时默认为 true
 
-类型: boolean
+类型: boolean \| [SelectProps](/components/select-cn#api)
 
 默认值: -
 
-版本: -
+版本: SelectProps: 5.21.0
 
 ### ant-design 中 Pagination - Pagination的showTitle属性如何使用？
 
@@ -11806,7 +12346,7 @@ Version: 4.4.0
 
 说明: 当添加该属性时，显示为简单分页
 
-类型: boolean
+类型: boolean \| { readOnly?: boolean }
 
 默认值: -
 
@@ -11871,6 +12411,8 @@ Version: 4.4.0
 | closeIcon | 自定义关闭图标 | ReactNode | true | 5.7.0：设置为 null 或 false 时隐藏关闭按钮 |
 | description | 通知提醒内容，必选 | ReactNode | - | - |
 | duration | 默认 4.5 秒后自动关闭，配置为 null 则不自动关闭 | number | 4.5 | - |
+| showProgress | 显示自动关闭通知框的进度条 | boolean | - | 5.18.0 |
+| pauseOnHover | 悬停时是否暂停计时器 | boolean | true | 5.18.0 |
 | icon | 自定义图标 | ReactNode | - | - |
 | key | 当前通知唯一标志 | string | - | - |
 | message | 通知提醒标题，必选 | ReactNode | - | - |
@@ -11889,6 +12431,8 @@ Version: 4.4.0
 | closeIcon | 自定义关闭图标 | ReactNode | true | 5.7.0：设置为 null 或 false 时隐藏关闭按钮 |
 | getContainer | 配置渲染节点的输出位置 | () => HTMLNode | () => document.body | - |
 | placement | 弹出位置，可选 `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` | string | `topRight` | - |
+| showProgress | 显示自动关闭通知框的进度条 | boolean | - | 5.18.0 |
+| pauseOnHover | 悬停时是否暂停计时器 | boolean | true | 5.18.0 |
 | rtl | 是否开启 RTL 模式 | boolean | false | - |
 | stack | 堆叠模式，超过阈值时会将所有消息收起 | boolean \| `{ threshold: number }` | `{ threshold: 3 }` | 5.10.0 |
 | top | 消息从顶部弹出时，距离顶部的位置，单位像素 | number | 24 | - |
@@ -11901,6 +12445,8 @@ Version: 4.4.0
 | bottom | 消息从底部弹出时，距离底部的位置，单位像素 | number | 24 | - |
 | closeIcon | 自定义关闭图标 | ReactNode | true | 5.7.0：设置为 null 或 false 时隐藏关闭按钮 |
 | duration | 默认自动关闭延时，单位秒 | number | 4.5 | - |
+| showProgress | 显示自动关闭通知框的进度条 | boolean | - | 5.18.0 |
+| pauseOnHover | 悬停时是否暂停计时器 | boolean | true | 5.18.0 |
 | getContainer | 配置渲染节点的输出位置，但依旧为全屏展示 | () => HTMLNode | () => document.body | - |
 | placement | 弹出位置，可选 `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` | string | `topRight` | - |
 | rtl | 是否开启 RTL 模式 | boolean | false | - |
@@ -11916,6 +12462,8 @@ Version: 4.4.0
 | closeIcon | 自定义关闭图标 | ReactNode | true | 5.7.0：设置为 null 或 false 时隐藏关闭按钮 |
 | description | 通知提醒内容，必选 | ReactNode | - | - |
 | duration | 默认 4.5 秒后自动关闭，配置为 null 则不自动关闭 | number | 4.5 | - |
+| showProgress | 显示自动关闭通知框的进度条 | boolean | - | 5.18.0 |
+| pauseOnHover | 悬停时是否暂停计时器 | boolean | true | 5.18.0 |
 | icon | 自定义图标 | ReactNode | - | - |
 | key | 当前通知唯一标志 | string | - | - |
 | message | 通知提醒标题，必选 | ReactNode | - | - |
@@ -11985,6 +12533,30 @@ Version: 4.4.0
 默认值: 4.5
 
 版本: -
+
+### ant-design 中 Notification - Notification的showProgress属性如何使用？
+
+参数: showProgress
+
+说明: 显示自动关闭通知框的进度条
+
+类型: boolean
+
+默认值: -
+
+版本: 5.18.0
+
+### ant-design 中 Notification - Notification的pauseOnHover属性如何使用？
+
+参数: pauseOnHover
+
+说明: 悬停时是否暂停计时器
+
+类型: boolean
+
+默认值: true
+
+版本: 5.18.0
 
 ### ant-design 中 Notification - Notification的icon属性如何使用？
 
@@ -12102,6 +12674,8 @@ Version: 4.4.0
 | closeIcon | 自定义关闭图标 | ReactNode | true | 5.7.0：设置为 null 或 false 时隐藏关闭按钮 |
 | getContainer | 配置渲染节点的输出位置 | () => HTMLNode | () => document.body | - |
 | placement | 弹出位置，可选 `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` | string | `topRight` | - |
+| showProgress | 显示自动关闭通知框的进度条 | boolean | - | 5.18.0 |
+| pauseOnHover | 悬停时是否暂停计时器 | boolean | true | 5.18.0 |
 | rtl | 是否开启 RTL 模式 | boolean | false | - |
 | stack | 堆叠模式，超过阈值时会将所有消息收起 | boolean \| `{ threshold: number }` | `{ threshold: 3 }` | 5.10.0 |
 | top | 消息从顶部弹出时，距离顶部的位置，单位像素 | number | 24 | - |
@@ -12154,6 +12728,30 @@ Version: 4.4.0
 默认值: `topRight`
 
 版本: -
+
+### ant-design 中 Notification - Notification的showProgress属性如何使用？
+
+参数: showProgress
+
+说明: 显示自动关闭通知框的进度条
+
+类型: boolean
+
+默认值: -
+
+版本: 5.18.0
+
+### ant-design 中 Notification - Notification的pauseOnHover属性如何使用？
+
+参数: pauseOnHover
+
+说明: 悬停时是否暂停计时器
+
+类型: boolean
+
+默认值: true
+
+版本: 5.18.0
 
 ### ant-design 中 Notification - Notification的rtl属性如何使用？
 
@@ -12210,6 +12808,8 @@ Version: 4.4.0
 | bottom | 消息从底部弹出时，距离底部的位置，单位像素 | number | 24 | - |
 | closeIcon | 自定义关闭图标 | ReactNode | true | 5.7.0：设置为 null 或 false 时隐藏关闭按钮 |
 | duration | 默认自动关闭延时，单位秒 | number | 4.5 | - |
+| showProgress | 显示自动关闭通知框的进度条 | boolean | - | 5.18.0 |
+| pauseOnHover | 悬停时是否暂停计时器 | boolean | true | 5.18.0 |
 | getContainer | 配置渲染节点的输出位置，但依旧为全屏展示 | () => HTMLNode | () => document.body | - |
 | placement | 弹出位置，可选 `top` `topLeft` `topRight` `bottom` `bottomLeft` `bottomRight` | string | `topRight` | - |
 | rtl | 是否开启 RTL 模式 | boolean | false | - |
@@ -12251,6 +12851,30 @@ Version: 4.4.0
 默认值: 4.5
 
 版本: -
+
+### ant-design 中 Notification - notification.config的showProgress属性如何使用？
+
+参数: showProgress
+
+说明: 显示自动关闭通知框的进度条
+
+类型: boolean
+
+默认值: -
+
+版本: 5.18.0
+
+### ant-design 中 Notification - notification.config的pauseOnHover属性如何使用？
+
+参数: pauseOnHover
+
+说明: 悬停时是否暂停计时器
+
+类型: boolean
+
+默认值: true
+
+版本: 5.18.0
 
 ### ant-design 中 Notification - notification.config的getContainer属性如何使用？
 
@@ -12319,16 +12943,17 @@ Version: 4.4.0
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | afterClose | Modal 完全关闭后的回调 | function | - | - |
-| classNames | 配置弹窗内置模块的 className | `header?: string; body?: string; footer?: string; mask?: string; wrapper?: string;` | - | - |
-| styles | 配置弹窗内置模块的 style | `header?: CSSProperties; body?: CSSProperties; footer?: CSSProperties; mask?: CSSProperties;` | - | 5.10.0 |
+| classNames | 配置弹窗内置模块的 className | [Record\<SemanticDOM, string>](#semantic-dom) | - | - |
+| styles | 配置弹窗内置模块的 style | [Record\<SemanticDOM, CSSProperties>](#semantic-dom) | - | 5.10.0 |
 | cancelButtonProps | cancel 按钮 props | [ButtonProps](/components/button-cn#api) | - | - |
 | cancelText | 取消按钮文字 | ReactNode | `取消` | - |
 | centered | 垂直居中展示 Modal | boolean | false | - |
+| closable | 是否显示右上角的关闭按钮 | boolean \| { closeIcon?: React.ReactNode; disabled?: boolean; } | true | - |
 | closeIcon | 自定义关闭图标。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮 | ReactNode | \<CloseOutlined /> | - |
 | confirmLoading | 确定按钮 loading | boolean | false | - |
 | destroyOnClose | 关闭时销毁 Modal 里的子元素 | boolean | false | - |
 | focusTriggerAfterClose | 对话框关闭后是否需要聚焦触发元素 | boolean | true | 4.9.0 |
-| footer | 底部内容，当不需要默认底部按钮时，可以设为 `footer={null}` | (params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode \| React.ReactNode | (确定取消按钮) | 5.9.0 |
+| footer | 底部内容，当不需要默认底部按钮时，可以设为 `footer={null}` | React.ReactNode \| ((params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode) | (确定取消按钮) | renderFunction: 5.9.0 |
 | forceRender | 强制渲染 Modal | boolean | false | - |
 | getContainer | 指定 Modal 挂载的节点，但依旧为全屏展示，`false` 为挂载在当前位置 | HTMLElement \| () => HTMLElement \| Selectors \| false | document.body | - |
 | keyboard | 是否支持键盘 esc 关闭 | boolean | true | - |
@@ -12339,6 +12964,7 @@ Version: 4.4.0
 | okText | 确认按钮文字 | ReactNode | `确定` | - |
 | okType | 确认按钮类型 | string | `primary` | - |
 | style | 可用于设置浮层的样式，调整浮层位置等 | CSSProperties | - | - |
+| loading | 显示骨架屏 | boolean | - | 5.18.0 |
 | title | 标题 | ReactNode | - | - |
 | open | 对话框是否可见 | boolean | - | - |
 | width | 宽度 | string \| number | 520 | - |
@@ -12358,10 +12984,10 @@ Version: 4.4.0
 | cancelText | 设置 Modal.confirm 取消按钮文字 | string | `取消` | - |
 | centered | 垂直居中展示 Modal | boolean | false | - |
 | className | 容器类名 | string | - | - |
-| closable | 是否显示右上角的关闭按钮 | boolean | true | 4.9.0 |
+| closable | 是否显示右上角的关闭按钮 | boolean | false | 4.9.0 |
 | closeIcon | 自定义关闭图标 | ReactNode | undefined | 4.9.0 |
 | content | 内容 | ReactNode | - | - |
-| footer | 底部内容，当不需要默认底部按钮时，可以设为 `footer: null` | (params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode \| React.ReactNode | - | 5.9.0 |
+| footer | 底部内容，当不需要默认底部按钮时，可以设为 `footer: null` | React.ReactNode \| ((params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode) | - | renderFunction: 5.9.0 |
 | getContainer | 指定 Modal 挂载的 HTML 节点，false 为挂载在当前 dom | HTMLElement \| () => HTMLElement \| Selectors \| false | document.body | - |
 | icon | 自定义图标 | ReactNode | \<ExclamationCircleFilled /> | - |
 | keyboard | 是否支持键盘 esc 关闭 | boolean | true | - |
@@ -12375,8 +13001,8 @@ Version: 4.4.0
 | width | 宽度 | string \| number | 416 | - |
 | wrapClassName | 对话框外层容器的类名 | string | - | 4.18.0 |
 | zIndex | 设置 Modal 的 `z-index` | number | 1000 | - |
-| onCancel | 取消回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭 | function(close) | - | - |
-| onOk | 点击确定回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭 | function(close) | - | - |
+| onCancel | 点击取消回调，参数为关闭函数，若返回 promise 时 resolve 为正常关闭, reject 为不关闭 | function(close) | - | - |
+| onOk | 点击确定回调，参数为关闭函数，若返回 promise 时 resolve 为正常关闭, reject 为不关闭 | function(close) | - | - |
 
 #### Modal - footerRenderParams
 
@@ -12390,16 +13016,17 @@ Version: 4.4.0
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | afterClose | Modal 完全关闭后的回调 | function | - | - |
-| classNames | 配置弹窗内置模块的 className | `header?: string; body?: string; footer?: string; mask?: string; wrapper?: string;` | - | - |
-| styles | 配置弹窗内置模块的 style | `header?: CSSProperties; body?: CSSProperties; footer?: CSSProperties; mask?: CSSProperties;` | - | 5.10.0 |
+| classNames | 配置弹窗内置模块的 className | [Record\<SemanticDOM, string>](#semantic-dom) | - | - |
+| styles | 配置弹窗内置模块的 style | [Record\<SemanticDOM, CSSProperties>](#semantic-dom) | - | 5.10.0 |
 | cancelButtonProps | cancel 按钮 props | [ButtonProps](/components/button-cn#api) | - | - |
 | cancelText | 取消按钮文字 | ReactNode | `取消` | - |
 | centered | 垂直居中展示 Modal | boolean | false | - |
+| closable | 是否显示右上角的关闭按钮 | boolean \| { closeIcon?: React.ReactNode; disabled?: boolean; } | true | - |
 | closeIcon | 自定义关闭图标。5.7.0：设置为 `null` 或 `false` 时隐藏关闭按钮 | ReactNode | \<CloseOutlined /> | - |
 | confirmLoading | 确定按钮 loading | boolean | false | - |
 | destroyOnClose | 关闭时销毁 Modal 里的子元素 | boolean | false | - |
 | focusTriggerAfterClose | 对话框关闭后是否需要聚焦触发元素 | boolean | true | 4.9.0 |
-| footer | 底部内容，当不需要默认底部按钮时，可以设为 `footer={null}` | (params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode \| React.ReactNode | (确定取消按钮) | 5.9.0 |
+| footer | 底部内容，当不需要默认底部按钮时，可以设为 `footer={null}` | React.ReactNode \| ((params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode) | (确定取消按钮) | renderFunction: 5.9.0 |
 | forceRender | 强制渲染 Modal | boolean | false | - |
 | getContainer | 指定 Modal 挂载的节点，但依旧为全屏展示，`false` 为挂载在当前位置 | HTMLElement \| () => HTMLElement \| Selectors \| false | document.body | - |
 | keyboard | 是否支持键盘 esc 关闭 | boolean | true | - |
@@ -12410,6 +13037,7 @@ Version: 4.4.0
 | okText | 确认按钮文字 | ReactNode | `确定` | - |
 | okType | 确认按钮类型 | string | `primary` | - |
 | style | 可用于设置浮层的样式，调整浮层位置等 | CSSProperties | - | - |
+| loading | 显示骨架屏 | boolean | - | 5.18.0 |
 | title | 标题 | ReactNode | - | - |
 | open | 对话框是否可见 | boolean | - | - |
 | width | 宽度 | string \| number | 520 | - |
@@ -12437,7 +13065,7 @@ Version: 4.4.0
 
 说明: 配置弹窗内置模块的 className
 
-类型: `header?: string; body?: string; footer?: string; mask?: string; wrapper?: string;`
+类型: [Record\<SemanticDOM, string>](#semantic-dom)
 
 默认值: -
 
@@ -12449,7 +13077,7 @@ Version: 4.4.0
 
 说明: 配置弹窗内置模块的 style
 
-类型: `header?: CSSProperties; body?: CSSProperties; footer?: CSSProperties; mask?: CSSProperties;`
+类型: [Record\<SemanticDOM, CSSProperties>](#semantic-dom)
 
 默认值: -
 
@@ -12488,6 +13116,18 @@ Version: 4.4.0
 类型: boolean
 
 默认值: false
+
+版本: -
+
+### ant-design 中 Modal - Modal的closable属性如何使用？
+
+参数: closable
+
+说明: 是否显示右上角的关闭按钮
+
+类型: boolean \| { closeIcon?: React.ReactNode; disabled?: boolean; }
+
+默认值: true
 
 版本: -
 
@@ -12545,11 +13185,11 @@ Version: 4.4.0
 
 说明: 底部内容，当不需要默认底部按钮时，可以设为 `footer={null}`
 
-类型: (params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode \| React.ReactNode
+类型: React.ReactNode \| ((params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode)
 
 默认值: (确定取消按钮)
 
-版本: 5.9.0
+版本: renderFunction: 5.9.0
 
 ### ant-design 中 Modal - Modal的forceRender属性如何使用？
 
@@ -12671,6 +13311,18 @@ Version: 4.4.0
 
 版本: -
 
+### ant-design 中 Modal - Modal的loading属性如何使用？
+
+参数: loading
+
+说明: 显示骨架屏
+
+类型: boolean
+
+默认值: -
+
+版本: 5.18.0
+
 ### ant-design 中 Modal - Modal的title属性如何使用？
 
 参数: title
@@ -12777,10 +13429,10 @@ Version: 4.4.0
 | cancelText | 设置 Modal.confirm 取消按钮文字 | string | `取消` | - |
 | centered | 垂直居中展示 Modal | boolean | false | - |
 | className | 容器类名 | string | - | - |
-| closable | 是否显示右上角的关闭按钮 | boolean | true | 4.9.0 |
+| closable | 是否显示右上角的关闭按钮 | boolean | false | 4.9.0 |
 | closeIcon | 自定义关闭图标 | ReactNode | undefined | 4.9.0 |
 | content | 内容 | ReactNode | - | - |
-| footer | 底部内容，当不需要默认底部按钮时，可以设为 `footer: null` | (params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode \| React.ReactNode | - | 5.9.0 |
+| footer | 底部内容，当不需要默认底部按钮时，可以设为 `footer: null` | React.ReactNode \| ((params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode) | - | renderFunction: 5.9.0 |
 | getContainer | 指定 Modal 挂载的 HTML 节点，false 为挂载在当前 dom | HTMLElement \| () => HTMLElement \| Selectors \| false | document.body | - |
 | icon | 自定义图标 | ReactNode | \<ExclamationCircleFilled /> | - |
 | keyboard | 是否支持键盘 esc 关闭 | boolean | true | - |
@@ -12794,8 +13446,8 @@ Version: 4.4.0
 | width | 宽度 | string \| number | 416 | - |
 | wrapClassName | 对话框外层容器的类名 | string | - | 4.18.0 |
 | zIndex | 设置 Modal 的 `z-index` | number | 1000 | - |
-| onCancel | 取消回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭 | function(close) | - | - |
-| onOk | 点击确定回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭 | function(close) | - | - |
+| onCancel | 点击取消回调，参数为关闭函数，若返回 promise 时 resolve 为正常关闭, reject 为不关闭 | function(close) | - | - |
+| onOk | 点击确定回调，参数为关闭函数，若返回 promise 时 resolve 为正常关闭, reject 为不关闭 | function(close) | - | - |
 
 ### ant-design 中 Modal - Modal.method()的afterClose属性如何使用？
 
@@ -12877,7 +13529,7 @@ Version: 4.4.0
 
 类型: boolean
 
-默认值: true
+默认值: false
 
 版本: 4.9.0
 
@@ -12911,11 +13563,11 @@ Version: 4.4.0
 
 说明: 底部内容，当不需要默认底部按钮时，可以设为 `footer: null`
 
-类型: (params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode \| React.ReactNode
+类型: React.ReactNode \| ((params:[footerRenderParams](/components/modal-cn#footerrenderparams))=> React.ReactNode)
 
 默认值: -
 
-版本: 5.9.0
+版本: renderFunction: 5.9.0
 
 ### ant-design 中 Modal - Modal.method()的getContainer属性如何使用？
 
@@ -13077,7 +13729,7 @@ Version: 4.4.0
 
 参数: onCancel
 
-说明: 取消回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭
+说明: 点击取消回调，参数为关闭函数，若返回 promise 时 resolve 为正常关闭, reject 为不关闭
 
 类型: function(close)
 
@@ -13089,7 +13741,7 @@ Version: 4.4.0
 
 参数: onOk
 
-说明: 点击确定回调，参数为关闭函数，返回 promise 时 resolve 后自动关闭
+说明: 点击确定回调，参数为关闭函数，若返回 promise 时 resolve 为正常关闭, reject 为不关闭
 
 类型: function(close)
 
@@ -13156,7 +13808,7 @@ Version: 4.4.0
 | maxCount | 最大显示数，超过限制时，最早的消息会被自动关闭 | number | - | - |
 | prefixCls | 消息节点的 className 前缀 | string | `ant-message` | 4.5.0 |
 | rtl | 是否开启 RTL 模式 | boolean | false | - |
-| top | 消息距离顶部的位置 | number | 8 | - |
+| top | 消息距离顶部的位置 | string \| number | 8 | - |
 
 ### ant-design 的 Message - Message 有哪些配置？
 
@@ -13298,7 +13950,7 @@ Version: 4.4.0
 | maxCount | 最大显示数，超过限制时，最早的消息会被自动关闭 | number | - | - |
 | prefixCls | 消息节点的 className 前缀 | string | `ant-message` | 4.5.0 |
 | rtl | 是否开启 RTL 模式 | boolean | false | - |
-| top | 消息距离顶部的位置 | number | 8 | - |
+| top | 消息距离顶部的位置 | string \| number | 8 | - |
 
 ### ant-design 中 Message - message.config的duration属性如何使用？
 
@@ -13366,7 +14018,7 @@ Version: 4.4.0
 
 说明: 消息距离顶部的位置
 
-类型: number
+类型: string \| number
 
 默认值: 8
 
@@ -13403,14 +14055,15 @@ Version: 4.4.0
 
 #### Menu - MenuItemType
 
-| 参数     | 说明                     | 类型      | 默认值 | 版本 |
-| -------- | ------------------------ | --------- | ------ | ---- |
-| danger   | 展示错误状态样式         | boolean   | false  | -    |
-| disabled | 是否禁用                 | boolean   | false  | -    |
-| icon     | 菜单图标                 | ReactNode | -      | -    |
-| key      | item 的唯一标志          | string    | -      | -    |
-| label    | 菜单项标题               | ReactNode | -      | -    |
-| title    | 设置收缩时展示的悬浮标题 | string    | -      | -    |
+| 参数     | 说明                     | 类型      | 默认值 | 版本   |
+| -------- | ------------------------ | --------- | ------ | ------ |
+| danger   | 展示错误状态样式         | boolean   | false  | -      |
+| disabled | 是否禁用                 | boolean   | false  | -      |
+| extra    | 额外节点                 | ReactNode | -      | 5.21.0 |
+| icon     | 菜单图标                 | ReactNode | -      | -      |
+| key      | item 的唯一标志          | string    | -      | -      |
+| label    | 菜单项标题               | ReactNode | -      | -      |
+| title    | 设置收缩时展示的悬浮标题 | string    | -      | -      |
 
 #### Menu - SubMenuType
 
@@ -13732,14 +14385,15 @@ Version: 4.4.0
 
 ### ant-design 的 Menu - MenuItemType 有哪些配置？
 
-| 参数     | 说明                     | 类型      | 默认值 | 版本 |
-| -------- | ------------------------ | --------- | ------ | ---- |
-| danger   | 展示错误状态样式         | boolean   | false  | -    |
-| disabled | 是否禁用                 | boolean   | false  | -    |
-| icon     | 菜单图标                 | ReactNode | -      | -    |
-| key      | item 的唯一标志          | string    | -      | -    |
-| label    | 菜单项标题               | ReactNode | -      | -    |
-| title    | 设置收缩时展示的悬浮标题 | string    | -      | -    |
+| 参数     | 说明                     | 类型      | 默认值 | 版本   |
+| -------- | ------------------------ | --------- | ------ | ------ |
+| danger   | 展示错误状态样式         | boolean   | false  | -      |
+| disabled | 是否禁用                 | boolean   | false  | -      |
+| extra    | 额外节点                 | ReactNode | -      | 5.21.0 |
+| icon     | 菜单图标                 | ReactNode | -      | -      |
+| key      | item 的唯一标志          | string    | -      | -      |
+| label    | 菜单项标题               | ReactNode | -      | -      |
+| title    | 设置收缩时展示的悬浮标题 | string    | -      | -      |
 
 ### ant-design 中 Menu - MenuItemType的danger属性如何使用？
 
@@ -13764,6 +14418,18 @@ Version: 4.4.0
 默认值: false
 
 版本: -
+
+### ant-design 中 Menu - MenuItemType的extra属性如何使用？
+
+参数: extra
+
+说明: 额外节点
+
+类型: ReactNode
+
+默认值: -
+
+版本: 5.21.0
 
 ### ant-design 中 Menu - MenuItemType的icon属性如何使用？
 
@@ -13990,7 +14656,7 @@ Version: 4.4.0
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| allowClear | 支持清除 | boolean \| { clearIcon?: ReactNode } | false | 5.13.0 |
+| allowClear | 可以点击清除图标删除内容 | boolean \| { clearIcon?: ReactNode } | false | 5.13.0 |
 | autoFocus | 自动获得焦点 | boolean | false | - |
 | autoSize | 自适应内容高度，可设置为 true \| false 或对象：{ minRows: 2, maxRows: 6 } | boolean \| object | false | - |
 | defaultValue | 默认值 | string | - | - |
@@ -14006,6 +14672,7 @@ Version: 4.4.0
 | variant | 形态变体 | `outlined` \| `borderless` \| `filled` | `outlined` | 5.13.0 |
 | onBlur | 失去焦点时触发 | () => void | - | - |
 | onChange | 值改变时触发 | (text: string) => void | - | - |
+| onClear | 按下清除按钮的回调 | () => void | - | 5.20.0 |
 | onFocus | 获得焦点时触发 | () => void | - | - |
 | onResize | resize 回调 | function({ width, height }) | - | - |
 | onSearch | 搜索时触发 | (text: string, prefix: string) => void | - | - |
@@ -14034,7 +14701,7 @@ Version: 4.4.0
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| allowClear | 支持清除 | boolean \| { clearIcon?: ReactNode } | false | 5.13.0 |
+| allowClear | 可以点击清除图标删除内容 | boolean \| { clearIcon?: ReactNode } | false | 5.13.0 |
 | autoFocus | 自动获得焦点 | boolean | false | - |
 | autoSize | 自适应内容高度，可设置为 true \| false 或对象：{ minRows: 2, maxRows: 6 } | boolean \| object | false | - |
 | defaultValue | 默认值 | string | - | - |
@@ -14050,6 +14717,7 @@ Version: 4.4.0
 | variant | 形态变体 | `outlined` \| `borderless` \| `filled` | `outlined` | 5.13.0 |
 | onBlur | 失去焦点时触发 | () => void | - | - |
 | onChange | 值改变时触发 | (text: string) => void | - | - |
+| onClear | 按下清除按钮的回调 | () => void | - | 5.20.0 |
 | onFocus | 获得焦点时触发 | () => void | - | - |
 | onResize | resize 回调 | function({ width, height }) | - | - |
 | onSearch | 搜索时触发 | (text: string, prefix: string) => void | - | - |
@@ -14060,7 +14728,7 @@ Version: 4.4.0
 
 参数: allowClear
 
-说明: 支持清除
+说明: 可以点击清除图标删除内容
 
 类型: boolean \| { clearIcon?: ReactNode }
 
@@ -14247,6 +14915,18 @@ Version: 4.4.0
 默认值: -
 
 版本: -
+
+### ant-design 中 Mentions - Mentions的onClear属性如何使用？
+
+参数: onClear
+
+说明: 按下清除按钮的回调
+
+类型: () => void
+
+默认值: -
+
+版本: 5.20.0
 
 ### ant-design 中 Mentions - Mentions的onFocus属性如何使用？
 
@@ -14444,7 +15124,9 @@ Version: 4.4.0
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | actions | 列表操作组，根据 `itemLayout` 的不同，位置在卡片底部或者最右侧 | Array\<ReactNode> | - | - |
+| classNames | 语义化结构 className | [`Record<actions \| extra, string>`](#semantic-dom) | - | 5.18.0 |
 | extra | 额外内容，通常用在 `itemLayout` 为 `vertical` 的情况下，展示右侧内容; `horizontal` 展示在列表元素最右侧 | ReactNode | - | - |
+| styles | 语义化结构 style | [`Record<actions \| extra, CSSProperties>`](#semantic-dom) | - | 5.18.0 |
 
 #### List - List.Item.Meta
 
@@ -14782,7 +15464,9 @@ Version: 4.4.0
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | actions | 列表操作组，根据 `itemLayout` 的不同，位置在卡片底部或者最右侧 | Array\<ReactNode> | - | - |
+| classNames | 语义化结构 className | [`Record<actions \| extra, string>`](#semantic-dom) | - | 5.18.0 |
 | extra | 额外内容，通常用在 `itemLayout` 为 `vertical` 的情况下，展示右侧内容; `horizontal` 展示在列表元素最右侧 | ReactNode | - | - |
+| styles | 语义化结构 style | [`Record<actions \| extra, CSSProperties>`](#semantic-dom) | - | 5.18.0 |
 
 ### ant-design 中 List - List.Item的actions属性如何使用？
 
@@ -14796,6 +15480,18 @@ Version: 4.4.0
 
 版本: -
 
+### ant-design 中 List - List.Item的classNames属性如何使用？
+
+参数: classNames
+
+说明: 语义化结构 className
+
+类型: [`Record<actions \| extra, string>`](#semantic-dom)
+
+默认值: -
+
+版本: 5.18.0
+
 ### ant-design 中 List - List.Item的extra属性如何使用？
 
 参数: extra
@@ -14807,6 +15503,18 @@ Version: 4.4.0
 默认值: -
 
 版本: -
+
+### ant-design 中 List - List.Item的styles属性如何使用？
+
+参数: styles
+
+说明: 语义化结构 style
+
+类型: [`Record<actions \| extra, CSSProperties>`](#semantic-dom)
+
+默认值: -
+
+版本: 5.18.0
 
 ### ant-design 的 List - List.Item.Meta 有哪些配置？
 
@@ -15103,6 +15811,7 @@ Version: 4.4.0
 | readOnly | 只读 | boolean | false | - |
 | status | 设置校验状态 | 'error' \| 'warning' | - | 4.19.0 |
 | prefix | 带有前缀图标的 input | ReactNode | - | 4.17.0 |
+| suffix | 带有后缀图标的 input | ReactNode | - | 5.20.0 |
 | size | 输入框大小 | `large` \| `middle` \| `small` | - | - |
 | step | 每次改变步数，可以为小数 | number \| string | 1 | - |
 | stringMode | 字符值模式，开启后支持高精度小数。同时 `onChange` 将返回 string 类型 | boolean | false | 4.13.0 |
@@ -15112,12 +15821,13 @@ Version: 4.4.0
 | onPressEnter | 按下回车的回调 | function(e) | - | - |
 | onStep | 点击上下箭头的回调 | (value: number, info: { offset: number, type: 'up' \| 'down' }) => void | - | 4.7.0 |
 
-#### InputNumber - 方法
+#### InputNumber - Ref
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
-| focus() | 获取焦点 |
+| 名称 | 说明 | 参数 | 版本 |
+| --- | --- | --- | --- |
+| blur() | 移除焦点 | - | - |
+| focus() | 获取焦点 | (option?: { preventScroll?: boolean, cursor?: 'start' \| 'end' \| 'all' }) | cursor - 5.22.0 |
+| nativeElement | 获取原生 DOM 元素 | - | 5.17.3 |
 
 ### ant-design 的 InputNumber - InputNumber 有哪些配置？
 
@@ -15142,6 +15852,7 @@ Version: 4.4.0
 | readOnly | 只读 | boolean | false | - |
 | status | 设置校验状态 | 'error' \| 'warning' | - | 4.19.0 |
 | prefix | 带有前缀图标的 input | ReactNode | - | 4.17.0 |
+| suffix | 带有后缀图标的 input | ReactNode | - | 5.20.0 |
 | size | 输入框大小 | `large` \| `middle` \| `small` | - | - |
 | step | 每次改变步数，可以为小数 | number \| string | 1 | - |
 | stringMode | 字符值模式，开启后支持高精度小数。同时 `onChange` 将返回 string 类型 | boolean | false | 4.13.0 |
@@ -15379,6 +16090,18 @@ Version: 4.4.0
 
 版本: 4.17.0
 
+### ant-design 中 InputNumber - InputNumber的suffix属性如何使用？
+
+参数: suffix
+
+说明: 带有后缀图标的 input
+
+类型: ReactNode
+
+默认值: -
+
+版本: 5.20.0
+
 ### ant-design 中 InputNumber - InputNumber的size属性如何使用？
 
 参数: size
@@ -15475,24 +16198,43 @@ Version: 4.4.0
 
 版本: 4.7.0
 
-### ant-design 的 InputNumber - 方法 有哪些配置？
+### ant-design 的 InputNumber - Ref 有哪些配置？
 
-| 名称    | 描述     |
-| ------- | -------- |
-| blur()  | 移除焦点 |
-| focus() | 获取焦点 |
+| 名称 | 说明 | 参数 | 版本 |
+| --- | --- | --- | --- |
+| blur() | 移除焦点 | - | - |
+| focus() | 获取焦点 | (option?: { preventScroll?: boolean, cursor?: 'start' \| 'end' \| 'all' }) | cursor - 5.22.0 |
+| nativeElement | 获取原生 DOM 元素 | - | 5.17.3 |
 
-### ant-design 中 InputNumber - 方法的blur()属性如何使用？
+### ant-design 中 InputNumber - Ref的blur()属性如何使用？
 
 名称: blur()
 
-描述: 移除焦点
+说明: 移除焦点
 
-### ant-design 中 InputNumber - 方法的focus()属性如何使用？
+参数: -
+
+版本: -
+
+### ant-design 中 InputNumber - Ref的focus()属性如何使用？
 
 名称: focus()
 
-描述: 获取焦点
+说明: 获取焦点
+
+参数: (option?: { preventScroll?: boolean, cursor?: 'start' \| 'end' \| 'all' })
+
+版本: cursor - 5.22.0
+
+### ant-design 中 InputNumber - Ref的nativeElement属性如何使用？
+
+名称: nativeElement
+
+说明: 获取原生 DOM 元素
+
+参数: -
+
+版本: 5.17.3
 
 ### ant-design 的 Input 有哪些配置？
 
@@ -15503,6 +16245,7 @@ Version: 4.4.0
 | addonAfter | 带标签的 input，设置后置标签 | ReactNode | - | - |
 | addonBefore | 带标签的 input，设置前置标签 | ReactNode | - | - |
 | allowClear | 可以点击清除图标删除内容 | boolean \| { clearIcon: ReactNode } | - | - |
+| ~~bordered~~ | 是否有边框 | boolean | true | 4.5.0 |
 | classNames | 语义化结构 class | Record<[SemanticDOM](#input-1), string> | - | 5.4.0 |
 | count | 字符计数配置 | [CountConfig](#countconfig) | - | 5.10.0 |
 | defaultValue | 输入框默认内容 | string | - | - |
@@ -15520,6 +16263,7 @@ Version: 4.4.0
 | variant | 形态变体 | `outlined` \| `borderless` \| `filled` | `outlined` | 5.13.0 |
 | onChange | 输入框内容变化时的回调 | function(e) | - | - |
 | onPressEnter | 按下回车的回调 | function(e) | - | - |
+| onClear | 按下清除按钮的回调 | () => void | - | 5.20.0 |
 
 #### Input - Input.TextArea
 
@@ -15551,12 +16295,14 @@ Version: 4.4.0
 | defaultValue | 默认值 | string | - | - |
 | disabled | 是否禁用 | boolean | false | - |
 | formatter | 格式化展示，留空字段会被 ` ` 填充 | (value: string) => string | - | - |
+| mask | 自定义展示，和 `formatter` 的区别是不会修改原始值 | boolean \| string | `false` | `5.17.0` |
 | length | 输入元素数量 | number | 6 | - |
 | status | 设置校验状态 | 'error' \| 'warning' | - | - |
 | size | 输入框大小 | `small` \| `middle` \| `large` | `middle` | - |
 | variant | 形态变体 | `outlined` \| `borderless` \| `filled` | `outlined` | - |
 | value | 输入框内容 | string | - | - |
-| onChange | 当输入框内容全部填充时触发回调 | function(value: string) | - | - |
+| onChange | 当输入框内容全部填充时触发回调 | (value: string) => void | - | - |
+| onInput | 输入值变化时触发的回调 | (value: string\[]) => void | - | `5.22.0` |
 
 #### Input - VisibilityToggle
 
@@ -15579,6 +16325,7 @@ Version: 4.4.0
 | addonAfter | 带标签的 input，设置后置标签 | ReactNode | - | - |
 | addonBefore | 带标签的 input，设置前置标签 | ReactNode | - | - |
 | allowClear | 可以点击清除图标删除内容 | boolean \| { clearIcon: ReactNode } | - | - |
+| ~~bordered~~ | 是否有边框 | boolean | true | 4.5.0 |
 | classNames | 语义化结构 class | Record<[SemanticDOM](#input-1), string> | - | 5.4.0 |
 | count | 字符计数配置 | [CountConfig](#countconfig) | - | 5.10.0 |
 | defaultValue | 输入框默认内容 | string | - | - |
@@ -15596,6 +16343,7 @@ Version: 4.4.0
 | variant | 形态变体 | `outlined` \| `borderless` \| `filled` | `outlined` | 5.13.0 |
 | onChange | 输入框内容变化时的回调 | function(e) | - | - |
 | onPressEnter | 按下回车的回调 | function(e) | - | - |
+| onClear | 按下清除按钮的回调 | () => void | - | 5.20.0 |
 
 ### ant-design 中 Input - Input的addonAfter属性如何使用？
 
@@ -15632,6 +16380,18 @@ Version: 4.4.0
 默认值: -
 
 版本: -
+
+### ant-design 中 Input - Input的~~bordered~~属性如何使用？
+
+参数: ~~bordered~~
+
+说明: 是否有边框
+
+类型: boolean
+
+默认值: true
+
+版本: 4.5.0
 
 ### ant-design 中 Input - Input的classNames属性如何使用？
 
@@ -15837,6 +16597,18 @@ Version: 4.4.0
 
 版本: -
 
+### ant-design 中 Input - Input的onClear属性如何使用？
+
+参数: onClear
+
+说明: 按下清除按钮的回调
+
+类型: () => void
+
+默认值: -
+
+版本: 5.20.0
+
 ### ant-design 的 Input - Input.TextArea 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -15957,12 +16729,14 @@ Version: 4.4.0
 | defaultValue | 默认值 | string | - | - |
 | disabled | 是否禁用 | boolean | false | - |
 | formatter | 格式化展示，留空字段会被 ` ` 填充 | (value: string) => string | - | - |
+| mask | 自定义展示，和 `formatter` 的区别是不会修改原始值 | boolean \| string | `false` | `5.17.0` |
 | length | 输入元素数量 | number | 6 | - |
 | status | 设置校验状态 | 'error' \| 'warning' | - | - |
 | size | 输入框大小 | `small` \| `middle` \| `large` | `middle` | - |
 | variant | 形态变体 | `outlined` \| `borderless` \| `filled` | `outlined` | - |
 | value | 输入框内容 | string | - | - |
-| onChange | 当输入框内容全部填充时触发回调 | function(value: string) | - | - |
+| onChange | 当输入框内容全部填充时触发回调 | (value: string) => void | - | - |
+| onInput | 输入值变化时触发的回调 | (value: string\[]) => void | - | `5.22.0` |
 
 ### ant-design 中 Input - Input.OTP的defaultValue属性如何使用？
 
@@ -15999,6 +16773,18 @@ Version: 4.4.0
 默认值: -
 
 版本: -
+
+### ant-design 中 Input - Input.OTP的mask属性如何使用？
+
+参数: mask
+
+说明: 自定义展示，和 `formatter` 的区别是不会修改原始值
+
+类型: boolean \| string
+
+默认值: `false`
+
+版本: `5.17.0`
 
 ### ant-design 中 Input - Input.OTP的length属性如何使用？
 
@@ -16066,11 +16852,23 @@ Version: 4.4.0
 
 说明: 当输入框内容全部填充时触发回调
 
-类型: function(value: string)
+类型: (value: string) => void
 
 默认值: -
 
 版本: -
+
+### ant-design 中 Input - Input.OTP的onInput属性如何使用？
+
+参数: onInput
+
+说明: 输入值变化时触发的回调
+
+类型: (value: string\[]) => void
+
+默认值: -
+
+版本: `5.22.0`
 
 ### ant-design 的 Input - VisibilityToggle 有哪些配置？
 
@@ -16161,8 +16959,9 @@ Version: 4.24
 | maxScale | 最大放大倍数 | number | 50 | 5.7.0 |
 | closeIcon | 自定义关闭 Icon | React.ReactNode | - | 5.7.0 |
 | forceRender | 强制渲染预览图 | boolean | - | - |
-| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: Omit<[ToolbarRenderInfoType](#toolbarrenderinfotype), 'current' \| 'total'>) => React.ReactNode | - | 5.7.0 |
-| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype) }) => React.ReactNode | - | 5.7.0 |
+| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: Omit<[ToolbarRenderInfoType](#toolbarrenderinfotype), 'current' \| 'total'>) => React.ReactNode | - | 5.7.0, `info.image`: 5.18.0 |
+| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), image: [ImgInfo](#imginfo) }) => React.ReactNode | - | 5.7.0, image: 5.18.0 |
+| destroyOnClose | 关闭预览时销毁子元素 | boolean | false | - |
 | onTransform | 预览图 transform 变化的回调 | { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } | - | 5.7.0 |
 | onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean) => void | - | - |
 
@@ -16191,8 +16990,8 @@ Version: 4.24
 | closeIcon | 自定义关闭 Icon | React.ReactNode | - | 5.7.0 |
 | forceRender | 强制渲染预览图 | boolean | - | - |
 | countRender | 自定义预览计数内容 | (current: number, total: number) => React.ReactNode | - | 4.20.0 |
-| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: [ToolbarRenderInfoType](#toolbarrenderinfotype)) => React.ReactNode | - | 5.7.0 |
-| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), current: number }) => React.ReactNode | - | 5.7.0 |
+| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: [ToolbarRenderInfoType](#toolbarrenderinfotype)) => React.ReactNode | - | 5.7.0, `info.image`: 5.18.0 |
+| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), image: [ImgInfo](#imginfo), current: number }) => React.ReactNode | - | 5.7.0, image: 5.18.0 |
 | onTransform | 预览图 transform 变化的回调 | { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } | - | 5.7.0 |
 | onChange | 切换预览图的回调 | (current: number, prevCurrent: number) => void | - | 5.3.0 |
 | onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean, current: number) => void | - | current 参数 5.3.0 |
@@ -16322,8 +17121,9 @@ Version: 4.24
 | maxScale | 最大放大倍数 | number | 50 | 5.7.0 |
 | closeIcon | 自定义关闭 Icon | React.ReactNode | - | 5.7.0 |
 | forceRender | 强制渲染预览图 | boolean | - | - |
-| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: Omit<[ToolbarRenderInfoType](#toolbarrenderinfotype), 'current' \| 'total'>) => React.ReactNode | - | 5.7.0 |
-| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype) }) => React.ReactNode | - | 5.7.0 |
+| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: Omit<[ToolbarRenderInfoType](#toolbarrenderinfotype), 'current' \| 'total'>) => React.ReactNode | - | 5.7.0, `info.image`: 5.18.0 |
+| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), image: [ImgInfo](#imginfo) }) => React.ReactNode | - | 5.7.0, image: 5.18.0 |
+| destroyOnClose | 关闭预览时销毁子元素 | boolean | false | - |
 | onTransform | 预览图 transform 变化的回调 | { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } | - | 5.7.0 |
 | onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean) => void | - | - |
 
@@ -16481,7 +17281,7 @@ Version: 4.24
 
 默认值: -
 
-版本: 5.7.0
+版本: 5.7.0, `info.image`: 5.18.0
 
 ### ant-design 中 Image - PreviewType的imageRender属性如何使用？
 
@@ -16489,11 +17289,23 @@ Version: 4.24
 
 说明: 自定义预览内容
 
-类型: (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype) }) => React.ReactNode
+类型: (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), image: [ImgInfo](#imginfo) }) => React.ReactNode
 
 默认值: -
 
-版本: 5.7.0
+版本: 5.7.0, image: 5.18.0
+
+### ant-design 中 Image - PreviewType的destroyOnClose属性如何使用？
+
+参数: destroyOnClose
+
+说明: 关闭预览时销毁子元素
+
+类型: boolean
+
+默认值: false
+
+版本: -
 
 ### ant-design 中 Image - PreviewType的onTransform属性如何使用？
 
@@ -16580,8 +17392,8 @@ Version: 4.24
 | closeIcon | 自定义关闭 Icon | React.ReactNode | - | 5.7.0 |
 | forceRender | 强制渲染预览图 | boolean | - | - |
 | countRender | 自定义预览计数内容 | (current: number, total: number) => React.ReactNode | - | 4.20.0 |
-| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: [ToolbarRenderInfoType](#toolbarrenderinfotype)) => React.ReactNode | - | 5.7.0 |
-| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), current: number }) => React.ReactNode | - | 5.7.0 |
+| toolbarRender | 自定义工具栏 | (originalNode: React.ReactElement, info: [ToolbarRenderInfoType](#toolbarrenderinfotype)) => React.ReactNode | - | 5.7.0, `info.image`: 5.18.0 |
+| imageRender | 自定义预览内容 | (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), image: [ImgInfo](#imginfo), current: number }) => React.ReactNode | - | 5.7.0, image: 5.18.0 |
 | onTransform | 预览图 transform 变化的回调 | { transform: [TransformType](#transformtype), action: [TransformAction](#transformaction) } | - | 5.7.0 |
 | onChange | 切换预览图的回调 | (current: number, prevCurrent: number) => void | - | 5.3.0 |
 | onVisibleChange | 当 `visible` 发生改变时的回调 | (visible: boolean, prevVisible: boolean, current: number) => void | - | current 参数 5.3.0 |
@@ -16752,7 +17564,7 @@ Version: 4.24
 
 默认值: -
 
-版本: 5.7.0
+版本: 5.7.0, `info.image`: 5.18.0
 
 ### ant-design 中 Image - PreviewGroupType的imageRender属性如何使用？
 
@@ -16760,11 +17572,11 @@ Version: 4.24
 
 说明: 自定义预览内容
 
-类型: (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), current: number }) => React.ReactNode
+类型: (originalNode: React.ReactElement, info: { transform: [TransformType](#transformtype), image: [ImgInfo](#imginfo), current: number }) => React.ReactNode
 
 默认值: -
 
-版本: 5.7.0
+版本: 5.7.0, image: 5.18.0
 
 ### ant-design 中 Image - PreviewGroupType的onTransform属性如何使用？
 
@@ -17323,7 +18135,7 @@ Version: 4.24
 | colon | 配置 Form.Item 的 `colon` 的默认值。表示是否显示 label 后面的冒号 (只有在属性 layout 为 horizontal 时有效) | boolean | true | - |
 | disabled | 设置表单组件禁用，仅对 antd 组件有效 | boolean | false | 4.21.0 |
 | component | 设置 Form 渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType \| false | form | - |
-| fields | 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#components-form-demo-global-state) | [FieldData](#fielddata)\[] | - | - |
+| fields | 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#form-demo-global-state) | [FieldData](#fielddata)\[] | - | - |
 | form | 经 `Form.useForm()` 创建的 form 控制实例，不提供时会自动创建 | [FormInstance](#forminstance) | - | - |
 | feedbackIcons | 当 `Form.Item` 有 `hasFeedback` 属性时可以自定义图标 | [FeedbackIcons](#feedbackicons) | - | 5.9.0 |
 | initialValues | 表单默认值，只有初始化以及重置时生效 | object | - | - |
@@ -17334,7 +18146,7 @@ Version: 4.24
 | name | 表单名称，会作为表单字段 `id` 前缀使用 | string | - | - |
 | preserve | 当字段被删除时保留字段值。你可以通过 `getFieldsValue(true)` 来获取保留字段值 | boolean | true | 4.4.0 |
 | requiredMark | 必选样式，可以切换为必选或者可选展示样式。此为 Form 配置，Form.Item 无法单独配置 | boolean \| `optional` \| ((label: ReactNode, info: { required: boolean }) => ReactNode) | true | `renderProps`: 5.9.0 |
-| scrollToFirstError | 提交失败自动滚动到第一个错误字段 | boolean \| [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options) | false | - |
+| scrollToFirstError | 提交失败自动滚动到第一个错误字段 | boolean \| [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options) \| { focus: boolean } | false | - |
 | size | 设置字段组件的尺寸（仅限 antd 组件） | `small` \| `middle` \| `large` | - | - |
 | validateMessages | 验证提示模板，说明[见下](#validatemessages) | [ValidateMessages](https://github.com/ant-design/ant-design/blob/6234509d18bac1ac60fbb3f92a5b2c6a6361295a/components/locale/en_US.ts#L88-L134) | - | - |
 | validateTrigger | 统一设置字段触发验证的时机 | string \| string\[] | `onChange` | 4.3.0 |
@@ -17344,6 +18156,7 @@ Version: 4.24
 | onFinish | 提交表单且数据验证成功后回调事件 | function(values) | - | - |
 | onFinishFailed | 提交表单且数据验证失败后回调事件 | function({ values, errorFields, outOfDate }) | - | - |
 | onValuesChange | 字段值更新时触发回调事件 | function(changedValues, allValues) | - | - |
+| clearOnDestroy | 当表单被卸载时清空表单值 | boolean | false | 5.18.0 |
 
 #### Form - Form.Item
 
@@ -17359,25 +18172,26 @@ Version: 4.24
 | hidden | 是否隐藏字段（依然会收集和校验字段） | boolean | false | 4.4.0 |
 | htmlFor | 设置子元素 label `htmlFor` 属性 | string | - | - |
 | initialValue | 设置子元素默认值，如果与 Form 的 `initialValues` 冲突则以 Form 为准 | string | - | 4.2.0 |
-| label | `label` 标签的文本 | ReactNode | - | - |
+| label | `label` 标签的文本，当不需要 label 又需要与冒号对齐，可以设为 null | ReactNode | - | null: 5.22.0 |
 | labelAlign | 标签文本对齐方式 | `left` \| `right` | `right` | - |
 | labelCol | `label` 标签布局，同 `<Col>` 组件，设置 `span` `offset` 值，如 `{span: 3, offset: 12}` 或 `sm: {span: 3, offset: 12}`。你可以通过 Form 的 `labelCol` 进行统一设置，不会作用于嵌套 Item。当和 Form 同时设置时，以 Item 为准 | [object](/components/grid-cn#col) | - | - |
-| messageVariables | 默认验证字段的信息 | Record\<string, string> | - | 4.7.0 |
+| messageVariables | 默认验证字段的信息，查看[详情](#messagevariables) | Record\<string, string> | - | 4.7.0 |
 | name | 字段名，支持数组 | [NamePath](#namepath) | - | - |
 | normalize | 组件获取值后进行转换，再放入 Form 中。不支持异步 | (value, prevValue, prevValues) => any | - | - |
 | noStyle | 为 `true` 时不带样式，作为纯字段控件使用。当自身没有 `validateStatus` 而父元素存在有 `validateStatus` 的 Form.Item 会继承父元素的 `validateStatus` | boolean | false | - |
 | preserve | 当字段被删除时保留字段值 | boolean | true | 4.4.0 |
 | required | 必填样式设置。如不设置，则会根据校验规则自动生成 | boolean | false | - |
-| rules | 校验规则，设置字段的校验逻辑。点击[此处](#components-form-demo-basic)查看示例 | [Rule](#rule)\[] | - | - |
+| rules | 校验规则，设置字段的校验逻辑。点击[此处](#form-demo-basic)查看示例 | [Rule](#rule)\[] | - | - |
 | shouldUpdate | 自定义字段更新逻辑，说明[见下](#shouldupdate) | boolean \| (prevValue, curValue) => boolean | false | - |
 | tooltip | 配置提示信息 | ReactNode \| [TooltipProps & { icon: ReactNode }](/components/tooltip-cn#api) | - | 4.7.0 |
-| trigger | 设置收集字段值变更的时机。点击[此处](#components-form-demo-customized-form-controls)查看示例 | string | `onChange` | - |
+| trigger | 设置收集字段值变更的时机。点击[此处](#form-demo-customized-form-controls)查看示例 | string | `onChange` | - |
 | validateFirst | 当某一规则校验不通过时，是否停止剩下的规则的校验。设置 `parallel` 时会并行校验 | boolean \| `parallel` | false | `parallel`: 4.5.0 |
 | validateDebounce | 设置防抖，延迟毫秒数后进行校验 | number | - | 5.9.0 |
 | validateStatus | 校验状态，如不设置，则会根据校验规则自动生成，可选：'success' 'warning' 'error' 'validating' | string | - | - |
 | validateTrigger | 设置字段校验的时机 | string \| string\[] | `onChange` | - |
-| valuePropName | 子节点的值的属性。注意：Switch、Checkbox 的 valuePropName 应该是是 `checked`，否则无法获取这个两个组件的值。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效 | string | `value` | - |
+| valuePropName | 子节点的值的属性。注意：Switch、Checkbox 的 valuePropName 应该是 `checked`，否则无法获取这个两个组件的值。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效 | string | `value` | - |
 | wrapperCol | 需要为输入控件设置布局样式时，使用该属性，用法同 `labelCol`。你可以通过 Form 的 `wrapperCol` 进行统一设置，不会作用于嵌套 Item。当和 Form 同时设置时，以 Item 为准 | [object](/components/grid-cn#col) | - | - |
+| layout | 表单项布局 | `horizontal` \| `vertical` | - | 5.18.0 |
 
 #### Form - Form.List
 
@@ -17427,7 +18241,7 @@ Version: 4.24
 | setFieldValue | 设置表单的值（该值将直接传入 form store 中并且**重置错误信息**。如果你不希望传入对象被修改，请克隆后传入） | (name: [NamePath](#namepath), value: any) => void | 4.22.0 |
 | setFieldsValue | 设置表单的值（该值将直接传入 form store 中并且**重置错误信息**。如果你不希望传入对象被修改，请克隆后传入）。如果你只想修改 Form.List 中单项值，请通过 `setFieldValue` 进行指定 | (values) => void | - |
 | submit | 提交表单，与点击 `submit` 按钮效果相同 | () => void | - |
-| validateFields | 触发表单验证，设置 `recursive` 时会递归校验所有包含的路径 | (nameList?: [NamePath](#namepath)\[], config?: [ValidateConfig](#validateFields)) => Promise | - |
+| validateFields | 触发表单验证，设置 `recursive` 时会递归校验所有包含的路径 | (nameList?: [NamePath](#namepath)\[], config?: [ValidateConfig](#validatefields)) => Promise | - |
 
 #### Form - FieldData
 
@@ -17454,9 +18268,9 @@ Version: 4.24
 | pattern | 正则表达式匹配 | RegExp | - |
 | required | 是否为必选字段 | boolean | - |
 | transform | 将字段值转换成目标值后进行校验 | (value) => any | - |
-| type | 类型，常见有 `string` \|`number` \|`boolean` \|`url` \| `email`。更多请参考[此处](https://github.com/yiminghe/async-validator#type) | string | - |
+| type | 类型，常见有 `string` \|`number` \|`boolean` \|`url` \| `email`。更多请参考[此处](https://github.com/react-component/async-validator#type) | string | - |
 | validateTrigger | 设置触发验证时机，必须是 Form.Item 的 `validateTrigger` 的子集 | string \| string\[] | - |
-| validator | 自定义校验，接收 Promise 作为返回值。[示例](#components-form-demo-register)参考 | ([rule](#rule), value) => Promise | - |
+| validator | 自定义校验，接收 Promise 作为返回值。[示例](#form-demo-register)参考 | ([rule](#rule), value) => Promise | - |
 | warningOnly | 仅警告，不阻塞表单提交 | boolean | 4.17.0 |
 | whitespace | 如果字段仅包含空格则校验不通过，只在 `type: 'string'` 时生效 | boolean | - |
 
@@ -17474,7 +18288,7 @@ Version: 4.24
 | colon | 配置 Form.Item 的 `colon` 的默认值。表示是否显示 label 后面的冒号 (只有在属性 layout 为 horizontal 时有效) | boolean | true | - |
 | disabled | 设置表单组件禁用，仅对 antd 组件有效 | boolean | false | 4.21.0 |
 | component | 设置 Form 渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType \| false | form | - |
-| fields | 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#components-form-demo-global-state) | [FieldData](#fielddata)\[] | - | - |
+| fields | 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#form-demo-global-state) | [FieldData](#fielddata)\[] | - | - |
 | form | 经 `Form.useForm()` 创建的 form 控制实例，不提供时会自动创建 | [FormInstance](#forminstance) | - | - |
 | feedbackIcons | 当 `Form.Item` 有 `hasFeedback` 属性时可以自定义图标 | [FeedbackIcons](#feedbackicons) | - | 5.9.0 |
 | initialValues | 表单默认值，只有初始化以及重置时生效 | object | - | - |
@@ -17485,7 +18299,7 @@ Version: 4.24
 | name | 表单名称，会作为表单字段 `id` 前缀使用 | string | - | - |
 | preserve | 当字段被删除时保留字段值。你可以通过 `getFieldsValue(true)` 来获取保留字段值 | boolean | true | 4.4.0 |
 | requiredMark | 必选样式，可以切换为必选或者可选展示样式。此为 Form 配置，Form.Item 无法单独配置 | boolean \| `optional` \| ((label: ReactNode, info: { required: boolean }) => ReactNode) | true | `renderProps`: 5.9.0 |
-| scrollToFirstError | 提交失败自动滚动到第一个错误字段 | boolean \| [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options) | false | - |
+| scrollToFirstError | 提交失败自动滚动到第一个错误字段 | boolean \| [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options) \| { focus: boolean } | false | - |
 | size | 设置字段组件的尺寸（仅限 antd 组件） | `small` \| `middle` \| `large` | - | - |
 | validateMessages | 验证提示模板，说明[见下](#validatemessages) | [ValidateMessages](https://github.com/ant-design/ant-design/blob/6234509d18bac1ac60fbb3f92a5b2c6a6361295a/components/locale/en_US.ts#L88-L134) | - | - |
 | validateTrigger | 统一设置字段触发验证的时机 | string \| string\[] | `onChange` | 4.3.0 |
@@ -17495,6 +18309,7 @@ Version: 4.24
 | onFinish | 提交表单且数据验证成功后回调事件 | function(values) | - | - |
 | onFinishFailed | 提交表单且数据验证失败后回调事件 | function({ values, errorFields, outOfDate }) | - | - |
 | onValuesChange | 字段值更新时触发回调事件 | function(changedValues, allValues) | - | - |
+| clearOnDestroy | 当表单被卸载时清空表单值 | boolean | false | 5.18.0 |
 
 ### ant-design 中 Form - Form的colon属性如何使用？
 
@@ -17536,7 +18351,7 @@ Version: 4.24
 
 参数: fields
 
-说明: 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#components-form-demo-global-state)
+说明: 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#form-demo-global-state)
 
 类型: [FieldData](#fielddata)\[]
 
@@ -17670,7 +18485,7 @@ Version: 4.24
 
 说明: 提交失败自动滚动到第一个错误字段
 
-类型: boolean \| [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options)
+类型: boolean \| [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options) \| { focus: boolean }
 
 默认值: false
 
@@ -17784,6 +18599,18 @@ Version: 4.24
 
 版本: -
 
+### ant-design 中 Form - Form的clearOnDestroy属性如何使用？
+
+参数: clearOnDestroy
+
+说明: 当表单被卸载时清空表单值
+
+类型: boolean
+
+默认值: false
+
+版本: 5.18.0
+
 ### ant-design 的 Form - Form.Item 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -17798,25 +18625,26 @@ Version: 4.24
 | hidden | 是否隐藏字段（依然会收集和校验字段） | boolean | false | 4.4.0 |
 | htmlFor | 设置子元素 label `htmlFor` 属性 | string | - | - |
 | initialValue | 设置子元素默认值，如果与 Form 的 `initialValues` 冲突则以 Form 为准 | string | - | 4.2.0 |
-| label | `label` 标签的文本 | ReactNode | - | - |
+| label | `label` 标签的文本，当不需要 label 又需要与冒号对齐，可以设为 null | ReactNode | - | null: 5.22.0 |
 | labelAlign | 标签文本对齐方式 | `left` \| `right` | `right` | - |
 | labelCol | `label` 标签布局，同 `<Col>` 组件，设置 `span` `offset` 值，如 `{span: 3, offset: 12}` 或 `sm: {span: 3, offset: 12}`。你可以通过 Form 的 `labelCol` 进行统一设置，不会作用于嵌套 Item。当和 Form 同时设置时，以 Item 为准 | [object](/components/grid-cn#col) | - | - |
-| messageVariables | 默认验证字段的信息 | Record\<string, string> | - | 4.7.0 |
+| messageVariables | 默认验证字段的信息，查看[详情](#messagevariables) | Record\<string, string> | - | 4.7.0 |
 | name | 字段名，支持数组 | [NamePath](#namepath) | - | - |
 | normalize | 组件获取值后进行转换，再放入 Form 中。不支持异步 | (value, prevValue, prevValues) => any | - | - |
 | noStyle | 为 `true` 时不带样式，作为纯字段控件使用。当自身没有 `validateStatus` 而父元素存在有 `validateStatus` 的 Form.Item 会继承父元素的 `validateStatus` | boolean | false | - |
 | preserve | 当字段被删除时保留字段值 | boolean | true | 4.4.0 |
 | required | 必填样式设置。如不设置，则会根据校验规则自动生成 | boolean | false | - |
-| rules | 校验规则，设置字段的校验逻辑。点击[此处](#components-form-demo-basic)查看示例 | [Rule](#rule)\[] | - | - |
+| rules | 校验规则，设置字段的校验逻辑。点击[此处](#form-demo-basic)查看示例 | [Rule](#rule)\[] | - | - |
 | shouldUpdate | 自定义字段更新逻辑，说明[见下](#shouldupdate) | boolean \| (prevValue, curValue) => boolean | false | - |
 | tooltip | 配置提示信息 | ReactNode \| [TooltipProps & { icon: ReactNode }](/components/tooltip-cn#api) | - | 4.7.0 |
-| trigger | 设置收集字段值变更的时机。点击[此处](#components-form-demo-customized-form-controls)查看示例 | string | `onChange` | - |
+| trigger | 设置收集字段值变更的时机。点击[此处](#form-demo-customized-form-controls)查看示例 | string | `onChange` | - |
 | validateFirst | 当某一规则校验不通过时，是否停止剩下的规则的校验。设置 `parallel` 时会并行校验 | boolean \| `parallel` | false | `parallel`: 4.5.0 |
 | validateDebounce | 设置防抖，延迟毫秒数后进行校验 | number | - | 5.9.0 |
 | validateStatus | 校验状态，如不设置，则会根据校验规则自动生成，可选：'success' 'warning' 'error' 'validating' | string | - | - |
 | validateTrigger | 设置字段校验的时机 | string \| string\[] | `onChange` | - |
-| valuePropName | 子节点的值的属性。注意：Switch、Checkbox 的 valuePropName 应该是是 `checked`，否则无法获取这个两个组件的值。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效 | string | `value` | - |
+| valuePropName | 子节点的值的属性。注意：Switch、Checkbox 的 valuePropName 应该是 `checked`，否则无法获取这个两个组件的值。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效 | string | `value` | - |
 | wrapperCol | 需要为输入控件设置布局样式时，使用该属性，用法同 `labelCol`。你可以通过 Form 的 `wrapperCol` 进行统一设置，不会作用于嵌套 Item。当和 Form 同时设置时，以 Item 为准 | [object](/components/grid-cn#col) | - | - |
+| layout | 表单项布局 | `horizontal` \| `vertical` | - | 5.18.0 |
 
 ### ant-design 中 Form - Form.Item的colon属性如何使用？
 
@@ -17942,13 +18770,13 @@ Version: 4.24
 
 参数: label
 
-说明: `label` 标签的文本
+说明: `label` 标签的文本，当不需要 label 又需要与冒号对齐，可以设为 null
 
 类型: ReactNode
 
 默认值: -
 
-版本: -
+版本: null: 5.22.0
 
 ### ant-design 中 Form - Form.Item的labelAlign属性如何使用？
 
@@ -17978,7 +18806,7 @@ Version: 4.24
 
 参数: messageVariables
 
-说明: 默认验证字段的信息
+说明: 默认验证字段的信息，查看[详情](#messagevariables)
 
 类型: Record\<string, string>
 
@@ -18050,7 +18878,7 @@ Version: 4.24
 
 参数: rules
 
-说明: 校验规则，设置字段的校验逻辑。点击[此处](#components-form-demo-basic)查看示例
+说明: 校验规则，设置字段的校验逻辑。点击[此处](#form-demo-basic)查看示例
 
 类型: [Rule](#rule)\[]
 
@@ -18086,7 +18914,7 @@ Version: 4.24
 
 参数: trigger
 
-说明: 设置收集字段值变更的时机。点击[此处](#components-form-demo-customized-form-controls)查看示例
+说明: 设置收集字段值变更的时机。点击[此处](#form-demo-customized-form-controls)查看示例
 
 类型: string
 
@@ -18146,7 +18974,7 @@ Version: 4.24
 
 参数: valuePropName
 
-说明: 子节点的值的属性。注意：Switch、Checkbox 的 valuePropName 应该是是 `checked`，否则无法获取这个两个组件的值。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效
+说明: 子节点的值的属性。注意：Switch、Checkbox 的 valuePropName 应该是 `checked`，否则无法获取这个两个组件的值。该属性为 `getValueProps` 的封装，自定义 `getValueProps` 后会失效
 
 类型: string
 
@@ -18165,6 +18993,18 @@ Version: 4.24
 默认值: -
 
 版本: -
+
+### ant-design 中 Form - Form.Item的layout属性如何使用？
+
+参数: layout
+
+说明: 表单项布局
+
+类型: `horizontal` \| `vertical`
+
+默认值: -
+
+版本: 5.18.0
 
 ### ant-design 的 Form - Form.List 有哪些配置？
 
@@ -18328,7 +19168,7 @@ Version: 4.24
 | setFieldValue | 设置表单的值（该值将直接传入 form store 中并且**重置错误信息**。如果你不希望传入对象被修改，请克隆后传入） | (name: [NamePath](#namepath), value: any) => void | 4.22.0 |
 | setFieldsValue | 设置表单的值（该值将直接传入 form store 中并且**重置错误信息**。如果你不希望传入对象被修改，请克隆后传入）。如果你只想修改 Form.List 中单项值，请通过 `setFieldValue` 进行指定 | (values) => void | - |
 | submit | 提交表单，与点击 `submit` 按钮效果相同 | () => void | - |
-| validateFields | 触发表单验证，设置 `recursive` 时会递归校验所有包含的路径 | (nameList?: [NamePath](#namepath)\[], config?: [ValidateConfig](#validateFields)) => Promise | - |
+| validateFields | 触发表单验证，设置 `recursive` 时会递归校验所有包含的路径 | (nameList?: [NamePath](#namepath)\[], config?: [ValidateConfig](#validatefields)) => Promise | - |
 
 ### ant-design 中 Form - FormInstance的getFieldError属性如何使用？
 
@@ -18476,7 +19316,7 @@ Version: 4.24
 
 说明: 触发表单验证，设置 `recursive` 时会递归校验所有包含的路径
 
-类型: (nameList?: [NamePath](#namepath)\[], config?: [ValidateConfig](#validateFields)) => Promise
+类型: (nameList?: [NamePath](#namepath)\[], config?: [ValidateConfig](#validatefields)) => Promise
 
 版本: -
 
@@ -18553,9 +19393,9 @@ Version: 4.24
 | pattern | 正则表达式匹配 | RegExp | - |
 | required | 是否为必选字段 | boolean | - |
 | transform | 将字段值转换成目标值后进行校验 | (value) => any | - |
-| type | 类型，常见有 `string` \|`number` \|`boolean` \|`url` \| `email`。更多请参考[此处](https://github.com/yiminghe/async-validator#type) | string | - |
+| type | 类型，常见有 `string` \|`number` \|`boolean` \|`url` \| `email`。更多请参考[此处](https://github.com/react-component/async-validator#type) | string | - |
 | validateTrigger | 设置触发验证时机，必须是 Form.Item 的 `validateTrigger` 的子集 | string \| string\[] | - |
-| validator | 自定义校验，接收 Promise 作为返回值。[示例](#components-form-demo-register)参考 | ([rule](#rule), value) => Promise | - |
+| validator | 自定义校验，接收 Promise 作为返回值。[示例](#form-demo-register)参考 | ([rule](#rule), value) => Promise | - |
 | warningOnly | 仅警告，不阻塞表单提交 | boolean | 4.17.0 |
 | whitespace | 如果字段仅包含空格则校验不通过，只在 `type: 'string'` 时生效 | boolean | - |
 
@@ -18663,7 +19503,7 @@ Version: 4.24
 
 名称: type
 
-说明: 类型，常见有 `string` \|`number` \|`boolean` \|`url` \| `email`。更多请参考[此处](https://github.com/yiminghe/async-validator#type)
+说明: 类型，常见有 `string` \|`number` \|`boolean` \|`url` \| `email`。更多请参考[此处](https://github.com/react-component/async-validator#type)
 
 类型: string
 
@@ -18683,7 +19523,7 @@ Version: 4.24
 
 名称: validator
 
-说明: 自定义校验，接收 Promise 作为返回值。[示例](#components-form-demo-register)参考
+说明: 自定义校验，接收 Promise 作为返回值。[示例](#form-demo-register)参考
 
 类型: ([rule](#rule), value) => Promise
 
@@ -18754,6 +19594,7 @@ Version: 4.24
 | onClick | 点击按钮时的回调 | (event) => void | - | - |
 | href | 点击跳转的地址，指定此属性 button 的行为和 a 链接一致 | string | - | - |
 | target | 相当于 a 标签的 target 属性，href 存在时生效 | string | - | - |
+| htmlType | 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button#type) | `submit` \| `reset` \| `button` | `button` | 5.21.0 |
 | badge | 带徽标数字的悬浮按钮（不支持 `status` 以及相关属性） | [BadgeProps](/components/badge-cn#api) | - | 5.4.0 |
 
 #### FloatButton - FloatButton.Group
@@ -18764,7 +19605,9 @@ Version: 4.24
 | trigger | 触发方式（有触发方式为菜单模式） | `click` \| `hover` | - | - |
 | open | 受控展开，需配合 trigger 一起使用 | boolean | - | - |
 | closeIcon | 自定义关闭按钮 | React.ReactNode | `<CloseOutlined />` | - |
+| placement | 自定义菜单弹出位置 | `top` \| `left` \| `right` \| `bottom` | `top` | 5.21.0 |
 | onOpenChange | 展开收起时的回调，需配合 trigger 一起使用 | (open: boolean) => void | - | - |
+| onClick | 点击按钮时的回调（仅在菜单模式中有效） | (event) => void | - | 5.3.0 |
 
 #### FloatButton - FloatButton.BackTop
 
@@ -18787,6 +19630,7 @@ Version: 4.24
 | onClick | 点击按钮时的回调 | (event) => void | - | - |
 | href | 点击跳转的地址，指定此属性 button 的行为和 a 链接一致 | string | - | - |
 | target | 相当于 a 标签的 target 属性，href 存在时生效 | string | - | - |
+| htmlType | 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button#type) | `submit` \| `reset` \| `button` | `button` | 5.21.0 |
 | badge | 带徽标数字的悬浮按钮（不支持 `status` 以及相关属性） | [BadgeProps](/components/badge-cn#api) | - | 5.4.0 |
 
 ### ant-design 中 FloatButton - FloatButton的icon属性如何使用？
@@ -18885,6 +19729,18 @@ Version: 4.24
 
 版本: -
 
+### ant-design 中 FloatButton - FloatButton的htmlType属性如何使用？
+
+参数: htmlType
+
+说明: 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button#type)
+
+类型: `submit` \| `reset` \| `button`
+
+默认值: `button`
+
+版本: 5.21.0
+
 ### ant-design 中 FloatButton - FloatButton的badge属性如何使用？
 
 参数: badge
@@ -18905,7 +19761,9 @@ Version: 4.24
 | trigger | 触发方式（有触发方式为菜单模式） | `click` \| `hover` | - | - |
 | open | 受控展开，需配合 trigger 一起使用 | boolean | - | - |
 | closeIcon | 自定义关闭按钮 | React.ReactNode | `<CloseOutlined />` | - |
+| placement | 自定义菜单弹出位置 | `top` \| `left` \| `right` \| `bottom` | `top` | 5.21.0 |
 | onOpenChange | 展开收起时的回调，需配合 trigger 一起使用 | (open: boolean) => void | - | - |
+| onClick | 点击按钮时的回调（仅在菜单模式中有效） | (event) => void | - | 5.3.0 |
 
 ### ant-design 中 FloatButton - FloatButton.Group的shape属性如何使用？
 
@@ -18955,6 +19813,18 @@ Version: 4.24
 
 版本: -
 
+### ant-design 中 FloatButton - FloatButton.Group的placement属性如何使用？
+
+参数: placement
+
+说明: 自定义菜单弹出位置
+
+类型: `top` \| `left` \| `right` \| `bottom`
+
+默认值: `top`
+
+版本: 5.21.0
+
 ### ant-design 中 FloatButton - FloatButton.Group的onOpenChange属性如何使用？
 
 参数: onOpenChange
@@ -18966,6 +19836,18 @@ Version: 4.24
 默认值: -
 
 版本: -
+
+### ant-design 中 FloatButton - FloatButton.Group的onClick属性如何使用？
+
+参数: onClick
+
+说明: 点击按钮时的回调（仅在菜单模式中有效）
+
+类型: (event) => void
+
+默认值: -
+
+版本: 5.3.0
 
 ### ant-design 的 FloatButton - FloatButton.BackTop 有哪些配置？
 
@@ -19031,10 +19913,10 @@ Version: 4.24
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
 | vertical | flex 主轴的方向是否垂直，使用 `flex-direction: column` | boolean | `false` |
-| wrap | 设置元素单行显示还是多行显示 | 参考 [flex-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap) | nowrap | - |
-| justify | 设置元素在主轴方向上的对齐方式 | 参考 [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content) | normal | - |
-| align | 设置元素在交叉轴方向上的对齐方式 | 参考 [align-items](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items) | normal | - |
-| flex | flex CSS 简写属性 | 参考 [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex) | normal | - |
+| wrap | 设置元素单行显示还是多行显示 | [flex-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap) \| boolean | nowrap | boolean: 5.17.0 |
+| justify | 设置元素在主轴方向上的对齐方式 | [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content) | normal | - |
+| align | 设置元素在交叉轴方向上的对齐方式 | [align-items](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items) | normal | - |
+| flex | flex CSS 简写属性 | [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex) | normal | - |
 | gap | 设置网格之间的间隙 | `small` \| `middle` \| `large` \| string \| number | - | - |
 | component | 自定义元素类型 | React.ComponentType | `div` | - |
 
@@ -19043,10 +19925,10 @@ Version: 4.24
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- | --- |
 | vertical | flex 主轴的方向是否垂直，使用 `flex-direction: column` | boolean | `false` |
-| wrap | 设置元素单行显示还是多行显示 | 参考 [flex-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap) | nowrap | - |
-| justify | 设置元素在主轴方向上的对齐方式 | 参考 [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content) | normal | - |
-| align | 设置元素在交叉轴方向上的对齐方式 | 参考 [align-items](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items) | normal | - |
-| flex | flex CSS 简写属性 | 参考 [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex) | normal | - |
+| wrap | 设置元素单行显示还是多行显示 | [flex-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap) \| boolean | nowrap | boolean: 5.17.0 |
+| justify | 设置元素在主轴方向上的对齐方式 | [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content) | normal | - |
+| align | 设置元素在交叉轴方向上的对齐方式 | [align-items](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items) | normal | - |
+| flex | flex CSS 简写属性 | [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex) | normal | - |
 | gap | 设置网格之间的间隙 | `small` \| `middle` \| `large` \| string \| number | - | - |
 | component | 自定义元素类型 | React.ComponentType | `div` | - |
 
@@ -19066,11 +19948,11 @@ Version: 4.24
 
 说明: 设置元素单行显示还是多行显示
 
-类型: 参考 [flex-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap)
+类型: [flex-wrap](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-wrap) \| boolean
 
 默认值: nowrap
 
-版本: -
+版本: boolean: 5.17.0
 
 ### ant-design 中 Flex - Flex的justify属性如何使用？
 
@@ -19078,7 +19960,7 @@ Version: 4.24
 
 说明: 设置元素在主轴方向上的对齐方式
 
-类型: 参考 [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content)
+类型: [justify-content](https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content)
 
 默认值: normal
 
@@ -19090,7 +19972,7 @@ Version: 4.24
 
 说明: 设置元素在交叉轴方向上的对齐方式
 
-类型: 参考 [align-items](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items)
+类型: [align-items](https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items)
 
 默认值: normal
 
@@ -19102,7 +19984,7 @@ Version: 4.24
 
 说明: flex CSS 简写属性
 
-类型: 参考 [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex)
+类型: [flex](https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex)
 
 默认值: normal
 
@@ -19529,10 +20411,12 @@ Version: 4.24
 | style | 设计 Drawer 容器样式，如果你只需要设置内容部分请使用 `bodyStyle` | CSSProperties | - | - |
 | styles | 语义化结构 style | [Record\<SemanticDOM, CSSProperties>](#semantic-dom) | - | 5.10.0 |
 | title | 标题 | ReactNode | - | - |
+| loading | 显示骨架屏 | boolean | false | 5.17.0 |
 | open | Drawer 是否可见 | boolean | - |
 | width | 宽度 | string \| number | 378 | - |
 | zIndex | 设置 Drawer 的 `z-index` | number | 1000 | - |
 | onClose | 点击遮罩层或左上角叉或取消按钮的回调 | function(e) | - | - |
+| drawerRender | 自定义渲染抽屉 | (node: ReactNode) => ReactNode | - | 5.18.0 |
 
 ### ant-design 的 Drawer - Drawer 有哪些配置？
 
@@ -19559,10 +20443,12 @@ Version: 4.24
 | style | 设计 Drawer 容器样式，如果你只需要设置内容部分请使用 `bodyStyle` | CSSProperties | - | - |
 | styles | 语义化结构 style | [Record\<SemanticDOM, CSSProperties>](#semantic-dom) | - | 5.10.0 |
 | title | 标题 | ReactNode | - | - |
+| loading | 显示骨架屏 | boolean | false | 5.17.0 |
 | open | Drawer 是否可见 | boolean | - |
 | width | 宽度 | string \| number | 378 | - |
 | zIndex | 设置 Drawer 的 `z-index` | number | 1000 | - |
 | onClose | 点击遮罩层或左上角叉或取消按钮的回调 | function(e) | - | - |
+| drawerRender | 自定义渲染抽屉 | (node: ReactNode) => ReactNode | - | 5.18.0 |
 
 ### ant-design 中 Drawer - Drawer的autoFocus属性如何使用？
 
@@ -19816,6 +20702,18 @@ Version: 4.24
 
 版本: -
 
+### ant-design 中 Drawer - Drawer的loading属性如何使用？
+
+参数: loading
+
+说明: 显示骨架屏
+
+类型: boolean
+
+默认值: false
+
+版本: 5.17.0
+
 ### ant-design 中 Drawer - Drawer的open属性如何使用？
 
 参数: open
@@ -19862,6 +20760,18 @@ Version: 4.24
 
 版本: -
 
+### ant-design 中 Drawer - Drawer的drawerRender属性如何使用？
+
+参数: drawerRender
+
+说明: 自定义渲染抽屉
+
+类型: (node: ReactNode) => ReactNode
+
+默认值: -
+
+版本: 5.18.0
+
 ### ant-design 的 Divider 有哪些配置？
 
 #### Divider - Divider
@@ -19871,6 +20781,7 @@ Version: 4.24
 | children | 嵌套的标题 | ReactNode | - | - |
 | className | 分割线样式类 | string | - | - |
 | dashed | 是否虚线 | boolean | false | - |
+| variant | 分割线是虚线、点线还是实线 | `dashed` \| `dotted` \| `solid` | solid | 5.20.0 |
 | orientation | 分割线标题的位置 | `left` \| `right` \| `center` | `center` | - |
 | orientationMargin | 标题和最近 left/right 边框之间的距离，去除了分割线，同时 `orientation` 必须为 `left` 或 `right`。如果传入 `string` 类型的数字且不带单位，默认单位是 px | string \| number | - | - |
 | plain | 文字是否显示为普通正文样式 | boolean | false | 4.2.0 |
@@ -19884,6 +20795,7 @@ Version: 4.24
 | children | 嵌套的标题 | ReactNode | - | - |
 | className | 分割线样式类 | string | - | - |
 | dashed | 是否虚线 | boolean | false | - |
+| variant | 分割线是虚线、点线还是实线 | `dashed` \| `dotted` \| `solid` | solid | 5.20.0 |
 | orientation | 分割线标题的位置 | `left` \| `right` \| `center` | `center` | - |
 | orientationMargin | 标题和最近 left/right 边框之间的距离，去除了分割线，同时 `orientation` 必须为 `left` 或 `right`。如果传入 `string` 类型的数字且不带单位，默认单位是 px | string \| number | - | - |
 | plain | 文字是否显示为普通正文样式 | boolean | false | 4.2.0 |
@@ -19925,6 +20837,18 @@ Version: 4.24
 默认值: false
 
 版本: -
+
+### ant-design 中 Divider - Divider的variant属性如何使用？
+
+参数: variant
+
+说明: 分割线是虚线、点线还是实线
+
+类型: `dashed` \| `dotted` \| `solid`
+
+默认值: solid
+
+版本: 5.20.0
 
 ### ant-design 中 Divider - Divider的orientation属性如何使用？
 
@@ -19993,7 +20917,7 @@ Version: 4.24
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | bordered | 是否展示边框 | boolean | false | - |
-| colon | 配置 `Descriptions.Item` 的 `colon` 的默认值 | boolean | true | - |
+| colon | 配置 `Descriptions.Item` 的 `colon` 的默认值。表示是否显示 label 后面的冒号 | boolean | true | - |
 | column | 一行的 `DescriptionItems` 数量，可以写成像素值或支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}` | number \| [Record\<Breakpoint, number>](https://github.com/ant-design/ant-design/blob/84ca0d23ae52e4f0940f20b0e22eabe743f90dca/components/descriptions/index.tsx#L111C21-L111C56) | 3 | - |
 | contentStyle | 自定义内容样式 | CSSProperties | - | 4.10.0 |
 | extra | 描述列表的操作区域，显示在右上方 | ReactNode | - | 4.5.0 |
@@ -20010,14 +20934,14 @@ Version: 4.24
 | contentStyle | 自定义内容样式 | CSSProperties | - | 4.9.0 |
 | label | 内容的描述 | ReactNode | - | - |
 | labelStyle | 自定义标签样式 | CSSProperties | - | 4.9.0 |
-| span | 包含列的数量 | number \| [Screens](/components/grid#col) | 1 | `screens: 5.9.0` |
+| span | 包含列的数量（`filled` 铺满当前行剩余部分） | number\| `filled` \| [Screens](/components/grid-cn#col) | 1 | `screens: 5.9.0`，`filled: 5.22.0` |
 
 ### ant-design 的 Descriptions - Descriptions 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | bordered | 是否展示边框 | boolean | false | - |
-| colon | 配置 `Descriptions.Item` 的 `colon` 的默认值 | boolean | true | - |
+| colon | 配置 `Descriptions.Item` 的 `colon` 的默认值。表示是否显示 label 后面的冒号 | boolean | true | - |
 | column | 一行的 `DescriptionItems` 数量，可以写成像素值或支持响应式的对象写法 `{ xs: 8, sm: 16, md: 24}` | number \| [Record\<Breakpoint, number>](https://github.com/ant-design/ant-design/blob/84ca0d23ae52e4f0940f20b0e22eabe743f90dca/components/descriptions/index.tsx#L111C21-L111C56) | 3 | - |
 | contentStyle | 自定义内容样式 | CSSProperties | - | 4.10.0 |
 | extra | 描述列表的操作区域，显示在右上方 | ReactNode | - | 4.5.0 |
@@ -20043,7 +20967,7 @@ Version: 4.24
 
 参数: colon
 
-说明: 配置 `Descriptions.Item` 的 `colon` 的默认值
+说明: 配置 `Descriptions.Item` 的 `colon` 的默认值。表示是否显示 label 后面的冒号
 
 类型: boolean
 
@@ -20154,7 +21078,7 @@ Version: 4.24
 | contentStyle | 自定义内容样式 | CSSProperties | - | 4.9.0 |
 | label | 内容的描述 | ReactNode | - | - |
 | labelStyle | 自定义标签样式 | CSSProperties | - | 4.9.0 |
-| span | 包含列的数量 | number \| [Screens](/components/grid#col) | 1 | `screens: 5.9.0` |
+| span | 包含列的数量（`filled` 铺满当前行剩余部分） | number\| `filled` \| [Screens](/components/grid-cn#col) | 1 | `screens: 5.9.0`，`filled: 5.22.0` |
 
 ### ant-design 中 Descriptions - DescriptionItem的contentStyle属性如何使用？
 
@@ -20196,13 +21120,13 @@ Version: 4.24
 
 参数: span
 
-说明: 包含列的数量
+说明: 包含列的数量（`filled` 铺满当前行剩余部分）
 
-类型: number \| [Screens](/components/grid#col)
+类型: number\| `filled` \| [Screens](/components/grid-cn#col)
 
 默认值: 1
 
-版本: `screens: 5.9.0`
+版本: `screens: 5.9.0`，`filled: 5.22.0`
 
 ### ant-design 的 DatePicker 有哪些配置？
 
@@ -20217,8 +21141,8 @@ Version: 4.24
 | cellRender | 自定义单元格的内容 | (current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
 | components | 自定义面板 | Record\<Panel \| 'input', React.ComponentType> | - | 5.14.0 |
 | disabled | 禁用 | boolean | false | - |
-| disabledDate | 不可选择的日期 | (currentDate: dayjs, info: { from?: dayjs }) => boolean | - | `info`: 5.14.0 |
-| format | 设置日期格式，为数组时支持多格式匹配，展示以第一个为准。配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。示例：[自定义格式](#components-date-picker-demo-format) | [formatType](#formattype) | [rc-picker](https://github.com/react-component/picker/blob/f512f18ed59d6791280d1c3d7d37abbb9867eb0b/src/utils/uiUtil.ts#L155-L177) | - |
+| disabledDate | 不可选择的日期 | (currentDate: dayjs, info: { from?: dayjs, type: Picker }) => boolean | - | `info`: 5.14.0 |
+| format | 设置日期格式，为数组时支持多格式匹配，展示以第一个为准。配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。示例：[自定义格式](#date-picker-demo-format) | [formatType](#formattype) | [rc-picker](https://github.com/react-component/picker/blob/f512f18ed59d6791280d1c3d7d37abbb9867eb0b/src/utils/uiUtil.ts#L155-L177) | - |
 | order | 多选、范围时是否自动排序 | boolean | true | 5.14.0 |
 | preserveInvalidOnBlur | 失去焦点是否要清空输入框内无效内容 | boolean | false | 5.14.0 |
 | popupClassName | 额外的弹出日历 className | string | - | 4.23.0 |
@@ -20236,6 +21160,7 @@ Version: 4.24
 | placeholder | 输入框提示文字 | string \| \[string, string] | - | - |
 | placement | 选择框弹出的位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | bottomLeft | - |
 | popupStyle | 额外的弹出日历样式 | CSSProperties | {} | - |
+| prefix | 自定义前缀 | ReactNode | - | 5.22.0 |
 | prevIcon | 自定义上一个图标 | ReactNode | - | 4.17.0 |
 | presets | 预设时间范围快捷选择, 自 `5.8.0` 起 value 支持函数返回值 | { label: React.ReactNode, value: Dayjs \| (() => Dayjs) }\[] | - | - |
 | size | 输入框大小，`large` 高度为 40px，`small` 为 24px，默认是 32px | `large` \| `middle` \| `small` | - | - |
@@ -20268,7 +21193,7 @@ Version: 4.24
 | renderExtraFooter | 在面板中添加额外的页脚 | (mode) => React.ReactNode | - | - |
 | showNow | 显示当前日期时间的快捷选择 | boolean | - | - |
 | showTime | 增加时间选择功能 | Object \| boolean | [TimePicker Options](/components/time-picker-cn#api) | - |
-| showTime.defaultValue | 设置用户选择日期时默认的时分秒，[例子](#components-date-picker-demo-disabled-date) | [dayjs](https://day.js.org/) | dayjs() | - |
+| showTime.defaultValue | 设置用户选择日期时默认的时分秒，[例子](#date-picker-demo-disabled-date) | [dayjs](https://day.js.org/) | dayjs() | - |
 | showWeek | DatePicker 下展示当前周 | boolean | false | 5.14.0 |
 | value | 日期 | [dayjs](https://day.js.org/) | - | - |
 | onChange | 时间发生变化的回调 | function(date: dayjs, dateString: string) | - | - |
@@ -20318,6 +21243,7 @@ Version: 4.24
 | renderExtraFooter | 在面板中添加额外的页脚 | (mode) => React.ReactNode | - | - |
 | value | 日期 | [dayjs](https://day.js.org/) | - | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - | - |
+| showWeek | DatePicker 下展示当前周 | boolean | true | 5.14.0 |
 
 #### DatePicker - RangePicker
 
@@ -20329,7 +21255,7 @@ Version: 4.24
 | defaultPickerValue | 默认面板日期，每次面板打开时会被重置到该日期 | [dayjs](https://day.js.org/)\[] | - | 5.14.0 |
 | defaultValue | 默认日期 | [dayjs](https://day.js.org/)\[] | - | - |
 | disabled | 禁用起始项 | \[boolean, boolean] | - | - |
-| disabledTime | 不可选择的时间 | function(date: dayjs, partial: `start` \| `end`) | - | - |
+| disabledTime | 不可选择的时间 | function(date: dayjs, partial: `start` \| `end`, info: { from?: dayjs }) | - | `info.from`: 5.17.0 |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | [formatType](#formattype) | `YYYY-MM-DD HH:mm:ss` | - |
 | id | 设置输入框 `id` 属性。 | { start?: string, end?: string } | - | 5.14.0 |
 | pickerValue | 面板日期，可以用于受控切换面板所在日期。配合 `onPanelChange` 使用。 | [dayjs](https://day.js.org/)\[] | - | 5.14.0 |
@@ -20337,7 +21263,7 @@ Version: 4.24
 | renderExtraFooter | 在面板中添加额外的页脚 | () => React.ReactNode | - | - |
 | separator | 设置分隔符 | React.ReactNode | `<SwapRightOutlined />` | - |
 | showTime | 增加时间选择功能 | Object\|boolean | [TimePicker Options](/components/time-picker-cn#api) | - |
-| showTime.defaultValue | 设置用户选择日期时默认的时分秒，[例子](#components-date-picker-demo-disabled-date) | [dayjs](https://day.js.org/)\[] | \[dayjs(), dayjs()] | - |
+| showTime.defaultValue | 设置用户选择日期时默认的时分秒，[例子](#date-picker-demo-disabled-date) | [dayjs](https://day.js.org/)\[] | \[dayjs(), dayjs()] | - |
 | value | 日期 | [dayjs](https://day.js.org/)\[] | - | - |
 | onCalendarChange | 待选日期发生变化的回调。`info` 参数自 4.4.0 添加 | function(dates: \[dayjs, dayjs], dateStrings: \[string, string], info: { range:`start`\|`end` }) | - | - |
 | onChange | 日期范围发生变化的回调 | function(dates: \[dayjs, dayjs], dateStrings: \[string, string]) | - | - |
@@ -20355,8 +21281,8 @@ Version: 4.24
 | cellRender | 自定义单元格的内容 | (current: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
 | components | 自定义面板 | Record\<Panel \| 'input', React.ComponentType> | - | 5.14.0 |
 | disabled | 禁用 | boolean | false | - |
-| disabledDate | 不可选择的日期 | (currentDate: dayjs, info: { from?: dayjs }) => boolean | - | `info`: 5.14.0 |
-| format | 设置日期格式，为数组时支持多格式匹配，展示以第一个为准。配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。示例：[自定义格式](#components-date-picker-demo-format) | [formatType](#formattype) | [rc-picker](https://github.com/react-component/picker/blob/f512f18ed59d6791280d1c3d7d37abbb9867eb0b/src/utils/uiUtil.ts#L155-L177) | - |
+| disabledDate | 不可选择的日期 | (currentDate: dayjs, info: { from?: dayjs, type: Picker }) => boolean | - | `info`: 5.14.0 |
+| format | 设置日期格式，为数组时支持多格式匹配，展示以第一个为准。配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。示例：[自定义格式](#date-picker-demo-format) | [formatType](#formattype) | [rc-picker](https://github.com/react-component/picker/blob/f512f18ed59d6791280d1c3d7d37abbb9867eb0b/src/utils/uiUtil.ts#L155-L177) | - |
 | order | 多选、范围时是否自动排序 | boolean | true | 5.14.0 |
 | preserveInvalidOnBlur | 失去焦点是否要清空输入框内无效内容 | boolean | false | 5.14.0 |
 | popupClassName | 额外的弹出日历 className | string | - | 4.23.0 |
@@ -20374,6 +21300,7 @@ Version: 4.24
 | placeholder | 输入框提示文字 | string \| \[string, string] | - | - |
 | placement | 选择框弹出的位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | bottomLeft | - |
 | popupStyle | 额外的弹出日历样式 | CSSProperties | {} | - |
+| prefix | 自定义前缀 | ReactNode | - | 5.22.0 |
 | prevIcon | 自定义上一个图标 | ReactNode | - | 4.17.0 |
 | presets | 预设时间范围快捷选择, 自 `5.8.0` 起 value 支持函数返回值 | { label: React.ReactNode, value: Dayjs \| (() => Dayjs) }\[] | - | - |
 | size | 输入框大小，`large` 高度为 40px，`small` 为 24px，默认是 32px | `large` \| `middle` \| `small` | - | - |
@@ -20476,7 +21403,7 @@ Version: 4.24
 
 说明: 不可选择的日期
 
-类型: (currentDate: dayjs, info: { from?: dayjs }) => boolean
+类型: (currentDate: dayjs, info: { from?: dayjs, type: Picker }) => boolean
 
 默认值: -
 
@@ -20486,7 +21413,7 @@ Version: 4.24
 
 参数: format
 
-说明: 设置日期格式，为数组时支持多格式匹配，展示以第一个为准。配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。示例：[自定义格式](#components-date-picker-demo-format)
+说明: 设置日期格式，为数组时支持多格式匹配，展示以第一个为准。配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。示例：[自定义格式](#date-picker-demo-format)
 
 类型: [formatType](#formattype)
 
@@ -20698,6 +21625,18 @@ Version: 4.24
 
 版本: -
 
+### ant-design 中 DatePicker - DatePicker的prefix属性如何使用？
+
+参数: prefix
+
+说明: 自定义前缀
+
+类型: ReactNode
+
+默认值: -
+
+版本: 5.22.0
+
 ### ant-design 中 DatePicker - DatePicker的prevIcon属性如何使用？
 
 参数: prevIcon
@@ -20866,7 +21805,7 @@ Version: 4.24
 | renderExtraFooter | 在面板中添加额外的页脚 | (mode) => React.ReactNode | - | - |
 | showNow | 显示当前日期时间的快捷选择 | boolean | - | - |
 | showTime | 增加时间选择功能 | Object \| boolean | [TimePicker Options](/components/time-picker-cn#api) | - |
-| showTime.defaultValue | 设置用户选择日期时默认的时分秒，[例子](#components-date-picker-demo-disabled-date) | [dayjs](https://day.js.org/) | dayjs() | - |
+| showTime.defaultValue | 设置用户选择日期时默认的时分秒，[例子](#date-picker-demo-disabled-date) | [dayjs](https://day.js.org/) | dayjs() | - |
 | showWeek | DatePicker 下展示当前周 | boolean | false | 5.14.0 |
 | value | 日期 | [dayjs](https://day.js.org/) | - | - |
 | onChange | 时间发生变化的回调 | function(date: dayjs, dateString: string) | - | - |
@@ -20985,7 +21924,7 @@ Version: 4.24
 
 参数: showTime.defaultValue
 
-说明: 设置用户选择日期时默认的时分秒，[例子](#components-date-picker-demo-disabled-date)
+说明: 设置用户选择日期时默认的时分秒，[例子](#date-picker-demo-disabled-date)
 
 类型: [dayjs](https://day.js.org/)
 
@@ -21312,6 +22251,7 @@ Version: 4.24
 | renderExtraFooter | 在面板中添加额外的页脚 | (mode) => React.ReactNode | - | - |
 | value | 日期 | [dayjs](https://day.js.org/) | - | - |
 | onChange | 时间发生变化的回调，发生在用户选择时间时 | function(date: dayjs, dateString: string) | - | - |
+| showWeek | DatePicker 下展示当前周 | boolean | true | 5.14.0 |
 
 ### ant-design 中 DatePicker - DatePicker的defaultValue属性如何使用？
 
@@ -21385,6 +22325,18 @@ Version: 4.24
 
 版本: -
 
+### ant-design 中 DatePicker - DatePicker的showWeek属性如何使用？
+
+参数: showWeek
+
+说明: DatePicker 下展示当前周
+
+类型: boolean
+
+默认值: true
+
+版本: 5.14.0
+
 ### ant-design 的 DatePicker - RangePicker 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -21395,7 +22347,7 @@ Version: 4.24
 | defaultPickerValue | 默认面板日期，每次面板打开时会被重置到该日期 | [dayjs](https://day.js.org/)\[] | - | 5.14.0 |
 | defaultValue | 默认日期 | [dayjs](https://day.js.org/)\[] | - | - |
 | disabled | 禁用起始项 | \[boolean, boolean] | - | - |
-| disabledTime | 不可选择的时间 | function(date: dayjs, partial: `start` \| `end`) | - | - |
+| disabledTime | 不可选择的时间 | function(date: dayjs, partial: `start` \| `end`, info: { from?: dayjs }) | - | `info.from`: 5.17.0 |
 | format | 展示的日期格式，配置参考 [dayjs#format](https://day.js.org/docs/zh-CN/display/format#%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%88%97%E8%A1%A8)。 | [formatType](#formattype) | `YYYY-MM-DD HH:mm:ss` | - |
 | id | 设置输入框 `id` 属性。 | { start?: string, end?: string } | - | 5.14.0 |
 | pickerValue | 面板日期，可以用于受控切换面板所在日期。配合 `onPanelChange` 使用。 | [dayjs](https://day.js.org/)\[] | - | 5.14.0 |
@@ -21403,7 +22355,7 @@ Version: 4.24
 | renderExtraFooter | 在面板中添加额外的页脚 | () => React.ReactNode | - | - |
 | separator | 设置分隔符 | React.ReactNode | `<SwapRightOutlined />` | - |
 | showTime | 增加时间选择功能 | Object\|boolean | [TimePicker Options](/components/time-picker-cn#api) | - |
-| showTime.defaultValue | 设置用户选择日期时默认的时分秒，[例子](#components-date-picker-demo-disabled-date) | [dayjs](https://day.js.org/)\[] | \[dayjs(), dayjs()] | - |
+| showTime.defaultValue | 设置用户选择日期时默认的时分秒，[例子](#date-picker-demo-disabled-date) | [dayjs](https://day.js.org/)\[] | \[dayjs(), dayjs()] | - |
 | value | 日期 | [dayjs](https://day.js.org/)\[] | - | - |
 | onCalendarChange | 待选日期发生变化的回调。`info` 参数自 4.4.0 添加 | function(dates: \[dayjs, dayjs], dateStrings: \[string, string], info: { range:`start`\|`end` }) | - | - |
 | onChange | 日期范围发生变化的回调 | function(dates: \[dayjs, dayjs], dateStrings: \[string, string]) | - | - |
@@ -21488,11 +22440,11 @@ Version: 4.24
 
 说明: 不可选择的时间
 
-类型: function(date: dayjs, partial: `start` \| `end`)
+类型: function(date: dayjs, partial: `start` \| `end`, info: { from?: dayjs })
 
 默认值: -
 
-版本: -
+版本: `info.from`: 5.17.0
 
 ### ant-design 中 DatePicker - RangePicker的format属性如何使用？
 
@@ -21582,7 +22534,7 @@ Version: 4.24
 
 参数: showTime.defaultValue
 
-说明: 设置用户选择日期时默认的时分秒，[例子](#components-date-picker-demo-disabled-date)
+说明: 设置用户选择日期时默认的时分秒，[例子](#date-picker-demo-disabled-date)
 
 类型: [dayjs](https://day.js.org/)\[]
 
@@ -21656,11 +22608,10 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| autoInsertSpaceInButton | 设置为 `false` 时，移除按钮中 2 个汉字之间的空格 | boolean | true | - |
 | componentDisabled | 设置 antd 组件禁用状态 | boolean | - | 4.21.0 |
 | componentSize | 设置 antd 组件大小 | `small` \| `middle` \| `large` | - | - |
 | csp | 设置 [Content Security Policy](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP) 配置 | { nonce: string } | - | - |
-| direction | 设置文本展示方向。 [示例](#components-config-provider-demo-direction) | `ltr` \| `rtl` | `ltr` | - |
+| direction | 设置文本展示方向。 [示例](#config-provider-demo-direction) | `ltr` \| `rtl` | `ltr` | - |
 | getPopupContainer | 弹出框（Select, Tooltip, Menu 等等）渲染父节点，默认渲染到 body 上。 | function(triggerNode) | () => document.body | - |
 | getTargetContainer | 配置 Affix、Anchor 滚动监听容器。 | () => HTMLElement | () => window | 4.2.0 |
 | iconPrefixCls | 设置图标统一样式前缀 | string | `anticon` | 4.11.0 |
@@ -21670,6 +22621,7 @@ Version: 4.24
 | prefixCls | 设置统一样式前缀 | string | `ant` | - |
 | renderEmpty | 自定义组件空状态。参考 [空状态](/components/empty-cn) | function(componentName: string): ReactNode | - | - |
 | theme | 设置主题，参考 [定制主题](/docs/react/customize-theme-cn) | [Theme](/docs/react/customize-theme-cn#theme) | - | 5.0.0 |
+| variant | 设置全局输入组件形态变体 | `outlined` \| `filled` \| `borderless` | - | 5.19.0 |
 | virtual | 设置 `false` 时关闭虚拟滚动 | boolean | - | 4.3.0 |
 | warning | 设置警告等级，`strict` 为 `false` 时会将废弃相关信息聚合为单条信息 | { strict: boolean } | - | 5.10.0 |
 
@@ -21687,9 +22639,9 @@ Version: 4.24
 | alert | 设置 Alert 组件的通用属性 | { className?: string, style?: React.CSSProperties, closeIcon?: React.ReactNode } | - | 5.7.0, closeIcon: 5.14.0 |
 | anchor | 设置 Anchor 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | avatar | 设置 Avatar 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
-| badge | 设置 Badge 组件的通用属性 | { className?: string, style?: React.CSSProperties, classNames?: { count?: string, indicator?: string }, styles?: { count?: React.CSSProperties, indicator?: React.CSSProperties } } | - | 5.7.0 |
+| badge | 设置 Badge 组件的通用属性 | { className?: string, style?: React.CSSProperties, classNames?: [BadgeProps\["classNames"\]](/components/badge-cn#api), styles?: [BadgeProps\["styles"\]](/components/badge-cn#api) } | - | 5.7.0 |
 | breadcrumb | 设置 Breadcrumb 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
-| button | 设置 Button 组件的通用属性 | { className?: string, style?: React.CSSProperties, classNames?: { icon: string }, styles?: { icon: React.CSSProperties } } | - | 5.6.0 |
+| button | 设置 Button 组件的通用属性 | { className?: string, style?: React.CSSProperties, classNames?: [ButtonProps\["classNames"\]](/components/button-cn#api), styles?: [ButtonProps\["styles"\]](/components/button-cn#api), autoInsertSpace?: boolean } | - | 5.6.0, autoInsertSpace: 5.17.0 |
 | calendar | 设置 Calendar 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | card | 设置 Card 组件的通用属性 | { className?: string, style?: React.CSSProperties, classNames?: [CardProps\["classNames"\]](/components/card-cn#api), styles?: [CardProps\["styles"\]](/components/card-cn#api) } | - | 5.7.0, `classNames` 和 `styles`: 5.14.0 |
 | carousel | 设置 Carousel 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
@@ -21711,7 +22663,7 @@ Version: 4.24
 | input | 设置 Input 组件的通用属性 | { autoComplete?: string, className?: string, style?: React.CSSProperties, allowClear?: boolean \| { clearIcon?: ReactNode } } | - | 5.7.0, allowClear: 5.15.0 |
 | textArea | 设置 TextArea 组件的通用属性 | { autoComplete?: string, className?: string, style?: React.CSSProperties, allowClear?: boolean \| { clearIcon?: ReactNode } } | - | 5.15.0 |
 | layout | 设置 Layout 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
-| list | 设置 List 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
+| list | 设置 List 组件的通用属性 | { className?: string, style?: React.CSSProperties, item?:{ classNames: [ListItemProps\["classNames"\]](/components/list-cn#listitem), styles: [ListItemProps\["styles"\]](/components/list-cn#listitem) } } | - | 5.7.0 |
 | menu | 设置 Menu 组件的通用属性 | { className?: string, style?: React.CSSProperties, expandIcon?: ReactNode \| props => ReactNode } | - | 5.7.0, expandIcon: 5.15.0 |
 | mentions | 设置 Mentions 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | message | 设置 Message 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
@@ -21727,8 +22679,9 @@ Version: 4.24
 | select | 设置 Select 组件的通用属性 | { className?: string, showSearch?: boolean, style?: React.CSSProperties } | - | 5.7.0 |
 | slider | 设置 Slider 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | switch | 设置 Switch 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
-| space | 设置 Space 的通用属性，参考 [Space](/components/space-cn) | { size: `small` \| `middle` \| `large` \| `number`, className?: string, style?: React.CSSProperties, classNames?: { item: string }, styles?: { item: React.CSSProperties } } | - | 5.6.0 |
-| spin | 设置 Spin 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
+| space | 设置 Space 的通用属性，参考 [Space](/components/space-cn) | { size: `small` \| `middle` \| `large` \| `number`, className?: string, style?: React.CSSProperties, classNames?: [SpaceProps\["classNames"\]](/components/space-cn#api), styles?: [SpaceProps\["styles"\]](/components/space-cn#api) } | - | 5.6.0 |
+| splitter | 设置 Splitter 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.21.0 |
+| spin | 设置 Spin 组件的通用属性 | { className?: string, style?: React.CSSProperties, indicator?: React.ReactElement } | - | 5.7.0, indicator: 5.20.0 |
 | statistic | 设置 Statistic 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | steps | 设置 Steps 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | table | 设置 Table 组件的通用属性 | { className?: string, style?: React.CSSProperties, expandable?: { expandIcon?: props => React.ReactNode } } | - | 5.7.0, expandable: 5.14.0 |
@@ -21747,11 +22700,10 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| autoInsertSpaceInButton | 设置为 `false` 时，移除按钮中 2 个汉字之间的空格 | boolean | true | - |
 | componentDisabled | 设置 antd 组件禁用状态 | boolean | - | 4.21.0 |
 | componentSize | 设置 antd 组件大小 | `small` \| `middle` \| `large` | - | - |
 | csp | 设置 [Content Security Policy](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP) 配置 | { nonce: string } | - | - |
-| direction | 设置文本展示方向。 [示例](#components-config-provider-demo-direction) | `ltr` \| `rtl` | `ltr` | - |
+| direction | 设置文本展示方向。 [示例](#config-provider-demo-direction) | `ltr` \| `rtl` | `ltr` | - |
 | getPopupContainer | 弹出框（Select, Tooltip, Menu 等等）渲染父节点，默认渲染到 body 上。 | function(triggerNode) | () => document.body | - |
 | getTargetContainer | 配置 Affix、Anchor 滚动监听容器。 | () => HTMLElement | () => window | 4.2.0 |
 | iconPrefixCls | 设置图标统一样式前缀 | string | `anticon` | 4.11.0 |
@@ -21761,20 +22713,9 @@ Version: 4.24
 | prefixCls | 设置统一样式前缀 | string | `ant` | - |
 | renderEmpty | 自定义组件空状态。参考 [空状态](/components/empty-cn) | function(componentName: string): ReactNode | - | - |
 | theme | 设置主题，参考 [定制主题](/docs/react/customize-theme-cn) | [Theme](/docs/react/customize-theme-cn#theme) | - | 5.0.0 |
+| variant | 设置全局输入组件形态变体 | `outlined` \| `filled` \| `borderless` | - | 5.19.0 |
 | virtual | 设置 `false` 时关闭虚拟滚动 | boolean | - | 4.3.0 |
 | warning | 设置警告等级，`strict` 为 `false` 时会将废弃相关信息聚合为单条信息 | { strict: boolean } | - | 5.10.0 |
-
-### ant-design 中 ConfigProvider - ConfigProvider的autoInsertSpaceInButton属性如何使用？
-
-参数: autoInsertSpaceInButton
-
-说明: 设置为 `false` 时，移除按钮中 2 个汉字之间的空格
-
-类型: boolean
-
-默认值: true
-
-版本: -
 
 ### ant-design 中 ConfigProvider - ConfigProvider的componentDisabled属性如何使用？
 
@@ -21816,7 +22757,7 @@ Version: 4.24
 
 参数: direction
 
-说明: 设置文本展示方向。 [示例](#components-config-provider-demo-direction)
+说明: 设置文本展示方向。 [示例](#config-provider-demo-direction)
 
 类型: `ltr` \| `rtl`
 
@@ -21932,6 +22873,18 @@ Version: 4.24
 
 版本: 5.0.0
 
+### ant-design 中 ConfigProvider - ConfigProvider的variant属性如何使用？
+
+参数: variant
+
+说明: 设置全局输入组件形态变体
+
+类型: `outlined` \| `filled` \| `borderless`
+
+默认值: -
+
+版本: 5.19.0
+
 ### ant-design 中 ConfigProvider - ConfigProvider的virtual属性如何使用？
 
 参数: virtual
@@ -21994,9 +22947,9 @@ Version: 4.24
 | alert | 设置 Alert 组件的通用属性 | { className?: string, style?: React.CSSProperties, closeIcon?: React.ReactNode } | - | 5.7.0, closeIcon: 5.14.0 |
 | anchor | 设置 Anchor 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | avatar | 设置 Avatar 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
-| badge | 设置 Badge 组件的通用属性 | { className?: string, style?: React.CSSProperties, classNames?: { count?: string, indicator?: string }, styles?: { count?: React.CSSProperties, indicator?: React.CSSProperties } } | - | 5.7.0 |
+| badge | 设置 Badge 组件的通用属性 | { className?: string, style?: React.CSSProperties, classNames?: [BadgeProps\["classNames"\]](/components/badge-cn#api), styles?: [BadgeProps\["styles"\]](/components/badge-cn#api) } | - | 5.7.0 |
 | breadcrumb | 设置 Breadcrumb 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
-| button | 设置 Button 组件的通用属性 | { className?: string, style?: React.CSSProperties, classNames?: { icon: string }, styles?: { icon: React.CSSProperties } } | - | 5.6.0 |
+| button | 设置 Button 组件的通用属性 | { className?: string, style?: React.CSSProperties, classNames?: [ButtonProps\["classNames"\]](/components/button-cn#api), styles?: [ButtonProps\["styles"\]](/components/button-cn#api), autoInsertSpace?: boolean } | - | 5.6.0, autoInsertSpace: 5.17.0 |
 | calendar | 设置 Calendar 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | card | 设置 Card 组件的通用属性 | { className?: string, style?: React.CSSProperties, classNames?: [CardProps\["classNames"\]](/components/card-cn#api), styles?: [CardProps\["styles"\]](/components/card-cn#api) } | - | 5.7.0, `classNames` 和 `styles`: 5.14.0 |
 | carousel | 设置 Carousel 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
@@ -22018,7 +22971,7 @@ Version: 4.24
 | input | 设置 Input 组件的通用属性 | { autoComplete?: string, className?: string, style?: React.CSSProperties, allowClear?: boolean \| { clearIcon?: ReactNode } } | - | 5.7.0, allowClear: 5.15.0 |
 | textArea | 设置 TextArea 组件的通用属性 | { autoComplete?: string, className?: string, style?: React.CSSProperties, allowClear?: boolean \| { clearIcon?: ReactNode } } | - | 5.15.0 |
 | layout | 设置 Layout 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
-| list | 设置 List 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
+| list | 设置 List 组件的通用属性 | { className?: string, style?: React.CSSProperties, item?:{ classNames: [ListItemProps\["classNames"\]](/components/list-cn#listitem), styles: [ListItemProps\["styles"\]](/components/list-cn#listitem) } } | - | 5.7.0 |
 | menu | 设置 Menu 组件的通用属性 | { className?: string, style?: React.CSSProperties, expandIcon?: ReactNode \| props => ReactNode } | - | 5.7.0, expandIcon: 5.15.0 |
 | mentions | 设置 Mentions 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | message | 设置 Message 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
@@ -22034,8 +22987,9 @@ Version: 4.24
 | select | 设置 Select 组件的通用属性 | { className?: string, showSearch?: boolean, style?: React.CSSProperties } | - | 5.7.0 |
 | slider | 设置 Slider 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | switch | 设置 Switch 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
-| space | 设置 Space 的通用属性，参考 [Space](/components/space-cn) | { size: `small` \| `middle` \| `large` \| `number`, className?: string, style?: React.CSSProperties, classNames?: { item: string }, styles?: { item: React.CSSProperties } } | - | 5.6.0 |
-| spin | 设置 Spin 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
+| space | 设置 Space 的通用属性，参考 [Space](/components/space-cn) | { size: `small` \| `middle` \| `large` \| `number`, className?: string, style?: React.CSSProperties, classNames?: [SpaceProps\["classNames"\]](/components/space-cn#api), styles?: [SpaceProps\["styles"\]](/components/space-cn#api) } | - | 5.6.0 |
+| splitter | 设置 Splitter 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.21.0 |
+| spin | 设置 Spin 组件的通用属性 | { className?: string, style?: React.CSSProperties, indicator?: React.ReactElement } | - | 5.7.0, indicator: 5.20.0 |
 | statistic | 设置 Statistic 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | steps | 设置 Steps 组件的通用属性 | { className?: string, style?: React.CSSProperties } | - | 5.7.0 |
 | table | 设置 Table 组件的通用属性 | { className?: string, style?: React.CSSProperties, expandable?: { expandIcon?: props => React.ReactNode } } | - | 5.7.0, expandable: 5.14.0 |
@@ -22092,7 +23046,7 @@ Version: 4.24
 
 说明: 设置 Badge 组件的通用属性
 
-类型: { className?: string, style?: React.CSSProperties, classNames?: { count?: string, indicator?: string }, styles?: { count?: React.CSSProperties, indicator?: React.CSSProperties } }
+类型: { className?: string, style?: React.CSSProperties, classNames?: [BadgeProps\["classNames"\]](/components/badge-cn#api), styles?: [BadgeProps\["styles"\]](/components/badge-cn#api) }
 
 默认值: -
 
@@ -22116,11 +23070,11 @@ Version: 4.24
 
 说明: 设置 Button 组件的通用属性
 
-类型: { className?: string, style?: React.CSSProperties, classNames?: { icon: string }, styles?: { icon: React.CSSProperties } }
+类型: { className?: string, style?: React.CSSProperties, classNames?: [ButtonProps\["classNames"\]](/components/button-cn#api), styles?: [ButtonProps\["styles"\]](/components/button-cn#api), autoInsertSpace?: boolean }
 
 默认值: -
 
-版本: 5.6.0
+版本: 5.6.0, autoInsertSpace: 5.17.0
 
 ### ant-design 中 ConfigProvider - ConfigProvider的calendar属性如何使用？
 
@@ -22380,7 +23334,7 @@ Version: 4.24
 
 说明: 设置 List 组件的通用属性
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties, item?:{ classNames: [ListItemProps\["classNames"\]](/components/list-cn#listitem), styles: [ListItemProps\["styles"\]](/components/list-cn#listitem) } }
 
 默认值: -
 
@@ -22572,11 +23526,23 @@ Version: 4.24
 
 说明: 设置 Space 的通用属性，参考 [Space](/components/space-cn)
 
-类型: { size: `small` \| `middle` \| `large` \| `number`, className?: string, style?: React.CSSProperties, classNames?: { item: string }, styles?: { item: React.CSSProperties } }
+类型: { size: `small` \| `middle` \| `large` \| `number`, className?: string, style?: React.CSSProperties, classNames?: [SpaceProps\["classNames"\]](/components/space-cn#api), styles?: [SpaceProps\["styles"\]](/components/space-cn#api) }
 
 默认值: -
 
 版本: 5.6.0
+
+### ant-design 中 ConfigProvider - ConfigProvider的splitter属性如何使用？
+
+参数: splitter
+
+说明: 设置 Splitter 组件的通用属性
+
+类型: { className?: string, style?: React.CSSProperties }
+
+默认值: -
+
+版本: 5.21.0
 
 ### ant-design 中 ConfigProvider - ConfigProvider的spin属性如何使用？
 
@@ -22584,11 +23550,11 @@ Version: 4.24
 
 说明: 设置 Spin 组件的通用属性
 
-类型: { className?: string, style?: React.CSSProperties }
+类型: { className?: string, style?: React.CSSProperties, indicator?: React.ReactElement }
 
 默认值: -
 
-版本: 5.7.0
+版本: 5.7.0, indicator: 5.20.0
 
 ### ant-design 中 ConfigProvider - ConfigProvider的statistic属性如何使用？
 
@@ -22759,26 +23725,29 @@ Version: 4.24
 | defaultFormat | 颜色格式默认的值 | `rgb` \| `hex` \| `hsb` | - | 5.9.0 |
 | disabled | 禁用颜色选择器 | boolean | - | - |
 | disabledAlpha | 禁用透明度 | boolean | - | 5.8.0 |
+| disabledFormat | 禁用选择颜色格式 | boolean | - |
 | destroyTooltipOnHide | 关闭后是否销毁弹窗 | `boolean` | false | 5.7.0 |
 | format | 颜色格式 | `rgb` \| `hex` \| `hsb` | `hex` | - |
+| mode | 选择器模式，用于配置单色与渐变 | `'single' \| 'gradient' \| ('single' \| 'gradient')[]` | `single` | 5.20.0 |
 | open | 是否显示弹出窗口 | boolean | - | - |
 | presets | 预设的颜色 | `{ label: ReactNode, colors: Array<string \| Color>, defaultOpen?: boolean }[]` | - | `defaultOpen: 5.11.0` |
-| placement | 弹出窗口的位置 | `top` \| `topLeft` \| `topRight` \| `bottom` \| `bottomLeft` \| `bottomRight` | `bottomLeft` | - |
+| placement | 弹出窗口的位置 | 同 `Tooltips` 组件的 [placement](/components/tooltip-cn/#api) 参数设计 | `bottomLeft` | - |
 | panelRender | 自定义渲染面板 | `(panel: React.ReactNode, extra: { components: { Picker: FC; Presets: FC } }) => React.ReactNode` | - | 5.7.0 |
 | showText | 显示颜色文本 | boolean \| `(color: Color) => React.ReactNode` | - | 5.7.0 |
 | size | 设置触发器大小 | `large` \| `middle` \| `small` | `middle` | 5.7.0 |
 | trigger | 颜色选择器的触发模式 | `hover` \| `click` | `click` | - |
 | value | 颜色的值 | string \| `Color` | - | - |
-| onChange | 颜色变化的回调 | `(value: Color, hex: string) => void` | - | - |
-| onChangeComplete | 颜色选择完成的回调 | `(value: Color) => void` | - | 5.7.0 |
+| onChange | 颜色变化的回调 | `(value: Color, css: string) => void` | - | - |
+| onChangeComplete | 颜色选择完成的回调，通过 `onChangeComplete` 对 `value` 受控时拖拽不会改变展示颜色 | `(value: Color) => void` | - | 5.7.0 |
 | onFormatChange | 颜色格式变化的回调 | `(format: 'hex' \| 'rgb' \| 'hsb') => void` | - | - |
 | onOpenChange | 当 `open` 被改变时的回调 | `(open: boolean) => void` | - | - |
 | onClear | 清除的回调 | `() => void` | - | 5.6.0 |
 
 #### ColorPicker - Color
 
-| 参数 | 说明 | 类型 | 默认值 |
+| 参数 | 说明 | 类型 | 版本 |
 | --- | --- | --- | --- |
+| toCssString | 转换成 CSS 支持的格式 | `() => string` | 5.20.0 |
 | toHex | 转换成 `hex` 格式字符，返回格式如：`1677ff` | `() => string` | - |
 | toHexString | 转换成 `hex` 格式颜色字符串，返回格式如：`#1677ff` | `() => string` | - |
 | toHsb | 转换成 `hsb` 对象 | `() => ({ h: number, s: number, b: number, a number })` | - |
@@ -22797,18 +23766,20 @@ Version: 4.24
 | defaultFormat | 颜色格式默认的值 | `rgb` \| `hex` \| `hsb` | - | 5.9.0 |
 | disabled | 禁用颜色选择器 | boolean | - | - |
 | disabledAlpha | 禁用透明度 | boolean | - | 5.8.0 |
+| disabledFormat | 禁用选择颜色格式 | boolean | - |
 | destroyTooltipOnHide | 关闭后是否销毁弹窗 | `boolean` | false | 5.7.0 |
 | format | 颜色格式 | `rgb` \| `hex` \| `hsb` | `hex` | - |
+| mode | 选择器模式，用于配置单色与渐变 | `'single' \| 'gradient' \| ('single' \| 'gradient')[]` | `single` | 5.20.0 |
 | open | 是否显示弹出窗口 | boolean | - | - |
 | presets | 预设的颜色 | `{ label: ReactNode, colors: Array<string \| Color>, defaultOpen?: boolean }[]` | - | `defaultOpen: 5.11.0` |
-| placement | 弹出窗口的位置 | `top` \| `topLeft` \| `topRight` \| `bottom` \| `bottomLeft` \| `bottomRight` | `bottomLeft` | - |
+| placement | 弹出窗口的位置 | 同 `Tooltips` 组件的 [placement](/components/tooltip-cn/#api) 参数设计 | `bottomLeft` | - |
 | panelRender | 自定义渲染面板 | `(panel: React.ReactNode, extra: { components: { Picker: FC; Presets: FC } }) => React.ReactNode` | - | 5.7.0 |
 | showText | 显示颜色文本 | boolean \| `(color: Color) => React.ReactNode` | - | 5.7.0 |
 | size | 设置触发器大小 | `large` \| `middle` \| `small` | `middle` | 5.7.0 |
 | trigger | 颜色选择器的触发模式 | `hover` \| `click` | `click` | - |
 | value | 颜色的值 | string \| `Color` | - | - |
-| onChange | 颜色变化的回调 | `(value: Color, hex: string) => void` | - | - |
-| onChangeComplete | 颜色选择完成的回调 | `(value: Color) => void` | - | 5.7.0 |
+| onChange | 颜色变化的回调 | `(value: Color, css: string) => void` | - | - |
+| onChangeComplete | 颜色选择完成的回调，通过 `onChangeComplete` 对 `value` 受控时拖拽不会改变展示颜色 | `(value: Color) => void` | - | 5.7.0 |
 | onFormatChange | 颜色格式变化的回调 | `(format: 'hex' \| 'rgb' \| 'hsb') => void` | - | - |
 | onOpenChange | 当 `open` 被改变时的回调 | `(open: boolean) => void` | - | - |
 | onClear | 清除的回调 | `() => void` | - | 5.6.0 |
@@ -22897,6 +23868,16 @@ Version: 4.24
 
 版本: 5.8.0
 
+### ant-design 中 ColorPicker - ColorPicker的disabledFormat属性如何使用？
+
+参数: disabledFormat
+
+说明: 禁用选择颜色格式
+
+类型: boolean
+
+默认值: -
+
 ### ant-design 中 ColorPicker - ColorPicker的destroyTooltipOnHide属性如何使用？
 
 参数: destroyTooltipOnHide
@@ -22920,6 +23901,18 @@ Version: 4.24
 默认值: `hex`
 
 版本: -
+
+### ant-design 中 ColorPicker - ColorPicker的mode属性如何使用？
+
+参数: mode
+
+说明: 选择器模式，用于配置单色与渐变
+
+类型: `'single' \| 'gradient' \| ('single' \| 'gradient')[]`
+
+默认值: `single`
+
+版本: 5.20.0
 
 ### ant-design 中 ColorPicker - ColorPicker的open属性如何使用？
 
@@ -22951,7 +23944,7 @@ Version: 4.24
 
 说明: 弹出窗口的位置
 
-类型: `top` \| `topLeft` \| `topRight` \| `bottom` \| `bottomLeft` \| `bottomRight`
+类型: 同 `Tooltips` 组件的 [placement](/components/tooltip-cn/#api) 参数设计
 
 默认值: `bottomLeft`
 
@@ -23023,7 +24016,7 @@ Version: 4.24
 
 说明: 颜色变化的回调
 
-类型: `(value: Color, hex: string) => void`
+类型: `(value: Color, css: string) => void`
 
 默认值: -
 
@@ -23033,7 +24026,7 @@ Version: 4.24
 
 参数: onChangeComplete
 
-说明: 颜色选择完成的回调
+说明: 颜色选择完成的回调，通过 `onChangeComplete` 对 `value` 受控时拖拽不会改变展示颜色
 
 类型: `(value: Color) => void`
 
@@ -23079,14 +24072,25 @@ Version: 4.24
 
 ### ant-design 的 ColorPicker - Color 有哪些配置？
 
-| 参数 | 说明 | 类型 | 默认值 |
+| 参数 | 说明 | 类型 | 版本 |
 | --- | --- | --- | --- |
+| toCssString | 转换成 CSS 支持的格式 | `() => string` | 5.20.0 |
 | toHex | 转换成 `hex` 格式字符，返回格式如：`1677ff` | `() => string` | - |
 | toHexString | 转换成 `hex` 格式颜色字符串，返回格式如：`#1677ff` | `() => string` | - |
 | toHsb | 转换成 `hsb` 对象 | `() => ({ h: number, s: number, b: number, a number })` | - |
 | toHsbString | 转换成 `hsb` 格式颜色字符串，返回格式如：`hsb(215, 91%, 100%)` | `() => string` | - |
 | toRgb | 转换成 `rgb` 对象 | `() => ({ r: number, g: number, b: number, a number })` | - |
 | toRgbString | 转换成 `rgb` 格式颜色字符串，返回格式如：`rgb(22, 119, 255)` | `() => string` | - |
+
+### ant-design 中 ColorPicker - Color的toCssString属性如何使用？
+
+参数: toCssString
+
+说明: 转换成 CSS 支持的格式
+
+类型: `() => string`
+
+版本: 5.20.0
 
 ### ant-design 中 ColorPicker - Color的toHex属性如何使用？
 
@@ -23096,7 +24100,7 @@ Version: 4.24
 
 类型: `() => string`
 
-默认值: -
+版本: -
 
 ### ant-design 中 ColorPicker - Color的toHexString属性如何使用？
 
@@ -23106,7 +24110,7 @@ Version: 4.24
 
 类型: `() => string`
 
-默认值: -
+版本: -
 
 ### ant-design 中 ColorPicker - Color的toHsb属性如何使用？
 
@@ -23116,7 +24120,7 @@ Version: 4.24
 
 类型: `() => ({ h: number, s: number, b: number, a number })`
 
-默认值: -
+版本: -
 
 ### ant-design 中 ColorPicker - Color的toHsbString属性如何使用？
 
@@ -23126,7 +24130,7 @@ Version: 4.24
 
 类型: `() => string`
 
-默认值: -
+版本: -
 
 ### ant-design 中 ColorPicker - Color的toRgb属性如何使用？
 
@@ -23136,7 +24140,7 @@ Version: 4.24
 
 类型: `() => ({ r: number, g: number, b: number, a number })`
 
-默认值: -
+版本: -
 
 ### ant-design 中 ColorPicker - Color的toRgbString属性如何使用？
 
@@ -23146,7 +24150,7 @@ Version: 4.24
 
 类型: `() => string`
 
-默认值: -
+版本: -
 
 ### ant-design 的 Collapse 有哪些配置？
 
@@ -23155,7 +24159,7 @@ Version: 4.24
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | accordion | 手风琴模式 | boolean | false | - |
-| activeKey | 当前激活 tab 面板的 key | string\[] \| string <br/> number\[] \| number | 默认无，accordion 模式下默认第一个元素 | - |
+| activeKey | 当前激活 tab 面板的 key | string\[] \| string <br/> number\[] \| number | [手风琴模式](#collapse-demo-accordion)下默认第一个元素 | - |
 | bordered | 带边框风格的折叠面板 | boolean | true | - |
 | collapsible | 所有子面板是否可折叠或指定可折叠触发区域 | `header` \| `icon` \| `disabled` | - | 4.9.0 |
 | defaultActiveKey | 初始化选中面板的 key | string\[] \| string<br/> number\[] \| number | - | - |
@@ -23165,7 +24169,21 @@ Version: 4.24
 | ghost | 使折叠面板透明且无边框 | boolean | false | 4.4.0 |
 | size | 设置折叠面板大小 | `large` \| `middle` \| `small` | `middle` | 5.2.0 |
 | onChange | 切换面板的回调 | function | - | - |
-| items | 折叠项目内容 | [ItemType](https://github.com/react-component/collapse/blob/27250ca5415faab16db412b9bff2c131bb4f32fc/src/interface.ts#L6) | - | 5.6.0 |
+| items | 折叠项目内容 | [ItemType](#ItemType) | - | 5.6.0 |
+
+#### Collapse - ItemType
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| classNames | 语义化结构 className | [`Record<header \| body, string>`](#semantic-dom) | - | 5.21.0 |
+| collapsible | 是否可折叠或指定可折叠触发区域 | `header` \| `icon` \| `disabled` | - | - |
+| children | body 区域内容 | ReactNode | - | - |
+| extra | 自定义渲染每个面板右上角的内容 | ReactNode | - | - |
+| forceRender | 被隐藏时是否渲染 body 区域 DOM 结构 | boolean | false | - |
+| key | 对应 activeKey | string \| number | - | - |
+| label | 面板标题 | ReactNode | - | - |
+| showArrow | 是否展示当前面板上的箭头（为 false 时，collapsible 不能设为 icon） | boolean | true | - |
+| styles | 语义化结构 style | [`Record<header \| body, CSSProperties>`](#semantic-dom) | - | 5.21.0 |
 
 #### Collapse - Collapse.Panel
 
@@ -23173,17 +24191,17 @@ Version: 4.24
 | --- | --- | --- | --- | --- |
 | collapsible | 是否可折叠或指定可折叠触发区域 | `header` \| `icon` \| `disabled` | - | 4.9.0 (icon: 4.24.0) |
 | extra | 自定义渲染每个面板右上角的内容 | ReactNode | - | - |
-| forceRender | 被隐藏时是否渲染 DOM 结构 | boolean | false | - |
-| header | 面板头内容 | ReactNode | - | - |
+| forceRender | 被隐藏时是否渲染 body 区域 DOM 结构 | boolean | false | - |
+| header | 面板标题 | ReactNode | - | - |
 | key | 对应 activeKey | string \| number | - | - |
-| showArrow | 是否展示当前面板上的箭头（为 false 时，collapsible 不能置为 icon） | boolean | true | - |
+| showArrow | 是否展示当前面板上的箭头（为 false 时，collapsible 不能设为 icon） | boolean | true | - |
 
 ### ant-design 的 Collapse - Collapse 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | accordion | 手风琴模式 | boolean | false | - |
-| activeKey | 当前激活 tab 面板的 key | string\[] \| string <br/> number\[] \| number | 默认无，accordion 模式下默认第一个元素 | - |
+| activeKey | 当前激活 tab 面板的 key | string\[] \| string <br/> number\[] \| number | [手风琴模式](#collapse-demo-accordion)下默认第一个元素 | - |
 | bordered | 带边框风格的折叠面板 | boolean | true | - |
 | collapsible | 所有子面板是否可折叠或指定可折叠触发区域 | `header` \| `icon` \| `disabled` | - | 4.9.0 |
 | defaultActiveKey | 初始化选中面板的 key | string\[] \| string<br/> number\[] \| number | - | - |
@@ -23193,7 +24211,7 @@ Version: 4.24
 | ghost | 使折叠面板透明且无边框 | boolean | false | 4.4.0 |
 | size | 设置折叠面板大小 | `large` \| `middle` \| `small` | `middle` | 5.2.0 |
 | onChange | 切换面板的回调 | function | - | - |
-| items | 折叠项目内容 | [ItemType](https://github.com/react-component/collapse/blob/27250ca5415faab16db412b9bff2c131bb4f32fc/src/interface.ts#L6) | - | 5.6.0 |
+| items | 折叠项目内容 | [ItemType](#ItemType) | - | 5.6.0 |
 
 ### ant-design 中 Collapse - Collapse的accordion属性如何使用？
 
@@ -23215,7 +24233,7 @@ Version: 4.24
 
 类型: string\[] \| string <br/> number\[] \| number
 
-默认值: 默认无，accordion 模式下默认第一个元素
+默认值: [手风琴模式](#collapse-demo-accordion)下默认第一个元素
 
 版本: -
 
@@ -23333,11 +24351,133 @@ Version: 4.24
 
 说明: 折叠项目内容
 
-类型: [ItemType](https://github.com/react-component/collapse/blob/27250ca5415faab16db412b9bff2c131bb4f32fc/src/interface.ts#L6)
+类型: [ItemType](#ItemType)
 
 默认值: -
 
 版本: 5.6.0
+
+### ant-design 的 Collapse - ItemType 有哪些配置？
+
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| classNames | 语义化结构 className | [`Record<header \| body, string>`](#semantic-dom) | - | 5.21.0 |
+| collapsible | 是否可折叠或指定可折叠触发区域 | `header` \| `icon` \| `disabled` | - | - |
+| children | body 区域内容 | ReactNode | - | - |
+| extra | 自定义渲染每个面板右上角的内容 | ReactNode | - | - |
+| forceRender | 被隐藏时是否渲染 body 区域 DOM 结构 | boolean | false | - |
+| key | 对应 activeKey | string \| number | - | - |
+| label | 面板标题 | ReactNode | - | - |
+| showArrow | 是否展示当前面板上的箭头（为 false 时，collapsible 不能设为 icon） | boolean | true | - |
+| styles | 语义化结构 style | [`Record<header \| body, CSSProperties>`](#semantic-dom) | - | 5.21.0 |
+
+### ant-design 中 Collapse - ItemType的classNames属性如何使用？
+
+参数: classNames
+
+说明: 语义化结构 className
+
+类型: [`Record<header \| body, string>`](#semantic-dom)
+
+默认值: -
+
+版本: 5.21.0
+
+### ant-design 中 Collapse - ItemType的collapsible属性如何使用？
+
+参数: collapsible
+
+说明: 是否可折叠或指定可折叠触发区域
+
+类型: `header` \| `icon` \| `disabled`
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Collapse - ItemType的children属性如何使用？
+
+参数: children
+
+说明: body 区域内容
+
+类型: ReactNode
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Collapse - ItemType的extra属性如何使用？
+
+参数: extra
+
+说明: 自定义渲染每个面板右上角的内容
+
+类型: ReactNode
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Collapse - ItemType的forceRender属性如何使用？
+
+参数: forceRender
+
+说明: 被隐藏时是否渲染 body 区域 DOM 结构
+
+类型: boolean
+
+默认值: false
+
+版本: -
+
+### ant-design 中 Collapse - ItemType的key属性如何使用？
+
+参数: key
+
+说明: 对应 activeKey
+
+类型: string \| number
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Collapse - ItemType的label属性如何使用？
+
+参数: label
+
+说明: 面板标题
+
+类型: ReactNode
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Collapse - ItemType的showArrow属性如何使用？
+
+参数: showArrow
+
+说明: 是否展示当前面板上的箭头（为 false 时，collapsible 不能设为 icon）
+
+类型: boolean
+
+默认值: true
+
+版本: -
+
+### ant-design 中 Collapse - ItemType的styles属性如何使用？
+
+参数: styles
+
+说明: 语义化结构 style
+
+类型: [`Record<header \| body, CSSProperties>`](#semantic-dom)
+
+默认值: -
+
+版本: 5.21.0
 
 ### ant-design 的 Collapse - Collapse.Panel 有哪些配置？
 
@@ -23345,10 +24485,10 @@ Version: 4.24
 | --- | --- | --- | --- | --- |
 | collapsible | 是否可折叠或指定可折叠触发区域 | `header` \| `icon` \| `disabled` | - | 4.9.0 (icon: 4.24.0) |
 | extra | 自定义渲染每个面板右上角的内容 | ReactNode | - | - |
-| forceRender | 被隐藏时是否渲染 DOM 结构 | boolean | false | - |
-| header | 面板头内容 | ReactNode | - | - |
+| forceRender | 被隐藏时是否渲染 body 区域 DOM 结构 | boolean | false | - |
+| header | 面板标题 | ReactNode | - | - |
 | key | 对应 activeKey | string \| number | - | - |
-| showArrow | 是否展示当前面板上的箭头（为 false 时，collapsible 不能置为 icon） | boolean | true | - |
+| showArrow | 是否展示当前面板上的箭头（为 false 时，collapsible 不能设为 icon） | boolean | true | - |
 
 ### ant-design 中 Collapse - Collapse.Panel的collapsible属性如何使用？
 
@@ -23378,7 +24518,7 @@ Version: 4.24
 
 参数: forceRender
 
-说明: 被隐藏时是否渲染 DOM 结构
+说明: 被隐藏时是否渲染 body 区域 DOM 结构
 
 类型: boolean
 
@@ -23390,7 +24530,7 @@ Version: 4.24
 
 参数: header
 
-说明: 面板头内容
+说明: 面板标题
 
 类型: ReactNode
 
@@ -23414,7 +24554,7 @@ Version: 4.24
 
 参数: showArrow
 
-说明: 是否展示当前面板上的箭头（为 false 时，collapsible 不能置为 icon）
+说明: 是否展示当前面板上的箭头（为 false 时，collapsible 不能设为 icon）
 
 类型: boolean
 
@@ -23434,6 +24574,8 @@ Version: 4.24
 | disabled | 失效状态 | boolean | false | - |
 | indeterminate | 设置 indeterminate 状态，只负责样式控制 | boolean | false | - |
 | onChange | 变化时的回调函数 | (e: CheckboxChangeEvent) => void | - | - |
+| onBlur | 失去焦点时的回调 | function() | - | - |
+| onFocus | 获得焦点时的回调 | function() | - | - |
 
 #### Checkbox - Checkbox Group
 
@@ -23444,14 +24586,15 @@ Version: 4.24
 | name | CheckboxGroup 下所有 `input[type="checkbox"]` 的 `name` 属性 | string | - | - |
 | options | 指定可选项 | string\[] \| number\[] \| Option\[] | \[] | - |
 | value | 指定选中的选项 | (string \| number \| boolean)\[] | \[] | - |
-| onChange | 变化时的回调函数 | (checkedValue: CheckboxValueType\[]) => void | - | - |
+| onChange | 变化时的回调函数 | (checkedValue: T\[]) => void | - | - |
 
 #### Checkbox - Checkbox
 
-| 名称    | 描述     | 版本 |
-| ------- | -------- | ---- |
-| blur()  | 移除焦点 | -    |
-| focus() | 获取焦点 | -    |
+| 名称          | 描述                      | 版本   |
+| ------------- | ------------------------- | ------ |
+| blur()        | 移除焦点                  | -      |
+| focus()       | 获取焦点                  | -      |
+| nativeElement | 返回 Checkbox 的 DOM 节点 | 5.17.3 |
 
 ### ant-design 的 Checkbox - Checkbox 有哪些配置？
 
@@ -23463,6 +24606,8 @@ Version: 4.24
 | disabled | 失效状态 | boolean | false | - |
 | indeterminate | 设置 indeterminate 状态，只负责样式控制 | boolean | false | - |
 | onChange | 变化时的回调函数 | (e: CheckboxChangeEvent) => void | - | - |
+| onBlur | 失去焦点时的回调 | function() | - | - |
+| onFocus | 获得焦点时的回调 | function() | - | - |
 
 ### ant-design 中 Checkbox - Checkbox的autoFocus属性如何使用？
 
@@ -23536,6 +24681,30 @@ Version: 4.24
 
 版本: -
 
+### ant-design 中 Checkbox - Checkbox的onBlur属性如何使用？
+
+参数: onBlur
+
+说明: 失去焦点时的回调
+
+类型: function()
+
+默认值: -
+
+版本: -
+
+### ant-design 中 Checkbox - Checkbox的onFocus属性如何使用？
+
+参数: onFocus
+
+说明: 获得焦点时的回调
+
+类型: function()
+
+默认值: -
+
+版本: -
+
 ### ant-design 的 Checkbox - Checkbox Group 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -23545,7 +24714,7 @@ Version: 4.24
 | name | CheckboxGroup 下所有 `input[type="checkbox"]` 的 `name` 属性 | string | - | - |
 | options | 指定可选项 | string\[] \| number\[] \| Option\[] | \[] | - |
 | value | 指定选中的选项 | (string \| number \| boolean)\[] | \[] | - |
-| onChange | 变化时的回调函数 | (checkedValue: CheckboxValueType\[]) => void | - | - |
+| onChange | 变化时的回调函数 | (checkedValue: T\[]) => void | - | - |
 
 ### ant-design 中 Checkbox - Checkbox Group的defaultValue属性如何使用？
 
@@ -23613,7 +24782,7 @@ Version: 4.24
 
 说明: 变化时的回调函数
 
-类型: (checkedValue: CheckboxValueType\[]) => void
+类型: (checkedValue: T\[]) => void
 
 默认值: -
 
@@ -23621,10 +24790,11 @@ Version: 4.24
 
 ### ant-design 的 Checkbox - Checkbox 有哪些配置？
 
-| 名称    | 描述     | 版本 |
-| ------- | -------- | ---- |
-| blur()  | 移除焦点 | -    |
-| focus() | 获取焦点 | -    |
+| 名称          | 描述                      | 版本   |
+| ------------- | ------------------------- | ------ |
+| blur()        | 移除焦点                  | -      |
+| focus()       | 获取焦点                  | -      |
+| nativeElement | 返回 Checkbox 的 DOM 节点 | 5.17.3 |
 
 ### ant-design 中 Checkbox - Checkbox的blur()属性如何使用？
 
@@ -23642,6 +24812,14 @@ Version: 4.24
 
 版本: -
 
+### ant-design 中 Checkbox - Checkbox的nativeElement属性如何使用？
+
+名称: nativeElement
+
+描述: 返回 Checkbox 的 DOM 节点
+
+版本: 5.17.3
+
 ### ant-design 的 Cascader 有哪些配置？
 
 #### Cascader - Cascader
@@ -23651,7 +24829,7 @@ Version: 4.24
 | allowClear | 支持清除 | boolean \| { clearIcon?: ReactNode } | true | 5.8.0: 支持对象形式 |
 | autoClearSearchValue | 是否在选中项后清空搜索框，只在 `multiple` 为 `true` 时有效 | boolean | true | 5.9.0 |
 | autoFocus | 自动获取焦点 | boolean | false | - |
-| changeOnSelect | （单选时生效）当此项为 true 时，点选每级菜单选项值都会发生变化，具体见上面的演示 | boolean | false | - |
+| changeOnSelect | 单选时生效（multiple 下始终都可以选择），点选每级菜单选项值都会发生变化。 | boolean | false | - |
 | className | 自定义类名 | string | - | - |
 | defaultValue | 默认的选中项 | string\[] \| number\[] | \[] | - |
 | disabled | 禁用 | boolean | false | - |
@@ -23670,8 +24848,9 @@ Version: 4.24
 | notFoundContent | 当下拉列表为空时显示的内容 | string | `Not Found` | - |
 | open | 控制浮层显隐 | boolean | - | 4.17.0 |
 | options | 可选项数据源 | [Option](#option)\[] | - | - |
-| placeholder | 输入框占位文本 | string | `请选择` | - |
+| placeholder | 输入框占位文本 | string | - | - |
 | placement | 浮层预设位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | `bottomLeft` | 4.17.0 |
+| prefix | 自定义前缀 | ReactNode | - | 5.22.0 |
 | showSearch | 在选择框中显示搜索框 | boolean \| [Object](#showsearch) | false | - |
 | size | 输入框大小 | `large` \| `middle` \| `small` | - | - |
 | status | 设置校验状态 | 'error' \| 'warning' | - | 4.19.0 |
@@ -23713,7 +24892,7 @@ Version: 4.24
 | allowClear | 支持清除 | boolean \| { clearIcon?: ReactNode } | true | 5.8.0: 支持对象形式 |
 | autoClearSearchValue | 是否在选中项后清空搜索框，只在 `multiple` 为 `true` 时有效 | boolean | true | 5.9.0 |
 | autoFocus | 自动获取焦点 | boolean | false | - |
-| changeOnSelect | （单选时生效）当此项为 true 时，点选每级菜单选项值都会发生变化，具体见上面的演示 | boolean | false | - |
+| changeOnSelect | 单选时生效（multiple 下始终都可以选择），点选每级菜单选项值都会发生变化。 | boolean | false | - |
 | className | 自定义类名 | string | - | - |
 | defaultValue | 默认的选中项 | string\[] \| number\[] | \[] | - |
 | disabled | 禁用 | boolean | false | - |
@@ -23732,8 +24911,9 @@ Version: 4.24
 | notFoundContent | 当下拉列表为空时显示的内容 | string | `Not Found` | - |
 | open | 控制浮层显隐 | boolean | - | 4.17.0 |
 | options | 可选项数据源 | [Option](#option)\[] | - | - |
-| placeholder | 输入框占位文本 | string | `请选择` | - |
+| placeholder | 输入框占位文本 | string | - | - |
 | placement | 浮层预设位置 | `bottomLeft` `bottomRight` `topLeft` `topRight` | `bottomLeft` | 4.17.0 |
+| prefix | 自定义前缀 | ReactNode | - | 5.22.0 |
 | showSearch | 在选择框中显示搜索框 | boolean \| [Object](#showsearch) | false | - |
 | size | 输入框大小 | `large` \| `middle` \| `small` | - | - |
 | status | 设置校验状态 | 'error' \| 'warning' | - | 4.19.0 |
@@ -23791,7 +24971,7 @@ Version: 4.24
 
 参数: changeOnSelect
 
-说明: （单选时生效）当此项为 true 时，点选每级菜单选项值都会发生变化，具体见上面的演示
+说明: 单选时生效（multiple 下始终都可以选择），点选每级菜单选项值都会发生变化。
 
 类型: boolean
 
@@ -24023,7 +25203,7 @@ Version: 4.24
 
 类型: string
 
-默认值: `请选择`
+默认值: -
 
 版本: -
 
@@ -24038,6 +25218,18 @@ Version: 4.24
 默认值: `bottomLeft`
 
 版本: 4.17.0
+
+### ant-design 中 Cascader - Cascader的prefix属性如何使用？
+
+参数: prefix
+
+说明: 自定义前缀
+
+类型: ReactNode
+
+默认值: -
+
+版本: 5.22.0
 
 ### ant-design 中 Cascader - Cascader的showSearch属性如何使用？
 
@@ -24330,10 +25522,13 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
+| arrows | 是否显示箭头 | boolean | false | 5.17.0 |
 | autoplay | 是否自动切换 | boolean | false | - |
 | autoplaySpeed | 自动切换的间隔（毫秒） | number | 3000 | - |
+| adaptiveHeight | 高度自适应 | boolean | false | - |
 | dotPosition | 面板指示点位置，可选 `top` `bottom` `left` `right` | string | `bottom` | - |
-| dots | 是否显示面板指示点，如果为 `object` 则同时可以指定 `dotsClass` 或者 | boolean \| { className?: string } | true | - |
+| dots | 是否显示面板指示点，如果为 `object` 则可以指定 `dotsClass` | boolean \| { className?: string } | true | - |
+| draggable | 是否启用拖拽切换 | boolean | false | - |
 | fade | 使用渐变切换动效 | boolean | false | - |
 | infinite | 是否无限循环切换（实现方式是复制两份 children 元素，如果子元素有副作用则可能会引发 bug） | boolean | true | - |
 | speed | 切换动效的时间（毫秒） | number | 500 | - |
@@ -24355,10 +25550,13 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
+| arrows | 是否显示箭头 | boolean | false | 5.17.0 |
 | autoplay | 是否自动切换 | boolean | false | - |
 | autoplaySpeed | 自动切换的间隔（毫秒） | number | 3000 | - |
+| adaptiveHeight | 高度自适应 | boolean | false | - |
 | dotPosition | 面板指示点位置，可选 `top` `bottom` `left` `right` | string | `bottom` | - |
-| dots | 是否显示面板指示点，如果为 `object` 则同时可以指定 `dotsClass` 或者 | boolean \| { className?: string } | true | - |
+| dots | 是否显示面板指示点，如果为 `object` 则可以指定 `dotsClass` | boolean \| { className?: string } | true | - |
+| draggable | 是否启用拖拽切换 | boolean | false | - |
 | fade | 使用渐变切换动效 | boolean | false | - |
 | infinite | 是否无限循环切换（实现方式是复制两份 children 元素，如果子元素有副作用则可能会引发 bug） | boolean | true | - |
 | speed | 切换动效的时间（毫秒） | number | 500 | - |
@@ -24367,6 +25565,18 @@ Version: 4.24
 | afterChange | 切换面板的回调 | (current: number) => void | - | - |
 | beforeChange | 切换面板的回调 | (current: number, next: number) => void | - | - |
 | waitForAnimate | 是否等待切换动画 | boolean | false | - |
+
+### ant-design 中 Carousel - Carousel的arrows属性如何使用？
+
+参数: arrows
+
+说明: 是否显示箭头
+
+类型: boolean
+
+默认值: false
+
+版本: 5.17.0
 
 ### ant-design 中 Carousel - Carousel的autoplay属性如何使用？
 
@@ -24392,6 +25602,18 @@ Version: 4.24
 
 版本: -
 
+### ant-design 中 Carousel - Carousel的adaptiveHeight属性如何使用？
+
+参数: adaptiveHeight
+
+说明: 高度自适应
+
+类型: boolean
+
+默认值: false
+
+版本: -
+
 ### ant-design 中 Carousel - Carousel的dotPosition属性如何使用？
 
 参数: dotPosition
@@ -24408,11 +25630,23 @@ Version: 4.24
 
 参数: dots
 
-说明: 是否显示面板指示点，如果为 `object` 则同时可以指定 `dotsClass` 或者
+说明: 是否显示面板指示点，如果为 `object` 则可以指定 `dotsClass`
 
 类型: boolean \| { className?: string }
 
 默认值: true
+
+版本: -
+
+### ant-design 中 Carousel - Carousel的draggable属性如何使用？
+
+参数: draggable
+
+说明: 是否启用拖拽切换
+
+类型: boolean
+
+默认值: false
 
 版本: -
 
@@ -24554,12 +25788,12 @@ Version: 4.24
 | loading | 当卡片内容还在加载中时，可以用 loading 展示一个占位 | boolean | false | - |
 | size | card 的尺寸 | `default` \| `small` | `default` | - |
 | tabBarExtraContent | tab bar 上额外的元素 | ReactNode | - | - |
-| tabList | 页签标题列表 | [TabItemType](/components/tabs#tabitemtype)\[] | - | - |
+| tabList | 页签标题列表 | [TabItemType](/components/tabs-cn#tabitemtype)\[] | - | - |
 | tabProps | [Tabs](/components/tabs-cn#tabs) | - | - | - |
 | title | 卡片标题 | ReactNode | - | - |
 | type | 卡片类型，可设置为 `inner` 或 不设置 | string | - | - |
-| classNames | 配置卡片内置模块的 className | Record\<SemanticDOM, string> | - | 5.14.0 |
-| styles | 配置卡片内置模块的 style | Record\<SemanticDOM, string> | - | 5.14.0 |
+| classNames | 配置卡片内置模块的 className | [Record\<SemanticDOM, string>](#semantic-dom) | - | 5.14.0 |
+| styles | 配置卡片内置模块的 style | [Record\<SemanticDOM, CSSProperties>](#semantic-dom) | - | 5.14.0 |
 | onTabChange | 页签切换的回调 | (key) => void | - | - |
 
 #### Card - Card.Grid
@@ -24580,17 +25814,6 @@ Version: 4.24
 | style       | 定义容器类名的样式 | CSSProperties | -      | -    |
 | title       | 标题内容           | ReactNode     | -      | -    |
 
-#### Card - Card
-
-| 名称    | 说明                     | 版本   |
-| ------- | ------------------------ | ------ |
-| header  | 设置卡片头部区域         | 5.14.0 |
-| body    | 设置卡片内容区域         | 5.14.0 |
-| extra   | 设置卡片右上角的操作区域 | 5.14.0 |
-| title   | 设置卡片标题             | 5.14.0 |
-| actions | 设置卡片底部操作组       | 5.14.0 |
-| cover   | 设置标题封面             | 5.14.0 |
-
 ### ant-design 的 Card - Card 有哪些配置？
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
@@ -24605,12 +25828,12 @@ Version: 4.24
 | loading | 当卡片内容还在加载中时，可以用 loading 展示一个占位 | boolean | false | - |
 | size | card 的尺寸 | `default` \| `small` | `default` | - |
 | tabBarExtraContent | tab bar 上额外的元素 | ReactNode | - | - |
-| tabList | 页签标题列表 | [TabItemType](/components/tabs#tabitemtype)\[] | - | - |
+| tabList | 页签标题列表 | [TabItemType](/components/tabs-cn#tabitemtype)\[] | - | - |
 | tabProps | [Tabs](/components/tabs-cn#tabs) | - | - | - |
 | title | 卡片标题 | ReactNode | - | - |
 | type | 卡片类型，可设置为 `inner` 或 不设置 | string | - | - |
-| classNames | 配置卡片内置模块的 className | Record\<SemanticDOM, string> | - | 5.14.0 |
-| styles | 配置卡片内置模块的 style | Record\<SemanticDOM, string> | - | 5.14.0 |
+| classNames | 配置卡片内置模块的 className | [Record\<SemanticDOM, string>](#semantic-dom) | - | 5.14.0 |
+| styles | 配置卡片内置模块的 style | [Record\<SemanticDOM, CSSProperties>](#semantic-dom) | - | 5.14.0 |
 | onTabChange | 页签切换的回调 | (key) => void | - | - |
 
 ### ant-design 中 Card - Card的actions属性如何使用？
@@ -24739,7 +25962,7 @@ Version: 4.24
 
 说明: 页签标题列表
 
-类型: [TabItemType](/components/tabs#tabitemtype)\[]
+类型: [TabItemType](/components/tabs-cn#tabitemtype)\[]
 
 默认值: -
 
@@ -24787,7 +26010,7 @@ Version: 4.24
 
 说明: 配置卡片内置模块的 className
 
-类型: Record\<SemanticDOM, string>
+类型: [Record\<SemanticDOM, string>](#semantic-dom)
 
 默认值: -
 
@@ -24799,7 +26022,7 @@ Version: 4.24
 
 说明: 配置卡片内置模块的 style
 
-类型: Record\<SemanticDOM, string>
+类型: [Record\<SemanticDOM, CSSProperties>](#semantic-dom)
 
 默认值: -
 
@@ -24931,85 +26154,21 @@ Version: 4.24
 
 版本: -
 
-### ant-design 的 Card - Card 有哪些配置？
-
-| 名称    | 说明                     | 版本   |
-| ------- | ------------------------ | ------ |
-| header  | 设置卡片头部区域         | 5.14.0 |
-| body    | 设置卡片内容区域         | 5.14.0 |
-| extra   | 设置卡片右上角的操作区域 | 5.14.0 |
-| title   | 设置卡片标题             | 5.14.0 |
-| actions | 设置卡片底部操作组       | 5.14.0 |
-| cover   | 设置标题封面             | 5.14.0 |
-
-### ant-design 中 Card - Card的header属性如何使用？
-
-名称: header
-
-说明: 设置卡片头部区域
-
-版本: 5.14.0
-
-### ant-design 中 Card - Card的body属性如何使用？
-
-名称: body
-
-说明: 设置卡片内容区域
-
-版本: 5.14.0
-
-### ant-design 中 Card - Card的extra属性如何使用？
-
-名称: extra
-
-说明: 设置卡片右上角的操作区域
-
-版本: 5.14.0
-
-### ant-design 中 Card - Card的title属性如何使用？
-
-名称: title
-
-说明: 设置卡片标题
-
-版本: 5.14.0
-
-### ant-design 中 Card - Card的actions属性如何使用？
-
-名称: actions
-
-说明: 设置卡片底部操作组
-
-版本: 5.14.0
-
-### ant-design 中 Card - Card的cover属性如何使用？
-
-名称: cover
-
-说明: 设置标题封面
-
-版本: 5.14.0
-
 ### ant-design 的 Calendar 有哪些配置？
 
 #### Calendar - Calendar
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| dateCellRender | 自定义渲染日期单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender` | function(date: Dayjs): ReactNode | - | < 5.4.0 |
-| cellRender | 自定义单元格的内容 | function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
+| cellRender | 自定义单元格的内容 | function(current: dayjs, info: { prefixCls: string, originNode: React.ReactElement, today: dayjs, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
 | dateFullCellRender | 自定义渲染日期单元格，返回内容覆盖单元格，>= 5.4.0 请用 `fullCellRender` | function(date: Dayjs): ReactNode | - | < 5.4.0 |
-| fullCellRender | 自定义单元格的内容 | function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
+| fullCellRender | 自定义单元格的内容 | function(current: dayjs, info: { prefixCls: string, originNode: React.ReactElement, today: dayjs, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
 | defaultValue | 默认展示的日期 | [dayjs](https://day.js.org/) | - | - |
 | disabledDate | 不可选择的日期，参数为当前 `value`，注意使用时[不要直接修改](https://github.com/ant-design/ant-design/issues/30987) | (currentDate: Dayjs) => boolean | - | - |
 | fullscreen | 是否全屏显示 | boolean | true | - |
 | headerRender | 自定义头部内容 | function(object:{value: Dayjs, type: string, onChange: f(), onTypeChange: f()}) | - | - |
 | locale | 国际化配置 | object | [(默认配置)](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) | - |
 | mode | 初始模式 | `month` \| `year` | `month` | - |
-| monthCellRender | 自定义渲染月单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender` | function(date: Dayjs): ReactNode | - | < 5.4.0 |
-| cellRender | 自定义单元格的内容 | function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
-| monthFullCellRender | 自定义渲染月单元格，返回内容覆盖单元格，>= 5.4.0 请用 `fullCellRender` | function(date: Dayjs): ReactNode | - | < 5.4.0 |
-| fullCellRender | 自定义单元格的内容 | function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
 | validRange | 设置可以显示的日期 | \[[dayjs](https://day.js.org/), [dayjs](https://day.js.org/)] | - | - |
 | value | 展示日期 | [dayjs](https://day.js.org/) | - | - |
 | onChange | 日期变化回调 | function(date: Dayjs) | - | - |
@@ -25020,37 +26179,20 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| dateCellRender | 自定义渲染日期单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender` | function(date: Dayjs): ReactNode | - | < 5.4.0 |
-| cellRender | 自定义单元格的内容 | function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
+| cellRender | 自定义单元格的内容 | function(current: dayjs, info: { prefixCls: string, originNode: React.ReactElement, today: dayjs, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
 | dateFullCellRender | 自定义渲染日期单元格，返回内容覆盖单元格，>= 5.4.0 请用 `fullCellRender` | function(date: Dayjs): ReactNode | - | < 5.4.0 |
-| fullCellRender | 自定义单元格的内容 | function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
+| fullCellRender | 自定义单元格的内容 | function(current: dayjs, info: { prefixCls: string, originNode: React.ReactElement, today: dayjs, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
 | defaultValue | 默认展示的日期 | [dayjs](https://day.js.org/) | - | - |
 | disabledDate | 不可选择的日期，参数为当前 `value`，注意使用时[不要直接修改](https://github.com/ant-design/ant-design/issues/30987) | (currentDate: Dayjs) => boolean | - | - |
 | fullscreen | 是否全屏显示 | boolean | true | - |
 | headerRender | 自定义头部内容 | function(object:{value: Dayjs, type: string, onChange: f(), onTypeChange: f()}) | - | - |
 | locale | 国际化配置 | object | [(默认配置)](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) | - |
 | mode | 初始模式 | `month` \| `year` | `month` | - |
-| monthCellRender | 自定义渲染月单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender` | function(date: Dayjs): ReactNode | - | < 5.4.0 |
-| cellRender | 自定义单元格的内容 | function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
-| monthFullCellRender | 自定义渲染月单元格，返回内容覆盖单元格，>= 5.4.0 请用 `fullCellRender` | function(date: Dayjs): ReactNode | - | < 5.4.0 |
-| fullCellRender | 自定义单元格的内容 | function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode | - | 5.4.0 |
 | validRange | 设置可以显示的日期 | \[[dayjs](https://day.js.org/), [dayjs](https://day.js.org/)] | - | - |
 | value | 展示日期 | [dayjs](https://day.js.org/) | - | - |
 | onChange | 日期变化回调 | function(date: Dayjs) | - | - |
 | onPanelChange | 日期面板变化回调 | function(date: Dayjs, mode: string) | - | - |
 | onSelect | 选择日期回调，包含来源信息 | function(date: Dayjs, info: { source: 'year' \| 'month' \| 'date' \| 'customize' }) | - | `info`: 5.6.0 |
-
-### ant-design 中 Calendar - Calendar的dateCellRender属性如何使用？
-
-参数: dateCellRender
-
-说明: 自定义渲染日期单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender`
-
-类型: function(date: Dayjs): ReactNode
-
-默认值: -
-
-版本: < 5.4.0
 
 ### ant-design 中 Calendar - Calendar的cellRender属性如何使用？
 
@@ -25058,7 +26200,7 @@ Version: 4.24
 
 说明: 自定义单元格的内容
 
-类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode
+类型: function(current: dayjs, info: { prefixCls: string, originNode: React.ReactElement, today: dayjs, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode
 
 默认值: -
 
@@ -25082,7 +26224,7 @@ Version: 4.24
 
 说明: 自定义单元格的内容
 
-类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode
+类型: function(current: dayjs, info: { prefixCls: string, originNode: React.ReactElement, today: dayjs, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode
 
 默认值: -
 
@@ -25160,54 +26302,6 @@ Version: 4.24
 
 版本: -
 
-### ant-design 中 Calendar - Calendar的monthCellRender属性如何使用？
-
-参数: monthCellRender
-
-说明: 自定义渲染月单元格，返回内容会被追加到单元格，>= 5.4.0 请用 `cellRender`
-
-类型: function(date: Dayjs): ReactNode
-
-默认值: -
-
-版本: < 5.4.0
-
-### ant-design 中 Calendar - Calendar的cellRender属性如何使用？
-
-参数: cellRender
-
-说明: 自定义单元格的内容
-
-类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode
-
-默认值: -
-
-版本: 5.4.0
-
-### ant-design 中 Calendar - Calendar的monthFullCellRender属性如何使用？
-
-参数: monthFullCellRender
-
-说明: 自定义渲染月单元格，返回内容覆盖单元格，>= 5.4.0 请用 `fullCellRender`
-
-类型: function(date: Dayjs): ReactNode
-
-默认值: -
-
-版本: < 5.4.0
-
-### ant-design 中 Calendar - Calendar的fullCellRender属性如何使用？
-
-参数: fullCellRender
-
-说明: 自定义单元格的内容
-
-类型: function(current: dayjs, today: dayjs, info: { originNode: React.ReactElement,today: DateType, range?: 'start' \| 'end', type: PanelMode, locale?: Locale, subType?: 'hour' \| 'minute' \| 'second' \| 'meridiem' }) => React.ReactNode
-
-默认值: -
-
-版本: 5.4.0
-
 ### ant-design 中 Calendar - Calendar的validRange属性如何使用？
 
 参数: validRange
@@ -25274,41 +26368,61 @@ Version: 4.24
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
+| autoInsertSpace | 我们默认提供两个汉字之间的空格，可以设置 `autoInsertSpace` 为 `false` 关闭 | boolean | `true` | 5.17.0 |
 | block | 将按钮宽度调整为其父宽度的选项 | boolean | false | - |
 | classNames | 语义化结构 class | [Record\<SemanticDOM, string>](#semantic-dom) | - | 5.4.0 |
-| danger | 设置危险按钮 | boolean | false | - |
+| color | 设置按钮的颜色 | `default` \| `primary` \| `danger` | - | 5.21.0 |
+| danger | 语法糖，设置危险按钮。当设置 `color` 时会以后者为准 | boolean | false | - |
 | disabled | 设置按钮失效状态 | boolean | false | - |
 | ghost | 幽灵属性，使按钮背景透明 | boolean | false | - |
 | href | 点击跳转的地址，指定此属性 button 的行为和 a 链接一致 | string | - | - |
-| htmlType | 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) | string | `button` | - |
+| htmlType | 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button#type) | `submit` \| `reset` \| `button` | `button` | - |
 | icon | 设置按钮的图标组件 | ReactNode | - | - |
+| iconPosition | 设置按钮图标组件的位置 | `start` \| `end` | `start` | 5.17.0 |
 | loading | 设置按钮载入状态 | boolean \| { delay: number } | false | - |
 | shape | 设置按钮形状 | `default` \| `circle` \| `round` | `default` | - |
 | size | 设置按钮大小 | `large` \| `middle` \| `small` | `middle` | - |
 | styles | 语义化结构 style | [Record\<SemanticDOM, CSSProperties>](#semantic-dom) | - | 5.4.0 |
 | target | 相当于 a 链接的 target 属性，href 存在时生效 | string | - | - |
-| type | 设置按钮类型 | `primary` \| `dashed` \| `link` \| `text` \| `default` | `default` | - |
-| onClick | 点击按钮时的回调 | (event: MouseEvent) => void | - | - |
+| type | 语法糖，设置按钮类型。当设置 `variant` 与 `color` 时以后者为准 | `primary` \| `dashed` \| `link` \| `text` \| `default` | `default` | - |
+| onClick | 点击按钮时的回调 | (event: React.MouseEvent\<HTMLElement, MouseEvent>) => void | - | - |
+| variant | 设置按钮的变体 | `outlined` \| `dashed` \| `solid` \| `filled` \| `text` \| `link` | - | 5.21.0 |
 
 ### ant-design 的 Button - Button 有哪些配置？
 
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
+| autoInsertSpace | 我们默认提供两个汉字之间的空格，可以设置 `autoInsertSpace` 为 `false` 关闭 | boolean | `true` | 5.17.0 |
 | block | 将按钮宽度调整为其父宽度的选项 | boolean | false | - |
 | classNames | 语义化结构 class | [Record\<SemanticDOM, string>](#semantic-dom) | - | 5.4.0 |
-| danger | 设置危险按钮 | boolean | false | - |
+| color | 设置按钮的颜色 | `default` \| `primary` \| `danger` | - | 5.21.0 |
+| danger | 语法糖，设置危险按钮。当设置 `color` 时会以后者为准 | boolean | false | - |
 | disabled | 设置按钮失效状态 | boolean | false | - |
 | ghost | 幽灵属性，使按钮背景透明 | boolean | false | - |
 | href | 点击跳转的地址，指定此属性 button 的行为和 a 链接一致 | string | - | - |
-| htmlType | 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) | string | `button` | - |
+| htmlType | 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button#type) | `submit` \| `reset` \| `button` | `button` | - |
 | icon | 设置按钮的图标组件 | ReactNode | - | - |
+| iconPosition | 设置按钮图标组件的位置 | `start` \| `end` | `start` | 5.17.0 |
 | loading | 设置按钮载入状态 | boolean \| { delay: number } | false | - |
 | shape | 设置按钮形状 | `default` \| `circle` \| `round` | `default` | - |
 | size | 设置按钮大小 | `large` \| `middle` \| `small` | `middle` | - |
 | styles | 语义化结构 style | [Record\<SemanticDOM, CSSProperties>](#semantic-dom) | - | 5.4.0 |
 | target | 相当于 a 链接的 target 属性，href 存在时生效 | string | - | - |
-| type | 设置按钮类型 | `primary` \| `dashed` \| `link` \| `text` \| `default` | `default` | - |
-| onClick | 点击按钮时的回调 | (event: MouseEvent) => void | - | - |
+| type | 语法糖，设置按钮类型。当设置 `variant` 与 `color` 时以后者为准 | `primary` \| `dashed` \| `link` \| `text` \| `default` | `default` | - |
+| onClick | 点击按钮时的回调 | (event: React.MouseEvent\<HTMLElement, MouseEvent>) => void | - | - |
+| variant | 设置按钮的变体 | `outlined` \| `dashed` \| `solid` \| `filled` \| `text` \| `link` | - | 5.21.0 |
+
+### ant-design 中 Button - Button的autoInsertSpace属性如何使用？
+
+属性: autoInsertSpace
+
+说明: 我们默认提供两个汉字之间的空格，可以设置 `autoInsertSpace` 为 `false` 关闭
+
+类型: boolean
+
+默认值: `true`
+
+版本: 5.17.0
 
 ### ant-design 中 Button - Button的block属性如何使用？
 
@@ -25334,11 +26448,23 @@ Version: 4.24
 
 版本: 5.4.0
 
+### ant-design 中 Button - Button的color属性如何使用？
+
+属性: color
+
+说明: 设置按钮的颜色
+
+类型: `default` \| `primary` \| `danger`
+
+默认值: -
+
+版本: 5.21.0
+
 ### ant-design 中 Button - Button的danger属性如何使用？
 
 属性: danger
 
-说明: 设置危险按钮
+说明: 语法糖，设置危险按钮。当设置 `color` 时会以后者为准
 
 类型: boolean
 
@@ -25386,9 +26512,9 @@ Version: 4.24
 
 属性: htmlType
 
-说明: 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type)
+说明: 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button#type)
 
-类型: string
+类型: `submit` \| `reset` \| `button`
 
 默认值: `button`
 
@@ -25405,6 +26531,18 @@ Version: 4.24
 默认值: -
 
 版本: -
+
+### ant-design 中 Button - Button的iconPosition属性如何使用？
+
+属性: iconPosition
+
+说明: 设置按钮图标组件的位置
+
+类型: `start` \| `end`
+
+默认值: `start`
+
+版本: 5.17.0
 
 ### ant-design 中 Button - Button的loading属性如何使用？
 
@@ -25470,7 +26608,7 @@ Version: 4.24
 
 属性: type
 
-说明: 设置按钮类型
+说明: 语法糖，设置按钮类型。当设置 `variant` 与 `color` 时以后者为准
 
 类型: `primary` \| `dashed` \| `link` \| `text` \| `default`
 
@@ -25484,11 +26622,23 @@ Version: 4.24
 
 说明: 点击按钮时的回调
 
-类型: (event: MouseEvent) => void
+类型: (event: React.MouseEvent\<HTMLElement, MouseEvent>) => void
 
 默认值: -
 
 版本: -
+
+### ant-design 中 Button - Button的variant属性如何使用？
+
+属性: variant
+
+说明: 设置按钮的变体
+
+类型: `outlined` \| `dashed` \| `solid` \| `filled` \| `text` \| `link`
+
+默认值: -
+
+版本: 5.21.0
 
 ### ant-design 的 Breadcrumb 有哪些配置？
 
@@ -25498,7 +26648,7 @@ Version: 4.24
 | --- | --- | --- | --- | --- |
 | itemRender | 自定义链接函数，和 react-router 配置使用 | (route, params, routes, paths) => ReactNode | - | - |
 | params | 路由的参数 | object | - | - |
-| items | 路由栈信息 | [items\[\]](#ItemType) | - | 5.3.0 |
+| items | 路由栈信息 | [items\[\]](#itemtype) | - | 5.3.0 |
 | separator | 分隔符自定义 | ReactNode | `/` | - |
 
 #### Breadcrumb - RouteItemType
@@ -25526,7 +26676,7 @@ Version: 4.24
 | --- | --- | --- | --- | --- |
 | itemRender | 自定义链接函数，和 react-router 配置使用 | (route, params, routes, paths) => ReactNode | - | - |
 | params | 路由的参数 | object | - | - |
-| items | 路由栈信息 | [items\[\]](#ItemType) | - | 5.3.0 |
+| items | 路由栈信息 | [items\[\]](#itemtype) | - | 5.3.0 |
 | separator | 分隔符自定义 | ReactNode | `/` | - |
 
 ### ant-design 中 Breadcrumb - Breadcrumb的itemRender属性如何使用？
@@ -25559,7 +26709,7 @@ Version: 4.24
 
 说明: 路由栈信息
 
-类型: [items\[\]](#ItemType)
+类型: [items\[\]](#itemtype)
 
 默认值: -
 
@@ -25957,10 +27107,7 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| maxCount | 显示的最大头像个数 | number | - | - |
-| maxPopoverPlacement | 多余头像气泡弹出位置 | `top` \| `bottom` | `top` | - |
-| maxPopoverTrigger | 设置多余头像 Popover 的触发方式 | `hover` \| `focus` \| `click` | `hover` | 4.17.0 |
-| maxStyle | 多余头像样式 | CSSProperties | - | - |
+| max | 设置最多显示相关配置，`5.18.0` 前可使用 [参数](https://github.com/ant-design/ant-design/blob/9d134859becbdae5b9ce276f6d9af4264691d81f/components/avatar/group.tsx#L35-L38) | `{ count?: number; style?: CSSProperties; popover?: PopoverProps }` | - | 5.18.0 |
 | size | 设置头像的大小 | number \| `large` \| `small` \| `default` \| { xs: number, sm: number, ...} | `default` | 4.8.0 |
 | shape | 设置头像的形状 | `circle` \| `square` | `circle` | 5.8.0 |
 
@@ -26103,60 +27250,21 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| maxCount | 显示的最大头像个数 | number | - | - |
-| maxPopoverPlacement | 多余头像气泡弹出位置 | `top` \| `bottom` | `top` | - |
-| maxPopoverTrigger | 设置多余头像 Popover 的触发方式 | `hover` \| `focus` \| `click` | `hover` | 4.17.0 |
-| maxStyle | 多余头像样式 | CSSProperties | - | - |
+| max | 设置最多显示相关配置，`5.18.0` 前可使用 [参数](https://github.com/ant-design/ant-design/blob/9d134859becbdae5b9ce276f6d9af4264691d81f/components/avatar/group.tsx#L35-L38) | `{ count?: number; style?: CSSProperties; popover?: PopoverProps }` | - | 5.18.0 |
 | size | 设置头像的大小 | number \| `large` \| `small` \| `default` \| { xs: number, sm: number, ...} | `default` | 4.8.0 |
 | shape | 设置头像的形状 | `circle` \| `square` | `circle` | 5.8.0 |
 
-### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxCount属性如何使用？
+### ant-design 中 Avatar - Avatar.Group (4.5.0+)的max属性如何使用？
 
-参数: maxCount
+参数: max
 
-说明: 显示的最大头像个数
+说明: 设置最多显示相关配置，`5.18.0` 前可使用 [参数](https://github.com/ant-design/ant-design/blob/9d134859becbdae5b9ce276f6d9af4264691d81f/components/avatar/group.tsx#L35-L38)
 
-类型: number
-
-默认值: -
-
-版本: -
-
-### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxPopoverPlacement属性如何使用？
-
-参数: maxPopoverPlacement
-
-说明: 多余头像气泡弹出位置
-
-类型: `top` \| `bottom`
-
-默认值: `top`
-
-版本: -
-
-### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxPopoverTrigger属性如何使用？
-
-参数: maxPopoverTrigger
-
-说明: 设置多余头像 Popover 的触发方式
-
-类型: `hover` \| `focus` \| `click`
-
-默认值: `hover`
-
-版本: 4.17.0
-
-### ant-design 中 Avatar - Avatar.Group (4.5.0+)的maxStyle属性如何使用？
-
-参数: maxStyle
-
-说明: 多余头像样式
-
-类型: CSSProperties
+类型: `{ count?: number; style?: CSSProperties; popover?: PopoverProps }`
 
 默认值: -
 
-版本: -
+版本: 5.18.0
 
 ### ant-design 中 Avatar - Avatar.Group (4.5.0+)的size属性如何使用？
 
@@ -26191,15 +27299,15 @@ Version: 4.24
 | allowClear | 支持清除 | boolean \| { clearIcon?: ReactNode } | false | 5.8.0: 支持对象形式 |
 | autoFocus | 自动获取焦点 | boolean | false | - |
 | backfill | 使用键盘选择选项的时候把选中项回填到输入框中 | boolean | false | - |
-| children (自动完成的数据源) | 自动完成的数据源 | React.ReactElement\<OptionProps> \| Array\<React.ReactElement\<OptionProps>> | - | - |
-| children (自定义输入框) | 自定义输入框 | HTMLInputElement \| HTMLTextAreaElement \| React.ReactElement\<InputProps> | \<Input /> | - |
+| children (自动完成的数据源) | 自动完成的数据源，不能和自定义输入框同时配置 | React.ReactElement\<OptionProps> \| Array\<React.ReactElement\<OptionProps>> | - | - |
+| children (自定义输入框) | 自定义输入框，不能和自动完成的数据源同时配置 | HTMLInputElement \| HTMLTextAreaElement \| React.ReactElement\<InputProps> | \<Input /> | - |
 | defaultActiveFirstOption | 是否默认高亮第一个选项 | boolean | true | - |
 | defaultOpen | 是否默认展开下拉菜单 | boolean | - | - |
 | defaultValue | 指定默认选中的条目 | string | - | - |
 | disabled | 是否禁用 | boolean | false | - |
 | dropdownRender | 自定义下拉框内容 | (menus: ReactNode) => ReactNode | - | 4.24.0 |
 | popupClassName | 下拉菜单的 className 属性 | string | - | 4.23.0 |
-| dropdownMatchSelectWidth | 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动 | boolean \| number | true | - |
+| popupMatchSelectWidth | 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动 | boolean \| number | true | - |
 | filterOption | 是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 true，反之则返回 false | boolean \| function(inputValue, option) | true | - |
 | getPopupContainer | 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codesandbox.io/s/4j168r7jw0) | function(triggerNode) | () => document.body | - |
 | notFoundContent | 当下拉列表为空时显示的内容 | ReactNode | - | - |
@@ -26231,15 +27339,15 @@ Version: 4.24
 | allowClear | 支持清除 | boolean \| { clearIcon?: ReactNode } | false | 5.8.0: 支持对象形式 |
 | autoFocus | 自动获取焦点 | boolean | false | - |
 | backfill | 使用键盘选择选项的时候把选中项回填到输入框中 | boolean | false | - |
-| children (自动完成的数据源) | 自动完成的数据源 | React.ReactElement\<OptionProps> \| Array\<React.ReactElement\<OptionProps>> | - | - |
-| children (自定义输入框) | 自定义输入框 | HTMLInputElement \| HTMLTextAreaElement \| React.ReactElement\<InputProps> | \<Input /> | - |
+| children (自动完成的数据源) | 自动完成的数据源，不能和自定义输入框同时配置 | React.ReactElement\<OptionProps> \| Array\<React.ReactElement\<OptionProps>> | - | - |
+| children (自定义输入框) | 自定义输入框，不能和自动完成的数据源同时配置 | HTMLInputElement \| HTMLTextAreaElement \| React.ReactElement\<InputProps> | \<Input /> | - |
 | defaultActiveFirstOption | 是否默认高亮第一个选项 | boolean | true | - |
 | defaultOpen | 是否默认展开下拉菜单 | boolean | - | - |
 | defaultValue | 指定默认选中的条目 | string | - | - |
 | disabled | 是否禁用 | boolean | false | - |
 | dropdownRender | 自定义下拉框内容 | (menus: ReactNode) => ReactNode | - | 4.24.0 |
 | popupClassName | 下拉菜单的 className 属性 | string | - | 4.23.0 |
-| dropdownMatchSelectWidth | 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动 | boolean \| number | true | - |
+| popupMatchSelectWidth | 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动 | boolean \| number | true | - |
 | filterOption | 是否根据输入项进行筛选。当其为一个函数时，会接收 `inputValue` `option` 两个参数，当 `option` 符合筛选条件时，应返回 true，反之则返回 false | boolean \| function(inputValue, option) | true | - |
 | getPopupContainer | 菜单渲染父节点。默认渲染到 body 上，如果你遇到菜单滚动定位问题，试试修改为滚动的区域，并相对其定位。[示例](https://codesandbox.io/s/4j168r7jw0) | function(triggerNode) | () => document.body | - |
 | notFoundContent | 当下拉列表为空时显示的内容 | ReactNode | - | - |
@@ -26297,7 +27405,7 @@ Version: 4.24
 
 参数: children (自动完成的数据源)
 
-说明: 自动完成的数据源
+说明: 自动完成的数据源，不能和自定义输入框同时配置
 
 类型: React.ReactElement\<OptionProps> \| Array\<React.ReactElement\<OptionProps>>
 
@@ -26309,7 +27417,7 @@ Version: 4.24
 
 参数: children (自定义输入框)
 
-说明: 自定义输入框
+说明: 自定义输入框，不能和自动完成的数据源同时配置
 
 类型: HTMLInputElement \| HTMLTextAreaElement \| React.ReactElement\<InputProps>
 
@@ -26389,9 +27497,9 @@ Version: 4.24
 
 版本: 4.23.0
 
-### ant-design 中 AutoComplete - AutoComplete的dropdownMatchSelectWidth属性如何使用？
+### ant-design 中 AutoComplete - AutoComplete的popupMatchSelectWidth属性如何使用？
 
-参数: dropdownMatchSelectWidth
+参数: popupMatchSelectWidth
 
 说明: 下拉菜单和选择器同宽。默认将设置 `min-width`，当值小于选择框宽度时会被忽略。false 时会关闭虚拟滚动
 
@@ -26622,7 +27730,7 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| component | 设置渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType | div | 5.11.0 |
+| component | 设置渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType \| false | div | 5.11.0 |
 | message | App 内 Message 的全局配置 | [MessageConfig](/components/message-cn/#messageconfig) | - | 5.3.0 |
 | notification | App 内 Notification 的全局配置 | [NotificationConfig](/components/notification-cn/#notificationconfig) | - | 5.3.0 |
 
@@ -26630,7 +27738,7 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| component | 设置渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType | div | 5.11.0 |
+| component | 设置渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType \| false | div | 5.11.0 |
 | message | App 内 Message 的全局配置 | [MessageConfig](/components/message-cn/#messageconfig) | - | 5.3.0 |
 | notification | App 内 Notification 的全局配置 | [NotificationConfig](/components/notification-cn/#notificationconfig) | - | 5.3.0 |
 
@@ -26640,7 +27748,7 @@ Version: 4.24
 
 说明: 设置渲染元素，为 `false` 则不创建 DOM 节点
 
-类型: ComponentType
+类型: ComponentType \| false
 
 默认值: div
 
@@ -26676,13 +27784,13 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| affix | 固定模式 | boolean | true | - |
+| affix | 固定模式 | boolean \| Omit\<AffixProps, 'offsetTop' \| 'target' \| 'children'> | true | object: 5.19.0 |
 | bounds | 锚点区域边界 | number | 5 | - |
 | getContainer | 指定滚动的容器 | () => HTMLElement | () => window | - |
 | getCurrentAnchor | 自定义高亮的锚点 | (activeLink: string) => string | - | - |
 | offsetTop | 距离窗口顶部达到指定偏移量后触发 | number | - | - |
 | showInkInFixed | `affix={false}` 时是否显示小方块 | boolean | false | - |
-| targetOffset | 锚点滚动偏移量，默认与 offsetTop 相同，[例子](#components-anchor-demo-targetoffset) | number | - | - |
+| targetOffset | 锚点滚动偏移量，默认与 offsetTop 相同，[例子](#anchor-demo-targetoffset) | number | - | - |
 | onChange | 监听锚点链接改变 | (currentActiveLink: string) => void | - | - |
 | onClick | `click` 事件的 handler | (e: MouseEvent, link: object) => void | - | - |
 | items | 数据化配置选项内容，支持通过 children 嵌套 | { key, href, title, target, children }\[] [具体见](#anchoritem) | - | 5.1.0 |
@@ -26712,13 +27820,13 @@ Version: 4.24
 
 | 参数 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
-| affix | 固定模式 | boolean | true | - |
+| affix | 固定模式 | boolean \| Omit\<AffixProps, 'offsetTop' \| 'target' \| 'children'> | true | object: 5.19.0 |
 | bounds | 锚点区域边界 | number | 5 | - |
 | getContainer | 指定滚动的容器 | () => HTMLElement | () => window | - |
 | getCurrentAnchor | 自定义高亮的锚点 | (activeLink: string) => string | - | - |
 | offsetTop | 距离窗口顶部达到指定偏移量后触发 | number | - | - |
 | showInkInFixed | `affix={false}` 时是否显示小方块 | boolean | false | - |
-| targetOffset | 锚点滚动偏移量，默认与 offsetTop 相同，[例子](#components-anchor-demo-targetoffset) | number | - | - |
+| targetOffset | 锚点滚动偏移量，默认与 offsetTop 相同，[例子](#anchor-demo-targetoffset) | number | - | - |
 | onChange | 监听锚点链接改变 | (currentActiveLink: string) => void | - | - |
 | onClick | `click` 事件的 handler | (e: MouseEvent, link: object) => void | - | - |
 | items | 数据化配置选项内容，支持通过 children 嵌套 | { key, href, title, target, children }\[] [具体见](#anchoritem) | - | 5.1.0 |
@@ -26731,11 +27839,11 @@ Version: 4.24
 
 说明: 固定模式
 
-类型: boolean
+类型: boolean \| Omit\<AffixProps, 'offsetTop' \| 'target' \| 'children'>
 
 默认值: true
 
-版本: -
+版本: object: 5.19.0
 
 ### ant-design 中 Anchor - Anchor Props的bounds属性如何使用？
 
@@ -26801,7 +27909,7 @@ Version: 4.24
 
 参数: targetOffset
 
-说明: 锚点滚动偏移量，默认与 offsetTop 相同，[例子](#components-anchor-demo-targetoffset)
+说明: 锚点滚动偏移量，默认与 offsetTop 相同，[例子](#anchor-demo-targetoffset)
 
 类型: number
 

@@ -6,6 +6,7 @@
 | --- | --- | --- | --- |
 | request | 获取 `dataSource` 的方法 | `(params?: {pageSize,current},sort,filter) => {data,success,total}` | - |
 | params | 用于 `request` 查询的额外参数，一旦变化会触发重新加载 | `object` | - |
+| polling | 是否轮询，polling 表示轮询的时间间隔，0 表示关闭轮询，大于 0 表示开启轮询，最小的轮询时间为 2000ms | `number \| ((dataSource: columnType[]) => number) \| undefined` | - |
 | postData | 对通过 `request` 获取的数据进行处理 | `(data: T[]) => T[]` | - |
 | defaultData | 默认的数据 | `T[]` | - |
 | dataSource | Table 的数据，ProTable 推荐使用 `request` 来加载 | `T[]` | - |
@@ -170,6 +171,7 @@
 | --- | --- | --- | --- |
 | request | 获取 `dataSource` 的方法 | `(params?: {pageSize,current},sort,filter) => {data,success,total}` | - |
 | params | 用于 `request` 查询的额外参数，一旦变化会触发重新加载 | `object` | - |
+| polling | 是否轮询，polling 表示轮询的时间间隔，0 表示关闭轮询，大于 0 表示开启轮询，最小的轮询时间为 2000ms | `number \| ((dataSource: columnType[]) => number) \| undefined` | - |
 | postData | 对通过 `request` 获取的数据进行处理 | `(data: T[]) => T[]` | - |
 | defaultData | 默认的数据 | `T[]` | - |
 | dataSource | Table 的数据，ProTable 推荐使用 `request` 来加载 | `T[]` | - |
@@ -222,6 +224,16 @@
 描述: 用于 `request` 查询的额外参数，一旦变化会触发重新加载
 
 类型: `object`
+
+默认值: -
+
+### pro-components 中 ProTable - ProTable的polling属性如何使用？
+
+属性: polling
+
+描述: 是否轮询，polling 表示轮询的时间间隔，0 表示关闭轮询，大于 0 表示开启轮询，最小的轮询时间为 2000ms
+
+类型: `number \| ((dataSource: columnType[]) => number) \| undefined`
 
 默认值: -
 
@@ -4072,7 +4084,7 @@ token: colorBgPageContainerFixed
 | tabActiveKey | 当前高亮的 tab 项 | string | - |
 | onTabChange | 切换面板的回调 | `(key) => void` | - |
 | tabBarExtraContent | tab bar 上额外的元素 | `React.ReactNode` | - |
-| header | [PageHeader](https://ant.design/components/page-header-cn/) 的所有属性 | `PageHeaderProps` | - |
+| header | [PageHeader](https://procomponents.ant.design/components/page-header) 的所有属性 | `PageHeaderProps` | - |
 | ghost | 配置头部区域的背景颜色为透明 | boolean | false |
 | fixedHeader | 固定 pageHeader 的内容到顶部，如果页面内容较少，最好不要使用，会有严重的遮挡问题 | `boolean` | - |
 | affixProps | 固钉的配置，与 antd 完全相同 | `AffixProps` | - |
@@ -4097,7 +4109,7 @@ token: colorBgPageContainerFixed
 | tabActiveKey | 当前高亮的 tab 项 | string | - |
 | onTabChange | 切换面板的回调 | `(key) => void` | - |
 | tabBarExtraContent | tab bar 上额外的元素 | `React.ReactNode` | - |
-| header | [PageHeader](https://ant.design/components/page-header-cn/) 的所有属性 | `PageHeaderProps` | - |
+| header | [PageHeader](https://procomponents.ant.design/components/page-header) 的所有属性 | `PageHeaderProps` | - |
 | ghost | 配置头部区域的背景颜色为透明 | boolean | false |
 | fixedHeader | 固定 pageHeader 的内容到顶部，如果页面内容较少，最好不要使用，会有严重的遮挡问题 | `boolean` | - |
 | affixProps | 固钉的配置，与 antd 完全相同 | `AffixProps` | - |
@@ -4169,7 +4181,7 @@ token: colorBgPageContainerFixed
 
 参数: header
 
-说明: [PageHeader](https://ant.design/components/page-header-cn/) 的所有属性
+说明: [PageHeader](https://procomponents.ant.design/components/page-header) 的所有属性
 
 类型: `PageHeaderProps`
 
@@ -4283,14 +4295,14 @@ token: colorBgPageContainerFixed
 | submitter | 提交按钮相关配置 | `boolean` \| `SubmitterProps` | `true` |
 | syncToUrl | 同步参数到 url 上，url 只支持 string，在使用之前最好读一下[url 中的参数类型](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams) | `true` \| `(values,type)=>values` | - |
 | syncToInitialValues | 同步结果到 initialValues，默认为 true，如果为 false，form.reset 的时候将会忽略从 url 上获取的数据 | `boolean` | `true` |
-| dateFormatter | 自动格式化数据，主要是 moment 的表单，支持 string 和 number 两种模式，此外还支持指定函数进行格式化。 | `string\| number \| ((value: Moment, valueType: string) => string \| number) \| false` | string |
-| omitNil | ProForm 会自动清空 null 和 undefined 的数数据，如果你约定了 nil 代表某种数据，可以设置为 false 关闭此功能 | `boolean` | true |
+| dateFormatter | 自动格式化数据，主要是 moment 的表单，支持 string 和 number 两种模式，此外还支持指定函数进行格式化。 | `string\| number \| ((value: Moment, valueType: string) => string \| number) \| false` | `string` |
+| omitNil | ProForm 会自动清空 null 和 undefined 的数据，如果你约定了 nil 代表某种数据，可以设置为 false 关闭此功能 | `boolean` | `true` |
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | request | 发起网络请求的参数，返回值会覆盖给 initialValues | `(params)=>Promise<data>` | - |
 | isKeyPressSubmit | 是否使用回车提交 | `boolean` | - |
 | formRef | 获取表单所使用的 form | `MutableRefObject<Instance<T>>` | - |
-| autoFocusFirstInput | 自动 focus 表单第一个输入框 | `boolean` | - |
-| `grid` | 开启栅格化模式，宽度默认百分比，请使用 `colProps` 控制宽度 [查看示例](/components/form#栅格化布局) | `boolean` | - |
+| autoFocusFirstInput | 自动 focus 表单第一个输入框 | `boolean` | `true` |
+| grid | 开启栅格化模式，宽度默认百分比，请使用 `colProps` 控制宽度 [查看示例](/components/form#栅格化布局) | `boolean` | - |
 | rowProps | 开启 `grid` 模式时传递给 `Row`, 仅在`ProFormGroup`, `ProFormList`, `ProFormFieldSet` 中有效 | [RowProps](https://ant.design/components/grid/#Row) | { gutter: 8 } |
 | [(...)](https://ant.design/components/form-cn/) | 注意 `LightFilter` 和 `QueryFilter` 仅支持除 `wrapperCol` \| `labelCol` \| `layout` 外的其他 antd `Form` 组件参数 | - | - |
 
@@ -4369,14 +4381,14 @@ token: colorBgPageContainerFixed
 | submitter | 提交按钮相关配置 | `boolean` \| `SubmitterProps` | `true` |
 | syncToUrl | 同步参数到 url 上，url 只支持 string，在使用之前最好读一下[url 中的参数类型](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams) | `true` \| `(values,type)=>values` | - |
 | syncToInitialValues | 同步结果到 initialValues，默认为 true，如果为 false，form.reset 的时候将会忽略从 url 上获取的数据 | `boolean` | `true` |
-| dateFormatter | 自动格式化数据，主要是 moment 的表单，支持 string 和 number 两种模式，此外还支持指定函数进行格式化。 | `string\| number \| ((value: Moment, valueType: string) => string \| number) \| false` | string |
-| omitNil | ProForm 会自动清空 null 和 undefined 的数数据，如果你约定了 nil 代表某种数据，可以设置为 false 关闭此功能 | `boolean` | true |
+| dateFormatter | 自动格式化数据，主要是 moment 的表单，支持 string 和 number 两种模式，此外还支持指定函数进行格式化。 | `string\| number \| ((value: Moment, valueType: string) => string \| number) \| false` | `string` |
+| omitNil | ProForm 会自动清空 null 和 undefined 的数据，如果你约定了 nil 代表某种数据，可以设置为 false 关闭此功能 | `boolean` | `true` |
 | params | 发起网络请求的参数，与 request 配合使用 | `Record` | - |
 | request | 发起网络请求的参数，返回值会覆盖给 initialValues | `(params)=>Promise<data>` | - |
 | isKeyPressSubmit | 是否使用回车提交 | `boolean` | - |
 | formRef | 获取表单所使用的 form | `MutableRefObject<Instance<T>>` | - |
-| autoFocusFirstInput | 自动 focus 表单第一个输入框 | `boolean` | - |
-| `grid` | 开启栅格化模式，宽度默认百分比，请使用 `colProps` 控制宽度 [查看示例](/components/form#栅格化布局) | `boolean` | - |
+| autoFocusFirstInput | 自动 focus 表单第一个输入框 | `boolean` | `true` |
+| grid | 开启栅格化模式，宽度默认百分比，请使用 `colProps` 控制宽度 [查看示例](/components/form#栅格化布局) | `boolean` | - |
 | rowProps | 开启 `grid` 模式时传递给 `Row`, 仅在`ProFormGroup`, `ProFormList`, `ProFormFieldSet` 中有效 | [RowProps](https://ant.design/components/grid/#Row) | { gutter: 8 } |
 | [(...)](https://ant.design/components/form-cn/) | 注意 `LightFilter` 和 `QueryFilter` 仅支持除 `wrapperCol` \| `labelCol` \| `layout` 外的其他 antd `Form` 组件参数 | - | - |
 
@@ -4438,17 +4450,17 @@ token: colorBgPageContainerFixed
 
 类型: `string\| number \| ((value: Moment, valueType: string) => string \| number) \| false`
 
-默认值: string
+默认值: `string`
 
 ### pro-components 中 ProForm - ProForm的omitNil属性如何使用？
 
 参数: omitNil
 
-说明: ProForm 会自动清空 null 和 undefined 的数数据，如果你约定了 nil 代表某种数据，可以设置为 false 关闭此功能
+说明: ProForm 会自动清空 null 和 undefined 的数据，如果你约定了 nil 代表某种数据，可以设置为 false 关闭此功能
 
 类型: `boolean`
 
-默认值: true
+默认值: `true`
 
 ### pro-components 中 ProForm - ProForm的params属性如何使用？
 
@@ -4498,11 +4510,11 @@ token: colorBgPageContainerFixed
 
 类型: `boolean`
 
-默认值: -
+默认值: `true`
 
-### pro-components 中 ProForm - ProForm的`grid`属性如何使用？
+### pro-components 中 ProForm - ProForm的grid属性如何使用？
 
-参数: `grid`
+参数: grid
 
 说明: 开启栅格化模式，宽度默认百分比，请使用 `colProps` 控制宽度 [查看示例](/components/form#栅格化布局)
 
